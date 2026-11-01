@@ -1,5 +1,5 @@
 {
-  "checkpoint": "hydrogel-continuation-paper-2026-11-01",
+  "checkpoint": "hydrogel-continuation-paper-expanded-20261101T0951078954048Z",
   "files": [
     {
       "path": ".gitattributes",
@@ -15,9 +15,9 @@
     },
     {
       "path": "CHECKPOINT.json",
-      "bytes": 802,
-      "sha256": "72050a2ae18f3a38bfc81847a3bfb6e421c9da11e97b3cbe9a1e129cee343ad1",
-      "git_blob_sha1": "7a18128c9fb18a517c384544b056de896f374c23"
+      "bytes": 1058,
+      "sha256": "5582c8e036734932449b17c2bc7fd4ca10eb4d048cf489ed33612f06ad87d9a6",
+      "git_blob_sha1": "0b355e2267d0265bd769ec3e14775d1da58d94ef"
     },
     {
       "path": "docs/evidence/FEASIBILITY.json",
@@ -105,21 +105,27 @@
     },
     {
       "path": "paper/Hydrogel_Continuation_English_Revised.docx",
-      "bytes": 604704,
-      "sha256": "b5da2b32da183159c1b742c520c81f7cc6cf68a1567e235a0dab64847aba1218",
-      "git_blob_sha1": "c7e03eb9c105fdcd63f84e6c4f6da3645a6a559a"
+      "bytes": 607824,
+      "sha256": "fca05cb0161f18681aab3f7871162b35690ab3e4c63f86ba36d7042fddba2a29",
+      "git_blob_sha1": "e6068db8e993a03a7eb35c7724c248605b736ea7"
+    },
+    {
+      "path": "paper/REVISION_NOTES.md",
+      "bytes": 2975,
+      "sha256": "108582680e5b9fbfd1a1ab98eddbb34aa8756bcca1649dcdede5c9dad5c5a909",
+      "git_blob_sha1": "279eec3bf664db5c52200c2cea11edbea349b7bf"
     },
     {
       "path": "paper/Supplement_Revised.docx",
-      "bytes": 432063,
-      "sha256": "d9446af43b99c0382813fc210871f953742519841aaff760f5fe8948318ddd8c",
-      "git_blob_sha1": "97357671d31ca98706f3878d323c6a3cb9229145"
+      "bytes": 436043,
+      "sha256": "d7d8e007cd8be8f900207f326811977416c07641b6cd047f90e46e2a6935b1f8",
+      "git_blob_sha1": "3b15edf0250eed44f6a585b822dce157dd80393d"
     },
     {
       "path": "README.md",
-      "bytes": 4746,
-      "sha256": "492e1047a986c256451575760ed37ac04a5eab5eaff440a89b03064207c2c1bc",
-      "git_blob_sha1": "af849dad6cdd2974261f5e14651f517d1e7ff161"
+      "bytes": 4805,
+      "sha256": "228a8c756208ad9480f54abc0dd64a3ad4e7f83d58ec7bdb700e31c6328098c2",
+      "git_blob_sha1": "ebe5321b389c331b9e738f32bd069d06b3bb3492"
     },
     {
       "path": "requirements.txt",
@@ -135,9 +141,9 @@
     },
     {
       "path": "RIGHTS_AND_PROVENANCE.md",
-      "bytes": 2035,
-      "sha256": "2ddea1726925a835432f85f85f45c1180a434217d9f0ecc83eb25bc018cb319a",
-      "git_blob_sha1": "cbb0c96512c070ae2cedcc1f5f4b8770b681dad9"
+      "bytes": 2164,
+      "sha256": "e9da58ae3661dc44e91332603d88f850eb246c0333494763da71f5c37daa2645",
+      "git_blob_sha1": "60675076be3e3d5918a0e930b30b963f58fef096"
     },
     {
       "path": "runtime/core/conditional_metrics.py",
@@ -230,5 +236,5 @@
       "git_blob_sha1": "021842b2b4d743d1e7a4db1f5298dd1e49485b04"
     }
   ],
-  "scope": "Public allowlisted snapshot only; manifest does not hash itself"
+  "scope": "Public allowlisted expanded manuscript/inference snapshot only; manifest does not hash itself"
 }

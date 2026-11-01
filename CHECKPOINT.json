@@ -1,9 +1,9 @@
 {
-  "checkpoint_id": "hydrogel-continuation-paper-2026-11-01",
-  "prepared_utc": "2026-11-01T09:31:34.355184+00:00",
+  "checkpoint_id": "hydrogel-continuation-paper-expanded-20261101T0951078954048Z",
+  "prepared_utc": "2026-11-01T10:16:22.457365+00:00",
   "classification": "Author-review draft and runnable frozen inference checkpoint",
-  "paper_main_sha256": "b5da2b32da183159c1b742c520c81f7cc6cf68a1567e235a0dab64847aba1218",
-  "paper_supplement_sha256": "d9446af43b99c0382813fc210871f953742519841aaff760f5fe8948318ddd8c",
+  "paper_main_sha256": "fca05cb0161f18681aab3f7871162b35690ab3e4c63f86ba36d7042fddba2a29",
+  "paper_supplement_sha256": "d7d8e007cd8be8f900207f326811977416c07641b6cd047f90e46e2a6935b1f8",
   "model_sha256": "d72fc262fbae0e6fecc36568f0638166fe95e991bd5f7df100ab1434097d82d1",
   "scientific_runtime": "Original16source/modelhash bindings preserved",
   "new_batch_generalization_confirmed": false,
@@ -11,5 +11,10 @@
   "experimental_savings_measured": false,
   "new_measurements": 0,
   "full_local_history_uploaded": false,
-  "publication_or_journal_acceptance_claimed": false
+  "publication_or_journal_acceptance_claimed": false,
+  "parent_archived_commit": "05b2f221cd34e7ca2913dac10ba0be87bc06d060",
+  "main_pages": 21,
+  "supplement_pages": 9,
+  "manuscript_revision_only": true,
+  "scientific_model_code_and_result_bytes_unchanged": true
 }
