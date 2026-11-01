@@ -1,0 +1,26 @@
+{
+  "actual_utc": "2026-11-01T13:17:30.421078+00:00",
+  "status": "INDEPENDENTLY_AUDITED_EXTERNAL_STRESS_RESULTS",
+  "sources": 4,
+  "native_curves": 46,
+  "analysis_groups": 23,
+  "native_target_positions": 781,
+  "score_rows": 276,
+  "new_physical_experiments": 0,
+  "frozen_material_model_retraining": 0,
+  "anchor_only_OLS_estimates": 46,
+  "source_inspected_not_blind": true,
+  "compatible_new_preparation_batches_certified": false,
+  "independent_calibration_certified": false,
+  "measured_lab_savings": false,
+  "positive_evidence": "Liverpool group-macro probability and point error improvement; group heterogeneity and undercoverage remain.",
+  "negative_evidence": "Candidate CRPS worse than reference GP on the other three sources; dynamic crosslinked alginate severe failure.",
+  "improvements": {
+    "Liverpool_CRPS_relative_to_GP": 0.16347616920059793,
+    "Liverpool_CRPS_relative_to_conditionalG": 0.06809475246084229,
+    "Liverpool_RMSE_relative_to_GP": 0.05848974860528322
+  },
+  "source_results_sha256": "555f39ca076351b063511940f7b2a2a011e47ec9a55b0ce968c905e5f9b8c8d0",
+  "interpretation_correction": "The frozen generic weighting string uses replicate curves; actual meaning is equal native curves/conditions within the declared material analysis group. PLOS concentration variants are not experimental replicates. Numeric values unchanged.",
+  "whole_curve_coverage_meaning": "Frequency all native target positions lie inside their marginal90percent intervals, not a simultaneous90percent band guarantee."
+}

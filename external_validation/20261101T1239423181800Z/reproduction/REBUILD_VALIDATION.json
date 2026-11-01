@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "actual_utc": "2026-11-01T13:28:02.978633+00:00",
+  "review_role": "Builder self-check against original frozen input, not an independent or blinded review.",
+  "status": "pass",
+  "source_map_sha256": "8a7f766edafaaf813ba7dc58fb65daa760df42729b347dcc70793c8f1801ca81",
+  "rebuild_script_sha256": "1a90fb052804f4d5329dcb8692f0321cc992395a1a5c3072a4342ecc5a4df4ba",
+  "frozen_bindings": {
+    "frozen_input_sha256": "b4fdec609115627df63fed1758bf8ee9471c501b00071f31b2575cfe9b43532a",
+    "frozen_protocol_sha256": "348d507321a41b60edf97f1da757f62f0a68c0d926b89696bfa4eeba0e50f4bd"
+  },
+  "source_files_verified": 10,
+  "numeric_source_files_used": 8,
+  "source_groups": 4,
+  "curves": 46,
+  "complete_native_pairs": 1057,
+  "anchors": 276,
+  "targets": 781,
+  "canonical_vector_hashes_matched": 46,
+  "float_hex_scalar_comparisons": 2114,
+  "comparison_tolerance": 0,
+  "source_files_byte_hash_match": true,
+  "reconstructed_minimal_json_sha256": "9101135e6198050ca0e9d24f38e21b3b696b16252dfdbbc53c4905befb20234d",
+  "output_overwrite_refusal_passed": true,
+  "frozen_input_and_protocol_unchanged": true,
+  "fit_prediction_score_download_install_calls": 0,
+  "runtime": {
+    "python": "3.12.14",
+    "xls_reader": "Task-local xlrd2.0.2",
+    "xlsx_reader": "Standard-library zipfile + XML"
+  },
+  "numeric_source_assets_not_for_public_archive": true
+}

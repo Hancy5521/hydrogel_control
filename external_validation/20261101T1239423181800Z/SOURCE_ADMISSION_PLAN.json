@@ -1,0 +1,17 @@
+{
+  "actual_utc": "2026-11-01T12:43:21.5671460+00:00",
+  "stage": "source admission before experiment",
+  "no_new_response_values_read_by_root": true,
+  "excluded_source": "DOI10.1080/17452759.2026.2671497 and mirrors/versions",
+  "rules": [
+    "No old25P/S refit or target access; original shared model unchanged",
+    "Native measured steadyflow curves only; no digitized or generated response labels",
+    "Coordinate-only eligibility: positive unique physical rates within exact frozen support, at least12 native points; six lowest admitted rates are anchors and all remaining within-support points targets",
+    "No target-value performance selection; metadata/physical quality exclusions logged before candidate prediction; hysteresis/replicates not silently collapsed",
+    "Different chemistry or gel state is external transport stress, not compatible new preparation batch",
+    "Point-only PCHIP has no invented predictive intervals; frozen candidate and original referenceGP share anchors; other controls only if fixed lawful models accessible",
+    "Pre-score final protocol/input/sourcehash and frozen prediction receipt required; source inspector response access explicitly recorded",
+    "No calibration or empirical experimental-savings claims without separate real calibration units/resource records"
+  ],
+  "model_sha256": "d72fc262fbae0e6fecc36568f0638166fe95e991bd5f7df100ab1434097d82d1"
+}

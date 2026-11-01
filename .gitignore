@@ -43,3 +43,7 @@ replayed_local/
 software_check_new.json
 synthetic_training_check_new.json
 !reproducibility/replayed_tables/SI_tableS7.csv
+
+# Reviewed derived external-study score tables only
+!external_validation/20261101T1239423181800Z/report/ALL_SOURCE_RESULTS.csv
+!external_validation/20261101T1239423181800Z/report/LIVERPOOL_GROUP_RESULTS.csv

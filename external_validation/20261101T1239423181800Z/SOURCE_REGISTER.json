@@ -1,0 +1,85 @@
+{
+  "actual_utc": "2026-11-01T13:23:41.629438+00:00",
+  "sources": [
+    {
+      "source_doi": "10.1371/journal.pone.0162849",
+      "title": "HA/CMHA solutions",
+      "source_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0162849.s001&type=supplementary",
+      "source_file_sha256": [
+        "51863dc748d71677f7d5d9d4bafb38272e3cc2b3fd80daac7de9f92b7482d9c9"
+      ],
+      "native_curves": 10,
+      "material_analysis_groups": 8,
+      "native_positions": 157,
+      "continuation_targets": 97,
+      "upstream_license_or_terms": "CC BY4.0, original article and author-supplied supporting data; no separate workbook license text exposed",
+      "identity_and_state": "Author-provided averaged native steady-shear responses; ten unique curves, eight material analysis groups. Concentration variants are not replicates.",
+      "source_inspectors_saw_responses": true,
+      "certified_independent_preparation_batches": false,
+      "admitted_input_record_sha256": "3d58ba427d5c25fc08d9b6234115cbf6a1dbbfdadd480e810bdb33f23906c340"
+    },
+    {
+      "source_doi": "10.17638/datacat.liverpool.ac.uk/1296",
+      "title": "GG/peK inks",
+      "source_url": "https://datacat.liverpool.ac.uk/1296/",
+      "source_file_sha256": [
+        "839ef305291fb8a4e9617dd97ae9945e9a03571ba052aa86b32a864068d339ac"
+      ],
+      "native_curves": 15,
+      "material_analysis_groups": 5,
+      "native_positions": 369,
+      "continuation_targets": 279,
+      "upstream_license_or_terms": "CC BY3.0, official file record",
+      "identity_and_state": "Fifteen instrument runs, five nominal compositions; independent preparation identity and most temperatures unknown.",
+      "source_inspectors_saw_responses": true,
+      "certified_independent_preparation_batches": false,
+      "admitted_input_record_sha256": "5ed0d191c1d8c20f3d807b5cb8fe1e9f56f0cd45ed4c2d70052188e2be55b7bd"
+    },
+    {
+      "source_doi": "10.1016/j.matt.2023.01.011",
+      "title": "Granular hydrogels",
+      "source_url": "https://raw.githubusercontent.com/connor-verheyen/DataDrivenGranularHydrogels/v1.0/data/Dataset_CompilingAllRheology.xlsx",
+      "source_file_sha256": [
+        "c3d600596f6a38ed6d6fdbc19a94a141de06dcc773a4f7a1834361cb997bcde5"
+      ],
+      "native_curves": 16,
+      "material_analysis_groups": 5,
+      "native_positions": 296,
+      "continuation_targets": 200,
+      "upstream_license_or_terms": "Zenodo other-open, GitHub no named LICENSE; no raw arrays/workbook redistributed",
+      "identity_and_state": "Sixteen preselected forward runs, five conservative related groups; state/operator differs from original precursor inks.",
+      "source_inspectors_saw_responses": true,
+      "certified_independent_preparation_batches": false,
+      "admitted_input_record_sha256": "887c2415c0ad8ac57690f6b1b0800e4818319bae3ff28d029c04090d965b0db6"
+    },
+    {
+      "source_doi": "10.34894/HBKOLJ",
+      "title": "Dynamic crosslinked alginate",
+      "source_url": "https://doi.org/10.34894/HBKOLJ",
+      "source_file_sha256": [
+        "3e90415f7e098458267ccbd156828242f67dbf6ea264c0dfbaf9e12aea500b3c",
+        "b180df82d76231b88dd713b0e3d44bb245aa3031f957d6bcc09b2bc7bbe6beda",
+        "ba3f26e8aac57d9db425a217c2ec0e34e3ccf1fae373b091944ecb452c350360",
+        "bc1f79b87ca135b86e208bfc2d46d89abd573f4646c93cf375e766d0059b2fe3",
+        "ee3d04d256794ad6440cfdc54a2debf6894dfc0e79cdf5a7e483c34a6006d6a4"
+      ],
+      "native_curves": 5,
+      "material_analysis_groups": 5,
+      "native_positions": 235,
+      "continuation_targets": 205,
+      "upstream_license_or_terms": "CC BY4.0, official Dataverse record",
+      "identity_and_state": "Five forward native flow sweeps; one nonmonotone rate trajectory excluded before forecasts. Stress-controlled flow after time sweep, not precursor state.",
+      "source_inspectors_saw_responses": true,
+      "certified_independent_preparation_batches": false,
+      "admitted_input_record_sha256": "c29a484865b882b53e76e809185e4772a322ca477bf2a1c04bfd0775404ca17d"
+    }
+  ],
+  "original_development_source_excluded": "10.1080/17452759.2026.2671497 and Zenodo19602891 versions/mirrors",
+  "search_scope": "Root five broad/new queries plus three delegated bounded lanes. Not a Google Scholar login, full-paper quota or exhaustive global search claim.",
+  "unusable_or_unused_leads": [
+    "TU Wien acetylated alginate: oscillatory/pH data, no admitted steady flow",
+    "Manchester Carbopol: auxiliary microgel source not mixed into four-source protocol",
+    "OpenML two actual hydrogel/rheology filtered requests: no matches",
+    "Other access-limited publisher/metadata endpoints retained as unknown and not retried"
+  ]
+}

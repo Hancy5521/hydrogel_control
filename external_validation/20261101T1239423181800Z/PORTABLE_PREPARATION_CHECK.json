@@ -1,0 +1,18 @@
+{
+  "actual_utc": "2026-11-01T13:39:23.3766168+00:00",
+  "status": "PASS_PREPARATION_ONLY",
+  "source_files": 8,
+  "curves": 46,
+  "source_vectors_hash_verified": 46,
+  "native_pairs": 1057,
+  "new_download_calls": 0,
+  "new_material_forecast_calls": 0,
+  "new_material_score_calls": 0,
+  "model_training_calls": 0,
+  "fetch_existing_path_tested": true,
+  "fetch_new_network_path_tested_in_this_helper": false,
+  "full_replay_driver_prepare_only_tested": true,
+  "source_cell_map_sha256": "8a7f766edafaaf813ba7dc58fb65daa760df42729b347dcc70793c8f1801ca81",
+  "final_replay_script_sha256": "109e4e31fa22c7417cb4e35bacad42e336e965cedf8bc95921955f0cba7afb11",
+  "frozen_model_byte_guard_positive_and_negative_pass": true
+}

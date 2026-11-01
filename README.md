@@ -1,5 +1,7 @@
 # Hydrogel curve continuation
 
+Additional checkpoint: [four-source external evaluation](external_validation/20261101T1239423181800Z/README.md). The original manuscript, model and development results remain unchanged; new external gains and failures are reported separately.
+
 This repository archives the **2026-11-01 expanded author-review checkpoint** of a focused hydrogel precursor-ink study: two fixed local curvature contrasts receive a shared Gaussian correction, while the complete high-dimensional reference residual is retained. The main intended use is continuation of a flow curve from six low-rate anchors.
 
 论文与程序存档，非已发表或保证录用的论文。本次固定保存扩充版21页英文主文、11页补充材料及其推断程序和冻结权重。基础Gaussian方法有既有先例；研究贡献是特定水凝胶续接任务的表示与训练适配，以及对应的受控证据。

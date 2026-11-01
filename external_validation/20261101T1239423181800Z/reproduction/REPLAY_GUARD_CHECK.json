@@ -1,0 +1,11 @@
+{
+  "actual_utc": "2026-11-01T13:38:41.792031+00:00",
+  "status": "PASS",
+  "case": "A separate fixture with one extra whitespace byte in SHARED_MODEL; original model untouched",
+  "replay_exit_code": 1,
+  "refused_before_output_creation": true,
+  "model_fit_calls": 0,
+  "predictions": 0,
+  "scores": 0,
+  "final_replay_script_sha256": "109e4e31fa22c7417cb4e35bacad42e336e965cedf8bc95921955f0cba7afb11"
+}

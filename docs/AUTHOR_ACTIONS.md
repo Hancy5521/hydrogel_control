@@ -17,3 +17,8 @@ Independent calibration needs real units reserved from model selection and a dec
 Measured experimental savings needs actual full-scan versus sparse-workflow resource records at comparable quality. Use the empty measurement/resource templates; include preparation, equilibration, cleaning, failures and validation-truth collection. Neither the ratio 6/39 nor inference speed measures laboratory savings.
 
 These extensions are not universal prerequisites for a narrow retrospective methods submission. No sample size, error tolerance, wet-lab budget or acceptance guarantee is invented in this handoff. Review the current manuscript first and reopen only the evidence needed for the claim you choose.
+
+
+## New public-source evidence now available
+
+The external_validation/20261101T1239423181800Z/ checkpoint adds source-inspected fixed-model transport evidence from46 native curves andfour sources. It partially fills external-effect and coverage-diagnostic evidence; it does not certify same-formulation preparation batches, independent calibration or measured laboratory savings. Review its complete source-by-source gains and failures before choosing how to integrate the supplied English addendum into the manuscript. The current Word files remain unchanged. This supersedes any broad reading that no external-data computation could be attempted; the stronger author-dependent claims remain separately scoped.

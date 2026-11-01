@@ -26,13 +26,24 @@
     },
     {
       "name": "Reviewed manuscript with public S7 replay and author handoff",
-      "commit": null,
+      "commit": "6335ab7790363f4addb12b153093f96c1a5cb3a5",
       "archive_branch": "archive/submission-review-2026-11-01",
       "pages": [
         21,
         11
       ],
       "commit_resolution": "Use the externally verified delivery receipt or resolve this retained named checkpoint."
+    },
+    {
+      "name": "Four-source external material assessment and portable source reconstruction",
+      "commit": null,
+      "archive_branch": "archive/external-data-2026-11-01",
+      "parent_commit": "6335ab7790363f4addb12b153093f96c1a5cb3a5",
+      "manuscript_and_original_model_unchanged": true,
+      "new_external_native_curves": 46,
+      "analysis_groups_not_certified_batches": 23,
+      "all_four_sources_and_failures_retained": true,
+      "commit_resolution": "Resolve the retained branch or externally verified delivery receipt."
     }
   ]
 }
