@@ -1,0 +1,69 @@
+{
+  "scope": "Frozen science andmodels copied byte-for-byte; confirmation utilities do not refit or change the distribution",
+  "bindings": [
+    {
+      "file": "runtime/core/conditional_metrics.py",
+      "sha256": "3332508bfe887a13550333761a49e8d130a5b7611f166d9d1040b930806bc461"
+    },
+    {
+      "file": "runtime/core/conditional_sampler.py",
+      "sha256": "f5e7dbb337a9a9a2043cdbdbd7922ce7ce308928a7151a0867d47a553ef6067f"
+    },
+    {
+      "file": "runtime/core/coordinate_reference.py",
+      "sha256": "bc93acc707cb26943cc065545254fc9fed27601e8d0f04c4a23dbb7407cf43d3"
+    },
+    {
+      "file": "runtime/core/coordinate_reference_scaled.py",
+      "sha256": "4c0fc9a31163ab1c9703748052af4eb348afad39134813d5193f460ddb2dbe85"
+    },
+    {
+      "file": "runtime/core/energy_correction.py",
+      "sha256": "d2e1743c04f5a7b7b0bb88927a5a49326f580bc26de768a4376f0fcf679593c6"
+    },
+    {
+      "file": "runtime/core/gaussian_control.py",
+      "sha256": "3ddc273c8d231162e5978d098591cb3ccba85d2d450e837976860a06c073d8e7"
+    },
+    {
+      "file": "runtime/core/joint_code_gaussian.py",
+      "sha256": "0c8a57c1bdf96e1c880ffd1ba2258e1b379952b844e960a7c67d6cdcdc65e299"
+    },
+    {
+      "file": "runtime/core/latent_reference.py",
+      "sha256": "c84012ba3c0fe08dbc0cc3cd69a9901e770649f2fab7744a05a0fbc2a5fc6e96"
+    },
+    {
+      "file": "runtime/core/local_shape.py",
+      "sha256": "652797e34e7299edd31a8b494287ad8ab36aca9cdcdcc7b455dc614201231d3b"
+    },
+    {
+      "file": "runtime/core/marginal_scoring.py",
+      "sha256": "f757a7fd982ec45bbe789fe97c5b414e318dfcb3604a2a029118bb24b34b0102"
+    },
+    {
+      "file": "runtime/core/masked_objective.py",
+      "sha256": "a19be754e8e5cceeee47119f826b63e9e69ec6c8cfe02cad6103208d5cfeba32"
+    },
+    {
+      "file": "runtime/core/trial_geometry.py",
+      "sha256": "8c5ae7984e33d573cb8fbc84e53ae9dfade7aee85862269ab1c1de9e21269ba6"
+    },
+    {
+      "file": "runtime/deployment/generate_curve.py",
+      "sha256": "bbc1aeafd30e43ed50ed686d1d6401c5c00406a2204a4884eea7b76a87412bf0"
+    },
+    {
+      "file": "runtime/program/complete_curve.py",
+      "sha256": "6b64e3eb7ddb3f55c05a00d36d1568457e816cb16876dd2e0b9bef82edb3ecd3"
+    },
+    {
+      "file": "models/BASELINES_MODEL.json",
+      "sha256": "9f219fca37f3d39802a55a15049d5c42dff376791e23015ddfe5ec46aedfbb5c"
+    },
+    {
+      "file": "models/SHARED_MODEL.json",
+      "sha256": "d72fc262fbae0e6fecc36568f0638166fe95e991bd5f7df100ab1434097d82d1"
+    }
+  ]
+}

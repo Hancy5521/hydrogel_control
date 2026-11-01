@@ -1,0 +1,23 @@
+# This public repository uses an explicit checkpoint allowlist.
+.env
+.env.*
+*.pem
+*.key
+**/__pycache__/
+*.py[cod]
+data/
+raw_data/
+private/
+logs/
+artifacts/
+generated/
+demo_generated.json
+*.npz
+*.npy
+*.zip
+*.tar
+*.gz
+*.csv
+!docs/evidence/MEASUREMENT_RUNS_EMPTY.csv
+!docs/evidence/RESOURCE_EVENTS_EMPTY.csv
+~$*.docx

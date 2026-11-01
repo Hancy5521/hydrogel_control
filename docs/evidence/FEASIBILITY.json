@@ -1,0 +1,169 @@
+{
+  "actual_utc": "2026-11-01T09:18:40.739648+00:00",
+  "Asia_Shanghai": "2026-11-01T17:18:40.739648+08:00",
+  "status": "ESSENTIAL_READINESS_AUDIT_COMPLETE_NO_NEW_EMPIRICAL_CONFIRMATION",
+  "question": "Which stronger claims can actually be completed now while retaining the current hydrogel continuation paper?",
+  "preserve_current_manuscript_and_model": true,
+  "existing_confirmation_spec_status": "WAITING_ELIGIBLE_SOURCE_AND_AUTHOR_DESIGN_DECISIONS",
+  "new_admitted_same_domain_units_found_in_reviewed_records": 0,
+  "scope_limit": "This reviews the admitted current records and existing tooling, not a global proof that no compatible public data exist. Previously closed source searches were not repeated.",
+  "claims": [
+    {
+      "claim": "Generalization to genuinely new compatible formulations or independent preparation batches",
+      "empirical_status": "NOT_ESTABLISHED_AND_NOT_EXECUTABLE_WITH_CURRENT_ADMITTED_INPUTS",
+      "objective_missing": [
+        "Genuinely unconsumed compatible native flow curves",
+        "Reliable formulation/batch/aliquot/run relationships and measurement state",
+        "Approved future sampling unit, coordinate rule, endpoint and practical tolerance/budget"
+      ],
+      "existing_preparation": [
+        "SOURCE_CANDIDATES and MATERIAL_STATE_EVIDENCE state admission rules and remaining identity gaps",
+        "coordinates.py constructs a plan without eta",
+        "freeze_predictions.py records candidate/GP/conditional-Gaussian laws from six anchors only, binding hashes and UTC",
+        "CONFIRMATION_SPEC and EXECUTION_PROTOCOL distinguish new formulations from new batches and independent units"
+      ],
+      "readiness_boundary": "The snapshot script does not certify source identity or preregistration. A scorer/file adapter must be bound to the actual admitted format after real input roles are defined; no fictitious scoring of absent data.",
+      "not_substitutes": [
+        "New masks/splits of consumed25P",
+        "Opening protectedS hidden outcomes",
+        "A mirror/newDOI alias of the same original curves",
+        "A repository archive of already-consumed data",
+        "Generated curves or resampled rows"
+      ],
+      "reopen_only_when": "An actual new source/measurement record with sufficient identity and state arrives. Then register an actual-time protocol and freeze all chosen methods before target reveal."
+    },
+    {
+      "claim": "Empirically reliable calibrated uncertainty",
+      "empirical_status": "NOT_ESTABLISHED_NO_INDEPENDENT_CALIBRATION_UNITS",
+      "objective_missing": [
+        "Data with a calibration role separated from model development and final confirmation",
+        "An approved coverage object, such as marginal positions or the whole continuation segment",
+        "A plausible sampling/exchangeability unit and compatible measurement conditions"
+      ],
+      "existing_preparation": [
+        "Native Gaussian quantiles, coverage, width, interval score and difficultP0 are already reported",
+        "One fixeddf10 Student-t sensitivity analysis is already complete; no df search or default replacement",
+        "EXECUTION_PROTOCOL section8 already describes separate calibration roles and an optional curvewise split-conformal design"
+      ],
+      "readiness_boundary": "No calibration algorithm has been fitted or validated on real held calibration units. A calibration reader/implementation should follow an approved actual unit/coverage design, rather than silently calibrate consumed25P.",
+      "not_substitutes": [
+        "Analytic quantiles",
+        "High pooled marginal coverage",
+        "VS1 or joint log density",
+        "Posthoc scale tuning on25P",
+        "Fitting intervals on final confirmation targets",
+        "One improvedP0 coverage count"
+      ],
+      "safe_current_decision": "Retain the frozen native law and the honest coverage limitation; do not add another tuned calibration head to this paper merely to remove the caveat.",
+      "reopen_only_when": "Compatible genuinely separate calibration units and a fixed target coverage design become available. Adjusted bands do not automatically define a calibrated full joint density."
+    },
+    {
+      "claim": "Actual experimental time, material or monetary savings",
+      "empirical_status": "NOT_ESTABLISHED_NO_PAIRED_REAL_WORKFLOW_RESOURCE_RECORDS",
+      "objective_missing": [
+        "Actually executed full-scan and sparse-anchor workflows with matched relevant quality requirements",
+        "Raw phase timestamps, instrument occupancy, operator time, material use and failure/retest records",
+        "State/scan-order and independent-unit mapping, with validation-only truth acquisition identified separately"
+      ],
+      "existing_preparation": [
+        "The source method record cites a nominal360s full steady-viscosity scan, not current per-run resource observations",
+        "The paper already avoids claiming84.6percent saving from masking33of39positions"
+      ],
+      "readiness_boundary": "Point counts and nominal protocol duration cannot reconstruct actual savings. Preparation, equilibration, travel through intermediate shear rates, cleaning and repeat failures may remain even when few values are retained.",
+      "not_substitutes": [
+        "6/39 measurement-count ratios",
+        "Offline masking of a fully acquired curve",
+        "A model inference benchmark or GPUtime",
+        "The original paper nominal360s alone",
+        "A virtual microscopic experiment"
+      ],
+      "safe_increment_created_now": "Header-only two-file measurement/resource-event template with a data dictionary and accounting rules. It contains zero observations, approvedN or claimed savings.",
+      "reopen_only_when": "Real comparable workflow records and quality tolerance are supplied. Report study validation resources and intended deployment resources separately, with all attempted units and reruns."
+    }
+  ],
+  "minimum_author_input_when_ready": [
+    "For a new-batch claim: an actual compatible native curve source plus formulation/batch/run identity and state, with known prior-use role.",
+    "For calibration: separately assigned compatible units and the intended marginal/whole-curve coverage object.",
+    "For savings: actual workflow and phase-resource records for an honest comparison, plus acceptable material prediction error."
+  ],
+  "not_repeated": [
+    "OldP/S fits or scores",
+    "Feature/df/prior/bound searches",
+    "Previously closed source downloads/searches",
+    "Existing coordinate/freeze software examples",
+    "Historical precision scenarios or synthetic calibration demonstrations"
+  ],
+  "new_files_are_preparation_not_results": true,
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "new_material_scores": 0,
+  "new_calibration_fits": 0,
+  "new_material_units": 0,
+  "S_hidden_values_opened": false,
+  "network_queries_or_dataset_downloads": 0,
+  "paper_or_model_modified": false,
+  "source_evidence": [
+    {
+      "logical_id": "current_recovery_record",
+      "sha256": "979407a6a06613ba812e0e854e8a6dd56ca935e3d74cad99b0a2539bc725fc46",
+      "read_depth": "Existing local preparation/evidence text or source, read-only; no source response matrix or new external dataset opened"
+    },
+    {
+      "logical_id": "paper_claim_matrix",
+      "sha256": "a7c4f1c60b47c46e115d512600eb0fa790146468e4954ae81186492e112243da",
+      "read_depth": "Existing local preparation/evidence text or source, read-only; no source response matrix or new external dataset opened"
+    },
+    {
+      "logical_id": "confirmation_spec",
+      "sha256": "8d998cbdab0e7649ea21155fb2c0652445c1c97c4beddf151371eb08b4b6b75b",
+      "read_depth": "Existing local preparation/evidence text or source, read-only; no source response matrix or new external dataset opened"
+    },
+    {
+      "logical_id": "confirmation_plan",
+      "sha256": "86c1e61ab7c4fb62a93f7b77f3b144d3d97d3cd95dab3ac72d2fd0eea519e668",
+      "read_depth": "Existing local preparation/evidence text or source, read-only; no source response matrix or new external dataset opened"
+    },
+    {
+      "logical_id": "execution_protocol",
+      "sha256": "0ce026ef5b6d01ac5cc8ea45fb849ede8d1beaf8aeb802d54b202878cc878612",
+      "read_depth": "Existing local preparation/evidence text or source, read-only; no source response matrix or new external dataset opened"
+    },
+    {
+      "logical_id": "author_decisions",
+      "sha256": "50b73b92d0b967d3d1636d6c023806a55ff4f329492121b06c2c1ab1e26b14b2",
+      "read_depth": "Existing local preparation/evidence text or source, read-only; no source response matrix or new external dataset opened"
+    },
+    {
+      "logical_id": "coordinates_tool",
+      "sha256": "e3f9ec5ac6f50892432fb9e2dab378311cfe49d38433277d6d670d238c835fa6",
+      "read_depth": "Existing local preparation/evidence text or source, read-only; no source response matrix or new external dataset opened"
+    },
+    {
+      "logical_id": "frozen_prediction_tool",
+      "sha256": "ad5066954d42538f01151a80ab6995e49fee51969a7571646b9be03cc3eb0e8d",
+      "read_depth": "Existing local preparation/evidence text or source, read-only; no source response matrix or new external dataset opened"
+    },
+    {
+      "logical_id": "material_state_record",
+      "sha256": "f1d33936dc00ce5d9f65ab07492ee8e77e7ef6695d30a50826a03265957ea7bd",
+      "read_depth": "Existing local preparation/evidence text or source, read-only; no source response matrix or new external dataset opened"
+    },
+    {
+      "logical_id": "source_candidates",
+      "sha256": "f2208ad14b259626b881c5616ee3cd86e449d26b14e67b9eab9f85e95d0338dc",
+      "read_depth": "Existing local preparation/evidence text or source, read-only; no source response matrix or new external dataset opened"
+    },
+    {
+      "logical_id": "workflow",
+      "sha256": "f99eebb15c52a59a5234fb815d9687e0f0bdbaf777abe66c00bcdc1e1a8b5bbc",
+      "read_depth": "Existing local preparation/evidence text or source, read-only; no source response matrix or new external dataset opened"
+    },
+    {
+      "logical_id": "frozen_package_readme",
+      "sha256": "e0f89b6c663cd9bd8b58a6313bf7c64844b30a434c6d65a1f7e7d3e0ccc6b10b",
+      "read_depth": "Existing local preparation/evidence text or source, read-only; no source response matrix or new external dataset opened"
+    }
+  ],
+  "paper_readiness_interpretation": "The current evidence can support a coherent, bounded application-method manuscript after ordinary author factual, availability and editorial review. Independent new wet experiments are not a universal submission prerequisite; they are needed to support stronger new-batch, calibration or laboratory-saving claims if those claims are made. Suitability and acceptance remain journal judgments.",
+  "GitHub_role": "A versioned archive can preserve the current manuscript/code and support later traceability. It is not new materials evidence, calibration or a laboratory-cost experiment."
+}

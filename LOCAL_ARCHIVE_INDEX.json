@@ -1,0 +1,19 @@
+{
+  "scope": "Checksums witness retained local originals; they are NOT claims these ZIPs are remotely backed up. No local machine paths published.",
+  "archives": [
+    {
+      "file": "hydrogel_controls_20261101T0641198159051Z_r2_full.zip",
+      "bytes": 568338437,
+      "sha256": "a620ba6927ba54f6ee8e39aba09f986873bb8b8d7adb93c3f56d6c4af5ee24c1",
+      "role": "Complete local scientific resources and control-study archive",
+      "hosted_in_this_repository": false
+    },
+    {
+      "file": "hydrogel_paper_consolidated_20261101T073817581533Z_r2.zip",
+      "bytes": 10557859,
+      "sha256": "b169431e0257e728c099fd13efe361dc1d948a51dc0b789a4aa19052906a29be",
+      "role": "Complete local paper/new-diagnostic increment",
+      "hosted_in_this_repository": false
+    }
+  ]
+}

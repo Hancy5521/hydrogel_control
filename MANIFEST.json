@@ -1,0 +1,234 @@
+{
+  "checkpoint": "hydrogel-continuation-paper-2026-11-01",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 48,
+      "sha256": "ce68134a43936495621968e393c93a097ef981ea676078eb24aea5399ce8b4a0",
+      "git_blob_sha1": "f7276c078c7021211d374781d69be0428ee776f0"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 314,
+      "sha256": "1b33e91d5711f1711b576859501c393f22b86bdd7afe081db595b9675d64ef40",
+      "git_blob_sha1": "99af2bbadaffcc0491574f47e2a682f76b9c1909"
+    },
+    {
+      "path": "CHECKPOINT.json",
+      "bytes": 802,
+      "sha256": "72050a2ae18f3a38bfc81847a3bfb6e421c9da11e97b3cbe9a1e129cee343ad1",
+      "git_blob_sha1": "7a18128c9fb18a517c384544b056de896f374c23"
+    },
+    {
+      "path": "docs/evidence/FEASIBILITY.json",
+      "bytes": 11139,
+      "sha256": "de20f9d75bacbc0499223b164a64a17ebbda72c65ab9dc132e97a5e98fdc83ed",
+      "git_blob_sha1": "1096e5d93bf8cb5357f089714a1025960c79507d"
+    },
+    {
+      "path": "docs/evidence/FEASIBILITY_ZH.txt",
+      "bytes": 4310,
+      "sha256": "00096b6d95c0d1e3b3a1819aa4b4e7b1b25e9ab30c81947642db46b13dda8a69",
+      "git_blob_sha1": "abed84fa626587548ab868dba9e42a625849cbd2"
+    },
+    {
+      "path": "docs/evidence/MEASUREMENT_RUNS_EMPTY.csv",
+      "bytes": 285,
+      "sha256": "63970b52e918410ac1a373e481de6e1ceb7dec2bbafba82345a5fc17623ff134",
+      "git_blob_sha1": "45eab72c8c66c1546584ba11694e93ed78f65545"
+    },
+    {
+      "path": "docs/evidence/RESOURCE_EVENTS_EMPTY.csv",
+      "bytes": 167,
+      "sha256": "59d2ca38cdc503f1f127c55379081e34e5ec5a4e010d0c1efc457f64ac9a6517",
+      "git_blob_sha1": "a723494533636924b096d15da1720b644ff20424"
+    },
+    {
+      "path": "docs/evidence/RESOURCE_RECORD_SCHEMA.json",
+      "bytes": 5653,
+      "sha256": "b7b799837c91e711f208c9801e59c943b796dd94aed0ceaabaea279215cbb2de",
+      "git_blob_sha1": "5913224c8479a200cefb4db05e1a9c11686ea41c"
+    },
+    {
+      "path": "examples/README.md",
+      "bytes": 248,
+      "sha256": "ff7bbd8155658e12897caf66aff93daf6a5ddded504beebb826698522947a68b",
+      "git_blob_sha1": "a0f326dedc5a16763936fd96d040bdb5f6796ce0"
+    },
+    {
+      "path": "examples/SYNTHETIC_ANCHORS.json",
+      "bytes": 946,
+      "sha256": "b66d5146cc79756d21e52d6efcb941b60fab885e5557843daee825dc988206fb",
+      "git_blob_sha1": "ca243e528c32bc2759a3a10f042f7c8e261ad9df"
+    },
+    {
+      "path": "LOCAL_ARCHIVE_INDEX.json",
+      "bytes": 784,
+      "sha256": "12925e23d2c6905b231350ecbdf48893a742af6f4d4c9f63e478fc25eb05eb3c",
+      "git_blob_sha1": "53752962722c9281a268a1f746ff899299b498ad"
+    },
+    {
+      "path": "MODEL_CARD.md",
+      "bytes": 2170,
+      "sha256": "d6cd9000c60e2cd47fc45e99efff8a6846df5cf44994dcb724bd45c75a227e6e",
+      "git_blob_sha1": "bf376f278dd7253b5db08f9a1f46bf0ea7d5aa82"
+    },
+    {
+      "path": "models/BASELINES_MODEL.json",
+      "bytes": 5340,
+      "sha256": "9f219fca37f3d39802a55a15049d5c42dff376791e23015ddfe5ec46aedfbb5c",
+      "git_blob_sha1": "35c55fb308f2d9d959a2dd2dfb8f149bf1191a60"
+    },
+    {
+      "path": "models/RUNTIME_BINDINGS.json",
+      "bytes": 2560,
+      "sha256": "b4d15d6fda36857d11cf64ec578eba3a8aadc13db20a4dd2d2f22cf62deb76df",
+      "git_blob_sha1": "2ef2f9a26f01652f585ab8d15bb1e72122ee238e"
+    },
+    {
+      "path": "models/SHARED_MODEL.json",
+      "bytes": 4673,
+      "sha256": "d72fc262fbae0e6fecc36568f0638166fe95e991bd5f7df100ab1434097d82d1",
+      "git_blob_sha1": "99e689405f2e4bfb2045cff472c3c97311d540a6"
+    },
+    {
+      "path": "paper/figures/NEW_CONTROLS.pdf",
+      "bytes": 17681,
+      "sha256": "1cabcb6192e8bdad7b6d7a5756c99262ecaece2641eb148c38ea0fe6819a6ac7",
+      "git_blob_sha1": "5ec1ba82e1b964c91806dacac110842d40860dfb"
+    },
+    {
+      "path": "paper/figures/NEW_CONTROLS.png",
+      "bytes": 186009,
+      "sha256": "ca19d9e78567bf861e689c439a74a2b4512fefe18f15769f9fbdbe1f39e0112f",
+      "git_blob_sha1": "28a109f414b30cf75b6789947525d41efa459132"
+    },
+    {
+      "path": "paper/Hydrogel_Continuation_English_Revised.docx",
+      "bytes": 604704,
+      "sha256": "b5da2b32da183159c1b742c520c81f7cc6cf68a1567e235a0dab64847aba1218",
+      "git_blob_sha1": "c7e03eb9c105fdcd63f84e6c4f6da3645a6a559a"
+    },
+    {
+      "path": "paper/Supplement_Revised.docx",
+      "bytes": 432063,
+      "sha256": "d9446af43b99c0382813fc210871f953742519841aaff760f5fe8948318ddd8c",
+      "git_blob_sha1": "97357671d31ca98706f3878d323c6a3cb9229145"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4746,
+      "sha256": "492e1047a986c256451575760ed37ac04a5eab5eaff440a89b03064207c2c1bc",
+      "git_blob_sha1": "af849dad6cdd2974261f5e14651f517d1e7ff161"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 51,
+      "sha256": "e4dcee633db95f425da951f183327eb8dd77cfd27ddd2dee05d004cd4f13e576",
+      "git_blob_sha1": "9e4710ae38b393547da37508c933162fddf17d54"
+    },
+    {
+      "path": "results/SUMMARY.json",
+      "bytes": 11980,
+      "sha256": "d2b75551b0f58ac272ec3890ddab754922a179617f66a70698ee86abd49e85ad",
+      "git_blob_sha1": "908e06962e8ad7c01d405c111ddc9d8daf68d354"
+    },
+    {
+      "path": "RIGHTS_AND_PROVENANCE.md",
+      "bytes": 2035,
+      "sha256": "2ddea1726925a835432f85f85f45c1180a434217d9f0ecc83eb25bc018cb319a",
+      "git_blob_sha1": "cbb0c96512c070ae2cedcc1f5f4b8770b681dad9"
+    },
+    {
+      "path": "runtime/core/conditional_metrics.py",
+      "bytes": 2874,
+      "sha256": "3332508bfe887a13550333761a49e8d130a5b7611f166d9d1040b930806bc461",
+      "git_blob_sha1": "7d0f6e0c6ff934ad72ff547ca1e4b0a52e02725c"
+    },
+    {
+      "path": "runtime/core/conditional_sampler.py",
+      "bytes": 1864,
+      "sha256": "f5e7dbb337a9a9a2043cdbdbd7922ce7ce308928a7151a0867d47a553ef6067f",
+      "git_blob_sha1": "ba54786271b184f9d39d188627c3e2b1721c9f0f"
+    },
+    {
+      "path": "runtime/core/coordinate_reference.py",
+      "bytes": 14597,
+      "sha256": "bc93acc707cb26943cc065545254fc9fed27601e8d0f04c4a23dbb7407cf43d3",
+      "git_blob_sha1": "1a26c6553c03751adac564a17116cd71550507d8"
+    },
+    {
+      "path": "runtime/core/coordinate_reference_scaled.py",
+      "bytes": 2388,
+      "sha256": "4c0fc9a31163ab1c9703748052af4eb348afad39134813d5193f460ddb2dbe85",
+      "git_blob_sha1": "2fb3e709adeb04d5e73145e65cdad31fac98e008"
+    },
+    {
+      "path": "runtime/core/energy_correction.py",
+      "bytes": 3033,
+      "sha256": "d2e1743c04f5a7b7b0bb88927a5a49326f580bc26de768a4376f0fcf679593c6",
+      "git_blob_sha1": "4dd864c6372af59c2272136e0b935fe289c32f1b"
+    },
+    {
+      "path": "runtime/core/gaussian_control.py",
+      "bytes": 23963,
+      "sha256": "3ddc273c8d231162e5978d098591cb3ccba85d2d450e837976860a06c073d8e7",
+      "git_blob_sha1": "419eac80c134a08527ab00e10d251f22c3cd8456"
+    },
+    {
+      "path": "runtime/core/joint_code_gaussian.py",
+      "bytes": 8958,
+      "sha256": "0c8a57c1bdf96e1c880ffd1ba2258e1b379952b844e960a7c67d6cdcdc65e299",
+      "git_blob_sha1": "ac3995b4fdfd455de135b8454bcea25cd6ded327"
+    },
+    {
+      "path": "runtime/core/latent_reference.py",
+      "bytes": 7841,
+      "sha256": "c84012ba3c0fe08dbc0cc3cd69a9901e770649f2fab7744a05a0fbc2a5fc6e96",
+      "git_blob_sha1": "f697775538e0ab30894edc7003730eaf4030eb3d"
+    },
+    {
+      "path": "runtime/core/local_shape.py",
+      "bytes": 5530,
+      "sha256": "652797e34e7299edd31a8b494287ad8ab36aca9cdcdcc7b455dc614201231d3b",
+      "git_blob_sha1": "e2593b0fdd8f74d5ea7b97a633bbd48945eaf213"
+    },
+    {
+      "path": "runtime/core/marginal_scoring.py",
+      "bytes": 11014,
+      "sha256": "f757a7fd982ec45bbe789fe97c5b414e318dfcb3604a2a029118bb24b34b0102",
+      "git_blob_sha1": "091b195a696d950e10e1b6870501438959d0c864"
+    },
+    {
+      "path": "runtime/core/masked_objective.py",
+      "bytes": 2666,
+      "sha256": "a19be754e8e5cceeee47119f826b63e9e69ec6c8cfe02cad6103208d5cfeba32",
+      "git_blob_sha1": "44e9ea63fa40e23e97e4ae07507a08dbd8a5c85c"
+    },
+    {
+      "path": "runtime/core/trial_geometry.py",
+      "bytes": 1311,
+      "sha256": "8c5ae7984e33d573cb8fbc84e53ae9dfade7aee85862269ab1c1de9e21269ba6",
+      "git_blob_sha1": "1d2f48947a40984f79c49f2713f548cd3b98e6e9"
+    },
+    {
+      "path": "runtime/deployment/generate_curve.py",
+      "bytes": 6112,
+      "sha256": "bbc1aeafd30e43ed50ed686d1d6401c5c00406a2204a4884eea7b76a87412bf0",
+      "git_blob_sha1": "15843050bb9a656041d1e1e6485aa4c04b54921f"
+    },
+    {
+      "path": "runtime/program/complete_curve.py",
+      "bytes": 13529,
+      "sha256": "6b64e3eb7ddb3f55c05a00d36d1568457e816cb16876dd2e0b9bef82edb3ecd3",
+      "git_blob_sha1": "916ec18b5b54e1c209d61f070f7e48d8acde584d"
+    },
+    {
+      "path": "verify_checkpoint.py",
+      "bytes": 1344,
+      "sha256": "85a5aacbacfbe2c018b35f6b3f0e8633dea2f8cb08de4819e6d5751cccadb451",
+      "git_blob_sha1": "021842b2b4d743d1e7a4db1f5298dd1e49485b04"
+    }
+  ],
+  "scope": "Public allowlisted snapshot only; manifest does not hash itself"
+}

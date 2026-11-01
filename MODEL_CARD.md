@@ -1,0 +1,11 @@
+# Frozen hydrogel continuation model
+
+The active candidate is `same_local_code_jointGaussian_v1`, using two fixed finite-scale curvature contrasts and a five-parameter Gaussian code distribution. The reference residual is retained. Each anchor layout conditions the same corrected joint law. The frozen source and model bindings in `models/RUNTIME_BINDINGS.json` remain unchanged.
+
+The model is intended for compatible reported ALG-Ph/HA-Ph hydrogel precursor-ink flow curves. It does not infer new chemistry, diagnose physical mechanisms, enforce monotonicity or claim transfer to every polymer. Inputs are shear rate in s^-1 and viscosity in Pa s; the statistical response is natural-log viscosity. The frozen global coordinate support is approximately 0.0127877 to 754.5143 s^-1. Continuation is beyond the current curve's anchors, inside that global support.
+
+Exactly six distinct positive anchors are accepted. A queried coordinate identical to an anchor returns that known value exactly; it does not represent a new measurement replicate. Unknown coordinates are sampled jointly through the full conditional covariance. `eta_analytic_*` are analytic marginal lognormal quantiles; the legacy unqualified percentile fields are finite-sample Monte Carlo quantiles. Neither constitutes demonstrated calibration. Conditional log means exponentiate to medians, not arithmetic mean viscosities.
+
+The report-discrepancy nugget is statistical and is not certified instrument noise. Code-parameter uncertainty is not separately integrated. Two parameters remain at their fixed constrained bounds. Current marginal coverage is heterogeneous, and a difficult middle-gap case covers 8/33 targets. The model should not be treated as a validated measurement-substitution or autonomous acquisition policy.
+
+The model file here is a full-data deployment fit, not the 25 separate outer-fold fitted models. The archived paper's 0.043277 development CRPS cannot be reproduced by using this deployment model to predict its own training records. Original full local archives retain the out-of-fold and control-study resources; this public snapshot makes its narrower coverage explicit.

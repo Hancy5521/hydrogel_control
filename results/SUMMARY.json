@@ -1,0 +1,334 @@
+{
+  "scope": "Already consumed25P retrospective development, three six-anchor layouts. No independent batch, calibration or experimental-saving result.",
+  "original_primary": "Mean marginal CRPS in natural-log viscosity;25formulations x3layouts x33target positions. Layout views and positions are not independentmaterials.",
+  "aggregate": {
+    "gp": {
+      "CRPS": 0.055219360715636545,
+      "RMSE": 0.1965692227387498,
+      "mean_joint_log_density": 63.12237246026844,
+      "coverage90": 0.9737373737373738,
+      "width90": 0.4053257973467525,
+      "worst_recipe_mask_coverage90": 0.3333333333333333
+    },
+    "generic": {
+      "CRPS": 0.052242798001835525,
+      "RMSE": 0.18570235660536447,
+      "mean_joint_log_density": 63.387907478437704,
+      "coverage90": 0.9733333333333334,
+      "width90": 0.38535903714818526,
+      "worst_recipe_mask_coverage90": 0.3333333333333333
+    },
+    "local": {
+      "CRPS": 0.048252872198616806,
+      "RMSE": 0.15663078211530176,
+      "mean_joint_log_density": 63.44970627302975,
+      "coverage90": 0.9729292929292929,
+      "width90": 0.4186065279006781,
+      "worst_recipe_mask_coverage90": 0.3333333333333333
+    },
+    "gaussian": {
+      "CRPS": 0.050252464674678025,
+      "RMSE": 0.16170325411756803,
+      "mean_joint_log_density": 82.92587927559113,
+      "coverage90": 0.9660606060606061,
+      "width90": 0.3649299139706594,
+      "worst_recipe_mask_coverage90": 0.5757575757575758
+    },
+    "joint_code_gaussian": {
+      "CRPS": 0.04327705155080712,
+      "RMSE": 0.11952416720645934,
+      "mean_joint_log_density": 63.658107578299784,
+      "coverage90": 0.972121212121212,
+      "width90": 0.403654303912221,
+      "worst_recipe_mask_coverage90": 0.24242424242424243
+    },
+    "random_gaussian": {
+      "CRPS": 0.049907584360887144,
+      "RMSE": 0.17610123682654383,
+      "mean_joint_log_density": 63.91870848952555,
+      "coverage90": 0.97010101010101,
+      "width90": 0.37071803455119073
+    },
+    "bayesian_cross": {
+      "CRPS": 0.111590168818509,
+      "RMSE": 0.318846098392243,
+      "mean_joint_log_density": 57.20003840957673,
+      "coverage90": 0.9361616161616161,
+      "width90": 0.6998701685086199
+    },
+    "rb_carreau": {
+      "CRPS": 0.15376305330875317,
+      "RMSE": 0.38472585364042555,
+      "mean_joint_log_density": 23.542170194834316,
+      "coverage90": 0.8735353535353535,
+      "width90": 0.7447835806242711
+    },
+    "fixed_student_t": {
+      "CRPS": 0.042906377395326795,
+      "RMSE": 0.11952416720645934,
+      "mean_joint_log_density": 106.98495810063037,
+      "coverage90": 0.9826262626262625,
+      "width90": 0.41740716797408495
+    }
+  },
+  "by_mask": {
+    "spread": {
+      "gp": {
+        "CRPS": 0.012882623884486683,
+        "RMSE": 0.03343368564719061,
+        "mean_joint_log_density": 62.92993046449873,
+        "coverage90": 0.9709090909090909,
+        "width90": 0.10526095889644935,
+        "worst_recipe_mask_coverage90": 0.6060606060606061
+      },
+      "generic": {
+        "CRPS": 0.012462006027216197,
+        "RMSE": 0.03326351111813512,
+        "mean_joint_log_density": 63.17865739052927,
+        "coverage90": 0.9696969696969697,
+        "width90": 0.10031639824868636,
+        "worst_recipe_mask_coverage90": 0.6060606060606061
+      },
+      "local": {
+        "CRPS": 0.013048421290039337,
+        "RMSE": 0.033593043328730005,
+        "mean_joint_log_density": 62.95447730674135,
+        "coverage90": 0.9684848484848484,
+        "width90": 0.10485129979981175,
+        "worst_recipe_mask_coverage90": 0.6060606060606061
+      },
+      "gaussian": {
+        "CRPS": 0.012167791691411698,
+        "RMSE": 0.0338757920475926,
+        "mean_joint_log_density": 42.77861270218088,
+        "coverage90": 0.9515151515151515,
+        "width90": 0.07863275284451887,
+        "worst_recipe_mask_coverage90": 0.5757575757575758
+      },
+      "joint_code_gaussian": {
+        "CRPS": 0.013203461563779101,
+        "RMSE": 0.03354802220965511,
+        "mean_joint_log_density": 63.00413687271462,
+        "coverage90": 0.9696969696969697,
+        "width90": 0.10416359328402562,
+        "worst_recipe_mask_coverage90": 0.6060606060606061
+      },
+      "random_gaussian": {
+        "CRPS": 0.012383021324949785,
+        "RMSE": 0.03341445675063645,
+        "mean_joint_log_density": 63.21066526541933,
+        "coverage90": 0.9672727272727273,
+        "width90": 0.09663952876810221
+      },
+      "bayesian_cross": {
+        "CRPS": 0.041365584433887256,
+        "RMSE": 0.0732833508774317,
+        "mean_joint_log_density": 62.572604931700326,
+        "coverage90": 0.9951515151515151,
+        "width90": 0.5160518138853288
+      },
+      "rb_carreau": {
+        "CRPS": 0.06962105210133239,
+        "RMSE": 0.10237398571473309,
+        "mean_joint_log_density": 29.15921934606705,
+        "coverage90": 0.9951515151515151,
+        "width90": 0.8200677963051216
+      },
+      "fixed_student_t": {
+        "CRPS": 0.012703890997545821,
+        "RMSE": 0.03354802220965511,
+        "mean_joint_log_density": 108.65452682353919,
+        "coverage90": 0.9709090909090909,
+        "width90": 0.09809119807085655
+      }
+    },
+    "middle_gap": {
+      "gp": {
+        "CRPS": 0.025196205343036234,
+        "RMSE": 0.06192589825238835,
+        "mean_joint_log_density": 64.7151549963675,
+        "coverage90": 0.9672727272727272,
+        "width90": 0.22508393785485228,
+        "worst_recipe_mask_coverage90": 0.3333333333333333
+      },
+      "generic": {
+        "CRPS": 0.024970497948115355,
+        "RMSE": 0.06288747505331584,
+        "mean_joint_log_density": 64.99167119426771,
+        "coverage90": 0.9672727272727272,
+        "width90": 0.21546682600330938,
+        "worst_recipe_mask_coverage90": 0.3333333333333333
+      },
+      "local": {
+        "CRPS": 0.025128744880613233,
+        "RMSE": 0.06247719436634742,
+        "mean_joint_log_density": 64.82770576087182,
+        "coverage90": 0.9672727272727272,
+        "width90": 0.22179325274971212,
+        "worst_recipe_mask_coverage90": 0.3333333333333333
+      },
+      "gaussian": {
+        "CRPS": 0.020387240434489994,
+        "RMSE": 0.05438674531299679,
+        "mean_joint_log_density": 104.66951265182561,
+        "coverage90": 0.9878787878787879,
+        "width90": 0.20562427185954069,
+        "worst_recipe_mask_coverage90": 0.9393939393939394
+      },
+      "joint_code_gaussian": {
+        "CRPS": 0.025835473686264727,
+        "RMSE": 0.06556574282124931,
+        "mean_joint_log_density": 64.94155949139717,
+        "coverage90": 0.9636363636363636,
+        "width90": 0.21705420246567517,
+        "worst_recipe_mask_coverage90": 0.24242424242424243
+      },
+      "random_gaussian": {
+        "CRPS": 0.0261311582387931,
+        "RMSE": 0.07144437714967154,
+        "mean_joint_log_density": 65.47301023215152,
+        "coverage90": 0.9624242424242424,
+        "width90": 0.2081687133700847
+      },
+      "bayesian_cross": {
+        "CRPS": 0.06319058095271904,
+        "RMSE": 0.1439749338925756,
+        "mean_joint_log_density": 61.62724263833839,
+        "coverage90": 0.938181818181818,
+        "width90": 0.5074872277552612
+      },
+      "rb_carreau": {
+        "CRPS": 0.09896678038366444,
+        "RMSE": 0.17282667075699032,
+        "mean_joint_log_density": 27.18739741093876,
+        "coverage90": 0.8290909090909091,
+        "width90": 0.5792882829771718
+      },
+      "fixed_student_t": {
+        "CRPS": 0.02306736872682885,
+        "RMSE": 0.06556574282124931,
+        "mean_joint_log_density": 108.41251973850562,
+        "coverage90": 0.9854545454545455,
+        "width90": 0.22637867837589976
+      }
+    },
+    "one_sided": {
+      "gp": {
+        "CRPS": 0.12757925291938674,
+        "RMSE": 0.3331152199675487,
+        "mean_joint_log_density": 61.72203191993909,
+        "coverage90": 0.9830303030303031,
+        "width90": 0.8856324952889557,
+        "worst_recipe_mask_coverage90": 0.6666666666666666
+      },
+      "generic": {
+        "CRPS": 0.11929589003017503,
+        "RMSE": 0.3136794543094433,
+        "mean_joint_log_density": 61.99339385051611,
+        "coverage90": 0.9830303030303031,
+        "width90": 0.8402938871925602,
+        "worst_recipe_mask_coverage90": 0.6666666666666666
+      },
+      "local": {
+        "CRPS": 0.10658145042519784,
+        "RMSE": 0.2618543743040721,
+        "mean_joint_log_density": 62.566935751476066,
+        "coverage90": 0.9830303030303031,
+        "width90": 0.9291750311525105,
+        "worst_recipe_mask_coverage90": 0.6666666666666666
+      },
+      "gaussian": {
+        "CRPS": 0.11820236189813238,
+        "RMSE": 0.27265058192499764,
+        "mean_joint_log_density": 101.32951247276688,
+        "coverage90": 0.9587878787878787,
+        "width90": 0.8105327172079186,
+        "worst_recipe_mask_coverage90": 0.8181818181818182
+      },
+      "joint_code_gaussian": {
+        "CRPS": 0.09079221940237753,
+        "RMSE": 0.1934780173903775,
+        "mean_joint_log_density": 63.02862637078763,
+        "coverage90": 0.9830303030303031,
+        "width90": 0.8897451159869623,
+        "worst_recipe_mask_coverage90": 0.6666666666666666
+      },
+      "random_gaussian": {
+        "CRPS": 0.11120857351891854,
+        "RMSE": 0.2946423457164139,
+        "mean_joint_log_density": 63.07244997100581,
+        "coverage90": 0.9806060606060606,
+        "width90": 0.8073458615153851
+      },
+      "bayesian_cross": {
+        "CRPS": 0.23021434106892064,
+        "RMSE": 0.5280996802448108,
+        "mean_joint_log_density": 47.40026765869148,
+        "coverage90": 0.8751515151515151,
+        "width90": 1.0760714638852698
+      },
+      "rb_carreau": {
+        "CRPS": 0.29270132744126265,
+        "RMSE": 0.6353679692131142,
+        "mean_joint_log_density": 14.279893827497142,
+        "coverage90": 0.7963636363636364,
+        "width90": 0.8349946625905198
+      },
+      "fixed_student_t": {
+        "CRPS": 0.09294787246160573,
+        "RMSE": 0.1934780173903775,
+        "mean_joint_log_density": 103.88782773984629,
+        "coverage90": 0.9915151515151516,
+        "width90": 0.9277516274754984
+      }
+    }
+  },
+  "fixed_secondary_variogram": {
+    "order": 1,
+    "unordered_pairs": 528,
+    "macro": {
+      "gp": 0.04914691385949298,
+      "conditional_gaussian": 0.08203526481815837,
+      "random_gaussian": 0.04037691865085954,
+      "curvature_gaussian": 0.016172209747617846,
+      "fixed_student_t": 0.02991779640241889
+    },
+    "by_mask": {
+      "spread": {
+        "gp": 0.0022322154496500586,
+        "conditional_gaussian": 0.002269410707408005,
+        "random_gaussian": 0.0022232868088999267,
+        "curvature_gaussian": 0.00224480328565378,
+        "fixed_student_t": 0.002235817159372932
+      },
+      "middle_gap": {
+        "gp": 0.003017233301851331,
+        "conditional_gaussian": 0.0036008604898862566,
+        "random_gaussian": 0.003820626547658687,
+        "curvature_gaussian": 0.0032921644310300647,
+        "fixed_student_t": 0.0033489930823308945
+      },
+      "one_sided": {
+        "gp": 0.14219129282697754,
+        "conditional_gaussian": 0.24023552325718092,
+        "random_gaussian": 0.11508684259601999,
+        "curvature_gaussian": 0.04297966152616969,
+        "fixed_student_t": 0.08416857896555284
+      }
+    },
+    "not_strictly_proper": true,
+    "not_joint_calibration": true
+  },
+  "new_materials": 0,
+  "source_data_DOI": "10.5281/zenodo.19602891",
+  "source_data_version": "0.0.2",
+  "frozen_candidate_model_sha256": "d72fc262fbae0e6fecc36568f0638166fe95e991bd5f7df100ab1434097d82d1",
+  "single_fixed_random_representation": true,
+  "P0_influence": {
+    "primary_gain_vs_conditional_Gaussian_net_share": 0.4564,
+    "VS_gain_vs_conditional_Gaussian_net_share": 0.6923,
+    "VS_gain_vs_fixed_t_net_share": 0.9939,
+    "random_Gaussian_comparison_P0": "A loss, not the source of the representation advantage"
+  },
+  "interpretation": "Preserved reported results; copying this summary is not a new fit or evaluation."
+}

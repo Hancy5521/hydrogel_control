@@ -1,0 +1,15 @@
+{
+  "checkpoint_id": "hydrogel-continuation-paper-2026-11-01",
+  "prepared_utc": "2026-11-01T09:31:34.355184+00:00",
+  "classification": "Author-review draft and runnable frozen inference checkpoint",
+  "paper_main_sha256": "b5da2b32da183159c1b742c520c81f7cc6cf68a1567e235a0dab64847aba1218",
+  "paper_supplement_sha256": "d9446af43b99c0382813fc210871f953742519841aaff760f5fe8948318ddd8c",
+  "model_sha256": "d72fc262fbae0e6fecc36568f0638166fe95e991bd5f7df100ab1434097d82d1",
+  "scientific_runtime": "Original16source/modelhash bindings preserved",
+  "new_batch_generalization_confirmed": false,
+  "independent_calibration_confirmed": false,
+  "experimental_savings_measured": false,
+  "new_measurements": 0,
+  "full_local_history_uploaded": false,
+  "publication_or_journal_acceptance_claimed": false
+}

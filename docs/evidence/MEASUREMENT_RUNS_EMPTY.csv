@@ -1,0 +1,1 @@
+study_id,independent_unit_id,batch_id,aliquot_id,run_id,paired_block_id,comparison_arm,execution_order,measurement_protocol_id,material_state_record_id,actual_started_utc,actual_ended_utc,run_status,acquired_point_count,rerun_of_run_id,resource_record_complete,raw_trace_sha256,notes

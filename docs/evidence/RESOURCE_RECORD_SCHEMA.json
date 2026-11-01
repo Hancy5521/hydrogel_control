@@ -1,0 +1,65 @@
+{
+  "schema": "future_real_workflow_resource_record_v1",
+  "created_actual_utc": "2026-11-01T09:18:40.739648+00:00",
+  "status": "EMPTY_PREPARATION_TEMPLATE_NOT_REGISTERED_NO_RESULTS",
+  "actual_observation_rows": 0,
+  "primary_resource_endpoint": null,
+  "quality_acceptance_tolerance": null,
+  "approved_independent_sample_size": null,
+  "approved_comparison_design": null,
+  "files": {
+    "MEASUREMENT_RUNS_EMPTY.csv": {
+      "row_unit": "One actual physical measurement attempt; every attempt/rerun retained.",
+      "fields": {
+        "study_id": "An author-approved prospective study identity, not the template creation date.",
+        "independent_unit_id": "Link to the approved source/unit manifest; aliquots and technical repeats are not automatically independentN.",
+        "batch_id": "Actual preparation batch, not a generated row identifier.",
+        "aliquot_id": "Actual sample aliquot; record reused sample/changed shear history in the state manifest.",
+        "run_id": "Actual instrument run identity; unique within study.",
+        "paired_block_id": "Use only if the comparison design genuinely supports pairing. Blank does not create pairing.",
+        "comparison_arm": "full_scan_workflow, sparse_anchor_workflow or validation_truth_only; author approves the actual design before results.",
+        "execution_order": "Actual execution order within the relevant block; identifies drift/history risk, not proof of randomization.",
+        "measurement_protocol_id": "Reference to approved real protocol, native rate schedule and instrument settings.",
+        "material_state_record_id": "Reference to formulation/state/temperature/preparationage/preshear/scandirection metadata, not a guessed default.",
+        "actual_started_utc": "Timezone-aware UTC from actual workflow logs; leave absent if not observed.",
+        "actual_ended_utc": "Timezone-aware UTC from actual workflow logs; no imputation from point count.",
+        "run_status": "completed, failed, interrupted or not_executed. Failed/interruptedattempts retain resources.",
+        "acquired_point_count": "Observed data point count, a descriptor rather than an experimental-saving estimator.",
+        "rerun_of_run_id": "Earlier run which led to this rerun; blank if not a rerun.",
+        "resource_record_complete": "true/false for required resource records; missing is not zero.",
+        "raw_trace_sha256": "Hash of the actual instrument trace held under its appropriate access role; avoid publishing private raw paths.",
+        "notes": "Unexpected events and deviations; do not use free-text to silently exclude difficult units."
+      }
+    },
+    "RESOURCE_EVENTS_EMPTY.csv": {
+      "row_unit": "One observed resource phase of one actual run. Phases may overlap; durations must not be summed blindly.",
+      "fields": {
+        "study_id": "Link to run ledger.",
+        "run_id": "Link to one actual attempt in run ledger.",
+        "event_id": "Unique actual phase identity.",
+        "phase": "preparation, loading, equilibration, measurement, data_transfer, model_inference, cleaning, retest or other; describe protocols separately.",
+        "started_utc": "Actual timezone-aware phase start, no invented timestamp.",
+        "ended_utc": "Actual timezone-aware phase end, no invented timestamp.",
+        "instrument_occupied": "true only if this phase makes the instrument unavailable to another sample.",
+        "operator_active": "true only for active operator work under the approved accounting definition.",
+        "material_amount": "Actual observed use or waste; missing remains absent, not zero.",
+        "material_unit": "Actual compatible unit such as mL or mg; do not sum incompatible units.",
+        "direct_cost_amount": "Observed direct expense under approved accounting; no fabricated currency conversion.",
+        "currency": "Actual currency; conversion, if any, must be defined and reported.",
+        "evidence_record_id": "Identifier/hash reference to instrument/operator/resource source log, not a private filesystem path."
+      }
+    }
+  },
+  "accounting_rules": [
+    "Keep validation-study total resources separate from intended deployment-workflow resources. Truth-only full scans remain visible in study total even if not counted as deploymentmeasurementsteps.",
+    "A sparse workflow must actually be executed. Selecting six values from a completed full scan is offline masking and provides no executed reduction in acquisition workload.",
+    "Report wall clock, occupied instrument time, active operator time, material use and direct cost separately; choose a primaryresourceendpoint before outcomes.",
+    "For overlap, use interval unions for a given occupiedresource category, not a sum that double-counts simultaneous phases.",
+    "Retain failed, interrupted and repeated attempts, including preparation and cleaning, and report the comparison failure denominator.",
+    "Compare workflows at a prespecified acceptable quality/materialerror level. Faster but unusable outputs do not establish useful experimental efficiency.",
+    "State sample reuse, aliquot pairing and scanorder explicitly because shear history/materialage can change the response.",
+    "Aggregate by the approved real independent unit, not points, phases, masks, generatedcurves or instrument timing samples.",
+    "No ratio of39and6points, nominal360secondscan, code runtime or synthetic example substitutes for actual experimental resource records.",
+    "Blank fields are missing evidence, not assumed zero expense or proof that a protocol succeeded."
+  ]
+}
