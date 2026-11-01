@@ -21,9 +21,18 @@
     },
     {
       "name": "Computational evidence and transparent saved-score replay",
+      "commit": "79f3ae4feb84738962233923fe189591fe818733",
+      "archive_branch": "archive/computational-evidence-2026-11-01"
+    },
+    {
+      "name": "Reviewed manuscript with public S7 replay and author handoff",
       "commit": null,
-      "archive_branch": "archive/computational-evidence-2026-11-01",
-      "commit_resolution": "Resolve this named branch or use the external verified delivery receipt; a self-containing commit SHA is not asserted."
+      "archive_branch": "archive/submission-review-2026-11-01",
+      "pages": [
+        21,
+        11
+      ],
+      "commit_resolution": "Use the externally verified delivery receipt or resolve this retained named checkpoint."
     }
   ]
 }

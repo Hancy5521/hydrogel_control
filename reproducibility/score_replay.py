@@ -152,6 +152,20 @@ def make_tables(rows, variogram, points, facts, provenance):
               "SI_tableS5": s5, "SI_tableS6": s6, "paired_all": paired_table,
               "point_only_PCHIP": point_table, "figure2b_paired_data": pairs["gaussian"]["rows"],
               "figureS1_coverage_data": coverage}
+    # Append the point-error comparison without changing any existing table.
+    # All values reuse the already pooled saved MSEs above; no forecasts or
+    # target responses are evaluated. PCHIP remains point-only.
+    s7 = [{"model": LABELS[m],
+           **{layout + "_RMSE": by_layout[layout][m]["RMSE"] for layout in LAYOUTS},
+           "pooled_RMSE": aggregates[m]["RMSE"],
+           "prediction_role": "Log-response point predictor from the declared probabilistic model"}
+          for m in MODELS]
+    point_by_layout = {row["layout"]: row for row in point_table}
+    s7.append({"model": "PCHIP endpoint cubic",
+               **{layout + "_RMSE": point_by_layout[layout]["pooled_RMSE"] for layout in LAYOUTS},
+               "pooled_RMSE": point_by_layout["macro"]["pooled_RMSE"],
+               "prediction_role": "Point-only; no probability law assigned"})
+    tables["SI_tableS7"] = s7
     return {"scope": "Arithmetic replay of saved development score ledgers; no new measurements or raw-data scoring.",
             "counts": {"formulations": 25, "queries_per_method": 75, "probabilistic_rows": len(rows),
                        "VS_rows": len(variogram), "point_rows": len(points), "independent_new_materials": 0},

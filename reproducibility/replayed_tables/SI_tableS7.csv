@@ -1,0 +1,11 @@
+model,spread_RMSE,middle_gap_RMSE,one_sided_RMSE,pooled_RMSE,prediction_role
+Coordinate GP,0.033433685647190604,0.06192589825238835,0.3331152199675487,0.1965692227387498,Log-response point predictor from the declared probabilistic model
+Generic bounded tilt,0.03326351111813512,0.06288747505331584,0.3136794543094433,0.18570235660536444,Log-response point predictor from the declared probabilistic model
+Curvature bounded tilt,0.033593043328730005,0.06247719436634742,0.2618543743040721,0.15663078211530176,Log-response point predictor from the declared probabilistic model
+Conditional Gaussian,0.03387579204759259,0.05438674531299679,0.27265058192499764,0.16170325411756806,Log-response point predictor from the declared probabilistic model
+Gaussian curvature correction,0.03354802220965511,0.06556574282124931,0.19347801739037754,0.11952416720645934,Log-response point predictor from the declared probabilistic model
+Matched random Gaussian,0.03341445675063645,0.07144437714967154,0.2946423457164139,0.17610123682654383,Log-response point predictor from the declared probabilistic model
+Bayesian Cross,0.0732833508774317,0.1439749338925756,0.5280996802448108,0.318846098392243,Log-response point predictor from the declared probabilistic model
+Bayesian Carreau a2,0.10237398571473309,0.17282667075699032,0.6353679692131142,0.38472585364042555,Log-response point predictor from the declared probabilistic model
+Fixed Student-t diagnostic,0.03354802220965511,0.06556574282124931,0.19347801739037754,0.11952416720645934,Log-response point predictor from the declared probabilistic model
+PCHIP endpoint cubic,0.03156096041622779,0.05848088157424952,1.1839675964346092,0.6846398997865574,Point-only; no probability law assigned

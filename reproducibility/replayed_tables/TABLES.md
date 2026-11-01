@@ -173,3 +173,18 @@ CRPS/RMSE/width use natural-log viscosity; joint log density is nats per 33-targ
 | 40 | 33 | 33 | 33 |
 | 41 | 33 | 33 | 33 |
 | 44 | 33 | 33 | 33 |
+
+## SI_tableS7
+
+| model | spread_RMSE | middle_gap_RMSE | one_sided_RMSE | pooled_RMSE | prediction_role |
+| --- | --- | --- | --- | --- | --- |
+| Coordinate GP | 0.033434 | 0.061926 | 0.333115 | 0.196569 | Log-response point predictor from the declared probabilistic model |
+| Generic bounded tilt | 0.033264 | 0.062887 | 0.313679 | 0.185702 | Log-response point predictor from the declared probabilistic model |
+| Curvature bounded tilt | 0.033593 | 0.062477 | 0.261854 | 0.156631 | Log-response point predictor from the declared probabilistic model |
+| Conditional Gaussian | 0.033876 | 0.054387 | 0.272651 | 0.161703 | Log-response point predictor from the declared probabilistic model |
+| Gaussian curvature correction | 0.033548 | 0.065566 | 0.193478 | 0.119524 | Log-response point predictor from the declared probabilistic model |
+| Matched random Gaussian | 0.033414 | 0.071444 | 0.294642 | 0.176101 | Log-response point predictor from the declared probabilistic model |
+| Bayesian Cross | 0.073283 | 0.143975 | 0.528100 | 0.318846 | Log-response point predictor from the declared probabilistic model |
+| Bayesian Carreau a2 | 0.102374 | 0.172827 | 0.635368 | 0.384726 | Log-response point predictor from the declared probabilistic model |
+| Fixed Student-t diagnostic | 0.033548 | 0.065566 | 0.193478 | 0.119524 | Log-response point predictor from the declared probabilistic model |
+| PCHIP endpoint cubic | 0.031561 | 0.058481 | 1.183968 | 0.684640 | Point-only; no probability law assigned |

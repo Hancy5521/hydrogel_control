@@ -2,6 +2,13 @@
 
 This small package closes a **result-transparency** gap. It publishes scalar scores already computed for the retained 25 P formulations and re-creates their tables with Python's standard library. It does not fit a model, evaluate predictive densities against target labels, open hidden S outcomes, or reproduce the original training and posterior calculations.
 
+This S7 companion adds the ten-method point-error comparison in Supplementary
+Table S7. It uses the unchanged saved MSE rows for the nine probabilistic models
+and PCHIP, with three layout columns and a pooled RMSE column. PCHIP remains
+point-only. All earlier tables, score ledgers and the 238 saved-scalar checks are
+unchanged. The original eight integrity tests are retained, with a ninth test
+for S7 method/case completeness and pooled RMSE.
+
 ```sh
 python replay_tables.py --output-dir replayed_tables
 python -m unittest -v test_score_replay.py
@@ -30,6 +37,7 @@ Python 3.9 or newer is sufficient. No NumPy, SciPy, plotting library, original d
 | SI Tables S2 and S3 | Original layout CRPS and the completed representation/correction-family comparison re-aggregated. |
 | SI Table S4 / Main Figure 4 | Not reconstructed: these require saved model-information/covariance diagnostics, not just score scalars. |
 | SI Tables S5 and S6 | Original five-law VS1 table and layout-difference balance re-aggregated. |
+| SI Table S7 | Ten-method log-response RMSE comparison from saved MSEs, including PCHIP as point-only. |
 | Main Figure 2a / 5a / 5b | Exact numeric plotting inputs are the generated S2 / S3 / S5 CSVs. Original rendering style is not recreated here. |
 | Main Figure 2b | Generated `figure2b_paired_data.csv` supplies all 25 formulation-level candidate-minus-conditional-control differences. |
 | SI coverage heatmap | Generated `figureS1_coverage_data.csv` supplies the retained candidate's counts out of 33 for every formulation/layout. |
@@ -42,6 +50,15 @@ All methods use the same 25 formulation identities. The 675, 375 and 75 rows are
 The response is `y = ln[viscosity/(1 Pa s)]`. CRPS, pooled RMSE and interval width are in dimensionless natural-log response units; score percentage improvements are not percentage viscosity errors. Joint log density is in nats per 33-target query. VS1 is the average over 528 squared discrepancies of absolute log-response differences, so it has squared log-response units. Lower losses and higher log density evaluate their respective declared targets; coverage is not maximized without regard to interval width.
 
 Pooled RMSE is `sqrt(sum(n_targets * mean_mse) / sum(n_targets))`. Averaging query RMSEs gives a different and incorrect statistic for the reported pooled endpoint. The one-sided query still includes ten internal targets and 23 continuation targets. Its partition is descriptive arithmetic over frozen scores, not a new primary endpoint or an experiment performed with fewer measurements.
+
+S7 uses the same pooled rule within each layout and over all 75 queries. The
+Gaussian curvature and fixed Student-t rows share their point predictions and
+therefore have identical RMSEs; their probabilistic scores can still differ.
+The PCHIP row receives no CRPS, probability interval or joint density. The
+original 16 replay outputs are retained in the preceding package; in this
+companion only `tables.json` and `TABLES.md` gain S7, and the new
+`SI_tableS7.csv` is the seventeenth output. The thirteen earlier CSV files and
+`validation.json` remain byte-identical.
 
 The Gaussian candidate is not uniformly best: the conditional Gaussian is stronger for interpolation and some uncertainty metrics; fixed Student-t has slightly lower macro CRPS while worsening continuation and overcoverage. These rows remain visible. Neither joint log density nor VS1 establishes calibrated whole-curve prediction. All comparisons remain retrospective development results.
 

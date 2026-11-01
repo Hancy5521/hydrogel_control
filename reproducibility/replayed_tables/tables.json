@@ -2665,6 +2665,88 @@
         "middle_gap": 33,
         "one_sided": 33
       }
+    ],
+    "SI_tableS7": [
+      {
+        "model": "Coordinate GP",
+        "spread_RMSE": 0.033433685647190604,
+        "middle_gap_RMSE": 0.06192589825238835,
+        "one_sided_RMSE": 0.3331152199675487,
+        "pooled_RMSE": 0.1965692227387498,
+        "prediction_role": "Log-response point predictor from the declared probabilistic model"
+      },
+      {
+        "model": "Generic bounded tilt",
+        "spread_RMSE": 0.03326351111813512,
+        "middle_gap_RMSE": 0.06288747505331584,
+        "one_sided_RMSE": 0.3136794543094433,
+        "pooled_RMSE": 0.18570235660536444,
+        "prediction_role": "Log-response point predictor from the declared probabilistic model"
+      },
+      {
+        "model": "Curvature bounded tilt",
+        "spread_RMSE": 0.033593043328730005,
+        "middle_gap_RMSE": 0.06247719436634742,
+        "one_sided_RMSE": 0.2618543743040721,
+        "pooled_RMSE": 0.15663078211530176,
+        "prediction_role": "Log-response point predictor from the declared probabilistic model"
+      },
+      {
+        "model": "Conditional Gaussian",
+        "spread_RMSE": 0.03387579204759259,
+        "middle_gap_RMSE": 0.05438674531299679,
+        "one_sided_RMSE": 0.27265058192499764,
+        "pooled_RMSE": 0.16170325411756806,
+        "prediction_role": "Log-response point predictor from the declared probabilistic model"
+      },
+      {
+        "model": "Gaussian curvature correction",
+        "spread_RMSE": 0.03354802220965511,
+        "middle_gap_RMSE": 0.06556574282124931,
+        "one_sided_RMSE": 0.19347801739037754,
+        "pooled_RMSE": 0.11952416720645934,
+        "prediction_role": "Log-response point predictor from the declared probabilistic model"
+      },
+      {
+        "model": "Matched random Gaussian",
+        "spread_RMSE": 0.03341445675063645,
+        "middle_gap_RMSE": 0.07144437714967154,
+        "one_sided_RMSE": 0.2946423457164139,
+        "pooled_RMSE": 0.17610123682654383,
+        "prediction_role": "Log-response point predictor from the declared probabilistic model"
+      },
+      {
+        "model": "Bayesian Cross",
+        "spread_RMSE": 0.0732833508774317,
+        "middle_gap_RMSE": 0.1439749338925756,
+        "one_sided_RMSE": 0.5280996802448108,
+        "pooled_RMSE": 0.318846098392243,
+        "prediction_role": "Log-response point predictor from the declared probabilistic model"
+      },
+      {
+        "model": "Bayesian Carreau a2",
+        "spread_RMSE": 0.10237398571473309,
+        "middle_gap_RMSE": 0.17282667075699032,
+        "one_sided_RMSE": 0.6353679692131142,
+        "pooled_RMSE": 0.38472585364042555,
+        "prediction_role": "Log-response point predictor from the declared probabilistic model"
+      },
+      {
+        "model": "Fixed Student-t diagnostic",
+        "spread_RMSE": 0.03354802220965511,
+        "middle_gap_RMSE": 0.06556574282124931,
+        "one_sided_RMSE": 0.19347801739037754,
+        "pooled_RMSE": 0.11952416720645934,
+        "prediction_role": "Log-response point predictor from the declared probabilistic model"
+      },
+      {
+        "model": "PCHIP endpoint cubic",
+        "spread_RMSE": 0.03156096041622779,
+        "middle_gap_RMSE": 0.05848088157424952,
+        "one_sided_RMSE": 1.1839675964346092,
+        "pooled_RMSE": 0.6846398997865574,
+        "prediction_role": "Point-only; no probability law assigned"
+      }
     ]
   }
 }

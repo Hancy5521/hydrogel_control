@@ -9,7 +9,8 @@
     "SI_S3": "Recomputed original2x2representation/correctioncomparison",
     "SI_S4": "Not reproduced: model-information/covariance diagnostics are absent from score-only export",
     "SI_S5": "Recomputed5lawx3layoutVS1scoresplusmacro",
-    "SI_S6": "Recomputed3layoutdifferencesplusmacro"
+    "SI_S6": "Recomputed3layoutdifferencesplusmacro",
+    "SI_S7": "Ten-method point-prediction RMSE table: three layouts and pooled; existing saved MSE rows only, PCHIP point-only. No probability law or new score is assigned."
   },
   "figures": {
     "Main1": "Design diagram remains in paper; no response data needed",

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "actual_utc": "2026-11-01T12:09:58.160252+00:00",
+  "main_pages": 21,
+  "supplement_pages": 11,
+  "main_sha256": "2669b7804b9c499f4ed57960a3f82150d49759c889b1bf6c15aeb6a0e6012b5b",
+  "supplement_sha256": "2296a2e47b02d291d47396344eba9782a2e1951cf0009039fd911b19884eeb8f",
+  "all_original_math_and_references_and_media_preserved": true,
+  "new_tableS7_numeric_cells": 40,
+  "all_final_pages_visually_inspected": 32,
+  "new_material_fits_or_scores": 0,
+  "synthetic_training_run_role": "Separate software demonstration, not evidence of material efficacy"
+}

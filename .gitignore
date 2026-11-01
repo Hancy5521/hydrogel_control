@@ -42,3 +42,4 @@ demo_generated.json
 replayed_local/
 software_check_new.json
 synthetic_training_check_new.json
+!reproducibility/replayed_tables/SI_tableS7.csv

@@ -2,7 +2,7 @@
 
 This repository archives the **2026-11-01 expanded author-review checkpoint** of a focused hydrogel precursor-ink study: two fixed local curvature contrasts receive a shared Gaussian correction, while the complete high-dimensional reference residual is retained. The main intended use is continuation of a flow curve from six low-rate anchors.
 
-论文与程序存档，非已发表或保证录用的论文。本次固定保存扩充版21页英文主文、9页补充材料及其推断程序和冻结权重。基础Gaussian方法有既有先例；研究贡献是特定水凝胶续接任务的表示与训练适配，以及对应的受控证据。
+论文与程序存档，非已发表或保证录用的论文。本次固定保存扩充版21页英文主文、11页补充材料及其推断程序和冻结权重。基础Gaussian方法有既有先例；研究贡献是特定水凝胶续接任务的表示与训练适配，以及对应的受控证据。
 
 ## Start here
 
@@ -12,6 +12,7 @@ This repository archives the **2026-11-01 expanded author-review checkpoint** of
 - [Independent frozen inference checks](verification/README.md)
 - [Synthetic training primitive](training_demo/README.md)
 - [Current gaps and author tasks](docs/evidence/GAP_REVIEW_ZH.txt)
+- [Author decisions and optional new evidence](docs/AUTHOR_ACTIONS.md)
 - [Version history](docs/VERSION_HISTORY.json)
 - [Model and scope](MODEL_CARD.md)
 - [Preserved result summary](results/SUMMARY.json)
@@ -65,3 +66,5 @@ python training_demo/training_primitive_demo.py --repo-root . --output synthetic
 The last command makes one original optimizer call on the explicitly synthetic fixture; it never refits the material checkpoint. Read each module README before interpreting its receipt. Model/source/result bytes and original scientific scores are unchanged. Full original raw-data/outer-fold replay remains separately scoped.
 
 This release still does not include raw measured curves, the original training runs or all outer-fold predictive laws. Full experiment replay remains incomplete until the authors approve and provide the remaining processed-input access and reuse terms.
+
+The current 21-page main manuscript and 11-page supplement include the complete point-error comparison, including favourable PCHIP interpolation and unfavourable continuation. The S7 companion adds a ninth replay test and direct S7 CSV export without changing old score values. See paper/REVISION_NOTES.md and docs/AUTHOR_ACTIONS.md.

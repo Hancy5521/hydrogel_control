@@ -1,5 +1,5 @@
 {
-  "actual_utc": "2026-11-01T11:34:37.407209+00:00",
+  "actual_utc": "2026-11-01T12:09:58.160252+00:00",
   "scope": "Review against the current narrow retrospective hydrogel continuation claim",
   "rows": [
     {
@@ -28,9 +28,9 @@
     },
     {
       "id": "point_baseline_paper_integration",
-      "state": "pending_editorial_step",
-      "evidence": "reproducibility/replayed_tables/point_only_PCHIP.csv",
-      "detail": "Saved PCHIP point errors now transparent, including interpolation strengths. Add a clearly separated RMSE table to current SI; no probability law assigned."
+      "state": "completed",
+      "evidence": "paper/Supplement_Revised.docx S12 TableS7; reproducibility/replayed_tables/SI_tableS7.csv",
+      "detail": "All ten methods and all four pooled-MSE/RMSE columns exposed. Retains favourable PCHIP interpolation and weak declared continuation; no probability law fabricated."
     },
     {
       "id": "original_full_experiment_replay",
@@ -72,5 +72,6 @@
   "new_real_materials": 0,
   "real_material_fit_or_rescore": 0,
   "frozen_model_runtime_results_changed": false,
-  "wet_independent_claims_complete": false
+  "wet_independent_claims_complete": false,
+  "closure_scope": "Available computational and documentary gaps closed in this checkpoint. Stronger material claims and author-specific declarations remain separately pending; no claim of exhausting all future research."
 }
