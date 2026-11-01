@@ -1,0 +1,56 @@
+{
+  "scope": "Relevant recorded fitting/posterior failures; no failed partial aggregate is used. Earlier project branches remain in local scientific history.",
+  "failures": [
+    {
+      "failure_id": "original_serial_marginal_precision_stop",
+      "source_id": "initial_marginal_scoring_stop",
+      "actual_utc": "2026-10-30T16:13:52.116380+00:00",
+      "type": "ArithmeticError",
+      "status": "STOP_DIRECT_SCORE_QUALIFICATION",
+      "message": "Direct marginal numerical ladder exhausted",
+      "resolution": "Pre-existing registered higher-order direct scoring continued the same laws and accuracy gates; completed original scores retained, no scoring repeated here."
+    },
+    {
+      "failure_id": "initial_direct_joint_likelihood",
+      "source_id": "initial_joint_fit_stop",
+      "actual_utc": "2026-10-31T07:18:18.013062+00:00",
+      "type": "FitFailure",
+      "message": "Joint-code Gaussian fit not admitted",
+      "material_scores_before_stop": 0,
+      "resolution": "Equivalent registered low-rank objective; original candidate family, bounds and frozen final scores retained."
+    },
+    {
+      "failure_id": "results:constitutive_carreau:STOP",
+      "source_id": "comparison",
+      "actual_utc": "2026-11-01T06:54:01.090263+00:00",
+      "type": "RuntimeError",
+      "message": "Registered posterior predictive precision gate failed for 3:one_sided",
+      "completed_laws_before_stop": 8,
+      "SMC_runs": 24,
+      "material_scores_before_stop": 0,
+      "resolution": "Retained failed numerical branch; subsequent registered same-prior computations supply the final complete 75-row ledger."
+    },
+    {
+      "failure_id": "results:constitutive_cross:STOP",
+      "source_id": "comparison",
+      "actual_utc": "2026-11-01T06:53:47.305831+00:00",
+      "type": "RuntimeError",
+      "message": "Registered posterior predictive precision gate failed for 1:one_sided",
+      "completed_laws_before_stop": 5,
+      "SMC_runs": 14,
+      "material_scores_before_stop": 0,
+      "resolution": "Retained failed numerical branch; subsequent registered same-prior computations supply the final complete 75-row ledger."
+    },
+    {
+      "failure_id": "results:constitutive_rb_cross:STOP",
+      "source_id": "comparison",
+      "actual_utc": "2026-11-01T06:58:50.618814+00:00",
+      "type": "RuntimeError",
+      "message": "RB predictive precision gate failed 1:one_sided",
+      "completed_laws_before_stop": 5,
+      "SMC_runs": 14,
+      "material_scores_before_stop": 0,
+      "resolution": "Retained failed numerical branch; subsequent registered same-prior computations supply the final complete 75-row ledger."
+    }
+  ]
+}

@@ -1,0 +1,2784 @@
+{
+  "record_type": "Bounded citation and material-source status review",
+  "created_utc": "2026-11-01T11:18:02.606059+00:00",
+  "scope": "Review of the existing 48 references and core material-source claims only. Bibliographic identity support is distinguished from full-text reading, permission review and independent scientific validation.",
+  "manuscripts_reviewed": [
+    {
+      "file": "Hydrogel_Continuation_English_Expanded.docx",
+      "sha256": "fca05cb0161f18681aab3f7871162b35690ab3e4c63f86ba36d7042fddba2a29",
+      "bytes": 607824
+    },
+    {
+      "file": "Supplement_Expanded.docx",
+      "sha256": "d7d8e007cd8be8f900207f326811977416c07641b6cd047f90e46e2a6935b1f8",
+      "bytes": 436043
+    }
+  ],
+  "reference_list_exact_match_to_prior_audit": true,
+  "summary": {
+    "initial_official_metadata_supported": 40,
+    "initial_access_unknown_references": [
+      2,
+      3,
+      4,
+      9,
+      12,
+      14,
+      15,
+      26
+    ],
+    "new_direct_primary_metadata_supported_references": [
+      2,
+      4,
+      12,
+      14,
+      15,
+      26
+    ],
+    "official_search_index_corroborated_but_direct_access_unresolved": [
+      3,
+      9
+    ],
+    "confirmed_substantive_citation_discrepancies": 0,
+    "mandatory_reference_edits_identified": 0,
+    "new_training_data": 0,
+    "new_fits_or_scores": 0,
+    "new_references_added": 0
+  },
+  "bounded_network_work": {
+    "search_calls": 3,
+    "queries": 10,
+    "unique_primary_urls_explicitly_opened": 12,
+    "open_request_items_including_two_existing_PDF_passage_locators": 14,
+    "same_failed_endpoint_retries": 0,
+    "prior_Crossref_429_or_OpenReview_challenge_endpoint_requests": 0,
+    "further_search_planned": false,
+    "note": "Six formerly unknown citations now have directly opened official source metadata. Two have consistent metadata from official search returns while direct article access remains unresolved. They are not silently upgraded to fully read or fully verified."
+  },
+  "references": [
+    {
+      "reference": 1,
+      "citation": "[1] Ward L, Agrawal A, Choudhary A, Wolverton C. A general-purpose machine learning framework for predicting properties of inorganic materials. npj Computational Materials. 2016;2:16028. https://doi.org/10.1038/npjcompumats.2016.28.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "A general-purpose machine learning framework for predicting properties of inorganic materials",
+        "authors": [
+          {
+            "family": "Ward",
+            "given": "Logan",
+            "name": null
+          },
+          {
+            "family": "Agrawal",
+            "given": "Ankit",
+            "name": null
+          },
+          {
+            "family": "Choudhary",
+            "given": "Alok",
+            "name": null
+          },
+          {
+            "family": "Wolverton",
+            "given": "Christopher",
+            "name": null
+          }
+        ],
+        "years": [
+          2016
+        ],
+        "volume": "2",
+        "issue": "1",
+        "article_number": "16028",
+        "DOI": "10.1038/npjcompumats.2016.28",
+        "container_title": [
+          "npj Computational Materials"
+        ],
+        "date_fields": {
+          "published": [
+            [
+              2016,
+              8,
+              26
+            ]
+          ],
+          "published-online": [
+            [
+              2016,
+              8,
+              26
+            ]
+          ],
+          "issued": [
+            [
+              2016,
+              8,
+              26
+            ]
+          ]
+        }
+      },
+      "source_url": "https://api.crossref.org/works/10.1038/npjcompumats.2016.28",
+      "checked_utc": "2026-11-01T08:35:43.362835+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": [
+        {
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        },
+        {
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 2,
+      "citation": "[2] Dunn A, Wang Q, Ganose A, Dopp D, Jain A. Benchmarking materials property prediction methods: the Matbench test set and Automatminer reference algorithm. npj Computational Materials. 2020;6:138. https://doi.org/10.1038/s41524-020-00406-3.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "SUPPORTED_DIRECT_AUTHOR_REPOSITORY",
+      "urls": [
+        "https://github.com/materialsproject/matbench"
+      ],
+      "metadata": {
+        "title": "Benchmarking materials property prediction methods: the Matbench test set and Automatminer reference algorithm",
+        "authors": [
+          "Dunn A",
+          "Wang Q",
+          "Ganose A",
+          "Dopp D",
+          "Jain A"
+        ],
+        "year": 2020,
+        "journal": "npj Computational Materials",
+        "volume": "6",
+        "article": "138",
+        "doi": "10.1038/s41524-020-00406-3"
+      },
+      "depth": "Official project README citation block only, plus publisher search-indexed bibliography. Not full paper.",
+      "license": "Repository displays an MIT license badge; this is code licensing and does not establish the paper license. Paper reuse terms not checked.",
+      "access_limits": [
+        "Publisher page redirects to an inaccessible authorization service. No retry."
+      ],
+      "notes": [
+        "An official publisher search result indicates a 2020 author correction to a figure unit. Current manuscript cites only benchmark background; no affected numerical benchmark claim is used."
+      ],
+      "initial_status": "ACCESS_UNKNOWN",
+      "checked_utc": "2026-11-01T11:18:02.606059+00:00"
+    },
+    {
+      "reference": 3,
+      "citation": "[3] Kim C, Chandrasekaran A, Huan TD, Das D, Ramprasad R. Polymer Genome: A Data-Powered Polymer Informatics Platform for Property Predictions. Journal of Physical Chemistry C. 2018;122:17575–17585. https://doi.org/10.1021/acs.jpcc.8b02913.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "CORROBORATED_OFFICIAL_SEARCH_INDEX_ONLY",
+      "urls": [
+        "https://ramprasad.mse.gatech.edu/wp-content/uploads/2018/08/176.pdf",
+        "https://pubs.acs.org/doi/10.1021/acs.jpcc.8b02913"
+      ],
+      "metadata": {
+        "title": "Polymer Genome: A Data-Powered Polymer Informatics Platform for Property Predictions",
+        "authors": [
+          "Chiho Kim",
+          "Anand Chandrasekaran",
+          "Tran Doan Huan",
+          "Deya Das",
+          "Rampi Ramprasad"
+        ],
+        "year": 2018,
+        "journal": "The Journal of Physical Chemistry C",
+        "volume": "122",
+        "issue": "31",
+        "pages": "17575-17585",
+        "doi": "10.1021/acs.jpcc.8b02913"
+      },
+      "depth": "Official author-hosted first-page metadata and publisher metadata returned through search indexing. No successfully opened full text in this pass.",
+      "license": "Publisher search result states copyright 2018 American Chemical Society. No open reuse license verified.",
+      "access_limits": [
+        "Author-hosted PDF exceeded the web tool content-size limit (10,885,392 bytes).",
+        "Different official publisher article URL returned HTTP 403. Neither endpoint retried."
+      ],
+      "notes": [
+        "Search-indexed title, all five authors, year, volume, pages and DOI agree with current citation. Direct-source access remains unresolved; this is not marked full verification."
+      ],
+      "initial_status": "ACCESS_UNKNOWN",
+      "checked_utc": "2026-11-01T11:18:02.606059+00:00"
+    },
+    {
+      "reference": 4,
+      "citation": "[4] Kuenneth C, Rajan AC, Tran H, Chen L, Kim C, Ramprasad R. Polymer informatics with multi-task learning. Patterns. 2021;2:100238. https://doi.org/10.1016/j.patter.2021.100238.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "SUPPORTED_DIRECT_PRIMARY_ARCHIVE",
+      "urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8085610/"
+      ],
+      "metadata": {
+        "title": "Polymer informatics with multi-task learning",
+        "authors": [
+          "Christopher Kuenneth",
+          "Arunkumar Chitteth Rajan",
+          "Huan Tran",
+          "Lihua Chen",
+          "Chiho Kim",
+          "Rampi Ramprasad"
+        ],
+        "year": 2021,
+        "journal": "Patterns",
+        "volume": "2",
+        "issue": "4",
+        "article": "100238",
+        "doi": "10.1016/j.patter.2021.100238"
+      },
+      "depth": "Journal article metadata, byline, summary and license notice in the official PMC archive. Not full article reading.",
+      "license": "CC BY-NC-ND 4.0 stated in archived article. No article text, figure or code redistributed.",
+      "access_limits": [],
+      "notes": [],
+      "initial_status": "ACCESS_UNKNOWN",
+      "checked_utc": "2026-11-01T11:18:02.606059+00:00"
+    },
+    {
+      "reference": 5,
+      "citation": "[5] Kuenneth C, Ramprasad R. polyBERT: a chemical language model to enable fully machine-driven ultrafast polymer informatics. Nature Communications. 2023;14:4099. https://doi.org/10.1038/s41467-023-39868-6.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "polyBERT: a chemical language model to enable fully machine-driven ultrafast polymer informatics",
+        "authors": [
+          {
+            "family": "Kuenneth",
+            "given": "Christopher",
+            "name": null
+          },
+          {
+            "family": "Ramprasad",
+            "given": "Rampi",
+            "name": null
+          }
+        ],
+        "years": [
+          2023
+        ],
+        "volume": "14",
+        "issue": "1",
+        "article_number": "4099",
+        "DOI": "10.1038/s41467-023-39868-6",
+        "container_title": [
+          "Nature Communications"
+        ],
+        "date_fields": {
+          "published": [
+            [
+              2023,
+              7,
+              11
+            ]
+          ],
+          "published-online": [
+            [
+              2023,
+              7,
+              11
+            ]
+          ],
+          "issued": [
+            [
+              2023,
+              7,
+              11
+            ]
+          ]
+        }
+      },
+      "source_url": "https://api.crossref.org/works/10.1038/s41467-023-39868-6",
+      "checked_utc": "2026-11-01T08:35:43.362835+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": [
+        {
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        },
+        {
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 6,
+      "citation": "[6] Xu C, Wang Y, Barati Farimani A. TransPolymer: a Transformer-based language model for polymer property predictions. npj Computational Materials. 2023;9:64. https://doi.org/10.1038/s41524-023-01016-5.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "TransPolymer: a Transformer-based language model for polymer property predictions",
+        "authors": [
+          {
+            "family": "Xu",
+            "given": "Changwen",
+            "name": null
+          },
+          {
+            "family": "Wang",
+            "given": "Yuyang",
+            "name": null
+          },
+          {
+            "family": "Barati Farimani",
+            "given": "Amir",
+            "name": null
+          }
+        ],
+        "years": [
+          2023
+        ],
+        "volume": "9",
+        "issue": "1",
+        "article_number": "64",
+        "DOI": "10.1038/s41524-023-01016-5",
+        "container_title": [
+          "npj Computational Materials"
+        ],
+        "date_fields": {
+          "published": [
+            [
+              2023,
+              4,
+              22
+            ]
+          ],
+          "published-online": [
+            [
+              2023,
+              4,
+              22
+            ]
+          ],
+          "issued": [
+            [
+              2023,
+              4,
+              22
+            ]
+          ]
+        }
+      },
+      "source_url": "https://api.crossref.org/works/10.1038/s41524-023-01016-5",
+      "checked_utc": "2026-11-01T08:35:43.964027+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": [
+        {
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        },
+        {
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 7,
+      "citation": "[7] Phan BK, Shen KH, Gurnani R, Tran H, Lively R, Ramprasad R. Gas permeability, diffusivity, and solubility in polymers: Simulation-experiment data fusion and multi-task machine learning. npj Computational Materials. 2024;10:186. https://doi.org/10.1038/s41524-024-01373-9.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "Gas permeability, diffusivity, and solubility in polymers: Simulation-experiment data fusion and multi-task machine learning",
+        "authors": [
+          {
+            "family": "Phan",
+            "given": "Brandon K.",
+            "name": null
+          },
+          {
+            "family": "Shen",
+            "given": "Kuan-Hsuan",
+            "name": null
+          },
+          {
+            "family": "Gurnani",
+            "given": "Rishi",
+            "name": null
+          },
+          {
+            "family": "Tran",
+            "given": "Huan",
+            "name": null
+          },
+          {
+            "family": "Lively",
+            "given": "Ryan",
+            "name": null
+          },
+          {
+            "family": "Ramprasad",
+            "given": "Rampi",
+            "name": null
+          }
+        ],
+        "years": [
+          2024
+        ],
+        "volume": "10",
+        "issue": "1",
+        "article_number": "186",
+        "DOI": "10.1038/s41524-024-01373-9",
+        "container_title": [
+          "npj Computational Materials"
+        ],
+        "date_fields": {
+          "published": [
+            [
+              2024,
+              8,
+              15
+            ]
+          ],
+          "published-online": [
+            [
+              2024,
+              8,
+              15
+            ]
+          ],
+          "issued": [
+            [
+              2024,
+              8,
+              15
+            ]
+          ]
+        }
+      },
+      "source_url": "https://api.crossref.org/works/10.1038/s41524-024-01373-9",
+      "checked_utc": "2026-11-01T08:35:43.971431+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": [
+        {
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0"
+        },
+        {
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 8,
+      "citation": "[8] Okabe R, Cheng M, Chotrattanapituk A, et al. Structural constraint integration in a generative model for the discovery of quantum materials. Nature Materials. 2026;25:223–230. https://doi.org/10.1038/s41563-025-02355-y.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "Structural constraint integration in a generative model for the discovery of quantum materials",
+        "authors": [
+          {
+            "family": "Okabe",
+            "given": "Ryotaro",
+            "name": null
+          },
+          {
+            "family": "Cheng",
+            "given": "Mouyang",
+            "name": null
+          },
+          {
+            "family": "Chotrattanapituk",
+            "given": "Abhijatmedhi",
+            "name": null
+          },
+          {
+            "family": "Mandal",
+            "given": "Manasi",
+            "name": null
+          },
+          {
+            "family": "Mak",
+            "given": "Kiran",
+            "name": null
+          },
+          {
+            "family": "Córdova Carrizales",
+            "given": "Denisse",
+            "name": null
+          },
+          {
+            "family": "Hung",
+            "given": "Nguyen Tuan",
+            "name": null
+          },
+          {
+            "family": "Fu",
+            "given": "Xiang",
+            "name": null
+          },
+          {
+            "family": "Han",
+            "given": "Bowen",
+            "name": null
+          },
+          {
+            "family": "Wang",
+            "given": "Yao",
+            "name": null
+          },
+          {
+            "family": "Xie",
+            "given": "Weiwei",
+            "name": null
+          },
+          {
+            "family": "Cava",
+            "given": "Robert J.",
+            "name": null
+          },
+          {
+            "family": "Jaakkola",
+            "given": "Tommi S.",
+            "name": null
+          },
+          {
+            "family": "Cheng",
+            "given": "Yongqiang",
+            "name": null
+          },
+          {
+            "family": "Li",
+            "given": "Mingda",
+            "name": null
+          }
+        ],
+        "years": [
+          2025,
+          2026
+        ],
+        "volume": "25",
+        "issue": "2",
+        "pages": "223-230",
+        "DOI": "10.1038/s41563-025-02355-y",
+        "container_title": [
+          "Nature Materials"
+        ],
+        "date_fields": {
+          "published": [
+            [
+              2025,
+              9,
+              22
+            ]
+          ],
+          "published-print": [
+            [
+              2026,
+              2
+            ]
+          ],
+          "published-online": [
+            [
+              2025,
+              9,
+              22
+            ]
+          ],
+          "issued": [
+            [
+              2025,
+              9,
+              22
+            ]
+          ]
+        }
+      },
+      "source_url": "https://api.crossref.org/works/10.1038/s41563-025-02355-y",
+      "checked_utc": "2026-11-01T08:35:43.963024+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": [
+        {
+          "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+        },
+        {
+          "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+        }
+      ],
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 9,
+      "citation": "[9] Jiang S, Webb MA. Generative active learning across polymer architectures and solvophobicities for targeted rheological behavior. npj Computational Materials. 2026;12:28. https://doi.org/10.1038/s41524-025-01900-2.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "CORROBORATED_OFFICIAL_SEARCH_INDEX_ONLY",
+      "urls": [
+        "https://www.nature.com/articles/s41524-025-01900-2"
+      ],
+      "metadata": {
+        "title": "Generative active learning across polymer architectures and solvophobicities for targeted rheological behavior",
+        "authors": [
+          "Shengli Jiang",
+          "Michael A. Webb"
+        ],
+        "year": 2026,
+        "journal": "npj Computational Materials",
+        "volume": "12",
+        "article": "28",
+        "doi": "10.1038/s41524-025-01900-2",
+        "published_online": "2025-12-15",
+        "version_of_record": "2026-01-14"
+      },
+      "depth": "Publisher search-indexed citation, author/date and license metadata. Direct page inaccessible; not full paper reading.",
+      "license": "Publisher search return states CC BY-NC-ND 4.0; direct live license page was not accessible. No material copied.",
+      "access_limits": [
+        "Publisher page redirects to an inaccessible authorization service. No retry."
+      ],
+      "notes": [
+        "The 2025 DOI/online date and the 2026 volume citation are compatible; no year correction is indicated."
+      ],
+      "initial_status": "ACCESS_UNKNOWN",
+      "checked_utc": "2026-11-01T11:18:02.606059+00:00"
+    },
+    {
+      "reference": 10,
+      "citation": "[10] Cross MM. Rheology of non-Newtonian fluids: A new flow equation for pseudoplastic systems. Journal of Colloid Science. 1965;20:417–437. https://doi.org/10.1016/0095-8522(65)90022-X.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "Rheology of non-Newtonian fluids: A new flow equation for pseudoplastic systems",
+        "authors": [
+          {
+            "family": "Cross",
+            "given": "Malcolm M.",
+            "name": null
+          }
+        ],
+        "years": [
+          1965
+        ],
+        "volume": "20",
+        "issue": "5",
+        "pages": "417-437",
+        "DOI": "10.1016/0095-8522(65)90022-x",
+        "container_title": [
+          "Journal of Colloid Science"
+        ],
+        "date_fields": {
+          "published": [
+            [
+              1965,
+              6
+            ]
+          ],
+          "published-print": [
+            [
+              1965,
+              6
+            ]
+          ],
+          "issued": [
+            [
+              1965,
+              6
+            ]
+          ]
+        }
+      },
+      "source_url": "https://api.crossref.org/works/10.1016/0095-8522%2865%2990022-X",
+      "checked_utc": "2026-11-01T08:35:43.946318+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": [
+        {
+          "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+        }
+      ],
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 11,
+      "citation": "[11] Carreau PJ. Rheological Equations from Molecular Network Theories. Transactions of the Society of Rheology. 1972;16:99–127. https://doi.org/10.1122/1.549276.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "Rheological Equations from Molecular Network Theories",
+        "authors": [
+          {
+            "family": "Carreau",
+            "given": "Pierre J.",
+            "name": null
+          }
+        ],
+        "years": [
+          1972
+        ],
+        "volume": "16",
+        "issue": "1",
+        "pages": "99-127",
+        "DOI": "10.1122/1.549276",
+        "container_title": [
+          "Transactions of the Society of Rheology"
+        ],
+        "date_fields": {
+          "published": [
+            [
+              1972,
+              3,
+              1
+            ]
+          ],
+          "published-print": [
+            [
+              1972,
+              3,
+              1
+            ]
+          ],
+          "issued": [
+            [
+              1972,
+              3,
+              1
+            ]
+          ]
+        }
+      },
+      "source_url": "https://api.crossref.org/works/10.1122/1.549276",
+      "checked_utc": "2026-11-01T08:35:44.517607+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": null,
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 12,
+      "citation": "[12] Yasuda K, Armstrong RC, Cohen RE. Shear flow properties of concentrated solutions of linear and star branched polystyrenes. Rheologica Acta. 1981;20:163–178. https://doi.org/10.1007/BF01513059.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "SUPPORTED_DIRECT_PUBLISHER_METADATA",
+      "urls": [
+        "https://link.springer.com/article/10.1007/BF01513059"
+      ],
+      "metadata": {
+        "title": "Shear flow properties of concentrated solutions of linear and star branched polystyrenes",
+        "authors": [
+          "K. Yasuda",
+          "R. C. Armstrong",
+          "R. E. Cohen"
+        ],
+        "year": 1981,
+        "journal": "Rheologica Acta",
+        "volume": "20",
+        "pages": "163-178",
+        "doi": "10.1007/BF01513059"
+      },
+      "depth": "Publisher title, byline, summary and citation block. Subscription full text not accessed.",
+      "license": "Subscription preview; no open reuse license identified. No content redistributed.",
+      "access_limits": [],
+      "notes": [],
+      "initial_status": "ACCESS_UNKNOWN",
+      "checked_utc": "2026-11-01T11:18:02.606059+00:00"
+    },
+    {
+      "reference": 13,
+      "citation": "[13] Jain A, Gurnani R, Rajan A, Qi HJ, Ramprasad R. A physics-enforced neural network to predict polymer melt viscosity. npj Computational Materials. 2025;11:42. https://doi.org/10.1038/s41524-025-01532-6.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "A physics-enforced neural network to predict polymer melt viscosity",
+        "authors": [
+          {
+            "family": "Jain",
+            "given": "Ayush",
+            "name": null
+          },
+          {
+            "family": "Gurnani",
+            "given": "Rishi",
+            "name": null
+          },
+          {
+            "family": "Rajan",
+            "given": "Arunkumar",
+            "name": null
+          },
+          {
+            "family": "Qi",
+            "given": "H.Jerry",
+            "name": null
+          },
+          {
+            "family": "Ramprasad",
+            "given": "Rampi",
+            "name": null
+          }
+        ],
+        "years": [
+          2025
+        ],
+        "volume": "11",
+        "issue": "1",
+        "article_number": "42",
+        "DOI": "10.1038/s41524-025-01532-6",
+        "container_title": [
+          "npj Computational Materials"
+        ],
+        "date_fields": {
+          "published": [
+            [
+              2025,
+              2,
+              20
+            ]
+          ],
+          "published-online": [
+            [
+              2025,
+              2,
+              20
+            ]
+          ],
+          "issued": [
+            [
+              2025,
+              2,
+              20
+            ]
+          ]
+        }
+      },
+      "source_url": "https://api.crossref.org/works/10.1038/s41524-025-01532-6",
+      "checked_utc": "2026-11-01T08:35:44.631578+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": [
+        {
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0"
+        },
+        {
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 14,
+      "citation": "[14] Mahmoudabadbozchelou M, Jamali S. Rheology-Informed Neural Networks (RhINNs) for forward and inverse metamodelling of complex fluids. Scientific Reports. 2021;11:12015. https://doi.org/10.1038/s41598-021-91518-3.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "SUPPORTED_DIRECT_PRIMARY_ARCHIVE",
+      "urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8187644/"
+      ],
+      "metadata": {
+        "title": "Rheology-Informed Neural Networks (RhINNs) for forward and inverse metamodelling of complex fluids",
+        "authors": [
+          "Mohammadamin Mahmoudabadbozchelou",
+          "Safa Jamali"
+        ],
+        "year": 2021,
+        "journal": "Scientific Reports",
+        "volume": "11",
+        "article": "12015",
+        "doi": "10.1038/s41598-021-91518-3"
+      },
+      "depth": "Journal metadata, byline, abstract and license notice in official PMC archive. Not full article reading.",
+      "license": "CC BY 4.0 explicitly stated. No article text, figures or code redistributed.",
+      "access_limits": [],
+      "notes": [
+        "Abstract supports forward/inverse constitutive modelling context. It supplies no hydrogel validation result for the present paper."
+      ],
+      "initial_status": "ACCESS_UNKNOWN",
+      "checked_utc": "2026-11-01T11:18:02.606059+00:00"
+    },
+    {
+      "reference": 15,
+      "citation": "[15] Saadat M, Mahmoudabadbozchelou M, Jamali S. Data-driven selection of constitutive models via rheology-informed neural networks (RhINNs). Rheologica Acta. 2022;61:721–732. https://doi.org/10.1007/s00397-022-01357-w.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "SUPPORTED_DIRECT_PUBLISHER_METADATA",
+      "urls": [
+        "https://link.springer.com/article/10.1007/s00397-022-01357-w"
+      ],
+      "metadata": {
+        "title": "Data-driven selection of constitutive models via rheology-informed neural networks (RhINNs)",
+        "authors": [
+          "Milad Saadat",
+          "Mohammadamin Mahmoudabadbozchelou",
+          "Safa Jamali"
+        ],
+        "year": 2022,
+        "journal": "Rheologica Acta",
+        "volume": "61",
+        "pages": "721-732",
+        "doi": "10.1007/s00397-022-01357-w"
+      },
+      "depth": "Publisher title, byline, abstract, citation and date blocks. Subscription full text not accessed.",
+      "license": "Subscription preview; no open reuse license identified. No content redistributed.",
+      "access_limits": [],
+      "notes": [],
+      "initial_status": "ACCESS_UNKNOWN",
+      "checked_utc": "2026-11-01T11:18:02.606059+00:00"
+    },
+    {
+      "reference": 16,
+      "citation": "[16] Rasmussen CE, Williams CKI. Gaussian Processes for Machine Learning. MIT Press; 2006. https://gaussianprocess.org/gpml/.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "Gaussian Processes for Machine Learning",
+        "authors": [
+          {
+            "name": "Carl Edward Rasmussen"
+          },
+          {
+            "name": "Christopher K. I. Williams"
+          }
+        ],
+        "years": [
+          2006
+        ],
+        "publisher": "The MIT Press"
+      },
+      "source_url": "https://gaussianprocess.org/gpml/",
+      "checked_utc": "2026-11-01T08:35:45.322606+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": null,
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 17,
+      "citation": "[17] Lennon KR, McKinley GH, Swan JW. A data-driven method for automated data superposition with applications in soft matter science. Data-Centric Engineering. 2023;4:e13. https://doi.org/10.1017/dce.2023.3.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "A data-driven method for automated data superposition with applications in soft matter science",
+        "authors": [
+          {
+            "family": "Lennon",
+            "given": "Kyle R.",
+            "name": null
+          },
+          {
+            "family": "McKinley",
+            "given": "Gareth H.",
+            "name": null
+          },
+          {
+            "family": "Swan",
+            "given": "James W.",
+            "name": null
+          }
+        ],
+        "years": [
+          2023
+        ],
+        "volume": "4",
+        "article_number": "e13",
+        "DOI": "10.1017/dce.2023.3",
+        "container_title": [
+          "Data-Centric Engineering"
+        ],
+        "date_fields": {
+          "published": [
+            [
+              2023
+            ]
+          ],
+          "published-print": [
+            [
+              2023
+            ]
+          ],
+          "published-online": [
+            [
+              2023,
+              5,
+              25
+            ]
+          ],
+          "issued": [
+            [
+              2023
+            ]
+          ]
+        }
+      },
+      "source_url": "https://api.crossref.org/works/10.1017/dce.2023.3",
+      "checked_utc": "2026-11-01T08:35:45.104777+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": [
+        {
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 18,
+      "citation": "[18] Yao F, Müller HG, Wang JL. Functional data analysis for sparse longitudinal data. Journal of the American Statistical Association. 2005;100:577–590. https://doi.org/10.1198/016214504000001745.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "Functional Data Analysis for Sparse Longitudinal Data",
+        "authors": [
+          {
+            "family": "Yao",
+            "given": "Fang",
+            "name": null
+          },
+          {
+            "family": "Müller",
+            "given": "Hans-Georg",
+            "name": null
+          },
+          {
+            "family": "Wang",
+            "given": "Jane-Ling",
+            "name": null
+          }
+        ],
+        "years": [
+          2005
+        ],
+        "volume": "100",
+        "issue": "470",
+        "pages": "577-590",
+        "DOI": "10.1198/016214504000001745",
+        "container_title": [
+          "Journal of the American Statistical Association"
+        ],
+        "date_fields": {
+          "published": [
+            [
+              2005,
+              6
+            ]
+          ],
+          "published-print": [
+            [
+              2005,
+              6
+            ]
+          ],
+          "issued": [
+            [
+              2005,
+              6
+            ]
+          ]
+        }
+      },
+      "source_url": "https://api.crossref.org/works/10.1198/016214504000001745",
+      "checked_utc": "2026-11-01T08:35:45.084285+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": null,
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 19,
+      "citation": "[19] Titsias M. Variational Learning of Inducing Variables in Sparse Gaussian Processes. Proceedings of AISTATS. PMLR. 2009;5:567–574. https://proceedings.mlr.press/v5/titsias09a.html.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "Variational Learning of Inducing Variables in Sparse Gaussian Processes",
+        "authors": [
+          {
+            "name": "Michalis Titsias"
+          }
+        ],
+        "years": [
+          2009
+        ],
+        "volume": "5",
+        "pages": "567-574"
+      },
+      "source_url": "https://proceedings.mlr.press/v5/titsias09a.html",
+      "checked_utc": "2026-11-01T08:35:45.019409+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": null,
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 20,
+      "citation": "[20] Lázaro-Gredilla M, Figueiras-Vidal AR. Inter-domain Gaussian Processes for Sparse Inference using Inducing Features. Advances in Neural Information Processing Systems. 2009;22. https://papers.nips.cc/paper_files/paper/2009/hash/5ea1649a31336092c05438df996a3e59-Abstract.html.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "Inter-domain Gaussian Processes for Sparse Inference using Inducing Features",
+        "authors": [
+          {
+            "name": "Lázaro-Gredilla, Miguel"
+          },
+          {
+            "name": "Figueiras-Vidal, Aníbal"
+          }
+        ],
+        "years": [
+          2009
+        ],
+        "volume": "22"
+      },
+      "source_url": "https://papers.nips.cc/paper_files/paper/2009/hash/5ea1649a31336092c05438df996a3e59-Abstract.html",
+      "checked_utc": "2026-11-01T08:35:45.286803+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": null,
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 21,
+      "citation": "[21] Hensman J, Fusi N, Lawrence ND. Gaussian Processes for Big Data. Proceedings of UAI. 2013:282–290. https://arxiv.org/abs/1309.6835.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "Gaussian Processes for Big Data",
+        "authors": [
+          {
+            "name": "James Hensman"
+          },
+          {
+            "name": "Nicolo Fusi"
+          },
+          {
+            "name": "Neil D. Lawrence"
+          }
+        ],
+        "years": [
+          2013
+        ],
+        "entry_id": "http://arxiv.org/abs/1309.6835v1"
+      },
+      "source_url": "https://export.arxiv.org/api/query?id_list=1309.6835",
+      "checked_utc": "2026-11-01T08:35:45.667824+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": null,
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 22,
+      "citation": "[22] Matthews AG de G, Hensman J, Turner RE, Ghahramani Z. On Sparse Variational Methods and the Kullback-Leibler Divergence between Stochastic Processes. Proceedings of AISTATS. PMLR. 2016;51:231–239. https://proceedings.mlr.press/v51/matthews16.html.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "On Sparse Variational Methods and the Kullback-Leibler Divergence between Stochastic Processes",
+        "authors": [
+          {
+            "name": "Alexander G. de G. Matthews"
+          },
+          {
+            "name": "James Hensman"
+          },
+          {
+            "name": "Richard Turner"
+          },
+          {
+            "name": "Zoubin Ghahramani"
+          }
+        ],
+        "years": [
+          2016
+        ],
+        "volume": "51",
+        "pages": "231-239"
+      },
+      "source_url": "https://proceedings.mlr.press/v51/matthews16.html",
+      "checked_utc": "2026-11-01T08:35:45.548628+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": null,
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 23,
+      "citation": "[23] Shi J, Titsias M, Mnih A. Sparse Orthogonal Variational Inference for Gaussian Processes. Proceedings of AISTATS. PMLR. 2020;108:1932–1942. https://proceedings.mlr.press/v108/shi20b.html.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "Sparse Orthogonal Variational Inference for Gaussian Processes",
+        "authors": [
+          {
+            "name": "Jiaxin Shi"
+          },
+          {
+            "name": "Michalis Titsias"
+          },
+          {
+            "name": "Andriy Mnih"
+          }
+        ],
+        "years": [
+          2020
+        ],
+        "volume": "108",
+        "pages": "1932-1942"
+      },
+      "source_url": "https://proceedings.mlr.press/v108/shi20b.html",
+      "checked_utc": "2026-11-01T08:35:45.746711+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": null,
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 24,
+      "citation": "[24] Garnelo M, Rosenbaum D, Maddison CJ, et al. Conditional Neural Processes. Proceedings of ICML. PMLR. 2018;80:1704–1713. https://proceedings.mlr.press/v80/garnelo18a.html.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "Conditional Neural Processes",
+        "authors": [
+          {
+            "name": "Marta Garnelo"
+          },
+          {
+            "name": "Dan Rosenbaum"
+          },
+          {
+            "name": "Christopher Maddison"
+          },
+          {
+            "name": "Tiago Ramalho"
+          },
+          {
+            "name": "David Saxton"
+          },
+          {
+            "name": "Murray Shanahan"
+          },
+          {
+            "name": "Yee Whye Teh"
+          },
+          {
+            "name": "Danilo Rezende"
+          },
+          {
+            "name": "S. M. Ali Eslami"
+          }
+        ],
+        "years": [
+          2018
+        ],
+        "volume": "80",
+        "pages": "1704-1713"
+      },
+      "source_url": "https://proceedings.mlr.press/v80/garnelo18a.html",
+      "checked_utc": "2026-11-01T08:35:45.860350+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": null,
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 25,
+      "citation": "[25] Kim H, Mnih A, Schwarz J, Garnelo M, Eslami SMA, Rosenbaum D, Vinyals O, Teh YW. Attentive Neural Processes. Proceedings of ICLR. 2019. https://arxiv.org/abs/1901.05761.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "Attentive Neural Processes",
+        "authors": [
+          {
+            "name": "Hyunjik Kim"
+          },
+          {
+            "name": "Andriy Mnih"
+          },
+          {
+            "name": "Jonathan Schwarz"
+          },
+          {
+            "name": "Marta Garnelo"
+          },
+          {
+            "name": "Ali Eslami"
+          },
+          {
+            "name": "Dan Rosenbaum"
+          },
+          {
+            "name": "Oriol Vinyals"
+          },
+          {
+            "name": "Yee Whye Teh"
+          }
+        ],
+        "years": [
+          2019
+        ],
+        "entry_id": "http://arxiv.org/abs/1901.05761v2"
+      },
+      "source_url": "https://export.arxiv.org/api/query?id_list=1901.05761",
+      "checked_utc": "2026-11-01T08:35:45.893472+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": null,
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 26,
+      "citation": "[26] Ivanov O, Figurnov M, Vetrov D. Variational Autoencoder with Arbitrary Conditioning. Proceedings of ICLR. 2019. https://openreview.net/forum?id=SyxtJh0qYm.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "SUPPORTED_DIRECT_AUTHOR_REPOSITORY",
+      "urls": [
+        "https://github.com/tigvarts/vaeac"
+      ],
+      "metadata": {
+        "title": "Variational Autoencoder with Arbitrary Conditioning",
+        "authors": [
+          "Oleg Ivanov",
+          "Michael Figurnov",
+          "Dmitry Vetrov"
+        ],
+        "year": 2019,
+        "conference": "ICLR",
+        "url": "https://openreview.net/forum?id=SyxtJh0qYm"
+      },
+      "depth": "Author repository README citation and model summary; no code imported or run.",
+      "license": "Repository shows MIT code-license badge. This is not an independently verified paper reuse license.",
+      "access_limits": [
+        "Prior challenged OpenReview metadata API was not revisited."
+      ],
+      "notes": [
+        "The 2018 arXiv preprint and ICLR 2019 proceedings year are compatible; current conference citation is supported."
+      ],
+      "initial_status": "ACCESS_UNKNOWN",
+      "checked_utc": "2026-11-01T11:18:02.606059+00:00"
+    },
+    {
+      "reference": 27,
+      "citation": "[27] Ma C, Tschiatschek S, Palla K, Hernández-Lobato JM, Nowozin S, Zhang C. EDDI: Efficient Dynamic Discovery of High-Value Information with Partial VAE. Proceedings of ICML. PMLR. 2019;97:4234–4243. https://proceedings.mlr.press/v97/ma19c.html.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "EDDI: Efficient Dynamic Discovery of High-Value Information with Partial VAE",
+        "authors": [
+          {
+            "name": "Chao Ma"
+          },
+          {
+            "name": "Sebastian Tschiatschek"
+          },
+          {
+            "name": "Konstantina Palla"
+          },
+          {
+            "name": "Jose Miguel Hernandez-Lobato"
+          },
+          {
+            "name": "Sebastian Nowozin"
+          },
+          {
+            "name": "Cheng Zhang"
+          }
+        ],
+        "years": [
+          2019
+        ],
+        "volume": "97",
+        "pages": "4234-4243"
+      },
+      "source_url": "https://proceedings.mlr.press/v97/ma19c.html",
+      "checked_utc": "2026-11-01T08:35:46.200522+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": null,
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 28,
+      "citation": "[28] Yoon J, Jordon J, van der Schaar M. GAIN: Missing Data Imputation using Generative Adversarial Nets. Proceedings of ICML. PMLR. 2018;80:5689–5698. https://proceedings.mlr.press/v80/yoon18a.html.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "GAIN: Missing Data Imputation using Generative Adversarial Nets",
+        "authors": [
+          {
+            "name": "Jinsung Yoon"
+          },
+          {
+            "name": "James Jordon"
+          },
+          {
+            "name": "Mihaela Schaar"
+          }
+        ],
+        "years": [
+          2018
+        ],
+        "volume": "80",
+        "pages": "5689-5698"
+      },
+      "source_url": "https://proceedings.mlr.press/v80/yoon18a.html",
+      "checked_utc": "2026-11-01T08:35:46.280060+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": null,
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 29,
+      "citation": "[29] Tashiro Y, Song J, Song Y, Ermon S. CSDI: Conditional Score-based Diffusion Models for Probabilistic Time Series Imputation. Advances in Neural Information Processing Systems. 2021;34. https://proceedings.neurips.cc/paper_files/paper/2021/hash/cfe8504bda37b575c70ee1a8276f3486-Abstract.html.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "CSDI: Conditional Score-based Diffusion Models for Probabilistic Time Series Imputation",
+        "authors": [
+          {
+            "name": "Tashiro, Yusuke"
+          },
+          {
+            "name": "Song, Jiaming"
+          },
+          {
+            "name": "Song, Yang"
+          },
+          {
+            "name": "Ermon, Stefano"
+          }
+        ],
+        "years": [
+          2021
+        ],
+        "volume": "34",
+        "pages": "24804-24816"
+      },
+      "source_url": "https://proceedings.neurips.cc/paper_files/paper/2021/hash/cfe8504bda37b575c70ee1a8276f3486-Abstract.html",
+      "checked_utc": "2026-11-01T08:35:46.496161+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": null,
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 30,
+      "citation": "[30] Xiao Z, Yan Q, Amit Y. Exponential Tilting of Generative Models: Improving Sample Quality by Training and Sampling from Latent Energy. arXiv:2006.08100v1. 2020. https://doi.org/10.48550/arXiv.2006.08100.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "Exponential Tilting of Generative Models: Improving Sample Quality by Training and Sampling from Latent Energy",
+        "authors": [
+          {
+            "name": "Zhisheng Xiao"
+          },
+          {
+            "name": "Qing Yan"
+          },
+          {
+            "name": "Yali Amit"
+          }
+        ],
+        "years": [
+          2020
+        ],
+        "entry_id": "http://arxiv.org/abs/2006.08100v1"
+      },
+      "source_url": "https://export.arxiv.org/api/query?id_list=2006.08100v1",
+      "checked_utc": "2026-11-01T08:35:46.453701+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": null,
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 31,
+      "citation": "[31] Strauss RR, Oliva JB. Arbitrary conditional distributions with energy. Advances in Neural Information Processing Systems. 2021;34. https://proceedings.neurips.cc/paper_files/paper/2021/file/06c284d3f757b15c02f47f3ff06dc275-Paper.pdf.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "Arbitrary Conditional Distributions with Energy",
+        "authors": [
+          {
+            "name": "Strauss, Ryan"
+          },
+          {
+            "name": "Oliva, Junier B."
+          }
+        ],
+        "years": [
+          2021
+        ],
+        "volume": "34",
+        "pages": "752-763"
+      },
+      "source_url": "https://proceedings.neurips.cc/paper_files/paper/2021/hash/06c284d3f757b15c02f47f3ff06dc275-Abstract.html",
+      "checked_utc": "2026-11-01T08:35:46.911841+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": null,
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 32,
+      "citation": "[32] Zhang C. Dataset for Disentangled Generative AI-Guided Closed-Loop Optimization of Deposition Morphology for 3D Bioprinting Applications. Version 0.0.2. Zenodo; 2026. https://doi.org/10.5281/zenodo.19602891.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "Dataset for Disentangled Generative AI-Guided Closed-Loop Optimization of Deposition Morphology for 3D Bioprinting Applications",
+        "authors": [
+          {
+            "name": "Zhang, Colin",
+            "family": "Zhang",
+            "given": "Colin"
+          }
+        ],
+        "years": [
+          2026
+        ],
+        "DOI": "10.5281/zenodo.19602891",
+        "publisher": "Zenodo",
+        "version": "v0.0.2"
+      },
+      "source_url": "https://api.datacite.org/dois/10.5281/zenodo.19602891",
+      "checked_utc": "2026-11-01T08:35:47.622022+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": [
+        {
+          "rights": "Creative Commons Attribution 4.0 International",
+          "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+          "rightsIdentifier": "cc-by-4.0",
+          "rightsIdentifierScheme": "SPDX"
+        },
+        {
+          "rights": "Copyright (C) 2026 The Author(s).",
+          "rightsUri": "http://rightsstatements.org/vocab/InC/1.0/"
+        }
+      ],
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 33,
+      "citation": "[33] Zhang C, Elvitigala K, Sakai S. Generative AI-guided in silico closed-loop optimisation of deposition morphology for 3D bioprinting applications. Virtual and Physical Prototyping. 2026;21:e2671497. https://doi.org/10.1080/17452759.2026.2671497.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "Generative AI-guided in silico closed-loop optimisation of deposition morphology for 3D bioprinting applications",
+        "authors": [
+          {
+            "family": "Zhang",
+            "given": "Colin",
+            "name": null
+          },
+          {
+            "family": "Elvitigala",
+            "given": "Kelum Chamara Manoj Lakmal",
+            "name": null
+          },
+          {
+            "family": "Sakai",
+            "given": "Shinji",
+            "name": null
+          }
+        ],
+        "years": [
+          2026
+        ],
+        "volume": "21",
+        "issue": "1",
+        "article_number": "e2671497",
+        "DOI": "10.1080/17452759.2026.2671497",
+        "container_title": [
+          "Virtual and Physical Prototyping"
+        ],
+        "date_fields": {
+          "published": [
+            [
+              2026,
+              5,
+              21
+            ]
+          ],
+          "published-print": [
+            [
+              2026,
+              12,
+              31
+            ]
+          ],
+          "published-online": [
+            [
+              2026,
+              5,
+              21
+            ]
+          ],
+          "issued": [
+            [
+              2026,
+              5,
+              21
+            ]
+          ]
+        }
+      },
+      "source_url": "https://api.crossref.org/works/10.1080/17452759.2026.2671497",
+      "checked_utc": "2026-11-01T08:35:47.032318+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": [
+        {
+          "URL": "http://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 34,
+      "citation": "[34] Gneiting T, Raftery AE. Strictly Proper Scoring Rules, Prediction, and Estimation. Journal of the American Statistical Association. 2007;102:359–378. https://doi.org/10.1198/016214506000001437.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "Strictly Proper Scoring Rules, Prediction, and Estimation",
+        "authors": [
+          {
+            "family": "Gneiting",
+            "given": "Tilmann",
+            "name": null
+          },
+          {
+            "family": "Raftery",
+            "given": "Adrian E",
+            "name": null
+          }
+        ],
+        "years": [
+          2007
+        ],
+        "volume": "102",
+        "issue": "477",
+        "pages": "359-378",
+        "DOI": "10.1198/016214506000001437",
+        "container_title": [
+          "Journal of the American Statistical Association"
+        ],
+        "date_fields": {
+          "published": [
+            [
+              2007,
+              3
+            ]
+          ],
+          "published-print": [
+            [
+              2007,
+              3
+            ]
+          ],
+          "issued": [
+            [
+              2007,
+              3
+            ]
+          ]
+        }
+      },
+      "source_url": "https://api.crossref.org/works/10.1198/016214506000001437",
+      "checked_utc": "2026-11-01T08:35:47.031307+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": null,
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 35,
+      "citation": "[35] Gneiting T, Balabdaoui F, Raftery AE. Probabilistic Forecasts, Calibration and Sharpness. Journal of the Royal Statistical Society Series B. 2007;69:243–268. https://doi.org/10.1111/j.1467-9868.2007.00587.x.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "Probabilistic Forecasts, Calibration and Sharpness",
+        "authors": [
+          {
+            "family": "Gneiting",
+            "given": "Tilmann",
+            "name": null
+          },
+          {
+            "family": "Balabdaoui",
+            "given": "Fadoua",
+            "name": null
+          },
+          {
+            "family": "Raftery",
+            "given": "Adrian E.",
+            "name": null
+          }
+        ],
+        "years": [
+          2007
+        ],
+        "volume": "69",
+        "issue": "2",
+        "pages": "243-268",
+        "DOI": "10.1111/j.1467-9868.2007.00587.x",
+        "container_title": [
+          "Journal of the Royal Statistical Society Series B: Statistical Methodology"
+        ],
+        "date_fields": {
+          "published": [
+            [
+              2007,
+              3,
+              5
+            ]
+          ],
+          "published-print": [
+            [
+              2007,
+              4,
+              1
+            ]
+          ],
+          "published-online": [
+            [
+              2007,
+              3,
+              5
+            ]
+          ],
+          "issued": [
+            [
+              2007,
+              3,
+              5
+            ]
+          ]
+        }
+      },
+      "source_url": "https://api.crossref.org/works/10.1111/j.1467-9868.2007.00587.x",
+      "checked_utc": "2026-11-01T08:35:47.115368+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": [
+        {
+          "URL": "https://academic.oup.com/journals/pages/open_access/funder_policies/chorus/standard_publication_model"
+        }
+      ],
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 36,
+      "citation": "[36] Tran K, Neiswanger W, Yoon J, et al. Methods for comparing uncertainty quantifications for material property predictions. Machine Learning: Science and Technology. 2020;1:025006. https://doi.org/10.1088/2632-2153/ab7e1a.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "Methods for comparing uncertainty quantifications for material property predictions",
+        "authors": [
+          {
+            "family": "Tran",
+            "given": "Kevin",
+            "name": null
+          },
+          {
+            "family": "Neiswanger",
+            "given": "Willie",
+            "name": null
+          },
+          {
+            "family": "Yoon",
+            "given": "Junwoong",
+            "name": null
+          },
+          {
+            "family": "Zhang",
+            "given": "Qingyang",
+            "name": null
+          },
+          {
+            "family": "Xing",
+            "given": "Eric",
+            "name": null
+          },
+          {
+            "family": "Ulissi",
+            "given": "Zachary W",
+            "name": null
+          }
+        ],
+        "years": [
+          2020
+        ],
+        "volume": "1",
+        "issue": "2",
+        "pages": "025006",
+        "DOI": "10.1088/2632-2153/ab7e1a",
+        "container_title": [
+          "Machine Learning: Science and Technology"
+        ],
+        "date_fields": {
+          "published": [
+            [
+              2020,
+              5,
+              18
+            ]
+          ],
+          "published-print": [
+            [
+              2020,
+              6,
+              1
+            ]
+          ],
+          "published-online": [
+            [
+              2020,
+              5,
+              18
+            ]
+          ],
+          "issued": [
+            [
+              2020,
+              5,
+              18
+            ]
+          ]
+        }
+      },
+      "source_url": "https://api.crossref.org/works/10.1088/2632-2153/ab7e1a",
+      "checked_utc": "2026-11-01T08:35:47.504135+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": [
+        {
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        },
+        {
+          "URL": "https://iopscience.iop.org/info/page/text-and-data-mining"
+        }
+      ],
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 37,
+      "citation": "[37] Scheuerer M, Hamill TM. Variogram-Based Proper Scoring Rules for Probabilistic Forecasts of Multivariate Quantities. Monthly Weather Review. 2015;143:1321–1334. https://doi.org/10.1175/MWR-D-14-00269.1.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "Variogram-Based Proper Scoring Rules for Probabilistic Forecasts of Multivariate Quantities*",
+        "authors": [
+          {
+            "family": "Scheuerer",
+            "given": "Michael",
+            "name": null
+          },
+          {
+            "family": "Hamill",
+            "given": "Thomas M.",
+            "name": null
+          }
+        ],
+        "years": [
+          2015
+        ],
+        "volume": "143",
+        "issue": "4",
+        "pages": "1321-1334",
+        "DOI": "10.1175/mwr-d-14-00269.1",
+        "container_title": [
+          "Monthly Weather Review"
+        ],
+        "date_fields": {
+          "published": [
+            [
+              2015,
+              3,
+              31
+            ]
+          ],
+          "published-print": [
+            [
+              2015,
+              4,
+              1
+            ]
+          ],
+          "published-online": [
+            [
+              2015,
+              3,
+              31
+            ]
+          ],
+          "issued": [
+            [
+              2015,
+              3,
+              31
+            ]
+          ]
+        }
+      },
+      "source_url": "https://api.crossref.org/works/10.1175/MWR-D-14-00269.1",
+      "checked_utc": "2026-11-01T08:35:47.597687+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": null,
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 38,
+      "citation": "[38] Krause A, Singh A, Guestrin C. Near-Optimal Sensor Placements in Gaussian Processes: Theory, Efficient Algorithms and Empirical Studies. Journal of Machine Learning Research. 2008;9:235–284. https://www.jmlr.org/papers/v9/krause08a.html.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "Near-Optimal Sensor Placements in Gaussian Processes: Theory, Efficient Algorithms and Empirical Studies",
+        "authors": [
+          {
+            "name": "Andreas Krause"
+          },
+          {
+            "name": "Ajit Singh"
+          },
+          {
+            "name": "Carlos Guestrin"
+          }
+        ],
+        "years": [
+          2008
+        ],
+        "volume": "9",
+        "issue": "8",
+        "pages": "235-284"
+      },
+      "source_url": "https://www.jmlr.org/papers/v9/krause08a.html",
+      "checked_utc": "2026-11-01T08:35:47.509511+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": null,
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 39,
+      "citation": "[39] Palmer G, Du S, Politowicz A, et al. Calibration after bootstrap for accurate uncertainty quantification in regression models. npj Computational Materials. 2022;8:115. https://doi.org/10.1038/s41524-022-00794-8.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "Calibration after bootstrap for accurate uncertainty quantification in regression models",
+        "authors": [
+          {
+            "family": "Palmer",
+            "given": "Glenn",
+            "name": null
+          },
+          {
+            "family": "Du",
+            "given": "Siqi",
+            "name": null
+          },
+          {
+            "family": "Politowicz",
+            "given": "Alexander",
+            "name": null
+          },
+          {
+            "family": "Emory",
+            "given": "Joshua Paul",
+            "name": null
+          },
+          {
+            "family": "Yang",
+            "given": "Xiyu",
+            "name": null
+          },
+          {
+            "family": "Gautam",
+            "given": "Anupraas",
+            "name": null
+          },
+          {
+            "family": "Gupta",
+            "given": "Grishma",
+            "name": null
+          },
+          {
+            "family": "Li",
+            "given": "Zhelong",
+            "name": null
+          },
+          {
+            "family": "Jacobs",
+            "given": "Ryan",
+            "name": null
+          },
+          {
+            "family": "Morgan",
+            "given": "Dane",
+            "name": null
+          }
+        ],
+        "years": [
+          2022
+        ],
+        "volume": "8",
+        "issue": "1",
+        "article_number": "115",
+        "DOI": "10.1038/s41524-022-00794-8",
+        "container_title": [
+          "npj Computational Materials"
+        ],
+        "date_fields": {
+          "published": [
+            [
+              2022,
+              5,
+              20
+            ]
+          ],
+          "published-online": [
+            [
+              2022,
+              5,
+              20
+            ]
+          ],
+          "issued": [
+            [
+              2022,
+              5,
+              20
+            ]
+          ]
+        }
+      },
+      "source_url": "https://api.crossref.org/works/10.1038/s41524-022-00794-8",
+      "checked_utc": "2026-11-01T08:35:47.766320+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": [
+        {
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        },
+        {
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 40,
+      "citation": "[40] Cawley GC, Talbot NLC. On Over-fitting in Model Selection and Subsequent Selection Bias in Performance Evaluation. Journal of Machine Learning Research. 2010;11:2079–2107. https://www.jmlr.org/papers/v11/cawley10a.html.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "On Over-fitting in Model Selection and Subsequent Selection Bias in Performance Evaluation",
+        "authors": [
+          {
+            "name": "Gavin C. Cawley"
+          },
+          {
+            "name": "Nicola L. C. Talbot"
+          }
+        ],
+        "years": [
+          2010
+        ],
+        "volume": "11",
+        "issue": "70",
+        "pages": "2079-2107"
+      },
+      "source_url": "https://www.jmlr.org/papers/v11/cawley10a.html",
+      "checked_utc": "2026-11-01T08:35:47.986078+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": null,
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 41,
+      "citation": "[41] Li Q, Fu N, Omee SS, Hu J. MD-HIT: Machine learning for material property prediction with dataset redundancy control. npj Computational Materials. 2024;10:245. https://doi.org/10.1038/s41524-024-01426-z.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "MD-HIT: Machine learning for material property prediction with dataset redundancy control",
+        "authors": [
+          {
+            "family": "Li",
+            "given": "Qin",
+            "name": null
+          },
+          {
+            "family": "Fu",
+            "given": "Nihang",
+            "name": null
+          },
+          {
+            "family": "Omee",
+            "given": "Sadman Sadeed",
+            "name": null
+          },
+          {
+            "family": "Hu",
+            "given": "Jianjun",
+            "name": null
+          }
+        ],
+        "years": [
+          2024
+        ],
+        "volume": "10",
+        "issue": "1",
+        "article_number": "245",
+        "DOI": "10.1038/s41524-024-01426-z",
+        "container_title": [
+          "npj Computational Materials"
+        ],
+        "date_fields": {
+          "published": [
+            [
+              2024,
+              10,
+              18
+            ]
+          ],
+          "published-online": [
+            [
+              2024,
+              10,
+              18
+            ]
+          ],
+          "issued": [
+            [
+              2024,
+              10,
+              18
+            ]
+          ]
+        }
+      },
+      "source_url": "https://api.crossref.org/works/10.1038/s41524-024-01426-z",
+      "checked_utc": "2026-11-01T08:35:48.129768+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": [
+        {
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        },
+        {
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 42,
+      "citation": "[42] Li K, Persaud D, Choudhary K, et al. Exploiting redundancy in large materials datasets for efficient machine learning with less data. Nature Communications. 2023;14:7283. https://doi.org/10.1038/s41467-023-42992-y.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "Exploiting redundancy in large materials datasets for efficient machine learning with less data",
+        "authors": [
+          {
+            "family": "Li",
+            "given": "Kangming",
+            "name": null
+          },
+          {
+            "family": "Persaud",
+            "given": "Daniel",
+            "name": null
+          },
+          {
+            "family": "Choudhary",
+            "given": "Kamal",
+            "name": null
+          },
+          {
+            "family": "DeCost",
+            "given": "Brian",
+            "name": null
+          },
+          {
+            "family": "Greenwood",
+            "given": "Michael",
+            "name": null
+          },
+          {
+            "family": "Hattrick-Simpers",
+            "given": "Jason",
+            "name": null
+          }
+        ],
+        "years": [
+          2023
+        ],
+        "volume": "14",
+        "issue": "1",
+        "article_number": "7283",
+        "DOI": "10.1038/s41467-023-42992-y",
+        "container_title": [
+          "Nature Communications"
+        ],
+        "date_fields": {
+          "published": [
+            [
+              2023,
+              11,
+              10
+            ]
+          ],
+          "published-online": [
+            [
+              2023,
+              11,
+              10
+            ]
+          ],
+          "issued": [
+            [
+              2023,
+              11,
+              10
+            ]
+          ]
+        }
+      },
+      "source_url": "https://api.crossref.org/works/10.1038/s41467-023-42992-y",
+      "checked_utc": "2026-11-01T08:35:48.225350+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": [
+        {
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        },
+        {
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 43,
+      "citation": "[43] Dale AS, Li K, DeCost B, et al. When active learning fails, uncalibrated out of distribution uncertainty quantification might be the problem. npj Computational Materials. Published online 24 October 2026. https://doi.org/10.1038/s41524-026-02368-4.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "When active learning fails, uncalibrated out of distribution uncertainty quantification might be the problem",
+        "authors": [
+          {
+            "family": "Dale",
+            "given": "Ashley S.",
+            "name": null
+          },
+          {
+            "family": "Li",
+            "given": "Kangming",
+            "name": null
+          },
+          {
+            "family": "DeCost",
+            "given": "Brian",
+            "name": null
+          },
+          {
+            "family": "Wan",
+            "given": "Hao",
+            "name": null
+          },
+          {
+            "family": "Han",
+            "given": "Yuchen",
+            "name": null
+          },
+          {
+            "family": "Fehlis",
+            "given": "Yao",
+            "name": null
+          },
+          {
+            "family": "Hattrick-Simpers",
+            "given": "Jason",
+            "name": null
+          }
+        ],
+        "years": [
+          2026
+        ],
+        "DOI": "10.1038/s41524-026-02368-4",
+        "container_title": [
+          "npj Computational Materials"
+        ],
+        "date_fields": {
+          "published": [
+            [
+              2026,
+              10,
+              24
+            ]
+          ],
+          "published-online": [
+            [
+              2026,
+              10,
+              24
+            ]
+          ],
+          "issued": [
+            [
+              2026,
+              10,
+              24
+            ]
+          ]
+        }
+      },
+      "source_url": "https://api.crossref.org/works/10.1038/s41524-026-02368-4",
+      "checked_utc": "2026-11-01T08:35:48.178137+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": [
+        {
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        },
+        {
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 44,
+      "citation": "[44] Romano Y, Patterson E, Candès EJ. Conformalized Quantile Regression. Advances in Neural Information Processing Systems. 2019;32. https://proceedings.neurips.cc/paper_files/paper/2019/hash/5103c3584b063c431bd1268e9b5e76fb-Abstract.html.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "Conformalized Quantile Regression",
+        "authors": [
+          {
+            "name": "Romano, Yaniv"
+          },
+          {
+            "name": "Patterson, Evan"
+          },
+          {
+            "name": "Candes, Emmanuel"
+          }
+        ],
+        "years": [
+          2019
+        ],
+        "volume": "32"
+      },
+      "source_url": "https://proceedings.neurips.cc/paper_files/paper/2019/hash/5103c3584b063c431bd1268e9b5e76fb-Abstract.html",
+      "checked_utc": "2026-11-01T08:35:48.426287+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": null,
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 45,
+      "citation": "[45] Barber RF, Candès EJ, Ramdas A, Tibshirani RJ. Predictive inference with the jackknife+. Annals of Statistics. 2021;49:486–507. https://doi.org/10.1214/20-AOS1965.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "Predictive inference with the jackknife+",
+        "authors": [
+          {
+            "family": "Barber",
+            "given": "Rina Foygel",
+            "name": null
+          },
+          {
+            "family": "Candès",
+            "given": "Emmanuel J.",
+            "name": null
+          },
+          {
+            "family": "Ramdas",
+            "given": "Aaditya",
+            "name": null
+          },
+          {
+            "family": "Tibshirani",
+            "given": "Ryan J.",
+            "name": null
+          }
+        ],
+        "years": [
+          2021
+        ],
+        "volume": "49",
+        "issue": "1",
+        "pages": "486-507",
+        "DOI": "10.1214/20-aos1965",
+        "container_title": [
+          "The Annals of Statistics"
+        ],
+        "date_fields": {
+          "published": [
+            [
+              2021,
+              2,
+              1
+            ]
+          ],
+          "published-print": [
+            [
+              2021,
+              2,
+              1
+            ]
+          ],
+          "issued": [
+            [
+              2021,
+              2,
+              1
+            ]
+          ]
+        }
+      },
+      "source_url": "https://api.crossref.org/works/10.1214/20-AOS1965",
+      "checked_utc": "2026-11-01T08:35:48.565735+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": null,
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 46,
+      "citation": "[46] Shah A, Wilson A, Ghahramani Z. Student-t Processes as Alternatives to Gaussian Processes. Proceedings of AISTATS. PMLR. 2014;33:877–885. https://proceedings.mlr.press/v33/shah14.html.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "Student-t Processes as Alternatives to Gaussian Processes",
+        "authors": [
+          {
+            "name": "Amar Shah"
+          },
+          {
+            "name": "Andrew Wilson"
+          },
+          {
+            "name": "Zoubin Ghahramani"
+          }
+        ],
+        "years": [
+          2014
+        ],
+        "volume": "33",
+        "pages": "877-885"
+      },
+      "source_url": "https://proceedings.mlr.press/v33/shah14.html",
+      "checked_utc": "2026-11-01T08:35:48.602365+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": null,
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 47,
+      "citation": "[47] Gallagher MT, Wain RAJ, Dari S, Whitty JP, Smith DJ. Non-identifiability of parameters for a class of shear-thinning rheological models, with implications for haematological fluid dynamics. arXiv:1810.02292v1. 2018. https://doi.org/10.48550/arXiv.1810.02292.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "Non-identifiability of parameters for a class of shear-thinning rheological models, with implications for haematological fluid dynamics",
+        "authors": [
+          {
+            "name": "Meurig T. Gallagher"
+          },
+          {
+            "name": "Richard A. J. Wain"
+          },
+          {
+            "name": "Sonia Dari"
+          },
+          {
+            "name": "Justin P. Whitty"
+          },
+          {
+            "name": "David J. Smith"
+          }
+        ],
+        "years": [
+          2018
+        ],
+        "entry_id": "http://arxiv.org/abs/1810.02292v1"
+      },
+      "source_url": "https://export.arxiv.org/api/query?id_list=1810.02292v1",
+      "checked_utc": "2026-11-01T08:35:48.772537+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": null,
+      "new_live_request_this_pass": false
+    },
+    {
+      "reference": 48,
+      "citation": "[48] Jordan A, Krüger F, Lerch S. Evaluating Probabilistic Forecasts with scoringRules. Journal of Statistical Software. 2019;90(12). https://doi.org/10.18637/jss.v090.i12.",
+      "confirmed_substantive_discrepancies": [],
+      "status": "INHERITED_OFFICIAL_METADATA_SUPPORTED",
+      "metadata": {
+        "title": "Evaluating Probabilistic Forecasts with scoringRules",
+        "authors": [
+          {
+            "family": "Jordan",
+            "given": "Alexander",
+            "name": null
+          },
+          {
+            "family": "Krüger",
+            "given": "Fabian",
+            "name": null
+          },
+          {
+            "family": "Lerch",
+            "given": "Sebastian",
+            "name": null
+          }
+        ],
+        "years": [
+          2019
+        ],
+        "volume": "90",
+        "issue": "12",
+        "DOI": "10.18637/jss.v090.i12",
+        "container_title": [
+          "Journal of Statistical Software"
+        ],
+        "date_fields": {
+          "published": [
+            [
+              2019
+            ]
+          ],
+          "published-online": [
+            [
+              2019
+            ]
+          ],
+          "issued": [
+            [
+              2019
+            ]
+          ]
+        }
+      },
+      "source_url": "https://api.crossref.org/works/10.18637/jss.v090.i12",
+      "checked_utc": "2026-11-01T08:35:48.806205+00:00",
+      "depth": "Bibliographic metadata/visible bibliographic fields only; not article/fullbook reading.",
+      "license_metadata_as_returned": null,
+      "new_live_request_this_pass": false
+    }
+  ],
+  "core_material_sources": [
+    {
+      "reference": 32,
+      "doi": "10.5281/zenodo.19602891",
+      "url": "https://zenodo.org/records/19602891",
+      "version": "v0.0.2",
+      "creator": "Colin Zhang",
+      "publication_date": "2026-04-15",
+      "checked_utc": "2026-11-01T11:18:02.606059+00:00",
+      "reading_depth": "Official record title, version, authors/contributors, description, file list and availability. No files downloaded or training data reopened.",
+      "supported_facts": [
+        "Version and article association match the manuscript.",
+        "Rheology archive is listed separately from fitted-parameter/generation inputs.",
+        "Current rheology ZIP checksum matches the previously preserved source metadata."
+      ],
+      "rheology_archive": {
+        "name": "ALG-Ph_HA-Ph_rheology_data.zip",
+        "listed_md5": "4eaac901afc46212108bfdad8b39b5c2",
+        "previously_recorded_size_bytes": 1121259
+      },
+      "license_status": "Dataset CC BY 4.0 is explicitly supported by preserved official Zenodo API metadata and by preserved DataCite DOI rights metadata. Fresh HTML extraction leaves the license label blank; no fresh API request was needed or made.",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_scope_limit": "Dataset license does not choose the license for this study original software, manuscript, trained model or new processing. No new license grant is inferred."
+    },
+    {
+      "reference": 33,
+      "doi": "10.1080/17452759.2026.2671497",
+      "url": "https://ir.library.osaka-u.ac.jp/repo/ouka/all/104907/VirtualPhysPrototyping_21_1_e2671497.pdf",
+      "version": "University of Osaka institutional Version of Record",
+      "checked_utc": "2026-11-01T11:18:02.606059+00:00",
+      "reading_depth": "Repository cover and journal title/byline/rights, selected abstract and Methods 5.1-5.2, plus data/code availability statements. Not a full 20-page reading or a raw-data audit.",
+      "license_status": "CC BY 4.0 explicitly stated on repository cover and in article.",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "supported_material_description": "ALG-Ph and HA-Ph ink solutions precede the separately described photoprinting procedure. Apparent-viscosity measurement and oscillatory-modulus measurement are described separately. Calling the analysed records precursor-ink flow curves is compatible with these passages.",
+      "condition_limits": [
+        "The 22.5 C statement is attached to oscillatory-modulus measurements; a flow-temperature assignment is not established.",
+        "The publication instrument scan range is not a substitute for the admitted cache support.",
+        "Per-record batch identities, replicate independence, complete flow history and measurement-state linkage are not established by these passages.",
+        "The source study is acellular; no cell-containing or post-crosslinked-gel validation claim should be added."
+      ]
+    }
+  ],
+  "manuscript_source_claim_assessment": [
+    {
+      "claim": "Dataset version 0.0.2 and associated source article",
+      "result": "supported",
+      "action": "Retain current exact version and DOI."
+    },
+    {
+      "claim": "ALG-Ph/HA-Ph precursor-ink flow-curve scope",
+      "result": "supported_with_measurement_state_limits",
+      "action": "Retain precursor/ink terminology; do not imply cell-bearing or photocrosslinked-gel rheology."
+    },
+    {
+      "claim": "Oscillatory conditions must not automatically be assigned to steady-flow data",
+      "result": "appropriately_cautious",
+      "action": "Retain current sentence. Do not insert a flow temperature from the oscillatory sentence."
+    },
+    {
+      "claim": "45 admitted cache records and 39 native retained positions",
+      "result": "study_cache_definition_not_revalidated_against_raw_files_in_this_pass",
+      "action": "Keep linked to the frozen working cache; do not call this an independently confirmed original experimental N or full instrument grid."
+    },
+    {
+      "claim": "Independent preparation batches and reliable calibration remain unresolved",
+      "result": "appropriately_cautious",
+      "action": "Retain limitation; source-publication sample counts do not resolve current batch independence."
+    },
+    {
+      "claim": "Source CC BY 4.0 permits assigning a license to all current study assets",
+      "result": "not_supported_and_not_claimed",
+      "action": "Keep current authors licensing decision pending for original assets; preserve source attribution and change notices for any derivative source data."
+    }
+  ],
+  "remaining_manual_tasks": [
+    {
+      "task": "Confirm manuscript author identities, affiliations, contributions, funding, competing interests and final reuse license for original study assets.",
+      "owner": "Present-study authors",
+      "requires_new_experiment": false
+    },
+    {
+      "task": "Confirm per-record steady-flow temperature, scan/pre-shear history, preparation/batch identifiers, additives and crosslink/illumination state before stronger measurement-state or independence claims.",
+      "owner": "Record owners or authors with original laboratory records",
+      "requires_new_experiment": "Only if those records do not exist; no such values are fabricated here."
+    },
+    {
+      "task": "Retain direct-access-unresolved status for references 3 and 9 until an author or later authorized official access supplies a direct record. Current search-indexed metadata shows no substantive mismatch.",
+      "owner": "Final bibliography reviewer",
+      "requires_new_experiment": false
+    }
+  ],
+  "release_hygiene": "Only minimal citation metadata and reviewer-written status summaries are public. No absolute private path, raw third-party article text, PDF, figure, code or source measurement is included. Internal locators and tool-response receipts remain private.",
+  "completion": "No manuscript, checkout, remote repository, model, data or score was modified.",
+  "time_semantics": "checked_utc is review finalization; the following access log preserves actual tool-return times. Prior inherited records retain their original metadata receipt times.",
+  "actual_access_log": [
+    {
+      "call": "search2",
+      "returned_utc": "2026-11-01 11:12:18 UTC",
+      "operation": "search",
+      "queries": [
+        {
+          "q": "\"Shear flow properties of concentrated solutions of linear and star branched polystyrenes\"",
+          "domains": [
+            "link.springer.com"
+          ]
+        },
+        {
+          "q": "\"Rheology-Informed Neural Networks\" \"12015\"",
+          "domains": [
+            "nature.com",
+            "pmc.ncbi.nlm.nih.gov"
+          ]
+        },
+        {
+          "q": "\"Data-driven selection of constitutive models\"",
+          "domains": [
+            "link.springer.com",
+            "nature.com",
+            "jamali.sites.northeastern.edu"
+          ]
+        },
+        {
+          "q": "\"Variational Autoencoder with Arbitrary Conditioning\"",
+          "domains": [
+            "arxiv.org",
+            "github.com",
+            "openreview.net"
+          ]
+        }
+      ]
+    },
+    {
+      "call": "primary1",
+      "returned_utc": "2026-11-01 11:12:32 UTC",
+      "operation": "primary_source_open_or_targeted_read",
+      "locators": [
+        {
+          "ref_id": "https://www.nature.com/articles/s41524-020-00406-3"
+        },
+        {
+          "ref_id": "https://ramprasad.mse.gatech.edu/wp-content/uploads/2018/08/176.pdf"
+        },
+        {
+          "ref_id": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8085610/"
+        },
+        {
+          "ref_id": "https://www.nature.com/articles/s41524-025-01900-2"
+        }
+      ]
+    },
+    {
+      "call": "primary2",
+      "returned_utc": "2026-11-01 11:12:52 UTC",
+      "operation": "primary_source_open_or_targeted_read",
+      "locators": [
+        {
+          "ref_id": "https://link.springer.com/article/10.1007/BF01513059"
+        },
+        {
+          "ref_id": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8187644/"
+        },
+        {
+          "ref_id": "https://link.springer.com/article/10.1007/s00397-022-01357-w"
+        },
+        {
+          "ref_id": "https://github.com/tigvarts/vaeac"
+        }
+      ]
+    },
+    {
+      "call": "primary3",
+      "returned_utc": "2026-11-01 11:12:59 UTC",
+      "operation": "primary_source_open_or_targeted_read",
+      "locators": [
+        {
+          "ref_id": "https://zenodo.org/records/19602891"
+        },
+        {
+          "ref_id": "https://ir.library.osaka-u.ac.jp/repo/ouka/all/104907/VirtualPhysPrototyping_21_1_e2671497.pdf"
+        }
+      ]
+    },
+    {
+      "call": "targeted1",
+      "returned_utc": "2026-11-01 11:13:13 UTC",
+      "operation": "primary_source_open_or_targeted_read",
+      "locators": [
+        {
+          "ref_id": "Previously opened source locator (internal identifier omitted)",
+          "pattern": "5.2."
+        },
+        {
+          "ref_id": "Previously opened source locator (internal identifier omitted)",
+          "pattern": "Rheological"
+        },
+        {
+          "ref_id": "Previously opened source locator (internal identifier omitted)",
+          "pattern": "Data availability"
+        },
+        {
+          "ref_id": "Previously opened source locator (internal identifier omitted)",
+          "pattern": "DOI"
+        },
+        {
+          "ref_id": "Previously opened source locator (internal identifier omitted)",
+          "pattern": "DOI"
+        }
+      ]
+    },
+    {
+      "call": "primary4",
+      "returned_utc": "2026-11-01 11:13:28 UTC",
+      "operation": "primary_source_open_or_targeted_read",
+      "locators": [
+        {
+          "ref_id": "Previously opened source locator (internal identifier omitted)",
+          "lineno": 729
+        },
+        {
+          "ref_id": "Previously opened source locator (internal identifier omitted)",
+          "lineno": 958
+        },
+        {
+          "ref_id": "https://pubs.acs.org/doi/10.1021/acs.jpcc.8b02913"
+        }
+      ]
+    },
+    {
+      "call": "search3",
+      "returned_utc": "2026-11-01 11:13:39 UTC",
+      "operation": "search",
+      "queries": [
+        {
+          "q": "\"s41524-020-00406-3\" \"Dunn\"",
+          "domains": [
+            "hackingmaterials.github.io",
+            "github.com",
+            "nature.com"
+          ]
+        },
+        {
+          "q": "\"acs.jpcc.8b02913\" \"Kim\" \"Chandrasekaran\"",
+          "domains": [
+            "pubs.acs.org",
+            "ramprasad.mse.gatech.edu"
+          ]
+        }
+      ]
+    },
+    {
+      "call": "primary5",
+      "returned_utc": "2026-11-01 11:13:58 UTC",
+      "operation": "primary_source_open_or_targeted_read",
+      "locators": [
+        {
+          "ref_id": "https://github.com/materialsproject/matbench"
+        }
+      ]
+    }
+  ],
+  "initial_search_access_utc": "2026-11-01 11:11:56 UTC (clock sampled immediately after return; raw search response was not persisted)"
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "actual_utc": "2026-11-01T11:25:08.585699+00:00",
+  "role": "Synthetic-only training primitive demonstration, not original scientific replay or new material evidence.",
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 4616,
+      "sha256": "5384ef0d09116635f418d44d0a8a0440603a5878456da7aeb2c1050cec2e12df"
+    },
+    {
+      "file": "SOFTWARE_TRAINING_PROTOCOL.json",
+      "bytes": 2002,
+      "sha256": "074084c5e68ae0b0576ad2d50fa24625f866b5fce3532c296c2f57ef02dfb7f5"
+    },
+    {
+      "file": "SYNTHETIC_TRAINING_INPUT.json",
+      "bytes": 62479,
+      "sha256": "68da4b8cdeba202fc08661e5b3d90b41fde5f69fe19072ecfc700697b62c056d"
+    },
+    {
+      "file": "SYNTHETIC_TRAINING_RECEIPT.json",
+      "bytes": 6542,
+      "sha256": "8b1f47fb85c5195d7d215b3b5edfba0946711277c8ceebc7c89b3b341f706968"
+    },
+    {
+      "file": "training_primitive_demo.py",
+      "bytes": 9808,
+      "sha256": "4fa018ff8abc94fc90ef3e481ade04fd0490c0fedc3d69b7d2afafcd045bbd8f"
+    }
+  ],
+  "license_assigned": false,
+  "frozen_core_sha256": "0c8a57c1bdf96e1c880ffd1ba2258e1b379952b844e960a7c67d6cdcdc65e299"
+}

@@ -8,6 +8,11 @@ This repository archives the **2026-11-01 expanded author-review checkpoint** of
 
 - [English manuscript draft](paper/Hydrogel_Continuation_English_Revised.docx) and [supplement](paper/Supplement_Revised.docx)
 - [Revision details](paper/REVISION_NOTES.md)
+- [Saved score replay and tables](reproducibility/README.md)
+- [Independent frozen inference checks](verification/README.md)
+- [Synthetic training primitive](training_demo/README.md)
+- [Current gaps and author tasks](docs/evidence/GAP_REVIEW_ZH.txt)
+- [Version history](docs/VERSION_HISTORY.json)
 - [Model and scope](MODEL_CARD.md)
 - [Preserved result summary](results/SUMMARY.json)
 - [Remaining evidence and blank resource templates](docs/evidence/FEASIBILITY_ZH.txt)
@@ -45,3 +50,18 @@ Current manuscripts, source and model files are copied byte-for-byte and verifie
 Large local ZIPs, private/raw data, hidden S responses, local paths, credentials and internal logs are deliberately excluded. `LOCAL_ARCHIVE_INDEX.json` records retained local ZIP checksums; it does **not** imply those ZIPs have been uploaded. No scheduled auto-upload or journal submission is configured.
 
 Repository: <https://github.com/Hancy5521/hydrogel_control>.
+
+## Computational evidence commands
+
+These commands perform saved-score arithmetic or synthetic software checks, not new material experiments. Run in the repository root with the declared dependencies:
+
+```sh
+python reproducibility/replay_tables.py --output-dir replayed_local
+python -m unittest discover -s reproducibility -p test_score_replay.py -v
+python verification/verify_frozen_inference.py --repo-root . --output software_check_new.json
+python training_demo/training_primitive_demo.py --repo-root . --output synthetic_training_check_new.json
+```
+
+The last command makes one original optimizer call on the explicitly synthetic fixture; it never refits the material checkpoint. Read each module README before interpreting its receipt. Model/source/result bytes and original scientific scores are unchanged. Full original raw-data/outer-fold replay remains separately scoped.
+
+This release still does not include raw measured curves, the original training runs or all outer-fold predictive laws. Full experiment replay remains incomplete until the authors approve and provide the remaining processed-input access and reuse terms.

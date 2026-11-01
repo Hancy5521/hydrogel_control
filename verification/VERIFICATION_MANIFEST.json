@@ -1,0 +1,42 @@
+{
+  "actual_utc": "2026-11-01T11:18:59.054842+00:00",
+  "files": [
+    {
+      "file": "independent_gaussian.py",
+      "bytes": 5427,
+      "sha256": "73b9513cfcc1df5791cad3c11f0be236db110bd2dac3f4a588950b88dbe47fca"
+    },
+    {
+      "file": "README.md",
+      "bytes": 4801,
+      "sha256": "f1254a9b35fcb74fd23e4d3f421427778dc16ed298dce24bfabc8eb31033650c"
+    },
+    {
+      "file": "SOFTWARE_AUDIT_FINDINGS.json",
+      "bytes": 1864,
+      "sha256": "eef3fc48ba3b6c8132243ca9eab41d588fdf819ad555061f8d9e5550a86b8024"
+    },
+    {
+      "file": "SOFTWARE_VERIFICATION_RESULT.json",
+      "bytes": 10584,
+      "sha256": "e17d3cf4078a44504459c58bda43ca5496d6ddf8377934cf44f949ec532a9012"
+    },
+    {
+      "file": "SYNTHETIC_INPUT.json",
+      "bytes": 408,
+      "sha256": "969a6fd202f48424cdd8ddefc8b1bffbc811bef468cc9dec9069408eb54b6280"
+    },
+    {
+      "file": "VERIFICATION_PROTOCOL.json",
+      "bytes": 4900,
+      "sha256": "69781c1b10f4d088fa48ab947c3bc01c47f48bf34187a53eff5cd7c410894c0d"
+    },
+    {
+      "file": "verify_frozen_inference.py",
+      "bytes": 15345,
+      "sha256": "a772230ff01ea61c48dec3a22783d7bf496ec0cad7f731b2433d47e7c1820789"
+    }
+  ],
+  "license_assigned": false,
+  "scope": "Public synthetic software audit supplement, no raw material records."
+}

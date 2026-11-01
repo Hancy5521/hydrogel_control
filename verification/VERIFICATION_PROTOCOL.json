@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "actual_utc_before_first_test_run": "2026-11-01T11:15:03.773784+00:00",
+  "scope": "Software qualification of the frozen current candidate only; no material fitting, target scoring or data reads.",
+  "independent_oracle": "Explicit physical-unit level+slope+Matern3/2+report nugget, slope-difference curvature rows, symmetric two-dimensional prior whitening, full residual-plus-code covariance and dense Gaussian block elimination. No production numerical helper imported by the oracle.",
+  "tests": [
+    "Independent analytic marginal quantiles and seeded full-joint draws",
+    "Target and anchor permutations of analytic distributions",
+    "Target batch marginal consistency",
+    "Seed/draw-count independence of analytic summaries",
+    "Stored anchor identity preservation",
+    "Sequential versus simultaneous Gaussian assimilation of the same six anchors using core under test and independent full joint",
+    "Affine contrast annihilation and retained residual positivity on synthetic query",
+    "Invalid numerical/schema inputs",
+    "Strict JSON parsing and CLI output no-clobber/hash binding",
+    "Closed support endpoint oracle agreement and rejection of distinct physical coordinates that alias in log floating point"
+  ],
+  "tolerances": {
+    "analytic_atol": 5e-09,
+    "analytic_rtol": 3e-09,
+    "full_draw_atol": 3e-08,
+    "full_draw_rtol": 3e-08,
+    "affine_annihilation_atol": 1e-13
+  },
+  "fixture_role": "Explicit deterministic synthetic values: eta = exp(0.3 - 0.35*ln(gamma) + 0.06*sin(ln(gamma))). Not material measurements, labels for efficacy scoring, or independent validation.",
+  "runtime_model_bindings": [
+    {
+      "file": "runtime/core/conditional_metrics.py",
+      "sha256": "3332508bfe887a13550333761a49e8d130a5b7611f166d9d1040b930806bc461"
+    },
+    {
+      "file": "runtime/core/conditional_sampler.py",
+      "sha256": "f5e7dbb337a9a9a2043cdbdbd7922ce7ce308928a7151a0867d47a553ef6067f"
+    },
+    {
+      "file": "runtime/core/coordinate_reference.py",
+      "sha256": "bc93acc707cb26943cc065545254fc9fed27601e8d0f04c4a23dbb7407cf43d3"
+    },
+    {
+      "file": "runtime/core/coordinate_reference_scaled.py",
+      "sha256": "4c0fc9a31163ab1c9703748052af4eb348afad39134813d5193f460ddb2dbe85"
+    },
+    {
+      "file": "runtime/core/energy_correction.py",
+      "sha256": "d2e1743c04f5a7b7b0bb88927a5a49326f580bc26de768a4376f0fcf679593c6"
+    },
+    {
+      "file": "runtime/core/gaussian_control.py",
+      "sha256": "3ddc273c8d231162e5978d098591cb3ccba85d2d450e837976860a06c073d8e7"
+    },
+    {
+      "file": "runtime/core/joint_code_gaussian.py",
+      "sha256": "0c8a57c1bdf96e1c880ffd1ba2258e1b379952b844e960a7c67d6cdcdc65e299"
+    },
+    {
+      "file": "runtime/core/latent_reference.py",
+      "sha256": "c84012ba3c0fe08dbc0cc3cd69a9901e770649f2fab7744a05a0fbc2a5fc6e96"
+    },
+    {
+      "file": "runtime/core/local_shape.py",
+      "sha256": "652797e34e7299edd31a8b494287ad8ab36aca9cdcdcc7b455dc614201231d3b"
+    },
+    {
+      "file": "runtime/core/marginal_scoring.py",
+      "sha256": "f757a7fd982ec45bbe789fe97c5b414e318dfcb3604a2a029118bb24b34b0102"
+    },
+    {
+      "file": "runtime/core/masked_objective.py",
+      "sha256": "a19be754e8e5cceeee47119f826b63e9e69ec6c8cfe02cad6103208d5cfeba32"
+    },
+    {
+      "file": "runtime/core/trial_geometry.py",
+      "sha256": "8c5ae7984e33d573cb8fbc84e53ae9dfade7aee85862269ab1c1de9e21269ba6"
+    },
+    {
+      "file": "runtime/deployment/generate_curve.py",
+      "sha256": "bbc1aeafd30e43ed50ed686d1d6401c5c00406a2204a4884eea7b76a87412bf0"
+    },
+    {
+      "file": "runtime/program/complete_curve.py",
+      "sha256": "6b64e3eb7ddb3f55c05a00d36d1568457e816cb16876dd2e0b9bef82edb3ecd3"
+    },
+    {
+      "file": "models/SHARED_MODEL.json",
+      "sha256": "d72fc262fbae0e6fecc36568f0638166fe95e991bd5f7df100ab1434097d82d1"
+    }
+  ],
+  "checker_bindings": [
+    {
+      "file": "independent_gaussian.py",
+      "sha256": "73b9513cfcc1df5791cad3c11f0be236db110bd2dac3f4a588950b88dbe47fca"
+    },
+    {
+      "file": "verify_frozen_inference.py",
+      "sha256": "a772230ff01ea61c48dec3a22783d7bf496ec0cad7f731b2433d47e7c1820789"
+    },
+    {
+      "file": "SYNTHETIC_INPUT.json",
+      "sha256": "969a6fd202f48424cdd8ddefc8b1bffbc811bef468cc9dec9069408eb54b6280"
+    }
+  ],
+  "new_material_evidence": 0,
+  "runtime_model_mutations_allowed": false,
+  "software_revision_before_second_run": {
+    "actual_utc": "2026-11-01T11:16:54.792206+00:00",
+    "reason": "Add closed-support endpoint and binary-log alias checks, which were not covered in the first nine methods. No runtime, weights, data, tolerances or existing tests changed.",
+    "previous_result": "Initial nine-method qualification passed; preserved in local software history."
+  }
+}

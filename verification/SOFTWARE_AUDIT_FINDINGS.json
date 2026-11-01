@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "actual_utc": "2026-11-01T11:18:59.054842+00:00",
+  "actual_Asia_Shanghai": "2026-11-01T19:18:59.054842+08:00",
+  "scope": "Frozen current-candidate inference only; public synthetic numerical qualification.",
+  "status": "PASS",
+  "substantive_bug_found_in_tested_paths": false,
+  "test_methods": 10,
+  "recorded_checks": 33,
+  "maximum_recorded_absolute_error": 1.4992451724538114e-12,
+  "runtime_model_unchanged": true,
+  "model_sha256": "d72fc262fbae0e6fecc36568f0638166fe95e991bd5f7df100ab1434097d82d1",
+  "new_material_evidence": 0,
+  "material_fits": 0,
+  "material_predictions": 0,
+  "material_scores": 0,
+  "new_measurements": 0,
+  "hidden_S_reads": 0,
+  "what_this_adds": "A public, cache-independent full-joint oracle and interface test entry point; not another rerun of saved scientific scoring.",
+  "important_non_bugs": [
+    "Fixed-seed correlated draws need not permute samplewise with targets.",
+    "Target batches preserve marginal laws but separate calls do not preserve their between-batch sample coupling.",
+    "Exactly stored anchors return the existing observation, not a fresh replicate.",
+    "The public deployment weights are not the25 out-of-fold weights."
+  ],
+  "remaining_software_scope_limits": [
+    "No arbitrary-resource or hostile-workload qualification; target count and draw count are caller-controlled.",
+    "No new certification of legacy training and baseline routines.",
+    "No claim of stable uniform JSON error objects for malformed calls; invalid inputs are rejected."
+  ],
+  "author_actions_needed_for_stronger_material_claims": [
+    "New compatible independent material/batch evidence for transfer.",
+    "Reserved calibration units for coverage claims.",
+    "Real measured workflow resources for savings."
+  ],
+  "reuse_license_assigned": false
+}

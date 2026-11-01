@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "actual_utc_before_first_fit": "2026-11-01T11:23:40.896467+00:00",
+  "role": "Synthetic software training primitive only, not a registered material experiment.",
+  "synthetic_input_sha256": "68da4b8cdeba202fc08661e5b3d90b41fde5f69fe19072ecfc700697b62c056d",
+  "demo_source_sha256": "4fa018ff8abc94fc90ef3e481ade04fd0490c0fedc3d69b7d2afafcd045bbd8f",
+  "frozen_core_relative_path": "runtime/core/joint_code_gaussian.py",
+  "frozen_core_sha256": "0c8a57c1bdf96e1c880ffd1ba2258e1b379952b844e960a7c67d6cdcdc65e299",
+  "dimension": 39,
+  "complete_synthetic_curves": 8,
+  "fixed_parameter_points": [
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.15,
+      -0.2,
+      0.1,
+      -0.2,
+      0.05
+    ],
+    [
+      -0.4,
+      0.35,
+      -0.25,
+      0.3,
+      -0.1
+    ],
+    [
+      0.95,
+      -0.95,
+      0.7,
+      -0.85,
+      -0.7
+    ]
+  ],
+  "value_absolute_tolerance": 1e-08,
+  "gradient_absolute_tolerance": 1e-07,
+  "oracle": "Full-matrix Gaussian logdet and inverse/trace derivative at each point; centered by independently recomputed theta=0 raw conditional loss. No production numerical helper in oracle.",
+  "fit_calls_allowed": 1,
+  "initial_theta": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "ridge": 0.02,
+  "bounds": [
+    [
+      -1.0,
+      1.0
+    ],
+    [
+      -1.0,
+      1.0
+    ],
+    [
+      -0.75,
+      0.75
+    ],
+    [
+      -1.0,
+      1.0
+    ],
+    [
+      -0.75,
+      0.75
+    ]
+  ],
+  "optimizer_options": {
+    "maxiter": 400,
+    "maxfun": 800,
+    "ftol": 1e-14,
+    "gtol": 1e-07,
+    "maxls": 40
+  },
+  "projected_gradient_gate": 1e-05,
+  "fit_admission": "Original production fit gates; do not alter, retry or tune data/seed if not admitted.",
+  "new_material_data": 0,
+  "material_fit_calls_allowed": 0,
+  "GP_fit_calls_allowed": 0,
+  "material_scores_allowed": 0,
+  "hidden_S_reads_allowed": 0
+}

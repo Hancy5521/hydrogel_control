@@ -1,0 +1,5 @@
+layout,pooled_MSE,pooled_RMSE,queries,score_role
+spread,0.0009960942223946972,0.03156096041622779,25,Point-only; no probability law assigned
+middle_gap,0.003420013509701397,0.05848088157424952,25,Point-only; no probability law assigned
+one_sided,1.4017792694071458,1.1839675964346092,25,Point-only; no probability law assigned
+macro,0.4687317923797473,0.6846398997865574,75,Point-only; no probability law assigned

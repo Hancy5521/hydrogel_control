@@ -1,0 +1,11 @@
+Citation and material-source review
+
+The current main manuscript and supplement preserve all 48 reference paragraphs exactly. No substantive DOI, title, author, year, volume or page mismatch was identified in this bounded review. This is a metadata review, not 48 full-paper readings.
+
+The eight citations previously left access-unknown were 2, 3, 4, 9, 12, 14, 15 and 26. Direct official primary metadata now supports 2, 4, 12, 14, 15 and 26. References 3 and 9 are corroborated by search-indexed official publisher/author metadata, but direct article access remains unresolved. The JSON preserves this distinction instead of calling all 48 fully verified. The 2025-online/2026-volume dates for reference 9 and 2018-preprint/2019-conference dates for reference 26 are compatible.
+
+The Zenodo record confirms DOI 10.5281/zenodo.19602891 and v0.0.2, associated with source-paper DOI 10.1080/17452759.2026.2671497. Its listed rheology ZIP checksum agrees with the preserved official source metadata. Dataset CC BY 4.0 is supported by those prior official metadata receipts; the source article itself states CC BY 4.0 in the University of Osaka Version of Record. These source permissions do not select the license for the present authors original software, model, manuscript or new processing. No third-party article or dataset is mirrored in this public report.
+
+The current precursor-ink scope is compatible with the source Methods. In particular, the temperature attached to oscillatory measurements must not be copied into a steady-flow temperature field. Individual measurement states and independent preparation batches remain unresolved. The cache count is a study definition, not a newly confirmed experimental N. No new measurements, hidden outcomes, fits or scores were used.
+
+Before submission, the present authors still need to confirm their identities and declarations, choose the license for original assets, and supply available per-record laboratory metadata before making stronger condition or independence claims. The current cautious manuscript statements can remain. No mandatory citation edit was found.

@@ -1,0 +1,178 @@
+{
+  "schema": "hydrogel_saved_score_replay_v1",
+  "material_domain": "ALG-Ph/HA-Ph precursor ink flow curves",
+  "scope": "Replay of already saved development scores, not full training, posterior or raw-data score reproduction.",
+  "source_data_DOI": "10.5281/zenodo.19602891",
+  "source_data_version": "0.0.2",
+  "source_terms": "Inherited records identify CC BY 4.0 for the source dataset; this export contains authors' derived scores and does not redistribute source response values or original source code. No new reuse license is invented.",
+  "models": [
+    "gp",
+    "generic",
+    "local",
+    "gaussian",
+    "joint_code_gaussian",
+    "random_gaussian",
+    "bayesian_cross",
+    "rb_carreau",
+    "fixed_student_t"
+  ],
+  "formulation_P_ids": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6,
+    11,
+    15,
+    16,
+    20,
+    21,
+    24,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    33,
+    35,
+    36,
+    37,
+    40,
+    41,
+    44
+  ],
+  "masks": {
+    "spread": [
+      0,
+      7,
+      15,
+      23,
+      31,
+      38
+    ],
+    "middle_gap": [
+      0,
+      4,
+      8,
+      30,
+      34,
+      38
+    ],
+    "one_sided": [
+      0,
+      3,
+      6,
+      9,
+      12,
+      15
+    ]
+  },
+  "probabilistic_rows": 675,
+  "variogram_rows": 375,
+  "point_only_rows": 75,
+  "distinct_formulations": 25,
+  "conditional_queries_per_model": 75,
+  "scored_positions_per_probabilistic_model": 2475,
+  "unique_scored_formulation_position_pairs_per_model": 950,
+  "counting_warning": "9 methods x25formulations x3mask views are675method-query rows, not675materials; all methods reuse the same25formulations. The375VSrows and75pointrows add no measured materials.",
+  "response": "y=ln[viscosity/(1 Pa s)]",
+  "grouping": "P formulation identity; physical preparation-batch independence unresolved",
+  "exported_fields": "Only identifiers, counts and already computed scalar scores, plus sums of saved CRPS within fixed10/23one-sided score groups. No observed responses, means, quantile curves, covariance arrays, S hidden outcomes or original recipe strings.",
+  "RMSE_rule": "sqrt(sum(target_count*mean_mse)/sum(target_count)); do not average query RMSEs.",
+  "Table2_rule": "One-sided original index partition: targets below last anchor index15 are10inside positions, targets above15 are23continuation positions. Means/sums come solely from saved per-target CRPS; no model or scoring function is evaluated.",
+  "sources": [
+    {
+      "source_id": "original_four",
+      "original_basename": "RESULT.json",
+      "sha256": "4ecf3b49cbf3499b983a0086170473f3f3ebbd81a4bfe6f4f5cd641bcb677a2f",
+      "bytes": 4111901,
+      "public_original_file_hosted": false
+    },
+    {
+      "source_id": "curvature_gaussian",
+      "original_basename": "FROZEN_CANDIDATE_SCORES.json",
+      "sha256": "8800800920bad262fc06bdfc18ccdf319f080387eacbaf5808d1f28851ed0b43",
+      "bytes": 369053,
+      "public_original_file_hosted": false
+    },
+    {
+      "source_id": "random_gaussian",
+      "original_basename": "RANDOM_GAUSSIAN_RESULT.json",
+      "sha256": "5840b80b8c665776e18141c3c473d0bbb203e4b38cf3025877dde87b02f2cf18",
+      "bytes": 361395,
+      "public_original_file_hosted": false
+    },
+    {
+      "source_id": "bayesian_cross",
+      "original_basename": "BAYESIAN_CROSS_RESULT.json",
+      "sha256": "12a21c0ec87264ad472dc03abf579d55af60c6e7fed4e9fa2222be6e61a5790c",
+      "bytes": 374222,
+      "public_original_file_hosted": false
+    },
+    {
+      "source_id": "rb_carreau",
+      "original_basename": "RB_CARREAU_RESULT.json",
+      "sha256": "c61eb52621c7f310ae0143bf9fff2d7dd87c09f25437cf667d67d7a218365621",
+      "bytes": 373319,
+      "public_original_file_hosted": false
+    },
+    {
+      "source_id": "fixed_student_t",
+      "original_basename": "STUDENT_T_RESULT.json",
+      "sha256": "41fa133ed415e278c39a93ad7a0cfe1c15460cdaaf3a711793294daef88279b6",
+      "bytes": 139346,
+      "public_original_file_hosted": false
+    },
+    {
+      "source_id": "comparison",
+      "original_basename": "COMPARISON_SUMMARY.json",
+      "sha256": "d33682122688397ceb3d89e1f848257f311f1d63fcacda274216d30d7cac2d76",
+      "bytes": 24496,
+      "public_original_file_hosted": false
+    },
+    {
+      "source_id": "variogram",
+      "original_basename": "VARIOGRAM_RESULT.json",
+      "sha256": "d260bef7e1ceeaf3da9c64ba889df52e6445f2f3b13837d42889c96424b38587",
+      "bytes": 57350,
+      "public_original_file_hosted": false
+    },
+    {
+      "source_id": "original_scoring_protocol",
+      "original_basename": "DIRECT_PARALLEL_SCORING.json",
+      "sha256": "4b39a7d4201b3d78c6b5906675d156c3b2b3f403a4d67e5264b72e895599b87e",
+      "bytes": 24901,
+      "public_original_file_hosted": false
+    },
+    {
+      "source_id": "original_point_implementation",
+      "original_basename": "score_frozen.py",
+      "sha256": "2babcef62e924e6fb5dec97360f4defead3b1fd2490b991e653ddcd0c984d2ed",
+      "bytes": 10326,
+      "public_original_file_hosted": false
+    },
+    {
+      "source_id": "original_result_implementation",
+      "original_basename": "score_parallel.py",
+      "sha256": "0ea5da1553a2af3427432f202032c723f87c81925bef8534d55907df6f6e2ccb",
+      "bytes": 28784,
+      "public_original_file_hosted": false
+    },
+    {
+      "source_id": "initial_marginal_scoring_stop",
+      "original_basename": "SERIAL_SCORING_STOP.json",
+      "sha256": "5ec3504709e965eb433daccc3256e44eaf6e148cb1b0a891535e4d4310189583",
+      "bytes": 14086,
+      "public_original_file_hosted": false
+    },
+    {
+      "source_id": "initial_joint_fit_stop",
+      "original_basename": "STOP.json",
+      "sha256": "b0ca6de08c54e54e6f578b80a9d20c005e83e519ffb870f46005d9c1df04f662",
+      "bytes": 778,
+      "public_original_file_hosted": false
+    }
+  ]
+}

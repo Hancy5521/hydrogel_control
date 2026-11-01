@@ -1,0 +1,39 @@
+{
+  "scope": "Table and plotting-input replay from saved scalar scores; not raw-target model scoring or full training reproduction.",
+  "tables": {
+    "Main1": "Recomputed all five original rows and columns from query scores",
+    "Main2": "Recomputed original five rows and extended nine rows from10/23storedCRPSscore-sums",
+    "Main3": "Recomputed all five additional-control rows",
+    "SI_S1": "Paired means and wins recomputed from25formulation averages; original bootstrap intervals copied with source bindings, not resampled",
+    "SI_S2": "Recomputed original3layoutx5methodscoretable",
+    "SI_S3": "Recomputed original2x2representation/correctioncomparison",
+    "SI_S4": "Not reproduced: model-information/covariance diagnostics are absent from score-only export",
+    "SI_S5": "Recomputed5lawx3layoutVS1scoresplusmacro",
+    "SI_S6": "Recomputed3layoutdifferencesplusmacro"
+  },
+  "figures": {
+    "Main1": "Design diagram remains in paper; no response data needed",
+    "Main2a": "Exact numeric inputs in SI_tableS2.csv; original plot style not recreated",
+    "Main2b": "Exact25formulation paired differences in figure2b_paired_data.csv",
+    "Main3": "Not reproduced: response and predictedcurve/band arrays intentionally excluded",
+    "Main4": "Not reproduced: savedmodelinformationdiagnostics required",
+    "Main5a": "Exact numeric inputs in SI_tableS3.csv",
+    "Main5b": "Exact numeric inputs in SI_tableS5.csv",
+    "SI_coverage_heatmap": "Exact25x3countsoutof33 in figureS1_coverage_data.csv",
+    "SI_fixed_P0_P1_curve_panels": "Not reproduced: response/prediction arrays intentionally excluded"
+  },
+  "counting": {
+    "probabilistic_methods": 9,
+    "formulations": 25,
+    "masks_per_formulation": 3,
+    "probabilistic_method_query_rows": 675,
+    "VS_method_query_rows": 375,
+    "point_method_query_rows": 75,
+    "new_materials": 0,
+    "scored_positions_per_probabilistic_method": 2475,
+    "unique_formulation_position_pairs_per_probabilistic_method": 950
+  },
+  "interval_score": "Original aggregatefacts retained. OnlyCross/Carreau/fixedT have per-query intervalscore in the admitted source rows; no missing rows fabricated.",
+  "new_material_evidence": false,
+  "full_fitting_reproducibility_claimed": false
+}

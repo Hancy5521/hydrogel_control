@@ -1,0 +1,624 @@
+{
+  "scope": "Saved reported facts used as comparison witnesses, not recomputed from raw data.",
+  "aggregate": {
+    "gp": {
+      "CRPS": 0.055219360715636545,
+      "RMSE": 0.1965692227387498,
+      "mean_joint_log_density": 63.12237246026844,
+      "coverage90": 0.9737373737373738,
+      "width90": 0.4053257973467525,
+      "worst_recipe_mask_coverage90": 0.3333333333333333
+    },
+    "generic": {
+      "CRPS": 0.052242798001835525,
+      "RMSE": 0.18570235660536447,
+      "mean_joint_log_density": 63.387907478437704,
+      "coverage90": 0.9733333333333334,
+      "width90": 0.38535903714818526,
+      "worst_recipe_mask_coverage90": 0.3333333333333333
+    },
+    "local": {
+      "CRPS": 0.048252872198616806,
+      "RMSE": 0.15663078211530176,
+      "mean_joint_log_density": 63.44970627302975,
+      "coverage90": 0.9729292929292929,
+      "width90": 0.4186065279006781,
+      "worst_recipe_mask_coverage90": 0.3333333333333333
+    },
+    "gaussian": {
+      "CRPS": 0.050252464674678025,
+      "RMSE": 0.16170325411756803,
+      "mean_joint_log_density": 82.92587927559113,
+      "coverage90": 0.9660606060606061,
+      "width90": 0.3649299139706594,
+      "worst_recipe_mask_coverage90": 0.5757575757575758
+    },
+    "joint_code_gaussian": {
+      "CRPS": 0.04327705155080712,
+      "RMSE": 0.11952416720645934,
+      "mean_joint_log_density": 63.658107578299784,
+      "coverage90": 0.972121212121212,
+      "width90": 0.403654303912221,
+      "worst_recipe_mask_coverage90": 0.24242424242424243
+    },
+    "random_gaussian": {
+      "CRPS": 0.049907584360887144,
+      "RMSE": 0.17610123682654383,
+      "mean_joint_log_density": 63.91870848952555,
+      "coverage90": 0.97010101010101,
+      "width90": 0.37071803455119073
+    },
+    "bayesian_cross": {
+      "CRPS": 0.111590168818509,
+      "RMSE": 0.318846098392243,
+      "mean_joint_log_density": 57.20003840957673,
+      "coverage90": 0.9361616161616161,
+      "width90": 0.6998701685086199
+    },
+    "rb_carreau": {
+      "CRPS": 0.15376305330875317,
+      "RMSE": 0.38472585364042555,
+      "mean_joint_log_density": 23.542170194834316,
+      "coverage90": 0.8735353535353535,
+      "width90": 0.7447835806242711
+    },
+    "fixed_student_t": {
+      "CRPS": 0.042906377395326795,
+      "RMSE": 0.11952416720645934,
+      "mean_joint_log_density": 106.98495810063037,
+      "coverage90": 0.9826262626262625,
+      "width90": 0.41740716797408495
+    }
+  },
+  "by_mask": {
+    "spread": {
+      "gp": {
+        "CRPS": 0.012882623884486683,
+        "RMSE": 0.03343368564719061,
+        "mean_joint_log_density": 62.92993046449873,
+        "coverage90": 0.9709090909090909,
+        "width90": 0.10526095889644935,
+        "worst_recipe_mask_coverage90": 0.6060606060606061
+      },
+      "generic": {
+        "CRPS": 0.012462006027216197,
+        "RMSE": 0.03326351111813512,
+        "mean_joint_log_density": 63.17865739052927,
+        "coverage90": 0.9696969696969697,
+        "width90": 0.10031639824868636,
+        "worst_recipe_mask_coverage90": 0.6060606060606061
+      },
+      "local": {
+        "CRPS": 0.013048421290039337,
+        "RMSE": 0.033593043328730005,
+        "mean_joint_log_density": 62.95447730674135,
+        "coverage90": 0.9684848484848484,
+        "width90": 0.10485129979981175,
+        "worst_recipe_mask_coverage90": 0.6060606060606061
+      },
+      "gaussian": {
+        "CRPS": 0.012167791691411698,
+        "RMSE": 0.0338757920475926,
+        "mean_joint_log_density": 42.77861270218088,
+        "coverage90": 0.9515151515151515,
+        "width90": 0.07863275284451887,
+        "worst_recipe_mask_coverage90": 0.5757575757575758
+      },
+      "joint_code_gaussian": {
+        "CRPS": 0.013203461563779101,
+        "RMSE": 0.03354802220965511,
+        "mean_joint_log_density": 63.00413687271462,
+        "coverage90": 0.9696969696969697,
+        "width90": 0.10416359328402562,
+        "worst_recipe_mask_coverage90": 0.6060606060606061
+      },
+      "random_gaussian": {
+        "CRPS": 0.012383021324949785,
+        "RMSE": 0.03341445675063645,
+        "mean_joint_log_density": 63.21066526541933,
+        "coverage90": 0.9672727272727273,
+        "width90": 0.09663952876810221
+      },
+      "bayesian_cross": {
+        "CRPS": 0.041365584433887256,
+        "RMSE": 0.0732833508774317,
+        "mean_joint_log_density": 62.572604931700326,
+        "coverage90": 0.9951515151515151,
+        "width90": 0.5160518138853288
+      },
+      "rb_carreau": {
+        "CRPS": 0.06962105210133239,
+        "RMSE": 0.10237398571473309,
+        "mean_joint_log_density": 29.15921934606705,
+        "coverage90": 0.9951515151515151,
+        "width90": 0.8200677963051216
+      },
+      "fixed_student_t": {
+        "CRPS": 0.012703890997545821,
+        "RMSE": 0.03354802220965511,
+        "mean_joint_log_density": 108.65452682353919,
+        "coverage90": 0.9709090909090909,
+        "width90": 0.09809119807085655
+      }
+    },
+    "middle_gap": {
+      "gp": {
+        "CRPS": 0.025196205343036234,
+        "RMSE": 0.06192589825238835,
+        "mean_joint_log_density": 64.7151549963675,
+        "coverage90": 0.9672727272727272,
+        "width90": 0.22508393785485228,
+        "worst_recipe_mask_coverage90": 0.3333333333333333
+      },
+      "generic": {
+        "CRPS": 0.024970497948115355,
+        "RMSE": 0.06288747505331584,
+        "mean_joint_log_density": 64.99167119426771,
+        "coverage90": 0.9672727272727272,
+        "width90": 0.21546682600330938,
+        "worst_recipe_mask_coverage90": 0.3333333333333333
+      },
+      "local": {
+        "CRPS": 0.025128744880613233,
+        "RMSE": 0.06247719436634742,
+        "mean_joint_log_density": 64.82770576087182,
+        "coverage90": 0.9672727272727272,
+        "width90": 0.22179325274971212,
+        "worst_recipe_mask_coverage90": 0.3333333333333333
+      },
+      "gaussian": {
+        "CRPS": 0.020387240434489994,
+        "RMSE": 0.05438674531299679,
+        "mean_joint_log_density": 104.66951265182561,
+        "coverage90": 0.9878787878787879,
+        "width90": 0.20562427185954069,
+        "worst_recipe_mask_coverage90": 0.9393939393939394
+      },
+      "joint_code_gaussian": {
+        "CRPS": 0.025835473686264727,
+        "RMSE": 0.06556574282124931,
+        "mean_joint_log_density": 64.94155949139717,
+        "coverage90": 0.9636363636363636,
+        "width90": 0.21705420246567517,
+        "worst_recipe_mask_coverage90": 0.24242424242424243
+      },
+      "random_gaussian": {
+        "CRPS": 0.0261311582387931,
+        "RMSE": 0.07144437714967154,
+        "mean_joint_log_density": 65.47301023215152,
+        "coverage90": 0.9624242424242424,
+        "width90": 0.2081687133700847
+      },
+      "bayesian_cross": {
+        "CRPS": 0.06319058095271904,
+        "RMSE": 0.1439749338925756,
+        "mean_joint_log_density": 61.62724263833839,
+        "coverage90": 0.938181818181818,
+        "width90": 0.5074872277552612
+      },
+      "rb_carreau": {
+        "CRPS": 0.09896678038366444,
+        "RMSE": 0.17282667075699032,
+        "mean_joint_log_density": 27.18739741093876,
+        "coverage90": 0.8290909090909091,
+        "width90": 0.5792882829771718
+      },
+      "fixed_student_t": {
+        "CRPS": 0.02306736872682885,
+        "RMSE": 0.06556574282124931,
+        "mean_joint_log_density": 108.41251973850562,
+        "coverage90": 0.9854545454545455,
+        "width90": 0.22637867837589976
+      }
+    },
+    "one_sided": {
+      "gp": {
+        "CRPS": 0.12757925291938674,
+        "RMSE": 0.3331152199675487,
+        "mean_joint_log_density": 61.72203191993909,
+        "coverage90": 0.9830303030303031,
+        "width90": 0.8856324952889557,
+        "worst_recipe_mask_coverage90": 0.6666666666666666
+      },
+      "generic": {
+        "CRPS": 0.11929589003017503,
+        "RMSE": 0.3136794543094433,
+        "mean_joint_log_density": 61.99339385051611,
+        "coverage90": 0.9830303030303031,
+        "width90": 0.8402938871925602,
+        "worst_recipe_mask_coverage90": 0.6666666666666666
+      },
+      "local": {
+        "CRPS": 0.10658145042519784,
+        "RMSE": 0.2618543743040721,
+        "mean_joint_log_density": 62.566935751476066,
+        "coverage90": 0.9830303030303031,
+        "width90": 0.9291750311525105,
+        "worst_recipe_mask_coverage90": 0.6666666666666666
+      },
+      "gaussian": {
+        "CRPS": 0.11820236189813238,
+        "RMSE": 0.27265058192499764,
+        "mean_joint_log_density": 101.32951247276688,
+        "coverage90": 0.9587878787878787,
+        "width90": 0.8105327172079186,
+        "worst_recipe_mask_coverage90": 0.8181818181818182
+      },
+      "joint_code_gaussian": {
+        "CRPS": 0.09079221940237753,
+        "RMSE": 0.1934780173903775,
+        "mean_joint_log_density": 63.02862637078763,
+        "coverage90": 0.9830303030303031,
+        "width90": 0.8897451159869623,
+        "worst_recipe_mask_coverage90": 0.6666666666666666
+      },
+      "random_gaussian": {
+        "CRPS": 0.11120857351891854,
+        "RMSE": 0.2946423457164139,
+        "mean_joint_log_density": 63.07244997100581,
+        "coverage90": 0.9806060606060606,
+        "width90": 0.8073458615153851
+      },
+      "bayesian_cross": {
+        "CRPS": 0.23021434106892064,
+        "RMSE": 0.5280996802448108,
+        "mean_joint_log_density": 47.40026765869148,
+        "coverage90": 0.8751515151515151,
+        "width90": 1.0760714638852698
+      },
+      "rb_carreau": {
+        "CRPS": 0.29270132744126265,
+        "RMSE": 0.6353679692131142,
+        "mean_joint_log_density": 14.279893827497142,
+        "coverage90": 0.7963636363636364,
+        "width90": 0.8349946625905198
+      },
+      "fixed_student_t": {
+        "CRPS": 0.09294787246160573,
+        "RMSE": 0.1934780173903775,
+        "mean_joint_log_density": 103.88782773984629,
+        "coverage90": 0.9915151515151516,
+        "width90": 0.9277516274754984
+      }
+    }
+  },
+  "reported_diagnostics": {
+    "gp": {
+      "posthoc_23_continuation_CRPS": 0.1799377323128409,
+      "posthoc_10_in_support_CRPS": 0.007154750314442094,
+      "mean_interval_score90": 0.4657341507935945,
+      "P0": {
+        "spread": {
+          "crps": 0.07280612532973996,
+          "coverage90": 0.6060606060606061,
+          "width90": 0.08131851588520966
+        },
+        "middle_gap": {
+          "crps": 0.1834813565302494,
+          "coverage90": 0.3333333333333333,
+          "width90": 0.17770458872866393
+        },
+        "one_sided": {
+          "crps": 0.1431032376736246,
+          "coverage90": 0.6666666666666666,
+          "width90": 0.7484037994385191
+        }
+      }
+    },
+    "generic": {
+      "posthoc_23_continuation_CRPS": 0.1680706239420013,
+      "posthoc_10_in_support_CRPS": 0.007114002032974658,
+      "mean_interval_score90": 0.4462043704592736,
+      "P0": {
+        "spread": {
+          "crps": 0.07361004091032713,
+          "coverage90": 0.6060606060606061,
+          "width90": 0.07705469922359251
+        },
+        "middle_gap": {
+          "crps": 0.1834815503711367,
+          "coverage90": 0.3333333333333333,
+          "width90": 0.17770488978597263
+        },
+        "one_sided": {
+          "crps": 0.14310323766660707,
+          "coverage90": 0.6666666666666666,
+          "width90": 0.7484037994664431
+        }
+      }
+    },
+    "local": {
+      "posthoc_23_continuation_CRPS": 0.14980843594036702,
+      "posthoc_10_in_support_CRPS": 0.007159383740308723,
+      "mean_interval_score90": 0.47897649009837845,
+      "P0": {
+        "spread": {
+          "crps": 0.0721719756312612,
+          "coverage90": 0.6060606060606061,
+          "width90": 0.08194156447568626
+        },
+        "middle_gap": {
+          "crps": 0.18348206782289134,
+          "coverage90": 0.3333333333333333,
+          "width90": 0.17769254967859266
+        },
+        "one_sided": {
+          "crps": 0.10937603832486402,
+          "coverage90": 0.6666666666666666,
+          "width90": 0.7502727948080823
+        }
+      }
+    },
+    "gaussian": {
+      "posthoc_23_continuation_CRPS": 0.16713067834012094,
+      "posthoc_10_in_support_CRPS": 0.005667234081558709,
+      "mean_interval_score90": 0.4066911583942506,
+      "P0": {
+        "spread": {
+          "crps": 0.07367496057751775,
+          "coverage90": 0.5757575757575758,
+          "width90": 0.06311122355923443
+        },
+        "middle_gap": {
+          "crps": 0.11893884598970383,
+          "coverage90": 0.9696969696969697,
+          "width90": 0.9338778469149642
+        },
+        "one_sided": {
+          "crps": 0.4383691580017737,
+          "coverage90": 0.9393939393939394,
+          "width90": 5.998765434687444
+        }
+      }
+    },
+    "joint_code_gaussian": {
+      "posthoc_23_continuation_CRPS": 0.12716135966204722,
+      "posthoc_10_in_support_CRPS": 0.007143196805137246,
+      "mean_interval_score90": 0.46730629122687445,
+      "P0": {
+        "spread": {
+          "crps": 0.07211353893515784,
+          "coverage90": 0.6060606060606061,
+          "width90": 0.08066130751946593
+        },
+        "middle_gap": {
+          "crps": 0.19543701562407242,
+          "coverage90": 0.24242424242424243,
+          "width90": 0.17157484597787623
+        },
+        "one_sided": {
+          "crps": 0.12467913718258077,
+          "coverage90": 0.6666666666666666,
+          "width90": 0.7932242383970594
+        }
+      }
+    },
+    "random_gaussian": {
+      "posthoc_23_continuation_CRPS": 0.15666032334641775,
+      "posthoc_10_in_support_CRPS": 0.0066695489156703,
+      "mean_interval_score90": 0.44185200680774556,
+      "P0": {
+        "spread": {
+          "crps": 0.07403346636319762,
+          "coverage90": 0.5757575757575758,
+          "width90": 0.07355539384331207
+        },
+        "middle_gap": {
+          "crps": 0.2130055869102656,
+          "coverage90": 0.21212121212121213,
+          "width90": 0.16148244776079895
+        },
+        "one_sided": {
+          "crps": 0.08031918401490662,
+          "coverage90": 0.6060606060606061,
+          "width90": 0.6635749407756933
+        }
+      }
+    },
+    "bayesian_cross": {
+      "posthoc_23_continuation_CRPS": 0.32459265314034885,
+      "posthoc_10_in_support_CRPS": 0.013144223304635858,
+      "mean_interval_score90": 0.9826055670755456,
+      "P0": {
+        "spread": {
+          "crps": 0.0895569106959588,
+          "coverage90": 0.8787878787878788,
+          "width90": 0.48930429615788457
+        },
+        "middle_gap": {
+          "crps": 0.1025813343081032,
+          "coverage90": 1.0,
+          "width90": 1.0937256155493598
+        },
+        "one_sided": {
+          "crps": 0.1502797199932271,
+          "coverage90": 1.0,
+          "width90": 1.8995118722273143
+        }
+      }
+    },
+    "rb_carreau": {
+      "posthoc_23_continuation_CRPS": 0.4135035987549401,
+      "posthoc_10_in_support_CRPS": 0.014856103419804638,
+      "mean_interval_score90": 1.5478505842844437,
+      "P0": {
+        "spread": {
+          "crps": 0.08358203021457881,
+          "coverage90": 0.8787878787878788,
+          "width90": 0.497098124679618
+        },
+        "middle_gap": {
+          "crps": 0.10922329594784215,
+          "coverage90": 1.0,
+          "width90": 1.0939728856912254
+        },
+        "one_sided": {
+          "crps": 0.1254091512208195,
+          "coverage90": 1.0,
+          "width90": 1.6162401709239378
+        }
+      }
+    },
+    "fixed_student_t": {
+      "posthoc_23_continuation_CRPS": 0.13060889104299225,
+      "posthoc_10_in_support_CRPS": 0.006327529724416612,
+      "mean_interval_score90": 0.4439273854682393,
+      "P0": {
+        "spread": {
+          "crps": 0.07166803138666357,
+          "coverage90": 0.6363636363636364,
+          "width90": 0.08972708757124039
+        },
+        "middle_gap": {
+          "crps": 0.1505861888997733,
+          "coverage90": 0.7878787878787878,
+          "width90": 0.5823177360061345
+        },
+        "one_sided": {
+          "crps": 0.2759176716499025,
+          "coverage90": 0.8787878787878788,
+          "width90": 3.618627842683138
+        }
+      }
+    }
+  },
+  "reported_paired": {
+    "gp": {
+      "candidate_minus_control_mean": -0.011942309164829426,
+      "candidate_lower_CRPS_formulations": 22,
+      "formulations": 25
+    },
+    "generic": {
+      "candidate_minus_control_mean": -0.008965746451028411,
+      "candidate_lower_CRPS_formulations": 21,
+      "formulations": 25
+    },
+    "local": {
+      "candidate_minus_control_mean": -0.004975820647809684,
+      "candidate_lower_CRPS_formulations": 22,
+      "formulations": 25
+    },
+    "gaussian": {
+      "candidate_minus_control_mean": -0.006975413123870904,
+      "candidate_lower_CRPS_formulations": 16,
+      "formulations": 25
+    },
+    "joint_code_gaussian": {
+      "candidate_minus_control_mean": 0.0,
+      "candidate_lower_CRPS_formulations": 0,
+      "formulations": 25
+    },
+    "random_gaussian": {
+      "candidate_minus_control_mean": -0.006630532810080017,
+      "candidate_lower_CRPS_formulations": 20,
+      "formulations": 25
+    },
+    "bayesian_cross": {
+      "candidate_minus_control_mean": -0.06831311726770188,
+      "candidate_lower_CRPS_formulations": 24,
+      "formulations": 25
+    },
+    "rb_carreau": {
+      "candidate_minus_control_mean": -0.11048600175794604,
+      "candidate_lower_CRPS_formulations": 24,
+      "formulations": 25
+    },
+    "fixed_student_t": {
+      "candidate_minus_control_mean": 0.0003706741554803235,
+      "candidate_lower_CRPS_formulations": 6,
+      "formulations": 25
+    }
+  },
+  "saved_bootstrap95": {
+    "gp": {
+      "interval": [
+        -0.014735504138141741,
+        -0.00918308507010363
+      ],
+      "source_id": "curvature_gaussian",
+      "source_pointer": "differences/joint_code_gaussian_minus_gp/descriptive_group_bootstrap95"
+    },
+    "generic": {
+      "interval": [
+        -0.01161221662904692,
+        -0.006349057844490964
+      ],
+      "source_id": "curvature_gaussian",
+      "source_pointer": "differences/joint_code_gaussian_minus_generic/descriptive_group_bootstrap95"
+    },
+    "local": {
+      "interval": [
+        -0.006614191681308845,
+        -0.003176749528405686
+      ],
+      "source_id": "curvature_gaussian",
+      "source_pointer": "differences/joint_code_gaussian_minus_local/descriptive_group_bootstrap95"
+    },
+    "gaussian": {
+      "interval": [
+        -0.014524988827372503,
+        -0.00175409487438146
+      ],
+      "source_id": "curvature_gaussian",
+      "source_pointer": "differences/joint_code_gaussian_minus_gaussian/descriptive_group_bootstrap95"
+    },
+    "random_gaussian": {
+      "interval": [
+        -0.009569019691865384,
+        -0.0035813876687794464
+      ],
+      "source_id": "comparison",
+      "source_pointer": "random_factorial_comparison/descriptive_fixed_forecast_bootstrap95"
+    }
+  },
+  "random_factorial_comparison": {
+    "candidate_minus_random_gaussian_mean": -0.006630532810080017,
+    "relative_CRPS_reduction_percent": 13.285621604391661,
+    "lower_CRPS_materials": 20,
+    "descriptive_fixed_forecast_bootstrap95": [
+      -0.009569019691865384,
+      -0.0035813876687794464
+    ],
+    "bounded_direction_difference": -0.003989925803218724,
+    "Gaussian_direction_difference": -0.006630532810080017,
+    "difference_in_differences": -0.0026406070068612907,
+    "scope": "One frozen random seed, consumed25P; no causal interaction identification, no independent validation"
+  },
+  "variogram_aggregate": {
+    "gp": 0.04914691385949298,
+    "conditional_gaussian": 0.08203526481815837,
+    "random_gaussian": 0.04037691865085954,
+    "curvature_gaussian": 0.016172209747617846,
+    "fixed_student_t": 0.02991779640241889
+  },
+  "variogram_by_mask": {
+    "spread": {
+      "gp": 0.0022322154496500586,
+      "conditional_gaussian": 0.002269410707408005,
+      "random_gaussian": 0.0022232868088999267,
+      "curvature_gaussian": 0.00224480328565378,
+      "fixed_student_t": 0.002235817159372932
+    },
+    "middle_gap": {
+      "gp": 0.003017233301851331,
+      "conditional_gaussian": 0.0036008604898862566,
+      "random_gaussian": 0.003820626547658687,
+      "curvature_gaussian": 0.0032921644310300647,
+      "fixed_student_t": 0.0033489930823308945
+    },
+    "one_sided": {
+      "gp": 0.14219129282697754,
+      "conditional_gaussian": 0.24023552325718092,
+      "random_gaussian": 0.11508684259601999,
+      "curvature_gaussian": 0.04297966152616969,
+      "fixed_student_t": 0.08416857896555284
+    }
+  },
+  "PCHIP_RMSE": 0.6846398997865574,
+  "PCHIP_by_mask_RMSE": {
+    "spread": 0.03156096041622779,
+    "middle_gap": 0.05848088157424952,
+    "one_sided": 1.1839675964346092
+  },
+  "bootstrap_scope": "Original saved 2000-draw descriptive intervals; no new bootstrap, fitting or score calculation is performed."
+}

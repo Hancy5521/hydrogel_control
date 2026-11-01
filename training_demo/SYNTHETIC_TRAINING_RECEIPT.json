@@ -1,0 +1,253 @@
+{
+  "schema_version": 1,
+  "actual_start_utc": "2026-11-01T11:23:42.200236+00:00",
+  "role": "synthetic_only_training_primitive",
+  "is_material_validation": false,
+  "new_measurements": 0,
+  "material_fit_calls": 0,
+  "GP_fit_calls": 0,
+  "material_scoring_calls": 0,
+  "raw_material_reads": 0,
+  "hidden_S_reads": 0,
+  "input_sha256": "68da4b8cdeba202fc08661e5b3d90b41fde5f69fe19072ecfc700697b62c056d",
+  "source_sha256": "4fa018ff8abc94fc90ef3e481ade04fd0490c0fedc3d69b7d2afafcd045bbd8f",
+  "protocol_sha256": "074084c5e68ae0b0576ad2d50fa24625f866b5fce3532c296c2f57ef02dfb7f5",
+  "frozen_core_sha256": "0c8a57c1bdf96e1c880ffd1ba2258e1b379952b844e960a7c67d6cdcdc65e299",
+  "synthetic_curve_count": 8,
+  "response_dimension": 39,
+  "masks_per_curve": 3,
+  "fixed_point_checks": [
+    {
+      "theta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "independent_raw_objective": 4.71322308819682,
+      "independent_centered_objective": 0.0,
+      "core_centered_objective": 0.0,
+      "independent_gradient": [
+        0.16527275767553165,
+        0.14628304383895252,
+        -0.1992374116975191,
+        -0.38407486443109096,
+        -0.3450479391465264
+      ],
+      "core_gradient": [
+        0.16527275767553132,
+        0.14628304383895196,
+        -0.1992374116975183,
+        -0.38407486443109096,
+        -0.3450479391465251
+      ],
+      "absolute_value_error": 0.0,
+      "gradient_max_absolute_error": 1.27675647831893e-15,
+      "passed": true
+    },
+    {
+      "theta": [
+        0.15,
+        -0.2,
+        0.1,
+        -0.2,
+        0.05
+      ],
+      "independent_raw_objective": 4.749377459069951,
+      "independent_centered_objective": 0.036154370873131114,
+      "core_centered_objective": 0.036154370873144555,
+      "independent_gradient": [
+        0.1876418915275503,
+        0.125846597780617,
+        -0.25412398547162685,
+        -0.3840863999824053,
+        -0.3845471407659093
+      ],
+      "core_gradient": [
+        0.1876418915275497,
+        0.12584659778061663,
+        -0.2541239854716286,
+        -0.3840863999824028,
+        -0.384547140765907
+      ],
+      "absolute_value_error": 1.3440637491868301e-14,
+      "gradient_max_absolute_error": 2.4980018054066022e-15,
+      "passed": true
+    },
+    {
+      "theta": [
+        -0.4,
+        0.35,
+        -0.25,
+        0.3,
+        -0.1
+      ],
+      "independent_raw_objective": 4.724185622915656,
+      "independent_centered_objective": 0.010962534718836459,
+      "core_centered_objective": 0.010962534718853856,
+      "independent_gradient": [
+        -0.04815114120109923,
+        0.22474624348152294,
+        -0.28881847121720294,
+        -0.26924240764304713,
+        -0.3675838421129434
+      ],
+      "core_gradient": [
+        -0.04815114120109974,
+        0.2247462434815229,
+        -0.2888184712172023,
+        -0.269242407643049,
+        -0.36758384211294315
+      ],
+      "absolute_value_error": 1.7397541740571398e-14,
+      "gradient_max_absolute_error": 1.887379141862766e-15,
+      "passed": true
+    },
+    {
+      "theta": [
+        0.95,
+        -0.95,
+        0.7,
+        -0.85,
+        -0.7
+      ],
+      "independent_raw_objective": 5.722218060139843,
+      "independent_centered_objective": 1.0089949719430233,
+      "core_centered_objective": 1.0089949719430247,
+      "independent_gradient": [
+        0.10761463856702017,
+        0.030831700222583337,
+        -0.5769717694318215,
+        -0.6752377922210054,
+        -1.6257221778385273
+      ],
+      "core_gradient": [
+        0.10761463856701983,
+        0.030831700222586557,
+        -0.576971769431819,
+        -0.6752377922210051,
+        -1.6257221778385278
+      ],
+      "absolute_value_error": 1.3322676295501878e-15,
+      "gradient_max_absolute_error": 3.219646771412954e-15,
+      "passed": true
+    }
+  ],
+  "independent_raw_zero": 4.71322308819682,
+  "core_removed_constant": 4.713223088196818,
+  "removed_constant_absolute_error": 1.7763568394002505e-15,
+  "synthetic_correction_fit_calls": 1,
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.1.3",
+    "scipy": "1.15.3"
+  },
+  "settings_unchanged": true,
+  "retries": 0,
+  "sample_or_seed_tuning": false,
+  "fit_role": "One frozen bounded cold-start optimizer demonstration only, not evidence of material efficacy.",
+  "actual_fit_call_utc": "2026-11-01T11:23:42.654152+00:00",
+  "fit": {
+    "theta": [
+      -0.5121548362480299,
+      -0.6418973744229158,
+      0.1975260164903483,
+      0.8385915604710076,
+      -0.0007569142900192503
+    ],
+    "parameter_names": [
+      "a0",
+      "a1",
+      "log_L00",
+      "L10",
+      "log_L11"
+    ],
+    "a": [
+      -0.5121548362480299,
+      -0.6418973744229158
+    ],
+    "S": [
+      [
+        1.484461429864335,
+        1.0217271793670462
+      ],
+      [
+        1.0217271793670462,
+        1.7017231219736635
+      ]
+    ],
+    "centered_objective": -0.21229832385348982,
+    "raw_objective": 4.5009247643433286,
+    "removed_constant": 4.713223088196818,
+    "gradient": [
+      1.3133804488418832e-08,
+      7.6829497281522e-08,
+      1.4901554060142708e-08,
+      -2.95642064301882e-09,
+      -2.717680924806755e-08
+    ],
+    "projected_gradient_inf": 7.6829497281522e-08,
+    "solver_success": true,
+    "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+    "iterations": 13,
+    "evaluations": 14,
+    "admitted": true,
+    "initial_theta": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "optimizer_runs": 1,
+    "bounds": [
+      [
+        -1.0,
+        1.0
+      ],
+      [
+        -1.0,
+        1.0
+      ],
+      [
+        -0.75,
+        0.75
+      ],
+      [
+        -1.0,
+        1.0
+      ],
+      [
+        -0.75,
+        0.75
+      ]
+    ],
+    "ridge": 0.02,
+    "optimizer": {
+      "maxiter": 400,
+      "maxfun": 800,
+      "ftol": 1e-14,
+      "gtol": 1e-07,
+      "maxls": 40
+    },
+    "curve_tasks": 8,
+    "masks_per_curve": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "no_jitter": true,
+    "no_fallback_or_retry": true,
+    "parameter_uncertainty_integrated": false
+  },
+  "status": "SYNTHETIC_PRIMITIVE_ADMITTED",
+  "frozen_core_unchanged": true,
+  "actual_end_utc": "2026-11-01T11:23:42.721303+00:00",
+  "elapsed_seconds": 0.5210690000094473
+}

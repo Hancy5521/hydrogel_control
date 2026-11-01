@@ -1,0 +1,7 @@
+# Research milestone preservation
+
+Every completed substantive milestone receives a new Git commit and a distinct archive branch. Existing archive refs and their original file bytes are retained; no force-push, rebase or replacement of earlier evidence is performed. `VERSION_HISTORY.json` lists closed milestones and the current named checkpoint. Use the full commit SHA from an actual remote verification receipt for a permanent content reference. Branch retention is an operating convention, not a claim that server branch-protection rules were installed.
+
+Only explicitly reviewed public files are copied. Original private/raw data, protected hidden outcomes, internal machine paths, credentials, intermediate caches and large local scientific ZIPs are not automatically included. Local cache cleanup was unnecessary; excluded files remain local. Numerical failures, adverse baseline results and source-access uncertainty remain in the evidence instead of being removed.
+
+A content manifest records byte counts and hashes. A successful push is followed by remote ref and file verification. Before a final handoff, a fresh HTTPS checkout is independently compared with the reviewed public payload and its runnable checks. Logs and delivery receipts record actual times. No automatic quota-triggered upload or journal submission is configured. Original-asset reuse licensing and author declarations require the owner's decision.

@@ -1,0 +1,76 @@
+{
+  "actual_utc": "2026-11-01T11:34:37.407209+00:00",
+  "scope": "Review against the current narrow retrospective hydrogel continuation claim",
+  "rows": [
+    {
+      "id": "public_score_replay",
+      "state": "completed",
+      "evidence": "reproducibility/README.md",
+      "detail": "675 existing probabilistic score rows,375 VS rows,75 point-only PCHIP rows. Standard-library arithmetic rebuilds declared tables and selected plotting inputs; no raw-response scoring."
+    },
+    {
+      "id": "inference_independent_numeric_check",
+      "state": "completed",
+      "evidence": "verification/README.md",
+      "detail": "10 software tests and33 numeric/status records, independently reconstructed kernel/feature/full conditional. No material efficacy evidence."
+    },
+    {
+      "id": "training_primitive_check",
+      "state": "completed",
+      "evidence": "training_demo/README.md",
+      "detail": "4 fixed parameter value/gradient comparisons and one unchanged optimizer call on8x39explicit synthetic vectors. Not original GP/outer-fold training replay."
+    },
+    {
+      "id": "citation_identity",
+      "state": "bounded_review_completed",
+      "evidence": "docs/evidence/CITATION_AND_SOURCE_STATUS.json",
+      "detail": "No substantive mismatch found.46 identities now have direct official metadata support,2 retain official-index corroboration/direct-access limits. Not48full readings."
+    },
+    {
+      "id": "point_baseline_paper_integration",
+      "state": "pending_editorial_step",
+      "evidence": "reproducibility/replayed_tables/point_only_PCHIP.csv",
+      "detail": "Saved PCHIP point errors now transparent, including interpolation strengths. Add a clearly separated RMSE table to current SI; no probability law assigned."
+    },
+    {
+      "id": "original_full_experiment_replay",
+      "state": "partial_author_input_release_needed",
+      "evidence": "LOCAL_ARCHIVE_INDEX.json",
+      "detail": "Full local original archives retained. Public derivative scores/numerical checks/training primitive are not complete raw-data,GP-fit,posterior and outer-fold forecast-law replay. Authors must approve remaining processed-data access and reuse terms."
+    },
+    {
+      "id": "new_batch_generalization",
+      "state": "requires_genuinely_new_compatible_units_and_design",
+      "evidence": "docs/evidence/FEASIBILITY_ZH.txt",
+      "detail": "No unconsumed compatible preparation-batch cohort with required identity/state information is admitted. Not necessary to restate the narrower retrospective result."
+    },
+    {
+      "id": "independent_calibration",
+      "state": "requires_reserved_real_units_and_coverage_target",
+      "evidence": "docs/evidence/FEASIBILITY_ZH.txt",
+      "detail": "No independent calibration cohort. Old25P/masks or generated outputs are not substitutes."
+    },
+    {
+      "id": "measured_experimental_savings",
+      "state": "requires_actual_laboratory_resource_records",
+      "evidence": "docs/evidence/RESOURCE_RECORD_SCHEMA.json",
+      "detail": "Prepared zero-row templates;6/39ratio or program runtime does not establish instrument,operator,material or total study savings."
+    },
+    {
+      "id": "measurement_state_and_batch_metadata",
+      "state": "requires_source_or_author_records",
+      "evidence": "docs/evidence/CITATION_AND_SOURCE_STATUS.txt",
+      "detail": "Do not assign an oscillatory-test temperature to every steady-flow curve or invent independent batch identities."
+    },
+    {
+      "id": "authors_rights_declarations_and_journal",
+      "state": "requires_author_decisions",
+      "evidence": "RIGHTS_AND_PROVENANCE.md",
+      "detail": "Names,affiliations,funding,contributions,interests,original-asset license,target journal and release decisions cannot be invented. No submission or contact performed."
+    }
+  ],
+  "new_real_materials": 0,
+  "real_material_fit_or_rescore": 0,
+  "frozen_model_runtime_results_changed": false,
+  "wet_independent_claims_complete": false
+}

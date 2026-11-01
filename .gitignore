@@ -21,3 +21,24 @@ demo_generated.json
 !docs/evidence/MEASUREMENT_RUNS_EMPTY.csv
 !docs/evidence/RESOURCE_EVENTS_EMPTY.csv
 ~$*.docx
+
+# Only reviewed derivative score CSVs are admitted
+!reproducibility/ledger/marginal_scores.csv
+!reproducibility/ledger/point_only_scores.csv
+!reproducibility/ledger/variogram_scores.csv
+!reproducibility/replayed_tables/figure2b_paired_data.csv
+!reproducibility/replayed_tables/figureS1_coverage_data.csv
+!reproducibility/replayed_tables/main_table1.csv
+!reproducibility/replayed_tables/main_table2.csv
+!reproducibility/replayed_tables/main_table2_extended.csv
+!reproducibility/replayed_tables/main_table3.csv
+!reproducibility/replayed_tables/paired_all.csv
+!reproducibility/replayed_tables/point_only_PCHIP.csv
+!reproducibility/replayed_tables/SI_tableS1.csv
+!reproducibility/replayed_tables/SI_tableS2.csv
+!reproducibility/replayed_tables/SI_tableS3.csv
+!reproducibility/replayed_tables/SI_tableS5.csv
+!reproducibility/replayed_tables/SI_tableS6.csv
+replayed_local/
+software_check_new.json
+synthetic_training_check_new.json

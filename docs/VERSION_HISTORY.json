@@ -1,0 +1,29 @@
+{
+  "policy": "Retain prior commits and archive branches. No force push; commit SHAs identify immutable contents while branch retention is a project convention, not server-enforced protection.",
+  "milestones": [
+    {
+      "name": "Original retained paper and inference checkpoint",
+      "commit": "05b2f221cd34e7ca2913dac10ba0be87bc06d060",
+      "archive_branch": "archive/paper-2026-11-01",
+      "pages": [
+        19,
+        7
+      ]
+    },
+    {
+      "name": "Expanded manuscript with fixed science",
+      "commit": "24b51687642586e3a90a8e40597b9e630446ea99",
+      "archive_branch": "archive/paper-expanded-2026-11-01",
+      "pages": [
+        21,
+        9
+      ]
+    },
+    {
+      "name": "Computational evidence and transparent saved-score replay",
+      "commit": null,
+      "archive_branch": "archive/computational-evidence-2026-11-01",
+      "commit_resolution": "Resolve this named branch or use the external verified delivery receipt; a self-containing commit SHA is not asserted."
+    }
+  ]
+}

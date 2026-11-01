@@ -1,0 +1,6 @@
+comparator,mean_difference,saved_descriptive_interval_lower,saved_descriptive_interval_upper,candidate_lower_CRPS_formulations,formulations,interval_role,interval_source_id
+Coordinate GP,-0.011942309164829426,-0.014735504138141741,-0.00918308507010363,22,25,"Copied original fixed-forecast bootstrap, not recomputed",curvature_gaussian
+Generic bounded tilt,-0.008965746451028411,-0.01161221662904692,-0.006349057844490964,21,25,"Copied original fixed-forecast bootstrap, not recomputed",curvature_gaussian
+Curvature bounded tilt,-0.004975820647809684,-0.006614191681308845,-0.003176749528405686,22,25,"Copied original fixed-forecast bootstrap, not recomputed",curvature_gaussian
+Conditional Gaussian,-0.006975413123870904,-0.014524988827372503,-0.00175409487438146,16,25,"Copied original fixed-forecast bootstrap, not recomputed",curvature_gaussian
+Matched random Gaussian,-0.006630532810080017,-0.009569019691865384,-0.0035813876687794464,20,25,"Copied original fixed-forecast bootstrap, not recomputed",comparison

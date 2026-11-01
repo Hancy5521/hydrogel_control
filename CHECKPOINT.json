@@ -1,6 +1,6 @@
 {
-  "checkpoint_id": "hydrogel-continuation-paper-expanded-20261101T0951078954048Z",
-  "prepared_utc": "2026-11-01T10:16:22.457365+00:00",
+  "checkpoint_id": "hydrogel-computational-evidence-20261101T1109519722695Z",
+  "prepared_utc": "2026-11-01T11:34:37.407209+00:00",
   "classification": "Author-review draft and runnable frozen inference checkpoint",
   "paper_main_sha256": "fca05cb0161f18681aab3f7871162b35690ab3e4c63f86ba36d7042fddba2a29",
   "paper_supplement_sha256": "d7d8e007cd8be8f900207f326811977416c07641b6cd047f90e46e2a6935b1f8",
@@ -12,9 +12,15 @@
   "new_measurements": 0,
   "full_local_history_uploaded": false,
   "publication_or_journal_acceptance_claimed": false,
-  "parent_archived_commit": "05b2f221cd34e7ca2913dac10ba0be87bc06d060",
+  "parent_archived_commit": "24b51687642586e3a90a8e40597b9e630446ea99",
   "main_pages": 21,
   "supplement_pages": 9,
-  "manuscript_revision_only": true,
-  "scientific_model_code_and_result_bytes_unchanged": true
+  "manuscript_revision_only": false,
+  "scientific_model_code_and_result_bytes_unchanged": true,
+  "manuscripts_unchanged_from_parent": true,
+  "saved_score_replay_added": true,
+  "software_inference_tests": 10,
+  "software_numeric_status_records": 33,
+  "synthetic_training_optimizer_calls_in_recorded_demo": 1,
+  "real_material_fit_or_rescore": 0
 }

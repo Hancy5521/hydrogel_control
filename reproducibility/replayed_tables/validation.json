@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "compared_saved_scalars": 238,
+  "maximum_absolute_error": 2.842170943040401e-14,
+  "absolute_tolerance": 2e-11,
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "raw_target_scoring_calls": 0
+}
