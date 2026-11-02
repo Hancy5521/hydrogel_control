@@ -1,0 +1,1549 @@
+{
+  "actual_utc": "2026-11-02T02:09:00.683598+00:00",
+  "status": "PASS",
+  "root_output_sha256": "82f3482b81d01eb31551628c6a2218f1626805120ffa5a90259bc2bd924dbea4",
+  "independent_output_sha256": "2a80375b28e3f845910ce56237fd20a4c14fe2dc8a962135aa30ee908cb7a901",
+  "independent_script_sha256": "32e5f55b6dc4499694bcc463f035fd2d003dc6bbeaa792713a77b16eeaa41cd5",
+  "saved_score_input_sha256": "555f39ca076351b063511940f7b2a2a011e47ec9a55b0ce968c905e5f9b8c8d0",
+  "comparison_count": 307,
+  "maximum_absolute_difference": "1.309319416666666666666666667E-13",
+  "comparison_tolerance": "1e-10 against original binary-float aggregates",
+  "scope": "Only saved scalar scores and descriptive aggregation. No raw targets, model modules, fitting, forecasts or rescoring.",
+  "checks": [
+    {
+      "name": "conditional_gaussian/original_five/crps_log",
+      "absolute_error": "2.066666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/original_five/mse_log",
+      "absolute_error": "4.133333333333333333333333333E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/original_five/mae_log",
+      "absolute_error": "1.333333333333333333333333333E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/original_five/coverage90",
+      "absolute_error": "2.000000000000000000000000000E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/original_five/width90_log",
+      "absolute_error": "1.000000000000000000000000000E-16",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/original_five/interval_score90_log",
+      "absolute_error": "2.400000000000000000000000000E-16",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/original_five/whole_curve_covered90",
+      "absolute_error": "3.333333333333333333333333333E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/original_five/root_weighted_mse_log",
+      "absolute_error": "1.936467326414106368554397714E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/GG/crps_log",
+      "absolute_error": "4.555555555555555555555555556E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/GG/mse_log",
+      "absolute_error": "1.888888888888888888888888889E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/GG/mae_log",
+      "absolute_error": "4.888888888888888888888888889E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/GG/coverage90",
+      "absolute_error": "4.444444444444444444444444444E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/GG/width90_log",
+      "absolute_error": "1.777777777777777777777777778E-16",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/GG/interval_score90_log",
+      "absolute_error": "6.666666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/GG/whole_curve_covered90",
+      "absolute_error": "6.666666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/GG/root_weighted_mse_log",
+      "absolute_error": "4.257006402876153005609667131E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/peK/crps_log",
+      "absolute_error": "6.666666666666666666666666667E-18",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/peK/mse_log",
+      "absolute_error": "3.166666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/peK/mae_log",
+      "absolute_error": "4.666666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/peK/coverage90",
+      "absolute_error": "3.333333333333333333333333333E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/peK/width90_log",
+      "absolute_error": "2.333333333333333333333333333E-16",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/peK/interval_score90_log",
+      "absolute_error": "1.500000000000000000000000000E-16",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/peK/whole_curve_covered90",
+      "absolute_error": "3.333333333333333333333333333E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/peK/root_weighted_mse_log",
+      "absolute_error": "2.582357141384931401461995322E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/equal_families/crps_log",
+      "absolute_error": "4.444444444444444444444444444E-18",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/equal_families/mse_log",
+      "absolute_error": "5.638888888888888888888888889E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/equal_families/mae_log",
+      "absolute_error": "1.888888888888888888888888889E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/equal_families/coverage90",
+      "absolute_error": "1.111111111111111111111111111E-16",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/equal_families/width90_log",
+      "absolute_error": "1.555555555555555555555555556E-16",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/equal_families/interval_score90_log",
+      "absolute_error": "1.083333333333333333333333333E-16",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/equal_families/whole_curve_covered90",
+      "absolute_error": "0E-49",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/equal_families/root_weighted_mse_log",
+      "absolute_error": "5.098037610695278673282551308E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/original_five/crps_log",
+      "absolute_error": "3.000000000000000000000000000E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/original_five/mse_log",
+      "absolute_error": "6.400000000000000000000000000E-18",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/original_five/mae_log",
+      "absolute_error": "2.466666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/original_five/coverage90",
+      "absolute_error": "4.666666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/original_five/width90_log",
+      "absolute_error": "6E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/original_five/interval_score90_log",
+      "absolute_error": "3.133333333333333333333333333E-16",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/original_five/whole_curve_covered90",
+      "absolute_error": "0.0",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/original_five/root_weighted_mse_log",
+      "absolute_error": "3.550812949711842207524478718E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/GG/crps_log",
+      "absolute_error": "6.666666666666666666666666667E-18",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/GG/mse_log",
+      "absolute_error": "4.444444444444444444444444444E-18",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/GG/mae_log",
+      "absolute_error": "3.222222222222222222222222222E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/GG/coverage90",
+      "absolute_error": "0.0",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/GG/width90_log",
+      "absolute_error": "6.666666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/GG/interval_score90_log",
+      "absolute_error": "6.666666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/GG/whole_curve_covered90",
+      "absolute_error": "0.0",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/GG/root_weighted_mse_log",
+      "absolute_error": "1.175376177417657619268954054E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/peK/crps_log",
+      "absolute_error": "1.000000000000000000000000000E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/peK/mse_log",
+      "absolute_error": "7.333333333333333333333333333E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/peK/mae_log",
+      "absolute_error": "1.000000000000000000000000000E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/peK/coverage90",
+      "absolute_error": "1.666666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/peK/width90_log",
+      "absolute_error": "5E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/peK/interval_score90_log",
+      "absolute_error": "5.333333333333333333333333333E-16",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/peK/whole_curve_covered90",
+      "absolute_error": "0.0",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/peK/root_weighted_mse_log",
+      "absolute_error": "4.505011901756884264377296447E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/equal_families/crps_log",
+      "absolute_error": "2.333333333333333333333333333E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/equal_families/mse_log",
+      "absolute_error": "3.088888888888888888888888889E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/equal_families/mae_log",
+      "absolute_error": "1.111111111111111111111111111E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/equal_families/coverage90",
+      "absolute_error": "5.833333333333333333333333333E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/equal_families/width90_log",
+      "absolute_error": "5.833333333333333333333333333E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/equal_families/interval_score90_log",
+      "absolute_error": "6.833333333333333333333333333E-16",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/equal_families/whole_curve_covered90",
+      "absolute_error": "0.0",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/equal_families/root_weighted_mse_log",
+      "absolute_error": "9.009254647925546171933199537E-18",
+      "passed": true
+    },
+    {
+      "name": "pchip_log/original_five/mse_log",
+      "absolute_error": "7.988866666666666666666666667E-16",
+      "passed": true
+    },
+    {
+      "name": "pchip_log/original_five/mae_log",
+      "absolute_error": "1.070000000000000000000000000E-16",
+      "passed": true
+    },
+    {
+      "name": "pchip_log/original_five/root_weighted_mse_log",
+      "absolute_error": "6.275387255796941803236914506E-17",
+      "passed": true
+    },
+    {
+      "name": "pchip_log/GG/mse_log",
+      "absolute_error": "3.771111111111111111111111111E-15",
+      "passed": true
+    },
+    {
+      "name": "pchip_log/GG/mae_log",
+      "absolute_error": "1.855555555555555555555555556E-16",
+      "passed": true
+    },
+    {
+      "name": "pchip_log/GG/root_weighted_mse_log",
+      "absolute_error": "1.086251977378772488378680066E-16",
+      "passed": true
+    },
+    {
+      "name": "pchip_log/peK/mse_log",
+      "absolute_error": "2.346116666666666666666666667E-15",
+      "passed": true
+    },
+    {
+      "name": "pchip_log/peK/mae_log",
+      "absolute_error": "2.039166666666666666666666667E-15",
+      "passed": true
+    },
+    {
+      "name": "pchip_log/peK/root_weighted_mse_log",
+      "absolute_error": "1.188828666898010299588672440E-15",
+      "passed": true
+    },
+    {
+      "name": "pchip_log/equal_families/mse_log",
+      "absolute_error": "1.694138611111111111111111111E-14",
+      "passed": true
+    },
+    {
+      "name": "pchip_log/equal_families/mae_log",
+      "absolute_error": "1.262361111111111111111111111E-15",
+      "passed": true
+    },
+    {
+      "name": "pchip_log/equal_families/root_weighted_mse_log",
+      "absolute_error": "1.459969574960256548359957674E-15",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_6anchors/original_five/mse_log",
+      "absolute_error": "2.400000000000000000000000000E-18",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_6anchors/original_five/mae_log",
+      "absolute_error": "1.333333333333333333333333333E-18",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_6anchors/original_five/root_weighted_mse_log",
+      "absolute_error": "5.334913242476459292124126236E-17",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_6anchors/GG/mse_log",
+      "absolute_error": "7.777777777777777777777777778E-18",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_6anchors/GG/mae_log",
+      "absolute_error": "4.444444444444444444444444444E-17",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_6anchors/GG/root_weighted_mse_log",
+      "absolute_error": "2.584587614075112244857633695E-17",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_6anchors/peK/mse_log",
+      "absolute_error": "5.666666666666666666666666667E-18",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_6anchors/peK/mae_log",
+      "absolute_error": "6.666666666666666666666666667E-18",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_6anchors/peK/root_weighted_mse_log",
+      "absolute_error": "1.720773372516308985472980164E-17",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_6anchors/equal_families/mse_log",
+      "absolute_error": "1.105555555555555555555555556E-17",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_6anchors/equal_families/mae_log",
+      "absolute_error": "9.444444444444444444444444444E-18",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_6anchors/equal_families/root_weighted_mse_log",
+      "absolute_error": "2.852550372829318813749633206E-18",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_last2/original_five/mse_log",
+      "absolute_error": "5.395333333333333333333333333E-17",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_last2/original_five/mae_log",
+      "absolute_error": "3.433333333333333333333333333E-17",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_last2/original_five/root_weighted_mse_log",
+      "absolute_error": "7.612044705815493710054544243E-18",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_last2/GG/mse_log",
+      "absolute_error": "1.888888888888888888888888889E-17",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_last2/GG/mae_log",
+      "absolute_error": "2.222222222222222222222222222E-17",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_last2/GG/root_weighted_mse_log",
+      "absolute_error": "7.862155554043696809106289332E-17",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_last2/peK/mse_log",
+      "absolute_error": "1.132166666666666666666666667E-16",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_last2/peK/mae_log",
+      "absolute_error": "8.083333333333333333333333333E-17",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_last2/peK/root_weighted_mse_log",
+      "absolute_error": "4.049534409834397373080319226E-17",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_last2/equal_families/mse_log",
+      "absolute_error": "9.716388888888888888888888889E-17",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_last2/equal_families/mae_log",
+      "absolute_error": "1.015277777777777777777777778E-16",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_last2/equal_families/root_weighted_mse_log",
+      "absolute_error": "5.048299469549616225159043748E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/original_five/crps_log",
+      "absolute_error": "2.066666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/original_five/mse_log",
+      "absolute_error": "6.400000000000000000000000000E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/original_five/mae_log",
+      "absolute_error": "6.666666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/original_five/coverage90",
+      "absolute_error": "2.000000000000000000000000000E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/original_five/width90_log",
+      "absolute_error": "4.000000000000000000000000000E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/original_five/interval_score90_log",
+      "absolute_error": "1.600000000000000000000000000E-16",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/original_five/whole_curve_covered90",
+      "absolute_error": "0.0",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/original_five/root_weighted_mse_log",
+      "absolute_error": "9.816123038491559758462247986E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/GG/crps_log",
+      "absolute_error": "1.444444444444444444444444444E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/GG/mse_log",
+      "absolute_error": "4.000000000000000000000000000E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/GG/mae_log",
+      "absolute_error": "7.111111111111111111111111111E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/GG/coverage90",
+      "absolute_error": "2.222222222222222222222222222E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/GG/width90_log",
+      "absolute_error": "6.666666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/GG/interval_score90_log",
+      "absolute_error": "1.111111111111111111111111111E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/GG/whole_curve_covered90",
+      "absolute_error": "3.333333333333333333333333333E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/GG/root_weighted_mse_log",
+      "absolute_error": "2.033691357752066619338643340E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/peK/crps_log",
+      "absolute_error": "1.500000000000000000000000000E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/peK/mse_log",
+      "absolute_error": "5E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/peK/mae_log",
+      "absolute_error": "6E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/peK/coverage90",
+      "absolute_error": "1.666666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/peK/width90_log",
+      "absolute_error": "1E-16",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/peK/interval_score90_log",
+      "absolute_error": "2.833333333333333333333333333E-16",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/peK/whole_curve_covered90",
+      "absolute_error": "0.0",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/peK/root_weighted_mse_log",
+      "absolute_error": "1.429701722263043945207592198E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/equal_families/crps_log",
+      "absolute_error": "4.722222222222222222222222222E-18",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/equal_families/mse_log",
+      "absolute_error": "4.500000000000000000000000000E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/equal_families/mae_log",
+      "absolute_error": "1.555555555555555555555555556E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/equal_families/coverage90",
+      "absolute_error": "1.944444444444444444444444444E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/equal_families/width90_log",
+      "absolute_error": "1.666666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/equal_families/interval_score90_log",
+      "absolute_error": "5.277777777777777777777777778E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/equal_families/whole_curve_covered90",
+      "absolute_error": "6.666666666666666666666666667E-18",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/equal_families/root_weighted_mse_log",
+      "absolute_error": "9.852728547534956184436943686E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/delta_GG",
+      "absolute_error": "2.222222222222222222222222222E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/delta_peK",
+      "absolute_error": "5.000000000000000000000000000E-18",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/delta_primary_w_0p6",
+      "absolute_error": "9.333333333333333333333333333E-18",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/delta_equal_family_w_0p5",
+      "absolute_error": "1.161111111111111111111111111E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/break_even_GG_weight",
+      "absolute_error": "1.096363247836456576749402355E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/delta_GG",
+      "absolute_error": "2.888888888888888888888888889E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/delta_peK",
+      "absolute_error": "1.666666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/delta_primary_w_0p6",
+      "absolute_error": "2.666666666666666666666666667E-18",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/delta_equal_family_w_0p5",
+      "absolute_error": "5.111111111111111111111111111E-18",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/break_even_GG_weight",
+      "absolute_error": "1.034197417967736730974194326E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_GG_0p35wt_20degree/crps_log",
+      "absolute_error": "4.166666666666666666666666667E-18",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_GG_0p35wt_20degree/mse_log",
+      "absolute_error": "3.666666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_GG_0p35wt_20degree/mae_log",
+      "absolute_error": "3.500000000000000000000000000E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_GG_0p35wt_20degree/coverage90",
+      "absolute_error": "7.500000000000000000000000000E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_GG_0p35wt_20degree/width90_log",
+      "absolute_error": "8.333333333333333333333333333E-18",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_GG_0p35wt_20degree/interval_score90_log",
+      "absolute_error": "4.166666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_GG_0p35wt_20degree/whole_curve_covered90",
+      "absolute_error": "3.666666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_GG_0p35wt_20degree/root_weighted_mse_log",
+      "absolute_error": "8.762116855524567946841329790E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_GG_0p5wt/crps_log",
+      "absolute_error": "2.416666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_GG_0p5wt/mse_log",
+      "absolute_error": "1.250000000000000000000000000E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_GG_0p5wt/mae_log",
+      "absolute_error": "5.000000000000000000000000000E-18",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_GG_0p5wt/coverage90",
+      "absolute_error": "8.333333333333333333333333333E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_GG_0p5wt/width90_log",
+      "absolute_error": "5.000000000000000000000000000E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_GG_0p5wt/interval_score90_log",
+      "absolute_error": "3.083333333333333333333333333E-16",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_GG_0p5wt/whole_curve_covered90",
+      "absolute_error": "6.666666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_GG_0p5wt/root_weighted_mse_log",
+      "absolute_error": "2.073302537039465382424326811E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_GG_0p75wt/crps_log",
+      "absolute_error": "3.333333333333333333333333333E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_GG_0p75wt/mse_log",
+      "absolute_error": "1.000000000000000000000000000E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_GG_0p75wt/mae_log",
+      "absolute_error": "6.666666666666666666666666667E-18",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_GG_0p75wt/coverage90",
+      "absolute_error": "7.500000000000000000000000000E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_GG_0p75wt/width90_log",
+      "absolute_error": "2.500000000000000000000000000E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_GG_0p75wt/interval_score90_log",
+      "absolute_error": "7.500000000000000000000000000E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_GG_0p75wt/whole_curve_covered90",
+      "absolute_error": "3.666666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_GG_0p75wt/root_weighted_mse_log",
+      "absolute_error": "8.212377303781346666237988150E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_peK_10wt/crps_log",
+      "absolute_error": "1.916666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_peK_10wt/mse_log",
+      "absolute_error": "1.000000000000000000000000000E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_peK_10wt/mae_log",
+      "absolute_error": "3.333333333333333333333333333E-18",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_peK_10wt/coverage90",
+      "absolute_error": "1.666666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_peK_10wt/width90_log",
+      "absolute_error": "1.250000000000000000000000000E-16",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_peK_10wt/interval_score90_log",
+      "absolute_error": "4.166666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_peK_10wt/whole_curve_covered90",
+      "absolute_error": "6.666666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_peK_10wt/root_weighted_mse_log",
+      "absolute_error": "4.395429139890182596097585757E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_peK_20wt/crps_log",
+      "absolute_error": "9.166666666666666666666666667E-18",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_peK_20wt/mse_log",
+      "absolute_error": "1.750000000000000000000000000E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_peK_20wt/mae_log",
+      "absolute_error": "3.333333333333333333333333333E-18",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_peK_20wt/coverage90",
+      "absolute_error": "1.666666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_peK_20wt/width90_log",
+      "absolute_error": "8.333333333333333333333333333E-18",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_peK_20wt/interval_score90_log",
+      "absolute_error": "3.333333333333333333333333333E-16",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_peK_20wt/whole_curve_covered90",
+      "absolute_error": "6.666666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "conditional_gaussian/omit/Liverpool1296_peK_20wt/root_weighted_mse_log",
+      "absolute_error": "9.094062998764082883897627567E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_GG_0p35wt_20degree/crps_log",
+      "absolute_error": "2.250000000000000000000000000E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_GG_0p35wt_20degree/mse_log",
+      "absolute_error": "1.516666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_GG_0p35wt_20degree/mae_log",
+      "absolute_error": "8.333333333333333333333333333E-18",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_GG_0p35wt_20degree/coverage90",
+      "absolute_error": "5.833333333333333333333333333E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_GG_0p35wt_20degree/width90_log",
+      "absolute_error": "0E-16",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_GG_0p35wt_20degree/interval_score90_log",
+      "absolute_error": "5.416666666666666666666666667E-16",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_GG_0p35wt_20degree/whole_curve_covered90",
+      "absolute_error": "0.0",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_GG_0p35wt_20degree/root_weighted_mse_log",
+      "absolute_error": "6.649006162988927155149289161E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_GG_0p5wt/crps_log",
+      "absolute_error": "1.583333333333333333333333333E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_GG_0p5wt/mse_log",
+      "absolute_error": "5.500000000000000000000000000E-18",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_GG_0p5wt/mae_log",
+      "absolute_error": "1.666666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_GG_0p5wt/coverage90",
+      "absolute_error": "5.833333333333333333333333333E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_GG_0p5wt/width90_log",
+      "absolute_error": "0E-16",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_GG_0p5wt/interval_score90_log",
+      "absolute_error": "1.416666666666666666666666667E-16",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_GG_0p5wt/whole_curve_covered90",
+      "absolute_error": "0.0",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_GG_0p5wt/root_weighted_mse_log",
+      "absolute_error": "1.000198144308015911927073147E-16",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_GG_0p75wt/crps_log",
+      "absolute_error": "1.833333333333333333333333333E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_GG_0p75wt/mse_log",
+      "absolute_error": "5.200000000000000000000000000E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_GG_0p75wt/mae_log",
+      "absolute_error": "1.833333333333333333333333333E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_GG_0p75wt/coverage90",
+      "absolute_error": "5.833333333333333333333333333E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_GG_0p75wt/width90_log",
+      "absolute_error": "7.5E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_GG_0p75wt/interval_score90_log",
+      "absolute_error": "8.666666666666666666666666667E-16",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_GG_0p75wt/whole_curve_covered90",
+      "absolute_error": "0.0",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_GG_0p75wt/root_weighted_mse_log",
+      "absolute_error": "2.394860928724185314210408091E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_peK_10wt/crps_log",
+      "absolute_error": "3.416666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_peK_10wt/mse_log",
+      "absolute_error": "7.000000000000000000000000000E-18",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_peK_10wt/mae_log",
+      "absolute_error": "9.166666666666666666666666667E-18",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_peK_10wt/coverage90",
+      "absolute_error": "5.833333333333333333333333333E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_peK_10wt/width90_log",
+      "absolute_error": "7.5E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_peK_10wt/interval_score90_log",
+      "absolute_error": "1.666666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_peK_10wt/whole_curve_covered90",
+      "absolute_error": "0.00",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_peK_10wt/root_weighted_mse_log",
+      "absolute_error": "5.724727663607451922614087762E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_peK_20wt/crps_log",
+      "absolute_error": "4.166666666666666666666666667E-18",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_peK_20wt/mse_log",
+      "absolute_error": "6.333333333333333333333333333E-18",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_peK_20wt/mae_log",
+      "absolute_error": "1.750000000000000000000000000E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_peK_20wt/coverage90",
+      "absolute_error": "0.00",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_peK_20wt/width90_log",
+      "absolute_error": "5E-17",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_peK_20wt/interval_score90_log",
+      "absolute_error": "3.333333333333333333333333333E-16",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_peK_20wt/whole_curve_covered90",
+      "absolute_error": "0.00",
+      "passed": true
+    },
+    {
+      "name": "curvature_joint_gaussian/omit/Liverpool1296_peK_20wt/root_weighted_mse_log",
+      "absolute_error": "6.492602704536889973190663557E-18",
+      "passed": true
+    },
+    {
+      "name": "pchip_log/omit/Liverpool1296_GG_0p35wt_20degree/mse_log",
+      "absolute_error": "1.387360833333333333333333333E-14",
+      "passed": true
+    },
+    {
+      "name": "pchip_log/omit/Liverpool1296_GG_0p35wt_20degree/mae_log",
+      "absolute_error": "1.592083333333333333333333333E-15",
+      "passed": true
+    },
+    {
+      "name": "pchip_log/omit/Liverpool1296_GG_0p35wt_20degree/root_weighted_mse_log",
+      "absolute_error": "9.478211713783255540549445514E-16",
+      "passed": true
+    },
+    {
+      "name": "pchip_log/omit/Liverpool1296_GG_0p5wt/mse_log",
+      "absolute_error": "1.060186083333333333333333333E-13",
+      "passed": true
+    },
+    {
+      "name": "pchip_log/omit/Liverpool1296_GG_0p5wt/mae_log",
+      "absolute_error": "1.529166666666666666666666667E-16",
+      "passed": true
+    },
+    {
+      "name": "pchip_log/omit/Liverpool1296_GG_0p5wt/root_weighted_mse_log",
+      "absolute_error": "2.295598200421172491077606269E-15",
+      "passed": true
+    },
+    {
+      "name": "pchip_log/omit/Liverpool1296_GG_0p75wt/mse_log",
+      "absolute_error": "1.309319416666666666666666667E-13",
+      "passed": true
+    },
+    {
+      "name": "pchip_log/omit/Liverpool1296_GG_0p75wt/mae_log",
+      "absolute_error": "1.042083333333333333333333333E-15",
+      "passed": true
+    },
+    {
+      "name": "pchip_log/omit/Liverpool1296_GG_0p75wt/root_weighted_mse_log",
+      "absolute_error": "3.437684827090250320538413309E-15",
+      "passed": true
+    },
+    {
+      "name": "pchip_log/omit/Liverpool1296_peK_10wt/mse_log",
+      "absolute_error": "4.331941666666666666666666667E-15",
+      "passed": true
+    },
+    {
+      "name": "pchip_log/omit/Liverpool1296_peK_10wt/mae_log",
+      "absolute_error": "3.837500000000000000000000000E-16",
+      "passed": true
+    },
+    {
+      "name": "pchip_log/omit/Liverpool1296_peK_10wt/root_weighted_mse_log",
+      "absolute_error": "3.687270808055640119418460089E-16",
+      "passed": true
+    },
+    {
+      "name": "pchip_log/omit/Liverpool1296_peK_20wt/mse_log",
+      "absolute_error": "6.883833333333333333333333333E-14",
+      "passed": true
+    },
+    {
+      "name": "pchip_log/omit/Liverpool1296_peK_20wt/mae_log",
+      "absolute_error": "1.364166666666666666666666667E-15",
+      "passed": true
+    },
+    {
+      "name": "pchip_log/omit/Liverpool1296_peK_20wt/root_weighted_mse_log",
+      "absolute_error": "4.595093117350102070602973713E-16",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_6anchors/omit/Liverpool1296_GG_0p35wt_20degree/mse_log",
+      "absolute_error": "3.216666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_6anchors/omit/Liverpool1296_GG_0p35wt_20degree/mae_log",
+      "absolute_error": "3.333333333333333333333333333E-17",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_6anchors/omit/Liverpool1296_GG_0p35wt_20degree/root_weighted_mse_log",
+      "absolute_error": "6.455126793442077501557326783E-18",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_6anchors/omit/Liverpool1296_GG_0p5wt/mse_log",
+      "absolute_error": "8.000000000000000000000000000E-18",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_6anchors/omit/Liverpool1296_GG_0p5wt/mae_log",
+      "absolute_error": "3.333333333333333333333333333E-18",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_6anchors/omit/Liverpool1296_GG_0p5wt/root_weighted_mse_log",
+      "absolute_error": "3.090634399703131797215792372E-18",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_6anchors/omit/Liverpool1296_GG_0p75wt/mse_log",
+      "absolute_error": "3.000000000000000000000000000E-18",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_6anchors/omit/Liverpool1296_GG_0p75wt/mae_log",
+      "absolute_error": "1.666666666666666666666666667E-18",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_6anchors/omit/Liverpool1296_GG_0p75wt/root_weighted_mse_log",
+      "absolute_error": "1.637247563093790712671402757E-17",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_6anchors/omit/Liverpool1296_peK_10wt/mse_log",
+      "absolute_error": "4.933333333333333333333333333E-17",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_6anchors/omit/Liverpool1296_peK_10wt/mae_log",
+      "absolute_error": "2.500000000000000000000000000E-18",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_6anchors/omit/Liverpool1296_peK_10wt/root_weighted_mse_log",
+      "absolute_error": "4.872811196442868501759235056E-17",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_6anchors/omit/Liverpool1296_peK_20wt/mse_log",
+      "absolute_error": "9.500000000000000000000000000E-18",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_6anchors/omit/Liverpool1296_peK_20wt/mae_log",
+      "absolute_error": "3.250000000000000000000000000E-17",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_6anchors/omit/Liverpool1296_peK_20wt/root_weighted_mse_log",
+      "absolute_error": "4.094792201784982791886860487E-17",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_last2/omit/Liverpool1296_GG_0p35wt_20degree/mse_log",
+      "absolute_error": "1.332750000000000000000000000E-16",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_last2/omit/Liverpool1296_GG_0p35wt_20degree/mae_log",
+      "absolute_error": "5.958333333333333333333333333E-17",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_last2/omit/Liverpool1296_GG_0p35wt_20degree/root_weighted_mse_log",
+      "absolute_error": "5.139697037147475311990783628E-17",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_last2/omit/Liverpool1296_GG_0p5wt/mse_log",
+      "absolute_error": "5.744166666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_last2/omit/Liverpool1296_GG_0p5wt/mae_log",
+      "absolute_error": "5.458333333333333333333333333E-17",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_last2/omit/Liverpool1296_GG_0p5wt/root_weighted_mse_log",
+      "absolute_error": "8.395255426596339617421789080E-18",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_last2/omit/Liverpool1296_GG_0p75wt/mse_log",
+      "absolute_error": "1.007750000000000000000000000E-16",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_last2/omit/Liverpool1296_GG_0p75wt/mae_log",
+      "absolute_error": "9.041666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_last2/omit/Liverpool1296_GG_0p75wt/root_weighted_mse_log",
+      "absolute_error": "4.840747812117449480485443352E-17",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_last2/omit/Liverpool1296_peK_10wt/mse_log",
+      "absolute_error": "8.094166666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_last2/omit/Liverpool1296_peK_10wt/mae_log",
+      "absolute_error": "9.041666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_last2/omit/Liverpool1296_peK_10wt/root_weighted_mse_log",
+      "absolute_error": "1.020335126522407535096507739E-16",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_last2/omit/Liverpool1296_peK_20wt/mse_log",
+      "absolute_error": "2.666666666666666666666666667E-18",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_last2/omit/Liverpool1296_peK_20wt/mae_log",
+      "absolute_error": "3.333333333333333333333333333E-17",
+      "passed": true
+    },
+    {
+      "name": "powerlaw_last2/omit/Liverpool1296_peK_20wt/root_weighted_mse_log",
+      "absolute_error": "5.150437225365899901676730225E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_GG_0p35wt_20degree/crps_log",
+      "absolute_error": "3.666666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_GG_0p35wt_20degree/mse_log",
+      "absolute_error": "6.583333333333333333333333333E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_GG_0p35wt_20degree/mae_log",
+      "absolute_error": "2.500000000000000000000000000E-18",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_GG_0p35wt_20degree/coverage90",
+      "absolute_error": "5.000000000000000000000000000E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_GG_0p35wt_20degree/width90_log",
+      "absolute_error": "4.166666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_GG_0p35wt_20degree/interval_score90_log",
+      "absolute_error": "3.583333333333333333333333333E-16",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_GG_0p35wt_20degree/whole_curve_covered90",
+      "absolute_error": "0.0",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_GG_0p35wt_20degree/root_weighted_mse_log",
+      "absolute_error": "3.711403238711099109400878735E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_GG_0p5wt/crps_log",
+      "absolute_error": "2.500000000000000000000000000E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_GG_0p5wt/mse_log",
+      "absolute_error": "6.583333333333333333333333333E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_GG_0p5wt/mae_log",
+      "absolute_error": "2.416666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_GG_0p5wt/coverage90",
+      "absolute_error": "6.666666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_GG_0p5wt/width90_log",
+      "absolute_error": "4.166666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_GG_0p5wt/interval_score90_log",
+      "absolute_error": "1.250000000000000000000000000E-16",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_GG_0p5wt/whole_curve_covered90",
+      "absolute_error": "0.00",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_GG_0p5wt/root_weighted_mse_log",
+      "absolute_error": "3.675619571722511774702127531E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_GG_0p75wt/crps_log",
+      "absolute_error": "4.250000000000000000000000000E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_GG_0p75wt/mse_log",
+      "absolute_error": "2.333333333333333333333333333E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_GG_0p75wt/mae_log",
+      "absolute_error": "1.500000000000000000000000000E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_GG_0p75wt/coverage90",
+      "absolute_error": "4.166666666666666666666666667E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_GG_0p75wt/width90_log",
+      "absolute_error": "5.000000000000000000000000000E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_GG_0p75wt/interval_score90_log",
+      "absolute_error": "2.583333333333333333333333333E-16",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_GG_0p75wt/whole_curve_covered90",
+      "absolute_error": "0.00",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_GG_0p75wt/root_weighted_mse_log",
+      "absolute_error": "5.617024563135635442052691795E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_peK_10wt/crps_log",
+      "absolute_error": "1.500000000000000000000000000E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_peK_10wt/mse_log",
+      "absolute_error": "7.500000000000000000000000000E-18",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_peK_10wt/mae_log",
+      "absolute_error": "9.166666666666666666666666667E-18",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_peK_10wt/coverage90",
+      "absolute_error": "5.000000000000000000000000000E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_peK_10wt/width90_log",
+      "absolute_error": "0E-48",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_peK_10wt/interval_score90_log",
+      "absolute_error": "2.583333333333333333333333333E-16",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_peK_10wt/whole_curve_covered90",
+      "absolute_error": "0.00",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_peK_10wt/root_weighted_mse_log",
+      "absolute_error": "7.424609507147979850739900195E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_peK_20wt/crps_log",
+      "absolute_error": "1.583333333333333333333333333E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_peK_20wt/mse_log",
+      "absolute_error": "3.750000000000000000000000000E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_peK_20wt/mae_log",
+      "absolute_error": "2.583333333333333333333333333E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_peK_20wt/coverage90",
+      "absolute_error": "8.333333333333333333333333333E-18",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_peK_20wt/width90_log",
+      "absolute_error": "5.000000000000000000000000000E-17",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_peK_20wt/interval_score90_log",
+      "absolute_error": "1.000000000000000000000000000E-16",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_peK_20wt/whole_curve_covered90",
+      "absolute_error": "0.00",
+      "passed": true
+    },
+    {
+      "name": "reference_gp/omit/Liverpool1296_peK_20wt/root_weighted_mse_log",
+      "absolute_error": "7.118540901627368571665882166E-17",
+      "passed": true
+    }
+  ]
+}

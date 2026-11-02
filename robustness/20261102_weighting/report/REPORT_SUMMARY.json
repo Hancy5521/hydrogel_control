@@ -1,0 +1,32 @@
+{
+  "actual_utc": "2026-11-02T02:17:33.562190+00:00",
+  "scope": "Descriptive material-composition weighting and saved-group influence of existing scalar scores; no new target access, fitting, forecasts or scoring",
+  "source_scores_sha256": "555f39ca076351b063511940f7b2a2a011e47ec9a55b0ce968c905e5f9b8c8d0",
+  "root_arithmetic_sha256": "82f3482b81d01eb31551628c6a2218f1626805120ffa5a90259bc2bd924dbea4",
+  "independent_comparison_sha256": "ce6c6fb894dfafbf9788da98585098693593122efbdcdd53830e120a7891e2cd",
+  "family_count": 2,
+  "original_composition_groups": 5,
+  "native_curves": 15,
+  "original_primary_weight_GG": 0.6,
+  "alternative_weight_GG": 0.5,
+  "original_primary_replaced": false,
+  "all_four_external_sources_retained": true,
+  "posthoc_descriptive_not_new_confirmation": true,
+  "candidate_equal_family_crps": 0.3129277059374131,
+  "gp_equal_family_crps": 0.34091622421321477,
+  "conditionalG_equal_family_crps": 0.2951049324912217,
+  "candidate_equal_family_coverage90": 0.6444444444444445,
+  "breakpoints": {
+    "reference_gp": 0.39018101482287015,
+    "conditional_gaussian": 0.5471285162988111
+  },
+  "not_claimed": [
+    "significance",
+    "certified independent batches",
+    "population confidence interval",
+    "independent calibration",
+    "new leave-one-out training",
+    "optimized deployment weights"
+  ],
+  "figure_sha256": "c4c90f66e5b1b43520a5c7dd680ddef3fbceed5938daa577f67473afac42436a"
+}

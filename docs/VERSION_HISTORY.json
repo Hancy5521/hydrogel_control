@@ -36,7 +36,7 @@
     },
     {
       "name": "Four-source external material assessment and portable source reconstruction",
-      "commit": null,
+      "commit": "4e689d3815695e1317496b465ef8eb898c634044",
       "archive_branch": "archive/external-data-2026-11-01",
       "parent_commit": "6335ab7790363f4addb12b153093f96c1a5cb3a5",
       "manuscript_and_original_model_unchanged": true,
@@ -44,6 +44,18 @@
       "analysis_groups_not_certified_batches": 23,
       "all_four_sources_and_failures_retained": true,
       "commit_resolution": "Resolve the retained branch or externally verified delivery receipt."
+    },
+    {
+      "name": "External evidence integrated manuscript and population sensitivity",
+      "commit": null,
+      "archive_branch": "archive/robustness-manuscript-2026-11-02",
+      "parent_commit": "4e689d3815695e1317496b465ef8eb898c634044",
+      "pages": [
+        23,
+        15
+      ],
+      "new_material_fit_forecast_score_calls": 0,
+      "commit_resolution": "Resolve this distinct retained archive branch or externally verified delivery receipt; a commit does not include its own SHA."
     }
   ]
 }

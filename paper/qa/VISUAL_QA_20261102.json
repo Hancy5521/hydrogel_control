@@ -1,0 +1,14 @@
+{
+  "actual_utc": "2026-11-02T02:45:15.546974+00:00",
+  "status": "PASS",
+  "method": "Native Word16 read-only PDF export, then packaged render_docx.py PNG rasterizer at125DPI; every page image actually inspected by the parent agent.",
+  "pages": {
+    "main": 23,
+    "supplement": 15
+  },
+  "all_38_pages_inspected": true,
+  "main_sha256": "5e97129e921eedb6fef8f5380469d9829168a2618a57a1d2330b8f6d6b0a2653",
+  "supplement_sha256": "6b5bbbdc8652bcf7fc8d323a94fe53b70bce96a7700aab8b4aab611fba77d168",
+  "checks": "No clipping, overlap, missing equations, missing panels or truncated rows observed. TableS8 spans two pages with repeated header. SI original landscape page retained.",
+  "not_a_material_validation": true
+}

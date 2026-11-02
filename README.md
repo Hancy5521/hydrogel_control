@@ -1,10 +1,10 @@
 # Hydrogel curve continuation
 
-Additional checkpoint: [four-source external evaluation](external_validation/20261101T1239423181800Z/README.md). The original manuscript, model and development results remain unchanged; new external gains and failures are reported separately.
+Current checkpoint: the manuscript now integrates the [four-source external evaluation](external_validation/20261101T1239423181800Z/README.md) and [population-weight sensitivity](robustness/20261102_weighting/README.md). Original model and score bytes remain unchanged; the two paper files and replay orchestration guard are revised.
 
-This repository archives the **2026-11-01 expanded author-review checkpoint** of a focused hydrogel precursor-ink study: two fixed local curvature contrasts receive a shared Gaussian correction, while the complete high-dimensional reference residual is retained. The main intended use is continuation of a flow curve from six low-rate anchors.
+This repository archives the **2026-11-02 external-evidence author-review checkpoint** of a focused hydrogel precursor-ink study: two fixed local curvature contrasts receive a shared Gaussian correction, while the complete high-dimensional reference residual is retained. The main intended use is continuation of a flow curve from six low-rate anchors.
 
-论文与程序存档，非已发表或保证录用的论文。本次固定保存扩充版21页英文主文、11页补充材料及其推断程序和冻结权重。基础Gaussian方法有既有先例；研究贡献是特定水凝胶续接任务的表示与训练适配，以及对应的受控证据。
+论文与程序存档，非已发表或保证录用的论文。本次保存23页英文主文、15页补充材料及其推断程序和冻结权重。基础Gaussian方法有既有先例；研究贡献是特定水凝胶续接任务的表示与训练适配，以及对应的受控证据。
 
 ## Start here
 
@@ -69,4 +69,13 @@ The last command makes one original optimizer call on the explicitly synthetic f
 
 This release still does not include raw measured curves, the original training runs or all outer-fold predictive laws. Full experiment replay remains incomplete until the authors approve and provide the remaining processed-input access and reuse terms.
 
-The current 21-page main manuscript and 11-page supplement include the complete point-error comparison, including favourable PCHIP interpolation and unfavourable continuation. The S7 companion adds a ninth replay test and direct S7 CSV export without changing old score values. See paper/REVISION_NOTES.md and docs/AUTHOR_ACTIONS.md.
+The current 23-page main manuscript and 15-page supplement also retain the complete point-error comparison, including favourable PCHIP interpolation and unfavourable continuation. The S7 companion adds a ninth replay test and direct S7 CSV export without changing old score values. See paper/REVISION_NOTES.md and docs/AUTHOR_ACTIONS.md.
+
+
+## External evidence and population dependence
+
+The frozen deployment model was evaluated without retraining on46 native curves fromfour separately reported sources, with23 conservative analysis groups and781 higher-rate targets. Under original within-source equal-group weights, Liverpool CRPS favours the candidate over GP and conditional Gaussian. All otherthree sources lose to GP in CRPS; dynamic alginate has only2.44% candidate coverage. Liverpool's peK10wt% group has zero coverage. All adverse results are retained.
+
+Liverpool has three GG and two peK composition groups. Equal weighting of the two families reverses the candidate's CRPS advantage over conditional Gaussian (0.312928 vs0.295105) and removes its point-error advantage. The source primary score is preserved; the alternative is descriptive population sensitivity. No new fitting, forecast or target scoring is performed in this manuscript/weighting revision. This bounds the intended precursor-ink use and does not establish same-domain independent preparation batches, calibration or measured experimental savings.
+
+The corrected external replay entry point now checks a pinned20-component manifest and canonical paths before reconstruction. Its new guard receipts are data-free checks; old full-execution receipts remain historical. No raw source workbooks or measurement arrays are uploaded to Git. The local review package and public repository have different redistribution scopes.

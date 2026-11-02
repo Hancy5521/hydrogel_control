@@ -1,0 +1,48 @@
+{
+  "actual_utc": "2026-11-02T02:17:33.553484+00:00",
+  "risk_coefficients": {
+    "curvature_joint_gaussian": {
+      "R_GG": 0.11646254637285235,
+      "R_peK": 0.5093928655019738,
+      "intercept": 0.5093928655019738,
+      "slope": -0.39293031912912146
+    },
+    "reference_gp": {
+      "R_GG": 0.2718813000977355,
+      "R_peK": 0.40995114832869406,
+      "intercept": 0.40995114832869406,
+      "slope": -0.13806984823095858
+    },
+    "conditional_gaussian": {
+      "R_GG": 0.28772670845831266,
+      "R_peK": 0.30248315652413077,
+      "intercept": 0.30248315652413077,
+      "slope": -0.014756448065818106
+    }
+  },
+  "crossings": [
+    {
+      "baseline": "reference_gp",
+      "delta_GG": -0.15541875372488312,
+      "delta_peK": 0.09944171717327976,
+      "delta_primary_w_0p6": -0.05347456536561797,
+      "delta_equal_family_w_0p5": -0.027988518275801677,
+      "break_even_GG_weight": 0.39018101482287015,
+      "interpretation": "Candidate CRPS lower for w above crossing within[0,1]; higher below. w is a population-weight sensitivity variable, not an optimized model parameter."
+    },
+    {
+      "baseline": "conditional_gaussian",
+      "delta_GG": -0.1712641620854603,
+      "delta_peK": 0.20690970897784305,
+      "delta_primary_w_0p6": -0.019994613660138952,
+      "delta_equal_family_w_0p5": 0.017822773446191376,
+      "break_even_GG_weight": 0.5471285162988111,
+      "interpretation": "Candidate CRPS lower for w above crossing within[0,1]; higher below. w is a population-weight sensitivity variable, not an optimized model parameter."
+    }
+  ],
+  "primary_weight": 0.6,
+  "alternative_equal_family_weight": 0.5,
+  "grid_role": "Display of affine saved-score averages, not weight fitting or target scoring",
+  "original_primary_endpoint_retained": true,
+  "source_result_sha256": "82f3482b81d01eb31551628c6a2218f1626805120ffa5a90259bc2bd924dbea4"
+}

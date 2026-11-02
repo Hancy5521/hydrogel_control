@@ -1,0 +1,182 @@
+{
+  "actual_utc": "2026-11-02T02:15:47.906264+00:00",
+  "status": "PASS",
+  "scope": "Data-free guard fixtures and syntax-order/protocol-binding inspection; no original main or reconstructed/raw targets accessed.",
+  "original_commit": "4e689d3815695e1317496b465ef8eb898c634044",
+  "original_execution_protocol_sha256": "348d507321a41b60edf97f1da757f62f0a68c0d926b89696bfa4eeba0e50f4bd",
+  "candidate_run_replay_sha256": "369aacb5d25b99ead3a5a84d74cde7a027e5edd1539c2b36167eecb0fcfd1850",
+  "frozen_inventory_sha256": "d10a310f22ca4df551d67b486af463ac6b569a985848fcbafc0c46671befd29c",
+  "test_script_sha256": "82d31e80114cca0b5fda41baad3cfb507456d91627fbc6025b9124855f1cab28",
+  "validated_component_count": 20,
+  "unchanged_original_repo_components": 16,
+  "unchanged_original_study_programs": 4,
+  "fixture_cases": [
+    {
+      "case": "complete_original20",
+      "expected": "ACCEPT",
+      "observed": "ACCEPT",
+      "passed": true,
+      "error": null,
+      "validated_components": 20
+    },
+    {
+      "case": "no_runtime_directory",
+      "expected": "REJECT",
+      "observed": "REJECT",
+      "passed": true,
+      "error": "ValueError: Missing frozen component: runtime/core/conditional_metrics.py",
+      "validated_components": null
+    },
+    {
+      "case": "one_runtime_module_absent",
+      "expected": "REJECT",
+      "observed": "REJECT",
+      "passed": true,
+      "error": "ValueError: Missing frozen component: runtime/core/coordinate_reference.py",
+      "validated_components": null
+    },
+    {
+      "case": "one_study_program_absent",
+      "expected": "REJECT",
+      "observed": "REJECT",
+      "passed": true,
+      "error": "ValueError: Missing frozen component: program/run_external.py",
+      "validated_components": null
+    },
+    {
+      "case": "model_one_whitespace_byte_changed",
+      "expected": "REJECT",
+      "observed": "REJECT",
+      "passed": true,
+      "error": "ValueError: Changed frozen component: models/SHARED_MODEL.json",
+      "validated_components": null
+    },
+    {
+      "case": "correct_module_bytes_wrong_directory",
+      "expected": "REJECT",
+      "observed": "REJECT",
+      "passed": true,
+      "error": "ValueError: Missing frozen component: runtime/core/coordinate_reference.py",
+      "validated_components": null
+    },
+    {
+      "case": "unexpected_runtime_python_file",
+      "expected": "REJECT",
+      "observed": "REJECT",
+      "passed": true,
+      "error": "ValueError: Unexpected or misplaced runtime/program Python components",
+      "validated_components": null
+    },
+    {
+      "case": "unsafe_parent_inventory_path",
+      "expected": "REJECT",
+      "observed": "REJECT",
+      "passed": true,
+      "error": "ValueError: Unsafe inventory component path",
+      "validated_components": null
+    },
+    {
+      "case": "unsafe_absolute_inventory_path",
+      "expected": "REJECT",
+      "observed": "REJECT",
+      "passed": true,
+      "error": "ValueError: Unsafe inventory component path",
+      "validated_components": null
+    },
+    {
+      "case": "unsafe_windows_drive_inventory_path",
+      "expected": "REJECT",
+      "observed": "REJECT",
+      "passed": true,
+      "error": "ValueError: Unsafe inventory component path",
+      "validated_components": null
+    },
+    {
+      "case": "unsafe_backslash_inventory_path",
+      "expected": "REJECT",
+      "observed": "REJECT",
+      "passed": true,
+      "error": "ValueError: Unsafe inventory component path",
+      "validated_components": null
+    },
+    {
+      "case": "duplicate_inventory_component",
+      "expected": "REJECT",
+      "observed": "REJECT",
+      "passed": true,
+      "error": "ValueError: Duplicate inventory component path",
+      "validated_components": null
+    },
+    {
+      "case": "duplicate_inventory_json_field",
+      "expected": "REJECT",
+      "observed": "REJECT",
+      "passed": true,
+      "error": "ValueError: Duplicate inventory JSON field: schema_version",
+      "validated_components": null
+    },
+    {
+      "case": "unknown_inventory_origin",
+      "expected": "REJECT",
+      "observed": "REJECT",
+      "passed": true,
+      "error": "ValueError: Invalid inventory component origin",
+      "validated_components": null
+    },
+    {
+      "case": "edited_expected_component_hash",
+      "expected": "REJECT",
+      "observed": "REJECT",
+      "passed": true,
+      "error": "ValueError: Replay inventory bytes differ from the pinned original20 manifest",
+      "validated_components": null
+    },
+    {
+      "case": "short_component_inventory",
+      "expected": "REJECT",
+      "observed": "REJECT",
+      "passed": true,
+      "error": "ValueError: Complete20-component replay inventory required",
+      "validated_components": null
+    },
+    {
+      "case": "incorrect_origin_commit",
+      "expected": "REJECT",
+      "observed": "REJECT",
+      "passed": true,
+      "error": "ValueError: Replay inventory origin differs from original execution",
+      "validated_components": null
+    },
+    {
+      "case": "invalid_digest_type",
+      "expected": "REJECT",
+      "observed": "REJECT",
+      "passed": true,
+      "error": "ValueError: Invalid component SHA256",
+      "validated_components": null
+    },
+    {
+      "case": "missing_inventory_file",
+      "expected": "REJECT",
+      "observed": "REJECT",
+      "passed": true,
+      "error": "FileNotFoundError: [redacted local fixture root]/study/reproduction/FROZEN_REPLAY_BINDINGS.json",
+      "validated_components": null
+    }
+  ],
+  "fixture_pass_count": 19,
+  "fixture_fail_count": 0,
+  "guard_before_rebuild_import_data_and_output": true,
+  "fresh_protocol_binds_inventory_sha256": true,
+  "original_repo_modified": false,
+  "raw_or_reconstructed_target_files_read": 0,
+  "model_execution_calls": 0,
+  "fit_calls": 0,
+  "prediction_calls": 0,
+  "score_calls": 0,
+  "rebuild_calls": 0,
+  "network_calls": 0,
+  "future_full_cli_with_data_not_rerun": true,
+  "public_copy_note": "One local fixture-root locator redacted; counts and outcomes unchanged.",
+  "original_receipt_sha256": "c14b42c3cb4638559ea068f6bd2f1019e63fd471f47c6fdc42a7e62fdfab2322"
+}

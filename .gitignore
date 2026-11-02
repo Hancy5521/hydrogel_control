@@ -47,3 +47,9 @@ synthetic_training_check_new.json
 # Reviewed derived external-study score tables only
 !external_validation/20261101T1239423181800Z/report/ALL_SOURCE_RESULTS.csv
 !external_validation/20261101T1239423181800Z/report/LIVERPOOL_GROUP_RESULTS.csv
+
+# Explicitly reviewed derived weighting scalars
+!robustness/20261102_weighting/FAMILY_RESULTS.csv
+!robustness/20261102_weighting/INFLUENCE_ARITHMETIC.csv
+!robustness/20261102_weighting/report/WEIGHTING_COMPARISON.csv
+new_weighting_summary.json

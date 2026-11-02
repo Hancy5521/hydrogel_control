@@ -1,5 +1,5 @@
 {
-  "checkpoint": "hydrogel-external-data-20261101T1239423181800Z",
+  "checkpoint": "hydrogel-robustness-manuscript-20261102T0233094923993Z",
   "files": [
     {
       "path": ".gitattributes",
@@ -9,21 +9,21 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 1522,
-      "sha256": "e337881a4a5b47d9da6d017fe8b40e6677002065e716b059518184c2ca24a74a",
-      "git_blob_sha1": "03ce118b452f2625ec1b9cbb0fd898e94394abe4"
+      "bytes": 1773,
+      "sha256": "d871a341bccd8138301d39065ee9b105786c48245734d394dab2bf97dfd1fcc2",
+      "git_blob_sha1": "0a5422909b35bcd521c0cdf41fdac45c0ac8ea5c"
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 1753,
-      "sha256": "50f5919345afbb055d631a2d92213478aad53a1e97cc90497fe548747192a8eb",
-      "git_blob_sha1": "d33efc1acd39debc36ba3e5cb13fbd784b8c008c"
+      "bytes": 2476,
+      "sha256": "5c8bc141e7a235ce5b0a1a141d5f89ec201a461148a4528e7e4e205de3fe0555",
+      "git_blob_sha1": "84d4251b2c67ad126e0cd4775d5fa1a0eff8845d"
     },
     {
       "path": "CHECKPOINT.json",
-      "bytes": 1995,
-      "sha256": "af591e4de3ff16ab2bde7727693a71c6a14bc4453f42bd8c583ab1147a17d57a",
-      "git_blob_sha1": "85bee8c5b9e549a13e60b4bcc0bb61d016865648"
+      "bytes": 2447,
+      "sha256": "983702fe238acdc0633e747d02b1d2d31beef01cc164fcbd3b272dbe2c45ab09",
+      "git_blob_sha1": "7ed3b06aec20c1c64793784b1a728c6f72b472f4"
     },
     {
       "path": "LOCAL_ARCHIVE_INDEX.json",
@@ -33,15 +33,15 @@
     },
     {
       "path": "MODEL_CARD.md",
-      "bytes": 2853,
-      "sha256": "cbe283fb70f83763913e5708eb85e080b798010bb6d72fe1c26fc772679cd427",
-      "git_blob_sha1": "55d46cb491bd9b7414c4c74e9fe9bb89f399c862"
+      "bytes": 3109,
+      "sha256": "2374b88a395aaf1af355458b04167bf796e3d21fd819d4d71c0fcbcd5258dee7",
+      "git_blob_sha1": "451f17734506f48bc5bd73924fcf78a78aaba5e6"
     },
     {
       "path": "README.md",
-      "bytes": 6913,
-      "sha256": "903b5af4536ee9ab88fe5d92554c0acee6528c23ec58f79ac79eaf0a83d50e09",
-      "git_blob_sha1": "4fa86d8b2b9c72d98d98df01942f7bc0fb4d391f"
+      "bytes": 8520,
+      "sha256": "350b3935aac1f21c1535444c3fd3f8cec7f6005c1c317a461f793f03e42926d3",
+      "git_blob_sha1": "86bd607048ecb77c0a59b93abe71bb3d069a7308"
     },
     {
       "path": "RIGHTS_AND_PROVENANCE.md",
@@ -57,15 +57,15 @@
     },
     {
       "path": "docs/AUTHOR_ACTIONS.md",
-      "bytes": 3364,
-      "sha256": "9a034ca9d92c1abc32ab3f85d472caa3731e0198850d5e53b77b30bd286ef1e5",
-      "git_blob_sha1": "1a45afb40367c56eb42e693ba8671a2dd577b6cb"
+      "bytes": 3416,
+      "sha256": "89929e970d005b803bf53c0ab747508bb5cf77c64c4aedc6bf4743bd17c8d49b",
+      "git_blob_sha1": "6381d7e7d69aca9e7560633f8e2dbc17fcb2c1ee"
     },
     {
       "path": "docs/VERSION_HISTORY.json",
-      "bytes": 1892,
-      "sha256": "f5e27048f18a2c24f55a3e210995e2112fc4762ff19824a899afd6655309e2e6",
-      "git_blob_sha1": "82f566caccdbd707dc8953ddfe6babcf328f2fdd"
+      "bytes": 2450,
+      "sha256": "198519935aa9535a865f42ef7ca866bb51bd2b247306de325fb7822079fb86f2",
+      "git_blob_sha1": "75528fc5380fa3d99859e17e6e76a0c383b121c8"
     },
     {
       "path": "docs/evidence/CITATION_AND_SOURCE_STATUS.json",
@@ -248,10 +248,28 @@
       "git_blob_sha1": "036039631114bf0476fc5b817da4a0b182a98ad0"
     },
     {
+      "path": "external_validation/20261101T1239423181800Z/reproduction/FROZEN_REPLAY_BINDINGS.json",
+      "bytes": 3777,
+      "sha256": "d10a310f22ca4df551d67b486af463ac6b569a985848fcbafc0c46671befd29c",
+      "git_blob_sha1": "19beedc8074dbddef09bb01c8fb2b4aa858c92c0"
+    },
+    {
+      "path": "external_validation/20261101T1239423181800Z/reproduction/GUARD_FIX_SELF_CHECK_20261102.json",
+      "bytes": 6304,
+      "sha256": "0c79a39a789a6957448ddf67659e05849c7949f0c837c5c2dc4816133e333515",
+      "git_blob_sha1": "3d68aa2c0633ae84481f905d3fb113024db313bc"
+    },
+    {
+      "path": "external_validation/20261101T1239423181800Z/reproduction/INDEPENDENT_GUARD_AUDIT_20261102.json",
+      "bytes": 767,
+      "sha256": "c9a520e708bcd800ae6e0c431a627efd2b310f84a7f519a64c8cc817cbcaac65",
+      "git_blob_sha1": "aecf1696a6dc22177add71c8403e4a4b85350ce4"
+    },
+    {
       "path": "external_validation/20261101T1239423181800Z/reproduction/README.md",
-      "bytes": 5563,
-      "sha256": "82a487d7ad9ad42ea22978333f77538a9d21995e6cac73153b5548407c4f5f5c",
-      "git_blob_sha1": "471fbb8db24330ff5e975034cebb00e25936532a"
+      "bytes": 6688,
+      "sha256": "95dda5a388a55c5eba1e15e9c5bf4a5179673dda85f27bdecc632ae827bfd7f2",
+      "git_blob_sha1": "b583c45eff04d89e1a539f4f7217a5bb4222ea15"
     },
     {
       "path": "external_validation/20261101T1239423181800Z/reproduction/REBUILD_VALIDATION.json",
@@ -285,9 +303,9 @@
     },
     {
       "path": "external_validation/20261101T1239423181800Z/reproduction/run_replay.py",
-      "bytes": 3201,
-      "sha256": "109e4e31fa22c7417cb4e35bacad42e336e965cedf8bc95921955f0cba7afb11",
-      "git_blob_sha1": "29e03b036978109316b57ea502bc03b744865ee1"
+      "bytes": 7470,
+      "sha256": "369aacb5d25b99ead3a5a84d74cde7a027e5edd1539c2b36167eecb0fcfd1850",
+      "git_blob_sha1": "e73ff0a11e078af009b8f2122a212200f642cfb5"
     },
     {
       "path": "external_validation/20261101T1239423181800Z/requirements-external.txt",
@@ -315,9 +333,9 @@
     },
     {
       "path": "paper/Hydrogel_Continuation_English_Revised.docx",
-      "bytes": 608037,
-      "sha256": "2669b7804b9c499f4ed57960a3f82150d49759c889b1bf6c15aeb6a0e6012b5b",
-      "git_blob_sha1": "0341c12b2e93625948158781846197de90b9850a"
+      "bytes": 612594,
+      "sha256": "5e97129e921eedb6fef8f5380469d9829168a2618a57a1d2330b8f6d6b0a2653",
+      "git_blob_sha1": "0aeaa32a3e2cc0ab546cffe068ae4dc0484fe293"
     },
     {
       "path": "paper/MANUSCRIPT_QA_SUMMARY.json",
@@ -327,15 +345,15 @@
     },
     {
       "path": "paper/REVISION_NOTES.md",
-      "bytes": 2789,
-      "sha256": "894180f6344d8c89a82b3f881349fb4982e76a4b41ca5006aae07d6e6b1c24b4",
-      "git_blob_sha1": "1620cb7eb51db94765bf8da8494cdda123a8e917"
+      "bytes": 2393,
+      "sha256": "4e3f7ede25eda7dccb1999b947b011d7560a4c87b0764a977e56b625a95517ca",
+      "git_blob_sha1": "59cbbdec67765f068802e011a7fc6c672bc351d7"
     },
     {
       "path": "paper/Supplement_Revised.docx",
-      "bytes": 438616,
-      "sha256": "2296a2e47b02d291d47396344eba9782a2e1951cf0009039fd911b19884eeb8f",
-      "git_blob_sha1": "51410cc89b445612a3f15e42da09bf94db729ef0"
+      "bytes": 822959,
+      "sha256": "6b5bbbdc8652bcf7fc8d323a94fe53b70bce96a7700aab8b4aab611fba77d168",
+      "git_blob_sha1": "0197a179d8cde3a4d8ce0188c4494cb572f0d512"
     },
     {
       "path": "paper/figures/NEW_CONTROLS.pdf",
@@ -348,6 +366,18 @@
       "bytes": 186009,
       "sha256": "ca19d9e78567bf861e689c439a74a2b4512fefe18f15769f9fbdbe1f39e0112f",
       "git_blob_sha1": "28a109f414b30cf75b6789947525d41efa459132"
+    },
+    {
+      "path": "paper/qa/EDITORIAL_AUDIT_20261102.json",
+      "bytes": 34888,
+      "sha256": "77eb0d12fad38788803f933b976ddfaee55082ff5f9f58b4b2f0163265920c72",
+      "git_blob_sha1": "3c82d01152e127041c96a0ba3ab89c805d0edbb3"
+    },
+    {
+      "path": "paper/qa/VISUAL_QA_20261102.json",
+      "bytes": 735,
+      "sha256": "346539ee745f3222121007fba55f9aecd7569c8294d71ff92be07a4329dc644a",
+      "git_blob_sha1": "feba0a4beb55c57e74a89341e1a26f1756843de3"
     },
     {
       "path": "reproducibility/.gitignore",
@@ -564,6 +594,126 @@
       "bytes": 11980,
       "sha256": "d2b75551b0f58ac272ec3890ddab754922a179617f66a70698ee86abd49e85ad",
       "git_blob_sha1": "908e06962e8ad7c01d405c111ddc9d8daf68d354"
+    },
+    {
+      "path": "robustness/20261102_weighting/DIAGNOSTIC_PLAN.json",
+      "bytes": 2081,
+      "sha256": "099a60d39772bc83a07e64dd6652c891b89f7cfd6de2b46eea246d5bf09c309e",
+      "git_blob_sha1": "7b571946448eb904a7e266aadeb74060a4948f28"
+    },
+    {
+      "path": "robustness/20261102_weighting/FAMILY_RESULTS.csv",
+      "bytes": 1613,
+      "sha256": "d42970420990fc0be33bc2d73c2f43b56ba4d5f1a60262f765db12183e36f545",
+      "git_blob_sha1": "60ae13ea5d0f0f4a13240f8346194ac44042c862"
+    },
+    {
+      "path": "robustness/20261102_weighting/INFLUENCE_ARITHMETIC.csv",
+      "bytes": 4499,
+      "sha256": "4bd2d671b8b46c55dd735f15b166fba29028d9e6b6ca08d46d6634711a43f205",
+      "git_blob_sha1": "46081685163b8c0864e77f73544d7c5b334b439b"
+    },
+    {
+      "path": "robustness/20261102_weighting/README.md",
+      "bytes": 2076,
+      "sha256": "8f5ac95499c60362f7a796f81eac6661bcc44068c98738728c6a9d3eb36447d4",
+      "git_blob_sha1": "e71b4d67eed9552cfe86ff4bef2c555ceb2589c7"
+    },
+    {
+      "path": "robustness/20261102_weighting/ROBUSTNESS_RESULTS.json",
+      "bytes": 19190,
+      "sha256": "82f3482b81d01eb31551628c6a2218f1626805120ffa5a90259bc2bd924dbea4",
+      "git_blob_sha1": "7d0c31b7bd2c845e74fd71570263bf80e4ed67ed"
+    },
+    {
+      "path": "robustness/20261102_weighting/audit/BASE_SCIENCE_PRESERVATION.json",
+      "bytes": 18752,
+      "sha256": "dccb0cc7f381b08fb0226d542eabc43c275e139a88983161a6f0638fbae1b6b7",
+      "git_blob_sha1": "6c048146f137cab78fb65a7b6292bc14508f0763"
+    },
+    {
+      "path": "robustness/20261102_weighting/audit/INDEPENDENT_COMPARISON.json",
+      "bytes": 51849,
+      "sha256": "ce6c6fb894dfafbf9788da98585098693593122efbdcdd53830e120a7891e2cd",
+      "git_blob_sha1": "b02b430f20310d531a9cd359baffb84632a45c9c"
+    },
+    {
+      "path": "robustness/20261102_weighting/audit/INDEPENDENT_WEIGHTING_RESULTS.json",
+      "bytes": 113582,
+      "sha256": "2a80375b28e3f845910ce56237fd20a4c14fe2dc8a962135aa30ee908cb7a901",
+      "git_blob_sha1": "c69a1c12ce367f0ea40e66293be48dbdeac1ccee"
+    },
+    {
+      "path": "robustness/20261102_weighting/audit/PORTABLE_REPLAY_CHECK.json",
+      "bytes": 477,
+      "sha256": "f5c8cd4a3f35b613bc4ba9236367bf7b4af702289a2746d5e1d829d138f6a226",
+      "git_blob_sha1": "035d6ceaa35f86285d3b379bb6c5b85020a8dcb0"
+    },
+    {
+      "path": "robustness/20261102_weighting/audit/STATISTICAL_INTERPRETATION_ZH.txt",
+      "bytes": 3990,
+      "sha256": "d25d73328ff7ae5f554c02209179cb5b21f352b83f70865af99fd1ac87567be3",
+      "git_blob_sha1": "5aff4c84d4d53918b880fd33188c4926e94ec1e2"
+    },
+    {
+      "path": "robustness/20261102_weighting/reaverage_saved_scores.py",
+      "bytes": 3202,
+      "sha256": "cb8bc14d21aa9b82151aa51510e0fa6b2aca242fd1fd185ab1eb4e36e86c3c10",
+      "git_blob_sha1": "f1141a9c233b103f6e30bd3d36e8a2d638990958"
+    },
+    {
+      "path": "robustness/20261102_weighting/report/ENGLISH_ROBUSTNESS_ADDENDUM.txt",
+      "bytes": 2737,
+      "sha256": "8f1742692ba031a4d946a34ce1b5ef66dbc4f3a215577f34e4e9fb60da4b82a2",
+      "git_blob_sha1": "6efbce33e7aa5249029b828995661bf2c5c784c9"
+    },
+    {
+      "path": "robustness/20261102_weighting/report/READ_FIRST.html",
+      "bytes": 9025,
+      "sha256": "94ecdb667a603ed02f6cddab464c71456e2ee9a9c18a8eb1ec1950f998887083",
+      "git_blob_sha1": "a288b39e63c4a4b1b7e49dedb50706d89e6525a4"
+    },
+    {
+      "path": "robustness/20261102_weighting/report/REPORT_SUMMARY.json",
+      "bytes": 1458,
+      "sha256": "b367729fd22a13bc2da371f9be48e958408a987bf8e03009c4e71ae88741ead9",
+      "git_blob_sha1": "ca1aac46d9845d9fbbafcf0c71d554a2aa7b6635"
+    },
+    {
+      "path": "robustness/20261102_weighting/report/REPORT_VISUAL_AND_CONTENT_QA.json",
+      "bytes": 863,
+      "sha256": "46791ab1fb0c25ffecc7dc032730212c8a357f896e350b1ac4825de3c3a66798",
+      "git_blob_sha1": "1e2dc4214f921e22180016e5549adfce211a89c5"
+    },
+    {
+      "path": "robustness/20261102_weighting/report/WEIGHTING_COMPARISON.csv",
+      "bytes": 1355,
+      "sha256": "33dfe21960831b78f323ebaf1140ddfaff544656c04e66494d316e7ba9aaff42",
+      "git_blob_sha1": "ce9aafb7976789d689ba8dfe80e9f655bf4cf5e6"
+    },
+    {
+      "path": "robustness/20261102_weighting/report/WEIGHTING_SENSITIVITY_CAPTION.txt",
+      "bytes": 1009,
+      "sha256": "e72f94f3d6473b7f7a112eadebf71cd0af48278dabdc0cf1cf382718bb9088d9",
+      "git_blob_sha1": "2f9e6221f73d4e77416cb438693acf205ba7a3a9"
+    },
+    {
+      "path": "robustness/20261102_weighting/report/WEIGHTING_SENSITIVITY_DATA.json",
+      "bytes": 1929,
+      "sha256": "eff993051c745a457780596785d8a07a9473ff581e9a3768c82aac85f8bb4fd2",
+      "git_blob_sha1": "f6e35eeac0ef6da1cab673ced980a8ba92a6325e"
+    },
+    {
+      "path": "robustness/20261102_weighting/report/WEIGHTING_SENSITIVITY_WEIGHT_SENSITIVITY.png",
+      "bytes": 278040,
+      "sha256": "c4c90f66e5b1b43520a5c7dd680ddef3fbceed5938daa577f67473afac42436a",
+      "git_blob_sha1": "d53bfc2e9bb17c00349e2209ae90c07a4c3c38db"
+    },
+    {
+      "path": "robustness/20261102_weighting/report/WEIGHTING_SENSITIVITY_WEIGHT_SENSITIVITY.svg",
+      "bytes": 107369,
+      "sha256": "e8b1f371453481c82eec229e92598409292e39715e86fc9b8f4193f399582809",
+      "git_blob_sha1": "92d0a05d814e987b33b7c7c40897716367e95c88"
     },
     {
       "path": "runtime/core/conditional_metrics.py",

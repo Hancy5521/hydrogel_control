@@ -1,0 +1,9 @@
+{
+  "actual_utc": "2026-11-02T02:45:15.529928+00:00",
+  "status": "PASS",
+  "program_sha256": "cb8bc14d21aa9b82151aa51510e0fa6b2aca242fd1fd185ab1eb4e36e86c3c10",
+  "original_saved_result_sha256": "82f3482b81d01eb31551628c6a2218f1626805120ffa5a90259bc2bd924dbea4",
+  "portable_output_sha256": "b44a48d90a83caa79b6799590a56431523606188df4bfa763fbdc2057da9a7f9",
+  "method_metrics_and_all_30_saved_group_omissions_exact": true,
+  "material_fit_forecast_score_calls": 0
+}

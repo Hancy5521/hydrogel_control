@@ -16,3 +16,8 @@ Commit 79f3ae4feb84738962233923fe189591fe818733, archive/computational-evidence-
 ## 2026-11-01 External source assessment
 
 Added a source-inspected, zero-retraining evaluation of46 native curves from4 sources (23 conservative analysis groups,781 targets). Liverpool improves against the fixed GP and conditional Gaussian; the other three sources do not beat GP in CRPS. Undercoverage and the dynamic-gel failure remain. Added hash-bound cell reconstruction, original-source retrieval and guarded replay preparation. No old manuscript/model/runtime/development score bytes changed; new results are separate from the original paper. Raw external workbooks and measurement arrays are not uploaded, particularly other-open source assets.
+
+
+## 2026 November 2 manuscript and robustness checkpoint
+
+Integrated all external gains/failures and new descriptive population sensitivity into23-page main and15-page SI. Preserved all old science/model/score bytes. Added a portable saved-score arithmetic entry point and retained independent Decimal checks. Corrected replay preparation to require the exact original20 components by canonical paths and hashes; only data-free guard fixtures exercised. All38 manuscript pages inspected; protected XML and rounded table audit passed410 checks. Existing manuscripts and archived branches remain in Git history. No material fit, forecast, target scoring, measurement or independent confirmation added in this revision.

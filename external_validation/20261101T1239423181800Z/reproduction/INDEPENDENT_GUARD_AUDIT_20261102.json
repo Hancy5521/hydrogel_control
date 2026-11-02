@@ -1,0 +1,18 @@
+{
+  "actual_utc": "2026-11-02T02:18:25.949715+00:00",
+  "status": "PASS",
+  "guard_sha256": "369aacb5d25b99ead3a5a84d74cde7a027e5edd1539c2b36167eecb0fcfd1850",
+  "complete_real_code_fixture": {
+    "status": "PASS",
+    "inventory_sha256": "d10a310f22ca4df551d67b486af463ac6b569a985848fcbafc0c46671befd29c",
+    "validated_components": 20,
+    "repo_components": 16,
+    "study_components": 4,
+    "origin_commit": "4e689d3815695e1317496b465ef8eb898c634044",
+    "original_execution_protocol_sha256": "348d507321a41b60edf97f1da757f62f0a68c0d926b89696bfa4eeba0e50f4bd"
+  },
+  "models_only_rejected": true,
+  "error": "Missing frozen component: runtime/core/conditional_metrics.py",
+  "rebuild_fit_prediction_score_calls": 0,
+  "raw_target_access": 0
+}

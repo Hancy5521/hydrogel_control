@@ -1,0 +1,27 @@
+{
+  "actual_utc": "2026-11-02T02:04:51.9360895+00:00",
+  "purpose": "Descriptive weighting/influence sensitivity of already saved external scores, not new independent validation",
+  "input_sha256": "555f39ca076351b063511940f7b2a2a011e47ec9a55b0ce968c905e5f9b8c8d0",
+  "no_new_label_access": true,
+  "no_fit_forecast_or_score": true,
+  "source_scope": "All four sources remain in manuscript; quantitative weighting sensitivity focuses known Liverpool3GG+2peK groups",
+  "family_mapping": {
+    "Liverpool1296_GG_0p35wt_20degree": "GG",
+    "Liverpool1296_GG_0p75wt": "GG",
+    "Liverpool1296_GG_0p5wt": "GG",
+    "Liverpool1296_peK_10wt": "peK",
+    "Liverpool1296_peK_20wt": "peK"
+  },
+  "calculations": [
+    "Average saved per-curve scores within each existing group; retain original five-group primary weights",
+    "Average existing group scores within GG/peK; report two-family equal weights as descriptive alternative estimand, not replacement primary endpoint",
+    "For CRPS compare full linear weight function R(w)=w*R_GG+(1-w)*R_peK, w in[0,1], analytic break-even against both fixed Gaussian baselines; no weight chosen to win",
+    "Delete one saved group aggregate at a time, recompute only arithmetic means; label influence arithmetic, not leave-one-out training or independent confirmation",
+    "Report marginal coverage,width,interval score and square root of weighted MSE consistently; no pooled-RMSE naming",
+    "No significance tests or exchangeability/batch/calibration guarantees; no post-test model tuning"
+  ],
+  "manuscript_policy": "New candidate only; original main/SI, all previous scores and Gitarchives retained. Include all external adverse sources and weighting reversal if any.",
+  "input_relative_to_repository": "external_validation/20261101T1239423181800Z/SCORES.json",
+  "public_copy_note": "Only the machine-specific input locator is replaced by a repository-relative locator. Original protocol SHA is retained below.",
+  "original_plan_sha256": "7dd9874795ad9839cf32a2c197ea8cd4544127462bfa2266c7ccf95ab74a44dc"
+}

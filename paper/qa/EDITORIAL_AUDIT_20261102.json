@@ -1,0 +1,1652 @@
+{
+  "actual_utc": "2026-11-02T02:38:17.465858+00:00",
+  "status": "PASS",
+  "scope": "Independent OOXML editorial retention and rounded-table audit using 50-digit Decimal averages of saved per-curve scores. No material arrays, models or scientific scorer read/executed. This is not additional experimental validation.",
+  "checks": [
+    {
+      "check": "main retained part [Content_Types].xml",
+      "passed": true
+    },
+    {
+      "check": "main retained part _rels/.rels",
+      "passed": true
+    },
+    {
+      "check": "main retained part docProps/core.xml",
+      "passed": true
+    },
+    {
+      "check": "main retained part docProps/app.xml",
+      "passed": true
+    },
+    {
+      "check": "main retained part word/_rels/document.xml.rels",
+      "passed": true
+    },
+    {
+      "check": "main retained part word/styles.xml",
+      "passed": true
+    },
+    {
+      "check": "main retained part word/stylesWithEffects.xml",
+      "passed": true
+    },
+    {
+      "check": "main retained part word/settings.xml",
+      "passed": true
+    },
+    {
+      "check": "main retained part word/webSettings.xml",
+      "passed": true
+    },
+    {
+      "check": "main retained part word/fontTable.xml",
+      "passed": true
+    },
+    {
+      "check": "main retained part word/theme/theme1.xml",
+      "passed": true
+    },
+    {
+      "check": "main retained part customXml/item1.xml",
+      "passed": true
+    },
+    {
+      "check": "main retained part customXml/_rels/item1.xml.rels",
+      "passed": true
+    },
+    {
+      "check": "main retained part customXml/itemProps1.xml",
+      "passed": true
+    },
+    {
+      "check": "main retained part word/numbering.xml",
+      "passed": true
+    },
+    {
+      "check": "main retained part word/footer1.xml",
+      "passed": true
+    },
+    {
+      "check": "main retained part word/media/image1.png",
+      "passed": true
+    },
+    {
+      "check": "main retained part word/media/image2.png",
+      "passed": true
+    },
+    {
+      "check": "main retained part word/media/image3.png",
+      "passed": true
+    },
+    {
+      "check": "main retained part word/media/image4.png",
+      "passed": true
+    },
+    {
+      "check": "main retained part docProps/thumbnail.jpeg",
+      "passed": true
+    },
+    {
+      "check": "main retained part word/media/NEW_CONTROLS.png",
+      "passed": true
+    },
+    {
+      "check": "main retained part word/comments.xml",
+      "passed": true
+    },
+    {
+      "check": "main OMML count",
+      "passed": true
+    },
+    {
+      "check": "main OMML exact objects",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 0",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 1",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 2",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 4",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 5",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 6",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 7",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 8",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 9",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 10",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 11",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 13",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 14",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 15",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 16",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 17",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 18",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 19",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 20",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 21",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 22",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 23",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 24",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 25",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 26",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 27",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 28",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 29",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 30",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 31",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 32",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 33",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 34",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 35",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 36",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 37",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 38",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 39",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 40",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 41",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 42",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 43",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 44",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 45",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 46",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 47",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 48",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 49",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 50",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 51",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 52",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 53",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 54",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 55",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 56",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 57",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 58",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 59",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 60",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 61",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 62",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 63",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 64",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 65",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 66",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 67",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 68",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 71",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 72",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 73",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 74",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 75",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 76",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 77",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 78",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 79",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 80",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 81",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 82",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 83",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 84",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 85",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 86",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 87",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 88",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 89",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 90",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 91",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 92",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 93",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 94",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 95",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 96",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 97",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 98",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 99",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 100",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 101",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 102",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 103",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 104",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 105",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 106",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 107",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 108",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 109",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 110",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 111",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 112",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 113",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 114",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 115",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 116",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 117",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 118",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 119",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 120",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 121",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 122",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 123",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 124",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 125",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 126",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 127",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 128",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 129",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 130",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 131",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 132",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 133",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 134",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 135",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 136",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 137",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 138",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 139",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 140",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 141",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 142",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 143",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 144",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 145",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 146",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 147",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 148",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 149",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 150",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 151",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 152",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 153",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 154",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 155",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 156",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 157",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 158",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 159",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 160",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 161",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 162",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 163",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 164",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 165",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 166",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 167",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 168",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 169",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 170",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 171",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 172",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 173",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 175",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 177",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 178",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 179",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 180",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 181",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 182",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 183",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 184",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 185",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 186",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 187",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 188",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 189",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 190",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 191",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 192",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 193",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 194",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 195",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 196",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 197",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 198",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 199",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 200",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 201",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 202",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 203",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 204",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 205",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 206",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 207",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 208",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 209",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 210",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 211",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 212",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 213",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 214",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 215",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 216",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 217",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 218",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 219",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 220",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 221",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 222",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 223",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 224",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 225",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 226",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 227",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 228",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 229",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 230",
+      "passed": true
+    },
+    {
+      "check": "main old paragraph 231",
+      "passed": true
+    },
+    {
+      "check": "main old table XML",
+      "passed": true
+    },
+    {
+      "check": "main table count",
+      "passed": true
+    },
+    {
+      "check": "main no replacement glyph in new additions",
+      "passed": true
+    },
+    {
+      "check": "Table4 10.17638/datacat.liverpool.ac.uk/1296",
+      "passed": true
+    },
+    {
+      "check": "Table4 10.1371/journal.pone.0162849",
+      "passed": true
+    },
+    {
+      "check": "Table4 10.1016/j.matt.2023.01.011",
+      "passed": true
+    },
+    {
+      "check": "Table4 10.34894/HBKOLJ",
+      "passed": true
+    },
+    {
+      "check": "48 original references plus 4 source references",
+      "passed": true
+    },
+    {
+      "check": "supplement retained part [Content_Types].xml",
+      "passed": true
+    },
+    {
+      "check": "supplement retained part _rels/.rels",
+      "passed": true
+    },
+    {
+      "check": "supplement retained part docProps/core.xml",
+      "passed": true
+    },
+    {
+      "check": "supplement retained part docProps/app.xml",
+      "passed": true
+    },
+    {
+      "check": "supplement retained part word/styles.xml",
+      "passed": true
+    },
+    {
+      "check": "supplement retained part word/stylesWithEffects.xml",
+      "passed": true
+    },
+    {
+      "check": "supplement retained part word/settings.xml",
+      "passed": true
+    },
+    {
+      "check": "supplement retained part word/webSettings.xml",
+      "passed": true
+    },
+    {
+      "check": "supplement retained part word/fontTable.xml",
+      "passed": true
+    },
+    {
+      "check": "supplement retained part word/theme/theme1.xml",
+      "passed": true
+    },
+    {
+      "check": "supplement retained part customXml/item1.xml",
+      "passed": true
+    },
+    {
+      "check": "supplement retained part customXml/_rels/item1.xml.rels",
+      "passed": true
+    },
+    {
+      "check": "supplement retained part customXml/itemProps1.xml",
+      "passed": true
+    },
+    {
+      "check": "supplement retained part word/numbering.xml",
+      "passed": true
+    },
+    {
+      "check": "supplement retained part word/footer1.xml",
+      "passed": true
+    },
+    {
+      "check": "supplement retained part word/media/image1.png",
+      "passed": true
+    },
+    {
+      "check": "supplement retained part word/media/image2.png",
+      "passed": true
+    },
+    {
+      "check": "supplement retained part docProps/thumbnail.jpeg",
+      "passed": true
+    },
+    {
+      "check": "supplement OMML count",
+      "passed": true
+    },
+    {
+      "check": "supplement OMML exact objects",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 0",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 1",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 2",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 3",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 4",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 5",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 6",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 7",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 8",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 9",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 10",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 11",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 12",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 13",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 14",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 15",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 16",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 17",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 18",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 19",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 20",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 21",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 22",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 23",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 24",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 25",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 26",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 27",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 28",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 29",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 31",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 32",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 33",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 34",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 35",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 37",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 38",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 39",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 40",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 41",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 42",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 43",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 44",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 45",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 46",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 47",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 48",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 49",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 50",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 51",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 52",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 53",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 54",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 55",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 56",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 57",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 58",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 59",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 60",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 61",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 62",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 63",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 64",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 65",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 66",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 67",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 68",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 69",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 70",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 71",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 72",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 73",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 74",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 75",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 76",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 77",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 78",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 79",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 80",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 81",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 82",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 83",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 84",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 85",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 86",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 87",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 88",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 89",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 90",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 91",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 92",
+      "passed": true
+    },
+    {
+      "check": "supplement old paragraph 93",
+      "passed": true
+    },
+    {
+      "check": "supplement old table XML",
+      "passed": true
+    },
+    {
+      "check": "supplement table count",
+      "passed": true
+    },
+    {
+      "check": "supplement no replacement glyph in new additions",
+      "passed": true
+    },
+    {
+      "check": "S8 10.17638/datacat.liverpool.ac.uk/1296/curvature_joint_gaussian",
+      "passed": true
+    },
+    {
+      "check": "S8 10.17638/datacat.liverpool.ac.uk/1296/reference_gp",
+      "passed": true
+    },
+    {
+      "check": "S8 10.17638/datacat.liverpool.ac.uk/1296/conditional_gaussian",
+      "passed": true
+    },
+    {
+      "check": "S8 10.17638/datacat.liverpool.ac.uk/1296/pchip_log",
+      "passed": true
+    },
+    {
+      "check": "S8 10.17638/datacat.liverpool.ac.uk/1296/powerlaw_6anchors",
+      "passed": true
+    },
+    {
+      "check": "S8 10.17638/datacat.liverpool.ac.uk/1296/powerlaw_last2",
+      "passed": true
+    },
+    {
+      "check": "S8 10.1371/journal.pone.0162849/curvature_joint_gaussian",
+      "passed": true
+    },
+    {
+      "check": "S8 10.1371/journal.pone.0162849/reference_gp",
+      "passed": true
+    },
+    {
+      "check": "S8 10.1371/journal.pone.0162849/conditional_gaussian",
+      "passed": true
+    },
+    {
+      "check": "S8 10.1371/journal.pone.0162849/pchip_log",
+      "passed": true
+    },
+    {
+      "check": "S8 10.1371/journal.pone.0162849/powerlaw_6anchors",
+      "passed": true
+    },
+    {
+      "check": "S8 10.1371/journal.pone.0162849/powerlaw_last2",
+      "passed": true
+    },
+    {
+      "check": "S8 10.1016/j.matt.2023.01.011/curvature_joint_gaussian",
+      "passed": true
+    },
+    {
+      "check": "S8 10.1016/j.matt.2023.01.011/reference_gp",
+      "passed": true
+    },
+    {
+      "check": "S8 10.1016/j.matt.2023.01.011/conditional_gaussian",
+      "passed": true
+    },
+    {
+      "check": "S8 10.1016/j.matt.2023.01.011/pchip_log",
+      "passed": true
+    },
+    {
+      "check": "S8 10.1016/j.matt.2023.01.011/powerlaw_6anchors",
+      "passed": true
+    },
+    {
+      "check": "S8 10.1016/j.matt.2023.01.011/powerlaw_last2",
+      "passed": true
+    },
+    {
+      "check": "S8 10.34894/HBKOLJ/curvature_joint_gaussian",
+      "passed": true
+    },
+    {
+      "check": "S8 10.34894/HBKOLJ/reference_gp",
+      "passed": true
+    },
+    {
+      "check": "S8 10.34894/HBKOLJ/conditional_gaussian",
+      "passed": true
+    },
+    {
+      "check": "S8 10.34894/HBKOLJ/pchip_log",
+      "passed": true
+    },
+    {
+      "check": "S8 10.34894/HBKOLJ/powerlaw_6anchors",
+      "passed": true
+    },
+    {
+      "check": "S8 10.34894/HBKOLJ/powerlaw_last2",
+      "passed": true
+    },
+    {
+      "check": "S9 curvature_joint_gaussian",
+      "passed": true
+    },
+    {
+      "check": "S9 reference_gp",
+      "passed": true
+    },
+    {
+      "check": "S9 conditional_gaussian",
+      "passed": true
+    },
+    {
+      "check": "S9 pchip_log",
+      "passed": true
+    },
+    {
+      "check": "S9 powerlaw_6anchors",
+      "passed": true
+    },
+    {
+      "check": "S9 powerlaw_last2",
+      "passed": true
+    },
+    {
+      "check": "S10 Liverpool1296_GG_0p35wt_20degree",
+      "passed": true
+    },
+    {
+      "check": "S10 Liverpool1296_GG_0p5wt",
+      "passed": true
+    },
+    {
+      "check": "S10 Liverpool1296_GG_0p75wt",
+      "passed": true
+    },
+    {
+      "check": "S10 Liverpool1296_peK_10wt",
+      "passed": true
+    },
+    {
+      "check": "S10 Liverpool1296_peK_20wt",
+      "passed": true
+    },
+    {
+      "check": "source inspection and no blinding disclosed",
+      "passed": true
+    }
+  ],
+  "count": 410,
+  "outputs": {
+    "Hydrogel_Continuation_English_External_Revised.docx": "5e97129e921eedb6fef8f5380469d9829168a2618a57a1d2330b8f6d6b0a2653",
+    "Supplement_External_Revised.docx": "6b5bbbdc8652bcf7fc8d323a94fe53b70bce96a7700aab8b4aab611fba77d168"
+  }
+}

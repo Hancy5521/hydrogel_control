@@ -1,0 +1,13 @@
+{
+  "actual_utc": "2026-11-02T02:18:38.839973+00:00",
+  "status": "PASS",
+  "figure_sha256": "c4c90f66e5b1b43520a5c7dd680ddef3fbceed5938daa577f67473afac42436a",
+  "figure_bytes": 278040,
+  "builder_sha256": "ad1d65cfd8f86302374fca1740b544c498f52f0f6d5ab08b4221dc6dcc9ecf7e",
+  "html_sha256": "94ecdb667a603ed02f6cddab464c71456e2ee9a9c18a8eb1ec1950f998887083",
+  "table_value_checks": 96,
+  "local_link_targets_checked": 5,
+  "visual_review": "Actual PNG viewed through view_image. Both panels, crossings, weights, legends, axis units and footer are legible; no cropping or overlapping labels. Title and caption have no fixed SI figure number.",
+  "source_data_role": "Saved scores only. No raw targets, fitting, new forecast or rescoring.",
+  "old_draft_retained": "report/ retains the pre-parent-numbering draft; final delivery uses report_final/."
+}
