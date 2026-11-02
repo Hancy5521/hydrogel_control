@@ -82,13 +82,37 @@ def validate_frozen_components(repo,study):
         'repo_components':16,'study_components':4,'origin_commit':ORIGIN_COMMIT,
         'original_execution_protocol_sha256':ORIGIN_PROTOCOL_SHA256}
 
+
+RECONSTRUCTION_BINDINGS = {
+    'reproduction/SOURCE_CELL_MAP.json': '8a7f766edafaaf813ba7dc58fb65daa760df42729b347dcc70793c8f1801ca81',
+    'reproduction/rebuild_inputs.py': '1a90fb052804f4d5329dcb8692f0321cc992395a1a5c3072a4342ecc5a4df4ba',
+}
+
+def validate_reconstruction_assets(study):
+    """Reject version drift of the exact original map and reader before use.
+
+    These two reader assets supplement, rather than replace or alter, the
+    original20 scientific runtime/model/program bindings. No source workbook,
+    numeric response, reconstruction, model or output is touched here.
+    """
+    root=Path(study).resolve()
+    for relative,digest in RECONSTRUCTION_BINDINGS.items():
+        asset=root.joinpath(*PurePosixPath(relative).parts)
+        try:asset.resolve().relative_to(root)
+        except ValueError as exc:raise ValueError('Reconstruction asset escapes study root') from exc
+        if not asset.is_file():raise ValueError('Missing fixed reconstruction asset: '+relative)
+        if sha(asset)!=digest:raise ValueError('Changed fixed reconstruction asset: '+relative)
+    return {'status':'PASS','validated_reconstruction_assets':2,
+        'origin_commit':ORIGIN_COMMIT,'bindings':dict(RECONSTRUCTION_BINDINGS)}
+
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--repo',type=Path,required=True);p.add_argument('--raw-dir',type=Path,required=True)
     p.add_argument('--output-dir',type=Path,required=True);p.add_argument('--prepare-only',action='store_true')
     a=p.parse_args();repo=a.repo.resolve();folder=Path(__file__).resolve().parent;study=folder.parent
-    map_path=folder/'SOURCE_CELL_MAP.json';mapping=json.loads(map_path.read_text())
     frozen_validation=validate_frozen_components(repo,study)
+    reconstruction_validation=validate_reconstruction_assets(study)
+    map_path=folder/'SOURCE_CELL_MAP.json';mapping=json.loads(map_path.read_text(encoding='utf-8'),object_pairs_hook=_unique_inventory_object)
     from rebuild_inputs import rebuild
     curves,verified=rebuild(mapping,a.raw_dir)
     if a.output_dir.exists():raise FileExistsError('New empty output path required')
@@ -103,6 +127,7 @@ def main():
         'source_inspected_not_blind':True,'frozen_model_retraining':False,'source_files_verified':verified,
         'frozen_replay_inventory_sha256':frozen_validation['inventory_sha256'],
         'frozen_component_validation':frozen_validation,
+        'fixed_reconstruction_asset_validation':reconstruction_validation,
         'original_execution_protocol_sha256':mapping['frozen_bindings']['frozen_protocol_sha256']}
     path=a.output_dir/'PROTOCOL.json';save(path,protocol)
     if not a.prepare_only:

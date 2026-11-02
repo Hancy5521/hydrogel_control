@@ -1,0 +1,396 @@
+{
+  "actual_utc": "2026-11-02T04:12:00.427419+00:00",
+  "status": "PASS",
+  "scope": "Independent read-only ZIP/OOXML retention, full existing52reference preservation, old numerical tables and source/version-pointer checks of the two final edited DOCX files. No scientific arrays, fit, forecast, target scoring or rendering. This is not a new material validation or final visual-pageQA. New53/54bibliographic/novelty validation is separately performed by the literature lane. Current guard implementation must be covered by the independent code lane.",
+  "documents": [
+    {
+      "document": "Hydrogel_Continuation_English_Revised.docx",
+      "sha256": "87796ee2b23dadca6568ea54b554a71478ff1ccc31dcfa13551f8647752a3286",
+      "omml": 73,
+      "old_media_retained": 5,
+      "tables": 4,
+      "references": 54,
+      "all_other_package_parts_preserved": true
+    },
+    {
+      "document": "Supplement_Revised.docx",
+      "sha256": "ad90ae6664da726cc33398c8556815adeae3138501000ab0ccf8d221a10eaea9",
+      "omml": 16,
+      "old_media_retained": 4,
+      "tables": 10,
+      "references": null,
+      "all_other_package_parts_preserved": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "CRC Hydrogel_Continuation_English_Revised.docx",
+      "passed": true
+    },
+    {
+      "name": "CRC Hydrogel_Continuation_English_Revised.docx",
+      "passed": true
+    },
+    {
+      "name": "requested output SHA Hydrogel_Continuation_English_Revised.docx",
+      "passed": true
+    },
+    {
+      "name": "all original OMML Hydrogel_Continuation_English_Revised.docx",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Hydrogel_Continuation_English_Revised.docx/[Content_Types].xml",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Hydrogel_Continuation_English_Revised.docx/_rels/.rels",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Hydrogel_Continuation_English_Revised.docx/docProps/core.xml",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Hydrogel_Continuation_English_Revised.docx/docProps/app.xml",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Hydrogel_Continuation_English_Revised.docx/word/_rels/document.xml.rels",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Hydrogel_Continuation_English_Revised.docx/word/styles.xml",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Hydrogel_Continuation_English_Revised.docx/word/stylesWithEffects.xml",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Hydrogel_Continuation_English_Revised.docx/word/settings.xml",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Hydrogel_Continuation_English_Revised.docx/word/webSettings.xml",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Hydrogel_Continuation_English_Revised.docx/word/fontTable.xml",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Hydrogel_Continuation_English_Revised.docx/word/theme/theme1.xml",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Hydrogel_Continuation_English_Revised.docx/customXml/item1.xml",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Hydrogel_Continuation_English_Revised.docx/customXml/_rels/item1.xml.rels",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Hydrogel_Continuation_English_Revised.docx/customXml/itemProps1.xml",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Hydrogel_Continuation_English_Revised.docx/word/numbering.xml",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Hydrogel_Continuation_English_Revised.docx/word/footer1.xml",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Hydrogel_Continuation_English_Revised.docx/word/media/image1.png",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Hydrogel_Continuation_English_Revised.docx/word/media/image2.png",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Hydrogel_Continuation_English_Revised.docx/word/media/image3.png",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Hydrogel_Continuation_English_Revised.docx/word/media/image4.png",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Hydrogel_Continuation_English_Revised.docx/docProps/thumbnail.jpeg",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Hydrogel_Continuation_English_Revised.docx/word/media/NEW_CONTROLS.png",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Hydrogel_Continuation_English_Revised.docx/word/comments.xml",
+      "passed": true
+    },
+    {
+      "name": "table count Hydrogel_Continuation_English_Revised.docx",
+      "passed": true
+    },
+    {
+      "name": "entire table content same Hydrogel_Continuation_English_Revised.docx/0",
+      "passed": true
+    },
+    {
+      "name": "entire table content same Hydrogel_Continuation_English_Revised.docx/1",
+      "passed": true
+    },
+    {
+      "name": "entire table content same Hydrogel_Continuation_English_Revised.docx/2",
+      "passed": true
+    },
+    {
+      "name": "entire table content same Hydrogel_Continuation_English_Revised.docx/3",
+      "passed": true
+    },
+    {
+      "name": "original52refs preserved exactly",
+      "passed": true
+    },
+    {
+      "name": "exact54refs after onlytwo additions",
+      "passed": true
+    },
+    {
+      "name": "hydrogel GP precedent credited",
+      "passed": true
+    },
+    {
+      "name": "partial flow precedent credited",
+      "passed": true
+    },
+    {
+      "name": "existing707weighting checkpoint pinned",
+      "passed": true
+    },
+    {
+      "name": "historicaldeployment versusOOF distinction retained",
+      "passed": true
+    },
+    {
+      "name": "nofulloriginalreplayclaimretained",
+      "passed": true
+    },
+    {
+      "name": "no universalGPnovelty retained",
+      "passed": true
+    },
+    {
+      "name": "no replacement character in newplainprose Hydrogel_Continuation_English_Revised.docx",
+      "passed": true
+    },
+    {
+      "name": "CRC Supplement_Revised.docx",
+      "passed": true
+    },
+    {
+      "name": "CRC Supplement_Revised.docx",
+      "passed": true
+    },
+    {
+      "name": "requested output SHA Supplement_Revised.docx",
+      "passed": true
+    },
+    {
+      "name": "all original OMML Supplement_Revised.docx",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Supplement_Revised.docx/[Content_Types].xml",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Supplement_Revised.docx/_rels/.rels",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Supplement_Revised.docx/docProps/core.xml",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Supplement_Revised.docx/docProps/app.xml",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Supplement_Revised.docx/word/_rels/document.xml.rels",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Supplement_Revised.docx/word/styles.xml",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Supplement_Revised.docx/word/stylesWithEffects.xml",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Supplement_Revised.docx/word/settings.xml",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Supplement_Revised.docx/word/webSettings.xml",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Supplement_Revised.docx/word/fontTable.xml",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Supplement_Revised.docx/word/theme/theme1.xml",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Supplement_Revised.docx/customXml/item1.xml",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Supplement_Revised.docx/customXml/_rels/item1.xml.rels",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Supplement_Revised.docx/customXml/itemProps1.xml",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Supplement_Revised.docx/word/numbering.xml",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Supplement_Revised.docx/word/footer1.xml",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Supplement_Revised.docx/word/media/image1.png",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Supplement_Revised.docx/word/media/image2.png",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Supplement_Revised.docx/docProps/thumbnail.jpeg",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Supplement_Revised.docx/word/media/robustness_S3.png",
+      "passed": true
+    },
+    {
+      "name": "preserve opaque part Supplement_Revised.docx/word/media/robustness_S4.png",
+      "passed": true
+    },
+    {
+      "name": "table count Supplement_Revised.docx",
+      "passed": true
+    },
+    {
+      "name": "entire table content same Supplement_Revised.docx/0",
+      "passed": true
+    },
+    {
+      "name": "entire table content same Supplement_Revised.docx/1",
+      "passed": true
+    },
+    {
+      "name": "entire table content same Supplement_Revised.docx/2",
+      "passed": true
+    },
+    {
+      "name": "entire table content same Supplement_Revised.docx/3",
+      "passed": true
+    },
+    {
+      "name": "entire table content same Supplement_Revised.docx/4",
+      "passed": true
+    },
+    {
+      "name": "entire table content same Supplement_Revised.docx/5",
+      "passed": true
+    },
+    {
+      "name": "entire table content same Supplement_Revised.docx/6",
+      "passed": true
+    },
+    {
+      "name": "entire table content same Supplement_Revised.docx/7",
+      "passed": true
+    },
+    {
+      "name": "entire table content same Supplement_Revised.docx/8",
+      "passed": true
+    },
+    {
+      "name": "S10 numerical columns unchanged Omitted saved group",
+      "passed": true
+    },
+    {
+      "name": "S10 label-only mapping Omitted saved group",
+      "passed": true
+    },
+    {
+      "name": "S10 numerical columns unchanged GG_0p35wt",
+      "passed": true
+    },
+    {
+      "name": "S10 label-only mapping GG_0p35wt",
+      "passed": true
+    },
+    {
+      "name": "S10 numerical columns unchanged GG_0p5wt",
+      "passed": true
+    },
+    {
+      "name": "S10 label-only mapping GG_0p5wt",
+      "passed": true
+    },
+    {
+      "name": "S10 numerical columns unchanged GG_0p75wt",
+      "passed": true
+    },
+    {
+      "name": "S10 label-only mapping GG_0p75wt",
+      "passed": true
+    },
+    {
+      "name": "S10 numerical columns unchanged peK_10wt",
+      "passed": true
+    },
+    {
+      "name": "S10 label-only mapping peK_10wt",
+      "passed": true
+    },
+    {
+      "name": "S10 numerical columns unchanged peK_20wt",
+      "passed": true
+    },
+    {
+      "name": "S10 label-only mapping peK_20wt",
+      "passed": true
+    },
+    {
+      "name": "SI sourcecellpointer fixed",
+      "passed": true
+    },
+    {
+      "name": "SI oldfalse tableS8 grouping claimremoved",
+      "passed": true
+    },
+    {
+      "name": "no replacement character in newplainprose Supplement_Revised.docx",
+      "passed": true
+    }
+  ],
+  "check_count": 91,
+  "original_omml_total": 89,
+  "newly_scored_materials": 0,
+  "public_projection_of_original_sha256": "e2fe2b1428c196ec4727e7033c7fdb3a2df69e75e2be0b0f1c6cb4558515b0df",
+  "projection_note": "Local-machine locators only are redacted where present; original audit bytes remain in the local resource archive."
+}

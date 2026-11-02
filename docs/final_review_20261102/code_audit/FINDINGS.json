@@ -1,0 +1,188 @@
+{
+  "actual_utc": "2026-11-02T03:35:10.700281+00:00",
+  "actual_Asia_Shanghai": "2026-11-02T11:35:10.700320+08:00",
+  "base_commit": "707b4db0cf483b719b2fdc6631f34e7f7c98c526",
+  "status": "BOUNDED_REVIEW_COMPLETE_WITH_ONE_FIXABLE_REPLAY_DEFECT",
+  "actionable_findings": [
+    {
+      "id": "REPLAY_RECONSTRUCTION_VERSION_DRIFT",
+      "priority": "P2",
+      "status": "witnessed; minimal stage-only candidate supplied for parent integration",
+      "file": "external_validation/20261101T1239423181800Z/reproduction/run_replay.py",
+      "lines": [
+        90,
+        91,
+        92,
+        99,
+        106
+      ],
+      "problem": "The original20-component science guard omits the source-cell map and rebuild reader. main parses the map before even that guard, then accepts the reader/map currently present and merely records their new hashes. Accidental map/helper version drift therefore need not stop fixed-original replay preparation.",
+      "actual_witness": "Exact20 science components plus the unchanged original reader and a deliberately empty synthetic map produced PREPARED_ONLY with0curves and original_execution_protocol_sha256 equal to64zeros. A newline-only changed map or reader also passes the old20 guard. No material source bytes or model computations were used.",
+      "mitigation": "Running the normal full verify_checkpoint.py first catches map drift; an actual byte-copy fixture confirmed nonzero exit and Changed SOURCE_CELL_MAP. The direct replay command examples do not make this a mandatory precondition, and the standalone guard advertises fixed-original binding, so the entry point should reject drift itself.",
+      "minimal_fix": "Pin exact original SHA256 of SOURCE_CELL_MAP.json and rebuild_inputs.py at canonical study-relative paths, validate both before map JSON parse or helper import, and include the two-asset validation receipt in each new protocol. Preserve the original20 scientific component manifest and all original results.",
+      "candidate_file": "run_replay_candidate.py",
+      "candidate_sha256": "8cd9881de0721f2fc6dafbd2f5fb246686b776923e42f38a94f04e39e6d07439",
+      "checks": "6candidatepositive/negative data-freefixtures,2old-guard drift witnesses and1AST ordering check passed. Candidate main/rebuilder/model/scorer was never executed.",
+      "impact_on_existing_scientific_results": "None identified. Original fixed46curve execution had its exact map, reader and20 science components; this guard omission does not invalidate those scores or numerical audits.",
+      "scope_limit": "Ordinary accidental/version drift protection; not a claim to harden arbitrary hostile code or authenticate mutable manifests cryptographically."
+    }
+  ],
+  "substantive_runtime_or_five_parameter_formula_defect_witnessed": false,
+  "coverage": {
+    "static_and_existing_receipt_review": [
+      "Current six-anchor generated-curve entry: exact-key/type/positive/finite/support and log-alias contracts, observed identity handling, joint Cholesky and analytic-vs-MonteCarlo summaries",
+      "Gaussian code replacement, full covariance/residual construction, parameter derivatives and centered conditional objective source",
+      "Fixed curvature feature whitening/projection source",
+      "Frozen saved-score weighting arithmetic and strict input hash",
+      "Saved-score replay integrity-test and I/O source",
+      "Fixed external runner/scorer source and roster/cohort freeze gates",
+      "Checkpoint/runtime bindings and exact20-component replay guard"
+    ],
+    "new_checks": "Only data-free preparation-drift witness, guard fixtures and full-checkpoint mitigation fixture. Existing10inference/33numeric and prior19guard receipts were read, not re-executed or counted as new tests.",
+    "limitations": [
+      "No exhaustive fuzzing or proof that all possible defects are absent.",
+      "No new qualification of arbitrary malformed model schemas, legacy alternative runtime heads or resource-heavy workloads.",
+      "No material fit, inference, target score, raw target or hiddenS access. Models/scientific code were copied/read as bytes for fixture/hash verification only."
+    ]
+  },
+  "important_non_defects": [
+    "Fixed-seed Cholesky draws need not permute samplewise with target order; analytic marginal laws are the relevant invariant.",
+    "Separate target-batch calls preserve marginal laws but not between-batch random coupling.",
+    "Exactly stored anchors repeat the same reported observation rather than a new physical replicate.",
+    "A frozen Gaussian conditional covariance need not depend on observed numerical values; this is an acknowledged statistical assumption, not an implementation bug.",
+    "Proper marginal CRPS may rank differently from coverage, joint density, point error or a different material-population weighting.",
+    "Deployment weights trained on all originalP/allowedS anchors are not the paper outer-fold weights."
+  ],
+  "not_repairable_by_code_only": [
+    "Independent material/batch generalization, reserved-cohort calibration and actual laboratory saving require matching new evidence.",
+    "Parameter uncertainty, constrained endpoints and cross-source physical-state confounding are already model/study limitations. Adding a new model or calibrating on consumed targets would not independently validate the claim."
+  ],
+  "source_bindings": [
+    {
+      "file": "runtime/deployment/generate_curve.py",
+      "bytes": 6112,
+      "sha256": "bbc1aeafd30e43ed50ed686d1d6401c5c00406a2204a4884eea7b76a87412bf0",
+      "read_scope": "source/metadata or prior qualification receipt, not material outcomes"
+    },
+    {
+      "file": "runtime/core/joint_code_gaussian.py",
+      "bytes": 8958,
+      "sha256": "0c8a57c1bdf96e1c880ffd1ba2258e1b379952b844e960a7c67d6cdcdc65e299",
+      "read_scope": "source/metadata or prior qualification receipt, not material outcomes"
+    },
+    {
+      "file": "runtime/core/local_shape.py",
+      "bytes": 5530,
+      "sha256": "652797e34e7299edd31a8b494287ad8ab36aca9cdcdcc7b455dc614201231d3b",
+      "read_scope": "source/metadata or prior qualification receipt, not material outcomes"
+    },
+    {
+      "file": "runtime/core/trial_geometry.py",
+      "bytes": 1311,
+      "sha256": "8c5ae7984e33d573cb8fbc84e53ae9dfade7aee85862269ab1c1de9e21269ba6",
+      "read_scope": "source/metadata or prior qualification receipt, not material outcomes"
+    },
+    {
+      "file": "runtime/program/complete_curve.py",
+      "bytes": 13529,
+      "sha256": "6b64e3eb7ddb3f55c05a00d36d1568457e816cb16876dd2e0b9bef82edb3ecd3",
+      "read_scope": "source/metadata or prior qualification receipt, not material outcomes"
+    },
+    {
+      "file": "runtime/core/coordinate_reference_scaled.py",
+      "bytes": 2388,
+      "sha256": "4c0fc9a31163ab1c9703748052af4eb348afad39134813d5193f460ddb2dbe85",
+      "read_scope": "source/metadata or prior qualification receipt, not material outcomes"
+    },
+    {
+      "file": "robustness/20261102_weighting/reaverage_saved_scores.py",
+      "bytes": 3202,
+      "sha256": "cb8bc14d21aa9b82151aa51510e0fa6b2aca242fd1fd185ab1eb4e36e86c3c10",
+      "read_scope": "source/metadata or prior qualification receipt, not material outcomes"
+    },
+    {
+      "file": "reproducibility/replay_io.py",
+      "bytes": 2159,
+      "sha256": "faa1403b57585ef3c3e0af5fcb93455ea5fa1677528e7b2c931b36fb2f67e664",
+      "read_scope": "source/metadata or prior qualification receipt, not material outcomes"
+    },
+    {
+      "file": "reproducibility/test_score_replay.py",
+      "bytes": 4957,
+      "sha256": "b8127346fd73d4ebe4cb904ccc144af0c2b94698c15358222121db69135555a5",
+      "read_scope": "source/metadata or prior qualification receipt, not material outcomes"
+    },
+    {
+      "file": "external_validation/20261101T1239423181800Z/program/external_scoring.py",
+      "bytes": 2894,
+      "sha256": "d1222bb11a22dabe37e72349b8289e3f540b86a261df671fd8534c6e00787977",
+      "read_scope": "source/metadata or prior qualification receipt, not material outcomes"
+    },
+    {
+      "file": "external_validation/20261101T1239423181800Z/program/run_external.py",
+      "bytes": 5001,
+      "sha256": "02768b04af2c844a6e41dab1f76bc1aa2d991b3510bb5757d5f29e432ea540ad",
+      "read_scope": "source/metadata or prior qualification receipt, not material outcomes"
+    },
+    {
+      "file": "external_validation/20261101T1239423181800Z/reproduction/run_replay.py",
+      "bytes": 7470,
+      "sha256": "369aacb5d25b99ead3a5a84d74cde7a027e5edd1539c2b36167eecb0fcfd1850",
+      "read_scope": "source/metadata or prior qualification receipt, not material outcomes"
+    },
+    {
+      "file": "external_validation/20261101T1239423181800Z/reproduction/rebuild_inputs.py",
+      "bytes": 8235,
+      "sha256": "1a90fb052804f4d5329dcb8692f0321cc992395a1a5c3072a4342ecc5a4df4ba",
+      "read_scope": "source/metadata or prior qualification receipt, not material outcomes"
+    },
+    {
+      "file": "external_validation/20261101T1239423181800Z/reproduction/SOURCE_CELL_MAP.json",
+      "bytes": 63754,
+      "sha256": "8a7f766edafaaf813ba7dc58fb65daa760df42729b347dcc70793c8f1801ca81",
+      "read_scope": "source/metadata or prior qualification receipt, not material outcomes"
+    },
+    {
+      "file": "external_validation/20261101T1239423181800Z/reproduction/FROZEN_REPLAY_BINDINGS.json",
+      "bytes": 3777,
+      "sha256": "d10a310f22ca4df551d67b486af463ac6b569a985848fcbafc0c46671befd29c",
+      "read_scope": "source/metadata or prior qualification receipt, not material outcomes"
+    },
+    {
+      "file": "verify_checkpoint.py",
+      "bytes": 1344,
+      "sha256": "85a5aacbacfbe2c018b35f6b3f0e8633dea2f8cb08de4819e6d5751cccadb451",
+      "read_scope": "source/metadata or prior qualification receipt, not material outcomes"
+    },
+    {
+      "file": "verification/verify_frozen_inference.py",
+      "bytes": 15345,
+      "sha256": "a772230ff01ea61c48dec3a22783d7bf496ec0cad7f731b2433d47e7c1820789",
+      "read_scope": "source/metadata or prior qualification receipt, not material outcomes"
+    },
+    {
+      "file": "verification/SOFTWARE_AUDIT_FINDINGS.json",
+      "bytes": 1864,
+      "sha256": "eef3fc48ba3b6c8132243ca9eab41d588fdf819ad555061f8d9e5550a86b8024",
+      "read_scope": "source/metadata or prior qualification receipt, not material outcomes"
+    },
+    {
+      "file": "models/RUNTIME_BINDINGS.json",
+      "bytes": 2560,
+      "sha256": "b4d15d6fda36857d11cf64ec578eba3a8aadc13db20a4dd2d2f22cf62deb76df",
+      "read_scope": "source/metadata or prior qualification receipt, not material outcomes"
+    }
+  ],
+  "artifact_hashes": {
+    "check_prior_verifier.py": "a995246c2fcbdf49f0f13eb06cf824edea2d91599e12217e051fad2571c66c45",
+    "finalize_findings.py": "54a6341b9494fa037028fffeed2a3cf512d4c5ccf4a8e693f83753f97df8ab3a",
+    "GUARD_CANDIDATE_CHECKS.json": "83873d4f1c363e2bcaf1f8da4b017a443776a1aeb957d663749c55f983116e38",
+    "guard_drift_audit.py": "1e2cd88b03549dca1a5340326f154d782ae65cb7388efba10321c84f3ea0317c",
+    "ORIGINAL_GUARD_DRIFT_WITNESS.json": "3cddca14f79bb03567f378536a3588ba6b1ccb3048340172a4f3d7da40356659",
+    "PRIOR_FULL_VERIFIER_MITIGATION.json": "c09be9ca6f10c07279a4307ac7b4b1646c95a88731c3637541c4ff28c3f440cb",
+    "run_replay_candidate.py": "8cd9881de0721f2fc6dafbd2f5fb246686b776923e42f38a94f04e39e6d07439"
+  },
+  "repo_mutated_by_this_agent": false,
+  "public_projection_of_original_sha256": "89c7f40cc8783895ec43c481a7a354baaf564226b1334bb7d09e76fd0fed1a58",
+  "projection_note": "Local-machine locators only are redacted where present; original audit bytes remain in the local resource archive."
+}

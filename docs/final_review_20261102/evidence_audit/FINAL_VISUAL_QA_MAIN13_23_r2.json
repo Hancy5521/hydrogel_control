@@ -1,0 +1,113 @@
+{
+  "actual_utc": "2026-11-02T04:11:59.080135+00:00",
+  "status": "PASS",
+  "selected_main_sha256": "87796ee2b23dadca6568ea54b554a71478ff1ccc31dcfa13551f8647752a3286",
+  "selected_supplement_sha256": "ad90ae6664da726cc33398c8556815adeae3138501000ab0ccf8d221a10eaea9",
+  "word_pdf_sha256": "1e0d666626d9dbb55be4f0805c72fdff028d9606762907c3a78373cde9f7b7ee",
+  "main_page_count": 23,
+  "scope": "Mainpage13-23layout only; root separately covers1-12 and another agent coversSI. Does not imply material validation.",
+  "prior_layout_failure_preserved": "FINAL_VISUAL_QA_MAIN13_24.json",
+  "page21_spill_resolved": true,
+  "selected_r2_pages_actually_viewed_now": [
+    21,
+    22,
+    23
+  ],
+  "prior_review_pages_reused_after_independent_pixel_comparison": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "page_records": [
+    {
+      "page": 13,
+      "review_basis": "Actual priorview_image plus independent exact RGBpixel equality to selected finalr2",
+      "final_image_sha256": "4384a20684dd547c5914d7abd8330bb0216f79bbb3e699cf0905b9ff568d79f5",
+      "unchanged_pixels": true
+    },
+    {
+      "page": 14,
+      "review_basis": "Actual priorview_image plus independent exact RGBpixel equality to selected finalr2",
+      "final_image_sha256": "6e7ebe52546d7e75ffad9fcf6e7d6482a85e8bc401a7a566aec14b6b435a63f7",
+      "unchanged_pixels": true
+    },
+    {
+      "page": 15,
+      "review_basis": "Actual priorview_image plus independent exact RGBpixel equality to selected finalr2",
+      "final_image_sha256": "928ad8f49f5e54c8bee431cb2e721532799a01917132408bbd2a1cbf2c0177f2",
+      "unchanged_pixels": true
+    },
+    {
+      "page": 16,
+      "review_basis": "Actual priorview_image plus independent exact RGBpixel equality to selected finalr2",
+      "final_image_sha256": "09e2d9baacfdde9ea6c92459bda8577e5865855db20a66d9a219f68542957abe",
+      "unchanged_pixels": true
+    },
+    {
+      "page": 17,
+      "review_basis": "Actual priorview_image plus independent exact RGBpixel equality to selected finalr2",
+      "final_image_sha256": "5236e2c1ef0d6b00bbae524e6698f1ecebe906417748d398fce69b535d451800",
+      "unchanged_pixels": true
+    },
+    {
+      "page": 18,
+      "review_basis": "Actual priorview_image plus independent exact RGBpixel equality to selected finalr2",
+      "final_image_sha256": "95275126902ea7efa4e969bc7f2ecab19f8e72044f470104a8a324cd9de59eee",
+      "unchanged_pixels": true
+    },
+    {
+      "page": 19,
+      "review_basis": "Actual priorview_image plus independent exact RGBpixel equality to selected finalr2",
+      "final_image_sha256": "b90ade0b876ea689017db504cc74a74f5efb251cc14fc58074f98974b9caad19",
+      "unchanged_pixels": true
+    },
+    {
+      "page": 20,
+      "review_basis": "Actual priorview_image plus independent exact RGBpixel equality to selected finalr2",
+      "final_image_sha256": "598fe35fa36f20f2408f5cd275731071eb45a29e3993ead9ffc2f389ce079ccb",
+      "unchanged_pixels": true
+    },
+    {
+      "page": 21,
+      "review_basis": "Actually viewed selected finalr2PNG withview_image",
+      "final_image_sha256": "5dfc7014ff219c145407e405b2630bcfb40d128e1f9ec8680ad5d63275b9bdc9",
+      "findings": "No clipping, overlap, broken reference, orphan declaration page or missing reference observed."
+    },
+    {
+      "page": 22,
+      "review_basis": "Actually viewed selected finalr2PNG withview_image",
+      "final_image_sha256": "064ef6ba4953238c67ede7eb26911cd03dd6193cc54c2583f0f1066b47b8a6ce",
+      "findings": "No clipping, overlap, broken reference, orphan declaration page or missing reference observed."
+    },
+    {
+      "page": 23,
+      "review_basis": "Actually viewed selected finalr2PNG withview_image",
+      "final_image_sha256": "9532cb355ef617e1e5516fc59c654da087d7e8c6575394a1d8f6e8a4fa900f2e",
+      "findings": "No clipping, overlap, broken reference, orphan declaration page or missing reference observed."
+    }
+  ],
+  "content_fidelity": {
+    "changed_package_parts": [
+      "word/document.xml"
+    ],
+    "only_difference": "References paragraph pageBreakBefore attribute value changed to0",
+    "old_pagebreak_attributes": {},
+    "new_pagebreak_attributes": {
+      "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "0"
+    },
+    "all_plaintext_math_and_table_content_unchanged": true,
+    "all_other_package_parts_byte_identical": true
+  },
+  "visual_notes": [
+    "Page21nowcontainsCompetinginterests and beginsReferences naturally; no near-empty spill page.",
+    "References53and54are complete and readable on23.",
+    "Methods/equations13-20arepixel-identicaltoalreadyreviewedrender, includingCodeavailability."
+  ],
+  "public_projection_of_original_sha256": "9517088226d997507b5f123eba29a6d0fb4d79170cb0eb698b7045bf223f675b",
+  "projection_note": "Local-machine locators only are redacted where present; original audit bytes remain in the local resource archive."
+}

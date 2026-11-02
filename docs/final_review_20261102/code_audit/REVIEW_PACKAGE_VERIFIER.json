@@ -1,0 +1,40 @@
+{
+  "actual_utc": "2026-11-02T03:46:47.295733+00:00",
+  "status": "PASS",
+  "source": "tools/verify_review_package.py",
+  "source_sha256": "3257a469a088e47020214ed7b6012f737edcaa58fdfcc52b895f3e5a76e2751c",
+  "scope": "Read-only portability/semantic review and two bounded synthetic byte-integrity fixtures. No original archives, source workbooks, material models or material CLI executed.",
+  "static_review": [
+    "SHA256 uses1MiB streaming chunks and does not call hashlib.file_digest.",
+    "Source parses with Python3.10 grammar; this is not a claim of separate Python3.10 interpreter execution.",
+    "Default package root is the script parent: suitable when copied to package root; from repository tools/ use explicit --package-root to an actual resource package.",
+    "Current payload entries always checked. Existing history entries always checked. Missing history allowed by default and rejected by --require-history.",
+    "Counts distinguish history present/declared and whether strict history was required.",
+    "Member paths reject absolute/parent traversal/Windows separator/colon and resolved paths outside root.",
+    "Hash-only checker does not claim ZIP parsing or scientific validation.",
+    "No model/data import, download, installation or mutation of package payload."
+  ],
+  "new_checks": [
+    {
+      "case": "strict_complete_two_history_synthetic_fixture",
+      "passed": true,
+      "result": {
+        "status": "PASS",
+        "current_payload_files": 2,
+        "historical_archives_present": 2,
+        "historical_archives_declared": 2,
+        "all_history_required": true,
+        "material_model_execution": 0
+      }
+    },
+    {
+      "case": "changed_present_history_rejected",
+      "passed": true,
+      "error": "Changed historical archive: historical_archives/synthetic_bytes_1.bin"
+    }
+  ],
+  "parent_existing_tests_not_recounted": "Root PORTABILITY_FIX_CHECK.json separately records no-file_digest simulation, missing required history and changed payload tests.",
+  "unresolved_defects_found": [],
+  "public_projection_of_original_sha256": "e29dedec27c5edb22d649041a1f083791c71871f1eb17a32ae4a25a0df77b3f0",
+  "projection_note": "Local-machine locators only are redacted where present; original audit bytes remain in the local resource archive."
+}

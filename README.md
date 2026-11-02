@@ -2,7 +2,7 @@
 
 Current checkpoint: the manuscript now integrates the [four-source external evaluation](external_validation/20261101T1239423181800Z/README.md) and [population-weight sensitivity](robustness/20261102_weighting/README.md). Original model and score bytes remain unchanged; the two paper files and replay orchestration guard are revised.
 
-This repository archives the **2026-11-02 external-evidence author-review checkpoint** of a focused hydrogel precursor-ink study: two fixed local curvature contrasts receive a shared Gaussian correction, while the complete high-dimensional reference residual is retained. The main intended use is continuation of a flow curve from six low-rate anchors.
+This repository archives the **2026-11-02 final author-review checkpoint** of a focused hydrogel precursor-ink study: two fixed local curvature contrasts receive a shared Gaussian correction, while the complete high-dimensional reference residual is retained. The main intended use is continuation of a flow curve from six low-rate anchors.
 
 论文与程序存档，非已发表或保证录用的论文。本次保存23页英文主文、15页补充材料及其推断程序和冻结权重。基础Gaussian方法有既有先例；研究贡献是特定水凝胶续接任务的表示与训练适配，以及对应的受控证据。
 
@@ -13,7 +13,7 @@ This repository archives the **2026-11-02 external-evidence author-review checkp
 - [Saved score replay and tables](reproducibility/README.md)
 - [Independent frozen inference checks](verification/README.md)
 - [Synthetic training primitive](training_demo/README.md)
-- [Current gaps and author tasks](docs/evidence/GAP_REVIEW_ZH.txt)
+- [Final review, closed defects and remaining author tasks](docs/FINAL_AUTHOR_REVIEW.txt)
 - [Author decisions and optional new evidence](docs/AUTHOR_ACTIONS.md)
 - [Version history](docs/VERSION_HISTORY.json)
 - [Model and scope](MODEL_CARD.md)
@@ -78,4 +78,11 @@ The frozen deployment model was evaluated without retraining on46 native curves 
 
 Liverpool has three GG and two peK composition groups. Equal weighting of the two families reverses the candidate's CRPS advantage over conditional Gaussian (0.312928 vs0.295105) and removes its point-error advantage. The source primary score is preserved; the alternative is descriptive population sensitivity. No new fitting, forecast or target scoring is performed in this manuscript/weighting revision. This bounds the intended precursor-ink use and does not establish same-domain independent preparation batches, calibration or measured experimental savings.
 
-The corrected external replay entry point now checks a pinned20-component manifest and canonical paths before reconstruction. Its new guard receipts are data-free checks; old full-execution receipts remain historical. No raw source workbooks or measurement arrays are uploaded to Git. The local review package and public repository have different redistribution scopes.
+The corrected external replay entry point now checks the pinned20 scientific components plus the exact cell map and reader, all before map parsing or reader import. Its new guard receipts are data-free checks; old full-execution receipts remain historical. No raw source workbooks or measurement arrays are uploaded to Git. The local review package and public repository have different redistribution scopes.
+
+
+## Final author review
+
+The current23-page main and15-page supplement preserve all scientific numeric results,89native mathematical objects and52previous references; two hydrogel/rheology neighbours are added as references53-54. Watergel reduced-representation GP inference already has precedents. The supported novelty is the specific precursor-ink continuation adaptation and its matched evidence, not a newly invented Gaussian family. Read docs/FINAL_AUTHOR_REVIEW.txt and docs/final_review_20261102/ for the bounded literature/code/evidence findings and closed defects. Earlier citation/gap/feasibility receipts under docs/evidence are historical; their original bytes are preserved rather than silently recertified.
+
+Inference and pinned scientific dependencies require Python3.10+ and the repository requirements. The package-level SHA verifier now uses streaming SHA256 compatible with that range. In this checkout use `python tools/verify_review_package.py --package-root PATH_TO_LOCAL_REVIEW_PACKAGE`; in a delivered package the same tool is copied to its root as verify_resources.py. Add --require-history for the complete companion containing the two original historical ZIPs. This reads hashes only and does not reconstruct or run material data.

@@ -21,3 +21,8 @@ Added a source-inspected, zero-retraining evaluation of46 native curves from4 so
 ## 2026 November 2 manuscript and robustness checkpoint
 
 Integrated all external gains/failures and new descriptive population sensitivity into23-page main and15-page SI. Preserved all old science/model/score bytes. Added a portable saved-score arithmetic entry point and retained independent Decimal checks. Corrected replay preparation to require the exact original20 components by canonical paths and hashes; only data-free guard fixtures exercised. All38 manuscript pages inspected; protected XML and rounded table audit passed410 checks. Existing manuscripts and archived branches remain in Git history. No material fit, forecast, target scoring, measurement or independent confirmation added in this revision.
+
+
+## Final author review after bounded defect closure
+
+Retained707baseline and old local archives. Closed witnessed map/reader identity drift and package-verifier Python compatibility; corrected overstrongXLSclaim/staleartifact scopes; added two relevant predecessor citations and removed orphan declaration page. Main23/SI15,54refs, numeric results/model unchanged. See final review ledger for actual independent checks and remaining evidence/author limits.

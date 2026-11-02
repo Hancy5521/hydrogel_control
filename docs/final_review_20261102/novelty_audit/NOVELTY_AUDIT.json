@@ -1,0 +1,102 @@
+{
+  "recorded_utc": "2026-11-02T03:32:27.740963+00:00",
+  "status": "BOUNDED_NOVELTY_AUDIT_COMPLETED",
+  "base_commit": "707b4db0cf483b719b2fdc6631f34e7f7c98c526",
+  "main_sha256": "5e97129e921eedb6fef8f5380469d9829168a2618a57a1d2330b8f6d6b0a2653",
+  "exact_domain_duplicate_identified": false,
+  "exact_domain_duplicate_absence_proved": false,
+  "verdict": "No source found in this bounded check with the complete same task and mechanism. Related mathematical families are direct precedents, and reduced representations plus GP in hydrogels already exist. A specific domain/task adaptation is still defensible with accurate attribution and the current restricted evidence.",
+  "findings": [
+    {
+      "id": "N1",
+      "severity": "medium editorial novelty attribution",
+      "finding": "Current52 references omit the hydrogel-domain SVD/GP constitutive-parameter predecessorWang2021.",
+      "fixable_now": true,
+      "recommended_fix": "Add concise attribution and distinguish the prediction object. No new model or experiment required.",
+      "source_ids": [
+        "WANG2021"
+      ]
+    },
+    {
+      "id": "N2",
+      "severity": "medium related rheology context",
+      "finding": "Partial-flow rheology inference has a recent primaryv4preprint that also treats real gel experiments.",
+      "fixable_now": true,
+      "recommended_fix": "Add a compact contrast if expanding related work. Use v4-specific differentiable/TBNN description; do not present lower-dimensional rheological inference itself as new.",
+      "source_ids": [
+        "SUNOL2026V4"
+      ]
+    },
+    {
+      "id": "N3",
+      "severity": "scope boundary already mostly disclosed",
+      "finding": "Curvature-based functional representation and independent residual Gaussian decompositions have prior art.",
+      "fixable_now": true,
+      "recommended_fix": "Preserve references19/20/23 and current explicit classical-family statement. Optional curvature-context citation only after final bibliographic metadata verification.",
+      "source_ids": [
+        "SHIN_CURVATURE",
+        "TITSIAS2009",
+        "INTERDOMAIN2009",
+        "ORTHOGONAL2020"
+      ]
+    },
+    {
+      "id": "N4",
+      "severity": "effectiveness boundary",
+      "finding": "Original task has competitive results against evaluated controls, but not field-wide superiority, independence or calibrated uncertainty.",
+      "fixable_now": "wording yes; stronger empirical claims need appropriately new evidence",
+      "recommended_fix": "Use competitive against the evaluated strong controls for the intended continuation task; retain failed interpolation/source/coverage and weighting-reversal results. Do not infer outperforming neural closures, functional-PCA or all modern rheology models without matched tests."
+    }
+  ],
+  "sustainable_novelty_paragraph": "The supported contribution is a hydrogel precursor-ink continuation adaptation within an established Gaussian inducing-feature family: two fixed finite-scale curvature summaries, a shared masked conditional-likelihood correction, and the complete reference residual. The matched controls support usefulness for the declared task, rather than a new general Gaussian generative mechanism.",
+  "effectiveness_assessment": {
+    "classification": "Evidence-consistent retrospective task-specific competitiveness",
+    "original_development_macro_crps": 0.043277,
+    "comparison_gp": 0.055219,
+    "comparison_conditional_gaussian": 0.050252,
+    "comparison_matched_random_gaussian": 0.049908,
+    "interpretation": "Already reported scalar values, not recomputed target scores in this audit. Primary-domain and matched-control evidence supports usefulness. External equal-family reversal and losses onthree sources bound transfer; independent batches, calibration and resource savings are not established.",
+    "missing_comparisons_not_to_imply": "No claim of superiority over untested general neural generators, FPCA/PACE or all constitutive implementations."
+  },
+  "ready_insertions": [
+    {
+      "anchor": "Introduction paragraph beginning Rheological structure provides natural alternatives and inductive biases",
+      "action": "Append a domain-direct predecessor sentence, with a new reference toWang2021.",
+      "text": "Low-dimensional Gaussian-process surrogates have also supported PVA-hydrogel constitutive parameter identification from stress histories [WANG2021]. Here the material is fixed and missing steady-flow viscosities are inferred from six anchors, while the complete reference residual is retained."
+    },
+    {
+      "anchor": "Same rheology related-work paragraph or compact following paragraph",
+      "action": "Optional new closely related rheological inverse-problem sentence; usev4preprint reference.",
+      "text": "Differentiable rheology frameworks infer constitutive closures from velocity or oscillatory-flow measurements [SUNOL2026V4]. Our prediction object is a partially measured steady flow curve rather than an inferred constitutive closure."
+    },
+    {
+      "anchor": "Discussion paragraph beginning The closest methodological precedent is the inducing-variable Gaussian family",
+      "action": "Retain mature Gaussian attribution and state the actual incremental contribution.",
+      "text": "The supported contribution is a hydrogel precursor-ink continuation adaptation within an established Gaussian inducing-feature family: two fixed finite-scale curvature summaries, a shared masked conditional-likelihood correction, and the complete reference residual. The matched controls support usefulness for the declared task, rather than a new general Gaussian generative mechanism."
+    }
+  ],
+  "references_to_add": [
+    {
+      "id": "WANG2021",
+      "citation": "Wang J, Li T, Cui F, Hui C-Y, Yeo J, Zehnder AT. Metamodeling of constitutive model using Gaussian process machine learning. Journal of the Mechanics and Physics of Solids.2021;154:104532.https://doi.org/10.1016/j.jmps.2021.104532.",
+      "already_in_existing_52": false,
+      "metadata_confidence": "Primary publisher indexed record; direct fulltext unavailable."
+    },
+    {
+      "id": "SUNOL2026V4",
+      "citation": "Sunol AM, Roggeveen JV, Alhashim MG, Bae HS, Brenner MP. Learning constitutive models and rheology from partial flow measurements. arXiv:2510.24673v4.2026.https://arxiv.org/abs/2510.24673v4.",
+      "already_in_existing_52": false,
+      "metadata_confidence": "Direct primaryarXivmetadata andselectedv4methods read."
+    }
+  ],
+  "required_new_fit_forecast_target_score_calls": 0,
+  "scientific_files_changed": false,
+  "limits": [
+    "12queries/12uniqueprimaryURLattempts are bounded discovery, not proof that no exact match exists.",
+    "No external methods were benchmarked here.",
+    "Direct publisher/NSF/PMC/Nature failures retained; no claimed fulltext read where unavailable.",
+    "Novelty does not guarantee journal quartile, acceptance, copyright clearance or patent novelty."
+  ],
+  "public_projection_of_original_sha256": "f1bcc3949413e78430d7a0781f8ee27fc629c6498f3adde68db13a86e223fa1d",
+  "projection_note": "Local-machine locators only are redacted where present; original audit bytes remain in the local resource archive."
+}

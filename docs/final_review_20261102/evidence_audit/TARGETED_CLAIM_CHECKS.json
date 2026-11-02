@@ -1,0 +1,261 @@
+{
+  "actual_utc": "2026-11-02T03:30:00.426131+00:00",
+  "status": "PASS",
+  "scope": "Independent logical/arithmetic checks of manuscript scientific claims using saved scalar ledgers and metadata only. No material arrays, fit, forecast, target scoring or new validation.",
+  "checks": [
+    {
+      "name": "original macroCRPS arithmetic gp",
+      "passed": true
+    },
+    {
+      "name": "original macroCRPS arithmetic generic",
+      "passed": true
+    },
+    {
+      "name": "original macroCRPS arithmetic local",
+      "passed": true
+    },
+    {
+      "name": "original macroCRPS arithmetic gaussian",
+      "passed": true
+    },
+    {
+      "name": "original macroCRPS arithmetic joint_code_gaussian",
+      "passed": true
+    },
+    {
+      "name": "original macroCRPS arithmetic random_gaussian",
+      "passed": true
+    },
+    {
+      "name": "original macroCRPS arithmetic bayesian_cross",
+      "passed": true
+    },
+    {
+      "name": "original macroCRPS arithmetic rb_carreau",
+      "passed": true
+    },
+    {
+      "name": "original macroCRPS arithmetic fixed_student_t",
+      "passed": true
+    },
+    {
+      "name": "abstract GP reduction rounds21.63",
+      "passed": true
+    },
+    {
+      "name": "abstract conditional reduction rounds13.88",
+      "passed": true
+    },
+    {
+      "name": "matched random Gaussian reduction rounds13.29",
+      "passed": true
+    },
+    {
+      "name": "fixedStudentT lower macro retained",
+      "passed": true
+    },
+    {
+      "name": "fixedStudentT worse continuation retained",
+      "passed": true
+    },
+    {
+      "name": "conditional stronger spread",
+      "passed": true
+    },
+    {
+      "name": "conditional stronger middle_gap",
+      "passed": true
+    },
+    {
+      "name": "candidate stronger original one-sided",
+      "passed": true
+    },
+    {
+      "name": "source count4",
+      "passed": true
+    },
+    {
+      "name": "curve count46",
+      "passed": true
+    },
+    {
+      "name": "group count23",
+      "passed": true
+    },
+    {
+      "name": "source register pair count1057",
+      "passed": true
+    },
+    {
+      "name": "source register target count781",
+      "passed": true
+    },
+    {
+      "name": "source anchors276",
+      "passed": true
+    },
+    {
+      "name": "six methods 10.1016/j.matt.2023.01.011",
+      "passed": true
+    },
+    {
+      "name": "all three transfer losses retained 10.1016/j.matt.2023.01.011",
+      "passed": true
+    },
+    {
+      "name": "point controls no fakeCRPS 10.1016/j.matt.2023.01.011/pchip_log",
+      "passed": true
+    },
+    {
+      "name": "point controls no fakeCRPS 10.1016/j.matt.2023.01.011/powerlaw_6anchors",
+      "passed": true
+    },
+    {
+      "name": "point controls no fakeCRPS 10.1016/j.matt.2023.01.011/powerlaw_last2",
+      "passed": true
+    },
+    {
+      "name": "six methods 10.1371/journal.pone.0162849",
+      "passed": true
+    },
+    {
+      "name": "all three transfer losses retained 10.1371/journal.pone.0162849",
+      "passed": true
+    },
+    {
+      "name": "point controls no fakeCRPS 10.1371/journal.pone.0162849/pchip_log",
+      "passed": true
+    },
+    {
+      "name": "point controls no fakeCRPS 10.1371/journal.pone.0162849/powerlaw_6anchors",
+      "passed": true
+    },
+    {
+      "name": "point controls no fakeCRPS 10.1371/journal.pone.0162849/powerlaw_last2",
+      "passed": true
+    },
+    {
+      "name": "six methods 10.17638/datacat.liverpool.ac.uk/1296",
+      "passed": true
+    },
+    {
+      "name": "all three transfer losses retained 10.17638/datacat.liverpool.ac.uk/1296",
+      "passed": true
+    },
+    {
+      "name": "point controls no fakeCRPS 10.17638/datacat.liverpool.ac.uk/1296/pchip_log",
+      "passed": true
+    },
+    {
+      "name": "point controls no fakeCRPS 10.17638/datacat.liverpool.ac.uk/1296/powerlaw_6anchors",
+      "passed": true
+    },
+    {
+      "name": "point controls no fakeCRPS 10.17638/datacat.liverpool.ac.uk/1296/powerlaw_last2",
+      "passed": true
+    },
+    {
+      "name": "six methods 10.34894/HBKOLJ",
+      "passed": true
+    },
+    {
+      "name": "all three transfer losses retained 10.34894/HBKOLJ",
+      "passed": true
+    },
+    {
+      "name": "point controls no fakeCRPS 10.34894/HBKOLJ/pchip_log",
+      "passed": true
+    },
+    {
+      "name": "point controls no fakeCRPS 10.34894/HBKOLJ/powerlaw_6anchors",
+      "passed": true
+    },
+    {
+      "name": "point controls no fakeCRPS 10.34894/HBKOLJ/powerlaw_last2",
+      "passed": true
+    },
+    {
+      "name": "GG wins and peK loses reference_gp/Liverpool1296_GG_0p35wt_20degree",
+      "passed": true
+    },
+    {
+      "name": "GG wins and peK loses reference_gp/Liverpool1296_GG_0p5wt",
+      "passed": true
+    },
+    {
+      "name": "GG wins and peK loses reference_gp/Liverpool1296_GG_0p75wt",
+      "passed": true
+    },
+    {
+      "name": "GG wins and peK loses reference_gp/Liverpool1296_peK_10wt",
+      "passed": true
+    },
+    {
+      "name": "GG wins and peK loses reference_gp/Liverpool1296_peK_20wt",
+      "passed": true
+    },
+    {
+      "name": "GG wins and peK loses conditional_gaussian/Liverpool1296_GG_0p35wt_20degree",
+      "passed": true
+    },
+    {
+      "name": "GG wins and peK loses conditional_gaussian/Liverpool1296_GG_0p5wt",
+      "passed": true
+    },
+    {
+      "name": "GG wins and peK loses conditional_gaussian/Liverpool1296_GG_0p75wt",
+      "passed": true
+    },
+    {
+      "name": "GG wins and peK loses conditional_gaussian/Liverpool1296_peK_10wt",
+      "passed": true
+    },
+    {
+      "name": "GG wins and peK loses conditional_gaussian/Liverpool1296_peK_20wt",
+      "passed": true
+    },
+    {
+      "name": "peK10 zero coverage",
+      "passed": true
+    },
+    {
+      "name": "family balanced CG ranking reversal",
+      "passed": true
+    },
+    {
+      "name": "family balanced GP advantage remains",
+      "passed": true
+    },
+    {
+      "name": "family balanced point advantage lost",
+      "passed": true
+    },
+    {
+      "name": "family balanced coverage64.44",
+      "passed": true
+    },
+    {
+      "name": "crossing valid between0and1 reference_gp",
+      "passed": true
+    },
+    {
+      "name": "crossing valid between0and1 conditional_gaussian",
+      "passed": true
+    }
+  ],
+  "count": 60,
+  "input_sha256": {
+    "paper/Hydrogel_Continuation_English_Revised.docx": "5e97129e921eedb6fef8f5380469d9829168a2618a57a1d2330b8f6d6b0a2653",
+    "paper/Supplement_Revised.docx": "6b5bbbdc8652bcf7fc8d323a94fe53b70bce96a7700aab8b4aab611fba77d168",
+    "results/SUMMARY.json": "d2b75551b0f58ac272ec3890ddab754922a179617f66a70698ee86abd49e85ad",
+    "external_validation/20261101T1239423181800Z/SCORES.json": "555f39ca076351b063511940f7b2a2a011e47ec9a55b0ce968c905e5f9b8c8d0",
+    "external_validation/20261101T1239423181800Z/EXECUTION_PROTOCOL_PUBLIC.json": "a9694168ef4b24ef9348307f042ba9e94491639ee655bf6ebe1c0e7a36cedaa4",
+    "external_validation/20261101T1239423181800Z/SOURCE_REGISTER.json": "cb35a7946632fb60545e00f5a31ad24111b179f04901a775e0182d14c5165ba0",
+    "robustness/20261102_weighting/ROBUSTNESS_RESULTS.json": "82f3482b81d01eb31551628c6a2218f1626805120ffa5a90259bc2bd924dbea4",
+    "runtime/core/local_shape.py": "652797e34e7299edd31a8b494287ad8ab36aca9cdcdcc7b455dc614201231d3b",
+    "runtime/core/joint_code_gaussian.py": "0c8a57c1bdf96e1c880ffd1ba2258e1b379952b844e960a7c67d6cdcdc65e299"
+  },
+  "public_projection_of_original_sha256": "3dc8c093d448d0d23cd9ac1dc76c27157007566c929cee9a730a49cb536a9983",
+  "projection_note": "Local-machine locators only are redacted where present; original audit bytes remain in the local resource archive."
+}

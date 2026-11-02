@@ -1,0 +1,208 @@
+{
+  "recorded_utc": "2026-11-02T03:32:27.740963+00:00",
+  "actual_access_interval_utc": {
+    "start": "2026-11-02T03:23:27.0374332+00:00",
+    "end": "2026-11-02T03:32:27.740963+00:00"
+  },
+  "recording_note": "Batch-level observations recorded after the actual calls; no invented per-page second-level access times.",
+  "search_queries": [
+    "hydrogel rheology partial flow curve prediction Gaussian process sparse measurements continuation",
+    "hydrogel viscosity flow curve machine learning Gaussian process extrapolation six measurements",
+    "polymer rheological profiles generative active learning Gaussian process partial curve reconstruction",
+    "\"Gaussian Process to Identify Hydrogel Constitutive Model\"",
+    "\"Learning constitutive models and rheology from partial flow measurements\"",
+    "hydrogel flow curve reconstruction few measurements viscosity machine learning",
+    "rheology flow curve Gaussian process functional principal components curvature partial observations",
+    "\"Metamodelling of constitutive model using Gaussian process machine learning\" hydrogel",
+    "\"Joint Estimation of Monotone Curves via Functional Principal Component Analysis\" DOI",
+    "hydrogel \"flow curve\" \"Gaussian\" \"sparse\" reconstruction",
+    "\"10.1016/j.jmps.2021.104532\" pdf Cornell",
+    "hydrogel \"partial\" \"flow curve\" completion Gaussian process curvature"
+  ],
+  "search_query_count": 12,
+  "unique_primary_urls_open_attempted": 12,
+  "attempts": [
+    {
+      "url": "https://par.nsf.gov/servlets/purl/10329053",
+      "outcome": "failed502"
+    },
+    {
+      "url": "https://arxiv.org/abs/2510.24673",
+      "outcome": "success primary metadata/abstract"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8896739/",
+      "outcome": "browser challenge; not traversed"
+    },
+    {
+      "url": "https://proceedings.mlr.press/v108/shi20b.html",
+      "outcome": "success primary abstract/metadata"
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0022509621001939",
+      "outcome": "failed403; publisher indexed preview available"
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0167947321001778",
+      "outcome": "failed403"
+    },
+    {
+      "url": "https://arxiv.org/html/2510.24673v4",
+      "outcome": "success primary selected methods/main/S9"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41524-025-01900-2",
+      "outcome": "nonretryable inaccessible identity-provider redirect"
+    },
+    {
+      "url": "https://aml.engr.tamu.edu/wp-content/uploads/sites/164/2021/08/J81_Preprint.pdf",
+      "outcome": "success authorpreprint selected methods"
+    },
+    {
+      "url": "https://proceedings.mlr.press/v5/titsias09a.html",
+      "outcome": "success primary abstract/metadata"
+    },
+    {
+      "url": "https://papers.nips.cc/paper_files/paper/2009/hash/5ea1649a31336092c05438df996a3e59-Abstract.html",
+      "outcome": "success primary abstract/metadata"
+    },
+    {
+      "url": "https://zehnder.mae.cornell.edu/publications/hydrogels/",
+      "outcome": "failed502; indexed author record corroborates metadata"
+    }
+  ],
+  "sources": [
+    {
+      "id": "WANG2021",
+      "title": "Metamodeling of constitutive model using Gaussian process machine learning",
+      "authors": [
+        "Jikun Wang",
+        "Tianjiao Li",
+        "Fan Cui",
+        "Chung-Yuen Hui",
+        "Jingjie Yeo",
+        "Alan T. Zehnder"
+      ],
+      "year": 2021,
+      "venue": "Journal of the Mechanics and Physics of Solids",
+      "volume": "154",
+      "article": "104532",
+      "doi": "10.1016/j.jmps.2021.104532",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0022509621001939",
+      "official_author_record": "https://zehnder.mae.cornell.edu/publications/hydrogels/",
+      "version": "Published September2021 as indexed in the publisher preview",
+      "license": "No named reuse license verified; citation/paraphrase only",
+      "read_depth": "Search-indexed primary publisher preview: metadata, abstract, introduction, PVA example and conclusion excerpts. Direct publisher open403; author page open502. Not full text.",
+      "observation": "SVD compresses simulated stress histories; GP emulates their dependence on constitutive parameters for PVA tension/relaxation parameter fitting.",
+      "relationship": "Hydrogel-domain reduced representation plus GP predecessor, not the same six-anchor steady-viscosity prediction object.",
+      "metadata_status": "Author list/title/venue/volume/article/DOI/year agree in publisher indexed record; author-group indexed record independently corroborates DOI/venue/year.",
+      "action": "Add as a domain predecessor. Avoid any first low-dimensional GP for hydrogels claim."
+    },
+    {
+      "id": "SUNOL2026V4",
+      "title": "Learning constitutive models and rheology from partial flow measurements",
+      "authors": [
+        "Alp M. Sunol",
+        "James V. Roggeveen",
+        "Mohammed G. Alhashim",
+        "Henry S. Bae",
+        "Michael P. Brenner"
+      ],
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2510.24673",
+      "url": "https://arxiv.org/html/2510.24673v4",
+      "metadata_url": "https://arxiv.org/abs/2510.24673",
+      "version": "v4,7September2026; originalv1 was28October2025",
+      "license": "CC BY4.0 explicitly labelled in v4HTML",
+      "read_depth": "Primary v4HTML abstract, main framework/instantaneous and memory closure description, Methods training/evaluation/model-fitting section, and SupplementS9 gel example; selected sections, not every equation or supplement.",
+      "observation": "Invariant TBNN embedded in differentiable flow simulation; constitutive readback/model selection includes hydrogel LAOS experiments.",
+      "relationship": "Partial-measurement rheological inference neighbour; target/input and solver differ from six-anchor steady-flow continuation.",
+      "official_repository_disclosed_in_paper": "https://github.com/asunol/jax_rheology",
+      "official_dataset_disclosed_in_paper": "https://doi.org/10.5281/zenodo.22184699",
+      "repository_code_read_or_run": false,
+      "repository_license_verified": false,
+      "action": "Optional concise related-work addition; citev4 and describe its actual method, not older abstract wording."
+    },
+    {
+      "id": "SHIN_CURVATURE",
+      "title": "Joint Estimation of Monotone Curves via Functional Principal Component Analysis",
+      "authors": [
+        "Yei Eun Shin",
+        "Lan Zhou",
+        "Yu Ding"
+      ],
+      "url": "https://aml.engr.tamu.edu/wp-content/uploads/sites/164/2021/08/J81_Preprint.pdf",
+      "candidate_publication_doi": "10.1016/j.csda.2021.107343",
+      "publication_year_verified_in_read_primary_text": false,
+      "license": "No explicit license found in selected author-preprint text",
+      "read_depth": "Author-hosted19page PDF: firstpage, Sections2and3.1-3.3, approximatelyPDFpages3-7. No full19page read. Publisher endpoint403; PMCdirect access returned browser challenge.",
+      "observation": "Models relative curvature m-second-derivative divided by m-first-derivative; principal-component representations reconstruct monotone curves via integration.",
+      "relationship": "Curvature-based functional reconstruction prior art. Different from two fixed linear finite-scale contrasts and a retained full reference residual.",
+      "action": "Supports restricting conceptual novelty. If added to bibliography, verify final publication metadata separately; no guessed year."
+    },
+    {
+      "id": "TITSIAS2009",
+      "title": "Variational Learning of Inducing Variables in Sparse Gaussian Processes",
+      "url": "https://proceedings.mlr.press/v5/titsias09a.html",
+      "year": 2009,
+      "venue": "AISTATS/PMLR5:567-574",
+      "read_depth": "Primary abstract and bibliography metadata only",
+      "license": "No license conclusion drawn from public access",
+      "relationship": "Established inducing-variable variational Gaussian construction; already reference19.",
+      "action": "Retain existing attribution; no new duplicate reference."
+    },
+    {
+      "id": "INTERDOMAIN2009",
+      "title": "Inter-domain Gaussian Processes for Sparse Inference using Inducing Features",
+      "url": "https://papers.nips.cc/paper_files/paper/2009/hash/5ea1649a31336092c05438df996a3e59-Abstract.html",
+      "year": 2009,
+      "venue": "NeurIPS22",
+      "read_depth": "Primary abstract and metadata only",
+      "license": "No explicit reuse license verified",
+      "relationship": "Inducing features outside data domain and prior-knowledge features; already reference20.",
+      "action": "Retain attribution; fixed curvature feature choice is the specific adaptation."
+    },
+    {
+      "id": "ORTHOGONAL2020",
+      "title": "Sparse Orthogonal Variational Inference for Gaussian Processes",
+      "url": "https://proceedings.mlr.press/v108/shi20b.html",
+      "year": 2020,
+      "venue": "AISTATS/PMLR108:1932-1942",
+      "read_depth": "Primary abstract and bibliography metadata only",
+      "license": "No explicit reuse license verified",
+      "relationship": "Independent finite-basis and residual-process decomposition; already reference23.",
+      "action": "Do not claim full residual retention or Gaussian joint consistency as newly invented."
+    },
+    {
+      "id": "JIANG2026",
+      "title": "Generative active learning across polymer architectures and solvophobicities for targeted rheological behavior",
+      "url": "https://www.nature.com/articles/s41524-025-01900-2",
+      "doi": "10.1038/s41524-025-01900-2",
+      "year": 2026,
+      "venue": "npj Computational Materials",
+      "read_depth": "Primary indexed search excerpts; direct open failed with identity-provider redirect. Existing manuscript already reference9. Not fulltext read this audit.",
+      "license": "Not reverified",
+      "relationship": "Inverse architecture/solvophobicity design targeting rheological profiles; distinct material-generation task.",
+      "action": "Existing distinction is adequate; no superiority over this method demonstrated."
+    },
+    {
+      "id": "WANG_CHAPTER_LEAD",
+      "title": "Gaussian Process to Identify Hydrogel Constitutive Model",
+      "url": "https://par.nsf.gov/servlets/purl/10329053",
+      "read_depth": "Primary indexed abstract/method lead; directPDFfetch502. No fullPDF or bibliographic chapter-year/DOI verification.",
+      "license": "Not verified",
+      "relationship": "Related conference-chapter lead to the verified Wang2021journal article.",
+      "action": "Use journal article for new bibliography; do not invent chapter bibliographic fields."
+    }
+  ],
+  "source_fulltexts_downloaded_to_local_files": 0,
+  "notes": [
+    "Search engine discovery followed by original/official records; no claim of a GoogleScholar session or exhaustive indexed coverage.",
+    "No denied endpoint retried or challenge bypassed. Search-indexed primary previews are labelled separately from successful direct reads.",
+    "No material data, repository code, models or scientific scorer executed.",
+    "No full-paper count or absolute novelty guarantee is asserted."
+  ],
+  "public_projection_of_original_sha256": "afc9c2fb68de538c1c9b9ec7a49e2785baf2aa73e0c050eb40eea58bf1bcb7ce",
+  "projection_note": "Local-machine locators only are redacted where present; original audit bytes remain in the local resource archive."
+}

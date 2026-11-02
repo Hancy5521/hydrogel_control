@@ -1,0 +1,38 @@
+{
+  "actual_utc": "2026-11-02T03:31:26.576138+00:00",
+  "scope": "Independent aggregation of saved scalar ledger only; no outcomes, forecasts, scoring or fitting",
+  "input_sha256": "56546ac5bb077de54b9556e8146f6e1fdf659eb4fe62c457ab47c9af1445c9a6",
+  "checks": [
+    {
+      "claim": "candidate formulation averaged CRPS win count vs gaussian",
+      "value": 16,
+      "denominator": 25,
+      "PASS": true
+    },
+    {
+      "claim": "candidate formulation averaged CRPS win count vs random_gaussian",
+      "value": 20,
+      "denominator": 25,
+      "PASS": true
+    },
+    {
+      "claim": "candidate formulation averaged CRPS win count vs local",
+      "value": 22,
+      "denominator": 25,
+      "PASS": true
+    },
+    {
+      "claim": "P0 fraction of aggregate candidate gain over conditionalG",
+      "value": "45.637110153879375608075865347503163596298138728156",
+      "rounded_percent": "45.64",
+      "PASS": true
+    },
+    {
+      "claim": "P0middle-gap covered8of33",
+      "PASS": true
+    }
+  ],
+  "count": 5,
+  "public_projection_of_original_sha256": "eb270395a9f7b2ad13f65390bba5b732d2f4fb24c4b863ae7ef0399ff7031639",
+  "projection_note": "Local-machine locators only are redacted where present; original audit bytes remain in the local resource archive."
+}

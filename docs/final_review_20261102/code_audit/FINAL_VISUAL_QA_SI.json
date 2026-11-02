@@ -1,0 +1,121 @@
+{
+  "actual_utc": "2026-11-02T04:06:46.156089+00:00",
+  "status": "PASS",
+  "scope": "Independent visual inspection of every final SI page PNG using view_image, not only XML extraction. Not a new material efficacy check or selected-journal typography certification.",
+  "document_sha256": "ad90ae6664da726cc33398c8556815adeae3138501000ab0ccf8d221a10eaea9",
+  "native_word_pdf_sha256": "5ab6111736c333e56787f9c31b8e99c32ad31fd7585594761ff9d15fbc9e88d0",
+  "page_count": 15,
+  "every_page_actually_opened": true,
+  "pages": [
+    {
+      "page": 1,
+      "png_sha256": "9378490033ebf062e8d8bf509b89ea46028e15165c3ea4b56aee7208a6e62124",
+      "actually_inspected": true,
+      "status": "PASS",
+      "note": "Title, S1 paired table, S2 layout table; no clipped text or columns."
+    },
+    {
+      "page": 2,
+      "png_sha256": "4943fe4902ca3fd0de180a31a4225655ed03d083f2e5a38429c6bee8e2e3a060",
+      "actually_inspected": true,
+      "status": "PASS",
+      "note": "S3 comparison and S4 uncertainty tables readable; footer2."
+    },
+    {
+      "page": 3,
+      "png_sha256": "7aadf7e23d1e240dc0b55c05918ebbe8bc4e98ae675091f3f976493bb05e942f",
+      "actually_inspected": true,
+      "status": "PASS",
+      "note": "Full retained25-row coverage heatmap and caption readable; footer3."
+    },
+    {
+      "page": 4,
+      "png_sha256": "9fc5182778899aac1d1a460b027d7fcb174d935f6ea031f3264f7e26e11fcbac",
+      "actually_inspected": true,
+      "status": "PASS",
+      "note": "Original landscape four-panel P0/P1 figure and legend fully inside page; footer4."
+    },
+    {
+      "page": 5,
+      "png_sha256": "a1b0969b07a0bb4954382c244f6025f7884da3a806494220c674ba6870471b0c",
+      "actually_inspected": true,
+      "status": "PASS",
+      "note": "S5 independent-design text and S6 source/archive hashes wrap inside margins."
+    },
+    {
+      "page": 6,
+      "png_sha256": "42feec82751506205e6b1adfbb947847d583c221aef59028bbea51f99c540cfe",
+      "actually_inspected": true,
+      "status": "PASS",
+      "note": "S7 controls/prior/SMC text and headings display normally."
+    },
+    {
+      "page": 7,
+      "png_sha256": "0268ce54231ec7cec083e34c5dea8401b0de2e97c8b6b2be9b48704cffbd83de",
+      "actually_inspected": true,
+      "status": "PASS",
+      "note": "FixedStudentT subsection and TableS5 five-law variogram rows intact."
+    },
+    {
+      "page": 8,
+      "png_sha256": "5e4c8db7222aa6fd682fab18e90d7c204918fd79857a955110377aa03cda0125",
+      "actually_inspected": true,
+      "status": "PASS",
+      "note": "S9 native equationsS1-S5 visible without collision or missing math glyphs."
+    },
+    {
+      "page": 9,
+      "png_sha256": "07c67c46ebb2711b15b74c1dc53e2eff42a73d193a7b6f95a31123214a41a2d1",
+      "actually_inspected": true,
+      "status": "PASS",
+      "note": "S10 TableS6 and S11 workflow text clean."
+    },
+    {
+      "page": 10,
+      "png_sha256": "81607e35ecf3657846cb91f8c4c041a34ddd60b73e0e8496600622c96ee9fa13",
+      "actually_inspected": true,
+      "status": "PASS",
+      "note": "TableS7 allten point-error methods visible; S13 text starts cleanly."
+    },
+    {
+      "page": 11,
+      "png_sha256": "ee2611f5427953f4d3160e8114fc2553aa3cd2a9c46d45e8d2060a38160da29e",
+      "actually_inspected": true,
+      "status": "PASS",
+      "note": "S13 ends before deliberate new-page S14; no blank extra page or orphan heading."
+    },
+    {
+      "page": 12,
+      "png_sha256": "67c961babbb73bb76c38cd5c9484b53385c1c48161bc697f0bba413072db0cc9",
+      "actually_inspected": true,
+      "status": "PASS",
+      "note": "S14 provenance pointers and SHA strings wrap cleanly; TableS8 moved out to freshpage."
+    },
+    {
+      "page": 13,
+      "png_sha256": "d3d5114720625bcc681cd58d9a532a1aa639b386a3a773252efcde47e9fbe3e1",
+      "actually_inspected": true,
+      "status": "PASS",
+      "note": "TableS8 starts on freshpage, all24 source-method rows plus header and note fit on single page; no split rows."
+    },
+    {
+      "page": 14,
+      "png_sha256": "7fcc44836b62fa88ab0c1f4219d07c857ba722850edb7b98af77dd2800d10670",
+      "actually_inspected": true,
+      "status": "PASS",
+      "note": "FigureS3 allfour panels and caption visible; S15 weighting interpretation follows cleanly."
+    },
+    {
+      "page": 15,
+      "png_sha256": "ce831027df03096dcd592a58d9121e17a040865c377d02e45a397fae65536521",
+      "actually_inspected": true,
+      "status": "PASS",
+      "note": "TablesS9 and S10 fit and have readable human concentration labels GG0.35/0.5/0.75wt%,peK10/20wt%; FigureS4 and caption not clipped."
+    }
+  ],
+  "blocking_layout_issues": [],
+  "minor_publication_format_note": "Some internal labels in multi-panel FiguresS3/S4 are compact after page fitting, but panels/labels remain present and the accompanying numeric tables/captions are readable. Standalone high-resolution figures are retained; final journal-specific typography still needs its selected figure-width/font rules.",
+  "edited_document_or_scientific_files": false,
+  "public_projection_of_original_sha256": "51d9d3f8a3ce83eb5e4a7191e2cf76d1267136ed76442166d1ef36f41fc81c89",
+  "projection_note": "Local-machine locators only are redacted where present; original audit bytes remain in the local resource archive."
+}

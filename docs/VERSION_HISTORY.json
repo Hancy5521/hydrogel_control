@@ -47,7 +47,7 @@
     },
     {
       "name": "External evidence integrated manuscript and population sensitivity",
-      "commit": null,
+      "commit": "707b4db0cf483b719b2fdc6631f34e7f7c98c526",
       "archive_branch": "archive/robustness-manuscript-2026-11-02",
       "parent_commit": "4e689d3815695e1317496b465ef8eb898c634044",
       "pages": [
@@ -56,6 +56,19 @@
       ],
       "new_material_fit_forecast_score_calls": 0,
       "commit_resolution": "Resolve this distinct retained archive branch or externally verified delivery receipt; a commit does not include its own SHA."
+    },
+    {
+      "name": "Final author-review paper after witnessed defect and attribution corrections",
+      "commit": null,
+      "archive_branch": "archive/final-author-draft-2026-11-02",
+      "parent_commit": "707b4db0cf483b719b2fdc6631f34e7f7c98c526",
+      "pages": [
+        23,
+        15
+      ],
+      "references": 54,
+      "material_fit_forecast_target_score_calls": 0,
+      "commit_resolution": "Resolve the retained archive branch or external delivery receipt; a commit does not include its own SHA."
     }
   ]
 }

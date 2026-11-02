@@ -1,0 +1,185 @@
+{
+  "actual_utc": "2026-11-02T03:38:04.190937+00:00",
+  "base_commit": "707b4db0cf483b719b2fdc6631f34e7f7c98c526",
+  "scope": "Read-only full main/SI OOXML text/table/mathematical-node review and selected code/source/score receipts. No visual-page review in this subtask; no newly searched literature; no model/material data arrays/targetscoring/fitting/forecasting.",
+  "manuscript_hashes": [
+    {
+      "document": "main",
+      "sha256": "5e97129e921eedb6fef8f5380469d9829168a2618a57a1d2330b8f6d6b0a2653",
+      "paras": 250,
+      "tables": 4,
+      "omml": 73
+    },
+    {
+      "document": "si",
+      "sha256": "6b5bbbdc8652bcf7fc8d323a94fe53b70bce96a7700aab8b4aab611fba77d168",
+      "paras": 117,
+      "tables": 10,
+      "omml": 16
+    }
+  ],
+  "highest_confirmed_severity": "P2 documentation/traceability; no witnessed score/mathematical correction",
+  "findings": [
+    {
+      "id": "E1",
+      "priority": "P2",
+      "category": "current reproducibility documentation capability overclaim",
+      "path": "external_validation/20261101T1239423181800Z/README.md",
+      "anchor": "The source reader rejects changed files, blank or formula cells, unit conversion mismatches and altered vector hashes.",
+      "problem": "This blanket formula-detection claim includes the XLS inputs. The actual reconstruction README explicitly states that xlrd exposes numeric BIFF values but does not independently identify BIFF formulas. The current statement overstates what is verified. No witness suggests that any admitted instrument export actually uses a formula, and the scientific scores are not invalidated.",
+      "replacement": "The reader checks original file bytes and hashes, mapped numeric cell values, unit conversions and reconstructed vector hashes. For XLSX, mapped formula, string and boolean cells are rejected. For XLS, xlrd reads numeric BIFF cell values; independent detection of cached BIFF formula identities is not claimed.",
+      "action": "Correct the documentation only; do not add a new BIFF parser or reopen material arrays to solve a wording defect.",
+      "evidence": [
+        "external_validation/20261101T1239423181800Z/reproduction/README.md, Exact reconstruction rules, final bullet",
+        "external_validation/20261101T1239423181800Z/reproduction/rebuild_inputs.py"
+      ]
+    },
+    {
+      "id": "E2",
+      "priority": "P2",
+      "category": "stale current artifact description",
+      "path": "external_validation/20261101T1239423181800Z/README.md",
+      "anchor": "The original\n21-page hydrogel manuscript,11-page supplement, frozen model and development\nresults remain unchanged.",
+      "problem": "These were the original external-study checkpoint facts, but current707 includes revised23/15-page files. The README opening reads as current and therefore contradicts the delivered paper identity.",
+      "replacement": "The external study was first archived in commit4e689d3815695e1317496b465ef8eb898c634044 with the then21-page main and11-page supplement unchanged. The later707b4db0cf483b719b2fdc6631f34e7f7c98c526 checkpoint integrates all external evidence and population-weight sensitivity into a23-page main and15-page supplement. The frozen scientific model and original development/external scores remain unchanged. Consult current manifests for any later manuscript pagination.",
+      "action": "Separate historical external execution from current manuscript; preserve old commits and old receipts."
+    },
+    {
+      "id": "E3",
+      "priority": "P3",
+      "category": "inaccurate supplementary cross reference",
+      "path": "paper/Supplement_Revised.docx",
+      "anchor": {
+        "paragraph_index": 96,
+        "body_child_index": 103,
+        "old_text": "This section reports the additional external assessment separately from the original 25-formulation development study. The source identities, retained native records and proxy groups are listed in Table S8 and bound by file hashes. The four sources provide 46 curves, 23 analysis groups, 1,057 complete native pairs and 781 continuation targets after six anchors per curve. These counts do not certify independent physical preparations. Dataset mirrors, repeated masks, group aliases and stored predicted curves are not counted as additional measurements."
+      },
+      "problem": "TableS8 lists source-level method metrics; it does not enumerate native records/proxy group identities or hashes. Those exist in SOURCE_REGISTER and SOURCE_CELL_MAP.",
+      "replacement": "This section reports the additional external assessment separately from the original25-formulation development study. Source-level method summaries appear in TableS8. Source identities, conservative analysis groups, native cell locations and file hashes are recorded in the archived SOURCE_REGISTER.json and reproduction/SOURCE_CELL_MAP.json. The four sources provide46curves,23analysis groups,1,057complete native pairs and781continuation targets after six anchors per curve. These counts do not certify independent physical preparations. Dataset mirrors, repeated masks, group aliases and stored predicted curves are not counted as additional measurements.",
+      "action": "Revise this paragraph only, using natural spacing; no metric or table change."
+    },
+    {
+      "id": "E4",
+      "priority": "P2",
+      "category": "stale provenance overview and historical/current ambiguity",
+      "path": "RIGHTS_AND_PROVENANCE.md and docs/evidence/GAP_REVIEW_ZH.txt, GAP_REVIEW.json, FEASIBILITY_ZH.txt, FEASIBILITY.json, CITATION_AND_SOURCE_STATUS.json",
+      "anchor": "The original48-reference audit ...; Result summaries are copied arithmetic evidence from already-consumed25P development; current19/7 or21/11-page historical status passages",
+      "problem": "The historical receipts are valuable and should remain unchanged, but broad present-tense overview text can make readers infer that no external measured records or newer manuscript exists. The48-reference identity audit is not a claim that all current52(or later54) references underwent the same audit/fulltext reading.",
+      "replacement": "The original development score ledgers concern25P formulations. A separate, source-inspected fixed-model assessment adds46native curves fromfour public sources; no new physical measurements were performed by this study. The manuscript now integrates both evidence layers and the later descriptive weighting analysis. The original48-reference audit and earlier19/7 and21/11-page feasibility/gap records are historical, with their own timestamps and file hashes; they do not certify newer references, manuscript pages or external evidence. Current source/reference additions have separately recorded reading depths.",
+      "action": "Update the current overview and add a current-scope index to historical evidence. Preserve original historical receipt bytes; no silent recertification."
+    },
+    {
+      "id": "E5",
+      "priority": "P3",
+      "category": "version pin for later weighting evidence",
+      "path": "paper/Hydrogel_Continuation_English_Revised.docx",
+      "anchor": {
+        "paragraph_index": 190,
+        "body_child_index": 194,
+        "starts_with": "Versioned code and evidence are available at https://github.com/Hancy5521/hydrogel_control."
+      },
+      "problem": "The code-availability paragraph pins original development79f and external4e but only indirectly locates later weighting evidence and corrected guard now implemented in707. The bare repository URL allows discovery, so this is an omission rather than a false data claim.",
+      "replacement_addition": "The saved-score weighting diagnostic and the20-component canonical-path replay guard are retained in checkpoint707b4db0cf483b719b2fdc6631f34e7f7c98c526 on archive/robustness-manuscript-2026-11-02. The guard correction was tested with data-free fixtures and complete-code inventory checks; the original external target scoring was not repeated. Later manuscript files are identified by the release manifest.",
+      "action": "Add an actual existing checkpoint pin; do not insert a planned not-yet-created commit or imply new full data replay."
+    }
+  ],
+  "claim_evidence_map": [
+    {
+      "claim": "The current task is same-material hydrogel precursor flow-curve continuation from six anchors, not new chemistry or universal matrix completion.",
+      "support": "MainP6/P8/P12/P13, model card; frozen deployment model; original25P/20S roles inP16/P82-P87.",
+      "judgment": "Supported as a bounded computational task; material compatibility and preparation metadata remain limited."
+    },
+    {
+      "claim": "Finite-scale curvature contrasts remove affine log-coordinate trends, use symmetric reference whitening, adapt only a2D Gaussian law and retain full residual.",
+      "support": "MainEqs3-10 andSIEqsS1-S4; runtime/core/local_shape.py, trial_geometry.py, joint_code_gaussian.py inspected.",
+      "judgment": "Definitions and formulas consistent with code. Established inducing-feature/Gaussian family; no new general probability theorem is supported."
+    },
+    {
+      "claim": "Full residual and common-joint consistency retain cross-rate stochastic structure.",
+      "support": "MainEqs6-17, SIrank-nullity argument, unchanged89OMML objects, prior independent dense numerical receipts.",
+      "judgment": "Mathematical/model statement supported; not an empirical calibration or physical intrinsic-dimension statement."
+    },
+    {
+      "claim": "The correction is trained by masked conditional log likelihood, while primary comparison uses marginalCRPS.",
+      "support": "MainEq18 andEqs19-21, P134; conditional objective source andSIconditionalKL identity inspected.",
+      "judgment": "Correctly distinguishes training/evaluation targets. The code uses a parameter-independent reference-likelihood subtraction, which leaves optimizer/claimed objective minimizer unchanged."
+    },
+    {
+      "claim": "MacroCRPS0.043277,21.63%vsGP,13.88%vsconditionalGaussian; matched random Gaussian comparison supports curvature representation.",
+      "support": "Savedresults/SUMMARY.json; independent60logical/arithmetic checks plus5formulation-ledger checks. Candidate wins16/25vsconditional,20/25vsrandomGaussian,22/25vsboundedlocal.",
+      "judgment": "Supported as retrospective descriptive development comparisons under declared baselines. No formal noninferiority, general-population superiority, multiple-random-seed or independent confirmation claim."
+    },
+    {
+      "claim": "Gains concentrate in one-sided continuation, while interpolation and some uncertainty metrics favour controls.",
+      "support": "MainTable1-3 andSI S2/S7; native33-target queries retain teninternal+23beyondanchor targets; independent scalar checks.",
+      "judgment": "Supported. Results against declared BayesianCross/Carreau implementations do not establish inferiority of every physical model; the manuscript already states unequal population-shape learning."
+    },
+    {
+      "claim": "External46curves/23groups/781targets are a zero-retraining source-inspected stress assessment.",
+      "support": "EXECUTION_PROTOCOL_PUBLIC, SOURCE_REGISTER, SCORES summary metadata; original experiment receipts.",
+      "judgment": "Counts and roles consistent. These are separately reported measurements, not certified new same-domain batches; source inspection precludes blinding."
+    },
+    {
+      "claim": "Original Liverpool group weighting winsGP/CG; otherthree sources loseGP; GG wins andpeK loses both probability controls.",
+      "support": "Independent60saved-scalar logical checks; all24source/method rows remain inS8.",
+      "judgment": "Supported. Three chemistry/state/operator shifts are confounded, so no single physical failure cause is established."
+    },
+    {
+      "claim": "EqualGG/peK weighting reversesCGCRPS ranking and removes point-error advantage.",
+      "support": "SavedROBUSTNESS_RESULTS; source group scores; independent60checks and prior307Decimalcomparisons.",
+      "judgment": "Supported as descriptive population-estimand sensitivity. It must not replace the original endpoint or be calledLOOtraining/newconfirmation/optimizeddeploymentweight."
+    },
+    {
+      "claim": "Coverage failures and fixedStudentT tradeoffs remain unresolved.",
+      "support": "CandidateP0middle8/33 directly checked saved ledger; original average97.21%,externalLiverpool71.56%,peK10zero,dynamic2.44%,equalfamily64.44%; fixedStudentT lower macro but worsecontinuation.",
+      "judgment": "Failure disclosures are correct; marginal bands, Gaussianity and numerical accuracy do not certify whole-curve or independent calibration."
+    },
+    {
+      "claim": "The package supports reproducibility at specifically declared levels.",
+      "support": "Frozen runtime/model bindings, development scalar replays, external source cell reconstruction and independent code checks.",
+      "judgment": "Current output transparency and inference are real; full original raw/reference-fit/posterior/outer-fold replay/access remains separately scoped. Exact-byte history is not a new material experiment."
+    }
+  ],
+  "remaining_limits": [
+    {
+      "id": "L1",
+      "need": "Genuinely independent compatible preparations/new batches with certifiedidentity/state and frozen design",
+      "why_not_fixable_by_current_scalar_reanalysis": "Old25P and46external targets are consumed; relabelling, masks, resampling or model-generated trajectories cannot supply new preparations.",
+      "not_a_universal_submission_prerequisite": true
+    },
+    {
+      "id": "L2",
+      "need": "Reserved calibration units and declared marginal vs simultaneous target under an appropriate sampling/exchangeability design",
+      "why_not_fixable_by_current_scalar_reanalysis": "Interval rescaling on consumed data would be development, not independent coverage validation. Conformal/jackknife names do not establish assumptions.",
+      "not_a_universal_submission_prerequisite": true
+    },
+    {
+      "id": "L3",
+      "need": "Actual instrument/lab/material resource observations for a comparable full-vs-sparse workflow",
+      "why_not_fixable_by_current_scalar_reanalysis": "Offline masks,6/39ratio, inferred costs and synthetic timings are not measured savings.",
+      "not_a_universal_submission_prerequisite": true
+    },
+    {
+      "id": "L4",
+      "need": "Author declarations, chosen license, reuse/access arrangements and targetjournal rules",
+      "why_not_fixable_by_current_scalar_reanalysis": "Requires author identity/authority and source-right decisions; the agent cannot invent or sign them.",
+      "not_a_universal_submission_prerequisite": false
+    },
+    {
+      "id": "L5",
+      "need": "Additional model-development or fairness extensions only if stronger claims are selected",
+      "why_not_fixable_by_current_scalar_reanalysis": "One fixed random basis, fixedwindows, parameter-bound endpoints and selected baseline implementations are already disclosed. Broader ablative/physical/modern-generator comparisons are not contained in existing evidence and should not be fabricated or selected by the current test targets.",
+      "not_a_universal_submission_prerequisite": true
+    }
+  ],
+  "numerical_checks": {
+    "TARGETED_CLAIM_CHECKS.json": 60,
+    "FORMULATION_CLAIM_CHECKS.json": 5,
+    "all_pass": true
+  },
+  "effectiveness_conclusion": "The retained evidence supports a task-specific prototype competitive with the declared strong probabilistic/constitutive controls on the retrospectivehydrogelprecursor cohort. It does not support everypolymer/materialfamily, reliablecalibration or independentbatchgeneralization. The originaltask advantage survives disclosed limitations; external broad superiority does not.",
+  "novelty_conclusion_scope": "Gaussian/inducing-feature/full-residual/conditionaltraining components are established and already credited. Domain-adapted representation and task-specific empirical evidence can form a limited contribution; the separately delegated primary-literature review must assess direct domain overlap. This audit gives no absolute no-overlap or journal-quartile guarantee.",
+  "stop_boundary": "No substantive math/score error requiring rerun or retuning was witnessed within the audited scope. Close current documentation defects; retain limitations and do not claim all conceivable defects or research directions globally exhausted.",
+  "public_projection_of_original_sha256": "aa5f0d8176ef264c4f973a35ee87add806eb82b973ef596655bc125d13d7fe2c",
+  "projection_note": "Local-machine locators only are redacted where present; original audit bytes remain in the local resource archive."
+}

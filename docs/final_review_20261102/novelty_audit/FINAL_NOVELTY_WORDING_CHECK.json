@@ -1,0 +1,81 @@
+{
+  "actual_utc": "2026-11-02T03:52:26.134143+00:00",
+  "status": "PASS",
+  "scope": "Independent source-faithfulness and contribution-strength review of actual final DOCX text and references53/54; not new literature discovery or model/material validation.",
+  "documents_sha256": {
+    "Hydrogel_Continuation_English_Revised.docx": "d1140ca34ad10cc3125740d4a092e2c0a367c650015af9cf8d0dd4ade9844763",
+    "Supplement_Revised.docx": "ad90ae6664da726cc33398c8556815adeae3138501000ab0ccf8d221a10eaea9"
+  },
+  "checked_main_paragraph_indices": {
+    "new_domain_related_work": 11,
+    "closest_method_and_contribution": 71,
+    "reference53": 251,
+    "reference54": 252
+  },
+  "checks": [
+    {
+      "name": "Exact final main and SI document identities",
+      "passed": true
+    },
+    {
+      "name": "Original52 plus two new references",
+      "passed": true
+    },
+    {
+      "name": "Reference53 journal year volume article DOI and six authors match primary indexed metadata",
+      "passed": true
+    },
+    {
+      "name": "Reference54 explicitly identifies actual arXivv4,2026 and five authors rather than a peer-reviewed journal",
+      "passed": true
+    },
+    {
+      "name": "Wang domain statement accurately describes hydrogel constitutive identification from stress histories",
+      "passed": true
+    },
+    {
+      "name": "Sunol statement accurately limits neighbour to differentiable constitutive inference with different observables",
+      "passed": true
+    },
+    {
+      "name": "New paragraph does not claim low-dimensional GP in hydrogels was invented here",
+      "passed": true
+    },
+    {
+      "name": "Prediction object and finite-scale task-specific adaptation are distinguished",
+      "passed": true
+    },
+    {
+      "name": "Known inducing/interdomain/orthogonal GP attribution preserved",
+      "passed": true
+    },
+    {
+      "name": "Classical joint family and full residual are not claimed as new mathematical invention",
+      "passed": true
+    },
+    {
+      "name": "Discussion closing sentence states empirical task adaptation instead of untested universal dominance",
+      "passed": true
+    },
+    {
+      "name": "No statement of exhaustive uniqueness or full-paper reading in the new introduction/closest-work paragraph",
+      "passed": true
+    },
+    {
+      "name": "Source reading limitations retained in independent source ledger",
+      "passed": true
+    }
+  ],
+  "actual_actionable_issues_found": [],
+  "limitations": [
+    "Bounded literature discovery cannot prove absolute absence of exact duplication.",
+    "Wang publisher article was read through indexed primary preview sections; direct fulltext was inaccessible.",
+    "Sunolv4selected primary methods/S9were read, not every supplement; the final wording does not imply otherwise.",
+    "No comparison against these newly cited methods was run; no empirical superiority over them is claimed."
+  ],
+  "source_ledger_sha256": "afc9c2fb68de538c1c9b9ec7a49e2785baf2aa73e0c050eb40eea58bf1bcb7ce",
+  "model_fit_forecast_target_score_calls": 0,
+  "new_web_requests_for_this_check": 0,
+  "public_projection_of_original_sha256": "64f33ac14fb1e29319c9f9ad9953840fca1a6eb996cbd30a3fdef86e9e06b3e5",
+  "projection_note": "Local-machine locators only are redacted where present; original audit bytes remain in the local resource archive."
+}

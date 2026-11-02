@@ -1,0 +1,24 @@
+{
+  "actual_utc": "2026-11-02T03:29:56.043904+00:00",
+  "status": "PASS",
+  "scope": "Synthetic standard-library package-verifier compatibility and integrity fixtures only",
+  "source_sha256": "3257a469a088e47020214ed7b6012f737edcaa58fdfcc52b895f3e5a76e2751c",
+  "checks": [
+    {
+      "case": "No_file_digest_API",
+      "passed": true,
+      "note": "API-absence simulation, not execution under a separate Python3.10 interpreter"
+    },
+    {
+      "case": "Require_missing_history",
+      "passed": true
+    },
+    {
+      "case": "Changed_payload_rejected",
+      "passed": true
+    }
+  ],
+  "model_or_data_reconstruction_calls": 0,
+  "public_projection_of_original_sha256": "654f841dfcda4581ffa9f4607d2ded428e8f76415b0bf317e86b9f884f674bbd",
+  "projection_note": "Local-machine locators only are redacted where present; original audit bytes remain in the local resource archive."
+}

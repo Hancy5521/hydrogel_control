@@ -1,0 +1,88 @@
+{
+  "actual_utc": "2026-11-02T03:27:49.872920+00:00",
+  "status": "PASS",
+  "scope": "Data-free fixed-replay guard witness and candidate tests. Original main executed only against deliberately empty synthetic metadata/raw fixture; candidate main/rebuild/model/scorer never executed.",
+  "candidate_sha256": "8cd9881de0721f2fc6dafbd2f5fb246686b776923e42f38a94f04e39e6d07439",
+  "original_guard_sha256": "369aacb5d25b99ead3a5a84d74cde7a027e5edd1539c2b36167eecb0fcfd1850",
+  "reconstruction_asset_bindings": {
+    "reproduction/SOURCE_CELL_MAP.json": "8a7f766edafaaf813ba7dc58fb65daa760df42729b347dcc70793c8f1801ca81",
+    "reproduction/rebuild_inputs.py": "1a90fb052804f4d5329dcb8692f0321cc992395a1a5c3072a4342ecc5a4df4ba"
+  },
+  "original_scientific_bindings_unchanged": 20,
+  "new_reconstruction_bindings": 2,
+  "checks": [
+    {
+      "case": "complete22",
+      "mode": null,
+      "expected": "ACCEPT",
+      "observed": "ACCEPT",
+      "error": null,
+      "passed": true
+    },
+    {
+      "case": "changed_map",
+      "mode": "map_version_comment",
+      "expected": "REJECT",
+      "observed": "REJECT",
+      "error": "ValueError: Changed fixed reconstruction asset: reproduction/SOURCE_CELL_MAP.json",
+      "passed": true
+    },
+    {
+      "case": "changed_reader",
+      "mode": "helper_version_comment",
+      "expected": "REJECT",
+      "observed": "REJECT",
+      "error": "ValueError: Changed fixed reconstruction asset: reproduction/rebuild_inputs.py",
+      "passed": true
+    },
+    {
+      "case": "empty_map",
+      "mode": "empty_map",
+      "expected": "REJECT",
+      "observed": "REJECT",
+      "error": "ValueError: Changed fixed reconstruction asset: reproduction/SOURCE_CELL_MAP.json",
+      "passed": true
+    },
+    {
+      "case": "missing_map",
+      "mode": "missing_map",
+      "expected": "REJECT",
+      "observed": "REJECT",
+      "error": "ValueError: Missing fixed reconstruction asset: reproduction/SOURCE_CELL_MAP.json",
+      "passed": true
+    },
+    {
+      "case": "missing_reader",
+      "mode": "missing_helper",
+      "expected": "REJECT",
+      "observed": "REJECT",
+      "error": "ValueError: Missing fixed reconstruction asset: reproduction/rebuild_inputs.py",
+      "passed": true
+    },
+    {
+      "case": "original_map_drift",
+      "original_science_guard_accepts_unchecked_reconstruction_drift": true,
+      "passed": true
+    },
+    {
+      "case": "original_reader_drift",
+      "original_science_guard_accepts_unchecked_reconstruction_drift": true,
+      "passed": true
+    },
+    {
+      "case": "guard_before_map_parse_and_reader_import",
+      "positions": {
+        "asset_guard": 10,
+        "map_parse": 12,
+        "reader_import": 13
+      },
+      "passed": true
+    }
+  ],
+  "material_data_access": 0,
+  "model_fit_prediction_score_calls": 0,
+  "repo_modified": false,
+  "normal_full_verify_checkpoint_would_catch_drift": true,
+  "public_projection_of_original_sha256": "83873d4f1c363e2bcaf1f8da4b017a443776a1aeb957d663749c55f983116e38",
+  "projection_note": "Local-machine locators only are redacted where present; original audit bytes remain in the local resource archive."
+}

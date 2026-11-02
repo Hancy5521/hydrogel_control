@@ -1,0 +1,35 @@
+{
+  "current_review": "FINAL_REVIEW_SUMMARY.json",
+  "historical_records": [
+    {
+      "path": "docs/evidence/GAP_REVIEW.json",
+      "sha256": "d71bf4da1b0b4414b07bbd8f8e1b4899ec0b820ab4e48b5f79da92d3b877e313",
+      "role": "Historical dated receipt; retained verbatim, not recertification of currentpaper or currentreference count."
+    },
+    {
+      "path": "docs/evidence/GAP_REVIEW_ZH.txt",
+      "sha256": "17d073218dd0e7386481da3421c9aa2c41fb3787bc1f6e8f6b46624025e81ce4",
+      "role": "Historical dated receipt; retained verbatim, not recertification of currentpaper or currentreference count."
+    },
+    {
+      "path": "docs/evidence/FEASIBILITY.json",
+      "sha256": "de20f9d75bacbc0499223b164a64a17ebbda72c65ab9dc132e97a5e98fdc83ed",
+      "role": "Historical dated receipt; retained verbatim, not recertification of currentpaper or currentreference count."
+    },
+    {
+      "path": "docs/evidence/FEASIBILITY_ZH.txt",
+      "sha256": "00096b6d95c0d1e3b3a1819aa4b4e7b1b25e9ab30c81947642db46b13dda8a69",
+      "role": "Historical dated receipt; retained verbatim, not recertification of currentpaper or currentreference count."
+    },
+    {
+      "path": "docs/evidence/CITATION_AND_SOURCE_STATUS.json",
+      "sha256": "ed82893cb71ea3bb05da39530e7e79c0c1922191423446a82eeeec1125531253",
+      "role": "Historical dated receipt; retained verbatim, not recertification of currentpaper or currentreference count."
+    },
+    {
+      "path": "docs/evidence/CITATION_AND_SOURCE_STATUS.txt",
+      "sha256": "7aa508deeabeac4a8eb4673fe915eba7079e128a83202b479aec577c9e7da3c5",
+      "role": "Historical dated receipt; retained verbatim, not recertification of currentpaper or currentreference count."
+    }
+  ]
+}

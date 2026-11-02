@@ -1,0 +1,105 @@
+{
+  "actual_utc": "2026-11-02T04:16:08.351099+00:00",
+  "base_commit": "707b4db0cf483b719b2fdc6631f34e7f7c98c526",
+  "classification": "Final author-review draft after bounded witnessed-defect closure",
+  "selected_main_sha256": "87796ee2b23dadca6568ea54b554a71478ff1ccc31dcfa13551f8647752a3286",
+  "selected_supplement_sha256": "ad90ae6664da726cc33398c8556815adeae3138501000ab0ccf8d221a10eaea9",
+  "pages": [
+    23,
+    15
+  ],
+  "references": 54,
+  "closed_findings": [
+    {
+      "id": "C1",
+      "problem": "Standalone replay omitted exact map/reader identity checks",
+      "fix": "Pin both reconstruction assets before parsing/import, retaining original20 science bindings",
+      "evidence": "code_audit/GUARD_CANDIDATE_CHECKS.json",
+      "status": "closed"
+    },
+    {
+      "id": "P1",
+      "problem": "Local package verifier relied on Python3.11-only file_digest while scientific stack allows3.10",
+      "fix": "Streaming SHA256; API-absence fixture and independent review; complete-history strict mode",
+      "evidence": "PORTABILITY_FIX_CHECK.json",
+      "status": "closed"
+    },
+    {
+      "id": "E1",
+      "problem": "Blanket XLS formula-detection overclaim",
+      "fix": "Distinguish strict XLSX rejection from numeric BIFF reading and its limitation",
+      "status": "closed"
+    },
+    {
+      "id": "E2",
+      "problem": "External README described old21/11paper as current",
+      "fix": "Identify historical4e release and current manifests separately",
+      "status": "closed"
+    },
+    {
+      "id": "E3",
+      "problem": "SI TableS8 incorrectly described as individual provenance listing",
+      "fix": "Point to SOURCE_REGISTER and SOURCE_CELL_MAP",
+      "status": "closed"
+    },
+    {
+      "id": "E4",
+      "problem": "Historical citation/gap/feasibility records mixed with current overview",
+      "fix": "Current index/rights wording updated; historical receipts not altered",
+      "status": "closed"
+    },
+    {
+      "id": "E5",
+      "problem": "Weighting/manuscript release insufficiently pinned in main availability",
+      "fix": "Reference actual707checkpoint and current exact manifests",
+      "status": "closed"
+    },
+    {
+      "id": "N1_N2",
+      "problem": "Two relevant hydrogel/rheology predecessors uncited",
+      "fix": "Add accurately scoped refs53/54 and task distinctions",
+      "evidence": "novelty_audit/FINAL_NOVELTY_WORDING_CHECK.json",
+      "status": "closed"
+    },
+    {
+      "id": "L1",
+      "problem": "Near-empty declaration page before forced References page",
+      "fix": "Disable forced References break; final23pages; unchanged text/science",
+      "evidence": "evidence_audit/FINAL_VISUAL_QA_MAIN13_23_r2.json",
+      "status": "closed"
+    }
+  ],
+  "remaining_limits": [
+    {
+      "id": "new_batch",
+      "state": "new_evidence_required_if_claimed",
+      "reason": "Existing25P and46external curves are consumed; preparation/state independence is not certified."
+    },
+    {
+      "id": "calibration",
+      "state": "reserved_real_units_required_if_claimed",
+      "reason": "Heterogeneous undercoverage/overcoverage and Gaussian value-insensitive covariance remain; no independent calibration data."
+    },
+    {
+      "id": "experimental_savings",
+      "state": "actual_laboratory_resource_records_required_if_claimed",
+      "reason": "Six anchors or masking does not measure preparation/instrument/time/material savings."
+    },
+    {
+      "id": "authors_rights_access_journal",
+      "state": "author_decision_required",
+      "reason": "Identity/declarations/licenses/access and journal-specific format cannot be invented or approved by the assistant."
+    },
+    {
+      "id": "universal_superiority_or_uniqueness",
+      "state": "not_claimed",
+      "reason": "Bounded prior-art discovery and selected strong controls cannot establish all-literature uniqueness or field-wide superiority."
+    }
+  ],
+  "scientific_model_runtime_score_bytes_changed": false,
+  "material_fit_forecast_target_score_calls_this_review": 0,
+  "prior_art_scope": "12focused queries/12uniqueprimaryURLattempts, including access failures; not12fulltexts or globalabsence proof",
+  "novelty_final_wording": "Defensible precursor-ink task/representation/training adaptation in an established Gaussian family. No exact fulltask+mechanism duplicate identified in the bounded search; absence not proved.",
+  "effectiveness_final_wording": "Competitive against the evaluated strong controls in retrospective target-ink continuation; interpolation/source/coverage failures and weighting reversal bound the claim.",
+  "scope_of_closure": "No witnessed unresolved substantive software/math defect in this bounded review; not a proof that all possible defects or research improvements are exhausted."
+}

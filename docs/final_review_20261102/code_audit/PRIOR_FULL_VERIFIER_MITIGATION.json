@@ -1,0 +1,15 @@
+{
+  "actual_utc": "2026-11-02T03:31:19.428319+00:00",
+  "status": "PASS",
+  "scope": "Exact public Git checkpoint byte-copy fixture; only source-map trailing newline changed. No raw material arrays or model invocation.",
+  "normal_checkpoint_verifier_rejects_map_drift": true,
+  "returncode": 1,
+  "stdout": "",
+  "stderr": "Changed external_validation/20261101T1239423181800Z/reproduction/SOURCE_CELL_MAP.json\n",
+  "command": [
+    "<local research path>/python.exe",
+    "<local research path>/verify_checkpoint.py"
+  ],
+  "public_projection_of_original_sha256": "c09be9ca6f10c07279a4307ac7b4b1646c95a88731c3637541c4ff28c3f440cb",
+  "projection_note": "Local-machine locators only are redacted where present; original audit bytes remain in the local resource archive."
+}
