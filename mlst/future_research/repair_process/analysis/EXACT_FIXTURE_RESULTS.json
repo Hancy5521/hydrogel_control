@@ -1,0 +1,233 @@
+{
+  "actual_utc": "2026-11-04T14:54:03.688183+00:00",
+  "classification": "Exact synthetic mathematical mechanism checks only; no new algorithm or material efficacy claim",
+  "script_sha256": "4e9f883fccf9206d1e6e1ad683b6f37ba3126cde44171fbb24fc1c4efe400d6e",
+  "protocol_sha256": "e87bebd10cc9b7543030376f0f99406ba5f131a7b97d103889b9f03813c596de",
+  "status": "PASS",
+  "fixtures": {
+    "Gaussian_tension_equivalence": {
+      "precision": [
+        [
+          {
+            "exact": "2",
+            "decimal": 2.0
+          },
+          {
+            "exact": "-1",
+            "decimal": -1.0
+          }
+        ],
+        [
+          {
+            "exact": "-1",
+            "decimal": -1.0
+          },
+          {
+            "exact": "2",
+            "decimal": 2.0
+          }
+        ]
+      ],
+      "mean": [
+        {
+          "exact": "1/3",
+          "decimal": 0.3333333333333333
+        },
+        {
+          "exact": "2/3",
+          "decimal": 0.6666666666666666
+        }
+      ],
+      "covariance": [
+        [
+          {
+            "exact": "2/3",
+            "decimal": 0.6666666666666666
+          },
+          {
+            "exact": "1/3",
+            "decimal": 0.3333333333333333
+          }
+        ],
+        [
+          {
+            "exact": "1/3",
+            "decimal": 0.3333333333333333
+          },
+          {
+            "exact": "2/3",
+            "decimal": 0.6666666666666666
+          }
+        ]
+      ],
+      "sequential_transition": [
+        [
+          {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          {
+            "exact": "1/2",
+            "decimal": 0.5
+          }
+        ],
+        [
+          {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          {
+            "exact": "1/4",
+            "decimal": 0.25
+          }
+        ]
+      ],
+      "innovation_covariance": [
+        [
+          {
+            "exact": "1/2",
+            "decimal": 0.5
+          },
+          {
+            "exact": "1/4",
+            "decimal": 0.25
+          }
+        ],
+        [
+          {
+            "exact": "1/4",
+            "decimal": 0.25
+          },
+          {
+            "exact": "5/8",
+            "decimal": 0.625
+          }
+        ]
+      ],
+      "correct_sampler_stationary_covariance_verified": true,
+      "no_noise_covariance_after_one_sweep": [
+        [
+          {
+            "exact": "1/6",
+            "decimal": 0.16666666666666666
+          },
+          {
+            "exact": "1/12",
+            "decimal": 0.08333333333333333
+          }
+        ],
+        [
+          {
+            "exact": "1/12",
+            "decimal": 0.08333333333333333
+          },
+          {
+            "exact": "1/24",
+            "decimal": 0.041666666666666664
+          }
+        ]
+      ],
+      "no_noise_limit_covariance": [
+        [
+          {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          {
+            "exact": "0",
+            "decimal": 0.0
+          }
+        ],
+        [
+          {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          {
+            "exact": "0",
+            "decimal": 0.0
+          }
+        ]
+      ],
+      "conclusion": "Energy descent can recover the Gaussian mean while destroying its uncertainty; stochastic update scheduling alone is not posterior sampling."
+    },
+    "pseudo_observation": {
+      "true_variance_before": {
+        "exact": "2/3",
+        "decimal": 0.6666666666666666
+      },
+      "variance_after_clamping_generated_mean": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "relative_false_shrinkage": {
+        "exact": "1/4",
+        "decimal": 0.25
+      },
+      "conclusion": "Generated repairs must not be marked as new measurements."
+    },
+    "irregular_coordinates": {
+      "coordinates": [
+        {
+          "exact": "0",
+          "decimal": 0.0
+        },
+        {
+          "exact": "1",
+          "decimal": 1.0
+        },
+        {
+          "exact": "4",
+          "decimal": 4.0
+        }
+      ],
+      "weighted_mean": {
+        "exact": "1/4",
+        "decimal": 0.25
+      },
+      "unweighted_mean": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "conclusion": "Grid adjacency alone is insufficient; coordinate-aware weights are already a classical requirement."
+    },
+    "unidentifiable_branch": {
+      "anchors_identical": true,
+      "target_values": [
+        {
+          "exact": "-1",
+          "decimal": -1.0
+        },
+        {
+          "exact": "1",
+          "decimal": 1.0
+        }
+      ],
+      "separation": {
+        "exact": "2",
+        "decimal": 2.0
+      },
+      "minimax_absolute_error_lower_bound": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "collapsed_zero_interval_coverage": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "interval_containing_both_coverage": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "conclusion": "Local healing cannot identify an unobserved branch from identical anchors; maintain ambiguity or obtain a real informative observation."
+    }
+  },
+  "material_fit_forecast_target_score_calls": 0,
+  "new_physical_measurements": 0,
+  "limits": [
+    "Chosen analytical fixtures, not a performance benchmark",
+    "No trained neural cellular automaton or bio-inspired material model",
+    "No evidence of improvement on the consumed 25P or46external curves",
+    "Gaussian chain and two-point lower bound are established mathematics"
+  ]
+}

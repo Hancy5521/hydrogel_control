@@ -1,0 +1,177 @@
+{
+  "created_utc": "2026-11-04T15:00:42.1660522+00:00",
+  "created_asia_shanghai": "2026-11-04T23:00:42.1660522+08:00",
+  "classification": "Bounded primary-source prior-art and applicability review; no new algorithm or material result",
+  "task": "Evaluate spider-web / wound-healing inspired local repair for the frozen hydrogel curve-completion programme",
+  "execution": {
+    "material_reads": 0,
+    "model_imports": 0,
+    "fits": 0,
+    "forecasts": 0,
+    "target_score_calls": 0,
+    "code_downloads_or_clones": 0,
+    "frozen_manuscript_or_runtime_changes": 0,
+    "author_contacts": 0
+  },
+  "bounded_search": {
+    "query_cap": 5,
+    "queries_used": 5,
+    "queries": [
+      "\"Growing Neural Cellular Automata\" inpainting stochastic conditional",
+      "\"Learning Graph Cellular Automata\" Grattarola",
+      "\"Data Imputation with Iterative Graph Reconstruction\" AAAI 2023",
+      "\"neural cellular automata\" \"inpainting\" conditional probabilistic",
+      "\"Gaussian Fields and Harmonic Functions\" \"Lindgren\" GMRF SPDE"
+    ],
+    "selected_relevant_works": 6,
+    "rejected_unrelated_identity_leads": 1,
+    "direct_entry_url_attempts": 8,
+    "counting_note": "Six related works plus one explicitly rejected mistaken arXiv identity. Eight entry URLs because the IGRM publisher PDF was blocked and its actual author-deposited arXiv version was read instead. Opens/finds on the same retrieved sources are selected reading, not extra works or extra search queries.",
+    "scope_limit": "Not exhaustive prior-art clearance; no claim that every spider-named optimizer, NCA variant, material system or all relevant full texts were inspected. No search beyond the declared five queries."
+  },
+  "sources": [
+    {
+      "id": "NCA2020",
+      "title": "Growing Neural Cellular Automata",
+      "authors": "Alexander Mordvintsev; Ettore Randazzo; Eyvind Niklasson; Michael Levin",
+      "year": 2020,
+      "doi": "10.23915/distill.00023",
+      "url": "https://distill.pub/2020/growing-ca/",
+      "version": "Distill article published 11 February 2020, retrieved article text",
+      "reading_depth": "Actual selected Cell State, Cellular Automaton Rule, stochastic update, training and Experiments 2 and 3, plus reuse notice; not complete article or every notebook.",
+      "license": "Article diagrams/text CC BY 4.0 except separately attributed reused figures. Exact code/notebook licence was not inspected; no code copied or executed.",
+      "official_code": "The article exposes Colab reproduction notebooks and a source-GitHub link; exact repository/licence not independently inspected in this bounded task.",
+      "primary_content_paraphrase": "A shared local residual update rule and random asynchronous firing can grow and preserve a specified pattern. Pool training and damage-in-training improve recovery from erased regions. The target is an attractor; growth and regeneration are explicit earlier objectives.",
+      "implication": "局部规则、受损训练、反复恢复和随机更新已有直接先例；随机异步更新本身不能被解释成经过校准的材料条件后验。"
+    },
+    {
+      "id": "GNCA2021",
+      "title": "Learning Graph Cellular Automata",
+      "authors": "Daniele Grattarola; Lorenzo Livi; Cesare Alippi",
+      "year": 2021,
+      "doi": null,
+      "url": "https://proceedings.neurips.cc/paper/2021/file/af87f7cdcda223c41c3f3ef05a3aaeea-Paper.pdf",
+      "version": "NeurIPS 2021 proceedings PDF, twelve PDF pages including references/checklist",
+      "reading_depth": "Actual abstract, Sections 3.1-3.3 definitions / message-passing construction, selected transition-rule training and results around PDF pages 2-6, code/checklist statements; not all twelve pages.",
+      "license": "No exact article/implementation reuse licence verified in selected text. Code availability is reported through supplementary material; no repository fetched.",
+      "official_code": "Paper says code/data and training details are available through supplementary material; exact official repository and licence not resolved here.",
+      "primary_content_paraphrase": "Graph neural networks implement cellular transition rules on arbitrary graphs, including edge-dependent messages, discrete-rule emulation and convergence toward a target state. The paper separates a transition rule from its graph signal and neighborhood.",
+      "implication": "从方格改到任意关系图、让细胞交换信息、使用边属性，都不能单独作为本项目首次提出的机制。"
+    },
+    {
+      "id": "IGRM2023",
+      "title": "Data Imputation with Iterative Graph Reconstruction",
+      "authors": "Jiajun Zhong; Ning Gui; Weiwei Ye",
+      "year": 2023,
+      "doi": "10.1609/aaai.v37i9.26348",
+      "publisher_url": "https://ojs.aaai.org/index.php/AAAI/article/view/26348",
+      "publisher_pdf_attempt": "https://ojs.aaai.org/index.php/AAAI/article/download/26348/26120",
+      "actual_read_url": "https://arxiv.org/html/2212.02810",
+      "actual_read_version": "arXiv:2212.02810v2, 15 April 2024; this is later than the AAAI 2023 paper",
+      "reading_depth": "Publisher-indexed title/authors/abstract plus actual arXiv v2 Sections Preliminaries, IGRM, Bipartite Graph Learning, Friend Network Augmentation, Imputation Task, Algorithm 1 and selected experiment setup; not all results or exact publisher PDF.",
+      "access_failure": "Publisher PDF direct entry returned Anubis access denied. No challenge was bypassed; independently public author-deposited arXiv text was read with its actual version identified.",
+      "license": "Read arXiv HTML states perpetual non-exclusive arXiv licence. Publisher-indexed PDF states AAAI copyright/all rights reserved. Official code licence was not inspected; no code copied.",
+      "official_code": "https://github.com/G-AILab/IGRM (linked by the paper; not fetched or licence-verified)",
+      "primary_content_paraphrase": "An imputation system learns a sample-feature bipartite representation and iteratively reconstructs a sample friend network; the updated network and differentiated messages then inform missing-value predictions. Continuous outputs use MSE and discrete outputs use cross-entropy.",
+      "implication": "边补数据边重建关系、相似样本提供不同强度的信息，已用于缺失数据。其均值补全损失不自动提供我们需要的统一联合概率与可信区间。"
+    },
+    {
+      "id": "DiffNCA2025",
+      "title": "Parameter-efficient diffusion with neural cellular automata",
+      "authors": "John Kalkhof; Arlene Kühn; Yannik Frisch; Anirban Mukhopadhyay",
+      "year": 2025,
+      "journal": "npj Unconventional Computing 2, article 10",
+      "doi": "10.1038/s44335-025-00026-4",
+      "url": "https://www.nature.com/articles/s44335-025-00026-4",
+      "version": "Published 6 May 2025; publisher-indexed primary text",
+      "reading_depth": "Actual publisher-search-index Abstract, Introduction, Discussion and selected Methods overview including image inpainting; not complete Version of Record or Supplement.",
+      "access_failure": "Direct article entry redirected to inaccessible Nature identity authorisation. No retry/bypass or claim of direct full-text reading.",
+      "license": "Publisher index identifies open access; exact licence terms not verified in the sections actually retrieved. No article/code assets copied.",
+      "official_code": "Code availability not verified in the read material; no code fetched.",
+      "primary_content_paraphrase": "Diff-NCA and FourierDiff-NCA replace diffusion-network components with local cellular updates, with Fourier communication addressing long-range context. Inpainting and super-resolution are already illustrated without additional task training.",
+      "implication": "NCA与扩散结合并修补遮挡区已存在；仿生名字、参数较少或可修补图像不构成我们在25材料小样本上优于强GP的证据。"
+    },
+    {
+      "id": "Harmonic2003",
+      "title": "Semi-Supervised Learning Using Gaussian Fields and Harmonic Functions",
+      "authors": "Xiaojin Zhu; Zoubin Ghahramani; John Lafferty",
+      "year": 2003,
+      "venue": "ICML 2003",
+      "doi": null,
+      "url": "https://pages.cs.wisc.edu/~jerryzhu/pub/zgl.pdf",
+      "version": "Author-hosted original eight-page paper PDF",
+      "reading_depth": "Actual abstract/introduction, Gaussian-field quadratic energy and harmonic solution around PDF pages 1-2, and random-walk/electric-network interpretation. PDF text extraction has corrupted mathematical glyphs; identities below are separately stated derivations, not transcribed unreadable OCR. Not all eight pages.",
+      "license": "No explicit reusable code/article licence verified in retrieved text. No code or article assets copied.",
+      "official_code": "No implementation repository inspected.",
+      "primary_content_paraphrase": "Observed labels form boundary conditions on a weighted graph. The quadratic-energy minimum is harmonic at unknown nodes and is linked to a Gaussian field, random walks and electrical networks.",
+      "implication": "固定权重的张力松弛、边界固定和局部均衡，本身很可能只是经典图调和延拓/Gaussian条件计算；新颖性不能靠将节点改称细胞或蛛丝。"
+    },
+    {
+      "id": "SPDE2011_LIMITED",
+      "title": "An explicit link between Gaussian fields and Gaussian Markov random fields: the stochastic partial differential equation approach",
+      "authors": "Finn Lindgren; Håvard Rue; Johan Lindström",
+      "year": 2011,
+      "venue": "JRSS Series B 73, 423-498",
+      "doi_lead": "10.1111/j.1467-9868.2011.00777.x",
+      "url_attempt": "https://doi.org/10.1111/j.1467-9868.2011.00777.x",
+      "reading_depth": "Title/authors/year/venue corroborated in a primary ICML2022 paper reference list exposed by search; direct DOI was inaccessible. No original Methods or complete SPDE paper read in this task.",
+      "metadata_primary_reference_url": "https://proceedings.mlr.press/v162/oskarsson22a/oskarsson22a.pdf",
+      "metadata_reference_reading": "Only primary search-index bibliography excerpt; this ICML paper was not separately opened or counted as another reviewed original work.",
+      "license": "Not verified; no assets used.",
+      "official_code": "Not inspected.",
+      "implication": "SPDE/GMRF解释是必须承认的成熟近邻，但本轮不声称读过其推导。任意图Laplacian不自动精确等价于任意Matérn核；系数、离散化和边界条件仍需明确。"
+    }
+  ],
+  "rejected_identity_lead": {
+    "url": "https://arxiv.org/abs/1011.1912",
+    "cause": "A recalled identifier was tried before verification; it resolved to an unrelated astrophysics paper, Spatially Resolved Star Formation History Along the Disk of M82 Using Multi-Band Photometric Data.",
+    "action": "Rejected immediately as an SPDE reference; not cited as support or read as relevant material. No second guessed identifier or extra search was attempted."
+  },
+  "independent_mathematical_screening": {
+    "status": "Analytic identities and assumptions, not a new algorithm or numerical/material test",
+    "graph_energy": "For fixed symmetric nonnegative weights W, L=D-W, and fixed observed values x_O, E(x)=0.5*x^T L*x has stationary missing block L_UU*x_U=-L_UO*x_O. If each unknown component is connected to an anchored node, L_UU is positive definite and the solution is unique.",
+    "gaussian_relation": "The conditioned Gaussian field with energy beta*E has mean -L_UU^{-1}L_UO*x_O and covariance (beta*L_UU)^{-1}. Deterministic local relaxation returns its mean/mode only. Without anchored connectivity or a proper reference term, singular precision must not be silently treated as a probability distribution.",
+    "full_reference_caution": "A low-dimensional deterministic repair that omits the retained full response residual changes the current paper's probability model and can collapse uncertainty. Calling the same linear solve a wound-healing solver does not show a new predictive law.",
+    "nonlinear_updates": "State-dependent or learned edge conductance may change the model. To call its endpoint a posterior or generator, specify a compatible joint law, a normalisable energy or an explicit distributional objective and a valid sampling rule. Stable convergence alone certifies neither a target distribution nor uncertainty calibration.",
+    "update_order": "Finite asynchronous rollout can depend on update schedule, initial hidden state and assimilation order. Compare A-then-B, B-then-A and union conditioning as a necessary diagnostic. A converged mean agreement is not sufficient to certify one coherent joint distribution; finite-MCMC path effects must be separated from a genuinely incompatible model."
+  },
+  "fit_to_current_hydrogel_problem": [
+    "Prioritise physical log-shear-rate coordinates, not arbitrary table-column adjacency. Distinct properties in a sparse wide table do not form a tissue lattice merely because columns are adjacent.",
+    "Image wounds often have surrounding boundary information. One-sided curve continuation has no observed high-rate boundary; local propagation cannot by itself reveal an unobserved rheological branch.",
+    "A single-attractor repair rule may regenerate a familiar profile while losing sample-specific alternatives. Multi-modal continuation must retain plausible branches rather than heal everything toward one prototype.",
+    "The original 25 complete formulations remain the information units; extra coordinates, masks, damage locations and rollout steps do not become independent materials.",
+    "An approximately 8000-parameter local NCA rule is not automatically a low-capacity alternative to the current five-parameter correction. Count all perception, hidden-state and update-rule parameters, and compare matched information and computational budgets.",
+    "No empirical claim is made that NCA cannot work at this sample size. Its extra flexibility, cost and uncertainty behaviour have to be measured under grouped evaluation, not dismissed from parameter count alone.",
+    "Domain usefulness can count as innovation without all-new theory; a credible new materials difficulty and matched evidence are required. No exact-match exclusion across all hydrogel literature is claimed."
+  ],
+  "recommended_bounded_next_step": {
+    "priority": "Mechanism falsification before a new large neural model",
+    "null_control": "On a fully specified synthetic quadratic field, compare a local repair iteration with direct conditioned-Gaussian linear algebra. If they agree, report solver equivalence rather than a new completion model.",
+    "failure_control": "Use two analytically specified curves that agree at low-rate anchors but differ at higher rates. A repair method should preserve ambiguity; a visually smooth endpoint is not evidence of recovery.",
+    "candidate_material_increment": "Investigate whether local residual or relationship inconsistency can identify a concrete high-shear branch ambiguity and a genuinely informative extra measurement, beyond anchor-distance and GP uncertainty criteria. This is a hypothesis, not an established result from these papers.",
+    "strong_controls": [
+      "Frozen current curvature Gaussian, coordinate GP and conditional Gaussian",
+      "Harmonic/linear local repair with the same boundary information",
+      "FPCA or another standard functional model if representation learning is proposed",
+      "Ordinary message-passing or IGRM-family control if learning a relation graph is proposed",
+      "Highest-allowed-rate, fixed/random and GP target-information selection if an extra measurement is proposed"
+    ],
+    "must_measure": [
+      "One-sided continuation separately from interior missing intervals",
+      "Observed-anchor preservation and dependence on physical coordinate spacing",
+      "CRPS / point error, interval score, coverage and sharpness separately",
+      "Joint/conditional consistency and retention of the full residual or plausible branches",
+      "Initialisation, update order, horizon and random seed sensitivity",
+      "Full parameter counts, material grouping and all failures"
+    ],
+    "stops": [
+      "Only the equilibrium of an unchanged Gaussian is recovered and no declared computational gain exists",
+      "Repair shrinks intervals or erases branches without better proper scores",
+      "Simple GP or a standard fixed-boundary solver performs as well under the same information budget",
+      "The benefit requires target-informed graph construction, window selection or repaired values reused as measured truth",
+      "The method only fills interior gaps and cannot address the declared one-sided continuation use"
+    ],
+    "evidence_boundary": "Synthetic checks and the already-consumed 25P/46 external curves cannot establish new independent material confirmation. Current MLST manuscript and all frozen science remain unchanged."
+  },
+  "parent_summary": "可以借鉴局部感知、保持已知边界、反复恢复和主动探测；但固定图松弛、NCA再生、任意图消息传递、迭代关系重建及NCA扩散inpainting均已有直接先例。最值得证明的是这些机制在水凝胶单侧续接中是否处理了现有强GP遗漏的观测歧义，而不是让相同预测多迭代几步。"
+}

@@ -1,0 +1,26 @@
+{
+  "actual_utc": "2026-11-04T15:18:06.156874+00:00",
+  "reason": "Preserve v1 before adding missing empirical-audit assets and fixing process-plot spacing; numerical configuration will be unchanged.",
+  "files": [
+    {
+      "file": "repair_graph.py",
+      "sha256": "dec758d93c4ea219488e0a0d5f83347aac57bf76324b8f6581a5e7d90f79507e"
+    },
+    {
+      "file": "local_repair.py",
+      "sha256": "0883e00ad9c6d3c945d238b326a1c4fb30041d47ba9d4868df2bda8d45ae6b60"
+    },
+    {
+      "file": "run_process_demo.py",
+      "sha256": "3bb8c4c017be599475b495c5cc55bbdd96c112bc2c040d7f0420422ef874dbef"
+    },
+    {
+      "file": "PROTOCOL.json",
+      "sha256": "1502c3e1bfcac9df851b0edae3f5665e2df27a057082bad0d16f74cd1a969a75"
+    },
+    {
+      "file": "README.txt",
+      "sha256": "8bcebc7eeae6476a650fa7f9ce3ac97092af2c09a5a28989a22e4203e3e6a7e8"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "actual_utc": "2026-11-04T15:21:35.460065+00:00",
+  "status": "PASS",
+  "method": "Both final PNGs actually opened using view_image after V2 replay",
+  "selected_files": [
+    {
+      "file": "output_r2/REPAIR_PROCESS.png",
+      "sha256": "aca3f43a0aac4711b49267f8e99aadf35630fc76a762f8da952f432a6d1b2a5a"
+    },
+    {
+      "file": "output_r2/REPAIR_PROBABILITY.png",
+      "sha256": "b3693cc919cb9cb6c3644143d0c6516352f9e1d128789266d100267293e1d075"
+    }
+  ],
+  "findings": [
+    "Six actual computed snapshots visible with unchanged synthetic observed perimeter",
+    "No panel-title or axis-label overlap in the selected V2 process figure",
+    "Both exact and empirical uncertainty bands/lines fit within the probability figure",
+    "Every image says synthetic coordinates/arbitrary units; no material/biological measurement implied"
+  ],
+  "historical_defect": "Initial output/REPAIR_PROCESS.png has crowded top-row x labels; retained as a non-selected draft. Plot-only R2 rendering and later same-seed numeric replay are distinct and recorded."
+}

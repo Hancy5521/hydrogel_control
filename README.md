@@ -98,3 +98,8 @@ The corrected external replay entry point now checks the pinned20 scientific com
 The current23-page main and15-page supplement preserve all scientific numeric results,89native mathematical objects and52previous references; two hydrogel/rheology neighbours are added as references53-54. Watergel reduced-representation GP inference already has precedents. The supported novelty is the specific precursor-ink continuation adaptation and its matched evidence, not a newly invented Gaussian family. Read docs/FINAL_AUTHOR_REVIEW.txt and docs/final_review_20261102/ for the bounded literature/code/evidence findings and closed defects. Earlier citation/gap/feasibility receipts under docs/evidence are historical; their original bytes are preserved rather than silently recertified.
 
 Inference and pinned scientific dependencies require Python3.10+ and the repository requirements. The package-level SHA verifier now uses streaming SHA256 compatible with that range. In this checkout use `python tools/verify_review_package.py --package-root PATH_TO_LOCAL_REVIEW_PACKAGE`; in a delivered package the same tool is copied to its root as verify_resources.py. Add --require-history for the complete companion containing the two original historical ZIPs. This reads hashes only and does not reconstruct or run material data.
+
+
+## Abstract repair-process research
+
+A separate synthetic [local-repair process demo](mlst/future_research/repair_process/README.txt) models local sensing, propagation and blank repair. It is not a biological/material simulation or an update to the paper model. Selected pictures, isolated code and fixed-run audit limits are included.

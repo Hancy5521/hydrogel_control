@@ -1,0 +1,85 @@
+{
+  "classification": "Synthetic process demonstrator, not a trained model, new algorithm or material benchmark",
+  "synthetic_only": true,
+  "started_utc": "2026-11-04T15:11:43.803672+00:00",
+  "completed_utc": "2026-11-04T15:11:45.875070+00:00",
+  "completed_asia_shanghai": "2026-11-04T23:11:45.875070+08:00",
+  "protocol_sha256": "1502c3e1bfcac9df851b0edae3f5665e2df27a057082bad0d16f74cd1a969a75",
+  "source_sha256": {
+    "repair_graph.py": "dec758d93c4ea219488e0a0d5f83347aac57bf76324b8f6581a5e7d90f79507e",
+    "local_repair.py": "0883e00ad9c6d3c945d238b326a1c4fb30041d47ba9d4868df2bda8d45ae6b60",
+    "run_process_demo.py": "3bb8c4c017be599475b495c5cc55bbdd96c112bc2c040d7f0420422ef874dbef"
+  },
+  "python": "3.13.5",
+  "numpy": "2.1.3",
+  "matplotlib": "3.10.0",
+  "status": "PASS_FIXED_SYNTHETIC_DIAGNOSTICS",
+  "checks": {
+    "observations_exactly_preserved": true,
+    "observed_mask_never_promotes_generated_values": true,
+    "fixed_precision_positive_definite": true,
+    "all_missing_nodes_activate": true,
+    "deterministic_mean_matches_exact": true,
+    "Gibbs_mean_diagnostic": true,
+    "Gibbs_variance_diagnostic": true,
+    "deterministic_ensemble_collapses": true
+  },
+  "config": {
+    "graph": {
+      "size": 13,
+      "hole_low": 3,
+      "hole_high": 10,
+      "ridge": 0.3,
+      "edge_weight": 1.0
+    },
+    "deterministic_sweeps": 300,
+    "snapshot_sweeps": [
+      0,
+      1,
+      2,
+      4,
+      20,
+      300
+    ],
+    "gibbs": {
+      "seed": 20261104,
+      "burn_in": 1000,
+      "retained": 12000,
+      "thinning": 2
+    },
+    "collapse": {
+      "members": 32,
+      "sweeps": 300,
+      "seed": 7
+    }
+  },
+  "nodes": 169,
+  "genuine_synthetic_observed_nodes": 120,
+  "missing_nodes": 49,
+  "activation_depth_max": 4,
+  "snapshot_missing_activation_counts": [
+    0,
+    24,
+    40,
+    49,
+    49,
+    49
+  ],
+  "metrics": {
+    "deterministic_max_abs_mean_error": 1.1102230246251565e-16,
+    "max_standardized_Gibbs_mean_error": 0.030191868954144576,
+    "max_relative_Gibbs_variance_error": 0.03365503653884905,
+    "relative_covariance_Frobenius_error": 0.05024068104051944,
+    "max_deterministic_ensemble_variance": 5.08942519497427e-32
+  },
+  "material_fit_forecast_targetscore_calls": 0,
+  "new_measurements": 0,
+  "limits": [
+    "Fixed Gaussian precision and local updates are established mathematics",
+    "A surrounded grid hole is not evidence for one-sided curve continuation",
+    "Activation states before convergence are computational transients, not calibrated posteriors",
+    "Monte Carlo gates are declared software diagnostics, not material calibration guarantees",
+    "Random Gibbs trajectories remain variable after reaching stationarity; they should not freeze to one curve",
+    "Generated states never become new observed data"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "registered_utc": "2026-11-04T15:18:07.238742+00:00",
+  "classification": "Fixed synthetic process-simulation configuration, not a material experiment preregistration",
+  "scientific_question": "Can local blank repair preserve observations and recover a known Gaussian mean while stochastic repair retains the corresponding uncertainty?",
+  "source_sha256": {
+    "repair_graph.py": "dec758d93c4ea219488e0a0d5f83347aac57bf76324b8f6581a5e7d90f79507e",
+    "local_repair.py": "0883e00ad9c6d3c945d238b326a1c4fb30041d47ba9d4868df2bda8d45ae6b60",
+    "run_process_demo.py": "e35cd14c419a3e6f0cf60b7aee83c94ebebff393cd40b243703682ea8ffcde7d"
+  },
+  "config": {
+    "graph": {
+      "size": 13,
+      "hole_low": 3,
+      "hole_high": 10,
+      "ridge": 0.3,
+      "edge_weight": 1.0
+    },
+    "deterministic_sweeps": 300,
+    "snapshot_sweeps": [
+      0,
+      1,
+      2,
+      4,
+      20,
+      300
+    ],
+    "gibbs": {
+      "seed": 20261104,
+      "burn_in": 1000,
+      "retained": 12000,
+      "thinning": 2
+    },
+    "collapse": {
+      "members": 32,
+      "sweeps": 300,
+      "seed": 7
+    }
+  },
+  "diagnostic_gates": {
+    "deterministic_max_abs_mean_error": 1e-10,
+    "max_standardized_mean_error": 0.12,
+    "max_relative_variance_error": 0.12,
+    "collapsed_variance_upper_bound": 1e-20
+  },
+  "gates_note": "Fixed numerical diagnostic tolerances for this known Gaussian fixture, not proof of calibration or accuracy on material data. Report failure without changing seed or selecting a new configuration.",
+  "front_rule": "Activation depends only on immutable observed mask and graph distance; sampling uses fixed systematic scans after deterministic initialization. No state-dependent scan or edge-weight adaptation.",
+  "no_material_data": true,
+  "no_training": true,
+  "stop": "One run; preserve all outputs and pass/fail. Only an actual implementation bug may warrant a separately preserved corrected run.",
+  "version": "V2_AUDIT_ASSET_AND_LAYOUT_REPLAY",
+  "parent_protocol_sha256": "1502c3e1bfcac9df851b0edae3f5665e2df27a057082bad0d16f74cd1a969a75",
+  "parent_source_directory": "history/initial_numerical_run",
+  "reason": "Add missing empirical moments/quantiles for independent verification and fix crowded panel labels. Exactly the same graph, observations, seeds, burn-in, retained count, thinning and diagnostic gates. This is a replay, not a selected new experiment."
+}

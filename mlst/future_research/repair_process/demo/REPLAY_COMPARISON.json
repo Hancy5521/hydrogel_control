@@ -1,0 +1,18 @@
+{
+  "actual_utc": "2026-11-04T15:19:07.218409+00:00",
+  "classification": "Exact same-seed replay for audit-asset and visual-layout repair, not independent confirmation",
+  "status": "PASS",
+  "checks": {
+    "config_exactly_unchanged": true,
+    "diagnostic_gates_exactly_unchanged": true,
+    "all_five_numeric_metrics_exactly_unchanged": true,
+    "all_eight_gates_exactly_unchanged": true,
+    "fixture_bytes_unchanged": true,
+    "trajectory_bytes_unchanged": true,
+    "empirical_summary_now_present": true
+  },
+  "parent_result_sha256": "9283899e55acce0d99313dfb74e9dcae5a340465bfdd534f34dba610ee8408cb",
+  "current_result_sha256": "a56f3fc5628964a11592a0d8505ff15433bb619ba5e4662cadf0f71c1fc361e4",
+  "new_configurations": 0,
+  "new_material_execution": 0
+}

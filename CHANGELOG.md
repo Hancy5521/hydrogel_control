@@ -29,3 +29,5 @@ Retained707baseline and old local archives. Closed witnessed map/reader identity
 
 
 2026-11-04 MLST targeted author review: new14/25-page manuscript pair and unsentcoverletter;58refs, saved externalUQ diagnostics, independent scalar replay, author access/confirmation gates, separately labeled future research. Original scientific runtime/models/score files and older paper paths unchanged. No new physical measurement/model fit/forecast/targetscore.
+
+2026-11-04 Added an isolated synthetic local-repair process demonstrator and exact mechanism checks. No paper/model/material result changed; no new biological mechanism or algorithm efficacy claimed.

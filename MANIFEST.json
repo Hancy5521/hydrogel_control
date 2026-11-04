@@ -1,5 +1,5 @@
 {
-  "checkpoint": "hydrogel-mlst-author-review-20261104",
+  "checkpoint": "hydrogel-mlst-author-review-20261104-with-separate-process-demo",
   "files": [
     {
       "path": ".gitattributes",
@@ -15,9 +15,9 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 3312,
-      "sha256": "1f773735eeeb6f01a4889b8c82720ca9ed163ac3b4c12997b41111d5363a2d5e",
-      "git_blob_sha1": "7f4177498eafebc185ecf32f14bb36918d19468f"
+      "bytes": 3515,
+      "sha256": "008ee00e697abf0dbb4c888d1a285b2dc38ad0d4ab40716d692c92aec87600de",
+      "git_blob_sha1": "c292db2ce1db28b3f4521774c4f6a38b2895f56b"
     },
     {
       "path": "CHECKPOINT.json",
@@ -494,6 +494,210 @@
       "git_blob_sha1": "8e808c51ebfc1e7f08fe21b91547c28eb58ff296"
     },
     {
+      "path": "mlst/future_research/repair_process/analysis/COMPUTATIONAL_PRIOR_ART.json",
+      "bytes": 17587,
+      "sha256": "f89cba12c95f3f2ef2997549da501b3048299171203d7b88576a24d54757547a",
+      "git_blob_sha1": "a0e73d5913f3dd5d8a48ab8be44401f200f11bf7"
+    },
+    {
+      "path": "mlst/future_research/repair_process/analysis/EXACT_FIXTURE_RESULTS.json",
+      "bytes": 5756,
+      "sha256": "493af252bbe9762a707ca18bec713f5c229cdcbc5e7e74cd2c645bfbb23bb923",
+      "git_blob_sha1": "4a01b677bc3d0a0eadc273a5f1ff5b1c5cfd669a"
+    },
+    {
+      "path": "mlst/future_research/repair_process/analysis/INDEPENDENT_AUDIT_SUMMARY.json",
+      "bytes": 998,
+      "sha256": "062efee97ee9319333fa2a3cb4a04f42bb9be7f903bdfa200dbbb9d322ba59ae",
+      "git_blob_sha1": "7bb87f60bb86751604f67d28f1892358b49b39c3"
+    },
+    {
+      "path": "mlst/future_research/repair_process/demo/history/initial_numerical_run/local_repair.py",
+      "bytes": 3194,
+      "sha256": "0883e00ad9c6d3c945d238b326a1c4fb30041d47ba9d4868df2bda8d45ae6b60",
+      "git_blob_sha1": "05bd737ab42b53dd5442a03b4dc6f89bb44327cc"
+    },
+    {
+      "path": "mlst/future_research/repair_process/demo/history/initial_numerical_run/PRESERVATION_RECEIPT.json",
+      "bytes": 886,
+      "sha256": "f954730695cbf010722be51ec02700f60fd042aef1e9239521a985efa86bec7d",
+      "git_blob_sha1": "7886408fc6dd189a4546349db1c24b5761cfd719"
+    },
+    {
+      "path": "mlst/future_research/repair_process/demo/history/initial_numerical_run/PROTOCOL.json",
+      "bytes": 1984,
+      "sha256": "1502c3e1bfcac9df851b0edae3f5665e2df27a057082bad0d16f74cd1a969a75",
+      "git_blob_sha1": "6a1a01c5aff864ae019fd951b487a8ff7a6dcd6a"
+    },
+    {
+      "path": "mlst/future_research/repair_process/demo/history/initial_numerical_run/README.txt",
+      "bytes": 3874,
+      "sha256": "8bcebc7eeae6476a650fa7f9ce3ac97092af2c09a5a28989a22e4203e3e6a7e8",
+      "git_blob_sha1": "2afa9e0a110fb764e6e697319fcc451aa7f56704"
+    },
+    {
+      "path": "mlst/future_research/repair_process/demo/history/initial_numerical_run/repair_graph.py",
+      "bytes": 2979,
+      "sha256": "dec758d93c4ea219488e0a0d5f83347aac57bf76324b8f6581a5e7d90f79507e",
+      "git_blob_sha1": "a3d6a777c2fbe96f3b57cf95a36e4f09be3a9696"
+    },
+    {
+      "path": "mlst/future_research/repair_process/demo/history/initial_numerical_run/run_process_demo.py",
+      "bytes": 10796,
+      "sha256": "3bb8c4c017be599475b495c5cc55bbdd96c112bc2c040d7f0420422ef874dbef",
+      "git_blob_sha1": "1368957bc3d7d4ab9805a2ecebd934cfb65c85d2"
+    },
+    {
+      "path": "mlst/future_research/repair_process/demo/local_repair.py",
+      "bytes": 3194,
+      "sha256": "0883e00ad9c6d3c945d238b326a1c4fb30041d47ba9d4868df2bda8d45ae6b60",
+      "git_blob_sha1": "05bd737ab42b53dd5442a03b4dc6f89bb44327cc"
+    },
+    {
+      "path": "mlst/future_research/repair_process/demo/output/REPAIR_PROBABILITY.png",
+      "bytes": 123532,
+      "sha256": "b3693cc919cb9cb6c3644143d0c6516352f9e1d128789266d100267293e1d075",
+      "git_blob_sha1": "c62878c114bd0b696b582d04b4a63e7465ba8b7d"
+    },
+    {
+      "path": "mlst/future_research/repair_process/demo/output/REPAIR_PROCESS.png",
+      "bytes": 132692,
+      "sha256": "5e68400bc5f42d162a230588024b7d14061720b45e83a505782261de13d867e4",
+      "git_blob_sha1": "35edfa535209e7ea5b8bfd63da8d21ace5d379ef"
+    },
+    {
+      "path": "mlst/future_research/repair_process/demo/output/REPAIR_PROCESS_R2.json",
+      "bytes": 821,
+      "sha256": "18b2e6c223fa0e27f1c01ebb7e97c4464ca4c5611a9ac3f81691aa202c648f8e",
+      "git_blob_sha1": "14aef7f6a0e53a79f302807bb451d2bae89adff2"
+    },
+    {
+      "path": "mlst/future_research/repair_process/demo/output/REPAIR_PROCESS_R2.png",
+      "bytes": 135744,
+      "sha256": "399d94166a7b5eb6dd8ec7c7f43d64016f426244b300106a6298916b00a47a04",
+      "git_blob_sha1": "df69541ddd1b13f088716cea047cd8d7f0c37b79"
+    },
+    {
+      "path": "mlst/future_research/repair_process/demo/output/RESULTS.json",
+      "bytes": 2897,
+      "sha256": "9283899e55acce0d99313dfb74e9dcae5a340465bfdd534f34dba610ee8408cb",
+      "git_blob_sha1": "c747ad7e7b35b1009790129b359789eac526e2df"
+    },
+    {
+      "path": "mlst/future_research/repair_process/demo/output/SYNTHETIC_FIXTURE.json",
+      "bytes": 108024,
+      "sha256": "cd1493cc43cb33325138aa30eb99ac021dbca177e726508a755d24785d7c060c",
+      "git_blob_sha1": "a74a7f924ac3cd1d36e8e3bdecf1515a35b25626"
+    },
+    {
+      "path": "mlst/future_research/repair_process/demo/output/TRAJECTORY.json",
+      "bytes": 62459,
+      "sha256": "f850625fe2cf257f2f5d548788c28c86a8aa064d119303f1896b232d3644226a",
+      "git_blob_sha1": "20c1e662d193dfa5da2715ee825967458d2ebfae"
+    },
+    {
+      "path": "mlst/future_research/repair_process/demo/output_r2/EMPIRICAL_SUMMARIES.json",
+      "bytes": 80995,
+      "sha256": "ef0373eee3c8bf60be3af33ee1d3a8ade3f459e655fb2049975e0c8a4eab1e93",
+      "git_blob_sha1": "8352edd4722a595664b99744fa4415b0fac66159"
+    },
+    {
+      "path": "mlst/future_research/repair_process/demo/output_r2/REPAIR_PROBABILITY.png",
+      "bytes": 123532,
+      "sha256": "b3693cc919cb9cb6c3644143d0c6516352f9e1d128789266d100267293e1d075",
+      "git_blob_sha1": "c62878c114bd0b696b582d04b4a63e7465ba8b7d"
+    },
+    {
+      "path": "mlst/future_research/repair_process/demo/output_r2/REPAIR_PROCESS.png",
+      "bytes": 134927,
+      "sha256": "aca3f43a0aac4711b49267f8e99aadf35630fc76a762f8da952f432a6d1b2a5a",
+      "git_blob_sha1": "32a5ce5162776271b6d0b05fe54fd01e6a6bdfa6"
+    },
+    {
+      "path": "mlst/future_research/repair_process/demo/output_r2/RESULTS.json",
+      "bytes": 2897,
+      "sha256": "a56f3fc5628964a11592a0d8505ff15433bb619ba5e4662cadf0f71c1fc361e4",
+      "git_blob_sha1": "0e4668b1aa64c28eed2d9cae35ac6599def245ac"
+    },
+    {
+      "path": "mlst/future_research/repair_process/demo/output_r2/SYNTHETIC_FIXTURE.json",
+      "bytes": 108024,
+      "sha256": "cd1493cc43cb33325138aa30eb99ac021dbca177e726508a755d24785d7c060c",
+      "git_blob_sha1": "a74a7f924ac3cd1d36e8e3bdecf1515a35b25626"
+    },
+    {
+      "path": "mlst/future_research/repair_process/demo/output_r2/TRAJECTORY.json",
+      "bytes": 62459,
+      "sha256": "f850625fe2cf257f2f5d548788c28c86a8aa064d119303f1896b232d3644226a",
+      "git_blob_sha1": "20c1e662d193dfa5da2715ee825967458d2ebfae"
+    },
+    {
+      "path": "mlst/future_research/repair_process/demo/PROTOCOL.json",
+      "bytes": 1984,
+      "sha256": "1502c3e1bfcac9df851b0edae3f5665e2df27a057082bad0d16f74cd1a969a75",
+      "git_blob_sha1": "6a1a01c5aff864ae019fd951b487a8ff7a6dcd6a"
+    },
+    {
+      "path": "mlst/future_research/repair_process/demo/PROTOCOL_V2.json",
+      "bytes": 2459,
+      "sha256": "b51715d42e3995969288f6a6718e3fbb0643460399bc26ca2c9ea14af24aed70",
+      "git_blob_sha1": "c3394d01904c84d75cbcf15cd9b4a968d18c9386"
+    },
+    {
+      "path": "mlst/future_research/repair_process/demo/README.txt",
+      "bytes": 4240,
+      "sha256": "03c6bf4a3dd5708ede784861add7ccdc6569779fa3a8b1d70cbd0d30042672c6",
+      "git_blob_sha1": "cfc0e9e0d8a466180bd3966baa7d654ce1cb8884"
+    },
+    {
+      "path": "mlst/future_research/repair_process/demo/render_process_snapshots.py",
+      "bytes": 3344,
+      "sha256": "2a7bab25357e344c13c2c4a720f1dbfe063809781db024cbfecbbc87cf003dc5",
+      "git_blob_sha1": "093d8d65a331ef66beeee01693f61264637a378a"
+    },
+    {
+      "path": "mlst/future_research/repair_process/demo/repair_graph.py",
+      "bytes": 2979,
+      "sha256": "dec758d93c4ea219488e0a0d5f83347aac57bf76324b8f6581a5e7d90f79507e",
+      "git_blob_sha1": "a3d6a777c2fbe96f3b57cf95a36e4f09be3a9696"
+    },
+    {
+      "path": "mlst/future_research/repair_process/demo/REPLAY_COMPARISON.json",
+      "bytes": 782,
+      "sha256": "433a43464c7e23d9523156cf8b06e8eb145f3a1f4f3dfe23b477c0df6e4ccc49",
+      "git_blob_sha1": "bd02c33ae81e48c6c2516adab2a887be76f1031b"
+    },
+    {
+      "path": "mlst/future_research/repair_process/demo/requirements.txt",
+      "bytes": 34,
+      "sha256": "e8c3a6bd8aa3914ce8299fd49f6dcec72e4a400e64b99d9dd7a5e60477ebe8e0",
+      "git_blob_sha1": "b0fba1a5ba38ef907b13fe2459f499920b390839"
+    },
+    {
+      "path": "mlst/future_research/repair_process/demo/run_process_demo.py",
+      "bytes": 11882,
+      "sha256": "e35cd14c419a3e6f0cf60b7aee83c94ebebff393cd40b243703682ea8ffcde7d",
+      "git_blob_sha1": "53c6504764af3de009c88fdfb5f687dcaf26e153"
+    },
+    {
+      "path": "mlst/future_research/repair_process/demo/VISUAL_QA_R2.json",
+      "bytes": 1081,
+      "sha256": "3008f6243e700ca0db776def47be1233162ea5362d7573622db58fd31af12775",
+      "git_blob_sha1": "293eaf9811d5d0dc44006749f7d3b1c336d3a91b"
+    },
+    {
+      "path": "mlst/future_research/repair_process/PROCESS_EXPLANATION_ZH.txt",
+      "bytes": 5758,
+      "sha256": "065dfc6c85b2143db84e04700885f5a8ed608ebabfc4952602f7552323be7f4f",
+      "git_blob_sha1": "aeff0158ae53897dce62ec053f8eeca9c53a17f2"
+    },
+    {
+      "path": "mlst/future_research/repair_process/README.txt",
+      "bytes": 1903,
+      "sha256": "57955ee4c714553eb7993068e414e9a65ba97dc3972c56d922ccb128c4781e57",
+      "git_blob_sha1": "7b13f59dcf55e841ae4258703720655c2d9569e9"
+    },
+    {
       "path": "mlst/history/BASE_CHECKPOINT.json",
       "bytes": 2036,
       "sha256": "0930e162de0c1e0a21204acf419f893f4cb71c6a3fb78ebc253d5b0c299ab278",
@@ -723,9 +927,9 @@
     },
     {
       "path": "README.md",
-      "bytes": 10999,
-      "sha256": "79c23d74124d33ef04c3cb3b69f8dbe94094ee116b3ec93c2a531da059f36db5",
-      "git_blob_sha1": "93231d667f48c3e0ee3511f29887a21c4b1a5913"
+      "bytes": 11342,
+      "sha256": "a33a5a09d27f84e3a42b2da8690081a24546412b30638fe0bc5593e0836996dd",
+      "git_blob_sha1": "feec50c8b0ed247a2678ed370ed47d1e49bd9566"
     },
     {
       "path": "reproducibility/.gitignore",

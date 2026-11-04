@@ -1,0 +1,17 @@
+{
+  "actual_utc": "2026-11-04T15:28:28.231636+00:00",
+  "status": "PASS",
+  "exact_rational_fixture_checks": 80,
+  "process_checks": 394,
+  "process_audit_receipt_sha256": "326dd526f9221ece5c33db5e4f5db92c01e938e39fe7e0c212ce719e98aa9064",
+  "synthetic_only": true,
+  "material_data_reads_fit_forecast_targetscore": 0,
+  "method": "Independent full-grid covariance conditioning, sparse deterministic replay and recomputation from saved empirical moments. No new Gibbs sampling.",
+  "scope_limits": [
+    "The retained chain is autocorrelated; diagnostic errors are not MCSE or calibration guarantees",
+    "No full per-sample audit of12000retainedstates",
+    "Quantiles were checked against source formula and saved-array structure, not recomputed from an unavailable original chain",
+    "V2 is an identical-seed auditability/layout replay, not independent confirmation",
+    "All classical Gaussian/smoothing/Gibbs principles remain attributed, not a new algorithm claim"
+  ]
+}

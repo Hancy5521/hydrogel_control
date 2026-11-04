@@ -1,0 +1,20 @@
+{
+  "actual_utc": "2026-11-04T15:14:52.221917+00:00",
+  "classification": "Plot-only label-spacing correction from unmodified saved synthetic states",
+  "source_sha256": "2a7bab25357e344c13c2c4a720f1dbfe063809781db024cbfecbbc87cf003dc5",
+  "fixture_sha256": "cd1493cc43cb33325138aa30eb99ac021dbca177e726508a755d24785d7c060c",
+  "trajectory_sha256": "f850625fe2cf257f2f5d548788c28c86a8aa064d119303f1896b232d3644226a",
+  "selected_output": "REPAIR_PROCESS_R2.png",
+  "output_sha256": "399d94166a7b5eb6dd8ec7c7f43d64016f426244b300106a6298916b00a47a04",
+  "snapshots": [
+    0,
+    1,
+    2,
+    4,
+    20,
+    300
+  ],
+  "new_numerical_execution": false,
+  "initial_figure_retained": "REPAIR_PROCESS.png: upper x labels crowded lower panel titles; not selected for delivery",
+  "visual_QA_pending": true
+}
