@@ -1,0 +1,64 @@
+{
+  "actual_utc": "2026-11-04T14:21:14.087474+00:00",
+  "classification": "MLST targeted author-review manuscript, not submitted or certified publication ready",
+  "base_commit": "778d9372a9c5847205db3289e81a3c73aee45962",
+  "main_pages": 14,
+  "supplement_pages": 25,
+  "cover_letter_pages": 1,
+  "references": 58,
+  "visible_whitespace_tokens": {
+    "without_native_math": 6149,
+    "including_native_math": 6433,
+    "includes_references_captions_tables": true,
+    "journal_counting_convention_not_assumed": true
+  },
+  "documents": {
+    "Hydrogel_Continuation_MLST.docx": {
+      "sha256": "67e99f20136871d67fe5ba95b0a0325ece05767a02b52a714c35bd3528e2396e",
+      "bytes": 600318
+    },
+    "MLST_Cover_Letter.docx": {
+      "sha256": "00769a8050d7500cd26cbc16616946bbe6cbdddef2edf1f829583a0ae5a89b99",
+      "bytes": 37810
+    },
+    "Supplement_MLST.docx": {
+      "sha256": "5c5346b619245ec17715cd548430eebd45466b014fd1d2a489b46159d0dae01a",
+      "bytes": 915874
+    }
+  },
+  "original_science_unchanged": true,
+  "all_89_original_native_math_objects_retained_in_SI": true,
+  "all_14_original_numeric_tables_retained": true,
+  "new_evidence": "Fixed summary of consumed external scalar scores only; four sources and three Gaussian methods. No fit/forecast/target score/calibration.",
+  "independent_saved_UQ_audit": {
+    "checks": 3816,
+    "failures": 0,
+    "max_absolute_difference": 4e-15
+  },
+  "Liverpool_candidate": {
+    "zero_coverage_native_curves": 4,
+    "native_curves": 15,
+    "interval_score90_log": 3.377353482433196,
+    "width90_log": 0.7306708288786855
+  },
+  "Liverpool_conditional_Gaussian": {
+    "zero_coverage_native_curves": 0,
+    "native_curves": 15,
+    "interval_score90_log": 1.6401785115705874,
+    "width90_log": 1.4888858945228491
+  },
+  "open_author_gates": [
+    "publication access/reuse and complete original fitting replay inputs",
+    "author identities declarations and critical AI-use verification"
+  ],
+  "stronger_claim_gaps": [
+    "unconsumed compatible same-domain formulations/preparation batches",
+    "reserved calibration units with specified coverage target",
+    "representation robustness and modern model comparisons not established",
+    "actual experimental resource savings not measured"
+  ],
+  "future_innovation": "Decision note only; no future mechanism is represented as a tested current-paper result",
+  "no_raw_private_arrays_uploaded": true,
+  "automatic_restart": false,
+  "acceptance_probability_estimate": null
+}

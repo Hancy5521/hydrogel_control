@@ -1,0 +1,292 @@
+{
+  "classification": "Future innovation decision only: untrained, unvalidated and excluded from frozen MLST results",
+  "started_utc": "2026-11-04T14:08:45+00:00",
+  "completed_utc": "2026-11-04T14:18:22.993110+00:00",
+  "completed_asia_shanghai": "2026-11-04T22:18:22.993110+08:00",
+  "execution_scope": {
+    "model_training": 0,
+    "model_inference": 0,
+    "measured_response_reads": 0,
+    "target_scoring": 0,
+    "new_material_evidence": 0,
+    "source_contact": false,
+    "private_upload": false,
+    "frozen_manuscripts_or_runtime_changed": false
+  },
+  "bounded_search": {
+    "queries_used": 6,
+    "query_cap": 6,
+    "queries": [
+      "\"goal-oriented\" \"dimension reduction\" \"prediction\" Gaussian",
+      "\"Gaussian processes\" \"inducing features\" experimental design",
+      "\"Student-t Processes as Alternatives to Gaussian Processes\"",
+      "\"input-dependent\" \"mixtures of Gaussian processes\"",
+      "\"Non-identifiability of parameters\" \"shear-thinning\"",
+      "\"selective regression\" \"risk coverage\""
+    ],
+    "original_work_entries_attempted": 8,
+    "original_source_cap": 8,
+    "source_counting": "Eight selected original works and eight direct entryURLattempts. Search-discovery results are not counted as additional works read. Re-open/find calls were limited to these same entries.",
+    "no_further_search_after_cap": true,
+    "systematic_novelty_claim": false
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Gaussian process based dimension reduction for goal-oriented sequential design",
+      "authors": "Malek Ben Salem; Francois Bachoc; Olivier Roustant; Fabrice Gamboa; Lionel Tomaso",
+      "year": 2019,
+      "doi": "10.1137/18M1167930",
+      "version": "HAL identifier hal-01688329v2, metadata linked from author institutional publication listing",
+      "entry_url": "https://hal.science/hal-01688329v2/document",
+      "reading_depth": "Primary author-publication search metadata and title/DOI only. HAL direct entry returned Anubis access denied; no full text read and no bypass.",
+      "license": "Not verified in bounded accessible material; no article assets copied.",
+      "limited_takeaway": "Goal-oriented GP dimension reduction is an established subject. Exact objective-equivalence with our proposed shape representation was not verified.",
+      "routes": [
+        "A"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "Inter-domain Gaussian Processes for Sparse Inference using Inducing Features",
+      "authors": "Miguel Lazaro-Gredilla; Anibal R. Figueiras-Vidal",
+      "year": 2009,
+      "doi": null,
+      "version": "NeurIPS2009 proceedings PDF,9pages",
+      "entry_url": "https://papers.nips.cc/paper_files/paper/2009/file/5ea1649a31336092c05438df996a3e59-Paper.pdf",
+      "reading_depth": "Actual selected abstract/introduction, Section3.1 linear-feature construction/covariances and3.2 inducing features, relation/discussion excerpts; not complete9pages.",
+      "license": "No reuse license verified from selected PDF text; no article assets copied.",
+      "limited_takeaway": "Linear functionals, cross-domain code covariances and feature selection are precedented. Their conditional approximation differs from retaining the complete residual in our frozen model.",
+      "routes": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "S3",
+      "title": "Near-Optimal Sensor Placements in Gaussian Processes: Theory, Efficient Algorithms and Empirical Studies",
+      "authors": "Andreas Krause; Ajit Singh; Carlos Guestrin",
+      "year": 2008,
+      "doi": null,
+      "version": "JMLR9:235-284,50pagePDF",
+      "entry_url": "https://www.jmlr.org/papers/volume9/krause08a/krause08a.pdf",
+      "reading_depth": "Actual selected abstract/introduction, Section2.2 GP conditioning and query goals, and search-returned mutual-information comparison passages. Not all50pages.",
+      "license": "PDF states copyright2008authors; no separate CC permission inferred; no article assets copied.",
+      "limited_takeaway": "Goal-dependent GP uncertainty reduction and measurement placement are mature strong controls, not new merely by changing sensors to shear rates.",
+      "routes": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "S4",
+      "title": "Student-t Processes as Alternatives to Gaussian Processes",
+      "authors": "Amar Shah; Andrew Gordon Wilson; Zoubin Ghahramani",
+      "year": 2014,
+      "doi": null,
+      "version": "AISTATS2014,PMLR33:877-885,9pagePDF",
+      "entry_url": "https://proceedings.mlr.press/v33/shah14.pdf",
+      "reading_depth": "Actual selected abstract/introduction, predictive distribution and observation-dependent covariance in Section4.2, scalar-mixture equivalence in4.3. Not full9pages.",
+      "license": "Proceedings PDF copyright2014authors; no added redistribution claim.",
+      "limited_takeaway": "A global scale mixture and anchor-value-dependent covariance are direct precedents, including the mathematical family of the current Student-t diagnostic.",
+      "routes": [
+        "B"
+      ]
+    },
+    {
+      "id": "S5",
+      "title": "Mixtures of Gaussian Processes",
+      "authors": "Volker Tresp",
+      "year": null,
+      "doi": null,
+      "version": "NeurIPS proceedings7pagePDF; exact conferenceyear not independently fixed in this bounded read",
+      "entry_url": "https://proceedings.neurips.cc/paper/1900-mixtures-of-gaussian-processes.pdf",
+      "reading_depth": "Actual abstract/introduction and Section4 mixture/gating/variable-noise formulas. Not full7pages.",
+      "license": "No specific reuse license verified from selected text; no article assets copied.",
+      "limited_takeaway": "Input-dependent Gaussian experts and non-Gaussian mixtures are mature. A pointwise mixture does not by itself prove the coherent full-curve joint construction required here.",
+      "routes": [
+        "B"
+      ]
+    },
+    {
+      "id": "S6",
+      "title": "Non-identifiability of parameters for a class of shear-thinning rheological models, with implications for haematological fluid dynamics",
+      "authors": "M.T. Gallagher; R.A.J. Wain; S. Dari; J.P. Whitty; D.J. Smith",
+      "year": 2019,
+      "doi": "10.1016/j.jbiomech.2019.01.036",
+      "version": "Journal of Biomechanics85:230-238,VersionofRecord9pagePDF",
+      "entry_url": "https://knowledge.lancashire.ac.uk/id/eprint/25976/1/25976%201-s2.0-S0021929019300739-main.pdf",
+      "reading_depth": "Actual abstract/introduction, Section2 normal/lognormal fit criteria,3.1 boundary/ridge example,3.5 and selected figure captions. Not full9pages or all flow simulations.",
+      "license": "CCBY4.0 explicitly stated in PDF. No PDF redistributed.",
+      "limited_takeaway": "Rheological parameter degeneracy and practically equal fits with divergent physical predictions already exist. A new contribution cannot be simply rediscovering non-identifiability.",
+      "routes": [
+        "C"
+      ]
+    },
+    {
+      "id": "S7",
+      "title": "Uncertainty quantification of surrogate models using conformal prediction",
+      "authors": "Vignesh Gopakumar et al.",
+      "year": 2026,
+      "doi": "10.1088/2632-2153/ae2e7b",
+      "version": "Actual read arXiv2408.09881v3,5Jan2026;MLST7:015025 journal locator already verified earlier this session",
+      "entry_url": "https://arxiv.org/html/2408.09881v3",
+      "reading_depth": "Actual selected abstract, Sections2/2.4 and4.2 limitations, also previously read in this session. Not complete paper.",
+      "license": "CCBY4.0 on actual read arXiv version.",
+      "limited_takeaway": "Conformal sets require calibration/test exchangeability and their marginal guarantee is not point-conditional or simultaneous-curve coverage. Conformalization does not create missing identifying information.",
+      "routes": [
+        "C"
+      ]
+    },
+    {
+      "id": "S8",
+      "title": "Risk-Controlled Selective Prediction for Regression Deep Neural Network Models",
+      "authors": "Not independently extracted from accessible primary entry; do not invent an author list",
+      "year": 2020,
+      "doi": "10.1109/IJCNN48605.2020.9207676",
+      "version": "IJCNN2020,IEEE document9207676",
+      "entry_url": "https://ieeexplore.ieee.org/document/9207676/",
+      "reading_depth": "Primary publisher search-index abstract and metadata only; direct page requires robot/browser verification. No bypass and no fulltext claim.",
+      "license": "No open reuse license verified; no article assets copied.",
+      "limited_takeaway": "Risk-coverage selective regression is established, so a rejection threshold or risk-coverage plot alone is not the proposed novelty.",
+      "routes": [
+        "C"
+      ]
+    }
+  ],
+  "decision": {
+    "priority": "C",
+    "name": "Target-ambiguity witness and one additional discriminating rheology point",
+    "plain_language": "Keep the frozen generator. Ask whether two declared rheological curves can both match the same six low-rate anchors but disagree enough in the high-rate targets to matter. If so, expose that ambiguity and test whether one carefully selected extra point resolves it.",
+    "minimal_material_increment": "A query-level, target-specific insufficiency diagnostic for precursor-ink continuation, linked to an information-matched7-point discrimination experiment. The incremental contribution must be new material evidence of this diagnostic beyond GP uncertainty, anchor-distance OOD scores and simple probe policies; it is not a new theorem, new general Gaussian family or invented calibration guarantee.",
+    "why_before_A_or_B": "Before learning more directions or a richer code distribution, establish whether the low-rate observations contain enough information about the high-rate branch. When compatible branches cannot be distinguished, additional model flexibility cannot guarantee the correct branch.",
+    "current_paper_relation": "Separate future branch. The present bounded retrospective MLST paper and frozen evidence stay intact. This route is not a mandatory new publication prerequisite and no proposed outcome is inserted into current Results."
+  },
+  "route_comparison": [
+    {
+      "route": "A",
+      "proposal": "Select physical shape directions using conditional target impact and anchor observability.",
+      "precedents": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "value": "Could replace arbitrary windows by a task-grounded representation while retaining full residual.",
+      "main_problem": "A naive high-observability direction can have zero effect after conditioning; learned directions also add representation capacity beyond five correction parameters. Query-mask-specific rotations may lose the single shared joint law.",
+      "decision": "Not first. First separate conditional influence from mere observability and establish a new material need. Do not market generalized eigenvectors, active subspaces or GP design as new algorithms."
+    },
+    {
+      "route": "B",
+      "proposal": "Coherent non-Gaussian curve-specific scale or shape with complete residual.",
+      "precedents": [
+        "S2",
+        "S4",
+        "S5"
+      ],
+      "value": "Can represent value-dependent scale and potentially multiple conditional branches.",
+      "main_problem": "Student-t scale mixtures are directly mature and already diagnosed here. Two-component shape mixtures are classical Gaussian-mixture families and their regime parameters may be poorly identified with25complete curves. A richer prior cannot resolve observationally identical branches.",
+      "decision": "Not first. Reopen only with measured evidence of separated conditional regimes and a capacity-matched Gaussian-mixture/Student-t comparison, not a new name for a scale mixture."
+    },
+    {
+      "route": "C",
+      "proposal": "Identify target-relevant ambiguity in six-anchor continuation and test one discriminating probe.",
+      "precedents": [
+        "S3",
+        "S6",
+        "S7",
+        "S8"
+      ],
+      "value": "Directly addresses confident but wrong continuation even when anchors look in-domain; leaves strong frozen generator intact.",
+      "main_problem": "Constitutive class and tolerances must be justified; broad classes can make almost every curve ambiguous, narrow boxes can make false safety. Absence of a witness is not evidence of reliability.",
+      "decision": "Recommended single bounded next line; first analytical/synthetic falsification, then genuine unconsumed same-domain evidence if available."
+    }
+  ],
+  "mathematical_screening": {
+    "A_influence_identity": {
+      "definitions": "For reference joint Gaussian and unit-prior code z, C_R=Cov(Y_R,z), U_H=C_H-K_HO K_OO^{-1} C_O.",
+      "equation": "At S=I, d E_theta[Y_H|y_O]/d a = U_H. For an infinitesimal code covariance perturbation E, d Cov_theta[Y_H|y_O] = U_H E U_H^T.",
+      "consequence": "If z is exactly determined by noiseless anchors O, Var(z|O)=0 implies U_H=Cov(Y_H,z|O)=0. Maximizing anchor-observability alone can choose a direction whose prior replacement has no effect on missing targets.",
+      "novelty_status": "Elementary Gaussian-conditioning derivation, not a proposed new theorem and not a numerical finding on our materials."
+    },
+    "B_coherent_neighbor": {
+      "equation": "p(Y_R)=sum_k pi_k N(m0_R+C_R a_k, R_R+C_R S_k C_R^T), R_R=K0_R-C_R C_R^T.",
+      "meaning": "A shared global component gives a coherent mixture with a retained full residual; posterior weights can depend on observed anchors.",
+      "limitation": "This is an existing mixture-family construction. Coordinate-wise gates do not automatically give the same coherent full-curve law. Neither version creates information about branches indistinguishable at O."
+    },
+    "C_compatibility_set": {
+      "coordinates": "f(t)=log viscosity with dimensionless log shear rate t; positive fixed target weights sum to1.",
+      "equation": "F_delta(O)={f in declared F_const: max_{j in O}|f(t_j)-y_j| <= delta_j}.",
+      "required_inputs": "Declared Cross/Carreau compatibility union or another justified precursor-ink class; physical/protocol state and admissible parameter boxes; anchor measurement tolerances delta_j and target accuracy tolerance tau. None is inferred from current failure scores.",
+      "ambiguity": "A(O,H)=sup_{f,g in F_delta(O)} ||f_H-g_H||_W.",
+      "witness": "A found feasible pair (f_plus,f_minus) with distance>2*tau proves that no point curve can be within tau of both. Proof: triangle inequality. This is conditional on the declared class/tolerances; it is not a failure probability or empirical coverage guarantee.",
+      "numerical_direction": "A feasible pair gives a lower bound on A; incomplete search cannot certify small A. No witness found must remain UNKNOWN, not SAFE.",
+      "scope": "Targets are only the higher-rate continuation region selected before outcome access, inside the declared coordinate support."
+    },
+    "C_analytical_positive_control": {
+      "family": "eta_c(gamma)=eta0/[1+(gamma/c)^m], m>0, a Cross-type zero-high-plateau subfamily used only as a mathematical counterexample.",
+      "anchors": "For gamma_j<=a and c>=a/(exp(delta)-1)^(1/m), log(eta0)-log(eta_c(gamma_j))<=delta. Thus different transition scales can all fit nearly flat low-rate anchors within delta>0.",
+      "targets": "Two finite scales c1,c2 satisfying that bound differ at target b by |log(1+(b/c1)^m)-log(1+(b/c2)^m)|. If this exceeds2tau, they supply an explicit ambiguity witness.",
+      "limits": "This shows existence under a specified family and positive tolerance; it does not establish ambiguity of the actual25/46curves, physical validity for every hydrogel, or a new non-identifiability theorem."
+    },
+    "C_probe": {
+      "equation": "t_star=argmax_{t in Gamma_probe} |f_plus(t)-f_minus(t)|/sigma_probe(t).",
+      "purpose": "Select one allowed extra measurement that separates the witness pair relative to measurement precision.",
+      "known_mechanism": "Maximum disagreement is a standard experimental-design principle; novelty must be the target-specific precursor-ink evidence and controlled workflow, not this argmax alone.",
+      "no_guarantee": "The largest pair-separation point need not minimize global ambiguity; evaluate remaining feasible branches after the probe. If it fails, retain that failure rather than add gating patches."
+    }
+  },
+  "minimal_falsification_protocol": {
+    "phase0": "No material fitting: verify the elementary influence identity and explicit Cross-type witness algebra with data-free cases. Reject the naive most-observable-is-best criterion. No synthetic output counted as a measurement.",
+    "phase1": "Before new target access fix F_const, parameter boxes, source of delta/sigma, tau, one6-anchor rule, separate Gamma_probe and H_eval, witness-search budget, all comparators and all failure outcomes. If tolerances/state cannot be justified, stop at a proposal rather than claim a useful safety detector.",
+    "phase2": "Use previously consumed25/46only for explicitly labeled exploratory debugging if necessary; never rebrand resplits or re-scoring as independent confirmation. For confirmation use genuinely unconsumed compatible precursor-ink formulations/preparations with retained identities and measurement-state metadata.",
+    "fixed_score_targets": "Define H_eval disjoint from Gamma_probe before masking. Every probe policy selects one point from the same allowed pool and is scored on the same H_eval. Do not let each policy remove its chosen hard target from its own scoring set.",
+    "fair_acquisition_comparison": "For a clean acquisition-only comparison, all policies use the same fixed GP predictor conditioned on six anchors plus one selected probe. This isolates measurement choice from generator choice. The frozen public six-anchor interface is not silently extended: any7-anchor adapter is a separately versioned future implementation, not a replay of the present model.",
+    "strong_baselines": [
+      "Highest admissible probe rate",
+      "One prespecified log-spaced probe",
+      "Random one-probe policy with prespecified seeds",
+      "GP maximum conditional variance",
+      "GP target-integrated variance reduction or target mutual information",
+      "Declared Cross/Carreau posterior-variance probe",
+      "Anchor Mahalanobis/OOD-distance and GP predictive-width rankings for selective-risk comparisons"
+    ],
+    "reporting": [
+      "Primary fixed-H_eval log-scale CRPS at equal7-point information budget, with paired material-unit differences against strongest acquisition control.",
+      "Point error,90percent marginal coverage, interval score and full failure counts retained as secondary endpoints.",
+      "For6-anchor insufficiency ranking report the full risk-retention curve and any author-prespecified retention/accuracy requirement; no best threshold picked from test outcomes.",
+      "Report all cases: witness found; no witness within budget/UNKNOWN; empty compatibility set/specification failure; no discriminating probe; successful or unsuccessful post-probe resolution.",
+      "No measured instrument-time or material-saving claim from retrospective masks. A physical sparse protocol can change shear history and requires its own experiment."
+    ],
+    "critical_counterexamples": [
+      "Known synthetic pair with indistinguishable anchors and different high-rate transition must be detected within tolerance.",
+      "A uniquely determined or target-identical pair must not be declared ambiguous simply because parameter values differ.",
+      "Cases with anchors in the reference support/distribution but divergent high-rate branches test whether this adds anything beyond ordinary OOD distance.",
+      "Very broad and narrowed parameter boxes must be reported; apparent safety that disappears under a scientifically reasonable box change falsifies robustness."
+    ],
+    "success_thresholds": "No invented N, tau, retention or significance target. Authors must choose useful accuracy/retention requirements before target reveal. Minimum scientific go/no-go is a useful nontrivial retention and a reproducible improvement over the strongest equally informed probe/uncertainty baseline, with honest uncertainty across material units.",
+    "stop_conditions": [
+      "Stop if the class/tolerances require test-target tuning or cannot be justified from measurement/protocol information.",
+      "Stop if almost all curves are rejected or UNKNOWN and no useful prespecified retention is attainable.",
+      "Stop the incremental-method claim if ambiguity rank is only a proxy for shear-rate span, anchor Mahalanobis distance or GP width and adds no independent material benefit.",
+      "Stop if one highest-rate point or GP target-variance reduction matches or beats the witness probe; publish the negative scientific boundary if useful, do not attach more gates.",
+      "Stop if the feasible class is empty for important eligible inks, showing a constitutive-specification problem. Do not silently drop those materials.",
+      "Do not pursue a larger mixture/diffusion model to evade a positive insufficiency witness. Additional observations or weaker claims are the appropriate boundary."
+    ]
+  },
+  "implementation_boundary_if_later_authorized": {
+    "new_branch_modules": [
+      "compatibility.py: declared constitutive class, bounds, log units and anchor-only feasibility",
+      "witness.py: deterministic pair search with feasibility checks and lower-bound witness receipt",
+      "probe_policy.py: one target-agnostic allowed-pool selection; no target array access",
+      "evaluation.py: frozen held-target policy comparison, grouping and all failures"
+    ],
+    "must_not_touch": [
+      "Current frozen runtime/weights/paper scores",
+      "HiddenSoutcomes",
+      "Existing retrospective/transfer labels",
+      "Author license/accuracy/tolerance decisions"
+    ],
+    "stage_result": "Decision and mathematical design only; no core implementation or measured improvement is claimed."
+  },
+  "novelty_boundary": "The eight selected works show mature ingredients. The recommended material-level question and its proposed combined evidence workflow may be useful, but this bounded search neither proves absence of an identical hydrogel study nor predicts journal acceptance. Recheck exact near-neighbors if a concrete implementation and new evidence justify pursuing this branch."
+}

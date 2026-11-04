@@ -1,0 +1,89 @@
+{
+  "classification": "UNEXECUTED_UNREGISTERED_DESIGN_TEMPLATE",
+  "protocol_id": null,
+  "registered_utc": null,
+  "registered_by": null,
+  "execution_started": false,
+  "question": "Does the frozen curvature model improve one-sided continuation on genuinely unused compatible precursor-ink units, and does an independently fitted calibration layer achieve its declared coverage target?",
+  "frozen_reference_model": {
+    "sha256": "d72fc262fbae0e6fecc36568f0638166fe95e991bd5f7df100ab1434097d82d1",
+    "runtime_bindings": "models/RUNTIME_BINDINGS.json",
+    "candidate": "fixed two-contrast shared Gaussian correction with full reference residual",
+    "changes_allowed_before_confirmation": "None unless a separately versioned new candidate and protocol are created."
+  },
+  "candidate_methods": [
+    "frozen curvature Gaussian",
+    "frozen coordinate GP",
+    "existing conditional Gaussian control"
+  ],
+  "data_source_id": null,
+  "data_version": null,
+  "source_license": null,
+  "material_compatibility": null,
+  "temperature_and_measurement_state": null,
+  "instrument_scan_history": null,
+  "independent_unit_definition": null,
+  "preparation_batch_mapping": null,
+  "n_calibration_units": null,
+  "n_confirmation_units": null,
+  "enrolled_unit_ids": [],
+  "data_role_rule": "Reserve real calibration and confirmation units before inspecting their target responses; do not split masks or related runs from one physical unit across roles. No consumed25P/46external targets are newly independent.",
+  "anchor_count": 6,
+  "anchor_coordinate_rule": null,
+  "target_coordinate_grid": null,
+  "global_support_s_inverse": [
+    0.012787740677595104,
+    754.5143432617188
+  ],
+  "target_rule": "Only native declared positions strictly above the highest observed anchor and within frozen global support; no interpolation or generated targets as measured truth.",
+  "primary_endpoint": {
+    "status": "AUTHOR_TO_FIX_BEFORE_TARGET_REVEAL",
+    "suggestion": "Per-unit CRPS on log viscosity averaged over continuation targets with normalized trapezoidal log-rate weights, then aggregated by the declared independent unit.",
+    "quadrature_domain": null,
+    "minimum_target_count": null,
+    "aggregation_across_formulations_and_batches": null,
+    "paired_comparators": [
+      "coordinate GP",
+      "conditional Gaussian"
+    ],
+    "historical_endpoint_note": "This is a possible new endpoint; it does not replace the original native-position three-layout endpoint."
+  },
+  "secondary_endpoints": [
+    "log RMSE or pooled MSE with stated weights",
+    "marginal coverage at the fixed nominal level",
+    "interval width and interval score",
+    "finite-grid whole-curve containment if declared",
+    "variogram diagnostic with fixed weights/order",
+    "all prediction failures, including zero-coverage units"
+  ],
+  "practical_viscosity_tolerance": null,
+  "tolerance_units": null,
+  "nominal_miscoverage_alpha": null,
+  "coverage_target": null,
+  "sample_size_basis": null,
+  "comparison_precision_plan": null,
+  "failure_rule": null,
+  "data_exclusion_rule": null,
+  "missing_metadata_rule": null,
+  "freeze_and_reveal": [
+    "1. Author signs material/unit/metadata/admission plan and complete fields, then records actualUTC and input/runtime hashes.",
+    "2. Fit no correction on confirmation outcomes; freeze any calibrator using only its reserved units and record its new version.",
+    "3. Read only six allowed anchors per confirmation unit and freeze all candidate/control predictions with source hashes.",
+    "4. A steward reveals complete original targets once; score all eligible units with registered weights and explicit failures.",
+    "5. Report the full cohort and all controls, whether successful or not; no posthoc reclassification as independent after revision."
+  ],
+  "calibration_extension": {
+    "status": "OPTIONAL_UNEXECUTED",
+    "method": "curve-level split conformal band around frozen log-Gaussian predictor",
+    "formula": "s_i=max_{j in H_i}|y_ij-mu_ij|/sigma_ij; k=ceil((n_cal+1)(1-alpha)); q=s_(k) if k<=n_cal, otherwise +infinity; B_j=[mu_j-q*sigma_j,mu_j+q*sigma_j].",
+    "score_scale": "dimensionless natural-log viscosity; sigma_ij must be positive under a fixed pre-calibration rule",
+    "exchangeability": "Conditional on model training and frozen score/design, reserved calibration units and the future unit must be exchangeable as complete units. Related coordinates or runs are not separate units. If the scientific target is a new batch, use a defensible batch-level score/design.",
+    "guarantee_if_assumptions_hold": "Marginal probability over the calibration sample and a new compatible unit of all declared finite-grid targets lying in their bands is at least1-alpha. Not conditional per chemistry/subgroup and not coverage between grid points.",
+    "small_sample_rule": "If k>n_cal, use an infinite band rather than silently lowering the order-statistic index. No usable finite-band or power guarantee is implied by a proposed sample count.",
+    "density_warning": "Conformal bands are prediction sets, not a calibrated joint density or generative law. Do not assign them a newly inventedCRPS/joint log density; keep the original Gaussian law distinct.",
+    "unit_log_to_viscosity": "Multiply exp(band endpoints) by eta_ref=1Pa s.",
+    "reference": "https://arxiv.org/html/1604.04173v2",
+    "proof_note": "A scalar maximum score makes finite-grid simultaneous inclusion equivalent to s_new<=q. Exchangeability supplies the rank bound; no independence of coordinates within a curve is assumed."
+  },
+  "prohibition": "Do not fill sample sizes, tolerance, batch identities or registration times from old scores or invented values. This template is not an executed or preregistered study."
+}

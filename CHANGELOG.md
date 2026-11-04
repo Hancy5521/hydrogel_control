@@ -26,3 +26,6 @@ Integrated all external gains/failures and new descriptive population sensitivit
 ## Final author review after bounded defect closure
 
 Retained707baseline and old local archives. Closed witnessed map/reader identity drift and package-verifier Python compatibility; corrected overstrongXLSclaim/staleartifact scopes; added two relevant predecessor citations and removed orphan declaration page. Main23/SI15,54refs, numeric results/model unchanged. See final review ledger for actual independent checks and remaining evidence/author limits.
+
+
+2026-11-04 MLST targeted author review: new14/25-page manuscript pair and unsentcoverletter;58refs, saved externalUQ diagnostics, independent scalar replay, author access/confirmation gates, separately labeled future research. Original scientific runtime/models/score files and older paper paths unchanged. No new physical measurement/model fit/forecast/targetscore.

@@ -1,0 +1,67 @@
+{
+  "base_commit": "778d9372a9c5847205db3289e81a3c73aee45962",
+  "base_manifest_sha256": "3aa98b3af22e3daa73b11502eb45319843113129ef1335fef702b1147c1bb5b9",
+  "scope": "Fixed input and arithmetic-code subset, independent of future top-level MANIFEST updates",
+  "bindings": [
+    {
+      "path": "reproducibility/replay_tables.py",
+      "bytes": 1815,
+      "sha256": "417aaed577437529ef0b4f659581590e74ce34426830c03ad6652773620cdbb4",
+      "origin": "base MANIFEST.json"
+    },
+    {
+      "path": "reproducibility/replay_io.py",
+      "bytes": 2159,
+      "sha256": "faa1403b57585ef3c3e0af5fcb93455ea5fa1677528e7b2c931b36fb2f67e664",
+      "origin": "base MANIFEST.json"
+    },
+    {
+      "path": "reproducibility/score_replay.py",
+      "bytes": 13494,
+      "sha256": "c9ad4bbc5de1c094da9a0bec6ca4d879eefbfe2682f27d14360e27fd4c9e22d2",
+      "origin": "base MANIFEST.json"
+    },
+    {
+      "path": "reproducibility/ledger/marginal_scores.json",
+      "bytes": 419589,
+      "sha256": "56546ac5bb077de54b9556e8146f6e1fdf659eb4fe62c457ab47c9af1445c9a6",
+      "origin": "base MANIFEST.json"
+    },
+    {
+      "path": "reproducibility/ledger/variogram_scores.json",
+      "bytes": 80000,
+      "sha256": "19c8f7d219e886bc7a6928ab8efd2dfc6c3902f376ffea2e6e032dbaa782b410",
+      "origin": "base MANIFEST.json"
+    },
+    {
+      "path": "reproducibility/ledger/point_only_scores.json",
+      "bytes": 26301,
+      "sha256": "00457b0ff3c3835d99d1ca60e2745a7bd11069d19a16af1c9810fb64bf041a9a",
+      "origin": "base MANIFEST.json"
+    },
+    {
+      "path": "reproducibility/ledger/reported_facts.json",
+      "bytes": 21346,
+      "sha256": "0ffab062f0c9fc468038de4280f456a6e2e357a7fde590c43f11aa721041e108",
+      "origin": "base MANIFEST.json"
+    },
+    {
+      "path": "reproducibility/provenance/SOURCES.json",
+      "bytes": 5949,
+      "sha256": "a4c09a995c65d09ad2bce1cbb95a69d50b8baab814fb090f4ebb2b42639c9892",
+      "origin": "base MANIFEST.json"
+    },
+    {
+      "path": "external_validation/20261101T1239423181800Z/SCORES.json",
+      "bytes": 208492,
+      "sha256": "555f39ca076351b063511940f7b2a2a011e47ec9a55b0ce968c905e5f9b8c8d0",
+      "origin": "base MANIFEST.json"
+    },
+    {
+      "path": "mlst/saved_uq/replay_saved_uq.py",
+      "bytes": 9825,
+      "sha256": "63e1b2afeb45334871f0eb8b270b3424b1da498f29b91b1accb5f031372282ff",
+      "origin": "MLST registered saved-scalar analysis, no scientific model changes"
+    }
+  ]
+}

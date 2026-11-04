@@ -1,0 +1,166 @@
+{
+  "status": "PASS_SAVED_SCALAR_REPLAY",
+  "actual_utc": "2026-11-04T08:33:01.194857+00:00",
+  "actual_asia_shanghai": "2026-11-04T16:33:01.194857+08:00",
+  "script_sha256": "1f55756155fce6624bbc507fd816eb7106675acf2abd4b5737782e251693c12c",
+  "base_commit": "778d9372a9c5847205db3289e81a3c73aee45962",
+  "bindings_sha256": "f8ec43507ec6ebb41d42440e18e264c899af5ad5da31e965125c7914f4a7e6b5",
+  "verified_input_files": 10,
+  "development_validation": {
+    "status": "PASS",
+    "compared_saved_scalars": 238,
+    "maximum_absolute_error": 2.842170943040401e-14,
+    "absolute_tolerance": 2e-11,
+    "new_fits": 0,
+    "new_forecasts": 0,
+    "raw_target_scoring_calls": 0
+  },
+  "external_source_method_rows": 12,
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "raw_target_scoring_calls": 0,
+  "scope": "Only recorded scalar arithmetic and table remapping; no raw-data reconstruction, inference, calibration or new material evidence",
+  "limits": [
+    "Deployment weights are not original out-of-fold models",
+    "Some original processed inputs and complete scientific-study replay remain separately scoped",
+    "This entry is not a complete raw-data reproduction of the material experiments",
+    "Manuscript figure rendering and author domain-role descriptions are not regenerated here"
+  ],
+  "output_files": [
+    {
+      "path": "development/figure2b_paired_data.csv",
+      "bytes": 1793,
+      "sha256": "808059b34c6e0b002fa354dc66c7323974984449dfd7126751a9046238fd40ed"
+    },
+    {
+      "path": "development/figureS1_coverage_data.csv",
+      "bytes": 323,
+      "sha256": "3d7196a721e124e0854fb07f62e7b2d47e470118ad58ac5f4bc2800e1d87e568"
+    },
+    {
+      "path": "development/main_table1.csv",
+      "bytes": 649,
+      "sha256": "f6244d773aca6bf70c8518f4bea6ec80c07ede6d1e758e1600b97b92efdfb671"
+    },
+    {
+      "path": "development/main_table2.csv",
+      "bytes": 355,
+      "sha256": "5985befa5d454686ca848660243346c720b540025f078f227061f162d6e4cbf6"
+    },
+    {
+      "path": "development/main_table2_extended.csv",
+      "bytes": 600,
+      "sha256": "b4797afbc94b8451bbbfde871bd6a51096f3c04a7be03f2a635b733083ee161a"
+    },
+    {
+      "path": "development/main_table3.csv",
+      "bytes": 565,
+      "sha256": "877f8649d3c5b9010c58cbaa3787ba65cedfc4a3949ba709e9e7fce4e8f8b69c"
+    },
+    {
+      "path": "development/paired_all.csv",
+      "bytes": 669,
+      "sha256": "e720ab399aef98cb9c55b79121e7f81809b73a0cca2e78d974039e69c725a280"
+    },
+    {
+      "path": "development/point_only_PCHIP.csv",
+      "bytes": 414,
+      "sha256": "b7480aaa017ed369922059a55b4f1c70c467fa55d442a23583a1f9a50365d644"
+    },
+    {
+      "path": "development/SI_tableS1.csv",
+      "bytes": 1016,
+      "sha256": "1ef74db187cc6fb4d37a2913d192f0dcf213645808ed3eee30bc9460231e329f"
+    },
+    {
+      "path": "development/SI_tableS2.csv",
+      "bytes": 449,
+      "sha256": "2451161ddf6229149f99392578b8070293e2927ddcd025edf60d7f356c448f9f"
+    },
+    {
+      "path": "development/SI_tableS3.csv",
+      "bytes": 165,
+      "sha256": "6b577c8766dceae0dd1f54ecd5151c95b5071fbdab7327c30816e313caf2fa04"
+    },
+    {
+      "path": "development/SI_tableS5.csv",
+      "bytes": 534,
+      "sha256": "92162dbd6b994ba1d204a11e90dccf2a3e97aeba431c8d81147f749b0f457f96"
+    },
+    {
+      "path": "development/SI_tableS6.csv",
+      "bytes": 337,
+      "sha256": "a09e2621a1c4e8e730ba08542edad14f08378e7a642f40fa1aad507ebb0583ff"
+    },
+    {
+      "path": "development/SI_tableS7.csv",
+      "bytes": 1725,
+      "sha256": "c59e7a280fdc6fa1a1e6a052b005ed01a9ff697168647ac66e7a26e6555715d6"
+    },
+    {
+      "path": "development/tables.json",
+      "bytes": 91155,
+      "sha256": "9bb40ce3c0de183bb53cf63ddbf8b4cfa71ad635a7de771d11332e5b7ee82469"
+    },
+    {
+      "path": "development/TABLES.md",
+      "bytes": 9269,
+      "sha256": "744208449265388f9239e9789fdec3dcb39b4938790a70aa74cb2e2285c517d5"
+    },
+    {
+      "path": "development/validation.json",
+      "bytes": 219,
+      "sha256": "8ecf89a8a7cfa833233e5a1e431b1c3592d24c0ced2a3016e4023f8e3188f3cf"
+    },
+    {
+      "path": "DEVELOPMENT_REPLAY_TRANSCRIPT.json",
+      "bytes": 402,
+      "sha256": "b2841bf2061e29cc474d318e8e64900230bde332abffdc726c65a4b4aa2172c6"
+    },
+    {
+      "path": "external_uq/SAVED_UQ_RESULTS.json",
+      "bytes": 9895,
+      "sha256": "6249e095f9d78b0ae0546c3288ceae6c4135706e6090abb404d042b962019105"
+    },
+    {
+      "path": "external_uq/SAVED_UQ_SOURCE_METHODS.csv",
+      "bytes": 2732,
+      "sha256": "eb19382d7613682a429e84758f4e7571dd1d712a58cba6deba958a8aae819542"
+    },
+    {
+      "path": "EXTERNAL_UQ_REPLAY_TRANSCRIPT.json",
+      "bytes": 564,
+      "sha256": "a8e91562cb5622c9a02df52718275e67ef1c952c432525ebf30ceff7523dff7a"
+    },
+    {
+      "path": "mlst_tables/main_table2.csv",
+      "bytes": 649,
+      "sha256": "f6244d773aca6bf70c8518f4bea6ec80c07ede6d1e758e1600b97b92efdfb671"
+    },
+    {
+      "path": "mlst_tables/main_table3.csv",
+      "bytes": 565,
+      "sha256": "877f8649d3c5b9010c58cbaa3787ba65cedfc4a3949ba709e9e7fce4e8f8b69c"
+    },
+    {
+      "path": "mlst_tables/main_table4.csv",
+      "bytes": 498,
+      "sha256": "cc9dfc1d28f57c1e60608e12bc23021914997d1aae07627cae92da2257a1440f"
+    },
+    {
+      "path": "mlst_tables/SI_tableS11.csv",
+      "bytes": 355,
+      "sha256": "5985befa5d454686ca848660243346c720b540025f078f227061f162d6e4cbf6"
+    },
+    {
+      "path": "mlst_tables/SI_tableS12.csv",
+      "bytes": 2732,
+      "sha256": "eb19382d7613682a429e84758f4e7571dd1d712a58cba6deba958a8aae819542"
+    },
+    {
+      "path": "TABLE_AND_FIGURE_CROSSWALK.json",
+      "bytes": 1455,
+      "sha256": "e461c43f9390acbb93cea4bdeb8a5d334b657b660ee7af60c48f0dabf27d990b"
+    }
+  ]
+}

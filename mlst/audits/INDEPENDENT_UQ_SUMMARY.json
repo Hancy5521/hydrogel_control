@@ -1,0 +1,10 @@
+{
+  "actual_utc": "2026-11-04T08:13:24.966569+00:00",
+  "scope": "Independent 60-digit Decimal saved-scalar audit; original full receipt retained locally",
+  "status": "PASS",
+  "checks": 3816,
+  "failures": 0,
+  "maximum_absolute_difference": 4e-15,
+  "input_sha256": "555f39ca076351b063511940f7b2a2a011e47ec9a55b0ce968c905e5f9b8c8d0",
+  "no_material_execution": true
+}

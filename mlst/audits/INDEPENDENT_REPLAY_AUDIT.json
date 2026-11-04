@@ -1,0 +1,206 @@
+{
+  "created_utc": "2026-11-04T08:44:10.488606+00:00",
+  "status": "PASS_SAVED_SCALAR_ENTRY_AND_GUARDS",
+  "entry_sha256": "1f55756155fce6624bbc507fd816eb7106675acf2abd4b5737782e251693c12c",
+  "bindings_sha256": "f8ec43507ec6ebb41d42440e18e264c899af5ad5da31e965125c7914f4a7e6b5",
+  "checks": [
+    {
+      "name": "observed_positive_entry",
+      "pass": true,
+      "detail": "Fresh absent output and thin checkout actual command exit0 recorded"
+    },
+    {
+      "name": "ten_bound_inputs",
+      "pass": true,
+      "detail": "All10original bound inputs still match after replay and fixtures"
+    },
+    {
+      "name": "scalar_validation238",
+      "pass": true,
+      "detail": "Observed archived scalar program reports238 comparisons; not a separate numerical implementation"
+    },
+    {
+      "name": "zero_scientific_calls",
+      "pass": true,
+      "detail": "No new material fit, forecast or targetscore"
+    },
+    {
+      "name": "no_model_checkout",
+      "pass": true,
+      "detail": "Thin checkout lacks scientific runtime, weights and measured response arrays"
+    },
+    {
+      "name": "twelve_external_rows",
+      "pass": true,
+      "detail": "All3probabilisticmethods x4sources present"
+    },
+    {
+      "name": "csv_same_original_saved_uq",
+      "pass": true,
+      "detail": "Actual source-method CSV exactly matches separately archived saved-scalar result"
+    },
+    {
+      "name": "figure_crosswalk",
+      "pass": true,
+      "detail": "Correctedr2figure mapping inactualentryoutput"
+    },
+    {
+      "name": "guards11",
+      "pass": true,
+      "detail": "FouractualCLIrefusals,fiveexplicitpostchildmockgatesandtwo suppliedsyntheticsuites passed"
+    },
+    {
+      "name": "public_source_clean_scan",
+      "pass": true,
+      "detail": "Bounded scan ofpublic_mlst text files found no machine-specificdrive/user paths or credentiallike markers"
+    },
+    {
+      "name": "actual_entry_unchanged",
+      "pass": true,
+      "detail": "Actualsource,thinentryandreceipt scriptSHA match"
+    }
+  ],
+  "checks_passed": 11,
+  "checks_total": 11,
+  "actual_replay": {
+    "verified_inputs": 10,
+    "compared_saved_scalars": 238,
+    "maximum_absolute_error": 2.842170943040401e-14,
+    "source_method_rows": 12,
+    "zero_fit_forecast_targetscore": true
+  },
+  "guard_scope": {
+    "actual_cli_refusals": 4,
+    "synthetic_post_child_gates": 5,
+    "supplied_synthetic_suites": 2,
+    "supplied_suite_test_counts": [
+      5,
+      9
+    ],
+    "note": "Synthetic mocked gates did not execute children or fabricate material results. Main pass is a real scalar-only subprocess execution."
+  },
+  "public_source_manifest": [
+    {
+      "path": "audits/REVIEWER_ENTRY_EXECUTION_QA.json",
+      "bytes": 1486,
+      "sha256": "4dda56549c52158ec32fe53a57028be020149ef48b3ea50a9b1bd24cc30a3334"
+    },
+    {
+      "path": "audits/REVIEWER_SCALAR_R1_RECEIPT.json",
+      "bytes": 5893,
+      "sha256": "2d0865124ec08be03ab6692436296a955c68d1d36fe95973beb7e7d47131ecf1"
+    },
+    {
+      "path": "audits/REVIEWER_SCALAR_R2_RECEIPT.json",
+      "bytes": 5893,
+      "sha256": "32e436d5ef01f5b241da1e8ad4122c3dae484fd8252c2f1c5340fc6765842161"
+    },
+    {
+      "path": "README.txt",
+      "bytes": 3685,
+      "sha256": "1d0965d2e892876f67c0351518ebc87b4e043cddd641aca0e8bafdd1afc1b907"
+    },
+    {
+      "path": "REPLAY_INPUT_BINDINGS.json",
+      "bytes": 2525,
+      "sha256": "f8ec43507ec6ebb41d42440e18e264c899af5ad5da31e965125c7914f4a7e6b5"
+    },
+    {
+      "path": "results/mlst_tables/main_table2.csv",
+      "bytes": 649,
+      "sha256": "f6244d773aca6bf70c8518f4bea6ec80c07ede6d1e758e1600b97b92efdfb671"
+    },
+    {
+      "path": "results/mlst_tables/main_table3.csv",
+      "bytes": 565,
+      "sha256": "877f8649d3c5b9010c58cbaa3787ba65cedfc4a3949ba709e9e7fce4e8f8b69c"
+    },
+    {
+      "path": "results/mlst_tables/main_table4.csv",
+      "bytes": 498,
+      "sha256": "cc9dfc1d28f57c1e60608e12bc23021914997d1aae07627cae92da2257a1440f"
+    },
+    {
+      "path": "results/mlst_tables/SI_tableS11.csv",
+      "bytes": 355,
+      "sha256": "5985befa5d454686ca848660243346c720b540025f078f227061f162d6e4cbf6"
+    },
+    {
+      "path": "results/mlst_tables/SI_tableS12.csv",
+      "bytes": 2732,
+      "sha256": "eb19382d7613682a429e84758f4e7571dd1d712a58cba6deba958a8aae819542"
+    },
+    {
+      "path": "results/TABLE_AND_FIGURE_CROSSWALK.json",
+      "bytes": 1455,
+      "sha256": "e461c43f9390acbb93cea4bdeb8a5d334b657b660ee7af60c48f0dabf27d990b"
+    },
+    {
+      "path": "reviewer_replay.py",
+      "bytes": 10502,
+      "sha256": "1f55756155fce6624bbc507fd816eb7106675acf2abd4b5737782e251693c12c"
+    },
+    {
+      "path": "saved_uq/ANALYSIS_PLAN.json",
+      "bytes": 2195,
+      "sha256": "10f04ea1a617390d99c8ebedec45dcae25186d8820ea86d4adaba70cc959d232"
+    },
+    {
+      "path": "saved_uq/EXECUTION_RECEIPT.json",
+      "bytes": 1467,
+      "sha256": "c9d755611dabf0bc5879b252ad32e783d297f4d1b1961e2a354b2dda7eefca39"
+    },
+    {
+      "path": "saved_uq/README.txt",
+      "bytes": 3317,
+      "sha256": "bccba3b2da1db173ee457939be66cf47cb3b50d90f75d306ec6db8b4360aa029"
+    },
+    {
+      "path": "saved_uq/replay_saved_uq.py",
+      "bytes": 9825,
+      "sha256": "63e1b2afeb45334871f0eb8b270b3424b1da498f29b91b1accb5f031372282ff"
+    },
+    {
+      "path": "saved_uq/results/SAVED_UQ_RESULTS.json",
+      "bytes": 9895,
+      "sha256": "2dee008ef505c5efb7b65d15643e6694d0b1090d31c1d249c81feece7839f563"
+    },
+    {
+      "path": "saved_uq/results/SAVED_UQ_SOURCE_METHODS.csv",
+      "bytes": 2732,
+      "sha256": "eb19382d7613682a429e84758f4e7571dd1d712a58cba6deba958a8aae819542"
+    },
+    {
+      "path": "saved_uq/test_replay_saved_uq.py",
+      "bytes": 3451,
+      "sha256": "f436d65ecb6cb408898c062c842a128e6d78bfedbcd1f1219bdc3e7f6e1179e2"
+    },
+    {
+      "path": "test_reviewer_replay.py",
+      "bytes": 3969,
+      "sha256": "cc9782c016e99661d3161a5bdd80b356d46a03e38ad6961714fb8f37174f6529"
+    }
+  ],
+  "public_ready_privacy_scope": {
+    "scanned_files": 20,
+    "private_path_or_secret_marker_matches": [],
+    "note": "The source set is clean under the documented bounded text scan. Local command/failure transcripts contain audit output paths and should not be uploaded verbatim."
+  },
+  "limits": [
+    "This audit establishes one-command saved-scalar replay and guard behavior, not complete original-data reproduction.",
+    "It does not independently reimplement numeric aggregation; the238count is the observed archived scalar program validation.",
+    "No model, measured response arrays, inference, fitting, target scoring, calibration or new independent materials were used.",
+    "Public visibility is not a license grant or closure of MLST data-access and author declarations.",
+    "Scope excludes __pycache__; cache files should not be curated into the public release."
+  ],
+  "local_evidence": {
+    "start_receipt_sha256": "4b49039d2a0aa464440313d4185ada3986fcd3d2c17470ffef5aa577bc5b31f8",
+    "positive_command_receipt_sha256": "2d249b0af6c51764af59ef3f32bc67f6dfb3eefa03ddadd4ec86c2fedf9d5f9a",
+    "positive_success_receipt_sha256": "7243b687feaa8319422b028ba4946ea0cd7372ce84eb9f6c5277a56114d25021",
+    "guard_commands_sha256": "8ff634f52833bbd6cf3012c7dba31aabe076133258fd77d9547a380ccb7cc731",
+    "guard_checks_sha256": "61fab2e1b111d8e03c1327411caf0c138aee40ebcc066d7c3c96ac8256c5926c",
+    "guard_source_sha256": "cbd52e6c5ed408258724b8f6d4feb822bc92e3471b747e5fd3a51f0f8c59b7fe"
+  },
+  "recorded_probe_correction": "Initial independent guard probe syntax error occurred before execution. Corrected preserved audit source executed all guards; no project code was changed.",
+  "scope_note": "Portable projection of a local independent saved-scalar entry audit. Machine-specific path and raw command text omitted; exact evidence hashes retained."
+}

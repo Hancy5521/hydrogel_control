@@ -1,0 +1,161 @@
+{
+  "task": "MLST-specific official-policy and bounded relevant-literature review",
+  "created_utc": "2026-11-04T08:05:46.825852+00:00",
+  "created_asia_shanghai": "2026-11-04T16:05:46.825852+08:00",
+  "scientific_scope": "Frozen six-anchor hydrogel precursor-ink continuation study; no experiments, refits, forecasting, target scoring, submissions, author contact or uploads by this reviewer.",
+  "policy_findings": [
+    {
+      "item": "Scope and article type",
+      "url": "https://publishingsupport.iopscience.iop.org/journals/machine-learning-science-and-technology/about-machine-learning-science-technology/",
+      "reading_depth": "About-page indexed primary text, including Scope, Article types, Special requirements, Peer review, Research data, Publication charges.",
+      "verified": "Research papers normally <=8500 words; scientific ML applications or science-motivated ML advances; kernel/Bayesian/probabilistic/robustness topics and materials characterization are in scope.",
+      "implication": "Scientific fit is credible; scope inclusion is not acceptance or a finding that the current increment is sufficient."
+    },
+    {
+      "item": "Counting and format",
+      "url": "https://publishingsupport.iopscience.iop.org/journals/machine-learning-science-and-technology/",
+      "reading_depth": "Author guidelines full retrievable structure; relevant lines111-168,257-275,299-335.",
+      "verified": "Clear reviewer-readable English; at least12pt advised; embedded figures/tables; single PDF at initial submission; abstracts above300words may be returned; SI<=50MB each and allfiles<=150MB.",
+      "unknown": "No explicit exclusion of references, captions, tables or equations from the8500-word recommendation was found. Do not invent a counting convention.",
+      "implication": "Report multiple transparent word counts; supply manuscripts/PDF and separately named graphics; do not upload the600MB local complete archive as journal SI."
+    },
+    {
+      "item": "MLST-specific open-data requirement",
+      "url": "https://publishingsupport.iopscience.iop.org/iop-publishing-open-data-policy/",
+      "reading_depth": "Complete130line page read, especially17-29,79-85,95-120.",
+      "verified": "Explicitly applies toMLST. Required reproducibility/verification data must be public at publication. Bare upon-request availability is insufficient. Legal/ethical and third-party exceptions need detailed barriers, source and access route and editor review. Research data includes code and processed or raw data.",
+      "implication": "Current restricted original assets/access decisions remain a real author gate; prepare an inventory and truthful DAS, source retrieval and executable mappings. Public Git code alone does not close missing supporting data. DOI copy is recommended, not fabricated as complete."
+    },
+    {
+      "item": "Conflicting generic policy resolved by specific applicability",
+      "url": "https://publishingsupport.iopscience.iop.org/iop-publishing-data-availability-policy/",
+      "reading_depth": "Complete121line page read, especially23-27,93-102.",
+      "verified": "Generic policy allows nonpublic data with reasons and timely private access. However specific open-data page explicitly distinguishes journals covered by the generic policy and explicitly namesMLST.",
+      "correction": "I initially messaged the parent that generic policy might provide the operative nonpublic option. After the parent identified theMLST-specific page, I independently read it and retracted that suggestion. Prepare under the stricterMLST-specific policy; no universal raw-publication permission is inferred."
+    },
+    {
+      "item": "GenerativeAI disclosure",
+      "url": "https://publishingsupport.iopscience.iop.org/questions/generative-ai-tools/",
+      "reading_depth": "Retrieved official policy sections acceptable use, disclosure, unacceptable use and literature review.",
+      "verified": "Material research/manuscript/analysis assistance requires a separate acknowledgement disclosure identifying tool/model, use and author verification. Research-process assistance additionally belongs inMethods. Routine spelling/grammar-only assistance has an exception that does not describe this project.",
+      "implication": "Do not assert only language editing. Draft factualAI-assisted coding, literature discovery, diagnostics, authoring and validation description, leaving actual author critical review and tool/version confirmation to authors. AI-generated citations must be checked against originals; noAIauthorship."
+    },
+    {
+      "item": "Submission and coverletter",
+      "url": "https://publishingsupport.iopscience.iop.org/questions/how-to-submit-your-journal-article/",
+      "reading_depth": "Author information, policies/information and uploads sections.",
+      "verified": "Submitting authorORCID required; accurateauthor/funder details; coverletter may highlight significance and previous submissions.",
+      "implication": "A concise science-fit coverletter is useful, but do not claim a universal mandatorycoverletter from this public text. Never fill unconfirmed allauthorapproval/originality/exclusive-submission/conflict declarations as facts."
+    },
+    {
+      "item": "APC, rates and rankings",
+      "url": "https://publishingsupport.iopscience.iop.org/journals/machine-learning-science-and-technology/about-machine-learning-science-technology/",
+      "reading_depth": "OfficialPublicationcharges table and statedchargingstage.",
+      "verified": "Current3350USD excludingVAT where applicable, on acceptance, no submissioncharge; institutional agreements/waivers can apply.",
+      "not_verified": "No official acceptance rate or manuscript-specific acceptance probability established. CAS2025rank not independently authenticated from an official authorizedCAS table in this task.",
+      "implication": "Delete quantitative35-48%/40%acceptance forecasts from decisiondocuments; do not promise maximal probability orQ2acceptance."
+    }
+  ],
+  "literature_review_scope": {
+    "selected_papers": 6,
+    "claim": "Bounded reading with depths explicitly distinguished; not100papers percategory, not a systematic acceptance-preference study.",
+    "no_model_comparison_executed": true,
+    "no_external_code_imported": true
+  },
+  "papers": [
+    {
+      "id": "Tran2020",
+      "title": "Methods for comparing uncertainty quantifications for material property predictions",
+      "doi": "10.1088/2632-2153/ab7e1a",
+      "version": "MLST1(2020)025006 publisherVersionofRecord via authorinstitutionPDF",
+      "url": "https://www.cs.cmu.edu/~epxing/papers/2020/Tran-MLST19.pdf",
+      "license": "CCBY4.0 stated inPDF",
+      "reading_depth": "14page PDF text retrievable; selectedabstract/introduction, dataset/split section2.1, methods and section2.3, results3.1 explanatoryplots read; notall14pagesclaimed.",
+      "takeaway": "Separate point accuracy, empirical calibration and sharpness, and contextualize proper scores. Their illustrative split is not a hydrogel grouping rule.",
+      "application": "Organize current metrics into explicit point/marginal/interval/joint axes; retain local failures alongsideaggregateCRPS.",
+      "do_not_claim": "LowerCRPS alone proves calibrated intervals, or thispaperproves our studywillbeaccepted."
+    },
+    {
+      "id": "Busk2022",
+      "title": "Calibrated uncertainty for molecular property prediction using ensembles of message passing neural networks",
+      "doi": "10.1088/2632-2153/ac3eb3",
+      "version": "Journal3(2022)015012 verifiedinstitutionmetadata; actualselectedmaintext arXiv2107.06068v2,03Nov2021",
+      "url": "https://arxiv.org/html/2107.06068",
+      "journal_metadata_url": "https://orbit.dtu.dk/en/publications/calibrated-uncertainty-for-molecular-property-prediction-using-en/",
+      "license": "CCBY4.0 stated inarXivHTML andinstitutionPDFindex",
+      "reading_depth": "Introduction, uncertaintycalibration2.5, recalibration2.6, dataset/setup3.1-3.2 selectedtext. DTUPDFdirect403; noPDFfullreadingclaimed.",
+      "takeaway": "Recalibration uses heldout data; jointaccuracy/calibration/sharpness reporting and duplicateawareness matter.",
+      "application": "Explain why newcalibrationunits mustbe disjointfrommodelchoice, and why transferredsourceisnotautomatically independentbatch.",
+      "do_not_claim": "Our25alreadyconsumedformulationsconstituteanunusedcalibrationset; theirlarge molecularstudyrequireslarge neuralmodels here."
+    },
+    {
+      "id": "ThomasMitchell2023",
+      "title": "Calibration of uncertainty in the active learning of machine learning force fields",
+      "doi": "10.1088/2632-2153/ad0ab5",
+      "version": "MLST4(2023)045034 VersionofRecord indexedprimarytext",
+      "url": "https://doi.org/10.1088/2632-2153/ad0ab5",
+      "institution_pdf": "https://pure.ulster.ac.uk/files/130243323/Thomas-Mitchell_2023_Mach._Learn._Sci._Technol._4_045034.pdf",
+      "license": "CCBY4.0 stated inindexedPDF",
+      "reading_depth": "Actualprimaryindexedabstract, methods2.5-2.6, results3.1, discussion4/conclusion5 excerptsread. DirectPDF403 and publisherdirectunavailable; notdownloadedfulltext.",
+      "takeaway": "Betteruncertaintymetricsdidnotautomaticallyimprovetheiractivelearning; StudenttvsGPoutcomesdependedondatasize.",
+      "application": "FrameourStudenttdiagnosticasafalsifiabletradeoffratherthananadoptedrepair; keepnegativeoutcomes.",
+      "do_not_claim": "Calibrationguaranteespracticalmeasurementcostsavings."
+    },
+    {
+      "id": "Conrad2025",
+      "title": "Leveraging multi-task learning regressor chains for small and sparse tabular data in materials design",
+      "doi": "10.1088/2632-2153/adae53",
+      "version": "MLST6(2025)015045 publisherVersionofRecord viaTUDrepository",
+      "url": "https://fis.tu-dresden.de/portal/files/65265337/Conrad_et_al._-_2025_-_Leveraging_multi-task_learning_regressor_chains_fo.pdf",
+      "official_code": "https://github.com/fc-tud/multi-task-learning-materials",
+      "license": "PaperCCBY4.0; code license notinspectedandnocodeused",
+      "reading_depth": "19pagePDFinitialretrieval; abstract/introduction and methods2.1datasetselection selectedtextread. SubsequentPDFfind403; noresulttable/full19pagereadingclaimed.",
+      "takeaway": "Acontrolledsparsitycomparisonofchains,neuralMTLandSTLcanbevaluable; repeatedpointscannotbedisguisedasindependentmaterials.",
+      "application": "Providefairbaselinefamiliesandmaterial-unitcounts; thisisadjacenttabularpropertyresearch,notsixanchorcurvecontinuationequivalence.",
+      "do_not_claim": "TheircomparisonestablishesournonneuralmethodbeatinguntestedCNPs."
+    },
+    {
+      "id": "JakemanVV",
+      "title": "Verification and validation for trustworthy scientific machine learning",
+      "doi_seen_in_primary_publisher_search": "10.1088/2632-2153/ae59ec",
+      "version": "ActualmainreadingarXiv2502.15496v2,25Apr2025; publisherindexedselectedupdatedtextalsoseen; exactjournalvolume/yearnotassertedfromarXiv",
+      "url": "https://arxiv.org/html/2502.15496v2",
+      "journal_url": "https://doi.org/10.1088/2632-2153/ae59ec",
+      "license": "arXivperpetualnonexclusive license, notopenredistributionofwholearticleassumed",
+      "reading_depth": "Sections1-3,4.1,5.2-5.3,6.1-6.2and6.5selectedtextread; officialDOIdirectrobotsdenied, Crossrefwebunavailable.",
+      "takeaway": "Codeverificationdiffersfromvalidationforanintendedapplication; domainandspecificacceptancecriteriaarecentral.",
+      "application": "Separatepreviousnumericalaudits,consumeddevelopment,sourceinspectedtransferstress,andfutureunconsumedconfirmation.",
+      "do_not_claim": "Softwarecheckcountsareindependentmaterialevidenceorall16recommendationsaremandatoryjournalacceptancecriteria."
+    },
+    {
+      "id": "Gopakumar2026",
+      "title": "Uncertainty quantification of surrogate models using conformal prediction",
+      "doi": "10.1088/2632-2153/ae2e7b",
+      "version": "MLST7(2026)015025 metadata; actualselectedreadingarXiv2408.09881v3,05Jan2026",
+      "url": "https://arxiv.org/html/2408.09881v3",
+      "license": "CCBY4.0 arXiv",
+      "reading_depth": "Sections2-2.4,4.2limitations,AppendixH.5andI.4selectedtextread; VersionofRecordDOIunavailableandOpenReviewbrowserchallenge,notbypassed.",
+      "takeaway": "Cellwiseconformalcoverageisnotjointcurvecoverageandrequirescalibration/testexchangeability;arbitrarytransferhasnoguarantee.",
+      "application": "Ifplanningcalibration,useformulation/batchunitsandclearlychoosemarginalorcurvewisegoals;donotrecycleconsumedexternaloutcomesasconfirmatorycalibration.",
+      "critical_note": "Theirassertionsaboutindependenceoftemporalwindowsandusingfinetuningdataforcalibrationmustnotbeimportedasproofthatourreusedorcorrelatedsamplesareexchangeable."
+    }
+  ],
+  "recommended_manuscript_moves": [
+    "Recenterthreecontributions:task;physicalcoordinatecurvature/fullresidualadaptation;matchedretrospectiveevidenceandtransfer/calibrationlimits.",
+    "Nouniversalphysics-generalizationclaim;explaintransferableformulationandhydrogel-onlymaterialevidence.",
+    "Useclearaccuracy/CRPS/calibration-sharpness/jointdependencyevaluationtaxonomy.",
+    "Moveoptimizationreceipts,hashes,andparticlebudgetsoutofmainnarrativebutretainmateriallossesandlocalundercoverageinthetext.",
+    "Formallyjustifycapacityandinformationcomparability:25materialunits,75correlatedqueriesand2475positionsarenotindependenttrainingmaterials.",
+    "UseMLST-specificopen-data/AIpolicy;keepauthor-controlledaccessanddeclarationsunresolveduntilactuallyclosed.",
+    "Anynewrepresentation/anchor-countstudyonsame25/46isnewdevelopmentorretrospectivesensitivity,notindependentconfirmation;avoidposthocselectionandthresholdclaims."
+  ],
+  "bounded_search_failures": [
+    "DirectUlsterPDF403;directDTUPDF403;TUDPDFfirstretrievedthenselectedfind403;noentirepaperreadingclaimed.",
+    "PublisherDOIsad0ab5,ae59ec,ae2e7bnotdirectlyretrievable;primaryindexedexcerptsoractualarXivusedwithversionsdistinguished.",
+    "InitiallyguessedarXivv4for2502.15496andv5for2408.09881returned404;actualabstractsidentifiedv2andv3andactualHTMLlinkswereused.",
+    "OpenReviewPDFredirectedbrowserverification;nochallengebypass.",
+    "CrossrefwebDOIendpointnotaccessible;exactunverifiedjournalyear/volumeforJakemannotinvented."
+  ],
+  "acceptance_assessment": "Fit and presentation can be improved; no calibrated manuscript acceptance probability can be computed from the available information. Additional independent same-domain evidence is scientifically valuable but cannot be manufactured by reusing consumed data.",
+  "input_attachment_sha256": "d5bfbae028c225c9fca1c607527fff79a7e5fe04e775111107acab868a8329df"
+}

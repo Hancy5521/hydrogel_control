@@ -1,0 +1,42 @@
+{
+  "checkpoint_id": "hydrogel-final-author-review-20261102T0403455089700Z",
+  "prepared_utc": "2026-11-02T04:16:08.360614+00:00",
+  "classification": "Final author-review draft after bounded witnessed-defect closure",
+  "parent_archived_commit": "707b4db0cf483b719b2fdc6631f34e7f7c98c526",
+  "paper_main_sha256": "87796ee2b23dadca6568ea54b554a71478ff1ccc31dcfa13551f8647752a3286",
+  "paper_supplement_sha256": "ad90ae6664da726cc33398c8556815adeae3138501000ab0ccf8d221a10eaea9",
+  "main_pages": 23,
+  "supplement_pages": 15,
+  "references": 54,
+  "model_sha256": "d72fc262fbae0e6fecc36568f0638166fe95e991bd5f7df100ab1434097d82d1",
+  "scientific_runtime_model_bindings": 16,
+  "original_scientific_replay_components": 20,
+  "additional_reconstruction_assets_checked": 2,
+  "scientific_model_runtime_and_original_scores_unchanged": true,
+  "current_revision_activity": {
+    "material_fit_calls": 0,
+    "material_forecasts": 0,
+    "material_target_score_calls": 0,
+    "new_physical_measurements": 0,
+    "changes": "Editorial attribution/layout/docs, replay/version protection and resource-verifier compatibility only"
+  },
+  "cumulative_scientific_evidence": {
+    "development_formulations_consumed": 25,
+    "development_layouts": 3,
+    "external_sources": 4,
+    "external_native_curves": 46,
+    "external_conservative_analysis_groups": 23,
+    "external_native_targets": 781,
+    "external_method_curve_score_rows": 276,
+    "source_inspected_not_blind": true,
+    "certified_independent_preparation_batches": false,
+    "all_positive_and_negative_sources_retained": true
+  },
+  "independent_calibration_confirmed": false,
+  "experimental_savings_measured": false,
+  "publication_or_quartile_acceptance_guaranteed": false,
+  "historical_evidence_index": "docs/final_review_20261102/HISTORICAL_EVIDENCE_INDEX.json",
+  "current_defect_review": "docs/final_review_20261102/FINAL_REVIEW_SUMMARY.json",
+  "raw_private_material_arrays_uploaded": false,
+  "automatic_or_goal_restart": false
+}

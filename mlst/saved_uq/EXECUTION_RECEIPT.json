@@ -1,0 +1,30 @@
+{
+  "recorded_after_completion_utc": "2026-11-04T08:07:39.436032+00:00",
+  "recorded_asia_shanghai": "2026-11-04T16:07:39.436032+08:00",
+  "observed_commands": [
+    {
+      "command": "python -m unittest -v test_replay_saved_uq.py",
+      "working_directory": "saved_uq",
+      "exit_code": 0,
+      "tests": 9,
+      "passed": 9,
+      "fixture_scope": "Invented scalar-score rows only; no measured responses"
+    },
+    {
+      "command": "python replay_saved_uq.py --repo-root CHECKOUT --output-dir saved_uq/analysis",
+      "exit_code": 0,
+      "output_rows": 12,
+      "fit_forecast_targetscore_calls": 0
+    }
+  ],
+  "plan_sha256": "31a543ed4c9196c87594312d2834636acdcf7eff2b41b981a7e96fcfe9572a61",
+  "input_sha256": "555f39ca076351b063511940f7b2a2a011e47ec9a55b0ce968c905e5f9b8c8d0",
+  "artifacts": {
+    "analysis/SAVED_UQ_RESULTS.json": "2dee008ef505c5efb7b65d15643e6694d0b1090d31c1d249c81feece7839f563",
+    "analysis/SAVED_UQ_SOURCE_METHODS.csv": "eb19382d7613682a429e84758f4e7571dd1d712a58cba6deba958a8aae819542",
+    "README.txt": "bccba3b2da1db173ee457939be66cf47cb3b50d90f75d306ec6db8b4360aa029",
+    "replay_saved_uq.py": "63e1b2afeb45334871f0eb8b270b3424b1da498f29b91b1accb5f031372282ff",
+    "test_replay_saved_uq.py": "f436d65ecb6cb408898c062c842a128e6d78bfedbcd1f1219bdc3e7f6e1179e2"
+  },
+  "independent_audit": "Pending parent or separate reviewer; this execution receipt is not an independent numerical audit"
+}

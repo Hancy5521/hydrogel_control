@@ -1,0 +1,85 @@
+{
+  "created_utc": "2026-11-04T08:13:13.554662+00:00",
+  "created_asia_shanghai": "2026-11-04T16:13:13.554662+08:00",
+  "bibliography": [
+    {
+      "key": "Busk2022",
+      "citation": "Busk J, Jørgensen P B, Bhowmik A, Schmidt M N, Winther O and Vegge T 2022 Calibrated uncertainty for molecular property prediction using ensembles of message passing neural networks Machine Learning: Science and Technology 3 015012",
+      "authors_original": "Jonas Busk; Peter Bjørn Jørgensen; Arghya Bhowmik; Mikkel N. Schmidt; Ole Winther; Tejs Vegge",
+      "year": 2022,
+      "volume": "3",
+      "article": "015012",
+      "doi": "10.1088/2632-2153/ac3eb3",
+      "canonical_url": "https://doi.org/10.1088/2632-2153/ac3eb3",
+      "metadata_url": "https://orbit.dtu.dk/en/publications/calibrated-uncertainty-for-molecular-property-prediction-using-en/",
+      "actual_read_url": "https://arxiv.org/html/2107.06068",
+      "actual_read_version": "arXiv:2107.06068v2, 3 November 2021",
+      "license": "CC BY 4.0, stated in arXiv HTML and institutional Version-of-Record PDF search index",
+      "reading_depth": "Selected Introduction, Methods 2.5 (calibration and sharpness), 2.6 (recalibration), and experiment dataset/setup 3.1-3.2; not entire article. DTU Version-of-Record PDF direct access returned 403. Journal citation year/volume/article verified against institutional metadata.",
+      "supports": "Evaluation axes and calibration on data not used to fit the predictive model; not a claim that our hydrogel intervals are calibrated.",
+      "title": "Calibrated uncertainty for molecular property prediction using ensembles of message passing neural networks"
+    },
+    {
+      "key": "ThomasMitchell2023",
+      "citation": "Thomas-Mitchell A, Hawe G and Popelier P L A 2023 Calibration of uncertainty in the active learning of machine learning force fields Machine Learning: Science and Technology 4 045034",
+      "authors_original": "Adam Thomas-Mitchell; Glenn Hawe; Paul L. A. Popelier",
+      "year": 2023,
+      "volume": "4",
+      "article": "045034",
+      "doi": "10.1088/2632-2153/ad0ab5",
+      "canonical_url": "https://doi.org/10.1088/2632-2153/ad0ab5",
+      "actual_read_urls": [
+        "https://doi.org/10.1088/2632-2153/ad0ab5?urlappend=%3Futm_source%3Dresearchgate.net%26utm_medium%3Darticle",
+        "https://pure.ulster.ac.uk/ws/files/130243323/Thomas-Mitchell_2023_Mach._Learn._Sci._Technol._4_045034.pdf"
+      ],
+      "actual_read_version": "Version-of-Record indexed primary excerpts, MLST 4 (2023) 045034",
+      "license": "CC BY 4.0 stated in institutional publisher-PDF search index",
+      "reading_depth": "Primary publisher/institution search-index excerpts of Abstract, Methods 2.5-2.6, Results 3.1, Discussion 4 and Conclusion 5. Direct institution PDF 403 and direct publisher URL inaccessible; not entire article or downloaded full PDF.",
+      "supports": "Better UQ measures do not automatically yield an improved downstream acquisition strategy; Student-t and post-hoc calibration have different roles and empirical trade-offs.",
+      "title": "Calibration of uncertainty in the active learning of machine learning force fields"
+    },
+    {
+      "key": "Jakeman2025v2",
+      "citation": "Jakeman J D, Barba L A, Martins J R R A and O'Leary-Roseberry T 2025 Verification and Validation for Trustworthy Scientific Machine Learning arXiv:2502.15496v2",
+      "authors_original": "John D. Jakeman; Lorena A. Barba; Joaquim R. R. A. Martins; Thomas O’Leary-Roseberry",
+      "year": 2025,
+      "version": "v2, revised 25 April 2025",
+      "title": "Verification and Validation for Trustworthy Scientific Machine Learning",
+      "identifier": "arXiv:2502.15496v2",
+      "canonical_url": "https://arxiv.org/abs/2502.15496v2",
+      "actual_read_url": "https://arxiv.org/html/2502.15496v2",
+      "arxiv_doi": "10.48550/arXiv.2502.15496",
+      "license": "arXiv perpetual, non-exclusive distribution license; no CC license assumed",
+      "reading_depth": "Selected Introduction/Background, problem definition 3, code verification 4.1, validation/prediction 5.2-5.3, data sources/processing 6.1-6.2, software quality/reproducibility 6.5. No claim to read the later journal version completely.",
+      "journal_status_note": "A primary publisher search result exposed DOI 10.1088/2632-2153/ae59ec; direct publisher robots denial and unavailable Crossref tool response prevent independently fixing exact journal year/volume/article in this review. Cite the actual read arXiv v2 explicitly rather than invent a journal locator.",
+      "supports": "Differentiate software verification from application validation; independently specify purpose, domains, units, and criteria."
+    },
+    {
+      "key": "Gopakumar2026",
+      "citation": "Gopakumar V et al 2026 Uncertainty quantification of surrogate models using conformal prediction Machine Learning: Science and Technology 7 015025",
+      "authors_original": "Vignesh Gopakumar; Ander Gray; Joel Oskarsson; Lorenzo Zanisi; Daniel Giles; Matt J. Kusner; Stanislas Pamela; Marc Peter Deisenroth",
+      "year": 2026,
+      "volume": "7",
+      "article": "015025",
+      "doi": "10.1088/2632-2153/ae2e7b",
+      "canonical_url": "https://doi.org/10.1088/2632-2153/ae2e7b",
+      "actual_read_url": "https://arxiv.org/html/2408.09881v3",
+      "actual_read_version": "arXiv:2408.09881v3, revised 5 January 2026",
+      "license": "CC BY 4.0 on actual read arXiv version",
+      "reading_depth": "Selected Sections 2-2.4 (formulation, scores and exchangeability), 4.2 limitations, and relevant Appendix H.5/I.4; not complete article. MLST journal locator seen in indexed Version-of-Record text and arXiv related DOI; direct DOI unavailable, OpenReview verification challenge not bypassed.",
+      "supports": "Distinguish marginal/cellwise coverage from simultaneous joint coverage; calibration-to-test exchangeability matters. Does not justify reusing consumed hydrogel targets as independent calibration.",
+      "title": "Uncertainty quantification of surrogate models using conformal prediction"
+    }
+  ],
+  "draft_paragraphs": {
+    "uq_axes_and_calibration": "We distinguish four aspects of probabilistic performance: point accuracy, marginal calibration, sharpness, and joint dependence. Log-scale point error measures central prediction accuracy; empirical interval coverage and interval width describe calibration and sharpness; CRPS jointly evaluates the location and spread of marginal predictive distributions; and joint log density and the variogram score probe dependence across target coordinates [Tran2020, Busk2022]. Improvement in one quantity need not improve the others. In particular, the Student-t diagnostic tests whether observation-dependent scale can reduce local undercoverage, but its wider intervals and worse one-sided CRPS prevent treating it as an adopted calibration repair [ThomasMitchell2023]. A distributional change is not independent calibration. Any subsequent conformal layer would require prespecified, unconsumed calibration units and assumptions linking them to deployment; pointwise or cellwise coverage must not be presented as simultaneous curve coverage [Gopakumar2026].",
+    "evidence_roles": "The evidence has four distinct roles. Numerical verification checks whether the implementation reproduces the stated Gaussian calculations and information-access rules; it does not establish material validity. Formulation-level leave-one-out evaluation of the 25 development formulations describes retrospective performance in a dataset already used during method development. The 46 source-inspected external curves provide a no-retraining transfer stress test under changes in chemistry, material state, and acquisition, rather than blinded confirmation of independent preparation-batch generalization. A future same-domain confirmation would freeze the method, anchor rule, comparison methods, endpoints, and material grouping before accessing new target curves [Jakeman2025v2]. These distinctions prevent repeated coordinates, masks, numerical checks, or reused outcomes from being counted as additional independent material evidence."
+  },
+  "instructions_to_integrator": [
+    "Citation keys in prose are placeholders for the manuscript numeric mapping, not final reference formatting.",
+    "Preserve diacritics or use verified consistent Roman transliteration. Parent may use et al.",
+    "No new measured results, no independent calibration and no acceptance probability claimed.",
+    "Both paragraphs are proposed prose to integrate only where each listed metric/analysis actually exists.",
+    "Use original read versions honestly and do not upgrade selected reading to complete-paper reading."
+  ]
+}

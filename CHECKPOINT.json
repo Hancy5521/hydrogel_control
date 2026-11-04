@@ -1,13 +1,13 @@
 {
-  "checkpoint_id": "hydrogel-final-author-review-20261102T0403455089700Z",
-  "prepared_utc": "2026-11-02T04:16:08.360614+00:00",
-  "classification": "Final author-review draft after bounded witnessed-defect closure",
-  "parent_archived_commit": "707b4db0cf483b719b2fdc6631f34e7f7c98c526",
-  "paper_main_sha256": "87796ee2b23dadca6568ea54b554a71478ff1ccc31dcfa13551f8647752a3286",
-  "paper_supplement_sha256": "ad90ae6664da726cc33398c8556815adeae3138501000ab0ccf8d221a10eaea9",
-  "main_pages": 23,
-  "supplement_pages": 15,
-  "references": 54,
+  "checkpoint_id": "hydrogel-mlst-author-review-20261104",
+  "prepared_utc": "2026-11-04T14:21:14.106990+00:00",
+  "classification": "MLST targeted author-review manuscript, not submitted or certified publication ready",
+  "parent_archived_commit": "778d9372a9c5847205db3289e81a3c73aee45962",
+  "paper_main_sha256": "67e99f20136871d67fe5ba95b0a0325ece05767a02b52a714c35bd3528e2396e",
+  "paper_supplement_sha256": "5c5346b619245ec17715cd548430eebd45466b014fd1d2a489b46159d0dae01a",
+  "main_pages": 14,
+  "supplement_pages": 25,
+  "references": 58,
   "model_sha256": "d72fc262fbae0e6fecc36568f0638166fe95e991bd5f7df100ab1434097d82d1",
   "scientific_runtime_model_bindings": 16,
   "original_scientific_replay_components": 20,
@@ -18,7 +18,7 @@
     "material_forecasts": 0,
     "material_target_score_calls": 0,
     "new_physical_measurements": 0,
-    "changes": "Editorial attribution/layout/docs, replay/version protection and resource-verifier compatibility only"
+    "changes": "MLST editorial consolidation, saved-scalar UQ diagnostics, scalar reviewer entry, source-policy review and separate future-innovation decision"
   },
   "cumulative_scientific_evidence": {
     "development_formulations_consumed": 25,
@@ -38,5 +38,7 @@
   "historical_evidence_index": "docs/final_review_20261102/HISTORICAL_EVIDENCE_INDEX.json",
   "current_defect_review": "docs/final_review_20261102/FINAL_REVIEW_SUMMARY.json",
   "raw_private_material_arrays_uploaded": false,
-  "automatic_or_goal_restart": false
+  "automatic_or_goal_restart": false,
+  "paper_main_path": "paper/MLST/Hydrogel_Continuation_MLST.docx",
+  "paper_supplement_path": "paper/MLST/Supplement_MLST.docx"
 }

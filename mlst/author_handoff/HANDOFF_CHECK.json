@@ -1,0 +1,447 @@
+{
+  "actual_utc": "2026-11-04T14:24:39.865578+00:00",
+  "status": "PASS",
+  "scope": "Final selected-document locators and actual curated-file SHA checks, all listed repository assets, public-text/JSON/local-HTML links. Only stage author_handoff edited; repository and DOCX read-only.",
+  "supersedes_check_sha256": "bb46b2ac16ba0ec233d6233dff0522d1f5281a74f0d5e6bda1da04beb8cf4b05",
+  "actual_selected_document_checks": [
+    {
+      "document": "main",
+      "repo_relative_path": "paper/MLST/Hydrogel_Continuation_MLST.docx",
+      "actual_file_sha256": "67e99f20136871d67fe5ba95b0a0325ece05767a02b52a714c35bd3528e2396e",
+      "matches_bound_sha256": true
+    },
+    {
+      "document": "supplement",
+      "repo_relative_path": "paper/MLST/Supplement_MLST.docx",
+      "actual_file_sha256": "5c5346b619245ec17715cd548430eebd45466b014fd1d2a489b46159d0dae01a",
+      "matches_bound_sha256": true
+    },
+    {
+      "document": "cover_letter",
+      "repo_relative_path": "paper/MLST/MLST_Cover_Letter.docx",
+      "actual_file_sha256": "00769a8050d7500cd26cbc16616946bbe6cbdddef2edf1f829583a0ae5a89b99",
+      "matches_bound_sha256": true
+    }
+  ],
+  "files": [
+    {
+      "file": "AUTHOR_HANDOFF.html",
+      "sha256": "bb51b48c3fa846f649baea378b4ea09ab82d130ab07f249c3b5df19bb9acf85c",
+      "bytes": 27269
+    },
+    {
+      "file": "AUTHOR_HANDOFF.json",
+      "sha256": "43472097edbb65dc198cae647bc34869a182df0c0b0d0e7ff95e30397b8fba2a",
+      "bytes": 25203
+    },
+    {
+      "file": "AUTHOR_HANDOFF_CORRECTION.json",
+      "sha256": "5e7798ff241e9461b77688d62cf2e486b522b3d3b1d3103d7588e796b1628ecd",
+      "bytes": 3384
+    },
+    {
+      "file": "FUTURE_CONFIRMATION_TEMPLATE.json",
+      "sha256": "b7fc3a2d9c85a2499242504279ee87399470393ec10cc44e92efbaf0c767ade5",
+      "bytes": 5851
+    }
+  ],
+  "checks": [
+    {
+      "name": "AUTHOR_HANDOFF.html no private drive path",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "AUTHOR_HANDOFF.json no private drive path",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "AUTHOR_HANDOFF.json validJSON",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "FUTURE_CONFIRMATION_TEMPLATE.json no private drive path",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "FUTURE_CONFIRMATION_TEMPLATE.json validJSON",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "AUTHOR_HANDOFF_CORRECTION.json no private drive path",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "AUTHOR_HANDOFF_CORRECTION.json validJSON",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "main actual selected file exists",
+      "pass": true,
+      "detail": "paper/MLST/Hydrogel_Continuation_MLST.docx"
+    },
+    {
+      "name": "main actual file matches bound SHA",
+      "pass": true,
+      "detail": "67e99f20136871d67fe5ba95b0a0325ece05767a02b52a714c35bd3528e2396e"
+    },
+    {
+      "name": "supplement actual selected file exists",
+      "pass": true,
+      "detail": "paper/MLST/Supplement_MLST.docx"
+    },
+    {
+      "name": "supplement actual file matches bound SHA",
+      "pass": true,
+      "detail": "5c5346b619245ec17715cd548430eebd45466b014fd1d2a489b46159d0dae01a"
+    },
+    {
+      "name": "cover_letter actual selected file exists",
+      "pass": true,
+      "detail": "paper/MLST/MLST_Cover_Letter.docx"
+    },
+    {
+      "name": "cover_letter actual file matches bound SHA",
+      "pass": true,
+      "detail": "00769a8050d7500cd26cbc16616946bbe6cbdddef2edf1f829583a0ae5a89b99"
+    },
+    {
+      "name": "repo asset exists:runtime/deployment/generate_curve.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "repo asset exists:models/SHARED_MODEL.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "repo asset exists:models/BASELINES_MODEL.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "repo asset exists:models/RUNTIME_BINDINGS.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "repo asset exists:requirements.txt",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "repo asset exists:MODEL_CARD.md",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "repo asset exists:reproducibility/README.md",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "repo asset exists:reproducibility/ledger/marginal_scores.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "repo asset exists:reproducibility/ledger/variogram_scores.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "repo asset exists:reproducibility/ledger/point_only_scores.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "repo asset exists:reproducibility/replay_tables.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "repo asset exists:reproducibility/provenance/SOURCES.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "repo asset exists:reproducibility/provenance/COVERAGE.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "repo asset exists:LOCAL_ARCHIVE_INDEX.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "repo asset exists:docs/AUTHOR_ACTIONS.md",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "repo asset exists:external_validation/20261101T1239423181800Z/SOURCE_REGISTER.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "repo asset exists:external_validation/20261101T1239423181800Z/reproduction/SOURCE_CELL_MAP.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "repo asset exists:external_validation/20261101T1239423181800Z/reproduction/README.md",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "repo asset exists:external_validation/20261101T1239423181800Z/reproduction/fetch_sources.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "repo asset exists:external_validation/20261101T1239423181800Z/reproduction/rebuild_inputs.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "repo asset exists:external_validation/20261101T1239423181800Z/reproduction/run_replay.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "repo asset exists:external_validation/20261101T1239423181800Z/SCORES.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "repo asset exists:external_validation/20261101T1239423181800Z/PREDICTION_MOMENTS.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "repo asset exists:robustness/20261102_weighting/README.md",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "repo asset exists:mlst/README.txt",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "repo asset exists:mlst/reviewer_replay.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "repo asset exists:mlst/REPLAY_INPUT_BINDINGS.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "repo asset exists:mlst/saved_uq/replay_saved_uq.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "repo asset exists:verification/README.md",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "repo asset exists:verification/verify_frozen_inference.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "repo asset exists:training_demo/README.md",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "repo asset exists:examples/SYNTHETIC_ANCHORS.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no invented future units",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "future unchanged by locator correction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "link:#now",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "link:#gates",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "link:#assets",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "link:#stronger",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "link:#future",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "link:#math",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "link:#sources",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "link:https://publishingsupport.iopscience.iop.org/questions/generative-ai-tools/",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "link:https://publishingsupport.iopscience.iop.org/questions/how-to-submit-your-journal-article/",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "link:https://publishingsupport.iopscience.iop.org/iop-publishing-open-data-policy/",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "link:https://publishingsupport.iopscience.iop.org/iop-publishing-open-data-policy/",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "link:https://publishingsupport.iopscience.iop.org/questions/how-to-submit-your-journal-article/",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "link:https://publishingsupport.iopscience.iop.org/questions/generative-ai-tools/",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "link:https://publishingsupport.iopscience.iop.org/questions/how-to-submit-your-journal-article/",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "link:https://publishingsupport.iopscience.iop.org/journals/machine-learning-science-and-technology/",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "link:https://doi.org/10.5281/zenodo.19602891",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "link:https://doi.org/10.17638/datacat.liverpool.ac.uk/1296",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "link:https://doi.org/10.1371/journal.pone.0162849",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "link:https://doi.org/10.5281/zenodo.7506819",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "link:https://doi.org/10.1016/j.matt.2023.01.011",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "link:https://doi.org/10.34894/HBKOLJ",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "link:FUTURE_CONFIRMATION_TEMPLATE.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "link:https://arxiv.org/html/1604.04173v2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "link:https://publishingsupport.iopscience.iop.org/iop-publishing-open-data-policy/",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "link:https://publishingsupport.iopscience.iop.org/questions/generative-ai-tools/",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "link:https://publishingsupport.iopscience.iop.org/questions/how-to-submit-your-journal-article/",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "link:https://publishingsupport.iopscience.iop.org/journals/machine-learning-science-and-technology/",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "link:https://arxiv.org/html/1604.04173v2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "link:AUTHOR_HANDOFF.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "self contained HTML",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "HTML omits obsolete selected locator:paper/Hydrogel_Continuation_English_Revised.docx",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "HTML omits obsolete selected locator:paper/Supplement_Revised.docx",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "passed": 79,
+  "failed": 0
+}

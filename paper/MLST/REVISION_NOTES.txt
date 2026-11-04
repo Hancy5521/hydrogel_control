@@ -1,0 +1,7 @@
+MLST author-review revision, 4 November 2026
+
+Main 14 pages, SI 25 pages, 58 references. The original 23/15-page author-review files remain at paper/ and in earlier commits. Three domain/task contributions, 4 main figures, 4 main tables, compact core Methods; all 89 original native mathematical objects and 14 original scientific tables are retained.
+
+New saved-score UQ summaries and independent audit expose narrower yet poorer Liverpool intervals. The historical 25-P and 46-curve material predictions are unchanged. A portable scalar-only reviewer command and table/figure crosswalk are under mlst/. Full fitting replay and data permissions remain author gates. No independent calibration, new-batch generalization, novel universal Gaussian theory or acceptance probability is asserted.
+
+Intermediate figure-order, inline-math placement and table-caption pagination defects were found and corrected through independent structural and actual page-image checks. Final 40 pages (14+25+1) have visual review coverage.

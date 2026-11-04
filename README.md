@@ -1,3 +1,15 @@
+# MLST targeted author review
+
+The current journal version is [paper/MLST/Hydrogel_Continuation_MLST.docx](paper/MLST/Hydrogel_Continuation_MLST.docx), with [Supplement](paper/MLST/Supplement_MLST.docx) and an unsent [cover letter](paper/MLST/MLST_Cover_Letter.docx). Main14/SI25 pages,58references; all historical paper files remain unchanged below. Start with [the Chinese review](mlst/MLST_REVIEW_ZH.html), [reviewer instructions](mlst/README.txt) and [author/data gates](mlst/author_handoff/).
+
+One standard-library command replays saved scalar evidence without importing a model:
+
+```sh
+python mlst/reviewer_replay.py --repo-root . --output-dir NEW_DIRECTORY
+```
+
+This revision reorganizes existing evidence and adds saved-score interval diagnostics, not new material predictions, independent calibration or universal superiority. Future innovation notes under mlst/future_research are unvalidated proposals, separate from the frozen results. Data-access, original-asset licensing and author declarations remain to be completed for MLST. Older descriptions of page counts, evidence status and open tasks below refer to their dated checkpoints.
+
 # Hydrogel curve continuation
 
 Current checkpoint: the manuscript now integrates the [four-source external evaluation](external_validation/20261101T1239423181800Z/README.md) and [population-weight sensitivity](robustness/20261102_weighting/README.md). Original model and score bytes remain unchanged; the two paper files and replay orchestration guard are revised.

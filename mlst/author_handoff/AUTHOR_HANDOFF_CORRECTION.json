@@ -1,0 +1,63 @@
+{
+  "actual_utc": "2026-11-04T14:24:39.865578+00:00",
+  "change": "Corrected main and supplement repository locators to the actual MLST subdirectory; checked all three selected documents against their actual curated files and bound SHA256. No DOCX or scientific asset changed.",
+  "path_changes": [
+    {
+      "old": "paper/Hydrogel_Continuation_English_Revised.docx",
+      "new": "paper/MLST/Hydrogel_Continuation_MLST.docx"
+    },
+    {
+      "old": "paper/Supplement_Revised.docx",
+      "new": "paper/MLST/Supplement_MLST.docx"
+    }
+  ],
+  "prior_correction": {
+    "actual_utc": "2026-11-04T14:18:15.356028+00:00",
+    "change": "Repository-relative cover-letter locator corrected to actual curated layout; no scientific manuscript, model, future design or numerical result changed.",
+    "old_cover_relative_path": "mlst/MLST_Cover_Letter.docx",
+    "new_cover_relative_path": "paper/MLST/MLST_Cover_Letter.docx",
+    "prior_file_sha256": {
+      "AUTHOR_HANDOFF.html": "92ccb215bdb4f91d977451c0c8c0b2ade2a9396e89889e23ee683ec19a2749b1",
+      "AUTHOR_HANDOFF.json": "fbac8584dfc5276b19fe723d4eec60528a2c93afe1552188eaf8d8aec6d44a5f",
+      "FUTURE_CONFIRMATION_TEMPLATE.json": "b7fc3a2d9c85a2499242504279ee87399470393ec10cc44e92efbaf0c767ade5",
+      "HANDOFF_CHECK.json": "526b4cb7297d1f952317a4052b2f9493d347884e1947bcebe0f044d7d927e089"
+    },
+    "new_file_sha256": {
+      "AUTHOR_HANDOFF.html": "40d01c4ee19ffa0c1582a000f901279fc6dbc0cf3f461bfbc93747607fe4d216",
+      "AUTHOR_HANDOFF.json": "68cad47cb602b10d21ca9fe5c9b24104bf8afc18273a01ae456eae4ab6baf10d",
+      "FUTURE_CONFIRMATION_TEMPLATE.json": "b7fc3a2d9c85a2499242504279ee87399470393ec10cc44e92efbaf0c767ade5"
+    }
+  },
+  "prior_file_sha256": {
+    "AUTHOR_HANDOFF.html": "40d01c4ee19ffa0c1582a000f901279fc6dbc0cf3f461bfbc93747607fe4d216",
+    "AUTHOR_HANDOFF.json": "68cad47cb602b10d21ca9fe5c9b24104bf8afc18273a01ae456eae4ab6baf10d",
+    "AUTHOR_HANDOFF_CORRECTION.json": "a5667eae572e390748265442b6b35e887851f48cf692664de01b60aacd88d0ff",
+    "FUTURE_CONFIRMATION_TEMPLATE.json": "b7fc3a2d9c85a2499242504279ee87399470393ec10cc44e92efbaf0c767ade5",
+    "HANDOFF_CHECK.json": "bb46b2ac16ba0ec233d6233dff0522d1f5281a74f0d5e6bda1da04beb8cf4b05"
+  },
+  "actual_selected_document_checks": [
+    {
+      "document": "main",
+      "repo_relative_path": "paper/MLST/Hydrogel_Continuation_MLST.docx",
+      "actual_file_sha256": "67e99f20136871d67fe5ba95b0a0325ece05767a02b52a714c35bd3528e2396e",
+      "matches_bound_sha256": true
+    },
+    {
+      "document": "supplement",
+      "repo_relative_path": "paper/MLST/Supplement_MLST.docx",
+      "actual_file_sha256": "5c5346b619245ec17715cd548430eebd45466b014fd1d2a489b46159d0dae01a",
+      "matches_bound_sha256": true
+    },
+    {
+      "document": "cover_letter",
+      "repo_relative_path": "paper/MLST/MLST_Cover_Letter.docx",
+      "actual_file_sha256": "00769a8050d7500cd26cbc16616946bbe6cbdddef2edf1f829583a0ae5a89b99",
+      "matches_bound_sha256": true
+    }
+  ],
+  "new_file_sha256": {
+    "AUTHOR_HANDOFF.html": "bb51b48c3fa846f649baea378b4ea09ab82d130ab07f249c3b5df19bb9acf85c",
+    "AUTHOR_HANDOFF.json": "43472097edbb65dc198cae647bc34869a182df0c0b0d0e7ff95e30397b8fba2a",
+    "FUTURE_CONFIRMATION_TEMPLATE.json": "b7fc3a2d9c85a2499242504279ee87399470393ec10cc44e92efbaf0c767ade5"
+  }
+}

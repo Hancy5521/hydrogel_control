@@ -1,0 +1,32 @@
+{
+  "registered_utc": "2026-11-04T08:01:55.821889+00:00",
+  "registered_asia_shanghai": "2026-11-04T16:01:55.821889+08:00",
+  "question": "How do saved accuracy, uncertainty width, interval score and localized coverage failures differ across the already scored external sources?",
+  "classification": "New descriptive organization of previously consumed curve-level score scalars. No new forecast, target scoring, fitting, calibration or independent validation.",
+  "input_sha256": "555f39ca076351b063511940f7b2a2a011e47ec9a55b0ce968c905e5f9b8c8d0",
+  "methods": [
+    "curvature_joint_gaussian",
+    "reference_gp",
+    "conditional_gaussian"
+  ],
+  "weighting": "Retain original equal-group within-source weighting. Average native curves within group then groups within source. Do not pool sources or select weights.",
+  "outputs": [
+    "source-method CRPS, sqrt(group-macro MSE), coverage90, width90_log, interval_score90_log, marginal_nll_log",
+    "per-source counts of native curves with zero target coverage and with all targets covered by the nominal marginal 90 percent bands",
+    "per-source descriptive ranges of native-curve coverage"
+  ],
+  "counts_warning": "Native curves, including reported means and correlated runs, are not certified independent preparations. All-target-band inclusion is descriptive, not a simultaneous-coverage guarantee.",
+  "forbidden": [
+    "model import",
+    "raw or processed target arrays",
+    "prediction regeneration",
+    "new primary endpoint",
+    "threshold optimization",
+    "p values or confidence claims from correlated positions",
+    "deployment risk gate from consumed labels"
+  ],
+  "stop": "All 46 curves and 276 original score rows verified by identities; report all 4 sources and 3 probabilistic methods including failures; independent scalar audit before manuscript use.",
+  "input_relative_path": "external_validation/20261101T1239423181800Z/SCORES.json",
+  "original_local_plan_sha256": "31a543ed4c9196c87594312d2834636acdcf7eff2b41b981a7e96fcfe9572a61",
+  "public_projection": "Original machine-local input prefix removed; original preregistration time, exact input hash and scope preserved"
+}

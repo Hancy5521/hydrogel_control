@@ -1,0 +1,397 @@
+{
+  "actual_utc": "2026-11-04T14:16:27.025330+00:00",
+  "actual_asia_shanghai": "2026-11-04T22:16:27.025330+08:00",
+  "title": "MLST投稿前作者清单与最小确认方案",
+  "status": "AUTHOR_REVIEW_AND_DATA_ACCESS_DECISIONS_PENDING",
+  "public_safe": true,
+  "repository": "https://github.com/Hancy5521/hydrogel_control",
+  "selected_documents": {
+    "main": {
+      "repo_relative_path": "paper/MLST/Hydrogel_Continuation_MLST.docx",
+      "sha256": "67e99f20136871d67fe5ba95b0a0325ece05767a02b52a714c35bd3528e2396e",
+      "pages": 14
+    },
+    "supplement": {
+      "repo_relative_path": "paper/MLST/Supplement_MLST.docx",
+      "sha256": "5c5346b619245ec17715cd548430eebd45466b014fd1d2a489b46159d0dae01a",
+      "pages": 25
+    },
+    "cover_letter": {
+      "repo_relative_path": "paper/MLST/MLST_Cover_Letter.docx",
+      "sha256": "00769a8050d7500cd26cbc16616946bbe6cbdddef2edf1f829583a0ae5a89b99"
+    },
+    "references": 58,
+    "main_figures": 4,
+    "main_tables": 4,
+    "prior_checkpoint": "778d9372a9c5847205db3289e81a3c73aee45962",
+    "frozen_model_sha256": "d72fc262fbae0e6fecc36568f0638166fe95e991bd5f7df100ab1434097d82d1",
+    "path_note": "Paths describe the intended repository layout of this MLST handoff; identity must be confirmed against the newly archived CHECKPOINT.json and MANIFEST.json. Creating this checklist is not a claim that a new remote commit or DOI has already been published."
+  },
+  "main_point": "当前有限域回顾性稿已完成本轮定向重组；作者与数据访问安排仍需闭合。独立同域、校准和表示扩展可加强证据，但不能靠编辑或重用旧目标补造。没有可校准的录用概率估计。",
+  "policy_summary": "MLST明确适用IOP open-data policy：发表时需公开验证或复现结论所需支持数据。只写upon request不满足；确有合法限制须说明理由、来源和获取路径并由编辑审查例外。提交时提供可用标识或预登记信息与审稿访问。可信仓库/DOI及开放重用许可受到鼓励，不能把推荐误说成已完成或自动代选许可。",
+  "gates_for_bounded_manuscript": [
+    {
+      "id": "G1",
+      "category": "Author scientific responsibility",
+      "title": "由真实作者确认本文只主张已有证据支持的内容",
+      "status": "AUTHOR_CONFIRMATION_REQUIRED",
+      "action": "逐读最终主文、补充材料和引用；同意将25P称回顾性开发、46外部曲线称来源已查看的无重训练迁移压力测试。保留插值输给对照、局部欠覆盖、三源失利与族权重反转。不得签署未实际完成的复核。",
+      "done_when": "真实作者确认解释、图表、引用及贡献边界，能对模型和结果承担责任。",
+      "basis": "Local scientific readiness; IOP author/AI responsibilities",
+      "source_keys": [
+        "ai",
+        "submission"
+      ]
+    },
+    {
+      "id": "G2",
+      "category": "Journal-specific required data route",
+      "title": "落实支撑结论所需数据的可验证访问安排",
+      "status": "OPEN_AUTHOR_ASSET_DECISION",
+      "action": "按下方清单区分已公开的分数复算/冻结推断与尚缺的原始处理输入、原训练/外折重放。对每项决定公开或由合法上游稳定访问并精确重建；确有法律或伦理障碍时，写明限制、第三方来源和实际获取途径，由编辑审查例外。",
+      "done_when": "提交时有可用链接、持久标识或预登记标识及必要的审稿访问安排；发表时所需支持数据公开，或已取得期刊对具体例外的认可。仅写upon request不够。",
+      "basis": "MLST is explicitly covered by the IOP open-data policy, not merely the generic availability policy",
+      "source_keys": [
+        "open_data"
+      ]
+    },
+    {
+      "id": "G3",
+      "category": "Rights and reusable assets",
+      "title": "确认原始资产与第三方条款，作者选择许可",
+      "status": "AUTHOR_RIGHTS_DECISION_REQUIRED",
+      "action": "分别确定自有程序、权重、稿件和处理数据的权利人与重用条款；不代选MIT或CC许可，不把上游CC条款自动套给所有衍生资产。granular数据的other-open标签不是已核定的再分发授权。",
+      "done_when": "清楚列出哪些资产可发布、允许何种重用，第三方必须保留的署名/限制，以及不能镜像资产的合法源获取路径；正文、仓库和DAS一致。",
+      "basis": "Author-controlled rights decision; no particular external-repository data license mandated by IOP",
+      "source_keys": [
+        "open_data"
+      ]
+    },
+    {
+      "id": "G4",
+      "category": "Author metadata and declarations",
+      "title": "补齐署名、单位、基金、冲突与提交信息",
+      "status": "AUTHOR_INPUT_REQUIRED",
+      "action": "填写并核对作者姓名、单位、邮箱、通讯作者、贡献、基金编号和利益冲突；提交者提供ORCID。由作者确认作者同意、原创/既往投稿情况和期刊伦理声明，不能沿用占位符或由工具代签。",
+      "done_when": "所有姓名与声明由实际作者确认，投稿系统字段与主文一致。",
+      "basis": "Official submission workflow plus author responsibility",
+      "source_keys": [
+        "submission"
+      ]
+    },
+    {
+      "id": "G5",
+      "category": "Transparent AI assistance",
+      "title": "核实实际AI工具配置及人工验证范围",
+      "status": "AUTHOR_CONFIRMATION_REQUIRED",
+      "action": "本项目AI参与选题/资料检索、程序、分析核查和写作，超出拼写检查。核真实工具/模型版本、使用日期和用途，并由作者说明实际验证及批判性审阅；在Acknowledgements独立披露，研究过程用途也在Methods说明。",
+      "done_when": "版本未知就明确待核，不编造模型号；每篇引用核原始来源；不把生成曲线当测量，不将AI列为作者，不用套话宣称未进行的全面人工验证。",
+      "basis": "IOP generative-AI policy; actual assistance in this project",
+      "source_keys": [
+        "ai"
+      ]
+    },
+    {
+      "id": "G6",
+      "category": "Submission file and version consistency",
+      "title": "核最终版本、文件和数据声明",
+      "status": "FINAL_AUTHOR_REVIEW_REQUIRED",
+      "action": "按最终CHECKPOINT/MANIFEST核主文、SI、图表及一键复算入口；提交可读的完整PDF，按实际系统要求附SI/权限说明。确认摘要、字数与文件大小符合当前作者指南。替换稿中的作者及数据访问待办文字后，重新检查引用与分页。",
+      "done_when": "主文、SI、cover letter和DAS指向同一版本；没有未填作者字段、无效链接或把大本地归档包当成期刊SI。",
+      "basis": "Official submission guidance and local version control",
+      "source_keys": [
+        "submission",
+        "scope_format"
+      ]
+    }
+  ],
+  "asset_inventory": [
+    {
+      "asset": "冻结科学推断与权重",
+      "state": "已有公开检查点；本轮科学字节保持",
+      "repo_paths": [
+        "runtime/deployment/generate_curve.py",
+        "models/SHARED_MODEL.json",
+        "models/BASELINES_MODEL.json",
+        "models/RUNTIME_BINDINGS.json",
+        "requirements.txt",
+        "MODEL_CARD.md"
+      ],
+      "can_do": "从六个合规锚点生成同一联合法则；读取模型卡与单位/支持限制。",
+      "cannot_claim": "全数据deployment权重不是25个外折模型，不能对训练P回测并冒称论文留一结果。",
+      "author_action": "确认权重及程序许可、发布版本与源绑定。"
+    },
+    {
+      "asset": "既有开发分数与表格复算",
+      "state": "已公开scalar证据，不是完整训练重放",
+      "repo_paths": [
+        "reproducibility/README.md",
+        "reproducibility/ledger/marginal_scores.json",
+        "reproducibility/ledger/variogram_scores.json",
+        "reproducibility/ledger/point_only_scores.json",
+        "reproducibility/replay_tables.py"
+      ],
+      "can_do": "从保存的675/375/75行分数重建相应表格。",
+      "cannot_claim": "不读取原测量标签、不重拟合、不重新预测；不能独立重造原始评分。",
+      "author_action": "允许审稿人用公开算术入口核对表格，同时补充下项所需输入访问。"
+    },
+    {
+      "asset": "完整原处理输入、原训练与外折资源",
+      "state": "现有公开snapshot未全含；作者需落实",
+      "repo_paths": [
+        "reproducibility/provenance/SOURCES.json",
+        "reproducibility/provenance/COVERAGE.json",
+        "LOCAL_ARCHIVE_INDEX.json",
+        "docs/AUTHOR_ACTIONS.md"
+      ],
+      "source_urls": [
+        "https://doi.org/10.5281/zenodo.19602891"
+      ],
+      "can_do": "现有来源/分组与已保存分数具追溯入口。",
+      "cannot_claim": "本地存在大ZIP或公开了源DOI，不等于处理缓存、全部外折预测法则和参考拟合已可供重放。",
+      "author_action": "选择可公开的最小充分材料：合法原生P响应和S所用锚点或精确源重建、单位/角色/分组、固定折与预处理、模型/对照设置、必要运行代码和外折预测/评分资产。可提供完整确定性重建路径而非机械镜像所有原件。隐藏S结果未用于本文，不应为凑公开资料而解除其访问边界。"
+    },
+    {
+      "asset": "外部四源来源、单元格映射与重建",
+      "state": "映射/reader公开，上游原件按条款获取",
+      "repo_paths": [
+        "external_validation/20261101T1239423181800Z/SOURCE_REGISTER.json",
+        "external_validation/20261101T1239423181800Z/reproduction/SOURCE_CELL_MAP.json",
+        "external_validation/20261101T1239423181800Z/reproduction/README.md",
+        "external_validation/20261101T1239423181800Z/reproduction/fetch_sources.py",
+        "external_validation/20261101T1239423181800Z/reproduction/rebuild_inputs.py",
+        "external_validation/20261101T1239423181800Z/reproduction/run_replay.py"
+      ],
+      "source_urls": [
+        "https://doi.org/10.17638/datacat.liverpool.ac.uk/1296",
+        "https://doi.org/10.1371/journal.pone.0162849",
+        "https://doi.org/10.5281/zenodo.7506819",
+        "https://doi.org/10.1016/j.matt.2023.01.011",
+        "https://doi.org/10.34894/HBKOLJ"
+      ],
+      "can_do": "按来源哈希和精确单元格规则重建既有46曲线/1057对的输入；需原文件及读取依赖。",
+      "cannot_claim": "元数据开放不自动授权第三方原数组镜像；重新运行不是新独立确认。",
+      "author_action": "逐项保留上游条款、版本、来源和归属；不能镜像时如实说明原源路径及访问障碍。"
+    },
+    {
+      "asset": "外部分数、权重和本轮UQ再组织",
+      "state": "既有结果公开；MLST入口为本轮新归档内容",
+      "repo_paths": [
+        "external_validation/20261101T1239423181800Z/SCORES.json",
+        "external_validation/20261101T1239423181800Z/PREDICTION_MOMENTS.json",
+        "robustness/20261102_weighting/README.md",
+        "mlst/README.txt",
+        "mlst/reviewer_replay.py",
+        "mlst/REPLAY_INPUT_BINDINGS.json",
+        "mlst/saved_uq/replay_saved_uq.py"
+      ],
+      "can_do": "一条标准库命令复算保存分数及MLST表号映射，核Liverpool区间质量/零覆盖计数。",
+      "cannot_claim": "不拟合、不重新评分、无新校准或同域独立数据，也不重新渲染所有图。",
+      "author_action": "以本轮最终归档清单确认新入口确已发布；不要用仅有本机的链接代替审稿入口。"
+    },
+    {
+      "asset": "数值实现检查与合成示例",
+      "state": "已公开软件证据",
+      "repo_paths": [
+        "verification/README.md",
+        "verification/verify_frozen_inference.py",
+        "training_demo/README.md",
+        "examples/SYNTHETIC_ANCHORS.json"
+      ],
+      "can_do": "复核接口、数学实现及合成训练原语。",
+      "cannot_claim": "合成演示不是材料测量，不补独立批次、概率校准或实验节约。",
+      "author_action": "保留synthetic标识，区分验证代码与验证材料效果。"
+    }
+  ],
+  "optional_stronger_evidence": [
+    {
+      "priority": 1,
+      "evidence": "真正未消费的同域确认",
+      "reason": "最直接区分原目标墨水域的可复现收益与跨化学/状态混杂的压力测试。",
+      "needs": "有来源/配方/制备批次身份的新曲线、原生坐标、单位、温度/测量状态及未揭示目标；新配方、新批次和新实验室分别分组。",
+      "plan": "先固定方法/锚点/终点/失败处理/数据排除及分组，再冻结预测、揭示目标。",
+      "current_status": "未执行，数据及数量未登记。"
+    },
+    {
+      "priority": 2,
+      "evidence": "独立材料单位的校准与独立确认",
+      "reason": "当前局部/外部欠覆盖尚未修复；误差条不自动可信。",
+      "needs": "未用于模型/窗口/阈值选择的校准单位，另留确认单位；明确有限网格整曲线还是单点边际覆盖。",
+      "plan": "可评估固定尺度或curve-level split conformal；不得把老25P、46外部已消费曲线、坐标点或生成样本当新校准材料。",
+      "current_status": "未执行；下附的是数学设计，不是已完成算法或结果。"
+    },
+    {
+      "priority": 3,
+      "evidence": "表示稳健性与容量受控的功能基线",
+      "reason": "现有数据仅支持相对一个固定随机表示的结论。",
+      "needs": "预固定随机方向集合、FPCA或另一种局部基；如加入CNP需单独确定架构/预算/种子和训练单位。",
+      "plan": "新拟合在清楚的开发协议内完成，折内预处理与内层选择；不替换原结果，不拿消费过的外部源调参后再叫验证。",
+      "current_status": "未执行，不虚构FPCA/CNP效果；50–100个随机种子不是官方要求。"
+    },
+    {
+      "priority": 4,
+      "evidence": "适用域或拒绝/回退策略",
+      "reason": "现有来源异质性提示风险，但没有验证过的安全阈值。",
+      "needs": "合法锚点/参考信息构造事先定义的risk指标，独立保留单位验证选择性覆盖与误差。",
+      "plan": "公开全阈值描述与独立阈值评估，不能按当前外部得分挑获胜阈值。",
+      "current_status": "未执行；公开scalar导出不含逐曲线h，不能假装已有风险曲线。"
+    },
+    {
+      "priority": 5,
+      "evidence": "锚点效率、其他响应任务与真实实验资源",
+      "reason": "可增强应用意义，但属于额外证据，而非本有限稿统一必需。",
+      "needs": "不同锚点数需新的预测协议；真实成本需仪器/制备/平衡/清洗/失败等记录，第二任务须有真实数据。",
+      "plan": "回顾性掩码仅称测量效率模拟；实测节约另做质量可比的资源对照。",
+      "current_status": "未执行；6/39不是实验成本节约比例。"
+    }
+  ],
+  "not_official_thresholds": [
+    "12–20条曲线不是MLST官方要求或功效保证。",
+    "50–100个随机表示不是官方门槛，也不代表已做。",
+    "8500词是已核官方通常篇幅口径，不据此编造摘要/参考/公式的排除计数规则。",
+    "任何35–65%录用概率区间均未由可校准证据支持，本清单不沿用。"
+  ],
+  "future_confirmation_template": {
+    "classification": "UNEXECUTED_UNREGISTERED_DESIGN_TEMPLATE",
+    "protocol_id": null,
+    "registered_utc": null,
+    "registered_by": null,
+    "execution_started": false,
+    "question": "Does the frozen curvature model improve one-sided continuation on genuinely unused compatible precursor-ink units, and does an independently fitted calibration layer achieve its declared coverage target?",
+    "frozen_reference_model": {
+      "sha256": "d72fc262fbae0e6fecc36568f0638166fe95e991bd5f7df100ab1434097d82d1",
+      "runtime_bindings": "models/RUNTIME_BINDINGS.json",
+      "candidate": "fixed two-contrast shared Gaussian correction with full reference residual",
+      "changes_allowed_before_confirmation": "None unless a separately versioned new candidate and protocol are created."
+    },
+    "candidate_methods": [
+      "frozen curvature Gaussian",
+      "frozen coordinate GP",
+      "existing conditional Gaussian control"
+    ],
+    "data_source_id": null,
+    "data_version": null,
+    "source_license": null,
+    "material_compatibility": null,
+    "temperature_and_measurement_state": null,
+    "instrument_scan_history": null,
+    "independent_unit_definition": null,
+    "preparation_batch_mapping": null,
+    "n_calibration_units": null,
+    "n_confirmation_units": null,
+    "enrolled_unit_ids": [],
+    "data_role_rule": "Reserve real calibration and confirmation units before inspecting their target responses; do not split masks or related runs from one physical unit across roles. No consumed25P/46external targets are newly independent.",
+    "anchor_count": 6,
+    "anchor_coordinate_rule": null,
+    "target_coordinate_grid": null,
+    "global_support_s_inverse": [
+      0.012787740677595104,
+      754.5143432617188
+    ],
+    "target_rule": "Only native declared positions strictly above the highest observed anchor and within frozen global support; no interpolation or generated targets as measured truth.",
+    "primary_endpoint": {
+      "status": "AUTHOR_TO_FIX_BEFORE_TARGET_REVEAL",
+      "suggestion": "Per-unit CRPS on log viscosity averaged over continuation targets with normalized trapezoidal log-rate weights, then aggregated by the declared independent unit.",
+      "quadrature_domain": null,
+      "minimum_target_count": null,
+      "aggregation_across_formulations_and_batches": null,
+      "paired_comparators": [
+        "coordinate GP",
+        "conditional Gaussian"
+      ],
+      "historical_endpoint_note": "This is a possible new endpoint; it does not replace the original native-position three-layout endpoint."
+    },
+    "secondary_endpoints": [
+      "log RMSE or pooled MSE with stated weights",
+      "marginal coverage at the fixed nominal level",
+      "interval width and interval score",
+      "finite-grid whole-curve containment if declared",
+      "variogram diagnostic with fixed weights/order",
+      "all prediction failures, including zero-coverage units"
+    ],
+    "practical_viscosity_tolerance": null,
+    "tolerance_units": null,
+    "nominal_miscoverage_alpha": null,
+    "coverage_target": null,
+    "sample_size_basis": null,
+    "comparison_precision_plan": null,
+    "failure_rule": null,
+    "data_exclusion_rule": null,
+    "missing_metadata_rule": null,
+    "freeze_and_reveal": [
+      "1. Author signs material/unit/metadata/admission plan and complete fields, then records actualUTC and input/runtime hashes.",
+      "2. Fit no correction on confirmation outcomes; freeze any calibrator using only its reserved units and record its new version.",
+      "3. Read only six allowed anchors per confirmation unit and freeze all candidate/control predictions with source hashes.",
+      "4. A steward reveals complete original targets once; score all eligible units with registered weights and explicit failures.",
+      "5. Report the full cohort and all controls, whether successful or not; no posthoc reclassification as independent after revision."
+    ],
+    "calibration_extension": {
+      "status": "OPTIONAL_UNEXECUTED",
+      "method": "curve-level split conformal band around frozen log-Gaussian predictor",
+      "formula": "s_i=max_{j in H_i}|y_ij-mu_ij|/sigma_ij; k=ceil((n_cal+1)(1-alpha)); q=s_(k) if k<=n_cal, otherwise +infinity; B_j=[mu_j-q*sigma_j,mu_j+q*sigma_j].",
+      "score_scale": "dimensionless natural-log viscosity; sigma_ij must be positive under a fixed pre-calibration rule",
+      "exchangeability": "Conditional on model training and frozen score/design, reserved calibration units and the future unit must be exchangeable as complete units. Related coordinates or runs are not separate units. If the scientific target is a new batch, use a defensible batch-level score/design.",
+      "guarantee_if_assumptions_hold": "Marginal probability over the calibration sample and a new compatible unit of all declared finite-grid targets lying in their bands is at least1-alpha. Not conditional per chemistry/subgroup and not coverage between grid points.",
+      "small_sample_rule": "If k>n_cal, use an infinite band rather than silently lowering the order-statistic index. No usable finite-band or power guarantee is implied by a proposed sample count.",
+      "density_warning": "Conformal bands are prediction sets, not a calibrated joint density or generative law. Do not assign them a newly inventedCRPS/joint log density; keep the original Gaussian law distinct.",
+      "unit_log_to_viscosity": "Multiply exp(band endpoints) by eta_ref=1Pa s.",
+      "reference": "https://arxiv.org/html/1604.04173v2",
+      "proof_note": "A scalar maximum score makes finite-grid simultaneous inclusion equivalent to s_new<=q. Exchangeability supplies the rank bound; no independence of coordinates within a curve is assumed."
+    },
+    "prohibition": "Do not fill sample sizes, tolerance, batch identities or registration times from old scores or invented values. This template is not an executed or preregistered study."
+  },
+  "source_ledger": [
+    {
+      "id": "open_data",
+      "url": "https://publishingsupport.iopscience.iop.org/iop-publishing-open-data-policy/",
+      "read_depth": "Official130-line page, including explicitMLST applicability, required supporting-data access, third-party exceptions, data-availability statement, licensing and submission identifiers; read directly in this handoff subtask.",
+      "used_for": "MLST-specific minimum data-access contract.",
+      "not_claimed": "No automatic approval of an exception or mandatory selection of a particular software/data license."
+    },
+    {
+      "id": "ai",
+      "url": "https://publishingsupport.iopscience.iop.org/questions/generative-ai-tools/",
+      "read_depth": "Official material-use/disclosure/author responsibility sections read directly.",
+      "used_for": "Accurate tool-role disclosure and author review.",
+      "not_claimed": "Historical model/version configuration or completed human validation not independently supplied."
+    },
+    {
+      "id": "submission",
+      "url": "https://publishingsupport.iopscience.iop.org/questions/how-to-submit-your-journal-article/",
+      "read_depth": "Official author information,ORCID,funder,cover-letter and initialPDF upload sections read directly.",
+      "used_for": "Author metadata and file checklist.",
+      "not_claimed": "No journal submission or author account action."
+    },
+    {
+      "id": "scope_format",
+      "url": "https://publishingsupport.iopscience.iop.org/journals/machine-learning-science-and-technology/",
+      "read_depth": "Uses this run’s separate official-policy audit for normal8500-word recommendation andSI/file guidance; no newly invented word-exclusion convention.",
+      "used_for": "Author final-format review.",
+      "not_claimed": "No acceptance prediction or authenticatedCAS partition certificate."
+    },
+    {
+      "id": "conformal",
+      "url": "https://arxiv.org/html/1604.04173v2",
+      "version": "arXiv1604.04173v2,8March2017",
+      "read_depth": "Selected Section2 rank quantile, Section2.2 split conformal/Theorem2.2 and Section5.2 heading/context; not entire50-page paper.",
+      "used_for": "Standard exchangeable-rank design; curve-level maximum-score specialization is a proposed mathematical adaptation, not new empirical work.",
+      "not_claimed": "No independent calibration executed, no theorem claiming validity under arbitrary material/source shift."
+    }
+  ],
+  "verified_reviewer_commands": [
+    {
+      "command": "python mlst/reviewer_replay.py --repo-root . --output-dir NEW_DIRECTORY",
+      "role": "Saved-score arithmetic only; Python3.10+ standard library, new output directory."
+    },
+    {
+      "command": "python runtime/deployment/generate_curve.py --model models/SHARED_MODEL.json --input examples/SYNTHETIC_ANCHORS.json --output demo_generated.json --draws 64 --seed 20261031",
+      "role": "Frozen inference on explicitly synthetic anchors; dependencies required. This command is documented, not newly executed here."
+    }
+  ],
+  "no_actions_taken": [
+    "No repository orDOCX edits by this checklist subtask.",
+    "No data upload, author contact, journal submission orDOI publication.",
+    "No material fitting, forecasting, rescoring, calibration or new measurement."
+  ],
+  "reuse_license": null
+}

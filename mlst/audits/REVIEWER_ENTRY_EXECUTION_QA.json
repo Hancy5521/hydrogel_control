@@ -1,0 +1,25 @@
+{
+  "recorded_after_completion_utc": "2026-11-04T08:33:02.108172+00:00",
+  "recorded_asia_shanghai": "2026-11-04T16:33:02.108172+08:00",
+  "scope": "Actual scalar-only reviewer replay on a relocated thin checkout; no runtime/model files needed",
+  "material_fit_forecast_targetscore_calls": 0,
+  "fixture_checks": {
+    "r1": 4,
+    "r2": 5,
+    "r2_expected_mock_child_failure": "Intentional fixture exit7 produced failure receipt and no success receipt; not a production failure"
+  },
+  "actual_r2_replay": {
+    "status": "PASS_SAVED_SCALAR_REPLAY",
+    "bound_input_files": 10,
+    "development_saved_scalars": 238,
+    "external_source_method_rows": 12,
+    "command": "python mlst/reviewer_replay.py --repo-root RELOCATED_SCALAR_CHECKOUT --output-dir NEW_DIRECTORY",
+    "working_directory": "Outside the checkout",
+    "runtime_and_model_directories_present": false
+  },
+  "r1_to_r2_change": "Figure crosswalk corrected: Main3=original5; Main4=original3; SI5=original4. No table/scientific source changes. One explicit mocked-child-failure fixture added.",
+  "wrapper_sha256": "1f55756155fce6624bbc507fd816eb7106675acf2abd4b5737782e251693c12c",
+  "bindings_sha256": "f8ec43507ec6ebb41d42440e18e264c899af5ad5da31e965125c7914f4a7e6b5",
+  "saved_uq_script_sha256": "63e1b2afeb45334871f0eb8b270b3424b1da498f29b91b1accb5f031372282ff",
+  "independent_audit": "This implementation execution is not the independent numerical audit; separate reviewer required"
+}
