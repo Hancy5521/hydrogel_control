@@ -1,0 +1,215 @@
+{
+  "actual_utc": "2026-11-05T01:42:27.131680+00:00",
+  "renderer": "C:\\Users\\ASUS\\.codex\\plugins\\cache\\openai-primary-runtime\\documents\\26.1030.10813\\skills\\documents\\render_docx.py",
+  "renderer_sha256": "8b48b8f05f30cc6c7b5a7bd8e18e7ea93a61aec1ea601026a3358b2105f0903a",
+  "conversion_engine": "uniquely-owned new Microsoft Word instance, read-only export",
+  "rendering_engine": "bundled render_docx.py rasterize + bundledPoppler",
+  "reason": "No soffice.exe found on Windows PATH; managedhelper convert_to_pdf overridden in memory with pre-exported PDF afterSHAchecks",
+  "source_sha256": "0b4cd3bfc23d53f257fef91a1de230cd1d8abea3a55aeb4002f9d40ce802b532",
+  "documents": [
+    {
+      "stem": "Hydrogel_Continuation_MLST",
+      "pages": 17,
+      "docx_sha256": "be4930e6f1d27a2959e6061002974d770e425f1c664c6bc01617ff5a4c1a3cfb",
+      "pdf_sha256": "23931ec68782037aed40d0b92f2333342c774b866917cde2a45b54d03a9c8902",
+      "pngs": [
+        {
+          "file": "Hydrogel_Continuation_MLST\\page-1.png",
+          "sha256": "e1da23a005f3f8f5e361eb8185ac15c73b150ce3ee0824fecc472a6f891bd0d6"
+        },
+        {
+          "file": "Hydrogel_Continuation_MLST\\page-2.png",
+          "sha256": "09f0b2ec2295df21de618d88a5e8927349d3c96ede8a7ff521f5658afd319071"
+        },
+        {
+          "file": "Hydrogel_Continuation_MLST\\page-3.png",
+          "sha256": "08c32796b610c129616b9b45f359be990dcd53fd5221194a8991e372b0a0c7c9"
+        },
+        {
+          "file": "Hydrogel_Continuation_MLST\\page-4.png",
+          "sha256": "6286fcbffe6e5a6de6aabd8c02c2af69b5c849cd9898c8f9cccecd72bc97d06a"
+        },
+        {
+          "file": "Hydrogel_Continuation_MLST\\page-5.png",
+          "sha256": "820d765e80cdde4f19beb24ebc945e61a879b55ba3087e21246ec145839a728f"
+        },
+        {
+          "file": "Hydrogel_Continuation_MLST\\page-6.png",
+          "sha256": "ebdf437d3b622dfc6bf6eb54c897a315f3fc3db46dc78feef81e8a36ad2f73e7"
+        },
+        {
+          "file": "Hydrogel_Continuation_MLST\\page-7.png",
+          "sha256": "d913ec4d727ed6484318b0c4cd88821bfd2bf89963fcdf8fafd9fe31a157031f"
+        },
+        {
+          "file": "Hydrogel_Continuation_MLST\\page-8.png",
+          "sha256": "1e8faeb15176e0529b1d1f3a107d7d694b775ab91b5ef2c497deb9fda811e323"
+        },
+        {
+          "file": "Hydrogel_Continuation_MLST\\page-9.png",
+          "sha256": "826fcb654d32d66162d32c1a6e0a85215abaf7f42ba7e1962e391fda979ec6c5"
+        },
+        {
+          "file": "Hydrogel_Continuation_MLST\\page-10.png",
+          "sha256": "9a4dd8ada625c62700aa6f69786f50caa5cd548952c642c30c09088ac982cb71"
+        },
+        {
+          "file": "Hydrogel_Continuation_MLST\\page-11.png",
+          "sha256": "3e211b8c31d2204278ee3969708c8a8f9b6096ae1ba7e1324c87d0abd5a78644"
+        },
+        {
+          "file": "Hydrogel_Continuation_MLST\\page-12.png",
+          "sha256": "7fc2d3ddf2d92f4bb92e91d8292f74cc78c4fb936777a9b94ceb760e3b46b626"
+        },
+        {
+          "file": "Hydrogel_Continuation_MLST\\page-13.png",
+          "sha256": "43ddf924b91e18571bf25d4c1c498ed27fd10cdede3c9371efc2d0ec3debbabd"
+        },
+        {
+          "file": "Hydrogel_Continuation_MLST\\page-14.png",
+          "sha256": "3c864a59d3df080c4bd82e95c15c60382e6569c5d6a88f601ca394a8c69468b5"
+        },
+        {
+          "file": "Hydrogel_Continuation_MLST\\page-15.png",
+          "sha256": "efc61fb5f4fb9431e3c227c2b08907b6c13d0d44af2a73759ae3250a58c8686e"
+        },
+        {
+          "file": "Hydrogel_Continuation_MLST\\page-16.png",
+          "sha256": "b05e5105365a09e19f8e8035c72c30c42e3a5365635e84db2b2e79e37216ef28"
+        },
+        {
+          "file": "Hydrogel_Continuation_MLST\\page-17.png",
+          "sha256": "e2d63b934292e485fbc9b366ba1b8605002d9aa90d70137d5410efa8a906afa9"
+        }
+      ]
+    },
+    {
+      "stem": "Supplement_MLST",
+      "pages": 27,
+      "docx_sha256": "e04edca0bb960e7b3e47182f80131b1222a906b324a4aa79a489ca60b31095d7",
+      "pdf_sha256": "90f7d7fb48d38beb67407d50825bddd79b6d03ae328db5b4e712fcb8339ea731",
+      "pngs": [
+        {
+          "file": "Supplement_MLST\\page-1.png",
+          "sha256": "b5f0d2b58525cfd9be7de8effe5bbfc94ee9cc0cdcdd70591883f1e34139cec2"
+        },
+        {
+          "file": "Supplement_MLST\\page-2.png",
+          "sha256": "83ffd5c6fa446c82f1d5eb37d57af3625aeb2e544bb32ad50c9e2a01d197f0a4"
+        },
+        {
+          "file": "Supplement_MLST\\page-3.png",
+          "sha256": "476c6f1000d625f681f6246893a36262c16a2e189f0601137e03628771f0ff20"
+        },
+        {
+          "file": "Supplement_MLST\\page-4.png",
+          "sha256": "955556dd015ef2013045f50cc1c764a1d6a6beeabc2a6f2fe1f65c95c18d0b20"
+        },
+        {
+          "file": "Supplement_MLST\\page-5.png",
+          "sha256": "19969f7f6a68d09d9d3c72c6b3e5986c26a218c8f07aaa9e59d5192c3ddc5e2c"
+        },
+        {
+          "file": "Supplement_MLST\\page-6.png",
+          "sha256": "cf19e0adc48bc690d105a266dbc3d0ff40f5dbe543f652d6ddc1e410fa85be71"
+        },
+        {
+          "file": "Supplement_MLST\\page-7.png",
+          "sha256": "50b5556962ad9bc3d0b03f9a653ad6c5ea0373457894f6388acd861a9c708c35"
+        },
+        {
+          "file": "Supplement_MLST\\page-8.png",
+          "sha256": "8285389588518e49efc16cfb508d9b341dbe55849ebf0de24fefc2121fdd9aef"
+        },
+        {
+          "file": "Supplement_MLST\\page-9.png",
+          "sha256": "5fe2fe733884f8bc35517b05c47d8df0d7924afc192b7cbdb1c5e886dec73659"
+        },
+        {
+          "file": "Supplement_MLST\\page-10.png",
+          "sha256": "82739df4c502e6e74a0c4a8a3c4b59c5661066ebbf5dac598b836988446b6237"
+        },
+        {
+          "file": "Supplement_MLST\\page-11.png",
+          "sha256": "04a39e380b15131733d0906d204c21ee1fb043c6405fa76424d8cfb4cd84b0ce"
+        },
+        {
+          "file": "Supplement_MLST\\page-12.png",
+          "sha256": "a34863432b895aac45dcc23962688af6eb1200412e10c6456395bb1b368c2080"
+        },
+        {
+          "file": "Supplement_MLST\\page-13.png",
+          "sha256": "0da9ada0e322adc3c5b45890da9b46a9ba50749705e6866d7f6dc06491c278a5"
+        },
+        {
+          "file": "Supplement_MLST\\page-14.png",
+          "sha256": "ef4949a8518fa15d731786ceb870410efaa4d243207a9410401e796547fff9c9"
+        },
+        {
+          "file": "Supplement_MLST\\page-15.png",
+          "sha256": "d6f1fd9a0359e8e86380916df099fd34f1f4c6f121c7097896a3f023a698d394"
+        },
+        {
+          "file": "Supplement_MLST\\page-16.png",
+          "sha256": "9a97a4b0946da708853918d265c011dc8978345074af85ab749f2696a08aead9"
+        },
+        {
+          "file": "Supplement_MLST\\page-17.png",
+          "sha256": "32f6f35e256863a0abc47581945778d04eb08b10e7c4e716f7b331973a79f86c"
+        },
+        {
+          "file": "Supplement_MLST\\page-18.png",
+          "sha256": "061b7bd64591a189c3c51016e19ffc2332b2b69d2e16639efa157ca2bf664381"
+        },
+        {
+          "file": "Supplement_MLST\\page-19.png",
+          "sha256": "1679e8cf525c340b410b436ab6c6acd622d4a59c6804eacb319fe95de5242e39"
+        },
+        {
+          "file": "Supplement_MLST\\page-20.png",
+          "sha256": "27df82848ec7afa38eea1e25ece5b841dab18dfecfe59ecb34c7890945bbec67"
+        },
+        {
+          "file": "Supplement_MLST\\page-21.png",
+          "sha256": "c1551f785d16bc5886706c29f14b976f81a66f72ea835c22c72bb07e027c46e6"
+        },
+        {
+          "file": "Supplement_MLST\\page-22.png",
+          "sha256": "bdf244d49a7990a184f31111f2b9e3a88fe712878c5e641b7c99b1f414a514c4"
+        },
+        {
+          "file": "Supplement_MLST\\page-23.png",
+          "sha256": "68b5060476da7f8bbde9c88f6ea27de3c512ddd120fa99c3579695bb4e6d057b"
+        },
+        {
+          "file": "Supplement_MLST\\page-24.png",
+          "sha256": "3abc4138c6f015e35b4ab17dbe84bb8550ad2123623776c72f26df9f7fcf5558"
+        },
+        {
+          "file": "Supplement_MLST\\page-25.png",
+          "sha256": "6631a805147a7d7e9d475f17db8ccc2ce8fb0205a588faee646ec0dfd921a587"
+        },
+        {
+          "file": "Supplement_MLST\\page-26.png",
+          "sha256": "0f8ac1c5b845ed16cd8485f8858fb382e6afa04754861aeb135d7889155b1bb5"
+        },
+        {
+          "file": "Supplement_MLST\\page-27.png",
+          "sha256": "3dda35f8ba49e8ad1e852d1130672c7139d3000cb6a992d0a068d4a8215a2df5"
+        }
+      ]
+    },
+    {
+      "stem": "MLST_Cover_Letter",
+      "pages": 1,
+      "docx_sha256": "c5833b830124a3117a95e5a9173f2c3ac29b7fd52c1bbd400ab41a4da9704807",
+      "pdf_sha256": "dee07f5e1f36146ba4faee92c6cf580951c3d20e76cfd50d0ea58953687c0bb3",
+      "pngs": [
+        {
+          "file": "MLST_Cover_Letter\\page-1.png",
+          "sha256": "aeab54363f38fa650f108686fea490558c8e4e5c9f30ae540467240a0ce755de"
+        }
+      ]
+    }
+  ]
+}

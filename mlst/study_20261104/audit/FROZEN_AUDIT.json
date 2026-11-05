@@ -1,0 +1,184 @@
+{
+  "actual_utc": "2026-11-04T16:09:07.768138+00:00",
+  "status": "PASS",
+  "checks": 506188,
+  "maximum_absolute_errors": {
+    "support_identity": 0.0,
+    "normalization_training_only": 0.0,
+    "observed_identity": 0.0,
+    "target_identity": 0.0,
+    "anchor_identity": 0.0,
+    "coordinate_identity": 0.0,
+    "support_file_identity": 0.0,
+    "basis_reconstruction": 7.349676423018536e-14,
+    "GP_mean_reconstruction": 0.0,
+    "GP_cov_reconstruction": 0.0,
+    "GP_support_reconstruction": 0.0,
+    "cross_reconstruction": 1.9184653865522705e-13,
+    "basis_orthonormal": 2.708944180085382e-14,
+    "same_bounds": 0.0,
+    "dense_raw_objective": 4.787494845004403e-10,
+    "dense_centered_objective": 1.6604123631580592e-10,
+    "dense_removed_constant": 3.5065284009760944e-10,
+    "dense_analytic_gradient": 5.572623994198889e-10,
+    "fit_theta_identity": 0.0,
+    "conditional_mean": 1.5015544363450317e-11,
+    "conditional_covariance": 3.5704772471945034e-13,
+    "score_crps": 5.7870375158586285e-12,
+    "score_mean_mse": 1.2142065131115487e-11,
+    "score_joint_log_density": 1.01013142739248e-07,
+    "score_coverage90": 0.0,
+    "score_width90": 4.2676973066591017e-13,
+    "score_mean": 1.5015544363450317e-11,
+    "score_lower90": 1.4597212327771558e-11,
+    "score_upper90": 1.5433876399129076e-11,
+    "score_per_target_crps": 1.5044632206695496e-11,
+    "coordinate_crps": 1.5044632206695496e-11,
+    "coordinate_squared_error": 4.796119057459691e-11,
+    "coordinate_covered90": 0.0,
+    "coordinate_width90": 9.796607969292381e-13,
+    "coordinate_interval_score90": 3.07840863911224e-10,
+    "coordinate_marginal_nll": 9.34312538447557e-09,
+    "aggregate_CRPS": 8.096995296469345e-14,
+    "aggregate_RMSE": 4.703737399580632e-13,
+    "aggregate_mean_joint_log_density": 2.174431301682489e-09,
+    "aggregate_coverage90": 0.0,
+    "aggregate_width90": 1.7486012637846216e-14,
+    "mask_aggregate_CRPS": 2.4204249715609194e-13,
+    "mask_aggregate_RMSE": 8.290035324876044e-13,
+    "mask_aggregate_mean_joint_log_density": 4.066265546498471e-09,
+    "mask_aggregate_coverage90": 0.0,
+    "mask_aggregate_width90": 3.808064974464287e-14,
+    "paired_delta": 8.09664835177415e-14,
+    "random_summary_mean_CRPS": 2.1038726316646716e-14,
+    "random_summary_median_CRPS": 2.4327762027098743e-14,
+    "random_summary_min_CRPS": 1.1601830607332886e-14,
+    "random_summary_max_CRPS": 1.942890293094024e-16
+  },
+  "fit_receipts_checked": 250,
+  "frozen_forecasts_checked": 750,
+  "scored_coordinates_checked": 24750,
+  "source_sha256": "461ffa9b5e90941ebdeee77364d249026ef4fcca56767b78c66c4262aa7131f5",
+  "protocol_sha256": "21c6a86096623e0a1ffa03522d16becd1e2a66b6cce373de048a5ded2348f908",
+  "global_freeze_sha256": "bab8fdc8e87c0d13598e446badf35bac0f0706667c7c118f1a6453fbd5066c1a",
+  "score_result_sha256": "45606b385ded9934b2a64a5cf1847fb16a95e249b7f40fb5f0bf0daf44200f6b",
+  "producer_imports": 0,
+  "new_fits": 0,
+  "S_hidden_available": false,
+  "root_freeze_authorization": "Received explicit root message after global750 freeze and before material reads.",
+  "aggregate": {
+    "curvature45": {
+      "CRPS": 0.04315636522417454,
+      "RMSE": 0.12349625686905467,
+      "mean_joint_log_density": 63.66121590399382,
+      "coverage90": 0.9725252525252525,
+      "width90": 0.3905985383271306
+    },
+    "gaussian": {
+      "CRPS": 0.050252464674678025,
+      "RMSE": 0.16170325411756803,
+      "mean_joint_log_density": 82.92587927559113,
+      "coverage90": 0.9660606060606061,
+      "width90": 0.3649299139706594
+    },
+    "generic": {
+      "CRPS": 0.052242798001835525,
+      "RMSE": 0.18570235660536447,
+      "mean_joint_log_density": 63.387907478437704,
+      "coverage90": 0.9733333333333334,
+      "width90": 0.38535903714818526
+    },
+    "gp": {
+      "CRPS": 0.055219360715636545,
+      "RMSE": 0.1965692227387498,
+      "mean_joint_log_density": 63.12237246026844,
+      "coverage90": 0.9737373737373738,
+      "width90": 0.4053257973467525
+    },
+    "joint_code_gaussian": {
+      "CRPS": 0.04327705155080712,
+      "RMSE": 0.11952416720645934,
+      "mean_joint_log_density": 63.658107578299784,
+      "coverage90": 0.972121212121212,
+      "width90": 0.403654303912221
+    },
+    "local": {
+      "CRPS": 0.048252872198616806,
+      "RMSE": 0.15663078211530176,
+      "mean_joint_log_density": 63.44970627302975,
+      "coverage90": 0.9729292929292929,
+      "width90": 0.4186065279006781
+    },
+    "prior_kl": {
+      "CRPS": 0.0371389983588219,
+      "RMSE": 0.0986481296420461,
+      "mean_joint_log_density": 63.327985325958856,
+      "coverage90": 0.9733333333333334,
+      "width90": 0.3254999409867399
+    },
+    "random_20261105": {
+      "CRPS": 0.06536171526147214,
+      "RMSE": 0.24939968035990936,
+      "mean_joint_log_density": 58.809904868312,
+      "coverage90": 0.9676767676767675,
+      "width90": 0.4181308791380828
+    },
+    "random_20261106": {
+      "CRPS": 0.0570514566823199,
+      "RMSE": 0.20685481080614584,
+      "mean_joint_log_density": 62.1533345514703,
+      "coverage90": 0.9648484848484848,
+      "width90": 0.39651580260688135
+    },
+    "random_20261107": {
+      "CRPS": 0.04984768180100077,
+      "RMSE": 0.17788888010824797,
+      "mean_joint_log_density": 60.36474125215687,
+      "coverage90": 0.974949494949495,
+      "width90": 0.3789795920434681
+    },
+    "random_20261108": {
+      "CRPS": 0.0516010582057994,
+      "RMSE": 0.17953691399678348,
+      "mean_joint_log_density": 62.88597377872489,
+      "coverage90": 0.9664646464646462,
+      "width90": 0.3897821532252017
+    },
+    "random_20261109": {
+      "CRPS": 0.056238228921319876,
+      "RMSE": 0.20241933625511502,
+      "mean_joint_log_density": 63.14559378968829,
+      "coverage90": 0.9713131313131312,
+      "width90": 0.3930146707640149
+    },
+    "random_20261110": {
+      "CRPS": 0.05945434569758928,
+      "RMSE": 0.20962276303516808,
+      "mean_joint_log_density": 63.58576834327888,
+      "coverage90": 0.972121212121212,
+      "width90": 0.3897988185438107
+    },
+    "random_20261111": {
+      "CRPS": 0.060127132155904386,
+      "RMSE": 0.21512527611782903,
+      "mean_joint_log_density": 62.87976224736616,
+      "coverage90": 0.9676767676767675,
+      "width90": 0.3938885631303093
+    },
+    "random_20261112": {
+      "CRPS": 0.053038975672584095,
+      "RMSE": 0.18412067291746126,
+      "mean_joint_log_density": 56.92184891432169,
+      "coverage90": 0.9676767676767675,
+      "width90": 0.401397455647165
+    },
+    "random_gaussian": {
+      "CRPS": 0.049907584360887144,
+      "RMSE": 0.17610123682654383,
+      "mean_joint_log_density": 63.91870848952555,
+      "coverage90": 0.97010101010101,
+      "width90": 0.37071803455119073
+    }
+  },
+  "classification": "Retrospective consumed25P; no independent material confirmation."
+}

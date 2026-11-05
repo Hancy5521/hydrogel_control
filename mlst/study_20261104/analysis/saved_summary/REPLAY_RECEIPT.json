@@ -1,0 +1,65 @@
+{
+  "started_utc": "2026-11-04T16:08:36.354330+00:00",
+  "finished_utc": "2026-11-04T16:08:37.088349+00:00",
+  "result_input": {
+    "path": "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\experiment\\scores\\RESULT.json",
+    "sha256": "45606b385ded9934b2a64a5cf1847fb16a95e249b7f40fb5f0bf0daf44200f6b"
+  },
+  "coordinate_input": {
+    "path": "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\experiment\\scores\\PER_COORDINATE.csv",
+    "sha256": "905a0fffbd235f03d7c6e34c65f8226e4cf7f66a5753a2004912766408a1698e"
+  },
+  "candidate_saved_loss_input": {
+    "path": "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\experiment\\inputs\\inputs\\FROZEN_CANDIDATE_SCORES.json",
+    "sha256": "8800800920bad262fc06bdfc18ccdf319f080387eacbaf5808d1f28851ed0b43"
+  },
+  "source_sha256": "b748de7f28cd8aa56a80f4c7b28848f3ef2e9c0d7d4df5ed3bb262949e1bd6d2",
+  "status": "PASS",
+  "decimal_precision": 60,
+  "saved_aggregate_comparisons": 200,
+  "max_absolute_aggregate_difference": 1.68e-14,
+  "inventory": {
+    "models_overall": 16,
+    "models_by_layout_rows": 48,
+    "new_arms": 10,
+    "new_arm_uq_rows_including_overall": 40,
+    "P0_new_arm_rows_including_overall": 40,
+    "new_model_formulation_combinations": 250,
+    "new_saved_queries": 750,
+    "new_saved_coordinate_scores": 24750,
+    "unique_consumed_formulations": 25,
+    "original_formulation_ids": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      6,
+      11,
+      15,
+      16,
+      20,
+      21,
+      24,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      33,
+      35,
+      36,
+      37,
+      40,
+      41,
+      44
+    ],
+    "queries_per_model": 75,
+    "scored_positions_per_model": 2475,
+    "distinct_formulation_position_pairs_per_new_model": 950,
+    "new_independent_materials": 0
+  },
+  "scope": "Saved-score review replay only. No fits, inference, hidden-S targets or measurement values read. Old aggregate scores copied, candidate paired CRPS reaggregated from saved query losses; no old measurements rescored. Fit receipt audit remains separate.",
+  "statistical_limits": "No confidence intervals, significance tests, new calibration claim, batch-generalization claim, or deployment selection. Coverage is marginal and empirical; an entire query inside separate marginal bands is not a simultaneous coverage guarantee."
+}

@@ -1,0 +1,10 @@
+{
+  "recorded_utc": "2026-11-04T16:06:50.772852+00:00",
+  "event": "Firstsavedscore-onlyreplayfailedbeforecreatingoutput",
+  "exception": "ValueError: Each saved query must contain 33 distinct target positions",
+  "cause": "Validatorusedrange(25)insteadactualnoncontiguousformulationIDs; defaultdictreturnedemptysetformissingP2. Independentinventoryinspectionfinds750querieswith33each.",
+  "source_v1_sha256": "7bbcb394a743c953dcc65df9e95ff130158ea101fa020492bd0433eb629269f8",
+  "outputs_created": false,
+  "no_fit_inference_or_target_score": true,
+  "resolution": "Preservev1/planandfixonlyIDinventory,registerv2beforerunningcorrectedreviewreplay"
+}

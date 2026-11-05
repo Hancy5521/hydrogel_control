@@ -1,0 +1,29 @@
+[
+  {
+    "actual_utc": "2026-11-05T01:41:47.8526491+00:00",
+    "stem": "Hydrogel_Continuation_MLST",
+    "input_sha256": "be4930e6f1d27a2959e6061002974d770e425f1c664c6bc01617ff5a4c1a3cfb",
+    "pdf_sha256": "23931ec68782037aed40d0b92f2333342c774b866917cde2a45b54d03a9c8902",
+    "pages": 17,
+    "owned_word_process": 70572,
+    "original_docx_resaved": false
+  },
+  {
+    "actual_utc": "2026-11-05T01:42:05.2433574+00:00",
+    "stem": "Supplement_MLST",
+    "input_sha256": "e04edca0bb960e7b3e47182f80131b1222a906b324a4aa79a489ca60b31095d7",
+    "pdf_sha256": "90f7d7fb48d38beb67407d50825bddd79b6d03ae328db5b4e712fcb8339ea731",
+    "pages": 27,
+    "owned_word_process": 70572,
+    "original_docx_resaved": false
+  },
+  {
+    "actual_utc": "2026-11-05T01:42:06.3204317+00:00",
+    "stem": "MLST_Cover_Letter",
+    "input_sha256": "c5833b830124a3117a95e5a9173f2c3ac29b7fd52c1bbd400ab41a4da9704807",
+    "pdf_sha256": "dee07f5e1f36146ba4faee92c6cf580951c3d20e76cfd50d0ea58953687c0bb3",
+    "pages": 1,
+    "owned_word_process": 70572,
+    "original_docx_resaved": false
+  }
+]

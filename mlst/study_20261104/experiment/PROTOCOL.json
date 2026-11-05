@@ -1,0 +1,321 @@
+{
+  "kind": "bounded_representation_robustness_v1",
+  "actual_utc": "2026-11-04T15:55:54.584157+00:00",
+  "authorization": "2026-11-04 manual request for MLST reading and bounded experiments",
+  "question": "Does the frozen curvature representation advantage survive multiple parameter-count-matched prior-only directions, and is its constrained result orientation sensitive?",
+  "classification": "New retrospective development on already-consumed25P. Not independent confirmation; no candidate optimization or best-seed selection.",
+  "materials": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6,
+    11,
+    15,
+    16,
+    20,
+    21,
+    24,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    33,
+    35,
+    36,
+    37,
+    40,
+    41,
+    44
+  ],
+  "methods": [
+    "random_20261105",
+    "random_20261106",
+    "random_20261107",
+    "random_20261108",
+    "random_20261109",
+    "random_20261110",
+    "random_20261111",
+    "random_20261112",
+    "prior_kl",
+    "curvature45"
+  ],
+  "masks": {
+    "spread": [
+      0,
+      7,
+      15,
+      23,
+      31,
+      38
+    ],
+    "middle_gap": [
+      0,
+      4,
+      8,
+      30,
+      34,
+      38
+    ],
+    "one_sided": [
+      0,
+      3,
+      6,
+      9,
+      12,
+      15
+    ]
+  },
+  "random_seeds": [
+    20261105,
+    20261106,
+    20261107,
+    20261108,
+    20261109,
+    20261110,
+    20261111,
+    20261112
+  ],
+  "original_random_seed": 20261030,
+  "representations": {
+    "random": "QR of17x2 iidN(0,1), default_rng specified seed; original construction unchanged",
+    "prior_kl": "Top2 latentKq eigenvectors; maxabs pivot positive; u=L.T v/sqrt(lambda); no outcomes",
+    "curvature45": "Original prior-whitened curvature U times fixed+45degree orthogonal matrix"
+  },
+  "fixed_support": [
+    -4.359268326564201,
+    -3.6726844131342853,
+    -2.98610049970437,
+    -2.2995165862744544,
+    -1.612932672844539,
+    -0.9263487594146236,
+    -0.23976484598470815,
+    0.4468190674452073,
+    1.1334029808751227,
+    1.8199868943050381,
+    2.5065708077349536,
+    3.193154721164869,
+    3.8797386345947844,
+    4.5663225480247,
+    5.252906461454615,
+    5.939490374884531,
+    6.626074288314445
+  ],
+  "theta_bounds": [
+    [
+      -1.0,
+      1.0
+    ],
+    [
+      -1.0,
+      1.0
+    ],
+    [
+      -0.75,
+      0.75
+    ],
+    [
+      -1.0,
+      1.0
+    ],
+    [
+      -0.75,
+      0.75
+    ]
+  ],
+  "ridge": 0.02,
+  "optimizer": {
+    "maxiter": 400,
+    "maxfun": 800,
+    "ftol": 1e-14,
+    "gtol": 1e-07,
+    "maxls": 40
+  },
+  "pg_gate": 1e-05,
+  "initialization": "Exactly one all-zero start per fit; no fallback/retry",
+  "reference_fits": 0,
+  "candidate_refits": 0,
+  "deployment_fits": 0,
+  "maximum_new_fits": 250,
+  "forecast_files_before_scoring": 750,
+  "reference_policy": "Reuse original per-held-P reference receipts;24otherP +20S lawful6anchors only",
+  "head_training": "Each held-P head uses24othercompleteP; all three fixed masks; same objective and regularizer",
+  "primary": "Equal25formulation x3layout macro marginalCRPS in lnviscosity; for each fixed seed and nonrandom comparator, no bestseedselect",
+  "secondary": [
+    "by-mask CRPS; RMSE; jointlogdensity;90%marginalcoverage andwidth",
+    "per-coordinate90percent interval score and marginalNLL; descriptive diagnostics",
+    "number of25formulations improved, descriptive only",
+    "eight-seed mean/median/min/max; no inferential pvalue",
+    "curvature45 difference diagnoses parameter-constraint orientation, not a new representation span"
+  ],
+  "old_scores": "Import original candidate/random/GP/conditionalGaussian/local/generic rows unchanged; do not rescore",
+  "fairness_limit": "Five incremental coefficients, data, objective, bounds and optimizer matched; not rotationally identical capacity because elementwise means/Cholesky bounds and penalty depend on basis orientation.",
+  "freeze": "Hash all750 new forecast files before any new target metric; producer fit phase never calls a scoring function",
+  "failure_policy": "Any fit/admission/hash/data-role failure stops whole analysis. Preserve all receipts, score no successful subset, do not change bounds/seeds/optimizer.",
+  "new_measured_materials": 0,
+  "S_hidden_targets": "Never available; closedTRAIN holdsNaN outside original6spreadanchors",
+  "independent_confirmation": false,
+  "source_bindings": [
+    {
+      "file": "assets.py",
+      "sha256": "543a42b0f3ca480117569189b49ceabf6ab0e7697653380726083f6b3eaf64b2"
+    },
+    {
+      "file": "representations.py",
+      "sha256": "178fdc1cc3d6bdfda81fcdb38b427ed9ff547821a95203ffa51a4c4c7859f9ac"
+    },
+    {
+      "file": "experiment.py",
+      "sha256": "62119f328a1e2e185a0296c209dec583674e48ef98f93d9b20cecca8eca2d999"
+    },
+    {
+      "file": "frozen/joint_code_gaussian.py",
+      "sha256": "0c8a57c1bdf96e1c880ffd1ba2258e1b379952b844e960a7c67d6cdcdc65e299"
+    },
+    {
+      "file": "frozen/coordinate_reference.py",
+      "sha256": "bc93acc707cb26943cc065545254fc9fed27601e8d0f04c4a23dbb7407cf43d3"
+    },
+    {
+      "file": "frozen/local_shape.py",
+      "sha256": "652797e34e7299edd31a8b494287ad8ab36aca9cdcdcc7b455dc614201231d3b"
+    },
+    {
+      "file": "frozen/conditional_metrics.py",
+      "sha256": "3332508bfe887a13550333761a49e8d130a5b7611f166d9d1040b930806bc461"
+    }
+  ],
+  "input_bindings": [
+    {
+      "file": "data/TRAIN.npz",
+      "sha256": "cbd09c37e80548937a3b012e86e4173b3dc663cbe8e61f5ca7baa18c9002d974"
+    },
+    {
+      "file": "inputs/FROZEN_CANDIDATE_MODEL.json",
+      "sha256": "d72fc262fbae0e6fecc36568f0638166fe95e991bd5f7df100ab1434097d82d1"
+    },
+    {
+      "file": "inputs/FROZEN_CANDIDATE_SCORES.json",
+      "sha256": "8800800920bad262fc06bdfc18ccdf319f080387eacbaf5808d1f28851ed0b43"
+    },
+    {
+      "file": "inputs/baseline/RESULT.json",
+      "sha256": "4ecf3b49cbf3499b983a0086170473f3f3ebbd81a4bfe6f4f5cd641bcb677a2f"
+    },
+    {
+      "file": "results/RANDOM_GAUSSIAN_RESULT.json",
+      "sha256": "5840b80b8c665776e18141c3c473d0bbb203e4b38cf3025877dde87b02f2cf18"
+    },
+    {
+      "file": "inputs/baseline/P_0/REFERENCE.json",
+      "sha256": "cf1838c677254cf15adb89f7024df654e4781f27568f3a7d1de85f3025d3ef35"
+    },
+    {
+      "file": "inputs/baseline/P_1/REFERENCE.json",
+      "sha256": "3b61419407d418177aed25f7883b9a7863351dbcc731ee82be701e28a42892a4"
+    },
+    {
+      "file": "inputs/baseline/P_3/REFERENCE.json",
+      "sha256": "e23f2eb2bd6998f94c40e64a1d53e9f3a25ff9f9d670cb852a0ccfb0b7e9afde"
+    },
+    {
+      "file": "inputs/baseline/P_4/REFERENCE.json",
+      "sha256": "c5dba5481bee0e7322f21659d69bc494911d2d4052866823eac8b307d3eee51a"
+    },
+    {
+      "file": "inputs/baseline/P_5/REFERENCE.json",
+      "sha256": "3f988895e6d30b954e2b09730d6a72bd355213ef531da4ef4f7616ce07adb27b"
+    },
+    {
+      "file": "inputs/baseline/P_6/REFERENCE.json",
+      "sha256": "58c27b722028c2c9feda1492be5df6981e283e58cbe0002cef8794a3dcbf3f53"
+    },
+    {
+      "file": "inputs/baseline/P_11/REFERENCE.json",
+      "sha256": "eeabda78ce7c1360c2fc35a6dff928385ce4b8d8de53adc0b2ccefd1acfc8b15"
+    },
+    {
+      "file": "inputs/baseline/P_15/REFERENCE.json",
+      "sha256": "a126673b499ed96260ba35e331a0be93e39872c45605432fbd0a3295768d8ab0"
+    },
+    {
+      "file": "inputs/baseline/P_16/REFERENCE.json",
+      "sha256": "07ede8707bdcc6bf42568791403be2f3a01573b0181f7198edaaa9641ae02885"
+    },
+    {
+      "file": "inputs/baseline/P_20/REFERENCE.json",
+      "sha256": "da22ee4576f1aebd01f4ffa009ce34acabad521cece16a1fe1d3c7d1861d065c"
+    },
+    {
+      "file": "inputs/baseline/P_21/REFERENCE.json",
+      "sha256": "3b1a447f8fd0c651d4364df7564a07946b5421c21c0fa5c25774a0109f78e62b"
+    },
+    {
+      "file": "inputs/baseline/P_24/REFERENCE.json",
+      "sha256": "235e1174f485cb50d7a50d93c32218d4078fc8286c5b74cc586e9c87ef47a5b2"
+    },
+    {
+      "file": "inputs/baseline/P_26/REFERENCE.json",
+      "sha256": "0a316e502896c048433039ab9e298334474d0be8d5d2c9e8f25353620e992259"
+    },
+    {
+      "file": "inputs/baseline/P_27/REFERENCE.json",
+      "sha256": "8fe85fb459c559df2b04ea1d15333f7e87f1bf5c439e93319f956e1084631abf"
+    },
+    {
+      "file": "inputs/baseline/P_28/REFERENCE.json",
+      "sha256": "2f310b5f3f3964f74618740cafa3f391fec8017875ce5be1b68ba5349af1a360"
+    },
+    {
+      "file": "inputs/baseline/P_29/REFERENCE.json",
+      "sha256": "4f0ac4e0a183219e4c54d71832233807251a93f58a50cd389c6b5fec8cdc7ceb"
+    },
+    {
+      "file": "inputs/baseline/P_30/REFERENCE.json",
+      "sha256": "0df0898e9d10dac58a0a2925df221fb7cc1233ca762edde0e3f655ad608c68b7"
+    },
+    {
+      "file": "inputs/baseline/P_31/REFERENCE.json",
+      "sha256": "4c5f1f333e7f3653400e9174110817cf56a3f0bea224fb271b87494d7718759d"
+    },
+    {
+      "file": "inputs/baseline/P_33/REFERENCE.json",
+      "sha256": "c87ba169e8cf14fd8549f2f6188e40b2b4be85116dc2a8a7d423432678130537"
+    },
+    {
+      "file": "inputs/baseline/P_35/REFERENCE.json",
+      "sha256": "f00416962ac9d38338b5fa4253de7bcbbae844613b70bf3753f49eb1ca445079"
+    },
+    {
+      "file": "inputs/baseline/P_36/REFERENCE.json",
+      "sha256": "ed38e723c56b15995e351b29b2c57935f243eb69b57bbccb2de7bd66603c11f7"
+    },
+    {
+      "file": "inputs/baseline/P_37/REFERENCE.json",
+      "sha256": "a14322eb1616c9f601876ed171bdd5ff9bc29646c14c34eca1dbf7c897b13c28"
+    },
+    {
+      "file": "inputs/baseline/P_40/REFERENCE.json",
+      "sha256": "e238cfec63226c0c013937ab62a4746e7fa0007df6c9dfc48c053442b4a8d54a"
+    },
+    {
+      "file": "inputs/baseline/P_41/REFERENCE.json",
+      "sha256": "1bd3b72d43ade23c72d3a3a6a5121a1ef9d93da868cb804721533acc86ddcebc"
+    },
+    {
+      "file": "inputs/baseline/P_44/REFERENCE.json",
+      "sha256": "97fad7c45ab6d78f3d61322af51a7897be6f52905ba3177c99ca023c99fdbd76"
+    }
+  ],
+  "qualification_sha256": "75cce04f3d874dc9413cee8191a44f1891eb63a0baed28c0cc3da56620e0bd1b",
+  "source_asset_root_local_only": "H:\\polymer_completion_public\\research\\missing_controls_20261101T0641198159051Z",
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.1.3",
+    "scipy": "1.15.3",
+    "platform": "Windows-11-10.0.26100-SP0"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "actual_utc": "2026-11-05T01:41:06.811658+00:00",
+  "status": "SOURCE_FIX_READY",
+  "source_sha256": "e34352cd707ab626b7d01a7e5d35ecce424288da788a1151e5ffbe1c92354d46",
+  "fix_scope": "Protect complete URLs before numeric spacing, and correct explicitly authored English spacing at reported cases; numeric scientific results and identifiers unchanged.",
+  "syntax": "PASS",
+  "synthetic_formatter_preserves_URL_DOI_hash_UTC_and_numeric_text": "PASS",
+  "preserved_v2_documents": [
+    {
+      "file": "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\manuscript_tools\\history\\generated_v2\\Hydrogel_Continuation_MLST.docx",
+      "sha256": "68f4695a1e3473491b17fd1f854be5dc30a0b034041866bcd4fc5ec2a1a01f1d"
+    },
+    {
+      "file": "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\manuscript_tools\\history\\generated_v2\\MLST_Cover_Letter.docx",
+      "sha256": "9e70666ff4e9b271b35d39568f9c71df9c60c2b791faff9f6449d62c58560ceb"
+    },
+    {
+      "file": "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\manuscript_tools\\history\\generated_v2\\Supplement_MLST.docx",
+      "sha256": "15b704706c32e00c5c410a1b0ea1d76460944919700e1d7eec8e2370f4581dbb"
+    }
+  ],
+  "v2_observed_editorial_issues": [
+    {
+      "file": "Hydrogel_Continuation_MLST.docx",
+      "paragraph_index": 72,
+      "tokens": [
+        "CRPS0"
+      ],
+      "text": "In the original comparison, curvature lowers bounded CRPS from 0.052243 to 0.048253 and Gaussian CRPS from 0.049908 to 0.043277 (Fig. 3a). The Gaussian curvature model improves on that original random Gaussian for 20/25 formulations and on the same-code bounded model for 22/25. Eight additional fixed random codes obtain macro CRPS0.049848–0.065362, all worse than the frozen curvature code, but the prior-KL code is stronger at 0.037139 (Fig. S6; Table S13). The fixed 45 degree curvature rotation gives 0.043156, demonstrating a small constraint-orientation effect within the same span. These outcomes support a useful low-capacity correction and the value of testing representations; they do not establish curvature as the best examined representation or select a new deployment model."
+    },
+    {
+      "file": "Hydrogel_Continuation_MLST.docx",
+      "paragraph_index": 107,
+      "tokens": [
+        "Hancy 5521"
+      ],
+      "text": "The frozen runtime, deployment weights, saved-score replay and evidence are versioned at https://github.com/Hancy 5521/hydrogel_control. The prior author-review baseline is commit 668657bf93223268c60f04f3769b9385d2fb62f4. The additional representation protocol, sources, forecast hashes, score summaries and independent checks are archived separately from that baseline. The deployment weights still use all 25 P records and lawful S anchors, not held-formulation models; no prior-KL deployment weights are produced. Original scientific weights, runtime and historic scores are unchanged. Complete material fitting replay requires lawful processed assets, and no permanent archival DOI or new original-asset reuse license is assigned by this revision."
+    },
+    {
+      "file": "Supplement_MLST.docx",
+      "paragraph_index": 14,
+      "tokens": [
+        "%relative"
+      ],
+      "text": "Within the original bounded family, curvature lowers CRPS by 7.64%relative to its random directions; within the original Gaussian family the reduction is 13.29%. The original Gaussian candidate improves on the matched random Gaussian for 20/25 formulations; its fixed-forecast bootstrap interval is[−0.009569,−0.003581]. These summaries remain conditional on that one original construction. The difference of directional differences,−0.002641, does not identify a causal representation-by-family interaction. Newer multi-representation outcomes, including the stronger prior-KL control, are reported separately in Section S20."
+    },
+    {
+      "file": "Supplement_MLST.docx",
+      "paragraph_index": 242,
+      "tokens": [
+        "00:00before",
+        "admitted;750"
+      ],
+      "text": "A new protocol was registered at actual UTC 2026-11-04T15:55:54.584157+00:00before execution. The fixed list contains eight random seeds 20261105–20261112, the top two latent prior-KL modes and a fixed 45 degree rotation of the original curvature basis. All 250 new correction fits were admitted;750 new conditional laws were frozen globally before their target scores. No original reference, candidate or deployment fit was repeated. The 25 formulations, three layouts, native target positions, score weights and response scale are unchanged. This is retrospective development, not a new material cohort."
+    },
+    {
+      "file": "Supplement_MLST.docx",
+      "paragraph_index": 246,
+      "tokens": [
+        "is−",
+        "is+"
+      ],
+      "text": "The eight new random macro scores range from 0.049848 to 0.065362, all above the original curvature 0.043277. Prior-KL obtains 0.037139 macro CRPS,0.098648 pooled log RMSE and 0.073284 one-sided CRPS, but its mean joint log density 63.327985 is below curvature 63.658108 and conditional Gaussian 82.925879. Overall KL wins 19/25 formulations. In the middle gap, however, it wins only 8/25 and loses 17/25; its mean difference is−0.00060448 but median difference is+0.00083818. Arithmetic removal of P0 leaves a mean difference of only−0.00002107; all official results retain P0. KL covers 11/33 P0 middle-gap targets versus 8/33 for curvature. This does not repair local reliability."
+    },
+    {
+      "file": "Supplement_MLST.docx",
+      "paragraph_index": 247,
+      "tokens": [
+        "CRPS0"
+      ],
+      "text": "The 45 degree rotation obtains macro CRPS0.043156 and one-sided CRPS0.090966, compared with original curvature 0.043277 and 0.090792. It changes the constrained fit while preserving the span, so it is not evidence of new physical information. The prior-KL and rotation controls are not new deployment models, have no external results, and are not selected for adoption from this consumed development set."
+    },
+    {
+      "file": "Supplement_MLST.docx",
+      "paragraph_index": 253,
+      "tokens": [
+        "%accuracy"
+      ],
+      "text": "Trace fractions divide the trace of the code-explained block by trace(V0); mean point fractions average the 33 diagonal ratios. They weight positions differently. For example, prior-KL one-sided allocation 0.988047 does not mean 98.80%accuracy, physical information recovered or physical variance explained. All 150 conditional code covariances have rank 2; no eigenmode is discarded, no jitter is added, and every residual is positive definite. The analysis states explicit machine-precision rank/support tolerances and retains all results. It cannot prove prediction quality, calibration, physical identifiability or new-batch transfer."
+    }
+  ],
+  "document_outputs_written": 0,
+  "new_operation_markers": 0,
+  "scientific_source_fit_score_changes": 0,
+  "note": "Root moved v2 outputs into history/generated_v2 during the fix. Earlier EDITORIAL_REVIEW_V2.json was created after original manuscript folder became absent; this supplements its now-relocated document evidence."
+}

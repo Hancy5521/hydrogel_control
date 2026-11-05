@@ -1,0 +1,24 @@
+{
+  "actual_utc": "2026-11-04T16:02:17.995002+00:00",
+  "status": "PASS",
+  "source_sha256": "34effc6b09349bf480241c5df1c4c302ca067e57005d4a96a64ed776dd235939",
+  "imports": [
+    "argparse",
+    "ast",
+    "csv",
+    "datetime",
+    "hashlib",
+    "json",
+    "pathlib",
+    "platform",
+    "time",
+    "numpy"
+  ],
+  "allowed_npz_arrays": [
+    "reference_covariance",
+    "cross",
+    "observed",
+    "targets"
+  ],
+  "check_scope": "Serial source import/explicit array-read boundary; independent numerical audit is separate"
+}

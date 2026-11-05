@@ -1,0 +1,104 @@
+{
+  "created_utc": "2026-11-04T15:48:47.999658+00:00",
+  "created_asia_shanghai": "2026-11-04T23:48:47.999658+08:00",
+  "reviewer_role": "independent design review, no producer imports, no raw target reads or fit/score execution",
+  "decision": "APPROVE_BOUNDED_RETROSPECTIVE_DESIGN_WITH_QUALIFICATIONS",
+  "question": "Does the frozen two-curvature representation retain an advantage over multiple fixed random representations and a standard prior-variance representation in the same Gaussian correction framework?",
+  "scientific_value": "The existing single random control leaves seed sensitivity unresolved. Multiple fixed random controls, a conventional prior KL comparator, and one same-span orientation control can separate basis choice from the five-parameter Gaussian correction and reveal parameterization confounding. This strengthens evidence about the current method without adding a network or claiming new theory.",
+  "data_status": {
+    "materials": 25,
+    "unit": "original P formulation",
+    "status": "Repeatedly consumed development data; outer leave-one-formulation-out is evaluation organization, not restored independence from method selection.",
+    "new_independent_materials": 0,
+    "S": "Only lawful six anchors may enter the frozen reference; hidden S outcomes never admitted."
+  },
+  "proposed_fixed_arms": {
+    "new_random_seeds": [
+      20261105,
+      20261106,
+      20261107,
+      20261108,
+      20261109,
+      20261110,
+      20261111,
+      20261112
+    ],
+    "old_random_seed": {
+      "seed": 20261030,
+      "action": "reuse saved scores, do not refit"
+    },
+    "prior_KL": "Top two eigenvectors of the frozen latent support covariance, descending eigenvalues, deterministic sign convention. This is prior KL, not data-driven FPCA.",
+    "orientation": "45-degree orthogonal rotation of the already-whitened curvature directions, with exactly the same subspace."
+  },
+  "budget": {
+    "new_OOF_fits_max": 250,
+    "new_forecasts": 750,
+    "new_reference_GP_fits": 0,
+    "new_frozen_candidate_fits": 0,
+    "new_deployment_fits": 0
+  },
+  "must_fix_before_fit": [
+    "Actual UTC protocol binds all source and input hashes before any new fit. Exact seed list, KL transform, rotation matrix, masks, bounds, regularizer, optimizer and stop rules are immutable.",
+    "Reuse precisely the same frozen outer reference GP state for every representation within a held-out formulation, and verify reference normalization/fitting excluded the entire held formulation. Use the original shared three-mask training objective.",
+    "Use old five-parameter optimizer settings including its single zero initialization and no fallback/retry. Do not add restarts to new controls only.",
+    "Freeze all 750 forecasts and hash manifest before any new target scoring. This remains retrospective development because historical outcomes are already known.",
+    "Do not rescore old candidate or old reference/control baselines. Reuse saved score receipts with hashes. No new arm is adopted or selected by these same held-out P outcomes.",
+    "Predeclare treatment of numerical failures. A failed arm cannot be silently excluded or presented only on successful folds; preserve attempted fits and explicit stop status. Continuing other prespecified arms after an atomic arm failure is allowable only if stated before execution."
+  ],
+  "capacity_and_orientation_caveat": {
+    "allowed": "Same number of trainable parameters, common reference information, same residual treatment, same optimizer settings, same three masks.",
+    "not_allowed": "Equal effective capacity, rotation-invariant regularization, or an entirely isolated representation effect.",
+    "reason": "The mean box rotates into a non-axis-aligned box; covariance bounds and ridge act on log Cholesky coordinates and are not invariant to arbitrary rotations. The zero initialization is invariant as a law, but its subsequent parameter trajectory is not.",
+    "identities": "For C_rot=C R and orthogonal R, choose a_rot=R^T a and S_rot=R^T S R. Then C_rot a_rot=C a and C_rot(S_rot-I)C_rot^T=C(S-I)C^T. A transformed covariance can lie outside the original Cholesky parameter box and its ridge penalty can change.",
+    "interpretation": "A rotation difference is a sensitivity of the bounded/regularized parameterization, not a change in subspace or evidence of a new mechanism."
+  },
+  "KL_construction": {
+    "definition": "Kq=Lq Lq^T=V diag(lambda) V^T. Let V2 denote the first two eigenvectors and lambda2 their positive eigenvalues. Set U_KL=Lq^T V2 diag(lambda2)^(-1/2).",
+    "whitening_check": "U_KL^T U_KL=I2. Cross covariance C=K_Yq Lq^(-T) U_KL=K_Yq V2 diag(lambda2)^(-1/2). Passing the unwhitened V2 directly as U changes the comparator.",
+    "latent_not_report": "Compute KL from the same latent support covariance used for the original curvature code, excluding report measurement noise. Keep observation covariance and its full residual unchanged.",
+    "independence": "This depends on the frozen training-derived prior only; no held-out outcomes enter basis construction. It is not empirical FPCA."
+  },
+  "necessary_independent_checks": [
+    "Analytic synthetic fixture checks for orthonormal random/KL/curvature directions, deterministic KL ordering/signs, positive support eigenvalues, no jitter, and positive-semidefinite full residual.",
+    "At theta=0 every arm must reproduce the frozen GP joint mean/covariance and conditioned law to numerical tolerance.",
+    "Curvature versus rotated-curvature C C^T equality and generic unbounded law transformation identity, including a concrete witness that ridge/bounds need not be rotation invariant.",
+    "Direct full Gaussian joint-minus-context conditional negative log likelihood against the low-dimensional likelihood-ratio objective; independent finite-difference gradient on non-material synthetic fixtures.",
+    "Direct block conditioning from each saved corrected full law, independent check of conditioning means/covariances, positive definiteness and observed/target alignment; no producer helper reuse by auditor.",
+    "Protocol/source/input binding, exact 25 outer groups per complete arm and all original masks; full forecast manifests with no held-out curve training inclusion and no hidden S access.",
+    "Independently recompute Gaussian CRPS, point error, marginal 90% coverage/width, interval score, joint log density where declared, and aggregate per original formulation/mask using saved predictions and admitted P target cache. Do not infer 2475 independent materials.",
+    "Match reused old scores to original hashes; report every fixed random seed, failure and alternate basis, not only best or median arm."
+  ],
+  "analysis_recommendation": {
+    "primary": "Original fixed macro mean CRPS across25 formulation x3 masks x33 target positions; identical information and target roles.",
+    "report": "Show all eight new random arms and old random separately, plus min/median/max as descriptive summary; fixed curvature, prior KL, rotation; by-mask CRPS and formulation-level paired directions; retain interval/log-density tradeoffs.",
+    "do_not_infer": "No new independent confirmation, no p-value based on treating masks or positions as independent replicates, no guaranteed acceptance or general-domain superiority.",
+    "if_curvature_beats_random_and_KL": "Supports a useful, prespecified domain inductive bias in this already-consumed small hydrogel dataset; does not prove universal optimality or originality of Gaussian algebra.",
+    "if_some_random_or_KL_wins": "Retain the result and narrow the representation superiority claim; do not replace the frozen candidate by the best post hoc seed. It may support a simpler Gaussian adaptation story.",
+    "if_rotation_matters": "Explicitly disclose bounded/regularized coordinate sensitivity and avoid attributing all differences solely to physical subspace choice.",
+    "if_numerical_gate_fails": "Preserve failure and investigate a reproducible mathematical/code fault; do not increase optimizer budget or change seeds without a genuinely separate registered protocol."
+  },
+  "scope_stop": "Complete this single bounded study and audit; no follow-on seed/window/anchor/bound searches or additional model stacks on these P outcomes.",
+  "source_reads": [
+    {
+      "path": "H:\\polymer_completion_public\\research\\missing_controls_20261101T0641198159051Z\\experiment\\random_gaussian.py",
+      "sha256": "92e5da8748f911fa78b223de721c19ccd4e4547e50ba1f9302e443da1f785d13",
+      "role": "source inspected only"
+    },
+    {
+      "path": "H:\\polymer_completion_public\\research\\missing_controls_20261101T0641198159051Z\\experiment\\common.py",
+      "sha256": "7766cd648b568c12dd7ad626c448ad5d24f84ec2182c2407d2a5657d6b1fcbe7",
+      "role": "source inspected only"
+    },
+    {
+      "path": "H:\\polymer_completion_public\\research\\missing_controls_20261101T0641198159051Z\\core\\joint_code_gaussian.py",
+      "sha256": "0c8a57c1bdf96e1c880ffd1ba2258e1b379952b844e960a7c67d6cdcdc65e299",
+      "role": "source inspected only"
+    },
+    {
+      "path": "H:\\polymer_completion_public\\research\\missing_controls_20261101T0641198159051Z\\core\\local_shape.py",
+      "sha256": "652797e34e7299edd31a8b494287ad8ab36aca9cdcdcc7b455dc614201231d3b",
+      "role": "source inspected only"
+    }
+  ],
+  "limitations": "No actual new protocol or future implementation was available at review time; this is a design review, not certification of code, successful execution or material efficacy."
+}

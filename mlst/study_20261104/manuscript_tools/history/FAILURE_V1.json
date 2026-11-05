@@ -1,0 +1,14 @@
+{
+  "actual_recorded_utc": "2026-11-05T01:34:52.322972+00:00",
+  "evidence_origin": "Parent root reported observed first authoring command failure; this records that report, not a reconstructed raw tool traceback.",
+  "manual_run": "20261105T013020432158Z",
+  "status": "FAILED_BEFORE_OUTPUT_DIRECTORY_WRITE",
+  "exception": "ValueError: Unique paragraph prefix required; prefix Table S1 matched five paragraphs",
+  "reported_source_line": 418,
+  "source_snapshot_file": "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\manuscript_tools\\history\\update_manuscript_v1_failed_before_write.py",
+  "source_sha256": "94fd08261deae3697d5b80fbedf316393231fc1158878b12a3bee1c35166a210",
+  "output_directory_exists_at_review": false,
+  "fix_scope": "Make paragraph template caption lookup unambiguous; inspect other template prefixes. No scientific source, fit, score or original DOCX mutation.",
+  "same_operation_receipt": "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\manuscript_tools\\OPERATION_STARTED.json",
+  "new_operation_marker_or_authoring_executed_by_fix_agent": false
+}

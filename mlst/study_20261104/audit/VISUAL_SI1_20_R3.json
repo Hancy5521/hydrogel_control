@@ -1,0 +1,312 @@
+{
+  "actual_utc": "2026-11-05T01:44:50.300756+00:00",
+  "status": "PASS_WITH_NONBLOCKING_LAYOUT_OBSERVATION",
+  "scope": "Actually viewed everySIpage1–20 at original image detail. Pages21–27 and main/cover assigned to other reviewers; not claimed here.",
+  "docx_file": "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\manuscript\\Supplement_MLST.docx",
+  "docx_sha256": "e04edca0bb960e7b3e47182f80131b1222a906b324a4aa79a489ca60b31095d7",
+  "render_receipt_file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\RENDER_RECEIPT.json",
+  "render_receipt_sha256": "299d444f7f6c63dc769940f7cb2823377bc20343f9a9313546a3879caa03986b",
+  "rendered_SI_total_pages": 27,
+  "viewed_page_count": 20,
+  "blocking_defects": [],
+  "nonblocking_observations": [
+    {
+      "page": 11,
+      "observation": "S13ends around upperhalf and S14starts onnewpage, leaving large lower whitespace. Content is complete/readable; no clipping or orphaned heading. Existing section/page layout is preserved; no editorial mutation performed."
+    }
+  ],
+  "checks": [
+    "text/table clipping",
+    "math fractions/subscripts/superscripts/brackets",
+    "missingglyphs",
+    "caption/figure and heading/body separation",
+    "pageorientation and margins",
+    "visibleoverlap or severeorphaning"
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Supplement_MLST\\page-1.png",
+      "sha256": "b5f0d2b58525cfd9be7de8effe5bbfc94ee9cc0cdcdd70591883f1e34139cec2",
+      "pixels": [
+        993,
+        1403
+      ],
+      "actually_viewed": true,
+      "view_tool": "functions.view_image",
+      "detail": "original",
+      "status": "PASS",
+      "note": "S1 and S2 tables fit their margins; wrapped headers and captions are readable."
+    },
+    {
+      "page": 2,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Supplement_MLST\\page-2.png",
+      "sha256": "83ffd5c6fa446c82f1d5eb37d57af3625aeb2e544bb32ad50c9e2a01d197f0a4",
+      "pixels": [
+        993,
+        1403
+      ],
+      "actually_viewed": true,
+      "view_tool": "functions.view_image",
+      "detail": "original",
+      "status": "PASS",
+      "note": "Original feature comparison, residual inline mathematics and TableS4 readable; S4heading has following body lines."
+    },
+    {
+      "page": 3,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Supplement_MLST\\page-3.png",
+      "sha256": "476c6f1000d625f681f6246893a36262c16a2e189f0601137e03628771f0ff20",
+      "pixels": [
+        993,
+        1403
+      ],
+      "actually_viewed": true,
+      "view_tool": "functions.view_image",
+      "detail": "original",
+      "status": "PASS",
+      "note": "All25heatmap rows, colorlegend and caption visible without clipping."
+    },
+    {
+      "page": 4,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Supplement_MLST\\page-4.png",
+      "sha256": "955556dd015ef2013045f50cc1c764a1d6a6beeabc2a6f2fe1f65c95c18d0b20",
+      "pixels": [
+        1403,
+        993
+      ],
+      "actually_viewed": true,
+      "view_tool": "functions.view_image",
+      "detail": "original",
+      "status": "PASS",
+      "note": "Landscape2x2curve panels, axes, two-row legend and caption fully visible."
+    },
+    {
+      "page": 5,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Supplement_MLST\\page-5.png",
+      "sha256": "19969f7f6a68d09d9d3c72c6b3e5986c26a218c8f07aaa9e59d5192c3ddc5e2c",
+      "pixels": [
+        993,
+        1403
+      ],
+      "actually_viewed": true,
+      "view_tool": "functions.view_image",
+      "detail": "original",
+      "status": "PASS",
+      "note": "S5evaluation and S6archive identifiers wrap inside margins; no clipped text."
+    },
+    {
+      "page": 6,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Supplement_MLST\\page-6.png",
+      "sha256": "cf19e0adc48bc690d105a266dbc3d0ff40f5dbe543f652d6ddc1e410fa85be71",
+      "pixels": [
+        993,
+        1403
+      ],
+      "actually_viewed": true,
+      "view_tool": "functions.view_image",
+      "detail": "original",
+      "status": "PASS",
+      "note": "S7headings, constitutive notation and body paragraphs legible; normal paragraph continuation."
+    },
+    {
+      "page": 7,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Supplement_MLST\\page-7.png",
+      "sha256": "50b5556962ad9bc3d0b03f9a653ad6c5ea0373457894f6388acd861a9c708c35",
+      "pixels": [
+        993,
+        1403
+      ],
+      "actually_viewed": true,
+      "view_tool": "functions.view_image",
+      "detail": "original",
+      "status": "PASS",
+      "note": "S7heavy-tail/S8text and variogram TableS5 fit; no isolated heading."
+    },
+    {
+      "page": 8,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Supplement_MLST\\page-8.png",
+      "sha256": "8285389588518e49efc16cfb508d9b341dbe55849ebf0de24fefc2121fdd9aef",
+      "pixels": [
+        993,
+        1403
+      ],
+      "actually_viewed": true,
+      "view_tool": "functions.view_image",
+      "detail": "original",
+      "status": "PASS",
+      "note": "Native equationsS1–S5, fractions, subscripts and superscripts render cleanly within margins."
+    },
+    {
+      "page": 9,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Supplement_MLST\\page-9.png",
+      "sha256": "5fe2fe733884f8bc35517b05c47d8df0d7924afc192b7cbdb1c5e886dec73659",
+      "pixels": [
+        993,
+        1403
+      ],
+      "actually_viewed": true,
+      "view_tool": "functions.view_image",
+      "detail": "original",
+      "status": "PASS",
+      "note": "TableS6 and S11text/math visible; no table/header clipping."
+    },
+    {
+      "page": 10,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Supplement_MLST\\page-10.png",
+      "sha256": "82739df4c502e6e74a0c4a8a3c4b59c5661066ebbf5dac598b836988446b6237",
+      "pixels": [
+        993,
+        1403
+      ],
+      "actually_viewed": true,
+      "view_tool": "functions.view_image",
+      "detail": "original",
+      "status": "PASS",
+      "note": "Ten-method TableS7 complete with readable six-digit scores; S13heading paired with text."
+    },
+    {
+      "page": 11,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Supplement_MLST\\page-11.png",
+      "sha256": "04a39e380b15131733d0906d204c21ee1fb043c6405fa76424d8cfb4cd84b0ce",
+      "pixels": [
+        993,
+        1403
+      ],
+      "actually_viewed": true,
+      "view_tool": "functions.view_image",
+      "detail": "original",
+      "status": "PASS",
+      "note": "S13finishes clearly; substantial unused lower-page whitespace beforeS14 starts onnextpage, nonblocking inherited layout observation."
+    },
+    {
+      "page": 12,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Supplement_MLST\\page-12.png",
+      "sha256": "a34863432b895aac45dcc23962688af6eb1200412e10c6456395bb1b368c2080",
+      "pixels": [
+        993,
+        1403
+      ],
+      "actually_viewed": true,
+      "view_tool": "functions.view_image",
+      "detail": "original",
+      "status": "PASS",
+      "note": "S14source/protocol paragraphs, counts, hashes and exponents remain inside margins and readable."
+    },
+    {
+      "page": 13,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Supplement_MLST\\page-13.png",
+      "sha256": "0da9ada0e322adc3c5b45890da9b46a9ba50749705e6866d7f6dc06491c278a5",
+      "pixels": [
+        993,
+        1403
+      ],
+      "actually_viewed": true,
+      "view_tool": "functions.view_image",
+      "detail": "original",
+      "status": "PASS",
+      "note": "All24external method-source rows plus header and footnote fit ononepage."
+    },
+    {
+      "page": 14,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Supplement_MLST\\page-14.png",
+      "sha256": "ef4949a8518fa15d731786ceb870410efaa4d243207a9410401e796547fff9c9",
+      "pixels": [
+        993,
+        1403
+      ],
+      "actually_viewed": true,
+      "view_tool": "functions.view_image",
+      "detail": "original",
+      "status": "PASS",
+      "note": "Four-panel external-assessment figure, caption and S15text visible; small figurelabels remain legible at original resolution."
+    },
+    {
+      "page": 15,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Supplement_MLST\\page-15.png",
+      "sha256": "d6f1fd9a0359e8e86380916df099fd34f1f4c6f121c7097896a3f023a698d394",
+      "pixels": [
+        993,
+        1403
+      ],
+      "actually_viewed": true,
+      "view_tool": "functions.view_image",
+      "detail": "original",
+      "status": "PASS",
+      "note": "TablesS9/S10, two-panel sensitivity figure, caption and S16heading/introduction visible without overlap."
+    },
+    {
+      "page": 16,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Supplement_MLST\\page-16.png",
+      "sha256": "9a97a4b0946da708853918d265c011dc8978345074af85ab749f2696a08aead9",
+      "pixels": [
+        993,
+        1403
+      ],
+      "actually_viewed": true,
+      "view_tool": "functions.view_image",
+      "detail": "original",
+      "status": "PASS",
+      "note": "S16source roles and equationsA1/A2 including fractions, gamma-dot and kernel powers visible."
+    },
+    {
+      "page": 17,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Supplement_MLST\\page-17.png",
+      "sha256": "32f6f35e256863a0abc47581945778d04eb08b10e7c4e716f7b331973a79f86c",
+      "pixels": [
+        993,
+        1403
+      ],
+      "actually_viewed": true,
+      "view_tool": "functions.view_image",
+      "detail": "original",
+      "status": "PASS",
+      "note": "EquationsA3–A8, matrix, exponents and labels all visible without clipping."
+    },
+    {
+      "page": 18,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Supplement_MLST\\page-18.png",
+      "sha256": "061b7bd64591a189c3c51016e19ffc2332b2b69d2e16639efa157ca2bf664381",
+      "pixels": [
+        993,
+        1403
+      ],
+      "actually_viewed": true,
+      "view_tool": "functions.view_image",
+      "detail": "original",
+      "status": "PASS",
+      "note": "EquationsA9–A18 and optimizer-bound prose visible; all labels fit margin."
+    },
+    {
+      "page": 19,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Supplement_MLST\\page-19.png",
+      "sha256": "1679e8cf525c340b410b436ab6c6acd622d4a59c6804eacb319fe95de5242e39",
+      "pixels": [
+        993,
+        1403
+      ],
+      "actually_viewed": true,
+      "view_tool": "functions.view_image",
+      "detail": "original",
+      "status": "PASS",
+      "note": "EquationsA19–A21 and sampling-law prose readable; no clipped bracket or superscript."
+    },
+    {
+      "page": 20,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Supplement_MLST\\page-20.png",
+      "sha256": "27df82848ec7afa38eea1e25ece5b841dab18dfecfe59ecb34c7890945bbec67",
+      "pixels": [
+        993,
+        1403
+      ],
+      "actually_viewed": true,
+      "view_tool": "functions.view_image",
+      "detail": "original",
+      "status": "PASS",
+      "note": "EquationsA22–A29, feature vector, density formula and interval score all visible; normal continuation atpageend."
+    }
+  ],
+  "no_document_source_changes": true,
+  "new_fits": 0,
+  "new_target_scores": 0,
+  "document_regenerated": false
+}

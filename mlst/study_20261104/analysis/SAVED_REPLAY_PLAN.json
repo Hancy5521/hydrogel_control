@@ -1,0 +1,33 @@
+{
+  "registered_utc": "2026-11-04T16:05:42.072170+00:00",
+  "registered_asia_shanghai": "2026-11-05T00:05:42.072170+08:00",
+  "question": "Reaggregate saved score columns for all16 models and uncertainty diagnostics for10newarms without data inference",
+  "scope": "stdlib Decimal60 saved-loss replay, not fitting/prediction/target scoring or independent material validation",
+  "source": {
+    "path": "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\analysis\\summarize_saved_results.py",
+    "sha256": "7bbcb394a743c953dcc65df9e95ff130158ea101fa020492bd0433eb629269f8"
+  },
+  "inputs": [
+    {
+      "path": "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\experiment\\scores\\RESULT.json",
+      "sha256": "45606b385ded9934b2a64a5cf1847fb16a95e249b7f40fb5f0bf0daf44200f6b"
+    },
+    {
+      "path": "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\experiment\\scores\\PER_COORDINATE.csv",
+      "sha256": "905a0fffbd235f03d7c6e34c65f8226e4cf7f66a5753a2004912766408a1698e"
+    }
+  ],
+  "output": "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\analysis\\saved_summary",
+  "command": [
+    "D:/Anaconda/python.exe",
+    "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\analysis\\summarize_saved_results.py",
+    "--result",
+    "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\experiment\\scores\\RESULT.json",
+    "--coordinate",
+    "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\experiment\\scores\\PER_COORDINATE.csv",
+    "--output",
+    "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\analysis\\saved_summary"
+  ],
+  "checks": "Savedlossuniqueness/33targets750queries/10arms;200aggregatechecks;missingoldcurve-levelpairing explicitlyunavailable",
+  "decision_rule": "PriorKLbetterCRPSnarrowscurvaturespecificoptimality; reportadversejointdensity andlocalcoverage; no seed/modeldeploymentselection"
+}

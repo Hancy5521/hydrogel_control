@@ -1,0 +1,8 @@
+{
+  "actual_utc": "2026-11-04T16:02:26.149761+00:00",
+  "plan_sha256": "2d4d8451b927151d3d1c6f88e83deb1b68b655b8945da1cf5789ae842fb6b365",
+  "posthoc": true,
+  "new_fits": 0,
+  "new_target_scores": 0,
+  "measurement_labels_read": 0
+}

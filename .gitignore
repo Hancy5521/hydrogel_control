@@ -61,3 +61,12 @@ new_weighting_summary.json
 !mlst/results/mlst_tables/main_table3.csv
 !mlst/results/mlst_tables/main_table4.csv
 !mlst/saved_uq/results/SAVED_UQ_SOURCE_METHODS.csv
+
+# Reviewed derived representation-study score tables only
+!mlst/study_20261104/analysis/saved_summary/ALL_MODELS_BY_MASK.csv
+!mlst/study_20261104/analysis/saved_summary/ALL_MODELS_OVERALL.csv
+!mlst/study_20261104/analysis/saved_summary/CURVATURE_VS_KL_FORMULATION.csv
+!mlst/study_20261104/analysis/saved_summary/NEW_ARMS_UNCERTAINTY.csv
+!mlst/study_20261104/analysis/saved_summary/P0_NEW_ARMS.csv
+!mlst/study_20261104/diagnostics/output/CONDITIONAL_COVARIANCE.csv
+!mlst/study_20261104/experiment/scores/PER_COORDINATE.csv

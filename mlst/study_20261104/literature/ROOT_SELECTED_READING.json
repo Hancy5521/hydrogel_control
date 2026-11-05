@@ -1,0 +1,40 @@
+{
+  "actual_utc": "2026-11-04T15:48:30.537530+00:00",
+  "reading_scope": "Two new MLST primary works selected sections; not two full-paper reads, not a systematic study of acceptance preferences. Web primary indexed text counts only the sections actually retrieved.",
+  "papers": [
+    {
+      "id": "Niroomand2024",
+      "title": "Explainable Gaussian processes: a loss landscape perspective",
+      "doi": "10.1088/2632-2153/ad62ad",
+      "journal": "Machine Learning: Science and Technology5(2024)035025",
+      "version": "publisher Version of Record via University of Cambridge repository",
+      "url": "https://api.repository.cam.ac.uk/server/api/core/bitstreams/b18eff39-a538-44eb-8a56-8909b489b248/content",
+      "license": "CC BY4.0 explicitly on firstpage",
+      "read_depth": "Abstract, introduction and relatedwork1.1–1.2; GP/loss2.1, Matern2.2, loss-landscape2.3; beginning of results3.1 including figure1-2 discussion throughPDFpage5. Laterensemble results andwhole15pages not read.",
+      "transfer": "Treat optimizer and boundary choices as scientific model choices; a lower training objective need not perfectly track test performance. This motivates recording all constraints and fit diagnostics, not selecting a new kernel after looking at existing scores.",
+      "difference": "This paper studies GP hyperparameter loss landscapes, kernel smoothness and ensembles; our bounded experiment fixes the referenceGP, changes the two-dimensional correction code, and audits full residual and coordinate constraints. No claim of new GP landscape theory."
+    },
+    {
+      "id": "Cersonsky2021",
+      "title": "Improving sample and feature selection with principal covariates regression",
+      "doi": "10.1088/2632-2153/abfe7c",
+      "journal": "Machine Learning: Science and Technology2(2021)035038",
+      "version": "publisher Version of Record selected primary indexed text; preprintv1 metadata separately verified",
+      "url": "https://api.repository.cam.ac.uk/server/api/core/bitstreams/d75f0b6b-9015-4803-b943-8e852e3db6a8/content",
+      "other_primary_url": "https://api.repository.cam.ac.uk/server/api/core/bitstreams/9d64b2e1-d7bf-4d05-bded-e47b47a0ac37/content",
+      "preprint_metadata": "https://arxiv.org/abs/2012.12253 (onlyv1exists; fourauthors differsfromfiveauthorVoR)",
+      "license": "Publisher CC BY4.0 stated in primaryPDFindexed firstpage. No externalcode used.",
+      "read_depth": "Publisherindexed abstract, selected methods2.3/CURleverage/orthogonalization, resultsaroundfig10/11/12 inclPCAandrandomselectioncomparators, conclusion4/dataavailability. Direct EPFLsignedredirect and Cambridgeopen timedout. No wholePDFread claimed.",
+      "transfer": "A reduced supervised representation needs strong unsupervised and random comparisons, not only a larger unstructured baseline. Evaluate all fixed random constructions and a standard prior-variance basis before attributing improvement to curvature.",
+      "difference": "TheirPCovR mixes targetswithfeaturegeometry andselectsfeatures/samples forregression. Currentmethod preserves fullGP residual andlearns shared distribution correction in fixedfunctionals; referenceKLbaseline is label-free for eachfrozen reference, no newPCovRmethodclaimed."
+    }
+  ],
+  "failures": [
+    "EPFLPDFopen signedasset redirect inaccessible (nonretryable); CambridgeCersonskyPDFopen timedout; Niroomandfind timedout. Primaryindexed selectedtext retained withlimitedscope.",
+    "Guessed2012.12253v3HTML404; abstractactualversioncheckedasv1; no v3reading claimed."
+  ],
+  "excluded": [
+    "Aircraft-in-climb monotonicfunctionalGP searchlead belongs ProceedingsRoyalSocietyA DOI10.1098/rspa.2022.0607, notMLST; not counted as MLSTread."
+  ],
+  "scientific_decision": "Prioritize pre-fixed multi-random, priorKL and within-subspace45degree control; no extra diffusion/ensemble network or tuning onconsumedoutcomes."
+}

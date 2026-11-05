@@ -1,0 +1,161 @@
+{
+  "reviewed_utc": "2026-11-05T01:44:58.275685+00:00",
+  "reviewed_asia_shanghai": "2026-11-05T09:44:58.275685+08:00",
+  "status": "PASS",
+  "method": "Every one of the17actual rendered full-pagePNG images was displayed throughview_image and visually inspected; this is separate from XML/text checking.",
+  "document_sha256": "be4930e6f1d27a2959e6061002974d770e425f1c664c6bc01617ff5a4c1a3cfb",
+  "pdf_sha256": "23931ec68782037aed40d0b92f2333342c774b866917cde2a45b54d03a9c8902",
+  "render_receipt_sha256": "299d444f7f6c63dc769940f7cb2823377bc20343f9a9313546a3879caa03986b",
+  "page_count": 17,
+  "pages": [
+    {
+      "page": 1,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Hydrogel_Continuation_MLST\\page-1.png",
+      "sha256": "e1da23a005f3f8f5e361eb8185ac15c73b150ce3ee0824fecc472a6f891bd0d6",
+      "actually_viewed": true,
+      "result": "PASS",
+      "observation": "Title, author placeholder, 226-word abstract and opening introduction are legible; no clipped text or missing symbols."
+    },
+    {
+      "page": 2,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Hydrogel_Continuation_MLST\\page-2.png",
+      "sha256": "09f0b2ec2295df21de618d88a5e8927349d3c96ede8a7ff521f5658afd319071",
+      "actually_viewed": true,
+      "result": "PASS",
+      "observation": "Introduction continuation and Methods headings remain legible; whitespace before the following full table is acceptable."
+    },
+    {
+      "page": 3,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Hydrogel_Continuation_MLST\\page-3.png",
+      "sha256": "08c32796b610c129616b9b45f359be990dcd53fd5221194a8991e372b0a0c7c9",
+      "actually_viewed": true,
+      "result": "PASS",
+      "observation": "Table1 fits all three columns; Eq1, fold diagram and attached caption are legible and inside margins."
+    },
+    {
+      "page": 4,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Hydrogel_Continuation_MLST\\page-4.png",
+      "sha256": "6286fcbffe6e5a6de6aabd8c02c2af69b5c849cd9898c8f9cccecd72bc97d06a",
+      "actually_viewed": true,
+      "result": "PASS",
+      "observation": "Kernel, finite differences, whitening and joint Gaussian equations have intact fractions, subscripts and equation labels."
+    },
+    {
+      "page": 5,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Hydrogel_Continuation_MLST\\page-5.png",
+      "sha256": "820d765e80cdde4f19beb24ebc945e61a879b55ba3087e21246ec145839a728f",
+      "actually_viewed": true,
+      "result": "PASS",
+      "observation": "Conditioning and training equations are intact; new controls paragraph is spaced clearly and remains inside the text area."
+    },
+    {
+      "page": 6,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Hydrogel_Continuation_MLST\\page-6.png",
+      "sha256": "ebdf437d3b622dfc6bf6eb54c897a315f3fc3db46dc78feef81e8a36ad2f73e7",
+      "actually_viewed": true,
+      "result": "PASS",
+      "observation": "Evidence and AI-use statements, external protocol and Results heading are clearly separated with no isolated heading."
+    },
+    {
+      "page": 7,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Hydrogel_Continuation_MLST\\page-7.png",
+      "sha256": "d913ec4d727ed6484318b0c4cd88821bfd2bf89963fcdf8fafd9fe31a157031f",
+      "actually_viewed": true,
+      "result": "PASS",
+      "observation": "Table2 is complete and legible; original paired and layout statements follow; whitespace keeps the next large figure intact."
+    },
+    {
+      "page": 8,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Hydrogel_Continuation_MLST\\page-8.png",
+      "sha256": "1e8faeb15176e0529b1d1f3a107d7d694b775ab91b5ef2c497deb9fda811e323",
+      "actually_viewed": true,
+      "result": "PASS",
+      "observation": "Figure2 axes, labels and caption are clear; new random/KL/rotation paragraph is legible; paragraph continuation is normal."
+    },
+    {
+      "page": 9,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Hydrogel_Continuation_MLST\\page-9.png",
+      "sha256": "826fcb654d32d66162d32c1a6e0a85215abaf7f42ba7e1962e391fda979ec6c5",
+      "actually_viewed": true,
+      "result": "PASS",
+      "observation": "New KL tradeoff paragraph continues correctly; Table3 columns and all original controls are legible."
+    },
+    {
+      "page": 10,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Hydrogel_Continuation_MLST\\page-10.png",
+      "sha256": "9a4dd8ada625c62700aa6f69786f50caa5cd548952c642c30c09088ac982cb71",
+      "actually_viewed": true,
+      "result": "PASS",
+      "observation": "Figure3 and Figure4, labels, confidence band and captions are complete without overlap or clipping."
+    },
+    {
+      "page": 11,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Hydrogel_Continuation_MLST\\page-11.png",
+      "sha256": "3e211b8c31d2204278ee3969708c8a8f9b6096ae1ba7e1324c87d0abd5a78644",
+      "actually_viewed": true,
+      "result": "PASS",
+      "observation": "Table4 and all external failures/weighting and undercoverage paragraphs remain legible; all columns fit."
+    },
+    {
+      "page": 12,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Hydrogel_Continuation_MLST\\page-12.png",
+      "sha256": "7fc2d3ddf2d92f4bb92e91d8292f74cc78c4fb936777a9b94ceb760e3b46b626",
+      "actually_viewed": true,
+      "result": "PASS",
+      "observation": "Updated Discussion, KL qualification and covariance-only explanation are spaced normally and uncut."
+    },
+    {
+      "page": 13,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Hydrogel_Continuation_MLST\\page-13.png",
+      "sha256": "43ddf924b91e18571bf25d4c1c498ed27fd10cdede3c9371efc2d0ec3debbabd",
+      "actually_viewed": true,
+      "result": "PASS",
+      "observation": "Data/code availability, intact Hancy5521 URL, author/AI placeholders and opening References are legible."
+    },
+    {
+      "page": 14,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Hydrogel_Continuation_MLST\\page-14.png",
+      "sha256": "3c864a59d3df080c4bd82e95c15c60382e6569c5d6a88f601ca394a8c69468b5",
+      "actually_viewed": true,
+      "result": "PASS",
+      "observation": "References2-20 are complete and readable, including three new MLST entries; wrapped DOI lines remain inside margins."
+    },
+    {
+      "page": 15,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Hydrogel_Continuation_MLST\\page-15.png",
+      "sha256": "efc61fb5f4fb9431e3c227c2b08907b6c13d0d44af2a73759ae3250a58c8686e",
+      "actually_viewed": true,
+      "result": "PASS",
+      "observation": "References21-39 are complete and readable; long inducing-feature URLs fit and Niroomand entry is intact."
+    },
+    {
+      "page": 16,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Hydrogel_Continuation_MLST\\page-16.png",
+      "sha256": "b05e5105365a09e19f8e8035c72c30c42e3a5365635e84db2b2e79e37216ef28",
+      "actually_viewed": true,
+      "result": "PASS",
+      "observation": "References40-58 are complete and readable, including new Kellner and Shmuel records; no footer overlap."
+    },
+    {
+      "page": 17,
+      "file": "H:\\PolymerReview\\wordqa_mlst_mlst_evidence_20261104T154143254269Z_20261105_r3\\Hydrogel_Continuation_MLST\\page-17.png",
+      "sha256": "e2d63b934292e485fbc9b366ba1b8605002d9aa90d70137d5410efa8a906afa9",
+      "actually_viewed": true,
+      "result": "PASS",
+      "observation": "References59-64 end cleanly; partial final reference page is intentional and is not an unintended blank page."
+    }
+  ],
+  "findings": [],
+  "criteria": [
+    "No clipping or content outside text margins",
+    "No overlapping text, table cells, figures or equation labels",
+    "No missing mathematical glyphs or visibly broken fractions/subscripts",
+    "Tables and figures remain complete and legible",
+    "Figure captions remain attached and page continuations are sensible",
+    "URLs and reference lines are readable",
+    "No unintended blank page"
+  ],
+  "limits": "Author identities and submission declarations are explicit unfinished placeholders. This visual check does not provide journal acceptance or scientific confirmation and covers the main manuscript only; SI and cover checks belong to separate reviewers.",
+  "docx_modified": false,
+  "renderer_run_by_this_reviewer": false
+}

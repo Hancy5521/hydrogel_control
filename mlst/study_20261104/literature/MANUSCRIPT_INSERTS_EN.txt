@@ -1,0 +1,38 @@
+PROPOSED ENGLISH INSERTS — NO MANUSCRIPT EDITS EXECUTED
+Date: 2026-11-04. Source manuscript SHA256: 67e99f20136871d67fe5ba95b0a0325ece05767a02b52a714c35bd3528e2396e
+
+The text below is a writing proposal. INTRODUCTION and LIMITATIONS refer to already recorded study design. The NEW DEVELOPMENT METHODS/RESULTS block must not be inserted as completed work before the protocol, fits, prediction freeze, scoring and independent audit actually exist. Bracketed CITE keys map to SIX_REFERENCE_INSERT_CHECK.json. Any numbering59–64 is provisional. No new fit results are known to this writing task.
+
+INTRODUCTION — after existing rheology/functional-learning context
+Small-data viscosity prediction already provides a useful methodological precedent: model selection, performance estimation and physical interpolation behavior require separate assessment [CITE_AVULA]. In the present task, the input is a partially observed flow curve and the output is a joint distribution over unmeasured rates. We therefore ask whether two fixed, rheologically motivated summaries can support a useful shared population correction while retaining variation outside those summaries. The intended application is continuation of hydrogel precursor-ink curves within a declared state and rate range.
+
+INTRODUCTION — contribution and closest methodological context
+Reduced representations can improve a scientific regression task, but their value should be established against unsupervised and random alternatives [CITE_CERSONSKY]. Here, Gaussian conditioning and inducing-feature constructions are established ingredients [existing19–23]. Connections between quadratic curvature and Gaussian uncertainty also have clear precedents [CITE_BIGI]. The contribution is the task-specific allocation of a shared correction to finite-scale departures from affine log–log behavior, combined with a complete functional reference residual and matched empirical controls. The formulation does not introduce a new Gaussian probability theory.
+
+METHOD COMPARISON — refinement applicable irrespective of new outcomes
+Parameter count, information access and optimization constraints describe different aspects of a fair comparison. The Gaussian controls share the correction dimension, objective, training curves, observation layouts and optimizer. We also record their parameter bounds and boundary solutions, since optimization geometry can affect GP inference [CITE_NIROOMAND]. Equal parameter counts alone do not establish equivalence of the admissible distributions. In particular, rotating a two-dimensional code preserves the unrestricted Gaussian family but generally changes a family constrained by coordinate-wise mean and Cholesky bounds. A within-subspace rotation therefore probes a different question from replacing the subspace itself.
+
+NEW DEVELOPMENT METHODS — TEMPLATE; INSERT ONLY AFTER EXECUTION AND AUDIT
+[STATUS: PROPOSED, NOT AN EXPERIMENTAL RESULT]
+The additional representation analysis was registered at [ACTUAL_PROTOCOL_UTC] before its new fits. It compared [PRESPECIFIED_RANDOM_COUNT] fixed random constructions, [EXACT_PRIOR_KL_OR_OTHER_BASELINE] and [EXACT_PRESPECIFIED_ROTATION] with the archived curvature result. All prespecified constructions, fitting failures and boundary diagnostics were retained. The original held-formulation splits, layouts, scoring scale and reference fits were reused without reselection. These analyses use previously consumed development formulations and are reported as retrospective sensitivity, not independent confirmation.
+
+NEW DEVELOPMENT RESULTS — EXPLICIT PLACEHOLDERS, NEVER TREAT AS FACTS
+[STATUS: AWAITING_ACTUAL_RESULTS_AND_AUDIT]
+Completed new fits: [ACTUAL_NUMBER, NOT THE PLANNED250]. Failed fits: [ACTUAL_NUMBER_AND_DISPOSITION]. Random-control CRPS distribution: [ACTUAL_MEDIAN_RANGE_AND_ALL_SEEDS]. Prior-KL comparison: [ACTUAL_RESULT]. Within-subspace rotation: [ACTUAL_RESULT]. Layout and uncertainty trade-offs: [ACTUAL_RESULTS].
+Interpretation must follow these outcomes. If an alternative matches or exceeds curvature, retain the result and narrow the representation claim; do not select a new winning code or tuning rule on these scores.
+
+LIMITATIONS — external stress and uncertainty
+One-sided continuation along shear rate and transfer between material sources are distinct prediction challenges [CITE_SHMUEL]. The separately sourced curves provide stress tests under documented differences in composition, state and reporting; they do not establish new-batch generalization within the original precursor-ink domain. Coherent joint propagation also does not establish calibrated marginal intervals: global uncertainty summaries can conceal local failures [CITE_KELLNER]. We therefore retain the observed source-specific losses, subgroup undercoverage and sensitivity to source weighting. Stronger calibration, batch-transfer or measurement-saving claims require their own evidence and remain outside the conclusions supported here.
+
+EDITORIAL USE
+Use these references only at the claims indicated above. Preserve current adverse results and actual data counts. The additional controls would strengthen a mechanism interpretation if supportive, but cannot turn reused formulations into a fresh validation set. No statement of improved acceptance probability is justified by this selected reading.
+
+VERIFIED BIBLIOGRAPHY CANDIDATES (none found by DOI or exact title in the frozen main)
+[59; CITE_AVULA] Avula NVS, Veesam SK, Behera S, Balasubramanian S. Building robust machine learning models for small chemical science data: the case of shear viscosity of fluids. Machine Learning: Science and Technology. 2022;3:045032. https://doi.org/10.1088/2632-2153/acac01.
+[60; CITE_CERSONSKY] Cersonsky RK, Helfrecht BA, Engel EA, Kliavinek S, Ceriotti M. Improving sample and feature selection with principal covariates regression. Machine Learning: Science and Technology. 2021;2:035038. https://doi.org/10.1088/2632-2153/abfe7c.
+[61; CITE_NIROOMAND] Niroomand MP, Dicks L, Pyzer-Knapp EO, Wales DJ. Explainable Gaussian processes: a loss landscape perspective. Machine Learning: Science and Technology. 2024;5:035025. https://doi.org/10.1088/2632-2153/ad62ad.
+[62; CITE_BIGI] Bigi F, Chong S, Ceriotti M, Grasselli F. A prediction rigidity formalism for low-cost uncertainties in trained neural networks. Machine Learning: Science and Technology. 2024;5:045018. https://doi.org/10.1088/2632-2153/ad805f.
+[63; CITE_KELLNER] Kellner M, Ceriotti M. Uncertainty quantification by direct propagation of shallow ensembles. Machine Learning: Science and Technology. 2024;5:035006. https://doi.org/10.1088/2632-2153/ad594a.
+[64; CITE_SHMUEL] Shmuel A, Glickman O, Lazebnik T. Machine and deep learning performance in out-of-distribution regressions. Machine Learning: Science and Technology. 2024;5:045078. https://doi.org/10.1088/2632-2153/ada221.
+
+Reading versions and access/license limitations are explicitly recorded in NEW_MLST_SELECTED_READING.json and ROOT_SELECTED_READING.json; bibliographic VOR metadata is not a claim of full VOR reading.

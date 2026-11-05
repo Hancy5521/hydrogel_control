@@ -1,0 +1,10 @@
+{
+  "actual_utc": "2026-11-05T01:36:31.978076+00:00",
+  "activity": "Build humanreport from frozen audited summaries; zero fit/inference/target access",
+  "outputs": {
+    "REPORT_ZH.txt": "5d5693c695d965a9b107c3274e5431fd5fe9ed3338549e66ff2df84cfaf9ece8",
+    "REPORT_ZH.html": "b38f8cdb26f22059f23a8b441f86b84b53c0c45cb3b499cfad2fc9ba4a0186dc"
+  },
+  "input_score_sha256": "45606b385ded9934b2a64a5cf1847fb16a95e249b7f40fb5f0bf0daf44200f6b",
+  "source_sha256": "578e8df8958766eb3bafcc495b1f15ff1bcce7a1795e67962ed1b719d2f58e07"
+}

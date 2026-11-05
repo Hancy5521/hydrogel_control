@@ -1,0 +1,38 @@
+[
+  {
+    "utc": "2026-11-04T15:46:13.769078+00:00",
+    "url": "https://arxiv.org/html/2208.10784v1",
+    "file": "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\literature\\Avula_arxiv2208.10784v1.html",
+    "bytes": 509715,
+    "sha256": "322ba8263f175ba3f50516b26267d4c8e4ef61270337dfdca4811b9ef3e34a1b",
+    "status": "downloaded",
+    "mime": "text/html; charset=utf-8"
+  },
+  {
+    "utc": "2026-11-04T15:46:15.281633+00:00",
+    "url": "https://arxiv.org/pdf/2403.02251v1",
+    "file": "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\literature\\Bigi_arxiv2403.02251v1.pdf",
+    "bytes": 1028162,
+    "sha256": "6943d837d058249bfeab5eaa513b57938b41acabd8e63667278da0e660ff4d91",
+    "status": "downloaded",
+    "mime": "application/pdf"
+  },
+  {
+    "utc": "2026-11-04T15:46:17.249663+00:00",
+    "url": "https://arxiv.org/html/2402.16621v2",
+    "file": "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\literature\\Kellner_arxiv2402.16621v2.html",
+    "bytes": 346766,
+    "sha256": "fec407d3df2770e373fc677a3a614d78a0cf54e07883bf9c40b25fbdc7958be9",
+    "status": "downloaded",
+    "mime": "text/html; charset=utf-8"
+  },
+  {
+    "utc": "2026-11-04T15:46:18.546777+00:00",
+    "url": "https://teddylazebnik.com/files/Shmuel_2024_Mach._Learn.__Sci._Technol._5_045078.pdf",
+    "file": "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\literature\\Shmuel_MLST5_045078_VOR.pdf",
+    "bytes": 5721839,
+    "sha256": "0cc53aa5dd14fbe0f49875222e812d89838ce3516b592b66dd0015a66ff813e2",
+    "status": "downloaded",
+    "mime": "application/pdf"
+  }
+]

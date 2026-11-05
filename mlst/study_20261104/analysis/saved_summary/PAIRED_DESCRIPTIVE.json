@@ -1,0 +1,184 @@
+{
+  "curvature_vs_prior_kl": {
+    "curvature_macro_CRPS": 0.04327705155080712,
+    "prior_KL_macro_CRPS": 0.03713899835882181,
+    "prior_KL_minus_curvature_macro_CRPS": -0.00613805319198531,
+    "prior_KL_relative_CRPS_reduction_from_curvature": 0.14183159369762643,
+    "paired_formulations": 25,
+    "curvature_lower_CRPS_formulations_from_saved_comparison": 6,
+    "direct_saved_loss_pairing": {
+      "overall": {
+        "paired_formulations": 25,
+        "mean_difference": -0.0061380531919853045,
+        "median_difference": -0.007048210635396937,
+        "min_difference": -0.02353760875263735,
+        "max_difference": 0.014015143498826611,
+        "prior_KL_strictly_lower": 19,
+        "curvature_strictly_lower": 6,
+        "ties_exact_saved_decimal": 0,
+        "mean_difference_excluding_P0_descriptive_only": -0.00541307171029147
+      },
+      "spread": {
+        "paired_formulations": 25,
+        "mean_difference": -0.00030165285890207947,
+        "median_difference": -0.00020841228866085875,
+        "min_difference": -0.0021477670773158777,
+        "max_difference": 0.001125874735067767,
+        "prior_KL_strictly_lower": 19,
+        "curvature_strictly_lower": 6,
+        "ties_exact_saved_decimal": 0,
+        "mean_difference_excluding_P0_descriptive_only": -0.000342935495809161
+      },
+      "middle_gap": {
+        "paired_formulations": 25,
+        "mean_difference": -0.0006044781332627909,
+        "median_difference": 0.0008381786988168123,
+        "min_difference": -0.014606175530033617,
+        "max_difference": 0.0023393525445141693,
+        "prior_KL_strictly_lower": 8,
+        "curvature_strictly_lower": 17,
+        "ties_exact_saved_decimal": 0,
+        "mean_difference_excluding_P0_descriptive_only": -2.107407506400642e-05
+      },
+      "one_sided": {
+        "paired_formulations": 25,
+        "mean_difference": -0.017508028583791045,
+        "median_difference": -0.021840930126394455,
+        "min_difference": -0.061314511738119366,
+        "max_difference": 0.04093747956883833,
+        "prior_KL_strictly_lower": 19,
+        "curvature_strictly_lower": 6,
+        "ties_exact_saved_decimal": 0,
+        "mean_difference_excluding_P0_descriptive_only": -0.01587520556000124
+      }
+    },
+    "inferential_confidence_interval_or_p_value": null,
+    "pairing_provenance": "Archived candidate query CRPS losses paired with new prior-KL coordinate CRPS losses. No old measurement targets rescored.",
+    "by_layout": {
+      "spread": {
+        "prior_KL_minus_curvature_CRPS": -0.000301652858902081,
+        "prior_KL_minus_curvature_RMSE": -7.6918736125164e-05,
+        "prior_KL_minus_curvature_mean_joint_log_density": -0.0852947377747
+      },
+      "middle_gap": {
+        "prior_KL_minus_curvature_CRPS": -0.000604478133262797,
+        "prior_KL_minus_curvature_RMSE": -0.00389311404400666,
+        "prior_KL_minus_curvature_mean_joint_log_density": -0.22789862555636
+      },
+      "one_sided": {
+        "prior_KL_minus_curvature_CRPS": -0.01750802858379103,
+        "prior_KL_minus_curvature_RMSE": -0.03768799031036062,
+        "prior_KL_minus_curvature_mean_joint_log_density": -0.677173391897976
+      }
+    },
+    "interpretation": "KL improves aggregate CRPS/RMSE but has lower average joint log density; this narrows curvature-specific optimality. A new developmental winner is not an independently confirmed deployment replacement."
+  },
+  "candidate_comparisons_from_saved_result": {
+    "random_20261105": {
+      "candidate_minus_comparator_macro_crps": -0.022084663710665208,
+      "candidate_lower_crps_materials": 24,
+      "paired_formulations": 25,
+      "independent_confirmation": false
+    },
+    "random_20261106": {
+      "candidate_minus_comparator_macro_crps": -0.013774405131549592,
+      "candidate_lower_crps_materials": 24,
+      "paired_formulations": 25,
+      "independent_confirmation": false
+    },
+    "random_20261107": {
+      "candidate_minus_comparator_macro_crps": -0.006570630250205255,
+      "candidate_lower_crps_materials": 22,
+      "paired_formulations": 25,
+      "independent_confirmation": false
+    },
+    "random_20261108": {
+      "candidate_minus_comparator_macro_crps": -0.008324006655073242,
+      "candidate_lower_crps_materials": 25,
+      "paired_formulations": 25,
+      "independent_confirmation": false
+    },
+    "random_20261109": {
+      "candidate_minus_comparator_macro_crps": -0.012961177370524622,
+      "candidate_lower_crps_materials": 21,
+      "paired_formulations": 25,
+      "independent_confirmation": false
+    },
+    "random_20261110": {
+      "candidate_minus_comparator_macro_crps": -0.016177294146804064,
+      "candidate_lower_crps_materials": 20,
+      "paired_formulations": 25,
+      "independent_confirmation": false
+    },
+    "random_20261111": {
+      "candidate_minus_comparator_macro_crps": -0.016850080605104425,
+      "candidate_lower_crps_materials": 22,
+      "paired_formulations": 25,
+      "independent_confirmation": false
+    },
+    "random_20261112": {
+      "candidate_minus_comparator_macro_crps": -0.009761924121774816,
+      "candidate_lower_crps_materials": 23,
+      "paired_formulations": 25,
+      "independent_confirmation": false
+    },
+    "prior_kl": {
+      "candidate_minus_comparator_macro_crps": 0.006138053191985305,
+      "candidate_lower_crps_materials": 6,
+      "paired_formulations": 25,
+      "independent_confirmation": false
+    },
+    "curvature45": {
+      "candidate_minus_comparator_macro_crps": 0.00012068632664930593,
+      "candidate_lower_crps_materials": 5,
+      "paired_formulations": 25,
+      "independent_confirmation": false
+    }
+  },
+  "new_prior_KL_vs_rotation_direct_saved_pairing": [
+    {
+      "layout": "overall",
+      "comparison": "Prior-KL minus curvature-45-degree; saved CRPS",
+      "paired_formulations": 25,
+      "mean_difference": -0.006017366865335999,
+      "median_difference": -0.005784085041753697,
+      "min_difference": -0.0454396021329568,
+      "max_difference": 0.015249601869138506,
+      "prior_KL_strictly_lower": 20,
+      "ties_exact_saved_decimal": 0
+    },
+    {
+      "layout": "spread",
+      "comparison": "Prior-KL minus curvature-45-degree; saved CRPS",
+      "paired_formulations": 25,
+      "mean_difference": -0.00023163118180169844,
+      "median_difference": -0.00014177604568867914,
+      "min_difference": -0.0013760960754846806,
+      "max_difference": 0.0006859559143345778,
+      "prior_KL_strictly_lower": 16,
+      "ties_exact_saved_decimal": 0
+    },
+    {
+      "layout": "middle_gap",
+      "comparison": "Prior-KL minus curvature-45-degree; saved CRPS",
+      "paired_formulations": 25,
+      "mean_difference": -0.00013898993453537363,
+      "median_difference": 0.0008248378889955134,
+      "min_difference": -0.006617648280716965,
+      "max_difference": 0.002195422538176056,
+      "prior_KL_strictly_lower": 9,
+      "ties_exact_saved_decimal": 0
+    },
+    {
+      "layout": "one_sided",
+      "comparison": "Prior-KL minus curvature-45-degree; saved CRPS",
+      "paired_formulations": 25,
+      "mean_difference": -0.017681479479670924,
+      "median_difference": -0.017953388311964084,
+      "min_difference": -0.1291774121414736,
+      "max_difference": 0.0446023226665575,
+      "prior_KL_strictly_lower": 20,
+      "ties_exact_saved_decimal": 0
+    }
+  ]
+}

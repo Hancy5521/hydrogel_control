@@ -1,0 +1,45 @@
+{
+  "actual_utc": "2026-11-05T01:46:48.315901+00:00",
+  "status": "PASS",
+  "reviewer": "root actual image inspection, original resolution",
+  "pages": [
+    {
+      "file": "Supplement_MLST\\page-21.png",
+      "sha256": "c1551f785d16bc5886706c29f14b976f81a66f72ea835c22c72bb07e027c46e6"
+    },
+    {
+      "file": "Supplement_MLST\\page-22.png",
+      "sha256": "bdf244d49a7990a184f31111f2b9e3a88fe712878c5e641b7c99b1f414a514c4"
+    },
+    {
+      "file": "Supplement_MLST\\page-23.png",
+      "sha256": "68b5060476da7f8bbde9c88f6ea27de3c512ddd120fa99c3579695bb4e6d057b"
+    },
+    {
+      "file": "Supplement_MLST\\page-24.png",
+      "sha256": "3abc4138c6f015e35b4ab17dbe84bb8550ad2123623776c72f26df9f7fcf5558"
+    },
+    {
+      "file": "Supplement_MLST\\page-25.png",
+      "sha256": "6631a805147a7d7e9d475f17db8ccc2ce8fb0205a588faee646ec0dfd921a587"
+    },
+    {
+      "file": "Supplement_MLST\\page-26.png",
+      "sha256": "0f8ac1c5b845ed16cd8485f8858fb382e6afa04754861aeb135d7889155b1bb5"
+    },
+    {
+      "file": "Supplement_MLST\\page-27.png",
+      "sha256": "3dda35f8ba49e8ad1e852d1130672c7139d3000cb6a992d0a068d4a8215a2df5"
+    },
+    {
+      "file": "MLST_Cover_Letter\\page-1.png",
+      "sha256": "aeab54363f38fa650f108686fea490558c8e4e5c9f30ae540467240a0ce755de"
+    }
+  ],
+  "observations": "All8pages actually opened; oldmath/tables andnewS20-S21 rows/figures/captions complete and within margins, no missingglyph/overlap/clipping. FigureS6 is compact but complete; fullsizePNG/SVG also retained in analysis/plots. Finalpage27 has end-of-supplement whitespace. Cover is1page,unsent,authorplaceholders explicit.",
+  "docx_bindings": {
+    "Hydrogel_Continuation_MLST.docx": "be4930e6f1d27a2959e6061002974d770e425f1c664c6bc01617ff5a4c1a3cfb",
+    "MLST_Cover_Letter.docx": "c5833b830124a3117a95e5a9173f2c3ac29b7fd52c1bbd400ab41a4da9704807",
+    "Supplement_MLST.docx": "e04edca0bb960e7b3e47182f80131b1222a906b324a4aa79a489ca60b31095d7"
+  }
+}

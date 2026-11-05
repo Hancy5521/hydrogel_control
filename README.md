@@ -1,3 +1,5 @@
+Latest author-review revision 5 November 2026: [updated main manuscript](mlst/study_20261104/manuscript/Hydrogel_Continuation_MLST.docx), [supplement](mlst/study_20261104/manuscript/Supplement_MLST.docx), and [new controlled study](mlst/study_20261104/README.txt). The8newrandom controls are worse than the archived curvature code, but a standard priorKL code improves development CRPS to0.037139. This narrows curvature-optimality claims. The original deployment model and all previous manuscripts remain preserved. New fits use the same25consumed formulations and do not establish independent confirmation.
+
 # MLST targeted author review
 
 The current journal version is [paper/MLST/Hydrogel_Continuation_MLST.docx](paper/MLST/Hydrogel_Continuation_MLST.docx), with [Supplement](paper/MLST/Supplement_MLST.docx) and an unsent [cover letter](paper/MLST/MLST_Cover_Letter.docx). Main14/SI25 pages,58references; all historical paper files remain unchanged below. Start with [the Chinese review](mlst/MLST_REVIEW_ZH.html), [reviewer instructions](mlst/README.txt) and [author/data gates](mlst/author_handoff/).

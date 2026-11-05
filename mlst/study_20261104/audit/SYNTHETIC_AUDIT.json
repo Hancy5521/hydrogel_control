@@ -1,0 +1,23 @@
+{
+  "actual_utc": "2026-11-04T16:08:34.754673+00:00",
+  "status": "PASS",
+  "checks": 102,
+  "maximum_absolute_errors": {
+    "synthetic_conditional_nll": 1.4210854715202004e-14,
+    "synthetic_precision_condition_cov": 1.2079226507921703e-13,
+    "synthetic_precision_condition_mean": 3.885780586188048e-15,
+    "synthetic_full_nll_gradient": 9.020046931595971e-10,
+    "synthetic_unrestricted_rotation_mean": 2.220446049250313e-16,
+    "synthetic_unrestricted_rotation_covariance": 1.7763568394002505e-15,
+    "synthetic_basis_orthonormal": 1.6653345369377348e-15,
+    "synthetic_rotation_same_projector": 5.551115123125783e-17,
+    "synthetic_KL_top2_covariance": 9.992007221626409e-16,
+    "synthetic_CRPS_CDF_integral": 6.661338147750939e-15
+  },
+  "source_sha256": "461ffa9b5e90941ebdeee77364d249026ef4fcca56767b78c66c4262aa7131f5",
+  "synthetic_fixture_sha256": "d01708e2bf7262b3635f15d37014739330526e2a15a830ebcb09bffaefd1d120",
+  "material_files_read": 0,
+  "new_fits": 0,
+  "producer_imports": 0,
+  "qualification_scope": "Independent dense mathematical implementation, not certification of unexported producer calculations."
+}

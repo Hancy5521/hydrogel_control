@@ -1,0 +1,16 @@
+{
+  "actual_utc": "2026-11-05T01:40:14.917802+00:00",
+  "status": "EDITORIAL_FIX_REQUIRED",
+  "v2_script_file": "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\manuscript_tools\\history\\update_manuscript_v2_before_spacing_fix.py",
+  "v2_script_sha256": "ce1c4b335f13c790fee17b17dc558e755adea8ff3dcfd5b285910413887dbf7a",
+  "observed_generated_documents": [],
+  "observed_spacing_issues": [],
+  "root_reported_rendered_pages": {
+    "main": 17,
+    "supplement": 27,
+    "cover": 1
+  },
+  "render_page_count_source": "Parent root observation; not independently rendered by this fix agent.",
+  "source_document_mutations_by_fix_agent": 0,
+  "new_marker_or_authoring_execution_by_fix_agent": false
+}

@@ -1,0 +1,58 @@
+{
+  "actual_utc": "2026-11-05T01:47:23.302694+00:00",
+  "status": "PASS_WITH_RECORDED_NONBLOCKING_WHITESPACE",
+  "documents": [
+    {
+      "file": "Hydrogel_Continuation_MLST.docx",
+      "sha256": "be4930e6f1d27a2959e6061002974d770e425f1c664c6bc01617ff5a4c1a3cfb",
+      "source_sha256": "67e99f20136871d67fe5ba95b0a0325ece05767a02b52a714c35bd3528e2396e",
+      "old_math_objects_preserved": 14,
+      "old_tables_preserved": 4,
+      "new_total_tables": 4,
+      "old_media_preserved": 5,
+      "styles_and_section_preserved": true,
+      "visible_XML_whitespace_tokens": 6463
+    },
+    {
+      "file": "Supplement_MLST.docx",
+      "sha256": "e04edca0bb960e7b3e47182f80131b1222a906b324a4aa79a489ca60b31095d7",
+      "source_sha256": "5c5346b619245ec17715cd548430eebd45466b014fd1d2a489b46159d0dae01a",
+      "old_math_objects_preserved": 89,
+      "old_tables_preserved": 12,
+      "new_total_tables": 14,
+      "old_media_preserved": 5,
+      "styles_and_section_preserved": true,
+      "visible_XML_whitespace_tokens": 9896
+    },
+    {
+      "file": "MLST_Cover_Letter.docx",
+      "sha256": "c5833b830124a3117a95e5a9173f2c3ac29b7fd52c1bbd400ab41a4da9704807",
+      "source_sha256": "00769a8050d7500cd26cbc16616946bbe6cbdddef2edf1f829583a0ae5a89b99",
+      "old_math_objects_preserved": 0,
+      "old_tables_preserved": 0,
+      "new_total_tables": 0,
+      "old_media_preserved": 0,
+      "styles_and_section_preserved": true,
+      "visible_XML_whitespace_tokens": 284
+    }
+  ],
+  "main_pages": 17,
+  "supplement_pages": 27,
+  "cover_pages": 1,
+  "actual_pages_visually_reviewed": 45,
+  "references": 64,
+  "abstract_words": 226,
+  "all_original_math_objects": 103,
+  "all_original_tables": 16,
+  "new_SI_tables": 2,
+  "new_SI_figures": 1,
+  "content_and_visual_receipts": {
+    "VISUAL_MAIN_R3.json": "PASS",
+    "VISUAL_SI1_20_R3.json": "PASS_WITH_NONBLOCKING_LAYOUT_OBSERVATION",
+    "VISUAL_SI21_27_COVER_R3.json": "PASS",
+    "MANUSCRIPT_CONTENT_REVIEW_v3_20261105.json": "PASS"
+  },
+  "parent_initial_documents_preserved": "manuscript_tools/history/generated_v2",
+  "new_fit_in_this_resumed_round": 0,
+  "assembly_note": "InitialassemblystrictPASSstringcheckstoppedbeforefinalselectionbecauseSIreviewusedPASS_WITH_NONBLOCKING_LAYOUT_OBSERVATION. Actualblocking_defectsisempty; no reviewoverridden orscientificrerun."
+}

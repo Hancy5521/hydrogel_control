@@ -1,0 +1,31 @@
+{
+  "prespecified_seeds": [
+    "random_20261105",
+    "random_20261106",
+    "random_20261107",
+    "random_20261108",
+    "random_20261109",
+    "random_20261110",
+    "random_20261111",
+    "random_20261112"
+  ],
+  "count": 8,
+  "CRPS_values": {
+    "random_20261105": 0.06536171526147233,
+    "random_20261106": 0.057051456682356706,
+    "random_20261107": 0.04984768180101237,
+    "random_20261108": 0.05160105820588037,
+    "random_20261109": 0.056238228921331734,
+    "random_20261110": 0.05945434569761119,
+    "random_20261111": 0.060127132155911554,
+    "random_20261112": 0.05303897567258193
+  },
+  "mean_CRPS": 0.056590074299769776,
+  "median_CRPS": 0.05664484280184422,
+  "min_CRPS": 0.04984768180101237,
+  "max_CRPS": 0.06536171526147233,
+  "population_SD_across_seeds_descriptive_only": 0.004755964973127137,
+  "seeds_with_lower_CRPS_than_frozen_curvature": 0,
+  "frozen_curvature_relative_reduction_from_random_median": 0.23599308586309425,
+  "warning": "Eight constructions on the same consumed formulations; no independent-material sampling distribution or seed selection."
+}

@@ -1,0 +1,40 @@
+{
+  "registered_utc": "2026-11-04T16:08:25.022790+00:00",
+  "registered_asia_shanghai": "2026-11-05T00:08:25.022790+08:00",
+  "version": 2,
+  "question": "Correct saved-score-onlyreplay using actualoriginalPidentifierinventory andoneauthorizedpinnedsavedcandidateinput fordescriptivepairing",
+  "changes_since_v1": "Validateactualnoncontiguous25IDs insteadofrange25; readthirdhardpinnedsavedlossfile rootauthorizedafterv1failure; noexperimentrerun",
+  "source": {
+    "path": "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\analysis\\summarize_saved_results.py",
+    "sha256": "b748de7f28cd8aa56a80f4c7b28848f3ef2e9c0d7d4df5ed3bb262949e1bd6d2"
+  },
+  "inputs": [
+    {
+      "path": "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\experiment\\scores\\RESULT.json",
+      "sha256": "45606b385ded9934b2a64a5cf1847fb16a95e249b7f40fb5f0bf0daf44200f6b"
+    },
+    {
+      "path": "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\experiment\\scores\\PER_COORDINATE.csv",
+      "sha256": "905a0fffbd235f03d7c6e34c65f8226e4cf7f66a5753a2004912766408a1698e"
+    },
+    {
+      "path": "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\experiment\\inputs\\inputs\\FROZEN_CANDIDATE_SCORES.json",
+      "sha256": "8800800920bad262fc06bdfc18ccdf319f080387eacbaf5808d1f28851ed0b43"
+    }
+  ],
+  "output": "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\analysis\\saved_summary",
+  "command": [
+    "D:/Anaconda/python.exe",
+    "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\analysis\\summarize_saved_results.py",
+    "--result",
+    "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\experiment\\scores\\RESULT.json",
+    "--coordinate",
+    "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\experiment\\scores\\PER_COORDINATE.csv",
+    "--candidate",
+    "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\experiment\\inputs\\inputs\\FROZEN_CANDIDATE_SCORES.json",
+    "--output",
+    "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\analysis\\saved_summary"
+  ],
+  "scope": "No rawmeasurements/targetinference/rescoring/fitting. Decimal60 meansofsavedlosses. Originalv1source/plan/failurereceiptretained.",
+  "decision": "Reportall16aggregates/48layoutrows,10armsUQ/P0,all8seeds,actualpairedKLvsCurvaturestatistics,adversedensityandcoverage. NoCI/pvalue/independentconfirmation/deploymentselection."
+}

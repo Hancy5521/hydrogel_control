@@ -1,0 +1,154 @@
+{
+  "theta": [
+    -0.020957132768293845,
+    0.6793828522063933,
+    -0.75,
+    -0.5824215392315352,
+    -0.43533803048300107
+  ],
+  "parameter_names": [
+    "a0",
+    "a1",
+    "log_L00",
+    "L10",
+    "log_L11"
+  ],
+  "a": [
+    -0.020957132768293845,
+    0.6793828522063933
+  ],
+  "S": [
+    [
+      0.22313016014842982,
+      -0.27511645472891594
+    ],
+    [
+      -0.27511645472891594,
+      0.7578832575404735
+    ]
+  ],
+  "centered_objective": -0.5591690651779153,
+  "raw_objective": -90.20431504911312,
+  "removed_constant": -89.64514598393521,
+  "gradient": [
+    6.673889381024131e-09,
+    1.6068540456548597e-09,
+    0.07649151422974894,
+    6.13679912442322e-10,
+    2.8235155671851864e-09
+  ],
+  "projected_gradient_inf": 6.673889381024131e-09,
+  "solver_success": true,
+  "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+  "iterations": 11,
+  "evaluations": 14,
+  "admitted": true,
+  "initial_theta": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "optimizer_runs": 1,
+  "bounds": [
+    [
+      -1.0,
+      1.0
+    ],
+    [
+      -1.0,
+      1.0
+    ],
+    [
+      -0.75,
+      0.75
+    ],
+    [
+      -1.0,
+      1.0
+    ],
+    [
+      -0.75,
+      0.75
+    ]
+  ],
+  "ridge": 0.02,
+  "optimizer": {
+    "maxiter": 400,
+    "maxfun": 800,
+    "ftol": 1e-14,
+    "gtol": 1e-07,
+    "maxls": 40
+  },
+  "curve_tasks": 24,
+  "masks_per_curve": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+  ],
+  "no_jitter": true,
+  "no_fallback_or_retry": true,
+  "parameter_uncertainty_integrated": false,
+  "started_utc": "2026-11-04T15:56:19.504214+00:00",
+  "finished_utc": "2026-11-04T15:56:19.695700+00:00",
+  "wall_seconds": 0.19151160000183154,
+  "method": "random_20261108",
+  "held_P": 33,
+  "training_P_rows": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6,
+    11,
+    15,
+    16,
+    20,
+    21,
+    24,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    35,
+    36,
+    37,
+    40,
+    41,
+    44
+  ],
+  "held_row_entirely_excluded": true,
+  "protocol_sha256": "21c6a86096623e0a1ffa03522d16becd1e2a66b6cce373de048a5ded2348f908",
+  "reference_fits": 0,
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.1.3",
+    "scipy": "1.15.3",
+    "platform": "Windows-11-10.0.26100-SP0"
+  }
+}

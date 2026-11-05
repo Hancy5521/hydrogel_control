@@ -1,0 +1,29 @@
+{
+  "started_utc": "2026-11-04T16:10:14.223226+00:00",
+  "finished_utc": "2026-11-04T16:10:14.760022+00:00",
+  "source_sha256": "e807febda70ff55e7f115b240d394f4c25b4bb4531662efe9eb006a4ed4ef2b2",
+  "inputs": [
+    {
+      "path": "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\analysis\\saved_summary\\ALL_MODELS_OVERALL.csv",
+      "sha256": "39ed7f56bd8bae948fc1ba5b92f3d2d4c7353811c5f91781e10d01c9c12fb96a"
+    },
+    {
+      "path": "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\analysis\\saved_summary\\ALL_MODELS_BY_MASK.csv",
+      "sha256": "ec18496f2170fb2c4e7c527b0574dffb5c659c2b115ceafce1851321655cd6ba"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\analysis\\plots\\REPRESENTATION_CONTROLS.png",
+      "sha256": "7376aaa3ae678d847578241474eed601562b3e2eed1574bae5e554986c8727e0",
+      "bytes": 284194
+    },
+    {
+      "path": "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\analysis\\plots\\REPRESENTATION_CONTROLS.svg",
+      "sha256": "1060c85113bfcaf83c86ecd585258141db3492982e7cf6e7ef35cb04874b4b36",
+      "bytes": 30878
+    }
+  ],
+  "matplotlib_version": "3.10.0",
+  "scope": "Scientific visualization of saved summary tables only; no fitting/inference/rescoring. All8 predeclared new randoms, archived random and5namedmethods retained. Numeric adverse metrics remain in complete tables."
+}

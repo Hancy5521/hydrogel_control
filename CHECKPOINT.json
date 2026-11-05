@@ -1,24 +1,26 @@
 {
-  "checkpoint_id": "hydrogel-mlst-author-review-20261104",
-  "prepared_utc": "2026-11-04T14:21:14.106990+00:00",
+  "checkpoint_id": "hydrogel-mlst-representation-controls-20261105",
+  "prepared_utc": "2026-11-05T01:47:27.021977+00:00",
   "classification": "MLST targeted author-review manuscript, not submitted or certified publication ready",
-  "parent_archived_commit": "778d9372a9c5847205db3289e81a3c73aee45962",
-  "paper_main_sha256": "67e99f20136871d67fe5ba95b0a0325ece05767a02b52a714c35bd3528e2396e",
-  "paper_supplement_sha256": "5c5346b619245ec17715cd548430eebd45466b014fd1d2a489b46159d0dae01a",
-  "main_pages": 14,
-  "supplement_pages": 25,
-  "references": 58,
+  "parent_archived_commit": "93dfc04b6c3b48801fca97a25f6f138ea4f10a32",
+  "paper_main_sha256": "be4930e6f1d27a2959e6061002974d770e425f1c664c6bc01617ff5a4c1a3cfb",
+  "paper_supplement_sha256": "e04edca0bb960e7b3e47182f80131b1222a906b324a4aa79a489ca60b31095d7",
+  "main_pages": 17,
+  "supplement_pages": 27,
+  "references": 64,
   "model_sha256": "d72fc262fbae0e6fecc36568f0638166fe95e991bd5f7df100ab1434097d82d1",
   "scientific_runtime_model_bindings": 16,
   "original_scientific_replay_components": 20,
   "additional_reconstruction_assets_checked": 2,
   "scientific_model_runtime_and_original_scores_unchanged": true,
   "current_revision_activity": {
-    "material_fit_calls": 0,
-    "material_forecasts": 0,
-    "material_target_score_calls": 0,
+    "material_fit_calls": 250,
+    "new_reference_fits": 0,
+    "new_frozen_candidate_or_deployment_fits": 0,
+    "material_forecasts": 750,
+    "material_target_score_calls": 750,
     "new_physical_measurements": 0,
-    "changes": "MLST editorial consolidation, saved-scalar UQ diagnostics, scalar reviewer entry, source-policy review and separate future-innovation decision"
+    "changes": "Preregistered representation controls on consumed25P, separate posthoc covariance allocation,6newMLSTselected readings and revised author-review papers"
   },
   "cumulative_scientific_evidence": {
     "development_formulations_consumed": 25,
@@ -39,6 +41,8 @@
   "current_defect_review": "docs/final_review_20261102/FINAL_REVIEW_SUMMARY.json",
   "raw_private_material_arrays_uploaded": false,
   "automatic_or_goal_restart": false,
-  "paper_main_path": "paper/MLST/Hydrogel_Continuation_MLST.docx",
-  "paper_supplement_path": "paper/MLST/Supplement_MLST.docx"
+  "paper_main_path": "mlst/study_20261104/manuscript/Hydrogel_Continuation_MLST.docx",
+  "paper_supplement_path": "mlst/study_20261104/manuscript/Supplement_MLST.docx",
+  "new_method_status": "PriorKL wins developmental CRPS but not jointdensity; no post-hocdeploymentselection. Curvature not besttestedbasis.",
+  "new_study": "mlst/study_20261104/README.txt"
 }

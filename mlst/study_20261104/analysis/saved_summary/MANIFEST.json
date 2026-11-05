@@ -1,0 +1,38 @@
+{
+  "ALL_MODELS_BY_MASK.csv": {
+    "sha256": "ec18496f2170fb2c4e7c527b0574dffb5c659c2b115ceafce1851321655cd6ba",
+    "bytes": 11856
+  },
+  "ALL_MODELS_OVERALL.csv": {
+    "sha256": "39ed7f56bd8bae948fc1ba5b92f3d2d4c7353811c5f91781e10d01c9c12fb96a",
+    "bytes": 4036
+  },
+  "CURVATURE_VS_KL_FORMULATION.csv": {
+    "sha256": "6aea212b7325e7ef262d93f0bc1a3c4056a6602b16f86cd10c904cc0fd9841de",
+    "bytes": 8580
+  },
+  "NEW_ARMS_UNCERTAINTY.csv": {
+    "sha256": "632630432ef87a7e8c948677e0a13b5d525d062925116046dca79df9df8d8aec",
+    "bytes": 8674
+  },
+  "P0_NEW_ARMS.csv": {
+    "sha256": "d59596ff4caaaaa48893aac1f0a7e433eba4de4dfbf88700fd59b5dec1184bc0",
+    "bytes": 7661
+  },
+  "PAIRED_DESCRIPTIVE.json": {
+    "sha256": "2e12d9d37613e044b35e20507a8795224064d68e582b4e1b3b70c0ec22b46584",
+    "bytes": 7514
+  },
+  "RANDOM_DISTRIBUTION.json": {
+    "sha256": "179d8312cdfab4535a4a93f3d7a0ef0417efdbe57b42f244e7371c0154eb7724",
+    "bytes": 1125
+  },
+  "README.txt": {
+    "sha256": "41cd19e59fbe2dc72eaaa5b91352d4ff62872619554dc93de39b3b7990e4e014",
+    "bytes": 1041
+  },
+  "REPLAY_RECEIPT.json": {
+    "sha256": "f832b8a07682338dabe5581ba4b82e1d6a4554672ff70b5e60099df11fc39aa8",
+    "bytes": 2481
+  }
+}

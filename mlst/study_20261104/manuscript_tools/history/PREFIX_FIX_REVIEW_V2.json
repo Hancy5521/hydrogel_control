@@ -1,0 +1,52 @@
+{
+  "actual_utc": "2026-11-05T01:35:18.348781+00:00",
+  "status": "PASS",
+  "source_sha256": "ce1c4b335f13c790fee17b17dc558e755adea8ff3dcfd5b285910413887dbf7a",
+  "scope": "Syntax and read-only frozen DOCX template/explicit-prefix ambiguity checks; no authoring command executed. Dynamic replacement prefixes absent from original are expected to exist only after corresponding replacement.",
+  "unique_template_checks": [
+    {
+      "kind": "main_doc",
+      "prefix": "Scientific characterization",
+      "count": 1
+    },
+    {
+      "kind": "main_doc",
+      "prefix": "Introduction",
+      "count": 1
+    },
+    {
+      "kind": "main_doc",
+      "prefix": "Response coordinates",
+      "count": 1
+    },
+    {
+      "kind": "main_doc",
+      "prefix": "Table 1  Evidence domains and supported uses",
+      "count": 1
+    },
+    {
+      "kind": "main_doc",
+      "prefix": "[1]",
+      "count": 1
+    },
+    {
+      "kind": "si",
+      "prefix": "This supplement accompanies",
+      "count": 1
+    },
+    {
+      "kind": "si",
+      "prefix": "S1 Paired formulation summaries",
+      "count": 1
+    },
+    {
+      "kind": "si",
+      "prefix": "Table S1  Paired formulation CRPS summaries",
+      "count": 1
+    }
+  ],
+  "other_explicit_prefix_ambiguities": [],
+  "new_operation_markers": 0,
+  "document_outputs_written": 0,
+  "scientific_source_fit_score_changes": 0
+}

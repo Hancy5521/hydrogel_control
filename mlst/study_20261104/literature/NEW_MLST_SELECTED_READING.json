@@ -1,0 +1,173 @@
+{
+  "created_utc": "2026-11-04T15:49:28.899967+00:00",
+  "created_asia_shanghai": "2026-11-04T23:49:28.899967+08:00",
+  "task": "Four additional targeted MLST selected readings for frozen hydrogel method evidence-strengthening",
+  "scope": "Four papers selected-read, no fulltextcomplete-reading or 100papersclaim; no materialdataaccess,fit,score,externalcodeimport or manuscriptedit by this reviewer.",
+  "already_read_ledger": "D:/codex-root/hydrogel_control/mlst/literature/OFFICIAL_POLICY_AND_SELECTED_READING.json",
+  "search_queries": [
+    "\"Machine Learning: Science and Technology\" \"Gaussian process\" \"small\" extrapolation",
+    "\"Machine Learning: Science and Technology\" Gaussian process \"benchmark\" extrapolation",
+    "\"Machine Learning: Science and Technology\" \"functional\" uncertainty",
+    "\"A prediction rigidity formalism for low-cost uncertainties in trained neural networks\" arxiv",
+    "\"Prediction uncertainty validation for computational chemists\" MLST",
+    "\"Machine and deep learning performance in out-of-distribution regressions\" arxiv",
+    "\"Machine Learning: Science and Technology\" \"cross-validation\" \"materials\"",
+    "\"Machine Learning: Science and Technology\" \"Gaussian\" \"extrapolation\" robustness",
+    "\"Machine Learning: Science and Technology\" \"uncertainty\" \"MSE\" \"calibration\" 2024",
+    "\"Building Robust Machine Learning Models for Small Chemical Science Data\" arxiv",
+    "\"Uncertainty quantification by direct propagation of shallow ensembles\" arxiv",
+    "\"Machine and deep learning performance in out-of-distribution regressions\" pdf"
+  ],
+  "papers": [
+    {
+      "id": "Avula2022",
+      "title": "Building robust machine learning models for small chemical science data: the case of shear viscosity of fluids",
+      "authors": [
+        "Nikhil V S Avula",
+        "Shivanand Kumar Veesam",
+        "Sudarshan Behera",
+        "Sundaram Balasubramanian"
+      ],
+      "journal": "Machine Learning: Science and Technology",
+      "journal_reference": "3 (2022) 045032",
+      "doi": "10.1088/2632-2153/acac01",
+      "doi_url": "https://doi.org/10.1088/2632-2153/acac01",
+      "actual_read_version": "arXiv2208.10784v1, 23 August2022; preprint title omits final words of fluids",
+      "actual_read_url": "https://arxiv.org/html/2208.10784v1",
+      "read_depth": "Selected sectionsII.2,III.1–III.3,IV.1–IV.3 including split procedures, metrics, qualitative interpolation and applicability domain; not full17page main/55pageSI reading.",
+      "license": "ActualarXivversion has perpetualnonexclusive distributionlicense. VORCCBY4.0 displayed in indexedPDF; fullVOR not retrieved, so do not transfer VORlicense to actualdownload.",
+      "takeaway": "Small-data model selection and performance estimation are distinct. Repeated use can overfit even carefulCV. Physical interpolation checks and multiple metrics supplement aggregate errors.",
+      "project_decision": "A predeclared multi-basis study should retain original formulation-level folds and all masks/metrics; label it retrospective development, not new independent materials.",
+      "closest_difference": "Their MD scalarLennard-Jones viscosity regression from thermodynamic/compositional descriptors is not six-anchor hydrogel curve continuation with a full GP residual.",
+      "do_not_import": "No independent formulations are created by random splits; their 2percent error criterion and MDphysicaldomain are not hydrogel tolerances.",
+      "local_receipt": {
+        "utc": "2026-11-04T15:46:13.769078+00:00",
+        "url": "https://arxiv.org/html/2208.10784v1",
+        "file": "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\literature\\Avula_arxiv2208.10784v1.html",
+        "bytes": 509715,
+        "sha256": "322ba8263f175ba3f50516b26267d4c8e4ef61270337dfdca4811b9ef3e34a1b",
+        "status": "downloaded",
+        "mime": "text/html; charset=utf-8"
+      }
+    },
+    {
+      "id": "Bigi2024",
+      "title": "A prediction rigidity formalism for low-cost uncertainties in trained neural networks",
+      "authors": [
+        "Filippo Bigi",
+        "Sanggyu Chong",
+        "Michele Ceriotti",
+        "Federico Grasselli"
+      ],
+      "journal": "Machine Learning: Science and Technology",
+      "journal_reference": "5 (2024) 045018",
+      "doi": "10.1088/2632-2153/ad805f",
+      "doi_url": "https://doi.org/10.1088/2632-2153/ad805f",
+      "journal_metadata_primary_url": "https://www.epfl.ch/labs/cosmo/index-html/publications/",
+      "actual_read_version": "arXiv2403.02251v1, 4March2024",
+      "actual_read_url": "https://arxiv.org/pdf/2403.02251v1",
+      "read_depth": "Selected theory3.2–3.5 (quadraticloss, Hessian, Gaussianvariance, last-layerapproximation), calibration aroundeq25, OOD4.5, discussion5; not full25pages.",
+      "license": "ActualarXivversion perpetualnonexclusive distributionlicense. No wider redistribution permission assumed.",
+      "takeaway": "Quadratic loss rigidity, Gaussian uncertainty and efficient low-dimensional/last-layer covariance already have explicit precedent. Scale calibration remains necessary and representation-dependent.",
+      "project_decision": "Retain mathematical equivalences openly; novelty must be the hydrogel task/adaptation and controlled evidence. Do not rebrand a quadratic potential as a new probabilistic mechanism.",
+      "closest_difference": "They infer posthoc uncertainty for pretrained scalar regressors; our shared low-dimensional Gaussian correction changes a complete functional GP law and exact conditioning across masks.",
+      "do_not_import": "A reported OOD success on another dataset is no hydrogel guarantee; their last-layer assumptions do not establish our reliability.",
+      "local_receipt": {
+        "utc": "2026-11-04T15:46:15.281633+00:00",
+        "url": "https://arxiv.org/pdf/2403.02251v1",
+        "file": "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\literature\\Bigi_arxiv2403.02251v1.pdf",
+        "bytes": 1028162,
+        "sha256": "6943d837d058249bfeab5eaa513b57938b41acabd8e63667278da0e660ff4d91",
+        "status": "downloaded",
+        "mime": "application/pdf"
+      }
+    },
+    {
+      "id": "Kellner2024",
+      "title": "Uncertainty quantification by direct propagation of shallow ensembles",
+      "authors": [
+        "Matthias Kellner",
+        "Michele Ceriotti"
+      ],
+      "journal": "Machine Learning: Science and Technology",
+      "journal_reference": "5 (2024) 035006",
+      "doi": "10.1088/2632-2153/ad594a",
+      "doi_url": "https://doi.org/10.1088/2632-2153/ad594a",
+      "actual_read_version": "arXiv2402.16621v2,16May2024; publisher indexedprimarytextalsoselected",
+      "actual_read_url": "https://arxiv.org/html/2402.16621v2",
+      "read_depth": "SelectedII.1–II.5 architecture, scores, calibration and correlatedpropagation; III.1 comparator context; IV.6 OOD and conclusion context, not wholepaper/appendices.",
+      "license": "ActualarXivHTML states perpetualnonexclusive license; publisherisopenaccess but no downloadedVOR or externalcodeused. HTMLrenderdate not treated asversiondate.",
+      "takeaway": "Global calibration can hide local failures; correlated predictions must be propagated coherently. Their transferred surface example also underestimated true error before adding domain data.",
+      "project_decision": "Keep conditional CRPS, density, width/coverage and subgroup failures alongside full joint residual. Do not introduce posthoc scaling chosen on current external outcomes and call it confirmed calibration.",
+      "closest_difference": "Shallow neural ensemble propagation for atomistic and generic regression; not fixedcurvature correction for sparse hydrogel flow curves.",
+      "do_not_import": "No automatic calibration or OOD guarantee follows from coherent sampling or trainingNLL.",
+      "official_code_url": "https://github.com/bananenpampe/DPOSE",
+      "code_use": "Repository indexedREADME organization read only; no source imported or run; code license not inspected.",
+      "local_receipt": {
+        "utc": "2026-11-04T15:46:17.249663+00:00",
+        "url": "https://arxiv.org/html/2402.16621v2",
+        "file": "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\literature\\Kellner_arxiv2402.16621v2.html",
+        "bytes": 346766,
+        "sha256": "fec407d3df2770e373fc677a3a614d78a0cf54e07883bf9c40b25fbdc7958be9",
+        "status": "downloaded",
+        "mime": "text/html; charset=utf-8"
+      }
+    },
+    {
+      "id": "Shmuel2024",
+      "title": "Machine and deep learning performance in out-of-distribution regressions",
+      "authors": [
+        "Assaf Shmuel",
+        "Oren Glickman",
+        "Teddy Lazebnik"
+      ],
+      "journal": "Machine Learning: Science and Technology",
+      "journal_reference": "5 (2024) 045078; publishedonline6January2025",
+      "doi": "10.1088/2632-2153/ada221",
+      "doi_url": "https://doi.org/10.1088/2632-2153/ada221",
+      "actual_read_version": "PublisherVersionofRecord downloaded from authorlab",
+      "actual_read_url": "https://teddylazebnik.com/files/Shmuel_2024_Mach._Learn.__Sci._Technol._5_045078.pdf",
+      "primary_lab_url": "https://acml.teddylazebnik.com/publications/machine-deep-learning-performance-out-distribution-regressions/",
+      "read_depth": "Selectedsections3.1–3.4,4.1–4.2 mainresults/tables1–2,5discussion and metadata/license; not all31pages or fullappendix.",
+      "license": "CCBY4.0 explicitPDFpage2. Keep authorattribution/journal/DOI ifredistributed; currenttaskkeepsPDFlocal.",
+      "takeaway": "A bounded representation intervention can be tested against an unchanged learner across explicit OOD definitions; interpolative and OOD behavior need separate reporting.",
+      "project_decision": "Use a fixed low-capacity representation comparison instead of unbounded architecture search. Retain all results and explain our one-sided-coordinate continuation versus material-source shift.",
+      "closest_difference": "Tabular symbolic-regression feature engineering across15datasets; our physically fixed contrasts, full residual and hydrogel-specific conditional task remain distinct.",
+      "do_not_import": "Their 50repetitions are not extra experimental units here. Their target-sparsity OOD definition is not a label-free deployment gate.",
+      "local_receipt": {
+        "utc": "2026-11-04T15:46:18.546777+00:00",
+        "url": "https://teddylazebnik.com/files/Shmuel_2024_Mach._Learn.__Sci._Technol._5_045078.pdf",
+        "file": "H:\\polymer_completion_public\\research\\mlst_evidence_20261104T154143254269Z\\literature\\Shmuel_MLST5_045078_VOR.pdf",
+        "bytes": 5721839,
+        "sha256": "0cc53aa5dd14fbe0f49875222e812d89838ce3516b592b66dd0015a66ff813e2",
+        "status": "downloaded",
+        "mime": "application/pdf"
+      }
+    }
+  ],
+  "failed_or_excluded_leads": [
+    {
+      "url": "https://arxiv.org/html/2403.02251v4",
+      "outcome": "404; wrongly guessedversion; actualabs+PDFidentifiedv1 and usedv1."
+    },
+    {
+      "url": "https://doi.org/10.1088/2632-2153/acac01",
+      "outcome": "Webtoolnotaccessible; actualarXivv1 read, VORmetadata verifiedfromarXivjournalref andindexedpublisher."
+    },
+    {
+      "url": "https://iris.unimore.it/retrieve/638bbc55-4d57-4fa0-92f3-4f80f5fcf7be/Bigi_2024_Mach._Learn.__Sci._Technol._5_045018.pdf",
+      "outcome": "403; nochallengebypass; actualarXivPDFread instead."
+    },
+    {
+      "title": "Prediction uncertainty validation for computational chemists",
+      "doi": "10.1063/5.0109572",
+      "outcome": "Search identifiedJCP, notMLST; excludedfrom4MLSTcount."
+    }
+  ],
+  "experiment_recommendation": {
+    "primary": "Prespecified multiple-random-basis and priorKL/FPCA capacity-matched OOF development comparison, keeping frozen5parameter correction/fullresidual, masks, referencefits, objective, bounds and scores. This tests sensitivity; do not selectwinningseed or claim independentconfirmation.",
+    "mathematical_caveat": "Equal dimension/parametercount is not basis-rotation equivalence when coordinatewise boxes/Choleskybounds/penalties constrain the learned law. Report actual constrained model families. A prespecified rotation within the samecurvaturesubspace could diagnose this coupling, but no postresultadditions/retuning.",
+    "priority": "Strengthen existingdomaininductivebias evidence ratherthan add deepnetwork, empiricalcalibration fix or biomimeticrename withoutnewdata.",
+    "submission_limit": "Reading and retrospectivecontrols can improve rigor but cannot compute an acceptanceprobability or resolve author-controlled dataaccess/declarations."
+  }
+}

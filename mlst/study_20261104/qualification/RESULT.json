@@ -1,0 +1,129 @@
+{
+  "actual_utc": "2026-11-04T15:55:31.293299+00:00",
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "orthonormal",
+      "method": "random_20261105",
+      "error": 4.440892098500626e-16
+    },
+    {
+      "check": "orthonormal",
+      "method": "random_20261106",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "check": "orthonormal",
+      "method": "random_20261107",
+      "error": 3.3306690738754696e-16
+    },
+    {
+      "check": "orthonormal",
+      "method": "random_20261108",
+      "error": 4.440892098500626e-16
+    },
+    {
+      "check": "orthonormal",
+      "method": "random_20261109",
+      "error": 4.440892098500626e-16
+    },
+    {
+      "check": "orthonormal",
+      "method": "random_20261110",
+      "error": 4.440892098500626e-16
+    },
+    {
+      "check": "orthonormal",
+      "method": "random_20261111",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "check": "orthonormal",
+      "method": "random_20261112",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "check": "orthonormal",
+      "method": "prior_kl",
+      "error": 1.3322676295501878e-15
+    },
+    {
+      "check": "orthonormal",
+      "method": "curvature45",
+      "error": 3.3306690738754696e-16
+    },
+    {
+      "check": "curvature45_same_span",
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "check": "prior_kl_top2_covariance",
+      "error": 9.992007221626409e-16
+    },
+    {
+      "check": "direct_conditional_and_gradient",
+      "n": 7,
+      "nll_error": 8.881784197001252e-16,
+      "fd_gradient_error": 2.4107799090344884e-12,
+      "identity_theta_exact": true,
+      "residual_min_eigenvalue": 1.0625889613806152,
+      "unconstrained_rotation_law_error": 0.0
+    },
+    {
+      "check": "direct_conditional_and_gradient",
+      "n": 17,
+      "nll_error": 0.0,
+      "fd_gradient_error": 2.3103914614797105e-12,
+      "identity_theta_exact": true,
+      "residual_min_eigenvalue": 0.9946846776470226,
+      "unconstrained_rotation_law_error": 6.938893903907228e-18
+    },
+    {
+      "check": "direct_conditional_and_gradient",
+      "n": 39,
+      "nll_error": 1.4210854715202004e-14,
+      "fd_gradient_error": 3.979193710645923e-12,
+      "identity_theta_exact": true,
+      "residual_min_eigenvalue": 1.0080004972088044,
+      "unconstrained_rotation_law_error": 5.551115123125783e-17
+    }
+  ],
+  "material_inputs_opened": 0,
+  "new_fits": 0,
+  "source_bindings": [
+    {
+      "file": "assets.py",
+      "sha256": "543a42b0f3ca480117569189b49ceabf6ab0e7697653380726083f6b3eaf64b2"
+    },
+    {
+      "file": "representations.py",
+      "sha256": "178fdc1cc3d6bdfda81fcdb38b427ed9ff547821a95203ffa51a4c4c7859f9ac"
+    },
+    {
+      "file": "experiment.py",
+      "sha256": "62119f328a1e2e185a0296c209dec583674e48ef98f93d9b20cecca8eca2d999"
+    },
+    {
+      "file": "frozen/joint_code_gaussian.py",
+      "sha256": "0c8a57c1bdf96e1c880ffd1ba2258e1b379952b844e960a7c67d6cdcdc65e299"
+    },
+    {
+      "file": "frozen/coordinate_reference.py",
+      "sha256": "bc93acc707cb26943cc065545254fc9fed27601e8d0f04c4a23dbb7407cf43d3"
+    },
+    {
+      "file": "frozen/local_shape.py",
+      "sha256": "652797e34e7299edd31a8b494287ad8ab36aca9cdcdcc7b455dc614201231d3b"
+    },
+    {
+      "file": "frozen/conditional_metrics.py",
+      "sha256": "3332508bfe887a13550333761a49e8d130a5b7611f166d9d1040b930806bc461"
+    }
+  ],
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.1.3",
+    "scipy": "1.15.3",
+    "platform": "Windows-11-10.0.26100-SP0"
+  }
+}
