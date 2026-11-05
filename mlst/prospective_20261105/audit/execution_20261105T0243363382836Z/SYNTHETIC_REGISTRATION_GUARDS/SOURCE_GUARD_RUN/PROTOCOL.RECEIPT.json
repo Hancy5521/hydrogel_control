@@ -1,0 +1,10 @@
+{
+  "schema": "prospective_unit_calibration_v1",
+  "completed_actual_utc": "2026-11-05T02:43:41.321367+00:00",
+  "artifact_file": "PROTOCOL.json",
+  "artifact_sha256": "55c54ac9e94ffe9e2dbb7692764508e7c4382fca38aa40ef60c7255bf78a25dc",
+  "protocol_sha256": "55c54ac9e94ffe9e2dbb7692764508e7c4382fca38aa40ef60c7255bf78a25dc",
+  "prior_receipts_sha256": {},
+  "reveal_receipts_sha256": {},
+  "integrity_scope": "Detect inconsistent local files; no certification against coordinated rewriting."
+}

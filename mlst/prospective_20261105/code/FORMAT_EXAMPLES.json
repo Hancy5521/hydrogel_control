@@ -1,0 +1,57 @@
+{
+  "status": "SCHEMA_EXAMPLES_ONLY_NOT_REGISTERABLE_OR_MEASURED",
+  "cohort_record": {
+    "record_id": null,
+    "unit_id": null,
+    "role": "calibration",
+    "formulation_id": null,
+    "preparation_batch_id": null,
+    "source_id": null,
+    "source_version": null,
+    "source_record_key": null,
+    "provenance_reference": null,
+    "material_state": null,
+    "temperature_kelvin": null,
+    "identity_aliases": [],
+    "is_synthetic": false,
+    "targets_previously_inspected": false,
+    "native_gamma": [],
+    "observed_indices": [],
+    "target_indices": []
+  },
+  "prediction_envelope": {
+    "schema": "prospective_unit_calibration_v1",
+    "data_mode": "real",
+    "protocol_sha256": null,
+    "records": [
+      {
+        "record_id": null,
+        "observed_gamma": [],
+        "target_gamma": [],
+        "anchor_input_sha256": null,
+        "prediction_source_sha256": null,
+        "methods": {
+          "REGISTERED_METHOD_ID": {
+            "model_sha256": null,
+            "runtime_bindings_sha256": null,
+            "mean_log_eta": [],
+            "covariance_log_eta": []
+          }
+        }
+      }
+    ]
+  },
+  "truth_envelope": {
+    "schema": "prospective_unit_calibration_v1",
+    "data_mode": "real",
+    "protocol_sha256": null,
+    "records": [
+      {
+        "record_id": null,
+        "target_gamma": [],
+        "y_log_eta": [],
+        "original_measurement_sha256": null
+      }
+    ]
+  }
+}

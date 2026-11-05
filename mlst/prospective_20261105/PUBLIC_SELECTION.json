@@ -1,0 +1,19 @@
+{
+  "actual_utc": "2026-11-05T02:54:14.577000+00:00",
+  "kind": "Reviewed future-confirmation helper increment, not material data release",
+  "local_source_files": 140,
+  "public_omitted_raw_web_receipts": [
+    "sources/RECOVERY_QUERY_RESULT.txt",
+    "sources/datacite_dataset_v4.json",
+    "sources/mendeley_dataset_v4_html.html",
+    "sources/mendeley_dataset_v4_html_embedded_10.txt",
+    "sources/mendeley_dataset_v4_html_embedded_4.txt"
+  ],
+  "public_selection_reason": "Raw fetched page/query content remains in local evidence; public copy keeps source facts, URLs, hashes and access receipts rather than republication of fetched pages.",
+  "artificial_audit_fixtures_are_not_material_measurements": true,
+  "historical_nonsecret_execution_paths": "Original receipts may name historical H:/ or D:/ artifact/runtime paths. These are not required current paths. Use replay_synthetic_check.py, which resolves the relocated source and writes a new plan.",
+  "protected_original_manuscript_and_model_unchanged": true,
+  "not_embedded": "Original610MB full archive, original measurements, Python distribution. PRIOR_ARCHIVES.json records exact old delivery pins.",
+  "public_derivative_bindings": "PUBLIC_TRANSFORMS.json",
+  "historical_check_receipt_scope": "SOURCE_ARTIFACT_CHECK/REVIEW_BUILD_RECEIPT/PRIORITY input byte checks are original local receipts. Public redactions are separate derivatives; repository MANIFEST binds current public bytes."
+}

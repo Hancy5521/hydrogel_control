@@ -1,0 +1,39 @@
+{
+  "actual_checked_utc": "2026-11-05T02:46:03.609384+00:00",
+  "latest_manuscript_and_deployment_unchanged": true,
+  "latest_paper_pointer": {
+    "main": "H:\\PolymerReview\\MLST_controls_20261104T154143Z_r2\\research\\manuscript\\Hydrogel_Continuation_MLST.docx",
+    "supplement": "H:\\PolymerReview\\MLST_controls_20261104T154143Z_r2\\research\\manuscript\\Supplement_MLST.docx",
+    "cover_letter": "H:\\PolymerReview\\MLST_controls_20261104T154143Z_r2\\research\\manuscript\\MLST_Cover_Letter.docx",
+    "main_sha256": "be4930e6f1d27a2959e6061002974d770e425f1c664c6bc01617ff5a4c1a3cfb",
+    "supplement_sha256": "e04edca0bb960e7b3e47182f80131b1222a906b324a4aa79a489ca60b31095d7",
+    "pages": [
+      17,
+      27
+    ],
+    "references": 64,
+    "commit": "a1ae1991eef9b8dffd7fe1d2f2a93de584a99a08",
+    "run_id": "20261105T013020432158Z",
+    "delivery": "H:\\PolymerReview\\MLST_controls_20261104T154143Z_r2_DELIVERY.json",
+    "classification": "MLSTauthor-reviewrevisionwithnewpreregisteredretrospectivecontrols;data/authorrightsdeclarationspending;not submitted",
+    "frozen_deployment_model_sha256": "d72fc262fbae0e6fecc36568f0638166fe95e991bd5f7df100ab1434097d82d1",
+    "new_KL_status": "strongerdevelopmentcomparator;notindependentconfirmationordeploymentreplacement"
+  },
+  "prior_public_commit": "a1ae1991eef9b8dffd7fe1d2f2a93de584a99a08",
+  "prior_archived_branch": "archive/mlst-controls-2026-11-05",
+  "local_archives": [
+    {
+      "path": "H:\\PolymerReview\\MLST_controls_20261104T154143Z_r2_current.zip",
+      "bytes": 36672524,
+      "sha256": "cf7f2819d0cd2ef54b767fb3e9f239242c2d60247afb7ce4c3b2841b65d9c22a",
+      "current_package_contains_this_zip": false
+    },
+    {
+      "path": "H:\\PolymerReview\\MLST_controls_20261104T154143Z_r2_complete.zip",
+      "bytes": 610420517,
+      "sha256": "88a124b38ac2f9859a3bd319ec339e80a94cf01e975ad3dd8900923b8b71d775",
+      "current_package_contains_this_zip": false
+    }
+  ],
+  "note": "Exact old ZIP hashes reused from validated original delivery receipt, not claimed freshly rehashed here; current paper files were byte-rechecked. This increment is not the complete original data/model archive."
+}

@@ -1,0 +1,11 @@
+{
+  "actual_utc": "2026-11-05T02:51:53.773467+00:00",
+  "builder_sha256": "7ebfeef903e8a4f7422d55c6ca7c7b64f244e9fd4fcb137ccf9e5a62bec556be",
+  "outputs_sha256": {
+    "RESEARCH_REVIEW_ZH.html": "d6588983dad5c73899a911712f6b0b7a1654dd4ed4c28f237d5d4731d4169c8e",
+    "READ_FIRST.html": "9db2f92b8f95f9b97e9429ed08dfb7343224c15cefb0f40afbe6d7c0be6d9525",
+    "STAGE_STATUS.json": "c01f7961ee7349d7645ebcfbec1970cb84a69eb0a949f18b438e1371cb43d523",
+    "PRIOR_ARCHIVES.json": "0acbc21046dc68f98da281835abf4934b1c435b1309f3120b5b3f8ec953854f4"
+  },
+  "material_data_read": false
+}

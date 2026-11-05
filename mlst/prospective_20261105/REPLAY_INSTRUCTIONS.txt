@@ -1,0 +1,12 @@
+人工数值核查重放（不是材料验证）
+
+需要Python、NumPy和SciPy；现有完整项目requirements固定numpy2.1.3/scipy1.15.3/threadpoolctl3.5.0。code/requirements.txt只列运行helper实际需要的NumPy。独立CDF积分审计另外使用SciPy。
+
+将本增量文件夹移到任意本地位置；从任意当前工作目录执行：
+python 完整路径/replay_synthetic_check.py --output-dir 一个尚不存在的新目录
+
+程序先核9个原源文件和审计脚本hash，再写当前UTC/实际路径的新人工审计计划，最后重放人工数据测试。原始计划、失败及续接收据不覆盖。这个命令不是原研究重跑，不产生独立材料结果，不调用冻结预测模型，不读旧25P/46/隐藏S。
+
+最初audit/INDEPENDENT...与后续合并qualification不同角色，具体索引见STAGE_STATUS.json。原静态v1、首次接口KeyError和各失败人工目录保留，用于核查。
+
+真实设计应从code/README.txt与author_handoff开始；空REAL模板故意拒绝register。没有真实独立新数据时，不应为了演示将旧目标填入。

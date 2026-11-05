@@ -1,0 +1,58 @@
+{
+  "artifact_kind": "source-pinned independent synthetic software audit preregistration",
+  "actual_registered_utc": "2026-11-05T02:41:46.426331+00:00",
+  "actual_registered_asia_shanghai": "2026-11-05T10:41:46.426331+08:00",
+  "execution_approval_status": "PENDING_ROOT_APPROVAL_NO_SUT_EXECUTED",
+  "reviewer": "/root/calibration_theory_review",
+  "source_directory": "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\code",
+  "source_sha256": {
+    "calibration.py": "a7229cad9c96cda151629ab256ce16e320438754ffdb379af0fc4b3aae8d1ba0",
+    "cli.py": "30c83242691ec594e8a22c71500828393148f6b09ecb70fdab3402fcc2300705",
+    "contract.py": "a7e736ea3d1791be6ca56e8c56585967909a86e812c44cf41fd69176c27ad808",
+    "evaluation.py": "fe9f4601c1070a04488cc1d30d8ad3a69e38268583e7cf68c9db3af41691c1ce",
+    "DESIGN_TEMPLATE.json": "cde5efff63ed58f725ebb27e7df94594c4d8c8cd00d9b07e8e57796f1b75ddfd",
+    "COHORT_TEMPLATE.json": "e656900c8544276e7a8b6267a473c80c0be6edd8f9ab40444b001c00e99bc6ad",
+    "FORMAT_EXAMPLES.json": "16f0256679d99164caf435a04913accbf91b3fc8b841ee1ec62a688ccd300d84",
+    "README.txt": "1a035c676d1b3a64f9fedcb9ad08de70c5c4a961e8199d44a514b8b2e4fa17e0",
+    "requirements.txt": "99f43573522565d7c480efd1f954892948033915df6a4e685327e995d3396eb6"
+  },
+  "audit_script": "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\audit\\independent_synthetic_audit.py",
+  "audit_script_sha256": "c18372134b1b97bb8fb622bde6f2280c34a2cac78feff8b3d4f743df3912351c",
+  "actual_runtime": {
+    "python_executable": "D:\\Anaconda\\python.exe",
+    "python_version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]",
+    "numpy_package_metadata": "2.1.3",
+    "scipy_package_metadata": "1.15.3"
+  },
+  "prior_activity": "Only source text/static AST and README were read; no SUT imports, calls, CLI commands, synthetic qualification, raw measurements, material fitting or scoring have been executed by this reviewer before registration.",
+  "planned_test_families": [
+    "Exact order indices for n=0..30 and alpha strings 0.1,0.05,0.25,1/3,0.70; 155 direct cases. Exhaustive 2475 held-out assignments use distinct artificial ranks and exact rational success counts, not stochastic or material coverage.",
+    "Tied zero/repeated score rank counts; q=0, zero-N formal vacuous set, insufficient-N infinity, strict JSON and band CRPS/density rejection.",
+    "Distinguish insufficient_calibration_units, selected_infinite_score+infinite_input_score, and finite-input arithmetic numeric_score_overflow. Expanded reasons must survive JSON round-trip.",
+    "Finite positive sigma guards, nonfinite means/truth, exact-alpha input type; unchanged Gaussian scores when only prediction-set q changes.",
+    "Unbounded band diagnostics must reject invalid/nonfinite/wrong-length truth and invalid weights rather than reporting coverage=1 for malformed arrays.",
+    "15 Gaussian CRPS cases independently computed by integrating squared CDF errors using scipy.integrate.quad and scipy.special.ndtr; relative tolerance2e-9 and absolute2e-10, no production closed-form oracle copied.",
+    "Irregular native log-rate quadrature must integrate affine losses exactly, use half endpoint weights, reject m<2/duplicates/decreasing/nonpositive/nonfinite and collapsed-log-span grids.",
+    "Whole-unit max with duplicated rows does not increase group N; cross-role batch/formula/alias lineage, consumed record, inspected labels and anchor-as-target failures rejected. Known-formula genuinely new batch is distinguished. Strict metadata design/cohort schema checked.",
+    "All three registered methods/grids and model hashes are required on every prediction; label contamination and missing records rejected; overlapping targets of the same original curve must bind identical measurement SHA and equal truth.",
+    "Null author REAL templates cannot register. Changing source bytes in a source copy inside audit directory after registration must stop the phase.",
+    "End-to-end SYNTHETIC CLI only: 9 calibration groups/10 registered queries and3 confirmation groups,3 fixed methods. Proper freeze/reveal order, common cal unit IDs, omitted anchor gap, declared-unit counts and one-time result receipt checked. No predictor called or fitted.",
+    "Editing one frozen calibration forecast before calibration or q before confirmation freeze must be rejected from phase byte receipts; no truth-open/read flags or reveal-stop marker may be invented for these preflight failures.",
+    "Missing artificial truth file after a valid forecast freeze creates accurate open-attempt started/bytes not loaded/JSON not parsed receipts and conservative stop; later filling the file does not silently restore freshness."
+  ],
+  "code_path_coverage_limit": "This is a bounded numerical/contract audit, not an exhaustive security test, model benchmark or proof of truthful human metadata/physical independence/blinding.",
+  "numerical_policy_alignment": "Theory initial review recommended failing on residual numerical overflow. Root accepted producer v2 conservative extended-score alternative: keep +infinity and reason numeric_score_overflow, never finite clipping; selected q is vacuous, not successful material calibration. The ideal rank argument permits extended scores and inclusive ties. Actual finite-q band endpoint overflow still stops.",
+  "author_or_material_requirements_unchanged": "No fresh independent material calibration/confirmation groups available; old25P/46 consumed records are never read or reused. Real templates remain null.",
+  "artificial_inputs": "All numeric fixtures, synthetic identities, hashes and labels are deterministically declared in pinned audit script. These are not material predictions, simulated micro-experiments, independent formulations, wet measurements or new efficacy evidence.",
+  "allowed_mutations": "Only artificial test copies and receipts inside stage/audit execution directory may be deliberately modified for negative tests. Production source and historical study files stay untouched.",
+  "outputs": "A unique audit execution directory with EXECUTION_START.json, COMMANDS.jsonl, preserved artificial inputs/runs/failures, INDEPENDENT_SYNTHETIC_RESULTS.json. No output is overwritten.",
+  "failure_policy": "Any failure remains visible and prevents an all-pass qualification claim. Inform root; corrections need new source hashes/new protocol version before re-execution, preserving prior results.",
+  "prohibited_claims": [
+    "new material coverage",
+    "new-batch or new-formulation validation",
+    "calibrated predictive density",
+    "experimental saving",
+    "paper readiness",
+    "novel conformal theory"
+  ]
+}

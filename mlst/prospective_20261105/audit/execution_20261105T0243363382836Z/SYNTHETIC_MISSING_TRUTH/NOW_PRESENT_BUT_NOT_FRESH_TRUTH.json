@@ -1,0 +1,147 @@
+{
+  "schema": "prospective_unit_calibration_v1",
+  "data_mode": "synthetic",
+  "protocol_sha256": "e9aaa7b1911b6381f64e7f56672348f2504e07c9250c7d890553a8a3e72c3f42",
+  "records": [
+    {
+      "record_id": "SYNTHETIC_calibration_0_MASK0",
+      "target_gamma": [
+        8.0,
+        16.0,
+        32.0
+      ],
+      "y_log_eta": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "original_measurement_sha256": "37c3b6d192ce9e12f12b367b6867a835a00f085bd102ccc45d9b17fcf63b7c98"
+    },
+    {
+      "record_id": "SYNTHETIC_calibration_1_MASK0",
+      "target_gamma": [
+        8.0,
+        16.0,
+        32.0
+      ],
+      "y_log_eta": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "original_measurement_sha256": "eadcdf216e835c77550e940d2ec2d6f140bffd633259a2ce05ab811e4e2c4f02"
+    },
+    {
+      "record_id": "SYNTHETIC_calibration_2_MASK0",
+      "target_gamma": [
+        8.0,
+        16.0,
+        32.0
+      ],
+      "y_log_eta": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "original_measurement_sha256": "36e1ee0bdada6df5a801d13e53fe47f32b36ca6c285524fb4af4cef25a2255e1"
+    },
+    {
+      "record_id": "SYNTHETIC_calibration_3_MASK0",
+      "target_gamma": [
+        8.0,
+        16.0,
+        32.0
+      ],
+      "y_log_eta": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "original_measurement_sha256": "6017b51148aee9fbf379f8d2b98eb8e0507c5ee3b154e6cf6d7c1a92974847f6"
+    },
+    {
+      "record_id": "SYNTHETIC_calibration_4_MASK0",
+      "target_gamma": [
+        8.0,
+        16.0,
+        32.0
+      ],
+      "y_log_eta": [
+        0.4,
+        0.4,
+        0.4
+      ],
+      "original_measurement_sha256": "b4e8dea89028a469794809d0b69cdf1595965ae804dde279dda63785724fbd2c"
+    },
+    {
+      "record_id": "SYNTHETIC_calibration_5_MASK0",
+      "target_gamma": [
+        8.0,
+        16.0,
+        32.0
+      ],
+      "y_log_eta": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "original_measurement_sha256": "56da80ef356cb7fdb06286bb52907c4e81211651c35a296dad2bb9471b784944"
+    },
+    {
+      "record_id": "SYNTHETIC_calibration_6_MASK0",
+      "target_gamma": [
+        8.0,
+        16.0,
+        32.0
+      ],
+      "y_log_eta": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "original_measurement_sha256": "bfcf2f6ae4a8083cebbbde96aedb320a9228efabdb2122408d03c0f887b50a2c"
+    },
+    {
+      "record_id": "SYNTHETIC_calibration_7_MASK0",
+      "target_gamma": [
+        8.0,
+        16.0,
+        32.0
+      ],
+      "y_log_eta": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "original_measurement_sha256": "e99c84ef472fa0b5ba7d152e2bfbb862344c4c4b816c3c183cd54233cbbc8146"
+    },
+    {
+      "record_id": "SYNTHETIC_calibration_8_MASK0",
+      "target_gamma": [
+        8.0,
+        16.0,
+        32.0
+      ],
+      "y_log_eta": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "original_measurement_sha256": "02fab967066c457d559db62161d61bc88ebd4947545968227d58443d527d2ef5"
+    },
+    {
+      "record_id": "SYNTHETIC_calibration_0_MASK0_REPEATED_QUERY",
+      "target_gamma": [
+        8.0,
+        16.0,
+        32.0
+      ],
+      "y_log_eta": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "original_measurement_sha256": "37c3b6d192ce9e12f12b367b6867a835a00f085bd102ccc45d9b17fcf63b7c98"
+    }
+  ]
+}

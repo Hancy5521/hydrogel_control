@@ -34,3 +34,8 @@ Retained707baseline and old local archives. Closed witnessed map/reader identity
 
 
 2026-11-05: Added preregistered250fit/750prediction representation study; retained8randomseeds, strongerpriorKL andsame-spanrotation. Updated17-page main/27-pageSI/64references after independent numerical/content/visual checks. Originalmodel/runtime/oldpapers and previousarchivebranches preserved; no newindependentmaterials or KLdeployment.
+
+
+## 2026 November 5 prospective evidence preparation
+
+Added an isolated four-module future unit-level calibration/confirmation helper, strict null author templates, exact-rank and density-vs-set mathematics, selected primary-source ledgers, bounded same-domain source gate and a source-pinned artificial audit. First audit12PASS/1obsolete-harness-field KeyError is retained; only three remaining syntheticCLI calls completed the last family. No production source changed after freeze, no real data fitting/predicting/calibrating/evaluating, no new admitted independent units, and no change to the17/27-page paper or original material model. Public selection omits fetched site/query content and personal paths; explicit derivative byte mappings are retained. New physical units, actual experimental design and publication access/rights still require author decisions. No DOI, private data publication, contact or submission.

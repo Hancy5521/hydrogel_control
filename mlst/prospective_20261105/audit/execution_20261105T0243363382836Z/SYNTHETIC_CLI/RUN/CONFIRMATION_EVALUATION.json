@@ -1,0 +1,669 @@
+{
+  "data_mode": "synthetic",
+  "automatic_material_evidence_certified": false,
+  "scientific_evidence_status": "SYNTHETIC_MATH_ONLY",
+  "automatic_independence_certification": false,
+  "estimand": "Equal independent units; equal original curves within unit; equal registered masks within curve; native target-only log-rate trapezoid.",
+  "density_and_set_are_separate": true,
+  "methods": {
+    "shared_local_Gaussian": {
+      "aggregate": {
+        "raw_gaussian": {
+          "log_rate_CRPS": 0.2403252480985263,
+          "log_rate_MSE": 0.01666666666666667,
+          "log_rate_marginal_NLL": 0.927271866538006,
+          "joint_log_density": -2.7818155996140184,
+          "weighted_point_coverage": 1.0,
+          "mean_log_width": 3.289707253902943,
+          "whole_unit_finite_grid_covered": 1.0,
+          "log_rate_RMSE": 0.12909944487358058
+        },
+        "conformal_set": {
+          "weighted_point_coverage": 1.0,
+          "mean_log_width": 1.6000000000000003,
+          "interval_score_same_alpha": 1.6000000000000003,
+          "whole_unit_finite_grid_covered": 1.0,
+          "unbounded": 0.0
+        },
+        "n_declared_units": 3,
+        "n_registered_curve_masks": 3,
+        "n_units_with_unbounded_sets": 0
+      },
+      "per_unit": [
+        {
+          "unit_id": "SYNTHETIC_confirmation_0_UNIT",
+          "original_curves": 1,
+          "registered_curve_masks": 1,
+          "raw_gaussian": {
+            "log_rate_CRPS": 0.23369497725510913,
+            "log_rate_MSE": 0.0,
+            "log_rate_marginal_NLL": 0.9189385332046727,
+            "joint_log_density": -2.756815599614018,
+            "weighted_point_coverage": 1.0,
+            "mean_log_width": 3.289707253902943,
+            "whole_unit_finite_grid_covered": true
+          },
+          "conformal_set": {
+            "weighted_point_coverage": 1.0,
+            "mean_log_width": 1.6,
+            "interval_score_same_alpha": 1.6,
+            "whole_unit_finite_grid_covered": true,
+            "unbounded": false
+          }
+        },
+        {
+          "unit_id": "SYNTHETIC_confirmation_1_UNIT",
+          "original_curves": 1,
+          "registered_curve_masks": 1,
+          "raw_gaussian": {
+            "log_rate_CRPS": 0.2376810788616731,
+            "log_rate_MSE": 0.010000000000000002,
+            "log_rate_marginal_NLL": 0.9239385332046727,
+            "joint_log_density": -2.771815599614018,
+            "weighted_point_coverage": 1.0,
+            "mean_log_width": 3.289707253902943,
+            "whole_unit_finite_grid_covered": true
+          },
+          "conformal_set": {
+            "weighted_point_coverage": 1.0,
+            "mean_log_width": 1.6,
+            "interval_score_same_alpha": 1.6,
+            "whole_unit_finite_grid_covered": true,
+            "unbounded": false
+          }
+        },
+        {
+          "unit_id": "SYNTHETIC_confirmation_2_UNIT",
+          "original_curves": 1,
+          "registered_curve_masks": 1,
+          "raw_gaussian": {
+            "log_rate_CRPS": 0.24959968817879663,
+            "log_rate_MSE": 0.04000000000000001,
+            "log_rate_marginal_NLL": 0.9389385332046727,
+            "joint_log_density": -2.816815599614018,
+            "weighted_point_coverage": 1.0,
+            "mean_log_width": 3.289707253902943,
+            "whole_unit_finite_grid_covered": true
+          },
+          "conformal_set": {
+            "weighted_point_coverage": 1.0,
+            "mean_log_width": 1.6,
+            "interval_score_same_alpha": 1.6,
+            "whole_unit_finite_grid_covered": true,
+            "unbounded": false
+          }
+        }
+      ],
+      "per_record": [
+        {
+          "record_id": "SYNTHETIC_confirmation_0_MASK0",
+          "unit_id": "SYNTHETIC_confirmation_0_UNIT",
+          "source_record_key": "SYNTHETIC_confirmation_0_RAW",
+          "n_targets": 3,
+          "target_weights": [
+            0.25,
+            0.5,
+            0.25
+          ],
+          "target_only_log_rate_span": 1.3862943611198906,
+          "omitted_log_gap_from_highest_anchor": 0.28768207245178085,
+          "raw_gaussian": {
+            "log_rate_CRPS": 0.23369497725510913,
+            "log_rate_MSE": 0.0,
+            "log_rate_marginal_NLL": 0.9189385332046727,
+            "joint_log_density": -2.756815599614018,
+            "weighted_point_coverage": 1.0,
+            "whole_finite_grid_covered": true,
+            "mean_log_width": 3.289707253902943
+          },
+          "conformal_set": {
+            "weighted_point_coverage": 1.0,
+            "whole_finite_grid_covered": true,
+            "mean_log_width": 1.6,
+            "interval_score_same_alpha": 1.6,
+            "unbounded": false,
+            "coverage_is_vacuous": false
+          }
+        },
+        {
+          "record_id": "SYNTHETIC_confirmation_1_MASK0",
+          "unit_id": "SYNTHETIC_confirmation_1_UNIT",
+          "source_record_key": "SYNTHETIC_confirmation_1_RAW",
+          "n_targets": 3,
+          "target_weights": [
+            0.25,
+            0.5,
+            0.25
+          ],
+          "target_only_log_rate_span": 1.3862943611198906,
+          "omitted_log_gap_from_highest_anchor": 0.28768207245178085,
+          "raw_gaussian": {
+            "log_rate_CRPS": 0.2376810788616731,
+            "log_rate_MSE": 0.010000000000000002,
+            "log_rate_marginal_NLL": 0.9239385332046727,
+            "joint_log_density": -2.771815599614018,
+            "weighted_point_coverage": 1.0,
+            "whole_finite_grid_covered": true,
+            "mean_log_width": 3.289707253902943
+          },
+          "conformal_set": {
+            "weighted_point_coverage": 1.0,
+            "whole_finite_grid_covered": true,
+            "mean_log_width": 1.6,
+            "interval_score_same_alpha": 1.6,
+            "unbounded": false,
+            "coverage_is_vacuous": false
+          }
+        },
+        {
+          "record_id": "SYNTHETIC_confirmation_2_MASK0",
+          "unit_id": "SYNTHETIC_confirmation_2_UNIT",
+          "source_record_key": "SYNTHETIC_confirmation_2_RAW",
+          "n_targets": 3,
+          "target_weights": [
+            0.25,
+            0.5,
+            0.25
+          ],
+          "target_only_log_rate_span": 1.3862943611198906,
+          "omitted_log_gap_from_highest_anchor": 0.28768207245178085,
+          "raw_gaussian": {
+            "log_rate_CRPS": 0.24959968817879663,
+            "log_rate_MSE": 0.04000000000000001,
+            "log_rate_marginal_NLL": 0.9389385332046727,
+            "joint_log_density": -2.816815599614018,
+            "weighted_point_coverage": 1.0,
+            "whole_finite_grid_covered": true,
+            "mean_log_width": 3.289707253902943
+          },
+          "conformal_set": {
+            "weighted_point_coverage": 1.0,
+            "whole_finite_grid_covered": true,
+            "mean_log_width": 1.6,
+            "interval_score_same_alpha": 1.6,
+            "unbounded": false,
+            "coverage_is_vacuous": false
+          }
+        }
+      ],
+      "threshold": {
+        "kind": "independent_unit_max_split_conformal_threshold",
+        "alpha": "0.1",
+        "n_calibration_units": 9,
+        "order_index_one_based": 9,
+        "q": 0.8,
+        "unbounded": false,
+        "infinity_reasons": [],
+        "sample_count_is_declared_score_groups": true,
+        "density_calibrated": false,
+        "coverage_scope": "Marginal over exchangeable complete units; all declared finite-grid targets. No between-grid or subgroup-conditional guarantee."
+      }
+    },
+    "full_coordinate_GP": {
+      "aggregate": {
+        "raw_gaussian": {
+          "log_rate_CRPS": 0.2859639644236928,
+          "log_rate_MSE": 0.01666666666666667,
+          "log_rate_marginal_NLL": 1.1070471270356643,
+          "joint_log_density": -3.3211413811069925,
+          "weighted_point_coverage": 1.0,
+          "mean_log_width": 3.9476487046835316,
+          "whole_unit_finite_grid_covered": 1.0,
+          "log_rate_RMSE": 0.12909944487358058
+        },
+        "conformal_set": {
+          "weighted_point_coverage": 1.0,
+          "mean_log_width": 1.2000000000000002,
+          "interval_score_same_alpha": 1.2000000000000002,
+          "whole_unit_finite_grid_covered": 1.0,
+          "unbounded": 0.0
+        },
+        "n_declared_units": 3,
+        "n_registered_curve_masks": 3,
+        "n_units_with_unbounded_sets": 0
+      },
+      "per_unit": [
+        {
+          "unit_id": "SYNTHETIC_confirmation_0_UNIT",
+          "original_curves": 1,
+          "registered_curve_masks": 1,
+          "raw_gaussian": {
+            "log_rate_CRPS": 0.2937013514317098,
+            "log_rate_MSE": 0.04000000000000001,
+            "log_rate_marginal_NLL": 1.1151489788875162,
+            "joint_log_density": -3.3454469366625483,
+            "weighted_point_coverage": 1.0,
+            "mean_log_width": 3.9476487046835316,
+            "whole_unit_finite_grid_covered": true
+          },
+          "conformal_set": {
+            "weighted_point_coverage": 1.0,
+            "mean_log_width": 1.2000000000000002,
+            "interval_score_same_alpha": 1.2000000000000002,
+            "whole_unit_finite_grid_covered": true,
+            "unbounded": false
+          }
+        },
+        {
+          "unit_id": "SYNTHETIC_confirmation_1_UNIT",
+          "original_curves": 1,
+          "registered_curve_masks": 1,
+          "raw_gaussian": {
+            "log_rate_CRPS": 0.2837565691332376,
+            "log_rate_MSE": 0.010000000000000002,
+            "log_rate_marginal_NLL": 1.1047323122208497,
+            "joint_log_density": -3.3141969366625483,
+            "weighted_point_coverage": 1.0,
+            "mean_log_width": 3.9476487046835316,
+            "whole_unit_finite_grid_covered": true
+          },
+          "conformal_set": {
+            "weighted_point_coverage": 1.0,
+            "mean_log_width": 1.2000000000000002,
+            "interval_score_same_alpha": 1.2000000000000002,
+            "whole_unit_finite_grid_covered": true,
+            "unbounded": false
+          }
+        },
+        {
+          "unit_id": "SYNTHETIC_confirmation_2_UNIT",
+          "original_curves": 1,
+          "registered_curve_masks": 1,
+          "raw_gaussian": {
+            "log_rate_CRPS": 0.28043397270613096,
+            "log_rate_MSE": 0.0,
+            "log_rate_marginal_NLL": 1.1012600899986273,
+            "joint_log_density": -3.303780269995882,
+            "weighted_point_coverage": 1.0,
+            "mean_log_width": 3.9476487046835316,
+            "whole_unit_finite_grid_covered": true
+          },
+          "conformal_set": {
+            "weighted_point_coverage": 1.0,
+            "mean_log_width": 1.2000000000000002,
+            "interval_score_same_alpha": 1.2000000000000002,
+            "whole_unit_finite_grid_covered": true,
+            "unbounded": false
+          }
+        }
+      ],
+      "per_record": [
+        {
+          "record_id": "SYNTHETIC_confirmation_0_MASK0",
+          "unit_id": "SYNTHETIC_confirmation_0_UNIT",
+          "source_record_key": "SYNTHETIC_confirmation_0_RAW",
+          "n_targets": 3,
+          "target_weights": [
+            0.25,
+            0.5,
+            0.25
+          ],
+          "target_only_log_rate_span": 1.3862943611198906,
+          "omitted_log_gap_from_highest_anchor": 0.28768207245178085,
+          "raw_gaussian": {
+            "log_rate_CRPS": 0.2937013514317098,
+            "log_rate_MSE": 0.04000000000000001,
+            "log_rate_marginal_NLL": 1.1151489788875162,
+            "joint_log_density": -3.3454469366625483,
+            "weighted_point_coverage": 1.0,
+            "whole_finite_grid_covered": true,
+            "mean_log_width": 3.9476487046835316
+          },
+          "conformal_set": {
+            "weighted_point_coverage": 1.0,
+            "whole_finite_grid_covered": true,
+            "mean_log_width": 1.2000000000000002,
+            "interval_score_same_alpha": 1.2000000000000002,
+            "unbounded": false,
+            "coverage_is_vacuous": false
+          }
+        },
+        {
+          "record_id": "SYNTHETIC_confirmation_1_MASK0",
+          "unit_id": "SYNTHETIC_confirmation_1_UNIT",
+          "source_record_key": "SYNTHETIC_confirmation_1_RAW",
+          "n_targets": 3,
+          "target_weights": [
+            0.25,
+            0.5,
+            0.25
+          ],
+          "target_only_log_rate_span": 1.3862943611198906,
+          "omitted_log_gap_from_highest_anchor": 0.28768207245178085,
+          "raw_gaussian": {
+            "log_rate_CRPS": 0.2837565691332376,
+            "log_rate_MSE": 0.010000000000000002,
+            "log_rate_marginal_NLL": 1.1047323122208497,
+            "joint_log_density": -3.3141969366625483,
+            "weighted_point_coverage": 1.0,
+            "whole_finite_grid_covered": true,
+            "mean_log_width": 3.9476487046835316
+          },
+          "conformal_set": {
+            "weighted_point_coverage": 1.0,
+            "whole_finite_grid_covered": true,
+            "mean_log_width": 1.2000000000000002,
+            "interval_score_same_alpha": 1.2000000000000002,
+            "unbounded": false,
+            "coverage_is_vacuous": false
+          }
+        },
+        {
+          "record_id": "SYNTHETIC_confirmation_2_MASK0",
+          "unit_id": "SYNTHETIC_confirmation_2_UNIT",
+          "source_record_key": "SYNTHETIC_confirmation_2_RAW",
+          "n_targets": 3,
+          "target_weights": [
+            0.25,
+            0.5,
+            0.25
+          ],
+          "target_only_log_rate_span": 1.3862943611198906,
+          "omitted_log_gap_from_highest_anchor": 0.28768207245178085,
+          "raw_gaussian": {
+            "log_rate_CRPS": 0.28043397270613096,
+            "log_rate_MSE": 0.0,
+            "log_rate_marginal_NLL": 1.1012600899986273,
+            "joint_log_density": -3.303780269995882,
+            "weighted_point_coverage": 1.0,
+            "whole_finite_grid_covered": true,
+            "mean_log_width": 3.9476487046835316
+          },
+          "conformal_set": {
+            "weighted_point_coverage": 1.0,
+            "whole_finite_grid_covered": true,
+            "mean_log_width": 1.2000000000000002,
+            "interval_score_same_alpha": 1.2000000000000002,
+            "unbounded": false,
+            "coverage_is_vacuous": false
+          }
+        }
+      ],
+      "threshold": {
+        "kind": "independent_unit_max_split_conformal_threshold",
+        "alpha": "0.1",
+        "n_calibration_units": 9,
+        "order_index_one_based": 9,
+        "q": 0.5000000000000001,
+        "unbounded": false,
+        "infinity_reasons": [],
+        "sample_count_is_declared_score_groups": true,
+        "density_calibrated": false,
+        "coverage_scope": "Marginal over exchangeable complete units; all declared finite-grid targets. No between-grid or subgroup-conditional guarantee."
+      }
+    },
+    "conditional_Gaussian_control": {
+      "aggregate": {
+        "raw_gaussian": {
+          "log_rate_CRPS": 0.3545774232159473,
+          "log_rate_MSE": 0.09666666666666668,
+          "log_rate_marginal_NLL": 1.2800706337714638,
+          "joint_log_density": -3.8402119013143916,
+          "weighted_point_coverage": 1.0,
+          "mean_log_width": 4.60559015546412,
+          "whole_unit_finite_grid_covered": 1.0,
+          "log_rate_RMSE": 0.3109126351029605
+        },
+        "conformal_set": {
+          "weighted_point_coverage": 1.0,
+          "mean_log_width": 0.8000000000000002,
+          "interval_score_same_alpha": 0.8000000000000002,
+          "whole_unit_finite_grid_covered": 1.0,
+          "unbounded": 0.0
+        },
+        "n_declared_units": 3,
+        "n_registered_curve_masks": 3,
+        "n_units_with_unbounded_sets": 0
+      },
+      "per_unit": [
+        {
+          "unit_id": "SYNTHETIC_confirmation_0_UNIT",
+          "original_curves": 1,
+          "registered_curve_masks": 1,
+          "raw_gaussian": {
+            "log_rate_CRPS": 0.3724587259985415,
+            "log_rate_MSE": 0.16000000000000003,
+            "log_rate_marginal_NLL": 1.296227096356498,
+            "joint_log_density": -3.8886812890694933,
+            "weighted_point_coverage": 1.0,
+            "mean_log_width": 4.60559015546412,
+            "whole_unit_finite_grid_covered": true
+          },
+          "conformal_set": {
+            "weighted_point_coverage": 1.0,
+            "mean_log_width": 0.8,
+            "interval_score_same_alpha": 0.8,
+            "whole_unit_finite_grid_covered": true,
+            "unbounded": false
+          }
+        },
+        {
+          "unit_id": "SYNTHETIC_confirmation_1_UNIT",
+          "original_curves": 1,
+          "registered_curve_masks": 1,
+          "raw_gaussian": {
+            "log_rate_CRPS": 0.3527215700848409,
+            "log_rate_MSE": 0.09000000000000002,
+            "log_rate_marginal_NLL": 1.2783699534993551,
+            "joint_log_density": -3.8351098604980645,
+            "weighted_point_coverage": 1.0,
+            "mean_log_width": 4.60559015546412,
+            "whole_unit_finite_grid_covered": true
+          },
+          "conformal_set": {
+            "weighted_point_coverage": 1.0,
+            "mean_log_width": 0.8,
+            "interval_score_same_alpha": 0.8,
+            "whole_unit_finite_grid_covered": true,
+            "unbounded": false
+          }
+        },
+        {
+          "unit_id": "SYNTHETIC_confirmation_2_UNIT",
+          "original_curves": 1,
+          "registered_curve_masks": 1,
+          "raw_gaussian": {
+            "log_rate_CRPS": 0.33855197356445954,
+            "log_rate_MSE": 0.04000000000000001,
+            "log_rate_marginal_NLL": 1.2656148514585386,
+            "joint_log_density": -3.7968445543756157,
+            "weighted_point_coverage": 1.0,
+            "mean_log_width": 4.60559015546412,
+            "whole_unit_finite_grid_covered": true
+          },
+          "conformal_set": {
+            "weighted_point_coverage": 1.0,
+            "mean_log_width": 0.8,
+            "interval_score_same_alpha": 0.8,
+            "whole_unit_finite_grid_covered": true,
+            "unbounded": false
+          }
+        }
+      ],
+      "per_record": [
+        {
+          "record_id": "SYNTHETIC_confirmation_0_MASK0",
+          "unit_id": "SYNTHETIC_confirmation_0_UNIT",
+          "source_record_key": "SYNTHETIC_confirmation_0_RAW",
+          "n_targets": 3,
+          "target_weights": [
+            0.25,
+            0.5,
+            0.25
+          ],
+          "target_only_log_rate_span": 1.3862943611198906,
+          "omitted_log_gap_from_highest_anchor": 0.28768207245178085,
+          "raw_gaussian": {
+            "log_rate_CRPS": 0.3724587259985415,
+            "log_rate_MSE": 0.16000000000000003,
+            "log_rate_marginal_NLL": 1.296227096356498,
+            "joint_log_density": -3.8886812890694933,
+            "weighted_point_coverage": 1.0,
+            "whole_finite_grid_covered": true,
+            "mean_log_width": 4.60559015546412
+          },
+          "conformal_set": {
+            "weighted_point_coverage": 1.0,
+            "whole_finite_grid_covered": true,
+            "mean_log_width": 0.8,
+            "interval_score_same_alpha": 0.8,
+            "unbounded": false,
+            "coverage_is_vacuous": false
+          }
+        },
+        {
+          "record_id": "SYNTHETIC_confirmation_1_MASK0",
+          "unit_id": "SYNTHETIC_confirmation_1_UNIT",
+          "source_record_key": "SYNTHETIC_confirmation_1_RAW",
+          "n_targets": 3,
+          "target_weights": [
+            0.25,
+            0.5,
+            0.25
+          ],
+          "target_only_log_rate_span": 1.3862943611198906,
+          "omitted_log_gap_from_highest_anchor": 0.28768207245178085,
+          "raw_gaussian": {
+            "log_rate_CRPS": 0.3527215700848409,
+            "log_rate_MSE": 0.09000000000000002,
+            "log_rate_marginal_NLL": 1.2783699534993551,
+            "joint_log_density": -3.8351098604980645,
+            "weighted_point_coverage": 1.0,
+            "whole_finite_grid_covered": true,
+            "mean_log_width": 4.60559015546412
+          },
+          "conformal_set": {
+            "weighted_point_coverage": 1.0,
+            "whole_finite_grid_covered": true,
+            "mean_log_width": 0.8,
+            "interval_score_same_alpha": 0.8,
+            "unbounded": false,
+            "coverage_is_vacuous": false
+          }
+        },
+        {
+          "record_id": "SYNTHETIC_confirmation_2_MASK0",
+          "unit_id": "SYNTHETIC_confirmation_2_UNIT",
+          "source_record_key": "SYNTHETIC_confirmation_2_RAW",
+          "n_targets": 3,
+          "target_weights": [
+            0.25,
+            0.5,
+            0.25
+          ],
+          "target_only_log_rate_span": 1.3862943611198906,
+          "omitted_log_gap_from_highest_anchor": 0.28768207245178085,
+          "raw_gaussian": {
+            "log_rate_CRPS": 0.33855197356445954,
+            "log_rate_MSE": 0.04000000000000001,
+            "log_rate_marginal_NLL": 1.2656148514585386,
+            "joint_log_density": -3.7968445543756157,
+            "weighted_point_coverage": 1.0,
+            "whole_finite_grid_covered": true,
+            "mean_log_width": 4.60559015546412
+          },
+          "conformal_set": {
+            "weighted_point_coverage": 1.0,
+            "whole_finite_grid_covered": true,
+            "mean_log_width": 0.8,
+            "interval_score_same_alpha": 0.8,
+            "unbounded": false,
+            "coverage_is_vacuous": false
+          }
+        }
+      ],
+      "threshold": {
+        "kind": "independent_unit_max_split_conformal_threshold",
+        "alpha": "0.1",
+        "n_calibration_units": 9,
+        "order_index_one_based": 9,
+        "q": 0.28571428571428575,
+        "unbounded": false,
+        "infinity_reasons": [],
+        "sample_count_is_declared_score_groups": true,
+        "density_calibrated": false,
+        "coverage_scope": "Marginal over exchangeable complete units; all declared finite-grid targets. No between-grid or subgroup-conditional guarantee."
+      }
+    }
+  },
+  "is_new_material_evidence": false,
+  "paired_raw_CRPS_candidate_minus_comparator": {
+    "full_coordinate_GP": {
+      "per_unit": {
+        "SYNTHETIC_confirmation_0_UNIT": -0.06000637417660065,
+        "SYNTHETIC_confirmation_1_UNIT": -0.04607549027156449,
+        "SYNTHETIC_confirmation_2_UNIT": -0.030834284527334332
+      },
+      "equal_unit_mean": -0.045638716325166494,
+      "negative_favors": "shared_local_Gaussian",
+      "inferential_interval": null
+    },
+    "conditional_Gaussian_control": {
+      "per_unit": {
+        "SYNTHETIC_confirmation_0_UNIT": -0.1387637487434324,
+        "SYNTHETIC_confirmation_1_UNIT": -0.11504049122316778,
+        "SYNTHETIC_confirmation_2_UNIT": -0.08895228538566291
+      },
+      "equal_unit_mean": -0.11425217511742103,
+      "negative_favors": "shared_local_Gaussian",
+      "inferential_interval": null
+    }
+  },
+  "schema": "prospective_unit_calibration_v1",
+  "actual_utc": "2026-11-05T02:49:09.025630+00:00",
+  "protocol_sha256": "dfe943020fe3b22291c46d5a5f4aaafff9dfe7a05d101d47862e89f7df46ed20",
+  "calibration_sha256": "280acb8931b62a68ec558da907f7a56790cf2746c48fcede2885696c1555f34d",
+  "confirmation_predictions_sha256": "e82b7e980dbc68f32a5f51909af4d1892e7bad4450516e63ef407c59af3008d0",
+  "original_confirmation_truth_sha256": "392c7624efbc81dda232be38882e9cb445bb0e1a129879d476d70feab147c372",
+  "confirmation_truth": {
+    "schema": "prospective_unit_calibration_v1",
+    "data_mode": "synthetic",
+    "protocol_sha256": "dfe943020fe3b22291c46d5a5f4aaafff9dfe7a05d101d47862e89f7df46ed20",
+    "records": [
+      {
+        "record_id": "SYNTHETIC_confirmation_0_MASK0",
+        "target_gamma": [
+          8.0,
+          16.0,
+          32.0
+        ],
+        "y_log_eta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "original_measurement_sha256": "f935f8c5a008199cb45ac96a5456c5f68604b82dbac41e20f06ef0bbc5ed695f"
+      },
+      {
+        "record_id": "SYNTHETIC_confirmation_1_MASK0",
+        "target_gamma": [
+          8.0,
+          16.0,
+          32.0
+        ],
+        "y_log_eta": [
+          0.1,
+          0.1,
+          0.1
+        ],
+        "original_measurement_sha256": "d015777eaafd59abb6f665b29ee8ff1177bf9aef8d30b966fd88e1906e0a6bbd"
+      },
+      {
+        "record_id": "SYNTHETIC_confirmation_2_MASK0",
+        "target_gamma": [
+          8.0,
+          16.0,
+          32.0
+        ],
+        "y_log_eta": [
+          0.2,
+          0.2,
+          0.2
+        ],
+        "original_measurement_sha256": "7df96216807e02e350928bde88b8be8c90bcde92f5d16bfe5e1a55ed608db91e"
+      }
+    ]
+  },
+  "new_fits": 0,
+  "finite_grid_only": true
+}

@@ -1,0 +1,18 @@
+{
+  "schema": "prospective_unit_calibration_v1",
+  "completed_actual_utc": "2026-11-05T02:49:09.030649+00:00",
+  "artifact_file": "CONFIRMATION_EVALUATION.json",
+  "artifact_sha256": "09ead014fd58fef44b73ec16177ce18097f81305534a7bef05b88a758aa583de",
+  "protocol_sha256": "dfe943020fe3b22291c46d5a5f4aaafff9dfe7a05d101d47862e89f7df46ed20",
+  "prior_receipts_sha256": {
+    "PROTOCOL.RECEIPT.json": "b72f9cbf0357ed5265f77620887dd5a7b5efc1f298bbdd6bbc3061fa09aaa9da",
+    "CALIBRATION_PREDICTIONS_FROZEN.RECEIPT.json": "87763091ad58485702c8504f1792400b97882d3ac9cc2782fa9c0ea90acdaeff",
+    "CALIBRATION_FROZEN.RECEIPT.json": "d8cacb9d05614c398bf0e1c6b5634006ae7618cb5cbc40e3cf3c79ef8dec4842",
+    "CONFIRMATION_PREDICTIONS_FROZEN.RECEIPT.json": "5da813b6b51a693eeeb802ca86be406daaa7076f2f9a870551fc7b94c017d036"
+  },
+  "reveal_receipts_sha256": {
+    "CONFIRMATION_REVEAL_STARTED.json": "e5e4657d2ab68e0c70eee22eadfb59d31d2986c6af37f6f888cdd47f9b8875f4",
+    "CONFIRMATION_REVEAL_PARSED.json": "1a79ab103d512e78ab8f2af5f6be8b7a0b7aefbadae2cc5bb7165449f6c13d2c"
+  },
+  "integrity_scope": "Detect inconsistent local files; no certification against coordinated rewriting."
+}

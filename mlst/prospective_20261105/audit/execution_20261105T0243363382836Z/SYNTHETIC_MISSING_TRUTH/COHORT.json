@@ -1,0 +1,552 @@
+{
+  "schema": "prospective_unit_calibration_v1",
+  "data_mode": "synthetic",
+  "records": [
+    {
+      "record_id": "SYNTHETIC_calibration_0_MASK0",
+      "unit_id": "SYNTHETIC_calibration_0_UNIT",
+      "role": "calibration",
+      "formulation_id": "SYNTHETIC_calibration_0_FORMULA",
+      "preparation_batch_id": "SYNTHETIC_calibration_0_BATCH",
+      "source_id": "SYNTHETIC_SOURCE",
+      "source_version": "SYNTHETIC_VERSION",
+      "source_record_key": "SYNTHETIC_calibration_0_RAW",
+      "provenance_reference": "SYNTHETIC_ONLY_NO_MEASUREMENT",
+      "material_state": "SYNTHETIC_NO_MATERIAL",
+      "temperature_kelvin": 298.15,
+      "identity_aliases": [
+        "SYNTHETIC_calibration_0_PHYSICAL_ALIAS"
+      ],
+      "is_synthetic": true,
+      "targets_previously_inspected": false,
+      "native_gamma": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        8.0,
+        16.0,
+        32.0
+      ],
+      "observed_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "target_indices": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "record_id": "SYNTHETIC_calibration_1_MASK0",
+      "unit_id": "SYNTHETIC_calibration_1_UNIT",
+      "role": "calibration",
+      "formulation_id": "SYNTHETIC_calibration_1_FORMULA",
+      "preparation_batch_id": "SYNTHETIC_calibration_1_BATCH",
+      "source_id": "SYNTHETIC_SOURCE",
+      "source_version": "SYNTHETIC_VERSION",
+      "source_record_key": "SYNTHETIC_calibration_1_RAW",
+      "provenance_reference": "SYNTHETIC_ONLY_NO_MEASUREMENT",
+      "material_state": "SYNTHETIC_NO_MATERIAL",
+      "temperature_kelvin": 298.15,
+      "identity_aliases": [
+        "SYNTHETIC_calibration_1_PHYSICAL_ALIAS"
+      ],
+      "is_synthetic": true,
+      "targets_previously_inspected": false,
+      "native_gamma": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        8.0,
+        16.0,
+        32.0
+      ],
+      "observed_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "target_indices": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "record_id": "SYNTHETIC_calibration_2_MASK0",
+      "unit_id": "SYNTHETIC_calibration_2_UNIT",
+      "role": "calibration",
+      "formulation_id": "SYNTHETIC_calibration_2_FORMULA",
+      "preparation_batch_id": "SYNTHETIC_calibration_2_BATCH",
+      "source_id": "SYNTHETIC_SOURCE",
+      "source_version": "SYNTHETIC_VERSION",
+      "source_record_key": "SYNTHETIC_calibration_2_RAW",
+      "provenance_reference": "SYNTHETIC_ONLY_NO_MEASUREMENT",
+      "material_state": "SYNTHETIC_NO_MATERIAL",
+      "temperature_kelvin": 298.15,
+      "identity_aliases": [
+        "SYNTHETIC_calibration_2_PHYSICAL_ALIAS"
+      ],
+      "is_synthetic": true,
+      "targets_previously_inspected": false,
+      "native_gamma": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        8.0,
+        16.0,
+        32.0
+      ],
+      "observed_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "target_indices": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "record_id": "SYNTHETIC_calibration_3_MASK0",
+      "unit_id": "SYNTHETIC_calibration_3_UNIT",
+      "role": "calibration",
+      "formulation_id": "SYNTHETIC_calibration_3_FORMULA",
+      "preparation_batch_id": "SYNTHETIC_calibration_3_BATCH",
+      "source_id": "SYNTHETIC_SOURCE",
+      "source_version": "SYNTHETIC_VERSION",
+      "source_record_key": "SYNTHETIC_calibration_3_RAW",
+      "provenance_reference": "SYNTHETIC_ONLY_NO_MEASUREMENT",
+      "material_state": "SYNTHETIC_NO_MATERIAL",
+      "temperature_kelvin": 298.15,
+      "identity_aliases": [
+        "SYNTHETIC_calibration_3_PHYSICAL_ALIAS"
+      ],
+      "is_synthetic": true,
+      "targets_previously_inspected": false,
+      "native_gamma": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        8.0,
+        16.0,
+        32.0
+      ],
+      "observed_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "target_indices": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "record_id": "SYNTHETIC_calibration_4_MASK0",
+      "unit_id": "SYNTHETIC_calibration_4_UNIT",
+      "role": "calibration",
+      "formulation_id": "SYNTHETIC_calibration_4_FORMULA",
+      "preparation_batch_id": "SYNTHETIC_calibration_4_BATCH",
+      "source_id": "SYNTHETIC_SOURCE",
+      "source_version": "SYNTHETIC_VERSION",
+      "source_record_key": "SYNTHETIC_calibration_4_RAW",
+      "provenance_reference": "SYNTHETIC_ONLY_NO_MEASUREMENT",
+      "material_state": "SYNTHETIC_NO_MATERIAL",
+      "temperature_kelvin": 298.15,
+      "identity_aliases": [
+        "SYNTHETIC_calibration_4_PHYSICAL_ALIAS"
+      ],
+      "is_synthetic": true,
+      "targets_previously_inspected": false,
+      "native_gamma": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        8.0,
+        16.0,
+        32.0
+      ],
+      "observed_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "target_indices": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "record_id": "SYNTHETIC_calibration_5_MASK0",
+      "unit_id": "SYNTHETIC_calibration_5_UNIT",
+      "role": "calibration",
+      "formulation_id": "SYNTHETIC_calibration_5_FORMULA",
+      "preparation_batch_id": "SYNTHETIC_calibration_5_BATCH",
+      "source_id": "SYNTHETIC_SOURCE",
+      "source_version": "SYNTHETIC_VERSION",
+      "source_record_key": "SYNTHETIC_calibration_5_RAW",
+      "provenance_reference": "SYNTHETIC_ONLY_NO_MEASUREMENT",
+      "material_state": "SYNTHETIC_NO_MATERIAL",
+      "temperature_kelvin": 298.15,
+      "identity_aliases": [
+        "SYNTHETIC_calibration_5_PHYSICAL_ALIAS"
+      ],
+      "is_synthetic": true,
+      "targets_previously_inspected": false,
+      "native_gamma": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        8.0,
+        16.0,
+        32.0
+      ],
+      "observed_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "target_indices": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "record_id": "SYNTHETIC_calibration_6_MASK0",
+      "unit_id": "SYNTHETIC_calibration_6_UNIT",
+      "role": "calibration",
+      "formulation_id": "SYNTHETIC_calibration_6_FORMULA",
+      "preparation_batch_id": "SYNTHETIC_calibration_6_BATCH",
+      "source_id": "SYNTHETIC_SOURCE",
+      "source_version": "SYNTHETIC_VERSION",
+      "source_record_key": "SYNTHETIC_calibration_6_RAW",
+      "provenance_reference": "SYNTHETIC_ONLY_NO_MEASUREMENT",
+      "material_state": "SYNTHETIC_NO_MATERIAL",
+      "temperature_kelvin": 298.15,
+      "identity_aliases": [
+        "SYNTHETIC_calibration_6_PHYSICAL_ALIAS"
+      ],
+      "is_synthetic": true,
+      "targets_previously_inspected": false,
+      "native_gamma": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        8.0,
+        16.0,
+        32.0
+      ],
+      "observed_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "target_indices": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "record_id": "SYNTHETIC_calibration_7_MASK0",
+      "unit_id": "SYNTHETIC_calibration_7_UNIT",
+      "role": "calibration",
+      "formulation_id": "SYNTHETIC_calibration_7_FORMULA",
+      "preparation_batch_id": "SYNTHETIC_calibration_7_BATCH",
+      "source_id": "SYNTHETIC_SOURCE",
+      "source_version": "SYNTHETIC_VERSION",
+      "source_record_key": "SYNTHETIC_calibration_7_RAW",
+      "provenance_reference": "SYNTHETIC_ONLY_NO_MEASUREMENT",
+      "material_state": "SYNTHETIC_NO_MATERIAL",
+      "temperature_kelvin": 298.15,
+      "identity_aliases": [
+        "SYNTHETIC_calibration_7_PHYSICAL_ALIAS"
+      ],
+      "is_synthetic": true,
+      "targets_previously_inspected": false,
+      "native_gamma": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        8.0,
+        16.0,
+        32.0
+      ],
+      "observed_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "target_indices": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "record_id": "SYNTHETIC_calibration_8_MASK0",
+      "unit_id": "SYNTHETIC_calibration_8_UNIT",
+      "role": "calibration",
+      "formulation_id": "SYNTHETIC_calibration_8_FORMULA",
+      "preparation_batch_id": "SYNTHETIC_calibration_8_BATCH",
+      "source_id": "SYNTHETIC_SOURCE",
+      "source_version": "SYNTHETIC_VERSION",
+      "source_record_key": "SYNTHETIC_calibration_8_RAW",
+      "provenance_reference": "SYNTHETIC_ONLY_NO_MEASUREMENT",
+      "material_state": "SYNTHETIC_NO_MATERIAL",
+      "temperature_kelvin": 298.15,
+      "identity_aliases": [
+        "SYNTHETIC_calibration_8_PHYSICAL_ALIAS"
+      ],
+      "is_synthetic": true,
+      "targets_previously_inspected": false,
+      "native_gamma": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        8.0,
+        16.0,
+        32.0
+      ],
+      "observed_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "target_indices": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "record_id": "SYNTHETIC_confirmation_0_MASK0",
+      "unit_id": "SYNTHETIC_confirmation_0_UNIT",
+      "role": "confirmation",
+      "formulation_id": "SYNTHETIC_confirmation_0_FORMULA",
+      "preparation_batch_id": "SYNTHETIC_confirmation_0_BATCH",
+      "source_id": "SYNTHETIC_SOURCE",
+      "source_version": "SYNTHETIC_VERSION",
+      "source_record_key": "SYNTHETIC_confirmation_0_RAW",
+      "provenance_reference": "SYNTHETIC_ONLY_NO_MEASUREMENT",
+      "material_state": "SYNTHETIC_NO_MATERIAL",
+      "temperature_kelvin": 298.15,
+      "identity_aliases": [
+        "SYNTHETIC_confirmation_0_PHYSICAL_ALIAS"
+      ],
+      "is_synthetic": true,
+      "targets_previously_inspected": false,
+      "native_gamma": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        8.0,
+        16.0,
+        32.0
+      ],
+      "observed_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "target_indices": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "record_id": "SYNTHETIC_confirmation_1_MASK0",
+      "unit_id": "SYNTHETIC_confirmation_1_UNIT",
+      "role": "confirmation",
+      "formulation_id": "SYNTHETIC_confirmation_1_FORMULA",
+      "preparation_batch_id": "SYNTHETIC_confirmation_1_BATCH",
+      "source_id": "SYNTHETIC_SOURCE",
+      "source_version": "SYNTHETIC_VERSION",
+      "source_record_key": "SYNTHETIC_confirmation_1_RAW",
+      "provenance_reference": "SYNTHETIC_ONLY_NO_MEASUREMENT",
+      "material_state": "SYNTHETIC_NO_MATERIAL",
+      "temperature_kelvin": 298.15,
+      "identity_aliases": [
+        "SYNTHETIC_confirmation_1_PHYSICAL_ALIAS"
+      ],
+      "is_synthetic": true,
+      "targets_previously_inspected": false,
+      "native_gamma": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        8.0,
+        16.0,
+        32.0
+      ],
+      "observed_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "target_indices": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "record_id": "SYNTHETIC_confirmation_2_MASK0",
+      "unit_id": "SYNTHETIC_confirmation_2_UNIT",
+      "role": "confirmation",
+      "formulation_id": "SYNTHETIC_confirmation_2_FORMULA",
+      "preparation_batch_id": "SYNTHETIC_confirmation_2_BATCH",
+      "source_id": "SYNTHETIC_SOURCE",
+      "source_version": "SYNTHETIC_VERSION",
+      "source_record_key": "SYNTHETIC_confirmation_2_RAW",
+      "provenance_reference": "SYNTHETIC_ONLY_NO_MEASUREMENT",
+      "material_state": "SYNTHETIC_NO_MATERIAL",
+      "temperature_kelvin": 298.15,
+      "identity_aliases": [
+        "SYNTHETIC_confirmation_2_PHYSICAL_ALIAS"
+      ],
+      "is_synthetic": true,
+      "targets_previously_inspected": false,
+      "native_gamma": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        8.0,
+        16.0,
+        32.0
+      ],
+      "observed_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "target_indices": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "record_id": "SYNTHETIC_calibration_0_MASK0_REPEATED_QUERY",
+      "unit_id": "SYNTHETIC_calibration_0_UNIT",
+      "role": "calibration",
+      "formulation_id": "SYNTHETIC_calibration_0_FORMULA",
+      "preparation_batch_id": "SYNTHETIC_calibration_0_BATCH",
+      "source_id": "SYNTHETIC_SOURCE",
+      "source_version": "SYNTHETIC_VERSION",
+      "source_record_key": "SYNTHETIC_calibration_0_RAW",
+      "provenance_reference": "SYNTHETIC_ONLY_NO_MEASUREMENT",
+      "material_state": "SYNTHETIC_NO_MATERIAL",
+      "temperature_kelvin": 298.15,
+      "identity_aliases": [
+        "SYNTHETIC_calibration_0_PHYSICAL_ALIAS"
+      ],
+      "is_synthetic": true,
+      "targets_previously_inspected": false,
+      "native_gamma": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        8.0,
+        16.0,
+        32.0
+      ],
+      "observed_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "target_indices": [
+        6,
+        7,
+        8
+      ]
+    }
+  ]
+}

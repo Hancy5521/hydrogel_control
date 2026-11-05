@@ -1,8 +1,8 @@
 {
-  "checkpoint_id": "hydrogel-mlst-representation-controls-20261105",
-  "prepared_utc": "2026-11-05T01:47:27.021977+00:00",
-  "classification": "MLST targeted author-review manuscript, not submitted or certified publication ready",
-  "parent_archived_commit": "93dfc04b6c3b48801fca97a25f6f138ea4f10a32",
+  "checkpoint_id": "hydrogel-mlst-prospective-preparation-20261105",
+  "prepared_utc": "2026-11-05T02:56:32.190832+00:00",
+  "classification": "Author-review paper plus prospective evidence preparation; not submitted, not independently calibrated or certified publication ready",
+  "parent_archived_commit": "a1ae1991eef9b8dffd7fe1d2f2a93de584a99a08",
   "paper_main_sha256": "be4930e6f1d27a2959e6061002974d770e425f1c664c6bc01617ff5a4c1a3cfb",
   "paper_supplement_sha256": "e04edca0bb960e7b3e47182f80131b1222a906b324a4aa79a489ca60b31095d7",
   "main_pages": 17,
@@ -14,13 +14,14 @@
   "additional_reconstruction_assets_checked": 2,
   "scientific_model_runtime_and_original_scores_unchanged": true,
   "current_revision_activity": {
-    "material_fit_calls": 250,
-    "new_reference_fits": 0,
-    "new_frozen_candidate_or_deployment_fits": 0,
-    "material_forecasts": 750,
-    "material_target_score_calls": 750,
-    "new_physical_measurements": 0,
-    "changes": "Preregistered representation controls on consumed25P, separate posthoc covariance allocation,6newMLSTselected readings and revised author-review papers"
+    "real_material_fit_calls": 0,
+    "real_material_forecasts": 0,
+    "real_material_target_score_calls": 0,
+    "new_admitted_independent_units": 0,
+    "real_calibration_or_confirmation": false,
+    "bounded_synthetic_test_families_qualified": 13,
+    "initial_harness_failure_retained": true,
+    "changes": "Future unit-level calibration/confirmation helper, strict metadata/freeze/reveal contract, source gate, primary theory and author handoff. No manuscript or material predictor change."
   },
   "cumulative_scientific_evidence": {
     "development_formulations_consumed": 25,
@@ -44,5 +45,15 @@
   "paper_main_path": "mlst/study_20261104/manuscript/Hydrogel_Continuation_MLST.docx",
   "paper_supplement_path": "mlst/study_20261104/manuscript/Supplement_MLST.docx",
   "new_method_status": "PriorKL wins developmental CRPS but not jointdensity; no post-hocdeploymentselection. Curvature not besttestedbasis.",
-  "new_study": "mlst/study_20261104/README.txt"
+  "new_study": "mlst/study_20261104/README.txt",
+  "previous_development_revision_activity": {
+    "material_fit_calls": 250,
+    "new_reference_fits": 0,
+    "new_frozen_candidate_or_deployment_fits": 0,
+    "material_forecasts": 750,
+    "material_target_score_calls": 750,
+    "new_physical_measurements": 0,
+    "changes": "Preregistered representation controls on consumed25P, separate posthoc covariance allocation,6newMLSTselected readings and revised author-review papers"
+  },
+  "prospective_preparation": "mlst/prospective_20261105/READ_FIRST.html"
 }

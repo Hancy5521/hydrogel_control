@@ -1,0 +1,64 @@
+{
+  "schema": "prospective_unit_calibration_v1",
+  "data_mode": "synthetic",
+  "protocol_id": "SYNTHETIC_INDEPENDENT_AUDIT",
+  "scientific_goal": "new_formulation",
+  "alpha": "0.1",
+  "response_scale": "ln(eta/(1 Pa s))",
+  "primary_endpoint": "unit_equal_mean_target_log_trapezoid_CRPS",
+  "quadrature_domain": "first_hidden_native_to_last_hidden_native",
+  "single_target_rule": "reject_primary_endpoint",
+  "prediction_failure_rule": "retain_receipt_and_stop_no_subset",
+  "anchor_rule": "SYNTHETIC_ONLY_anchor_rule",
+  "anchor_policy_reference": "SYNTHETIC_ONLY_anchor_policy_reference",
+  "global_support_gamma_s_inverse": [
+    0.012787740677595104,
+    754.5143432617188
+  ],
+  "primary_method_id": "shared_local_Gaussian",
+  "methods": [
+    {
+      "id": "shared_local_Gaussian",
+      "model_sha256": "d27561aa256d5e0291fa37dab2084646e416b73fd8580d4efb642855c0c71649",
+      "runtime_bindings_sha256": "e3d43e7d05baa953e6e4987b08d2da5ed68a8839244a42b19674551b9b98e836"
+    },
+    {
+      "id": "full_coordinate_GP",
+      "model_sha256": "2da1102e53e4e0d60d099f12e1269b32cfebea8ec6ca8a8f22a0e920ae39b7df",
+      "runtime_bindings_sha256": "581e0a25493e2aa3dafd71b459f42e1b234b8978c39041cb18187da7a08b7cfd"
+    },
+    {
+      "id": "conditional_Gaussian_control",
+      "model_sha256": "089229bcacf091593aeede2ed375c41682575b49ac303545d99c2210740764ef",
+      "runtime_bindings_sha256": "eacea0bd17cbe3037c4a322e0dc9703070eeadbe205b41aaa961e30f4c769c70"
+    }
+  ],
+  "material_state": "SYNTHETIC_NO_MATERIAL",
+  "temperature_kelvin": 298.15,
+  "scan_protocol_reference": "SYNTHETIC_ONLY_scan_protocol_reference",
+  "source_admission_reference": "SYNTHETIC_ONLY_source_admission_reference",
+  "independence_assumption_evidence": "SYNTHETIC_ONLY_independence_assumption_evidence",
+  "design_reviewed_by": "SYNTHETIC_ONLY_design_reviewed_by",
+  "design_review_reference": "SYNTHETIC_ONLY_design_review_reference",
+  "n_calibration_units": 9,
+  "n_confirmation_units": 3,
+  "sample_size_basis": "SYNTHETIC_ONLY_sample_size_basis",
+  "practical_error_tolerance": 0.1,
+  "practical_error_tolerance_unit": "SYNTHETIC_ONLY_practical_error_tolerance_unit",
+  "consumed_registry": {
+    "review_complete": true,
+    "review_reference": "SYNTHETIC_ONLY_REVIEW",
+    "record_keys": [
+      "SYNTHETIC_OLD_RUN"
+    ],
+    "preparation_batch_ids": [
+      "SYNTHETIC_OLD_BATCH"
+    ],
+    "formulation_ids": [
+      "SYNTHETIC_OLD_FORMULA"
+    ],
+    "identity_aliases": [
+      "SYNTHETIC_OLD_ALIAS"
+    ]
+  }
+}

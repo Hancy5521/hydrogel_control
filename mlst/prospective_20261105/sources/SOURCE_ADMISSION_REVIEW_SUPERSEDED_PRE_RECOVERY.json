@@ -1,0 +1,344 @@
+{
+  "schema_version": "1.0",
+  "actual_created_utc": "2026-11-05T02:12:49.724149+00:00",
+  "actual_created_Asia_Shanghai": "2026-11-05T10:12:49.724149+08:00",
+  "task": "manual prospective_validation_20261105T020511590098Z / independent_source_gate",
+  "scientific_question": "Can a genuinely unconsumed, compatible uncrosslinked ALG-Ph/HA-Ph precursor-ink native steady-flow dataset support independent confirmation and/or separately assigned calibration?",
+  "decision": "NO_NEW_SOURCE_ADMITTED_WITHIN_INSPECTED_BOUNDED_EVIDENCE",
+  "new_admitted_sources": 0,
+  "new_admitted_independent_units": 0,
+  "scope_limits": {
+    "requested_max_search_queries": 4,
+    "search_queries_submitted": 4,
+    "query_result_payloads_actually_read": 2,
+    "query_result_payloads_not_read": 2,
+    "requested_max_primary_pages": 8,
+    "new_primary_pages_opened": 0,
+    "reason_no_page_open": "No new precisely identified primary native-flow dataset emerged from the two inspected result payloads. No unqualified secondary lead or failed closed endpoint was promoted into evidence.",
+    "search_query_exact_utc": "Not retained for these child calls. They occurred during this actual parent run before this record was written. Do not infer per-query timestamps from artifact creation time.",
+    "unread_payload_limit": "Queries 3-4 were submitted in one tool call whose output was wholly context-truncated. Their content cannot support a positive or negative conclusion; no automatic retry performed.",
+    "not_claimed": [
+      "exhaustive web or Google Scholar search",
+      "absence of all compatible public datasets",
+      "all four result payloads read",
+      "new full-paper reading",
+      "complete prior-art clearance"
+    ]
+  },
+  "input_metadata_receipts": [
+    {
+      "role": "resume",
+      "path": "D:\\codex-root\\polymer_completion\\docs\\RESUME_CURRENT.md",
+      "sha256": "3fa42eeee26588dd153176e2d825430b41a157fe7deb55ece996bc4e8b60426d",
+      "read_depth": "metadata/proposal text only; no hidden target workbook"
+    },
+    {
+      "role": "consumed_source_register",
+      "path": "D:\\codex-root\\hydrogel_control\\external_validation\\20261101T1239423181800Z\\SOURCE_REGISTER.json",
+      "sha256": "cb35a7946632fb60545e00f5a31ad24111b179f04901a775e0182d14c5165ba0",
+      "read_depth": "metadata/proposal text only; no hidden target workbook"
+    },
+    {
+      "role": "prior_source_admission_plan",
+      "path": "D:\\codex-root\\hydrogel_control\\external_validation\\20261101T1239423181800Z\\SOURCE_ADMISSION_PLAN.json",
+      "sha256": "769d1e3514e91ba56745a0d34b7af4113778ca0917f7948d2347f4539a1b49ce",
+      "read_depth": "metadata/proposal text only; no hidden target workbook"
+    },
+    {
+      "role": "prior_closed_source_decisions",
+      "path": "H:\\polymer_completion_public\\research\\confirmation_source_decision_20261031T140122554179Z\\SOURCE_DECISIONS.json",
+      "sha256": "7abd6678a17d951c46461240c19cf5b2fd7a10b5e2dd8f211aafb5e785f08e61",
+      "read_depth": "metadata/proposal text only; no hidden target workbook"
+    },
+    {
+      "role": "rights_provenance",
+      "path": "D:\\codex-root\\hydrogel_control\\RIGHTS_AND_PROVENANCE.md",
+      "sha256": "290d90a711bdc24588be77c2bd47fd094e1d88a51fe4c49ef7df7823c3e2fa5e",
+      "read_depth": "metadata/proposal text only; no hidden target workbook"
+    },
+    {
+      "role": "user_priority_proposal",
+      "path": "[PRIVATE_USER_REQUEST_PATH_OMITTED; original content hash retained]",
+      "sha256": "c10341db3e3fd666854e190b7b91ef1ad0f4cb1b6c2245ef2fe5eaf0d09cd56d",
+      "read_depth": "metadata/proposal text only; no hidden target workbook"
+    }
+  ],
+  "frozen_production_model_sha256": "d72fc262fbae0e6fecc36568f0638166fe95e991bd5f7df100ab1434097d82d1",
+  "original_development_source": {
+    "article_doi": "10.1080/17452759.2026.2671497",
+    "dataset_doi": "10.5281/zenodo.19602891",
+    "dataset_version": "0.0.2",
+    "authors_as_inherited": "Colin Zhang; Kelum Elvitigala; Shinji Sakai",
+    "reported_total_formulations": 45,
+    "consumed_development_P": 25,
+    "protected_S": 20,
+    "protected_S_access": "Only the pre-existing lawful six-anchor role is known; hidden33 target values/workbooks were not opened by this task.",
+    "terms": "Inherited metadata identify CC BY4.0; actual source terms control any redistribution. Public Git does not mirror original raw records.",
+    "independence_decision": "Excluded as a new source. Mirrors, DOI aliases and versions cannot turn the same original units into independent confirmation/calibration."
+  },
+  "consumed_external_sources": [
+    {
+      "source_doi": "10.1371/journal.pone.0162849",
+      "title": "HA/CMHA solutions",
+      "source_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0162849.s001&type=supplementary",
+      "source_file_sha256": [
+        "51863dc748d71677f7d5d9d4bafb38272e3cc2b3fd80daac7de9f92b7482d9c9"
+      ],
+      "native_curves": 10,
+      "material_analysis_groups": 8,
+      "native_positions": 157,
+      "continuation_targets": 97,
+      "upstream_license_or_terms": "CC BY4.0, original article and author-supplied supporting data; no separate workbook license text exposed",
+      "identity_and_state": "Author-provided averaged native steady-shear responses; ten unique curves, eight material analysis groups. Concentration variants are not replicates.",
+      "source_inspectors_saw_responses": true,
+      "certified_independent_preparation_batches": false,
+      "admitted_input_record_sha256": "3d58ba427d5c25fc08d9b6234115cbf6a1dbbfdadd480e810bdb33f23906c340"
+    },
+    {
+      "source_doi": "10.17638/datacat.liverpool.ac.uk/1296",
+      "title": "GG/peK inks",
+      "source_url": "https://datacat.liverpool.ac.uk/1296/",
+      "source_file_sha256": [
+        "839ef305291fb8a4e9617dd97ae9945e9a03571ba052aa86b32a864068d339ac"
+      ],
+      "native_curves": 15,
+      "material_analysis_groups": 5,
+      "native_positions": 369,
+      "continuation_targets": 279,
+      "upstream_license_or_terms": "CC BY3.0, official file record",
+      "identity_and_state": "Fifteen instrument runs, five nominal compositions; independent preparation identity and most temperatures unknown.",
+      "source_inspectors_saw_responses": true,
+      "certified_independent_preparation_batches": false,
+      "admitted_input_record_sha256": "5ed0d191c1d8c20f3d807b5cb8fe1e9f56f0cd45ed4c2d70052188e2be55b7bd"
+    },
+    {
+      "source_doi": "10.1016/j.matt.2023.01.011",
+      "title": "Granular hydrogels",
+      "source_url": "https://raw.githubusercontent.com/connor-verheyen/DataDrivenGranularHydrogels/v1.0/data/Dataset_CompilingAllRheology.xlsx",
+      "source_file_sha256": [
+        "c3d600596f6a38ed6d6fdbc19a94a141de06dcc773a4f7a1834361cb997bcde5"
+      ],
+      "native_curves": 16,
+      "material_analysis_groups": 5,
+      "native_positions": 296,
+      "continuation_targets": 200,
+      "upstream_license_or_terms": "Zenodo other-open, GitHub no named LICENSE; no raw arrays/workbook redistributed",
+      "identity_and_state": "Sixteen preselected forward runs, five conservative related groups; state/operator differs from original precursor inks.",
+      "source_inspectors_saw_responses": true,
+      "certified_independent_preparation_batches": false,
+      "admitted_input_record_sha256": "887c2415c0ad8ac57690f6b1b0800e4818319bae3ff28d029c04090d965b0db6"
+    },
+    {
+      "source_doi": "10.34894/HBKOLJ",
+      "title": "Dynamic crosslinked alginate",
+      "source_url": "https://doi.org/10.34894/HBKOLJ",
+      "source_file_sha256": [
+        "3e90415f7e098458267ccbd156828242f67dbf6ea264c0dfbaf9e12aea500b3c",
+        "b180df82d76231b88dd713b0e3d44bb245aa3031f957d6bcc09b2bc7bbe6beda",
+        "ba3f26e8aac57d9db425a217c2ec0e34e3ccf1fae373b091944ecb452c350360",
+        "bc1f79b87ca135b86e208bfc2d46d89abd573f4646c93cf375e766d0059b2fe3",
+        "ee3d04d256794ad6440cfdc54a2debf6894dfc0e79cdf5a7e483c34a6006d6a4"
+      ],
+      "native_curves": 5,
+      "material_analysis_groups": 5,
+      "native_positions": 235,
+      "continuation_targets": 205,
+      "upstream_license_or_terms": "CC BY4.0, official Dataverse record",
+      "identity_and_state": "Five forward native flow sweeps; one nonmonotone rate trajectory excluded before forecasts. Stress-controlled flow after time sweep, not precursor state.",
+      "source_inspectors_saw_responses": true,
+      "certified_independent_preparation_batches": false,
+      "admitted_input_record_sha256": "c29a484865b882b53e76e809185e4772a322ca477bf2a1c04bfd0775404ca17d"
+    }
+  ],
+  "consumed_external_totals": {
+    "native_curves": 46,
+    "material_analysis_groups": 23,
+    "native_positions": 1057,
+    "continuation_targets": 781,
+    "role": "All four sources and 46 curves have already been source-inspected and scored. They are transfer stress tests, not new same-domain confirmation or independent calibration. The new KL representation has no external scores."
+  },
+  "previous_closed_sources": [
+    {
+      "id": "Wiley-Alg3APBA",
+      "doi": "10.1002/mame.202500324",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/mame.202500324",
+      "first_published": "2025-10-21",
+      "volume_issue": "311(2),2026",
+      "version": "Publisher article visible 2026-10-31; revision/commit not exposed",
+      "license": "Page marked Open Access; exact reuse license not exposed in returned text. No article/supplement copied into delivery.",
+      "read_depth": "Abstract; methods2.4-2.8; selected limitations3.8; data-availability and supporting-file listing, not full article or supplement.",
+      "observation": "Alg-3APBA with Alg-Ph control; rheological method is oscillatory frequency/time sweeps. Supporting data described as available on reasonable request; supplementary DOCX listed but not downloaded.",
+      "decision": "Not admitted for native steady viscosity-versus-rate confirmation. Neither shared author nor phenol terminology identifies a compatible measurement operator. Uninspected supplement contents remain unknown.",
+      "reopen": "An openly accessible traceable native steady-flow dataset with formulation/batch roles; no author contact authorized."
+    },
+    {
+      "id": "Polymers-AlgHA-2025",
+      "doi": "10.3390/polym17040528",
+      "url": "https://www.mdpi.com/2073-4360/17/4/528",
+      "version": "Publisher/search metadata,2025; file version not acquired",
+      "license": "Not verified here; journal defaults not substituted for a file license.",
+      "read_depth": "Search-returned methods and supplement listing only; direct article429, not retried.",
+      "observation": "Search identifies nonphenolated Alg/HA precursor steady-flow measurements at23/37C,0.5-1000s^-1. Listed SI includes batch figure and fitted flow parameters, not a verified native-row table.",
+      "decision": "Not admitted. It may be a separate unmodified-polymer transport challenge if native data, state, grouping and reuse become available; not the frozen phenolated-ink same-domain cohort.",
+      "reopen": "New accessible native data and role evidence; not periodic retry of the failed page."
+    },
+    {
+      "id": "Polymers-TyrAlgCollagen",
+      "doi": "10.3390/polym14153173",
+      "url": "https://www.mdpi.com/2073-4360/14/15/3173",
+      "version": "2022 search metadata; native file version unverified",
+      "license": "Unverified, no file downloaded",
+      "read_depth": "Search excerpt only; direct429, no retry.",
+      "observation": "Tyramine-functionalized alginate/collagen inks and H2O2:TYR conditions in excerpt; cannot certify unreacted Alg/HA state or original units.",
+      "decision": "No admission; materially different formulation and unqualified crosslinking/native-data roles.",
+      "reopen": "Specific new compatible raw data/metadata, not the title alone."
+    },
+    {
+      "id": "PMC-AlginicHA-2013",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3595364/",
+      "doi": null,
+      "version": "Search metadata only",
+      "license": "Not verified",
+      "read_depth": "Title and search snippet only. Direct page returned browser challenge; not bypassed.",
+      "observation": "Enzymatically crosslinked alginic/HA composite gels; native precursor steady-flow data/state/group not obtained.",
+      "decision": "Unresolved, not admitted; no judgment of absence or data quality.",
+      "reopen": "Genuinely new accessible native data/metadata with reuse permission."
+    },
+    {
+      "id": "RSC-mixer-2024",
+      "doi": "10.1039/D4LC00552J",
+      "url": "https://pubs.rsc.org/en/content/getauthorversionpdf/d4lc00552j",
+      "version": "Author-version URL; bytes not obtained",
+      "license": "Unknown",
+      "read_depth": "Search snippet only; direct403 not retried.",
+      "observation": "Snippet discusses aqueous sodium-alginate mixing; no current compatible measured-curve dataset established.",
+      "decision": "Unresolved, not admitted; not declared method or raw-data inspection.",
+      "reopen": "New public native file with material and operator role."
+    },
+    {
+      "id": "ETH-bitstream",
+      "url": "https://www.research-collection.ethz.ch/bitstreams/ef307a77-36c1-4002-a34d-12015eaef65f/download",
+      "doi": null,
+      "version": "Title/file identity unverified",
+      "license": "Unknown",
+      "read_depth": "Search snippet mentioning HA-Tyr synthesis only; direct403 not retried.",
+      "observation": "Cannot identify compatible native steady precursor curves or independent unit mapping.",
+      "decision": "Unresolved, not admitted.",
+      "reopen": "Identified new accessible dataset metadata, not a mirror to circumvent the failed request."
+    }
+  ],
+  "closed_branch_policy": "The six prior closed sources are inherited from the dated decision receipt; no endpoint was reopened here. Only new public native data or identity/state/role evidence permits reopening, not elapsed time.",
+  "additional_known_not_same_domain": [
+    {
+      "id": "Carbopol-Manchester",
+      "doi": "10.48420/29376416",
+      "version": "v1",
+      "url": "https://figshare.manchester.ac.uk/articles/dataset/Rheological_Characterisation_of_a_Carbopol_Microgel_and_a_Commercial_Body_Lotion_Steady_Oscillatory_and_Parallel_Superposition_Measurements/29376416",
+      "known_terms": "CC BY4.0 in prior metadata",
+      "status": "Already known source. Different microgel chemistry/state. Prior response-family assessment used oscillatory data; an unconsumed steady-flow modality would remain a different-domain stress task, not original ALG-Ph/HA-Ph new batch confirmation. No file opened here."
+    },
+    {
+      "id": "Hydrogel_BO",
+      "article_doi": "10.1002/adfm.75639",
+      "repository": "https://github.com/ZicorChen/Hydrogel_BO",
+      "status": "Already known GelMA mechanical outcomes, not admitted native steady-flow curves; license unknown/restrictive author README in prior record. No new visit or file download."
+    }
+  ],
+  "queries": [
+    {
+      "order": 1,
+      "query": "\"ALG-Ph\" \"HA-Ph\" \"rheology\" data viscosity dataset -19602891 -2671497",
+      "status": "search_excerpt_read",
+      "result_references": [
+        "turn1440search0",
+        "turn1440search1",
+        "turn1440search12",
+        "turn1440search13"
+      ],
+      "observed": "Results repeated the excluded original Zenodo19602891/source2671497 and its mirrors. Negative query filters did not prevent rediscovery. No new admitted independent units."
+    },
+    {
+      "order": 2,
+      "query": "\"phenolated\" \"alginate\" \"viscosity\" \"dataset\" rheology",
+      "status": "search_excerpt_read",
+      "result_references": [
+        "turn1440search9",
+        "turn1440search8",
+        "turn1440search11"
+      ],
+      "observed": "Returned nonprimary figure/title leads for Alg-Ph/CNF and silk-fibroin nanofiber inks, plus a previously closed Alg3APBA paper. No verified new native rows, compatible precursor state, independent preparation mapping or file terms. Secondary leads were not used as admission evidence."
+    },
+    {
+      "order": 3,
+      "query": "\"alginate\" \"hyaluronic\" \"rheology\" site:data.mendeley.com/datasets",
+      "status": "tool_call_returned_but_payload_unread_context_truncation",
+      "observed": null
+    },
+    {
+      "order": 4,
+      "query": "\"alginate\" \"bioink\" \"flow\" \"rheology\" data site:figshare.com/articles/dataset",
+      "status": "tool_call_returned_but_payload_unread_context_truncation",
+      "observed": null
+    }
+  ],
+  "unqualified_leads": [
+    {
+      "lead": "Alg-Ph/CNF rheological-property/printability figure",
+      "origin": "nonprimary search result turn1440search9",
+      "primary_identity_verified": false,
+      "native_dataset_verified": false,
+      "decision": "Not admitted. Secondary figure alone cannot establish native rows, compatible state, reuse terms or independent unit identities."
+    },
+    {
+      "lead": "Silk fibroin nanofibers as extrusion-printing ink additive (2020 title lead)",
+      "origin": "nonprimary search result turn1440search8",
+      "primary_identity_verified": false,
+      "native_dataset_verified": false,
+      "decision": "Not admitted. Distinct ink additive, no verified compatible native dataset or preparation metadata."
+    }
+  ],
+  "candidate_admission_schema": {
+    "required_before_target_access": [
+      "canonical article/dataset DOI or original repository and exact version/commit",
+      "material and chemistry, including phenol modification and polymer concentration",
+      "uncrosslinked precursor versus crosslinked gel state",
+      "formulation_id, independently prepared batch_id, test_run_id and replicate/averaging role",
+      "temperature and steady-flow operator, scan direction, preshear/equilibration and instrument geometry where reported",
+      "native positive unique shear-rate coordinates and units, with coordinate-only support gate",
+      "traceable measured viscosity values distinct from fitted/digitized/generated predictions",
+      "file-specific access/reuse terms and exact source-file hash",
+      "unit overlap crosswalk against original45 and all four consumed sources",
+      "confirmation versus calibration versus exploratory roles assigned by independent units before any targets are revealed"
+    ],
+    "frozen_coordinate_gate": {
+      "minimum_native_points": 12,
+      "anchors": "six lowest eligible native rates",
+      "rate_support_s_inverse": [
+        0.012787740677595104,
+        754.5143432617188
+      ],
+      "evaluation": "remaining eligible native points strictly above the highest anchor; no performance-based admission"
+    },
+    "metadata_state_unknown": "Unreported preparation identity, temperature, native origin or license stays unknown; defaults and a different DOI do not repair it."
+  },
+  "permitted_reopen_conditions": [
+    "A newly identified public native steady-flow file with exact provenance and compatible unreacted precursor state",
+    "A genuinely new source version explicitly adds previously unconsumed independent formulation/preparation units, with old-to-new crosswalk",
+    "Author supplies previously unused native measured curves and batch metadata plus permissible access and an agreed pre-target role split"
+  ],
+  "recommendation": "Preserve the current retrospective-development and transfer claims. Independent same-domain calibration/confirmation needs new eligible units; do not widen old curves after looking at targets and call that independent calibration. Further public searching is possible only as a separately bounded scope, with no claim that the current pass exhausted the internet.",
+  "claims_boundary": "A transparent narrow-domain development manuscript need not establish every possible generalization claim. This source gate only limits stronger independent-batch and calibration claims; it does not estimate MLST acceptance probability.",
+  "operations_performed": {
+    "metadata_files_read": true,
+    "search_calls_submitted": true,
+    "new_dataset_workbooks_downloaded": 0,
+    "raw_curve_values_read": 0,
+    "protected_S_targets_read": 0,
+    "new_fits": 0,
+    "new_material_scores": 0,
+    "new_calibration": 0,
+    "author_contacts": 0,
+    "uploads_or_publication": 0
+  },
+  "public_export_note": "Derived public ledger: personal attachment path omitted; exact original bytes remain in local review package. Science facts/URL/source hashes unchanged."
+}

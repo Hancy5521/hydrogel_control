@@ -1,0 +1,39 @@
+{
+  "actual_utc": "2026-11-05T02:46:05.734366+00:00",
+  "kind": "offline release preparation only, not a created repository DOI or publication",
+  "status": "AUTHOR_DECISIONS_REQUIRED",
+  "public_repository": "https://github.com/Hancy5521/hydrogel_control",
+  "scientific_version_to_preserve": "a1ae1991eef9b8dffd7fe1d2f2a93de584a99a08",
+  "allowed_current_increment": [
+    "bounded metadata/source/theory review",
+    "future calibration helper and null templates",
+    "artificial software audit",
+    "Chinese explanation and author checklist"
+  ],
+  "not_in_this_increment": [
+    "raw hydrogel measurement arrays",
+    "protected hidden20S outcomes",
+    "old 610MB archive",
+    "Python distribution",
+    "independent material validation",
+    "public original third-party datasets"
+  ],
+  "author_rights_decisions": {
+    "own_code_license": null,
+    "own_weight_license": null,
+    "original_measurement_and_processed_input_access": null,
+    "third_party_figure_table_reuse": null,
+    "authors_affiliations_contributions_funding_conflicts_ORCID_AI_use": null,
+    "selected_repository_DOI_if_any": null
+  },
+  "submission_data_gate": "At publication, data needed for verification/reproduction must be accessible according to MLST applicable IOP policy; detail lawful restrictions. Upon-request alone is insufficient under this policy. A trusted repository DOI is recommended, not the only allowed medium.",
+  "policy_url": "https://publishingsupport.iopscience.iop.org/iop-publishing-open-data-policy/",
+  "policy_actual_read_depth": "official page text, MLST applicability, sharing options, restrictions and recommended trusted repository sections read in this run; not a new data admission",
+  "no_auto_contact_upload_or_submission": true,
+  "next_release_procedure": [
+    "Author resolves explicit rights/access and scientific version decisions.",
+    "Prepare the exact approved measured/processed inputs, outer-fold predictive assets, source/weights/environment and commands with a role and license ledger.",
+    "Independently verify reconstruction from a clean copy; distinguish saved-score replay, artificial checks and original experiment rerun.",
+    "Only on author decision deposit/release approved assets with version, author metadata and real DOI if issued; bind exact checksums in manuscript."
+  ]
+}

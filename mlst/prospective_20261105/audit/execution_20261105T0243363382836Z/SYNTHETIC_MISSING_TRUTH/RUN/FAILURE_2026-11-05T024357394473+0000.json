@@ -1,0 +1,11 @@
+{
+  "actual_utc": "2026-11-05T02:43:57.394491+00:00",
+  "phase": "calibrate",
+  "error_type": "FileNotFoundError",
+  "message": "[Errno 2] No such file or directory: 'H:\\\\polymer_completion_public\\\\research\\\\prospective_validation_20261105T020511590098Z\\\\audit\\\\execution_20261105T0243363382836Z\\\\SYNTHETIC_MISSING_TRUTH\\\\DOES_NOT_EXIST.json'",
+  "truth_open_attempt_started": true,
+  "truth_bytes_loaded": false,
+  "truth_payload_parsed": false,
+  "failed_cohort_not_scored_as_successful_subset": true,
+  "instruction": "Inspect actual reveal status. A reveal-start marker is intent/open attempt, not proof of measured values read."
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "prospective_unit_calibration_v1",
+  "completed_actual_utc": "2026-11-05T02:43:45.715060+00:00",
+  "artifact_file": "CALIBRATION_PREDICTIONS_FROZEN.json",
+  "artifact_sha256": "88de847b34c10e7599197595bd0a9ee47fa6fbbd9bebcb8eafd8b45d51b39f48",
+  "protocol_sha256": "dfe943020fe3b22291c46d5a5f4aaafff9dfe7a05d101d47862e89f7df46ed20",
+  "prior_receipts_sha256": {
+    "PROTOCOL.RECEIPT.json": "b72f9cbf0357ed5265f77620887dd5a7b5efc1f298bbdd6bbc3061fa09aaa9da"
+  },
+  "reveal_receipts_sha256": {},
+  "integrity_scope": "Detect inconsistent local files; no certification against coordinated rewriting."
+}

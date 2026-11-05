@@ -1,0 +1,35 @@
+{
+  "actual_utc": "2026-11-05T02:23:36.691758+00:00",
+  "sources": [
+    {
+      "file": "calibration.py",
+      "sha256": "7265dd6d86a3d310b45470e582d2e72733267a4ad3e98a6d562c67a863dd8d07",
+      "bytes": 7662,
+      "syntax": "AST_PARSE_ONLY"
+    },
+    {
+      "file": "cli.py",
+      "sha256": "686fbb9849527e38e33bc97420ef3384beae118d328728f2ee205f9a8ccdf088",
+      "bytes": 10952,
+      "syntax": "AST_PARSE_ONLY"
+    },
+    {
+      "file": "contract.py",
+      "sha256": "43c90a0d3cb81bcb11e63b65472340ab3780728b8ea3701b912358c1319cd15a",
+      "bytes": 16800,
+      "syntax": "AST_PARSE_ONLY"
+    },
+    {
+      "file": "evaluation.py",
+      "sha256": "7671bcf3577fe9ad2fd38da537ae911e08a052d2902903403b6ee8af3dd2b98c",
+      "bytes": 9212,
+      "syntax": "AST_PARSE_ONLY"
+    }
+  ],
+  "qualification_executed": false,
+  "real_data_read": false,
+  "historical_measurement_files_read": false,
+  "real_fits": 0,
+  "real_calibration": false,
+  "verification": "AST syntax and JSON parse only; no module import, formulas, workflow or data execution"
+}

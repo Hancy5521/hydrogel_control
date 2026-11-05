@@ -1,0 +1,220 @@
+{
+  "artifact_kind": "independent_synthetic_software_audit_not_material_evidence",
+  "actual_end_utc": "2026-11-05T02:43:58.758199+00:00",
+  "plan_sha256": "c8b74fb5eca02498e5ec36a98f02591c5d11dcddab39612bd7f1d001310faa17",
+  "source_unchanged_during_audit": true,
+  "source_sha256": {
+    "calibration.py": "a7229cad9c96cda151629ab256ce16e320438754ffdb379af0fc4b3aae8d1ba0",
+    "cli.py": "30c83242691ec594e8a22c71500828393148f6b09ecb70fdab3402fcc2300705",
+    "contract.py": "a7e736ea3d1791be6ca56e8c56585967909a86e812c44cf41fd69176c27ad808",
+    "evaluation.py": "fe9f4601c1070a04488cc1d30d8ad3a69e38268583e7cf68c9db3af41691c1ce",
+    "DESIGN_TEMPLATE.json": "cde5efff63ed58f725ebb27e7df94594c4d8c8cd00d9b07e8e57796f1b75ddfd",
+    "COHORT_TEMPLATE.json": "e656900c8544276e7a8b6267a473c80c0be6edd8f9ab40444b001c00e99bc6ad",
+    "FORMAT_EXAMPLES.json": "16f0256679d99164caf435a04913accbf91b3fc8b841ee1ec62a688ccd300d84",
+    "README.txt": "1a035c676d1b3a64f9fedcb9ad08de70c5c4a961e8199d44a514b8b2e4fa17e0",
+    "requirements.txt": "99f43573522565d7c480efd1f954892948033915df6a4e685327e995d3396eb6"
+  },
+  "test_families": 13,
+  "pass_count": 12,
+  "fail_count": 1,
+  "new_material_measurements_or_fits": 0,
+  "results": [
+    {
+      "name": "exact_rank_and_finite_exchangeability_count",
+      "status": "PASS",
+      "actual_utc": "2026-11-05T02:43:38.917379+00:00",
+      "details": {
+        "exact_order_cases": 155,
+        "exhaustive_held_out_assignments": 2475,
+        "meaning": "Finite exchangeability rank counting, no random/material coverage estimate"
+      }
+    },
+    {
+      "name": "ties_zero_empty_and_unbounded_sets",
+      "status": "PASS",
+      "actual_utc": "2026-11-05T02:43:39.058126+00:00",
+      "details": {
+        "ties_leave_one_out": [
+          [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "0.1",
+            6
+          ],
+          [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "0.25",
+            6
+          ],
+          [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "1/3",
+            6
+          ],
+          [
+            [
+              0.0,
+              0.0,
+              1.0,
+              1.0,
+              2.0,
+              2.0
+            ],
+            "0.1",
+            6
+          ],
+          [
+            [
+              0.0,
+              0.0,
+              1.0,
+              1.0,
+              2.0,
+              2.0
+            ],
+            "0.25",
+            6
+          ],
+          [
+            [
+              0.0,
+              0.0,
+              1.0,
+              1.0,
+              2.0,
+              2.0
+            ],
+            "1/3",
+            4
+          ]
+        ],
+        "zero_and_empty_and_unbounded_are_explicit": true
+      }
+    },
+    {
+      "name": "explicit_infinity_origin_reasons",
+      "status": "PASS",
+      "actual_utc": "2026-11-05T02:43:39.059512+00:00",
+      "details": {
+        "numeric_overflow_and_explicit_extended_score_and_insufficient_n_are_distinguished": true,
+        "numeric_overflow_is_vacuous_set_not_material_reliability": true
+      }
+    },
+    {
+      "name": "invalid_scale_inputs_and_band_density_separation",
+      "status": "PASS",
+      "actual_utc": "2026-11-05T02:43:39.059883+00:00",
+      "details": {
+        "invalid_cases_rejected": 14,
+        "raw_density_scores_unchanged_by_band_q": true
+      }
+    },
+    {
+      "name": "standalone_band_diagnostic_validation",
+      "status": "PASS",
+      "actual_utc": "2026-11-05T02:43:39.082215+00:00",
+      "details": {
+        "invalid_unbounded_diagnostic_inputs_rejected": 5
+      }
+    },
+    {
+      "name": "Gaussian_CRPS_independent_CDF_integral",
+      "status": "PASS",
+      "actual_utc": "2026-11-05T02:43:39.082338+00:00",
+      "details": {
+        "cases": 15,
+        "oracle": "CDF squared-error numerical quadrature, scipy quad/ndtr",
+        "max_absolute_error": 8.881784197001252e-16
+      }
+    },
+    {
+      "name": "native_lograte_trapezoid_affine_oracle",
+      "status": "PASS",
+      "actual_utc": "2026-11-05T02:43:39.092830+00:00",
+      "details": {
+        "affine_integral_cases": 3,
+        "invalid_grids_rejected": 7
+      }
+    },
+    {
+      "name": "physical_group_roles_and_null_real_template",
+      "status": "PASS",
+      "actual_utc": "2026-11-05T02:43:39.092964+00:00",
+      "details": {
+        "calibration_units_with_duplicate_query": 9,
+        "metadata_mutations_rejected": 6,
+        "known_formula_new_batch_differentiated": true,
+        "null_real_template_rejected": true
+      }
+    },
+    {
+      "name": "same_methods_grid_roles_truth_and_byte_bindings",
+      "status": "PASS",
+      "actual_utc": "2026-11-05T02:43:39.098006+00:00",
+      "details": {
+        "method_grid_hash_label_contamination_or_subset_mutations_rejected": 5,
+        "truth_grid_mismatch_rejected": true,
+        "conflicting_same_curve_overlapping_truth_rejected": true
+      }
+    },
+    {
+      "name": "null_real_registration_and_changed_source_guard",
+      "status": "PASS",
+      "actual_utc": "2026-11-05T02:43:39.103345+00:00",
+      "details": {
+        "null_real_template_cannot_register": true,
+        "source_change_in_isolated_audit_copy_is_rejected": true
+      }
+    },
+    {
+      "name": "synthetic_nine_cal_three_confirm_three_methods_CLI",
+      "status": "FAIL",
+      "actual_utc": "2026-11-05T02:43:42.243329+00:00",
+      "error_type": "KeyError",
+      "message": "'scores_by_independent_unit'"
+    },
+    {
+      "name": "forecast_and_q_freeze_byte_identity_guards",
+      "status": "PASS",
+      "actual_utc": "2026-11-05T02:43:46.642546+00:00",
+      "details": {
+        "postfreeze_single_file_changes_rejected": [
+          "forecast_after_freeze",
+          "q_after_calibration"
+        ],
+        "limitation": "Hash receipts do not prove absence of prior human access or prevent malicious coordinated rewriting of every local receipt"
+      }
+    },
+    {
+      "name": "truth_open_attempt_and_actual_read_failure_distinction",
+      "status": "PASS",
+      "actual_utc": "2026-11-05T02:43:54.436473+00:00",
+      "details": {
+        "failed_file_open_is_not_mislabeled_measured_values_loaded": true,
+        "conservative_stop_after_open_attempt_and_no_silent_retry": true
+      }
+    }
+  ],
+  "actual_command_count": 18,
+  "prohibited_inference": "No hydrogel coverage, new-batch generalization, efficacy, experimental saving or submission-readiness claim follows from these artificial inputs."
+}

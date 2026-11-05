@@ -1,0 +1,53 @@
+{
+  "schema": "prospective_unit_calibration_v1",
+  "data_mode": "real",
+  "protocol_id": null,
+  "scientific_goal": null,
+  "alpha": "0.1",
+  "response_scale": "ln(eta/(1 Pa s))",
+  "primary_endpoint": "unit_equal_mean_target_log_trapezoid_CRPS",
+  "quadrature_domain": "first_hidden_native_to_last_hidden_native",
+  "single_target_rule": "reject_primary_endpoint",
+  "prediction_failure_rule": "retain_receipt_and_stop_no_subset",
+  "anchor_rule": null,
+  "anchor_policy_reference": null,
+  "global_support_gamma_s_inverse": [0.012787740677595104, 754.5143432617188],
+  "primary_method_id": "shared_local_Gaussian",
+  "methods": [
+    {
+      "id": "shared_local_Gaussian",
+      "model_sha256": "d72fc262fbae0e6fecc36568f0638166fe95e991bd5f7df100ab1434097d82d1",
+      "runtime_bindings_sha256": null
+    },
+    {
+      "id": "full_coordinate_GP",
+      "model_sha256": null,
+      "runtime_bindings_sha256": null
+    },
+    {
+      "id": "conditional_Gaussian_control",
+      "model_sha256": null,
+      "runtime_bindings_sha256": null
+    }
+  ],
+  "material_state": null,
+  "temperature_kelvin": null,
+  "scan_protocol_reference": null,
+  "source_admission_reference": null,
+  "independence_assumption_evidence": null,
+  "design_reviewed_by": null,
+  "design_review_reference": null,
+  "n_calibration_units": null,
+  "n_confirmation_units": null,
+  "sample_size_basis": null,
+  "practical_error_tolerance": null,
+  "practical_error_tolerance_unit": null,
+  "consumed_registry": {
+    "review_complete": false,
+    "review_reference": null,
+    "record_keys": [],
+    "preparation_batch_ids": [],
+    "formulation_ids": [],
+    "identity_aliases": []
+  }
+}

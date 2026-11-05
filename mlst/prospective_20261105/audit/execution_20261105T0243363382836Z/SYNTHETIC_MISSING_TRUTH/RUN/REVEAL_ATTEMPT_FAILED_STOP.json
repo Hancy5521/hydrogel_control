@@ -1,0 +1,10 @@
+{
+  "actual_utc": "2026-11-05T02:43:57.405403+00:00",
+  "phase": "calibrate",
+  "failure_receipt": "FAILURE_2026-11-05T024357394473+0000.json",
+  "truth_open_attempt_started": true,
+  "truth_bytes_loaded": false,
+  "truth_payload_parsed": false,
+  "status": "TRUTH_OPEN_ATTEMPT_FAILED_STOP_FOR_REVIEW_NO_SILENT_RETRY",
+  "measurement_source_or_blindness_certified": false
+}

@@ -1,0 +1,996 @@
+{
+  "schema": "prospective_unit_calibration_v1",
+  "actual_utc": "2026-11-05T02:43:52.210883+00:00",
+  "role": "calibration",
+  "protocol_sha256": "290f90d385bda207b2b7e07fbf4222c5ad753bebf0508f9ac54346dc24784e8d",
+  "original_prediction_input_sha256": "da56d333db82c0b2e12980ee4d418bb05aeef9068d63e9a0259713e1a8dfcd75",
+  "payload": {
+    "schema": "prospective_unit_calibration_v1",
+    "data_mode": "synthetic",
+    "protocol_sha256": "290f90d385bda207b2b7e07fbf4222c5ad753bebf0508f9ac54346dc24784e8d",
+    "records": [
+      {
+        "record_id": "SYNTHETIC_calibration_0_MASK0",
+        "observed_gamma": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ],
+        "target_gamma": [
+          8.0,
+          16.0,
+          32.0
+        ],
+        "anchor_input_sha256": "f6d6d3a99688655bb89d33fe2fbd0dee43bbabbb10bd431aabd1dace5b6d4bfb",
+        "prediction_source_sha256": "6d1969ec3f43f01a02edd0fc0cb1ed364dc689cbe4268acc960fbefbb19e0f52",
+        "methods": {
+          "shared_local_Gaussian": {
+            "model_sha256": "d27561aa256d5e0291fa37dab2084646e416b73fd8580d4efb642855c0c71649",
+            "runtime_bindings_sha256": "e3d43e7d05baa953e6e4987b08d2da5ed68a8839244a42b19674551b9b98e836",
+            "mean_log_eta": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "covariance_log_eta": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          "full_coordinate_GP": {
+            "model_sha256": "2da1102e53e4e0d60d099f12e1269b32cfebea8ec6ca8a8f22a0e920ae39b7df",
+            "runtime_bindings_sha256": "581e0a25493e2aa3dafd71b459f42e1b234b8978c39041cb18187da7a08b7cfd",
+            "mean_log_eta": [
+              0.2,
+              0.2,
+              0.2
+            ],
+            "covariance_log_eta": [
+              [
+                1.44,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.44,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.44
+              ]
+            ]
+          },
+          "conditional_Gaussian_control": {
+            "model_sha256": "089229bcacf091593aeede2ed375c41682575b49ac303545d99c2210740764ef",
+            "runtime_bindings_sha256": "eacea0bd17cbe3037c4a322e0dc9703070eeadbe205b41aaa961e30f4c769c70",
+            "mean_log_eta": [
+              0.4,
+              0.4,
+              0.4
+            ],
+            "covariance_log_eta": [
+              [
+                1.9599999999999997,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.9599999999999997,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.9599999999999997
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "record_id": "SYNTHETIC_calibration_1_MASK0",
+        "observed_gamma": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ],
+        "target_gamma": [
+          8.0,
+          16.0,
+          32.0
+        ],
+        "anchor_input_sha256": "ae8234485dcb730f832f8b854c6f18780d800503f72b31899ef8b62565e58e7a",
+        "prediction_source_sha256": "ceb4fab440ef8c04b315d5a3d3e2d9308ad13e1dba4dc67c2765d5fd2fe7b241",
+        "methods": {
+          "shared_local_Gaussian": {
+            "model_sha256": "d27561aa256d5e0291fa37dab2084646e416b73fd8580d4efb642855c0c71649",
+            "runtime_bindings_sha256": "e3d43e7d05baa953e6e4987b08d2da5ed68a8839244a42b19674551b9b98e836",
+            "mean_log_eta": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "covariance_log_eta": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          "full_coordinate_GP": {
+            "model_sha256": "2da1102e53e4e0d60d099f12e1269b32cfebea8ec6ca8a8f22a0e920ae39b7df",
+            "runtime_bindings_sha256": "581e0a25493e2aa3dafd71b459f42e1b234b8978c39041cb18187da7a08b7cfd",
+            "mean_log_eta": [
+              0.2,
+              0.2,
+              0.2
+            ],
+            "covariance_log_eta": [
+              [
+                1.44,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.44,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.44
+              ]
+            ]
+          },
+          "conditional_Gaussian_control": {
+            "model_sha256": "089229bcacf091593aeede2ed375c41682575b49ac303545d99c2210740764ef",
+            "runtime_bindings_sha256": "eacea0bd17cbe3037c4a322e0dc9703070eeadbe205b41aaa961e30f4c769c70",
+            "mean_log_eta": [
+              0.4,
+              0.4,
+              0.4
+            ],
+            "covariance_log_eta": [
+              [
+                1.9599999999999997,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.9599999999999997,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.9599999999999997
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "record_id": "SYNTHETIC_calibration_2_MASK0",
+        "observed_gamma": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ],
+        "target_gamma": [
+          8.0,
+          16.0,
+          32.0
+        ],
+        "anchor_input_sha256": "e23eee0911c5e286d6480b8d005cbcdb70202294b97e922464001c83e1d433a9",
+        "prediction_source_sha256": "9c32deef93d6a8344924b82c28cfbc3ee61ac350be6255b14db1068e424c5104",
+        "methods": {
+          "shared_local_Gaussian": {
+            "model_sha256": "d27561aa256d5e0291fa37dab2084646e416b73fd8580d4efb642855c0c71649",
+            "runtime_bindings_sha256": "e3d43e7d05baa953e6e4987b08d2da5ed68a8839244a42b19674551b9b98e836",
+            "mean_log_eta": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "covariance_log_eta": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          "full_coordinate_GP": {
+            "model_sha256": "2da1102e53e4e0d60d099f12e1269b32cfebea8ec6ca8a8f22a0e920ae39b7df",
+            "runtime_bindings_sha256": "581e0a25493e2aa3dafd71b459f42e1b234b8978c39041cb18187da7a08b7cfd",
+            "mean_log_eta": [
+              0.2,
+              0.2,
+              0.2
+            ],
+            "covariance_log_eta": [
+              [
+                1.44,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.44,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.44
+              ]
+            ]
+          },
+          "conditional_Gaussian_control": {
+            "model_sha256": "089229bcacf091593aeede2ed375c41682575b49ac303545d99c2210740764ef",
+            "runtime_bindings_sha256": "eacea0bd17cbe3037c4a322e0dc9703070eeadbe205b41aaa961e30f4c769c70",
+            "mean_log_eta": [
+              0.4,
+              0.4,
+              0.4
+            ],
+            "covariance_log_eta": [
+              [
+                1.9599999999999997,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.9599999999999997,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.9599999999999997
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "record_id": "SYNTHETIC_calibration_3_MASK0",
+        "observed_gamma": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ],
+        "target_gamma": [
+          8.0,
+          16.0,
+          32.0
+        ],
+        "anchor_input_sha256": "74612544fc4b451b5def345884b7f2a1b2ddf44387eb655f46c84adc06e37e32",
+        "prediction_source_sha256": "02dbdadf20f8b107358f22bf5bc528826ba2c64d06bf08a751abfc6762d21872",
+        "methods": {
+          "shared_local_Gaussian": {
+            "model_sha256": "d27561aa256d5e0291fa37dab2084646e416b73fd8580d4efb642855c0c71649",
+            "runtime_bindings_sha256": "e3d43e7d05baa953e6e4987b08d2da5ed68a8839244a42b19674551b9b98e836",
+            "mean_log_eta": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "covariance_log_eta": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          "full_coordinate_GP": {
+            "model_sha256": "2da1102e53e4e0d60d099f12e1269b32cfebea8ec6ca8a8f22a0e920ae39b7df",
+            "runtime_bindings_sha256": "581e0a25493e2aa3dafd71b459f42e1b234b8978c39041cb18187da7a08b7cfd",
+            "mean_log_eta": [
+              0.2,
+              0.2,
+              0.2
+            ],
+            "covariance_log_eta": [
+              [
+                1.44,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.44,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.44
+              ]
+            ]
+          },
+          "conditional_Gaussian_control": {
+            "model_sha256": "089229bcacf091593aeede2ed375c41682575b49ac303545d99c2210740764ef",
+            "runtime_bindings_sha256": "eacea0bd17cbe3037c4a322e0dc9703070eeadbe205b41aaa961e30f4c769c70",
+            "mean_log_eta": [
+              0.4,
+              0.4,
+              0.4
+            ],
+            "covariance_log_eta": [
+              [
+                1.9599999999999997,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.9599999999999997,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.9599999999999997
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "record_id": "SYNTHETIC_calibration_4_MASK0",
+        "observed_gamma": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ],
+        "target_gamma": [
+          8.0,
+          16.0,
+          32.0
+        ],
+        "anchor_input_sha256": "5a1a4cb57e1c640c6c49e4e36387a176d70197eedbe63b3a5998a18ded6b74ca",
+        "prediction_source_sha256": "26ac3dc9127acce0694ae6abda80354ced9ca95270a53e382a89635c6839fa24",
+        "methods": {
+          "shared_local_Gaussian": {
+            "model_sha256": "d27561aa256d5e0291fa37dab2084646e416b73fd8580d4efb642855c0c71649",
+            "runtime_bindings_sha256": "e3d43e7d05baa953e6e4987b08d2da5ed68a8839244a42b19674551b9b98e836",
+            "mean_log_eta": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "covariance_log_eta": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          "full_coordinate_GP": {
+            "model_sha256": "2da1102e53e4e0d60d099f12e1269b32cfebea8ec6ca8a8f22a0e920ae39b7df",
+            "runtime_bindings_sha256": "581e0a25493e2aa3dafd71b459f42e1b234b8978c39041cb18187da7a08b7cfd",
+            "mean_log_eta": [
+              0.2,
+              0.2,
+              0.2
+            ],
+            "covariance_log_eta": [
+              [
+                1.44,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.44,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.44
+              ]
+            ]
+          },
+          "conditional_Gaussian_control": {
+            "model_sha256": "089229bcacf091593aeede2ed375c41682575b49ac303545d99c2210740764ef",
+            "runtime_bindings_sha256": "eacea0bd17cbe3037c4a322e0dc9703070eeadbe205b41aaa961e30f4c769c70",
+            "mean_log_eta": [
+              0.4,
+              0.4,
+              0.4
+            ],
+            "covariance_log_eta": [
+              [
+                1.9599999999999997,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.9599999999999997,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.9599999999999997
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "record_id": "SYNTHETIC_calibration_5_MASK0",
+        "observed_gamma": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ],
+        "target_gamma": [
+          8.0,
+          16.0,
+          32.0
+        ],
+        "anchor_input_sha256": "5022de3ae8bc0ced746e69dda574dcb096d6d706ab1113d7e913409a11bd5d39",
+        "prediction_source_sha256": "3020e535419e2ef6105d5464aba080960cbc09d8fc39bf7e934cecc448fa4ff7",
+        "methods": {
+          "shared_local_Gaussian": {
+            "model_sha256": "d27561aa256d5e0291fa37dab2084646e416b73fd8580d4efb642855c0c71649",
+            "runtime_bindings_sha256": "e3d43e7d05baa953e6e4987b08d2da5ed68a8839244a42b19674551b9b98e836",
+            "mean_log_eta": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "covariance_log_eta": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          "full_coordinate_GP": {
+            "model_sha256": "2da1102e53e4e0d60d099f12e1269b32cfebea8ec6ca8a8f22a0e920ae39b7df",
+            "runtime_bindings_sha256": "581e0a25493e2aa3dafd71b459f42e1b234b8978c39041cb18187da7a08b7cfd",
+            "mean_log_eta": [
+              0.2,
+              0.2,
+              0.2
+            ],
+            "covariance_log_eta": [
+              [
+                1.44,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.44,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.44
+              ]
+            ]
+          },
+          "conditional_Gaussian_control": {
+            "model_sha256": "089229bcacf091593aeede2ed375c41682575b49ac303545d99c2210740764ef",
+            "runtime_bindings_sha256": "eacea0bd17cbe3037c4a322e0dc9703070eeadbe205b41aaa961e30f4c769c70",
+            "mean_log_eta": [
+              0.4,
+              0.4,
+              0.4
+            ],
+            "covariance_log_eta": [
+              [
+                1.9599999999999997,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.9599999999999997,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.9599999999999997
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "record_id": "SYNTHETIC_calibration_6_MASK0",
+        "observed_gamma": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ],
+        "target_gamma": [
+          8.0,
+          16.0,
+          32.0
+        ],
+        "anchor_input_sha256": "3fbf8c439e7ed6952e1867e4ec6570569e93f093ee5c4ebb06f171343b4eea52",
+        "prediction_source_sha256": "933c81f9a11a81587923ecafe20923bea2e23fed039ca734841c17a00c329031",
+        "methods": {
+          "shared_local_Gaussian": {
+            "model_sha256": "d27561aa256d5e0291fa37dab2084646e416b73fd8580d4efb642855c0c71649",
+            "runtime_bindings_sha256": "e3d43e7d05baa953e6e4987b08d2da5ed68a8839244a42b19674551b9b98e836",
+            "mean_log_eta": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "covariance_log_eta": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          "full_coordinate_GP": {
+            "model_sha256": "2da1102e53e4e0d60d099f12e1269b32cfebea8ec6ca8a8f22a0e920ae39b7df",
+            "runtime_bindings_sha256": "581e0a25493e2aa3dafd71b459f42e1b234b8978c39041cb18187da7a08b7cfd",
+            "mean_log_eta": [
+              0.2,
+              0.2,
+              0.2
+            ],
+            "covariance_log_eta": [
+              [
+                1.44,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.44,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.44
+              ]
+            ]
+          },
+          "conditional_Gaussian_control": {
+            "model_sha256": "089229bcacf091593aeede2ed375c41682575b49ac303545d99c2210740764ef",
+            "runtime_bindings_sha256": "eacea0bd17cbe3037c4a322e0dc9703070eeadbe205b41aaa961e30f4c769c70",
+            "mean_log_eta": [
+              0.4,
+              0.4,
+              0.4
+            ],
+            "covariance_log_eta": [
+              [
+                1.9599999999999997,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.9599999999999997,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.9599999999999997
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "record_id": "SYNTHETIC_calibration_7_MASK0",
+        "observed_gamma": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ],
+        "target_gamma": [
+          8.0,
+          16.0,
+          32.0
+        ],
+        "anchor_input_sha256": "dc8e118b6190e0dfdff86d20ff42df8a65995c0fe402670658fd8d4309f08a4a",
+        "prediction_source_sha256": "c5cda807a2c147c1446a662d0e253da7191c8b41d03973dc7127f0e875c10cac",
+        "methods": {
+          "shared_local_Gaussian": {
+            "model_sha256": "d27561aa256d5e0291fa37dab2084646e416b73fd8580d4efb642855c0c71649",
+            "runtime_bindings_sha256": "e3d43e7d05baa953e6e4987b08d2da5ed68a8839244a42b19674551b9b98e836",
+            "mean_log_eta": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "covariance_log_eta": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          "full_coordinate_GP": {
+            "model_sha256": "2da1102e53e4e0d60d099f12e1269b32cfebea8ec6ca8a8f22a0e920ae39b7df",
+            "runtime_bindings_sha256": "581e0a25493e2aa3dafd71b459f42e1b234b8978c39041cb18187da7a08b7cfd",
+            "mean_log_eta": [
+              0.2,
+              0.2,
+              0.2
+            ],
+            "covariance_log_eta": [
+              [
+                1.44,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.44,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.44
+              ]
+            ]
+          },
+          "conditional_Gaussian_control": {
+            "model_sha256": "089229bcacf091593aeede2ed375c41682575b49ac303545d99c2210740764ef",
+            "runtime_bindings_sha256": "eacea0bd17cbe3037c4a322e0dc9703070eeadbe205b41aaa961e30f4c769c70",
+            "mean_log_eta": [
+              0.4,
+              0.4,
+              0.4
+            ],
+            "covariance_log_eta": [
+              [
+                1.9599999999999997,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.9599999999999997,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.9599999999999997
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "record_id": "SYNTHETIC_calibration_8_MASK0",
+        "observed_gamma": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ],
+        "target_gamma": [
+          8.0,
+          16.0,
+          32.0
+        ],
+        "anchor_input_sha256": "15e91f6fa76fe2533d82e9d555eec4c310f8e9a12bfa8e59e108e77ccd8286b2",
+        "prediction_source_sha256": "93b9eea4fecf682913d96d464914ba17c75ffd867079dec0344bab747d8e6afa",
+        "methods": {
+          "shared_local_Gaussian": {
+            "model_sha256": "d27561aa256d5e0291fa37dab2084646e416b73fd8580d4efb642855c0c71649",
+            "runtime_bindings_sha256": "e3d43e7d05baa953e6e4987b08d2da5ed68a8839244a42b19674551b9b98e836",
+            "mean_log_eta": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "covariance_log_eta": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          "full_coordinate_GP": {
+            "model_sha256": "2da1102e53e4e0d60d099f12e1269b32cfebea8ec6ca8a8f22a0e920ae39b7df",
+            "runtime_bindings_sha256": "581e0a25493e2aa3dafd71b459f42e1b234b8978c39041cb18187da7a08b7cfd",
+            "mean_log_eta": [
+              0.2,
+              0.2,
+              0.2
+            ],
+            "covariance_log_eta": [
+              [
+                1.44,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.44,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.44
+              ]
+            ]
+          },
+          "conditional_Gaussian_control": {
+            "model_sha256": "089229bcacf091593aeede2ed375c41682575b49ac303545d99c2210740764ef",
+            "runtime_bindings_sha256": "eacea0bd17cbe3037c4a322e0dc9703070eeadbe205b41aaa961e30f4c769c70",
+            "mean_log_eta": [
+              0.4,
+              0.4,
+              0.4
+            ],
+            "covariance_log_eta": [
+              [
+                1.9599999999999997,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.9599999999999997,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.9599999999999997
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "record_id": "SYNTHETIC_calibration_0_MASK0_REPEATED_QUERY",
+        "observed_gamma": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ],
+        "target_gamma": [
+          8.0,
+          16.0,
+          32.0
+        ],
+        "anchor_input_sha256": "f6d6d3a99688655bb89d33fe2fbd0dee43bbabbb10bd431aabd1dace5b6d4bfb",
+        "prediction_source_sha256": "6d1969ec3f43f01a02edd0fc0cb1ed364dc689cbe4268acc960fbefbb19e0f52",
+        "methods": {
+          "shared_local_Gaussian": {
+            "model_sha256": "d27561aa256d5e0291fa37dab2084646e416b73fd8580d4efb642855c0c71649",
+            "runtime_bindings_sha256": "e3d43e7d05baa953e6e4987b08d2da5ed68a8839244a42b19674551b9b98e836",
+            "mean_log_eta": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "covariance_log_eta": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          "full_coordinate_GP": {
+            "model_sha256": "2da1102e53e4e0d60d099f12e1269b32cfebea8ec6ca8a8f22a0e920ae39b7df",
+            "runtime_bindings_sha256": "581e0a25493e2aa3dafd71b459f42e1b234b8978c39041cb18187da7a08b7cfd",
+            "mean_log_eta": [
+              0.2,
+              0.2,
+              0.2
+            ],
+            "covariance_log_eta": [
+              [
+                1.44,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.44,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.44
+              ]
+            ]
+          },
+          "conditional_Gaussian_control": {
+            "model_sha256": "089229bcacf091593aeede2ed375c41682575b49ac303545d99c2210740764ef",
+            "runtime_bindings_sha256": "eacea0bd17cbe3037c4a322e0dc9703070eeadbe205b41aaa961e30f4c769c70",
+            "mean_log_eta": [
+              0.4,
+              0.4,
+              0.4
+            ],
+            "covariance_log_eta": [
+              [
+                1.9599999999999997,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.9599999999999997,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.9599999999999997
+              ]
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "truth_file_open_attempted_in_this_phase": false,
+  "actual_human_blindness_certified": false
+}

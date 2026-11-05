@@ -1,0 +1,490 @@
+{
+  "schema": "prospective_unit_calibration_v1",
+  "actual_utc": "2026-11-05T02:49:07.654650+00:00",
+  "role": "confirmation",
+  "protocol_sha256": "dfe943020fe3b22291c46d5a5f4aaafff9dfe7a05d101d47862e89f7df46ed20",
+  "original_prediction_input_sha256": "2813f6b92052e2a5a22e86dbc2907ee3e2c27c6d954b5166eead0d5024f93eaa",
+  "payload": {
+    "schema": "prospective_unit_calibration_v1",
+    "data_mode": "synthetic",
+    "protocol_sha256": "dfe943020fe3b22291c46d5a5f4aaafff9dfe7a05d101d47862e89f7df46ed20",
+    "records": [
+      {
+        "record_id": "SYNTHETIC_confirmation_0_MASK0",
+        "observed_gamma": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ],
+        "target_gamma": [
+          8.0,
+          16.0,
+          32.0
+        ],
+        "anchor_input_sha256": "be9df2d04ed8dea0a933b63d406e272a58b32adb9f844585cf939048e0425ca0",
+        "prediction_source_sha256": "87ffb4c2b284fada28c330cce7e16d0e811747066d8f052d786c5608681b0c5c",
+        "methods": {
+          "shared_local_Gaussian": {
+            "model_sha256": "d27561aa256d5e0291fa37dab2084646e416b73fd8580d4efb642855c0c71649",
+            "runtime_bindings_sha256": "e3d43e7d05baa953e6e4987b08d2da5ed68a8839244a42b19674551b9b98e836",
+            "mean_log_eta": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "covariance_log_eta": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          "full_coordinate_GP": {
+            "model_sha256": "2da1102e53e4e0d60d099f12e1269b32cfebea8ec6ca8a8f22a0e920ae39b7df",
+            "runtime_bindings_sha256": "581e0a25493e2aa3dafd71b459f42e1b234b8978c39041cb18187da7a08b7cfd",
+            "mean_log_eta": [
+              0.2,
+              0.2,
+              0.2
+            ],
+            "covariance_log_eta": [
+              [
+                1.44,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.44,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.44
+              ]
+            ]
+          },
+          "conditional_Gaussian_control": {
+            "model_sha256": "089229bcacf091593aeede2ed375c41682575b49ac303545d99c2210740764ef",
+            "runtime_bindings_sha256": "eacea0bd17cbe3037c4a322e0dc9703070eeadbe205b41aaa961e30f4c769c70",
+            "mean_log_eta": [
+              0.4,
+              0.4,
+              0.4
+            ],
+            "covariance_log_eta": [
+              [
+                1.9599999999999997,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.9599999999999997,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.9599999999999997
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "record_id": "SYNTHETIC_confirmation_1_MASK0",
+        "observed_gamma": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ],
+        "target_gamma": [
+          8.0,
+          16.0,
+          32.0
+        ],
+        "anchor_input_sha256": "6ae47d13c991af69e95b0ccf7e4d8e0ec7dff8aaf4eb3f89823b7c0d65bf9394",
+        "prediction_source_sha256": "601566267df8b3a98a06b40faf5d02edd206fd70c1e75be992749d89c848b380",
+        "methods": {
+          "shared_local_Gaussian": {
+            "model_sha256": "d27561aa256d5e0291fa37dab2084646e416b73fd8580d4efb642855c0c71649",
+            "runtime_bindings_sha256": "e3d43e7d05baa953e6e4987b08d2da5ed68a8839244a42b19674551b9b98e836",
+            "mean_log_eta": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "covariance_log_eta": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          "full_coordinate_GP": {
+            "model_sha256": "2da1102e53e4e0d60d099f12e1269b32cfebea8ec6ca8a8f22a0e920ae39b7df",
+            "runtime_bindings_sha256": "581e0a25493e2aa3dafd71b459f42e1b234b8978c39041cb18187da7a08b7cfd",
+            "mean_log_eta": [
+              0.2,
+              0.2,
+              0.2
+            ],
+            "covariance_log_eta": [
+              [
+                1.44,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.44,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.44
+              ]
+            ]
+          },
+          "conditional_Gaussian_control": {
+            "model_sha256": "089229bcacf091593aeede2ed375c41682575b49ac303545d99c2210740764ef",
+            "runtime_bindings_sha256": "eacea0bd17cbe3037c4a322e0dc9703070eeadbe205b41aaa961e30f4c769c70",
+            "mean_log_eta": [
+              0.4,
+              0.4,
+              0.4
+            ],
+            "covariance_log_eta": [
+              [
+                1.9599999999999997,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.9599999999999997,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.9599999999999997
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "record_id": "SYNTHETIC_confirmation_2_MASK0",
+        "observed_gamma": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ],
+        "target_gamma": [
+          8.0,
+          16.0,
+          32.0
+        ],
+        "anchor_input_sha256": "bdc06f356f35372f892dfb287e5eb9397ec325c3df832ec914607aa446830620",
+        "prediction_source_sha256": "3168e2f17b6dbe109aeabfcceea7dc91c23c49cb8cef3ca8be5baae9210dbf74",
+        "methods": {
+          "shared_local_Gaussian": {
+            "model_sha256": "d27561aa256d5e0291fa37dab2084646e416b73fd8580d4efb642855c0c71649",
+            "runtime_bindings_sha256": "e3d43e7d05baa953e6e4987b08d2da5ed68a8839244a42b19674551b9b98e836",
+            "mean_log_eta": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "covariance_log_eta": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          "full_coordinate_GP": {
+            "model_sha256": "2da1102e53e4e0d60d099f12e1269b32cfebea8ec6ca8a8f22a0e920ae39b7df",
+            "runtime_bindings_sha256": "581e0a25493e2aa3dafd71b459f42e1b234b8978c39041cb18187da7a08b7cfd",
+            "mean_log_eta": [
+              0.2,
+              0.2,
+              0.2
+            ],
+            "covariance_log_eta": [
+              [
+                1.44,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.44,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.44
+              ]
+            ]
+          },
+          "conditional_Gaussian_control": {
+            "model_sha256": "089229bcacf091593aeede2ed375c41682575b49ac303545d99c2210740764ef",
+            "runtime_bindings_sha256": "eacea0bd17cbe3037c4a322e0dc9703070eeadbe205b41aaa961e30f4c769c70",
+            "mean_log_eta": [
+              0.4,
+              0.4,
+              0.4
+            ],
+            "covariance_log_eta": [
+              [
+                1.9599999999999997,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.9599999999999997,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.9599999999999997
+              ]
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "truth_file_open_attempted_in_this_phase": false,
+  "actual_human_blindness_certified": false,
+  "calibration_sha256": "280acb8931b62a68ec558da907f7a56790cf2746c48fcede2885696c1555f34d",
+  "prediction_sets": {
+    "SYNTHETIC_confirmation_0_MASK0": {
+      "shared_local_Gaussian": {
+        "kind": "prediction_set_not_probability_density",
+        "lower_log_eta": [
+          -0.8,
+          -0.8,
+          -0.8
+        ],
+        "upper_log_eta": [
+          0.8,
+          0.8,
+          0.8
+        ],
+        "target_count": 3,
+        "unbounded": false,
+        "eta_reference_Pa_s": 1.0,
+        "positive_eta_interpretation": "exp(log endpoints) Pa s; use log endpoints if float exponentiation overflows",
+        "CRPS_defined_for_band": false,
+        "joint_log_density_defined_for_band": false
+      },
+      "full_coordinate_GP": {
+        "kind": "prediction_set_not_probability_density",
+        "lower_log_eta": [
+          -0.4000000000000001,
+          -0.4000000000000001,
+          -0.4000000000000001
+        ],
+        "upper_log_eta": [
+          0.8,
+          0.8,
+          0.8
+        ],
+        "target_count": 3,
+        "unbounded": false,
+        "eta_reference_Pa_s": 1.0,
+        "positive_eta_interpretation": "exp(log endpoints) Pa s; use log endpoints if float exponentiation overflows",
+        "CRPS_defined_for_band": false,
+        "joint_log_density_defined_for_band": false
+      },
+      "conditional_Gaussian_control": {
+        "kind": "prediction_set_not_probability_density",
+        "lower_log_eta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "upper_log_eta": [
+          0.8,
+          0.8,
+          0.8
+        ],
+        "target_count": 3,
+        "unbounded": false,
+        "eta_reference_Pa_s": 1.0,
+        "positive_eta_interpretation": "exp(log endpoints) Pa s; use log endpoints if float exponentiation overflows",
+        "CRPS_defined_for_band": false,
+        "joint_log_density_defined_for_band": false
+      }
+    },
+    "SYNTHETIC_confirmation_1_MASK0": {
+      "shared_local_Gaussian": {
+        "kind": "prediction_set_not_probability_density",
+        "lower_log_eta": [
+          -0.8,
+          -0.8,
+          -0.8
+        ],
+        "upper_log_eta": [
+          0.8,
+          0.8,
+          0.8
+        ],
+        "target_count": 3,
+        "unbounded": false,
+        "eta_reference_Pa_s": 1.0,
+        "positive_eta_interpretation": "exp(log endpoints) Pa s; use log endpoints if float exponentiation overflows",
+        "CRPS_defined_for_band": false,
+        "joint_log_density_defined_for_band": false
+      },
+      "full_coordinate_GP": {
+        "kind": "prediction_set_not_probability_density",
+        "lower_log_eta": [
+          -0.4000000000000001,
+          -0.4000000000000001,
+          -0.4000000000000001
+        ],
+        "upper_log_eta": [
+          0.8,
+          0.8,
+          0.8
+        ],
+        "target_count": 3,
+        "unbounded": false,
+        "eta_reference_Pa_s": 1.0,
+        "positive_eta_interpretation": "exp(log endpoints) Pa s; use log endpoints if float exponentiation overflows",
+        "CRPS_defined_for_band": false,
+        "joint_log_density_defined_for_band": false
+      },
+      "conditional_Gaussian_control": {
+        "kind": "prediction_set_not_probability_density",
+        "lower_log_eta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "upper_log_eta": [
+          0.8,
+          0.8,
+          0.8
+        ],
+        "target_count": 3,
+        "unbounded": false,
+        "eta_reference_Pa_s": 1.0,
+        "positive_eta_interpretation": "exp(log endpoints) Pa s; use log endpoints if float exponentiation overflows",
+        "CRPS_defined_for_band": false,
+        "joint_log_density_defined_for_band": false
+      }
+    },
+    "SYNTHETIC_confirmation_2_MASK0": {
+      "shared_local_Gaussian": {
+        "kind": "prediction_set_not_probability_density",
+        "lower_log_eta": [
+          -0.8,
+          -0.8,
+          -0.8
+        ],
+        "upper_log_eta": [
+          0.8,
+          0.8,
+          0.8
+        ],
+        "target_count": 3,
+        "unbounded": false,
+        "eta_reference_Pa_s": 1.0,
+        "positive_eta_interpretation": "exp(log endpoints) Pa s; use log endpoints if float exponentiation overflows",
+        "CRPS_defined_for_band": false,
+        "joint_log_density_defined_for_band": false
+      },
+      "full_coordinate_GP": {
+        "kind": "prediction_set_not_probability_density",
+        "lower_log_eta": [
+          -0.4000000000000001,
+          -0.4000000000000001,
+          -0.4000000000000001
+        ],
+        "upper_log_eta": [
+          0.8,
+          0.8,
+          0.8
+        ],
+        "target_count": 3,
+        "unbounded": false,
+        "eta_reference_Pa_s": 1.0,
+        "positive_eta_interpretation": "exp(log endpoints) Pa s; use log endpoints if float exponentiation overflows",
+        "CRPS_defined_for_band": false,
+        "joint_log_density_defined_for_band": false
+      },
+      "conditional_Gaussian_control": {
+        "kind": "prediction_set_not_probability_density",
+        "lower_log_eta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "upper_log_eta": [
+          0.8,
+          0.8,
+          0.8
+        ],
+        "target_count": 3,
+        "unbounded": false,
+        "eta_reference_Pa_s": 1.0,
+        "positive_eta_interpretation": "exp(log endpoints) Pa s; use log endpoints if float exponentiation overflows",
+        "CRPS_defined_for_band": false,
+        "joint_log_density_defined_for_band": false
+      }
+    }
+  }
+}

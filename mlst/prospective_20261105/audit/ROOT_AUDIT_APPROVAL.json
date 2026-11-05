@@ -1,0 +1,10 @@
+{
+  "actual_utc": "2026-11-05T02:42:54.992571+00:00",
+  "reviewer": "root",
+  "status": "APPROVED_BOUNDED_SYNTHETIC_ONLY",
+  "plan_sha256": "c8b74fb5eca02498e5ec36a98f02591c5d11dcddab39612bd7f1d001310faa17",
+  "audit_script_sha256": "c18372134b1b97bb8fb622bde6f2280c34a2cac78feff8b3d4f743df3912351c",
+  "source_freeze_sha256": "9c9de40c32901e7418aa80e42ece256b28895a0f7aa8623277a257bbb8ca3f6d",
+  "scope": "13 registered mathematical/CLI synthetic families only; no material files/fits/forecasts/calibration; preserve every failed receipt",
+  "user_confirmation_required": false
+}

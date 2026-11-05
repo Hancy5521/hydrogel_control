@@ -1,0 +1,375 @@
+{
+  "schema": "prospective_author_handoff_v1",
+  "actual_utc": "2026-11-05T02:37:01.888583+00:00",
+  "actual_Asia_Shanghai": "2026-11-05T10:37:01.888583+08:00",
+  "artifact_role": "Author preparation and evidence reconciliation; not new hydrogel material evidence, a completed prospective registration or a new algorithm",
+  "target_journal": "Machine Learning: Science and Technology (MLST)",
+  "task_scope": {
+    "files_authored": [
+      "PRIORITY_AND_AUTHOR_FACTS.json",
+      "AUTHOR_NEXT_STEPS_ZH.txt"
+    ],
+    "new_web_queries": 0,
+    "new_network_requests": 0,
+    "source_or_model_code_changes": 0,
+    "new_fits": 0,
+    "new_material_scores": 0,
+    "new_material_calibration": 0,
+    "new_paper_changes": 0,
+    "uploads_submissions_or_author_contacts": 0
+  },
+  "reading_scope": {
+    "user_attachment": "Full attached proposal read, including10 priorities, routeA/B, conformal formulas and author/release/AI declarations. Treated as user-requested proposals; journal-policy prose not independently reverified in this subtask.",
+    "producer": "Current README, null real-design template and format examples read; producer code is being revised/audited separately. No assertion that its old implementation receipt proves current qualification.",
+    "theory": "Read the independent theory review; separately extracted the transform/numerical section when combined output truncated. Literature ledger in that file belongs to its reviewer; this child does not claim those papers newly read."
+  },
+  "evidence_pins": {
+    "existing_public_repository": "https://github.com/Hancy5521/hydrogel_control",
+    "existing_public_git_head_observed": "a1ae1991eef9b8dffd7fe1d2f2a93de584a99a08",
+    "frozen_deployment_model_sha256": "d72fc262fbae0e6fecc36568f0638166fe95e991bd5f7df100ab1434097d82d1",
+    "completed_representation_protocol_sha256": "21c6a86096623e0a1ffa03522d16becd1e2a66b6cce373de048a5ded2348f908",
+    "completed750_frozen_prediction_manifest_sha256": "bab8fdc8e87c0d13598e446badf35bac0f0706667c7c118f1a6453fbd5066c1a",
+    "current_paper_bytes_from_resume": {
+      "main_sha256": "be4930e6f1d27a2959e6061002974d770e425f1c664c6bc01617ff5a4c1a3cfb",
+      "SI_sha256": "e04edca0bb960e7b3e47182f80131b1222a906b324a4aa79a489ca60b31095d7",
+      "status": "Inherited from current final resume; no Word/PDF created, parsed or modified by this subtask."
+    },
+    "input_snapshots": [
+      {
+        "role": "full_user_proposal",
+        "path": "[PRIVATE_USER_REQUEST_PATH_OMITTED; original content hash retained]",
+        "sha256": "c10341db3e3fd666854e190b7b91ef1ad0f4cb1b6c2245ef2fe5eaf0d09cd56d",
+        "snapshot_utc": "2026-11-05T02:37:01.888583+00:00"
+      },
+      {
+        "role": "current_resume",
+        "path": "D:\\codex-root\\polymer_completion\\docs\\RESUME_CURRENT.md",
+        "sha256": "3fa42eeee26588dd153176e2d825430b41a157fe7deb55ece996bc4e8b60426d",
+        "snapshot_utc": "2026-11-05T02:37:01.888583+00:00"
+      },
+      {
+        "role": "current_producer_readme",
+        "path": "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\code\\README.txt",
+        "sha256": "8ecbc8a9900e591669853d9cc54d1abc659ffec6815fe639c76bf86e802bc31c",
+        "snapshot_utc": "2026-11-05T02:37:01.888583+00:00"
+      },
+      {
+        "role": "current_design_template",
+        "path": "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\code\\DESIGN_TEMPLATE.json",
+        "sha256": "cde5efff63ed58f725ebb27e7df94594c4d8c8cd00d9b07e8e57796f1b75ddfd",
+        "snapshot_utc": "2026-11-05T02:37:01.888583+00:00"
+      },
+      {
+        "role": "current_schema_examples",
+        "path": "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\code\\FORMAT_EXAMPLES.json",
+        "sha256": "16f0256679d99164caf435a04913accbf91b3fc8b841ee1ec62a688ccd300d84",
+        "snapshot_utc": "2026-11-05T02:37:01.888583+00:00"
+      },
+      {
+        "role": "independent_theory_review",
+        "path": "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\theory\\THEORY_AND_PROTOCOL_REVIEW.json",
+        "sha256": "7cf87a1daa2ba9ad8ba19d86036e6850b849735126bff33f9508d646145d5db5",
+        "snapshot_utc": "2026-11-05T02:37:01.888583+00:00"
+      },
+      {
+        "role": "reused_existing_contract",
+        "path": "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\CONTRACT_REUSE.json",
+        "sha256": "21a0c8071207c499a6a0beef64a062f0712dc9ce00f7941a21bf1dca385e7101",
+        "snapshot_utc": "2026-11-05T02:37:01.888583+00:00"
+      },
+      {
+        "role": "new_bounded_source_admission",
+        "path": "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\sources\\SOURCE_ADMISSION_REVIEW.json",
+        "sha256": "12995cfe55edc46e01f29f38421e3c28ad3bf641d19b8c0cf84947ac39938a9f",
+        "snapshot_utc": "2026-11-05T02:37:01.888583+00:00"
+      },
+      {
+        "role": "completed_representation_study",
+        "path": "D:\\codex-root\\hydrogel_control\\mlst\\study_20261104\\experiment\\scores\\RESULT.json",
+        "sha256": "45606b385ded9934b2a64a5cf1847fb16a95e249b7f40fb5f0bf0daf44200f6b",
+        "snapshot_utc": "2026-11-05T02:37:01.888583+00:00"
+      },
+      {
+        "role": "rights_and_provenance",
+        "path": "D:\\codex-root\\hydrogel_control\\RIGHTS_AND_PROVENANCE.md",
+        "sha256": "290d90a711bdc24588be77c2bd47fd094e1d88a51fe4c49ef7df7823c3e2fa5e",
+        "snapshot_utc": "2026-11-05T02:37:01.888583+00:00"
+      }
+    ],
+    "snapshot_caveat": "The staged producer README/templates are observations during an active revision, not a frozen future study artifact. Re-pin final code/input receipts when an actual protocol is registered."
+  },
+  "preserved_scientific_facts": {
+    "consumed_development_formulations": 25,
+    "protected_S_anchor_only_formulations": 20,
+    "consumed_external_sources": 4,
+    "consumed_external_curves": 46,
+    "newly_admitted_calibration_units": 0,
+    "newly_admitted_confirmation_units": 0,
+    "original_curvature_macro_CRPS": 0.04327705155080712,
+    "prior_KL_macro_CRPS": 0.03713899835882181,
+    "curvature45_macro_CRPS": 0.04315636522415782,
+    "eight_new_random_aggregate": {
+      "mean_CRPS": 0.05659007429976977,
+      "median_CRPS": 0.05664484280184422,
+      "min_CRPS": 0.04984768180101237,
+      "max_CRPS": 0.06536171526147233,
+      "seeds_with_lower_CRPS_than_candidate": 0,
+      "warning": "No best-seed selection or inferential significance; all25P already consumed"
+    },
+    "KL_limits": "Standard prior-kernel eigenspace, not empirical FPCA. DevelopmentCRPS improves in19/25 units; joint log density is lower and middle-gap improves only8/25. No adopted deployed KL model, independent confirmation or KL external test exists.",
+    "P0_coverage_context": "Original frozen-curvature P0 middle-gap8/33 and later priorKL P0 middle-gap11/33 refer to different saved models; neither is new independent calibration.",
+    "new_source_gate_decision": "NO_NEW_SOURCE_ADMITTED_WITHIN_INSPECTED_BOUNDED_EVIDENCE"
+  },
+  "ten_priorities": [
+    {
+      "priority": 1,
+      "proposal_item": "Independent same-domain confirmation",
+      "status": "NOT_EXECUTED_NO_NEW_ADMITTED_UNITS",
+      "actual_evidence": "25P are repeatedly consumed development;20S have lawful anchors only; four already-inspected external sources/46 curves are transfer stress tests. The current bounded source gate admitted0 new independent units.",
+      "next_author_decision": "Select new_formulation or new_preparation_known_formula; supply a genuinely fresh compatible physical cohort and reviewed identity/source/state metadata; freeze roles and methods before targets.",
+      "not_inferred": "LOFO, another mask or new DOI naming does not create independent confirmation."
+    },
+    {
+      "priority": 2,
+      "proposal_item": "Independent curve/unit-level probability calibration",
+      "status": "MATHEMATICS_AND_ISOLATED_TOOLING_PREPARED_NO_MATERIAL_CALIBRATION",
+      "actual_evidence": "Current theory and producer README specify ordinary split conformal on whole-unit maximum standardized errors, exact finite-order index and an unbounded fallback. Real templates intentionally contain null decisions. Separate code qualification is not real calibration.",
+      "next_author_decision": "Reserve fresh calibration and confirmation units with disjoint physical lineage under the chosen estimand, fixed alpha string and a common query/measurement policy.",
+      "not_inferred": "No old25P/46 rescaling is independent; a prediction band is not a calibrated joint Gaussian density."
+    },
+    {
+      "priority": 3,
+      "proposal_item": "Representation robustness: multiple random directions plus FPCA/spline",
+      "status": "MULTIRANDOM_PRIOR_KL_AND_ROTATION_COMPLETED_FPCA_SPLINE_NOT_RUN",
+      "actual_evidence": "The completed study added8 prespecified random2D representations, one standard prior-kernel KL2D eigenspace and one45-degree curvature rotation:250 correction fits and750 frozen forecasts on consumed25P. All8 new random macroCRPS values exceed original curvature. PriorKL is better on development macroCRPS but worse on joint density and limited on middle-gap units.",
+      "next_author_decision": "No repeated seed/window search. Any empirical FPCA/spline comparison would require its own legitimate development and future freeze; it is not represented as already completed.",
+      "not_inferred": "Prior-kernel KL is not empirical FPCA, and does not replace the frozen curvature deployment artifact."
+    },
+    {
+      "priority": 4,
+      "proposal_item": "General conditional functional-prediction baseline",
+      "status": "EXISTING_GP_GAUSSIAN_AND_CONSTITUTIVE_CONTROLS_PRESENT_FPCA_CNP_NOT_RUN",
+      "actual_evidence": "Existing coordinate GP, conditional Gaussian and constitutive/point controls are available in the historical study. No empirical FPCA conditional Gaussian or Conditional Neural Process was trained in this task. PriorKL does not count as CNP/empiricalFPCA.",
+      "next_author_decision": "For the prospective study declare the frozen method panel before fresh labels. The default panel remains shared_local_Gaussian, full_coordinate_GP and conditional_Gaussian_control; a new KL/FPCA model needs its own lawful training/freeze first.",
+      "not_inferred": "A long baseline list is not independent validation; do not invent a missing modern baseline result."
+    },
+    {
+      "priority": 5,
+      "proposal_item": "Applicability domain, rejection and fallback",
+      "status": "COORDINATE_STATE_IDENTITY_GUARDS_DEFINED_NO_EMPIRICALLY_VALIDATED_REJECTION_RULE",
+      "actual_evidence": "The helper checks declared source roles, physical identity, state, temperature, positive ordered native rates and exact support. These are eligibility and consistency guards, not a proved error detector. Prior failures remain recorded.",
+      "next_author_decision": "Either keep a transparent no-domain-guarantee statement or preregister a scientifically justified input-only acceptance/fallback rule using separate legitimate development. Apply it identically to calibration and the accepted future population.",
+      "not_inferred": "Do not select rejection thresholds on Liverpool/dynamic-alginate outcomes, remove failed units or claim guaranteed safe fallback."
+    },
+    {
+      "priority": 6,
+      "proposal_item": "Anchor count/position and measurement efficiency",
+      "status": "FIXED_SIX_ANCHOR_TASK_PRESENT_NEW_COUNT_STUDY_NOT_EXECUTED",
+      "actual_evidence": "Three historical six-anchor observation layouts exist. Development one-sided indices[0,3,6,9,12,15], external six-lowest-native rule and Oct31 physical-fraction proposal are distinct. The new helper selects no coordinate rule; its anchor_rule remains null.",
+      "next_author_decision": "Choose one future six-anchor policy compatible with the frozen runtime; record actual native indices in every record and freeze all target coordinates before label access.",
+      "not_inferred": "No claim about3/4/8/10 anchors or experimental time saving. Future targets-only quadrature is not identical to every historical33-target average."
+    },
+    {
+      "priority": 7,
+      "proposal_item": "Real rheometry resource comparison",
+      "status": "NOT_MEASURED_AUTHOR_OR_INSTRUMENT_REQUIRED",
+      "actual_evidence": "No new physical sweep, sample preparation, operator-time, cleaning, retry or cost log exists here.",
+      "next_author_decision": "Optional stronger claim only: define practical viscosity tolerance and record actual full-sweep versus anchor-first deployment resources separately from additional measurements needed for validation.",
+      "not_inferred": "Six of39 points is not a measured6/39 time or cost reduction."
+    },
+    {
+      "priority": 8,
+      "proposal_item": "Second scientific response class",
+      "status": "NOT_VALIDATED_NOT_REQUIRED_FOR_NARROW_CURRENT_CLAIM",
+      "actual_evidence": "Four external sources still concern steady-flow curves and materially shifted systems. No second response-family validation has been completed. The isolated repair simulation is synthetic process illustration, not material validation.",
+      "next_author_decision": "Keep scope as target precursor-ink viscosity continuation unless a separate scientifically justified response family and protocol are later supplied.",
+      "not_inferred": "Do not invent a universal scientific-curve or all-hydrogel guarantee."
+    },
+    {
+      "priority": 9,
+      "proposal_item": "Single public reproducibility release, preferably DOI-backed",
+      "status": "VERSIONED_GIT_AND_LOCAL_REPLAY_EXIST_AUTHOR_RIGHTS_AND_ACCESS_STILL_UNRESOLVED",
+      "actual_evidence": "Existing public Git snapshot a1ae1991eef9b8dffd7fe1d2f2a93de584a99a08 and local current/complete packages preserve current code, derived results and manuscript; they do not imply unrestricted original-data redistribution or complete refitting from all raw records. Current task is a local staged addition only.",
+      "next_author_decision": "Review exact upstream/own-asset terms, processed inputs/full-study access and author declarations; choose a reviewed immutable release and access route. A trusted DOI archive is recommended, not treated here as a mandatory approval condition or an already-issued DOI.",
+      "not_inferred": "Visibility does not create a software license. No author/code/model/data license, DOI, Zenodo publication or public release is fabricated."
+    },
+    {
+      "priority": 10,
+      "proposal_item": "MLST-targeted paper, letter and final submission copy",
+      "status": "LATEST_TARGETED_REVIEW_DRAFT_EXISTS_PAPER_UNCHANGED_THIS_TASK",
+      "actual_evidence": "Latest preserved research package contains17-page main text,27-pageSI,1-page unsent letter and64 references; the added random/KL/rotation development evidence is already integrated. This new preparation has not revised those paper bytes or submitted anything.",
+      "next_author_decision": "Review the existing targeted draft and actual author/data/AI-use declarations. Integrate future independent evidence only after it exists; preserve current development/transfer limits in the meantime.",
+      "not_inferred": "No measured acceptance probability, guarantee ofMLST acceptance or completed hundreds-of-full-paper-reading claim."
+    }
+  ],
+  "minimal_author_decisions": [
+    {
+      "decision": "Choose the scientific estimand",
+      "allowed_values": [
+        "new_formulation",
+        "new_preparation_known_formula"
+      ],
+      "current_value": null,
+      "execution_meaning": "New-formulation units reconcile canonical formulation aliases and exclude consumed formulations. Known-formula new-preparation units may share formulation but must have genuinely new independently prepared physical batches, source records/runs and uninspected outcomes. Group raw runs/masks by the chosen physical unit; broad family labels are not physical identity aliases."
+    },
+    {
+      "decision": "Identify eligible source and rheometry state",
+      "current_value": null,
+      "required": [
+        "source DOI/URL and exact version/file hash with permissible access",
+        "canonical formulation_id, independently prepared batch_id and source_record_key/raw_run mapping",
+        "uncrosslinked material state and compatible chemistry/concentration",
+        "temperature_kelvin and viscosity/shear-rate units",
+        "instrument/geometry, preshear/equilibration, sweep direction and steady-flow protocol reference",
+        "prior-consumption and duplicate/lineage review, including H-disk dated source ledgers"
+      ],
+      "boundary": "Different source names orDOIs cannot prove independence or exchangeability. Do not resubmit already unavailable server files just to satisfy a checklist."
+    },
+    {
+      "decision": "Freeze primary predictor, baseline panel and anchor policy before new labels",
+      "current_value": null,
+      "default_existing_panel": [
+        {
+          "id": "shared_local_Gaussian",
+          "model_sha256": "d72fc262fbae0e6fecc36568f0638166fe95e991bd5f7df100ab1434097d82d1",
+          "runtime_bindings_sha256": null
+        },
+        {
+          "id": "full_coordinate_GP",
+          "model_sha256": null,
+          "runtime_bindings_sha256": null
+        },
+        {
+          "id": "conditional_Gaussian_control",
+          "model_sha256": null,
+          "runtime_bindings_sha256": null
+        }
+      ],
+      "anchor_rule_current_template": null,
+      "anchor_policy_reference_current_template": null,
+      "policies_that_must_not_be_equated": {
+        "development_one_sided_zero_based_indices": [
+          0,
+          3,
+          6,
+          9,
+          12,
+          15
+        ],
+        "external_first_six_native_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "Oct31_proposal": "A separate physical-fraction coordinate proposal; not selected or implemented by this helper."
+      },
+      "required": "Declare one compatible policy and per-record six observed native indices, every higher native target and actual frozen-runtime forecast/hash receipts. Selecting KL versus curvature/FPCA after seeing future calibration labels is not allowed."
+    },
+    {
+      "decision": "Assign separate calibration and confirmation physical units",
+      "current_value": null,
+      "n_calibration_units": null,
+      "n_confirmation_units": null,
+      "sample_size_basis": null,
+      "alpha_exact_string_template": "0.1",
+      "alpha_author_approved": null,
+      "boundary": "Alpha must be an exact decimal/rational string, not a binary float quantile convention. Atalpha0.1, ncal9 is only an algebraic minimum for potentially finite bands; it is not the recommended sample size. Entire formulation/preparation units, including masks and repeats, remain in one role; consumed25P/46 cannot become fresh units."
+    },
+    {
+      "decision": "Set practical criterion and sample-size precision rationale",
+      "current_value": null,
+      "minimum_relevant_CRPS_difference": null,
+      "confidence_interval_half_width": null,
+      "practical_viscosity_error_tolerance": null,
+      "tolerance_unit": null,
+      "rule": "Author/scientific team specifies meaningful criteria and feasible independent N before labels. Existing paired differences may support clearly labelled planning only, never guarantee success. This handoff does not fabricate N, tolerance, uncertainty interval or significance."
+    },
+    {
+      "decision": "Resolve access/rights and declarations before a publication release",
+      "current_value": null,
+      "release_access_and_rights": "See explicit nulls below; locally staged materials do not authorize public raw-data release or submission.",
+      "rule": "Agree on a verifiable full-study access/reconstruction route under actual terms; only then name/freeze a reviewed public release. DOI archival is recommended, not invented or declared mandatory here."
+    }
+  ],
+  "future_primary_endpoint": {
+    "scale": "ln(eta/(1 Pa s)); natural logarithm, with registered physical units",
+    "scope": "Each declared native hidden rate strictly above the largest of six lawful anchors; at least2 targets and exact frozen support.",
+    "support_gamma_s_inverse": [
+      0.012787740677595104,
+      754.5143432617188
+    ],
+    "quadrature": "Endpoint half-gaps/interior half-neighbor gaps in log(rate), normalized over[first hidden,last hidden]. Highest-anchor-to-first-hidden gap explicitly reported and excluded; no interpolated endpoint loss.",
+    "aggregation": "Average fixed masks within original curve, curves within independent unit, then units equally; compare identical complete units/targets across fixed methods.",
+    "primary_difference": "Unit-level GaussianCRPS(primary)-GaussianCRPS(comparator); negative favors primary. No invented confidence interval or superiority finding.",
+    "other_diagnostics": "Raw GaussianCRPS and joint density remain scores of the unchanged law. Raw and conformal finite-grid coverage, width and interval score are separately labelled. The band has no CRPS or joint density."
+  },
+  "calibration_contract_summary": {
+    "unit_score": "R_g=max over all predeclared curves/masks/targets in one independent physical unit of abs(y-mu)/sigma, with finite positive sigma.",
+    "rank_rule": "k=ceil((ncal+1)*(1-alpha)) by exact rational arithmetic; q=sorted_scores[k-1] whenk<=ncal, otherwise unbounded.",
+    "assumption": "Exchangeability of entire calibration and future unit objects under the same registered source/state/measurement/query policy, conditional on frozen prior choices.",
+    "claim": "Marginal whole-unit finite-grid coverage; not chemistry/anchor-conditional, continuous-curve, arbitrary-domain or calibrated-density coverage.",
+    "small_sample_rule": "Keep infinite/vacuous set explicit. Do not clamp k, interpolate a quantile, tunealpha, omit failures or call unbounded coverage useful calibration.",
+    "selection_rule": "Each fixed comparator uses its own q on the same calibration units. No candidate selection based on calibration q/width; any selection requires separate lawful development/selection and fresh final calibration."
+  },
+  "why_not_old25P_recalibration": [
+    "These formulations already influenced method, query, baseline and manuscript decisions;LOFO protects a fold calculation but cannot erase study-level repeated-use bias.",
+    "Old46 external targets were inspected/scored and were already used to diagnose failures; adjusting widths to those outcomes consumes them as development, not independent confirmation.",
+    "The same preparation under a new mask/file/DOI remains the same physical information. Targets, masks and repeat runs cannot inflate calibrationN.",
+    "The20S hidden responses are not lawful available calibration labels; do not open them to manufacture an independent cohort.",
+    "Retrospective calibration sensitivity could only be labelled exploratory consumed-data development; it is not performed here and cannot satisfy the requested independent-calibration claim."
+  ],
+  "future_execution_order_not_run_here": [
+    "1. Complete reviewed source/identity/state/rights metadata and null author decisions; keep consumed calibration and confirmation roles distinct.",
+    "2. Fromcode/ run check-plan and exclusive register with filledDESIGN/COHORT; an unfinished null template must not register.",
+    "3. Produce actual frozen-runtime calibration Gaussian laws using lawful anchors only, export full mean/covariance plus real receipts, then freeze-calibration before loading calibrationtruth.",
+    "4. Reveal only calibrationtruth and runcalibrate; preserve exactk/q, any unbounded status, errors and phase locks.",
+    "5. Freeze confirmation forecasts/sets with the saved calibration before accessing confirmationtruth.",
+    "6. Evaluate once on the complete declared cohort; retain failures and paired comparator losses. Revision after failure consumes this cohort as development and requires fresh future evidence."
+  ],
+  "staged_release_access_and_rights": {
+    "status": "LOCAL_AUTHOR_PREPARATION_NOT_PUBLICATION_OR_SUBMISSION",
+    "release_name": null,
+    "release_DOI": null,
+    "immutable_release_commit": null,
+    "software_license": null,
+    "own_generated_data_license": null,
+    "model_weight_terms": null,
+    "manuscript_reuse_terms": null,
+    "processed_development_data_access_plan": null,
+    "full_outer_fold_prediction_law_access_plan": null,
+    "third_party_file_redistribution_review": null,
+    "author_generated_new_measurement_access_plan": null,
+    "author_names_affiliations_ORCID": null,
+    "funding": null,
+    "contributions": null,
+    "competing_interests": null,
+    "author_AI_use_statement_approved": null,
+    "actual_AI_use_scope_to_be_checked": "Substantive coding/scientific-analysis assistance plus writing/formatting assistance are visible in the project history; do not falsely describe the whole work as language polishing only. Human authors must independently verify final facts, formulas, citations and responsibilities.",
+    "DOI_boundary": "A persistent trusted archive is recommended for immutable discoverable release. This preparation does not treat DOI issuance as a universal mandatory journal rule, does not issue aDOI and does not replace public access/rights duties with aDOI.",
+    "source_license_boundary": "UpstreamCC BY metadata for specific datasets does not license the entire code/model/manuscript automatically. Unknowns remainnull; no defaultMIT or fabricated author approval."
+  },
+  "present_stop_boundary": "No eligible fresh same-domain units or real practical tolerance/N have been supplied. Independent physical confirmation/calibration and actual resource savings cannot be completed by editing old files. Continue only with author-held new data, genuinely new admissible public units, or explicit later author decisions; do not repeatedly request unavailable server assets.",
+  "paper_claim_boundary": "Current evidence can support a narrow retrospective probabilistic precursor-ink continuation development paper with strong controls and transparent transfer/UQ failures. This handoff does not certify acceptance probability, quartile or publication readiness, and does not rewrite the paper to imply future evidence already exists.",
+  "artifact_consistency_checks": {
+    "scope": "Author-facts structure and non-invention self-checks, not independent science audit",
+    "status": "PASS",
+    "checks": {
+      "ten_priorities_exact": true,
+      "six_author_decisions": true,
+      "independent_data_not_invented": true,
+      "alpha_is_string": true,
+      "N_and_tolerance_null": true,
+      "license_DOI_not_fabricated": true,
+      "original_deployment_pin_preserved": true,
+      "prior_KL_not_FPCA": true,
+      "two_distinct_anchor_policies": true,
+      "UTF8_expected_header_and_no_replacement": true,
+      "only_two_requested_outputs": true
+    },
+    "check_construction_correction": "An initial arbitrary expectation of >1800 CJK characters rejected a valid1769-CJK text. The check was corrected to exact expected UTF8 header and no replacement/question-mark characters; content was not changed to inflate length."
+  },
+  "public_export_note": "Derived public ledger: personal attachment path omitted; exact original bytes remain in local review package. Science facts/URL/source hashes unchanged."
+}

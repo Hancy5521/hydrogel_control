@@ -1,0 +1,15 @@
+{
+  "current_template": {
+    "path": "D:\\codex-root\\hydrogel_control\\mlst\\author_handoff\\FUTURE_CONFIRMATION_TEMPLATE.json",
+    "sha256": "b7fc3a2d9c85a2499242504279ee87399470393ec10cc44e92efbaf0c767ade5"
+  },
+  "existing_coordinate_rule": {
+    "path": "H:\\polymer_completion_public\\research\\confirmation_preparation_20261031T092112258611Z\\confirmation\\coordinates.py",
+    "sha256": "e3f9ec5ac6f50892432fb9e2dab378311cfe49d38433277d6d670d238c835fa6"
+  },
+  "existing_anchor_only_predictor_snapshot": {
+    "path": "H:\\polymer_completion_public\\research\\confirmation_preparation_20261031T092112258611Z\\confirmation\\freeze_predictions.py",
+    "sha256": "ad5066954d42538f01151a80ab6995e49fee51969a7571646b9be03cc3eb0e8d"
+  },
+  "reuse": "This extension consumes frozen Gaussian laws and metadata; no copied predictor or new coordinate selector. Same six-anchor rule and support remain in template; prospective role/quadrature/calibration extension only."
+}

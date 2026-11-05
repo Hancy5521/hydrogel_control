@@ -1,0 +1,39 @@
+{
+  "actual_utc": "2026-11-05T02:37:57.126596+00:00",
+  "implementation_revision": "v2_pre_freeze_static_review",
+  "preserved_v1_directory": "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\history\\code_v1_20261105T022818871192Z",
+  "preserved_v1_receipt_sha256": "46a30477b1053201658fc57ceaf44403929b1db9b27fdd795e09b86bec969c23",
+  "sources": [
+    {
+      "file": "calibration.py",
+      "sha256": "a7229cad9c96cda151629ab256ce16e320438754ffdb379af0fc4b3aae8d1ba0",
+      "bytes": 11076,
+      "syntax": "AST_PARSE_ONLY"
+    },
+    {
+      "file": "cli.py",
+      "sha256": "30c83242691ec594e8a22c71500828393148f6b09ecb70fdab3402fcc2300705",
+      "bytes": 16397,
+      "syntax": "AST_PARSE_ONLY"
+    },
+    {
+      "file": "contract.py",
+      "sha256": "a7e736ea3d1791be6ca56e8c56585967909a86e812c44cf41fd69176c27ad808",
+      "bytes": 19641,
+      "syntax": "AST_PARSE_ONLY"
+    },
+    {
+      "file": "evaluation.py",
+      "sha256": "fe9f4601c1070a04488cc1d30d8ad3a69e38268583e7cf68c9db3af41691c1ce",
+      "bytes": 10313,
+      "syntax": "AST_PARSE_ONLY"
+    }
+  ],
+  "qualification_executed": false,
+  "sut_imported_or_executed": false,
+  "real_data_read": false,
+  "historical_measurement_files_read": false,
+  "real_fits": 0,
+  "real_calibration": false,
+  "verification": "AST syntax and JSON parse only; source remains awaiting root registration/pinning and independent synthetic numerical/workflow audit"
+}

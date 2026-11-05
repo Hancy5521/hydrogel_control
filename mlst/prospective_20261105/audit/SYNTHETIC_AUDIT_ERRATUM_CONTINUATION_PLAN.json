@@ -1,0 +1,93 @@
+{
+  "artifact_kind": "independent synthetic audit ERRATUM and bounded continuation preregistration",
+  "actual_registered_utc": "2026-11-05T02:48:03.521595+00:00",
+  "actual_registered_asia_shanghai": "2026-11-05T10:48:03.521595+08:00",
+  "approval_status": "PENDING_ROOT_APPROVAL_NO_CONTINUATION_SUT_EXECUTED",
+  "original_result_preserved": "First result remains12PASS/1FAIL; sole failure is audit harness KeyError from obsolete scores_by_independent_unit literal; no production-source defect found in that failure.",
+  "correction": "Preserve v1script bytes at independent_synthetic_audit_v1_preserved.py; correct exactly one main-harness field literal to scores_by_declared_unit for future replay. No other main-script change, no production code change.",
+  "original_audit_script_sha256": "c18372134b1b97bb8fb622bde6f2280c34a2cac78feff8b3d4f743df3912351c",
+  "corrected_full_audit_script_sha256": "35c9ba99f8740e2a0e8d632df026ce922bc5c031d76a4552b8f68593d320a14c",
+  "continuation_script": "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\audit\\continue_synthetic_cli_audit.py",
+  "continuation_script_sha256": "1eec9bfbd74e7f0c3933ee7a776dcf738237e90c327f78363dabd67a760d4fef",
+  "source_directory": "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\code",
+  "source_sha256": {
+    "calibration.py": "a7229cad9c96cda151629ab256ce16e320438754ffdb379af0fc4b3aae8d1ba0",
+    "cli.py": "30c83242691ec594e8a22c71500828393148f6b09ecb70fdab3402fcc2300705",
+    "contract.py": "a7e736ea3d1791be6ca56e8c56585967909a86e812c44cf41fd69176c27ad808",
+    "evaluation.py": "fe9f4601c1070a04488cc1d30d8ad3a69e38268583e7cf68c9db3af41691c1ce",
+    "DESIGN_TEMPLATE.json": "cde5efff63ed58f725ebb27e7df94594c4d8c8cd00d9b07e8e57796f1b75ddfd",
+    "COHORT_TEMPLATE.json": "e656900c8544276e7a8b6267a473c80c0be6edd8f9ab40444b001c00e99bc6ad",
+    "FORMAT_EXAMPLES.json": "16f0256679d99164caf435a04913accbf91b3fc8b841ee1ec62a688ccd300d84",
+    "README.txt": "1a035c676d1b3a64f9fedcb9ad08de70c5c4a961e8199d44a514b8b2e4fa17e0",
+    "requirements.txt": "99f43573522565d7c480efd1f954892948033915df6a4e685327e995d3396eb6"
+  },
+  "existing_execution_directory": "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\audit\\execution_20261105T0243363382836Z",
+  "existing_file_sha256": {
+    "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\audit\\execution_20261105T0243363382836Z\\INDEPENDENT_SYNTHETIC_RESULTS.json": "30cca35d7ec22642c3d62d9c21a49de366d2894134e217b18e508905f1a71539",
+    "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\audit\\SYNTHETIC_AUDIT_PLAN.json": "c8b74fb5eca02498e5ec36a98f02591c5d11dcddab39612bd7f1d001310faa17",
+    "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\audit\\ROOT_AUDIT_APPROVAL.json": "c31b8c7ca281ad5f614fe53513fa54531de815ec43b300eab87e201fd35b7da5",
+    "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\audit\\independent_synthetic_audit_v1_preserved.py": "c18372134b1b97bb8fb622bde6f2280c34a2cac78feff8b3d4f743df3912351c",
+    "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\audit\\independent_synthetic_audit.py": "35c9ba99f8740e2a0e8d632df026ce922bc5c031d76a4552b8f68593d320a14c",
+    "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\audit\\execution_20261105T0243363382836Z\\SYNTHETIC_CLI\\calibration_predictions.json": "433ee5cd8165b27ef15b6408fb58c19d055a749f492ca9e565fd31fcdebdb4e6",
+    "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\audit\\execution_20261105T0243363382836Z\\SYNTHETIC_CLI\\calibration_truth.json": "56647665dc3a31c7ec349ec03a4aa23922f7d4b728c49303f49d5d6bee369d72",
+    "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\audit\\execution_20261105T0243363382836Z\\SYNTHETIC_CLI\\COHORT.json": "a66bab77f4b37fffd32906f92558409b8670c3504d5cce95fe8584ce669920ce",
+    "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\audit\\execution_20261105T0243363382836Z\\SYNTHETIC_CLI\\confirmation_predictions.json": "2813f6b92052e2a5a22e86dbc2907ee3e2c27c6d954b5166eead0d5024f93eaa",
+    "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\audit\\execution_20261105T0243363382836Z\\SYNTHETIC_CLI\\confirmation_truth.json": "392c7624efbc81dda232be38882e9cb445bb0e1a129879d476d70feab147c372",
+    "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\audit\\execution_20261105T0243363382836Z\\SYNTHETIC_CLI\\DESIGN.json": "6c0861d7501d888fbfc5eddc2a4986484b198ce5115af7cb5a10db43eb293895"
+  },
+  "existing_run_file_sha256": {
+    "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\audit\\execution_20261105T0243363382836Z\\SYNTHETIC_CLI\\RUN\\CALIBRATION_FROZEN.json": "280acb8931b62a68ec558da907f7a56790cf2746c48fcede2885696c1555f34d",
+    "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\audit\\execution_20261105T0243363382836Z\\SYNTHETIC_CLI\\RUN\\CALIBRATION_FROZEN.RECEIPT.json": "d8cacb9d05614c398bf0e1c6b5634006ae7618cb5cbc40e3cf3c79ef8dec4842",
+    "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\audit\\execution_20261105T0243363382836Z\\SYNTHETIC_CLI\\RUN\\CALIBRATION_PREDICTIONS_FROZEN.json": "88de847b34c10e7599197595bd0a9ee47fa6fbbd9bebcb8eafd8b45d51b39f48",
+    "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\audit\\execution_20261105T0243363382836Z\\SYNTHETIC_CLI\\RUN\\CALIBRATION_PREDICTIONS_FROZEN.RECEIPT.json": "87763091ad58485702c8504f1792400b97882d3ac9cc2782fa9c0ea90acdaeff",
+    "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\audit\\execution_20261105T0243363382836Z\\SYNTHETIC_CLI\\RUN\\CALIBRATION_REVEAL_PARSED.json": "cdbc06064ccd2838e6549c807a75fecec2bdda875fa15b756911da0c47387d99",
+    "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\audit\\execution_20261105T0243363382836Z\\SYNTHETIC_CLI\\RUN\\CALIBRATION_REVEAL_STARTED.json": "5297a3bfc308143407971e3c0f34c39caf157822d693c9dbbd0c204ab887ad32",
+    "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\audit\\execution_20261105T0243363382836Z\\SYNTHETIC_CLI\\RUN\\FAILURE_2026-11-05T024344384419+0000.json": "12c03e6138be06006f198f39eb7e438ec9a2206218236d29e83d186fafdee746",
+    "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\audit\\execution_20261105T0243363382836Z\\SYNTHETIC_CLI\\RUN\\PROTOCOL.json": "dfe943020fe3b22291c46d5a5f4aaafff9dfe7a05d101d47862e89f7df46ed20",
+    "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\audit\\execution_20261105T0243363382836Z\\SYNTHETIC_CLI\\RUN\\PROTOCOL.RECEIPT.json": "b72f9cbf0357ed5265f77620887dd5a7b5efc1f298bbdd6bbc3061fa09aaa9da"
+  },
+  "remaining_commands": [
+    {
+      "arguments": [
+        "freeze-confirmation",
+        "--run",
+        "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\audit\\execution_20261105T0243363382836Z\\SYNTHETIC_CLI\\RUN",
+        "--predictions",
+        "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\audit\\execution_20261105T0243363382836Z\\SYNTHETIC_CLI\\confirmation_predictions.json"
+      ],
+      "expected_returncode": 0
+    },
+    {
+      "arguments": [
+        "evaluate",
+        "--run",
+        "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\audit\\execution_20261105T0243363382836Z\\SYNTHETIC_CLI\\RUN",
+        "--truth",
+        "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\audit\\execution_20261105T0243363382836Z\\SYNTHETIC_CLI\\confirmation_truth.json"
+      ],
+      "expected_returncode": 0
+    },
+    {
+      "arguments": [
+        "evaluate",
+        "--run",
+        "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\audit\\execution_20261105T0243363382836Z\\SYNTHETIC_CLI\\RUN",
+        "--truth",
+        "H:\\polymer_completion_public\\research\\prospective_validation_20261105T020511590098Z\\audit\\execution_20261105T0243363382836Z\\SYNTHETIC_CLI\\confirmation_truth.json"
+      ],
+      "expected_returncode": 2
+    }
+  ],
+  "remaining_assertions": [
+    "Complete prior map/count assertions using actual scores_by_declared_unit key; nine artificial calibration units and three fixed methods share exact admitted IDs.",
+    "Freeze existing artificial confirmation forecasts then evaluate once; three declared artificial confirmation units and three methods, raw density/set separation, zero fits and explicit no-material-evidence status.",
+    "Confirm targets-only weights/physical gap/span and zero unbounded sets in this chosen artificial fixture; no statistical reliability claim.",
+    "Repeat evaluate must be refused before truth-open, preserve original successful artificial result SHA, and report accurate false read-attempt flags.",
+    "Every originally pinned file and all existing prior phase bytes remain identical; production nine-file source hash set unchanged.",
+    "Combine first12PASS receipt and completed family into a separate qualification disposition; never rewrite first FAIL."
+  ],
+  "does_not_rerun": "No earlier12numerical/identity/guard test families or calibration phase are rerun. Only three commands above and remaining pure JSON/hash assertions.",
+  "outputs": "Append-only continuation start/commands and combined qualification receipt; if complete, post-audit QUALIFIED_REPLAY_TEMPLATE.json with nine source pins and corrected main script SHA, explicitly not original preregistration.",
+  "stopping_rule": "Any unexpected failure is preserved in CONTINUATION_FAILED.json; stop and ask root for a new bounded decision. No unilateral production changes.",
+  "no_real_material_activity": true
+}

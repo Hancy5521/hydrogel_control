@@ -1,0 +1,8 @@
+{
+  "schema": "prospective_unit_calibration_v1",
+  "actual_utc": "2026-11-05T02:43:57.378160+00:00",
+  "phase": "calibrate",
+  "protocol_sha256": "e9aaa7b1911b6381f64e7f56672348f2504e07c9250c7d890553a8a3e72c3f42",
+  "status": "ABOUT_TO_ATTEMPT_TRUTH_FILE_OPEN",
+  "actual_measurement_values_read_certified": false
+}

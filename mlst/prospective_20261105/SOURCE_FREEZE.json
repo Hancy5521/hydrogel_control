@@ -1,0 +1,15 @@
+{
+  "actual_utc": "2026-11-05T02:42:00.811186+00:00",
+  "source_version": "v2 after static corrections, pre first execution",
+  "source_sha256": {
+    "calibration.py": "a7229cad9c96cda151629ab256ce16e320438754ffdb379af0fc4b3aae8d1ba0",
+    "cli.py": "30c83242691ec594e8a22c71500828393148f6b09ecb70fdab3402fcc2300705",
+    "contract.py": "a7e736ea3d1791be6ca56e8c56585967909a86e812c44cf41fd69176c27ad808",
+    "evaluation.py": "fe9f4601c1070a04488cc1d30d8ad3a69e38268583e7cf68c9db3af41691c1ce"
+  },
+  "source_only_frozen": true,
+  "independent_synthetic_execution_started": false,
+  "real_material_data_read": false,
+  "no_material_calibration_or_confirmation": true,
+  "prior_v1_preserved": "history/code_v1_20261105T022818871192Z"
+}

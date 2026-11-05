@@ -1,0 +1,57 @@
+{
+  "actual_utc": "2026-11-05T02:28:18.871192+00:00",
+  "reason": "Preserve v1 before coherent static-review corrections; no SUT or data execution",
+  "files": [
+    {
+      "file": "calibration.py",
+      "sha256": "7265dd6d86a3d310b45470e582d2e72733267a4ad3e98a6d562c67a863dd8d07",
+      "bytes": 7662
+    },
+    {
+      "file": "cli.py",
+      "sha256": "686fbb9849527e38e33bc97420ef3384beae118d328728f2ee205f9a8ccdf088",
+      "bytes": 10952
+    },
+    {
+      "file": "COHORT_TEMPLATE.json",
+      "sha256": "e656900c8544276e7a8b6267a473c80c0be6edd8f9ab40444b001c00e99bc6ad",
+      "bytes": 90
+    },
+    {
+      "file": "contract.py",
+      "sha256": "43c90a0d3cb81bcb11e63b65472340ab3780728b8ea3701b912358c1319cd15a",
+      "bytes": 16800
+    },
+    {
+      "file": "DESIGN_TEMPLATE.json",
+      "sha256": "cde5efff63ed58f725ebb27e7df94594c4d8c8cd00d9b07e8e57796f1b75ddfd",
+      "bytes": 1660
+    },
+    {
+      "file": "evaluation.py",
+      "sha256": "7671bcf3577fe9ad2fd38da537ae911e08a052d2902903403b6ee8af3dd2b98c",
+      "bytes": 9212
+    },
+    {
+      "file": "FORMAT_EXAMPLES.json",
+      "sha256": "16f0256679d99164caf435a04913accbf91b3fc8b841ee1ec62a688ccd300d84",
+      "bytes": 1436
+    },
+    {
+      "file": "IMPLEMENTATION_RECEIPT.json",
+      "sha256": "46a30477b1053201658fc57ceaf44403929b1db9b27fdd795e09b86bec969c23",
+      "bytes": 1092
+    },
+    {
+      "file": "README.txt",
+      "sha256": "8ecbc8a9900e591669853d9cc54d1abc659ffec6815fe639c76bf86e802bc31c",
+      "bytes": 9727
+    },
+    {
+      "file": "requirements.txt",
+      "sha256": "99f43573522565d7c480efd1f954892948033915df6a4e685327e995d3396eb6",
+      "bytes": 15
+    }
+  ],
+  "all_copies_byte_verified": true
+}

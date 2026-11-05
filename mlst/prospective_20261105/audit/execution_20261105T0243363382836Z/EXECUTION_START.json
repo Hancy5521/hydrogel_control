@@ -1,0 +1,18 @@
+{
+  "actual_utc": "2026-11-05T02:43:37.682438+00:00",
+  "mode": "synthetic",
+  "actual_source_sha256": {
+    "calibration.py": "a7229cad9c96cda151629ab256ce16e320438754ffdb379af0fc4b3aae8d1ba0",
+    "cli.py": "30c83242691ec594e8a22c71500828393148f6b09ecb70fdab3402fcc2300705",
+    "contract.py": "a7e736ea3d1791be6ca56e8c56585967909a86e812c44cf41fd69176c27ad808",
+    "evaluation.py": "fe9f4601c1070a04488cc1d30d8ad3a69e38268583e7cf68c9db3af41691c1ce",
+    "DESIGN_TEMPLATE.json": "cde5efff63ed58f725ebb27e7df94594c4d8c8cd00d9b07e8e57796f1b75ddfd",
+    "COHORT_TEMPLATE.json": "e656900c8544276e7a8b6267a473c80c0be6edd8f9ab40444b001c00e99bc6ad",
+    "FORMAT_EXAMPLES.json": "16f0256679d99164caf435a04913accbf91b3fc8b841ee1ec62a688ccd300d84",
+    "README.txt": "1a035c676d1b3a64f9fedcb9ad08de70c5c4a961e8199d44a514b8b2e4fa17e0",
+    "requirements.txt": "99f43573522565d7c480efd1f954892948033915df6a4e685327e995d3396eb6"
+  },
+  "plan_sha256": "c8b74fb5eca02498e5ec36a98f02591c5d11dcddab39612bd7f1d001310faa17",
+  "real_measurements_read": false,
+  "new_material_evidence": false
+}

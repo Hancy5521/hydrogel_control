@@ -1,0 +1,22 @@
+{
+  "actual_utc": "2026-11-05T02:14:53.456021+00:00",
+  "url": "https://data.mendeley.com/datasets/wwkpzj3vfk/4",
+  "final_url": "https://data.mendeley.com/datasets/wwkpzj3vfk/4",
+  "status_code": 200,
+  "bytes": 130009,
+  "sha256": "4a0adf1a66d12f70f43508708f6ed79e69832990c125f676a85098eea948669e",
+  "read_role": "public metadata only, no raw workbook",
+  "content_type": "text/html; charset=utf-8",
+  "script_count": 13,
+  "candidate_embedded_scripts": [
+    {
+      "index": 4,
+      "length": 3122
+    },
+    {
+      "index": 10,
+      "length": 7052
+    }
+  ],
+  "public_export_note": "Fetched website excerpt omitted from public receipt; exact original access receipt remains local."
+}

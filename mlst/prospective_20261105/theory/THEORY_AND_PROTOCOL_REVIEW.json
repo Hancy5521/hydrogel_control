@@ -1,0 +1,217 @@
+{
+  "artifact_kind": "independent mathematical review of a FUTURE prospective calibration and confirmation protocol",
+  "created_at_utc": "2026-11-05T02:14:34.3216423Z",
+  "created_at_asia_shanghai": "2026-11-05T10:14:34.3216423+08:00",
+  "timestamp_scope": "Time actually obtained from the local system immediately before preparing these files; not an experimental preregistration timestamp.",
+  "reviewer": "/root/calibration_theory_review",
+  "status": "MATHEMATICAL_SPECIFICATION_READY; NO_FRESH_MATERIAL_CALIBRATION_OR_CONFIRMATION",
+  "scope": {
+    "new_model_fit": false,
+    "read_raw_material_measurements": false,
+    "score_existing_material_outcomes": false,
+    "production_code_modified": false,
+    "actual_independent_calibration_units_available": 0,
+    "actual_independent_confirmation_units_available": 0,
+    "does_not_establish": [
+      "empirical calibration of the frozen hydrogel predictor",
+      "independent same-domain formulation or batch generalization",
+      "continuous-shear-rate coverage",
+      "chemistry-conditional or anchor-conditional coverage",
+      "calibrated joint predictive density",
+      "experimental or financial savings",
+      "a new conformal algorithm or guarantee absent from prior literature",
+      "a guarantee of MLST acceptance"
+    ]
+  },
+  "frozen_research_context_supplied_by_parent": {
+    "current_model": "fixed local-curvature representation, shared Gaussian correction, complete high-dimensional residual; exact Gaussian conditioning",
+    "deployment_model_sha256": "d72fc262fbae0e6fecc36568f0638166fe95e991bd5f7df100ab1434097d82d1",
+    "development_materials": "25 complete P formulations; consumed by repeated research",
+    "external_materials": "46 previously inspected/scored curves across four sources; consumed stress tests, not certified fresh same-domain preparations",
+    "protected_records": "20 S formulations supply six lawful anchors only; protected hidden outcomes are not available calibration labels",
+    "basis_comparison": "Prior-KL has stronger development CRPS but weaker joint density/middle-gap evidence; it has not replaced the deployed curvature model and has no independent confirmation",
+    "review_does_not_reverify_hash_or_prior_metrics": true
+  },
+  "mandatory_decisions_before_real_data_use": [
+    "Choose one primary scientific estimand: new formulation, or a genuinely new preparation batch from a declared known-formulation population. These are distinct claims.",
+    "Choose the primary frozen base model, lawful anchors, query family, physical domain, measurement state, log transform, baseline methods, losses, unit aggregation, alpha, calibration/confirmation allocation and analysis stopping rule before any new hidden outcomes are accessed.",
+    "For new-formulation confirmation, formulation identity and parent preparation lineage must be disjoint from all consumed development records and between calibration and confirmation.",
+    "For known-formulation new-batch confirmation, formulation overlap may be allowed only by the declared estimand; independent physical preparation, raw runs and hidden outcomes must be new and must not be rereads or repackaged replicates of an old preparation.",
+    "Record actual protocol UTC and code/input hashes before real prediction/label access. Empty templates are planning material, not a registered completed study.",
+    "Do not select curvature versus prior-KL, query masks, scale floor or exclusion rules using the future calibration or confirmation outcomes. Selection requires a separate selection cohort or an entirely fresh final calibration cohort."
+  ],
+  "group_score": {
+    "unit_object": "U_i is the entire independent formulation/preparation group, including its lawful inputs, ordered curves, declared query masks, target coordinates and hidden outcomes. The same group-to-score map is applied to every calibration and future group.",
+    "notation": "c indexes all predeclared curve/query combinations in the unit; J_ic is its finite native hidden target set; y_icj=ln(eta_icj); mu_icj and sigma_icj are frozen-model predictions conditional only on lawful inputs.",
+    "definition": "S_i = max_{c in C_i, j in J_ic} abs(y_icj - mu_icj) / sigma_icj",
+    "scale_contract": "Each sigma_icj must be finite and strictly positive and must be obtained without calibration/confirmation hidden outcomes. It is a score scale, not an asserted correct conditional standard deviation.",
+    "independence_accounting": "All repeated curves, rate positions, masks, digitizations and files belonging to one physical unit contribute one S_i and one calibration count. Maxima do not manufacture independent samples.",
+    "variable_group_size": "Variable numbers of curves/targets are mathematically possible, but the entire group object, sampling/measurement/admission/query policy, including group-size distribution, must be exchangeable between calibration and the claimed future unit population.",
+    "not_required": "Within-curve rate points and within-group curves need not be independent or exchangeable. They retain their ordered physical meanings. We are applying ordinary split conformal to whole objects, not claiming to implement hierarchical conformal prediction (HCP).",
+    "provenance_warning": "Different DOI, filename, repository or article title does not establish distinct physical units or exchangeable populations. A lineage ledger is necessary but does not itself prove exchangeability."
+  },
+  "quantile_and_guarantee": {
+    "alpha_domain": "0 < alpha < 1; supply alpha as an exact decimal string or rational, not a binary floating-point quantile convention",
+    "n_cal": "number of admitted fresh independent calibration groups, never number of scalar positions or queries",
+    "order_index": "k = ceil((n_cal + 1) * (1 - alpha))",
+    "exact_integer_formula": "If alpha=a/b in lowest terms with 0<a<b, k=((n_cal+1)*(b-a)+b-1)//b. Use positive integer arithmetic.",
+    "q_rule": "q=S_(k) for k<=n_cal, where S_(k) is the k-th smallest of the n_cal scores including repeats; q=+infinity if k>n_cal.",
+    "implementation_rule": "Sort scores and index sorted_scores[k-1]. Do not linearly interpolate, silently clamp k, replace infinity by the largest finite score, or assume a library quantile 'higher' on k/n has the same order-statistic convention.",
+    "augmented_measure_equivalence": "q is the (1-alpha) generalized inverse quantile of (sum_i delta_{S_i}+delta_{+infinity})/(n_cal+1).",
+    "ties": "Use inclusive membership S_new<=q. Repeated scores are retained; ties can make coverage conservative. No randomized jitter is needed for the lower bound; no exact-equality or sharp upper coverage claim is made.",
+    "algebraic_minimum_for_finite_q": "n_cal >= ceil(1/alpha)-1, assuming all scores finite. For alpha='0.10' this is 9; for alpha='0.05' this is 19. These are algebraic minima, not recommendations for scientific sample size or precision.",
+    "finite_grid_band": "B_icj=[mu_icj-q*sigma_icj, mu_icj+q*sigma_icj]",
+    "event": "{all declared hidden coordinates of all declared queries/curves in new U are in their B} = {S_new<=q}",
+    "assumption": "Conditional on the frozen training procedure/artifact and all precommitted choices, the n_cal calibration group objects and a new target group object are exchangeable under the same sampling/admission/query policy.",
+    "lower_bound": "P(all declared finite-grid outcomes of the new group are covered) >= 1-alpha",
+    "proof": "Apply the same measurable score map to exchangeable whole-group objects. Resolve score ties by an auxiliary random ordering only for the proof; the new score rank among n_cal+1 scores is uniform. Rank<=k implies S_new<=S_(k), so inclusive coverage is at least k/(n_cal+1)>=1-alpha. If k>n_cal, q=+infinity and the event is the whole target space. The implemented procedure need not randomize.",
+    "probability_scope": "Marginal over calibration and new group draws, conditional on frozen training choices; not a promise for each realized calibration sample, each chemistry, each source or each observed anchor vector.",
+    "finite_grid_only": "No coverage claim is made between native target rates or beyond the predeclared finite query family/support. Interpolating plotted bands does not create a continuous-function coverage theorem.",
+    "confirmation_rate_warning": "A finite independent confirmation cohort can have an observed success fraction below 1-alpha. The marginal theorem does not guarantee a lower empirical fraction for every calibration realization."
+  },
+  "transform_and_numerical_contract": {
+    "base_transform": "Use y=ln(eta/eta_unit) with a fixed viscosity unit; state the exact log base and unit. This document uses natural logarithms so eta=eta_unit*exp(y). If the frozen model uses another log base, register and consistently convert predictions and outcomes; do not silently relabel logs.",
+    "viscosity_band": "For finite log endpoints l,u, original-scale endpoints are eta_unit*exp(l), eta_unit*exp(u). This monotone transform preserves the same coverage event.",
+    "infinite_band": "q=+infinity gives the whole log real line and all positive viscosity values (0,+infinity). It is an explicit uninformative band, not finite successful calibration.",
+    "reject_or_fail_closed": [
+      "nonfinite mu, observations or standardized residuals",
+      "nonfinite or nonpositive sigma",
+      "nonpositive/nonfinite observed original-scale viscosity or shear rate",
+      "ambiguous, missing or conflicting physical group/source lineage",
+      "empty target family when a group maximum is required",
+      "duplicate target identities or coordinates without a precommitted repeat-aggregation policy",
+      "overlap of consumed/calibration/confirmation lineages contrary to the declared estimand",
+      "unregistered changes to model, masks, target support or preprocessing"
+    ],
+    "empty_calibration": "No finite calibration artifact may be emitted. Return NOT_CALIBRATED/NO_CALIBRATION_UNITS and no calibrated deployment claim; if an API exposes the formal whole-space fallback, it must label it uninformative and q unbounded.",
+    "small_nonempty_calibration": "When k>n_cal return q unbounded and status INSUFFICIENT_FOR_FINITE_BAND; do not substitute z=1.645/1.96, clip q, alter alpha or silently drop failures.",
+    "serialization": "Use strict JSON: q=null plus q_is_infinite=true/status for mathematical infinity; no nonstandard JSON Infinity or NaN. Keep finite log endpoints when exponentiation overflows/underflows and explicitly flag original-scale representational range limits rather than claiming finite clipped bounds.",
+    "zero_q": "Finite q=0 is mathematically possible with tied zero scores. Preserve it; it is not evidence that new-material uncertainty vanished.",
+    "scale_floor": "A floor, if scientifically necessary, is a separately fixed training-only score-scale choice applied identically to every group before calibration; it cannot be chosen per outcome to improve coverage. Otherwise reject zero/underflowed sigma as a model/numerical failure."
+  },
+  "forecast_scores_and_band_diagnostics": {
+    "density_separation": "The conformal bands are sets, not a new joint or marginal probability distribution. They do not determine CRPS, a log density, Gaussian correlations or a calibrated posterior.",
+    "gaussian_crps": "For the unchanged log-Gaussian marginal N(mu,sigma^2), z=(y-mu)/sigma and CRPS=sigma*[z*(2*Phi(z)-1)+2*phi(z)-1/sqrt(pi)]. Score the original frozen Gaussian law; q does not enter this CRPS.",
+    "gaussian_density": "Any marginal/joint log score remains a score of the original saved Gaussian law. Rescaling a covariance using q would be an additional distributional model and needs its own registered training/validation; it is not implied by conformal coverage.",
+    "unit_simultaneous_coverage": "I_i=1{max_{c,j} abs(y_icj-mu_icj)/sigma_icj <= q}; average over independent confirmation units. Also report pointwise and curvewise coverage as secondary diagnostics without changing N.",
+    "interval_score": "IS_alpha(l,u;y)=(u-l)+(2/alpha)*max(l-y,0)+(2/alpha)*max(y-u,0), evaluated in the declared log units.",
+    "interval_score_limitation": "A group-simultaneous alpha is not the marginal equal-tail miscoverage of every point interval. Report point/curve averaged IS_alpha only as a descriptive band trade-off diagnostic; do not claim expected marginal proper-score optimality at level alpha or use it as CRPS.",
+    "unbounded_diagnostics": "An unbounded interval has infinite width and interval score for a finite outcome. Branch explicitly to avoid inf-inf and zero-times-infinity NaNs. Report the count of unbounded units/bands and do not omit them from a finite-only average.",
+    "confirmation_uncertainty": "If new confirmation groups are genuinely iid draws and q/model are fixed before their outcomes, a binomial confidence interval for the success probability conditional on that fixed artifact is appropriate. Shared q makes success indicators dependent when averaging over possible calibration draws; exchangeability alone does not justify an iid binomial precision claim."
+  },
+  "weighted_log_rate_crps": {
+    "scientific_scope": "Primary six-low-rate-anchor continuation only, unless a different query family is explicitly registered before outcomes.",
+    "coordinates": "Let gamma_star=max lawful anchor rate. Select only predeclared native hidden targets gamma_j>gamma_star within frozen physical support. Set t_j=ln(gamma_j/gamma_unit), sort strictly increasingly, and require m>=2 for the primary integrated score.",
+    "raw_endpoint_weights": "a_1=(t_2-t_1)/2; a_m=(t_m-t_(m-1))/2; a_j=(t_(j+1)-t_(j-1))/2 for 1<j<m.",
+    "normalized_weights": "w_j=a_j/(t_m-t_1); all weights positive and sum_j w_j=1.",
+    "definition": "CRPS_lograte_curve=sum_{j=1}^m w_j*CRPS(N(mu_j,sigma_j^2), y_j). This is the normalized trapezoid of saved native-point losses on [t_1,t_m], not a claim to integrate an observed continuous loss curve.",
+    "anchor_gap": "The interval (ln(gamma_star/gamma_unit),t_1) is NOT covered by this targets-only trapezoid. Report its log-length and physical endpoints, together with [t_1,t_m] span and target count. Do not invent an anchor endpoint loss or hide this gap.",
+    "single_target_rule": "m=1 has zero integration span and is INELIGIBLE_FOR_PRIMARY_INTEGRATED_SCORE. A prespecified secondary single-point CRPS can be reported with an explicit single_point flag; do not assign an arbitrary half-span or call it an integrated score.",
+    "zero_target_rule": "m=0 is a prespecified query eligibility failure before hidden outcome access; report the count and reason.",
+    "duplicate_and_range_guards": "Require finite positive original rates, strict native sorted uniqueness or a frozen lawful replicate aggregation policy, no observed anchor reused as hidden target, exact target coordinate/source identities, and no out-of-support continuation. No post-outcome epsilon/range rule or interpolated synthetic measurement label.",
+    "aggregation": "First aggregate fixed curve/query weights within one independent unit (equal fixed weights is a possible prespecified choice), then average units equally. All baselines use identical admitted units, lawful anchors, native targets, endpoints and weights. State each curve span; unequal coverage spans can make comparisons scientifically different despite normalization.",
+    "paired_comparison": "For each confirmation group save d_i=L_i(primary)-L_i(baseline), with fixed primary/baseline definitions. Use group-level paired summaries and predeclared uncertainty analysis; never use positions/masks as independent paired observations."
+  },
+  "prospective_phase_order": [
+    "0. Admit sources and determine physical lineages/roles without accessing any new hidden outcomes. Record consumed-source exclusion ledger and what new-formulation/new-batch claim is actually available.",
+    "1. Finalize and timestamp the scientific protocol: cohort estimand, sample allocation, alpha, fixed model/training artifact, lawful anchors, finite targets, measurement state, weights, baselines, practical loss tolerance and stopping rule. If practical tolerance or available N is unknown, keep it explicit null and label the plan not yet activated.",
+    "2. Freeze executable source/input hashes and cohort metadata manifests. Separate consumed development, future calibration and future confirmation by required identity rules, not only row split.",
+    "3. Produce and hash Gaussian predictions on each admitted group's lawful inputs only. Hide all target labels. Frozen Gaussian predictions are distinct from later calibrated bands.",
+    "4. Reveal calibration labels only; compute one max score per independent calibration group; compute q by exact ordinal rule; save all scores, actual UTC, hashes, failures and status. No base-model updates, choice of query or cal/eval relabeling after this reveal.",
+    "5. Freeze the calibration artifact and every confirmation band or its deterministic derivation before confirmation target labels are revealed. An independent reader verifies role separation, hashes, k, q and endpoint construction.",
+    "6. Reveal confirmation labels once under the fixed protocol; compute unchanged Gaussian CRPS/density and separate band diagnostics. Preserve failures, unbounded bands, losses to strong baselines and all admitted units.",
+    "7. Record the observed independent evidence and uncertainty. If the frozen method fails, retain the result; any algorithm revision consumes this cohort as development and requires a new future confirmation cohort."
+  ],
+  "identity_and_freeze_manifest_required_fields": [
+    "study_protocol_id and actual UTC",
+    "scientific estimand and independent_group_id",
+    "formulation_id, preparation_batch_id, physical_parent_ids, raw_run_id",
+    "canonical source lineage ids, DOI/URL, version, license, native file SHA256",
+    "material phase, temperature, preparation and rheometry state/protocol/direction, physical units",
+    "cohort role (consumed/calibration/confirmation) and all known ancestor/sibling/duplicate relationships",
+    "lawful anchor rule, native anchor identities, observed-input SHA256",
+    "native target identities/coordinates, strictly-above-anchor rule, support endpoints, target count",
+    "group curve/query family policy and deterministic within-unit score/aggregation rules",
+    "model, training manifest, source, normalization and prediction SHA256",
+    "exact alpha representation, n_cal, k, sorted calibration group scores and finite/unbounded q status",
+    "prediction freeze timestamp before calibration labels; calibration/band freeze before confirmation labels",
+    "independent audit entry point, exclusions, failures, unknowns and deviations"
+  ],
+  "multiplicity_and_selection": {
+    "model_selection": "Fix the primary predictor before calibration; otherwise select on a distinct selection cohort and reserve fresh final calibration. A width/coverage winner chosen using the same final calibration labels does not inherit the simple fixed-score guarantee automatically.",
+    "multiple_methods": "Separately predeclared methods can each have their own marginal guarantee; this is not a simultaneous guarantee for all methods nor a guarantee for a post hoc selected method. If such a family claim is required, predeclare a familywise adjustment or a whole-family max score and acknowledge wider bands.",
+    "abstention": "Simple bands do not establish safe rejection. Outcome-dependent dropping of failed groups is prohibited. A fixed input-only acceptance rule must be applied symmetrically to calibration and target groups and the resulting accepted population stated, or a separate valid selective-inference method is required."
+  },
+  "primary_source_reading_ledger": [
+    {
+      "title": "Conformal Prediction Bands for Multivariate Functional Data",
+      "authors": "Jacopo Diquigiovanni; Matteo Fontana; Simone Vantini",
+      "actual_version_read": "arXiv:2106.01792v1, 2021-06-03",
+      "url": "https://arxiv.org/html/2106.01792v1",
+      "metadata_url": "https://arxiv.org/abs/2106.01792",
+      "doi": "10.48550/arXiv.2106.01792",
+      "journal_doi_for_reference": "10.1016/j.jmva.2021.104879",
+      "license_observed": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "actual_read_scope": "Abstract/intro and selected Sections 2, 3.1, 3.2 plus Appendix A.1 snippets; Section 3.1 score, strictly positive modulation, simultaneous band, kth order and whole-space small-alpha rule directly read. Not full-paper reading; simulations/application not reviewed.",
+      "use_in_this_review": "Prior art for modulation-normalized simultaneous functional bands; finite-grid material adaptation is a restricted application, not an original theorem.",
+      "code_or_fulltext_redistributed": false
+    },
+    {
+      "title": "Distribution-Free Predictive Inference For Regression",
+      "authors": "Jing Lei; Max G'Sell; Alessandro Rinaldo; Ryan J. Tibshirani; Larry Wasserman",
+      "actual_version_read": "arXiv:1604.04173v2, 2017-03-08",
+      "url": "https://arxiv.org/html/1604.04173v2",
+      "metadata_url": "https://arxiv.org/abs/1604.04173",
+      "doi": "10.1080/01621459.2017.1307116",
+      "license_observed": "arXiv.org perpetual non-exclusive license; not an open code license",
+      "actual_read_scope": "Abstract/intro, Algorithm 2 and Theorem 2.2 in Section 2.2, and Section 5.2 equations 13-14 and training-only local scale discussion. Nearby ROO excerpts were seen but not used as an independent future-confirmation argument. Not full-paper reading.",
+      "use_in_this_review": "Classical split conformal order statistic and normalized residual construction; lower marginal coverage with ties distinguished from continuity-based upper/exact statements.",
+      "code_or_fulltext_redistributed": false
+    },
+    {
+      "title": "A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification",
+      "authors": "Anastasios N. Angelopoulos; Stephen Bates",
+      "actual_version_read": "arXiv:2107.07511v6, 2022-12-07",
+      "url": "https://arxiv.org/html/2107.07511v6",
+      "metadata_url": "https://arxiv.org/abs/2107.07511",
+      "doi": "10.48550/arXiv.2107.07511",
+      "license_observed": "arXiv.org perpetual non-exclusive license; not an open code license",
+      "actual_read_scope": "Abstract/intro, quantile pseudocode snippets, Section 2.3 normalized uncertainty scores, Appendix C conditional-vs-marginal empirical coverage discussion, and Appendix D theorem/rank proof. Not full-paper reading; group-balanced techniques not reviewed/adopted.",
+      "version_caveat": "HTML title display contains an August 2026 date, but arXiv submission history identifies the read version as v6 dated 2022-12-07. The version identifier governs this ledger.",
+      "use_in_this_review": "Finite-order/infinite fallback and marginal nature of coverage; illustration pseudocode is not copied as an exact numerical quantile implementation.",
+      "code_or_fulltext_redistributed": false
+    },
+    {
+      "title": "Distribution-free inference with hierarchical data",
+      "authors": "Yonghoon Lee; Rina Foygel Barber; Rebecca Willett",
+      "actual_version_read": "arXiv:2306.06342v4, 2025-08-02; additionally selected v2 introduction/definitions were opened before version verification",
+      "url": "https://arxiv.org/html/2306.06342v4",
+      "metadata_url": "https://arxiv.org/abs/2306.06342",
+      "doi": "10.48550/arXiv.2306.06342",
+      "license_observed": "arXiv.org perpetual non-exclusive license; not an open code license",
+      "actual_read_scope": "v4 abstract, Sections 1.1 and 2.1 and opening Section 2.2; whole-group versus within-group exchangeability, hierarchical dependence and point-mass-at-infinity quantile definition directly read. No HCP/HCP2 implementation, full proofs or application reproduced.",
+      "use_in_this_review": "Cautions against flattening clustered observations. Our whole-group max construction uses ordinary split-conformal ranks on group objects and makes no within-rate exchangeability, HCP or second-moment coverage claim.",
+      "code_or_fulltext_redistributed": false
+    }
+  ],
+  "read_scope_and_limits": {
+    "no_full_paper_count_claim": "Four primary papers were selected-section reviewed, not four full papers read and certainly not the historical requested hundreds.",
+    "source_downloads": "No paper source, publisher PDF, public dataset or third-party implementation was downloaded by this reviewer.",
+    "unadopted_search_leads": "Newer hierarchical/generalized conformal search hits were not method-reviewed and are not support for this protocol.",
+    "reason_no_new_model": "The current evidence deficit is fresh physical calibration/confirmation identity and measurements, not the absence of a more elaborate conformal model."
+  },
+  "independent_implementation_audit_acceptance_checks": [
+    "n=9, alpha='0.10' gives k=9 and the ninth score; n=8 returns unbounded q. At 95%, n=18 unbounded, n=19 gives k=19.",
+    "Exact rational arithmetic handles integer boundaries, e.g. n=9 and alpha='0.70' must give k=3, not the floating-point ceil of 3.0000000000000004.",
+    "For scores 1,...,10 and k=9, exact order statistic is 9; a quantile API must not silently substitute its own sample-quantile grid.",
+    "Ties retain multiplicity and boundary outcomes count as covered; zero q is not rejected solely for being zero.",
+    "Multiple curves/masks inside one group leave n_cal unchanged; repeated group declarations or cross-role physical lineage overlap are rejected.",
+    "Empty calibration, invalid alpha, malformed IDs, empty target groups, NaN/Inf inputs and nonpositive sigma fail explicitly without producing a finite calibrated artifact.",
+    "Unbounded q is strictly serialized and maps to the whole positive viscosity domain without NaN interval scores.",
+    "Normalized native-target trapezoid has positive weights summing to one and correct half endpoint weights; two targets receive one-half each.",
+    "Only targets strictly above the highest lawful anchor are in the primary continuation score; anchor gap is reported; m<2 cannot receive a primary integrated score.",
+    "Gaussian CRPS is unchanged by changing q and is never recomputed from a band alone.",
+    "All tests are software/mathematical qualification using artificial numbers; they do not count as empirical independent hydrogel coverage."
+  ],
+  "next_recovery_point": "Have the producer implement the exact finite-grid groupmax calibration and targets-only weighted CRPS contract, then independently audit it using artificial boundary cases only. Actual study activation awaits a physically identified fresh same-domain calibration and confirmation cohort plus declared state/tolerance."
+}

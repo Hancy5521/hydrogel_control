@@ -1,0 +1,1 @@
+Preserved before the v2 static-review revision. The original source and IMPLEMENTATION_RECEIPT.json are unchanged. V1 had syntax/JSON parsing only; no SUT, synthetic qualification or material execution.

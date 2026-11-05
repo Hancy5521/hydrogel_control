@@ -1,0 +1,37 @@
+{
+  "actual_utc": "2026-11-05T02:55:46.057826+00:00",
+  "no_SUT_or_template_code_changed": true,
+  "original_local_package_unchanged": true,
+  "transforms": [
+    {
+      "file": "author_handoff/PRIORITY_AND_AUTHOR_FACTS.json",
+      "original_local_sha256": "b775aca160cf436e04d6567090a19b356d2f75554a17e51d2157417a13f84490",
+      "public_derived_sha256": "2d8cb122e1e83ecbb7952589492e8812f52ab1dc0248f40fc4f29568796ac5c5",
+      "change": "Omit personal attachment path only; explicit public derivative annotation."
+    },
+    {
+      "file": "sources/SOURCE_ADMISSION_REVIEW.json",
+      "original_local_sha256": "12995cfe55edc46e01f29f38421e3c28ad3bf641d19b8c0cf84947ac39938a9f",
+      "public_derived_sha256": "0c1ae0e8f0a54032ec357cf7585d3c720609fe25867060396bbc9313356153e7",
+      "change": "Omit personal attachment path only; explicit public derivative annotation."
+    },
+    {
+      "file": "sources/SOURCE_ADMISSION_REVIEW_SUPERSEDED_PRE_RECOVERY.json",
+      "original_local_sha256": "9874fc4f7a09b5efb746b711c725503b28bada0e2e02880080cbf84f400265ee",
+      "public_derived_sha256": "1e6140130144e66289e6cf156a3e0bded24d1c39469e89c51320a5eb2807f4be",
+      "change": "Omit personal attachment path only; explicit public derivative annotation."
+    },
+    {
+      "file": "sources/mendeley_dataset_v4_html_RECEIPT.json",
+      "original_local_sha256": "48009238b479a173333445174721947b2aff2a9c9538310d8bc6919c4c05a0d5",
+      "public_derived_sha256": "b24a095c1de1d29f0265b287f83ab702946c7307c7ebc91eab21f7a000755a87",
+      "change": "Omit fetched site script text excerpts, retain status/URL/byte hashes."
+    },
+    {
+      "file": "STAGE_STATUS.json",
+      "original_local_sha256": "c01f7961ee7349d7645ebcfbec1970cb84a69eb0a949f18b438e1371cb43d523",
+      "public_derived_sha256": "6163897e0977a2b5f8cee971d787e4356c0b51f17eb821b7e5d2f54c88128ac2",
+      "change": "Bind actual redacted public source ledger and separately retain original pin."
+    }
+  ]
+}

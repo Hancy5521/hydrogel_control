@@ -1,0 +1,49 @@
+{
+  "schema": "prospective_unit_calibration_v1",
+  "data_mode": "synthetic",
+  "protocol_sha256": "dfe943020fe3b22291c46d5a5f4aaafff9dfe7a05d101d47862e89f7df46ed20",
+  "records": [
+    {
+      "record_id": "SYNTHETIC_confirmation_0_MASK0",
+      "target_gamma": [
+        8.0,
+        16.0,
+        32.0
+      ],
+      "y_log_eta": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "original_measurement_sha256": "f935f8c5a008199cb45ac96a5456c5f68604b82dbac41e20f06ef0bbc5ed695f"
+    },
+    {
+      "record_id": "SYNTHETIC_confirmation_1_MASK0",
+      "target_gamma": [
+        8.0,
+        16.0,
+        32.0
+      ],
+      "y_log_eta": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "original_measurement_sha256": "d015777eaafd59abb6f665b29ee8ff1177bf9aef8d30b966fd88e1906e0a6bbd"
+    },
+    {
+      "record_id": "SYNTHETIC_confirmation_2_MASK0",
+      "target_gamma": [
+        8.0,
+        16.0,
+        32.0
+      ],
+      "y_log_eta": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "original_measurement_sha256": "7df96216807e02e350928bde88b8be8c90bcde92f5d16bfe5e1a55ed608db91e"
+    }
+  ]
+}

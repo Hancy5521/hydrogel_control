@@ -1,0 +1,11 @@
+{
+  "actual_utc": "2026-11-05T02:43:58.718622+00:00",
+  "phase": "calibrate",
+  "error_type": "ValueError",
+  "message": "A truth-open attempt failed; retain its receipt and do not silently restart as fresh",
+  "truth_open_attempt_started": false,
+  "truth_bytes_loaded": false,
+  "truth_payload_parsed": false,
+  "failed_cohort_not_scored_as_successful_subset": true,
+  "instruction": "Inspect actual reveal status. A reveal-start marker is intent/open attempt, not proof of measured values read."
+}

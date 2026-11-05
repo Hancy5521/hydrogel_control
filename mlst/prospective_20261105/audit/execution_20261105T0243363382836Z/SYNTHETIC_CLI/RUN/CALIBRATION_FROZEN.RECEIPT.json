@@ -1,0 +1,16 @@
+{
+  "schema": "prospective_unit_calibration_v1",
+  "completed_actual_utc": "2026-11-05T02:43:46.611201+00:00",
+  "artifact_file": "CALIBRATION_FROZEN.json",
+  "artifact_sha256": "280acb8931b62a68ec558da907f7a56790cf2746c48fcede2885696c1555f34d",
+  "protocol_sha256": "dfe943020fe3b22291c46d5a5f4aaafff9dfe7a05d101d47862e89f7df46ed20",
+  "prior_receipts_sha256": {
+    "PROTOCOL.RECEIPT.json": "b72f9cbf0357ed5265f77620887dd5a7b5efc1f298bbdd6bbc3061fa09aaa9da",
+    "CALIBRATION_PREDICTIONS_FROZEN.RECEIPT.json": "87763091ad58485702c8504f1792400b97882d3ac9cc2782fa9c0ea90acdaeff"
+  },
+  "reveal_receipts_sha256": {
+    "CALIBRATION_REVEAL_STARTED.json": "5297a3bfc308143407971e3c0f34c39caf157822d693c9dbbd0c204ab887ad32",
+    "CALIBRATION_REVEAL_PARSED.json": "cdbc06064ccd2838e6549c807a75fecec2bdda875fa15b756911da0c47387d99"
+  },
+  "integrity_scope": "Detect inconsistent local files; no certification against coordinated rewriting."
+}

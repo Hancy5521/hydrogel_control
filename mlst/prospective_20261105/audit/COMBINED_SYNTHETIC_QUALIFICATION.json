@@ -1,0 +1,33 @@
+{
+  "artifact_kind": "combined_independent_synthetic_software_qualification",
+  "actual_end_utc": "2026-11-05T02:49:09.911645+00:00",
+  "status": "13_BOUNDED_TEST_FAMILIES_QUALIFIED_ACROSS_TWO_PRESERVED_RECEIPTS",
+  "first_result_sha256": "30cca35d7ec22642c3d62d9c21a49de366d2894134e217b18e508905f1a71539",
+  "first_result_original_status": "12_PASS_1_AUDIT_HARNESS_KEYERROR_RETAINED",
+  "continuation_plan_sha256": "45278b8af9c9792f25c03f21194b620bb5d7ece36e2873a232fba5d34222c456",
+  "continued_family": "synthetic_nine_cal_three_confirm_three_methods_CLI",
+  "continued_family_status": "PASS",
+  "first_pass_families_reused_without_rerun": 12,
+  "total_test_families_qualified": 13,
+  "actual_additional_CLI_commands": 3,
+  "source_sha256": {
+    "calibration.py": "a7229cad9c96cda151629ab256ce16e320438754ffdb379af0fc4b3aae8d1ba0",
+    "cli.py": "30c83242691ec594e8a22c71500828393148f6b09ecb70fdab3402fcc2300705",
+    "contract.py": "a7e736ea3d1791be6ca56e8c56585967909a86e812c44cf41fd69176c27ad808",
+    "evaluation.py": "fe9f4601c1070a04488cc1d30d8ad3a69e38268583e7cf68c9db3af41691c1ce",
+    "DESIGN_TEMPLATE.json": "cde5efff63ed58f725ebb27e7df94594c4d8c8cd00d9b07e8e57796f1b75ddfd",
+    "COHORT_TEMPLATE.json": "e656900c8544276e7a8b6267a473c80c0be6edd8f9ab40444b001c00e99bc6ad",
+    "FORMAT_EXAMPLES.json": "16f0256679d99164caf435a04913accbf91b3fc8b841ee1ec62a688ccd300d84",
+    "README.txt": "1a035c676d1b3a64f9fedcb9ad08de70c5c4a961e8199d44a514b8b2e4fa17e0",
+    "requirements.txt": "99f43573522565d7c480efd1f954892948033915df6a4e685327e995d3396eb6"
+  },
+  "source_unchanged": true,
+  "exact_order_cases_from_first_receipt": 155,
+  "finite_exchangeability_heldout_assignments_from_first_receipt": 2475,
+  "independent_CDF_CRPS_cases_from_first_receipt": 15,
+  "max_CRPS_CDF_absolute_error_from_first_receipt": 8.881784197001252e-16,
+  "artificial_confirmation_result_sha256": "09ead014fd58fef44b73ec16177ce18097f81305534a7bef05b88a758aa583de",
+  "future_corrected_full_replay_script_sha256": "35c9ba99f8740e2a0e8d632df026ce922bc5c031d76a4552b8f68593d320a14c",
+  "new_material_measurements_or_fits": 0,
+  "scope": "Artificial numerical/formal-contract/CLI qualification only. No real material calibration, independent batch/formulation validation, experimental savings or submission-readiness conclusion."
+}

@@ -1,0 +1,18 @@
+V2 PRE-FREEZE STATIC-REVIEW REVISION
+
+V1 source and its original syntax-only receipt were byte-verified into:
+history/code_v1_20261105T022818871192Z
+No v1 qualification or material execution was performed.
+
+This single coherent revision adds:
+- Validation of aligned finite truth/weights and positive SD before unbounded-set coverage.
+- Rejection of collapsed/nonpositive/nonfinite log-rate quadrature gaps and span.
+- Exclusive completion SHA receipts and linked-history checks at every following phase.
+- Separate truth-open intent, bytes-loaded and JSON-parsed accounting; accurate preflight failures.
+- Explicit unassessed real-evidence status and n_declared_units counts.
+- Separate insufficient-sample and numeric/infinite-score reasons for unbounded thresholds.
+- Exact metadata schemas, integer target indices, repeated-original-curve hash/value consistency.
+
+Verification remains AST syntax and JSON parsing only. No SUT imports, numerical
+qualification, workflow execution, real fits, calibration or material data reads.
+The root agent will register/pin this source before independent synthetic audit.

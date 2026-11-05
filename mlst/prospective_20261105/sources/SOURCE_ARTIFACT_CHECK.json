@@ -1,0 +1,85 @@
+{
+  "actual_utc": "2026-11-05T02:19:21.059843+00:00",
+  "role": "source artifact consistency checks, not independent science audit",
+  "status": "PASS",
+  "checks": {
+    "new_admission_zero": true,
+    "six_query_executions_four_unique": true,
+    "all_four_result_payloads_read_after_authorized_recovery": true,
+    "known_consumed_four_sources_46_curves": true,
+    "known_23_groups_781_targets": true,
+    "old_v4_not_admitted": true,
+    "no_numeric_actions": true,
+    "original_metadata_hashes_match": true,
+    "preliminary_artifacts_preserved": true,
+    "chinese_factnote_not_mojibake": true,
+    "recovery_receipt_present": true
+  },
+  "files": [
+    {
+      "path": "datacite_dataset_v4.json",
+      "bytes": 10225,
+      "sha256": "822e074d8db9ce1cd568afa93284cafacf0701f3367e7cd5367a52b50b5a9450"
+    },
+    {
+      "path": "datacite_dataset_v4_RECEIPT.json",
+      "bytes": 3447,
+      "sha256": "b62c0ebe3273c5b6ba76da4a2da65b15017500ee040616bbd4e472f74ba7edc4"
+    },
+    {
+      "path": "mendeley_dataset_v4_html.html",
+      "bytes": 130009,
+      "sha256": "4a0adf1a66d12f70f43508708f6ed79e69832990c125f676a85098eea948669e"
+    },
+    {
+      "path": "mendeley_dataset_v4_html_embedded_10.txt",
+      "bytes": 7058,
+      "sha256": "63d2d698f2a94ccbfff821ad45a1e612df253868e163abd99e6c5a6cfe1c7ecf"
+    },
+    {
+      "path": "mendeley_dataset_v4_html_embedded_4.txt",
+      "bytes": 3127,
+      "sha256": "1bda97012ef427477051cafc73791dbb5876256e8cee3c194f97e55563b1a0b8"
+    },
+    {
+      "path": "mendeley_dataset_v4_html_RECEIPT.json",
+      "bytes": 1296,
+      "sha256": "48009238b479a173333445174721947b2aff2a9c9538310d8bc6919c4c05a0d5"
+    },
+    {
+      "path": "mendeley_files_v4_metadata_RECEIPT.json",
+      "bytes": 474,
+      "sha256": "20477139a8f4dac939d0ae8402d73ede349e60fd5f95c49eeeb140d2956e74b0"
+    },
+    {
+      "path": "mendeley_files_v4_metadata_response.json",
+      "bytes": 186,
+      "sha256": "0d1652c518ec7a6b45313bcb3387dc424e6ceb9d1d325ee9f64e783fa2563eb4"
+    },
+    {
+      "path": "RECOVERY_QUERY_RESULT.txt",
+      "bytes": 13039,
+      "sha256": "3437c8da7afb4d2fed770dc074074dd71b01af6d3bfac33612ce1828d0f0aaf7"
+    },
+    {
+      "path": "SOURCE_ADMISSION_FACTS_ZH.txt",
+      "bytes": 2490,
+      "sha256": "ed991b667636266b217b293b4d49889e528d2720c046467d4b6ec82947badd5e"
+    },
+    {
+      "path": "SOURCE_ADMISSION_FACTS_ZH_SUPERSEDED_PRE_RECOVERY.txt",
+      "bytes": 2224,
+      "sha256": "8cc0b9b30851707476cfdeeb17fbc20353a47d1f7032c0b6037a9ee1eb83149a"
+    },
+    {
+      "path": "SOURCE_ADMISSION_REVIEW.json",
+      "bytes": 28206,
+      "sha256": "12995cfe55edc46e01f29f38421e3c28ad3bf641d19b8c0cf84947ac39938a9f"
+    },
+    {
+      "path": "SOURCE_ADMISSION_REVIEW_SUPERSEDED_PRE_RECOVERY.json",
+      "bytes": 20635,
+      "sha256": "9874fc4f7a09b5efb746b711c725503b28bada0e2e02880080cbf84f400265ee"
+    }
+  ]
+}

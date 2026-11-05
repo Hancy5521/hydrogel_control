@@ -1,0 +1,62 @@
+{
+  "actual_utc": "2026-11-05T02:14:51.606093+00:00",
+  "url": "https://api.datacite.org/dois/10.17632/wwkpzj3vfk.4",
+  "final_url": "https://api.datacite.org/dois/10.17632/wwkpzj3vfk.4",
+  "status_code": 200,
+  "bytes": 10225,
+  "sha256": "822e074d8db9ce1cd568afa93284cafacf0701f3367e7cd5367a52b50b5a9450",
+  "read_role": "public metadata only, no raw workbook",
+  "content_type": "application/json; charset=utf-8",
+  "selected_metadata": {
+    "doi": "10.17632/wwkpzj3vfk.4",
+    "titles": [
+      {
+        "title": "Inks of gelatin-alginate-hyaluronic acid for 3D printing: effects of bioglass 45S5 addition on printability, rheology and on scaffold tensile modulus"
+      }
+    ],
+    "creators": [
+      {
+        "name": "Bertuola, Marcos",
+        "nameType": "Personal",
+        "givenName": "Marcos",
+        "familyName": "Bertuola",
+        "affiliation": [],
+        "nameIdentifiers": []
+      }
+    ],
+    "publisher": "Mendeley",
+    "publicationYear": 2021,
+    "version": null,
+    "relatedIdentifiers": [
+      {
+        "relationType": "IsVersionOf",
+        "relatedIdentifier": "10.17632/wwkpzj3vfk",
+        "relatedIdentifierType": "DOI"
+      }
+    ],
+    "rightsList": [
+      {
+        "rightsUri": "info:eu-repo/semantics/openAccess"
+      },
+      {
+        "rights": "Creative Commons Attribution 4.0 International",
+        "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "schemeUri": "https://spdx.org/licenses/",
+        "rightsIdentifier": "cc-by-4.0",
+        "rightsIdentifierScheme": "SPDX"
+      }
+    ],
+    "dates": [
+      {
+        "date": "2021-02-11",
+        "dateType": "Issued"
+      }
+    ],
+    "descriptions": [
+      {
+        "description": "In this work, we studied the printability, mechanical and rheological properties of gelatin-alginate-hyaluronic acid inks with different concentrations of a bioactive glass, 45S5 bioglass (BG), from 2 to 8 % w/w respect to polymer powders. Inks depicted a pseudoplastic behavior with thermo-responsive gelation point of gelatin at 25°C (see processed rheometer data in \"Rheology data\" folder, please use SciDAVis software for .sciprj files), leading to self-supported structures during 3D printing. Addition of BG reduced storage modulus of the inks, evidencing more viscous behavior probably caused by the microparticles that disrupt the polymeric network. Higher concentrations of BG (above 6 %) led to a reduction of inks viscosity (see \"Rheology data\" &gt; \"Inks Viscosity.xlsx\"). Inks without BG evidenced good printing fidelity (Pr=0.91±0.06, evaluated using the \"Ractangle Grid 10% infill for printability.gcode\") slightly decreasing with up to 2 % BG concentration (see \"Printability assay\" files). Mechanical characterization of crosslinked scaffolds with CaCl2, evidenced tensile modules of ~0.13 MPa, similar to skin tissue, and increased to ~0.16 MPa after addition of 6-8% BG (see \"Tensile moduculus assay\" file, please use SciDAVis software). Fibroblast cells (NIH/3T3) attached and grew on the surface of the scaffolds (3D printed using \"Cube 2cm 3mm.gcode\"), revealing cytocompatibility of final products for all the scaffolds (see \"Cell attachment assay\" files). Moreover, scaffolds containing BG 6% and 8% w/w presented a hydroxyapatite layer (see EDS assay.xlsx).",
+        "descriptionType": "Abstract"
+      }
+    ]
+  }
+}
