@@ -1,0 +1,73 @@
+{
+  "actual_utc": "2026-11-05T11:17:03.950986+00:00",
+  "status": "FORECAST_AND_SCORE_AUDITS_PASS_POSTHOC_TRACE_RECONCILED",
+  "files": {
+    "forecast_plan": {
+      "path": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\pilot\\numerical_audit\\FORECAST_AUDIT_PLAN.json",
+      "sha256": "29e233fb133f8baed401a771bf543c2fc480de96f40930a50f222bb01fb2aaa9"
+    },
+    "forecast_result": {
+      "path": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\pilot\\numerical_audit\\forecast_execution_20261105T1107593958550Z\\INDEPENDENT_NUMERICAL_RESULT.json",
+      "sha256": "be89ca3093b3ece78905105550049afbf3eff41eb992f0e8d28af77757fbf9cd"
+    },
+    "score_plan": {
+      "path": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\pilot\\numerical_audit\\SCORE_AUDIT_PLAN.json",
+      "sha256": "d557053f58ae70eb527ac9202f6eb3cdf8656651dba4dff6cb959aad2b62f12d"
+    },
+    "score_result": {
+      "path": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\pilot\\numerical_audit\\score_execution_20261105T1114299269991Z\\INDEPENDENT_NUMERICAL_RESULT.json",
+      "sha256": "1bdaddf98415ab68e180a7bd95bc68003e3219a696c194ddf8e052e43a1f3afb"
+    },
+    "trace_plan": {
+      "path": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\pilot\\numerical_audit\\TRACE_DIAGNOSTIC_PLAN.json",
+      "sha256": "7e1f3289458721833c84cda9b3e489ee7c7e0f1d5a4c68b4ed18930863b40ea7"
+    },
+    "trace_result": {
+      "path": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\pilot\\numerical_audit\\TRACE_EQUIVALENCE_POSTHOC.json",
+      "sha256": "899637287cc1a68b63a3e106ea2704c7f137b2f4be664533d563062b10be8f26"
+    },
+    "audit_script": {
+      "path": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\pilot\\numerical_audit\\independent_numerical_audit.py",
+      "sha256": "529364bdffb4595df6a7eb935df1280fd64e9b654322952b69378b77785f3b1e"
+    }
+  },
+  "scope": "Source-pinned fixed offline pilot numerical/resource correctness; not new data or empirical confirmation.",
+  "actual_campaigns": 40,
+  "logical_seed_names": 64,
+  "deterministic_aliases_reused": 24,
+  "checkpoint_laws": 160,
+  "paired_average_difference_rows": 64,
+  "paired_logical_seed_difference_values": 256,
+  "independent_test_metadata_groups_per_dataset": 8,
+  "forecasts": {
+    "max_mean_error": 5.080380560684716e-13,
+    "max_covariance_error": 1.5907414274707321e-15,
+    "test_truth_arrays_read": false
+  },
+  "scores": {
+    "max_group_CRPS_error": 7.105427357601002e-15,
+    "max_macro_CRPS_error": 8.881784197001252e-16,
+    "max_mean_paired_difference_error": 8.881784197001252e-16,
+    "max_logical_seed_difference_error": 1.3322676295501878e-15,
+    "test_truth_read_after_explicit_score_approval": true
+  },
+  "resource_scope": {
+    "new_bundle_budget": 24,
+    "new_cells_range": [
+      24,
+      37
+    ],
+    "initial_bundles": {
+      "ucsb_thermoelectrics": 47,
+      "jarvis_dft_3d": 29
+    },
+    "not_constant_cell_count": true,
+    "not_measured_lab_or_DFT_cost": true
+  },
+  "posthoc_trace_entire_equal_pairs": 7,
+  "posthoc_pairs": 8,
+  "no_SUT_imports_refits_or_policy_execution": true,
+  "core_audit_script_unchanged_since_registration": true,
+  "new_measurements": 0,
+  "no_causal_catalytic_or_algorithm_novelty_claim": true
+}

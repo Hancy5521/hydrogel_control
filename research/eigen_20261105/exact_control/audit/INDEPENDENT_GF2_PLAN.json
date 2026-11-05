@@ -1,0 +1,91 @@
+{
+  "kind": "POST_EXECUTION_INDEPENDENT_EXACT_CONTROL_GF2_AUDIT",
+  "registered_actual_utc": "2026-11-05T11:41:40.663234+00:00",
+  "registered_asia_shanghai": "2026-11-05T19:41:40.663234+08:00",
+  "input_sha256": {
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\exact_control\\enumerate_control.py": "0998e91f2e682c441d7967af6c493a8c32bcc1c65d0d59c3d03cf1610ad04857",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\exact_control\\PLAN.json": "0a8c57a9f34ba6ddec27a3f982cf021fbf199296ac11f35f060355b2e09b8a36",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\exact_control\\results\\EXACT_RESULTS.json": "376ec30dd0c45be1c5894877a598cd2934fce9853275f2d2f7e4ebbbea24bfd6",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\exact_control\\SOURCE_RECEIPT.json": "46676dbead61c95a83db0327428e2500a46fb73839b05138f5e5c1fcb3eb4501",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\exact_control\\README.txt": "d352f4f6d3f3f6a612dd7bedc8a5e8ebf6d12706a2a57059868e003fe2f27b69"
+  },
+  "producer_source_sha256": "0998e91f2e682c441d7967af6c493a8c32bcc1c65d0d59c3d03cf1610ad04857",
+  "producer_plan_sha256": "0a8c57a9f34ba6ddec27a3f982cf021fbf199296ac11f35f060355b2e09b8a36",
+  "frozen_results_file": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\exact_control\\results\\EXACT_RESULTS.json",
+  "audit_script_path": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\exact_control\\audit\\independent_verification.py",
+  "audit_script_sha256": "b9fc52cbda7a18dbe524258ee3a838e79bce187d28fbf924b0f48dbcaba5981b",
+  "registration_scope": "Audit plan registered after root executed the source-frozen logical control. This is not preregistration of the producer experiment, new material evidence, or an independent confirmation cohort.",
+  "prior_review": "Producer source statically read, publicAPI and four world definitions checked; independent reviewer did not import or execute producer. Root supplied the completed result digest; first result leaf/JSON schema inspected to bind adapters. Earlier target risk/cost expectations hand-derived before producer execution.",
+  "independence_route": "Uniform GF(2) parity row spans plus at most32 feasible action subsets, and reconstruction of each frozen leaf from independently declared binary worlds. No producer import, Bellman recursion, reexecution, model fit or real-source read.",
+  "proof_scope": [
+    "Uniform independent hidden bits conditioned on linear parity observations form an affine-uniform posterior. A target parity is known iff its coefficient lies in the observed row span; otherwise its positive probability is1/2.",
+    "For two targets, Bayes mean Brier risk equals unknown-target-count/8. Posterior entropy reduction equals observation rank, not oracle-call count.",
+    "In these fixed-cost linear fixtures, risk and future feasible costs depend on action subsets but not observed signs. Hence subset-optimal value and minimum cost equal the adaptive DP optimum. This does not extend automatically to nonlinear/noisy/heterogeneous real discovery."
+  ],
+  "families": [
+    {
+      "name": "configuration_and_pins",
+      "checks": [
+        "exact48 scenario/cost/objective/policy identities",
+        "no missing or duplicate configuration",
+        "source and producer plan bindings",
+        "zero material evidence"
+      ]
+    },
+    {
+      "name": "GF2_subset_optima_and_every_frozen_leaf",
+      "checks": [
+        "independent GF2 row-span risk and <=32-subset optimum",
+        "every action prefix matches declared optimal/myopic/static rule",
+        "all actual leaf posterior world IDs and rational probabilities",
+        "exact expected loss and minimum charged costs",
+        "budget legality,no repeats,completeworldcoverage",
+        "V-only verified labels versus derived-but-unverified targets",
+        "independent latent information bits are rank not repeated sampling"
+      ]
+    },
+    {
+      "name": "rank_information_and_complementarity",
+      "checks": [
+        "all4 scenario proper risks",
+        "mean2target complementarity1/8 only coupled",
+        "rank mutual information and Y1 information complementarity1bit",
+        "known theta/fakepair/absent relation zero complementarity"
+      ]
+    },
+    {
+      "name": "cost_and_verified_endpoint_counterexamples",
+      "checks": [
+        "cheap optimalrisk0cost3/4directverified0 versus myopicrisk1/8cost1directverified1",
+        "equalcostDPdirectV1V2risk0verified2 versus staticRErisk1/8verified0",
+        "verification-shortfall endpoint correctly changes optimal behavior"
+      ]
+    },
+    {
+      "name": "independent_pseudo_false_certainty",
+      "checks": [
+        "independent h matches theta probability1/2",
+        "wrongconfident expectedBrier1/2 versus proper1/4",
+        "reportedrisk0 is falsecertainty",
+        "0 direct targetmeasurements and explicitE1E2cost1/2"
+      ]
+    }
+  ],
+  "tolerance": "Exact Fraction/integer equalities throughout; no floating-point ranking or numerical tolerance.",
+  "required_approval": {
+    "approved": true,
+    "scope": "EXACT_CONTROL_GF2_AUDIT",
+    "plan_sha256": "EXACT_SHA_OF_THIS_PLAN"
+  },
+  "failure_policy": "One unique output retains every family result. Stop and report any difference; do not change producer/control worlds/costs or silently edit/retry auditor after outcome. Any harness amendment requires new recorded root decision.",
+  "forbidden": [
+    "producer import",
+    "producer DP call/re-execution",
+    "new model or material computation",
+    "old MLST cohort use",
+    "claim of empirical cross-catalytic rates",
+    "general adaptive advantage theorem",
+    "counting algebraic worlds/leaves or derived targets as material measurements"
+  ],
+  "command_template": "D:\\Anaconda\\python.exe H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\exact_control\\audit\\independent_verification.py --plan H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\exact_control\\audit\\INDEPENDENT_GF2_PLAN.json --approval ROOT_APPROVAL_JSON --output-dir NEW_UNIQUE_DIRECTORY"
+}

@@ -1,0 +1,39 @@
+{
+  "actual_recorded_utc": "2026-11-05T11:03:55.282319+00:00",
+  "status": "DRAFT_READY_PENDING_FINAL_INPUT_PINS_AND_ROOT_APPROVAL",
+  "source_files": {
+    "independent_numerical_audit.py": {
+      "sha256": "529364bdffb4595df6a7eb935df1280fd64e9b654322952b69378b77785f3b1e",
+      "bytes": 27471,
+      "check": "AST_PARSE_ONLY_NO_EXECUTION"
+    },
+    "make_audit_plan.py": {
+      "sha256": "f4089800dd77a27511805aab9ec274ac2fe30feea8e6088437cee8042f749e1a",
+      "bytes": 5725,
+      "check": "AST_PARSE_ONLY_NO_EXECUTION"
+    }
+  },
+  "actual_runtime_or_SUT_execution": false,
+  "actions_forecasts_or_scores_read": false,
+  "source_response_arrays_read": false,
+  "requested_next_step": "Root supplies scientific protocol/completeforecastfreeze paths; register actual forecast audit plan and approve before any audit execution. Score phase needs separate later approval/frozen producer result.",
+  "predeclared_tolerances": {
+    "metadata_atol_rtol": [
+      2e-10,
+      2e-10
+    ],
+    "mean_atol_rtol": [
+      2e-08,
+      2e-08
+    ],
+    "covariance_atol_rtol": [
+      5e-09,
+      2e-08
+    ],
+    "scores_atol_rtol": [
+      5e-11,
+      2e-10
+    ]
+  },
+  "basis": "Read-only final producer source text/schema; no producer imports or model/policy calls."
+}

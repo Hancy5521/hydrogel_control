@@ -1,0 +1,7 @@
+{
+  "actual_utc": "2026-11-05T11:35:45.836484+00:00",
+  "plan_sha256": "0a8c57a9f34ba6ddec27a3f982cf021fbf199296ac11f35f060355b2e09b8a36",
+  "approval_sha256": "910af60210e53a4d12d88793d63241d7e55afffc256b6126d620721933423fe5",
+  "source_sha256": "0998e91f2e682c441d7967af6c493a8c32bcc1c65d0d59c3d03cf1610ad04857",
+  "data": "Only declared algebraic binary worlds; no material file access"
+}

@@ -1,0 +1,13 @@
+{
+  "actual_utc": "2026-11-05T12:18:13.323995+00:00",
+  "reason": "Public subset must not claim all raw data/forecasts are embedded",
+  "transforms": [
+    {
+      "path": "INDEX.html",
+      "local_original_sha256": "27c82716c10b553e82bb13bc6d3a242627d6a9c7b4b099d61b50a64f4da4f404",
+      "public_sha256": "53379a556e3aa4d2a4af79863bb1aba01fe9c9f33c91ae45b1ca84aff08932b9"
+    }
+  ],
+  "scientific_source_input_or_results_changed": false,
+  "complete_local_zip_sha256": "d8caed0f804a26535c2d4b3d6c42a99db80d522dd91e25afc6612455f6f6056b"
+}

@@ -1,0 +1,22 @@
+{
+  "actual_utc": "2026-11-05T11:33:50.172533+00:00",
+  "artifact_kind": "exact-control pre-execution source freeze and syntax-only receipt",
+  "source_file": "enumerate_control.py",
+  "source_sha256": "0998e91f2e682c441d7967af6c493a8c32bcc1c65d0d59c3d03cf1610ad04857",
+  "source_bytes": 22385,
+  "README_sha256": "d352f4f6d3f3f6a612dd7bedc8a5e8ebf6d12706a2a57059868e003fe2f27b69",
+  "plan_template_sha256": "1641c959ecc00cec995ab90dd1542254d5e8d597b4a6d2a1bf55f32f276ec039",
+  "checks": "AST parse of source and strict JSON writing only; no producer module import or execution",
+  "SUT_executed": false,
+  "material_data_read": false,
+  "new_fit_prediction_or_score": 0,
+  "abstract_cases": {
+    "scenarios": 4,
+    "cost_settings": 2,
+    "objectives": 2,
+    "classical_policies": 3,
+    "expected_policy_configurations": 48
+  },
+  "parent_pilot_unchanged": true,
+  "source_API": "See README Public API; mathematical audit must pin this source and use independent verification."
+}

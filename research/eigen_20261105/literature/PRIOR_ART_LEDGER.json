@@ -1,0 +1,331 @@
+{
+  "artifact_kind": "Bounded primary prior-art audit, not proof of originality or a completed conference paper",
+  "actual_recorded_utc": "2026-11-05T09:51:57.599157+00:00",
+  "actual_recorded_asia_shanghai": "2026-11-05T17:51:57.599157+08:00",
+  "research_run": "20261105T093229687251Z",
+  "reader": "/root/hypercycle_prior_art",
+  "core_count": 12,
+  "core_reading_summary": "11 core entries selected original methods/concepts or theorem statements;1(TTSE)official indexed PDF excerpts only. None claimed read as complete papers. Supplementary items have explicit shallower depth.",
+  "unique_search_queries": 19,
+  "search_queries": [
+    "Eigen Schuster hypercycle 1977 Part A emergence hypercycle equation Springer",
+    "site.nobelprize.org Manfred Eigen 1967 chemistry fast chemical reactions",
+    "AI Scientist v2 agentic tree search 2025 paper official GitHub",
+    "Darwin Godel Machine self improving agents official paper 2025",
+    "site.nature.com AI models collapse recursively generated data 2024 accumulation real data",
+    "site.nature.com autonomous laboratory accelerated synthesis novel materials 2023 A Lab",
+    "site.nature.com autonomous chemical research large language models Coscientist 2023",
+    "site.proceedings.mlr.press active feature acquisition conditional generative models data discovery",
+    "\"Self-Correcting Self-Consuming Loops for Generative Model Training\" official github proceedings",
+    "site.nature.com \"MatterGen\" 2025 generative model inorganic materials design",
+    "site.proceedings.neurips.cc \"Flow Network based Generative Models\"",
+    "site.proceedings.mlr.press \"Conservative Objective Models\"",
+    "\"Accelerated inorganic materials design with generative AI agents\" MatAgent github arxiv",
+    "\"Selforganization of matter\" Eigen 1971 pdf error threshold",
+    "\"Active Feature Acquisition with Generative Surrogate Models\" github",
+    "\"Is Model Collapse Inevitable\" ICLR 2025 official",
+    "site.proceedings.neurips.cc \"Multi-Information Source Optimization\"",
+    "site.proceedings.mlr.press \"Bayesian Optimization of Composite Functions\"",
+    "\"Test-Time Self-Evolution in Multi-Agent Systems for Materials Discovery\" arxiv"
+  ],
+  "per_web_call_utc": "Not retained individually; all actually executed during this run before this ledger was written. FetchreceiptUTC applies only actualPythonPDFrequests.",
+  "full_corpus_or_google_scholar_exhaustiveness_claimed": false,
+  "core": [
+    {
+      "id": "EIGEN1977",
+      "title": "The hypercycle. A principle of natural self-organization. Part A: Emergence of the hypercycle",
+      "year": 1977,
+      "venue_or_status": "Naturwissenschaften64:541–565",
+      "primary_url": "https://doi.org/10.1007/BF00450633",
+      "version_actually_read": "1977 published primary paper, university/seminar-hosted original PDF",
+      "actual_read_depth": "Selected conceptual §II/Fig7(PDFp4–5), selection/mutation-flow equations(PDFp8–9), quality factor discussion(PDFp14) and error-threshold context; other pages merely extracted, not read.",
+      "paper_license_status": "Springer1977 copyright; no redistribution license assumed",
+      "known_prior_contribution": "Hypercycle couples self-replicating units by catalytic support; autocatalysis and selection dynamics are classical. Error fidelity accumulates across copied symbols.",
+      "consequence_for_proposed_research": "A feedback pipeline is not automatically a hypercycle. Need measurable cross-module effect and an operational resource/quality definition; Nobel association confers no algorithmic novelty.",
+      "full_paper_read_claimed": false,
+      "local_pdf_sha256": "8d662c1c8b06aa8351f886abca27d41e37557ef7443df584518fbe1224705b71",
+      "nobel_attribution": "Eigen1967 Nobel is for extremely fast reaction studies, not the1977 hypercycle theory; official Nobel facts search result read; facts page itself403."
+    },
+    {
+      "id": "SCSELF2024",
+      "title": "Self-Correcting Self-Consuming Loops for Generative Model Training",
+      "year": 2024,
+      "venue_or_status": "ICML2024/PMLR235:15646–15677",
+      "primary_url": "https://proceedings.mlr.press/v235/gillman24a.html",
+      "version_actually_read": "arXiv2402.07087v1,11Feb2024; published ICML metadata read",
+      "actual_read_depth": "HTML Algorithm1,§3,§4.1 definitions,§4.2 assumptions,§4.3 theorem statement,§6.2 simulator corrector; proof appendices not read.",
+      "paper_license_status": "arXiv CC BY4.0; official code metadata MIT; upstream models/data separate restrictions",
+      "known_prior_contribution": "Generate→correct using expert/physics information→fine-tune is already formalized and tested. Stability theorem uses local regularity, sufficient initial quality and idealized correction assumptions.",
+      "consequence_for_proposed_research": "Cannot claim first verified self-consuming loop, first physics-guided self-correction or universal stability from Eigen analogy. New repair/expansion decision must differ and be tested under same corrector/cost.",
+      "full_paper_read_claimed": false,
+      "official_code_metadata": {
+        "repo": "nate-gillman/self-correcting-self-consuming",
+        "default_branch": "main",
+        "repo_license_metadata": "MIT",
+        "commit_sha": "97d1ea7c68c38f1a6ec41a91dfdb2e1814353de6",
+        "commit_date": "2024-07-18T13:47:58Z",
+        "read_depth": "Official GitHub repository metadata and latest default-branch commit metadata only; no code executed"
+      }
+    },
+    {
+      "id": "COLLAPSE2024",
+      "title": "AI models collapse when trained on recursively generated data",
+      "year": 2024,
+      "venue_or_status": "Nature631:755–759",
+      "primary_url": "https://doi.org/10.1038/s41586-024-07566-y",
+      "version_actually_read": "Published2024 PDF; noted official-index author-correction metadata21Mar2025, correction not read",
+      "actual_read_depth": "PDFp1 definition/errors discussion and selected conceptual collapse context; text extracted6pages, not all read.",
+      "paper_license_status": "CC BY4.0 stated in PDFp5",
+      "known_prior_contribution": "Finite-sample recursive generated-data replacement can degrade distributions/tails.",
+      "consequence_for_proposed_research": "Count provenance, preserve independent anchors and measure diversity/error across rounds; do not turn this into an absolute impossibility result for every synthetic-data workflow.",
+      "full_paper_read_claimed": false,
+      "local_pdf_sha256": "474c820b5224b6bfa337e98a0ff942eca4b7808b44236121af828c6122a860ae",
+      "correction_reviewed": false
+    },
+    {
+      "id": "ACCUM2024",
+      "title": "Is Model Collapse Inevitable? Breaking the Curse of Recursion by Accumulating Real and Synthetic Data",
+      "year": 2024,
+      "venue_or_status": "arXiv primary preprint version read; later venue not independently verified here",
+      "primary_url": "https://arxiv.org/html/2404.01413v1",
+      "version_actually_read": "arXiv2404.01413v1,1Apr2024",
+      "actual_read_depth": "HTML§2.1 assumptions and§2.2 theorem statements;§3 summary and discussion; no proof-complete reading.",
+      "paper_license_status": "arXiv perpetual nonexclusive license, not assumed CC redistribution",
+      "known_prior_contribution": "Accumulating original and synthetic data changes collapse behavior; under an explicit underparameterized Gaussian-linear setting, error remains bounded versus replacement growth.",
+      "consequence_for_proposed_research": "Do not claim self-generation must collapse. Include accumulation-only baseline so a provenance gate is not credited merely for retaining originals.",
+      "full_paper_read_claimed": false
+    },
+    {
+      "id": "MATAGENT2025",
+      "title": "Accelerated Inorganic Materials Design with Generative AI Agents",
+      "year": 2025,
+      "venue_or_status": "2025 arXiv primary text read; journal DOI10.1016/j.xcrp.2025.103019 indexed, journal full text not accessed",
+      "primary_url": "https://arxiv.org/html/2504.00741v1",
+      "version_actually_read": "arXiv2504.00741v1,1Apr2025",
+      "actual_read_depth": "HTML framework,StructureEstimator/PropertyEvaluator,tool methods,MP60 split,feedback success definition and limitations.",
+      "paper_license_status": "arXiv CC BY4.0; current official code metadata GPL-3.0",
+      "known_prior_contribution": "LLM composition planning, diffusion structure generation, GNN property evaluation and iterative feedback already expand materials exploration.",
+      "consequence_for_proposed_research": "Plain generation+predictor+memory+agent feedback overlaps directly. GNN-predicted success differs from independent DFT/wet confirmation; our evaluation must report exactly the oracle used.",
+      "full_paper_read_claimed": false,
+      "official_code_metadata": {
+        "repo": "izumitkhr/matagent",
+        "default_branch": "main",
+        "repo_license_metadata": "GPL-3.0",
+        "commit_sha": "faeece2e8da0346df5528c88adb6081962f947b4",
+        "commit_date": "2025-12-11T06:24:13Z",
+        "read_depth": "Official GitHub repository metadata and latest default-branch commit metadata only; no code executed"
+      }
+    },
+    {
+      "id": "MADE2026",
+      "title": "MADE: Benchmark Environments for Closed-Loop Materials Discovery",
+      "year": 2026,
+      "venue_or_status": "ICML2026/PMLR306:86002–86026",
+      "primary_url": "https://proceedings.mlr.press/v306/malik26a.html",
+      "version_actually_read": "Published2026 paper and current official repository",
+      "actual_read_depth": "PDF§3.1–3.4 selected(PDFp3–5):problem,policy/oracle budget,metrics and MLIP-oracle caveats; repository README architecture/baseline/oracle sections.",
+      "paper_license_status": "Paper accessible from official proceedings; exact paper redistribution license not verified; code metadata MIT",
+      "known_prior_contribution": "End-to-end configurable generation/filter/planner/oracle closed loops and discovery efficiency under bounded oracle budgets are already a top-conference benchmark.",
+      "consequence_for_proposed_research": "A new closed-loop materials benchmark cannot ignore MADE. Potential delta is native sparse multi-property repair plus search expansion under physical bundle identities/costs, not closedloop itself.",
+      "full_paper_read_claimed": false,
+      "official_code_metadata": {
+        "repo": "diffractivelabs/MADE",
+        "default_branch": "main",
+        "repo_license_metadata": "MIT",
+        "commit_sha": "bffda0c9a1fa1904b35c0ef67b455881c975df86",
+        "commit_date": "2026-05-08T15:21:48Z",
+        "read_depth": "Repository and latest default-branch commit metadata; official README architecture/oracle/baseline sections read by web."
+      },
+      "local_pdf_sha256": "c6117efde28386f0cfa101716f06fcf762c2e0dc09f40362ccf5578903186cd9"
+    },
+    {
+      "id": "AFA2021",
+      "title": "Active Feature Acquisition with Generative Surrogate Models",
+      "year": 2021,
+      "venue_or_status": "ICML2021/PMLR139:6450–6459",
+      "primary_url": "https://proceedings.mlr.press/v139/li21p.html",
+      "version_actually_read": "Published2021 primary PDF",
+      "actual_read_depth": "PDF§2.1(PDFp3) MDPAFA/AIR,conditional surrogate,intermediate reward and mutual-information utility; abstract/introduction and code URL.",
+      "paper_license_status": "Paper copyrightauthors; exact reuse license not verified in selected text; code not fetched",
+      "known_prior_contribution": "Arbitrary partially observed features, conditional generative dependency models and costly true-feature acquisition already form a decision process.",
+      "consequence_for_proposed_research": "Repair agent, missingness-aware conditionals and information-gain feature querying alone are classical. Compare against AFA-style greedy or learned policies.",
+      "full_paper_read_claimed": false,
+      "local_pdf_sha256": "71cc47b1bc37e0e6ae24d834fb7fb7f813ea0d06756687df0dddc53284aaffa4",
+      "official_code_url_reported_by_paper": "https://github.com/lupalab/GSMRL",
+      "official_code_audited": false
+    },
+    {
+      "id": "DGM2025",
+      "title": "Darwin Gödel Machine: Open-Ended Evolution of Self-Improving Agents",
+      "year": 2025,
+      "venue_or_status": "arXivv1 read; search-indexed ICLR2026 PDF not fully verified because OpenReview challenge",
+      "primary_url": "https://arxiv.org/html/2505.22954v1",
+      "version_actually_read": "arXiv2505.22954v1,29May2025",
+      "actual_read_depth": "HTML§3 archive/self-modification,§4.2 staged evaluation,§4.3 baselines,§6 limitations; not all appendix code listings read.",
+      "paper_license_status": "PaperCC BY4.0; code metadata Apache-2.0",
+      "known_prior_contribution": "Empirically validated self-modification and an expanding archive of agents already implement open-ended feedback with growth.",
+      "consequence_for_proposed_research": "Agent self-improvement and growing skill archive are not novel mechanisms. Need frozen-evaluator integrity,held-out tasks and matchedbudget ablations; avoid claiming unbounded improvement.",
+      "full_paper_read_claimed": false,
+      "official_code_metadata": {
+        "repo": "jennyzzt/dgm",
+        "default_branch": "main",
+        "repo_license_metadata": "Apache-2.0",
+        "commit_sha": "a565fd2d1dca504ef5104a7cc0f3bdc4ab9b4fd2",
+        "commit_date": "2025-08-13T10:40:14Z",
+        "read_depth": "Official GitHub repository metadata and latest default-branch commit metadata only; no code executed"
+      }
+    },
+    {
+      "id": "AISCIV22025",
+      "title": "The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search",
+      "year": 2025,
+      "venue_or_status": "arXiv report about ICLRworkshop-level experiment; not a main-conference acceptance claim",
+      "primary_url": "https://arxiv.org/html/2504.08066v1",
+      "version_actually_read": "arXiv2504.08066v1,10Apr2025",
+      "actual_read_depth": "HTML§3.1–3.4 staged manager,parallel tree search,replication/aggregation,VLM feedback and introduction workshop/main-rigor limitation.",
+      "paper_license_status": "PaperCC BY4.0; code currentcustom AI Scientist Source Code Licensev1.0(Dec2025),Sections1–6 read at commit96bd516...; not MIT",
+      "known_prior_contribution": "Agentic hypothesis→code→experiment→critique→paper cycle with branching archive and replication already exists.",
+      "consequence_for_proposed_research": "A workflow coordinator is implementation scaffolding, not a standalone original method. Existing AIreviewer acceptance is not external scientific verification.",
+      "full_paper_read_claimed": false,
+      "official_code_metadata": {
+        "repo": "SakanaAI/AI-Scientist-v2",
+        "default_branch": "main",
+        "repo_license_metadata": "NOASSERTION",
+        "commit_sha": "96bd51617cfdbb494a9fc283af00fe090edfae48",
+        "commit_date": "2025-12-19T07:46:31Z",
+        "read_depth": "Official GitHub repository metadata and latest default-branch commit metadata only; no code executed"
+      },
+      "code_license_actual_read": "https://github.com/SakanaAI/AI-Scientist-v2/blob/96bd51617cfdbb494a9fc283af00fe090edfae48/LICENSE",
+      "code_license_blob_sha1": "edddbf153e9a4dd4204e309e824fdbf05c74c8e7",
+      "reuse_note": "Use restrictions/disclosure obligations must be reviewed before code reuse; no code copied in this task."
+    },
+    {
+      "id": "HVKG2023",
+      "title": "Hypervolume Knowledge Gradient: A Lookahead Approach for Multi-Objective Bayesian Optimization with Partial Information",
+      "year": 2023,
+      "venue_or_status": "ICML2023/PMLR202:7167–7204",
+      "primary_url": "https://proceedings.mlr.press/v202/daulton23a.html",
+      "version_actually_read": "Published2023 primary paper",
+      "actual_read_depth": "Official abstract;PDF§2.3 partialinformation and competitive/noncompetitive costs(PDFp3),intro resource examples;§4 full acquisition proof not read.",
+      "paper_license_status": "Copyrightauthors in PDF; exact reuse license not verified",
+      "known_prior_contribution": "Unified decision-theoretic choice of design,objective and fidelity/cost already exploits partial-output observations.",
+      "consequence_for_proposed_research": "Repair-versus-expand and unequal-output costs may reduce to this action space. Upgrade strong baseline to identical output bundles and cost semantics; do not weaken it by forcing all-property queries.",
+      "full_paper_read_claimed": false
+    },
+    {
+      "id": "MISO2017",
+      "title": "Multi-Information Source Optimization",
+      "year": 2017,
+      "venue_or_status": "NIPS2017,Advances30",
+      "primary_url": "https://proceedings.neurips.cc/paper_files/paper/2017/hash/df1f1d20ee86704251795841e6a9405a-Abstract.html",
+      "version_actually_read": "Published2017 primary PDF",
+      "actual_read_depth": "PDF§2 formulation,§3.1 discrepancy GP and§3.2 cost-normalized KG,PDFp3–4; no complete theoremproof review.",
+      "paper_license_status": "Exact paper/code reuse license not verified; code URL referenced but not downloaded",
+      "known_prior_contribution": "Jointly choose location and source using expected target-objective improvement per cost,model source bias/noise.",
+      "consequence_for_proposed_research": "Evidence fidelity/source labels plus cost-aware acquisition are established. Need discrepancy estimation and oracle failure accounting,not just label tiers.",
+      "full_paper_read_claimed": false
+    },
+    {
+      "id": "TTSE2026",
+      "title": "Test-Time Self-Evolution in Multi-Agent Systems for Materials Discovery",
+      "year": 2026,
+      "venue_or_status": "PrimaryPDF header says AI4X–AccelerateConference2026,Singapore16–19June2026; acceptance/track not separately verified",
+      "primary_url": "https://openreview.net/pdf?id=qqT5zb5dnq",
+      "version_actually_read": "Official indexed primary PDF text; exactPDFrevision not available",
+      "actual_read_depth": "OfficialPDF search-indexed introduction and substantial-section excerpts read; directPDFshows browserverification; no全文reading or codeaudit.",
+      "paper_license_status": "Not verified; no code or paper redistribution assumed",
+      "known_prior_contribution": "Training-free materials agents already evolve tools/memory via sandbox feedback and cross-session skill consolidation.",
+      "consequence_for_proposed_research": "Materials-domain agent self-evolution is a direct existing neighbor. Need a clearly separate learning/acquisition mechanism,not just transfer the spider/growth analogy.",
+      "full_paper_read_claimed": false,
+      "reading_caveat": "Search-indexed primary text is weaker than downloaded/revision-pinned full paper; follow-up access needed before exact algorithm-level claims.",
+      "indexed_alternative_pdf": "https://openreview.net/pdf/b6a6a11e58690750b52aaaf7c1c33769b028daec.pdf"
+    }
+  ],
+  "additional_context_or_unresolved": [
+    {
+      "title": "Bayesian Optimization of Composite Functions",
+      "primary_url": "https://proceedings.mlr.press/v97/astudillo19a.html",
+      "version": "ICML2019 primary PDF",
+      "read_depth": "Abstract andPDFintro/relatedwork(PDFp1–2),prior structure and materials multi-property performance indices",
+      "takeaway": "Composition of several material properties and multi-outputGP informed optimization already studied; not formal novelty clearance."
+    },
+    {
+      "title": "A generative model for inorganic materials design(MatterGen)",
+      "primary_url": "https://www.nature.com/articles/s41586-025-08628-5",
+      "version": "Nature2025 DOI indexed page",
+      "read_depth": "Indexed primary abstract and design/evaluation portions only; directHTMLredirect error",
+      "code": {
+        "repo": "microsoft/mattergen",
+        "default_branch": "main",
+        "repo_license_metadata": "MIT",
+        "commit_sha": "92423660a8bd70e83679086e88f88596d484dc16",
+        "commit_date": "2026-08-27T16:29:16Z",
+        "read_depth": "Official GitHub repository metadata and latest default-branch commit metadata only; no code executed"
+      },
+      "takeaway": "Generation+propertyguidance and validation are existing materials components; DFTandwetproof-of-concept are different evidence levels."
+    },
+    {
+      "title": "An autonomous laboratory for the accelerated synthesis of inorganic materials",
+      "primary_url": "https://www.nature.com/articles/s41586-023-06734-w",
+      "version": "Nature2023,current indexed title",
+      "read_depth": "Indexed primary abstract/metadata only; HTMLredirect;10.4MBPDFreceived but rejected by local8MBsave gate,not read",
+      "takeaway": "Autonomous materials closed-loop experimentation already exists; no numerical effectiveness claim reproduced here."
+    },
+    {
+      "title": "Autonomous chemical research with large language models",
+      "primary_url": "https://www.nature.com/articles/s41586-023-06792-0",
+      "version": "Nature2023",
+      "read_depth": "Indexed primary abstract/metadata only; HTMLredirect;8.9MBPDFreceived but not saved/read",
+      "takeaway": "LLM tool-using experiment planning/execution is known; no wet workflow is executed here."
+    },
+    {
+      "title": "Selforganization of matter and the evolution of biological macromolecules",
+      "primary_url": "https://doi.org/10.1007/BF00623322",
+      "version": "Eigen1971 metadata",
+      "read_depth": "PubMed primary bibliographic metadata and search indexing; hostedPDFexpiredTLS certificate,not bypassed",
+      "takeaway": "Historicalerror-threshold precursor; do not claim1971fullpaperread."
+    },
+    {
+      "title": "The Hypercycle.PartB:Theabstracthypercycle",
+      "primary_url": "https://doi.org/10.1007/BF00420631",
+      "version": "Naturwissenschaften65:7–41(1978)",
+      "read_depth": "Officialpublisherabstract/metadata; subscription preview,not fulltext",
+      "takeaway": "Hypercycle stability/information integration is classical and assumption-dependent."
+    },
+    {
+      "title": "ManfredEigen1967NobelFacts",
+      "primary_url": "https://www.nobelprize.org/prizes/chemistry/1967/eigen/facts/",
+      "read_depth": "Officialsearch-indexfacts only; directpage403",
+      "takeaway": "Award concerns extremelyfastchemicalreactions; do not say hypercycle wonNobel."
+    },
+    {
+      "title": "Multi-taskBayesianoptimizationexperimentalarticle,DOId0mh00062k",
+      "primary_url": "https://pubs.rsc.org/en/content/articlehtml/2020/mh/d0mh00062k",
+      "read_depth": "URLprovidedbyparent,directrequest403,no methodtextread",
+      "takeaway": "Potential direct neighbor left unreviewed,not dismissed as no-overlap."
+    }
+  ],
+  "github_metadata_file": "GITHUB_METADATA_WITH_MADE.json",
+  "local_pdf_access_receipts": "PDF_FETCH_RECEIPTS.json",
+  "local_reading_only_notice": "PDFs/full extracted texts underlocal_reading_only are reading receipts,not algorithm resources; do not automatically add to publicGit or share without source-specificrights.",
+  "not_executed": [
+    "modeltraining",
+    "simulation",
+    "hiddenmaterialtargetscore",
+    "old25P/46rerun",
+    "codefromanyofficialrepo",
+    "contact",
+    "submission"
+  ],
+  "failures_and_limits": [
+    "Nobelpage403; severalNatureHTMLIDPredirects,notretriedwithcredentialbypass.",
+    "OpenReviewdirectPDFbrowserchallenge; indexedprimaryexcerpts only forTTSE.",
+    "Eigen1971hostTLSexpired;verificationkeptenabled,nodownload.",
+    "Gillman/A-Lab/CoscientistPDFresponsesexceededlocal8MBsavegate;not saved/read fromthatresponse. Gillmanmethod subsequentlyread viaarXivHTML.",
+    "Attemptedpypdftextimportfailed(ModuleNotFoundError);usedinstalledPyMuPDFinstead.",
+    "One markerprint hitGBKligatureUnicodeEncodeError aftertext extraction;selectedtextread withUTF8stdout,not anexperimentfailure.",
+    "Onecombinedselectedtextoutputtruncated;unreadMADE/AFAsegmentswerecompactlyrecovered.",
+    "CellarticlePIIguessfailed;usedknownDOIandprimaryarXiv instead."
+  ],
+  "conclusion": "No hard algorithmic novelty yet established. A useful combination/application remains possible, but novelty must be tested against AFA,partial-informationcost-awareKG,self-correctedtraining andmaterials-agentloops. Exact fullproposal match not found in this bounded review is not globaluniqueness."
+}

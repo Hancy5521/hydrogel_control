@@ -1,0 +1,98 @@
+{
+  "rows": [
+    {
+      "id": "eigen1977A",
+      "url": "https://www.metabolic-economics.de/pages/seminar_theoretische_biologie_2007/literatur/schaber/Eigen1977Naturwissenschaften64.pdf",
+      "actual_utc": "2026-11-05T09:39:36.332360+00:00",
+      "local_reading_only_no_redistribution_assumed": true,
+      "status_code": 200,
+      "final_url": "https://www.metabolic-economics.de/pages/seminar_theoretische_biologie_2007/literatur/schaber/Eigen1977Naturwissenschaften64.pdf",
+      "content_type": "application/pdf",
+      "bytes_received": 2784194,
+      "saved": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\literature\\local_reading_only\\eigen1977A.pdf",
+      "sha256": "8d662c1c8b06aa8351f886abca27d41e37557ef7443df584518fbe1224705b71",
+      "status": "PDF_FETCHED_NOT_YET_READ"
+    },
+    {
+      "id": "eigen1971",
+      "url": "https://dosequis.colorado.edu/Courses/MethodsLogic/papers/Eigen1971.pdf",
+      "actual_utc": "2026-11-05T09:39:36.333131+00:00",
+      "local_reading_only_no_redistribution_assumed": true,
+      "status": "FETCH_FAILED",
+      "error_type": "SSLError",
+      "error": "HTTPSConnectionPool(host='dosequis.colorado.edu', port=443): Max retries exceeded with url: /Courses/MethodsLogic/papers/Eigen1971.pdf (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1028)')))"
+    },
+    {
+      "id": "gillman2024",
+      "url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/gillman24a/gillman24a.pdf",
+      "actual_utc": "2026-11-05T09:39:36.333554+00:00",
+      "local_reading_only_no_redistribution_assumed": true,
+      "status_code": 200,
+      "final_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/gillman24a/gillman24a.pdf",
+      "content_type": "application/octet-stream",
+      "bytes_received": 9718152,
+      "status": "NO_ADMISSIBLE_PDF_SAVED"
+    },
+    {
+      "id": "made2026",
+      "url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/malik26a/malik26a.pdf",
+      "actual_utc": "2026-11-05T09:39:36.334026+00:00",
+      "local_reading_only_no_redistribution_assumed": true,
+      "status_code": 200,
+      "final_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/malik26a/malik26a.pdf",
+      "content_type": "application/octet-stream",
+      "bytes_received": 1643776,
+      "saved": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\literature\\local_reading_only\\made2026.pdf",
+      "sha256": "c6117efde28386f0cfa101716f06fcf762c2e0dc09f40362ccf5578903186cd9",
+      "status": "PDF_FETCHED_NOT_YET_READ"
+    },
+    {
+      "id": "afa2021",
+      "url": "https://proceedings.mlr.press/v139/li21p/li21p.pdf",
+      "actual_utc": "2026-11-05T09:39:36.804899+00:00",
+      "local_reading_only_no_redistribution_assumed": true,
+      "status_code": 200,
+      "final_url": "https://proceedings.mlr.press/v139/li21p/li21p.pdf",
+      "content_type": "application/pdf",
+      "bytes_received": 1758046,
+      "saved": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\literature\\local_reading_only\\afa2021.pdf",
+      "sha256": "71cc47b1bc37e0e6ae24d834fb7fb7f813ea0d06756687df0dddc53284aaffa4",
+      "status": "PDF_FETCHED_NOT_YET_READ"
+    },
+    {
+      "id": "collapse2024",
+      "url": "https://www.nature.com/articles/s41586-024-07566-y.pdf",
+      "actual_utc": "2026-11-05T09:39:39.891270+00:00",
+      "local_reading_only_no_redistribution_assumed": true,
+      "status_code": 200,
+      "final_url": "https://www.nature.com/articles/s41586-024-07566-y.pdf",
+      "content_type": "application/pdf",
+      "bytes_received": 1157018,
+      "saved": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\literature\\local_reading_only\\collapse2024.pdf",
+      "sha256": "474c820b5224b6bfa337e98a0ff942eca4b7808b44236121af828c6122a860ae",
+      "status": "PDF_FETCHED_NOT_YET_READ"
+    },
+    {
+      "id": "alab2023",
+      "url": "https://www.nature.com/articles/s41586-023-06734-w.pdf",
+      "actual_utc": "2026-11-05T09:39:49.504476+00:00",
+      "local_reading_only_no_redistribution_assumed": true,
+      "status_code": 200,
+      "final_url": "https://www.nature.com/articles/s41586-023-06734-w.pdf",
+      "content_type": "application/pdf",
+      "bytes_received": 10411037,
+      "status": "NO_ADMISSIBLE_PDF_SAVED"
+    },
+    {
+      "id": "coscientist2023",
+      "url": "https://www.nature.com/articles/s41586-023-06792-0.pdf",
+      "actual_utc": "2026-11-05T09:39:49.639186+00:00",
+      "local_reading_only_no_redistribution_assumed": true,
+      "status_code": 200,
+      "final_url": "https://www.nature.com/articles/s41586-023-06792-0.pdf",
+      "content_type": "application/pdf",
+      "bytes_received": 8869905,
+      "status": "NO_ADMISSIBLE_PDF_SAVED"
+    }
+  ]
+}

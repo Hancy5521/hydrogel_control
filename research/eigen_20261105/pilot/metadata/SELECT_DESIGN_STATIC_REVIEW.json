@@ -1,0 +1,65 @@
+{
+  "actual_utc": "2026-11-05T10:43:08.538035+00:00",
+  "status": "PASS_STATIC_SOURCE_INSPECTION_NOT_SUT_EXECUTION",
+  "checker_script_sha256": "4d28d4965c0bbfcdc2b496aece1527009c773bd63f59b0d0d0aaef87cf6c8dc9",
+  "role_plan_sha256": "ea9120cf04bc78c8292be8ebba3eab6f9b1b0f830574b3e1a803386105451de8",
+  "independent_selector_script_sha256": "1afe0bff81a7b9e2f6bfed41bbcd7a0141b657d88459c697e0b61aeea2099365",
+  "producer_source_snapshot": "pilot/code/benchmark_io.py",
+  "producer_source_sha256_at_static_read": "ded8a989f849d53c471d15eb9d4cb2981008643e20b4b27da5a9f1956df0847f",
+  "producer_select_design_AST_sha256": "9d114bf4bb104a020682839021e4d07098cd127c737e1c399e8440540e593d51",
+  "static_comparison": [
+    "Same40 full-source component IDs are selected by SHA256prefix and component-ID tie break.",
+    "Same8/8/16/8 role blocks, role ordering and at-most2 original-row hash selection.",
+    "Same original-row integer tie break, copy-plus-role semantics, target fields and unused group-ID suffix.",
+    "Source utility_sign -kappa/+bulk matches independent pre-fit plan; no zT objective.",
+    "Feature descriptor directly reads only normalized_composition and temperature_K. Source/role/response/derived fields remain excluded."
+  ],
+  "feature_scaling_scope_observed": "Producer feature_matrix uses shared transductive centering/scaling on selected unlabeled metadata X, including test X. This is not label leakage, but does not establish inductive unseen-metadata generalization.",
+  "independent_plan_role_rows": {
+    "ucsb_thermoelectrics": {
+      "warm": {
+        "groups": 8,
+        "rows": 16
+      },
+      "repair": {
+        "groups": 8,
+        "rows": 15
+      },
+      "frontier": {
+        "groups": 16,
+        "rows": 32
+      },
+      "test": {
+        "groups": 8,
+        "rows": 15
+      }
+    },
+    "jarvis_dft_3d": {
+      "warm": {
+        "groups": 8,
+        "rows": 8
+      },
+      "repair": {
+        "groups": 8,
+        "rows": 13
+      },
+      "frontier": {
+        "groups": 16,
+        "rows": 18
+      },
+      "test": {
+        "groups": 8,
+        "rows": 8
+      }
+    }
+  },
+  "pinned_metadata_inputs": {
+    "ELIGIBLE_METADATA.json": "165d48bc29f771e29f7e86a6bea1e57286eb81b49f29120905ba4ff4739660e4",
+    "SOURCE_GATE.json": "86ee6469c90c98558ca069e9d7e5e05badb5f5bc6944f0dbbf94a9025bea0a6e"
+  },
+  "role_plan_rewritten_or_reselected": false,
+  "producer_imported_or_executed": false,
+  "raw_response_arrays_opened": false,
+  "model_fitting_or_prediction_scoring": false,
+  "scope_limit": "Static equivalence inspection and independent metadata plan only; no runtime equality claim or empirical efficacy. Later producer edits require their own final source binding."
+}

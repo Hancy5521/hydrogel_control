@@ -1,0 +1,8 @@
+{
+  "actual_utc": "2026-11-05T10:50:39.804541+00:00",
+  "source_still_unfrozen": true,
+  "SUT_execution_started": false,
+  "root_amendment": "Before any material/syntheticSUToutcome, add fixed_random_modules matched proposal/randomness control; final8policies/40actual/64logical aliases",
+  "prior_scope_file_retained": "DRAFT_AUDIT_SCOPE.json records earlier7policies/32actual/56logical draft, not a frozen executed protocol",
+  "all_other_scope_unchanged": true
+}

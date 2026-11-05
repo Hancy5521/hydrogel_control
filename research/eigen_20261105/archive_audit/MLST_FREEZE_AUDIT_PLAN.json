@@ -1,0 +1,12 @@
+{
+  "actual_registered_utc": "2026-11-05T09:46:22.633595+00:00",
+  "reviewer": "/root/top_venue_fit",
+  "scope": "Rehash all18archive payloads; clone complete bundle offline; run only read-only public manifest checker; pin archived model/paper. No fitting, forecasts, target scoring or synthetic replay.",
+  "manifest_sha256": "4bced649fef0a25005610e284ad9b9bdb34de691e1027bc67b24063f45c3638a",
+  "checker_sha256": "ebc8a94d337ddf61252f8acea451e9c28c41f8bc8c21866b9470640bea33e935",
+  "archive": "H:\\PolymerReview\\MLST_frozen_20261105T093229Z",
+  "new_clone_directory": "H:\\mlst_frozen_clone_20261105T093229Z",
+  "expected_head": "05a40915be149857b2bb9cf65144d53fa9b24f37",
+  "root_explicit_authorization": true,
+  "CRC_policy": "Use existing exact-archive delivery receipts for oldZIP CRC; do not decompress/reexecute old science."
+}

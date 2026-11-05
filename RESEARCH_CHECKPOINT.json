@@ -1,0 +1,29 @@
+{
+  "actual_utc": "2026-11-05T12:18:13.344825+00:00",
+  "checkpoint": "eigen-repair-expansion-feasibility-20261105",
+  "parent_mlst_commit": "05a40915be149857b2bb9cf65144d53fa9b24f37",
+  "entry": "research/eigen_20261105/INDEX.html",
+  "candidate_status": "STOPPED_NO_PRIMARY_INCREMENT_OVER_SHARED_JOINT_BASELINE",
+  "protocol_sha256": "aa52d32dc401dff7f1ccd55c05f19b5e6ccfd7534c4103f1b3d514e4a377bd59",
+  "result_sha256": "091c0819de30a7adf7945560105bb734f41e3b1a86fc5af34be764294e00ec83",
+  "forecast_manifest_sha256": "e7df4b597018fffd7b98e17ddbb42a7e00cb7845d94cf6a29b6a84895d86cdc5",
+  "independent_numerical_summary_sha256": "f7cb8985d917bc5413413c8782711b62edeb7996ebf2388ea3547509f801560e",
+  "delivery_audit_sha256": "0478739065167b070f03502737883225102ba9ef7145052973df041d564d2720",
+  "complete_local_zip": "H:/PolymerReview/Eigen_repair_expansion_20261105.zip",
+  "complete_local_zip_bytes": 47377915,
+  "complete_local_zip_sha256": "d8caed0f804a26535c2d4b3d6c42a99db80d522dd91e25afc6612455f6f6056b",
+  "actual_campaigns": 40,
+  "logical_names_including_aliases": 64,
+  "frozen_forecasts": 160,
+  "new_measurements": 0,
+  "new_DFT_runs": 0,
+  "scope": "Exploratory offline public-source feasibility; two domains fitted separately; no field-SOTA/top-conference assertion",
+  "excluded": [
+    "native gzip assets",
+    "query-value ACTIONS receipts",
+    "forecast NPZ payloads",
+    "local run logs",
+    "downloaded papers"
+  ],
+  "next_gate": "A falsifiable contribution beyond Bayesian adaptive design with paid independent validation before another model"
+}

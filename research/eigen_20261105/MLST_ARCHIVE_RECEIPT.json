@@ -1,0 +1,11 @@
+{
+  "actual_utc": "2026-11-05T09:35:49.274385+00:00",
+  "archive": "H:\\PolymerReview\\MLST_frozen_20261105T093229Z",
+  "manifest_sha256": "4bced649fef0a25005610e284ad9b9bdb34de691e1027bc67b24063f45c3638a",
+  "file_count_excluding_manifest": 18,
+  "total_bytes_excluding_manifest": 620109102,
+  "git_commit": "05a40915be149857b2bb9cf65144d53fa9b24f37",
+  "all_history_bundle_bytes": 7451403,
+  "all_history_bundle_sha256": "56dd4a8602ac4c29b4d8d3bde43c16d2e6a79019d8ef40f22f3b16e31a1d8e9e",
+  "status": "EXACT_ARCHIVE_BUILT_AWAITING_INDEPENDENT_CHECK"
+}

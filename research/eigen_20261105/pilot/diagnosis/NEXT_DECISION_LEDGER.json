@@ -1,0 +1,74 @@
+{
+  "registered_actual_utc": "2026-11-05T11:18:08.726545+00:00",
+  "registered_asia_shanghai": "2026-11-05T19:18:08.726545+08:00",
+  "scope": "Bounded next-decision literature/math analysis only; no new model, code patch, numerical execution, real fit or scoring.",
+  "trigger": "Root-reported preliminary fixed-ICM predictive allocation failure; full scored receipt not independently reread here. Do not tune eta, GH order or cohort after failure.",
+  "search_calls": 1,
+  "search_queries": [
+    "Bayes Adaptive POMDPs Ross Pineau Chaib-draa 2008 primary paper unknown model belief planning",
+    "Bayesian optimization unknown correlation learning multi task knowledge gradient information source learning covariance"
+  ],
+  "primary_papers": [
+    {
+      "id": "BAPOMDP2007",
+      "title": "Bayes-Adaptive POMDPs",
+      "authors": [
+        "Stephane Ross",
+        "Brahim Chaib-draa",
+        "Joelle Pineau"
+      ],
+      "venue": "Advances in Neural Information Processing Systems20, NIPS2007",
+      "official_url": "https://papers.nips.cc/paper/3333-bayes-adaptive-pomdps",
+      "selected_source_url": "https://papers.nips.cc/paper_files/paper/2007/file/3b3dbaf68507998acd6a5a5254ab2d76-Paper.pdf",
+      "version": "official8page proceedings PDF",
+      "reading_depth": "Selected abstract and sections2–3, including augmented model-parameter state, belief updates and finite-horizon planning. Section4 theory not independently verified; not full-paper reading.",
+      "license": "No code reused or downloaded; proceeding copyright not independently checked. Limited selected reading and citation only.",
+      "relevance": "Unknown mechanisms plus state uncertainty plus sequential experiment planning are classical; replacing fixed B by a posterior over B is not itself a new agent principle."
+    },
+    {
+      "id": "MTBOPitfalls2026v1",
+      "title": "Pitfalls and Remedies for Multi-Task Bayesian Optimization",
+      "authors": [
+        "Carl Hvarfner",
+        "Sam Daulton",
+        "Max Balandat",
+        "Eytan Bakshy"
+      ],
+      "official_url": "https://arxiv.org/html/2607.09073v1",
+      "version": "arXiv2607.09073v1,10Jul2026",
+      "status": "Preprint; conference acceptance/publication not verified.",
+      "reading_depth": "Selected abstract, background task covariance, sections4.1–4.3,5.4 and6–7; appendix proofs and experimental code not reviewed. Full selected propositions were inspected as author claims, not re-proved or imported as guarantees.",
+      "license": "HTML displays arXiv perpetual non-exclusive license; not blanket permission to republish or use code. No code used.",
+      "relevance": "Co-location/correlation identifiability and standardization errors are direct neighbors; better estimated correlation need not improve optimization. Cannot claim co-measurement learning alone original."
+    },
+    {
+      "id": "HVKG2023",
+      "title": "Hypervolume Knowledge Gradient: A Lookahead Approach for Multi-Objective Bayesian Optimization with Partial Information",
+      "authors": [
+        "Sam Daulton",
+        "Maximilian Balandat",
+        "Eytan Bakshy"
+      ],
+      "official_url": "https://proceedings.mlr.press/v202/daulton23a.html",
+      "version": "ICML2023,PMLR202:7167–7204",
+      "reading_depth": "Official abstract/bibliographic page reconfirmed only in this task. Earlier selected-method reading is in prior-art ledger, not repeated or counted anew.",
+      "license": "No code used; no additional license inference.",
+      "relevance": "Decoupled objective/partial information, costs and lookahead are already established; stronger same-action-space Bayes-aware KG is needed rather than a fixed-B straw comparator."
+    }
+  ],
+  "failed_access": [
+    {
+      "url": "https://pubs.rsc.org/en/content/articlehtml/2020/mh/d0mh00062k",
+      "result": "403 forbidden on direct open; search-indexed abstract appeared, but not promoted to selected full-method reading or a fourth admitted paper."
+    }
+  ],
+  "existing_prior_art_reused_not_reread": [
+    "MADE",
+    "DarwinGodelMachine",
+    "Self-CorrectingSelf-ConsumingLoops"
+  ],
+  "mathematical_work": "Original bounded reasoning/proposed finite control, not a newly proved general theorem and not executed results.",
+  "new_algorithm_novelty_established": false,
+  "real_material_arrays_read": false,
+  "new_model_fits_or_scores": 0
+}

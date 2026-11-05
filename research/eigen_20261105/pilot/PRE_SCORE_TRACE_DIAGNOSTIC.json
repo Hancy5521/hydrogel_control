@@ -1,0 +1,330 @@
+{
+  "actual_utc": "2026-11-05T11:08:57.159991+00:00",
+  "kind": "postforecast policytrace diagnostic usingalreadyqueriedreceipts only,beforetestreveal",
+  "forecast_freeze_sha256": "e7df4b597018fffd7b98e17ddbb42a7e00cb7845d94cf6a29b6a84895d86cdc5",
+  "testtruth_or_scores_read": false,
+  "source_model_retuning": false,
+  "comparisons": [
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "seed": 2026110501,
+      "method": "hypercycle_predictive",
+      "different_steps_vs_fixed_random_modules": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "identical_action_trajectory": false,
+      "min_R_weight": 0.43224893948238835,
+      "max_R_weight": 0.49521431685142336,
+      "max_abs_deviation_from_half": 0.06775106051761165
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "seed": 2026110501,
+      "method": "hypercycle_no_cross",
+      "different_steps_vs_fixed_random_modules": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "identical_action_trajectory": false,
+      "min_R_weight": 0.4305512996052329,
+      "max_R_weight": 0.4917084164980432,
+      "max_abs_deviation_from_half": 0.06944870039476708
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "seed": 2026110502,
+      "method": "hypercycle_predictive",
+      "different_steps_vs_fixed_random_modules": [
+        17,
+        18
+      ],
+      "identical_action_trajectory": false,
+      "min_R_weight": 0.429546222606894,
+      "max_R_weight": 0.49521431685142336,
+      "max_abs_deviation_from_half": 0.07045377739310599
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "seed": 2026110502,
+      "method": "hypercycle_no_cross",
+      "different_steps_vs_fixed_random_modules": [
+        17,
+        18
+      ],
+      "identical_action_trajectory": false,
+      "min_R_weight": 0.4280803168380225,
+      "max_R_weight": 0.4917084164980432,
+      "max_abs_deviation_from_half": 0.0719196831619775
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "seed": 2026110503,
+      "method": "hypercycle_predictive",
+      "different_steps_vs_fixed_random_modules": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        21,
+        22,
+        23
+      ],
+      "identical_action_trajectory": false,
+      "min_R_weight": 0.4220352138257212,
+      "max_R_weight": 0.49521431685142336,
+      "max_abs_deviation_from_half": 0.07796478617427882
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "seed": 2026110503,
+      "method": "hypercycle_no_cross",
+      "different_steps_vs_fixed_random_modules": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        21,
+        22,
+        23
+      ],
+      "identical_action_trajectory": false,
+      "min_R_weight": 0.4212437089413423,
+      "max_R_weight": 0.4917084164980432,
+      "max_abs_deviation_from_half": 0.07875629105865772
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "seed": 2026110504,
+      "method": "hypercycle_predictive",
+      "different_steps_vs_fixed_random_modules": [
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "identical_action_trajectory": false,
+      "min_R_weight": 0.43719186941137095,
+      "max_R_weight": 0.49521431685142336,
+      "max_abs_deviation_from_half": 0.06280813058862905
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "seed": 2026110504,
+      "method": "hypercycle_no_cross",
+      "different_steps_vs_fixed_random_modules": [
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "identical_action_trajectory": false,
+      "min_R_weight": 0.43559679448315114,
+      "max_R_weight": 0.4917084164980432,
+      "max_abs_deviation_from_half": 0.06440320551684886
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "seed": 2026110501,
+      "method": "hypercycle_predictive",
+      "different_steps_vs_fixed_random_modules": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "identical_action_trajectory": false,
+      "min_R_weight": 0.45931517663863825,
+      "max_R_weight": 0.4918334600101941,
+      "max_abs_deviation_from_half": 0.040684823361361755
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "seed": 2026110501,
+      "method": "hypercycle_no_cross",
+      "different_steps_vs_fixed_random_modules": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "identical_action_trajectory": false,
+      "min_R_weight": 0.45465233461911164,
+      "max_R_weight": 0.48714727451880124,
+      "max_abs_deviation_from_half": 0.04534766538088836
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "seed": 2026110502,
+      "method": "hypercycle_predictive",
+      "different_steps_vs_fixed_random_modules": [],
+      "identical_action_trajectory": true,
+      "min_R_weight": 0.4501420161016837,
+      "max_R_weight": 0.4918334600101941,
+      "max_abs_deviation_from_half": 0.049857983898316305
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "seed": 2026110502,
+      "method": "hypercycle_no_cross",
+      "different_steps_vs_fixed_random_modules": [],
+      "identical_action_trajectory": true,
+      "min_R_weight": 0.4462142943679105,
+      "max_R_weight": 0.48993917126558045,
+      "max_abs_deviation_from_half": 0.05378570563208951
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "seed": 2026110503,
+      "method": "hypercycle_predictive",
+      "different_steps_vs_fixed_random_modules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19,
+        21,
+        22,
+        23
+      ],
+      "identical_action_trajectory": false,
+      "min_R_weight": 0.44181457490460985,
+      "max_R_weight": 0.4918334600101941,
+      "max_abs_deviation_from_half": 0.05818542509539015
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "seed": 2026110503,
+      "method": "hypercycle_no_cross",
+      "different_steps_vs_fixed_random_modules": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        21,
+        22
+      ],
+      "identical_action_trajectory": false,
+      "min_R_weight": 0.4375693730173386,
+      "max_R_weight": 0.4902153810609765,
+      "max_abs_deviation_from_half": 0.062430626982661386
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "seed": 2026110504,
+      "method": "hypercycle_predictive",
+      "different_steps_vs_fixed_random_modules": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        16,
+        18,
+        19,
+        20
+      ],
+      "identical_action_trajectory": false,
+      "min_R_weight": 0.4413543448130864,
+      "max_R_weight": 0.4918334600101941,
+      "max_abs_deviation_from_half": 0.058645655186913614
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "seed": 2026110504,
+      "method": "hypercycle_no_cross",
+      "different_steps_vs_fixed_random_modules": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        16,
+        18,
+        19,
+        20
+      ],
+      "identical_action_trajectory": false,
+      "min_R_weight": 0.4380782457914767,
+      "max_R_weight": 0.4852650622406206,
+      "max_abs_deviation_from_half": 0.061921754208523305
+    }
+  ],
+  "identical_trajectories": 2,
+  "total_compared_trajectories": 16,
+  "meaning": "Samequeries+samebaseGaussianimplyidenticalforecasts; rewardmatrixbyitselfdoesnotdemonstratedistinctcatalyticbehavior."
+}

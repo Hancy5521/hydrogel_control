@@ -1,0 +1,12 @@
+{
+  "actual_utc": "2026-11-05T11:09:57.389090+00:00",
+  "approved": true,
+  "scope": "SCORE_FROZEN_OFFLINE_PILOT",
+  "plan_sha256": "aa52d32dc401dff7f1ccd55c05f19b5e6ccfd7534c4103f1b3d514e4a377bd59",
+  "freeze_sha256": "e7df4b597018fffd7b98e17ddbb42a7e00cb7845d94cf6a29b6a84895d86cdc5",
+  "independent_forecast_audit_sha256": "be89ca3093b3ece78905105550049afbf3eff41eb992f0e8d28af77757fbf9cd",
+  "test_scores_previously_inspected": false,
+  "purpose": "One frozen evaluation ofallregisteredpolicies; no refit,parameterchange,resplit oradditional policyselection",
+  "pre_score_trace_fact": "7of8predictive-vs-nocross pairs choseidentical24actions; recordnotamechanismsuccess",
+  "measurement_role": "preexistingexperimental/DFTlabels,notnewwet/DFTmeasurements"
+}

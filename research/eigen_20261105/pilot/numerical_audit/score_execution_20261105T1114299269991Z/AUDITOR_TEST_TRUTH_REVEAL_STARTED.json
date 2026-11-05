@@ -1,0 +1,6 @@
+{
+  "actual_utc": "2026-11-05T11:14:35.418813+00:00",
+  "score_result_sha256": "091c0819de30a7adf7945560105bb734f41e3b1a86fc5af34be764294e00ec83",
+  "forecast_freeze_sha256": "e7df4b597018fffd7b98e17ddbb42a7e00cb7845d94cf6a29b6a84895d86cdc5",
+  "meaning": "Audit original source labels only after producer forecasts/scores and root permissions are frozen."
+}

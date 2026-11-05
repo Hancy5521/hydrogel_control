@@ -1,0 +1,13 @@
+{
+  "actual_utc": "2026-11-05T11:43:35.523870+00:00",
+  "plan_sha256": "a82a2a47d6eee070413c82c04781d1fcd0c870e0e146886646c5118d1070df83",
+  "approval_sha256": "cbc64e003fc5ee3d11bb4ca031341f743c456bef6f9d91cf1f85a9c11cc432a0",
+  "input_sha256": {
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\exact_control\\enumerate_control.py": "0998e91f2e682c441d7967af6c493a8c32bcc1c65d0d59c3d03cf1610ad04857",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\exact_control\\PLAN.json": "0a8c57a9f34ba6ddec27a3f982cf021fbf199296ac11f35f060355b2e09b8a36",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\exact_control\\results\\EXACT_RESULTS.json": "376ec30dd0c45be1c5894877a598cd2934fce9853275f2d2f7e4ebbbea24bfd6",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\exact_control\\SOURCE_RECEIPT.json": "46676dbead61c95a83db0327428e2500a46fb73839b05138f5e5c1fcb3eb4501",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\exact_control\\README.txt": "d352f4f6d3f3f6a612dd7bedc8a5e8ebf6d12706a2a57059868e003fe2f27b69"
+  },
+  "producer_import_or_execution": false
+}

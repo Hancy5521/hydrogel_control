@@ -1,0 +1,14 @@
+{
+  "actual_utc": "2026-11-05T11:01:20.735318+00:00",
+  "plan_sha256": "04034fe6687fe26781448e1b16e8aec3963a212a8e9010813b947796f63c2cbf",
+  "approval_sha256": "777ad972452407f84a87e71d6e69d04e1a40c7dbc328dfee4130aff8afae76c8",
+  "source_sha256": {
+    "benchmark_io.py": "850112c9218aedfdbe460c5b6c027a743ace63399a08cf5bcc31ac8311480369",
+    "joint_gaussian.py": "7196a96a37bd9038d99bd39162ec13659f9baeb0330fc5f2a8189f2bc2a547d0",
+    "policies.py": "f2be7e86f711c9e28667dfb0eafe96a610a2cef80aeeb9172798ef9300c11c21",
+    "run_campaign.py": "24ad57b74ef0c44feca895f62448cd12a48f11c42d62a1e462d8fd6c251f3d60",
+    "evaluate_campaign.py": "83ae029cda8370e396f6ed3440af2c1d26ef86bb633850e89ccb2070816ebf5c"
+  },
+  "material_data_read": false,
+  "scope": "Artificial Gaussian/feature/oracle/freeze/score fixtures only"
+}

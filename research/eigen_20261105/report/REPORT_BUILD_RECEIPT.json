@@ -1,0 +1,20 @@
+{
+  "actual_utc": "2026-11-05T11:59:02.774742+00:00",
+  "builder_sha256": "3f4234d59af07e03b859ef149d8f99bc022a1aa37e01ba5b4bfb67e109fd3caa",
+  "prior_initial_report_receipt_sha256": "21c4e5019f2035e00e4ce86b39e0e166ac98b73096a8a9f28b871a275a0d40de",
+  "edit_scope": [
+    "Clarifyregistered24bundleendpoint ratherthanallbudgetdominance",
+    "GHnodesareperdimension",
+    "LinkChineseexactpositive/costnegativecontrols"
+  ],
+  "saved_numeric_table_and_plot_values_unchanged": true,
+  "original_report_draft_preserved": "history/initial_report",
+  "raw_data_read": false,
+  "new_fit_or_target_score_calls": 0,
+  "outputs": {
+    "report/budget_curves.png": "6d7a1c96b8db03c4076f2cc773a58aa8630ba9f72debe48155e4992cb061fa96",
+    "report/budget_curves.svg": "0b3d3a5b43e337925b312fcc932dbef527cf5cc72453a2586df82f9aedc28eba",
+    "report/CURVE_VALUES.json": "df45d58268be68be68064163d7ca6b21306dd72bbbce4ed7d7d4ee699a09adaa",
+    "report/RESULTS_AND_ROUTE_ZH.html": "0f48ddf1e37f44b89f50a043f2d6e48df62dd42bafd27f96628fb01cc842202f"
+  }
+}

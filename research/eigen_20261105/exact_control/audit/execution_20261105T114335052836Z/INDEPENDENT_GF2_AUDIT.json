@@ -1,0 +1,57 @@
+{
+  "actual_end_utc": "2026-11-05T11:43:35.895852+00:00",
+  "status": "PASS",
+  "plan_sha256": "a82a2a47d6eee070413c82c04781d1fcd0c870e0e146886646c5118d1070df83",
+  "families": [
+    {
+      "family": "configuration_and_pins",
+      "status": "PASS",
+      "details": {
+        "complete_configurations": 48,
+        "producer_not_imported": true
+      }
+    },
+    {
+      "family": "GF2_subset_optima_and_every_frozen_leaf",
+      "status": "PASS",
+      "details": {
+        "frozen_leaves_checked": 190,
+        "action_prefixes_checked": 418,
+        "independent_method": "GF(2) affine span and <=32 feasible subsets, no Bellman recursion",
+        "exact_rational_discrepancies": 0
+      }
+    },
+    {
+      "family": "rank_information_and_complementarity",
+      "status": "PASS",
+      "details": {
+        "coupled_mean_two_target_complementarity": "1/8",
+        "single_target_information_complementarity_bits": 1,
+        "three_negative_controls": "zero"
+      }
+    },
+    {
+      "family": "cost_and_verified_endpoint_counterexamples",
+      "status": "PASS",
+      "details": {
+        "cheap_completion_advantage_is_not_verified_measurement_advantage": true,
+        "equal_cost_direct_verification_counterexample_preserved": true
+      }
+    },
+    {
+      "family": "independent_pseudo_false_certainty",
+      "status": "PASS",
+      "details": {
+        "analytic_reason": "independent fair h matches theta with probability1/2; on mismatch both confident targets wrong",
+        "proper_Brier": "1/4",
+        "false_certainty_actual_Brier": "1/2"
+      }
+    }
+  ],
+  "pinned_inputs_unchanged": true,
+  "producer_imports_or_reexecutions": 0,
+  "Bellman_DP_calls": 0,
+  "real_material_files_fits_or_scores": 0,
+  "new_material_evidence": false,
+  "scope": "Exact parity-world mathematical audit only; not a general theorem or material/algorithm novelty evidence."
+}

@@ -1,0 +1,153 @@
+{
+  "actual_start_utc": "2026-11-05T09:46:22.642966+00:00",
+  "plan_sha256": "ded3078d0d815cf7592bc55396df056dfbd1adf0168ba9c3b73ce62b92bc9ac8",
+  "status": "PASS",
+  "checks": {
+    "exact18_payloads_plus_manifest": [
+      {
+        "path": "FREEZE_FACTS.json",
+        "bytes": 2829,
+        "sha256": "bce732f95747288fbf11f25cd414e0fb93fa88ff8a94be3f945e889580a03eb4"
+      },
+      {
+        "path": "GIT_BUNDLE_VERIFY.txt",
+        "bytes": 2486,
+        "sha256": "bd4bd8327ad96f46d41337e4537a96af33a1dcd7df7daf42081128579898e2da"
+      },
+      {
+        "path": "MLST_all_history.bundle",
+        "bytes": 7451403,
+        "sha256": "56dd4a8602ac4c29b4d8d3bde43c16d2e6a79019d8ef40f22f3b16e31a1d8e9e"
+      },
+      {
+        "path": "MLST_controls_20261104T154143Z_r2_DELIVERY.json",
+        "bytes": 2678,
+        "sha256": "660c0393d869bab9bdbb463363e202029967019aaec34bd10d6769175e62684c"
+      },
+      {
+        "path": "MLST_prospective_20261105_DELIVERY.json",
+        "bytes": 2998,
+        "sha256": "3fa10d9582404aaef4f87ac349057883831feefb35bbbcd61a9c5f1943354ca8"
+      },
+      {
+        "path": "paper/Hydrogel_Continuation_MLST.docx",
+        "bytes": 601967,
+        "sha256": "be4930e6f1d27a2959e6061002974d770e425f1c664c6bc01617ff5a4c1a3cfb"
+      },
+      {
+        "path": "paper/MLST_Cover_Letter.docx",
+        "bytes": 37859,
+        "sha256": "c5833b830124a3117a95e5a9173f2c3ac29b7fd52c1bbd400ab41a4da9704807"
+      },
+      {
+        "path": "paper/Supplement_MLST.docx",
+        "bytes": 1171649,
+        "sha256": "e04edca0bb960e7b3e47182f80131b1222a906b324a4aa79a489ca60b31095d7"
+      },
+      {
+        "path": "prior_complete_scientific_resources.zip",
+        "bytes": 610420517,
+        "sha256": "88a124b38ac2f9859a3bd319ec339e80a94cf01e975ad3dd8900923b8b71d775"
+      },
+      {
+        "path": "prospective_preparation_increment.zip",
+        "bytes": 350581,
+        "sha256": "d3f23e9992efd3647de28887a793544beb097e945bebd5965295180afbe66989"
+      },
+      {
+        "path": "READ_FIRST.html",
+        "bytes": 880,
+        "sha256": "aab6debd8b929dd0d1439ba256520678c81c1ee01c0177b0c8315092b1ff4f7f"
+      },
+      {
+        "path": "state_at_freeze/AUTONOMOUS_RESEARCH_RUNBOOK.md",
+        "bytes": 8955,
+        "sha256": "386ed23f9cc51b98ed3253f871c0976a99af65217acffe0793f6a93b5abdd098"
+      },
+      {
+        "path": "state_at_freeze/CURRENT_LATEST_PAPER.json",
+        "bytes": 1130,
+        "sha256": "c8eae975548c8bee95517f9eed100f7159f63de060112e47152e6f1b188458f0"
+      },
+      {
+        "path": "state_at_freeze/CURRENT_PROSPECTIVE_RUN.json",
+        "bytes": 1868,
+        "sha256": "45af77a329f62cc2ebe9e9ec9388196bccdc5e2de89f77519993c89c9a43cbe8"
+      },
+      {
+        "path": "state_at_freeze/MILESTONE_ARCHIVING.md",
+        "bytes": 21182,
+        "sha256": "55a444e84291086534ee2052685bb0ba756ab703049b2d48277735c7f3a4e69c"
+      },
+      {
+        "path": "state_at_freeze/PUBLICATION_READINESS_20261015.md",
+        "bytes": 14522,
+        "sha256": "3640e6fc97b91a8d798892b3cbd1d6f9b7634b53d582f92816e695ddeed1698a"
+      },
+      {
+        "path": "state_at_freeze/RESEARCH_QUEUE.md",
+        "bytes": 3835,
+        "sha256": "efdc297316649a68f6889da47fd39abd08c0e2cffbebdc116028488cda5a473e"
+      },
+      {
+        "path": "state_at_freeze/RESUME_CURRENT.md",
+        "bytes": 11763,
+        "sha256": "1409866161146a8d6168048dd88b3784257d908a2b6a3204d42de0827a3536fa"
+      }
+    ],
+    "clone_public_manifest": {
+      "status": "PASS",
+      "files": 712,
+      "frozen_runtime_model_bindings": 16,
+      "model_fit_calls": 0,
+      "new_measurements": 0
+    },
+    "clone_model_main17_SI27_bytes": {
+      "models/SHARED_MODEL.json": "d72fc262fbae0e6fecc36568f0638166fe95e991bd5f7df100ab1434097d82d1",
+      "mlst/study_20261104/manuscript/Hydrogel_Continuation_MLST.docx": "be4930e6f1d27a2959e6061002974d770e425f1c664c6bc01617ff5a4c1a3cfb",
+      "mlst/study_20261104/manuscript/Supplement_MLST.docx": "e04edca0bb960e7b3e47182f80131b1222a906b324a4aa79a489ca60b31095d7"
+    }
+  },
+  "commands": [
+    {
+      "actual_utc": "2026-11-05T09:46:23.658049+00:00",
+      "command": [
+        "git",
+        "clone",
+        "--branch",
+        "main",
+        "H:\\PolymerReview\\MLST_frozen_20261105T093229Z\\MLST_all_history.bundle",
+        "H:\\mlst_frozen_clone_20261105T093229Z"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "Cloning into 'H:\\mlst_frozen_clone_20261105T093229Z'...\nUpdating files:  39% (285/713)\nUpdating files:  40% (286/713)\nUpdating files:  41% (293/713)\nUpdating files:  42% (300/713)\nUpdating files:  43% (307/713)\nUpdating files:  44% (314/713)\nUpdating files:  45% (321/713)\nUpdating files:  46% (328/713)\nUpdating files:  47% (336/713)\nUpdating files:  48% (343/713)\nUpdating files:  49% (350/713)\nUpdating files:  50% (357/713)\nUpdating files:  51% (364/713)\nUpdating files:  52% (371/713)\nUpdating files:  53% (378/713)\nUpdating files:  54% (386/713)\nUpdating files:  55% (393/713)\nUpdating files:  56% (400/713)\nUpdating files:  57% (407/713)\nUpdating files:  58% (414/713)\nUpdating files:  59% (421/713)\nUpdating files:  60% (428/713)\nUpdating files:  61% (435/713)\nUpdating files:  62% (443/713)\nUpdating files:  63% (450/713)\nUpdating files:  64% (457/713)\nUpdating files:  65% (464/713)\nUpdating files:  66% (471/713)\nUpdating files:  67% (478/713)\nUpdating files:  68% (485/713)\nUpdating files:  69% (492/713)\nUpdating files:  70% (500/713)\nUpdating files:  71% (507/713)\nUpdating files:  72% (514/713)\nUpdating files:  73% (521/713)\nUpdating files:  74% (528/713)\nUpdating files:  75% (535/713)\nUpdating files:  76% (542/713)\nUpdating files:  77% (550/713)\nUpdating files:  78% (557/713)\nUpdating files:  79% (564/713)\nUpdating files:  80% (571/713)\nUpdating files:  81% (578/713)\nUpdating files:  82% (585/713)\nUpdating files:  83% (592/713)\nUpdating files:  84% (599/713)\nUpdating files:  85% (607/713)\nUpdating files:  86% (614/713)\nUpdating files:  86% (617/713)\nUpdating files:  87% (621/713)\nUpdating files:  88% (628/713)\nUpdating files:  89% (635/713)\nUpdating files:  90% (642/713)\nUpdating files:  91% (649/713)\nUpdating files:  92% (656/713)\nUpdating files:  93% (664/713)\nUpdating files:  94% (671/713)\nUpdating files:  95% (678/713)\nUpdating files:  96% (685/713)\nUpdating files:  97% (692/713)\nUpdating files:  98% (699/713)\nUpdating files:  99% (706/713)\nUpdating files: 100% (713/713)\nUpdating files: 100% (713/713), done.\n"
+    },
+    {
+      "actual_utc": "2026-11-05T09:46:27.224143+00:00",
+      "command": [
+        "git",
+        "-C",
+        "H:\\mlst_frozen_clone_20261105T093229Z",
+        "rev-parse",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "05a40915be149857b2bb9cf65144d53fa9b24f37\n",
+      "stderr": ""
+    },
+    {
+      "actual_utc": "2026-11-05T09:46:27.369594+00:00",
+      "command": [
+        "D:\\Anaconda\\python.exe",
+        "H:\\mlst_frozen_clone_20261105T093229Z\\verify_checkpoint.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\"status\": \"PASS\", \"files\": 712, \"frozen_runtime_model_bindings\": 16, \"model_fit_calls\": 0, \"new_measurements\": 0}\n",
+      "stderr": ""
+    }
+  ],
+  "new_material_or_synthetic_executions": 0,
+  "scope_limit": "Offline archive byte integrity and public-checkpoint clone only; not a new numerical/material efficacy, independent calibration, author-rights or submission-readiness certification. Remote Git status is separately checked by root.",
+  "actual_end_utc": "2026-11-05T09:46:28.259274+00:00"
+}

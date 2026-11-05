@@ -1,0 +1,48 @@
+资源与复现说明：材料补齐／扩展闭环首轮检查点
+
+一、这是哪个版本
+本资源保存新Eigen-inspired方向的第一轮可证伪研究。原MLST模型、论文、完整科学包和全部Git历史已经在H:/PolymerReview/MLST_frozen_20261105T093229Z独立封存，远端archive/mlst-final-freeze-2026-11-05=05a4091。当前资源不重复内嵌620MB旧归档；MLST_ARCHIVE_RECEIPT/REMOTE_SYNC和独立audit记录了确切原件。
+新方向完成2公共数据源、8策略40实际轨迹（64含别名逻辑引用）、160冻结预测以及独立数值复核。24包主终点上，预测催化版本差于同底座联合近似KG+IVR，当前候选停止，不称顶会达标。
+
+二、先看哪里
+INDEX.html：本资源的用户入口。
+report/RESULTS_AND_ROUTE_ZH.html：中文算法、真实结果、正负证据、顶会匹配与差距。
+DESIGN_AND_MATH_ZH.txt：公式、关系／信息来源、原始观察保持、分组和终点。
+exact_control/EXPLAINED_ZH.html：关系修复为何可能有用、成本为何会推翻收益、推导为何不等于目标测量。
+pilot/CURRENT_VARIANT_DECISION.json：本候选的冻结停止决定，不在同批test上调参救分。
+
+三、算法边界
+pilot/code/benchmark_io.py：来源hash、成分/温度描述、身份分组、限定输出包oracle。
+joint_gaussian.py：固定warm ICM参考与精确Gaussian条件更新，完整剩余随机性保留。
+policies.py：八个同模型策略及预测权重启发式，包含固定随机模块和去交叉项对照。
+run_campaign.py：协议准备、40轨迹运行和281文件全冻结；不调用评价器。
+evaluate_campaign.py：只在全部冻结并获精确记录后揭示测试值，计算等组CRPS等。
+源冻结见PREFIT_SOURCE_RECEIPT；README.txt为执行前版本，当时尚未运行的措辞是历史快照，当前状态以本说明和RESULTS/审计为准。
+
+四、完整本地资源与公开Git的区别
+本地包含2个原始公共gzip数据、来源许可/版本/SHA、完整角色计划、全部5核心源码和工具、协议/冻结、40条查询收据与160个预测文件、完整正负评分、人工数学与独立数值审计、48组精确逻辑控制及GF2核查、中文说明/图和实际日志快照。
+公开Git主要保存代码、数据重取工具/元数据、派生结果和审计；原数据gzip、查询值收据和预测NPZ不再次上传。各选择明确记录，公开Git不冒称已经内嵌本地所有科学载荷。
+下载论文/本地阅读全文不打入可再分发包；URL/版本/许可/实际读到的位置在literature和venues账本。没有声称新读完各100篇。
+
+五、核查／复现（输出目录必须不存在）
+安装requirements中版本。数据与预测均在H盘，核心只需NumPy/SciPy/threadpoolctl，matplotlib用于图。
+复制本资源到任意位置后：
+  python reproduce.py --mode metadata --output-dir H:/NEW_METADATA_CHECK
+默认metadata模式只核源码/数据/原组计划，生成新路径的协议，不拟合、不评分。
+若你明确要重复原研究计算：
+  python reproduce.py --mode full --output-dir H:/NEW_OFFLINE_REPRODUCTION
+full模式明确重复已消费的同一离线试验，自动生成带当前实际UTC的新复现记录，不覆盖原协议/预测/评分，不是独立确认。先prepare，再fit/freeze，最后score。没有调用LLM、新DFT或仪器。
+若从公开Git获得的副本没有原始gzip：
+  python fetch_pinned_data.py --output-dir H:/NEW_PUBLIC_DATA
+  python reproduce.py --mode metadata --data-dir H:/NEW_PUBLIC_DATA --output-dir H:/NEW_METADATA_CHECK
+fetch只用原Figshare稳定URL并核原bytes/SHA，复制5个已pin元数据。此处没有为验包重新下载数据。
+
+原始协议含当时绝对路径，作为历史收据保留。移位复现请生成新的protocol，不要编辑旧文件然后声称它仍是原始预登记。数学近似、版本与浮点排序可能影响跨环境的精确动作；源环境和每步动作已完整保留用于定位。
+
+六、指标怎样读
+主终点是每表8个保守test身份组等权的warm标准化GaussianCRPS。四个随机seed是同组上的轨迹重复，不能当4套独立材料；两个数据源单独拟合，不是同权重跨域泛化。成本相同的是新增24个bundle，揭示格数24–37不等；初始UCSB47包、JARVIS29包单列。
+UCSB目标rho/S/kappa，PF/zT/sigma整体隔离，前沿只找低kappa候选，不称完整热电性能优化。JARVIS目标e_form/gap/bulk是原DFT值，原生负bulk不删；寻找高bulk是原候选池检索，不称新合成材料。
+原生缺失无可评真值，本轮完整案例上遮挡；选择偏差与转导可见X均保留。当前KG为每维5节点GH近似，不能叫完整高精度HV-KG。
+
+七、目前与下一步
+主目标暂为下一可行NeurIPS主会，ICML2027备选；正式CFP和日期须继续核验，录用不保证。当前机制未超共同联合对照，也无新算法增量认证。后续需先把“真实关系学习带来的交叉收益”和“验证付费”定义清楚，与同关系后验的强KG/VOI或精确小问题最优器公平比较；不再简单加角色或提高权重。现有材料数据仍可支持后续研究，当前不把缺口都推给湿实验。

@@ -1,0 +1,10 @@
+{
+  "actual_utc": "2026-11-05T11:01:00.023931+00:00",
+  "approved": true,
+  "scope": "INDEPENDENT_SYNTHETIC_PILOT_AUDIT",
+  "plan_sha256": "04034fe6687fe26781448e1b16e8aec3963a212a8e9010813b947796f63c2cbf",
+  "source_receipt_sha256": "b213ac14693668bf03d4d4d89deef4830fb7404b30ad6f34a76babb86dc8b936",
+  "real_source_fit_or_test_score_authorized": false,
+  "reviewer": "root",
+  "note": "Eight bounded synthetic mathematical/IO families only. KG GH bias is a numerical-method diagnostic, not evidence of material efficacy."
+}

@@ -1,0 +1,343 @@
+{
+  "actual_recorded_utc": "2026-11-05T09:44:51.784049+00:00",
+  "actual_recorded_asia_shanghai": "2026-11-05T17:44:51.784049+08:00",
+  "task": "New Eigen-inspired verified repair-and-expansion discovery agent: topconferencefit, not submission",
+  "status": "BOUNDED_VENUE_AND_SELECTED_NEIGHBOR_REVIEW_COMPLETED_NO_EXPERIMENT",
+  "recommendation": {
+    "primary": {
+      "venue": "NeurIPS next feasible Main Track cycle",
+      "planning_year": 2027,
+      "candidate_contribution_type": "Use-Inspired, only if retained in2027officialCFP;2026guidance used as current design reference",
+      "reason": "New claimcombines probabilisticrepair, data-centricgrowth and resource-limited physicalscience decisions; Use-Inspired permits targeted scientificallymotivated combinations and emphasizes matched baselines/whythemethodworks.",
+      "required_core_increment": "Demonstrated verified crosscatalytic benefit or precise stability/errorpropagationinsight beyond ordinary closedloop activelearning; not an Eigenmetaphor alone.",
+      "submission_deadline": null,
+      "deadline_source_status": "2027submissiondate not verified on inspected officialfuture/currentCFP pages; do not use projectedMaydates."
+    },
+    "backup": {
+      "venue": "ICML Main Conference",
+      "planning_year": 2027,
+      "reason": "Especially good if the contribution becomes a generallyuseful cost-aware activelearning/probabilistic acquisition algorithm with cross-domain experiments; MADE2026already establishes direct problemfit.",
+      "official_conference_dates": "2027-07-31 through2027-08-06",
+      "submission_deadline": null,
+      "deadline_source_status": "Officiallanding saysCFPwillbepostedsoon; exact2027paperdeadlineunknown."
+    },
+    "not_currently_submit_eligible": {
+      "venue": "ICLR2027",
+      "reason": "Officialfullpaperdeadline2026-09-25AoE already passed beforecurrent2026-11-05. A latercyclecouldfit if learnedrepresentations/crossdomain lifelonglearning becomes the maincontribution; no2028dateverified."
+    },
+    "conditional_evaluation_route": "NeurIPS Evaluations&Datasets can be considered only if contribution is a new reusable evaluation methodology/resource beyond MADE, not a weaker method paper orworkshop substitute;2027trackdetailsunverified.",
+    "no_venue_acceptance_probability_or_guarantee": true,
+    "recommendation_is_researcher_inference_not_official_venue_endorsement": true
+  },
+  "search_scope": {
+    "unique_queries": 15,
+    "actual_query_executions": 15,
+    "queries": [
+      "site.iclr.cc Conferences 2027 Call for Papers Important Dates",
+      "site.icml.cc Conferences 2026 CallForPapers evaluation novelty significance",
+      "site.neurips.cc Conferences 2026 CallForPapers review criteria originality significance",
+      "site.icml.cc/Conferences/2027 CallForPapers",
+      "site.neurips.cc/Conferences/2027 CallForPapers",
+      "site.proceedings.mlr.press material discovery active learning missing data GFlowNet",
+      "site.openreview.net material discovery autonomous agent benchmark ICLR 2025 2026",
+      "\"Multi-Fidelity Active Learning with GFlowNets\" ICML proceedings",
+      "\"Toward Greater Autonomy in Materials Discovery Agents\" OpenReview ICLR 2026",
+      "\"Crystal Diffusion Variational Autoencoder\" OpenReview ICLR 2022",
+      "\"MADE: Benchmark Environments\" github",
+      "site.proceedings.neurips.cc \"Handling Missing Data with Graph Representation Learning\"",
+      "site.proceedings.neurips.cc \"Flow Network based Generative Models\"",
+      "site.iclr.cc/virtual/2022 \"Crystal Diffusion Variational\"",
+      "site.proceedings.mlr.press \"Multi-Fidelity Active Learning\""
+    ],
+    "per_query_exactUTC": "Notretained; allcalls occurred in thisactualchildrun beforeartifactrecordtime. Do not infer timestamps fromcreationtime.",
+    "excluded_search_results": "Secondaryrankings/news/reddit were not relied on for technical,acceptance ordeadlineclaims.",
+    "not_an_exhaustive_priorart_clearance": true
+  },
+  "official_policy_sources": [
+    {
+      "id": "neurips26_scope",
+      "url": "https://neurips.cc/Conferences/2026/CallForPapers",
+      "edition": "2026",
+      "read_depth": "Relevant main text lines157-193: topics, deadline, track distinction",
+      "facts": [
+        "Physical-science ML, decision-making, generalization, probabilistic and data-centric work are in scope.",
+        "2026 full deadline2026-05-06 AoE is past.",
+        "Tracks and contribution types cannot be switched after submission."
+      ],
+      "worded_as_official_requirements": true
+    },
+    {
+      "id": "neurips26_review",
+      "url": "https://neurips.cc/Conferences/2026/ReviewerGuidelines",
+      "edition": "2026",
+      "read_depth": "General quality/clarity/significance/originality plus Use-Inspired and theory/Concept&Feasibility selected sections (lines160-240)",
+      "facts": [
+        "A new combination or useful problem formulation can be original; wholly new components are not mandatory.",
+        "Use-Inspired asks for a real pre-existing need, matched task/method/metrics, domain and ML baselines, and explanations of why choices work.",
+        "Concept&Feasibility has a high significance/originality bar; it is not a weak-evidence shortcut."
+      ],
+      "policy_2027_continuation_not_verified": true
+    },
+    {
+      "id": "neurips_future",
+      "url": "https://neurips.cc/Conferences/FutureMeetings",
+      "edition": "official future page observed2026-11-05",
+      "read_depth": "Future meetings lines157-165",
+      "facts": [
+        "2027 listed as Europe."
+      ],
+      "submission_deadline_2027": null,
+      "status": "No2027submission date verified from inspected official pages; projected third-party dates excluded."
+    },
+    {
+      "id": "neurips26_ED",
+      "url": "https://neurips.cc/Conferences/2026/CallForEvaluationsDatasets",
+      "edition": "2026",
+      "read_depth": "Track scope/relationship lines157-165",
+      "facts": [
+        "2026 renames Datasets&Benchmarks as Evaluations&Datasets.",
+        "New evaluation science/resources must state supported claims/assumptions/limits.",
+        "Same stringent review intended; this is not an easier workshop."
+      ],
+      "scope_limit": "Benchmark-first alternative only if a real new evaluation contribution beyond MADE exists;2027structure unverified."
+    },
+    {
+      "id": "icml26_scope",
+      "url": "https://icml.cc/Conferences/2026/CallForPapers",
+      "edition": "2026",
+      "read_depth": "Main call lines181-207 and submission policy",
+      "facts": [
+        "Main track includes active, online, generative, probabilistic, trustworthy and application-driven ML.",
+        "2026 main body8pages;2027format unknown.",
+        "Original rigorous work of ML-community interest expected."
+      ],
+      "do_not_transfer_2026_format_as_2027_rule": true
+    },
+    {
+      "id": "icml26_review",
+      "url": "https://icml.cc/Conferences/2026/ReviewerInstructions",
+      "edition": "2026",
+      "read_depth": "Main review dimensions and recommendation lines287-338",
+      "facts": [
+        "Technical soundness is distinct from impact.",
+        "Originality includes justified combinations, new tasks or insights.",
+        "Domain-specific modest improvements can matter when useful and insightful; strong evaluation/reproducibility still expected."
+      ]
+    },
+    {
+      "id": "icml27_home",
+      "url": "https://icml.cc/",
+      "edition": "2027 landing page observed2026-11-05",
+      "read_depth": "Latest announcements and dates lines181-212",
+      "facts": [
+        "Conference2027-07-31 through2027-08-06 inRio deJaneiro.",
+        "Official landing page explicitly says the2027CFP will be posted soon."
+      ],
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "status": "Submission dates not yet confirmed on this inspected official landing page."
+    },
+    {
+      "id": "icml27_dates",
+      "url": "https://icml.cc/Conferences/2027/Dates",
+      "edition": "2027",
+      "read_depth": "Meeting dates lines181-186",
+      "facts": [
+        "Main conference2027-08-02 through2027-08-04; workshopsAug5-6."
+      ],
+      "submission_deadline": null
+    },
+    {
+      "id": "iclr27_scope_dates",
+      "url": "https://iclr.cc/Conferences/2027/CallForPapers",
+      "edition": "2027",
+      "read_depth": "Main call dates andsubjectareas lines93-144",
+      "facts": [
+        "Abstract2026-09-18 AoE and fullpaper2026-09-25 AoE.",
+        "Scope includes transfer/lifelong, probabilistic/generative, graphs, physics-informed and scientific applications.",
+        "ICLR2027 is not a presently available new-submission route as of2026-11-05."
+      ],
+      "future_2028_dates": null
+    }
+  ],
+  "accepted_main_papers_selected_read": [
+    {
+      "id": "MADE",
+      "title": "MADE: Benchmark Environments for Closed-Loop Materials Discovery",
+      "venue_verified": "ICML2026 Main Conference, PMLR306:86002-86026",
+      "acceptance_source": "https://proceedings.mlr.press/v306/malik26a.html",
+      "read_source": "https://arxiv.org/html/2601.20996v2",
+      "version": "arXiv2601.20996v2,2026-08-23; proceedings separately verifies acceptance",
+      "license": "PaperHTML explicitly CC BY4.0; official codeMIT independentlypinned by siblingdataagent",
+      "code": "https://github.com/diffractivelabs/MADE",
+      "code_commit_reported_by_data_agent": "bffda0c9a1fa1904b35c0ef67b455881c975df86",
+      "code_commit_audited_by_this_agent": false,
+      "read_depth": "Abstract;§3.1-3.5,§4.1-4.3, selected§B.1/B.4 andC.6 portions; not fullpaper/appendices",
+      "prior_capability": "Sequential candidate proposal, oracle evaluation and feedback; modular and ReAct-style agent baselines already span generators, selectors, buffers and adaptive planning.",
+      "evaluation_detail": "Author experiments use orb-v3-conservative-inf-omat MLIP oracle, MACE-MP-0-medium selector; diversity/uniqueness and discovery-vs-budget metrics across systems.",
+      "cost_and_replication": "5episodes/system;50oraclequeries;10systems each for3/4/5element spaces; paperreports oneT4perepisode. These aretheir design, not a mandated minimum or our measurements.",
+      "implication": "Direct required neighbor; a renamed generation-imputation-validation loop is insufficient increment. Use as environment when implementation/data roles allow; do not call MLIPoracle an independent wet or DFT confirmation."
+    },
+    {
+      "id": "GRAPE",
+      "title": "Handling Missing Data with Graph Representation Learning",
+      "venue_verified": "NeurIPS2020, volume33",
+      "acceptance_source": "https://proceedings.neurips.cc/paper/2020/hash/dc36f18a9a0a776671d4879cae69b551-Abstract.html",
+      "read_source": "https://proceedings.neurips.cc/paper/2020/file/dc36f18a9a0a776671d4879cae69b551-Paper.pdf",
+      "version": "Published conference PDF",
+      "license": "No redistributionlicense independentlyinspected; read/citeonly, no PDFcopy inoutputs",
+      "code": "http://snap.stanford.edu/grape",
+      "code_commit": null,
+      "read_depth": "Abstract/introduction;§3.1-3.2 andedge-dropout part§3;§4.1 experimental setup; selected officialreview excerpts, not fullappendix",
+      "prior_capability": "Observed cells as bipartitegraph edges; missing-edge imputation, downstream label learning and edge-dropout masking already exist.",
+      "evaluation_detail": "Paper evaluates nine complete UCI tables with artificial missingness, with statistical and neural comparators.",
+      "implication": "A spiderweb analogy or masking/GNN imputer cannot be novelty alone. At minimum distinguish actual material-source missingness and chemical/state group transfer from artificiallymasked complete tables."
+    },
+    {
+      "id": "GFlowNet2021",
+      "title": "Flow Network based Generative Models for Non-Iterative Diverse Candidate Generation",
+      "venue_verified": "NeurIPS2021, volume34",
+      "acceptance_source": "https://proceedings.neurips.cc/paper/2021/hash/e614f646836aaed9f89ce58e837e2310-Abstract.html",
+      "read_source": "https://proceedings.neurips.cc/paper_files/paper/2021/file/e614f646836aaed9f89ce58e837e2310-Paper.pdf",
+      "version": "Published conference PDF",
+      "license": "No redistributionlicense independentlyinspected; citeonly",
+      "code": "https://github.com/bengioe/gflownet",
+      "code_commit": null,
+      "read_depth": "Abstract/introduction;flowobjective selected§2;multi-round§4.3 anddiversityfigures, not allproofs/appendices",
+      "prior_capability": "Diverse positive-reward sampling and repeated generator→limited-oracle batch→surrogate-update learning are already explicit.",
+      "evaluation_detail": "§4.3 includes multi-round active learning and alternatives such as MCMC/PPO/VAE+BO/random.",
+      "implication": "Generating a diverse frontier and retraining onoracle feedback is established. A new hypercycle needs a distinct measurable mechanism and fair budgetmatched adaptive baseline."
+    },
+    {
+      "id": "CDVAE",
+      "title": "Crystal Diffusion Variational Autoencoder for Periodic Material Generation",
+      "venue_verified": "ICLR2022; officialDownloads2022 lists title and indexed finalPDF says publishedconference",
+      "acceptance_source": "https://iclr.cc/Downloads/2022",
+      "read_source": "https://arxiv.org/html/2110.06197",
+      "final_pdf_url": "https://openreview.net/pdf?id=03RLpj-tc_",
+      "version": "arXiv2110.06197v3,2022-03-14",
+      "license": "arXivHTML perpetualnonexclusive; do not redistribute paper",
+      "code": "https://github.com/txie-93/cdvae",
+      "code_commit": null,
+      "read_depth": "Abstract;§5tasks/data/generation;AppendixD.1-3 selectedvalidity/physicalevaluation caveats; not fullmethods/proofs",
+      "prior_capability": "Joint periodicmaterial representations, generative validity/diversity/propertyoptimization and physicallowerenergy gradient analogy already exist.",
+      "evaluation_detail": "Separates reconstruction, generation and propertyoptimization; empirical compositionvalidity is not quantumstability.",
+      "implication": "Do not equate a geometricvaliditycheck or independentGNN score with physical validation. Reusing a frozen generator is fine, but it does not establish a newgenerativealgorithm."
+    },
+    {
+      "id": "DMFDAL",
+      "title": "Disentangled Multi-Fidelity Deep Bayesian Active Learning",
+      "venue_verified": "ICML2023, PMLR202:37624-37634",
+      "acceptance_source": "https://proceedings.mlr.press/v202/wu23p.html",
+      "read_source": "https://proceedings.mlr.press/v202/wu23p/wu23p.pdf",
+      "version": "Published conference PDF",
+      "license": "No redistributionlicense independentlyinspected; citeonly",
+      "code": "https://github.com/Rose-STL-Lab/Multi-Fidelity-Deep-Active-Learning",
+      "code_commit": null,
+      "read_depth": "Abstract/introduction;§5.1-5.3selecteddatasets/cost/baselines/testset/ablations; no fullformalproofreview",
+      "prior_capability": "Multi-fidelity probabilistic activelearning and errors propagated from lower to higherfidelity representations already explicitly studied.",
+      "evaluation_detail": "Simulator costs based on timing; fixed initialization; highest-fidelity heldout nRMSE; activelearningcomparators andfidelity ablation.",
+      "implication": "A cheap-versus-expensive validation scheduler and crossfidelity error isolation need directcomparison. Counting validatorcalls equally when costsdiffer is inadequate."
+    }
+  ],
+  "accepted_main_paper_count": 5,
+  "not_counted_as_verified_accepted_main": [
+    {
+      "title": "Multi-Fidelity Active Learning with GFlowNets",
+      "url": "https://openreview.net/pdf?id=dLaazW9zuF",
+      "status": "Search-visible primaryPDF says TMLR07/2024, not ICMLmain; nearest priorart but not counted as acceptedconference neighbor.",
+      "read_depth": "PrimaryPDFsearchsnippet andarXivabstract only; no fullsectionreview."
+    },
+    {
+      "title": "Toward Greater Autonomy in Materials Discovery Agents: Unifying Planning, Physics, and Scientists",
+      "urls": [
+        "https://openreview.net/forum?id=4yHJLiz8dm",
+        "https://openreview.net/forum?id=Cwq1U8tbWW",
+        "https://arxiv.org/abs/2506.05616"
+      ],
+      "status": "Conflicting thirdparty ICLR2026/TMLR descriptions; primaryindexedPDF says underreview,forum hit browserverification. Acceptance not verified, excluded accepted-main count.",
+      "read_depth": "arXivabstract + indexedinitialPDFexcerpt only; no forumreviews or decision inspected."
+    }
+  ],
+  "our_proposed_experimental_evidence_requirements": [
+    {
+      "id": "R1",
+      "kind": "our proposed study design, not fixed conference rule",
+      "problem": "One joint objective must connect repairing sparse observations and expanding useful candidate coverage.",
+      "required_evidence": "Declare a primary fixed-budget improvement endpoint plus heldout imputation/uncertainty and uniquevalidatedfrontiersecondarymetrics. More agents or more generatedrows are not improvement.",
+      "failure_decision": "If only imputationimproves, narrow to imputationpaper; if onlydiscoveryimproves, do not claim a unified repairadvantage."
+    },
+    {
+      "id": "R2",
+      "kind": "our proposed evidence gate",
+      "problem": "Closedloop/selftraining/activelearning are priorart.",
+      "required_evidence": "Define which quantities act as catalyticresources, which edge updates learning/data/validationcapability, and what observablegrowth/benefit the crosscoupling predicts. Ablate catalysis while holding same primitive models, roletools, oraclebudget and trainingbudget.",
+      "failure_decision": "No extraeffect vs budgetmatched standardloop means no justified catalyticmethod claim."
+    },
+    {
+      "id": "R3",
+      "kind": "our proposed baseline set",
+      "problem": "Strongalternatives needed beyond random or staticgenerator.",
+      "required_evidence": "Strongstaticimputer+randomacquisition; uncertainty/informationcost acquisition; single-agent same tools; fixed modular generation/selection/validation loop; direct MADE baselines when taskappropriate; hypercycleoff/crossfeedoff/expansionoff/verifiercalibration ablations.",
+      "failure_decision": "If advantage disappears after matchingoracle/cheapvalidator/compute usage, report costreallocation, not strongerlearning."
+    },
+    {
+      "id": "R4",
+      "kind": "our proposed validation gate",
+      "problem": "Circularverification and modelcollapse.",
+      "required_evidence": "Measured/DFT/computational/derived/generated values have different roles; predictions never promote themselves to measuredtruth. Holdoutoutcomes stay oracle-side. Independent verifier identity/trainingoverlap and false-positive rate audited; use corruptverifier/noise/domainshift stress.",
+      "failure_decision": "Agreement of agents sharing a model is not independent confirmation; MLIPsimulation remains simulator evidence."
+    },
+    {
+      "id": "R5",
+      "kind": "our proposed generalization evaluation",
+      "problem": "Crossmaterialsdoesnotmean universalweights.",
+      "required_evidence": "Frozenpolicy on untouched materialsystems or propertyblocks with chemical/source/group identity; grouped splits plus MCAR and structured missingness; report each domain and negative transfer. Use at least distinct taskfamilies when broad claim made, choosing exactcount by study goal, not pretending a venue-specific minimum.",
+      "failure_decision": "If only onefamilyworks, state that domain; do not average away failure."
+    },
+    {
+      "id": "R6",
+      "kind": "our proposed cost andstatistics protocol",
+      "problem": "Resource and pseudoreplication unfairness.",
+      "required_evidence": "Countoraclecost, cheapvalidatorcost, proposals/invalidduplicates, GPUtime and LLMtokens separately; same startupdata/candidateavailability; predeclaredrepeatseeds, pairedsystem/episode results, hierarchicaluncertainty andfulllearningcurves. Calibrate and select on development only.",
+      "failure_decision": "Coordinates/generatedduplicates/campaignrounds do not become independent materials; failedcalls and exhaustedbudgets retained."
+    },
+    {
+      "id": "R7",
+      "kind": "our proposed reproducibility gate",
+      "problem": "A reusable method needs inspectableexecutions.",
+      "required_evidence": "Isolated newbranch/modules, immutable experimentprotocols/seedlists/data&sourcehashes, exactenvironment/modelversions, completepositive/negative runs and roles. ReproducibleCPU pilot before expensiveGPU, explicitactualcostlimits.",
+      "failure_decision": "Softwarequalification doesnotestablish materialeffectiveness; archive both with separate labels."
+    }
+  ],
+  "access_failures_preserved": [
+    {
+      "url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/malik26a/malik26a.pdf",
+      "failure": "web unsupported application/octet-stream once",
+      "fallback": "Public authorarXivHTMLv2 read; no bypass or localfullpaperdownload"
+    },
+    {
+      "urls": [
+        "https://openreview.net/forum?id=4yHJLiz8dm",
+        "https://openreview.net/forum?id=Cwq1U8tbWW",
+        "https://openreview.net/pdf?id=03RLpj-tc_"
+      ],
+      "failure": "Browserverification challenge; no CAPTCHA bypass/authsessionused",
+      "fallback": "Officialproceedings/ICLRDownloads andpublicauthorarXiv; decisionstatus notinferredforMAPPS"
+    },
+    {
+      "url": "https://iclr.cc/virtual/2022/papers.html",
+      "failure": "webrestrictedURL once",
+      "fallback": "Alreadyread officialDownloads2022titlelist; no repeatedrequest"
+    }
+  ],
+  "actual_work_not_done": {
+    "new_model_training": 0,
+    "new_material_target_scores": 0,
+    "new_material_download_by_this_agent": 0,
+    "full_paper_reading_claim": false,
+    "repository_code_execution": false,
+    "conference_contact_or_submission": false
+  },
+  "source_archive_policy": "Only our ledgers/paraphrases/URLs; nofullcopyrightedpapers copied, noauthorcredit/license invention. Repositoryversions listed above not universallysourceaudited."
+}

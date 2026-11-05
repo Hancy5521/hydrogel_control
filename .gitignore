@@ -70,3 +70,12 @@ new_weighting_summary.json
 !mlst/study_20261104/analysis/saved_summary/P0_NEW_ARMS.csv
 !mlst/study_20261104/diagnostics/output/CONDITIONAL_COVARIANCE.csv
 !mlst/study_20261104/experiment/scores/PER_COORDINATE.csv
+
+# Reviewed non-response source metadata for the separate Eigen feasibility branch
+!research/eigen_20261105/data/
+!research/eigen_20261105/data/DATA_MANIFEST.json
+!research/eigen_20261105/data/ELIGIBLE_METADATA.json
+!research/eigen_20261105/data/PILOT_ELIGIBILITY.json
+!research/eigen_20261105/data/SOURCE_GATE.json
+!research/eigen_20261105/data/SOURCE_GATE_PILOT_ADDENDUM.json
+!research/eigen_20261105/data/SOURCE_FACTS_ZH.txt

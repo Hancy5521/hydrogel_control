@@ -1,0 +1,24 @@
+跨材料公开数据准入与下一步（只完成来源/结构核查）
+
+本轮在H盘下载两份公开原始表，总30,712,466字节，均与固定Matminer元数据SHA256逐字节一致；没有拟合、预测评分、oracle查询或打开旧MLST数据。
+
+一、建议的互补数据
+1. UCSB实验热电汇编：1093条，12列。Figshare10.6084/m9.figshare.14746212.v1，文件28333845，CC BY4。原论文Gaultois等，Chemistry of Materials2013，10.1021/cm400893e。本轮实际读官方字段/来源元数据，没有声称全文读过原论文。
+原始候选独立响应是rho[ohm.cm]、S[μV/K]、kappa[W/mK]，分别有1093/1093/714个有限原值。原生379个kappa空白没有可检验真值。温度T是实验条件，不是待生成标签；11行缺T。原src有108个非空文献引用，7行缺src，没有完整独立制备UUID。
+生成—补齐—验证主线可在这些已知原值上预先遮挡并按预算揭示。主任务必须从所有算法输入中隔离sigma、PF、zT：sigma=1/rho，PF涉及sigma*S²，zT=PF*T/kappa；把它们给验证器会直接泄漏隐藏性质，不能当独立测量或独立正确性证据。
+全部1093行先按“同src或同规范化成分”连接，再筛选三量/T有限且src非空的案例：703行、62个保守元数据组。最多每组2行则121行，40组机制pilot可行；尚未选择组、行或角色。62不是认证的新物理批次数。
+
+2. JARVIS多性质DFT：固定Matminer2018处理表25923条、16列。Figshare10.6084/m9.figshare.7261832.v1，文件13376507，处理发布为MIT；其原始JARVIS10.6084/m9.figshare.6815699.v2为CC BY4，需同时保留上游作者归属。不是最新76k快照，也不是湿实验。
+唯一jid/mpid各25923，规范成分20088组。e_form、gap opt、bulk、shear有限计数为25923/23455/11032/11032。选择e_form/gapopt/bulk三量共同有限后为11020行、8842个保留全源连接的组。最多每组2行可得10021行，40组pilot可行。
+bulk/shear共享原弹性计算，不能把两个表格格子当两次全新DFT；首先只用bulk较清晰。源表bulk有4个负值，shear有177个负值，可能是不稳定性或来源问题，不可在看模型效果后删除、取绝对值或强行log。元数据称VRH，但预处理实际把kv/gv直接改名；未读取178MB原始张量来确认具体平均定义，初始benchmark使用精确源字段名，物理论断保留此限制。
+
+二、可验证闭环需要怎样限制
+只把原本有限的原始响应藏进offline oracle；先冻结分组、角色、预算和每个基线的信息。原生NaN无真值，模型预测、派生值或ML势返回不能变成新测量。候选池扩张只能在有原始真值的保留ID上评分；任意生成的新结构没有独立计算时不能认证材料发现。
+UCSB与JARVIS是不同环境、不同响应语义。两个表都做一次仅说明任务族广度；更强的泛化需要固定控制策略/超参，在未见化学体系或保留环境上评价。不同数据网站不证明域迁移。
+比较至少包含Ridge/Gaussian线性、ExtraTrees/RandomForest、固定观测信息的迭代补齐/图传播，以及random/uncertainty/diversity/ordinary active learning、自训练，统一真实oracle单元或计算bundle预算。催化权重打乱、关闭反馈、仅修复/仅扩张是机制消融。当前没有运行这些实验，不知道是否改善。
+
+三、MADE近邻基准
+ICML2026官方PMLR记录和作者仓库diffractivelabs/MADE已核；commit bffda0c9a1fa1904b35c0ef67b455881c975df86，MIT。实际阅读README、LICENSE与5个oracle相关文件，不是全论文/全仓库。
+MADE是formation-energy/convex-hull闭环发现强近邻。默认ORB/MACE是预训练机器学习势，AnalyticOracle为LennardJones；这些不能冒充新DFT/湿实验。其27.4MBenergy表和模型权重未下载，包未安装或执行；默认MaterialsProject API和可选LLM服务依赖未配置。后续可作为对接benchmark，不能仅把现有闭环改名为自催化。
+
+复现入口：DATA_MANIFEST.json列数据URL/版本/许可/sha；SOURCE_GATE.json列准入和基线；SOURCE_GATE_PILOT_ADDENDUM.json与PILOT_ELIGIBILITY.json列三量案例；ELIGIBLE_METADATA.json只有条件/身份，无响应值；SCHEMA_AND_IDENTITY_AUDIT.json和PHYSICAL_SIGN_COUNTS.json保留实际核查。raw文件仅两份.json.gz，不需要安装Matminer即可读取。全部选择仍由root在真实拟合前登记。

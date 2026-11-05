@@ -1,0 +1,60 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>从MLST封存到材料补齐与扩展闭环</title>
+<style>body{font:17px/1.85 "Microsoft YaHei",sans-serif;color:#183241;max-width:1150px;margin:36px auto;padding:0 22px}h1{font-size:30px}h2{font-size:23px;border-top:1px solid #ccd;padding-top:16px}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid #ccd;padding:9px;vertical-align:top}th{background:#e9f0f5}.status{background:#edf4fa;border-left:5px solid #286899;padding:16px}.warning{background:#fff1e9;padding:16px;border-left:5px solid #bd5a25}pre{white-space:pre-wrap;background:#f2f5f7;padding:14px}a{color:#135e8b}img{max-width:100%;height:auto}.small{font-size:14px;color:#536572}@media print{body{font-size:11pt;max-width:none;margin:0}tr{break-inside:avoid}h2{break-after:avoid}}</style>
+<h1>从MLST封存到材料补齐与扩展闭环</h1>
+<p class="small">本轮实际构建UTC 2026-11-05T11:46:28.286299+00:00。新方向独立于原MLST论文；本报告只读取已冻结证据，不拟合或重评分材料。</p>
+<div class="status"><b>MLST已经独立封存并同步远端。新方向完成了两类公开材料数据、八策略同底座试验和独立数值核查。</b>当前预测自催化调度在预登记24包主终点未超过联合信息获取对照，因此停止这一候选的新机制主张，保留其全部正负结果。</div>
+<h2>1．MLST存档与研究分支</h2>
+<p>原完整科学资源610MB、后续准备增量350KB、17页主文、27页SI、64参考以及完整Git历史已封存至
+<a href="H:/PolymerReview/MLST_frozen_20261105T093229Z/READ_FIRST.html">MLST独立存档入口</a>。
+完整Git bundle可离线新克隆，18个载荷全部重新核SHA；新克隆712清单／16冻结绑定通过。模型、稿件、旧开发及外部负结果保持其原版本。</p>
+<p>远端<a href="https://github.com/Hancy5521/hydrogel_control/tree/archive/mlst-final-freeze-2026-11-05">archive/mlst-final-freeze-2026-11-05</a>
+已核对为05a40915be149857b2bb9cf65144d53fa9b24f37。上轮网络失败记录仍保留，本轮服务恢复后push及ls-remote成功。
+新方向使用独立研究分支；不把本轮结果回填进原MLST主张。原独立新批次、真实材料校准、实际实验节约及作者权利事项仍按原记录保留。</p>
+<h2>2．顶会选择与已存在的直接先例</h2>
+<p>暂定下一可行届NeurIPS主会，ICML2027为备选。若最终贡献成为普适的预算决策方法，两者顺序应依结果调整；若NeurIPS2027继续设置Use-Inspired贡献类型，再按正式CFP选择。ICLR2027投稿截止已经过去。未核验到的未来截止日不填写，也不估算录用概率。</p>
+<p>目前最直接的先例是<a href="https://proceedings.mlr.press/v306/malik26a.html">MADE（ICML2026）</a>：已有受限oracle预算下的生成、筛选、规划与反馈闭环。
+<a href="https://proceedings.mlr.press/v235/gillman24a.html">自纠正生成循环（ICML2024）</a>已有外部纠正器；
+<a href="https://proceedings.mlr.press/v202/daulton23a.html">Hypervolume KG（ICML2023）</a>已有部分信息和成本联合决策。
+GRAPE、主动特征获取及GFlowNet也覆盖补齐、逐步查询与生成—oracle反馈的主要组成。创新可以来自问题、适配、控制、理论或基准增量，不要求所有组件首创；但循环本身、增加角色或Eigen命名不足以形成新方法。</p>
+<p>实际阅读深度、版本、许可与检索范围分别在<a href="../literature/PRIOR_ART_LEDGER.json">近邻账本</a>、
+<a href="../venues/VENUE_FIT.json">会议范围与接受工作账本</a>。本轮是选节阅读，没有声称完成各100篇全文学习。</p>
+<h2>3．Eigen启发应如何落到可检验量</h2>
+<p>用户已确认教授指的是Manfred Eigen。超循环启发的是不同功能之间的相互促进及错误反馈风险。
+经典归一化复制动力学为：</p>
+<pre>dx_i/dt = x_i[a_i + Σ_j c_ij x_j − Φ(x)],  Σ_i x_i=1</pre>
+<p>资源份额不等于真实证据总量。修复后的数据只有带来新的有效测量、计算或独立验证，才增加相应证据；自己的预测经过几个代理传递，仍是预测。Eigen获1967年化学奖的工作是快速反应研究，超循环是后来与Schuster的理论，不写成“超循环获得诺奖”。</p>
+<p>“蜘蛛补网后扩网”在首阶段被具体化为两类动作：R修复已部分观察的行，E开启未观察的候选行。E之后该行可进入R。首轮是<b>固定公共候选池的逐步揭示</b>，不是开放世界新化学结构生成；agent是透明决策程序，没有调用LLM或进行新湿实验／DFT。</p>
+<h2>4．新数据与公平试验</h2>
+<table><tr><th>来源</th><th>原表／可评估子集</th><th>本轮用途与限制</th></tr>
+<tr><td>UCSB热电，实验文献汇编</td><td>1093行；三原始响应、温度和来源完整703行／62保守组；本轮40组78行</td><td>目标rho、S、kappa。温度／成分是输入；sigma、PF、zT整体隔离以免代数泄漏。检索低kappa，不称完整zT最优化。</td></tr>
+<tr><td>JARVIS，计算DFT表</td><td>25923行；三目标完整11020行／8842保守组；本轮40组47行</td><td>目标e_form、gap opt、source bulk。原生负bulk保留。检索高bulk，不称新合成材料发现。结构未编码，不能当性质回归SOTA。</td></tr></table>
+<p>每表的40组按元数据hash分成8warm／8repair／16frontier／8test，每组最多2行；全源身份连接先于完整案例选择。原生缺失没有真值，本轮在完整案例上施加结构化遮挡，存在选择偏差。剩余22／8802组是未选元数据组，不自动认证为新的独立湿实验批次。</p>
+<p>所有策略共享固定warm Gaussian ICM、描述、初始观察和动作包。A={p0,p1}、B={p2}每包成本1；每轨迹再查询24包。UCSB共同初始47包、JARVIS29包。新增响应格数为24–37，故只能称<b>等bundle预算</b>；该计费不是实际仪器或DFT耗时。重复状态、同源派生量及逻辑别名不增加独立材料数。</p>
+<p>八策略为随机、补齐IVR、扩展近似KG、固定交替、固定随机模块、联合近似KG＋IVR、预测催化调度和去交叉项消融。4种确定性策略每表只执行一次；4种随机策略各4轨迹。总计40次实际轨迹、64个含别名的逻辑引用、160份预测；四个随机种子不是四套独立材料。</p>
+<p>先在实际UTC登记<a href="../pilot/PROTOCOL.json">协议及输入／源码hash</a>，40条轨迹全部冻结后才揭示测试值。主终点为每表8个保守测试组等权的标准化Gaussian CRPS。可见测试描述用于转导式IVR与共同缩放，测试响应封存；因此不能声称严格未知描述的归纳泛化或同权重零样本跨域迁移。</p>
+<h2>5．已核验结果：该候选尚无额外收益</h2>
+<table><tr><th>数据</th><th>策略</th><th>实际轨迹</th><th>24包CRPS↓</th><th>相对联合对照</th><th>已查top10%组命中</th></tr><tr><td>实验热电</td><td>random</td><td>4</td><td>4.07551768</td><td>+2.230%</td><td>0.50</td></tr><tr><td>实验热电</td><td>repair_only_IVR</td><td>1</td><td>4.00021036</td><td>+0.341%</td><td>0.00</td></tr><tr><td>实验热电</td><td>expansion_only_KG</td><td>1</td><td>4.05535879</td><td>+1.724%</td><td>2.00</td></tr><tr><td>实验热电</td><td>fixed_cycle</td><td>1</td><td>3.99945265</td><td>+0.322%</td><td>2.00</td></tr><tr><td>实验热电</td><td>fixed_random_modules</td><td>4</td><td>4.03376822</td><td>+1.183%</td><td>1.50</td></tr><tr><td>实验热电</td><td>joint_lookahead_all</td><td>1</td><td>3.98661707</td><td>+0.000%</td><td>2.00</td></tr><tr><td>实验热电</td><td>hypercycle_predictive</td><td>4</td><td>3.99456652</td><td>+0.199%</td><td>1.25</td></tr><tr><td>实验热电</td><td>hypercycle_no_cross</td><td>4</td><td>3.99456652</td><td>+0.199%</td><td>1.25</td></tr><tr><td>计算晶体</td><td>random</td><td>4</td><td>0.57369604</td><td>+5.160%</td><td>0.75</td></tr><tr><td>计算晶体</td><td>repair_only_IVR</td><td>1</td><td>0.56381682</td><td>+3.349%</td><td>0.00</td></tr><tr><td>计算晶体</td><td>expansion_only_KG</td><td>1</td><td>0.57800434</td><td>+5.950%</td><td>2.00</td></tr><tr><td>计算晶体</td><td>fixed_cycle</td><td>1</td><td>0.54928283</td><td>+0.685%</td><td>1.00</td></tr><tr><td>计算晶体</td><td>fixed_random_modules</td><td>4</td><td>0.56936540</td><td>+4.366%</td><td>1.00</td></tr><tr><td>计算晶体</td><td>joint_lookahead_all</td><td>1</td><td>0.54554506</td><td>+0.000%</td><td>1.00</td></tr><tr><td>计算晶体</td><td>hypercycle_predictive</td><td>4</td><td>0.56572963</td><td>+3.700%</td><td>1.00</td></tr><tr><td>计算晶体</td><td>hypercycle_no_cross</td><td>4</td><td>0.56161124</td><td>+2.945%</td><td>1.00</td></tr></table>
+<p class="small">随机策略为四条轨迹均值；确定性策略为唯一实际轨迹。测试组固定，表内不把重复轨迹当新材料；不同表采用各自warm尺度，不能直接将其CRPS作跨域绝对高低比较。检索阈值只在评价器计算，未查的预测不计已验证命中。</p>
+<img src="budget_curves.png" alt="两数据集在共同离线查询预算下的标准化CRPS曲线">
+<div class="warning"><b>预测催化版本的主终点在UCSB差0.1994%，在JARVIS差3.6999%。</b>交叉项开／关的8对轨迹中7对动作及四份预测字节完全相同；唯一不同的JARVIS轨迹，其交叉项版本CRPS反而高0.01647357。本次没有支持该交叉项额外价值的证据。</div>
+<p>结果不证明所有自催化构想都无效；它否定的是当前固定warm模型、预测收益启发式和每维5节点GH（双响应包25组合）的共同近似设置下的主张。不修改学习率、混合权重、求积阶数或测试分组来挽救这批结果。</p>
+<h2>6．为何这个结果有用</h2>
+<ul><li>warm之后B固定，补齐数据只改变条件分布，不能称学会了新的跨性质关系。</li>
+<li>C的行是R/E动作提案，列是IVR/KG目标；Cw是数值权重启发式，不是模块之间实测促进率。矩阵有非对角元素不等于超循环成立。</li>
+<li>固定随机模块对照隔离了随机探索混杂；相对它略好，也不足以超越联合信息获取或证明新的催化机制。</li>
+<li>5节点GH实现正确，但人工算例的连续KG近似误差最高约21%。本轮只能称同规则近似KG对照，不能冒充完整高精度KG／HV-KG。</li>
+<li>同一底座有助于归因调度，却没有关闭结构GNN、AFA、现代生成器、完整KG及MADE等全部强基线缺口。</li></ul>
+<p>独立人工核查8族通过；160个冻结Gaussian与一次稠密条件解比较，最大均值误差5.08e−13、协方差1.59e−15；原生查询值、成本、160份评分、等组聚合和别名均核合，宏CRPS误差≤8.88e−16。
+这些核查支持计算正确，不是有效性或顶会达标证明。见<a href="../pilot/numerical_audit/INDEPENDENT_AUDIT_SUMMARY.json">独立审计总收据</a>。</p>
+<h2>7．下一步收敛到哪里</h2><p>精确控制给出关系信息与描述信息联合有用的正例，也给出同成本直接验证更好的反例。廉价R/E设置下可将平均Brier降为0，但候选目标直接测量为0；同成本时直接测两目标优于固定R/E。详见<a href="../exact_control/EXPLAINED_ZH.html">中文正反例解释</a>。这些是经典逻辑控制，不覆盖本轮材料候选的负结果。</p>
+<p>精确补充控制已完成，详见<a href="../exact_control/EXACT_CONTROL_SUMMARY.json">结果摘要</a>及<a href="../exact_control/README.txt">数学／使用说明</a>。它是经典有限贝叶斯问题，不是新增材料效果或新算法证明。</p>
+<p>更值得研究的对象是<b>具有来源身份与验证成本的关系学习、补齐和扩展共同决策</b>。实际催化增益应在共同冻结的前后模型上、用未消费探针测量跨任务损失变化，并扣除查询、验证与计算成本。在线使用过的探针成为开发反馈，不能反复称独立确认。</p>
+<p>未知关系后验、POMDP规划和自适应验证各自已有先例。下一候选仍必须与同关系后验、同动作／信息／费用的KG／VOI及可计算小问题的精确最优器比较；补更多角色不能代替这一步。若强既有方法自然等价，应收敛为有价值的基准／适配贡献或改变科学问题，不硬造新算法名称。</p>
+<p>当前顶会缺口依次是：可证伪的额外方法／基准贡献，真正的代价与依赖语义，强partial-information基线，高精度决策及实际backbone，结构化原生缺失和更多相容系统的未消费评价，最后才是agent工程规模和投稿写作。现阶段不写“已达到顶会标准”。</p>
+<h2>8．程序、复现与证据入口</h2>
+<ul><li><a href="../pilot/README.txt">冻结前程序说明</a>及<a href="../DESIGN_AND_MATH_ZH.txt">详细设计与公式</a>；当前执行状态以本报告为准。</li>
+<li>五模块：benchmark_io、joint_gaussian、policies、run_campaign、evaluate_campaign。测试揭示与策略运行分开；数据来源与数学、调度各有边界。</li>
+<li><a href="../pilot/CURRENT_VARIANT_DECISION.json">当前候选停止决定</a>、<a href="../pilot/evaluation/RESULTS.json">全正负评分</a>、<a href="../pilot/campaigns/ALL_FORECASTS_FROZEN.json">全部预测冻结清单</a>。</li>
+<li><a href="../data/SOURCE_GATE.json">数据许可／版本／角色</a>、<a href="../pilot/DATASET_ROLE_PLAN.json">独立元数据分组</a>、<a href="../pilot/diagnosis/NEXT_DECISION_MATH_ZH.txt">下一步数学分析</a>。</li>
+<li>本地资源包含原始公共数据及其授权／归属记录、全部代码、协议、预测、查询、评分与核查；论文下载不自动再分发。公开Git选择以源程序、可重取数据的URL／SHA和派生结果为主。</li></ul>
+</html>

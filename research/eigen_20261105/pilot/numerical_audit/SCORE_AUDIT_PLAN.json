@@ -1,0 +1,63 @@
+{
+  "artifact_kind": "Independent postfit offline numerical audit actual-time registration",
+  "actual_registered_utc": "2026-11-05T11:13:01.235188+00:00",
+  "actual_registered_asia_shanghai": "2026-11-05T19:13:01.235188+08:00",
+  "phase": "scores",
+  "audit_script_file": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\pilot\\numerical_audit\\independent_numerical_audit.py",
+  "audit_script_sha256": "529364bdffb4595df6a7eb935df1280fd64e9b654322952b69378b77785f3b1e",
+  "plan_creator_sha256": "f4089800dd77a27511805aab9ec274ac2fe30feea8e6088437cee8042f749e1a",
+  "scientific_plan_file": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\pilot\\PROTOCOL.json",
+  "scientific_plan_sha256": "aa52d32dc401dff7f1ccd55c05f19b5e6ccfd7534c4103f1b3d514e4a377bd59",
+  "source_directory": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\pilot\\code",
+  "source_sha256": {
+    "benchmark_io.py": "850112c9218aedfdbe460c5b6c027a743ace63399a08cf5bcc31ac8311480369",
+    "joint_gaussian.py": "7196a96a37bd9038d99bd39162ec13659f9baeb0330fc5f2a8189f2bc2a547d0",
+    "policies.py": "f2be7e86f711c9e28667dfb0eafe96a610a2cef80aeeb9172798ef9300c11c21",
+    "run_campaign.py": "24ad57b74ef0c44feca895f62448cd12a48f11c42d62a1e462d8fd6c251f3d60",
+    "evaluate_campaign.py": "83ae029cda8370e396f6ed3440af2c1d26ef86bb633850e89ccb2070816ebf5c"
+  },
+  "campaign_directory": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\pilot\\campaigns",
+  "forecast_freeze_sha256": "e7df4b597018fffd7b98e17ddbb42a7e00cb7845d94cf6a29b6a84895d86cdc5",
+  "phase_requires_root_approval_before_execution": true,
+  "prohibited_activity": "No SUT imports, oracle/policy runs, refits, active learning retuning, new material labels or new-data claims.",
+  "tolerances": {
+    "metadata": {
+      "atol": 2e-10,
+      "rtol": 2e-10
+    },
+    "mean": {
+      "atol": 2e-08,
+      "rtol": 2e-08
+    },
+    "covariance": {
+      "atol": 5e-09,
+      "rtol": 2e-08
+    },
+    "scores": {
+      "atol": 5e-11,
+      "rtol": 2e-10
+    }
+  },
+  "fixed_expected_scope": {
+    "actual_campaigns": 40,
+    "logical_episode_aliases_including24reuses": 64,
+    "forecast_laws": 160,
+    "bound_original_forecast_payload_files": 281,
+    "campaign_bundle_budget_each": 24,
+    "equal_test_metadata_groups_each_dataset": 8,
+    "datasets": [
+      "ucsb_thermoelectrics",
+      "jarvis_dft_3d"
+    ]
+  },
+  "independent_reconstruction": "RMS metadata fractions/T; warm-only mean/sampleSD/taskcov.8samplecov+.2I, RBF scalar length1, response residual.05I; one direct dense conditioning on all legal observations at each checkpoint, not producer sequential update.",
+  "scores_oracle": "Only after score-specific approval and frozen producer evaluation: original source three-responses; math.erf GaussianCRPS, equal8group mean, independently interpolated16group decile frontier threshold, exact cost/cell/R-E/alias reconciliation.",
+  "no_test_truth_before_score_approval": true,
+  "prior_audit_execution": "Draft source/AST static review only before this plan. Original bounded pilot sources/results are not rerun.",
+  "failure_policy": "First failure is written, execution stops. Preserve all receipts and register a new plan for a legitimate correction; no producer retuning on inspected outcomes.",
+  "claim_limit": "Numerical correctness for a fixed offline pilot, not independent material efficacy or learned causal catalysis/top-conference readiness.",
+  "forecast_audit_result_file": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\pilot\\numerical_audit\\forecast_execution_20261105T1107593958550Z\\INDEPENDENT_NUMERICAL_RESULT.json",
+  "forecast_audit_result_sha256": "be89ca3093b3ece78905105550049afbf3eff41eb992f0e8d28af77757fbf9cd",
+  "score_result_file": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\pilot\\evaluation\\RESULTS.json",
+  "score_result_sha256": "091c0819de30a7adf7945560105bb734f41e3b1a86fc5af34be764294e00ec83"
+}

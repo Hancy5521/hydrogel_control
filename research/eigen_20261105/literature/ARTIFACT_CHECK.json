@@ -1,0 +1,29 @@
+{
+  "actual_utc": "2026-11-05T09:54:30.759445+00:00",
+  "status": "PASS_DOCUMENT_STRUCTURE_AND_BOUNDED_CLAIM_CHECK_ONLY",
+  "checks": [
+    "12uniquecoreentries",
+    "allreadingdepthsdeclared",
+    "no12fullpaperclaim",
+    "19actualsearchquerieslisted",
+    "3documenthashesbound"
+  ],
+  "scientific_experiment": false,
+  "outputs": [
+    {
+      "file": "PRIOR_ART_LEDGER.json",
+      "bytes": 24726,
+      "sha256": "7c3e76fbb73e1da23dca823ea147cb44c3e16934cbea02015df1ee4fea1f99bd"
+    },
+    {
+      "file": "CRITICAL_FINDINGS_ZH.txt",
+      "bytes": 10188,
+      "sha256": "ee7512e523684672179f9f195a06129653b483de77886c41c617526525ef7078"
+    },
+    {
+      "file": "GITHUB_METADATA_WITH_MADE.json",
+      "bytes": 2245,
+      "sha256": "3cd64402adc1ad7b3078d0512b8910aab4cd012f4209d0f7ed1003b2fbcf6e6f"
+    }
+  ]
+}

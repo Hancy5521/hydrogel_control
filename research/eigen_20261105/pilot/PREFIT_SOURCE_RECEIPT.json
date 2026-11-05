@@ -1,0 +1,74 @@
+{
+  "artifact_kind": "Coherent pre-fit source freeze and syntax-only receipt",
+  "actual_utc": "2026-11-05T10:54:57.843720+00:00",
+  "actual_asia_shanghai": "2026-11-05T18:54:57.843720+08:00",
+  "revision": "prefit_v1_after_all_root_design_amendments",
+  "sources": [
+    {
+      "file": "benchmark_io.py",
+      "bytes": 16065,
+      "sha256": "850112c9218aedfdbe460c5b6c027a743ace63399a08cf5bcc31ac8311480369",
+      "check": "AST_PARSE_ONLY_NO_SUT_IMPORT"
+    },
+    {
+      "file": "joint_gaussian.py",
+      "bytes": 6852,
+      "sha256": "7196a96a37bd9038d99bd39162ec13659f9baeb0330fc5f2a8189f2bc2a547d0",
+      "check": "AST_PARSE_ONLY_NO_SUT_IMPORT"
+    },
+    {
+      "file": "policies.py",
+      "bytes": 4770,
+      "sha256": "f2be7e86f711c9e28667dfb0eafe96a610a2cef80aeeb9172798ef9300c11c21",
+      "check": "AST_PARSE_ONLY_NO_SUT_IMPORT"
+    },
+    {
+      "file": "run_campaign.py",
+      "bytes": 11547,
+      "sha256": "24ad57b74ef0c44feca895f62448cd12a48f11c42d62a1e462d8fd6c251f3d60",
+      "check": "AST_PARSE_ONLY_NO_SUT_IMPORT"
+    },
+    {
+      "file": "evaluate_campaign.py",
+      "bytes": 13344,
+      "sha256": "83ae029cda8370e396f6ed3440af2c1d26ef86bb633850e89ccb2070816ebf5c",
+      "check": "AST_PARSE_ONLY_NO_SUT_IMPORT"
+    }
+  ],
+  "README_sha256": "bbb4a8b8514b30d29c7584e18beebe29e88eb0b6a5d69d321277fe3ebfbfe9d0",
+  "source_input_sha256": {
+    "ELIGIBLE_METADATA.json": "165d48bc29f771e29f7e86a6bea1e57286eb81b49f29120905ba4ff4739660e4",
+    "PILOT_ELIGIBILITY.json": "e7b06d64fe29c550bd8e75febd64d853d38b20448914d47d705053aa7712361d",
+    "DATA_MANIFEST.json": "5000ecb55aefae7259467b5cb23a570ae1762bce4333155cf411cbfb0aaa4343",
+    "SOURCE_GATE.json": "86ee6469c90c98558ca069e9d7e5e05badb5f5bc6944f0dbbf94a9025bea0a6e",
+    "SOURCE_GATE_PILOT_ADDENDUM.json": "7c0fc10397de2d85e13b101e5a78570feea7d1ef80473a852e482c552eefda22",
+    "ucsb_thermoelectrics.json.gz": "7d0c9c74fd52995b876bd251a7732b5498314702441fa463197fb492be68ecc0",
+    "jarvis_dft_3d.json.gz": "3d0fc1315b74cf84071f16aa25bb93434dafbc83867beb75872064ac245bd747"
+  },
+  "independent_role_plan_sha256": "ea9120cf04bc78c8292be8ebba3eab6f9b1b0f830574b3e1a803386105451de8",
+  "actual_campaigns": 40,
+  "logical_episode_aliases": 64,
+  "actual_forecast_checkpoints": 160,
+  "expected_frozen_payload_files": 281,
+  "methods": 8,
+  "real_data_fit_or_prediction_or_score": 0,
+  "SUT_imported_or_executed_by_implementer": false,
+  "verification_level": "Static source/metadata read and AST only; independent synthetic qualification not executed by implementer",
+  "final_prefit_amendments": [
+    "RMS metadata-feature distance with sqrt(activeD)",
+    "UCSB lowkappa sign-1/JARVIS sourcebulk sign+1",
+    "exact observed PSD identities, fresh/test blocks SPD",
+    "deterministic episodealiases, no duplicate actualruns",
+    "same-proposal fixed_random_modules control",
+    "exact281file/40actual/64logical freeze and campaign identity preflight",
+    "once-per-dataset role-filtered oracle cache plus independent fork state"
+  ],
+  "limits": [
+    "B fixed afterwarm; no learned taskrelations",
+    "C predictive not independently verified causalrate",
+    "ordinaryclassicalGP/replicator/finitepoolKG components",
+    "role-level information flow not cryptographic/processblindness",
+    "offlinebundlecost not realexperiment/DFT cost",
+    "newagentresults notqualified/novel/topconferencecertified"
+  ]
+}

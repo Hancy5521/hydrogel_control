@@ -1,0 +1,20 @@
+{
+  "actual_utc": "2026-11-05T11:03:58.555344+00:00",
+  "approved": true,
+  "scope": "BOUNDED_REAL_SOURCE_OFFLINE_PILOT",
+  "plan_sha256": "aa52d32dc401dff7f1ccd55c05f19b5e6ccfd7534c4103f1b3d514e4a377bd59",
+  "independent_synthetic_audit_sha256": "3f574e3f51e3f2aea76c370cf7df72918c29088933882a58afaad9864a65fe24",
+  "registered_before_first_real_source_fit": true,
+  "actual_campaigns": 40,
+  "logical_aliases": 64,
+  "primary_endpoint": "equal_test_metadata_group_mean_standardized_Gaussian_CRPS",
+  "score_access_authorized": false,
+  "scope_limits": [
+    "preexisting public experimental and DFT values,not new measurements",
+    "fixed warm GaussianICM, predictive allocation heuristic,not learnedverifiedcausalC",
+    "shared5nodeGH approximates finitepoolscalarKG; synthetic bias upto~21%,not fullHVKGstrongbaselinecertification",
+    "same40groups,4trajectories not4independentcohorts",
+    "no post-test retune/sourcechange/resplit; retain failures"
+  ],
+  "stop_rule": "Complete allforecasts freeze before separate scoringapproval; anysource/numeric/rolefailure stops without successfulsubset."
+}

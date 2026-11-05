@@ -1,0 +1,1177 @@
+{
+  "actual_utc": "2026-11-05T11:46:23.968557+00:00",
+  "status": "CLASSICAL_EXACT_CONTROL_INDEPENDENTLY_VERIFIED",
+  "result_sha256": "376ec30dd0c45be1c5894877a598cd2934fce9853275f2d2f7e4ebbbea24bfd6",
+  "independent_GF2_audit_sha256": "9d3b4c955c45b8269040f83a62c07316ccc914d24192e803f7abba7d9fc4f644",
+  "material_data_read_or_fit": false,
+  "policy_configurations": 48,
+  "main_outcomes": [
+    {
+      "scenario": "coupled",
+      "cost_setting": "cheap_repair_expansion",
+      "objective": "brier",
+      "policy": "exact_budget_DP",
+      "expected": {
+        "bayes_risk": {
+          "fraction": "0",
+          "numerator": 0,
+          "denominator": 1,
+          "float_display": 0.0
+        },
+        "objective_value": {
+          "fraction": "0",
+          "numerator": 0,
+          "denominator": 1,
+          "float_display": 0.0
+        },
+        "spent_ticks": {
+          "fraction": "3",
+          "numerator": 3,
+          "denominator": 1,
+          "float_display": 3.0
+        },
+        "directly_verified_targets": {
+          "fraction": "0",
+          "numerator": 0,
+          "denominator": 1,
+          "float_display": 0.0
+        },
+        "inferred_but_unverified_targets": {
+          "fraction": "2",
+          "numerator": 2,
+          "denominator": 1,
+          "float_display": 2.0
+        },
+        "oracle_calls": {
+          "fraction": "3",
+          "numerator": 3,
+          "denominator": 1,
+          "float_display": 3.0
+        },
+        "independent_information_bits_revealed": {
+          "fraction": "3",
+          "numerator": 3,
+          "denominator": 1,
+          "float_display": 3.0
+        },
+        "charged_oracle_cost": {
+          "fraction": "3/4",
+          "numerator": 3,
+          "denominator": 4,
+          "float_display": 0.75
+        },
+        "unmeasured_inference_counts_as_verified_label": false
+      }
+    },
+    {
+      "scenario": "coupled",
+      "cost_setting": "cheap_repair_expansion",
+      "objective": "brier",
+      "policy": "myopic_cost_normalized",
+      "expected": {
+        "bayes_risk": {
+          "fraction": "1/8",
+          "numerator": 1,
+          "denominator": 8,
+          "float_display": 0.125
+        },
+        "objective_value": {
+          "fraction": "1/8",
+          "numerator": 1,
+          "denominator": 8,
+          "float_display": 0.125
+        },
+        "spent_ticks": {
+          "fraction": "4",
+          "numerator": 4,
+          "denominator": 1,
+          "float_display": 4.0
+        },
+        "directly_verified_targets": {
+          "fraction": "1",
+          "numerator": 1,
+          "denominator": 1,
+          "float_display": 1.0
+        },
+        "inferred_but_unverified_targets": {
+          "fraction": "0",
+          "numerator": 0,
+          "denominator": 1,
+          "float_display": 0.0
+        },
+        "oracle_calls": {
+          "fraction": "1",
+          "numerator": 1,
+          "denominator": 1,
+          "float_display": 1.0
+        },
+        "independent_information_bits_revealed": {
+          "fraction": "1",
+          "numerator": 1,
+          "denominator": 1,
+          "float_display": 1.0
+        },
+        "charged_oracle_cost": {
+          "fraction": "1",
+          "numerator": 1,
+          "denominator": 1,
+          "float_display": 1.0
+        },
+        "unmeasured_inference_counts_as_verified_label": false
+      }
+    },
+    {
+      "scenario": "coupled",
+      "cost_setting": "cheap_repair_expansion",
+      "objective": "brier",
+      "policy": "static_RE_cycle",
+      "expected": {
+        "bayes_risk": {
+          "fraction": "0",
+          "numerator": 0,
+          "denominator": 1,
+          "float_display": 0.0
+        },
+        "objective_value": {
+          "fraction": "0",
+          "numerator": 0,
+          "denominator": 1,
+          "float_display": 0.0
+        },
+        "spent_ticks": {
+          "fraction": "3",
+          "numerator": 3,
+          "denominator": 1,
+          "float_display": 3.0
+        },
+        "directly_verified_targets": {
+          "fraction": "0",
+          "numerator": 0,
+          "denominator": 1,
+          "float_display": 0.0
+        },
+        "inferred_but_unverified_targets": {
+          "fraction": "2",
+          "numerator": 2,
+          "denominator": 1,
+          "float_display": 2.0
+        },
+        "oracle_calls": {
+          "fraction": "3",
+          "numerator": 3,
+          "denominator": 1,
+          "float_display": 3.0
+        },
+        "independent_information_bits_revealed": {
+          "fraction": "3",
+          "numerator": 3,
+          "denominator": 1,
+          "float_display": 3.0
+        },
+        "charged_oracle_cost": {
+          "fraction": "3/4",
+          "numerator": 3,
+          "denominator": 4,
+          "float_display": 0.75
+        },
+        "unmeasured_inference_counts_as_verified_label": false
+      }
+    },
+    {
+      "scenario": "coupled",
+      "cost_setting": "cheap_repair_expansion",
+      "objective": "verification_shortfall",
+      "policy": "exact_budget_DP",
+      "expected": {
+        "bayes_risk": {
+          "fraction": "1/8",
+          "numerator": 1,
+          "denominator": 8,
+          "float_display": 0.125
+        },
+        "objective_value": {
+          "fraction": "1/2",
+          "numerator": 1,
+          "denominator": 2,
+          "float_display": 0.5
+        },
+        "spent_ticks": {
+          "fraction": "4",
+          "numerator": 4,
+          "denominator": 1,
+          "float_display": 4.0
+        },
+        "directly_verified_targets": {
+          "fraction": "1",
+          "numerator": 1,
+          "denominator": 1,
+          "float_display": 1.0
+        },
+        "inferred_but_unverified_targets": {
+          "fraction": "0",
+          "numerator": 0,
+          "denominator": 1,
+          "float_display": 0.0
+        },
+        "oracle_calls": {
+          "fraction": "1",
+          "numerator": 1,
+          "denominator": 1,
+          "float_display": 1.0
+        },
+        "independent_information_bits_revealed": {
+          "fraction": "1",
+          "numerator": 1,
+          "denominator": 1,
+          "float_display": 1.0
+        },
+        "charged_oracle_cost": {
+          "fraction": "1",
+          "numerator": 1,
+          "denominator": 1,
+          "float_display": 1.0
+        },
+        "unmeasured_inference_counts_as_verified_label": false
+      }
+    },
+    {
+      "scenario": "coupled",
+      "cost_setting": "cheap_repair_expansion",
+      "objective": "verification_shortfall",
+      "policy": "myopic_cost_normalized",
+      "expected": {
+        "bayes_risk": {
+          "fraction": "1/8",
+          "numerator": 1,
+          "denominator": 8,
+          "float_display": 0.125
+        },
+        "objective_value": {
+          "fraction": "1/2",
+          "numerator": 1,
+          "denominator": 2,
+          "float_display": 0.5
+        },
+        "spent_ticks": {
+          "fraction": "4",
+          "numerator": 4,
+          "denominator": 1,
+          "float_display": 4.0
+        },
+        "directly_verified_targets": {
+          "fraction": "1",
+          "numerator": 1,
+          "denominator": 1,
+          "float_display": 1.0
+        },
+        "inferred_but_unverified_targets": {
+          "fraction": "0",
+          "numerator": 0,
+          "denominator": 1,
+          "float_display": 0.0
+        },
+        "oracle_calls": {
+          "fraction": "1",
+          "numerator": 1,
+          "denominator": 1,
+          "float_display": 1.0
+        },
+        "independent_information_bits_revealed": {
+          "fraction": "1",
+          "numerator": 1,
+          "denominator": 1,
+          "float_display": 1.0
+        },
+        "charged_oracle_cost": {
+          "fraction": "1",
+          "numerator": 1,
+          "denominator": 1,
+          "float_display": 1.0
+        },
+        "unmeasured_inference_counts_as_verified_label": false
+      }
+    },
+    {
+      "scenario": "coupled",
+      "cost_setting": "cheap_repair_expansion",
+      "objective": "verification_shortfall",
+      "policy": "static_RE_cycle",
+      "expected": {
+        "bayes_risk": {
+          "fraction": "0",
+          "numerator": 0,
+          "denominator": 1,
+          "float_display": 0.0
+        },
+        "objective_value": {
+          "fraction": "1",
+          "numerator": 1,
+          "denominator": 1,
+          "float_display": 1.0
+        },
+        "spent_ticks": {
+          "fraction": "3",
+          "numerator": 3,
+          "denominator": 1,
+          "float_display": 3.0
+        },
+        "directly_verified_targets": {
+          "fraction": "0",
+          "numerator": 0,
+          "denominator": 1,
+          "float_display": 0.0
+        },
+        "inferred_but_unverified_targets": {
+          "fraction": "2",
+          "numerator": 2,
+          "denominator": 1,
+          "float_display": 2.0
+        },
+        "oracle_calls": {
+          "fraction": "3",
+          "numerator": 3,
+          "denominator": 1,
+          "float_display": 3.0
+        },
+        "independent_information_bits_revealed": {
+          "fraction": "3",
+          "numerator": 3,
+          "denominator": 1,
+          "float_display": 3.0
+        },
+        "charged_oracle_cost": {
+          "fraction": "3/4",
+          "numerator": 3,
+          "denominator": 4,
+          "float_display": 0.75
+        },
+        "unmeasured_inference_counts_as_verified_label": false
+      }
+    },
+    {
+      "scenario": "coupled",
+      "cost_setting": "equal_cost",
+      "objective": "brier",
+      "policy": "exact_budget_DP",
+      "expected": {
+        "bayes_risk": {
+          "fraction": "0",
+          "numerator": 0,
+          "denominator": 1,
+          "float_display": 0.0
+        },
+        "objective_value": {
+          "fraction": "0",
+          "numerator": 0,
+          "denominator": 1,
+          "float_display": 0.0
+        },
+        "spent_ticks": {
+          "fraction": "8",
+          "numerator": 8,
+          "denominator": 1,
+          "float_display": 8.0
+        },
+        "directly_verified_targets": {
+          "fraction": "2",
+          "numerator": 2,
+          "denominator": 1,
+          "float_display": 2.0
+        },
+        "inferred_but_unverified_targets": {
+          "fraction": "0",
+          "numerator": 0,
+          "denominator": 1,
+          "float_display": 0.0
+        },
+        "oracle_calls": {
+          "fraction": "2",
+          "numerator": 2,
+          "denominator": 1,
+          "float_display": 2.0
+        },
+        "independent_information_bits_revealed": {
+          "fraction": "2",
+          "numerator": 2,
+          "denominator": 1,
+          "float_display": 2.0
+        },
+        "charged_oracle_cost": {
+          "fraction": "2",
+          "numerator": 2,
+          "denominator": 1,
+          "float_display": 2.0
+        },
+        "unmeasured_inference_counts_as_verified_label": false
+      }
+    },
+    {
+      "scenario": "coupled",
+      "cost_setting": "equal_cost",
+      "objective": "brier",
+      "policy": "myopic_cost_normalized",
+      "expected": {
+        "bayes_risk": {
+          "fraction": "0",
+          "numerator": 0,
+          "denominator": 1,
+          "float_display": 0.0
+        },
+        "objective_value": {
+          "fraction": "0",
+          "numerator": 0,
+          "denominator": 1,
+          "float_display": 0.0
+        },
+        "spent_ticks": {
+          "fraction": "8",
+          "numerator": 8,
+          "denominator": 1,
+          "float_display": 8.0
+        },
+        "directly_verified_targets": {
+          "fraction": "2",
+          "numerator": 2,
+          "denominator": 1,
+          "float_display": 2.0
+        },
+        "inferred_but_unverified_targets": {
+          "fraction": "0",
+          "numerator": 0,
+          "denominator": 1,
+          "float_display": 0.0
+        },
+        "oracle_calls": {
+          "fraction": "2",
+          "numerator": 2,
+          "denominator": 1,
+          "float_display": 2.0
+        },
+        "independent_information_bits_revealed": {
+          "fraction": "2",
+          "numerator": 2,
+          "denominator": 1,
+          "float_display": 2.0
+        },
+        "charged_oracle_cost": {
+          "fraction": "2",
+          "numerator": 2,
+          "denominator": 1,
+          "float_display": 2.0
+        },
+        "unmeasured_inference_counts_as_verified_label": false
+      }
+    },
+    {
+      "scenario": "coupled",
+      "cost_setting": "equal_cost",
+      "objective": "brier",
+      "policy": "static_RE_cycle",
+      "expected": {
+        "bayes_risk": {
+          "fraction": "1/8",
+          "numerator": 1,
+          "denominator": 8,
+          "float_display": 0.125
+        },
+        "objective_value": {
+          "fraction": "1/8",
+          "numerator": 1,
+          "denominator": 8,
+          "float_display": 0.125
+        },
+        "spent_ticks": {
+          "fraction": "8",
+          "numerator": 8,
+          "denominator": 1,
+          "float_display": 8.0
+        },
+        "directly_verified_targets": {
+          "fraction": "0",
+          "numerator": 0,
+          "denominator": 1,
+          "float_display": 0.0
+        },
+        "inferred_but_unverified_targets": {
+          "fraction": "1",
+          "numerator": 1,
+          "denominator": 1,
+          "float_display": 1.0
+        },
+        "oracle_calls": {
+          "fraction": "2",
+          "numerator": 2,
+          "denominator": 1,
+          "float_display": 2.0
+        },
+        "independent_information_bits_revealed": {
+          "fraction": "2",
+          "numerator": 2,
+          "denominator": 1,
+          "float_display": 2.0
+        },
+        "charged_oracle_cost": {
+          "fraction": "2",
+          "numerator": 2,
+          "denominator": 1,
+          "float_display": 2.0
+        },
+        "unmeasured_inference_counts_as_verified_label": false
+      }
+    },
+    {
+      "scenario": "coupled",
+      "cost_setting": "equal_cost",
+      "objective": "verification_shortfall",
+      "policy": "exact_budget_DP",
+      "expected": {
+        "bayes_risk": {
+          "fraction": "0",
+          "numerator": 0,
+          "denominator": 1,
+          "float_display": 0.0
+        },
+        "objective_value": {
+          "fraction": "0",
+          "numerator": 0,
+          "denominator": 1,
+          "float_display": 0.0
+        },
+        "spent_ticks": {
+          "fraction": "8",
+          "numerator": 8,
+          "denominator": 1,
+          "float_display": 8.0
+        },
+        "directly_verified_targets": {
+          "fraction": "2",
+          "numerator": 2,
+          "denominator": 1,
+          "float_display": 2.0
+        },
+        "inferred_but_unverified_targets": {
+          "fraction": "0",
+          "numerator": 0,
+          "denominator": 1,
+          "float_display": 0.0
+        },
+        "oracle_calls": {
+          "fraction": "2",
+          "numerator": 2,
+          "denominator": 1,
+          "float_display": 2.0
+        },
+        "independent_information_bits_revealed": {
+          "fraction": "2",
+          "numerator": 2,
+          "denominator": 1,
+          "float_display": 2.0
+        },
+        "charged_oracle_cost": {
+          "fraction": "2",
+          "numerator": 2,
+          "denominator": 1,
+          "float_display": 2.0
+        },
+        "unmeasured_inference_counts_as_verified_label": false
+      }
+    },
+    {
+      "scenario": "coupled",
+      "cost_setting": "equal_cost",
+      "objective": "verification_shortfall",
+      "policy": "myopic_cost_normalized",
+      "expected": {
+        "bayes_risk": {
+          "fraction": "0",
+          "numerator": 0,
+          "denominator": 1,
+          "float_display": 0.0
+        },
+        "objective_value": {
+          "fraction": "0",
+          "numerator": 0,
+          "denominator": 1,
+          "float_display": 0.0
+        },
+        "spent_ticks": {
+          "fraction": "8",
+          "numerator": 8,
+          "denominator": 1,
+          "float_display": 8.0
+        },
+        "directly_verified_targets": {
+          "fraction": "2",
+          "numerator": 2,
+          "denominator": 1,
+          "float_display": 2.0
+        },
+        "inferred_but_unverified_targets": {
+          "fraction": "0",
+          "numerator": 0,
+          "denominator": 1,
+          "float_display": 0.0
+        },
+        "oracle_calls": {
+          "fraction": "2",
+          "numerator": 2,
+          "denominator": 1,
+          "float_display": 2.0
+        },
+        "independent_information_bits_revealed": {
+          "fraction": "2",
+          "numerator": 2,
+          "denominator": 1,
+          "float_display": 2.0
+        },
+        "charged_oracle_cost": {
+          "fraction": "2",
+          "numerator": 2,
+          "denominator": 1,
+          "float_display": 2.0
+        },
+        "unmeasured_inference_counts_as_verified_label": false
+      }
+    },
+    {
+      "scenario": "coupled",
+      "cost_setting": "equal_cost",
+      "objective": "verification_shortfall",
+      "policy": "static_RE_cycle",
+      "expected": {
+        "bayes_risk": {
+          "fraction": "1/8",
+          "numerator": 1,
+          "denominator": 8,
+          "float_display": 0.125
+        },
+        "objective_value": {
+          "fraction": "1",
+          "numerator": 1,
+          "denominator": 1,
+          "float_display": 1.0
+        },
+        "spent_ticks": {
+          "fraction": "8",
+          "numerator": 8,
+          "denominator": 1,
+          "float_display": 8.0
+        },
+        "directly_verified_targets": {
+          "fraction": "0",
+          "numerator": 0,
+          "denominator": 1,
+          "float_display": 0.0
+        },
+        "inferred_but_unverified_targets": {
+          "fraction": "1",
+          "numerator": 1,
+          "denominator": 1,
+          "float_display": 1.0
+        },
+        "oracle_calls": {
+          "fraction": "2",
+          "numerator": 2,
+          "denominator": 1,
+          "float_display": 2.0
+        },
+        "independent_information_bits_revealed": {
+          "fraction": "2",
+          "numerator": 2,
+          "denominator": 1,
+          "float_display": 2.0
+        },
+        "charged_oracle_cost": {
+          "fraction": "2",
+          "numerator": 2,
+          "denominator": 1,
+          "float_display": 2.0
+        },
+        "unmeasured_inference_counts_as_verified_label": false
+      }
+    }
+  ],
+  "complementarity": [
+    {
+      "scenario": "coupled",
+      "mean_two_target_bayes_risk": {
+        "none": {
+          "fraction": "1/4",
+          "numerator": 1,
+          "denominator": 4,
+          "float_display": 0.25
+        },
+        "R": {
+          "fraction": "1/4",
+          "numerator": 1,
+          "denominator": 4,
+          "float_display": 0.25
+        },
+        "E1": {
+          "fraction": "1/4",
+          "numerator": 1,
+          "denominator": 4,
+          "float_display": 0.25
+        },
+        "R_and_E1": {
+          "fraction": "1/8",
+          "numerator": 1,
+          "denominator": 8,
+          "float_display": 0.125
+        }
+      },
+      "mean_brier_complementarity_gain": {
+        "fraction": "1/8",
+        "numerator": 1,
+        "denominator": 8,
+        "float_display": 0.125
+      },
+      "target_mutual_information_bits": {
+        "R": {
+          "Y1": {
+            "fraction": "0",
+            "numerator": 0,
+            "denominator": 1,
+            "float_display": 0.0
+          },
+          "Y2": {
+            "fraction": "0",
+            "numerator": 0,
+            "denominator": 1,
+            "float_display": 0.0
+          },
+          "joint": {
+            "fraction": "0",
+            "numerator": 0,
+            "denominator": 1,
+            "float_display": 0.0
+          }
+        },
+        "E1": {
+          "Y1": {
+            "fraction": "0",
+            "numerator": 0,
+            "denominator": 1,
+            "float_display": 0.0
+          },
+          "Y2": {
+            "fraction": "0",
+            "numerator": 0,
+            "denominator": 1,
+            "float_display": 0.0
+          },
+          "joint": {
+            "fraction": "0",
+            "numerator": 0,
+            "denominator": 1,
+            "float_display": 0.0
+          }
+        },
+        "R_and_E1": {
+          "Y1": {
+            "fraction": "1",
+            "numerator": 1,
+            "denominator": 1,
+            "float_display": 1.0
+          },
+          "Y2": {
+            "fraction": "0",
+            "numerator": 0,
+            "denominator": 1,
+            "float_display": 0.0
+          },
+          "joint": {
+            "fraction": "1",
+            "numerator": 1,
+            "denominator": 1,
+            "float_display": 1.0
+          }
+        }
+      },
+      "Y1_information_complementarity_bits": {
+        "fraction": "1",
+        "numerator": 1,
+        "denominator": 1,
+        "float_display": 1.0
+      },
+      "independently_measured_targets_from_R_E": 0
+    },
+    {
+      "scenario": "theta_known",
+      "mean_two_target_bayes_risk": {
+        "none": {
+          "fraction": "1/4",
+          "numerator": 1,
+          "denominator": 4,
+          "float_display": 0.25
+        },
+        "R": {
+          "fraction": "1/4",
+          "numerator": 1,
+          "denominator": 4,
+          "float_display": 0.25
+        },
+        "E1": {
+          "fraction": "1/8",
+          "numerator": 1,
+          "denominator": 8,
+          "float_display": 0.125
+        },
+        "R_and_E1": {
+          "fraction": "1/8",
+          "numerator": 1,
+          "denominator": 8,
+          "float_display": 0.125
+        }
+      },
+      "mean_brier_complementarity_gain": {
+        "fraction": "0",
+        "numerator": 0,
+        "denominator": 1,
+        "float_display": 0.0
+      },
+      "target_mutual_information_bits": {
+        "R": {
+          "Y1": {
+            "fraction": "0",
+            "numerator": 0,
+            "denominator": 1,
+            "float_display": 0.0
+          },
+          "Y2": {
+            "fraction": "0",
+            "numerator": 0,
+            "denominator": 1,
+            "float_display": 0.0
+          },
+          "joint": {
+            "fraction": "0",
+            "numerator": 0,
+            "denominator": 1,
+            "float_display": 0.0
+          }
+        },
+        "E1": {
+          "Y1": {
+            "fraction": "1",
+            "numerator": 1,
+            "denominator": 1,
+            "float_display": 1.0
+          },
+          "Y2": {
+            "fraction": "0",
+            "numerator": 0,
+            "denominator": 1,
+            "float_display": 0.0
+          },
+          "joint": {
+            "fraction": "1",
+            "numerator": 1,
+            "denominator": 1,
+            "float_display": 1.0
+          }
+        },
+        "R_and_E1": {
+          "Y1": {
+            "fraction": "1",
+            "numerator": 1,
+            "denominator": 1,
+            "float_display": 1.0
+          },
+          "Y2": {
+            "fraction": "0",
+            "numerator": 0,
+            "denominator": 1,
+            "float_display": 0.0
+          },
+          "joint": {
+            "fraction": "1",
+            "numerator": 1,
+            "denominator": 1,
+            "float_display": 1.0
+          }
+        }
+      },
+      "Y1_information_complementarity_bits": {
+        "fraction": "0",
+        "numerator": 0,
+        "denominator": 1,
+        "float_display": 0.0
+      },
+      "independently_measured_targets_from_R_E": 0
+    },
+    {
+      "scenario": "fake_pair",
+      "mean_two_target_bayes_risk": {
+        "none": {
+          "fraction": "1/4",
+          "numerator": 1,
+          "denominator": 4,
+          "float_display": 0.25
+        },
+        "R": {
+          "fraction": "1/4",
+          "numerator": 1,
+          "denominator": 4,
+          "float_display": 0.25
+        },
+        "E1": {
+          "fraction": "1/4",
+          "numerator": 1,
+          "denominator": 4,
+          "float_display": 0.25
+        },
+        "R_and_E1": {
+          "fraction": "1/4",
+          "numerator": 1,
+          "denominator": 4,
+          "float_display": 0.25
+        }
+      },
+      "mean_brier_complementarity_gain": {
+        "fraction": "0",
+        "numerator": 0,
+        "denominator": 1,
+        "float_display": 0.0
+      },
+      "target_mutual_information_bits": {
+        "R": {
+          "Y1": {
+            "fraction": "0",
+            "numerator": 0,
+            "denominator": 1,
+            "float_display": 0.0
+          },
+          "Y2": {
+            "fraction": "0",
+            "numerator": 0,
+            "denominator": 1,
+            "float_display": 0.0
+          },
+          "joint": {
+            "fraction": "0",
+            "numerator": 0,
+            "denominator": 1,
+            "float_display": 0.0
+          }
+        },
+        "E1": {
+          "Y1": {
+            "fraction": "0",
+            "numerator": 0,
+            "denominator": 1,
+            "float_display": 0.0
+          },
+          "Y2": {
+            "fraction": "0",
+            "numerator": 0,
+            "denominator": 1,
+            "float_display": 0.0
+          },
+          "joint": {
+            "fraction": "0",
+            "numerator": 0,
+            "denominator": 1,
+            "float_display": 0.0
+          }
+        },
+        "R_and_E1": {
+          "Y1": {
+            "fraction": "0",
+            "numerator": 0,
+            "denominator": 1,
+            "float_display": 0.0
+          },
+          "Y2": {
+            "fraction": "0",
+            "numerator": 0,
+            "denominator": 1,
+            "float_display": 0.0
+          },
+          "joint": {
+            "fraction": "0",
+            "numerator": 0,
+            "denominator": 1,
+            "float_display": 0.0
+          }
+        }
+      },
+      "Y1_information_complementarity_bits": {
+        "fraction": "0",
+        "numerator": 0,
+        "denominator": 1,
+        "float_display": 0.0
+      },
+      "independently_measured_targets_from_R_E": 0
+    },
+    {
+      "scenario": "no_relation",
+      "mean_two_target_bayes_risk": {
+        "none": {
+          "fraction": "1/4",
+          "numerator": 1,
+          "denominator": 4,
+          "float_display": 0.25
+        },
+        "R": {
+          "fraction": "1/4",
+          "numerator": 1,
+          "denominator": 4,
+          "float_display": 0.25
+        },
+        "E1": {
+          "fraction": "1/4",
+          "numerator": 1,
+          "denominator": 4,
+          "float_display": 0.25
+        },
+        "R_and_E1": {
+          "fraction": "1/4",
+          "numerator": 1,
+          "denominator": 4,
+          "float_display": 0.25
+        }
+      },
+      "mean_brier_complementarity_gain": {
+        "fraction": "0",
+        "numerator": 0,
+        "denominator": 1,
+        "float_display": 0.0
+      },
+      "target_mutual_information_bits": {
+        "R": {
+          "Y1": {
+            "fraction": "0",
+            "numerator": 0,
+            "denominator": 1,
+            "float_display": 0.0
+          },
+          "Y2": {
+            "fraction": "0",
+            "numerator": 0,
+            "denominator": 1,
+            "float_display": 0.0
+          },
+          "joint": {
+            "fraction": "0",
+            "numerator": 0,
+            "denominator": 1,
+            "float_display": 0.0
+          }
+        },
+        "E1": {
+          "Y1": {
+            "fraction": "0",
+            "numerator": 0,
+            "denominator": 1,
+            "float_display": 0.0
+          },
+          "Y2": {
+            "fraction": "0",
+            "numerator": 0,
+            "denominator": 1,
+            "float_display": 0.0
+          },
+          "joint": {
+            "fraction": "0",
+            "numerator": 0,
+            "denominator": 1,
+            "float_display": 0.0
+          }
+        },
+        "R_and_E1": {
+          "Y1": {
+            "fraction": "0",
+            "numerator": 0,
+            "denominator": 1,
+            "float_display": 0.0
+          },
+          "Y2": {
+            "fraction": "0",
+            "numerator": 0,
+            "denominator": 1,
+            "float_display": 0.0
+          },
+          "joint": {
+            "fraction": "0",
+            "numerator": 0,
+            "denominator": 1,
+            "float_display": 0.0
+          }
+        }
+      },
+      "Y1_information_complementarity_bits": {
+        "fraction": "0",
+        "numerator": 0,
+        "denominator": 1,
+        "float_display": 0.0
+      },
+      "independently_measured_targets_from_R_E": 0
+    }
+  ],
+  "pseudo_overconfidence": {
+    "scenario": "independent_pseudo_theta_treated_as_true_calibration",
+    "world_count": 16,
+    "true_positive_probabilities_given_h_E1_E2": [
+      {
+        "fraction": "1/2",
+        "numerator": 1,
+        "denominator": 2,
+        "float_display": 0.5
+      },
+      {
+        "fraction": "1/2",
+        "numerator": 1,
+        "denominator": 2,
+        "float_display": 0.5
+      }
+    ],
+    "reported_wrong_posterior_bayes_risk": {
+      "fraction": "0",
+      "numerator": 0,
+      "denominator": 1,
+      "float_display": 0.0
+    },
+    "actual_wrong_posterior_mean_Brier": {
+      "fraction": "1/2",
+      "numerator": 1,
+      "denominator": 2,
+      "float_display": 0.5
+    },
+    "proper_posterior_mean_Brier": {
+      "fraction": "1/4",
+      "numerator": 1,
+      "denominator": 4,
+      "float_display": 0.25
+    },
+    "probability_both_confident_pseudo_targets_correct": {
+      "fraction": "1/2",
+      "numerator": 1,
+      "denominator": 2,
+      "float_display": 0.5
+    },
+    "generated_h_measurement_count": 0,
+    "directly_verified_target_count": 0,
+    "charged_real_oracle_actions": [
+      "E1",
+      "E2"
+    ],
+    "cheap_charged_oracle_cost": {
+      "fraction": "1/2",
+      "numerator": 1,
+      "denominator": 2,
+      "float_display": 0.5
+    },
+    "h_role": "independent_generated_guess_not_an_observation",
+    "pseudo_predictions_are_not_measured_labels": true
+  },
+  "proof_scope": "uniformindependentGF2bits+linearparityobservations+fixedcost; targetriskdependsontheobservationspan. HereoptimaladaptiveDPvalue equalsbestquerysubset. Not generalPOMDPornewalgorithmtheorem.",
+  "scientific_conclusion": [
+    "repairandexpandinformationcanbecomplementaryinastatedmodel",
+    "costanddirectvalidationbaselinecanreversebenefit",
+    "perfectderivedpredictiondoesnotcountasdirecttargetmeasurement",
+    "independentpseudo-relationshipcreatesfalsecertainty andworsensBayesrisk",
+    "positivecontrol doesnotrescuethefailedmaterialpilot orcertifyEigeninnovation"
+  ],
+  "new_material_measurements": 0
+}

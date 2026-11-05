@@ -1,0 +1,16 @@
+{
+  "actual_utc": "2026-11-05T11:35:44.765046+00:00",
+  "approved": true,
+  "scope": "EXACT_HYPERCYCLE_LOGICAL_CONTROL",
+  "plan_sha256": "0a8c57a9f34ba6ddec27a3f982cf021fbf199296ac11f35f060355b2e09b8a36",
+  "reviewer": "root",
+  "material_data_or_fit_authorized": false,
+  "prior_analytic_expectations": {
+    "coupled_cheap_optimal_mean_Brier": "0",
+    "coupled_cheap_myopic_mean_Brier": "1/8",
+    "coupled_equalcost_optimal_mean_Brier": "0",
+    "coupled_equalcost_static_RE_mean_Brier": "1/8",
+    "derived_candidate_values_are_direct_measurements": false
+  },
+  "stop_rule": "Onlyfixed48logicalconfigurationsanddeclaredpseudocontrol; preservefailures,no worlds/cost/objectiveselection afteroutputs."
+}

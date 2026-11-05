@@ -1,0 +1,7 @@
+{
+  "actual_utc": "2026-11-05T11:10:00.669086+00:00",
+  "plan_sha256": "aa52d32dc401dff7f1ccd55c05f19b5e6ccfd7534c4103f1b3d514e4a377bd59",
+  "forecast_freeze_sha256": "e7df4b597018fffd7b98e17ddbb42a7e00cb7845d94cf6a29b6a84895d86cdc5",
+  "approval_sha256": "ade0bec9dbd70cdc48c266f871242a67e74f3af2fad367846675ebe8047712c1",
+  "intent": "ABOUT_TO_LOAD_PREEXISTING_PUBLIC_OFFLINE_TEST_RESPONSES"
+}

@@ -1,0 +1,47 @@
+{
+  "actual_utc": "2026-11-05T10:43:39.850724+00:00",
+  "status": "FROZEN_METADATA_PLAN_WITH_STATIC_PRODUCER_REVIEW_ONLY",
+  "files": [
+    {
+      "path": "DATASET_ROLE_PLAN.json",
+      "bytes": 576872,
+      "sha256": "ea9120cf04bc78c8292be8ebba3eab6f9b1b0f830574b3e1a803386105451de8"
+    },
+    {
+      "path": "metadata\\make_role_plan.py",
+      "bytes": 8273,
+      "sha256": "1afe0bff81a7b9e2f6bfed41bbcd7a0141b657d88459c697e0b61aeea2099365"
+    },
+    {
+      "path": "metadata\\check_selection_static.py",
+      "bytes": 5257,
+      "sha256": "4d28d4965c0bbfcdc2b496aece1527009c773bd63f59b0d0d0aaef87cf6c8dc9"
+    },
+    {
+      "path": "metadata\\SELECT_DESIGN_STATIC_REVIEW.json",
+      "bytes": 2791,
+      "sha256": "332fbee1d813b93822ff52da7d1039d75871d74142f3a122e30c9711f0c25ccc"
+    }
+  ],
+  "input_metadata_sha256": {
+    "ELIGIBLE_METADATA.json": "165d48bc29f771e29f7e86a6bea1e57286eb81b49f29120905ba4ff4739660e4",
+    "SOURCE_GATE.json": "86ee6469c90c98558ca069e9d7e5e05badb5f5bc6944f0dbbf94a9025bea0a6e"
+  },
+  "producer_source_snapshot_sha256": "ded8a989f849d53c471d15eb9d4cb2981008643e20b4b27da5a9f1956df0847f",
+  "source_pin_scope": "Producer snapshot inspected statically; root must independently bind final full producer source in actual pre-fit scientific protocol.",
+  "selected_rows": {
+    "ucsb_thermoelectrics": 78,
+    "jarvis_dft_3d": 47
+  },
+  "selected_full_source_components_per_dataset": 40,
+  "unused_components": {
+    "ucsb_thermoelectrics": 22,
+    "jarvis_dft_3d": 8802
+  },
+  "role_plan_not_rewritten": true,
+  "raw_response_or_scores_read": false,
+  "producer_code_import_or_execution": false,
+  "fit_calls": 0,
+  "numerical_model_validation_performed": false,
+  "no_new_data_search_or_download": true
+}

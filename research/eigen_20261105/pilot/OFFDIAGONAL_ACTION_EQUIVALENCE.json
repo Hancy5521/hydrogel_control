@@ -1,0 +1,77 @@
+{
+  "actual_utc": "2026-11-05T11:09:21.101740+00:00",
+  "scope": "postforecast pretest-reveal diagnostic; no policy/model change",
+  "testtruth_or_scores_read": false,
+  "pairs": [
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "seed": 2026110501,
+      "different_action_steps": [],
+      "same_all24_actions": true
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "seed": 2026110502,
+      "different_action_steps": [],
+      "same_all24_actions": true
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "seed": 2026110503,
+      "different_action_steps": [],
+      "same_all24_actions": true
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "seed": 2026110504,
+      "different_action_steps": [],
+      "same_all24_actions": true
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "seed": 2026110501,
+      "different_action_steps": [],
+      "same_all24_actions": true
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "seed": 2026110502,
+      "different_action_steps": [],
+      "same_all24_actions": true
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "seed": 2026110503,
+      "different_action_steps": [
+        0,
+        1,
+        2,
+        6,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        21,
+        22,
+        23
+      ],
+      "same_all24_actions": false
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "seed": 2026110504,
+      "different_action_steps": [],
+      "same_all24_actions": true
+    }
+  ],
+  "identical_pairs": 7,
+  "total_pairs": 8,
+  "interpretation": "Whenactionpairsidentical,theoffdiagonaltermhasnotchangedobservedquerytrajectory;futureequalforecastscoreswouldnotbecatalysisevidence."
+}

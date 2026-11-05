@@ -1,0 +1,71 @@
+{
+  "kind": "source_pinned_exact_logical_control",
+  "status": "REGISTERED",
+  "actual_registered_utc": "2026-11-05T11:35:43.043293+00:00",
+  "source_sha256": {
+    "enumerate_control.py": "0998e91f2e682c441d7967af6c493a8c32bcc1c65d0d59c3d03cf1610ad04857"
+  },
+  "configuration": {
+    "version": "finite_complementarity_control_v1",
+    "scenarios": [
+      "coupled",
+      "theta_known",
+      "fake_pair",
+      "no_relation"
+    ],
+    "objectives": [
+      "brier",
+      "verification_shortfall"
+    ],
+    "policies": [
+      "exact_budget_DP",
+      "myopic_cost_normalized",
+      "static_RE_cycle"
+    ],
+    "action_order": [
+      "V1",
+      "V2",
+      "R",
+      "E1",
+      "E2"
+    ],
+    "static_RE_order": [
+      "R",
+      "E1",
+      "E2"
+    ],
+    "tick_cost": "1/4",
+    "cost_settings": {
+      "cheap_repair_expansion": {
+        "costs_integer_ticks": {
+          "V1": 4,
+          "V2": 4,
+          "R": 1,
+          "E1": 1,
+          "E2": 1
+        },
+        "budget_integer_ticks": 4
+      },
+      "equal_cost": {
+        "costs_integer_ticks": {
+          "V1": 4,
+          "V2": 4,
+          "R": 4,
+          "E1": 4,
+          "E2": 4
+        },
+        "budget_integer_ticks": 8
+      }
+    },
+    "DP_tie_break": "minimum exact objective, then minimum expected charged ticks, then fixed action order",
+    "myopic_rule": "positive immediate exact objective reduction per charged integer tick; ties fixed action order; otherwise stop",
+    "uniform_priors": true,
+    "no_material_file_reads": true,
+    "mandatory_verification_counts_only": [
+      "V1",
+      "V2"
+    ]
+  },
+  "failure_policy": "Keep any failed receipt; do not alter worlds, costs, objective or policy after outcome review.",
+  "not_material_experiment_or_novel_algorithm": true
+}

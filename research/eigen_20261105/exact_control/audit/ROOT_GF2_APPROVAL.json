@@ -1,0 +1,10 @@
+{
+  "actual_utc": "2026-11-05T11:43:09.902310+00:00",
+  "approved": true,
+  "scope": "EXACT_CONTROL_GF2_AUDIT",
+  "plan_sha256": "a82a2a47d6eee070413c82c04781d1fcd0c870e0e146886646c5118d1070df83",
+  "reviewer": "root",
+  "source_or_world_changes_authorized": false,
+  "material_data_access_authorized": false,
+  "purpose": "IndependentGF2span/subsetenumeration andfrozenleaf reconciliationonly; no producerDPimport/reexecution."
+}

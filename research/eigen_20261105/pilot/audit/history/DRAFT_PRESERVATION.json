@@ -1,0 +1,6 @@
+{
+  "actual_utc": "2026-11-05T10:45:38.922254+00:00",
+  "original_draft_sha256": "ec76d86caed64095b98af161c2b313ae911ea2b57644c674ee6d1bbe2bdea251",
+  "SUT_imported_or_executed": false,
+  "reason": "Preserve unfinished audit draft before completing final API adapters; no interrupted process or materialfit"
+}

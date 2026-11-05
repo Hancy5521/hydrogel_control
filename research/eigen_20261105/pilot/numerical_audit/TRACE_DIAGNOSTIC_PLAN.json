@@ -1,0 +1,12 @@
+{
+  "actual_registered_utc": "2026-11-05T11:16:37.995384+00:00",
+  "scope": "Posthoc eight paired action-identity diagnostics after numerical audit; not an independent experiment.",
+  "prior_information": "Root reported negative primary candidate comparisons and suspected on/off trace equality before this diagnostic. No selection settings, source code, scores or policies are changed.",
+  "script_sha256": "eaa9177649d4503a99293ae1820afd4918d8b38c63a980206675389ce3606894",
+  "score_plan_sha256": "d557053f58ae70eb527ac9202f6eb3cdf8656651dba4dff6cb959aad2b62f12d",
+  "passed_score_audit_sha256": "1bdaddf98415ab68e180a7bd95bc68003e3219a696c194ddf8e052e43a1f3afb",
+  "forecast_freeze_sha256": "e7df4b597018fffd7b98e17ddbb42a7e00cb7845d94cf6a29b6a84895d86cdc5",
+  "test_truth_arrays_read": false,
+  "SUT_or_policy_execution": false,
+  "pairs": "Two datasets times four matched seeds: predictive hypercycle versus no-cross ablation."
+}

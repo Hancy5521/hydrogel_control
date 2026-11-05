@@ -1,0 +1,450 @@
+[
+  {
+    "dataset": "ucsb_thermoelectrics",
+    "policy": "random",
+    "new_bundle_cost": 0,
+    "CRPS": 4.090049013131976,
+    "CRPS_over_initial": 1.0
+  },
+  {
+    "dataset": "ucsb_thermoelectrics",
+    "policy": "random",
+    "new_bundle_cost": 8,
+    "CRPS": 4.094514059683758,
+    "CRPS_over_initial": 1.0010916853410425
+  },
+  {
+    "dataset": "ucsb_thermoelectrics",
+    "policy": "random",
+    "new_bundle_cost": 16,
+    "CRPS": 4.1338315393955165,
+    "CRPS_over_initial": 1.0107046458668263
+  },
+  {
+    "dataset": "ucsb_thermoelectrics",
+    "policy": "random",
+    "new_bundle_cost": 24,
+    "CRPS": 4.075517678981438,
+    "CRPS_over_initial": 0.9964471491407848
+  },
+  {
+    "dataset": "ucsb_thermoelectrics",
+    "policy": "repair_only_IVR",
+    "new_bundle_cost": 0,
+    "CRPS": 4.090049013131976,
+    "CRPS_over_initial": 1.0
+  },
+  {
+    "dataset": "ucsb_thermoelectrics",
+    "policy": "repair_only_IVR",
+    "new_bundle_cost": 8,
+    "CRPS": 4.088204803198209,
+    "CRPS_over_initial": 0.9995490983291774
+  },
+  {
+    "dataset": "ucsb_thermoelectrics",
+    "policy": "repair_only_IVR",
+    "new_bundle_cost": 16,
+    "CRPS": 3.9648291885306413,
+    "CRPS_over_initial": 0.9693842728536285
+  },
+  {
+    "dataset": "ucsb_thermoelectrics",
+    "policy": "repair_only_IVR",
+    "new_bundle_cost": 24,
+    "CRPS": 4.000210356015044,
+    "CRPS_over_initial": 0.9780348213851507
+  },
+  {
+    "dataset": "ucsb_thermoelectrics",
+    "policy": "expansion_only_KG",
+    "new_bundle_cost": 0,
+    "CRPS": 4.090049013131976,
+    "CRPS_over_initial": 1.0
+  },
+  {
+    "dataset": "ucsb_thermoelectrics",
+    "policy": "expansion_only_KG",
+    "new_bundle_cost": 8,
+    "CRPS": 4.076496522892224,
+    "CRPS_over_initial": 0.9966864724123748
+  },
+  {
+    "dataset": "ucsb_thermoelectrics",
+    "policy": "expansion_only_KG",
+    "new_bundle_cost": 16,
+    "CRPS": 4.081875688166595,
+    "CRPS_over_initial": 0.9980016559852611
+  },
+  {
+    "dataset": "ucsb_thermoelectrics",
+    "policy": "expansion_only_KG",
+    "new_bundle_cost": 24,
+    "CRPS": 4.055358794950691,
+    "CRPS_over_initial": 0.9915183857039599
+  },
+  {
+    "dataset": "ucsb_thermoelectrics",
+    "policy": "fixed_cycle",
+    "new_bundle_cost": 0,
+    "CRPS": 4.090049013131976,
+    "CRPS_over_initial": 1.0
+  },
+  {
+    "dataset": "ucsb_thermoelectrics",
+    "policy": "fixed_cycle",
+    "new_bundle_cost": 8,
+    "CRPS": 4.078545332542786,
+    "CRPS_over_initial": 0.9971873978643643
+  },
+  {
+    "dataset": "ucsb_thermoelectrics",
+    "policy": "fixed_cycle",
+    "new_bundle_cost": 16,
+    "CRPS": 3.9567425181582476,
+    "CRPS_over_initial": 0.9674071155270464
+  },
+  {
+    "dataset": "ucsb_thermoelectrics",
+    "policy": "fixed_cycle",
+    "new_bundle_cost": 24,
+    "CRPS": 3.999452652276685,
+    "CRPS_over_initial": 0.9778495659674463
+  },
+  {
+    "dataset": "ucsb_thermoelectrics",
+    "policy": "fixed_random_modules",
+    "new_bundle_cost": 0,
+    "CRPS": 4.090049013131976,
+    "CRPS_over_initial": 1.0
+  },
+  {
+    "dataset": "ucsb_thermoelectrics",
+    "policy": "fixed_random_modules",
+    "new_bundle_cost": 8,
+    "CRPS": 4.082781247531219,
+    "CRPS_over_initial": 0.9982230614896247
+  },
+  {
+    "dataset": "ucsb_thermoelectrics",
+    "policy": "fixed_random_modules",
+    "new_bundle_cost": 16,
+    "CRPS": 4.068454716175734,
+    "CRPS_over_initial": 0.9947202840633672
+  },
+  {
+    "dataset": "ucsb_thermoelectrics",
+    "policy": "fixed_random_modules",
+    "new_bundle_cost": 24,
+    "CRPS": 4.033768219306148,
+    "CRPS_over_initial": 0.9862395796125849
+  },
+  {
+    "dataset": "ucsb_thermoelectrics",
+    "policy": "joint_lookahead_all",
+    "new_bundle_cost": 0,
+    "CRPS": 4.090049013131976,
+    "CRPS_over_initial": 1.0
+  },
+  {
+    "dataset": "ucsb_thermoelectrics",
+    "policy": "joint_lookahead_all",
+    "new_bundle_cost": 8,
+    "CRPS": 4.076496522892224,
+    "CRPS_over_initial": 0.9966864724123748
+  },
+  {
+    "dataset": "ucsb_thermoelectrics",
+    "policy": "joint_lookahead_all",
+    "new_bundle_cost": 16,
+    "CRPS": 3.9732505490487187,
+    "CRPS_over_initial": 0.9714432605310472
+  },
+  {
+    "dataset": "ucsb_thermoelectrics",
+    "policy": "joint_lookahead_all",
+    "new_bundle_cost": 24,
+    "CRPS": 3.9866170726526207,
+    "CRPS_over_initial": 0.9747113200484236
+  },
+  {
+    "dataset": "ucsb_thermoelectrics",
+    "policy": "hypercycle_predictive",
+    "new_bundle_cost": 0,
+    "CRPS": 4.090049013131976,
+    "CRPS_over_initial": 1.0
+  },
+  {
+    "dataset": "ucsb_thermoelectrics",
+    "policy": "hypercycle_predictive",
+    "new_bundle_cost": 8,
+    "CRPS": 4.082781247531219,
+    "CRPS_over_initial": 0.9982230614896247
+  },
+  {
+    "dataset": "ucsb_thermoelectrics",
+    "policy": "hypercycle_predictive",
+    "new_bundle_cost": 16,
+    "CRPS": 4.076693806246894,
+    "CRPS_over_initial": 0.996734707373383
+  },
+  {
+    "dataset": "ucsb_thermoelectrics",
+    "policy": "hypercycle_predictive",
+    "new_bundle_cost": 24,
+    "CRPS": 3.994566518139243,
+    "CRPS_over_initial": 0.9766549264602536
+  },
+  {
+    "dataset": "ucsb_thermoelectrics",
+    "policy": "hypercycle_no_cross",
+    "new_bundle_cost": 0,
+    "CRPS": 4.090049013131976,
+    "CRPS_over_initial": 1.0
+  },
+  {
+    "dataset": "ucsb_thermoelectrics",
+    "policy": "hypercycle_no_cross",
+    "new_bundle_cost": 8,
+    "CRPS": 4.082781247531219,
+    "CRPS_over_initial": 0.9982230614896247
+  },
+  {
+    "dataset": "ucsb_thermoelectrics",
+    "policy": "hypercycle_no_cross",
+    "new_bundle_cost": 16,
+    "CRPS": 4.076693806246894,
+    "CRPS_over_initial": 0.996734707373383
+  },
+  {
+    "dataset": "ucsb_thermoelectrics",
+    "policy": "hypercycle_no_cross",
+    "new_bundle_cost": 24,
+    "CRPS": 3.994566518139243,
+    "CRPS_over_initial": 0.9766549264602536
+  },
+  {
+    "dataset": "jarvis_dft_3d",
+    "policy": "random",
+    "new_bundle_cost": 0,
+    "CRPS": 0.5757450249860585,
+    "CRPS_over_initial": 1.0
+  },
+  {
+    "dataset": "jarvis_dft_3d",
+    "policy": "random",
+    "new_bundle_cost": 8,
+    "CRPS": 0.5834962881131613,
+    "CRPS_over_initial": 1.013463013644435
+  },
+  {
+    "dataset": "jarvis_dft_3d",
+    "policy": "random",
+    "new_bundle_cost": 16,
+    "CRPS": 0.5934285127718009,
+    "CRPS_over_initial": 1.0307140956818004
+  },
+  {
+    "dataset": "jarvis_dft_3d",
+    "policy": "random",
+    "new_bundle_cost": 24,
+    "CRPS": 0.5736960429420574,
+    "CRPS_over_initial": 0.9964411641350255
+  },
+  {
+    "dataset": "jarvis_dft_3d",
+    "policy": "repair_only_IVR",
+    "new_bundle_cost": 0,
+    "CRPS": 0.5757450249860585,
+    "CRPS_over_initial": 1.0
+  },
+  {
+    "dataset": "jarvis_dft_3d",
+    "policy": "repair_only_IVR",
+    "new_bundle_cost": 8,
+    "CRPS": 0.5914262854421212,
+    "CRPS_over_initial": 1.0272364671434935
+  },
+  {
+    "dataset": "jarvis_dft_3d",
+    "policy": "repair_only_IVR",
+    "new_bundle_cost": 16,
+    "CRPS": 0.5866608612095565,
+    "CRPS_over_initial": 1.0189594972596807
+  },
+  {
+    "dataset": "jarvis_dft_3d",
+    "policy": "repair_only_IVR",
+    "new_bundle_cost": 24,
+    "CRPS": 0.5638168172634236,
+    "CRPS_over_initial": 0.9792821349643034
+  },
+  {
+    "dataset": "jarvis_dft_3d",
+    "policy": "expansion_only_KG",
+    "new_bundle_cost": 0,
+    "CRPS": 0.5757450249860585,
+    "CRPS_over_initial": 1.0
+  },
+  {
+    "dataset": "jarvis_dft_3d",
+    "policy": "expansion_only_KG",
+    "new_bundle_cost": 8,
+    "CRPS": 0.6301803614209243,
+    "CRPS_over_initial": 1.0945476453507939
+  },
+  {
+    "dataset": "jarvis_dft_3d",
+    "policy": "expansion_only_KG",
+    "new_bundle_cost": 16,
+    "CRPS": 0.6056987685533679,
+    "CRPS_over_initial": 1.0520260571388085
+  },
+  {
+    "dataset": "jarvis_dft_3d",
+    "policy": "expansion_only_KG",
+    "new_bundle_cost": 24,
+    "CRPS": 0.5780043363359291,
+    "CRPS_over_initial": 1.0039241526228129
+  },
+  {
+    "dataset": "jarvis_dft_3d",
+    "policy": "fixed_cycle",
+    "new_bundle_cost": 0,
+    "CRPS": 0.5757450249860585,
+    "CRPS_over_initial": 1.0
+  },
+  {
+    "dataset": "jarvis_dft_3d",
+    "policy": "fixed_cycle",
+    "new_bundle_cost": 8,
+    "CRPS": 0.5660027707330839,
+    "CRPS_over_initial": 0.9830788737545574
+  },
+  {
+    "dataset": "jarvis_dft_3d",
+    "policy": "fixed_cycle",
+    "new_bundle_cost": 16,
+    "CRPS": 0.547709841888445,
+    "CRPS_over_initial": 0.9513062521064903
+  },
+  {
+    "dataset": "jarvis_dft_3d",
+    "policy": "fixed_cycle",
+    "new_bundle_cost": 24,
+    "CRPS": 0.5492828329317561,
+    "CRPS_over_initial": 0.9540383487378927
+  },
+  {
+    "dataset": "jarvis_dft_3d",
+    "policy": "fixed_random_modules",
+    "new_bundle_cost": 0,
+    "CRPS": 0.5757450249860585,
+    "CRPS_over_initial": 1.0
+  },
+  {
+    "dataset": "jarvis_dft_3d",
+    "policy": "fixed_random_modules",
+    "new_bundle_cost": 8,
+    "CRPS": 0.5663007209817024,
+    "CRPS_over_initial": 0.9835963775725464
+  },
+  {
+    "dataset": "jarvis_dft_3d",
+    "policy": "fixed_random_modules",
+    "new_bundle_cost": 16,
+    "CRPS": 0.5727534038136668,
+    "CRPS_over_initial": 0.9948039131168104
+  },
+  {
+    "dataset": "jarvis_dft_3d",
+    "policy": "fixed_random_modules",
+    "new_bundle_cost": 24,
+    "CRPS": 0.5693654032400133,
+    "CRPS_over_initial": 0.9889193627922366
+  },
+  {
+    "dataset": "jarvis_dft_3d",
+    "policy": "joint_lookahead_all",
+    "new_bundle_cost": 0,
+    "CRPS": 0.5757450249860585,
+    "CRPS_over_initial": 1.0
+  },
+  {
+    "dataset": "jarvis_dft_3d",
+    "policy": "joint_lookahead_all",
+    "new_bundle_cost": 8,
+    "CRPS": 0.6081209276281598,
+    "CRPS_over_initial": 1.0562330567127094
+  },
+  {
+    "dataset": "jarvis_dft_3d",
+    "policy": "joint_lookahead_all",
+    "new_bundle_cost": 16,
+    "CRPS": 0.581296484603294,
+    "CRPS_over_initial": 1.009642218996803
+  },
+  {
+    "dataset": "jarvis_dft_3d",
+    "policy": "joint_lookahead_all",
+    "new_bundle_cost": 24,
+    "CRPS": 0.5455450585812799,
+    "CRPS_over_initial": 0.9475462833473726
+  },
+  {
+    "dataset": "jarvis_dft_3d",
+    "policy": "hypercycle_predictive",
+    "new_bundle_cost": 0,
+    "CRPS": 0.5757450249860585,
+    "CRPS_over_initial": 1.0
+  },
+  {
+    "dataset": "jarvis_dft_3d",
+    "policy": "hypercycle_predictive",
+    "new_bundle_cost": 8,
+    "CRPS": 0.5710625397310919,
+    "CRPS_over_initial": 0.991867085164861
+  },
+  {
+    "dataset": "jarvis_dft_3d",
+    "policy": "hypercycle_predictive",
+    "new_bundle_cost": 16,
+    "CRPS": 0.5710850075076813,
+    "CRPS_over_initial": 0.9919061089959222
+  },
+  {
+    "dataset": "jarvis_dft_3d",
+    "policy": "hypercycle_predictive",
+    "new_bundle_cost": 24,
+    "CRPS": 0.5657296318243753,
+    "CRPS_over_initial": 0.9826044642558123
+  },
+  {
+    "dataset": "jarvis_dft_3d",
+    "policy": "hypercycle_no_cross",
+    "new_bundle_cost": 0,
+    "CRPS": 0.5757450249860585,
+    "CRPS_over_initial": 1.0
+  },
+  {
+    "dataset": "jarvis_dft_3d",
+    "policy": "hypercycle_no_cross",
+    "new_bundle_cost": 8,
+    "CRPS": 0.5696399409579226,
+    "CRPS_over_initial": 0.9893962018546599
+  },
+  {
+    "dataset": "jarvis_dft_3d",
+    "policy": "hypercycle_no_cross",
+    "new_bundle_cost": 16,
+    "CRPS": 0.5650849591330647,
+    "CRPS_over_initial": 0.9814847451730009
+  },
+  {
+    "dataset": "jarvis_dft_3d",
+    "policy": "hypercycle_no_cross",
+    "new_bundle_cost": 24,
+    "CRPS": 0.5616112399640188,
+    "CRPS_over_initial": 0.9754513119372905
+  }
+]

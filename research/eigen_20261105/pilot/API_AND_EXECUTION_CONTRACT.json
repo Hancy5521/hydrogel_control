@@ -1,0 +1,44 @@
+{
+  "actual_utc": "2026-11-05T10:54:57.843720+00:00",
+  "source_receipt_sha256": "b213ac14693668bf03d4d4d89deef4830fb7404b30ad6f34a76babb86dc8b936",
+  "prepare_command": "python code/run_campaign.py prepare --data-dir ORIGINAL_DATA_DIRECTORY --role-plan DATASET_ROLE_PLAN.json --output NEW_PROTOCOL.json",
+  "run_command": "python code/run_campaign.py run --plan NEW_PROTOCOL.json --approval ROOT_FIT_APPROVAL.json --output NEW_CAMPAIGN_DIRECTORY",
+  "run_approval": {
+    "approved": true,
+    "scope": "BOUNDED_REAL_SOURCE_OFFLINE_PILOT",
+    "plan_sha256": "ACTUAL_EXACT_PROTOCOL_SHA256"
+  },
+  "evaluate_command": "python code/evaluate_campaign.py --plan NEW_PROTOCOL.json --campaign-dir NEW_CAMPAIGN_DIRECTORY --approval ROOT_SCORE_APPROVAL.json --output-dir NEW_EVALUATION_DIRECTORY",
+  "evaluate_approval": {
+    "approved": true,
+    "scope": "SCORE_FROZEN_OFFLINE_PILOT",
+    "plan_sha256": "ACTUAL_EXACT_PROTOCOL_SHA256",
+    "freeze_sha256": "ACTUAL_FORECAST_FREEZE_SHA256"
+  },
+  "public_APIs": {
+    "benchmark_io": [
+      "select_design(metadata)",
+      "feature_matrix(dataset,rows)->X,metadata_scaling_receipt",
+      "expected_schedule()->actual_identity_list,logical_alias_list",
+      "BundleOracle(dataset,data_directory,design).fork()/.query(row,bundle,initial=False)/.available_actions()",
+      "evaluator_truth(dataset,data_directory,design,forecasts_verified=True) onlypostfreeze",
+      "validate_bindings(plan)"
+    ],
+    "joint_gaussian": [
+      "warm_reference(X,warm_Y)->GaussianState,location,scale,receipt",
+      "GaussianState(mean,covariance,observed=None).condition(indices,values)",
+      "GaussianState.acquisition_gains(indices,test_indices,frontier_target_indices,initial_test_trace,initial_frontier_sd,utility_sign=1)"
+    ],
+    "policies": [
+      "PolicyState()",
+      "catalytic_update(weights,matrix,remove_cross=False)->weights,receipt",
+      "choose_action(policy,scored,step,uniform,state)->chosen_action,receipt"
+    ],
+    "evaluate_campaign": [
+      "gaussian_crps(mean,sd,truth)",
+      "verify_freeze(directory,plan_path,plan)",
+      "score_snapshot(dataset,design,truth,campaign_dir,step)"
+    ]
+  },
+  "DO_NOT_EXECUTE_without_root_approval": true
+}

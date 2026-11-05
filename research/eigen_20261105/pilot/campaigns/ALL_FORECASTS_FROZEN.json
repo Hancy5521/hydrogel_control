@@ -1,0 +1,1912 @@
+{
+  "actual_utc": "2026-11-05T11:04:14.881274+00:00",
+  "plan_sha256": "aa52d32dc401dff7f1ccd55c05f19b5e6ccfd7534c4103f1b3d514e4a377bd59",
+  "source_sha256": {
+    "benchmark_io.py": "850112c9218aedfdbe460c5b6c027a743ace63399a08cf5bcc31ac8311480369",
+    "joint_gaussian.py": "7196a96a37bd9038d99bd39162ec13659f9baeb0330fc5f2a8189f2bc2a547d0",
+    "policies.py": "f2be7e86f711c9e28667dfb0eafe96a610a2cef80aeeb9172798ef9300c11c21",
+    "run_campaign.py": "24ad57b74ef0c44feca895f62448cd12a48f11c42d62a1e462d8fd6c251f3d60",
+    "evaluate_campaign.py": "83ae029cda8370e396f6ed3440af2c1d26ef86bb633850e89ccb2070816ebf5c"
+  },
+  "actual_campaigns": [
+    "ucsb_thermoelectrics__random__2026110501",
+    "ucsb_thermoelectrics__random__2026110502",
+    "ucsb_thermoelectrics__random__2026110503",
+    "ucsb_thermoelectrics__random__2026110504",
+    "ucsb_thermoelectrics__repair_only_IVR__2026110501",
+    "ucsb_thermoelectrics__expansion_only_KG__2026110501",
+    "ucsb_thermoelectrics__fixed_cycle__2026110501",
+    "ucsb_thermoelectrics__fixed_random_modules__2026110501",
+    "ucsb_thermoelectrics__fixed_random_modules__2026110502",
+    "ucsb_thermoelectrics__fixed_random_modules__2026110503",
+    "ucsb_thermoelectrics__fixed_random_modules__2026110504",
+    "ucsb_thermoelectrics__joint_lookahead_all__2026110501",
+    "ucsb_thermoelectrics__hypercycle_predictive__2026110501",
+    "ucsb_thermoelectrics__hypercycle_predictive__2026110502",
+    "ucsb_thermoelectrics__hypercycle_predictive__2026110503",
+    "ucsb_thermoelectrics__hypercycle_predictive__2026110504",
+    "ucsb_thermoelectrics__hypercycle_no_cross__2026110501",
+    "ucsb_thermoelectrics__hypercycle_no_cross__2026110502",
+    "ucsb_thermoelectrics__hypercycle_no_cross__2026110503",
+    "ucsb_thermoelectrics__hypercycle_no_cross__2026110504",
+    "jarvis_dft_3d__random__2026110501",
+    "jarvis_dft_3d__random__2026110502",
+    "jarvis_dft_3d__random__2026110503",
+    "jarvis_dft_3d__random__2026110504",
+    "jarvis_dft_3d__repair_only_IVR__2026110501",
+    "jarvis_dft_3d__expansion_only_KG__2026110501",
+    "jarvis_dft_3d__fixed_cycle__2026110501",
+    "jarvis_dft_3d__fixed_random_modules__2026110501",
+    "jarvis_dft_3d__fixed_random_modules__2026110502",
+    "jarvis_dft_3d__fixed_random_modules__2026110503",
+    "jarvis_dft_3d__fixed_random_modules__2026110504",
+    "jarvis_dft_3d__joint_lookahead_all__2026110501",
+    "jarvis_dft_3d__hypercycle_predictive__2026110501",
+    "jarvis_dft_3d__hypercycle_predictive__2026110502",
+    "jarvis_dft_3d__hypercycle_predictive__2026110503",
+    "jarvis_dft_3d__hypercycle_predictive__2026110504",
+    "jarvis_dft_3d__hypercycle_no_cross__2026110501",
+    "jarvis_dft_3d__hypercycle_no_cross__2026110502",
+    "jarvis_dft_3d__hypercycle_no_cross__2026110503",
+    "jarvis_dft_3d__hypercycle_no_cross__2026110504"
+  ],
+  "logical_episodes": [
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "random",
+      "seed": 2026110501,
+      "campaign": "ucsb_thermoelectrics__random__2026110501",
+      "is_alias": false
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "random",
+      "seed": 2026110502,
+      "campaign": "ucsb_thermoelectrics__random__2026110502",
+      "is_alias": false
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "random",
+      "seed": 2026110503,
+      "campaign": "ucsb_thermoelectrics__random__2026110503",
+      "is_alias": false
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "random",
+      "seed": 2026110504,
+      "campaign": "ucsb_thermoelectrics__random__2026110504",
+      "is_alias": false
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "repair_only_IVR",
+      "seed": 2026110501,
+      "campaign": "ucsb_thermoelectrics__repair_only_IVR__2026110501",
+      "is_alias": false
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "repair_only_IVR",
+      "seed": 2026110502,
+      "campaign": "ucsb_thermoelectrics__repair_only_IVR__2026110501",
+      "is_alias": true
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "repair_only_IVR",
+      "seed": 2026110503,
+      "campaign": "ucsb_thermoelectrics__repair_only_IVR__2026110501",
+      "is_alias": true
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "repair_only_IVR",
+      "seed": 2026110504,
+      "campaign": "ucsb_thermoelectrics__repair_only_IVR__2026110501",
+      "is_alias": true
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "expansion_only_KG",
+      "seed": 2026110501,
+      "campaign": "ucsb_thermoelectrics__expansion_only_KG__2026110501",
+      "is_alias": false
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "expansion_only_KG",
+      "seed": 2026110502,
+      "campaign": "ucsb_thermoelectrics__expansion_only_KG__2026110501",
+      "is_alias": true
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "expansion_only_KG",
+      "seed": 2026110503,
+      "campaign": "ucsb_thermoelectrics__expansion_only_KG__2026110501",
+      "is_alias": true
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "expansion_only_KG",
+      "seed": 2026110504,
+      "campaign": "ucsb_thermoelectrics__expansion_only_KG__2026110501",
+      "is_alias": true
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "fixed_cycle",
+      "seed": 2026110501,
+      "campaign": "ucsb_thermoelectrics__fixed_cycle__2026110501",
+      "is_alias": false
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "fixed_cycle",
+      "seed": 2026110502,
+      "campaign": "ucsb_thermoelectrics__fixed_cycle__2026110501",
+      "is_alias": true
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "fixed_cycle",
+      "seed": 2026110503,
+      "campaign": "ucsb_thermoelectrics__fixed_cycle__2026110501",
+      "is_alias": true
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "fixed_cycle",
+      "seed": 2026110504,
+      "campaign": "ucsb_thermoelectrics__fixed_cycle__2026110501",
+      "is_alias": true
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "fixed_random_modules",
+      "seed": 2026110501,
+      "campaign": "ucsb_thermoelectrics__fixed_random_modules__2026110501",
+      "is_alias": false
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "fixed_random_modules",
+      "seed": 2026110502,
+      "campaign": "ucsb_thermoelectrics__fixed_random_modules__2026110502",
+      "is_alias": false
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "fixed_random_modules",
+      "seed": 2026110503,
+      "campaign": "ucsb_thermoelectrics__fixed_random_modules__2026110503",
+      "is_alias": false
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "fixed_random_modules",
+      "seed": 2026110504,
+      "campaign": "ucsb_thermoelectrics__fixed_random_modules__2026110504",
+      "is_alias": false
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "joint_lookahead_all",
+      "seed": 2026110501,
+      "campaign": "ucsb_thermoelectrics__joint_lookahead_all__2026110501",
+      "is_alias": false
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "joint_lookahead_all",
+      "seed": 2026110502,
+      "campaign": "ucsb_thermoelectrics__joint_lookahead_all__2026110501",
+      "is_alias": true
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "joint_lookahead_all",
+      "seed": 2026110503,
+      "campaign": "ucsb_thermoelectrics__joint_lookahead_all__2026110501",
+      "is_alias": true
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "joint_lookahead_all",
+      "seed": 2026110504,
+      "campaign": "ucsb_thermoelectrics__joint_lookahead_all__2026110501",
+      "is_alias": true
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "hypercycle_predictive",
+      "seed": 2026110501,
+      "campaign": "ucsb_thermoelectrics__hypercycle_predictive__2026110501",
+      "is_alias": false
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "hypercycle_predictive",
+      "seed": 2026110502,
+      "campaign": "ucsb_thermoelectrics__hypercycle_predictive__2026110502",
+      "is_alias": false
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "hypercycle_predictive",
+      "seed": 2026110503,
+      "campaign": "ucsb_thermoelectrics__hypercycle_predictive__2026110503",
+      "is_alias": false
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "hypercycle_predictive",
+      "seed": 2026110504,
+      "campaign": "ucsb_thermoelectrics__hypercycle_predictive__2026110504",
+      "is_alias": false
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "hypercycle_no_cross",
+      "seed": 2026110501,
+      "campaign": "ucsb_thermoelectrics__hypercycle_no_cross__2026110501",
+      "is_alias": false
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "hypercycle_no_cross",
+      "seed": 2026110502,
+      "campaign": "ucsb_thermoelectrics__hypercycle_no_cross__2026110502",
+      "is_alias": false
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "hypercycle_no_cross",
+      "seed": 2026110503,
+      "campaign": "ucsb_thermoelectrics__hypercycle_no_cross__2026110503",
+      "is_alias": false
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "hypercycle_no_cross",
+      "seed": 2026110504,
+      "campaign": "ucsb_thermoelectrics__hypercycle_no_cross__2026110504",
+      "is_alias": false
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "random",
+      "seed": 2026110501,
+      "campaign": "jarvis_dft_3d__random__2026110501",
+      "is_alias": false
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "random",
+      "seed": 2026110502,
+      "campaign": "jarvis_dft_3d__random__2026110502",
+      "is_alias": false
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "random",
+      "seed": 2026110503,
+      "campaign": "jarvis_dft_3d__random__2026110503",
+      "is_alias": false
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "random",
+      "seed": 2026110504,
+      "campaign": "jarvis_dft_3d__random__2026110504",
+      "is_alias": false
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "repair_only_IVR",
+      "seed": 2026110501,
+      "campaign": "jarvis_dft_3d__repair_only_IVR__2026110501",
+      "is_alias": false
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "repair_only_IVR",
+      "seed": 2026110502,
+      "campaign": "jarvis_dft_3d__repair_only_IVR__2026110501",
+      "is_alias": true
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "repair_only_IVR",
+      "seed": 2026110503,
+      "campaign": "jarvis_dft_3d__repair_only_IVR__2026110501",
+      "is_alias": true
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "repair_only_IVR",
+      "seed": 2026110504,
+      "campaign": "jarvis_dft_3d__repair_only_IVR__2026110501",
+      "is_alias": true
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "expansion_only_KG",
+      "seed": 2026110501,
+      "campaign": "jarvis_dft_3d__expansion_only_KG__2026110501",
+      "is_alias": false
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "expansion_only_KG",
+      "seed": 2026110502,
+      "campaign": "jarvis_dft_3d__expansion_only_KG__2026110501",
+      "is_alias": true
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "expansion_only_KG",
+      "seed": 2026110503,
+      "campaign": "jarvis_dft_3d__expansion_only_KG__2026110501",
+      "is_alias": true
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "expansion_only_KG",
+      "seed": 2026110504,
+      "campaign": "jarvis_dft_3d__expansion_only_KG__2026110501",
+      "is_alias": true
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "fixed_cycle",
+      "seed": 2026110501,
+      "campaign": "jarvis_dft_3d__fixed_cycle__2026110501",
+      "is_alias": false
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "fixed_cycle",
+      "seed": 2026110502,
+      "campaign": "jarvis_dft_3d__fixed_cycle__2026110501",
+      "is_alias": true
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "fixed_cycle",
+      "seed": 2026110503,
+      "campaign": "jarvis_dft_3d__fixed_cycle__2026110501",
+      "is_alias": true
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "fixed_cycle",
+      "seed": 2026110504,
+      "campaign": "jarvis_dft_3d__fixed_cycle__2026110501",
+      "is_alias": true
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "fixed_random_modules",
+      "seed": 2026110501,
+      "campaign": "jarvis_dft_3d__fixed_random_modules__2026110501",
+      "is_alias": false
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "fixed_random_modules",
+      "seed": 2026110502,
+      "campaign": "jarvis_dft_3d__fixed_random_modules__2026110502",
+      "is_alias": false
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "fixed_random_modules",
+      "seed": 2026110503,
+      "campaign": "jarvis_dft_3d__fixed_random_modules__2026110503",
+      "is_alias": false
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "fixed_random_modules",
+      "seed": 2026110504,
+      "campaign": "jarvis_dft_3d__fixed_random_modules__2026110504",
+      "is_alias": false
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "joint_lookahead_all",
+      "seed": 2026110501,
+      "campaign": "jarvis_dft_3d__joint_lookahead_all__2026110501",
+      "is_alias": false
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "joint_lookahead_all",
+      "seed": 2026110502,
+      "campaign": "jarvis_dft_3d__joint_lookahead_all__2026110501",
+      "is_alias": true
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "joint_lookahead_all",
+      "seed": 2026110503,
+      "campaign": "jarvis_dft_3d__joint_lookahead_all__2026110501",
+      "is_alias": true
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "joint_lookahead_all",
+      "seed": 2026110504,
+      "campaign": "jarvis_dft_3d__joint_lookahead_all__2026110501",
+      "is_alias": true
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "hypercycle_predictive",
+      "seed": 2026110501,
+      "campaign": "jarvis_dft_3d__hypercycle_predictive__2026110501",
+      "is_alias": false
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "hypercycle_predictive",
+      "seed": 2026110502,
+      "campaign": "jarvis_dft_3d__hypercycle_predictive__2026110502",
+      "is_alias": false
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "hypercycle_predictive",
+      "seed": 2026110503,
+      "campaign": "jarvis_dft_3d__hypercycle_predictive__2026110503",
+      "is_alias": false
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "hypercycle_predictive",
+      "seed": 2026110504,
+      "campaign": "jarvis_dft_3d__hypercycle_predictive__2026110504",
+      "is_alias": false
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "hypercycle_no_cross",
+      "seed": 2026110501,
+      "campaign": "jarvis_dft_3d__hypercycle_no_cross__2026110501",
+      "is_alias": false
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "hypercycle_no_cross",
+      "seed": 2026110502,
+      "campaign": "jarvis_dft_3d__hypercycle_no_cross__2026110502",
+      "is_alias": false
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "hypercycle_no_cross",
+      "seed": 2026110503,
+      "campaign": "jarvis_dft_3d__hypercycle_no_cross__2026110503",
+      "is_alias": false
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "hypercycle_no_cross",
+      "seed": 2026110504,
+      "campaign": "jarvis_dft_3d__hypercycle_no_cross__2026110504",
+      "is_alias": false
+    }
+  ],
+  "files": [
+    {
+      "file": "EXECUTION_START.json",
+      "bytes": 940,
+      "sha256": "1907c85d3636bec78f764afec7c222886a60d4e0663c9668010160cf4bc7d0dc"
+    },
+    {
+      "file": "jarvis_dft_3d__expansion_only_KG__2026110501/ACTIONS.json",
+      "bytes": 43364,
+      "sha256": "4f4b6c06f4df27daf0bdf02a2c9f699cdc46c28646fa8e66f8a07b819a988ab4"
+    },
+    {
+      "file": "jarvis_dft_3d__expansion_only_KG__2026110501/CAMPAIGN_COMPLETE.json",
+      "bytes": 1106,
+      "sha256": "1549112099826acdd5c9aa39c7fd3c50602549201a9c59eecd72041c741568ea"
+    },
+    {
+      "file": "jarvis_dft_3d__expansion_only_KG__2026110501/forecast_00.npz",
+      "bytes": 44915,
+      "sha256": "50dc9e17aead66a9453c21cec705244fd7c264b99581ea980cd58d009cb555c2"
+    },
+    {
+      "file": "jarvis_dft_3d__expansion_only_KG__2026110501/forecast_08.npz",
+      "bytes": 38778,
+      "sha256": "e6e8324d42b0060e84bf491a6d351276fd7241ef116c6f8811d69190ce42a572"
+    },
+    {
+      "file": "jarvis_dft_3d__expansion_only_KG__2026110501/forecast_16.npz",
+      "bytes": 33499,
+      "sha256": "4daa3fe31bf0280d540f99436ae1f612eac15152c48aa5326a74990dd9edfc20"
+    },
+    {
+      "file": "jarvis_dft_3d__expansion_only_KG__2026110501/forecast_24.npz",
+      "bytes": 27685,
+      "sha256": "956f75ce25caea0633aac626a7f526545f417d8f4ad21bf4b03b1a1f92eb07ba"
+    },
+    {
+      "file": "jarvis_dft_3d__expansion_only_KG__2026110501/INITIAL_REFERENCE.json",
+      "bytes": 6559,
+      "sha256": "f46ac82f5c9d16b0df8f15ecfffc2310c3e3977412e1b132f26c753f8cdcaecf"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_cycle__2026110501/ACTIONS.json",
+      "bytes": 51664,
+      "sha256": "d2083cfa59f021bddbf09b88a9a9dbe6e7c23023d6f101a785ba51e854d32166"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_cycle__2026110501/CAMPAIGN_COMPLETE.json",
+      "bytes": 1099,
+      "sha256": "4e1b1f1455cac139f9e651a31bd279778143d86e572b50679e818e7471967b08"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_cycle__2026110501/forecast_00.npz",
+      "bytes": 44915,
+      "sha256": "50dc9e17aead66a9453c21cec705244fd7c264b99581ea980cd58d009cb555c2"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_cycle__2026110501/forecast_08.npz",
+      "bytes": 39731,
+      "sha256": "e0f484c1abe2e2ab8c9aec2180ab479b0d35364286aa26c6b7dacc458817b3ef"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_cycle__2026110501/forecast_16.npz",
+      "bytes": 33590,
+      "sha256": "233e73ebbe2991286076eda5628ef6043c7b1417dc93f7fcdc4d2455d9ffd030"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_cycle__2026110501/forecast_24.npz",
+      "bytes": 24917,
+      "sha256": "335f238b4739f2e46ab10997d4e009af0d5cb87362948ea227961e04a08e6df6"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_cycle__2026110501/INITIAL_REFERENCE.json",
+      "bytes": 6553,
+      "sha256": "7463063c54b0232cb4accd583a9ef3c65df501db3f81a619615e2a4c1bba3bfc"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_random_modules__2026110501/ACTIONS.json",
+      "bytes": 54517,
+      "sha256": "9c9c2e7afc9594b7743539c9e9dbfd46fb50a40cd8d86ac2ef372cf3c22ccc70"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_random_modules__2026110501/CAMPAIGN_COMPLETE.json",
+      "bytes": 1109,
+      "sha256": "c852194fb4eb8f32d81c2a934f6fa647559fa318ee34b3b45d64458b790658d4"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_random_modules__2026110501/forecast_00.npz",
+      "bytes": 44915,
+      "sha256": "50dc9e17aead66a9453c21cec705244fd7c264b99581ea980cd58d009cb555c2"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_random_modules__2026110501/forecast_08.npz",
+      "bytes": 39727,
+      "sha256": "7d548cce29627a29c82baa29ef7f6cfd9f750c8faef1f072cedd8089e61ed9bf"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_random_modules__2026110501/forecast_16.npz",
+      "bytes": 35114,
+      "sha256": "3a4cd4e3924512d31e4743c1acd3250a61723e1eb5ebed40effe7dbf2b208117"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_random_modules__2026110501/forecast_24.npz",
+      "bytes": 25000,
+      "sha256": "58242fed70830f7385d73ec02c2d5c460472addfaf9594f8313200b4c95d81f0"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_random_modules__2026110501/INITIAL_REFERENCE.json",
+      "bytes": 6562,
+      "sha256": "3c0482ee82be41aed3081ef898388ccfabd207c170b44b76a03863fd76838e92"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_random_modules__2026110502/ACTIONS.json",
+      "bytes": 54663,
+      "sha256": "5a1930c3ede7ec46db404bed69ca9b36c88f7762af76573bc64bf8dd681e4570"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_random_modules__2026110502/CAMPAIGN_COMPLETE.json",
+      "bytes": 1108,
+      "sha256": "5c84c5d584ee012f9ef3b5600a30afd259f5ef25f5751725c4c045b50e2029ae"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_random_modules__2026110502/forecast_00.npz",
+      "bytes": 44915,
+      "sha256": "50dc9e17aead66a9453c21cec705244fd7c264b99581ea980cd58d009cb555c2"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_random_modules__2026110502/forecast_08.npz",
+      "bytes": 40675,
+      "sha256": "4bcdf319f186fa5cc69a5df8ea411c64e43294e9b6394afd5a535882325ff454"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_random_modules__2026110502/forecast_16.npz",
+      "bytes": 34421,
+      "sha256": "dc25c3b1c7f812484976ce9e5b111dfcbec76b50546c938792119d302580031b"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_random_modules__2026110502/forecast_24.npz",
+      "bytes": 26714,
+      "sha256": "c0ba5ed5514e520767c92791eb62f2c2c8d2507b3a98e56a51d26d8db4701316"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_random_modules__2026110502/INITIAL_REFERENCE.json",
+      "bytes": 6562,
+      "sha256": "8f075a166bb5634cdb38104d1a24a002e37c7cad093037aa7b3ad8063f5ae67f"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_random_modules__2026110503/ACTIONS.json",
+      "bytes": 54725,
+      "sha256": "4507330e8fe9f6de046eca2dd6bc88291abfaeb04f99ea9dd92a3a967a79a901"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_random_modules__2026110503/CAMPAIGN_COMPLETE.json",
+      "bytes": 1109,
+      "sha256": "b69524eceabafba1dec0c9bf78e91bbdb0e2c19998d8740ad6196f830f79cfe2"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_random_modules__2026110503/forecast_00.npz",
+      "bytes": 44915,
+      "sha256": "50dc9e17aead66a9453c21cec705244fd7c264b99581ea980cd58d009cb555c2"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_random_modules__2026110503/forecast_08.npz",
+      "bytes": 42109,
+      "sha256": "2200d7d0a999a354b162831b4613e1794ba7bf8458f8debaa74786ea337a5756"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_random_modules__2026110503/forecast_16.npz",
+      "bytes": 33941,
+      "sha256": "b3d07d8bc2f36af714839fe253724b9ab0d18989f9f5a9ea6d1405ad69d4b7e3"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_random_modules__2026110503/forecast_24.npz",
+      "bytes": 24533,
+      "sha256": "74d41abc2e30a88bff303eb95ddba998aaecbcf1a177c059503617e45414549c"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_random_modules__2026110503/INITIAL_REFERENCE.json",
+      "bytes": 6562,
+      "sha256": "18182a963afecf2f378a896a48fc5ea8150f688fba2fdf15e34219ca2e3a34b1"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_random_modules__2026110504/ACTIONS.json",
+      "bytes": 54710,
+      "sha256": "37669148ead03555c5fab6222771684b636077fc701d52b78760834306922ff9"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_random_modules__2026110504/CAMPAIGN_COMPLETE.json",
+      "bytes": 1109,
+      "sha256": "2973c070ca3bc8f38dc2f717215eadb83728d6f2e1b1786d1a0e6d6ac3d58b8c"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_random_modules__2026110504/forecast_00.npz",
+      "bytes": 44915,
+      "sha256": "50dc9e17aead66a9453c21cec705244fd7c264b99581ea980cd58d009cb555c2"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_random_modules__2026110504/forecast_08.npz",
+      "bytes": 39481,
+      "sha256": "4a0ef7ad2dcf9c76e68639f3e06010e5ed1869779d67ff7d7a1187e4c70633e1"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_random_modules__2026110504/forecast_16.npz",
+      "bytes": 34041,
+      "sha256": "8891c12e446af4485e92ce586ca90c0a4e50cdcb0658dcee1f3d2c7a37443f38"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_random_modules__2026110504/forecast_24.npz",
+      "bytes": 24559,
+      "sha256": "172e0ce36b1d9e852a1e236c279fa6cc78d4d3e3c3d53302b9823cfd4005c30a"
+    },
+    {
+      "file": "jarvis_dft_3d__fixed_random_modules__2026110504/INITIAL_REFERENCE.json",
+      "bytes": 6562,
+      "sha256": "bc1f62f18f8cc348dc1567aa8ad3c9f2543e484af964e3fc12f46befdecca3fa"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_no_cross__2026110501/ACTIONS.json",
+      "bytes": 71029,
+      "sha256": "7be77e25d55476a2688896c66d547a69cec21154c6d731585c694c69e4377e6e"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_no_cross__2026110501/CAMPAIGN_COMPLETE.json",
+      "bytes": 1108,
+      "sha256": "a13d7ddf5b4c5d0ff9441891ebbef113d692b8b3ebdbc21ca72e8c474f45149d"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_no_cross__2026110501/forecast_00.npz",
+      "bytes": 44915,
+      "sha256": "50dc9e17aead66a9453c21cec705244fd7c264b99581ea980cd58d009cb555c2"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_no_cross__2026110501/forecast_08.npz",
+      "bytes": 39727,
+      "sha256": "7d548cce29627a29c82baa29ef7f6cfd9f750c8faef1f072cedd8089e61ed9bf"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_no_cross__2026110501/forecast_16.npz",
+      "bytes": 35114,
+      "sha256": "3a4cd4e3924512d31e4743c1acd3250a61723e1eb5ebed40effe7dbf2b208117"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_no_cross__2026110501/forecast_24.npz",
+      "bytes": 25250,
+      "sha256": "d226df0e2b26219ed32bb335f961d832e64da6e84c58aaa3fe7119fec4b12b7b"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_no_cross__2026110501/INITIAL_REFERENCE.json",
+      "bytes": 6561,
+      "sha256": "14e2e4e3cfcafb6dd95397919c3f898c14ec0babd326eb970c5fd29710344185"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_no_cross__2026110502/ACTIONS.json",
+      "bytes": 71133,
+      "sha256": "8e5eab8f9cee55e13b63cfafc09c5b9c7e1e82017cb23c2dbe5ca5c1ecf98790"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_no_cross__2026110502/CAMPAIGN_COMPLETE.json",
+      "bytes": 1108,
+      "sha256": "0284d9837fe780595ccd23bbb08ea0301cb7246b235c22a85c47ffda289b5dec"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_no_cross__2026110502/forecast_00.npz",
+      "bytes": 44915,
+      "sha256": "50dc9e17aead66a9453c21cec705244fd7c264b99581ea980cd58d009cb555c2"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_no_cross__2026110502/forecast_08.npz",
+      "bytes": 40675,
+      "sha256": "4bcdf319f186fa5cc69a5df8ea411c64e43294e9b6394afd5a535882325ff454"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_no_cross__2026110502/forecast_16.npz",
+      "bytes": 34421,
+      "sha256": "dc25c3b1c7f812484976ce9e5b111dfcbec76b50546c938792119d302580031b"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_no_cross__2026110502/forecast_24.npz",
+      "bytes": 26714,
+      "sha256": "c0ba5ed5514e520767c92791eb62f2c2c8d2507b3a98e56a51d26d8db4701316"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_no_cross__2026110502/INITIAL_REFERENCE.json",
+      "bytes": 6561,
+      "sha256": "86b70dd418b29c94fe716da103c4543046858a757662b4485799a9ef4c563373"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_no_cross__2026110503/ACTIONS.json",
+      "bytes": 71228,
+      "sha256": "87028447aa794473bc11136ba35721e3e99d3f7cf8b8f5f56bb24a97c63dcde4"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_no_cross__2026110503/CAMPAIGN_COMPLETE.json",
+      "bytes": 1108,
+      "sha256": "9648de6938d81d9835a2e742c52cdfd28386a751568a527f85b3f52d4f15930f"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_no_cross__2026110503/forecast_00.npz",
+      "bytes": 44915,
+      "sha256": "50dc9e17aead66a9453c21cec705244fd7c264b99581ea980cd58d009cb555c2"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_no_cross__2026110503/forecast_08.npz",
+      "bytes": 40679,
+      "sha256": "2d9be65feffe9a14ee95e53cdbd674cdb31101f6403a61ddf6b5becb5800b320"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_no_cross__2026110503/forecast_16.npz",
+      "bytes": 34432,
+      "sha256": "cd1d1980be6fb386f52f8770e44301b3069506f436c926b8936161582f4cb922"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_no_cross__2026110503/forecast_24.npz",
+      "bytes": 25762,
+      "sha256": "f85d31f77bf0e7d7feeee81c73c2996d83dd224381e1695be423d993f563f23b"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_no_cross__2026110503/INITIAL_REFERENCE.json",
+      "bytes": 6561,
+      "sha256": "967c0ef8ee0302bfa81598974ab86f3ab9371bb4b0d62cb5e68c82f9e30085e1"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_no_cross__2026110504/ACTIONS.json",
+      "bytes": 71123,
+      "sha256": "836fe44cedb4f79457b253a8a417cf72f17ee11a262fc0432a89953c79fc85fe"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_no_cross__2026110504/CAMPAIGN_COMPLETE.json",
+      "bytes": 1107,
+      "sha256": "f6386d3287f688ce01966e8d73179885ff31d5116c882771582890b406ff9a49"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_no_cross__2026110504/forecast_00.npz",
+      "bytes": 44915,
+      "sha256": "50dc9e17aead66a9453c21cec705244fd7c264b99581ea980cd58d009cb555c2"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_no_cross__2026110504/forecast_08.npz",
+      "bytes": 39481,
+      "sha256": "4a0ef7ad2dcf9c76e68639f3e06010e5ed1869779d67ff7d7a1187e4c70633e1"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_no_cross__2026110504/forecast_16.npz",
+      "bytes": 34999,
+      "sha256": "3a2f2589c0a53c981ce6eec7e7172dff3c377d3073df1638d924de78798389bf"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_no_cross__2026110504/forecast_24.npz",
+      "bytes": 25103,
+      "sha256": "c081d330c01dc1dca936b0ea4f0373e22562276555a61471e12a2a6c729353c7"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_no_cross__2026110504/INITIAL_REFERENCE.json",
+      "bytes": 6561,
+      "sha256": "64d222e41d643ac10603f9620ce2bcaecd364ff5b579860c021d4eb9baaad4c9"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_predictive__2026110501/ACTIONS.json",
+      "bytes": 71746,
+      "sha256": "cc77a454d4d8b175d3ecbfa3702960c8a479b004b24b9e967f065a168486fff9"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_predictive__2026110501/CAMPAIGN_COMPLETE.json",
+      "bytes": 1110,
+      "sha256": "509abb3f2cce17674979557df0dc1942d5f551712f763d24e847dbe192842137"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_predictive__2026110501/forecast_00.npz",
+      "bytes": 44915,
+      "sha256": "50dc9e17aead66a9453c21cec705244fd7c264b99581ea980cd58d009cb555c2"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_predictive__2026110501/forecast_08.npz",
+      "bytes": 39727,
+      "sha256": "7d548cce29627a29c82baa29ef7f6cfd9f750c8faef1f072cedd8089e61ed9bf"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_predictive__2026110501/forecast_16.npz",
+      "bytes": 35114,
+      "sha256": "3a4cd4e3924512d31e4743c1acd3250a61723e1eb5ebed40effe7dbf2b208117"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_predictive__2026110501/forecast_24.npz",
+      "bytes": 25250,
+      "sha256": "d226df0e2b26219ed32bb335f961d832e64da6e84c58aaa3fe7119fec4b12b7b"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_predictive__2026110501/INITIAL_REFERENCE.json",
+      "bytes": 6563,
+      "sha256": "4ebb1257a2a4eefef67d5ef4b07f9a965c3448f84c3b71de87dac12d99f9836f"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_predictive__2026110502/ACTIONS.json",
+      "bytes": 71871,
+      "sha256": "4ccc7af04086035dc88abc8f9d87fbd9344fe7106d3633b599bd824a34007fe0"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_predictive__2026110502/CAMPAIGN_COMPLETE.json",
+      "bytes": 1109,
+      "sha256": "f3856f0e4c8cec45da39de9db0ff7efb44f6cbeb648b965b265414fb908e4b70"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_predictive__2026110502/forecast_00.npz",
+      "bytes": 44915,
+      "sha256": "50dc9e17aead66a9453c21cec705244fd7c264b99581ea980cd58d009cb555c2"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_predictive__2026110502/forecast_08.npz",
+      "bytes": 40675,
+      "sha256": "4bcdf319f186fa5cc69a5df8ea411c64e43294e9b6394afd5a535882325ff454"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_predictive__2026110502/forecast_16.npz",
+      "bytes": 34421,
+      "sha256": "dc25c3b1c7f812484976ce9e5b111dfcbec76b50546c938792119d302580031b"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_predictive__2026110502/forecast_24.npz",
+      "bytes": 26714,
+      "sha256": "c0ba5ed5514e520767c92791eb62f2c2c8d2507b3a98e56a51d26d8db4701316"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_predictive__2026110502/INITIAL_REFERENCE.json",
+      "bytes": 6563,
+      "sha256": "a37c12f7d70a8395d76434eb6babc634102a4bf95eaa17bd3a41cd2cf4b4ba68"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_predictive__2026110503/ACTIONS.json",
+      "bytes": 71448,
+      "sha256": "0a5c171ad110bd391b3e6cc52a863c1971b65495ce2bb067c42f4096a9570691"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_predictive__2026110503/CAMPAIGN_COMPLETE.json",
+      "bytes": 1109,
+      "sha256": "6d02e0f986fec07694f263b4174a8484b024ddbca9ae9dd1e98ee942bd2e93bc"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_predictive__2026110503/forecast_00.npz",
+      "bytes": 44915,
+      "sha256": "50dc9e17aead66a9453c21cec705244fd7c264b99581ea980cd58d009cb555c2"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_predictive__2026110503/forecast_08.npz",
+      "bytes": 40336,
+      "sha256": "dfae3e449c6adb3eb93566d3630cb753cc81afd41ddc0158c40a24a3f9c7d3aa"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_predictive__2026110503/forecast_16.npz",
+      "bytes": 31909,
+      "sha256": "617a58cdcb6954876df5aa5a32769da589a028641f6098e3457a70dd98a4da24"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_predictive__2026110503/forecast_24.npz",
+      "bytes": 24820,
+      "sha256": "b8ea91a6190a91812f706f54d81376e564b51d26414dff0ad1adc58b74684d03"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_predictive__2026110503/INITIAL_REFERENCE.json",
+      "bytes": 6563,
+      "sha256": "44bfeb9b0e7569a5a5d426b6eb3a6a7f3a8c460a1f21e81007ecdcf75727542a"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_predictive__2026110504/ACTIONS.json",
+      "bytes": 71873,
+      "sha256": "b48f36d739790941ffc3159b93915eb04d6e2b4f0b3437dff6e68fa97c2a5bf8"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_predictive__2026110504/CAMPAIGN_COMPLETE.json",
+      "bytes": 1110,
+      "sha256": "32ce650af1ed3efa3be53eb8efb8379c609b30cbe76d53473dbf9ecb34567478"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_predictive__2026110504/forecast_00.npz",
+      "bytes": 44915,
+      "sha256": "50dc9e17aead66a9453c21cec705244fd7c264b99581ea980cd58d009cb555c2"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_predictive__2026110504/forecast_08.npz",
+      "bytes": 39481,
+      "sha256": "4a0ef7ad2dcf9c76e68639f3e06010e5ed1869779d67ff7d7a1187e4c70633e1"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_predictive__2026110504/forecast_16.npz",
+      "bytes": 34999,
+      "sha256": "3a2f2589c0a53c981ce6eec7e7172dff3c377d3073df1638d924de78798389bf"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_predictive__2026110504/forecast_24.npz",
+      "bytes": 25103,
+      "sha256": "c081d330c01dc1dca936b0ea4f0373e22562276555a61471e12a2a6c729353c7"
+    },
+    {
+      "file": "jarvis_dft_3d__hypercycle_predictive__2026110504/INITIAL_REFERENCE.json",
+      "bytes": 6563,
+      "sha256": "6e4a0f9437e5ea66c89cb7c8f9dda5df86cea7e2b7244294bd863b0745b2ed18"
+    },
+    {
+      "file": "jarvis_dft_3d__joint_lookahead_all__2026110501/ACTIONS.json",
+      "bytes": 43345,
+      "sha256": "2d746b60b287dc96b9c8a7016fdc0deb66b7fe6bd303971c73a93f19c9b8a504"
+    },
+    {
+      "file": "jarvis_dft_3d__joint_lookahead_all__2026110501/CAMPAIGN_COMPLETE.json",
+      "bytes": 1107,
+      "sha256": "ffd42c1ba380b84ede198696897071a42e6c53600267f69f4166541269ee989e"
+    },
+    {
+      "file": "jarvis_dft_3d__joint_lookahead_all__2026110501/forecast_00.npz",
+      "bytes": 44915,
+      "sha256": "50dc9e17aead66a9453c21cec705244fd7c264b99581ea980cd58d009cb555c2"
+    },
+    {
+      "file": "jarvis_dft_3d__joint_lookahead_all__2026110501/forecast_08.npz",
+      "bytes": 38609,
+      "sha256": "3724e90de9fa52d3495bebca83af85971ef2d64a26d85f9aed4567042435939c"
+    },
+    {
+      "file": "jarvis_dft_3d__joint_lookahead_all__2026110501/forecast_16.npz",
+      "bytes": 31620,
+      "sha256": "e06e21440f3c4a13fe04cf9a29e9ac14fc5569702979beee5f010906abd7a39a"
+    },
+    {
+      "file": "jarvis_dft_3d__joint_lookahead_all__2026110501/forecast_24.npz",
+      "bytes": 25996,
+      "sha256": "3c2399336a0fbd4dcaabeffbcd87f5065a1f61d562c507a8733a17070bb4195d"
+    },
+    {
+      "file": "jarvis_dft_3d__joint_lookahead_all__2026110501/INITIAL_REFERENCE.json",
+      "bytes": 6561,
+      "sha256": "fb59c83410600aa56e3ba880d0533d4fbe02c71f92004496405bb53ef3de8513"
+    },
+    {
+      "file": "jarvis_dft_3d__random__2026110501/ACTIONS.json",
+      "bytes": 43005,
+      "sha256": "7796a1de57e5f5aef2a9849441900d35d05171597d3084d2f41faea47079030a"
+    },
+    {
+      "file": "jarvis_dft_3d__random__2026110501/CAMPAIGN_COMPLETE.json",
+      "bytes": 1094,
+      "sha256": "753ab6cf4fdd64b45ad908d2881506a40ec741999cb9a9d54869bf63257054f2"
+    },
+    {
+      "file": "jarvis_dft_3d__random__2026110501/forecast_00.npz",
+      "bytes": 44915,
+      "sha256": "50dc9e17aead66a9453c21cec705244fd7c264b99581ea980cd58d009cb555c2"
+    },
+    {
+      "file": "jarvis_dft_3d__random__2026110501/forecast_08.npz",
+      "bytes": 40992,
+      "sha256": "cb26c9fb46c129cd76d2f6259bbe4f8d45f0e7f95d5835bfe175035372330b84"
+    },
+    {
+      "file": "jarvis_dft_3d__random__2026110501/forecast_16.npz",
+      "bytes": 33870,
+      "sha256": "9307bad7b64d2395eb93983167a2d7a465554578d6232d2e0f324c616f1dfa6e"
+    },
+    {
+      "file": "jarvis_dft_3d__random__2026110501/forecast_24.npz",
+      "bytes": 24771,
+      "sha256": "3b5b5509583712378bab940442f48b8d2809abe006fcc362af35cb4dd22b3bf5"
+    },
+    {
+      "file": "jarvis_dft_3d__random__2026110501/INITIAL_REFERENCE.json",
+      "bytes": 6548,
+      "sha256": "10e1b070a085bca7efc1845e48e3b73eb7768903a01364a557551b91360480d4"
+    },
+    {
+      "file": "jarvis_dft_3d__random__2026110502/ACTIONS.json",
+      "bytes": 43095,
+      "sha256": "480f8fc22ff0ae683db9d9d7e263464acd9816eaad1fd52b9b071141911dc7b9"
+    },
+    {
+      "file": "jarvis_dft_3d__random__2026110502/CAMPAIGN_COMPLETE.json",
+      "bytes": 1095,
+      "sha256": "ac4c4edd0a6b8a9e0f9ba16499348c094c4b69e988729e2936c6552c203f8a23"
+    },
+    {
+      "file": "jarvis_dft_3d__random__2026110502/forecast_00.npz",
+      "bytes": 44915,
+      "sha256": "50dc9e17aead66a9453c21cec705244fd7c264b99581ea980cd58d009cb555c2"
+    },
+    {
+      "file": "jarvis_dft_3d__random__2026110502/forecast_08.npz",
+      "bytes": 36796,
+      "sha256": "1d771ac7b762eab61270d6c2c9a09657f3a7fbdb0ceeee8af6eec096278b7dea"
+    },
+    {
+      "file": "jarvis_dft_3d__random__2026110502/forecast_16.npz",
+      "bytes": 30847,
+      "sha256": "e92b3443b5c4d95966410e3a6090f012c2d46061778f21cfb148b95f0f192a26"
+    },
+    {
+      "file": "jarvis_dft_3d__random__2026110502/forecast_24.npz",
+      "bytes": 23826,
+      "sha256": "dfdcf17beaf362f516c8e5349486a44d5f909c54f5437df7b6455c1a1616db4d"
+    },
+    {
+      "file": "jarvis_dft_3d__random__2026110502/INITIAL_REFERENCE.json",
+      "bytes": 6548,
+      "sha256": "0fd244aeb7c90e230412972c60b088ea1302b72d48f60c21ebad1b58311cfe90"
+    },
+    {
+      "file": "jarvis_dft_3d__random__2026110503/ACTIONS.json",
+      "bytes": 43326,
+      "sha256": "e8ac9e1da5111c8978f4ecb12bab45bb347971725e3b4b96eed4cd69c15a8b2f"
+    },
+    {
+      "file": "jarvis_dft_3d__random__2026110503/CAMPAIGN_COMPLETE.json",
+      "bytes": 1095,
+      "sha256": "426bcb2524a32b87812e23212c2a2b0e95bdea82abee233d8cf29f898c6962dc"
+    },
+    {
+      "file": "jarvis_dft_3d__random__2026110503/forecast_00.npz",
+      "bytes": 44915,
+      "sha256": "50dc9e17aead66a9453c21cec705244fd7c264b99581ea980cd58d009cb555c2"
+    },
+    {
+      "file": "jarvis_dft_3d__random__2026110503/forecast_08.npz",
+      "bytes": 39324,
+      "sha256": "8b0955ec941e111f91f7ca8dd91bcc5031270809f44530c7a98bfe50e6fda12b"
+    },
+    {
+      "file": "jarvis_dft_3d__random__2026110503/forecast_16.npz",
+      "bytes": 29891,
+      "sha256": "75a7a6ceab57e302a88afb10c0f8d2381a1581bfdc5b3509f15eecf03d9521fe"
+    },
+    {
+      "file": "jarvis_dft_3d__random__2026110503/forecast_24.npz",
+      "bytes": 21635,
+      "sha256": "c4ec72770f9983b8178ff128c65eea5606e21dea1bb4163dd63c5789a9c57878"
+    },
+    {
+      "file": "jarvis_dft_3d__random__2026110503/INITIAL_REFERENCE.json",
+      "bytes": 6548,
+      "sha256": "2c9480252ebbf7b512506333de45f72e5db27819f47234ddd672eb102eda219d"
+    },
+    {
+      "file": "jarvis_dft_3d__random__2026110504/ACTIONS.json",
+      "bytes": 42906,
+      "sha256": "c04315facdea8ed10f05d248aec6ea90dc5ff34ab344cb9f9b0a287f1c5fbd90"
+    },
+    {
+      "file": "jarvis_dft_3d__random__2026110504/CAMPAIGN_COMPLETE.json",
+      "bytes": 1095,
+      "sha256": "7607563753b7f6bc54c96218f7f21566a48aae546aaf1da16b4e4f6da7b615b6"
+    },
+    {
+      "file": "jarvis_dft_3d__random__2026110504/forecast_00.npz",
+      "bytes": 44915,
+      "sha256": "50dc9e17aead66a9453c21cec705244fd7c264b99581ea980cd58d009cb555c2"
+    },
+    {
+      "file": "jarvis_dft_3d__random__2026110504/forecast_08.npz",
+      "bytes": 40228,
+      "sha256": "078f0c755c4ac84c67ac8e779fff65e677142ca373d230a037f4d020e218b78f"
+    },
+    {
+      "file": "jarvis_dft_3d__random__2026110504/forecast_16.npz",
+      "bytes": 33104,
+      "sha256": "c206681e988825fc815314e004ccf8fb6424ea8001001bf316738d3eecccad07"
+    },
+    {
+      "file": "jarvis_dft_3d__random__2026110504/forecast_24.npz",
+      "bytes": 26044,
+      "sha256": "cada40739f1b7fea4b03962a95bfed3f7a7e336c6500e34e84f707dcada660a5"
+    },
+    {
+      "file": "jarvis_dft_3d__random__2026110504/INITIAL_REFERENCE.json",
+      "bytes": 6548,
+      "sha256": "e22b1e78f611e11b58d9641829155e2d46248f694d97b4713acc5114cd33e1bd"
+    },
+    {
+      "file": "jarvis_dft_3d__repair_only_IVR__2026110501/ACTIONS.json",
+      "bytes": 43889,
+      "sha256": "d152fe5835a1fcb4bdfc8e41db42faa25c5e39b2558705868a2d1720060381a2"
+    },
+    {
+      "file": "jarvis_dft_3d__repair_only_IVR__2026110501/CAMPAIGN_COMPLETE.json",
+      "bytes": 1104,
+      "sha256": "fe235afe5335f2aa6e5c477230387033e1afb931e66025b41bd447be36bddaff"
+    },
+    {
+      "file": "jarvis_dft_3d__repair_only_IVR__2026110501/forecast_00.npz",
+      "bytes": 44915,
+      "sha256": "50dc9e17aead66a9453c21cec705244fd7c264b99581ea980cd58d009cb555c2"
+    },
+    {
+      "file": "jarvis_dft_3d__repair_only_IVR__2026110501/forecast_08.npz",
+      "bytes": 41128,
+      "sha256": "56bd28bc287e2682ea7cb5c478f0917b95670a725b2354e8d1762630b231f274"
+    },
+    {
+      "file": "jarvis_dft_3d__repair_only_IVR__2026110501/forecast_16.npz",
+      "bytes": 32313,
+      "sha256": "5a237fa6eb9f433866d8825c91feecb54a29f95678240ed1dad3ab8437ec8234"
+    },
+    {
+      "file": "jarvis_dft_3d__repair_only_IVR__2026110501/forecast_24.npz",
+      "bytes": 24362,
+      "sha256": "811cc76269670fd339bf1c6c3e627ae1286213880024f8bf33004de1437eed62"
+    },
+    {
+      "file": "jarvis_dft_3d__repair_only_IVR__2026110501/INITIAL_REFERENCE.json",
+      "bytes": 6557,
+      "sha256": "fad21807161fb172399c6321378c514de64b29746276207facb4e5ce219cf726"
+    },
+    {
+      "file": "ucsb_thermoelectrics__expansion_only_KG__2026110501/ACTIONS.json",
+      "bytes": 54002,
+      "sha256": "a9df095bc17d890744275ba1dc7f74bc4736a3fccf4ca580685d55d4db6c365d"
+    },
+    {
+      "file": "ucsb_thermoelectrics__expansion_only_KG__2026110501/CAMPAIGN_COMPLETE.json",
+      "bytes": 1112,
+      "sha256": "a7eade64d86c8aae3a2fd041e92fde45229164a535d721d76e5ac0a83e373a82"
+    },
+    {
+      "file": "ucsb_thermoelectrics__expansion_only_KG__2026110501/forecast_00.npz",
+      "bytes": 180198,
+      "sha256": "b67f6bfab9a3466b7880a50c8c89dc2eb5aa1a27ad83c26c062f2a419bb7489a"
+    },
+    {
+      "file": "ucsb_thermoelectrics__expansion_only_KG__2026110501/forecast_08.npz",
+      "bytes": 168071,
+      "sha256": "b271ca88992d07b50de338a80bea84079c58169820dc617812ae7860cc549476"
+    },
+    {
+      "file": "ucsb_thermoelectrics__expansion_only_KG__2026110501/forecast_16.npz",
+      "bytes": 152709,
+      "sha256": "d6f4967ac9c30a5d7b0aa56e8f6c999b7155e54951cc08554359cc0b3773e79b"
+    },
+    {
+      "file": "ucsb_thermoelectrics__expansion_only_KG__2026110501/forecast_24.npz",
+      "bytes": 137492,
+      "sha256": "b5ee873b343eef4dfa0caaa010bf8301da0fa8723903e4f6a38b071db808f7f4"
+    },
+    {
+      "file": "ucsb_thermoelectrics__expansion_only_KG__2026110501/INITIAL_REFERENCE.json",
+      "bytes": 6536,
+      "sha256": "29bad56522ca8dbd36b6d529e1b0f6d933f453a3fe18960b0bf066658dd36285"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_cycle__2026110501/ACTIONS.json",
+      "bytes": 62239,
+      "sha256": "e92cdaa1e717c3b06ac6fe9fcbbfebd02d0fa88392682196bb2ecdfd0db010f3"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_cycle__2026110501/CAMPAIGN_COMPLETE.json",
+      "bytes": 1107,
+      "sha256": "e57a1291587196bb85340e4d243956a5afec56c99ebf7d9c731b3e131a8d69d5"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_cycle__2026110501/forecast_00.npz",
+      "bytes": 180198,
+      "sha256": "b67f6bfab9a3466b7880a50c8c89dc2eb5aa1a27ad83c26c062f2a419bb7489a"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_cycle__2026110501/forecast_08.npz",
+      "bytes": 167190,
+      "sha256": "c604c3d9d5e3727789e884d2d9dd3c8934e64803bd22430a556d837c7364338b"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_cycle__2026110501/forecast_16.npz",
+      "bytes": 143285,
+      "sha256": "0db9a574f99785e875989ccac207d54c7dc7ae1388570f5a4aba93c06e7dc0ef"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_cycle__2026110501/forecast_24.npz",
+      "bytes": 122709,
+      "sha256": "7ebd3c91fa5f1d59c43be69aef25cf707867825423faf5125dc95408cd6b5e76"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_cycle__2026110501/INITIAL_REFERENCE.json",
+      "bytes": 6530,
+      "sha256": "0e5d33e90a068e39736622a0471fe8349e9d0e4cb5a89f1951f9a7d14d1f8666"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_random_modules__2026110501/ACTIONS.json",
+      "bytes": 65235,
+      "sha256": "c6d3c02a2eeb37de014863a3703057237ee5aefc41d9e44101c10bf4eb8c305f"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_random_modules__2026110501/CAMPAIGN_COMPLETE.json",
+      "bytes": 1116,
+      "sha256": "9333abe3ea1f64b05890e98ceb2cbc9c0a6bc1cb0258987f9b6460103b217c82"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_random_modules__2026110501/forecast_00.npz",
+      "bytes": 180198,
+      "sha256": "b67f6bfab9a3466b7880a50c8c89dc2eb5aa1a27ad83c26c062f2a419bb7489a"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_random_modules__2026110501/forecast_08.npz",
+      "bytes": 167162,
+      "sha256": "9a4c0f3d8edb1d2033784f96af2d91db398df6d7a6c73f65b6421727a2d38989"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_random_modules__2026110501/forecast_16.npz",
+      "bytes": 141694,
+      "sha256": "642ec26d05ccff880ea96c162a4bb764859259b5c1b3fb48034fb4d25a8cf9dc"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_random_modules__2026110501/forecast_24.npz",
+      "bytes": 120028,
+      "sha256": "de0907f3c0e5becd1ac51d59fbd2b1be2c1b1562fa90ce18a581963cd3440c4d"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_random_modules__2026110501/INITIAL_REFERENCE.json",
+      "bytes": 6539,
+      "sha256": "20fe0396dfadd19881a23eaa0ee337c120fa3d6ca3910d11c18c2d422495f6d4"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_random_modules__2026110502/ACTIONS.json",
+      "bytes": 65013,
+      "sha256": "832c5905a2ad403e6bf7efbf6ce77720d2c1202a9e6f3257bd3e2582b3fe1a10"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_random_modules__2026110502/CAMPAIGN_COMPLETE.json",
+      "bytes": 1116,
+      "sha256": "01e0a10ad48178451a1b75eec1b8183f4d49b0157dccccacc2c0206ac30f5fa1"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_random_modules__2026110502/forecast_00.npz",
+      "bytes": 180198,
+      "sha256": "b67f6bfab9a3466b7880a50c8c89dc2eb5aa1a27ad83c26c062f2a419bb7489a"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_random_modules__2026110502/forecast_08.npz",
+      "bytes": 167148,
+      "sha256": "d0e3b448685b6dae978029074ae7f47a223b3fa9c12f73f6930c82e39a8becb4"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_random_modules__2026110502/forecast_16.npz",
+      "bytes": 142360,
+      "sha256": "dfd48f97c89a507bff3f3ccc7188e44d4cf76a04bddbe917530f9ef24c0511dc"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_random_modules__2026110502/forecast_24.npz",
+      "bytes": 126667,
+      "sha256": "0bb3609d19652f554da1de182c6c508b8f70182ef57f0bca7e7fa13914050a5e"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_random_modules__2026110502/INITIAL_REFERENCE.json",
+      "bytes": 6539,
+      "sha256": "24bf8934b0cd340deda9702c58bd8c235546596b7c4c8470a58f871f535138c5"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_random_modules__2026110503/ACTIONS.json",
+      "bytes": 64942,
+      "sha256": "56ea8f229b2b1bbdb037f82eb80aa2d768b605e0efb975db77d1f73954372a81"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_random_modules__2026110503/CAMPAIGN_COMPLETE.json",
+      "bytes": 1116,
+      "sha256": "3c709b796ab8c321d55d3611c425a91a7ae42236a13cd70ab1564f8133e76475"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_random_modules__2026110503/forecast_00.npz",
+      "bytes": 180198,
+      "sha256": "b67f6bfab9a3466b7880a50c8c89dc2eb5aa1a27ad83c26c062f2a419bb7489a"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_random_modules__2026110503/forecast_08.npz",
+      "bytes": 166119,
+      "sha256": "fda3fced24130a6be172bd4ecc7ad3ba789359280f7b6bd7e2127b99320af2b4"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_random_modules__2026110503/forecast_16.npz",
+      "bytes": 145312,
+      "sha256": "5aae734a757e389b40184a8af0603d1c0cd5f2689f3d518b9a9b9f5454c27e56"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_random_modules__2026110503/forecast_24.npz",
+      "bytes": 125580,
+      "sha256": "4f878f7c1f5e0f3b69336df6f8f5c2b494ec2a308b84175e79b2b7d56bf48901"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_random_modules__2026110503/INITIAL_REFERENCE.json",
+      "bytes": 6539,
+      "sha256": "cbc3f50d72d23cd1eda67f5968548f2b43d2b3115f49e4ba7bcb14af230f19af"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_random_modules__2026110504/ACTIONS.json",
+      "bytes": 65092,
+      "sha256": "eba9beef9535da3536f87ccaa59759412bc9e7f7f6260eb551aaee214083fdea"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_random_modules__2026110504/CAMPAIGN_COMPLETE.json",
+      "bytes": 1116,
+      "sha256": "64eed37dc77c1c43d7a899d1b07b55a14eb3e36d39bae352768a352261c23335"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_random_modules__2026110504/forecast_00.npz",
+      "bytes": 180198,
+      "sha256": "b67f6bfab9a3466b7880a50c8c89dc2eb5aa1a27ad83c26c062f2a419bb7489a"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_random_modules__2026110504/forecast_08.npz",
+      "bytes": 164870,
+      "sha256": "a29d9790767a62d5950c9847faa68697e03068dcd24a1e0e59ca7faf4513b67a"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_random_modules__2026110504/forecast_16.npz",
+      "bytes": 141681,
+      "sha256": "3f3bfbf767d084e304073976671b3da1c4c25b2d839cf23fe5b74cc4be1ca5f7"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_random_modules__2026110504/forecast_24.npz",
+      "bytes": 121910,
+      "sha256": "3a40e8d04719aaed25e2d3393e5775bb9e009ba4ccfce2aa6b378b6ab9ad00a1"
+    },
+    {
+      "file": "ucsb_thermoelectrics__fixed_random_modules__2026110504/INITIAL_REFERENCE.json",
+      "bytes": 6539,
+      "sha256": "8cbe01b33316d4cceea585d54256b16b402b248983fdc59863b4464c90da2525"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_no_cross__2026110501/ACTIONS.json",
+      "bytes": 81811,
+      "sha256": "d72b0e5b45a6bb6fbf32bd2cb73725a4b218b7cf08908257db709a513e3433da"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_no_cross__2026110501/CAMPAIGN_COMPLETE.json",
+      "bytes": 1115,
+      "sha256": "f51a3fd3c5f22f2703549734aee79a529fc57e6c0b9bfaad0b487beba7012b83"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_no_cross__2026110501/forecast_00.npz",
+      "bytes": 180198,
+      "sha256": "b67f6bfab9a3466b7880a50c8c89dc2eb5aa1a27ad83c26c062f2a419bb7489a"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_no_cross__2026110501/forecast_08.npz",
+      "bytes": 167162,
+      "sha256": "9a4c0f3d8edb1d2033784f96af2d91db398df6d7a6c73f65b6421727a2d38989"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_no_cross__2026110501/forecast_16.npz",
+      "bytes": 141694,
+      "sha256": "642ec26d05ccff880ea96c162a4bb764859259b5c1b3fb48034fb4d25a8cf9dc"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_no_cross__2026110501/forecast_24.npz",
+      "bytes": 120501,
+      "sha256": "2f3af09fac0fc727976d19f9d9f876b80e282bb62240b04cd7b1ff341f40a5cd"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_no_cross__2026110501/INITIAL_REFERENCE.json",
+      "bytes": 6538,
+      "sha256": "18909228491a4d75dd7350263b5d0e28ad00c51a1098d4f7f5d31f299583b413"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_no_cross__2026110502/ACTIONS.json",
+      "bytes": 81549,
+      "sha256": "27d22e9bf74aaf7ab85447d76e5c5322f098b975354b24f366b802cee8118c92"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_no_cross__2026110502/CAMPAIGN_COMPLETE.json",
+      "bytes": 1115,
+      "sha256": "a100d88b3569868d7bacf100d017bf30b1cd4bfb00e38bf40d5a0ec3ef3cd7ac"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_no_cross__2026110502/forecast_00.npz",
+      "bytes": 180198,
+      "sha256": "b67f6bfab9a3466b7880a50c8c89dc2eb5aa1a27ad83c26c062f2a419bb7489a"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_no_cross__2026110502/forecast_08.npz",
+      "bytes": 167148,
+      "sha256": "d0e3b448685b6dae978029074ae7f47a223b3fa9c12f73f6930c82e39a8becb4"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_no_cross__2026110502/forecast_16.npz",
+      "bytes": 142360,
+      "sha256": "dfd48f97c89a507bff3f3ccc7188e44d4cf76a04bddbe917530f9ef24c0511dc"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_no_cross__2026110502/forecast_24.npz",
+      "bytes": 126728,
+      "sha256": "33bbf6d5441a2162f92ff620ee00cbc3d4f5b59b87c216d8be688af675106a82"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_no_cross__2026110502/INITIAL_REFERENCE.json",
+      "bytes": 6538,
+      "sha256": "9580bb193dcb7e1950e56eb237d823d746ddb0dacf9eb4cb550f67103b0448fb"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_no_cross__2026110503/ACTIONS.json",
+      "bytes": 81377,
+      "sha256": "a041ea32caaf64238e1d84675fbca45507e4dc92685acb114a5b87b17365e9c9"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_no_cross__2026110503/CAMPAIGN_COMPLETE.json",
+      "bytes": 1115,
+      "sha256": "8ce3a002248608ac4cbd22af4b097c057084d6797b48d74573227189e3af95d3"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_no_cross__2026110503/forecast_00.npz",
+      "bytes": 180198,
+      "sha256": "b67f6bfab9a3466b7880a50c8c89dc2eb5aa1a27ad83c26c062f2a419bb7489a"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_no_cross__2026110503/forecast_08.npz",
+      "bytes": 166119,
+      "sha256": "fda3fced24130a6be172bd4ecc7ad3ba789359280f7b6bd7e2127b99320af2b4"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_no_cross__2026110503/forecast_16.npz",
+      "bytes": 147672,
+      "sha256": "88dfbad8f078773136b9407e77faa7a9b17d7a2ff09407ebc90e2105dba41e23"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_no_cross__2026110503/forecast_24.npz",
+      "bytes": 127349,
+      "sha256": "2640f163cd6ee5f7670ccc717635c445a6eb156ab88e14995b54d9e7ea5c0995"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_no_cross__2026110503/INITIAL_REFERENCE.json",
+      "bytes": 6538,
+      "sha256": "2922e819cd0df9b2af21cfa52dc66c62c7ab3c63c1efed1c24fd8edf40c8030c"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_no_cross__2026110504/ACTIONS.json",
+      "bytes": 81722,
+      "sha256": "8987faa08895b9d03a4cd130de35dbf1fe05649062b542000940ec831f2ca2eb"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_no_cross__2026110504/CAMPAIGN_COMPLETE.json",
+      "bytes": 1115,
+      "sha256": "fe8ef082de15b5e8155b1614d73e2a187fb13f6a6a2546bfdea53c58bcc18f67"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_no_cross__2026110504/forecast_00.npz",
+      "bytes": 180198,
+      "sha256": "b67f6bfab9a3466b7880a50c8c89dc2eb5aa1a27ad83c26c062f2a419bb7489a"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_no_cross__2026110504/forecast_08.npz",
+      "bytes": 164870,
+      "sha256": "a29d9790767a62d5950c9847faa68697e03068dcd24a1e0e59ca7faf4513b67a"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_no_cross__2026110504/forecast_16.npz",
+      "bytes": 144582,
+      "sha256": "e8a52dbcf561478d31f4fb90b93674d762776788b2fc5fdbe7ba39be87c16d3b"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_no_cross__2026110504/forecast_24.npz",
+      "bytes": 121313,
+      "sha256": "15780ca0b34701e29a4d1105416474f85e5a6946373f7ac462f55c8454568b5d"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_no_cross__2026110504/INITIAL_REFERENCE.json",
+      "bytes": 6538,
+      "sha256": "b20eb5aef926fc9020dc47aaf1d771379018df1d0de545f14116ff5944c66e8c"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_predictive__2026110501/ACTIONS.json",
+      "bytes": 82688,
+      "sha256": "015f170f6e2e4d903f7c252ee79ebeea91297787e2709164beb39887bb460f83"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_predictive__2026110501/CAMPAIGN_COMPLETE.json",
+      "bytes": 1116,
+      "sha256": "1f5afc722273bc577857fe9f762330ab6c4c005e0c6194ad93361864329680b3"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_predictive__2026110501/forecast_00.npz",
+      "bytes": 180198,
+      "sha256": "b67f6bfab9a3466b7880a50c8c89dc2eb5aa1a27ad83c26c062f2a419bb7489a"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_predictive__2026110501/forecast_08.npz",
+      "bytes": 167162,
+      "sha256": "9a4c0f3d8edb1d2033784f96af2d91db398df6d7a6c73f65b6421727a2d38989"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_predictive__2026110501/forecast_16.npz",
+      "bytes": 141694,
+      "sha256": "642ec26d05ccff880ea96c162a4bb764859259b5c1b3fb48034fb4d25a8cf9dc"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_predictive__2026110501/forecast_24.npz",
+      "bytes": 120501,
+      "sha256": "2f3af09fac0fc727976d19f9d9f876b80e282bb62240b04cd7b1ff341f40a5cd"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_predictive__2026110501/INITIAL_REFERENCE.json",
+      "bytes": 6540,
+      "sha256": "ce6810d7cd71484266c63a827a892837b9266d5985c0715b12e4b00667a09a4a"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_predictive__2026110502/ACTIONS.json",
+      "bytes": 82401,
+      "sha256": "b1929a959559cadfa25875bf41261675d80a3b744c37ff5d2d935617c702f9a8"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_predictive__2026110502/CAMPAIGN_COMPLETE.json",
+      "bytes": 1116,
+      "sha256": "af074992a5cb322556672def876dd178efddd996fd39eb0ab4398891130f7193"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_predictive__2026110502/forecast_00.npz",
+      "bytes": 180198,
+      "sha256": "b67f6bfab9a3466b7880a50c8c89dc2eb5aa1a27ad83c26c062f2a419bb7489a"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_predictive__2026110502/forecast_08.npz",
+      "bytes": 167148,
+      "sha256": "d0e3b448685b6dae978029074ae7f47a223b3fa9c12f73f6930c82e39a8becb4"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_predictive__2026110502/forecast_16.npz",
+      "bytes": 142360,
+      "sha256": "dfd48f97c89a507bff3f3ccc7188e44d4cf76a04bddbe917530f9ef24c0511dc"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_predictive__2026110502/forecast_24.npz",
+      "bytes": 126728,
+      "sha256": "33bbf6d5441a2162f92ff620ee00cbc3d4f5b59b87c216d8be688af675106a82"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_predictive__2026110502/INITIAL_REFERENCE.json",
+      "bytes": 6540,
+      "sha256": "1ea08e4e21d0da6d97481a7c052af2892843e07602285d9ae96d8320438f1963"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_predictive__2026110503/ACTIONS.json",
+      "bytes": 82213,
+      "sha256": "79a3495412acb315bdf1a73d032f46957a3861146ec90307b382dcb6de1e60fc"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_predictive__2026110503/CAMPAIGN_COMPLETE.json",
+      "bytes": 1117,
+      "sha256": "1ad9f6be75aa5c65a2acc59a8a2b06cc1a6b8e85e09e7aa1cc44015a5936af70"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_predictive__2026110503/forecast_00.npz",
+      "bytes": 180198,
+      "sha256": "b67f6bfab9a3466b7880a50c8c89dc2eb5aa1a27ad83c26c062f2a419bb7489a"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_predictive__2026110503/forecast_08.npz",
+      "bytes": 166119,
+      "sha256": "fda3fced24130a6be172bd4ecc7ad3ba789359280f7b6bd7e2127b99320af2b4"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_predictive__2026110503/forecast_16.npz",
+      "bytes": 147672,
+      "sha256": "88dfbad8f078773136b9407e77faa7a9b17d7a2ff09407ebc90e2105dba41e23"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_predictive__2026110503/forecast_24.npz",
+      "bytes": 127349,
+      "sha256": "2640f163cd6ee5f7670ccc717635c445a6eb156ab88e14995b54d9e7ea5c0995"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_predictive__2026110503/INITIAL_REFERENCE.json",
+      "bytes": 6540,
+      "sha256": "965259b83ff76942ed73ecf9024dcccee946a9e10952bf8f463cc36ad5c97688"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_predictive__2026110504/ACTIONS.json",
+      "bytes": 82574,
+      "sha256": "417898009b648254fb8410fe0503dc13ee7e32633edbbfe19eed81c4e5a86e70"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_predictive__2026110504/CAMPAIGN_COMPLETE.json",
+      "bytes": 1117,
+      "sha256": "a2dc9e01730582af8d6244a6468d9f271bd0ba08865d31a0ebbcb2aa30b23548"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_predictive__2026110504/forecast_00.npz",
+      "bytes": 180198,
+      "sha256": "b67f6bfab9a3466b7880a50c8c89dc2eb5aa1a27ad83c26c062f2a419bb7489a"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_predictive__2026110504/forecast_08.npz",
+      "bytes": 164870,
+      "sha256": "a29d9790767a62d5950c9847faa68697e03068dcd24a1e0e59ca7faf4513b67a"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_predictive__2026110504/forecast_16.npz",
+      "bytes": 144582,
+      "sha256": "e8a52dbcf561478d31f4fb90b93674d762776788b2fc5fdbe7ba39be87c16d3b"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_predictive__2026110504/forecast_24.npz",
+      "bytes": 121313,
+      "sha256": "15780ca0b34701e29a4d1105416474f85e5a6946373f7ac462f55c8454568b5d"
+    },
+    {
+      "file": "ucsb_thermoelectrics__hypercycle_predictive__2026110504/INITIAL_REFERENCE.json",
+      "bytes": 6540,
+      "sha256": "fe1735173666afe9fae27aaf4ab015c35a689818d1d11bb0913124c82acc82ce"
+    },
+    {
+      "file": "ucsb_thermoelectrics__joint_lookahead_all__2026110501/ACTIONS.json",
+      "bytes": 53541,
+      "sha256": "2e492c7edfb399b07b322086042ff666e92e7ec0e4dc7b0debf76bc5fbfa9f06"
+    },
+    {
+      "file": "ucsb_thermoelectrics__joint_lookahead_all__2026110501/CAMPAIGN_COMPLETE.json",
+      "bytes": 1113,
+      "sha256": "1e258b31e3cda923ff046d7b15f0f602bab54cb29b359e96f84ef969ca8636d3"
+    },
+    {
+      "file": "ucsb_thermoelectrics__joint_lookahead_all__2026110501/forecast_00.npz",
+      "bytes": 180198,
+      "sha256": "b67f6bfab9a3466b7880a50c8c89dc2eb5aa1a27ad83c26c062f2a419bb7489a"
+    },
+    {
+      "file": "ucsb_thermoelectrics__joint_lookahead_all__2026110501/forecast_08.npz",
+      "bytes": 168071,
+      "sha256": "b271ca88992d07b50de338a80bea84079c58169820dc617812ae7860cc549476"
+    },
+    {
+      "file": "ucsb_thermoelectrics__joint_lookahead_all__2026110501/forecast_16.npz",
+      "bytes": 148820,
+      "sha256": "ef69ccf982d20c5a5c572e0877e3db6afcdd7fa7912d22ef8b65354f8b1a1f05"
+    },
+    {
+      "file": "ucsb_thermoelectrics__joint_lookahead_all__2026110501/forecast_24.npz",
+      "bytes": 129868,
+      "sha256": "1b534bb001c1a04090a2c1cf3555857fe5d46b584546b903723afc6cc0da47b2"
+    },
+    {
+      "file": "ucsb_thermoelectrics__joint_lookahead_all__2026110501/INITIAL_REFERENCE.json",
+      "bytes": 6538,
+      "sha256": "79b185522661c376e801b414fd1cb48034198ae22490b58058108e1551b1063d"
+    },
+    {
+      "file": "ucsb_thermoelectrics__random__2026110501/ACTIONS.json",
+      "bytes": 53561,
+      "sha256": "444e12033b14ff0a6c96ea2d14cfe0e76a3dd6fe81b9d6b692a2834fdf446cea"
+    },
+    {
+      "file": "ucsb_thermoelectrics__random__2026110501/CAMPAIGN_COMPLETE.json",
+      "bytes": 1102,
+      "sha256": "3aac89060e96d6cb2bdc67e577fd112e12fe74b928daee76adaaa726af271124"
+    },
+    {
+      "file": "ucsb_thermoelectrics__random__2026110501/forecast_00.npz",
+      "bytes": 180198,
+      "sha256": "b67f6bfab9a3466b7880a50c8c89dc2eb5aa1a27ad83c26c062f2a419bb7489a"
+    },
+    {
+      "file": "ucsb_thermoelectrics__random__2026110501/forecast_08.npz",
+      "bytes": 159517,
+      "sha256": "17c224dfd454c55fc9915fafe68170043ae43d3d043b0f6665c3436702d61f8c"
+    },
+    {
+      "file": "ucsb_thermoelectrics__random__2026110501/forecast_16.npz",
+      "bytes": 140998,
+      "sha256": "dacff247f8b9ec966c997f91726d2608ac7d20af139ac53f6657d23f450de53a"
+    },
+    {
+      "file": "ucsb_thermoelectrics__random__2026110501/forecast_24.npz",
+      "bytes": 118234,
+      "sha256": "dbe8d0ec1fa73bf67d20afa5899a4f6762b8e8f844326d555ada6c558a4fbb7e"
+    },
+    {
+      "file": "ucsb_thermoelectrics__random__2026110501/INITIAL_REFERENCE.json",
+      "bytes": 6525,
+      "sha256": "0c68108fa8c43de538b4c462ac86cb1c647a47bcfc10de2fb4c0027ff07ad426"
+    },
+    {
+      "file": "ucsb_thermoelectrics__random__2026110502/ACTIONS.json",
+      "bytes": 53615,
+      "sha256": "21c8933f44d0a71d1049e8f21be3bfe1215e3f2e6bb27b2098bf2540f09d4595"
+    },
+    {
+      "file": "ucsb_thermoelectrics__random__2026110502/CAMPAIGN_COMPLETE.json",
+      "bytes": 1102,
+      "sha256": "8f37cf3c26cb38f7545f87c472e72a6fb3ae10c785c1b4378a060aae752447c4"
+    },
+    {
+      "file": "ucsb_thermoelectrics__random__2026110502/forecast_00.npz",
+      "bytes": 180198,
+      "sha256": "b67f6bfab9a3466b7880a50c8c89dc2eb5aa1a27ad83c26c062f2a419bb7489a"
+    },
+    {
+      "file": "ucsb_thermoelectrics__random__2026110502/forecast_08.npz",
+      "bytes": 155346,
+      "sha256": "389d3d1e849f6abf8b20c0d13fdb7735d722e59b55a15cdffeb795365d018203"
+    },
+    {
+      "file": "ucsb_thermoelectrics__random__2026110502/forecast_16.npz",
+      "bytes": 140188,
+      "sha256": "2bc6def67ce35922cf23e15f332471d7975bbb2e08f4b0f2ee5e2d0c28322e68"
+    },
+    {
+      "file": "ucsb_thermoelectrics__random__2026110502/forecast_24.npz",
+      "bytes": 116641,
+      "sha256": "0a531178cf5325ab8a9c1c2fd3a561a6113dc285ba559f121b72bfb510c1c400"
+    },
+    {
+      "file": "ucsb_thermoelectrics__random__2026110502/INITIAL_REFERENCE.json",
+      "bytes": 6525,
+      "sha256": "35ceb842c5bf0a77f68c65a4d4ffc34a45298e0957c94234a5671b6373e0359b"
+    },
+    {
+      "file": "ucsb_thermoelectrics__random__2026110503/ACTIONS.json",
+      "bytes": 53452,
+      "sha256": "28f9c264e04707f5a8706b3a2a2038b2c3106e11b437d8a91f5e05fe3958a307"
+    },
+    {
+      "file": "ucsb_thermoelectrics__random__2026110503/CAMPAIGN_COMPLETE.json",
+      "bytes": 1101,
+      "sha256": "987a388f91b5065f03dc79c7f87d5a6506d7f6b798e47dd74134409188d6908d"
+    },
+    {
+      "file": "ucsb_thermoelectrics__random__2026110503/forecast_00.npz",
+      "bytes": 180198,
+      "sha256": "b67f6bfab9a3466b7880a50c8c89dc2eb5aa1a27ad83c26c062f2a419bb7489a"
+    },
+    {
+      "file": "ucsb_thermoelectrics__random__2026110503/forecast_08.npz",
+      "bytes": 165542,
+      "sha256": "cf7669bf2cb31ed44bbdaf310207556dc842763b574b6aca19817d17a87f1dcb"
+    },
+    {
+      "file": "ucsb_thermoelectrics__random__2026110503/forecast_16.npz",
+      "bytes": 144576,
+      "sha256": "4e34d05b1750aa083dbb6d14d1cc2fbe2f8e903842f93e70073ac3e323fcee45"
+    },
+    {
+      "file": "ucsb_thermoelectrics__random__2026110503/forecast_24.npz",
+      "bytes": 122416,
+      "sha256": "f521000c7549d59ddbc8ca64d0643f14825cc94c2ade9eae7097271f3561b766"
+    },
+    {
+      "file": "ucsb_thermoelectrics__random__2026110503/INITIAL_REFERENCE.json",
+      "bytes": 6525,
+      "sha256": "b6070c54f4b75c4687c8febd7dabffc9f3081a487cb6692dcb2443b490d83ed4"
+    },
+    {
+      "file": "ucsb_thermoelectrics__random__2026110504/ACTIONS.json",
+      "bytes": 53537,
+      "sha256": "b5de6ad052771d799256bafbb864c702d915a6961000dfa340d6a2f8a8ec5a00"
+    },
+    {
+      "file": "ucsb_thermoelectrics__random__2026110504/CAMPAIGN_COMPLETE.json",
+      "bytes": 1100,
+      "sha256": "791b402248a599c01850848660733663e91456e3d05f410398aadfea97fd2bb2"
+    },
+    {
+      "file": "ucsb_thermoelectrics__random__2026110504/forecast_00.npz",
+      "bytes": 180198,
+      "sha256": "b67f6bfab9a3466b7880a50c8c89dc2eb5aa1a27ad83c26c062f2a419bb7489a"
+    },
+    {
+      "file": "ucsb_thermoelectrics__random__2026110504/forecast_08.npz",
+      "bytes": 161539,
+      "sha256": "bb21a77572ad0d8b6b4cef7963b61c5555f51784528e71cbe48aec85b3a92ddc"
+    },
+    {
+      "file": "ucsb_thermoelectrics__random__2026110504/forecast_16.npz",
+      "bytes": 138326,
+      "sha256": "d247b29f37c8dc8c222c0059c8eaf90d10da0f8ccfe912b35b5e8f7cc9189bd2"
+    },
+    {
+      "file": "ucsb_thermoelectrics__random__2026110504/forecast_24.npz",
+      "bytes": 119512,
+      "sha256": "b51af4aae16f3a36b41f493243859afc8cc4b1580c5173eb76f12d10612a35ed"
+    },
+    {
+      "file": "ucsb_thermoelectrics__random__2026110504/INITIAL_REFERENCE.json",
+      "bytes": 6525,
+      "sha256": "8498ccfe966ba0360f74f374df8510456ca176936d3d121be76588e663c65885"
+    },
+    {
+      "file": "ucsb_thermoelectrics__repair_only_IVR__2026110501/ACTIONS.json",
+      "bytes": 54132,
+      "sha256": "ece269769c1f6953ba219f527ee7ed03edc7dfbe2e49f91113f9219638bc442b"
+    },
+    {
+      "file": "ucsb_thermoelectrics__repair_only_IVR__2026110501/CAMPAIGN_COMPLETE.json",
+      "bytes": 1111,
+      "sha256": "8ff897a438c6a0c29b6321a09a14996bb698938f2cca205588417d05b5bef4d9"
+    },
+    {
+      "file": "ucsb_thermoelectrics__repair_only_IVR__2026110501/forecast_00.npz",
+      "bytes": 180198,
+      "sha256": "b67f6bfab9a3466b7880a50c8c89dc2eb5aa1a27ad83c26c062f2a419bb7489a"
+    },
+    {
+      "file": "ucsb_thermoelectrics__repair_only_IVR__2026110501/forecast_08.npz",
+      "bytes": 164262,
+      "sha256": "897941df7ecb08a9003ebec14fb2f483278fb9bebd44f2aada3af03906a0bf11"
+    },
+    {
+      "file": "ucsb_thermoelectrics__repair_only_IVR__2026110501/forecast_16.npz",
+      "bytes": 143139,
+      "sha256": "9ff87603881b683336b51c7139ec94fbec88b33adc4587f0e6cdcd450ab91965"
+    },
+    {
+      "file": "ucsb_thermoelectrics__repair_only_IVR__2026110501/forecast_24.npz",
+      "bytes": 120984,
+      "sha256": "aaff960da0e4af989623dff720a9393ec5ffa890fa7b3aad2fce772524a1d3b2"
+    },
+    {
+      "file": "ucsb_thermoelectrics__repair_only_IVR__2026110501/INITIAL_REFERENCE.json",
+      "bytes": 6534,
+      "sha256": "4e61b0aaa27aaa66a374ac95bb2254c8e54d37657a1ac2d023257ee1d519e814"
+    }
+  ],
+  "test_truth_used_for_fitting_or_policy": false,
+  "new_measurements_or_wet_experiments": 0
+}

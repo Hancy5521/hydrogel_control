@@ -1,0 +1,26 @@
+{
+  "actual_utc": "2026-11-05T11:02:23.309058+00:00",
+  "execution_directory": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\pilot\\audit\\execution_20261105T110119948124Z",
+  "artifacts": [
+    {
+      "path": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\pilot\\audit\\execution_20261105T110119948124Z\\EXECUTION_START.json",
+      "sha256": "c6667f0398bded381eb815e181ab89c7493e2e7eb35953f5150f4ccb48baaefa"
+    },
+    {
+      "path": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\pilot\\audit\\execution_20261105T110119948124Z\\FAMILIES.jsonl",
+      "sha256": "d4427e0f7fed05459ab659a4427021458631bd06a76b668f76ac5c48f4451cc5"
+    },
+    {
+      "path": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\pilot\\audit\\execution_20261105T110119948124Z\\INDEPENDENT_SYNTHETIC_AUDIT.json",
+      "sha256": "3f574e3f51e3f2aea76c370cf7df72918c29088933882a58afaad9864a65fe24"
+    },
+    {
+      "path": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\pilot\\audit\\execution_20261105T110119948124Z\\AUDIT_FINDINGS_ZH.txt",
+      "sha256": "d0c8c91e2aedae0ca992f4f62aed253b74d84203a80a4890f7a39d5bcc6f3e09"
+    }
+  ],
+  "SUT_execution_attempts": 1,
+  "material_fits_or_scores": 0,
+  "all_8_families_pass": true,
+  "source_unchanged": true
+}

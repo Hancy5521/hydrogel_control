@@ -1,0 +1,8 @@
+{
+  "actual_utc": "2026-11-05T11:14:30.384063+00:00",
+  "phase": "scores",
+  "audit_plan_sha256": "d557053f58ae70eb527ac9202f6eb3cdf8656651dba4dff6cb959aad2b62f12d",
+  "approval_sha256": "9abbe573de538802037495373de6882155712f4379c01bbebcb5fce6980dc7bc",
+  "no_SUT_import_refit_or_policy_execution": true,
+  "test_truth_loading_allowed_this_phase": true
+}

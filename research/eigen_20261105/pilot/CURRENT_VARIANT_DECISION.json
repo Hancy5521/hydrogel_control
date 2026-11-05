@@ -1,0 +1,179 @@
+{
+  "actual_utc": "2026-11-05T11:28:50.714102+00:00",
+  "status": "CURRENT_PREDICTIVE_ALLOCATION_VARIANT_STOPPED_NO_INCREMENT_OVER_SHARED_JOINT_BASELINE",
+  "scope": "This frozen5pointGH/fixedwarmICMvariantonly;notdisproofallautocatalysis ormaterials",
+  "score_sha256": "091c0819de30a7adf7945560105bb734f41e3b1a86fc5af34be764294e00ec83",
+  "independent_audit_summary_sha256": "f7cb8985d917bc5413413c8782711b62edeb7996ebf2388ea3547509f801560e",
+  "end_budget": 24,
+  "budget_kind": "offlinebundles notequalcells orrealmeasurementtime",
+  "actual_campaigns": 40,
+  "logical_aliases": 64,
+  "new_wet_or_DFT_measurements": 0,
+  "table": [
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "random",
+      "actual_trajectories": 4,
+      "final_mean_CRPS": 4.075517678981438,
+      "relative_CRPS_change_vs_joint_percent": 2.2299760601201646,
+      "mean_verified_topdecile_hits": 0.5,
+      "mean_verified_frontier_groups": 8.25
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "repair_only_IVR",
+      "actual_trajectories": 1,
+      "final_mean_CRPS": 4.000210356015044,
+      "relative_CRPS_change_vs_joint_percent": 0.34097288790715385,
+      "mean_verified_topdecile_hits": 0.0,
+      "mean_verified_frontier_groups": 3.0
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "expansion_only_KG",
+      "actual_trajectories": 1,
+      "final_mean_CRPS": 4.055358794950691,
+      "relative_CRPS_change_vs_joint_percent": 1.7243121434868725,
+      "mean_verified_topdecile_hits": 2.0,
+      "mean_verified_frontier_groups": 14.0
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "fixed_cycle",
+      "actual_trajectories": 1,
+      "final_mean_CRPS": 3.999452652276685,
+      "relative_CRPS_change_vs_joint_percent": 0.32196670485644674,
+      "mean_verified_topdecile_hits": 2.0,
+      "mean_verified_frontier_groups": 10.0
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "fixed_random_modules",
+      "actual_trajectories": 4,
+      "final_mean_CRPS": 4.033768219306148,
+      "relative_CRPS_change_vs_joint_percent": 1.1827357831022844,
+      "mean_verified_topdecile_hits": 1.5,
+      "mean_verified_frontier_groups": 7.75
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "joint_lookahead_all",
+      "actual_trajectories": 1,
+      "final_mean_CRPS": 3.9866170726526207,
+      "relative_CRPS_change_vs_joint_percent": 0.0,
+      "mean_verified_topdecile_hits": 2.0,
+      "mean_verified_frontier_groups": 12.0
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "hypercycle_predictive",
+      "actual_trajectories": 4,
+      "final_mean_CRPS": 3.994566518139243,
+      "relative_CRPS_change_vs_joint_percent": 0.19940328709155963,
+      "mean_verified_topdecile_hits": 1.25,
+      "mean_verified_frontier_groups": 8.25
+    },
+    {
+      "dataset": "ucsb_thermoelectrics",
+      "policy": "hypercycle_no_cross",
+      "actual_trajectories": 4,
+      "final_mean_CRPS": 3.994566518139243,
+      "relative_CRPS_change_vs_joint_percent": 0.19940328709155963,
+      "mean_verified_topdecile_hits": 1.25,
+      "mean_verified_frontier_groups": 8.25
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "random",
+      "actual_trajectories": 4,
+      "final_mean_CRPS": 0.5736960429420574,
+      "relative_CRPS_change_vs_joint_percent": 5.160157519158126,
+      "mean_verified_topdecile_hits": 0.75,
+      "mean_verified_frontier_groups": 8.0
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "repair_only_IVR",
+      "actual_trajectories": 1,
+      "final_mean_CRPS": 0.5638168172634236,
+      "relative_CRPS_change_vs_joint_percent": 3.349266645299731,
+      "mean_verified_topdecile_hits": 0.0,
+      "mean_verified_frontier_groups": 5.0
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "expansion_only_KG",
+      "actual_trajectories": 1,
+      "final_mean_CRPS": 0.5780043363359291,
+      "relative_CRPS_change_vs_joint_percent": 5.949880260864493,
+      "mean_verified_topdecile_hits": 2.0,
+      "mean_verified_frontier_groups": 16.0
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "fixed_cycle",
+      "actual_trajectories": 1,
+      "final_mean_CRPS": 0.5492828329317561,
+      "relative_CRPS_change_vs_joint_percent": 0.6851449374679408,
+      "mean_verified_topdecile_hits": 1.0,
+      "mean_verified_frontier_groups": 11.0
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "fixed_random_modules",
+      "actual_trajectories": 4,
+      "final_mean_CRPS": 0.5693654032400133,
+      "relative_CRPS_change_vs_joint_percent": 4.3663386340038635,
+      "mean_verified_topdecile_hits": 1.0,
+      "mean_verified_frontier_groups": 8.0
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "joint_lookahead_all",
+      "actual_trajectories": 1,
+      "final_mean_CRPS": 0.5455450585812799,
+      "relative_CRPS_change_vs_joint_percent": 0.0,
+      "mean_verified_topdecile_hits": 1.0,
+      "mean_verified_frontier_groups": 11.0
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "hypercycle_predictive",
+      "actual_trajectories": 4,
+      "final_mean_CRPS": 0.5657296318243753,
+      "relative_CRPS_change_vs_joint_percent": 3.6998911319234606,
+      "mean_verified_topdecile_hits": 1.0,
+      "mean_verified_frontier_groups": 9.0
+    },
+    {
+      "dataset": "jarvis_dft_3d",
+      "policy": "hypercycle_no_cross",
+      "actual_trajectories": 4,
+      "final_mean_CRPS": 0.5616112399640188,
+      "relative_CRPS_change_vs_joint_percent": 2.9449778950468186,
+      "mean_verified_topdecile_hits": 1.0,
+      "mean_verified_frontier_groups": 10.0
+    }
+  ],
+  "mechanistic_diagnosis": [
+    "7/8cross-term on/off pairs identicalqueriesandall4NPZlaws",
+    "UCSBpredictiveandno-cross meanCRPSexactlyequal",
+    "UniqueJARVISdifferentpair predictiveCRPSworseby0.01647356744",
+    "Bfixedafterwarm;theloopcannotlearnnewtaskcorrelations",
+    "Caction-by-objectiveweightedbyresourcefractionsisheuristic,notactualcrossmodulecatalyticrate",
+    "5nodeGHbiasupto~21percentinartificialcases limitsstrongKGclaims"
+  ],
+  "selected_groups_now_consumed_for_policy_development": 40,
+  "test_metadata_groups_per_dataset": 8,
+  "unused_eligible_groups": {
+    "ucsb_thermoelectrics": 22,
+    "jarvis_dft_3d": 8802
+  },
+  "unused_group_limit": "Unselectedmetadata components,notcertified independentwetbatches; futureprotocolmustrespectfullsourceidentityandactualreadscope.",
+  "prohibited_after_this_result": [
+    "retuneη/epsilon/blendweight/GHorderontheconsumedcohort",
+    "resplit/relabelselectedtestasfreshconfirmation",
+    "claimnovelautocatalyticmechanism/fieldstrongbaseline/topconferenceready"
+  ],
+  "next": "Exactzero-fitcomplementarity/costcontrols,beforeconsideringnewlylearnedrelation orverification-controller model. ClassicalKG/POMDPmustremainstrongcomparators."
+}

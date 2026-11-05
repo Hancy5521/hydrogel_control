@@ -1,0 +1,8 @@
+{
+  "actual_utc": "2026-11-05T11:14:10.769632+00:00",
+  "approved": true,
+  "phase": "scores",
+  "scope": "INDEPENDENT_OFFLINE_NUMERICAL_AUDIT_NO_REFIT_OR_POLICY_RUN",
+  "audit_plan_sha256": "d557053f58ae70eb527ac9202f6eb3cdf8656651dba4dff6cb959aad2b62f12d",
+  "note": "Originalresponsearrays/erfGaussianCRPS/groupmetrics/frontierthresholdonly; no source/policy/modelchanges orretunes. Onepreservedpostforecast evaluation."
+}

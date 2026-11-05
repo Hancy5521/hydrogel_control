@@ -1,0 +1,45 @@
+{
+  "actual_recorded_utc": "2026-11-05T09:40:44.147Z",
+  "rows": [
+    {
+      "repo": "nate-gillman/self-correcting-self-consuming",
+      "default_branch": "main",
+      "repo_license_metadata": "MIT",
+      "commit_sha": "97d1ea7c68c38f1a6ec41a91dfdb2e1814353de6",
+      "commit_date": "2024-07-18T13:47:58Z",
+      "read_depth": "Official GitHub repository metadata and latest default-branch commit metadata only; no code executed"
+    },
+    {
+      "repo": "jennyzzt/dgm",
+      "default_branch": "main",
+      "repo_license_metadata": "Apache-2.0",
+      "commit_sha": "a565fd2d1dca504ef5104a7cc0f3bdc4ab9b4fd2",
+      "commit_date": "2025-08-13T10:40:14Z",
+      "read_depth": "Official GitHub repository metadata and latest default-branch commit metadata only; no code executed"
+    },
+    {
+      "repo": "SakanaAI/AI-Scientist-v2",
+      "default_branch": "main",
+      "repo_license_metadata": "NOASSERTION",
+      "commit_sha": "96bd51617cfdbb494a9fc283af00fe090edfae48",
+      "commit_date": "2025-12-19T07:46:31Z",
+      "read_depth": "Official GitHub repository metadata and latest default-branch commit metadata only; no code executed"
+    },
+    {
+      "repo": "izumitkhr/matagent",
+      "default_branch": "main",
+      "repo_license_metadata": "GPL-3.0",
+      "commit_sha": "faeece2e8da0346df5528c88adb6081962f947b4",
+      "commit_date": "2025-12-11T06:24:13Z",
+      "read_depth": "Official GitHub repository metadata and latest default-branch commit metadata only; no code executed"
+    },
+    {
+      "repo": "microsoft/mattergen",
+      "default_branch": "main",
+      "repo_license_metadata": "MIT",
+      "commit_sha": "92423660a8bd70e83679086e88f88596d484dc16",
+      "commit_date": "2026-08-27T16:29:16Z",
+      "read_depth": "Official GitHub repository metadata and latest default-branch commit metadata only; no code executed"
+    }
+  ]
+}

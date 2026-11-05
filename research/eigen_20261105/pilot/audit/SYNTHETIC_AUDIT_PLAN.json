@@ -1,0 +1,158 @@
+{
+  "kind": "PRE_EXECUTION_INDEPENDENT_SYNTHETIC_PILOT_AUDIT",
+  "registered_actual_utc": "2026-11-05T10:59:40.765127+00:00",
+  "registered_asia_shanghai": "2026-11-05T18:59:40.765127+08:00",
+  "source_directory": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\pilot\\code",
+  "source_sha256": {
+    "benchmark_io.py": "850112c9218aedfdbe460c5b6c027a743ace63399a08cf5bcc31ac8311480369",
+    "joint_gaussian.py": "7196a96a37bd9038d99bd39162ec13659f9baeb0330fc5f2a8189f2bc2a547d0",
+    "policies.py": "f2be7e86f711c9e28667dfb0eafe96a610a2cef80aeeb9172798ef9300c11c21",
+    "run_campaign.py": "24ad57b74ef0c44feca895f62448cd12a48f11c42d62a1e462d8fd6c251f3d60",
+    "evaluate_campaign.py": "83ae029cda8370e396f6ed3440af2c1d26ef86bb633850e89ccb2070816ebf5c"
+  },
+  "producer_receipt_sha256": "b213ac14693668bf03d4d4d89deef4830fb7404b30ad6f34a76babb86dc8b936",
+  "API_contract_sha256": "67f96d9bae7a71cd6b9f7fcabcd324b410f19c42063e348468bc21bd7d359dee",
+  "README_sha256": "bbb4a8b8514b30d29c7584e18beebe29e88eb0b6a5d69d321277fe3ebfbfe9d0",
+  "real_pilot_protocol_path": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\pilot\\PROTOCOL.json",
+  "real_pilot_protocol_sha256": "aa52d32dc401dff7f1ccd55c05f19b5e6ccfd7534c4103f1b3d514e4a377bd59",
+  "audit_script_path": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\pilot\\audit\\synthetic_audit.py",
+  "audit_script_sha256": "ed1cb17d3c11d4fd1bae0f3fb8a517e16f1e9725d6381fcb4b3bdeaefad1aad9",
+  "pre_execution_verification": "Final five source modules and audit script AST-parsed only; no SUT import, model execution, raw source array read or response statistic computation by auditor before registration.",
+  "families": [
+    {
+      "id": "conditioning",
+      "question": "Does sequential exact one/two-cell conditioning match an independent direct dense Schur complement under two orders?",
+      "checks": [
+        "six intermediate means/covariances",
+        "exact observed coordinates and zero covariance",
+        "whole posterior PSD, unknown block SPD",
+        "reject repeated/duplicate/bool indices"
+      ],
+      "reference": "Dense inverse independently reconstructed, not producer sequential Cholesky"
+    },
+    {
+      "id": "metadata_and_warm_ICM",
+      "question": "Are RMS metadata geometry and frozen warm-only Gaussian statistics implemented as declared?",
+      "checks": [
+        "manual 119-dimensional atom-fraction/temperature matrix and sqrt(activeD) normalization",
+        "constant metadata divisor1",
+        "output/derived/source poisoned fields do not change features",
+        "independent warm sample covariance shrinkage and full Kronecker plus residual"
+      ],
+      "reference": "Four explicitly artificial rows/responses; one artificial warm fit only"
+    },
+    {
+      "id": "acquisition",
+      "question": "Do IVR and fixed5node tensor GH scalar KG equal independently reconstructed mathematical definitions?",
+      "checks": [
+        "one-cell and two-cell actions, both utility signs",
+        "direct posterior trace drop",
+        "same rule GH formula equality",
+        "finite/Jensen nonnegativity",
+        "known action and invalid normalizer/sign rejection"
+      ],
+      "reference": "Independent Schur complement and itertools tensor quadrature; exact1D upper envelope / adaptive outer2D integration report continuous-Gaussian KG approximation bias diagnostically, not as a failure criterion"
+    },
+    {
+      "id": "allocation",
+      "question": "Do classical resource updates, fixed-role controls and offdiagonal-only ablation isolate their declared mechanisms?",
+      "checks": [
+        "independent exponential-weight formula",
+        "normalized positive resource floor",
+        "diagonal unchanged during no-cross ablation",
+        "predictive C not marked causal",
+        "same best R/E proposals for fixed_random_modules with unchanged half weights",
+        "fixed/random/greedy role choices"
+      ],
+      "reference": "Hand-constructed gains and actions; no empirical catalytic-gain evidence"
+    },
+    {
+      "id": "oracle_roles_cost",
+      "question": "Does the trusted IO view expose only allowed native bundles with independent fork state and honest unit costs?",
+      "checks": [
+        "test response view NaN",
+        "derived fields excluded",
+        "initial/campaign costs and dynamic repair-after-expansion identity",
+        "fork resets independent mask/cost/receipts",
+        "repeat/test/warm campaign/budget/source-hash/reveal-before-freeze rejection"
+      ],
+      "reference": "Five entirely artificial gzip rows. Only an in-memory unittest.mock.patch of benchmark_io.sha substitutes the declared real digest for this artificial fixture; no producer source mutation or real-table read."
+    },
+    {
+      "id": "metadata_roles_aliases",
+      "question": "Are original grouping, role counts and deterministic aliases honored without false material replication?",
+      "checks": [
+        "45 artificial groups select40; roles8/8/16/8; max2rows",
+        "no cross-role group identity",
+        "duplicate raw IDs rejected",
+        "40actual versus64logical independent schedule reconstruction",
+        "no runner evaluator-truth/score call"
+      ],
+      "reference": "Metadata-only artificial identities; trusted IO and transductive unlabeled X disclosed"
+    },
+    {
+      "id": "complete_freeze",
+      "question": "Must the exact full campaign schedule and all281 payload artifacts be committed before truth access?",
+      "checks": [
+        "complete artificial40actual/64logical/281file manifest accepted",
+        "missing bound forecast rejected",
+        "duplicate actual campaign rejected",
+        "duplicate logical alias tuple rejected",
+        "misbound policy/campaign alias rejected"
+      ],
+      "reference": "Tiny artificial NPZ payloads explicitly not material density forecasts; fixture creates no material campaign or evaluator truth call"
+    },
+    {
+      "id": "scoring",
+      "question": "Are Gaussian CRPS, equal-original-group weighting and both signed finite-pool retrieval directions numerically correct?",
+      "checks": [
+        "independent CDF-squared-error integration in three Gaussian cases",
+        "zero sd and nonfinite truth rejected",
+        "unequal test rows per original group weighted equally",
+        "same artificial fully revealed16frontier groups yield2 top-decile hits and zero regret for each utility sign"
+      ],
+      "reference": "SciPy adaptive quadrature, not producer CRPS closed form. Artificial score fixture is not a complete material campaign or physical discovery."
+    }
+  ],
+  "tolerances": {
+    "implementation_comparison": "np.allclose rtol=3e-10, atol=3e-10; report actual maximum absolute errors",
+    "conditioned_whole_PSD": "min symmetric eigenvalue >= -3e-10; exact observed zero rows/columns; fresh unobserved block Cholesky",
+    "quadrature_Jensen": "fixed GH KG and IVR >= -1e-12; tiny signed residual preserved, no clipping",
+    "continuous_KG_diagnostic": "exact1D envelope or outer scipy.quad epsabs=epsrel=2e-9, limit150; continuous KG >= -3e-9; report estimate and GH bias without declaring rule-integration bias an implementation failure",
+    "CRPS_reference": "independent scipy.quad CDF-integral epsabs=1e-11, compared using implementation tolerance",
+    "resource_normalization": "sum1 absolute error <=1e-14; floor >=.05"
+  },
+  "required_root_approval": {
+    "approved": true,
+    "scope": "INDEPENDENT_SYNTHETIC_PILOT_AUDIT",
+    "plan_sha256": "EXACT_SHA256_OF_THIS_FILE"
+  },
+  "command_template": "D:\\Anaconda\\python.exe H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\pilot\\audit\\synthetic_audit.py --plan H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\pilot\\audit\\SYNTHETIC_AUDIT_PLAN.json --approval ROOT_EXACT_PLAN_APPROVAL_JSON --output NEW_UNIQUE_AUDIT_OUTPUT_DIRECTORY",
+  "materials_fits_scores_or_campaigns_authorized": 0,
+  "real_material_source_arrays_read_authorized": false,
+  "synthetic_truth_is_measurement": false,
+  "forbidden": [
+    "real-source model fit/scoring",
+    "old25P/46 or MLST protected targets",
+    "unapproved SUT execution",
+    "producer source mutation",
+    "refit/reselection/retune after outcomes",
+    "cryptographic or malicious-process blindness claim"
+  ],
+  "expected_final_schedule": {
+    "policies": 8,
+    "actual_campaigns": 40,
+    "logical_alias_slots": 64,
+    "actual_forecasts": 160,
+    "frozen_payload_files": 281
+  },
+  "failure_policy": "Preserve every family outcome and source hashes in a unique output. Report failures to root; do not silently edit producer, retune or re-execute a changed harness. Root must classify harness-only errors versus producer errors and authorize any amendment before continuation.",
+  "scientific_limits": [
+    "bounded mathematical and role-contract audit only",
+    "not independent material validation",
+    "not field strong-baseline certification",
+    "not novelty or top-conference readiness proof",
+    "predictive gains and fixed warm B are not learned causal cross-catalysis",
+    "source-table container is trusted IO, not process-blind security"
+  ]
+}
