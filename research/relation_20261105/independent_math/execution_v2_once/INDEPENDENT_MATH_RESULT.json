@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "actual_finished_utc": "2026-11-05T13:03:37.572494+00:00",
+  "execution": {
+    "actual_utc": "2026-11-05T13:03:36.024997+00:00",
+    "plan_sha256": "f0bb88502d70ff55da68a185a0b9909b28e7ef1fbc1b52bdff34062a308aadf2",
+    "approval_sha256": "022b74533f40fa8f9e903a0cf1075d1ec7e7de9cf406142f386901df6b85dc4f",
+    "source_sha256": "56df7c493678712156a4b2645a09eda3a4da3e1de7862185829291cfa03b59c0",
+    "material_sources_or_producer_imported": false
+  },
+  "exact_cases": 9,
+  "same_F_adaptive_joint_table_designs": 2,
+  "continuous_independent_methods": [
+    "Centered conditional-CDF product quadrature",
+    "Absolute-value energy integration of independent Gaussian residual construction"
+  ],
+  "tolerances": {
+    "cdf_fixed_level_max_difference": 2e-07,
+    "cdf_vs_closed_max_abs": 2e-07,
+    "cdf_vs_energy_max_abs": 2e-07,
+    "energy_vs_closed_max_abs": 2e-10,
+    "energy_quad_eps_abs": 1e-11,
+    "energy_quad_eps_rel": 1e-11,
+    "direct_gain_vs_trace_max_abs": 1e-10,
+    "PSD_negative_eigenvalue_slack": 1e-10,
+    "zero_control_max_abs": 1e-10,
+    "strict_positive_control_min": 1e-05,
+    "uncentered_growth_max_abs": 0.01,
+    "finite_discrete": "exact Fraction equality, zero numerical tolerance"
+  },
+  "files_sha256": {
+    "CONTINUOUS_INTEGRAL_RESULTS.json": "f8ba4ffca3c9986880804866ccc3b62f538aafb2d6730cf8b845e24ae1cc6a77",
+    "EXACT_ADAPTIVE_SAME_F_RESULTS.json": "8ac87d96941f3dfd356a9c6a5ccf2b667e4ce5e1fd1a29c4d2ba0068c40c0699",
+    "EXACT_DISCRETE_RESULTS.json": "866eec1d2e8cbbf5a5881065245ddb4b67eec0c0edc560dcdb4f9d4d2cd2c86d",
+    "EXECUTION_START.json": "a10b9248e655bf90561263d5dbd68cbb0ca0b7c70a63c94b0866ad2d8a71bea8"
+  },
+  "new_material_measurements_fits_predictions_or_target_scores": 0,
+  "limits": "Conditional classical information identity and mechanism controls only; not algorithm novelty, cost superiority or material validation."
+}

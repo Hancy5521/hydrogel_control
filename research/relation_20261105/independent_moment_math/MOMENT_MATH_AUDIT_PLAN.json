@@ -1,0 +1,277 @@
+{
+  "kind": "PRE_EXECUTION_PURE_STDLIB_RATIONAL_MOMENT_MATH_AUDIT",
+  "registered_actual_utc": "2026-11-05T13:36:36.538641+00:00",
+  "registered_asia_shanghai": "2026-11-05T21:36:36.538641+08:00",
+  "audit_script_path": "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\independent_moment_math\\math_audit.py",
+  "audit_script_sha256": "96ffcd7b473b3fc0281d79ebacb6cdebe0b0ffd7921a2c3f5e5e3dcc53fa41fd",
+  "configuration": {
+    "precision_decimal_digits": 60,
+    "degrees": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "gain_cases": [
+      [
+        "zero",
+        [
+          "0"
+        ],
+        [
+          "1"
+        ]
+      ],
+      [
+        "one_relation",
+        [
+          "3/5"
+        ],
+        [
+          "1"
+        ]
+      ],
+      [
+        "signed_cancellation",
+        [
+          "3/4",
+          "-3/4"
+        ],
+        [
+          "1/2",
+          "1/2"
+        ]
+      ],
+      [
+        "heterogeneous_three",
+        [
+          "-4/5",
+          "1/3",
+          "2/3"
+        ],
+        [
+          "1/4",
+          "1/2",
+          "1/4"
+        ]
+      ],
+      [
+        "heterogeneous_four",
+        [
+          "-9/10",
+          "-1/10",
+          "2/5",
+          "9/10"
+        ],
+        [
+          "1/10",
+          "1/5",
+          "3/10",
+          "2/5"
+        ]
+      ],
+      [
+        "near_one",
+        [
+          "999/1000",
+          "999/1000"
+        ],
+        [
+          "1/2",
+          "1/2"
+        ]
+      ],
+      [
+        "near_one_signed",
+        [
+          "-999/1000",
+          "999/1000"
+        ],
+        [
+          "1/2",
+          "1/2"
+        ]
+      ]
+    ],
+    "channels": {
+      "uninformative": [
+        [
+          "1",
+          "1"
+        ]
+      ],
+      "perfect": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "soft_A": [
+        [
+          "1/4",
+          "3/4"
+        ],
+        [
+          "3/4",
+          "1/4"
+        ]
+      ],
+      "same_F_B": [
+        [
+          "0",
+          "1/4"
+        ],
+        [
+          "3/4",
+          "3/4"
+        ],
+        [
+          "1/4",
+          "0"
+        ]
+      ]
+    },
+    "panels": [
+      [
+        "selector",
+        [
+          "uninformative",
+          "soft_A",
+          "perfect"
+        ],
+        [
+          [
+            "3/4",
+            "0"
+          ],
+          [
+            "0",
+            "3/4"
+          ]
+        ]
+      ],
+      [
+        "same_F",
+        [
+          "same_F_B",
+          "soft_A"
+        ],
+        [
+          [
+            "3/4",
+            "0"
+          ],
+          [
+            "0",
+            "3/4"
+          ]
+        ]
+      ],
+      [
+        "rank_reversal",
+        [
+          "uninformative"
+        ],
+        [
+          [
+            "3/4",
+            "-3/4"
+          ],
+          [
+            "1/8",
+            "1/8"
+          ]
+        ]
+      ],
+      [
+        "same_matrix_tie",
+        [
+          "soft_A",
+          "perfect"
+        ],
+        [
+          [
+            "3/5",
+            "-3/5"
+          ],
+          [
+            "3/5",
+            "-3/5"
+          ]
+        ]
+      ]
+    ],
+    "prior": [
+      "1/2",
+      "1/2"
+    ],
+    "sigma": "1",
+    "calibration_cost": "1",
+    "proxy_cost": "1",
+    "hard_budget": "2",
+    "near_one_tolerance": "1/1000",
+    "value_units": "sqrt(pi)*g/sigma; all candidates share sigma and costs",
+    "tie_break": "first declared channel, then first declared proxy in each branch",
+    "producer_imports_material_reads_and_fits": 0
+  },
+  "arithmetic": "Integers and fractions.Fraction only; no floats or third-party numerical imports. Every full gain compared using rigorous rational square-root enclosures atK=10^60.",
+  "sqrt_oracle": "For x=n/d>=0, k=isqrt((n*K*K)//d). Use[k/K,(k+1)/K], collapsing to the exact endpoint when k*k*d=n*K*K. This is an integer containment identity, not a numerical tolerance.",
+  "reference": "Full kernel rational-interval sums for allH² entries; enumerate every branch-to-proxy map. Producer neither imported nor rerun. The centeredGaussianCRPS kernel itself is the stated model premise, not re-tested byCDFintegration here.",
+  "families": [
+    {
+      "name": "coefficient_and_integer_sqrt_arithmetic",
+      "cases": "coefficient recurrence/telescope throughdegree9; prefix-tail identity atD1,2,4,8;6 fixed rational root inputs",
+      "criteria": "Exact Fraction equality and lo²<=x<=hi²; no tolerance. Finite checks verify implementation, not imply an infinite theorem by empirical induction."
+    },
+    {
+      "name": "fixed_gain_positive_truncation_and_tails",
+      "cases": "7 source-declaredrho/weight fixtures timesD={1,2,4,8}",
+      "criteria": "Full gain interval minus truncatedgain lies in[0,alphaD*r^(2D+2)] with exact inequalities; partialgains monotonic."
+    },
+    {
+      "name": "likelihood_branches_and_same_F_counterexample",
+      "cases": "4 source-declaredH2 likelihoodchannels recovered exactly fromprior1/2; A/B equalFselector",
+      "criteria": "Likelihoodcolumns1, branchprobabilities1, Bayesmartingale. Fa=1/16[[1,-1],[-1,1]] forA/B; adaptiveA9s/16 andB7s/16, fixedboth5s/16 with rigorouskernelintervals."
+    },
+    {
+      "name": "enumerated_actual_adaptive_policy_value_certificates",
+      "cases": "4 fixed panels selector/sameF/rankreversal/same-matrixtie at4degrees; allsigma1/cost1/hardbudget2",
+      "criteria": "ChooseaD and eachbranchbD fromtruncatedg, compare actualselectedpolicy fullkernelinterval against exhaustivefullkernel optimum. Actualregret upper<=maxU-maxL<=epsilonmax. Do not only compare approximate versus exactmax values with differentsecondactions."
+    },
+    {
+      "name": "near_one_and_degree1_rank_reversal",
+      "cases": "rho=.999degree8versuspredeclaredscaledtolerance1/1000;fixedrationalD1rankingcounterexample",
+      "criteria": "Near1 actualtail lower>tolerance meansdegreecap8 insufficient/fallbackneeded. D1 b1=(3/4,-3/4) zero firstmoment but truegain>=81/2048; b2=(1/8,1/8) <=1/64 andpositiveD1. Reversalisexpectednegativecontrol, not implementationfailure."
+    }
+  ],
+  "mathematical_lemmas": [
+    "a_n=C(2n,n)/(4^n(2n-1))>0; alphaD=sumtaila_n=C(2D,D)/4^D bytelescoping.",
+    "For simplexw andr=max|rho|<1,0<=scaledg-scaledgD<=alphaD*r^(2D+2). ResidualkernelPSD; not entrywisenonnegative.",
+    "Under exactBayesbranches and pureR-firstproxyfamily, gD is pointwiselower; L_a<=Q_a<=U_a, andthe actualpolicychosenbyL/branchmax hasregret<=maxU-maxL<=epsilonmax.",
+    "No completeposterior or fulldistribution compression, no wholebudgetPOMDP regret, no coverageofMC quadrature/float/modelmisspecification."
+  ],
+  "pre_execution_state": "SourcewrittenandASTparsedonly. No import/execution of this audit or producer, no material access and no real model fit.",
+  "failure_policy": "Runonce atfixedprecision/cases/degrees. Preserve allfamilyfailures, do not silently change tolerance/cases/source orrerun. Report to root forclassification and any separatelyregisteredamendment.",
+  "required_root_approval": {
+    "approved": true,
+    "scope": "INDEPENDENT_RATIONAL_MOMENT_MATH_AUDIT",
+    "plan_sha256": "EXACT_SHA256_OF_THIS_PLAN"
+  },
+  "planned_output_directory": "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\independent_moment_math\\execution_20261105T133636538641Z",
+  "source_must_remain_unchanged": true,
+  "not_claimed": [
+    "newkernel/Taylorprinciple",
+    "newmaterialmeasurements",
+    "empiricalalgorithmbenefit",
+    "timingbenchmark",
+    "lowrankdataassumption",
+    "globalposteriorcompression",
+    "generaladaptivepolicytheorem",
+    "topconferencequalification"
+  ],
+  "unique_command": "D:\\Anaconda\\python.exe H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\independent_moment_math\\math_audit.py --plan H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\independent_moment_math\\MOMENT_MATH_AUDIT_PLAN.json --approval H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\independent_moment_math\\ROOT_MOMENT_MATH_APPROVAL.json --output-dir H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\independent_moment_math\\execution_20261105T133636538641Z"
+}

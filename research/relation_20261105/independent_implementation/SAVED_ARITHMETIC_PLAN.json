@@ -1,0 +1,45 @@
+{
+  "artifact_kind": "PRESPECIFIED_SAVED_SYNTHETIC_STDLIB_ARITHMETIC_AUDIT",
+  "registered_actual_utc": "2026-11-05T13:30:36.538425+00:00",
+  "source_file": "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\independent_implementation\\saved_results_audit.py",
+  "source_sha256": "bf0a6dba09025bc417cb8ff985a589b47220b73946d6ab567b27dab3d910b57e",
+  "source_validation": "AST_PARSE_ONLY; auditor not imported or executed",
+  "input_sha256": {
+    "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\math_design\\execution_once\\RESULTS.json": "77204bcc7da621852782900f8ef985c11d222337773051c513126220ec102ebe",
+    "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\math_design\\execution_once\\EXECUTION_START.json": "c3ef62543c5e835eefeb41f74f9ea59cbc09e40322dcc8adda4db09cb5d26fce",
+    "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\math_design\\SYNTHETIC_PROTOCOL_REGISTERED.json": "cd296384dee9a47ea7da38aced5af83221c847360c4dc191b1a8ee6efe51317f",
+    "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\math_design\\relation_core.py": "37d35e51701961beffb57da89c03cbe5305f39a7087375d78397f2e6183dfa91",
+    "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\math_design\\run_synthetic.py": "024cb2755cc9cc7a37c1b1242216bb1db1e2e56a1d74fa9f9f6173cc44a2f60f",
+    "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\independent_math\\execution_v2_once\\INDEPENDENT_MATH_RESULT.json": "65c1a453039d4e8efec6cb9a99c30d9a6154110596941c443df7ec33cccf47e4",
+    "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\independent_math\\execution_v2_once\\EXACT_ADAPTIVE_SAME_F_RESULTS.json": "8ac87d96941f3dfd356a9c6a5ccf2b667e4ce5e1fd1a29c4d2ba0068c40c0699",
+    "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\independent_implementation\\BOUNDED_SCOPE_REVIEW.json": "d9c3521b7fc39df8a7326dd18aa7f3317667bcdd18d2865c89cdfaf146cef4ad"
+  },
+  "producer_results": "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\math_design\\execution_once\\RESULTS.json",
+  "producer_protocol": "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\math_design\\SYNTHETIC_PROTOCOL_REGISTERED.json",
+  "prior_independent_full_joint_results": "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\independent_math\\execution_v2_once\\EXACT_ADAPTIVE_SAME_F_RESULTS.json",
+  "arithmetic_tolerances": {
+    "absolute": 2e-12,
+    "relative": 2e-11
+  },
+  "checks": [
+    "Recover exact rational outcome masses/posteriors/F from saved synthetic likelihoods",
+    "Independently evaluate local centered CRPS kernels with scalar log1p/expm1 and math.fsum, no NumPy or SUT imports",
+    "Verify fixed pair, true retained-branch Emax, feasible hard budget, every saved algorithm value and every recorded branch choice",
+    "Choice equality is value-optimality within prespecified arithmetic tolerance, not identical index under ties; report selected-index changes with/without genuine adaptive gain separately",
+    "Compare adaptive gain with best affordable precommitted proxy for each first action; do not infer gain from changing index alone",
+    "Verify homogeneous/dense separable analytic shortcut directly from same-rho/scaled-target factorization",
+    "Map exact same-F producer fractions to the already-frozen independent full-joint enumeration; no repeated joint fixture run",
+    "Six principle meanings and six computational cases remain single synthetic-control outputs, not new material data or evidence of novel acceleration"
+  ],
+  "scope_exclusions": [
+    "No SUT import or execution",
+    "No timing/memory measurements",
+    "No quadrature rerun",
+    "No material gzip/label/campaign/scoring access",
+    "No changing frozen producer source/tolerances",
+    "No testing/claiming general extreme-number correctness"
+  ],
+  "expected_failure_policy": "Preserve any failure and partial files; report root before any source/plan/tolerance change. No automatic retry.",
+  "required_approval_scope": "SAVED_SYNTHETIC_STDLIB_ARITHMETIC_ONLY",
+  "execution_state": "NOT_EXECUTED"
+}

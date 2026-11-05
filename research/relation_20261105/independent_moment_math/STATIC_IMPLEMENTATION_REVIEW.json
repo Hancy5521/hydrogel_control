@@ -1,0 +1,82 @@
+{
+  "actual_review_utc": "2026-11-05T13:50:38.249148+00:00",
+  "actual_review_asia_shanghai": "2026-11-05T21:50:38.249148+08:00",
+  "decision": "PASS",
+  "scope": "Independent static mathematics-to-code mapping for the fixed12case ideal-truncation plus boundedfloat control. Not execution approval, material efficacy, or machine-directed interval certification.",
+  "source_sha256": {
+    "moment_core.py": "fa2e63d672a23cc490786ca21f03161122e7670d9c9d8457f6a123a710025de8",
+    "run_moment_control.py": "d55f39d9cff4931cb3bd63a7669b804934764a755fc23e5c064bd1a189823a62"
+  },
+  "execution_plan_template_sha256": "24681ff41ea7ac6c9cacc366e3a7327c4a67e33d907f2d765e9213a14b418dbd",
+  "independent_AST_syntax_only": "PASS for both modules; configuration extracted by ast.literal_eval without importing/evaluating the SUT",
+  "read_scope": [
+    "moment_core.py fullsource",
+    "run_moment_control.py fullsource",
+    "IMPLEMENTATION_FREEZE.json",
+    "EXECUTION_PLAN_TEMPLATE.json",
+    "IMPLEMENTATION_README.txt"
+  ],
+  "mapping": [
+    {
+      "item": "positivecoefficients",
+      "code": "moment_core.py:26",
+      "decision": "PASS",
+      "reason": "Starts a1=.5 and recurrence a_(n+1)=a_n*(2n−1)/(2n+2); positive withinfixedD<=64."
+    },
+    {
+      "item": "alphaandgeometrictail",
+      "code": "moment_core.py:36,57",
+      "decision": "PASS",
+      "reason": "beta recurrence equals alphaD=C(2D,D)/4^D; next_a equalsa_(D+1). min(alphaD,a_(D+1)/(1−r²))*r^(2D+2)*sigma/sqrtpi is valid because positivecoefficients decrease. log evaluation is explicitlyfloatdisplay, not directedinterval."
+    },
+    {
+      "item": "Dcapandnearonefallback",
+      "code": "moment_core.py:57,130–140",
+      "decision": "PASS",
+      "reason": "Uses perproxy r=maxabsrho andpositive scale; D>=H or noattainedtail withincap returns exactfallback. Fallback tail0 only denotes no truncation; roundoff disclaimer preserved. Epsilon fixed1e−6 andcap64 not relaxed."
+    },
+    {
+      "item": "fullposteriorandcandidate-specificmoments",
+      "code": "moment_core.py:122–173;run_moment_control.py:91–123",
+      "decision": "PASS",
+      "reason": "W remains16branch×H; exactrational finiteBayesupdates are formed beforefloatconversion; eachproxy has itsownH×D powers andW@powers. No claimofposteriorBayesupdateclosure or globallysufficientDvector."
+    },
+    {
+      "item": "branch-preservingadaptiveL/U",
+      "code": "moment_core.py:176;run_moment_control.py:175–180",
+      "decision": "PASS",
+      "reason": "Pointwise lower-reference-tail envelopechecked withdeclaredabsolute2e−12; adaptive_value maximizesproxyinsideeachbranch thenweights2outcomes. lo/hi thereforepreserveEmax, notmaxE."
+    },
+    {
+      "item": "actualselectedpolicyregret",
+      "code": "run_moment_control.py:181–186",
+      "decision": "PASS",
+      "reason": "Selectsa byloweradaptivevalue, selectsproxyperbranchfromlower, thenevaluatesactualsamea/bmapontheexactstreamedreference. Explicitcheckisregret<=maxproxytail+2e−12, notanuncomputedtightercertificate."
+    },
+    {
+      "item": "D1counterexampleandoldproofreuse",
+      "code": "run_moment_control.py:126–158;226–229",
+      "decision": "PASS",
+      "reason": "ImplementationD1smokecaptureszero signedfirstmomentversuspositiveproxy; trueorder/tail/proofauditsarehashpinned andreused ratherthanrerun. Maincontrolcannotoverwriteoldpilot/conclusion."
+    },
+    {
+      "item": "stableH2weakshape",
+      "code": "moment_core.py:190;run_moment_control.py:131–138",
+      "decision": "PASS",
+      "reason": "Rationalizedr^4 denominator algebraicallymatches1−.5(sqrt(1−r²)+sqrt(1+r²)); expectedO(r^4)/(8sqrtpi) preserved. WeakshapeusesstableH2reference, cancellation-pronefullmatrixvalueonlyreported. Negativekerneloffdiagonalsare notclipped."
+    }
+  ],
+  "required_source_changes": [],
+  "reporting_limits": [
+    "The tightermaxU−maxL valuegap iscomputedimplicitlyfromoutputs butnotexplicitlyasserted; reportthecoarsemaxepsilon+numeric toleranceactuallychecked unlessa separateposthocread-onlyanalysisderivestightergap. No codechange requiredforthisregisteredgoal.",
+    "Ideal truncation is a mathbound; floatenvelope/regret checksuse2e−12 absolute tolerance. Strongexactstreamedversuscachedalso uses2e−11relative. This isnotIEEEinterval certification andnotarobustnessclaimforarbitrarytinyorillconditionedinputs.",
+    "FullHposteriorbranchstateisretained. Perproxymomentreadoutdoesnotencodeallmaterials/properties orconfirmrealconditionalindependence/commonmarginals.",
+    "One orderedtiming only; memoryprincipalarrays estimates are explicitlyincomplete andnotRSS. Runtime/memory fairness andactualnumericrange handledbyseparatereviewer; thismathreviewdoesnotcertifyspeedup.",
+    "12syntheticcases andsmokes are feasibilitycontrols, notnewmaterialmeasurements, learnedempiricalcatalyticgain orfieldstrongbaseline validation."
+  ],
+  "old_independent_rational_math_reexecutions": 0,
+  "new_SUT_imports_or_executions": 0,
+  "material_response_reads_fits_scores": 0,
+  "source_unchanged_after_static_read": true,
+  "next": "Rootmaycombinewiththeotherreviewandchooseexactplanregistration/approval. Reviewerdoesnotexecuteorpatchthefrozenimplementation."
+}

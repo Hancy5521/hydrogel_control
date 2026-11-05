@@ -1,0 +1,56 @@
+{
+  "actual_utc": "2026-11-05T12:50:56.571294+00:00",
+  "kind": "DOCUMENTATION_SCOUT_NOT_DATA_ADMISSION",
+  "necessary_search_queries": 1,
+  "query": "HTEM database API sample optical electrical structural data measurement NREL official",
+  "search_domains": [
+    "nrel.gov",
+    "nlr.gov",
+    "htem.nrel.gov",
+    "docs.nrel.gov",
+    "github.com"
+  ],
+  "official_sources_read": [
+    {
+      "url": "https://github.com/NatLabRockies/htem-api-examples",
+      "version": "master displayed; commit not pinned; repository says archived 2026-06-30",
+      "reading_depth": "README full rendered body; library44/sample split and XRD/XRF/4PP/optical example descriptions",
+      "license": "Software custom Alliance/NREL notice; not assumed MIT",
+      "key_scope": "No code downloaded, no notebook run, no API request."
+    },
+    {
+      "url": "https://github.com/NatLabRockies/htem-api-examples/blob/master/LICENSE",
+      "version": "master display only; no source imported",
+      "reading_depth": "All33lines license displayed",
+      "license": "Redistribution conditions include public corresponding source requirement for research entities; not legal interpretation beyond recorded text"
+    },
+    {
+      "url": "https://data-stage.nlr.gov/submissions/75",
+      "version": "DOI10.7799/1407128; catalog says last updated2026-05-22",
+      "reading_depth": "Full rendered catalog, versionedlinks andlicense link",
+      "license": "Separate data notice read at linked license page"
+    },
+    {
+      "url": "https://data-stage.nlr.gov/node/75/license",
+      "version": "Current rendered notice, no historical license snapshot certified",
+      "reading_depth": "All9 rendered lines",
+      "license": "Free use/copy with full notice retained and DOE/NREL/ALLIANCE credit; separate terms override for separately licensed data/software"
+    },
+    {
+      "url": "https://www.nlr.gov/materials-science/automated-data-analysis",
+      "version": "Current official page, not dataset freeze",
+      "reading_depth": "RDI/HTEM paragraphs and publication references; not underlying papers",
+      "license": "No site text redistributed; short factual paraphrase only"
+    }
+  ],
+  "observed_failure": {
+    "url": "https://github.com/NatLabRockies/htem-api-examples/tree/master/lib",
+    "result": "webtool restrictedURL/InternalError once",
+    "retried": false,
+    "consequence": "Native library/sample implementation and endpoint behavior not inspected; only README-level schema claims."
+  },
+  "no_dataset_download_or_native_response_read": true,
+  "no_endpoint_availability_or_cost_metadata_verified": true,
+  "admission_status": "DEFER_UNTIL_METHOD_GATE_AND_METADATA_ONLY_INSTRUMENT_LINEAGE_GATE",
+  "no_new_measured_labels_or_cost_claim": true
+}

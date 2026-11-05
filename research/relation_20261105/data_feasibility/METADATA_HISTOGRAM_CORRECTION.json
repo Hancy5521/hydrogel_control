@@ -1,0 +1,8 @@
+{
+  "actual_utc": "2026-11-05T12:49:24.833233+00:00",
+  "kind": "METADATA_REPORTING_SCOPE_CORRECTION_NO_LABELS_OR_SPLIT",
+  "initial_script_sha256": "e0675b2fb9ac9b25980e4fad3ef0e1580613a9b4a9ddea7fb8e42c523ccae406",
+  "initial_receipt_sha256": "665d3f77f5003ccfcb0a3735158b623104a8249c6b2047bc3dc25bdba5dffe8f",
+  "finding": "A source-connected UCSB component can contain several chemical compositions, so a group histogram using its first row is ambiguous. Use per-row counts and non-exclusive component incidence instead. Counts of unused identities, rows and chemical systems are unaffected.",
+  "no_native_property_values_or_models_accessed": true
+}

@@ -1,0 +1,19 @@
+{
+  "actual_utc": "2026-11-05T14:21:34.543487+00:00",
+  "kind": "Reviewed public program/mathematical/synthetic-evidence companion; local run-log snapshot excluded",
+  "numerical_data_scope": "All current synthetic source/inputs/protocols/results/audits including each16-case scaling receipt; previous real-source metadata included, original numeric gzip/oldMLST remain external",
+  "downloaded_papers_and_runtime_caches_omitted": [
+    "prior_art/local_reading_only/pKGFN_2024_official.pdf",
+    "prior_art/local_reading_only/pKGFN_2024_pages3to5_extracted.txt",
+    "report/mpl_cache/fontlist-v390.json"
+  ],
+  "new_material_fits_predictions_target_scores": 0,
+  "old_frozen_source_bytes_preserved": true,
+  "public_export_exclusions": [
+    "logs_snapshot/EVENTS.jsonl",
+    "logs_snapshot/RUN.json",
+    "logs_snapshot/SNAPSHOT_SCOPE.json",
+    "PACKAGE_MANIFEST.json"
+  ],
+  "complete_local_zip_sha256": "2b9825b8d023ba8d070c95d0b182e8536d639e8662782dd292ad69a66fa208fe"
+}

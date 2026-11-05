@@ -1,0 +1,5 @@
+PUBLIC DATA ATTRIBUTION
+
+UCSB thermoelectrics: experimental literature aggregation, Figshare10.6084/m9.figshare.14746212.v1,file28333845,CC BY4.0. Originalsrc citations retained inmetadata. PinnedMatminer retrievalmetadata commit02c60582dc31575298db91b9e978f9cab2966b44.
+JARVIS: processed dataset Figshare10.6084/m9.figshare.7261832.v1,file13376507, publishedMIT; upstream10.6084/m9.figshare.6815699.v2,CC BY4.0. Preserve bothroles; processinglicense doesnotreclassifycomputedresultsasexperimental.
+SHA/byte sizes anddetailedlicenseURLs indata/DATA_MANIFEST.json andSOURCE_GATE.json. This attributiondoesnotassignalicensetoournewcode; noauthor/license/DOIfabricated.

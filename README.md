@@ -1,3 +1,15 @@
+# Relation-moment decision readout checkpoint — 5 November 2026
+
+[Chinese report and program](research/relation_20261105/INDEX.html) · [guide](research/relation_20261105/RESOURCE_GUIDE_ZH.txt) · [new checkpoint identity](RELATION_MOMENT_CHECKPOINT.json).
+
+This separate research checkpoint follows the stopped predictive allocator without changing its source, results or the frozen MLST manuscript. A centered Gaussian-copula CRPS readout retains every posterior observation branch and uses positive correlation moments with a mathematical truncation bound. Classical Taylor features, Bayesian information value and two-step planning are cited foundations, not claimed inventions.
+
+The12initial computational cases were all slower than optimized streamed exact evaluation. A separately registered exploratory16point larger-H study retains every losing/fallback point;11were faster. All28saved selected R-first policy regrets are numerically0 within the declared model. These are synthetic computational observations, **not material prediction performance, independent confirmation or top-conference readiness**. One ordered timing includes common inputs and score readout, excluding subsequent policy arithmetic. The fullHposterior is still retained; reported array memory is not processRSS. New material fits/labels/scores are0.
+
+The public companion includes program sources, all current synthetic inputs/results and audits, public metadata reference inputs and detailed explanations. It excludes local run-log snapshots and downloaded papers. In this subdirectory `python verify_resources.py` checks bytes, while `python reproduce.py --task moment --output-dir NEW_EXTERNAL_DIRECTORY --prepare-only` prepares a relocated plan without executing. Earlier chronological records follow unchanged.
+
+---
+
 # Separate Eigen-inspired repair and expansion feasibility checkpoint — 5 November 2026
 
 [Chinese report and program entry](research/eigen_20261105/INDEX.html) · [mathematical specification](research/eigen_20261105/DESIGN_AND_MATH_ZH.txt) · [reproduction guide](research/eigen_20261105/资源与复现说明.txt).

@@ -1,0 +1,18 @@
+{
+  "actual_utc": "2026-11-05T12:45:35.874606+00:00",
+  "role": "metadata_only_feasibility",
+  "source_stage": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z",
+  "question": "Do unused source/component identities support a later relation-learning and complementary-acquisition task without recycling consumed pilot identities?",
+  "authorized_inputs_sha256": {
+    "data/ELIGIBLE_METADATA.json": "165d48bc29f771e29f7e86a6bea1e57286eb81b49f29120905ba4ff4739660e4",
+    "data/DATA_MANIFEST.json": "5000ecb55aefae7259467b5cb23a570ae1762bce4333155cf411cbfb0aaa4343",
+    "data/SOURCE_GATE.json": "86ee6469c90c98558ca069e9d7e5e05badb5f5bc6944f0dbbf94a9025bea0a6e",
+    "data/SOURCE_GATE_PILOT_ADDENDUM.json": "7c0fc10397de2d85e13b101e5a78570feea7d1ef80473a852e482c552eefda22",
+    "data/PILOT_ELIGIBILITY.json": "e7b06d64fe29c550bd8e75febd64d853d38b20448914d47d705053aa7712361d",
+    "pilot/DATASET_ROLE_PLAN.json": "ea9120cf04bc78c8292be8ebba3eab6f9b1b0f830574b3e1a803386105451de8"
+  },
+  "prohibitions": [
+    "No native gzip, labels, query receipts, forecast arrays, model imports, fitting, scoring, source downloads, split freeze or label consumption"
+  ],
+  "output": "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\data_feasibility"
+}

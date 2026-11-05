@@ -1,0 +1,10 @@
+{
+  "actual_utc": "2026-11-05T13:51:38.591506+00:00",
+  "approved": true,
+  "scope": "MOMENT_READOUT_SYNTHETIC_CONTROL",
+  "plan_sha256": "4216dcdfef6cf8837c7ed9416cd2941b74e0df8f6d286db212d14250e6d868f8",
+  "math_static_review_sha256": "7ea4bc5b6cd233fe8385b30ef9981bac2eef0e4166892fdd5810e1c405e38c0b",
+  "fairness_static_review_sha256": "770b68f7689d3e138a2833352905a97655aac762ee28d1adde34ee3234837d45",
+  "allowed_executions": 1,
+  "scope_limit": "12 predeclared synthetic score-readout fixtures; mathematical truncation + separate float tolerance, not IEEE interval or material efficacy; no endpoint/fixture changes after outcome"
+}

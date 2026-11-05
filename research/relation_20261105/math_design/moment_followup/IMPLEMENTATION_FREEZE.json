@@ -1,0 +1,73 @@
+{
+  "kind": "MOMENT_IMPLEMENTATION_SOURCE_FREEZE_SYNTAX_ONLY",
+  "actual_utc": "2026-11-05T13:44:04.321380+00:00",
+  "actual_Asia_Shanghai": "2026-11-05T21:44:04.321380+08:00",
+  "sources": [
+    {
+      "file": "moment_core.py",
+      "bytes": 9870,
+      "sha256": "fa2e63d672a23cc490786ca21f03161122e7670d9c9d8457f6a123a710025de8",
+      "AST_syntax": "PASS",
+      "SUT_imported": false,
+      "SUT_executed": false
+    },
+    {
+      "file": "run_moment_control.py",
+      "bytes": 13216,
+      "sha256": "d55f39d9cff4931cb3bd63a7669b804934764a755fc23e5c064bd1a189823a62",
+      "AST_syntax": "PASS",
+      "SUT_imported": false,
+      "SUT_executed": false
+    }
+  ],
+  "configuration_extracted_with_AST_literal_eval_only": true,
+  "artifacts": {
+    "MOMENT_PROOF_AND_LIMITS_ZH.txt": {
+      "sha256": "c2a805d23017f5fa96f9ed7a9c2d5c2f8190aefab2b28918a3d1d2944268663c",
+      "bytes": 10829
+    },
+    "IMPLEMENTATION_README.txt": {
+      "sha256": "9fcb5ea8f764056fcb8a8a1f3671a1bc52c970d1b1e6883ba520cbc7e1c0212f",
+      "bytes": 9969
+    },
+    "EXECUTION_PLAN_TEMPLATE.json": {
+      "sha256": "24681ff41ea7ac6c9cacc366e3a7327c4a67e33d907f2d765e9213a14b418dbd",
+      "bytes": 2325
+    }
+  },
+  "prior_audit_receipts": {
+    "centered_CRPS_identity": {
+      "file": "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\independent_math\\execution_v2_once\\INDEPENDENT_MATH_RESULT.json",
+      "sha256": "65c1a453039d4e8efec6cb9a99c30d9a6154110596941c443df7ec33cccf47e4",
+      "reuse_existing_receipt_only": true
+    },
+    "exact_moment_interval": {
+      "file": "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\independent_moment_math\\execution_20261105T133636538641Z\\INDEPENDENT_MOMENT_MATH_AUDIT.json",
+      "sha256": "1a2a6f67ed1a294db3c7beff2d3070684ada22d7f8feb47c37c80f7a703e149c",
+      "reuse_existing_receipt_only": true
+    }
+  },
+  "root_exact_source_plan_approval_still_required": true,
+  "SUT_import_execution_count": 0,
+  "material_fit_prediction_score_calls": 0,
+  "old_source_sha256": {
+    "relation_core.py": "37d35e51701961beffb57da89c03cbe5305f39a7087375d78397f2e6183dfa91",
+    "run_synthetic.py": "024cb2755cc9cc7a37c1b1242216bb1db1e2e56a1d74fa9f9f6173cc44a2f60f"
+  },
+  "api": {
+    "moment_core": [
+      "NumericalRangeUnsupported",
+      "validate(weights,rhos,scales)",
+      "coefficients(degree)",
+      "analytic_tail_bound(r,scale,degree)",
+      "degree_for(r,scale,hypothesis_count,epsilon,cap=64)",
+      "exact_kernel(rho,scale)",
+      "exact_streamed(weights,rhos,scales)",
+      "exact_cached(weights,rhos,scales)",
+      "moment_streamed(weights,rhos,scales,epsilon=1e-6,cap=64)",
+      "adaptive_value(scores,branch_probabilities)",
+      "h2_symmetric_stable(r,scale=1)"
+    ],
+    "runner": "main(--plan,--approval,--output-dir)"
+  }
+}

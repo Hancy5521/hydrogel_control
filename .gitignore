@@ -79,3 +79,6 @@ new_weighting_summary.json
 !research/eigen_20261105/data/SOURCE_GATE.json
 !research/eigen_20261105/data/SOURCE_GATE_PILOT_ADDENDUM.json
 !research/eigen_20261105/data/SOURCE_FACTS_ZH.txt
+
+# Reviewed derived synthetic computational summary only
+!research/relation_20261105/report/ALL_28_COMPUTE_POINTS.csv

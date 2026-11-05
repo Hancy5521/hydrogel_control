@@ -1,0 +1,680 @@
+{
+  "actual_utc": "2026-11-05T13:58:20.961732+00:00",
+  "artifact_kind": "READ_ONLY_FROZEN_MOMENT2_RESULT_AGGREGATION_NOT_A_NEW_NUMERICAL_AUDIT",
+  "producer_results_sha256": "cc48fe6581545569760d544da6d5a1342ce36a2ab0855a1fb3fad80787c37893",
+  "producer_registered_protocol_sha256": "4216dcdfef6cf8837c7ed9416cd2941b74e0df8f6d286db212d14250e6d868f8",
+  "new_moment_source_sha256": {
+    "moment_core.py": "fa2e63d672a23cc490786ca21f03161122e7670d9c9d8457f6a123a710025de8",
+    "run_moment_control.py": "d55f39d9cff4931cb3bd63a7669b804934764a755fc23e5c064bd1a189823a62"
+  },
+  "old_two_sources_unchanged": {
+    "relation_core.py": "37d35e51701961beffb57da89c03cbe5305f39a7087375d78397f2e6183dfa91",
+    "run_synthetic.py": "024cb2755cc9cc7a37c1b1242216bb1db1e2e56a1d74fa9f9f6173cc44a2f60f"
+  },
+  "case_count": 12,
+  "all12_recorded_regret_float_zero": true,
+  "every_case_strict_adaptive_first_actions": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+  ],
+  "first_actions_not_independent_material_trials": 96,
+  "moment_slower_than_both_strong_exact_case_count": 12,
+  "moment_smaller_principal_workspace_than_streamed_case_count": 7,
+  "moment_smaller_managed_peak_than_streamed_case_count": 6,
+  "moment_smaller_managed_peak_than_cached_case_count": 12,
+  "all_exact_fallback_case_count": 5,
+  "fallback_proxy_count": 80,
+  "proxy_evaluations_not_independent_cases": 192,
+  "moment_over_streamed_time_ratio_min_max": [
+    1.0455397642932418,
+    2.538953721145006
+  ],
+  "moment_over_cached_time_ratio_min_max": [
+    1.0276100718238512,
+    2.57186487928721
+  ],
+  "controls": {
+    "ranking_reversal_scaled_units": {
+      "D1_implementation_lower_values": [
+        0.0,
+        0.0078125
+      ],
+      "D1_argmax_without_certificate_wrong": true,
+      "exact_order_tail_and_branch_regret_proofs": "Reused pinned independent Fraction/isqrt receipt; not repeated here."
+    },
+    "weak_shape": {
+      "r": 1e-08,
+      "D2_positive_gain": 7.052369794346956e-34,
+      "stable_H2_reference": 7.052369794346956e-34,
+      "direct_matrix_float_value": 0.0,
+      "stable_H2_is_a_required_strong_reference": true
+    },
+    "underflow_refusals": 2,
+    "same_rho_separable": "exact scales collapse to one profile; pair search unnecessary",
+    "no_new_material_or_old_source_fix_claim": true
+  },
+  "material_fit_prediction_score_calls": 0,
+  "cases": [
+    {
+      "H": 8,
+      "rmax": 0.25,
+      "degree_min_max_if_used": [
+        3,
+        3
+      ],
+      "degree_counts": {
+        "3": 16
+      },
+      "fallback_proxies": 0,
+      "fallback_reasons": {
+        "moment_readout": 16
+      },
+      "tail_max_float_ideal_only": 4.483775961778617e-07,
+      "regret_float": 0.0,
+      "strict_adaptive_positive_first_actions": 8,
+      "strict_adaptive_gap_min_max": [
+        5.37344691433824e-05,
+        0.0007027526978899603
+      ],
+      "principal_array_workspace_estimate_bytes": {
+        "streamed": 3584,
+        "cached": 11264,
+        "moment": 3544
+      },
+      "common_named_input_array_bytes": 2304,
+      "named_input_plus_principal_workspace_estimate_bytes": {
+        "streamed": 5888,
+        "cached": 13568,
+        "moment": 5848
+      },
+      "principal_workspace_moment_over_streamed_ratio": 0.9888392857142857,
+      "principal_workspace_moment_over_cached_ratio": 0.3146306818181818,
+      "managed_tracemalloc_incremental_peak_bytes": {
+        "streamed": 7360,
+        "cached": 21784,
+        "moment": 8448
+      },
+      "managed_peak_moment_over_streamed_ratio": 1.1478260869565218,
+      "managed_peak_moment_over_cached_ratio": 0.3878075651854572,
+      "common_setup_seconds": 0.0027723000093828887,
+      "readout_wall_seconds_with_common_setup": {
+        "streamed_exact": 0.004260200017597526,
+        "cached_exact": 0.004178500006673858,
+        "moment_with_fallback": 0.00761770001554396
+      },
+      "moment_over_streamed_total_time_ratio": 1.7881085357677275,
+      "moment_over_cached_total_time_ratio": 1.8230704806454583,
+      "moment_slower_than_both_exact_in_this_single_ordered_run": true
+    },
+    {
+      "H": 8,
+      "rmax": 0.6,
+      "degree_min_max_if_used": null,
+      "degree_counts": {
+        "None": 16
+      },
+      "fallback_proxies": 16,
+      "fallback_reasons": {
+        "degree_not_smaller_than_H_use_exact": 16
+      },
+      "tail_max_float_ideal_only": 0.0,
+      "regret_float": 0.0,
+      "strict_adaptive_positive_first_actions": 8,
+      "strict_adaptive_gap_min_max": [
+        0.0003533886788869671,
+        0.004464941615120045
+      ],
+      "principal_array_workspace_estimate_bytes": {
+        "streamed": 3584,
+        "cached": 11264,
+        "moment": 3712
+      },
+      "common_named_input_array_bytes": 2304,
+      "named_input_plus_principal_workspace_estimate_bytes": {
+        "streamed": 5888,
+        "cached": 13568,
+        "moment": 6016
+      },
+      "principal_workspace_moment_over_streamed_ratio": 1.0357142857142858,
+      "principal_workspace_moment_over_cached_ratio": 0.32954545454545453,
+      "managed_tracemalloc_incremental_peak_bytes": {
+        "streamed": 7360,
+        "cached": 21448,
+        "moment": 9080
+      },
+      "managed_peak_moment_over_streamed_ratio": 1.233695652173913,
+      "managed_peak_moment_over_cached_ratio": 0.42334949645654607,
+      "common_setup_seconds": 0.0032042999955592677,
+      "readout_wall_seconds_with_common_setup": {
+        "streamed_exact": 0.004589199990732595,
+        "cached_exact": 0.004697799988207407,
+        "moment_with_fallback": 0.0058637999900383875
+      },
+      "moment_over_streamed_total_time_ratio": 1.2777390398936006,
+      "moment_over_cached_total_time_ratio": 1.2482012867210006,
+      "moment_slower_than_both_exact_in_this_single_ordered_run": true
+    },
+    {
+      "H": 8,
+      "rmax": 0.9,
+      "degree_min_max_if_used": null,
+      "degree_counts": {
+        "None": 16
+      },
+      "fallback_proxies": 16,
+      "fallback_reasons": {
+        "degree_not_smaller_than_H_use_exact": 16
+      },
+      "tail_max_float_ideal_only": 0.0,
+      "regret_float": 0.0,
+      "strict_adaptive_positive_first_actions": 8,
+      "strict_adaptive_gap_min_max": [
+        0.0007228566275172873,
+        0.012648004561411672
+      ],
+      "principal_array_workspace_estimate_bytes": {
+        "streamed": 3584,
+        "cached": 11264,
+        "moment": 3712
+      },
+      "common_named_input_array_bytes": 2304,
+      "named_input_plus_principal_workspace_estimate_bytes": {
+        "streamed": 5888,
+        "cached": 13568,
+        "moment": 6016
+      },
+      "principal_workspace_moment_over_streamed_ratio": 1.0357142857142858,
+      "principal_workspace_moment_over_cached_ratio": 0.32954545454545453,
+      "managed_tracemalloc_incremental_peak_bytes": {
+        "streamed": 7360,
+        "cached": 21448,
+        "moment": 9080
+      },
+      "managed_peak_moment_over_streamed_ratio": 1.233695652173913,
+      "managed_peak_moment_over_cached_ratio": 0.42334949645654607,
+      "common_setup_seconds": 0.0027870000049006194,
+      "readout_wall_seconds_with_common_setup": {
+        "streamed_exact": 0.004239500005496666,
+        "cached_exact": 0.004193900007521734,
+        "moment_with_fallback": 0.008642400003736839
+      },
+      "moment_over_streamed_total_time_ratio": 2.0385422791677446,
+      "moment_over_cached_total_time_ratio": 2.0607072148207513,
+      "moment_slower_than_both_exact_in_this_single_ordered_run": true
+    },
+    {
+      "H": 8,
+      "rmax": 0.99,
+      "degree_min_max_if_used": null,
+      "degree_counts": {
+        "None": 16
+      },
+      "fallback_proxies": 16,
+      "fallback_reasons": {
+        "tail_not_certified_within_cap_use_exact": 16
+      },
+      "tail_max_float_ideal_only": 0.0,
+      "regret_float": 0.0,
+      "strict_adaptive_positive_first_actions": 8,
+      "strict_adaptive_gap_min_max": [
+        0.00043931991018740513,
+        0.018505673470983072
+      ],
+      "principal_array_workspace_estimate_bytes": {
+        "streamed": 3584,
+        "cached": 11264,
+        "moment": 3712
+      },
+      "common_named_input_array_bytes": 2304,
+      "named_input_plus_principal_workspace_estimate_bytes": {
+        "streamed": 5888,
+        "cached": 13568,
+        "moment": 6016
+      },
+      "principal_workspace_moment_over_streamed_ratio": 1.0357142857142858,
+      "principal_workspace_moment_over_cached_ratio": 0.32954545454545453,
+      "managed_tracemalloc_incremental_peak_bytes": {
+        "streamed": 7360,
+        "cached": 21448,
+        "moment": 9080
+      },
+      "managed_peak_moment_over_streamed_ratio": 1.233695652173913,
+      "managed_peak_moment_over_cached_ratio": 0.42334949645654607,
+      "common_setup_seconds": 0.0028359999996609986,
+      "readout_wall_seconds_with_common_setup": {
+        "streamed_exact": 0.004344899993157014,
+        "cached_exact": 0.0042892999917967245,
+        "moment_with_fallback": 0.011031500005628914
+      },
+      "moment_over_streamed_total_time_ratio": 2.538953721145006,
+      "moment_over_cached_total_time_ratio": 2.57186487928721,
+      "moment_slower_than_both_exact_in_this_single_ordered_run": true
+    },
+    {
+      "H": 64,
+      "rmax": 0.25,
+      "degree_min_max_if_used": [
+        3,
+        3
+      ],
+      "degree_counts": {
+        "3": 16
+      },
+      "fallback_proxies": 0,
+      "fallback_reasons": {
+        "moment_readout": 16
+      },
+      "tail_max_float_ideal_only": 4.483775961778617e-07,
+      "regret_float": 0.0,
+      "strict_adaptive_positive_first_actions": 8,
+      "strict_adaptive_gap_min_max": [
+        4.271639244461199e-05,
+        0.0005402470065748143
+      ],
+      "principal_array_workspace_estimate_bytes": {
+        "streamed": 43008,
+        "cached": 534528,
+        "moment": 4888
+      },
+      "common_named_input_array_bytes": 16640,
+      "named_input_plus_principal_workspace_estimate_bytes": {
+        "streamed": 59648,
+        "cached": 551168,
+        "moment": 21528
+      },
+      "principal_workspace_moment_over_streamed_ratio": 0.11365327380952381,
+      "principal_workspace_moment_over_cached_ratio": 0.009144516283524905,
+      "managed_tracemalloc_incremental_peak_bytes": {
+        "streamed": 175168,
+        "cached": 1053512,
+        "moment": 20096
+      },
+      "managed_peak_moment_over_streamed_ratio": 0.11472415052977712,
+      "managed_peak_moment_over_cached_ratio": 0.01907524546469333,
+      "common_setup_seconds": 0.01788020000094548,
+      "readout_wall_seconds_with_common_setup": {
+        "streamed_exact": 0.021495499997399747,
+        "cached_exact": 0.020184200009680353,
+        "moment_with_fallback": 0.02247440000064671
+      },
+      "moment_over_streamed_total_time_ratio": 1.0455397642932418,
+      "moment_over_cached_total_time_ratio": 1.1134649869634652,
+      "moment_slower_than_both_exact_in_this_single_ordered_run": true
+    },
+    {
+      "H": 64,
+      "rmax": 0.6,
+      "degree_min_max_if_used": [
+        8,
+        9
+      ],
+      "degree_counts": {
+        "9": 12,
+        "8": 4
+      },
+      "fallback_proxies": 0,
+      "fallback_reasons": {
+        "moment_readout": 16
+      },
+      "tail_max_float_ideal_only": 9.865408695564123e-07,
+      "regret_float": 0.0,
+      "strict_adaptive_positive_first_actions": 8,
+      "strict_adaptive_gap_min_max": [
+        0.0002769414597727014,
+        0.0033941469193684223
+      ],
+      "principal_array_workspace_estimate_bytes": {
+        "streamed": 43008,
+        "cached": 534528,
+        "moment": 10312
+      },
+      "common_named_input_array_bytes": 16640,
+      "named_input_plus_principal_workspace_estimate_bytes": {
+        "streamed": 59648,
+        "cached": 551168,
+        "moment": 26952
+      },
+      "principal_workspace_moment_over_streamed_ratio": 0.23976934523809523,
+      "principal_workspace_moment_over_cached_ratio": 0.019291786398467434,
+      "managed_tracemalloc_incremental_peak_bytes": {
+        "streamed": 175296,
+        "cached": 1053640,
+        "moment": 34736
+      },
+      "managed_peak_moment_over_streamed_ratio": 0.19815626140927345,
+      "managed_peak_moment_over_cached_ratio": 0.03296761702289207,
+      "common_setup_seconds": 0.016714299999875948,
+      "readout_wall_seconds_with_common_setup": {
+        "streamed_exact": 0.01857880000898149,
+        "cached_exact": 0.018683500005863607,
+        "moment_with_fallback": 0.025506500009214506
+      },
+      "moment_over_streamed_total_time_ratio": 1.3728819943636823,
+      "moment_over_cached_total_time_ratio": 1.3651885354034081,
+      "moment_slower_than_both_exact_in_this_single_ordered_run": true
+    },
+    {
+      "H": 64,
+      "rmax": 0.9,
+      "degree_min_max_if_used": [
+        38,
+        39
+      ],
+      "degree_counts": {
+        "39": 8,
+        "38": 8
+      },
+      "fallback_proxies": 0,
+      "fallback_reasons": {
+        "moment_readout": 16
+      },
+      "tail_max_float_ideal_only": 9.8769079333654e-07,
+      "regret_float": 0.0,
+      "strict_adaptive_positive_first_actions": 8,
+      "strict_adaptive_gap_min_max": [
+        0.0007271433785119401,
+        0.009224576461777233
+      ],
+      "principal_array_workspace_estimate_bytes": {
+        "streamed": 43008,
+        "cached": 534528,
+        "moment": 37432
+      },
+      "common_named_input_array_bytes": 16640,
+      "named_input_plus_principal_workspace_estimate_bytes": {
+        "streamed": 59648,
+        "cached": 551168,
+        "moment": 54072
+      },
+      "principal_workspace_moment_over_streamed_ratio": 0.8703497023809523,
+      "principal_workspace_moment_over_cached_ratio": 0.07002813697318008,
+      "managed_tracemalloc_incremental_peak_bytes": {
+        "streamed": 175296,
+        "cached": 1053640,
+        "moment": 107936
+      },
+      "managed_peak_moment_over_streamed_ratio": 0.6157356699525374,
+      "managed_peak_moment_over_cached_ratio": 0.10244106146311834,
+      "common_setup_seconds": 0.017160400006105192,
+      "readout_wall_seconds_with_common_setup": {
+        "streamed_exact": 0.01897070000995882,
+        "cached_exact": 0.01918610000575427,
+        "moment_with_fallback": 0.046894800005247816
+      },
+      "moment_over_streamed_total_time_ratio": 2.4719593889856473,
+      "moment_over_cached_total_time_ratio": 2.444207003569417,
+      "moment_slower_than_both_exact_in_this_single_ordered_run": true
+    },
+    {
+      "H": 64,
+      "rmax": 0.99,
+      "degree_min_max_if_used": null,
+      "degree_counts": {
+        "None": 16
+      },
+      "fallback_proxies": 16,
+      "fallback_reasons": {
+        "tail_not_certified_within_cap_use_exact": 16
+      },
+      "tail_max_float_ideal_only": 0.0,
+      "regret_float": 0.0,
+      "strict_adaptive_positive_first_actions": 8,
+      "strict_adaptive_gap_min_max": [
+        0.0006930224609875899,
+        0.012577293365677769
+      ],
+      "principal_array_workspace_estimate_bytes": {
+        "streamed": 43008,
+        "cached": 534528,
+        "moment": 43136
+      },
+      "common_named_input_array_bytes": 16640,
+      "named_input_plus_principal_workspace_estimate_bytes": {
+        "streamed": 59648,
+        "cached": 551168,
+        "moment": 59776
+      },
+      "principal_workspace_moment_over_streamed_ratio": 1.0029761904761905,
+      "principal_workspace_moment_over_cached_ratio": 0.0806992337164751,
+      "managed_tracemalloc_incremental_peak_bytes": {
+        "streamed": 175296,
+        "cached": 1053640,
+        "moment": 184088
+      },
+      "managed_peak_moment_over_streamed_ratio": 1.0501551661190216,
+      "managed_peak_moment_over_cached_ratio": 0.17471622185945865,
+      "common_setup_seconds": 0.017352899987599812,
+      "readout_wall_seconds_with_common_setup": {
+        "streamed_exact": 0.019157099988660775,
+        "cached_exact": 0.01984229999652598,
+        "moment_with_fallback": 0.026594999988446943
+      },
+      "moment_over_streamed_total_time_ratio": 1.3882581394986044,
+      "moment_over_cached_total_time_ratio": 1.3403184103205392,
+      "moment_slower_than_both_exact_in_this_single_ordered_run": true
+    },
+    {
+      "H": 128,
+      "rmax": 0.25,
+      "degree_min_max_if_used": [
+        3,
+        3
+      ],
+      "degree_counts": {
+        "3": 16
+      },
+      "fallback_proxies": 0,
+      "fallback_reasons": {
+        "moment_readout": 16
+      },
+      "tail_max_float_ideal_only": 4.483775961778617e-07,
+      "regret_float": 0.0,
+      "strict_adaptive_positive_first_actions": 8,
+      "strict_adaptive_gap_min_max": [
+        4.221153588072496e-05,
+        0.0005331665857698695
+      ],
+      "principal_array_workspace_estimate_bytes": {
+        "streamed": 149504,
+        "cached": 2115584,
+        "moment": 6424
+      },
+      "common_named_input_array_bytes": 33024,
+      "named_input_plus_principal_workspace_estimate_bytes": {
+        "streamed": 182528,
+        "cached": 2148608,
+        "moment": 39448
+      },
+      "principal_workspace_moment_over_streamed_ratio": 0.04296875,
+      "principal_workspace_moment_over_cached_ratio": 0.003036513794772507,
+      "managed_tracemalloc_incremental_peak_bytes": {
+        "streamed": 675008,
+        "cached": 4199368,
+        "moment": 34944
+      },
+      "managed_peak_moment_over_streamed_ratio": 0.05176827533895895,
+      "managed_peak_moment_over_cached_ratio": 0.008321252150323573,
+      "common_setup_seconds": 0.03420249999908265,
+      "readout_wall_seconds_with_common_setup": {
+        "streamed_exact": 0.03734460000123363,
+        "cached_exact": 0.03849319998698775,
+        "moment_with_fallback": 0.03955600000335835
+      },
+      "moment_over_streamed_total_time_ratio": 1.0592160580660033,
+      "moment_over_cached_total_time_ratio": 1.0276100718238512,
+      "moment_slower_than_both_exact_in_this_single_ordered_run": true
+    },
+    {
+      "H": 128,
+      "rmax": 0.6,
+      "degree_min_max_if_used": [
+        8,
+        9
+      ],
+      "degree_counts": {
+        "9": 12,
+        "8": 4
+      },
+      "fallback_proxies": 0,
+      "fallback_reasons": {
+        "moment_readout": 16
+      },
+      "tail_max_float_ideal_only": 9.865408695564123e-07,
+      "regret_float": 0.0,
+      "strict_adaptive_positive_first_actions": 8,
+      "strict_adaptive_gap_min_max": [
+        0.0002734055387890802,
+        0.00334662906761006
+      ],
+      "principal_array_workspace_estimate_bytes": {
+        "streamed": 149504,
+        "cached": 2115584,
+        "moment": 14920
+      },
+      "common_named_input_array_bytes": 33024,
+      "named_input_plus_principal_workspace_estimate_bytes": {
+        "streamed": 182528,
+        "cached": 2148608,
+        "moment": 47944
+      },
+      "principal_workspace_moment_over_streamed_ratio": 0.0997966609589041,
+      "principal_workspace_moment_over_cached_ratio": 0.007052426185866409,
+      "managed_tracemalloc_incremental_peak_bytes": {
+        "streamed": 675128,
+        "cached": 4199488,
+        "moment": 61992
+      },
+      "managed_peak_moment_over_streamed_ratio": 0.09182258771669964,
+      "managed_peak_moment_over_cached_ratio": 0.014761799533657437,
+      "common_setup_seconds": 0.03842420000000857,
+      "readout_wall_seconds_with_common_setup": {
+        "streamed_exact": 0.04198809999797959,
+        "cached_exact": 0.043117700013681315,
+        "moment_with_fallback": 0.04999830000451766
+      },
+      "moment_over_streamed_total_time_ratio": 1.1907731001622723,
+      "moment_over_cached_total_time_ratio": 1.1595771571455138,
+      "moment_slower_than_both_exact_in_this_single_ordered_run": true
+    },
+    {
+      "H": 128,
+      "rmax": 0.9,
+      "degree_min_max_if_used": [
+        38,
+        39
+      ],
+      "degree_counts": {
+        "39": 8,
+        "38": 8
+      },
+      "fallback_proxies": 0,
+      "fallback_reasons": {
+        "moment_readout": 16
+      },
+      "tail_max_float_ideal_only": 9.8769079333654e-07,
+      "regret_float": 0.0,
+      "strict_adaptive_positive_first_actions": 8,
+      "strict_adaptive_gap_min_max": [
+        0.0007277551854545285,
+        0.009069197099248291
+      ],
+      "principal_array_workspace_estimate_bytes": {
+        "streamed": 149504,
+        "cached": 2115584,
+        "moment": 57400
+      },
+      "common_named_input_array_bytes": 33024,
+      "named_input_plus_principal_workspace_estimate_bytes": {
+        "streamed": 182528,
+        "cached": 2148608,
+        "moment": 90424
+      },
+      "principal_workspace_moment_over_streamed_ratio": 0.3839362157534247,
+      "principal_workspace_moment_over_cached_ratio": 0.027131988141335914,
+      "managed_tracemalloc_incremental_peak_bytes": {
+        "streamed": 675128,
+        "cached": 4199488,
+        "moment": 196632
+      },
+      "managed_peak_moment_over_streamed_ratio": 0.2912514367645839,
+      "managed_peak_moment_over_cached_ratio": 0.04682285078561958,
+      "common_setup_seconds": 0.04206390000763349,
+      "readout_wall_seconds_with_common_setup": {
+        "streamed_exact": 0.045961100011481903,
+        "cached_exact": 0.04676340000878554,
+        "moment_with_fallback": 0.08305220001784619
+      },
+      "moment_over_streamed_total_time_ratio": 1.807010711168755,
+      "moment_over_cached_total_time_ratio": 1.7760085879607341,
+      "moment_slower_than_both_exact_in_this_single_ordered_run": true
+    },
+    {
+      "H": 128,
+      "rmax": 0.99,
+      "degree_min_max_if_used": null,
+      "degree_counts": {
+        "None": 16
+      },
+      "fallback_proxies": 16,
+      "fallback_reasons": {
+        "tail_not_certified_within_cap_use_exact": 16
+      },
+      "tail_max_float_ideal_only": 0.0,
+      "regret_float": 0.0,
+      "strict_adaptive_positive_first_actions": 8,
+      "strict_adaptive_gap_min_max": [
+        0.0007052909951066229,
+        0.012321961036886646
+      ],
+      "principal_array_workspace_estimate_bytes": {
+        "streamed": 149504,
+        "cached": 2115584,
+        "moment": 149632
+      },
+      "common_named_input_array_bytes": 33024,
+      "named_input_plus_principal_workspace_estimate_bytes": {
+        "streamed": 182528,
+        "cached": 2148608,
+        "moment": 182656
+      },
+      "principal_workspace_moment_over_streamed_ratio": 1.0008561643835616,
+      "principal_workspace_moment_over_cached_ratio": 0.07072846079380446,
+      "managed_tracemalloc_incremental_peak_bytes": {
+        "streamed": 675128,
+        "cached": 4199488,
+        "moment": 692112
+      },
+      "managed_peak_moment_over_streamed_ratio": 1.0251567110236874,
+      "managed_peak_moment_over_cached_ratio": 0.16480866238931985,
+      "common_setup_seconds": 0.043631799999275245,
+      "readout_wall_seconds_with_common_setup": {
+        "streamed_exact": 0.04748579999431968,
+        "cached_exact": 0.04835679999087006,
+        "moment_with_fallback": 0.0571401000051992
+      },
+      "moment_over_streamed_total_time_ratio": 1.2033092000563197,
+      "moment_over_cached_total_time_ratio": 1.1816352615555095,
+      "moment_slower_than_both_exact_in_this_single_ordered_run": true
+    }
+  ],
+  "scope_limits": [
+    "One ordered timing, no speed rerun or universal speed ranking",
+    "Scores/tails readout timing includes common setup; adaptive lo/hi/argmax/regret outside timed blocks",
+    "Principal array workspace estimates and managed tracemalloc peaks, not processRSS or rigorous completepeak accounting",
+    "FullHposterior/commonBxHprofiles retained; proxy-specific moments, not universal posterior compression",
+    "Float regret0 is within this declared model/run; ideal tail excludes IEEEroundoff/posterior/modelerror",
+    "Old frozen source limitations remain; no new material effect, labcost reduction, topconference readiness or novel kernel claim"
+  ],
+  "new_SUT_or_timing_or_material_runs_by_summarizer": 0,
+  "independent_numeric_recheck": "Separate priorart agent, not duplicated here."
+}

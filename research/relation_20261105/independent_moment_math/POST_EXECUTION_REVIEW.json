@@ -1,0 +1,30 @@
+{
+  "actual_review_utc": "2026-11-05T13:40:10.421700+00:00",
+  "actual_review_asia_shanghai": "2026-11-05T21:40:10.421700+08:00",
+  "status": "PASS_READ_ONLY_POST_EXECUTION_REVIEW",
+  "reviewer_action": "Read frozen result and verified current source/plan hashes; inspected exact fraction fields. Did not import/rerun audit or producer. Root performed the approved unique execution.",
+  "result_sha256": "1a2a6f67ed1a294db3c7beff2d3070684ada22d7f8feb47c37c80f7a703e149c",
+  "plan_sha256": "2abac907b7d190a0ca2b40bf803f153cca44667070fcebd18f33f0c575cfc498",
+  "source_sha256": "96ffcd7b473b3fc0281d79ebacb6cdebe0b0ffd7921a2c3f5e5e3dcc53fa41fd",
+  "source_unchanged": true,
+  "pass_families": 5,
+  "fixed_gain_comparisons": 28,
+  "adaptive_policy_comparisons": 16,
+  "all_comparisons_have_unique_fixed_case_degree_identity": true,
+  "all_actual_policy_regret_upper_bounds_inside_certificates": true,
+  "negative_controls_retained": {
+    "D1_rank_reversal": "Truncated policy selectsproxy2 while fullkernelfavorsproxy1; actualregret isstrictlypositiveandinsidecertificate. This is an intended limitation, not erased.",
+    "near_one": "At rho=.999,D8 actualtail lower exceeds scaledtolerance1/1000; no unconditional lowdimension/speedclaim.",
+    "same_F": "Channels haveequalF butadaptivevalues9s/16 versus7s/16; observedbranchesareessential."
+  },
+  "new_audit_or_producer_execution_by_reviewer": 0,
+  "material_response_reads_fits_scores": 0,
+  "objection": null,
+  "limits": [
+    "Finite rational mathematical controls, not material efficacy or independent material confirmation.",
+    "Kernel model formula is an input premise; no repeatedCDFintegration.",
+    "Certificate covers truncation in the stated pureR-first two-stage family, not posterior misspecification/continuousfutureintegration or fullbudgetglobalregret.",
+    "No runtime/memory performance claim established."
+  ],
+  "next": "Wait for a separate root-assigned frozen-source static condition review; do not independently modify or execute producer."
+}

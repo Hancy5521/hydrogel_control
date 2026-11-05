@@ -43,3 +43,7 @@ Added an isolated four-module future unit-level calibration/confirmation helper,
 ## 5 November 2026 — Separate Eigen-inspired feasibility branch
 
 Preserved the MLST parent and every earlier scientific file. Added two-source admission, preregistered eight-policy matched-budget pilot, independent synthetic/forecast/score audits, exact cost and false-certainty controls with independent GF(2) verification, Chinese mathematical/program documentation and pinned public data retrieval. The current predictive allocation candidate failed the registered primary comparison and is stopped; no tuning on this consumed evaluation is authorized. The local complete ZIP passed independent integrity and relocation checks. Public Git contains the documented subset, without native gzip, query values or forecast NPZ payloads. These results are exploratory and are not integrated into the archived MLST paper.
+
+## 5 November 2026 — Relation-moment information readout
+
+Added finite-relation branch-preserving controls, independently checked CRPS/CDF decomposition and exact moment-tail/policy bounds, plus12initial and16separately registered post-hoc scaling cases. The first12all lose on time; larger-H gains and near-one fallback losses are retained. New source/model modules remain separate from the earlier stopped allocator and MLST frozen science. The current complete local increment is6.49MB; public export omits private run-log snapshots and downloaded primary papers. No new material fit, prediction, target score, wet experiment or DFT run was performed.

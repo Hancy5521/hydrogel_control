@@ -1,0 +1,64 @@
+{
+  "actual_utc": "2026-11-05 12:54:40 UTC",
+  "source": "GitHub connected read-only tools",
+  "repositories": [
+    {
+      "repository": "frazier-lab/partial_kgfn",
+      "official_url": "https://github.com/frazier-lab/partial_kgfn",
+      "branch": "main",
+      "commit_sha": "501924b9568f834920e9e5502135107d3be85a02",
+      "commit_utc": "2025-06-21T20:39:02Z",
+      "license_metadata_endpoint": "Unavailable: connector /license endpoint not allowed; actual LICENSE file read instead",
+      "read_depth": "README and full MIT LICENSE; no algorithm code inspected",
+      "license": {
+        "identifier": "MIT",
+        "file_blob_sha": "849746982ff0249fcb5aec48012a8d39aa5c9021",
+        "reading": "full LICENSE"
+      },
+      "README_blob_sha": "fb11979ee46a279e3c0eb6e10d109433567c2fe0"
+    },
+    {
+      "repository": "TUHH-ICS/2024-code-L4DC-Towards-Safe-Multi-Task-Bayesian-Optimization",
+      "official_url": "https://github.com/TUHH-ICS/2024-code-L4DC-Towards-Safe-Multi-Task-Bayesian-Optimization",
+      "branch": "main",
+      "commit_sha": "51402c539da27429d53761d5ebdcfc096f23cad7",
+      "commit_utc": "2026-09-05T07:22:02Z",
+      "license_metadata_endpoint": "Unavailable: connector /license endpoint not allowed; actual LICENSE file read instead",
+      "read_depth": "Official repository metadata and LICENSE first12lines (GPL3 header); no algorithm code read",
+      "license": {
+        "identifier": "GPL-3.0",
+        "file_blob_sha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+        "reading": "header/preamble only; no code copied"
+      }
+    },
+    {
+      "repository": "meta-pytorch/botorch",
+      "official_url": "https://github.com/meta-pytorch/botorch",
+      "branch": "main",
+      "commit_sha": "b0dd01be61d517c387e234903a6e2cc38c057ea2",
+      "commit_utc": "2026-10-16T15:47:26Z",
+      "license_metadata_endpoint": "Unavailable: connector /license endpoint not allowed; actual LICENSE file read instead",
+      "read_depth": "LICENSE and multi_step_lookahead.py first125lines: qMultiStepLookahead API/default multistep KG; no execution",
+      "license": {
+        "identifier": "MIT",
+        "file_blob_sha": "b93be90515ccd0b9daedaa589e42bf5929693f1f",
+        "reading": "full LICENSE"
+      },
+      "selected_code_blob_sha": "0354878be340c2f7d1cc2dae287776e8b679ca16"
+    }
+  ],
+  "no_source_code_execution": true,
+  "no_dependency_installation": true,
+  "no_paper_formula_claimed_new": true,
+  "redirect": {
+    "requested": "pytorch/botorch",
+    "canonical": "meta-pytorch/botorch"
+  },
+  "failures": [
+    {
+      "endpoint_pattern": "https://api.github.com/repos/<repo>/license",
+      "repos": 3,
+      "error": "connector rejected endpoint, no repeated attempts; actual LICENSE paths fetched through fetch_file"
+    }
+  ]
+}

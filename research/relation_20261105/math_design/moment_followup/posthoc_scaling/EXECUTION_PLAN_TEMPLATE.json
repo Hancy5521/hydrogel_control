@@ -1,0 +1,51 @@
+{
+  "kind": "posthoc_moment_computational_scaling",
+  "status": "TEMPLATE",
+  "registered_actual_utc": null,
+  "source_sha256": {
+    "run_scaling_extension.py": "3762ce367677ab5b1443eba090b79e850ca6c049607f57ed032c69f93da7dfd7"
+  },
+  "frozen_source_sha256": {
+    "moment_core.py": "fa2e63d672a23cc490786ca21f03161122e7670d9c9d8457f6a123a710025de8",
+    "run_moment_control.py": "d55f39d9cff4931cb3bd63a7669b804934764a755fc23e5c064bd1a189823a62"
+  },
+  "prior_result": {
+    "file": "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\math_design\\moment_followup\\execution_once\\RESULTS.json",
+    "sha256": "cc48fe6581545569760d544da6d5a1342ce36a2ab0855a1fb3fad80787c37893"
+  },
+  "configuration": {
+    "version": "posthoc_moment_scaling_extension_v1",
+    "hypotheses": [
+      256,
+      512,
+      1024,
+      2048
+    ],
+    "rmax": [
+      0.25,
+      0.6,
+      0.9,
+      0.99
+    ],
+    "repair_actions": 8,
+    "proxies": 16,
+    "outcomes_per_repair": 2,
+    "epsilon_CRPS": 1e-06,
+    "degree_cap": 64,
+    "main_case_count": 16,
+    "timing_repetitions": 1,
+    "BLAS_threads": 1,
+    "case_order": "H ascending outer loop, rmax ascending inner loop",
+    "frozen_function_reused_without_modification": "run_moment_control.run_case",
+    "prior_H_8_64_128_reexecuted": false,
+    "mathematical_controls_reexecuted": false,
+    "minimum_initial_free_physical_bytes": 4294967296,
+    "conservative_maximum_temporary_reserve_bytes": 1610612736,
+    "largest_cached_kernel_bank_numeric_bytes": 536870912,
+    "timing_is_not_end_to_end_policy_latency": true,
+    "exploratory_posthoc_scaling_not_independent_material_confirmation": true,
+    "outcome_based_case_filtering_or_retuning": false,
+    "material_execution": false
+  },
+  "no_material_execution": true
+}

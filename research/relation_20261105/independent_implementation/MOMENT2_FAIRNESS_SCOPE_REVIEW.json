@@ -1,0 +1,105 @@
+{
+  "actual_utc": "2026-11-05T13:50:26.880203+00:00",
+  "status": "PASS_FROZEN_12_CASE_SCORE_READOUT_ONLY_PENDING_ROOT_APPROVAL",
+  "scope": "Independent static experimental-fairness/numeric-scope/file-boundary gate; mathematical coefficient/tail implementation mapping delegated separately, no duplicate proof audit.",
+  "reviewed_frozen_source_sha256": {
+    "moment_core.py": "fa2e63d672a23cc490786ca21f03161122e7670d9c9d8457f6a123a710025de8",
+    "run_moment_control.py": "d55f39d9cff4931cb3bd63a7669b804934764a755fc23e5c064bd1a189823a62",
+    "EXECUTION_PLAN_TEMPLATE.json": "24681ff41ea7ac6c9cacc366e3a7327c4a67e33d907f2d765e9213a14b418dbd"
+  },
+  "old_two_modules_actual_sha256_unchanged": {
+    "relation_core.py": "37d35e51701961beffb57da89c03cbe5305f39a7087375d78397f2e6183dfa91",
+    "run_synthetic.py": "024cb2755cc9cc7a37c1b1242216bb1db1e2e56a1d74fa9f9f6173cc44a2f60f"
+  },
+  "AST_only_configuration_matches_template": true,
+  "main_case_count": 12,
+  "H": [
+    8,
+    64,
+    128
+  ],
+  "rmax": [
+    0.25,
+    0.6,
+    0.9,
+    0.99
+  ],
+  "branch_rows": 16,
+  "proxies": 16,
+  "source_imports_static": {
+    "moment_core.py": [
+      "math",
+      "numpy"
+    ],
+    "run_moment_control.py": [
+      "argparse",
+      "datetime",
+      "fractions",
+      "hashlib",
+      "json",
+      "math",
+      "moment_core",
+      "numpy",
+      "pathlib",
+      "sys",
+      "threadpoolctl",
+      "time",
+      "tracemalloc"
+    ]
+  },
+  "prior_independent_receipts_verified_without_reruns": {
+    "centered_CRPS_identity": {
+      "file": "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\independent_math\\execution_v2_once\\INDEPENDENT_MATH_RESULT.json",
+      "sha256": "65c1a453039d4e8efec6cb9a99c30d9a6154110596941c443df7ec33cccf47e4",
+      "reuse_existing_receipt_only": true
+    },
+    "exact_moment_interval": {
+      "file": "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\independent_moment_math\\execution_20261105T133636538641Z\\INDEPENDENT_MOMENT_MATH_AUDIT.json",
+      "sha256": "1a2a6f67ed1a294db3c7beff2d3070684ada22d7f8feb47c37c80f7a703e149c",
+      "reuse_existing_receipt_only": true
+    }
+  },
+  "fair_comparators": {
+    "exact_streamed": "Build oneHxHkernel perproxy, apply all16posteriorrows via W@S, take row quadratic forms; no kernel bank, posterior outer bank or eigendecomposition. Competent low-memory exact-formula baseline.",
+    "exact_cached": "OneoptionalBxHxHkernel bank, then same strong perproxy dense multiplication. Not the only exact baseline; stack/preprocessing allocation included in measured call.",
+    "moment_streamed": "Validation, D/tail selection, proxy-specific powers, coefficients, moments, squaring, score construction and exact fallbacks all occur inside timed call. No free prebuilt moments or kernel bank.",
+    "common_prep": "Exact rational finite posterior generation and all common W/rho/scale/probability arrays are timed once, then setup time added to every per-method total.",
+    "posterior_storage": "FullHposterior rows and allBxHprofiles remain; proxy-specific moments do not constitute one universalDdimensional code. Named common-array count omits small auxiliary state arrays and is not a complete process-memory sum.",
+    "all_actions": "Same unrestricted16candidateproxy set for everybranch/method. No heterogeneous budget/instrument costs are modeled here; restrictedR-firsttwo-stage score task only, not full material agent."
+  },
+  "memory_and_timing_limits": [
+    "Hand-counted algorithm_workspace_numeric_bytes is an estimate of principal arrays only: full kernel-building temporaries, stacking overlaps, power-loop vectors and allocator effects are not an exact peak accounting. README states this correctly.",
+    "Per-call tracemalloc is managed newly tracked allocations, not whole-processRSS. Previously retained result arrays and common inputs do not become a new independent method peak. No process memory superiority can follow from hand counts alone.",
+    "Oneordered timing permethod, oneBLASthread, no robust speed ranking or new acceleration claim. Both streamed and cached exact baselines retained.",
+    "Timed calls end at branch-score/tail readout. Subsequent adaptive_value, lo/hiapplication, argmax and regret diagnostics occur outside timed blocks. Do not describe reported totals as end-to-end two-stage-policy or certificate-application time."
+  ],
+  "degree_tail_and_fallback_scope": [
+    "D chosen perproxy from requested epsilon1e-6/cap64; ifD>=H or bound not metwithin64, same exact perproxy algorithm is used. Fallback cost remains in moment timing; cannot silently relax epsilon to rescue speed.",
+    "Fallback tail0 means no truncation, not zero floating-point error. Code and README explicitly state this.",
+    "Numeric lo/hi are float evaluations of an ideal-arithmetic truncation bound, not directed IEEE intervals. Comparisons allow separate2e-12arithmetic tolerance; posterior/model/calibration error excluded.",
+    "Range checks reject selected power/product/square/tail/final-expectation underflow paths, but this is not universal extreme-number or cancellation robustness. No general boundary test sweep authorized."
+  ],
+  "controls_and_outcome_interpretation": [
+    "Stable rationalizedH2 formula is included for symmetric1e-8 positive shape gain, so cancellation-prone full matrix is not sole correctness oracle.",
+    "Two explicit underflow paths must refuse; the first tiny-rho case may stop already at positive tail display underflow rather than uniquely proving a later feature path. Report actual refusal scope, not every guard independently tested.",
+    "Same-rho/scaledproxy control acknowledges analytic scale ordering; no pair-search gain can be claimed there.",
+    "Strict adaptive gain is computed as Emax minus maxE from the same exact-formula score grid and branch probabilities; only differences>2e-12count. Changed indices alone do not count, and no positive gap is promised before execution.",
+    "Two prior independent mathematical receipts are hashed/reused only, not rerun. D1smoke is not a second independent rational proof."
+  ],
+  "file_and_label_boundary": {
+    "new_material_response_reads_fits_predictions_scores": 0,
+    "SUT_imports_or_executions_by_reviewer": 0,
+    "source_hardcoded_gzip_NPZ_ACTIONS_or_material_paths": false,
+    "fixture_labels": "Only exact hypothetical finite likelihood/posterior weights and deterministic correlation profiles; not real material labels.",
+    "source_end_hash_check_present": true,
+    "actual_protocol_approval_and_exclusive_output_required": true
+  },
+  "necessary_source_changes_for_this_registered_bounded_scope": [],
+  "nonblocking_required_report_wording": [
+    "Score-readout time only, not end-to-end planner latency",
+    "Principal-array estimates and managed peak, not exactRSS",
+    "Classical expansion/control adaptation, not demonstrated new algorithm/material advantage",
+    "Oldtwo-module generalfloat limitations remain unchanged"
+  ],
+  "execution_decision": "PASS only the12fixed moderate/near-one fallback fixtures plus declared limitedcontrols after root registers actualUTC/exact plan and approves. No numerical execution performed by reviewer."
+}

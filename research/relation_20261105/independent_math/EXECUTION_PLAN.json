@@ -1,0 +1,134 @@
+{
+  "artifact_kind": "INDEPENDENT_RELATION_COMPLEMENTARITY_MATH_PREFIT_EXECUTION_PLAN",
+  "actual_registered_utc": "2026-11-05T13:00:20.071319+00:00",
+  "actual_registered_asia_shanghai": "2026-11-05T21:00:20.071319+08:00",
+  "source_file": "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\independent_math\\independent_complementarity_audit.py",
+  "source_sha256": "220948288ccaeadfea4a0faabd818ed43eea1272804f69eb9b69cad1e9b3b687",
+  "source_validation": "AST_PARSE_ONLY; auditor not imported/executed",
+  "derived_note_sha256": "e89426b23f19390c6ee3001d54ba56bb74f8d2e650c1b5510607be3805f442a6",
+  "scientific_question": "Under declared conditional independence and theta-invariant proxy marginal, does true expected-CRPS interaction equal tr(F_A S_B), and does centered Gaussian CDF integration agree with the candidate kernel?",
+  "reference_claim_to_falsify": "S_hk=(1-sqrt(1-rho_h*rho_k))/sqrt(pi); mixed Gaussian common standard-normal target/proxy margins",
+  "producer_import_or_result_reads": false,
+  "material_input_files": [],
+  "material_gzip_or_responses_or_scores_read": false,
+  "finite_exact_cases": [
+    {
+      "name": "perfect_sign_relation",
+      "expected_synergy": "1/2",
+      "A_target_main_gain": "0"
+    },
+    {
+      "name": "noisy_A",
+      "expected_synergy": "1/8",
+      "A_accuracy": "3/4"
+    },
+    {
+      "name": "noisy_Y",
+      "expected_synergy": "1/8",
+      "Y_flip": "1/4"
+    },
+    {
+      "name": "noisy_A_and_Y",
+      "expected_synergy": "1/32"
+    },
+    {
+      "name": "same_relation",
+      "expected_synergy": "0"
+    },
+    {
+      "name": "theta_point_mass",
+      "expected_synergy": "0",
+      "B_main_gain_positive": true
+    },
+    {
+      "name": "B_informs_theta",
+      "expected_synergy": "-1/8",
+      "expected_trace_identity_failure": true,
+      "B_theta_accuracy": "3/4"
+    },
+    {
+      "name": "duplicated_unit",
+      "expected_synergy": "-1/2",
+      "expected_trace_identity_failure": true
+    },
+    {
+      "name": "A_has_target_main_effect",
+      "A_main_gain_strictly_positive": true,
+      "exact_trace_identity_required": true,
+      "do_not_call_total_gain_pure_synergy": true
+    }
+  ],
+  "continuous_gaussian_panel": {
+    "rho_values": [
+      -0.8,
+      -0.6,
+      0.0,
+      0.6,
+      0.8
+    ],
+    "theta_weights": [
+      "0.1",
+      "0.2",
+      "0.4",
+      "0.2",
+      "0.1"
+    ],
+    "P_A0_given_theta": [
+      "0.9",
+      "0.7",
+      "0.5",
+      "0.3",
+      "0.1"
+    ],
+    "z_truncation_abs": 10,
+    "fixed_quadrature_levels": [
+      {
+        "normal_B_nodes": 64,
+        "z_Legendre_nodes": 256
+      },
+      {
+        "normal_B_nodes": 128,
+        "z_Legendre_nodes": 512
+      }
+    ],
+    "symmetric_rho_indices": [
+      1,
+      3
+    ],
+    "uncentered_positive_tail_limits": [
+      8,
+      16
+    ],
+    "uncentered_z_Legendre_nodes": 512,
+    "independent_energy_integral": "Adaptive integral of 2*x*NormalDensity(x; variance=(rho_h-rho_k)^2+sigma_h^2+sigma_k^2), x=0..infinity; no closed E|N| formula used.",
+    "tail_bound": "For centered entries outside +/-L, Cauchy-Schwarz and total variance bound absolute tail by 2*phi(L); no material assumptions."
+  },
+  "independent_methods": [
+    "Exact Fraction joint-table enumeration of Bayes expected CRPS risks for all observations",
+    "Centered conditional CDF B/z product quadrature with fixed two levels",
+    "Independent absolute-value energy density quadrature from shared latent B and independent residual coefficients"
+  ],
+  "tolerances": {
+    "cdf_fixed_level_max_difference": 2e-07,
+    "cdf_vs_closed_max_abs": 2e-07,
+    "cdf_vs_energy_max_abs": 2e-07,
+    "energy_vs_closed_max_abs": 2e-10,
+    "energy_quad_eps_abs": 1e-11,
+    "energy_quad_eps_rel": 1e-11,
+    "direct_gain_vs_trace_max_abs": 1e-10,
+    "PSD_negative_eigenvalue_slack": 1e-10,
+    "zero_control_max_abs": 1e-10,
+    "strict_positive_control_min": 1e-05,
+    "uncentered_growth_max_abs": 0.01,
+    "finite_discrete": "exact Fraction equality, zero numerical tolerance"
+  },
+  "execution_policy": {
+    "requires_root_approval_exact_plan_and_source": true,
+    "required_approval_scope": "INDEPENDENT_TOY_RELATION_CRPS_MATH_ONLY",
+    "output_directory_must_not_exist": true,
+    "one_registered_execution": true,
+    "on_failure": "Preserve FAILURE and partial outputs; report root. No increasing tolerance, adding nodes, changing fixtures or silently rerunning. Any defect fix requires new explicit source/plan/approval."
+  },
+  "current_execution_state": "NOT_EXECUTED_NO_NUMERICAL_INTEGRALS_ENUMERATIONS_OR_MATERIAL_FITS",
+  "interpretation": "Classic finite Bayesian/CDF information identity and controlled falsification only; no novelty, empirical efficacy or actual acquisition-cost superiority assertion."
+}

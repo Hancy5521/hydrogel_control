@@ -1,0 +1,48 @@
+{
+  "actual_utc": "2026-11-05T14:21:32.283852+00:00",
+  "scope": "Exact public-source metadata and previous consumed-role input read this round; no property gzip",
+  "files": [
+    {
+      "original_relative_path": "data/ELIGIBLE_METADATA.json",
+      "packaged_path": "reference_inputs/ELIGIBLE_METADATA.json",
+      "sha256": "165d48bc29f771e29f7e86a6bea1e57286eb81b49f29120905ba4ff4739660e4",
+      "source_stage": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z",
+      "native_property_values": false
+    },
+    {
+      "original_relative_path": "data/DATA_MANIFEST.json",
+      "packaged_path": "reference_inputs/DATA_MANIFEST.json",
+      "sha256": "5000ecb55aefae7259467b5cb23a570ae1762bce4333155cf411cbfb0aaa4343",
+      "source_stage": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z",
+      "native_property_values": false
+    },
+    {
+      "original_relative_path": "data/SOURCE_GATE.json",
+      "packaged_path": "reference_inputs/SOURCE_GATE.json",
+      "sha256": "86ee6469c90c98558ca069e9d7e5e05badb5f5bc6944f0dbbf94a9025bea0a6e",
+      "source_stage": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z",
+      "native_property_values": false
+    },
+    {
+      "original_relative_path": "data/SOURCE_GATE_PILOT_ADDENDUM.json",
+      "packaged_path": "reference_inputs/SOURCE_GATE_PILOT_ADDENDUM.json",
+      "sha256": "7c0fc10397de2d85e13b101e5a78570feea7d1ef80473a852e482c552eefda22",
+      "source_stage": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z",
+      "native_property_values": false
+    },
+    {
+      "original_relative_path": "data/PILOT_ELIGIBILITY.json",
+      "packaged_path": "reference_inputs/PILOT_ELIGIBILITY.json",
+      "sha256": "e7b06d64fe29c550bd8e75febd64d853d38b20448914d47d705053aa7712361d",
+      "source_stage": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z",
+      "native_property_values": false
+    },
+    {
+      "original_relative_path": "pilot/DATASET_ROLE_PLAN.json",
+      "packaged_path": "reference_inputs/DATASET_ROLE_PLAN.json",
+      "sha256": "ea9120cf04bc78c8292be8ebba3eab6f9b1b0f830574b3e1a803386105451de8",
+      "source_stage": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z",
+      "native_property_values": false
+    }
+  ]
+}

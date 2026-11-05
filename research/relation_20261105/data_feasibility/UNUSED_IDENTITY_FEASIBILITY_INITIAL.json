@@ -1,0 +1,332 @@
+{
+  "actual_utc": "2026-11-05T12:46:45.869858+00:00",
+  "actual_asia_shanghai": "2026-11-05T20:46:45.870421+08:00",
+  "artifact_kind": "UNUSED_IDENTITY_METADATA_FEASIBILITY_NOT_A_NEW_SPLIT",
+  "script_sha256": "e0675b2fb9ac9b25980e4fad3ef0e1580613a9b4a9ddea7fb8e42c523ccae406",
+  "input_sha256": {
+    "data/ELIGIBLE_METADATA.json": "165d48bc29f771e29f7e86a6bea1e57286eb81b49f29120905ba4ff4739660e4",
+    "data/DATA_MANIFEST.json": "5000ecb55aefae7259467b5cb23a570ae1762bce4333155cf411cbfb0aaa4343",
+    "data/SOURCE_GATE.json": "86ee6469c90c98558ca069e9d7e5e05badb5f5bc6944f0dbbf94a9025bea0a6e",
+    "data/SOURCE_GATE_PILOT_ADDENDUM.json": "7c0fc10397de2d85e13b101e5a78570feea7d1ef80473a852e482c552eefda22",
+    "data/PILOT_ELIGIBILITY.json": "e7b06d64fe29c550bd8e75febd64d853d38b20448914d47d705053aa7712361d",
+    "pilot/DATASET_ROLE_PLAN.json": "ea9120cf04bc78c8292be8ebba3eab6f9b1b0f830574b3e1a803386105451de8"
+  },
+  "read_scope": "Only original metadata, source summaries, manifest and prior role metadata; no raw gzip, queried response receipt or saved scores opened.",
+  "datasets": {
+    "ucsb_thermoelectrics": {
+      "originally_complete_3_property_eligible": {
+        "rows": 703,
+        "full_source_component_groups": 62,
+        "normalized_compositions": 193,
+        "chemical_element_sets": 111,
+        "element_count_per_group_histogram": {
+          "2": 8,
+          "3": 28,
+          "4": 22,
+          "5": 4
+        },
+        "largest_component_row_counts": [
+          77,
+          51,
+          36,
+          28,
+          24,
+          23,
+          21,
+          21,
+          20,
+          20,
+          20,
+          16
+        ],
+        "groups_with_multiple_eligible_rows": 59,
+        "groups_with_at_least_two_eligible_rows": 59,
+        "groups_with_at_least_three_eligible_rows": 56,
+        "original_component_id_set_sha256": "88259b310a480b7b1b20e31aaabbc1c94e5b5084723497a26d5045c03fe7e83b",
+        "source_citation_count": 89,
+        "distinct_temperature_count": 4,
+        "temperature_K_min_max_metadata_only": [
+          300.0,
+          1000.0
+        ],
+        "groups_with_multiple_temperatures": 53,
+        "groups_with_multiple_compositions": 40
+      },
+      "first_pilot_selected_40_full_source_groups_all_off_limits_for_new_confirmation": {
+        "rows": 546,
+        "full_source_component_groups": 40,
+        "normalized_compositions": 144,
+        "chemical_element_sets": 84,
+        "element_count_per_group_histogram": {
+          "2": 5,
+          "3": 17,
+          "4": 15,
+          "5": 3
+        },
+        "largest_component_row_counts": [
+          77,
+          51,
+          36,
+          28,
+          24,
+          23,
+          21,
+          21,
+          20,
+          20,
+          20,
+          16
+        ],
+        "groups_with_multiple_eligible_rows": 38,
+        "groups_with_at_least_two_eligible_rows": 38,
+        "groups_with_at_least_three_eligible_rows": 37,
+        "original_component_id_set_sha256": "bb91a08b6b43057963b2d54f194cf782d957fa296d6930298a277acf65114dba",
+        "source_citation_count": 60,
+        "distinct_temperature_count": 4,
+        "temperature_K_min_max_metadata_only": [
+          300.0,
+          1000.0
+        ],
+        "groups_with_multiple_temperatures": 35,
+        "groups_with_multiple_compositions": 28
+      },
+      "actual_selected_rows_in_prior_pilot": 78,
+      "unselected_rows_in_consumed_groups_NOT_fresh": 468,
+      "genuinely_unselected_identity_groups": {
+        "rows": 157,
+        "full_source_component_groups": 22,
+        "normalized_compositions": 49,
+        "chemical_element_sets": 32,
+        "element_count_per_group_histogram": {
+          "2": 3,
+          "3": 11,
+          "4": 7,
+          "5": 1
+        },
+        "largest_component_row_counts": [
+          16,
+          15,
+          13,
+          12,
+          12,
+          12,
+          10,
+          9,
+          9,
+          8,
+          7,
+          4
+        ],
+        "groups_with_multiple_eligible_rows": 21,
+        "groups_with_at_least_two_eligible_rows": 21,
+        "groups_with_at_least_three_eligible_rows": 19,
+        "original_component_id_set_sha256": "46203a633f637ab8da2e63dcbefdd98467ed5a280559c75e2ee96f4eb8830ce0",
+        "source_citation_count": 29,
+        "distinct_temperature_count": 4,
+        "temperature_K_min_max_metadata_only": [
+          300.0,
+          1000.0
+        ],
+        "groups_with_multiple_temperatures": 18,
+        "groups_with_multiple_compositions": 12
+      },
+      "metadata_breadth_not_label_efficacy": {
+        "fresh_chemical_systems_also_in_consumed_groups": 5,
+        "fresh_chemical_systems_unseen_in_consumed_groups": 27,
+        "fresh_groups_in_previously_seen_chemical_systems": 4,
+        "fresh_groups_in_previously_unseen_chemical_systems": 18,
+        "fresh_element_vocab_size": 34,
+        "prior_consumed_group_element_vocab_size": 48,
+        "fresh_elements_not_in_consumed_groups": [
+          "Au",
+          "B",
+          "Ce",
+          "P"
+        ],
+        "normalized_composition_overlap_with_consumed": 0
+      },
+      "target_field_names_only": [
+        "rho (ohm.cm)",
+        "S [muV/K]",
+        "kappa [W/mK]"
+      ],
+      "target_units_from_pinned_metadata": [
+        "ohm.cm",
+        "microvolt/kelvin",
+        "watt/(metre kelvin)"
+      ],
+      "provenance": {
+        "source_gate": "data/SOURCE_GATE.json",
+        "source_gate_sha256": "86ee6469c90c98558ca069e9d7e5e05badb5f5bc6944f0dbbf94a9025bea0a6e",
+        "original_data_kind": "experimental source literature aggregation",
+        "original_property_values_not_loaded": true
+      },
+      "independence_limit": "Unselected identity/component groups in one previously curated table; not new laboratories, preparation batches, DFT software versions or independent external data.",
+      "source_citation_overlap_with_consumed": 0
+    },
+    "jarvis_dft_3d": {
+      "originally_complete_3_property_eligible": {
+        "rows": 11020,
+        "full_source_component_groups": 8842,
+        "normalized_compositions": 8842,
+        "chemical_element_sets": 6846,
+        "element_count_per_group_histogram": {
+          "1": 81,
+          "2": 2645,
+          "3": 5173,
+          "4": 861,
+          "5": 79,
+          "6": 3
+        },
+        "largest_component_row_counts": [
+          35,
+          25,
+          21,
+          18,
+          16,
+          15,
+          14,
+          13,
+          13,
+          13,
+          13,
+          12
+        ],
+        "groups_with_multiple_eligible_rows": 1179,
+        "groups_with_at_least_two_eligible_rows": 1179,
+        "groups_with_at_least_three_eligible_rows": 412,
+        "original_component_id_set_sha256": "b6c7c08ac4bfe33a18746e5f19d0f871039b1b5b37f65f720986e839cfb881dd"
+      },
+      "first_pilot_selected_40_full_source_groups_all_off_limits_for_new_confirmation": {
+        "rows": 47,
+        "full_source_component_groups": 40,
+        "normalized_compositions": 40,
+        "chemical_element_sets": 40,
+        "element_count_per_group_histogram": {
+          "2": 9,
+          "3": 24,
+          "4": 7
+        },
+        "largest_component_row_counts": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "groups_with_multiple_eligible_rows": 7,
+        "groups_with_at_least_two_eligible_rows": 7,
+        "groups_with_at_least_three_eligible_rows": 0,
+        "original_component_id_set_sha256": "60f3496f093b8ac57e2e1cd263f511d4caf33d126bdde527b7c44dfed230387e"
+      },
+      "actual_selected_rows_in_prior_pilot": 47,
+      "unselected_rows_in_consumed_groups_NOT_fresh": 0,
+      "genuinely_unselected_identity_groups": {
+        "rows": 10973,
+        "full_source_component_groups": 8802,
+        "normalized_compositions": 8802,
+        "chemical_element_sets": 6821,
+        "element_count_per_group_histogram": {
+          "1": 81,
+          "2": 2636,
+          "3": 5149,
+          "4": 854,
+          "5": 79,
+          "6": 3
+        },
+        "largest_component_row_counts": [
+          35,
+          25,
+          21,
+          18,
+          16,
+          15,
+          14,
+          13,
+          13,
+          13,
+          13,
+          12
+        ],
+        "groups_with_multiple_eligible_rows": 1172,
+        "groups_with_at_least_two_eligible_rows": 1172,
+        "groups_with_at_least_three_eligible_rows": 412,
+        "original_component_id_set_sha256": "d4f02b070dc496c0f69d7c75b2fb5225726131f3df682fec9f9ece853fa03bce"
+      },
+      "metadata_breadth_not_label_efficacy": {
+        "fresh_chemical_systems_also_in_consumed_groups": 15,
+        "fresh_chemical_systems_unseen_in_consumed_groups": 6806,
+        "fresh_groups_in_previously_seen_chemical_systems": 27,
+        "fresh_groups_in_previously_unseen_chemical_systems": 8775,
+        "fresh_element_vocab_size": 82,
+        "prior_consumed_group_element_vocab_size": 48,
+        "fresh_elements_not_in_consumed_groups": [
+          "Ar",
+          "Au",
+          "C",
+          "Ca",
+          "Ce",
+          "Cr",
+          "Cs",
+          "Er",
+          "He",
+          "Hf",
+          "Hg",
+          "Ir",
+          "Kr",
+          "La",
+          "Lu",
+          "Mo",
+          "Ne",
+          "Ni",
+          "Pa",
+          "Pr",
+          "Re",
+          "Ru",
+          "Sc",
+          "Se",
+          "Sm",
+          "Tc",
+          "Te",
+          "Th",
+          "Ti",
+          "V",
+          "W",
+          "Yb",
+          "Zn",
+          "Zr"
+        ],
+        "normalized_composition_overlap_with_consumed": 0
+      },
+      "target_field_names_only": [
+        "e_form",
+        "gap opt",
+        "bulk modulus"
+      ],
+      "target_units_from_pinned_metadata": [
+        "electronvolt/atom",
+        "electronvolt",
+        "GPa (source field; aggregation interpretation qualified in SOURCE_GATE_PILOT_ADDENDUM)"
+      ],
+      "provenance": {
+        "source_gate": "data/SOURCE_GATE.json",
+        "source_gate_sha256": "86ee6469c90c98558ca069e9d7e5e05badb5f5bc6944f0dbbf94a9025bea0a6e",
+        "original_data_kind": "DFT computational properties, not wet measurement",
+        "original_property_values_not_loaded": true
+      },
+      "independence_limit": "Unselected identity/component groups in one previously curated table; not new laboratories, preparation batches, DFT software versions or independent external data."
+    }
+  },
+  "new_split_selected": false,
+  "new_role_or_seed_selected": false,
+  "model_or_policy_executed": false,
+  "response_arrays_or_native_property_values_read": false,
+  "query_oracle_budget_consumed": 0
+}

@@ -1,0 +1,67 @@
+{
+  "actual_review_utc": "2026-11-05T14:08:42.193674+00:00",
+  "actual_review_asia_shanghai": "2026-11-05T22:08:42.193674+08:00",
+  "decision": "PASS_READ_ONLY_POSTREVIEW",
+  "objection": null,
+  "root_executed_registered_audit_once": true,
+  "postreview_audit_SUT_or_control_reexecutions": 0,
+  "audit_result_sha256": "c83e9057462bfad6f97b9fa18eeb597b2f5c73898040ca63d3d144f3e0812233",
+  "audit_plan_sha256": "1ba30912bbe5775150d42f4e7d48a27150580ff3eb5bde6d5bb8a9cd44d335c2",
+  "audit_source_sha256": "f8400091c38f167e50a6b860a84ce017d6de3c4d21b842e621313bc3a91264d2",
+  "all_bound_producer_sources_registration_and_original12case_results_unchanged": true,
+  "pass_families": 5,
+  "actual_coverage": {
+    "original_synthetic_cases": 12,
+    "stored_coordinate_envelopes_and_cached_streamed_consistency": 3072,
+    "independent_scalar_nonfallback_moment_coordinates": 1792,
+    "fallback_coordinates_only_compared_with_frozen_exact": 1280,
+    "independent_full_kernel_quadratics": 36,
+    "coordinates_per_case": [
+      [
+        0,
+        0
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        15,
+        15
+      ]
+    ],
+    "actual_selected_R_first_policy_arithmetic": 12,
+    "original_timings_controls_or_material_cases_rerun": 0
+  },
+  "observed_numeric_residuals": {
+    "maximum_independent_moment_abs_error": 1.1102230246251565e-16,
+    "maximum_independent_tail_abs_error": 1.7999450129153882e-21,
+    "maximum_independent_full_kernel_abs_error": 5.551115123125783e-17,
+    "maximum_decision_arithmetic_abs_error": 0.0,
+    "all12_selected_policy_regrets": 0.0,
+    "weak_shape_positive_D2_and_stableH2": {
+      "D2_positive_gain": {
+        "saved": 7.052369794346956e-34,
+        "relative_error": 2.4255242767192457e-16
+      },
+      "stable_H2_reference": {
+        "saved": 7.052369794346956e-34,
+        "relative_error": 2.4255242767192457e-16
+      }
+    },
+    "saved_cancellation_prone_fullmatrix_weakshape": 0.0
+  },
+  "not_covered": [
+    "All3072 independent fullquadratics; only36spot references were computed.",
+    "The16laterposthoc scaling cases: thisauditor neitherread norrecomputed them. Theirnewresult/source-boundreceipts/internalcomparisons mustbeidentifiedseparately.",
+    "IEEE directedrounding certificate, completeposterior compression or unsupportednumericrange proof.",
+    "Material efficacy, independent experimentalconfirmation, actualco-measurementcosts ornewalgorithmoriginality."
+  ],
+  "posthoc_extension_root_report_only": {
+    "root_supplied_result_sha256": "1ece313e34b5b4586fa7bedf0d1fbea079f14b17fcac0057395f4cbb18fdd927",
+    "reported_cases": 16,
+    "independent_numerical_coverage_in_this_receipt": 0,
+    "meaning": "Computationalscalingonreusedfrozencore, notadditionalmaterialcohort; donotaddthisreceipt coverage toclaimall28independentlyaudited."
+  },
+  "next": "Root can summarize bounded28-point computationalobservations with explicit separate auditcoverage. No newrerun, sourcepatch orprotocolchange is requested by thispostreview."
+}

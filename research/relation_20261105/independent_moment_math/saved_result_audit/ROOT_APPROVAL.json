@@ -1,0 +1,10 @@
+{
+  "actual_utc": "2026-11-05T14:05:22.523603+00:00",
+  "approved": true,
+  "scope": "INDEPENDENT_SAVED_MOMENT_NUMERICAL_REVIEW",
+  "plan_sha256": "1ba30912bbe5775150d42f4e7d48a27150580ff3eb5bde6d5bb8a9cd44d335c2",
+  "source_sha256": "f8400091c38f167e50a6b860a84ce017d6de3c4d21b842e621313bc3a91264d2",
+  "allowed_executions": 1,
+  "no_SUT_replay_timing_or_materials": true,
+  "on_failure": "retain allfamilyoutcomes; no tolerance/source modification or hidden retry"
+}

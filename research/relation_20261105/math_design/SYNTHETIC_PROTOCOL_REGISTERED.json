@@ -1,0 +1,55 @@
+{
+  "kind": "relation_posterior_bounded_synthetic",
+  "status": "REGISTERED",
+  "registered_actual_utc": "2026-11-05T13:21:52.895041+00:00",
+  "source_sha256": {
+    "relation_core.py": "37d35e51701961beffb57da89c03cbe5305f39a7087375d78397f2e6183dfa91",
+    "run_synthetic.py": "024cb2755cc9cc7a37c1b1242216bb1db1e2e56a1d74fa9f9f6173cc44a2f60f"
+  },
+  "configuration": {
+    "version": "relation_posterior_synthetic_v1",
+    "material_file_access": false,
+    "prior_identity_quadratures_repeated": false,
+    "principle_cases": [
+      "symmetric_signed_relation",
+      "theta_known",
+      "fake_calibration_identity",
+      "zero_relation",
+      "noncollinear_single_proxy_selector",
+      "same_F_different_adaptive_branches"
+    ],
+    "benchmark_families": [
+      "homogeneous_scaling",
+      "known_state_noncollinear",
+      "dense_uninformative"
+    ],
+    "benchmark_sizes": [
+      {
+        "repairs": 16,
+        "proxies": 32
+      },
+      {
+        "repairs": 64,
+        "proxies": 128
+      }
+    ],
+    "algorithms": [
+      "explicit_tree_reference_correctness_only",
+      "fully_cached_vectorized",
+      "blocked_cached_vectorized_16"
+    ],
+    "hard_budget_integer_ticks": 3,
+    "block_rows": 16,
+    "timing_repetitions": 1,
+    "blas_threads": 1,
+    "correctness_absolute_tolerance": 2e-12,
+    "correctness_relative_tolerance": 2e-11,
+    "screening_implemented": false,
+    "new_algorithm_or_material_efficacy_claimed": false
+  },
+  "prior_independent_identity_receipt": {
+    "file": "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\independent_math\\execution_v2_once\\INDEPENDENT_MATH_RESULT.json",
+    "sha256": "65c1a453039d4e8efec6cb9a99c30d9a6154110596941c443df7ec33cccf47e4"
+  },
+  "no_real_material_execution": true
+}

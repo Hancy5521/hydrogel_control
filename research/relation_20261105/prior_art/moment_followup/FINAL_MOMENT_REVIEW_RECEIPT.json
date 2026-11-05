@@ -1,0 +1,19 @@
+{
+  "actual_end_utc": "2026-11-05T13:25:41.684957+00:00",
+  "decision": "CONDITIONAL_GO_TO_NEW_PRE_REGISTERED_MATH_COMPUTE_CONTROL",
+  "new_search_queries": 3,
+  "selected_method_sources": 2,
+  "new_numerical_or_model_execution": false,
+  "new_material_reads_fits_scores": 0,
+  "frozen_existing_sources_changed": false,
+  "files": [
+    {
+      "file": "MOMENT_PRIOR_ART_LEDGER.json",
+      "sha256": "06452dd6e7c47894514fad5315b9ff0ddbbcce7f8028d9453526177cc9810322"
+    },
+    {
+      "file": "MOMENT_MATH_AND_GATE_ZH.txt",
+      "sha256": "7e8f70020dd05eede037907e370f59a70b5bf14920bda1d51c41269edd7eb494"
+    }
+  ]
+}

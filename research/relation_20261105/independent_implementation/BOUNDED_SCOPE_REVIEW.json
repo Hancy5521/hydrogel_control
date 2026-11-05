@@ -1,0 +1,32 @@
+{
+  "actual_utc": "2026-11-05T13:22:25.402525+00:00",
+  "status": "PASS_REGISTERED_BOUNDED_FIXTURES_ONLY",
+  "detailed_static_review": "STATIC_EXECUTION_GATE.json",
+  "detailed_static_review_sha256": "007b52bdae94ff5ff826c2e1de07da5e2ce940f897934e9f47d427b129a9dc23",
+  "source_sha256": {
+    "relation_core.py": "37d35e51701961beffb57da89c03cbe5305f39a7087375d78397f2e6183dfa91",
+    "run_synthetic.py": "024cb2755cc9cc7a37c1b1242216bb1db1e2e56a1d74fa9f9f6173cc44a2f60f",
+    "SYNTHETIC_PROTOCOL_TEMPLATE.json": "8e08098c5fb7fa0377770f4b56aaa535b4399f6cf6430ece45f1154c15b456b4"
+  },
+  "root_scope_decision": "Prototype/reference controls only, not a production universal numerical API. Approve only the unchanged registered moderate-range6principles/6timingcases.",
+  "retained_branch_Emax_and_equal_feasible_budget_static_review": "PASS",
+  "strong_fully_cached_and_blocked_baselines_static_review": "PASS; explicit loop correctness-only, no speed-superiority claim",
+  "prior65c_integral_receipt_reused_not_reexecuted": true,
+  "candidate_objective_interpretation": "Action-specific sigma/cost belongs to different candidate targets under SUM local CRPS utility, not proxy-dependent sigma for one common target.",
+  "numeric_boundary_counterexamples_not_executed": [
+    {
+      "fixture": "prior=(1-10^-200,10^-200), exact theta-revealing probe, candidate rho=(0,10^-150), scale1",
+      "failure_path": "All nonzero prior/F/kernel entries are float64-representable, but a posterior-branch probability times its positive local gain is about2.82e-501 and can become0 with no current guard.",
+      "effect": "A broad support-preservation claim would be false."
+    },
+    {
+      "fixture": "balanced posterior and symmetric rho=+/-10^-8",
+      "failure_path": "True B main gain behaves as rho^4/(8sqrt(pi)), but v^T S v cancels rho^2 terms. Guarding entry support and PSD does not preserve the tiny positive eigen-direction.",
+      "effect": "Stable entry formula alone does not establish weak-signal quadratic-form accuracy."
+    }
+  ],
+  "no_general_extreme_weight_or_weak_rho_certification": true,
+  "source_or_tolerance_changes_for_current_run": [],
+  "numerical_or_material_execution_by_reviewer": 0,
+  "next_action": "Root creates actual registered protocol/approval and runs once; any positive-power-moment/tail-certificate study remains a separate follow-up module rather than patching these frozen controls."
+}

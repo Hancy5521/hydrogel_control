@@ -1,0 +1,33 @@
+{
+  "status": "PASS_REGISTERED_SYNTHETIC_SAVED_ARITHMETIC",
+  "actual_utc": "2026-11-05T13:31:24.024470+00:00",
+  "execution": {
+    "actual_utc": "2026-11-05T13:31:23.266262+00:00",
+    "plan_sha256": "71d371658f72b3e332e1a260741f57c32db9862d585156e5ff328a246039621c",
+    "approval_sha256": "3d42def68f896c90460cb3d3a03268d2087502645b805696b922b5ed2a649668",
+    "source_sha256": "bf0a6dba09025bc417cb8ff985a589b47220b73946d6ab567b27dab3d910b57e",
+    "SUT_imports_or_runs": 0,
+    "timing_runs": 0,
+    "material_reads_or_fits_or_scores": 0
+  },
+  "max_errors": {
+    "max_value_error": 4.163336342344337e-17,
+    "max_kernel_entry_error": 0.0,
+    "max_fixed_pair_error": 5.551115123125783e-17,
+    "max_choice_regret": 0.0
+  },
+  "principle_count": 6,
+  "benchmark_count": 6,
+  "benchmark_strict_adaptive_gain_first_actions": 0,
+  "benchmark_different_indices_without_strict_gain_first_actions": 13,
+  "original_source_protocol_results_unchanged": true,
+  "source_supports_no_general_extreme_number_robustness_claim": true,
+  "cached_and_blocked_are_strong_classical_baselines_not_new_acceleration": true,
+  "no_timing_rerun": true,
+  "arithmetic_replays_are_not_new_measurements_or_material_experiments": true,
+  "files_sha256": {
+    "EXECUTION_START.json": "922019ed109f437fb43b585a7c341c7f28e92e36a9a80dad10fddfc044909725",
+    "PRINCIPLE_ARITHMETIC.json": "3820bec3fa16351d78b9c5a322b5648d3bdaddd88118d9d8097d211e07b39d71",
+    "SIX_BENCHMARK_ARITHMETIC.json": "e45b009dc78dde1037c2ef7a278bf85ad61042bc3d95c7b9c5630658e0a97dc7"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "actual_utc": "2026-11-05T13:03:34.377848+00:00",
+  "plan_sha256": "f0bb88502d70ff55da68a185a0b9909b28e7ef1fbc1b52bdff34062a308aadf2",
+  "source_sha256": "56df7c493678712156a4b2645a09eda3a4da3e1de7862185829291cfa03b59c0",
+  "approved_scope": "INDEPENDENT_TOY_RELATION_CRPS_MATH_ONLY",
+  "allowed_executions": 1,
+  "no_material_inputs_or_model_imports": true,
+  "on_failure": "preserve stop; no higher tolerance/node count or covert rerun"
+}

@@ -1,0 +1,8 @@
+{
+  "actual_utc": "2026-11-05T13:01:55.174921+00:00",
+  "reason": "Root requested an additional finite same-F but different adaptive Bayes-risk counterexample before execution approval. Preserve previous draft code/plan, extend independent enumeration, register a new plan.",
+  "old_plan_sha256": "50d6bd717d8d6a145bf6ba2f3fa2553fc4ac98bb0d36c976f850162ed62a7b79",
+  "old_source_sha256": "220948288ccaeadfea4a0faabd818ed43eea1272804f69eb9b69cad1e9b3b687",
+  "old_execution_calls": 0,
+  "material_data_or_fits_accessed": false
+}

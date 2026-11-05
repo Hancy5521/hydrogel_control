@@ -1,0 +1,89 @@
+{
+  "kind": "decision_moment_readout_followup_design_only",
+  "status": "TEMPLATE_NOT_IMPLEMENTED_NOT_EXECUTED",
+  "registered_actual_utc": null,
+  "future_source_sha256": null,
+  "question": "Can positive correlation-moment readout approximate the same retained-branch R-first CRPS value with certified local error and useful stable/computational behaviour against strong exact implementations?",
+  "scientific_scope": {
+    "finite_relation_posterior_retained": true,
+    "only_decision_readout_compressed": true,
+    "no_full_density_or_Bayes_update_compression_claim": true,
+    "no_material_lowrank_constraint": true,
+    "no_generated_or_derived_label_promotion": true,
+    "no_old_code_or_40group_retune": true,
+    "not_new_Taylor_kernel_algorithm_claim": true
+  },
+  "required_assumptions": [
+    "All original pure-relation/single-theta-invariant-proxy scope conditions",
+    "Finite simplex posterior and every reachable outcome branch retained",
+    "Open-interval finite correlations; positive known scales/weights",
+    "Same actions, budgets and posterior for every comparator",
+    "Tail bounds apply to model-based two-stage terminal CRPS value, not full agent regret or physical calibration"
+  ],
+  "single_bounded_validation": {
+    "exact_small_rational_panel": {
+      "loss_units": "sqrt(pi)*CRPS gain; exact Fraction moments/coefficients/tail and rational sqrt enclosures for full kernel",
+      "required_fixtures": [
+        "D1-ranking reversal: w=1/2, b1rho=(3/4,-3/4), b2rho=(1/8,1/8); certify true b1 using81/2048>1/64",
+        "Fixed versus adaptive R-first branches kept; one-sided value error and policy-regret bound checked",
+        "PSD/Loewner truncation and posterior-dependent tail bound",
+        "Known-relation/no-relation and homogeneous-scaling/separable controls; do not manufacture H by duplicates"
+      ]
+    },
+    "stability_and_range_panel": {
+      "required_fixtures": [
+        "Symmetric ±rho=1e-8: D2 positive shape term vs high-precision reference AND stable rationalized H2 closed form",
+        "Near1 correlation requiring exact fallback at declared degree cap",
+        "Exact nonzero final value outside float64 range: explicit failure/log/interval rather than silent0",
+        "Tiny posterior branch mass retained; no support deletion"
+      ],
+      "prior_frozen_source_not_modified_or_recertified": true
+    },
+    "bounded_performance_panel": {
+      "hypothesis_counts": [
+        32,
+        128,
+        512
+      ],
+      "proxy_count": 16,
+      "posterior_branch_count": 16,
+      "maximum_abs_correlation_caps": [
+        "1/2",
+        "99/100"
+      ],
+      "scaled_absolute_tail_tolerance": "1/10000",
+      "degree_cap_rule": "min(64,floor(number_of_distinct_relevant_hypotheses/4)); if no certified degree within cap use exact comparator, and99/100is an explicit fallback control",
+      "fixture_count": 6,
+      "profile_generation": "Declared deterministic known-state correlation function; include same-rho separable control and count all proxy-specific moment construction. If using exact low-degree polynomial family, include its shared-polynomial-moment strong shortcut. Do not use arbitrary fitted/random per-candidate rho tables or duplicate hypotheses as alleged material evidence.",
+      "algorithms": [
+        "fully_cached_exact_kernel_reference",
+        "streamed_or_blocked_exact_quadratic_forms",
+        "streamed_proxy_specific_moment_readout",
+        "applicable_same_rho_or_shared_polynomial_shortcut",
+        "small_highprecision_or_rational_reference_for_correctness_only"
+      ],
+      "timing_repetitions": 1,
+      "scope_of_timing": "Preprocessing, posterior branch construction, rho/features, moments or kernel, scoring, fallback and numeric workspace included; one-shot implementation observation not universal speed ranking",
+      "memory_accounting": "Report shared posterior/input memory separately plus true algorithm workspace; do not force exact baseline to store all outer products or all kernels"
+    }
+  },
+  "error_and_decision_certificate": {
+    "coefficient": "a_n=binom(2n,n)/(4^n*(2n-1))",
+    "coefficient_tail_mass": "b_D=binom(2D,D)/4^D",
+    "uniform_scaled_tail_bound": "sigma_y*target_weight*min(a_(D+1)*r^(2D+2)/(1-r^2),b_D*r^(2D+2))",
+    "adaptive_lower": "sum_o p_o max_b g_D(w_o)",
+    "adaptive_upper": "sum_o p_o max_b[g_D(w_o)+epsilon_b]",
+    "restricted_policy_regret_bound": "max_a U_a - max_a L_a <= max_feasible epsilon_b, only same retained-branch two-stage terminal model",
+    "full_policy_choice_certificate": "Certify first action AND every reachable second-action branch; otherwise refine/fallback",
+    "numerical_error_requirement": "Analytic tail excludes rounding/posterior approximation. Exact small panel uses rational scaled gain; float performance panel must not claim strict IEEE certificates without additional rigorous numeric envelopes."
+  },
+  "required_negative_decisions": [
+    "D comparable to H, no benefit relative to exact support-restricted calculation",
+    "r too close1 or interval gap unresolved: fallback not forced truncation",
+    "Homogeneous/separable profiles: analytic ordering or shared simple closed form may be optimal",
+    "Best exact blocked/vectorized baseline already faster/smaller: no-go extra efficiency layer",
+    "Only general Taylor facts established: classic adaptation, no topconference-method claim"
+  ],
+  "future_execution_gate": "Root must separately approve implementation, then exact code/plan/inputs freeze and independent audit before any execution. This template authorizes none.",
+  "material_data_or_model_fits": 0
+}

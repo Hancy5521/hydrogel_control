@@ -1,0 +1,23 @@
+{
+  "actual_utc": "2026-11-05T12:50:56.576971+00:00",
+  "status": "METADATA_FEASIBILITY_COMPLETE_NO_NEW_LABELS_OR_SPLIT",
+  "primary_conclusion": "JARVIS8802 unused conservativeidentity groups sufficient quantity for later mechanism-gated study; UCSB22source groups limited, neither is automatically independent external verification.",
+  "files_sha256": {
+    "audit_unused_metadata.py": "32f21f8f2234eb2ab6b9bb58c2a6473afced41c8c244737412a95d993eae9841",
+    "audit_unused_metadata_initial.py": "e0675b2fb9ac9b25980e4fad3ef0e1580613a9b4a9ddea7fb8e42c523ccae406",
+    "FEASIBILITY_AND_SCOPE_ZH.txt": "1c3d8582ece2789bca53253a01ae0e6eeaa4ad6792a22ecee2e7cbdf7349def1",
+    "HTEM_DOCUMENTATION_SCOUT.json": "a6bdbea0c4197f8b4b10c09f3fdec5ea5d7f940307af0fea7b290dc21eac1474",
+    "METADATA_HISTOGRAM_CORRECTION.json": "206fd0cd8d29020126253eaca4ce34fa37780eedfa64c51cdbfcb86bb52b45d8",
+    "RUN.json": "3c6000fdbf4e0d8796f6aa01d1d8b6f2fb604ba1ec72c3bad641c00ff059e5fc",
+    "UNUSED_IDENTITY_FEASIBILITY.json": "665d3f77f5003ccfcb0a3735158b623104a8249c6b2047bc3dc25bdba5dffe8f",
+    "UNUSED_IDENTITY_FEASIBILITY_FINAL.json": "491f8279437d20840076e610668c1d6965815c088bbd390cd6d3004384c166a4",
+    "UNUSED_IDENTITY_FEASIBILITY_INITIAL.json": "665d3f77f5003ccfcb0a3735158b623104a8249c6b2047bc3dc25bdba5dffe8f"
+  },
+  "new_native_or_queried_property_values_read": 0,
+  "fit_or_score_or_policy_calls": 0,
+  "new_role_group_or_seed_selection": 0,
+  "raw_downloads": 0,
+  "official_search_queries": 1,
+  "stop_reason": "Assigned metadata-only feasibility and bounded optional source-documentation scout completed; await method gate before data split or any response reveal.",
+  "one_resume_point": "If method increment passes root gate, design and preregister a new whole-group JARVIS task with equal posterior/information/cost baselines. HTEM remains documentation-only; do not call sample endpoints without a separately defined metadata gate."
+}

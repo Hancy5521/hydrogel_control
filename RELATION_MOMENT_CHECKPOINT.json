@@ -1,0 +1,16 @@
+{
+  "actual_utc": "2026-11-05T14:28:20.082868+00:00",
+  "parent_commit": "9c033f9ece02ec1796d18edb70d6d4e45a3dc5f9",
+  "entry": "research/relation_20261105/INDEX.html",
+  "status": "AUDITABLE_MATH_AND_COMPUTE_CHECKPOINT_NOT_MATERIAL_OR_TOPCONFERENCE_READY",
+  "local_full_zip": "H:/PolymerReview/Relation_Moment_20261105T124422Z.zip",
+  "local_full_zip_sha256": "2b9825b8d023ba8d070c95d0b182e8536d639e8662782dd292ad69a66fa208fe",
+  "local_full_zip_bytes": 6486194,
+  "old_separate_MLST_commit": "05a40915be149857b2bb9cf65144d53fa9b24f37",
+  "real_material_fits_predictions_scores": 0,
+  "initial_compute_cases": 12,
+  "exploratory_scaling_cases": 16,
+  "scope": "FullHposterior and adaptive branches retained. Readout approximation bound only; not entireposterior compression, unrestricted planning or measured experiment savings.",
+  "independent_numerical_coverage": "12maincases:36independentfullkernelspots,all3072saved envelopes,1792nonfallbackmomentreconstructions and12actualpolicy arithmetic;16extension source/receipt binding only",
+  "pending": "Actual same-information material benchmarking with proper units/observations/costs; private-free local Git bundle and remote sync receipt are external"
+}

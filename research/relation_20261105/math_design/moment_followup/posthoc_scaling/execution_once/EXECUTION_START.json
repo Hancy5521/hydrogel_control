@@ -1,0 +1,26 @@
+{
+  "actual_utc": "2026-11-05T14:02:20.684939+00:00",
+  "source_sha256": {
+    "run_scaling_extension.py": "3762ce367677ab5b1443eba090b79e850ca6c049607f57ed032c69f93da7dfd7"
+  },
+  "frozen_source_sha256": {
+    "moment_core.py": "fa2e63d672a23cc490786ca21f03161122e7670d9c9d8457f6a123a710025de8",
+    "run_moment_control.py": "d55f39d9cff4931cb3bd63a7669b804934764a755fc23e5c064bd1a189823a62"
+  },
+  "prior_result": {
+    "file": "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\math_design\\moment_followup\\execution_once\\RESULTS.json",
+    "sha256": "cc48fe6581545569760d544da6d5a1342ce36a2ab0855a1fb3fad80787c37893"
+  },
+  "plan_sha256": "4727d820a205e4a5a128e2fd5719c3f9c18a2dc3b8c11b1e5d264c7766feb1ee",
+  "approval_sha256": "1c62d83e137844edfa8e85b53f2dc22975810d0ba0b01185bba44a63b45c4157",
+  "memory_before_producer_import": {
+    "actual_utc": "2026-11-05T14:02:20.683701+00:00",
+    "available_physical_bytes": 6264053760,
+    "total_physical_bytes": 33485041664,
+    "source": "Windows GlobalMemoryStatusEx",
+    "producer_imported_at_check": false
+  },
+  "reserved_budget_is_conservative_estimate_not_a_memory_guarantee": true,
+  "posthoc_scaling_only": true,
+  "old_cases_or_mathematical_controls_executed": false
+}

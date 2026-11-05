@@ -1,0 +1,923 @@
+{
+  "actual_end_utc": "2026-11-05T14:05:26.406073+00:00",
+  "status": "PASS",
+  "plan_sha256": "1ba30912bbe5775150d42f4e7d48a27150580ff3eb5bde6d5bb8a9cd44d335c2",
+  "families": [
+    {
+      "family": "frozen_case_identities_shapes_and_scope",
+      "status": "PASS",
+      "details": {
+        "unique_fixed_cases": 12,
+        "total_branch_proxy_coordinates": 3072,
+        "full_H_branch_posteriors_retained": true,
+        "synthetic_not_material_data": true
+      }
+    },
+    {
+      "family": "all_envelopes_degrees_and_nonfallback_moments",
+      "status": "PASS",
+      "details": {
+        "all_stored_coordinate_envelopes_checked": 3072,
+        "independently_reconstructed_nonfallback_moment_coordinates": 1792,
+        "fallback_coordinates_checked_against_frozen_exact": 1280,
+        "maximum_independent_moment_absolute_error": 1.1102230246251565e-16,
+        "maximum_saved_exact_consistency_error": 0.0,
+        "maximum_independent_tail_absolute_error": 1.7999450129153882e-21,
+        "degree_fallback_rows": [
+          {
+            "H": 8,
+            "rmax": 0.25,
+            "degrees": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3
+            ],
+            "fallback_proxies": 0
+          },
+          {
+            "H": 8,
+            "rmax": 0.6,
+            "degrees": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "fallback_proxies": 16
+          },
+          {
+            "H": 8,
+            "rmax": 0.9,
+            "degrees": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "fallback_proxies": 16
+          },
+          {
+            "H": 8,
+            "rmax": 0.99,
+            "degrees": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "fallback_proxies": 16
+          },
+          {
+            "H": 64,
+            "rmax": 0.25,
+            "degrees": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3
+            ],
+            "fallback_proxies": 0
+          },
+          {
+            "H": 64,
+            "rmax": 0.6,
+            "degrees": [
+              9,
+              9,
+              9,
+              9,
+              9,
+              9,
+              8,
+              8,
+              8,
+              8,
+              9,
+              9,
+              9,
+              9,
+              9,
+              9
+            ],
+            "fallback_proxies": 0
+          },
+          {
+            "H": 64,
+            "rmax": 0.9,
+            "degrees": [
+              39,
+              39,
+              39,
+              39,
+              38,
+              38,
+              38,
+              38,
+              38,
+              38,
+              38,
+              38,
+              39,
+              39,
+              39,
+              39
+            ],
+            "fallback_proxies": 0
+          },
+          {
+            "H": 64,
+            "rmax": 0.99,
+            "degrees": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "fallback_proxies": 16
+          },
+          {
+            "H": 128,
+            "rmax": 0.25,
+            "degrees": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3
+            ],
+            "fallback_proxies": 0
+          },
+          {
+            "H": 128,
+            "rmax": 0.6,
+            "degrees": [
+              9,
+              9,
+              9,
+              9,
+              9,
+              9,
+              8,
+              8,
+              8,
+              8,
+              9,
+              9,
+              9,
+              9,
+              9,
+              9
+            ],
+            "fallback_proxies": 0
+          },
+          {
+            "H": 128,
+            "rmax": 0.9,
+            "degrees": [
+              39,
+              39,
+              39,
+              39,
+              38,
+              38,
+              38,
+              38,
+              38,
+              38,
+              38,
+              38,
+              39,
+              39,
+              39,
+              39
+            ],
+            "fallback_proxies": 0
+          },
+          {
+            "H": 128,
+            "rmax": 0.99,
+            "degrees": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "fallback_proxies": 16
+          }
+        ],
+        "coverage_limit": "Fallback/full-kernel independence is checked only at the separate36 predetermined spots."
+      }
+    },
+    {
+      "family": "independent_full_kernel_predeclared36_spots",
+      "status": "PASS",
+      "details": {
+        "independent_full_kernel_coordinates": 36,
+        "predeclared_coordinates_per_case": [
+          [
+            0,
+            0
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            15,
+            15
+          ]
+        ],
+        "maximum_absolute_error": 5.551115123125783e-17,
+        "comparisons": [
+          {
+            "H": 8,
+            "rmax": 0.25,
+            "coordinate": [
+              0,
+              0
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.0001980481695552082,
+            "saved_streamed_exact": 0.00019804816955520813,
+            "absolute_error": 8.131516293641283e-20
+          },
+          {
+            "H": 8,
+            "rmax": 0.25,
+            "coordinate": [
+              7,
+              8
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.00151770464701561,
+            "saved_streamed_exact": 0.0015177046470156103,
+            "absolute_error": 2.168404344971009e-19
+          },
+          {
+            "H": 8,
+            "rmax": 0.25,
+            "coordinate": [
+              15,
+              15
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.01049927654905628,
+            "saved_streamed_exact": 0.01049927654905628,
+            "absolute_error": 0.0
+          },
+          {
+            "H": 8,
+            "rmax": 0.6,
+            "coordinate": [
+              0,
+              0
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.0030969507413713938,
+            "saved_streamed_exact": 0.0030969507413713925,
+            "absolute_error": 1.3010426069826053e-18
+          },
+          {
+            "H": 8,
+            "rmax": 0.6,
+            "coordinate": [
+              7,
+              8
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.01074656471879696,
+            "saved_streamed_exact": 0.010746564718796961,
+            "absolute_error": 1.734723475976807e-18
+          },
+          {
+            "H": 8,
+            "rmax": 0.6,
+            "coordinate": [
+              15,
+              15
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.06798123684493902,
+            "saved_streamed_exact": 0.06798123684493902,
+            "absolute_error": 0.0
+          },
+          {
+            "H": 8,
+            "rmax": 0.9,
+            "coordinate": [
+              0,
+              0
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.015255287209049694,
+            "saved_streamed_exact": 0.015255287209049697,
+            "absolute_error": 3.469446951953614e-18
+          },
+          {
+            "H": 8,
+            "rmax": 0.9,
+            "coordinate": [
+              7,
+              8
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.033194746090885616,
+            "saved_streamed_exact": 0.033194746090885616,
+            "absolute_error": 0.0
+          },
+          {
+            "H": 8,
+            "rmax": 0.9,
+            "coordinate": [
+              15,
+              15
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.19901953524911228,
+            "saved_streamed_exact": 0.1990195352491123,
+            "absolute_error": 2.7755575615628914e-17
+          },
+          {
+            "H": 8,
+            "rmax": 0.99,
+            "coordinate": [
+              0,
+              0
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.0250580574683824,
+            "saved_streamed_exact": 0.025058057468382407,
+            "absolute_error": 6.938893903907228e-18
+          },
+          {
+            "H": 8,
+            "rmax": 0.99,
+            "coordinate": [
+              7,
+              8
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.04788567348357146,
+            "saved_streamed_exact": 0.047885673483571464,
+            "absolute_error": 6.938893903907228e-18
+          },
+          {
+            "H": 8,
+            "rmax": 0.99,
+            "coordinate": [
+              15,
+              15
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.30673530246231834,
+            "saved_streamed_exact": 0.30673530246231834,
+            "absolute_error": 0.0
+          },
+          {
+            "H": 64,
+            "rmax": 0.25,
+            "coordinate": [
+              0,
+              0
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.00015546509694399258,
+            "saved_streamed_exact": 0.00015546509694399258,
+            "absolute_error": 0.0
+          },
+          {
+            "H": 64,
+            "rmax": 0.25,
+            "coordinate": [
+              7,
+              8
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.0011245397125142287,
+            "saved_streamed_exact": 0.001124539712514228,
+            "absolute_error": 6.505213034913027e-19
+          },
+          {
+            "H": 64,
+            "rmax": 0.25,
+            "coordinate": [
+              15,
+              15
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.00895755555940046,
+            "saved_streamed_exact": 0.00895755555940046,
+            "absolute_error": 0.0
+          },
+          {
+            "H": 64,
+            "rmax": 0.6,
+            "coordinate": [
+              0,
+              0
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.0023532642617756566,
+            "saved_streamed_exact": 0.0023532642617756566,
+            "absolute_error": 0.0
+          },
+          {
+            "H": 64,
+            "rmax": 0.6,
+            "coordinate": [
+              7,
+              8
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.007824610112720232,
+            "saved_streamed_exact": 0.00782461011272023,
+            "absolute_error": 1.734723475976807e-18
+          },
+          {
+            "H": 64,
+            "rmax": 0.6,
+            "coordinate": [
+              15,
+              15
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.0572662034821639,
+            "saved_streamed_exact": 0.057266203482163915,
+            "absolute_error": 1.3877787807814457e-17
+          },
+          {
+            "H": 64,
+            "rmax": 0.9,
+            "coordinate": [
+              0,
+              0
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.011151927129057222,
+            "saved_streamed_exact": 0.011151927129057224,
+            "absolute_error": 1.734723475976807e-18
+          },
+          {
+            "H": 64,
+            "rmax": 0.9,
+            "coordinate": [
+              7,
+              8
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.023284357145757596,
+            "saved_streamed_exact": 0.023284357145757592,
+            "absolute_error": 3.469446951953614e-18
+          },
+          {
+            "H": 64,
+            "rmax": 0.9,
+            "coordinate": [
+              15,
+              15
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.15992367174158126,
+            "saved_streamed_exact": 0.15992367174158126,
+            "absolute_error": 0.0
+          },
+          {
+            "H": 64,
+            "rmax": 0.99,
+            "coordinate": [
+              0,
+              0
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.01721980596979663,
+            "saved_streamed_exact": 0.01721980596979663,
+            "absolute_error": 0.0
+          },
+          {
+            "H": 64,
+            "rmax": 0.99,
+            "coordinate": [
+              7,
+              8
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.03197669351601728,
+            "saved_streamed_exact": 0.03197669351601727,
+            "absolute_error": 6.938893903907228e-18
+          },
+          {
+            "H": 64,
+            "rmax": 0.99,
+            "coordinate": [
+              15,
+              15
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.22307431511716178,
+            "saved_streamed_exact": 0.2230743151171618,
+            "absolute_error": 2.7755575615628914e-17
+          },
+          {
+            "H": 128,
+            "rmax": 0.25,
+            "coordinate": [
+              0,
+              0
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.00015314853649133896,
+            "saved_streamed_exact": 0.0001531485364913389,
+            "absolute_error": 5.421010862427522e-20
+          },
+          {
+            "H": 128,
+            "rmax": 0.25,
+            "coordinate": [
+              7,
+              8
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.0011119632140741342,
+            "saved_streamed_exact": 0.001111963214074134,
+            "absolute_error": 2.168404344971009e-19
+          },
+          {
+            "H": 128,
+            "rmax": 0.25,
+            "coordinate": [
+              15,
+              15
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.008885451833857819,
+            "saved_streamed_exact": 0.008885451833857822,
+            "absolute_error": 3.469446951953614e-18
+          },
+          {
+            "H": 128,
+            "rmax": 0.6,
+            "coordinate": [
+              0,
+              0
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.0023100366290681935,
+            "saved_streamed_exact": 0.0023100366290681926,
+            "absolute_error": 8.673617379884035e-19
+          },
+          {
+            "H": 128,
+            "rmax": 0.6,
+            "coordinate": [
+              7,
+              8
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.007723019593058903,
+            "saved_streamed_exact": 0.007723019593058901,
+            "absolute_error": 1.734723475976807e-18
+          },
+          {
+            "H": 128,
+            "rmax": 0.6,
+            "coordinate": [
+              15,
+              15
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.05675040913606979,
+            "saved_streamed_exact": 0.056750409136069796,
+            "absolute_error": 6.938893903907228e-18
+          },
+          {
+            "H": 128,
+            "rmax": 0.9,
+            "coordinate": [
+              0,
+              0
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.010915828338088641,
+            "saved_streamed_exact": 0.010915828338088643,
+            "absolute_error": 1.734723475976807e-18
+          },
+          {
+            "H": 128,
+            "rmax": 0.9,
+            "coordinate": [
+              7,
+              8
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.022910289486900368,
+            "saved_streamed_exact": 0.022910289486900364,
+            "absolute_error": 3.469446951953614e-18
+          },
+          {
+            "H": 128,
+            "rmax": 0.9,
+            "coordinate": [
+              15,
+              15
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.1580006229556269,
+            "saved_streamed_exact": 0.1580006229556269,
+            "absolute_error": 0.0
+          },
+          {
+            "H": 128,
+            "rmax": 0.99,
+            "coordinate": [
+              0,
+              0
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.016804845863367824,
+            "saved_streamed_exact": 0.016804845863367827,
+            "absolute_error": 3.469446951953614e-18
+          },
+          {
+            "H": 128,
+            "rmax": 0.99,
+            "coordinate": [
+              7,
+              8
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.03137999387241986,
+            "saved_streamed_exact": 0.031379993872419853,
+            "absolute_error": 6.938893903907228e-18
+          },
+          {
+            "H": 128,
+            "rmax": 0.99,
+            "coordinate": [
+              15,
+              15
+            ],
+            "independent_fsum_log1p_expm1_reference": 0.21937442766130383,
+            "saved_streamed_exact": 0.21937442766130388,
+            "absolute_error": 5.551115123125783e-17
+          }
+        ],
+        "not_claimed": "All3072 fullquadratics were not independently recomputed."
+      }
+    },
+    {
+      "family": "all12_actual_selected_policy_and_gap_arithmetic",
+      "status": "PASS",
+      "details": {
+        "actual_selected_policy_arithmetic_cases": 12,
+        "maximum_absolute_error": 0.0,
+        "comparisons": [
+          {
+            "H": 8,
+            "rmax": 0.25,
+            "selected_first_action": 5,
+            "selected_proxy_per_branch": [
+              0,
+              15
+            ],
+            "actual_policy_value_from_frozen_exact": 0.003914768316626783,
+            "recomputed_regret": 0.0,
+            "upper_minus_lower_gap": 4.4837759617753076e-07,
+            "maximum_tail": 4.483775961778617e-07
+          },
+          {
+            "H": 8,
+            "rmax": 0.6,
+            "selected_first_action": 5,
+            "selected_proxy_per_branch": [
+              0,
+              15
+            ],
+            "actual_policy_value_from_frozen_exact": 0.025033921054982967,
+            "recomputed_regret": 0.0,
+            "upper_minus_lower_gap": 0.0,
+            "maximum_tail": 0.0
+          },
+          {
+            "H": 8,
+            "rmax": 0.9,
+            "selected_first_action": 5,
+            "selected_proxy_per_branch": [
+              0,
+              15
+            ],
+            "actual_policy_value_from_frozen_exact": 0.06854664565466331,
+            "recomputed_regret": 0.0,
+            "upper_minus_lower_gap": 0.0,
+            "maximum_tail": 0.0
+          },
+          {
+            "H": 8,
+            "rmax": 0.99,
+            "selected_first_action": 6,
+            "selected_proxy_per_branch": [
+              0,
+              15
+            ],
+            "actual_policy_value_from_frozen_exact": 0.09461297695931851,
+            "recomputed_regret": 0.0,
+            "upper_minus_lower_gap": 0.0,
+            "maximum_tail": 0.0
+          },
+          {
+            "H": 64,
+            "rmax": 0.25,
+            "selected_first_action": 5,
+            "selected_proxy_per_branch": [
+              0,
+              15
+            ],
+            "actual_policy_value_from_frozen_exact": 0.0030440514590792615,
+            "recomputed_regret": 0.0,
+            "upper_minus_lower_gap": 4.4837759617796444e-07,
+            "maximum_tail": 4.483775961778617e-07
+          },
+          {
+            "H": 64,
+            "rmax": 0.6,
+            "selected_first_action": 5,
+            "selected_proxy_per_branch": [
+              0,
+              15
+            ],
+            "actual_policy_value_from_frozen_exact": 0.019377345895045764,
+            "recomputed_regret": 0.0,
+            "upper_minus_lower_gap": 3.736157253506067e-07,
+            "maximum_tail": 9.865408695564123e-07
+          },
+          {
+            "H": 64,
+            "rmax": 0.9,
+            "selected_first_action": 5,
+            "selected_proxy_per_branch": [
+              0,
+              15
+            ],
+            "actual_policy_value_from_frozen_exact": 0.05204333556758507,
+            "recomputed_regret": 0.0,
+            "upper_minus_lower_gap": 9.128366586924619e-07,
+            "maximum_tail": 9.8769079333654e-07
+          },
+          {
+            "H": 64,
+            "rmax": 0.99,
+            "selected_first_action": 5,
+            "selected_proxy_per_branch": [
+              0,
+              15
+            ],
+            "actual_policy_value_from_frozen_exact": 0.06905421222648885,
+            "recomputed_regret": 0.0,
+            "upper_minus_lower_gap": 0.0,
+            "maximum_tail": 0.0
+          },
+          {
+            "H": 128,
+            "rmax": 0.25,
+            "selected_first_action": 5,
+            "selected_proxy_per_branch": [
+              0,
+              15
+            ],
+            "actual_policy_value_from_frozen_exact": 0.0030112867191959313,
+            "recomputed_regret": 0.0,
+            "upper_minus_lower_gap": 4.4837759617796444e-07,
+            "maximum_tail": 4.483775961778617e-07
+          },
+          {
+            "H": 128,
+            "rmax": 0.6,
+            "selected_first_action": 5,
+            "selected_proxy_per_branch": [
+              0,
+              15
+            ],
+            "actual_policy_value_from_frozen_exact": 0.019148879695950756,
+            "recomputed_regret": 0.0,
+            "upper_minus_lower_gap": 3.736157253506067e-07,
+            "maximum_tail": 9.865408695564123e-07
+          },
+          {
+            "H": 128,
+            "rmax": 0.9,
+            "selected_first_action": 5,
+            "selected_proxy_per_branch": [
+              0,
+              15
+            ],
+            "actual_policy_value_from_frozen_exact": 0.05130832654687116,
+            "recomputed_regret": 0.0,
+            "upper_minus_lower_gap": 9.128366586924619e-07,
+            "maximum_tail": 9.8769079333654e-07
+          },
+          {
+            "H": 128,
+            "rmax": 0.99,
+            "selected_first_action": 5,
+            "selected_proxy_per_branch": [
+              0,
+              15
+            ],
+            "actual_policy_value_from_frozen_exact": 0.06792617768347084,
+            "recomputed_regret": 0.0,
+            "upper_minus_lower_gap": 0.0,
+            "maximum_tail": 0.0
+          }
+        ],
+        "coverage_limit": "Decision arithmetic uses frozen exact matrices, whose independent quadratic check covers36 spots."
+      }
+    },
+    {
+      "family": "Decimal80_weak_shape_saved_control_readonly",
+      "status": "PASS",
+      "details": {
+        "Decimal_precision": 80,
+        "independent_reference": "7.0523697943469541770655372196487513287021504685502101662381106781106381186918119E-34",
+        "saved_value_comparisons": {
+          "D2_positive_gain": {
+            "saved": 7.052369794346956e-34,
+            "relative_error": 2.4255242767192457e-16
+          },
+          "stable_H2_reference": {
+            "saved": 7.052369794346956e-34,
+            "relative_error": 2.4255242767192457e-16
+          }
+        },
+        "weak_shape_uses_relative_tolerance_only": 2e-11,
+        "saved_direct_matrix_float_value_not_used_as_oracle": 0.0,
+        "no_controls_or_CDF_integrals_replayed": true,
+        "two_saved_underflow_refusals_only_read_not_reexecuted": true
+      }
+    }
+  ],
+  "all_pinned_inputs_unchanged": true,
+  "producer_imports_replays_controls_or_timings": 0,
+  "material_arrays_reads_fits_or_scores": 0,
+  "scope": "Registered saved-synthetic-result numerical coverage only; no IEEE directed certification or performance/material efficacy claim.",
+  "full_kernel_coverage": "36 predeclared independent quadratics, all3072 stored envelopes, all nonfallback moment readouts; no full3072 independent quadratics claim."
+}

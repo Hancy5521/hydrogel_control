@@ -1,0 +1,115 @@
+{
+  "actual_utc": "2026-11-05T13:21:49.428907+00:00",
+  "status": "PASS_BOUNDED_SYNTHETIC_EXECUTION_ONLY_NOT_GENERAL_NUMERIC_CERTIFICATION",
+  "read_scope": "Only frozen source/template plus previously executed independent toy-math receipt. AST parse and literal configuration inspection only; producer not imported or executed.",
+  "source_sha256": {
+    "relation_core.py": "37d35e51701961beffb57da89c03cbe5305f39a7087375d78397f2e6183dfa91",
+    "run_synthetic.py": "024cb2755cc9cc7a37c1b1242216bb1db1e2e56a1d74fa9f9f6173cc44a2f60f",
+    "SYNTHETIC_PROTOCOL_TEMPLATE.json": "8e08098c5fb7fa0377770f4b56aaa535b4399f6cf6430ece45f1154c15b456b4"
+  },
+  "prior_independent_identity_audit_reused": {
+    "file": "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\independent_math\\execution_v2_once\\INDEPENDENT_MATH_RESULT.json",
+    "sha256": "65c1a453039d4e8efec6cb9a99c30d9a6154110596941c443df7ec33cccf47e4"
+  },
+  "configuration_matches_AST_literal_return": true,
+  "principle_case_count": 6,
+  "principle_cases": [
+    "symmetric_signed_relation",
+    "theta_known",
+    "fake_calibration_identity",
+    "zero_relation",
+    "noncollinear_single_proxy_selector",
+    "same_F_different_adaptive_branches"
+  ],
+  "bounded_timing_case_count": 6,
+  "six_timing_cases": {
+    "families": [
+      "homogeneous_scaling",
+      "known_state_noncollinear",
+      "dense_uninformative"
+    ],
+    "sizes": [
+      {
+        "repairs": 16,
+        "proxies": 32
+      },
+      {
+        "repairs": 64,
+        "proxies": 128
+      }
+    ]
+  },
+  "source_imports_static": {
+    "relation_core.py": [
+      "dataclasses",
+      "fractions",
+      "math",
+      "numpy"
+    ],
+    "run_synthetic.py": [
+      "argparse",
+      "datetime",
+      "fractions",
+      "hashlib",
+      "json",
+      "math",
+      "numpy",
+      "pathlib",
+      "relation_core",
+      "sys",
+      "threadpoolctl",
+      "time",
+      "tracemalloc"
+    ]
+  },
+  "pass_reasons": [
+    "Exact finite posterior branches retain every strictly positive rational-probability outcome. The adaptive solver scores each affordable proxy separately within each posterior branch, takes the max inside the expectation and retains branch-specific selected actions.",
+    "All compared methods use the same integer-tick budget3 and per-action costs. Cost1/2 creates forbidden2+2pairs; both loop and cached solvers mask them before maximizing. Each first action must have at least one affordable continuation.",
+    "Fixed-pair values are explicitly distinct from adaptive values; full F is not used as a substitute for retained posterior branches.",
+    "Fully cached vectorized and blocked-vectorized implementations are present. Explicit kernel-rebuilding loop is labelled correctness-only, not a novel-algorithm performance baseline.",
+    "Homogeneous-scaling/dense-uninformative families additionally expose the separable analytic-ranking shortcut, preventing naive-loop speedup claims.",
+    "Three families at two sizes give6 bounded one-shot timing cases; include preparation, use1BLASthread, record managed tracemalloc memory, explicitly avoid universal speed/RSS claims.",
+    "Runner does not repeat independent CDF/energy quadratures; it hashes and reuses the exact prior65c1a453 receipt.",
+    "No raw data/gzip/NPZ/ACTIONS reader, target trainer or material import exists in these two frozen source files. Parent CLI reads only approved plan/approval/source and prior mathematical receipt."
+  ],
+  "interpretation_required_before_execution": [
+    "Benchmark action-specific sigma/scale and costs describe different candidate targets under a SUM of local CRPS risks; changing scale across actions is not a proxy-dependent marginal variance for one common target.",
+    "Assume each candidate proxy contributes only its local candidate-target risk reduction in this one-proxy horizon, conditional on the shared finite relation. This is a synthetic decision abstraction, not certified real instrument cost.",
+    "The same-F binary example is correctly a separate binary proper-score fixture. Our independent full-joint enumeration already confirms its9/64vs7/64 adaptive gains; production short-form arithmetic is not counted as a new independent proof.",
+    "Scope booleans state model assumptions and cannot certify real unit independence or source lineage. No material efficacy, new algorithm, screening or speed superiority follows from the6principles/6timingcases."
+  ],
+  "numeric_protection_actual_scope": {
+    "exact_guards_present": [
+      "Normalized exact rational prior and likelihood columns",
+      "Only exactly zero-probability branch dropped",
+      "Exact posterior martingale and F annihilates ones",
+      "Nonzero exact weights/F entries cannot convert to float0",
+      "Nonzero rho products cannot underflow to0",
+      "Stable t/(1+sqrt(1-t)) kernel avoids subtractive cancellation inside1-sqrt",
+      "Nonzero kernel entries cannot underflow to0; PSD checked without eigenvalue projection"
+    ],
+    "not_protected": [
+      "Nonzero products of otherwise representable posterior weights and kernel values can underflow in quadratic forms / weighted expectation",
+      "Positive rho^4-scale mixture information can disappear through cancellation of rho^2 kernel terms even when individual entries are nonzero and PSD"
+    ],
+    "analytic_boundary_counterexamples_not_executed": [
+      {
+        "fixture": "prior=(1-10^-200,10^-200), exact theta-revealing probe, candidate rho=(0,10^-150), scale1",
+        "failure_path": "All nonzero prior/F/kernel entries are float64-representable, but a posterior-branch probability times its positive local gain is about2.82e-501 and can become0 with no current guard.",
+        "effect": "A broad support-preservation claim would be false."
+      },
+      {
+        "fixture": "balanced posterior and symmetric rho=+/-10^-8",
+        "failure_path": "True B main gain behaves as rho^4/(8sqrt(pi)), but v^T S v cancels rho^2 terms. Guarding entry support and PSD does not preserve the tiny positive eigen-direction.",
+        "effect": "Stable entry formula alone does not establish weak-signal quadratic-form accuracy."
+      }
+    ],
+    "registered_fixture_boundary": "Frozen6principles/6timingcases use balanced or point-mass priors and moderate nonzero correlations/scales. No extreme-number robustness promise is needed for this bounded execution.",
+    "if_broader_scope_requested": "Block broad certification until a separately frozen fail-closed or high-precision/scaled implementation and explicit boundary tests exist. Do not silently increase tolerances."
+  },
+  "necessary_source_changes_for_current_bounded_run": [],
+  "producer_executions_or_imports_by_reviewer": 0,
+  "material_reads_fits_predictions_or_scores_by_reviewer": 0,
+  "old_independent_math_reruns": 0,
+  "limits": "Static execution gate, not empirical correctness certification of every producer result. Root must register actual UTC/source hashes and approve before the once-only bounded run."
+}

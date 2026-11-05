@@ -1,0 +1,62 @@
+{
+  "kind": "bounded_moment_decision_readout",
+  "status": "TEMPLATE",
+  "registered_actual_utc": null,
+  "source_sha256": {
+    "moment_core.py": "fa2e63d672a23cc490786ca21f03161122e7670d9c9d8457f6a123a710025de8",
+    "run_moment_control.py": "d55f39d9cff4931cb3bd63a7669b804934764a755fc23e5c064bd1a189823a62"
+  },
+  "configuration": {
+    "version": "moment_decision_readout_v1",
+    "hypotheses": [
+      8,
+      64,
+      128
+    ],
+    "rmax": [
+      0.25,
+      0.6,
+      0.9,
+      0.99
+    ],
+    "repair_actions": 8,
+    "proxies": 16,
+    "outcomes_per_repair": 2,
+    "epsilon_CRPS": 1e-06,
+    "degree_cap": 64,
+    "degree_not_smaller_than_H": "fallback_exact",
+    "unresolved_tail_within_cap": "fallback_exact",
+    "timing_repetitions": 1,
+    "BLAS_threads": 1,
+    "main_case_count": 12,
+    "known_state_rho_function": "rmax*tanh(1.1*z+0.2*c*z^2)/max_abs_h(tanh(...)); z uniform finite hypothesis grid,c known proxy state",
+    "scale_function": "1+0.25*c^2",
+    "algorithms": [
+      "exact_streamed_per_proxy",
+      "exact_cached_kernel_bank",
+      "moment_streamed_with_exact_fallback"
+    ],
+    "necessary_controls": [
+      "D1_ranking_reversal_smoke_with_pinned_exact_audit",
+      "symmetric_1e-8_shape_and_stable_H2_reference",
+      "final_gain_underflow_explicit_refusal",
+      "same_rho_separable_ordering"
+    ],
+    "old_frozen_source_modified": false,
+    "material_execution": false,
+    "tail_is_not_an_IEEE_or_model_correctness_certificate": true
+  },
+  "prior_audit_receipts": {
+    "centered_CRPS_identity": {
+      "file": "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\independent_math\\execution_v2_once\\INDEPENDENT_MATH_RESULT.json",
+      "sha256": "65c1a453039d4e8efec6cb9a99c30d9a6154110596941c443df7ec33cccf47e4",
+      "reuse_existing_receipt_only": true
+    },
+    "exact_moment_interval": {
+      "file": "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\independent_moment_math\\execution_20261105T133636538641Z\\INDEPENDENT_MOMENT_MATH_AUDIT.json",
+      "sha256": "1a2a6f67ed1a294db3c7beff2d3070684ada22d7f8feb47c37c80f7a703e149c",
+      "reuse_existing_receipt_only": true
+    }
+  },
+  "no_material_execution": true
+}

@@ -1,0 +1,19 @@
+{
+  "actual_utc": "2026-11-05T13:42:04.272137+00:00",
+  "kind": "FUTURE_MATERIAL_GATE_DESIGN_ONLY",
+  "document": "FUTURE_MATERIAL_EVIDENCE_GATE_DESIGN_ZH.txt",
+  "document_sha256": "d90ff0f8347b51d701a3b0c9c311185c10f137ec4c38efd34ca983ef2d9bd3d7",
+  "new_group_role_or_seed_selected": false,
+  "new_source_admitted": false,
+  "material_labels_read": 0,
+  "fits_or_oracle_calls": 0,
+  "essential_limits": [
+    "A must be an actual paid auxiliary co-measurement, not a fictitious theta truth tag",
+    "If repair reveals a candidate target, use mixed/full joint utility and count direct gain",
+    "Allow fair direct-target acquisition/verification baselines for discovery",
+    "Same-posterior cache equivalence supports computational/representation claims, not intrinsically better prediction",
+    "JARVIS unused groups remain oneDFT source; UCSB22source groups remain limited",
+    "No actual physical-cost claim without source evidence"
+  ],
+  "next_action": "Await independent moment source/plan freeze and method gate; no material split or response reveal is authorized by this design."
+}

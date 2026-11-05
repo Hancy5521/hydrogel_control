@@ -1,0 +1,13 @@
+{
+  "actual_utc": "2026-11-05T12:50:22.301078+00:00",
+  "url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/buathong24a/buathong24a.pdf",
+  "purpose": "Official PMLR PDF link, web tool cannot parse octet-stream; selected-method reading only, not code/data execution",
+  "maximum_download_bytes": 8000000,
+  "status": 200,
+  "content_type": "application/octet-stream",
+  "bytes": 1834157,
+  "saved": "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\prior_art\\local_reading_only\\pKGFN_2024_official.pdf",
+  "sha256": "19ab8afcb5d87444e2d111602d796925eadcf882de46f851a2ac8beac1d0a298",
+  "pages": 33,
+  "extraction_scope": "Only pages3–5 extracted; actual reading recorded separately, no full-paper claim"
+}

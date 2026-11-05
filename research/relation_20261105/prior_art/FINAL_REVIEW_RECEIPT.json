@@ -1,0 +1,34 @@
+{
+  "actual_end_utc": "2026-11-05T13:02:11.769382+00:00",
+  "decision": "CONDITIONAL_GO_TO_BOUNDED_MATH_COMPUTE_GATE_NOT_REAL_FIT",
+  "effective_queries": 8,
+  "selected_method_papers": 5,
+  "additional_classic_reference_depth": "Rice1978 indexedofficialabstract only; not counted as full or selected method reading",
+  "new_material_response_reads_fits_or_scores": 0,
+  "new_model_execution": false,
+  "old_experiments_rerun": false,
+  "files": [
+    {
+      "file": "DIRECT_NEIGHBOR_LEDGER.json",
+      "sha256": "e0391d0ed6ba46a0eb8090a358c1fcd249fc7872caa0db489822c8e61c29a369"
+    },
+    {
+      "file": "GITHUB_PRIMARY_METADATA.json",
+      "sha256": "c072d6112dec984d5eedabb7109a8cade7caf710a84384719ac2ce7f8e862e79"
+    },
+    {
+      "file": "PDF_ACCESS_RECEIPT.json",
+      "sha256": "61e5e3e9111d48070b70e41d488f08d27b50db2d0661d6c6b795837a5b19c6c8"
+    },
+    {
+      "file": "CONTRIBUTION_GATE_ZH.txt",
+      "sha256": "16bf1736118a69e780f938a24c15d6c020faa3643eb750e805d81d9485497765"
+    },
+    {
+      "file": "MATH_SCOPE_ADDENDUM.txt",
+      "sha256": "2fa41af8a78781f507ebe290224b0d1f7e22618230553825442349b2631d85db"
+    }
+  ],
+  "local_copyright_reading_material": "local_reading_only/pKGFN_2024_official.pdf is for local traceability; paper republicationlicense not independently established, exclude from automatic public upload/package unless rights separately verified",
+  "next_step": "Root may decide a preregistered finite-relation branch-preserving cache accuracy/compute control. No source implementation or model run is authorized by this literature report."
+}

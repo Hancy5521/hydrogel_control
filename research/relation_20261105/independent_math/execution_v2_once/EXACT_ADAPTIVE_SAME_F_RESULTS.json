@@ -1,0 +1,249 @@
+{
+  "status": "EXACT_SAME_F_DIFFERENT_ADAPTIVE_BAYES_RISK",
+  "designs": {
+    "posterior_quarters": {
+      "atoms": 16,
+      "posterior_law": [
+        [
+          "1/2",
+          "1/4"
+        ],
+        [
+          "1/2",
+          "3/4"
+        ]
+      ],
+      "baseline_expected_CRPS": "1/4",
+      "A_only_expected_CRPS": "1/4",
+      "F": [
+        [
+          "1/16",
+          "-1/16"
+        ],
+        [
+          "-1/16",
+          "1/16"
+        ]
+      ],
+      "fixed_proxies": {
+        "0": {
+          "risk": "11/64",
+          "total_gain": "5/64",
+          "true_synergy": "1/64",
+          "S": [
+            [
+              "1/4",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ]
+        },
+        "1": {
+          "risk": "11/64",
+          "total_gain": "5/64",
+          "true_synergy": "1/64",
+          "S": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1/4"
+            ]
+          ]
+        }
+      },
+      "all_legal_A_then_one_B_policies": [
+        {
+          "action_for_each_A": [
+            0,
+            0
+          ],
+          "risk": "11/64",
+          "gain": "5/64"
+        },
+        {
+          "action_for_each_A": [
+            0,
+            1
+          ],
+          "risk": "15/64",
+          "gain": "1/64"
+        },
+        {
+          "action_for_each_A": [
+            1,
+            0
+          ],
+          "risk": "7/64",
+          "gain": "9/64"
+        },
+        {
+          "action_for_each_A": [
+            1,
+            1
+          ],
+          "risk": "11/64",
+          "gain": "5/64"
+        }
+      ],
+      "best_policy_by_exact_joint_risk": {
+        "action_for_each_A": [
+          1,
+          0
+        ],
+        "risk": "7/64",
+        "gain": "9/64"
+      }
+    },
+    "posterior_endpoints_and_midpoint": {
+      "atoms": 16,
+      "posterior_law": [
+        [
+          "1/8",
+          "0"
+        ],
+        [
+          "3/4",
+          "1/2"
+        ],
+        [
+          "1/8",
+          "1"
+        ]
+      ],
+      "baseline_expected_CRPS": "1/4",
+      "A_only_expected_CRPS": "1/4",
+      "F": [
+        [
+          "1/16",
+          "-1/16"
+        ],
+        [
+          "-1/16",
+          "1/16"
+        ]
+      ],
+      "fixed_proxies": {
+        "0": {
+          "risk": "11/64",
+          "total_gain": "5/64",
+          "true_synergy": "1/64",
+          "S": [
+            [
+              "1/4",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ]
+        },
+        "1": {
+          "risk": "11/64",
+          "total_gain": "5/64",
+          "true_synergy": "1/64",
+          "S": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1/4"
+            ]
+          ]
+        }
+      },
+      "all_legal_A_then_one_B_policies": [
+        {
+          "action_for_each_A": [
+            0,
+            0,
+            0
+          ],
+          "risk": "11/64",
+          "gain": "5/64"
+        },
+        {
+          "action_for_each_A": [
+            0,
+            0,
+            1
+          ],
+          "risk": "13/64",
+          "gain": "3/64"
+        },
+        {
+          "action_for_each_A": [
+            0,
+            1,
+            0
+          ],
+          "risk": "11/64",
+          "gain": "5/64"
+        },
+        {
+          "action_for_each_A": [
+            0,
+            1,
+            1
+          ],
+          "risk": "13/64",
+          "gain": "3/64"
+        },
+        {
+          "action_for_each_A": [
+            1,
+            0,
+            0
+          ],
+          "risk": "9/64",
+          "gain": "7/64"
+        },
+        {
+          "action_for_each_A": [
+            1,
+            0,
+            1
+          ],
+          "risk": "11/64",
+          "gain": "5/64"
+        },
+        {
+          "action_for_each_A": [
+            1,
+            1,
+            0
+          ],
+          "risk": "9/64",
+          "gain": "7/64"
+        },
+        {
+          "action_for_each_A": [
+            1,
+            1,
+            1
+          ],
+          "risk": "11/64",
+          "gain": "5/64"
+        }
+      ],
+      "best_policy_by_exact_joint_risk": {
+        "action_for_each_A": [
+          1,
+          0,
+          0
+        ],
+        "risk": "9/64",
+        "gain": "7/64"
+      }
+    }
+  },
+  "meaning": "F_A and fixed-pair tr(F_A S_B) do not retain the full posterior law needed by an adaptive choice among B actions. This does not falsify the fixed-pair identity or invent a new planning algorithm."
+}

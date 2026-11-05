@@ -1,0 +1,14 @@
+{
+  "actual_utc": "2026-11-05T14:05:25.997315+00:00",
+  "plan_sha256": "1ba30912bbe5775150d42f4e7d48a27150580ff3eb5bde6d5bb8a9cd44d335c2",
+  "approval_sha256": "48b703a40b2d07feb9eecf437ef9c73b73f23628cd0423749a4ea6ceee8da618",
+  "input_sha256": {
+    "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\math_design\\moment_followup\\moment_core.py": "fa2e63d672a23cc490786ca21f03161122e7670d9c9d8457f6a123a710025de8",
+    "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\math_design\\moment_followup\\run_moment_control.py": "d55f39d9cff4931cb3bd63a7669b804934764a755fc23e5c064bd1a189823a62",
+    "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\math_design\\moment_followup\\EXECUTION_PLAN_REGISTERED.json": "4216dcdfef6cf8837c7ed9416cd2941b74e0df8f6d286db212d14250e6d868f8",
+    "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\math_design\\moment_followup\\execution_once\\EXECUTION_START.json": "ef758c1b059f7e982609aa7953b8b7f2461fd35a9f9fc92b0243582396288c3e",
+    "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\math_design\\moment_followup\\execution_once\\RESULTS.json": "cc48fe6581545569760d544da6d5a1342ce36a2ab0855a1fb3fad80787c37893"
+  },
+  "producer_imports_or_replays": 0,
+  "original_timings_repeated": false
+}

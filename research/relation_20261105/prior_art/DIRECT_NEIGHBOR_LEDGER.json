@@ -1,0 +1,151 @@
+{
+  "actual_created_utc": "2026-11-05T12:56:57.001887+00:00",
+  "actual_created_asia_shanghai": "2026-11-05T20:56:57.001887+08:00",
+  "task": "Bounded direct-neighbor/contribution gate for unknown relation posterior, active co-measurement, nonmyopic complementary information and affordable pair screening.",
+  "search_budget": {
+    "effective_queries": 8,
+    "search_calls": 3,
+    "maximum_effective_queries": 8,
+    "stopped_at_budget": true
+  },
+  "queries": [
+    "Bayesian optimization function networks partial evaluations multi step knowledge gradient unknown correlation complementary information",
+    "Bayesian optimization multi task unknown covariance non myopic knowledge gradient correlation learning",
+    "Bayesian optimization graph complementary information pair lookahead acquisition non submodular",
+    "Practical Non-Myopic Bayesian Optimization via One-Shot Multi-Step Trees NeurIPS2020 Jiang official code",
+    "Towards Safe Multi Task Bayesian Optimization unknown source correlation Lubsen 2024 official github",
+    "non myopic Bayesian optimization complementary information sparse graph pair lookahead screening acquisition",
+    "Bayesian value of information quadratic loss trace covariance posterior model probabilities experimental design",
+    "active learning complementary information conditional independence two step acquisition pair screening Bayesian risk"
+  ],
+  "selected_method_papers": [
+    {
+      "id": "OneShot2020",
+      "title": "Efficient Nonmyopic Bayesian Optimization via One-Shot Multi-Step Trees",
+      "venue": "NeurIPS2020",
+      "version": "Official proceedings11page PDF",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2020/file/d1d5923fc822531bbfd9d87d4760914b-Paper.pdf",
+      "reading_depth": "Selected sections2,3.1–3.2,4,6 and relevant method-limit paragraphs; appendix proofs/complete experiments not read.",
+      "known_mechanism": "Bayesian finite-horizon recursion, expectation versus adaptive maximization, joint scenario-tree optimization, fast fantasization and cheap approximate alternatives.",
+      "difference_still_possible": "Does not in selected sections define source-identity co-measurement panels, old incomplete material versus new-row actions, or exact finite-relation centered-CDF pair factors. These are candidate differences, not absent-from-entire-literature guarantees.",
+      "license": "Repository implementationMIT confirmed separately; paper license not independently checked; citation/selected reading only.",
+      "official_code": "https://github.com/meta-pytorch/botorch",
+      "code_reading": "qMultiStepLookahead first125lines; standard default supports multi-stepKG; no code execution."
+    },
+    {
+      "id": "pKGFN2024",
+      "title": "Bayesian Optimization of Function Networks with Partial Evaluations",
+      "venue": "ICML2024,PMLR235:4752–4784",
+      "version": "Official PMLR-linked33page PDF",
+      "url": "https://proceedings.mlr.press/v235/buathong24a.html",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/buathong24a/buathong24a.pdf",
+      "reading_depth": "Downloaded official bounded1.834MB PDF and extracted/read pages3–5: problem assumptions,3.2 statistical model,4 and4.1 acquisition,5/5.1 approximation,5.2 opening. Not a33page full-paper read.",
+      "known_mechanism": "Known function DAG, reusable intermediate outputs, positive costs, independent node GP posteriors, one additional cost-normalized partial observation, discrete/network optimization.",
+      "difference_still_possible": "Function-input DAG is not automatically an unknown cross-property/source-relation graph. Selected method assumes declared node dependencies and focuses best final-node expectation, not co-measurement identity and complementary repair/new-row CRPS planning.",
+      "license": "Code MIT fully read; article reuse license not independently checked. Saved PDF restricted to local_reading_only, not automatically public packaging.",
+      "official_code": "https://github.com/frazier-lab/partial_kgfn"
+    },
+    {
+      "id": "FastpKGFN2025",
+      "title": "Fast Bayesian Optimization of Function Networks with Partial Evaluations",
+      "venue": "AutoML2025 acceptance stated by official authors repository; forum acceptance itself not independently checked",
+      "version": "arXiv2506.11456v1,13Jun2025",
+      "url": "https://arxiv.org/html/2506.11456v1",
+      "reading_depth": "Selected sections2/3 model discussion and4.1–4.3 candidate generation, finite-set acquisition approximation and node selection; appendix/entire experiments not read.",
+      "known_mechanism": "Global inexpensive candidate generation, Thompson/local discretization, repeated nested optimization cost reduction; reports up to16x in its own experiments.",
+      "difference_still_possible": "Candidate pruning/compute improvement already established. A new contribution would need provably retained complementary values under unknown shared relation and measured gain over cached/vectorized baselines, not speed versus only naive loops.",
+      "license": "Article CC BY4.0 shown by arXiv HTML; repositoryMIT LICENSE read.",
+      "official_code": "https://github.com/frazier-lab/partial_kgfn"
+    },
+    {
+      "id": "SafeMTBO2024",
+      "title": "Towards Safe Multi-Task Bayesian Optimization",
+      "venue": "L4DC2024,PMLR242:839–851",
+      "version": "Official13page proceedings PDF",
+      "url": "https://proceedings.mlr.press/v242/lubsen24a/lubsen24a.pdf",
+      "reading_depth": "Selected2.2 task-kernel context,3 unknown source correlation hyperprior/posterior, stated lemmas/theorem without proof verification,4 algorithm and initial simulation assumptions. Not full-paper proof reading.",
+      "known_mechanism": "Uncertain source correlation Sigma with hyperprior, MCMC posterior and robust confidence bounds, safety-aware use of cheap models.",
+      "difference_still_possible": "Unknown relation posterior is not new; selected method has positive-correlation/safety assumptions and simulation-source context rather than signed-relation complementarity with source-consistent co-measurements and old/new rows.",
+      "license": "Papercopyright2024authors; codeGPL3 header read; no code copied or executed.",
+      "official_code": "https://github.com/TUHH-ICS/2024-code-L4DC-Towards-Safe-Multi-Task-Bayesian-Optimization"
+    },
+    {
+      "id": "NM_MFBO2022_2024",
+      "title": "Non-Myopic Multifidelity Bayesian Optimization",
+      "venue": "arXiv official abstract lists Knowledge-Based Systems299(2024):111959; publisher article not independently opened",
+      "version": "SelectedHTML arXiv2207.06325v1; official current abstract isv3 revised4Jul2024. Do not conflate versions. HTML v1 also displayed an Aug24,2026 header, not used as publication date.",
+      "url": "https://arxiv.org/html/2207.06325v1",
+      "metadata_url": "https://arxiv.org/abs/2207.06325",
+      "doi": "10.1016/j.knosys.2024.111959",
+      "reading_depth": "Selected3.1–3.2 DP formulation and two-step multifidelity expectation/second-stage maximization/MonteCarlo approximation. Not full paper or publisher verification.",
+      "known_mechanism": "Joint design/fidelity choice with two-step lookahead already known; marginal Gaussian surrogate and sampled future outcomes.",
+      "difference_still_possible": "Selected method does not specifically supply finite unknown material relation posterior/identity-controlled co-measurement screening. Two-step cost-aware planning itself is already covered.",
+      "license": "arXiv perpetual non-exclusive license shown; no code used, officialrepo not located within query budget."
+    }
+  ],
+  "indexed_abstract_only_classical_reference": {
+    "title": "The Value of Data for a Quadratic Decision Problem",
+    "author": "Thomas Richard Rice",
+    "year": 1978,
+    "doi": "10.1287/mnsc.24.10.1055",
+    "url": "https://pubsonline.informs.org/doi/10.1287/mnsc.24.10.1055",
+    "reading_depth": "Official publisher indexedabstract in search result only; no fullpaper or methods accessed. Not counted as selected-method paper.",
+    "implication": "General quadratic VOI depends on covariance of posterior means; tr(FG) cannot be positioned as a new law without closer specificity."
+  },
+  "root_reported_neighbors_not_independently_reread": [
+    {
+      "title": "The Lagrangian Structure of Cost-Penalized Active Feature Acquisition",
+      "version": "arXiv2610.21919v1",
+      "url": "https://arxiv.org/abs/2610.21919",
+      "root_reading_report": "Selected1–3 and5.2/5.3; panels, costs, hardbudget/expectedbudget, Gaussian complementarity. Child does not claim independent reading or method verification."
+    },
+    {
+      "title": "Probabilistic sensitivity measures as information value",
+      "doi": "10.1016/j.ejor.2020.07.010",
+      "year": 2021,
+      "root_reported_overlap": "CRPS-VOI as expected squared conditional-minus-prior CDF distance; child did not open paper."
+    },
+    {
+      "title": "CRPS-Based Targeted Sequential Design with Application in Chemical Space",
+      "version": "arXiv2503.11250",
+      "url": "https://arxiv.org/abs/2503.11250",
+      "root_reported_overlap": "CRPS/twCRPS acquisition already exists. Journalacceptance not independently checked by child."
+    }
+  ],
+  "prior_work_reused_not_new_reads": [
+    "Eigen/hypercycle classic references",
+    "Bayes-AdaptivePOMDP2007",
+    "PitfallsRemediesMTBO2026",
+    "HVKG2023",
+    "AFA/GSMRL2021",
+    "MADE",
+    "DGM"
+  ],
+  "official_github_metadata_file": "GITHUB_PRIMARY_METADATA.json",
+  "access_failures": [
+    {
+      "url": "https://proceedings.mlr.press/v235/buathong24a/buathong24a.pdf",
+      "result": "Not accessible in webtool; officialHTML revealed canonicalrawGitHubPDF link."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/buathong24a/buathong24a.pdf",
+      "result": "webtool rejectedoctetstream; standardboundedHTTP GET succeeded200, selectedlocaltextread. No challenge bypass."
+    },
+    {
+      "url": "https://arxiv.org/html/2311.02146v3",
+      "result": "404; guessedversion failed, not retried."
+    },
+    {
+      "url": "https://openreview.net/pdf?id=scMAQ3mFAA",
+      "result": "Browserverificationchallenge; not bypassed, officialPMLRsource used."
+    },
+    {
+      "url_pattern": "GitHub /license endpoint",
+      "result": "Toolrejectedendpoint;3repositories. ActualLICENSEfiles fetched by supportedfetch_file, no retry of rejectedendpoint."
+    }
+  ],
+  "new_material_arrays_read": false,
+  "model_fits_or_material_scores": 0,
+  "new_algorithm_novelty_proven": false,
+  "decision": "CONDITIONAL_GO for one bounded contribution: source-consistent finite-relation posterior, branch-preserving quadratic/CDF factor reuse and conservative screening for affordable two-step co-measurement. No-go for claiming generic hypercycle/learnedB/two-step/graph/CRPSVOI originality."
+}

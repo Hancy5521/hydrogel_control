@@ -1,0 +1,28 @@
+{
+  "actual_utc": "2026-11-05T12:58:05.696672+00:00",
+  "status": "CONDITIONAL_GO_MATH_AND_BOUNDED_SYNTHETIC_IMPLEMENTATION_ONLY",
+  "question": "Can restricted pure-relation/proxy information be represented in centered CRPS matrices and all adaptive posterior branches retained, giving correct and less costly two-step evaluation?",
+  "not_new_by_itself": [
+    "Bayes adaptive learning",
+    "law total variance / quadratic EVSI",
+    "CRPS value of information",
+    "panels/costs",
+    "non-myopic planning",
+    "Eigen naming or multi-agent loop"
+  ],
+  "candidate_increment": "A clearly scoped reusable centered-CDF kernel for finite uncertain dependencies, a sufficiency boundary/counterexample, and implementation that may reduce repeated integration while preserving adaptive branch decisions. Novelty and practical speed not yet established.",
+  "must_preserve": [
+    "full posterior outcome branches for adaptive second action",
+    "main effects distinct from synergy",
+    "common proxy marginal and factorization assumptions",
+    "full residual distribution",
+    "equal posterior/action/cost and optimized cached-vectorized baseline",
+    "same-rho separable and dense/loose-bound negative controls",
+    "all setup/cache/compute/memory costs",
+    "no changed tolerance after seeing failures"
+  ],
+  "allowed": "Mathematical product; small clean synthetic prototype after its exact plan/source freezes and independent approval; no real material fitting or label reveals",
+  "forbidden": "old pilot tuning/refit/resplit; treating fixedpair trace as adaptive sufficient state; claiming pure E learns theta; fabricated material-specific rho/costs; topconference readiness",
+  "closed_loop_limit": "Pure proxy E has theta-independent marginal; actual reciprocal feedback requires paid target V/co-measurement. Two-action kernel is a submechanism, not completed generative hypercycle agent.",
+  "new_material_gate": "Only after this control is auditable and actual data assumptions/feature mapping are separately admitted; metadata availability is not response validity."
+}

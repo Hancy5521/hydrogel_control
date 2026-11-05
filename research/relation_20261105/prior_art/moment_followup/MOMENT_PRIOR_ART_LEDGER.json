@@ -1,0 +1,67 @@
+{
+  "actual_created_utc": "2026-11-05T13:24:14.255640+00:00",
+  "actual_created_asia_shanghai": "2026-11-05T21:24:14.255640+08:00",
+  "task": "Separate bounded3query gate: correlation-moment approximation to the Gaussian conditional-CRPS information kernel, adaptive decision error certificate and efficiency novelty.",
+  "search_budget": {
+    "new_effective_queries": 3,
+    "maximum": 3,
+    "old8query_gate_not_reopened": true,
+    "search_calls": 1
+  },
+  "queries": [
+    "Random feature maps dot product kernels positive Maclaurin coefficients Kar Karnick AISTATS 2012 deterministic Taylor truncation error",
+    "deterministic polynomial feature dot product kernel Taylor truncation certified approximation bound",
+    "CRPS Gaussian copula correlation kernel moments 1 sqrt 1 correlation Bayesian information value"
+  ],
+  "selected_primary_sources": [
+    {
+      "title": "Random Feature Maps for Dot Product Kernels",
+      "authors": [
+        "Purushottam Kar",
+        "Harish Karnick"
+      ],
+      "venue": "AISTATS2012,PMLR22:583–591",
+      "version": "Official9page proceedings PDF",
+      "url": "https://proceedings.mlr.press/v22/kar12.html",
+      "selected_pdf": "https://proceedings.mlr.press/v22/kar12/kar12.pdf",
+      "reading_depth": "Selected theorem1/section3 positive Maclaurin coefficients and section4.2 alternative truncated-series feature map/uniform bounded error. Other proofs/supplement and experiments not read.",
+      "direct_overlap": "Positive power-series kernels, finite explicit feature maps, Maclaurin truncation and uniform approximation guarantees are explicit prior art.",
+      "difference_not_established_in_prior": "Selected parts do not apply this scalar kernel to unknown material relation posterior, conditional-CRPS expected gains, retained branch moments, or cost-constrained R-first decision certificates. This is a candidate task/application difference, not absence guarantee.",
+      "license": "Paper copyright2012authors visible; no copying or code reused; full article reuse license not independently checked."
+    },
+    {
+      "title": "Improved Random Features for Dot Product Kernels",
+      "authors": [
+        "Jonas Wacker",
+        "Motonobu Kanagawa",
+        "Maurizio Filippone"
+      ],
+      "venue": "JMLR25(2024),1–75",
+      "version": "OfficialPDF, publishedAug2024",
+      "url": "https://www.jmlr.org/papers/volume25/22-0118/22-0118.pdf",
+      "reading_depth": "Selected5.1–5.3.1 Maclaurin expansion, random sketches, truncated approximation and bias/variance objective; code availability note. Not75page reading; appendix proofs/complete experiments not read.",
+      "direct_overlap": "Truncated Maclaurin approximation, degree allocation and approximation-compute tradeoffs already mature. Scalar rho features need no stochastic tensor sketch, so a random baseline is not automatically strongest.",
+      "difference_not_established_in_prior": "Selected work optimizes kernel approximation for learning tasks, not exact one-sided expected-future-query-value and adaptive decision certificates in source-consistent co-measurement.",
+      "license": "Paper explicitlyCC-BY4.0. OfficialcodeApache2.0 header inspected; no code copied/installed/executed.",
+      "official_repository": {
+        "url": "https://github.com/joneswack/dp-rfs",
+        "commit": "6c859b4d6d7e12d5f13607e3f1283d70e0fe8a59",
+        "README_blob_sha": "1b3dd72366673feef6802e99227368854c0ffa09",
+        "LICENSE_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+        "read_depth": "README first95lines and LICENSE first24lines, no implementation source inspection"
+      }
+    }
+  ],
+  "CRPS_specific_search_result": "No exactly matching Gaussian-copula relation-posterior moment decision encoding located within3queries; results include classical CRPS energy/kernel representation. This is not a novelty guarantee.",
+  "reused_prior_art_not_new_reading": [
+    "rootEJOR2021CRPS-VOI",
+    "rootchemicalspaceCRPSsequentialdesign2025",
+    "rootAFA2026panels/costs",
+    "earlierOneShot2020/pKGFN2024/fastpKGFN2025/SafeMTBO2024"
+  ],
+  "mathematical_checks": "Handwritten algebra and scope/counterexample reasoning only. No numerical calculation or model execution.",
+  "new_source_implemented": false,
+  "new_material_response_reads_fits_scores": 0,
+  "existing_two_module_freeze_changed": false,
+  "decision": "CONDITIONAL_GO to a new preregistered moment accuracy/compute certificate control; NO-GO for calling Taylor features/PSD/truncation a new principle or claiming complete posterior compression."
+}

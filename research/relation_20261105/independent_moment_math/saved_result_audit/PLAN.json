@@ -1,0 +1,118 @@
+{
+  "kind": "PRE_EXECUTION_INDEPENDENT_SAVED_SYNTHETIC_MOMENT_NUMERICAL_REVIEW",
+  "registered_actual_utc": "2026-11-05T14:03:15.362892+00:00",
+  "registered_asia_shanghai": "2026-11-05T22:03:15.362892+08:00",
+  "audit_script_path": "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\independent_moment_math\\saved_result_audit\\audit_saved_moments.py",
+  "audit_script_sha256": "f8400091c38f167e50a6b860a84ce017d6de3c4d21b842e621313bc3a91264d2",
+  "producer_source_sha256": {
+    "moment_core.py": "fa2e63d672a23cc490786ca21f03161122e7670d9c9d8457f6a123a710025de8",
+    "run_moment_control.py": "d55f39d9cff4931cb3bd63a7669b804934764a755fc23e5c064bd1a189823a62"
+  },
+  "producer_registered_plan_file": "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\math_design\\moment_followup\\EXECUTION_PLAN_REGISTERED.json",
+  "producer_execution_start_file": "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\math_design\\moment_followup\\execution_once\\EXECUTION_START.json",
+  "frozen_results_file": "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\math_design\\moment_followup\\execution_once\\RESULTS.json",
+  "input_sha256": {
+    "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\math_design\\moment_followup\\moment_core.py": "fa2e63d672a23cc490786ca21f03161122e7670d9c9d8457f6a123a710025de8",
+    "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\math_design\\moment_followup\\run_moment_control.py": "d55f39d9cff4931cb3bd63a7669b804934764a755fc23e5c064bd1a189823a62",
+    "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\math_design\\moment_followup\\EXECUTION_PLAN_REGISTERED.json": "4216dcdfef6cf8837c7ed9416cd2941b74e0df8f6d286db212d14250e6d868f8",
+    "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\math_design\\moment_followup\\execution_once\\EXECUTION_START.json": "ef758c1b059f7e982609aa7953b8b7f2461fd35a9f9fc92b0243582396288c3e",
+    "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\math_design\\moment_followup\\execution_once\\RESULTS.json": "cc48fe6581545569760d544da6d5a1342ce36a2ab0855a1fb3fad80787c37893"
+  },
+  "read_scope_before_audit_registration": "Original source/API already statically reviewed. Only result bytes hashed, originalexecutionstart/protocolmetadata read here; no actualsaved score arrays inspected or calculations executed by thisreviewer before thisaudit registration.",
+  "fixed_numerical_tolerance": {
+    "absolute": 2e-12,
+    "relative": 2e-11,
+    "rule": "abs(actual-reference)<=absolute+relative*abs(reference)",
+    "weak_positive_H2_special_rule": "Positive output required; independentDecimal80 value compared withrelative2e-11only, absolute0. Largeabsolute tolerancewouldotherwiseacceptfalsezero."
+  },
+  "full_kernel_independent_scope": {
+    "coordinates_per_case": [
+      [
+        0,
+        0
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        15,
+        15
+      ]
+    ],
+    "cases": 12,
+    "independent_quadratics": 36,
+    "method": "Scalar fullH² weighted sum; math.fsum with−expm1(.5*log1p(−rho_h*rho_k)), distinctfromproducerstable-rationalformula/BLAS. Noall3072fullkernelindependencerecomputationclaim."
+  },
+  "all_moment_scope": "Every nonfallbackproxy/branch reconstructed independently using exactFraction binomialcoefficients convertedtofloat, scalarintegerpowers andmath.fsum. Exactfallbacks comparedwithfrozenexact arrays plus3independentquadraticspotspercase.",
+  "families": [
+    {
+      "name": "frozen_case_identities_shapes_and_scope",
+      "checks": [
+        "source/registration/start/resultbindings",
+        "12uniqueH8/64/128×r.25/.6/.9/.99cases",
+        "16branches/16proxies/fullHweightsshapes",
+        "finiteopenrho/simplexweights/branchprobs",
+        "0materialexecution"
+      ]
+    },
+    {
+      "name": "all_envelopes_degrees_and_nonfallback_moments",
+      "checks": [
+        "all3072savedbranch/proxylower-exact-tailenvelopes",
+        "all3072cachedversusstreamedconsistency",
+        "everydegree/fallbackindependentlyselectedusingbinomialalpha/aD+1anddirectrpower",
+        "allnonfallbackmomentreadoutsreconstructed",
+        "fallbackscoreequalsfrozenexact,nohiddenclaimofindependentfullquadraticsforallfallback"
+      ]
+    },
+    {
+      "name": "independent_full_kernel_predeclared36_spots",
+      "checks": [
+        "3predeterminedcoordinatespercasefullH²fsum/log1p/expm1reference",
+        "comparisonsagainstfrozenexactwithfixedtolerance",
+        "noSUTimport/replay"
+      ]
+    },
+    {
+      "name": "all12_actual_selected_policy_and_gap_arithmetic",
+      "checks": [
+        "maxwithinbranchthenE,lo/hi/nominalexactvalues",
+        "reportedchosenfirstactionmaximalwithdeclaredfloattolerance",
+        "branchproxychosenfromsavedscores",
+        "actualsamea/bpolicyvaluefromfrozenexactreference",
+        "regret<=maxU-maxL<=maxepsilonplusdeclarednumericallowance",
+        "fixedpairandstrictadaptivegap arithmetic",
+        "samecostR-firsttwo-stageonly"
+      ]
+    },
+    {
+      "name": "Decimal80_weak_shape_saved_control_readonly",
+      "checks": [
+        "independent80digitDecimaloriginalsqrtformula+fixedpiliteral",
+        "positiveD2/H2savedvaluesandrelative2e-11only",
+        "directmatrixcancellationvalueonlyreported",
+        "underflowrefusalcountandD1negativecontrolmetadataread,notreplayed"
+      ]
+    }
+  ],
+  "no_producer_import_replay_controls_or_timings": true,
+  "no_material_access": true,
+  "reference_coverage_limit": "Independentkernelmathat36spots; all3072savedinternalenvelopes plusallnonfallbackmomentmath. Policyarithmeticusesfrozenexactmatrices. Do not describeasall3072independentexactlawsornewconfirmationcohort.",
+  "failure_policy": "Oneexecutionwithfixedcases/coordinates/tolerance. Preserveeveryfamilyoutcome, reportdifferences, noSUTrefit/replay/timing andnoanonymousedit-retryoftheauditor; anyamendmentrequiresrootdecision.",
+  "required_root_approval": {
+    "approved": true,
+    "scope": "INDEPENDENT_SAVED_MOMENT_NUMERICAL_REVIEW",
+    "plan_sha256": "EXACT_SHA_OF_THIS_PLAN"
+  },
+  "planned_output_directory": "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\independent_moment_math\\saved_result_audit\\execution_20261105T140315362892Z",
+  "unique_command": "D:\\Anaconda\\python.exe H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\independent_moment_math\\saved_result_audit\\audit_saved_moments.py --plan H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\independent_moment_math\\saved_result_audit\\PLAN.json --approval H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\independent_moment_math\\saved_result_audit\\ROOT_APPROVAL.json --output-dir H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\independent_moment_math\\saved_result_audit\\execution_20261105T140315362892Z",
+  "not_claimed": [
+    "IEEEdirectedcertificate",
+    "performanceorRSSmeasurement",
+    "newmaterialevidence",
+    "entireposteriorcompression",
+    "globalbudgetregret",
+    "newalgorithmorexperiment"
+  ]
+}

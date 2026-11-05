@@ -1,0 +1,24 @@
+{
+  "actual_utc": "2026-11-05T14:28:19.695245+00:00",
+  "original_sealed_manifest_sha256": "b9730a85e509f77eae587810dbb0644b38f73c502957564bfc85ab395e14ee3f",
+  "scientific_or_source_bytes_changed": false,
+  "transformations": [
+    {
+      "file": "INDEX.html",
+      "sealed_sha256": "56dc56dbf0dd673a2056ef5870695a65e6232dc837853c541f5be59a1495cb17",
+      "public_sha256": "72f57a5a7192b19d17d205a541e139a57192f696ec19788d139a19ac0ae50a54"
+    },
+    {
+      "file": "RESOURCE_SCOPE.json",
+      "sealed_sha256": "1a0ef64e3ffaa64709a57092ae198fcfee4b914603333c778ad3f4534a44f9db",
+      "public_sha256": "e19c43e2e6d6d9e32653183149e7933132fe10ccff356a64a49ea1290e580e33"
+    }
+  ],
+  "public_manifest_regenerated_for_reviewed_inventory": true,
+  "exclusions": [
+    "logs_snapshot/EVENTS.jsonl",
+    "logs_snapshot/RUN.json",
+    "logs_snapshot/SNAPSHOT_SCOPE.json",
+    "PACKAGE_MANIFEST.json"
+  ]
+}

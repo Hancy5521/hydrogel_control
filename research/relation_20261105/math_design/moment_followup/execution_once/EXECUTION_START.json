@@ -1,0 +1,22 @@
+{
+  "actual_utc": "2026-11-05T13:51:40.005881+00:00",
+  "source_sha256": {
+    "moment_core.py": "fa2e63d672a23cc490786ca21f03161122e7670d9c9d8457f6a123a710025de8",
+    "run_moment_control.py": "d55f39d9cff4931cb3bd63a7669b804934764a755fc23e5c064bd1a189823a62"
+  },
+  "plan_sha256": "4216dcdfef6cf8837c7ed9416cd2941b74e0df8f6d286db212d14250e6d868f8",
+  "approval_sha256": "0161d5c06606360e4e2b8165ff269a842a188e1344c87cb85f38e76245c278e3",
+  "prior_audit_receipts_reused_not_reexecuted": {
+    "centered_CRPS_identity": {
+      "file": "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\independent_math\\execution_v2_once\\INDEPENDENT_MATH_RESULT.json",
+      "sha256": "65c1a453039d4e8efec6cb9a99c30d9a6154110596941c443df7ec33cccf47e4",
+      "reuse_existing_receipt_only": true
+    },
+    "exact_moment_interval": {
+      "file": "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\independent_moment_math\\execution_20261105T133636538641Z\\INDEPENDENT_MOMENT_MATH_AUDIT.json",
+      "sha256": "1a2a6f67ed1a294db3c7beff2d3070684ada22d7f8feb47c37c80f7a703e149c",
+      "reuse_existing_receipt_only": true
+    }
+  },
+  "old_source_or_material_data_access": false
+}

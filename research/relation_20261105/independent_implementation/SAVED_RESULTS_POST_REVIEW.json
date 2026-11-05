@@ -1,0 +1,32 @@
+{
+  "actual_utc": "2026-11-05T13:38:16.879055+00:00",
+  "status": "READ_ONLY_SAVED_AUDIT_REVIEW_COMPLETE",
+  "executor": "root executed the frozen independent arithmetic auditor once; reviewer only read its outputs",
+  "auditor_result_sha256": "3c669b4621cd022e77fadcf0b4e0cb50788aca0ab3822a6fff89d5340840ca22",
+  "all_result_payload_hashes_match": true,
+  "source_plan_and_producer_inputs_not_changed_by_review": true,
+  "max_errors": {
+    "max_value_error": 4.163336342344337e-17,
+    "max_kernel_entry_error": 0.0,
+    "max_fixed_pair_error": 5.551115123125783e-17,
+    "max_choice_regret": 0.0
+  },
+  "bounded_timing_case_count": 6,
+  "timing_first_action_candidates_not_independent_experiments": 240,
+  "strict_adaptive_gain_first_actions_in_timing_cases": 0,
+  "changed_indices_without_strict_gain_first_actions": 13,
+  "genuine_branch_adaptation_positive_control": "noncollinear_single_proxy_selector principle; adaptive gain strictly positive. Timing families do not independently demonstrate this benefit.",
+  "timing_family_interpretation": "Known-state symmetric hypothesis/probe design makes outcome-local values invariant to posterior sign reflection; changed proxy indices can be mirror-value/roundoff ties. Homogeneous/dense families have an analytic separable shortcut.",
+  "classical_cache_not_new_acceleration": true,
+  "extreme_numeric_support_boundaries_still_open": true,
+  "producer_or_auditor_reruns_by_reviewer": 0,
+  "material_response_reads_fits_or_scores": 0,
+  "files_present": [
+    "EXECUTION_START.json",
+    "INDEPENDENT_SAVED_ARITHMETIC_RESULT.json",
+    "PRINCIPLE_ARITHMETIC.json",
+    "SIX_BENCHMARK_ARITHMETIC.json"
+  ],
+  "failure_present": false,
+  "next_gate": "Retain this correctness control; a new independent moment follow-up must compare to strong cached/blocked and separable baselines without presenting old timing cases as adaptive mechanism gains."
+}

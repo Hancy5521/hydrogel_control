@@ -1,0 +1,55 @@
+{
+  "actual_utc": "2026-11-05T14:01:28.911557+00:00",
+  "status": "PASS_POSTHOC_FIXED16_SCALING_ONLY_PENDING_EXACT_ROOT_APPROVAL",
+  "review_type": "STATIC_AST_HASH_REVIEW_NO_SUT_IMPORT_EXECUTION",
+  "source_sha256": {
+    "run_scaling_extension.py": "3762ce367677ab5b1443eba090b79e850ca6c049607f57ed032c69f93da7dfd7",
+    "EXECUTION_PLAN_TEMPLATE.json": "465ad7b165d4f7f146f4da6a8d31f62da30f549525e2d0609db6afc7987b070f"
+  },
+  "reused_moment_source_actual_hashes_unchanged": {
+    "moment_core.py": "fa2e63d672a23cc490786ca21f03161122e7670d9c9d8457f6a123a710025de8",
+    "run_moment_control.py": "d55f39d9cff4931cb3bd63a7669b804934764a755fc23e5c064bd1a189823a62"
+  },
+  "old12case_result_sha256_unchanged": "cc48fe6581545569760d544da6d5a1342ce36a2ab0855a1fb3fad80787c37893",
+  "configuration_matches_template": true,
+  "new_case_count": 16,
+  "new_H": [
+    256,
+    512,
+    1024,
+    2048
+  ],
+  "old_H_disjoint": true,
+  "same_original_rmax_and_epsilon_cap": true,
+  "fixed_comparators": "Exactly reuses frozen run_moment_control.run_case with streamed/cached exact and moment+fallback; no new baseline timing loops/eigh/outer-product banking.",
+  "old_controls_and_old_cases_reexecuted": false,
+  "resource_gate": {
+    "before_producer_import": true,
+    "minimum_available_physical_bytes": 4294967296,
+    "actual_RAM_rechecked_by_reviewer": false,
+    "actual_RAM_must_be_checked_by_runner_at_launch": true,
+    "largest_kernel_bank_bytes_from_shape": 536870912,
+    "conservative_temporary_reserve_bytes": 1610612736,
+    "reserve_not_actual_allocated_or_guaranteed_memory": true,
+    "available_RAM_can_change_after_initial_check": true
+  },
+  "source_guard": "Exactwrapper/config/parent-source/prior-result hashes beforeimport, wrapper+parent sources checked againafterallcases.",
+  "checkpoint_semantics": {
+    "exclusive_per_case_files_saved": true,
+    "partial_completed_files_preserved_on_exception": true,
+    "automatic_skip_or_resume_implemented": false,
+    "output_directory_must_not_exist": true,
+    "if_interrupted": "Preserve completed case files as provisional outputs and do not rerun them silently. Root must explicitly register an unchanged-input remaining-case recovery plan; current wrapper itself does not resume."
+  },
+  "interpretation_limits": [
+    "Exploratory posthoc computational scaling after seeing original12slowerresults; not independent confirmation or new material evidence",
+    "All16points includinglosing/fallbackpoints must be reported; no favorable-Hselection for universalspeedclaims",
+    "Oneorderedtiming, score-readout only, notendtoendpolicy/RSS/safeRAMguarantee",
+    "Commonsetup and method-specificfeature/D/tail/fallback costs stay in frozenrun_case accounting",
+    "No source or epsilon/Dchanges to rescue speed"
+  ],
+  "material_labels_fits_predictions_scores": 0,
+  "SUT_imports_or_runs_by_reviewer": 0,
+  "required_source_corrections_before_bounded_run": [],
+  "nonblocking_wording_correction": "Say per-case checkpoint preservation, not automatic resumability."
+}

@@ -1,0 +1,11 @@
+{
+  "actual_utc": "2026-11-05T13:02:27.692684+00:00",
+  "phase": "V2_FROZEN_WAITING_ROOT_APPROVAL",
+  "source_sha256": "56df7c493678712156a4b2645a09eda3a4da3e1de7862185829291cfa03b59c0",
+  "plan_sha256": "f0bb88502d70ff55da68a185a0b9909b28e7ef1fbc1b52bdff34062a308aadf2",
+  "source_validation": "AST_PARSE_ONLY_NO_AUDITOR_IMPORT",
+  "number_of_actual_numerical_execution_calls": 0,
+  "material_responses_or_models_accessed": false,
+  "old_draft_and_old_plan_preserved": "history_before_adaptive_counterexample/",
+  "command": "D:\\Anaconda\\python.exe H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\independent_math\\independent_complementarity_audit.py --plan H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\independent_math\\EXECUTION_PLAN_V2.json --approval H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\independent_math\\ROOT_MATH_AUDIT_APPROVAL.json --output-dir H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\independent_math\\execution_v2_once"
+}

@@ -1,0 +1,14 @@
+{
+  "actual_utc": "2026-11-05T13:23:20.814868+00:00",
+  "source_sha256": {
+    "relation_core.py": "37d35e51701961beffb57da89c03cbe5305f39a7087375d78397f2e6183dfa91",
+    "run_synthetic.py": "024cb2755cc9cc7a37c1b1242216bb1db1e2e56a1d74fa9f9f6173cc44a2f60f"
+  },
+  "plan_sha256": "cd296384dee9a47ea7da38aced5af83221c847360c4dc191b1a8ee6efe51317f",
+  "approval_sha256": "f0a5cbf2229eb20cdc2021c02fc0015da894e3cb9c7674054fa4aca7a09f6136",
+  "prior_identity_audit_reused_not_repeated": {
+    "file": "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\independent_math\\execution_v2_once\\INDEPENDENT_MATH_RESULT.json",
+    "sha256": "65c1a453039d4e8efec6cb9a99c30d9a6154110596941c443df7ec33cccf47e4"
+  },
+  "material_data_read": false
+}

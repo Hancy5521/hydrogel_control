@@ -1,0 +1,10 @@
+{
+  "actual_utc": "2026-11-05T13:23:17.685887+00:00",
+  "approved": true,
+  "scope": "RELATION_POSTERIOR_SYNTHETIC_CONTROL",
+  "plan_sha256": "cd296384dee9a47ea7da38aced5af83221c847360c4dc191b1a8ee6efe51317f",
+  "static_scope_review_sha256": "d9c3521b7fc39df8a7326dd18aa7f3317667bcdd18d2865c89cdfaf146cef4ad",
+  "scope_limit": "Only registered moderate fixtures; known product-underflow and weakrho cancellation remain outside robustness claims; no source/tolerance changes",
+  "allowed_executions": 1,
+  "on_failure": "retain failure and stop; no covert rerun or parameter tuning"
+}

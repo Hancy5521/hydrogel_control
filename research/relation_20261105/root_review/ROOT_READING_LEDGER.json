@@ -1,0 +1,56 @@
+{
+  "actual_utc": "2026-11-05T12:58:05.696672+00:00",
+  "search_queries_count": 8,
+  "search_queries": [
+    "\"active learning\" \"complementarity\" \"feature acquisition\" Bayesian",
+    "\"non-myopic\" \"matrix completion\" active learning",
+    "\"multi-task\" \"knowledge gradient\" \"correlation\" learning",
+    "\"CRPS\" \"active learning\" \"expected\" Gaussian",
+    "\"value of information\" \"CRPS\" Bayesian design",
+    "\"posterior covariance\" \"quadratic\" \"value of information\" Rice 1978",
+    "\"CRPS-Based Targeted Sequential Design\" chemical space",
+    "\"Probabilistic sensitivity measures as information value\" authors"
+  ],
+  "scope": "Root targeted primary-source selected reading, separate from agent8-query ledger; overlapping papers not summed into unique full-read count",
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2610.21919v1",
+      "title": "The Lagrangian Structure of Cost-Penalized Active Feature Acquisition",
+      "version": "v1 2026-10-15",
+      "license": "CC BY 4.0 per official HTML",
+      "read_depth": "Official abstract; introduction/problem/algorithm; selected5.2non-submodularity and5.3certificate statements/proof;6.4/6.6indexed baseline cautions. Not all52pages or proofs.",
+      "increment_limit": "Panels, costs, information complementarity and budget-certificate framing already covered. Retain unknown cross-unit relation/efficient conditional branch computation as candidate, not first general principle."
+    },
+    {
+      "url": "https://arxiv.org/html/2503.11250v2",
+      "title": "CRPS-Based Targeted Sequential Design with Application in Chemical Space",
+      "version": "v2 2025-12-15; v1also viewed",
+      "license": "arXiv perpetual nonexclusive; do not redistribute full paper",
+      "read_depth": "Official abs/versionhistory;v1intro/contents;v2intro,2,3.1formulation and displayed formulae, beginning3.2. No full experiments/appendix proof audit.",
+      "increment_limit": "CRPS/twCRPS-based sequential acquisition in chemical space is not new. Proposed difference is unknown-relation posterior, exact conditional two-action kernel/branch handling within restricted class; not yet established novelty."
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0377221720306214",
+      "doi": "10.1016/j.ejor.2020.07.010",
+      "title": "Probabilistic sensitivity measures as information value",
+      "version": "EJOR289(2),2021,595-610",
+      "license": "Publisher reuse rights not established; no full paper redistributed",
+      "read_depth": "Official publisher indexed abstract/intro/section snippets; direct open403. Author university2018preprint viewedtitle/abstract/intro and indexed5.2CRPS-VOI excerpt; no full36page proof review.",
+      "author_preprint": "https://dec.unibocconi.eu/sites/default/files/files/media/attachments/Plischke%2520Paper20180202104631.pdf",
+      "increment_limit": "CRPS information value as integrated squared CDF shift, and its energy-statistic relation, already known; cite as foundation."
+    }
+  ],
+  "failures": [
+    {
+      "action": "direct publisher open",
+      "result": "403; no bypass/retry"
+    },
+    {
+      "action": "universityPDFfindsection5.2",
+      "result": "timeout; full proof not read; existing indexed excerpt and initial PDF read retained"
+    }
+  ],
+  "no_new_response_labels_or_models_accessed": true,
+  "papers_downloaded_to_disk": 0,
+  "no_full100paper_claim": true
+}

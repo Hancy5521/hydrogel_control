@@ -1,0 +1,24 @@
+{
+  "current_increment": "relation complementarity and moment decision readout",
+  "previous_complete_new_direction_zip": {
+    "path": "H:/PolymerReview/Eigen_repair_expansion_20261105.zip",
+    "bytes": 47377915,
+    "sha256": "d8caed0f804a26535c2d4b3d6c42a99db80d522dd91e25afc6612455f6f6056b",
+    "embedded": false
+  },
+  "MLST_separate_archive": {
+    "path": "H:/PolymerReview/MLST_frozen_20261105T093229Z",
+    "embedded": false,
+    "remote_archive_commit": "05a40915be149857b2bb9cf65144d53fa9b24f37"
+  },
+  "raw_source_gzip_inputs_used_in_current_numerical_experiments": false,
+  "mathematical_source_and_current_result_pins": {
+    "math_design/relation_core.py": "37d35e51701961beffb57da89c03cbe5305f39a7087375d78397f2e6183dfa91",
+    "math_design/run_synthetic.py": "024cb2755cc9cc7a37c1b1242216bb1db1e2e56a1d74fa9f9f6173cc44a2f60f",
+    "math_design/moment_followup/moment_core.py": "fa2e63d672a23cc490786ca21f03161122e7670d9c9d8457f6a123a710025de8",
+    "math_design/moment_followup/run_moment_control.py": "d55f39d9cff4931cb3bd63a7669b804934764a755fc23e5c064bd1a189823a62",
+    "math_design/moment_followup/posthoc_scaling/run_scaling_extension.py": "3762ce367677ab5b1443eba090b79e850ca6c049607f57ed032c69f93da7dfd7"
+  },
+  "papers": "Downloaded local-reading-only primary papers excluded; original URLs/version/read depths retained",
+  "private_measurements_or_authentication_secrets": false
+}

@@ -1,0 +1,246 @@
+{
+  "gaussian_principles": [
+    {
+      "family_or_principle": "symmetric_signed_relation",
+      "repairs": 1,
+      "proxies": 1,
+      "max_value_error": 0.0,
+      "max_kernel_entry_error": 0.0,
+      "max_fixed_pair_error": 0.0,
+      "max_choice_regret": 0.0,
+      "first_actions": [
+        {
+          "repair_index": 0,
+          "legal_proxy_count": 1,
+          "forbidden_proxy_count": 0,
+          "branch_count": 2,
+          "independent_adaptive_value": 0.22567583341910258,
+          "best_feasible_fixed_value": 0.22567583341910258,
+          "adaptive_minus_best_fixed": 0.0,
+          "strictly_positive_adaptive_branch_value": false,
+          "choices_by_saved_algorithm": {
+            "adaptive": {
+              "indices": [
+                0,
+                0
+              ],
+              "indices_differ_between_outcomes": false,
+              "different_indices_certify_positive_adaptive_value": false
+            }
+          },
+          "branch_argmax_tie_counts": 0
+        }
+      ],
+      "source_values_are_from_one_synthetic_run_not_new_experiments": true,
+      "strict_adaptive_gain_first_actions": 0,
+      "different_saved_branch_indices_first_actions": 0,
+      "different_indices_but_no_strict_adaptive_gain_first_actions": 0,
+      "adaptive_gain_min_max": [
+        0.0,
+        0.0
+      ],
+      "timing_reexecuted_or_speed_claimed": false
+    },
+    {
+      "family_or_principle": "theta_known",
+      "repairs": 1,
+      "proxies": 1,
+      "max_value_error": 0.0,
+      "max_kernel_entry_error": 0.0,
+      "max_fixed_pair_error": 0.0,
+      "max_choice_regret": 0.0,
+      "first_actions": [
+        {
+          "repair_index": 0,
+          "legal_proxy_count": 1,
+          "forbidden_proxy_count": 0,
+          "branch_count": 1,
+          "independent_adaptive_value": 0.22567583341910258,
+          "best_feasible_fixed_value": 0.22567583341910258,
+          "adaptive_minus_best_fixed": 0.0,
+          "strictly_positive_adaptive_branch_value": false,
+          "choices_by_saved_algorithm": {
+            "adaptive": {
+              "indices": [
+                0
+              ],
+              "indices_differ_between_outcomes": false,
+              "different_indices_certify_positive_adaptive_value": false
+            }
+          },
+          "branch_argmax_tie_counts": 0
+        }
+      ],
+      "source_values_are_from_one_synthetic_run_not_new_experiments": true,
+      "strict_adaptive_gain_first_actions": 0,
+      "different_saved_branch_indices_first_actions": 0,
+      "different_indices_but_no_strict_adaptive_gain_first_actions": 0,
+      "adaptive_gain_min_max": [
+        0.0,
+        0.0
+      ],
+      "timing_reexecuted_or_speed_claimed": false
+    },
+    {
+      "family_or_principle": "fake_calibration_identity",
+      "repairs": 1,
+      "proxies": 1,
+      "max_value_error": 0.0,
+      "max_kernel_entry_error": 0.0,
+      "max_fixed_pair_error": 0.0,
+      "max_choice_regret": 0.0,
+      "first_actions": [
+        {
+          "repair_index": 0,
+          "legal_proxy_count": 1,
+          "forbidden_proxy_count": 0,
+          "branch_count": 2,
+          "independent_adaptive_value": 0.033675108791251074,
+          "best_feasible_fixed_value": 0.033675108791251074,
+          "adaptive_minus_best_fixed": 0.0,
+          "strictly_positive_adaptive_branch_value": false,
+          "choices_by_saved_algorithm": {
+            "adaptive": {
+              "indices": [
+                0,
+                0
+              ],
+              "indices_differ_between_outcomes": false,
+              "different_indices_certify_positive_adaptive_value": false
+            }
+          },
+          "branch_argmax_tie_counts": 0
+        }
+      ],
+      "source_values_are_from_one_synthetic_run_not_new_experiments": true,
+      "strict_adaptive_gain_first_actions": 0,
+      "different_saved_branch_indices_first_actions": 0,
+      "different_indices_but_no_strict_adaptive_gain_first_actions": 0,
+      "adaptive_gain_min_max": [
+        0.0,
+        0.0
+      ],
+      "timing_reexecuted_or_speed_claimed": false
+    },
+    {
+      "family_or_principle": "zero_relation",
+      "repairs": 1,
+      "proxies": 1,
+      "max_value_error": 0.0,
+      "max_kernel_entry_error": 0.0,
+      "max_fixed_pair_error": 0.0,
+      "max_choice_regret": 0.0,
+      "first_actions": [
+        {
+          "repair_index": 0,
+          "legal_proxy_count": 1,
+          "forbidden_proxy_count": 0,
+          "branch_count": 2,
+          "independent_adaptive_value": 0.0,
+          "best_feasible_fixed_value": 0.0,
+          "adaptive_minus_best_fixed": 0.0,
+          "strictly_positive_adaptive_branch_value": false,
+          "choices_by_saved_algorithm": {
+            "adaptive": {
+              "indices": [
+                0,
+                0
+              ],
+              "indices_differ_between_outcomes": false,
+              "different_indices_certify_positive_adaptive_value": false
+            }
+          },
+          "branch_argmax_tie_counts": 0
+        }
+      ],
+      "source_values_are_from_one_synthetic_run_not_new_experiments": true,
+      "strict_adaptive_gain_first_actions": 0,
+      "different_saved_branch_indices_first_actions": 0,
+      "different_indices_but_no_strict_adaptive_gain_first_actions": 0,
+      "adaptive_gain_min_max": [
+        0.0,
+        0.0
+      ],
+      "timing_reexecuted_or_speed_claimed": false
+    },
+    {
+      "family_or_principle": "noncollinear_single_proxy_selector",
+      "repairs": 1,
+      "proxies": 2,
+      "max_value_error": 0.0,
+      "max_kernel_entry_error": 0.0,
+      "max_fixed_pair_error": 0.0,
+      "max_choice_regret": 0.0,
+      "first_actions": [
+        {
+          "repair_index": 0,
+          "legal_proxy_count": 2,
+          "forbidden_proxy_count": 0,
+          "branch_count": 2,
+          "independent_adaptive_value": 0.22567583341910258,
+          "best_feasible_fixed_value": 0.11283791670955129,
+          "adaptive_minus_best_fixed": 0.11283791670955129,
+          "strictly_positive_adaptive_branch_value": true,
+          "choices_by_saved_algorithm": {
+            "adaptive": {
+              "indices": [
+                0,
+                1
+              ],
+              "indices_differ_between_outcomes": true,
+              "different_indices_certify_positive_adaptive_value": true
+            }
+          },
+          "branch_argmax_tie_counts": 0
+        }
+      ],
+      "source_values_are_from_one_synthetic_run_not_new_experiments": true,
+      "strict_adaptive_gain_first_actions": 1,
+      "different_saved_branch_indices_first_actions": 1,
+      "different_indices_but_no_strict_adaptive_gain_first_actions": 0,
+      "adaptive_gain_min_max": [
+        0.11283791670955129,
+        0.11283791670955129
+      ],
+      "timing_reexecuted_or_speed_claimed": false
+    }
+  ],
+  "same_F_independent_joint_result_mapping": [
+    {
+      "id": "two_branch",
+      "same_F": [
+        [
+          "1/16",
+          "-1/16"
+        ],
+        [
+          "-1/16",
+          "1/16"
+        ]
+      ],
+      "fixed_gain": "5/64",
+      "fixed_pair_synergy": "1/64",
+      "adaptive_gain": "9/64",
+      "final_binary_risk": "7/64",
+      "old_full_joint_enumeration_reused_not_rerun": true
+    },
+    {
+      "id": "three_branch",
+      "same_F": [
+        [
+          "1/16",
+          "-1/16"
+        ],
+        [
+          "-1/16",
+          "1/16"
+        ]
+      ],
+      "fixed_gain": "5/64",
+      "fixed_pair_synergy": "1/64",
+      "adaptive_gain": "7/64",
+      "final_binary_risk": "9/64",
+      "old_full_joint_enumeration_reused_not_rerun": true
+    }
+  ]
+}

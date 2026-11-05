@@ -1,0 +1,38 @@
+{
+  "kind": "POSTHOC_SCALING_SOURCE_FREEZE_AST_ONLY",
+  "actual_utc": "2026-11-05T13:58:05.870908+00:00",
+  "actual_Asia_Shanghai": "2026-11-05T21:58:05.870908+08:00",
+  "extension_source_sha256": {
+    "run_scaling_extension.py": "3762ce367677ab5b1443eba090b79e850ca6c049607f57ed032c69f93da7dfd7"
+  },
+  "extension_source_bytes": 8548,
+  "reused_source_sha256": {
+    "moment_core.py": "fa2e63d672a23cc490786ca21f03161122e7670d9c9d8457f6a123a710025de8",
+    "run_moment_control.py": "d55f39d9cff4931cb3bd63a7669b804934764a755fc23e5c064bd1a189823a62"
+  },
+  "prior_consumed_result": {
+    "file": "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\math_design\\moment_followup\\execution_once\\RESULTS.json",
+    "sha256": "cc48fe6581545569760d544da6d5a1342ce36a2ab0855a1fb3fad80787c37893"
+  },
+  "AST_syntax": "PASS",
+  "SUT_imports": 0,
+  "SUT_case_calls": 0,
+  "material_fit_prediction_score_calls": 0,
+  "memory_metadata_at_preparation": {
+    "available_physical_bytes": 6600884224,
+    "total_physical_bytes": 33485041664,
+    "source": "Windows GlobalMemoryStatusEx",
+    "not_an_execution_resource_approval": true
+  },
+  "artifacts": {
+    "README.txt": {
+      "sha256": "a4c5b2b88bc16cb586458b09b2e77b84a60475c7aff664ae992461bb4f2a61f9",
+      "bytes": 3319
+    },
+    "EXECUTION_PLAN_TEMPLATE.json": {
+      "sha256": "465ad7b165d4f7f146f4da6a8d31f62da30f549525e2d0609db6afc7987b070f",
+      "bytes": 1865
+    }
+  },
+  "root_actual_UTC_registration_and_exact_plan_approval_still_required": true
+}

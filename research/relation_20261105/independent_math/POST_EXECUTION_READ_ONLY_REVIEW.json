@@ -1,0 +1,81 @@
+{
+  "actual_utc": "2026-11-05T13:04:44.270169+00:00",
+  "status": "READ_ONLY_POSTEXECUTION_REVIEW_PASS",
+  "executor": "root executed the approved independent script once; this child only inspected the frozen outputs, no rerun",
+  "original_result_sha256": "65c1a453039d4e8efec6cb9a99c30d9a6154110596941c443df7ec33cccf47e4",
+  "all_result_file_hashes_match": true,
+  "source_and_plan_frozen_hashes_unchanged": true,
+  "execution_file_names": [
+    "CONTINUOUS_INTEGRAL_RESULTS.json",
+    "EXACT_ADAPTIVE_SAME_F_RESULTS.json",
+    "EXACT_DISCRETE_RESULTS.json",
+    "EXECUTION_START.json",
+    "INDEPENDENT_MATH_RESULT.json"
+  ],
+  "failure_files_present": false,
+  "exact_formula_assumption_valid_cases": 7,
+  "intentional_assumption_violating_cases": [
+    "B_informs_theta",
+    "duplicated_unit"
+  ],
+  "condition_failure_counts": {
+    "B_margin_theta_independence": 1,
+    "A_conditional_independence": 1,
+    "distinct_information_units": 1
+  },
+  "A_target_main_effect_nonzero_cases": [
+    "B_informs_theta",
+    "duplicated_unit",
+    "A_has_target_main_effect"
+  ],
+  "pure_relation_label_not_applied_to_nonzero_main_effect_cases": true,
+  "same_F_counterexample": {
+    "fixed_pair_total_gain_each_channel": "5/64",
+    "fixed_pair_true_synergy_each_channel": "1/64",
+    "fixed_pair_risk_each_channel": "11/64",
+    "same_F": [
+      [
+        "1/16",
+        "-1/16"
+      ],
+      [
+        "-1/16",
+        "1/16"
+      ]
+    ],
+    "channel1_optimal_adaptive_total_gain": "9/64",
+    "channel1_optimal_adaptive_risk": "7/64",
+    "channel2_optimal_adaptive_total_gain": "7/64",
+    "channel2_optimal_adaptive_risk": "9/64",
+    "legal_policy_counts": [
+      4,
+      8
+    ],
+    "inference": "Full posterior law matters to adaptive action selection; same covariance/kernel summary cannot alone certify same adaptive policy value."
+  },
+  "max_abs_residuals": {
+    "fixed_level_max_abs_difference": 2.942091015256665e-15,
+    "CDF_vs_closed_max_abs": 2.3592239273284576e-15,
+    "CDF_vs_energy_max_abs": 2.220446049250313e-15,
+    "energy_vs_closed_max_abs": 2.498001805406602e-16,
+    "direct_gain_vs_trace_max_abs": 4.336808689942018e-17
+  },
+  "source_import_modules_static": [
+    "argparse",
+    "collections",
+    "datetime",
+    "fractions",
+    "hashlib",
+    "itertools",
+    "json",
+    "math",
+    "numpy",
+    "pathlib",
+    "scipy.integrate",
+    "scipy.special",
+    "traceback"
+  ],
+  "no_material_or_producer_module_import": true,
+  "material_response_read_fit_score_calls": 0,
+  "interpretation_limit": "No hidden audit failure found in preserved output set. Expected failures of theorem assumptions are successful negative controls, not implementation failures. No material effectiveness, cost benefit or novelty established."
+}

@@ -1,0 +1,34 @@
+{
+  "artifact_kind": "Mathematical design and two-module synthetic prototype source freeze",
+  "actual_utc": "2026-11-05T13:14:36.565864+00:00",
+  "sources": [
+    {
+      "file": "relation_core.py",
+      "bytes": 12581,
+      "sha256": "37d35e51701961beffb57da89c03cbe5305f39a7087375d78397f2e6183dfa91",
+      "check": "AST_PARSE_ONLY_NO_IMPORT_OR_EXECUTION"
+    },
+    {
+      "file": "run_synthetic.py",
+      "bytes": 15322,
+      "sha256": "024cb2755cc9cc7a37c1b1242216bb1db1e2e56a1d74fa9f9f6173cc44a2f60f",
+      "check": "AST_PARSE_ONLY_NO_IMPORT_OR_EXECUTION"
+    }
+  ],
+  "math_design_sha256": "3c8e235249923857556f74cd21794e314470e43e9cbd4f4758ff085a8e41b326",
+  "README_sha256": "b82605d6c2bd52e4beeda7aa8d61e719e201f97cfb8c5a20c8ce3e97d7b670f8",
+  "protocol_template_sha256": "8e08098c5fb7fa0377770f4b56aaa535b4399f6cf6430ece45f1154c15b456b4",
+  "prior_independent_identity_receipt_sha256": "65c1a453039d4e8efec6cb9a99c30d9a6154110596941c443df7ec33cccf47e4",
+  "checks": "AST only; manual mathematical derivation and metadata/raw-byte hashes. No producer module imported or function executed.",
+  "SUT_executed": false,
+  "real_material_responses_read": false,
+  "old_material_pilot_modified_or_rerun": false,
+  "scientific_status": "Classical exact finite-posterior/analytic-kernel computation control; extra topconference method contribution unproven",
+  "scope_limits": [
+    "pure relation repair and single theta-marginal-invariant proxy only",
+    "retained posterior branches; fixed pair not full adaptive",
+    "Fraction posterior vs float64 objective clearly distinguished",
+    "no complex screening/new network/LLM/generative model",
+    "no material fit or new measurement; prior CDF integrations not repeated"
+  ]
+}

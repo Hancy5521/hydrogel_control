@@ -1,0 +1,8 @@
+{
+  "actual_utc": "2026-11-05T13:31:20.306362+00:00",
+  "plan_sha256": "71d371658f72b3e332e1a260741f57c32db9862d585156e5ff328a246039621c",
+  "source_sha256": "bf0a6dba09025bc417cb8ff985a589b47220b73946d6ab567b27dab3d910b57e",
+  "scope": "SAVED_SYNTHETIC_STDLIB_ARITHMETIC_ONLY",
+  "allowed_executions": 1,
+  "no_SUT_or_timing_or_material_rerun": true
+}

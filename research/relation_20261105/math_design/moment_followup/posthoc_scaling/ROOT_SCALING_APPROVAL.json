@@ -1,0 +1,9 @@
+{
+  "actual_utc": "2026-11-05T14:02:19.365633+00:00",
+  "approved": true,
+  "scope": "POSTHOC_MOMENT_SCALING_EXTENSION",
+  "plan_sha256": "4727d820a205e4a5a128e2fd5719c3f9c18a2dc3b8c11b1e5d264c7766feb1ee",
+  "static_gate_sha256": "9f7445c8be514f99b7d31ae08bbba131e14dbd7e3f1a7b2346d7a97360a9b313",
+  "allowed_executions": 1,
+  "scope_limit": "All16newHpoints; exploratory computational scaling not independent material evidence; no original/source/epsilon changes. Cases saved, interrupted remainder requires new manual protocol, not auto-resume. RAM failclosed."
+}
