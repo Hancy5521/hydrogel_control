@@ -1,3 +1,5 @@
+研究检查点：保留强RF参考分布的低维概率修正，在192组计算报告开发任务上平均CRPS改善约1.422%。源码与限定汇总见[research_20261107_reference_transport](research_20261107_reference_transport/index.html)。本地完整包独立封存；不表示顶会投稿达标。
+
 本地研究检查点：自动组成关联生长未改善，完整保留强随机森林基线与负结果。源码与汇总见 [research_20261106_relation_growth](research_20261106_relation_growth/README_ZH.txt)。此记录不表示远端已同步或顶会投稿达标。
 
 Latest separate conditional-feedback checkpoint (6 November2026): [Chinese public report](research_20261106_relational_feedback/INDEX.html). A160-component development study implements full NIG model averaging, native CRPS query risk and shared-world joint sampling. CRPS34.124850 is competitive with listed GP/RF references, while warm-openloop reaches the same final set and frozen model weights are slightly better. All independent audits and limitations are retained; no extra adaptive-policy benefit, independent confirmation or top-conference readiness is claimed. Complete local numeric resources remain separate; MLST and every prior scientific file are preserved. Remote synchronization is not asserted.

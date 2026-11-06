@@ -1,0 +1,112 @@
+{
+  "status": "PUBLIC_SUMMARY_OF_ACTUAL_REGISTERED_PROTOCOL",
+  "original_plan_sha256": "d4099b4de33d7a2474e8dc23bd5a5d286240542559fb7260b08e6c52cef1721f",
+  "registered_actual_utc": "2026-11-06T11:22:16.057090+00:00",
+  "source_sha256": {
+    "empirical_native.py": "6d76cdf584da6fdc917554942dd8a19abd8785928d2621af28ff049ec577239b",
+    "simplex_transport.py": "63b792c6c436dc33c9951395730419d52ee4ca596043c11a28896f08a8249710",
+    "calibration_views.py": "b97b48b952a40680df48f6aa4f2ae26cde9d422c8cf6b10d2adcf61183ae68ae",
+    "transport_io.py": "aa22b762bc6cf247031016eba06262b5b9c93ab72f80edd1778f19977d8e5240",
+    "run_transport.py": "2109eba7c35eef113528ec667cea8ab70b16bd6bf0638fbc4b593df029ce185e",
+    "score_transport.py": "18376ad3d6f59cbec4f8679b114020434a77bca8c119f397ab03da0fec56a4d3"
+  },
+  "configuration": {
+    "method_ids": [
+      "RF_identity",
+      "RF_beta",
+      "RF_global4",
+      "RF_anchor4",
+      "RF_auto4",
+      "GP10",
+      "old3_NIG"
+    ],
+    "batches": [
+      "validation1",
+      "validation2",
+      "validation3"
+    ],
+    "batch_groups": [
+      64,
+      64,
+      64
+    ],
+    "history_groups_before": [
+      168,
+      232,
+      296
+    ],
+    "calibration_pairs_before": [
+      168,
+      232,
+      296
+    ],
+    "OOF_hash_prefix": "transport_oof_v1|",
+    "OOF_assignment": "sort by(SHA256(prefix+component_id),component_id);fold=rank%5",
+    "OOF_holdout_sizes": [
+      34,
+      34,
+      34,
+      33,
+      33
+    ],
+    "OOF_train_sizes": [
+      134,
+      134,
+      134,
+      135,
+      135
+    ],
+    "automatic_g_selection": "once on168historicalOOF regularized nativeCRPS;subsequent fits keep exact initialindex",
+    "anchor_g_selection": "first metadata-nondegenerate index withoutY ranking;fixed thereafter",
+    "failure": "initialauto optimizerfail=>identity with full original statuses;later no new index rescue",
+    "calibration_augmentation": "past frozenRF_identity law+subsequently revealed trueY only;never revised in-sample reference foroldY",
+    "shared_reference": "exact same current fullRF law for RF_identity/RF_beta/RF_global4/RF_anchor4/RF_auto4",
+    "raw_RF_GP_features": "2nativeproxy+8rawgrowthdescriptors with matching old32proxy/old40rawtransform",
+    "bounded_g_features": "rawfirst6,count/118,entropy/log118",
+    "native_prediction_laws": 1344,
+    "new_groups": 192,
+    "new_target_cells": 192,
+    "new_context_cells": 384,
+    "new_total_native_cells": 576,
+    "past_history_groups_reused": 168,
+    "past_history_cells_reused": 504,
+    "sklearn_fits": 11,
+    "fit_breakdown": {
+      "OOF_RF": 5,
+      "batch_RF": 3,
+      "batch_GP": 3
+    },
+    "primary": "RF_auto4_minus_RF_identity_CRPS_native;negative improves",
+    "all_parameters": "unchanged frozen3API + originalgrowth reference recipe;no futureY tuning"
+  },
+  "protocol_clarifications": {
+    "round_robin_pre_fit_resolution": "Root explicitly accepted currentrunner rank%5 before any realfit;this exact allocation supersedes only the early design contiguous wording,not scientific results.",
+    "human_labels_to_runtime_IDs": {
+      "Beta": "RF_beta",
+      "global": "RF_global4",
+      "anchor": "RF_anchor4",
+      "auto": "RF_auto4",
+      "old3NIG": "old3_NIG"
+    },
+    "old3_scope": "same past trueY buttwo proxies only,not same composition feature use",
+    "OOF_scope": "heldoutY absent from foldforest;historical frozen X-only preprocessing is explicit,not all-preprocessing foldrefit claim"
+  },
+  "scientific_limits": [
+    "all192prospective same-source development,not external wet confirmation",
+    "no self-generated labels",
+    "fullbatch448laws close before64Y;all1344close before score",
+    "support-preserving scalar repair,not arbitrarymask jointgeneration",
+    "no formal anytimevictory/noninferiority/calibration claim from optimizer or descriptive differences"
+  ],
+  "runtime": {
+    "Python": "3.13.5",
+    "numpy": "2.1.3",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.6.1",
+    "joblib": "1.4.2"
+  },
+  "source": "processed Matminer/JARVIS computational reports DOI10.6084/m9.figshare.7261832.v1; artifact MIT; upstream DOI10.6084/m9.figshare.6815699.v2 CC BY4",
+  "unit_qualification": "source bulk-GPa attribution and aggregation remain qualified",
+  "no_original_absolute_paths_per_material_roles_or_outcomes": true,
+  "early_contiguous_OOF_wording_superseded_before_fit": "actual rank modulo5 protocol published here"
+}

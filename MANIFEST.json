@@ -1,9 +1,10 @@
 {
-  "checkpoint": "relation-growth-negative-20261106",
-  "parent_commit": "9ad58b9e180efe954e175ae7fdfa88bd43454fae",
-  "actual_utc": "2026-11-06T11:35:33.613659+00:00",
+  "checkpoint": "reference-transport-development-20261107",
+  "parent_commit": "090afa57c935c204658d06730c5bb49200ff2e18",
+  "prepared_actual_utc": "2026-11-06T16:26:28.034698+00:00",
+  "actual_apply_utc_recorded_only_in_external_receipt": true,
   "self_excluded": true,
-  "previous_manifest_sha256": "e8c966a100020f5728e3cacaaf47da6044d27be5d4155ed21abcc5a83f15e1f5",
+  "previous_manifest_sha256": "6c1e67b7d8043ccffeebed834a7fb02fc02ccc6bd907b243a6ef9cd58a8de87c",
   "files": [
     {
       "path": ".gitattributes",
@@ -13,15 +14,15 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 3963,
-      "sha256": "cc047d81999a08efcf27d762f334c045824909e7d7bf3c1a3658ef22add640dc",
-      "git_blob_sha1": "df8a22205529e85da48e3f5f1df672ed2e53f351"
+      "bytes": 4091,
+      "sha256": "27e0e278c16685bcfa4920594cb94718ef4bf7505d79afb6bb37d64cc442bf07",
+      "git_blob_sha1": "22a4837646101c44ba793fe294bf67acd26db0d5"
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 7931,
-      "sha256": "fc2e539cb459d5ce971ce8d8941d73c91ff0b324f7064be6041ff9e942cdf106",
-      "git_blob_sha1": "6d525bf656c55aa958dc3832f3c842887dec511c"
+      "bytes": 8125,
+      "sha256": "9096a6d54735e38faa3775ed192c4fcee9ed757046a481391992c25bf7d33256",
+      "git_blob_sha1": "22393b555ca5e93c09179a39532e99af3177ed00"
     },
     {
       "path": "CHECKPOINT.json",
@@ -43,9 +44,9 @@
     },
     {
       "path": "README.md",
-      "bytes": 18708,
-      "sha256": "4d236862d6213a3e03e36b7c47c0379c1249dc44d66c213feddd4d5f0c8b6db3",
-      "git_blob_sha1": "466c05c170d2c37080c38993836d69c7a576b371"
+      "bytes": 19015,
+      "sha256": "566f05d392e497fd523e8eccfa2e98271360f095aff12f85befed073a4bcb541",
+      "git_blob_sha1": "ebc59d8c91b1b4f461df34dc43a3fa1588bd5176"
     },
     {
       "path": "RELATION_MOMENT_CHECKPOINT.json",
@@ -9250,6 +9251,138 @@
       "bytes": 4389,
       "sha256": "06930ff131e12cdd1d192b4005e92f733f5c0afffa89c549536be6c47481817d",
       "git_blob_sha1": "a5bb1cb5efd45a8fe8f96f7628b7a64793138a05"
+    },
+    {
+      "path": "research_20261107_reference_transport/AGGREGATE_RESULTS.json",
+      "bytes": 13676,
+      "sha256": "0b4ad0ca731c0f5786a6f490aa7e5ac8ae97c33e0c64f59c0cf7737b9a05e11b",
+      "git_blob_sha1": "5f02f55c3e45c2d2742605debc345c5052c3d513"
+    },
+    {
+      "path": "research_20261107_reference_transport/AUDIT_SUMMARY.json",
+      "bytes": 1157,
+      "sha256": "4f7eab88f994a573c1b2b6644a1cb1d34f782283717524c49296a48bbf4ee732",
+      "git_blob_sha1": "beabea8b2b64db660299df66b269d1db3fa60581"
+    },
+    {
+      "path": "research_20261107_reference_transport/NOVELTY_SCOPE.txt",
+      "bytes": 1370,
+      "sha256": "a018204f2007ecf2a03eb2a8cff32f29896df5f7109fe232c3812303cb4ce03a",
+      "git_blob_sha1": "4582f8dcc24548745550dbf99fad185d6560f2ef"
+    },
+    {
+      "path": "research_20261107_reference_transport/PROTOCOL_SUMMARY.json",
+      "bytes": 4439,
+      "sha256": "70908516b3f33bcb5c35bd5f67f3f6ea93a965d972c6c2881ca7904285258192",
+      "git_blob_sha1": "913f752e09f0625911180485d406abc0bb38e90b"
+    },
+    {
+      "path": "research_20261107_reference_transport/PUBLIC_MANIFEST.json",
+      "bytes": 3733,
+      "sha256": "01093226e2a8249c269f14cea6be37eaf72ea4a55bdd4af4c411e352180c679f",
+      "git_blob_sha1": "0de79725d90eed5645740813bc0a8220afdca7b5"
+    },
+    {
+      "path": "research_20261107_reference_transport/README_ZH.txt",
+      "bytes": 2599,
+      "sha256": "da2004bfebc833ecce9ab9a7cd0a194f492949fe5cb4198c9240300cfec5a1c8",
+      "git_blob_sha1": "42600de6b8f9ca3d4120bd84b249f1911e79a944"
+    },
+    {
+      "path": "research_20261107_reference_transport/SOURCE_PINS.json",
+      "bytes": 1084,
+      "sha256": "561b7e63d2abe32aeb5d11eb23c79dcced6f5ce9314a61aeaee08bd307e37377",
+      "git_blob_sha1": "92161cdae5d55ea53774b8cf3086007dedfe2319"
+    },
+    {
+      "path": "research_20261107_reference_transport/code/calibration_views.py",
+      "bytes": 11367,
+      "sha256": "b97b48b952a40680df48f6aa4f2ae26cde9d422c8cf6b10d2adcf61183ae68ae",
+      "git_blob_sha1": "03e20c822f924cae30765520cf5be7bb44088ed2"
+    },
+    {
+      "path": "research_20261107_reference_transport/code/empirical_native.py",
+      "bytes": 8607,
+      "sha256": "6d76cdf584da6fdc917554942dd8a19abd8785928d2621af28ff049ec577239b",
+      "git_blob_sha1": "3d10e16b58d20f372aa28adc187137da0687ce13"
+    },
+    {
+      "path": "research_20261107_reference_transport/code/run_transport.py",
+      "bytes": 15026,
+      "sha256": "2109eba7c35eef113528ec667cea8ab70b16bd6bf0638fbc4b593df029ce185e",
+      "git_blob_sha1": "cc92d99272d89de405b4f8e8c653f1f7df361163"
+    },
+    {
+      "path": "research_20261107_reference_transport/code/score_transport.py",
+      "bytes": 9560,
+      "sha256": "18376ad3d6f59cbec4f8679b114020434a77bca8c119f397ab03da0fec56a4d3",
+      "git_blob_sha1": "c6ca113f488a6774aaa3ee56f37fb4dae6ccd067"
+    },
+    {
+      "path": "research_20261107_reference_transport/code/simplex_transport.py",
+      "bytes": 8578,
+      "sha256": "63b792c6c436dc33c9951395730419d52ee4ca596043c11a28896f08a8249710",
+      "git_blob_sha1": "13e861fafbccb86aa7c185afc292f32c19d2a278"
+    },
+    {
+      "path": "research_20261107_reference_transport/code/transport_io.py",
+      "bytes": 12369,
+      "sha256": "aa22b762bc6cf247031016eba06262b5b9c93ab72f80edd1778f19977d8e5240",
+      "git_blob_sha1": "ec86311c5b702cde890f4a842e21ca5f1cc30110"
+    },
+    {
+      "path": "research_20261107_reference_transport/figures/01_overall_CRPS.png",
+      "bytes": 134641,
+      "sha256": "055ec169701addb12cde4bad46c71f687d0263174d171fb0d8816d2061b9abc8",
+      "git_blob_sha1": "3748f4dae354534c73d6fc5b8dbf1728639cd0ec"
+    },
+    {
+      "path": "research_20261107_reference_transport/figures/01_overall_CRPS.svg",
+      "bytes": 21779,
+      "sha256": "287952acd8887c55dd1308a10109eb81997cad4e50cab285fa81e4af96d86bd1",
+      "git_blob_sha1": "be1c9e37c832b75268743b1062b2aac5cb3af7cd"
+    },
+    {
+      "path": "research_20261107_reference_transport/figures/03_batch_and_g5.png",
+      "bytes": 78617,
+      "sha256": "d0724058361ec352ee736ba0a315ef7c4061679e90a124c41cec83ce11e4e421",
+      "git_blob_sha1": "78017f1809d92d3e9be84de03f07d48f783182fc"
+    },
+    {
+      "path": "research_20261107_reference_transport/figures/03_batch_and_g5.svg",
+      "bytes": 15186,
+      "sha256": "5d2974c5b4b982597a3ebc8b9006b94c1784fb992de01fd3aad2cda85440cc69",
+      "git_blob_sha1": "40b46f74487ebdb250bb2a7fe7f358749bba7f25"
+    },
+    {
+      "path": "research_20261107_reference_transport/figures/04_coverage.png",
+      "bytes": 164166,
+      "sha256": "9d779c1497979d61a7b51e82baf44c80f87ae31f020ec6da70dad83c696472e8",
+      "git_blob_sha1": "ddc737feca5daf01b69190d0505fa24e0d917e2d"
+    },
+    {
+      "path": "research_20261107_reference_transport/figures/04_coverage.svg",
+      "bytes": 23603,
+      "sha256": "8618dcb9e9aaa9fef20ab496f9ec5106bde6ecfcc8f89a553f1574ba0e2a0e33",
+      "git_blob_sha1": "10344a9b9c1f7406e2701c433fd34c517cf92b0e"
+    },
+    {
+      "path": "research_20261107_reference_transport/index.html",
+      "bytes": 2696,
+      "sha256": "1e00f392688ed5c6af39709aa0551c8c41088952ebe1fe4e1cccc6a84e061cca",
+      "git_blob_sha1": "259ddadc14b5cf4999242147eb94ede011104548"
+    },
+    {
+      "path": "research_20261107_reference_transport/literature/IDR_EASYUQ_PRIMARY_READING_UPDATE.json",
+      "bytes": 3444,
+      "sha256": "3d2a5485dfcd59b73fd46ab7abd4c51972d4496e44e37c737eb7789355e9ab0b",
+      "git_blob_sha1": "335a66337e3daea7772feb1ff5188b6104b9669d"
+    },
+    {
+      "path": "research_20261107_reference_transport/requirements.txt",
+      "bytes": 183,
+      "sha256": "4c515ad62262d1d3e26deb3d2b8aff261816de3373199d6965af9605ce7108c4",
+      "git_blob_sha1": "d25359c4baa45602239c2165d71ee37657bc0c78"
     },
     {
       "path": "results/SUMMARY.json",

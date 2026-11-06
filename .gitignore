@@ -97,3 +97,7 @@ new_weighting_summary.json
 # Reviewed negative-growth public subset
 !research_20261106_relation_growth/
 !research_20261106_relation_growth/**
+
+# Reviewed reference-transport public subset
+!research_20261107_reference_transport/
+!research_20261107_reference_transport/**

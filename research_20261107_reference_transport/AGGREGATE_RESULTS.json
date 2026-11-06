@@ -1,0 +1,505 @@
+{
+  "status": "PUBLIC_AGGREGATE_EXTRACT_NO_NEW_SCORE",
+  "source_results_sha256": "cc4849635dd4721a288a0b718b593b956949861cd34441a6e6628233339e67ba",
+  "summaries_all28": {
+    "RF_identity": {
+      "0": {
+        "groups": 192,
+        "CRPS_native_mean": 27.734154372343706,
+        "RMSE_median_native": 50.95724743008635,
+        "coverage": {
+          "0.8": 0.7447916666666666,
+          "0.9": 0.890625,
+          "0.95": 0.9322916666666666
+        },
+        "width_native_mean": {
+          "0.8": 122.65946874999999,
+          "0.9": 151.92238541666669,
+          "0.95": 172.987125
+        }
+      },
+      "1": {
+        "groups": 64,
+        "CRPS_native_mean": 29.058066726856563,
+        "RMSE_median_native": 51.33722316610288,
+        "coverage": {
+          "0.8": 0.703125,
+          "0.9": 0.859375,
+          "0.95": 0.9375
+        },
+        "width_native_mean": {
+          "0.8": 128.77578125,
+          "0.9": 160.658015625,
+          "0.95": 184.0634375
+        }
+      },
+      "2": {
+        "groups": 64,
+        "CRPS_native_mean": 27.606450955076234,
+        "RMSE_median_native": 54.686405672479516,
+        "coverage": {
+          "0.8": 0.78125,
+          "0.9": 0.90625,
+          "0.95": 0.9375
+        },
+        "width_native_mean": {
+          "0.8": 118.300328125,
+          "0.9": 146.109375,
+          "0.95": 164.45459375
+        }
+      },
+      "3": {
+        "groups": 64,
+        "CRPS_native_mean": 26.537945435098326,
+        "RMSE_median_native": 46.516768473012775,
+        "coverage": {
+          "0.8": 0.75,
+          "0.9": 0.90625,
+          "0.95": 0.921875
+        },
+        "width_native_mean": {
+          "0.8": 120.902296875,
+          "0.9": 148.999765625,
+          "0.95": 170.44334375
+        }
+      }
+    },
+    "RF_beta": {
+      "0": {
+        "groups": 192,
+        "CRPS_native_mean": 27.52273698076748,
+        "RMSE_median_native": 51.45730618217438,
+        "coverage": {
+          "0.8": 0.78125,
+          "0.9": 0.9010416666666666,
+          "0.95": 0.9322916666666666
+        },
+        "width_native_mean": {
+          "0.8": 123.29449479166668,
+          "0.9": 153.16221875,
+          "0.95": 172.91379166666664
+        }
+      },
+      "1": {
+        "groups": 64,
+        "CRPS_native_mean": 28.818779169536604,
+        "RMSE_median_native": 52.095131435492604,
+        "coverage": {
+          "0.8": 0.703125,
+          "0.9": 0.875,
+          "0.95": 0.9375
+        },
+        "width_native_mean": {
+          "0.8": 127.276234375,
+          "0.9": 160.713359375,
+          "0.95": 181.157984375
+        }
+      },
+      "2": {
+        "groups": 64,
+        "CRPS_native_mean": 27.72875785473837,
+        "RMSE_median_native": 56.16125551564664,
+        "coverage": {
+          "0.8": 0.828125,
+          "0.9": 0.90625,
+          "0.95": 0.9375
+        },
+        "width_native_mean": {
+          "0.8": 120.35896875,
+          "0.9": 147.424546875,
+          "0.95": 164.54525
+        }
+      },
+      "3": {
+        "groups": 64,
+        "CRPS_native_mean": 26.020673918027473,
+        "RMSE_median_native": 45.55846505538926,
+        "coverage": {
+          "0.8": 0.8125,
+          "0.9": 0.921875,
+          "0.95": 0.921875
+        },
+        "width_native_mean": {
+          "0.8": 122.24828125,
+          "0.9": 151.34875,
+          "0.95": 173.038140625
+        }
+      }
+    },
+    "RF_global4": {
+      "0": {
+        "groups": 192,
+        "CRPS_native_mean": 27.49427879313433,
+        "RMSE_median_native": 51.5532930278525,
+        "coverage": {
+          "0.8": 0.7760416666666666,
+          "0.9": 0.9010416666666666,
+          "0.95": 0.9322916666666666
+        },
+        "width_native_mean": {
+          "0.8": 124.55476041666667,
+          "0.9": 155.7750625,
+          "0.95": 176.900203125
+        }
+      },
+      "1": {
+        "groups": 64,
+        "CRPS_native_mean": 28.811733322384374,
+        "RMSE_median_native": 51.877657728152826,
+        "coverage": {
+          "0.8": 0.703125,
+          "0.9": 0.875,
+          "0.95": 0.9375
+        },
+        "width_native_mean": {
+          "0.8": 129.28390625,
+          "0.9": 163.2850625,
+          "0.95": 186.664796875
+        }
+      },
+      "2": {
+        "groups": 64,
+        "CRPS_native_mean": 27.71451111784154,
+        "RMSE_median_native": 56.59432389010513,
+        "coverage": {
+          "0.8": 0.8125,
+          "0.9": 0.90625,
+          "0.95": 0.9375
+        },
+        "width_native_mean": {
+          "0.8": 120.628453125,
+          "0.9": 149.91384375,
+          "0.95": 166.696265625
+        }
+      },
+      "3": {
+        "groups": 64,
+        "CRPS_native_mean": 25.95659193917708,
+        "RMSE_median_native": 45.59624105240886,
+        "coverage": {
+          "0.8": 0.8125,
+          "0.9": 0.921875,
+          "0.95": 0.921875
+        },
+        "width_native_mean": {
+          "0.8": 123.751921875,
+          "0.9": 154.12628125,
+          "0.95": 177.339546875
+        }
+      }
+    },
+    "RF_anchor4": {
+      "0": {
+        "groups": 192,
+        "CRPS_native_mean": 27.516122278447856,
+        "RMSE_median_native": 52.02010832030485,
+        "coverage": {
+          "0.8": 0.796875,
+          "0.9": 0.8854166666666666,
+          "0.95": 0.921875
+        },
+        "width_native_mean": {
+          "0.8": 124.79872916666666,
+          "0.9": 155.69923958333334,
+          "0.95": 176.7156354166667
+        }
+      },
+      "1": {
+        "groups": 64,
+        "CRPS_native_mean": 28.903216705345823,
+        "RMSE_median_native": 53.17934466104415,
+        "coverage": {
+          "0.8": 0.734375,
+          "0.9": 0.859375,
+          "0.95": 0.90625
+        },
+        "width_native_mean": {
+          "0.8": 129.6165,
+          "0.9": 161.850328125,
+          "0.95": 184.119828125
+        }
+      },
+      "2": {
+        "groups": 64,
+        "CRPS_native_mean": 27.67826946304695,
+        "RMSE_median_native": 56.639010538922065,
+        "coverage": {
+          "0.8": 0.84375,
+          "0.9": 0.890625,
+          "0.95": 0.9375
+        },
+        "width_native_mean": {
+          "0.8": 121.46528125,
+          "0.9": 150.729765625,
+          "0.95": 167.7450625
+        }
+      },
+      "3": {
+        "groups": 64,
+        "CRPS_native_mean": 25.966880666950804,
+        "RMSE_median_native": 45.63173013992018,
+        "coverage": {
+          "0.8": 0.8125,
+          "0.9": 0.90625,
+          "0.95": 0.921875
+        },
+        "width_native_mean": {
+          "0.8": 123.31440625,
+          "0.9": 154.517625,
+          "0.95": 178.28201562499999
+        }
+      }
+    },
+    "RF_auto4": {
+      "0": {
+        "groups": 192,
+        "CRPS_native_mean": 27.339657734217983,
+        "RMSE_median_native": 51.17330513467202,
+        "coverage": {
+          "0.8": 0.765625,
+          "0.9": 0.9010416666666666,
+          "0.95": 0.9270833333333334
+        },
+        "width_native_mean": {
+          "0.8": 125.54264583333332,
+          "0.9": 154.76272395833334,
+          "0.95": 176.99594270833333
+        }
+      },
+      "1": {
+        "groups": 64,
+        "CRPS_native_mean": 28.322890483448557,
+        "RMSE_median_native": 51.3163133056268,
+        "coverage": {
+          "0.8": 0.71875,
+          "0.9": 0.875,
+          "0.95": 0.9375
+        },
+        "width_native_mean": {
+          "0.8": 128.937875,
+          "0.9": 161.02484375,
+          "0.95": 186.95346875
+        }
+      },
+      "2": {
+        "groups": 64,
+        "CRPS_native_mean": 27.79563684161599,
+        "RMSE_median_native": 56.29286153026531,
+        "coverage": {
+          "0.8": 0.78125,
+          "0.9": 0.90625,
+          "0.95": 0.921875
+        },
+        "width_native_mean": {
+          "0.8": 121.5808125,
+          "0.9": 148.584171875,
+          "0.95": 166.42215625
+        }
+      },
+      "3": {
+        "groups": 64,
+        "CRPS_native_mean": 25.900445877589398,
+        "RMSE_median_native": 45.31965583134844,
+        "coverage": {
+          "0.8": 0.796875,
+          "0.9": 0.921875,
+          "0.95": 0.921875
+        },
+        "width_native_mean": {
+          "0.8": 126.10925,
+          "0.9": 154.67915625,
+          "0.95": 177.612203125
+        }
+      }
+    },
+    "GP10": {
+      "0": {
+        "groups": 192,
+        "CRPS_native_mean": 34.43067532713614,
+        "RMSE_median_native": 60.83900148853566,
+        "coverage": {
+          "0.8": 0.7916666666666666,
+          "0.9": 0.9114583333333334,
+          "0.95": 0.9375
+        },
+        "width_native_mean": {
+          "0.8": 149.04245726865238,
+          "0.9": 191.293922928434,
+          "0.95": 227.94076825911569
+        }
+      },
+      "1": {
+        "groups": 64,
+        "CRPS_native_mean": 29.37403372702248,
+        "RMSE_median_native": 51.19672462420939,
+        "coverage": {
+          "0.8": 0.796875,
+          "0.9": 0.90625,
+          "0.95": 0.953125
+        },
+        "width_native_mean": {
+          "0.8": 137.8510892760435,
+          "0.9": 176.9299576163018,
+          "0.95": 210.82504791435804
+        }
+      },
+      "2": {
+        "groups": 64,
+        "CRPS_native_mean": 36.77291081172098,
+        "RMSE_median_native": 65.77523385611342,
+        "coverage": {
+          "0.8": 0.828125,
+          "0.9": 0.890625,
+          "0.95": 0.90625
+        },
+        "width_native_mean": {
+          "0.8": 154.6886479430391,
+          "0.9": 198.54073020401793,
+          "0.95": 236.5758717299161
+        }
+      },
+      "3": {
+        "groups": 64,
+        "CRPS_native_mean": 37.145081442664974,
+        "RMSE_median_native": 64.47221343565455,
+        "coverage": {
+          "0.8": 0.75,
+          "0.9": 0.9375,
+          "0.95": 0.953125
+        },
+        "width_native_mean": {
+          "0.8": 154.5876345868746,
+          "0.9": 198.41108096498235,
+          "0.95": 236.421385133073
+        }
+      }
+    },
+    "old3_NIG": {
+      "0": {
+        "groups": 192,
+        "CRPS_native_mean": 32.35640833212511,
+        "RMSE_median_native": 58.393174634328865,
+        "coverage": {
+          "0.8": 0.7604166666666666,
+          "0.9": 0.875,
+          "0.95": 0.953125
+        },
+        "width_native_mean": {
+          "0.8": 138.7239291526175,
+          "0.9": 178.33541373495947,
+          "0.95": 212.89614688752667
+        }
+      },
+      "1": {
+        "groups": 64,
+        "CRPS_native_mean": 32.71719904818774,
+        "RMSE_median_native": 57.22463414273684,
+        "coverage": {
+          "0.8": 0.71875,
+          "0.9": 0.859375,
+          "0.95": 0.984375
+        },
+        "width_native_mean": {
+          "0.8": 139.22261333010962,
+          "0.9": 179.08013721467202,
+          "0.95": 213.90646000206496
+        }
+      },
+      "2": {
+        "groups": 64,
+        "CRPS_native_mean": 32.41033810914503,
+        "RMSE_median_native": 60.13968199965566,
+        "coverage": {
+          "0.8": 0.828125,
+          "0.9": 0.875,
+          "0.95": 0.9375
+        },
+        "width_native_mean": {
+          "0.8": 139.11540149160612,
+          "0.9": 178.7838393651097,
+          "0.95": 213.370240922802
+        }
+      },
+      "3": {
+        "groups": 64,
+        "CRPS_native_mean": 31.941687839042572,
+        "RMSE_median_native": 57.77411555217349,
+        "coverage": {
+          "0.8": 0.734375,
+          "0.9": 0.890625,
+          "0.95": 0.9375
+        },
+        "width_native_mean": {
+          "0.8": 137.83377263613676,
+          "0.9": 177.14226462509671,
+          "0.95": 211.41173973771305
+        }
+      }
+    }
+  },
+  "paired_controls6": {
+    "RF_identity": {
+      "groups": 192,
+      "candidate_minus_other_CRPS_mean": -0.3944966381257254,
+      "standard_error_descriptive_only": 0.17328355720392488,
+      "better": 111,
+      "worse": 81,
+      "exact_ties": 0,
+      "not_formal_IID_campaign_interval_or_future_risk_certificate": true
+    },
+    "RF_beta": {
+      "groups": 192,
+      "candidate_minus_other_CRPS_mean": -0.1830792465495011,
+      "standard_error_descriptive_only": 0.14885391726241332,
+      "better": 86,
+      "worse": 106,
+      "exact_ties": 0,
+      "not_formal_IID_campaign_interval_or_future_risk_certificate": true
+    },
+    "RF_global4": {
+      "groups": 192,
+      "candidate_minus_other_CRPS_mean": -0.15462105891634828,
+      "standard_error_descriptive_only": 0.15158357906722347,
+      "better": 88,
+      "worse": 104,
+      "exact_ties": 0,
+      "not_formal_IID_campaign_interval_or_future_risk_certificate": true
+    },
+    "RF_anchor4": {
+      "groups": 192,
+      "candidate_minus_other_CRPS_mean": -0.17646454422987526,
+      "standard_error_descriptive_only": 0.16165369990207357,
+      "better": 90,
+      "worse": 102,
+      "exact_ties": 0,
+      "not_formal_IID_campaign_interval_or_future_risk_certificate": true
+    },
+    "GP10": {
+      "groups": 192,
+      "candidate_minus_other_CRPS_mean": -7.0910175929181625,
+      "standard_error_descriptive_only": 1.2572907686025512,
+      "better": 124,
+      "worse": 68,
+      "exact_ties": 0,
+      "not_formal_IID_campaign_interval_or_future_risk_certificate": true
+    },
+    "old3_NIG": {
+      "groups": 192,
+      "candidate_minus_other_CRPS_mean": -5.016750597907132,
+      "standard_error_descriptive_only": 1.0839191015213527,
+      "better": 122,
+      "worse": 70,
+      "exact_ties": 0,
+      "not_formal_IID_campaign_interval_or_future_risk_certificate": true
+    }
+  },
+  "selected_descriptor_index": 5,
+  "anchor_descriptor_index": 0,
+  "new_groups": 192,
+  "old_history_reused": 168,
+  "new_native_report_cells": 576,
+  "reused_native_cells": 504,
+  "actual_sklearn_fits": 11,
+  "same_source_prequential_development": true,
+  "no_per_material_records_or_original_targets": true
+}

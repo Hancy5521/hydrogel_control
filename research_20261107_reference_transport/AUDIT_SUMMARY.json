@@ -1,0 +1,38 @@
+{
+  "status": "PUBLIC_SUMMARY_OF_INDEPENDENT_PASS_RECEIPTS",
+  "state_audit": {
+    "status": "PASS",
+    "source_receipt_sha256": "e3575a25ad65fe1efe60a71718dc4877059f134cf2a6f4e1eb14dd990eec9f39",
+    "saved_RF_fits_audited": 8,
+    "saved_GP_fits_audited": 3,
+    "OOF_reference_forecasts": 168,
+    "saved_forecast_laws": 1344,
+    "pretarget_exact_envelopes": 768,
+    "new_fits": 0,
+    "raw_reads": 0
+  },
+  "score_audit": {
+    "status": "PASS",
+    "all_score_coordinates": 1344,
+    "atomic_coordinates": 960,
+    "continuous_coordinates": 384,
+    "coverage_events": 4032,
+    "quantile_positions_checked": 9408,
+    "method_batch_summaries": 28,
+    "paired_score_differences": 1152,
+    "exact_observed_and_pretarget_gap_checks": 768,
+    "new_fits": 0,
+    "raw_reads": 0,
+    "new_target_disclosures": 0
+  },
+  "score_receipt_sha256": "d5a3def035869ae75a5295f99e8c8b1233cebd86a44bf8646094165d32858f44",
+  "local_resource_QA": {
+    "status": "PASS",
+    "payloads": 231,
+    "dependencies": 102,
+    "local_links": 30,
+    "guarded_subprocesses": 10,
+    "new_science_runs": 0
+  },
+  "no_private_case_records_or_numeric_model_states": true
+}

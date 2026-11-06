@@ -1,0 +1,14 @@
+创新定位与直接近邻（限定陈述）
+
+Kuleshov等ICML2018的Calibrated Regression已把单调映射与预测CDF复合；Gneiting与Ranjan的Beta变换工作、后续online Beta/native-CRPS研究是直接先例。IDR与EasyUQ建立了有序条件CDF与proper-score估计。因此T∘F、CRPS、单调校准或序贯评估不能单独冠以首次发明。
+
+本检查点的可检验组合是：材料报告条件补全中，保留已验证较强的完整RF参考法则，固定4概率段与一次过去OOF成分上下文选择；用原单位Q/b/c消息实现严格正概率质量修正，按真实后揭目标更新并核查全实数损失差界。参数压缩不等于完整分布降秩；精确算术界不等于未来风险或校准保证。
+
+现有新192组与RF、Beta、全局修正的同信息比较支持小幅开发收益。不能从这些结果保证整个材料领域没有近似工作，更不能称完整自催化agent成立。后续真正有价值的问题是不同任务/来源上冻结方法的可重复增量，而不是在这192组上继续调参。
+
+已阅读范围以literature台账为准，并非所有论文全文。主要原文入口：
+https://proceedings.mlr.press/v80/kuleshov18a.html
+https://arxiv.org/abs/1106.1638
+https://doi.org/10.1016/j.ijforecast.2023.12.005
+https://doi.org/10.1111/rssb.12450
+https://arxiv.org/html/2212.08376v2

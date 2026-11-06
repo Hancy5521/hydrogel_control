@@ -1,0 +1,46 @@
+{
+  "actual_recorded_utc": "2026-11-06T11:28:17.555749+00:00",
+  "actual_Asia_Shanghai": "2026-11-06T19:28:17.555749+08:00",
+  "queries": [
+    "isotonic distributional regression Henzi Ziegel Gneiting 2021 Journal Royal Statistical Society pdf CRPS",
+    "EasyUQ probabilistic prediction isotonic distributional regression 2023 arxiv Dimitriadis Gneiting"
+  ],
+  "primary_sources_only": true,
+  "papers": [
+    {
+      "title": "Isotonic Distributional Regression",
+      "authors": "Henzi, Ziegel, Gneiting",
+      "year": 2021,
+      "doi": "10.1111/rssb.12450",
+      "url": "https://academic.oup.com/jrsssb/article/83/5/963/7056107",
+      "reading_depth": "publisher search-engine extracted abstract/introduction/theorem excerpts only;direct article open failed nonretryable500;not fulltext read",
+      "license": "not checked for copying;no article reproduced or code used",
+      "takeaway_paraphrase": "Order-restricted conditional CDF estimation and CRPS optimization are established. Training optimality/calibration statements have explicit assumptions and do not certify future material performance."
+    },
+    {
+      "title": "Easy Uncertainty Quantification (EasyUQ): Generating Predictive Distributions from Single-valued Model Output",
+      "authors": "Walz, Henzi, Ziegel, Gneiting",
+      "arxiv": "2212.08376v2",
+      "revision_date": "2023-07-24",
+      "doi_published": "10.1137/22M1541915",
+      "url": "https://arxiv.org/html/2212.08376v2",
+      "reading_depth": "abstract/introduction and selected sections2.1-2.2 equations2-5,interpolation and isotonicity assumptions;not entire experiments/proofs",
+      "license": "arXiv perpetual non-exclusive,read-only;no code or full article redistributed",
+      "takeaway_paraphrase": "PAV can turn point predictions into discrete conditional distributions under stochastic ordering;in-sample proper-score optimality is classical. Our experiment retains a whole reference CDF and allows composition-dependent repair;that distinction requires measured benefit against direct Beta/global baselines,not a first-ever calibration claim.",
+      "version_caution": "HTML displayed later rendering date but arxiv version/history pinsv2 July2023;do not call it a newly revised2026 paper."
+    },
+    {
+      "title": "On the Calibration of Isotonic Distributional Regression",
+      "authors": "Biegert, Resin, Jordan, Lerch",
+      "arxiv": "2610.31258v1",
+      "submitted": "2026-10-22",
+      "url": "https://arxiv.org/html/2610.31258v1",
+      "reading_depth": "abstract and selectedsections1,2,4 through pool-block rational-PIT explanation;not whole empirical/proof/smoothing study",
+      "license": "arXiv perpetual non-exclusive,read-only;no article/code copied",
+      "takeaway_paraphrase": "A recent IDR-specific study distinguishes in-sample threshold calibration from out-of-sample randomized-PIT behavior and explains rational spikes from PAV blocks. This does not prove a calibration failure of our different forest/spline model. It supports keeping exact discrete PIT intervals and avoiding uniformity claims from midpoint histograms."
+    }
+  ],
+  "scope_decision": "Related work only. New192 forecast protocol remains unchanged and already closed. No extra posthoc model,parameter search or current-label adaptive baseline added.",
+  "downloads_or_new_material_reads": 0,
+  "number_full_papers_claimed_read": 0
+}

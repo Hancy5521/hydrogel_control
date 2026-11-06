@@ -1,0 +1,19 @@
+{
+  "scope": "six source files frozen before original fit",
+  "source_sha256": {
+    "empirical_native.py": "6d76cdf584da6fdc917554942dd8a19abd8785928d2621af28ff049ec577239b",
+    "simplex_transport.py": "63b792c6c436dc33c9951395730419d52ee4ca596043c11a28896f08a8249710",
+    "calibration_views.py": "b97b48b952a40680df48f6aa4f2ae26cde9d422c8cf6b10d2adcf61183ae68ae",
+    "transport_io.py": "aa22b762bc6cf247031016eba06262b5b9c93ab72f80edd1778f19977d8e5240",
+    "run_transport.py": "2109eba7c35eef113528ec667cea8ab70b16bd6bf0638fbc4b593df029ce185e",
+    "score_transport.py": "18376ad3d6f59cbec4f8679b114020434a77bca8c119f397ab03da0fec56a4d3"
+  },
+  "source_freeze_V2_sha256": "e8e4ed7f7d90d1607f722c6dbb7e68d15b13d68d91acbe66a19843222ac59da3",
+  "complete_local_archive": {
+    "file_name": "referenceTransport_20261106T103000Z.zip",
+    "bytes": 43036251,
+    "sha256": "48a0648713f29a4eee0a226386f09eebf1a31903fbd629d17e952419455da873",
+    "public_subset_is_not_complete_resource_package": true
+  },
+  "readable_public_math_source_not_standalone_controller_reproduction": true
+}
