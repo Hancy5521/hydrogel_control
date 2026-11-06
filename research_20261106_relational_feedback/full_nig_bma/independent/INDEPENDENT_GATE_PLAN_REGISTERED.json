@@ -1,0 +1,50 @@
+{
+  "actual_utc": "2026-11-06T07:04:23.558135+00:00",
+  "status": "REGISTERED_BEFORE_INDEPENDENT_REFERENCE_EXECUTION",
+  "scope": "INDEPENDENT_ONE_FULL_NIG_BMA_NATIVE_REFERENCE_ONCE",
+  "independent_sources": {
+    "full_native_reference.py": "eb310af6a63d61e6d29ee30577f2f1b75afc98bda569433ca5b6e5d7a4ffd352",
+    "audit_full_gate.py": "a2b4bbe2af7b3958d89b3d5ddba024a2e367f5ccb8ad5fc2e00af2794c1a80b0"
+  },
+  "inputs": {
+    "proposal": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\FIXED_DATAFREE_GATE_PROPOSAL.json",
+      "sha256": "6ac2e7fc802bc22afb7dbd658d29e00efcae6d9c119bc3d5f9549b1efc715521"
+    },
+    "producer_result": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\execution_once\\RESULTS.json",
+      "sha256": "27f834b26bcfb03fb610aeb0d9acdd2a28159afe8396f8cbcba8780775dfdef9"
+    },
+    "producer_plan": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\EXECUTION_PLAN_REGISTERED.json",
+      "sha256": "f7d7a918303c77c6531cd347c6d213fff779f0049ff4e108a4f2e2ad1482e48f"
+    },
+    "producer_source_freeze": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\SOURCE_FREEZE.json",
+      "sha256": "bcf50f6f1456a9a2e21f13bce509984b420b79037043a470aeb6dfb747a5d529"
+    },
+    "static_review": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\INDEPENDENT_STATIC_SOURCE_REVIEW.json",
+      "sha256": "2834404f63d2f2370a02266feba72e34e639a661d3f8333aec2da932a36f3854"
+    }
+  },
+  "producer_code_directory": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\code",
+  "criteria": {
+    "original_proposal_sha256": "6ac2e7fc802bc22afb7dbd658d29e00efcae6d9c119bc3d5f9549b1efc715521",
+    "conditional_NIG_vs_bivt_abs": 2e-10,
+    "conditional_NIG_vs_bivt_rel": 2e-10,
+    "Hweights_abs": 2e-12,
+    "target_mixture_CDF_abs": 2e-11,
+    "native_value_abs": 0.0002,
+    "native_value_rel": 2e-05,
+    "refinement_proxy": 2e-05,
+    "ideal_tail": 0.0001,
+    "reference_query": "each generatingH directmodeledqueryz over originalmu±64scale, no renorm",
+    "reference_target": "direct nativey integral over sameunion modeledmu±32scale mapped fixedYJ",
+    "closure": "2nativewidth*omittedquerymass+reportednumericdiagnostics",
+    "signedbetween": "negative only if resolved beyond declared numerical proxies/tolerances; noclip",
+    "quadwarning": "error retained",
+    "material_or_SUT_imports": 0
+  },
+  "basis": "Singlefixed prior proposal and tolerances retained; noold2Dtable recomputation, parameter scan, materialvalues or model fit."
+}

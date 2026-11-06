@@ -1,0 +1,135 @@
+{
+  "status": "DESIGN_V2_ROOT_DIRECTION_ACCEPTED_NOT_EXECUTION_PREREGISTRATION",
+  "actual_utc": "2026-11-06T06:45:08.810552+00:00",
+  "actual_Asia_Shanghai": "2026-11-06T14:45:08.810552+08:00",
+  "question": "Can actual disclosedY update conditional-relation hypothesis uncertainty sufficiently to alter subsequent native-target-risk queries and improve same-cost missingY recovery?",
+  "source_reference_not_read": {
+    "dataset": "Matminer jarvis_dft_3d existing published snapshot",
+    "raw_sha256": "3d0fc1315b74cf84071f16aa25bb93434dafbc83867beb75872064ac245bd747",
+    "field_order": [
+      "e_form",
+      "gap opt",
+      "bulk modulus"
+    ]
+  },
+  "identity": {
+    "prior_components_excluded": 928,
+    "parent_component_counts": [
+      40,
+      256,
+      256,
+      224,
+      152
+    ],
+    "original_eligible_components": 8842,
+    "remaining_before_selection": 7914,
+    "proposed_new_components": 160,
+    "remaining_after_selection": 7754,
+    "new_role_counts": {
+      "warm": 32,
+      "pool": 32,
+      "terminal": 96
+    },
+    "hash_prefix_proposed": "relational_feedback_bma_onlyY_v1|",
+    "selection_executed": false,
+    "all_new_roles_development": true
+  },
+  "cost": {
+    "warm_complete3": 96,
+    "pool_dual_proxies": 64,
+    "terminal_dual_proxies": 192,
+    "common_setup": 352,
+    "per_policy_onlyY": 8,
+    "per_policy_total_including_setup": 360,
+    "policies": 6,
+    "counterfactual_query_events": 48,
+    "unique_pool_Y_revelation_upper_bound": 32,
+    "counterfactual_reuse_does_not_multiply_materialN": true,
+    "terminal_Y_validation_cells_separate_from_learning": 96,
+    "per_policy_total_including_validation": 456,
+    "allpolicy_unique_disclosure_total_upper_bound": 480
+  },
+  "hypotheses": {
+    "affine": [
+      "1",
+      "zA",
+      "zG"
+    ],
+    "interaction": [
+      "1",
+      "zA",
+      "zG",
+      "zA*zG"
+    ],
+    "quadratic": [
+      "1",
+      "zA",
+      "zG",
+      "zA*zG",
+      "zA^2",
+      "zG^2"
+    ]
+  },
+  "proposed_prior_not_yet_root_frozen": {
+    "model_prior_probabilities": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "warm_weight": "normalize exact warm conditional marginal evidence; never forced equal",
+    "coefficient_mean": 0,
+    "V0": "identity for each dimension3/4/6",
+    "IG_alpha0": 3,
+    "IG_b0": 1.5,
+    "shared_warm_only_coordinates": true,
+    "full_basis_order": [
+      "1",
+      "x1",
+      "x2",
+      "x1*x2",
+      "x1^2",
+      "x2^2"
+    ],
+    "extended_feature_warmcenter_SD_fixed": true,
+    "no_weight_floor_or_temperature_or_entropy_reservation": true
+  },
+  "policies": [
+    "full_native_cross_target_CRPS_BMA",
+    "warm_openloop_same_legal_joint_lookahead",
+    "fixed_random",
+    "marginal_native_total_CRPS_uncertainty",
+    "model_information_MI",
+    "GP_variance_own_GP_prediction"
+  ],
+  "predictor_ablation": "candidate_chain_componentstates_actualY_updated_but_predictiveweights_frozenatwarm; not an acquisition",
+  "logical_forecast_counts": {
+    "main_BMA": 1728,
+    "sameinfo_affine_NIG_candidate_and_random": 576,
+    "GP_RF_on_candidate_and_random": 1152,
+    "GPpolicy_own_GP": 288,
+    "candidate_frozenweights_prediction": 288,
+    "terminal_total": 4032,
+    "prequential_main_BMA": 48,
+    "all_logical_score_coordinates": 4080
+  },
+  "computation_counts_proposed": {
+    "sklearn_fits": 18,
+    "GP": 13,
+    "RF": 5,
+    "warm_NIG_initializations": 3,
+    "exact_NIG_updates": 144
+  },
+  "full_joint_coupling_required": true,
+  "fixedGaussian_betweenH_eightcase_gate_is_not_total_NIG_BMA_VOI": true,
+  "openloop_one_step_conditionalweights_still_Bayesian": true,
+  "science_execution_by_this_proposal": {
+    "new_metadata_selections": 0,
+    "raw_values_reads": 0,
+    "models_fits": 0,
+    "queries": 0,
+    "terminal_scores": 0
+  },
+  "proposal_sha256": "2176b494fc2897fe60e07b1a4340e80a7720221fa64511939b25d1543e098730",
+  "root_action": "Finalize exact numerical/acquisition implementation and independent fulljoint gate; only then metadata role selection and actual material protocol. No new values/fit/selection were executed by this design.",
+  "supersedes_design_v1_sha256": "9c9ff183dd7893cd9b1a6d7bbe38b1a0e08356d6685bda5e66616155d3600e88"
+}

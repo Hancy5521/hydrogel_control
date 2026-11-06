@@ -1,0 +1,28 @@
+{
+  "actual_utc": "2026-11-06T07:44:49.523476+00:00",
+  "status": "PREPARED_DURING_UNIQUE_REAL_FORECAST_BEFORE_TERMINAL_SCORE",
+  "independent_sources": {
+    "bma_state_reference.py": "f1787d064721292934b760bf7d88a19e23d2cae402a4c93a52c632a2d21544c8",
+    "audit_material_states.py": "586cb33072cad68aa1f35fc2575071a91a05e946a7a979d12977570a6472cd42"
+  },
+  "scope": "INDEPENDENT_FRESH160_SAVED_STATES_ONCE",
+  "criteria": {
+    "state_evidence_law_absolute": 2e-09,
+    "state_evidence_law_relative": 2e-11,
+    "GP_normwise_backward": 1e-11,
+    "GP_native_mu_SD_abs": 2e-06,
+    "GP_native_mu_SD_rel": 2e-08,
+    "forest_float32_paths_Fraction_weights": "exact",
+    "primary_mixture_laws": 1728,
+    "reference_laws": 2304,
+    "allterminal_laws": 4032,
+    "prequery_laws": 48,
+    "baseline_states": 18,
+    "component_feedback_updates": 144,
+    "complete_terminal_contexts": 96,
+    "no_terminalY_raw_or_fit": true,
+    "native_field_scope": "independent batchparams/coords/source/probes+all96targetaverages/within/signedbetween/finitecutclosure/refinement/argmax; no allmaterial2D reintegration"
+  },
+  "posterior_reference": "denseI+XtransposeX; conjugatelogmarginal evidence; independentmath.fsum fixedwarmfeatures; no SUT imports",
+  "next": "Actualforecastcomplete receipt then pin all123payloads/roles/plan to root-approved independent once audit; do not reforecast or rescore."
+}

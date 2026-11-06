@@ -1,0 +1,16 @@
+{
+  "actual_utc": "2026-11-06T07:03:31.278184+00:00",
+  "results_sha256": "27f834b26bcfb03fb610aeb0d9acdd2a28159afe8396f8cbcba8780775dfdef9",
+  "status": "COMPLETE_ALL_PRODUCER_DIAGNOSTICS_PASS",
+  "checks": {
+    "conditional_parameter_algebra": true,
+    "model_weight_algebra": true,
+    "conditional_mixture_CDF_algebra": true,
+    "final_refinement_diagnostic": true,
+    "ideal_tail_account": true,
+    "finite_cutoff_decomposition_diagnostic": true,
+    "no_negative_between_clipping": true
+  },
+  "model_fits": 0,
+  "material_label_reads": 0
+}

@@ -1,0 +1,220 @@
+{
+  "actual_utc": "2026-11-06T06:43:46.460371+00:00",
+  "status": "FIXED_BEFORE_FULL_NIG_NUMERIC_OUTPUTS_NO_MATERIAL",
+  "kind": "ONE_FULL_NIG_BMA_FIXTURE_PLUS_ANALYTIC_LABEL_PROBES",
+  "basis_order": {
+    "affine": [
+      "1",
+      "x1",
+      "x2"
+    ],
+    "interaction": [
+      "1",
+      "x1",
+      "x2",
+      "x1*x2"
+    ],
+    "fullquad": [
+      "1",
+      "x1",
+      "x2",
+      "x1*x2",
+      "x1^2",
+      "x2^2"
+    ]
+  },
+  "weights": [
+    0.2,
+    0.3,
+    0.5
+  ],
+  "models": [
+    {
+      "id": "affine",
+      "mean": [
+        0,
+        0.6,
+        -0.2
+      ],
+      "V": [
+        [
+          0.5,
+          0.6,
+          0.0
+        ],
+        [
+          0.6,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.5
+        ]
+      ],
+      "alpha": 3.0,
+      "b": 1.5,
+      "labeled_updates": 0
+    },
+    {
+      "id": "interaction",
+      "mean": [
+        0,
+        0.6,
+        -0.2,
+        0.5
+      ],
+      "V": [
+        [
+          0.5,
+          -0.6,
+          0.0,
+          0.0
+        ],
+        [
+          -0.6,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.5,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.25
+        ]
+      ],
+      "alpha": 3.0,
+      "b": 1.5,
+      "labeled_updates": 0
+    },
+    {
+      "id": "fullquad",
+      "mean": [
+        0,
+        0.6,
+        -0.2,
+        0.5,
+        0.25,
+        -0.15
+      ],
+      "V": [
+        [
+          0.5,
+          0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.25,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.25,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.25
+        ]
+      ],
+      "alpha": 3.0,
+      "b": 1.5,
+      "labeled_updates": 0
+    }
+  ],
+  "query_context": [
+    0.5,
+    -1.0
+  ],
+  "target_context": [
+    0.0,
+    0.0
+  ],
+  "distinct_physical_rows": true,
+  "response_transform": {
+    "center": 0.5,
+    "sd": 0.7,
+    "s0": 2.0
+  },
+  "fixed_observed_modeled_query_Y": [
+    -1.0,
+    1.0
+  ],
+  "target_modeled_CDF_points": [
+    -2.0,
+    0.0,
+    2.0
+  ],
+  "main_native_risk_values": 1,
+  "within_components": 3,
+  "signedbetween": "Bbefore0 (targetmarginalCDFsidentical); Bafter>0, so Bbefore-E Bafter<0; neverclip",
+  "query_truncation": "eachcomponentstandardizedqZ in[-64,64], originalweighteddensity, no renormalization",
+  "target_domain": "union ofcomponentmodeledtarget[mu_h-32s_h,mu_h+32s_h] mapped commonnativeYJ",
+  "quadrature_levels": [
+    32,
+    64,
+    128,
+    256
+  ],
+  "criteria": {
+    "conditional_NIG_vs_bivt_parameter_absolute": 2e-10,
+    "conditional_parameter_relative": 2e-10,
+    "Hweight_absolute": 2e-12,
+    "conditional_mixture_CDF_absolute": 2e-11,
+    "nativeVOI_independent_reference_absolute": 0.0002,
+    "nativeVOI_reference_relative": 2e-05,
+    "final_refinement_diagnostic_absolute": 2e-05,
+    "ideal_tail_account_absolute": 0.0001,
+    "signedbetween": "record raw; claimnegative only beyond numerical diagnostic uncertainties",
+    "decomposition_closure": "finiteintegration residual allowed only within recorded numericaldiagnostics +2*nativetargetwidth*sum_h(w_h*2*SF_tnu_h(64)); no hiddenrenormalization"
+  },
+  "reference": "independent directmodeledqueryz density ×nativeTargety CDFsquare; no producer import, no actualwarm/fit",
+  "scalar_singleH": "algebraicreduction and reuse old frozen12 reference/receipts only; no olddoubleintegration/researchreruns",
+  "prohibited": [
+    "materiallabels_or_fit",
+    "scanmeanVpriorquerytargetuntilgain",
+    "dropwithinH",
+    "clipnegativebetween",
+    "call3fixedhypothesesnewBayesalgorithm",
+    "current152tuning"
+  ],
+  "next": "rootfreezeactualsources/UTC oncegate; then freshmaterial32/32/96 prospective experiment if source and arithmetic pass"
+}

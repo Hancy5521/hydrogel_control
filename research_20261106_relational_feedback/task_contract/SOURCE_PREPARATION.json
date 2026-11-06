@@ -1,0 +1,19 @@
+{
+  "status": "SOURCE_ONLY_AST_AND_METADATA_HASH_PREPARATION_NO_SELECTION",
+  "actual_utc": "2026-11-06T07:19:10.560582+00:00",
+  "selector_source_sha256": "5ca08dbc3430c6a8ced8697941dc2b2b22d0bb56f9368adb38b688fd77d01589",
+  "template_sha256": "e9969981f5b914b7f3d1c394b58dbd4bfe6ed69fab9cf26fa86114848835b911",
+  "ancestor_source_sha256": "42397764dd879ae7c4d8f56e06b708e14ff74572c2767b804c3f9e90f987a946",
+  "pinned_metadata_inputs": 7,
+  "source_raw_file_opened_or_hashed": false,
+  "new_material_roles_selected": 0,
+  "native_values_read": 0,
+  "models_imported_fit_or_scored": 0,
+  "approval_scope": "METADATA_ONLY_RELATIONAL_FEEDBACK_ONLYY_SELECTION",
+  "notes": [
+    "Old928wholecomponents and allsiblings excluded.",
+    "Roles160 remain futuredevelopment, not independentconfirmation.",
+    "Actual root registeredUTC/exactplan/source approval required before selector execution."
+  ],
+  "template_finalized_actual_utc": "2026-11-06T07:21:27.422307+00:00"
+}

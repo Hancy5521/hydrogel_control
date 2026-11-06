@@ -1,0 +1,7 @@
+本Git命名空间只包含程序、协议/身份metadata、聚合结果表图、真实来源/许可、数学控制与独立审计。
+不导出原raw gzip、逐材料target/forecast law、fit states、联合样本NPZ、RUN/EVENTS或认证资料。
+人工fixture中的数字/概率law属于固定合成控制，允许保留但不算新测量。
+完整本地资源为 Relational_Feedback_20261106T061957Z.zip；ZIP SHA256 c07ebeabcb028061fb84098066d36792fe4668f8e4a5a0a4e9a38af9a641eb11；manifest SHA256 d4af126b25e18a3b489652dc342c3c91ab936f27a1f4805364426d7ac0612442。
+公开程序/协议包含历史绝对路径及指向省略数值资源的SHA，它们是追溯标识，不表示省略数据已上传。
+此公开子集不是完整独立运行环境；完整包有原数据及路径映射和默认prepare-only入口。
+MLST归档及旧Git科学文件保持原字节；本地版本存档不表示GitHub同步或投稿就绪。

@@ -1,0 +1,162 @@
+{
+  "kind": "relational_feedback_conditional_NIG_BMA",
+  "status": "DRAFT_FILL_ACTUAL_UTC_AND_REGISTER",
+  "registered_actual_utc": null,
+  "source_sha256": {
+    "material_model.py": "f8cedbb1c40945b1af9f1e74b096b780f32eed36e9cd493e2e4fe2c11fe5d1bd",
+    "acquisition.py": "8f28260590132c18b8e0b6bc44ab409112f5dba9d8b433bbe8f9b84840fc8338",
+    "reference_models.py": "8d5af2ca70be9983b755bcfb2d833ee0cd33feb6389f84552719ed7beaa2e2f7",
+    "data_io.py": "505ee6d907969920765f4d68a39e3a1bf3dd41d121381db4dfc16e6b1bf04579",
+    "run_material.py": "0ccfb08635cd639eef2cd42f0de2c44b8c94bc205bd7e9c62798a0e183f49243",
+    "mixture_scoring.py": "2e1e0106763aaaa9b69bc237aceb45161e597e62372bb75241dd3fa72925becb",
+    "score.py": "1653a47619ed52d5ac3e7d47a1d37009c80173b9e40190b1adeb614a868daea0"
+  },
+  "configuration": {
+    "version": "relational_feedback_conditional_NIG_BMA_v1",
+    "policies": [
+      "full_native",
+      "warm_openloop",
+      "random",
+      "marginal_native",
+      "model_MI",
+      "gp_variance"
+    ],
+    "budgets": [
+      0,
+      4,
+      8
+    ],
+    "warm": 32,
+    "pool": 32,
+    "terminal_development": 96,
+    "all_prior_excluded_components": 928,
+    "queries_per_policy": 8,
+    "common_native_cell_cost": 352,
+    "perquery_Y_cost": 1,
+    "terminal_Y_validation_cells_separate_from_learning": 96,
+    "forced_budget_no_early_STOP": true,
+    "model": "threeconditionalNIG_BMA; hypothesesaffine/interaction/fullquad; allwithinHdependenceretained",
+    "hypothesis_ids": [
+      "affine",
+      "interaction",
+      "fullquad"
+    ],
+    "fixed_prior": {
+      "alpha0": 3.0,
+      "b0": 1.5,
+      "coefficient_mean": 0.0,
+      "V0": "identity",
+      "model_probabilities": "equal1/3beforewarm"
+    },
+    "warm_weights": "exactconditionalmarginalevidence_normalized; neverforcedequal_afterwarm",
+    "feature_basis_order": [
+      "1",
+      "x1",
+      "x2",
+      "x1*x2",
+      "x1^2",
+      "x2^2"
+    ],
+    "warm_coordinates": "fixedwarmYJhalf/nativeSD_thenwarmu_affine; expandedfeatureswarmcenter_SDfixed",
+    "primary_prediction": "actualYupdatedallcomponentNIGandmodelweights_forall6trajectories",
+    "weight_updates": "previouspredictivelikelihood_beforecomponentupdate; logsumexp; noweightfloor",
+    "owncontexts_update_response_global_model": false,
+    "warm_openloop": "warmmean/designonlyV/expectedvariance/countdf/fixedwarmcurrentweights; one_stepconditionalweightsstillBayesian",
+    "pointwise_control": "totalnativeCRPS_Bayesrisk_ofquery_marginal; nottargetaware",
+    "model_information_control": "MI(H;Yquery); samecurrentposterior; classicalmodeldiscrimination",
+    "random_seed": 20261106,
+    "tie_rule": "firstinoriginalrolepoolorder",
+    "GP_variance": "currentGPnativepredictivevarianceincludingWhite_onremainingpool;actualtrainlabelsonly",
+    "GP_RF_X_scales": "fixedwarmnativeproxymean/sampleSD",
+    "GP_normalize_y": "currentactualtrainlabels",
+    "reference_prediction_policies": [
+      "full_native",
+      "random"
+    ],
+    "reference_methods": [
+      "GP",
+      "RF",
+      "affine_NIG"
+    ],
+    "extra_reference_predictions": [
+      "gp_varianceownGP",
+      "full_nativefrozenwarmweightsBMA"
+    ],
+    "main_terminal_laws": 1728,
+    "reference_terminal_laws": 2304,
+    "secondary_prequential_laws": 48,
+    "method_budget_summaries": 42,
+    "actual_sklearn_fits": 18,
+    "actual_GP_fits": 13,
+    "actual_RF_fits": 5,
+    "warm_NIG_initializations": 3,
+    "warm_response_uses_across3models": 96,
+    "feedback_exact_NIG_updates": 144,
+    "all_counts_are_computations_not_new_materialN": true,
+    "libraries": {
+      "numpy": "2.1.3",
+      "scipy": "1.15.3",
+      "scikit-learn": "1.6.1",
+      "joblib": "1.4.2"
+    },
+    "acquisition_levels": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "native_acquisition_consecutive_level_max_abs_meanquery_difference_tolerance": 2e-05,
+    "MI_max_abs_query_difference_tolerance_nats": 2e-08,
+    "acquisition_refinement_rule": "compareconsecutivelevels;first64passingmayreturn;otherwise128then256;failat256STOPbeforequery;alllevelvaluesdifferencessecondsretained;neverdrop96terminalorchange_model",
+    "native_score": "fullmixturenativeCDFproperCRPS; notaveragecomponentCRPS",
+    "all160_components_consumed_development": true,
+    "counterfactual_policy_reuse_not_materialN": true,
+    "new_measurement_DFT_pseudolabel_or_LLM_agent_claim": false
+  },
+  "inputs": {
+    "raw_source": {
+      "file": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\jarvis_dft_3d.json.gz",
+      "sha256": "3d0fc1315b74cf84071f16aa25bb93434dafbc83867beb75872064ac245bd747"
+    },
+    "roles": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\task_contract\\selection_once\\ROLE_SELECTION.json",
+      "sha256": "18ab839983759446fa395cb1e713bbb457c58a5c741ab24d12993403e4f9cd2c"
+    },
+    "root_scope": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\material\\PRELABEL_SCIENCE_SCOPE.json",
+      "sha256": "a93ab54083b9a2744b2810f6729b952d5ffca7f4ec3145c7c8c30c2b6beb02bd"
+    }
+  },
+  "external_sources": {
+    "foundation_relation_posterior": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\code\\relation_posterior.py",
+      "sha256": "1d74cde91519ce282c6ebee54e53807a2a79be0cebf19e06221eb4f16e8b7528"
+    },
+    "foundation_risk_field": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\code\\risk_field.py",
+      "sha256": "cda5178b9c5138df647a0b9fffab2da30a19bde6082aa6fd4cc8b0910c6b92aa"
+    },
+    "warm_joint_model": {
+      "file": "H:\\polymer_completion_public\\research\\reported_feedback_20261106T024504445715Z\\code\\joint_model.py",
+      "sha256": "5dee15b95546e81d1006358988fba7afdcc931273f28e55edf938f83845bd259"
+    },
+    "legacy_score_scope": {
+      "file": "H:\\polymer_completion_public\\research\\reported_feedback_20261106T024504445715Z\\code\\data_scope.py",
+      "sha256": "34dbdb081757395d57680cdc843f455f174e32246a2f0eba24241e0984c488ad"
+    },
+    "legacy_score": {
+      "file": "H:\\polymer_completion_public\\research\\reported_feedback_20261106T024504445715Z\\code\\score.py",
+      "sha256": "dedad40898d0d9267481f73f5adf10952bd877ea603852c447fc7cbaa04ed0c8"
+    }
+  },
+  "math_receipts": {
+    "independent_full_NIG_BMA_total_VOI": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\independent\\independent_execution_once\\INDEPENDENT_FULL_NIG_BMA_GATE_AUDIT.json",
+      "sha256": "46c9cc5c0c748d67944212b7b7bb94c06d4611ef9920b23cb6af8480d5761285"
+    },
+    "independent_four_native_mixture_scores": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\independent\\four_score_independent_execution_once\\INDEPENDENT_FOUR_MIXTURE_SCORES_AUDIT.json",
+      "sha256": "fa817f5e8825b485e94101e3e3ccb33ad4932fdfc8bace0c027f826956e0d8ad"
+    }
+  }
+}

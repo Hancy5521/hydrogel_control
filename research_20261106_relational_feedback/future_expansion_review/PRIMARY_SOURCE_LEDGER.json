@@ -1,0 +1,97 @@
+{
+  "status": "BOUNDED_NEXT_MECHANISM_REVIEW_SOURCE_ONLY_COMPLETED",
+  "actual_utc": "2026-11-06T08:16:38.453789+00:00",
+  "actual_Asia_Shanghai": "2026-11-06T16:16:38.453789+08:00",
+  "queries_used": 3,
+  "queries": [
+    "\"Sequentially valid tests\" \"forecast calibration\" PIT",
+    "\"prequential\" \"model criticism\" Bayesian model expansion",
+    "\"online Bayesian\" \"model expansion\" hypothesis"
+  ],
+  "unique_primary_pages_opened": 5,
+  "unique_primary_urls": [
+    "https://arxiv.org/abs/2109.11761",
+    "https://arxiv.org/pdf/2109.11761v3",
+    "https://arxiv.org/abs/2011.01808",
+    "https://arxiv.org/pdf/2011.01808v1",
+    "https://github.com/AlexanderHenzi/epit"
+  ],
+  "sources": [
+    {
+      "id": "P1",
+      "title": "Sequentially valid tests for forecast calibration",
+      "authors": [
+        "Sebastian Arnold",
+        "Alexander Henzi",
+        "Johanna F. Ziegel"
+      ],
+      "arxiv_version": "2109.11761v3",
+      "arxiv_revised_utc": "2022-07-01T13:27:02Z",
+      "PDF_cover_date": "November8,2021 (not substituted for arXiv revisiondate)",
+      "urls": [
+        "https://arxiv.org/abs/2109.11761",
+        "https://arxiv.org/pdf/2109.11761v3"
+      ],
+      "journal_reference": "The Annals of Applied Statistics17(3),1909-1935 (2023), DOI10.1214/22-AOAS1697; publication identifier observed in officialIMS search excerpt, not fullpublishedversion reading",
+      "actual_read_depth": "Abstract/introduction, definitions3.1-3.4 and example3.1, definitions4.1-4.2/proposition4.1, selected sections4.2-4.3 through betting/runningMLE/kernel/boundary and smoothing discussion (PDFpages1-10 selected). Not all35pages, appendices, proof audit or experiments.",
+      "license": "ExactarXiv/publisher redistributionlicense notverified within boundedpagebudget; noPDF,sourceorarticle text redistributed",
+      "summary_en": "This is direct prior art for sequential PIT calibration testing with e-values and optional stopping. It distinguishes sequential calibration from stronger autocalibration and requires a suitable filtration. Predictable betting densities can update from past PITs; lagged forecasts need additional care. Boundary values and finite-sample power require attention. Its general method and official package prevent claiming that a PIT critic or e-process is a new invention here."
+    },
+    {
+      "id": "P2",
+      "title": "Bayesian Workflow",
+      "authors": [
+        "Andrew Gelman",
+        "Aki Vehtari",
+        "Daniel Simpson",
+        "Charles C. Margossian",
+        "Bob Carpenter",
+        "Yuling Yao",
+        "Lauren Kennedy",
+        "Jonah Gabry",
+        "Paul-Christian Buerkner",
+        "Martin Modrak"
+      ],
+      "arxiv_version": "2011.01808v1",
+      "submitted_utc": "2020-11-03T15:59:50Z",
+      "PDF_cover_date": "2Nov2020",
+      "urls": [
+        "https://arxiv.org/abs/2011.01808",
+        "https://arxiv.org/pdf/2011.01808v1"
+      ],
+      "actual_read_depth": "Abstract, introduction1.1-1.3 and tableofcontents including modelmodification/expansion/modelselection headings. Intended section7/12.3 findrequests timed out; those bodies were NOTread. Not all77pages, no detailedcase/proof/experiment audit.",
+      "license": "Abstract links aCreativeCommonslicense; subtype notread/verified within budget. NoPDF/article redistributed.",
+      "summary_en": "Iterative model building, checking, comparison and expansion are already part of Bayesian workflow. This supports distinguishing posterior inference within a fixed model list from revising the model space. The bounded reading establishes the conceptual precedent, not a proof for an automated online expansion algorithm. The inaccessible detailed sections are not counted as read."
+    },
+    {
+      "id": "C1",
+      "title": "epit official R package repository",
+      "url": "https://github.com/AlexanderHenzi/epit",
+      "branch_observed": "master",
+      "commit_sha": "Not exposed in retrievedpage; notpinned or invented",
+      "actual_read_depth": "Official repository page/README and function list only: e_pit/e_quantile_pit/e_rank_histogram and combination helpers. No implementation code inspected, downloaded, installed or executed.",
+      "license": "Notverified; noLICENSEtext read or code copied",
+      "summary_en": "An existing official implementation provides sequential calibration tests and replication material. Only README-level availability and interface were verified; this is not code reuse or an implementation audit."
+    }
+  ],
+  "failed_accesses": [
+    {
+      "source": "https://arxiv.org/pdf/2011.01808v1",
+      "operation": "three targetedfinds for section7/12.3/overfitting issued together after successfulfirstPDFopen",
+      "result": "Allthree returnedtimeout; no furtherretry or fallback used. Earlierintro/TOC only counted asread."
+    }
+  ],
+  "bounded_search_limitations": [
+    "Online model-expansion direct-neighbor search didnotidentifyandexaminemore specific primaryalgorithm within thisbudget. This isnot evidence ofno similar method.",
+    "Neither e-processes nor check-expand workflows areoriginalcomponents.",
+    "No exhaustive novelty search, no100paper/full77pagereading claim."
+  ],
+  "actions_not_performed": [
+    "No currentforecast/prequery/outcome/terminalartifact reads",
+    "No raw property access or newroles",
+    "No scientificfit/score/modelgeneration",
+    "No current6policy,prior,modelregistry orsourcechange",
+    "No repository/sourcecode/paper download or redistribution"
+  ],
+  "decision": "Only a future epoch-separated modelcriticism/single-slot expansion pilot, conditioned on valid predictive null and reporting semantics. Currentfixed3H/6policyrun remainsunchanged; this review isnot a prerequisite gate."
+}

@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE_METADATA_ONLY160ROLE_SELECTION",
+  "actual_utc": "2026-11-06T07:23:26.483245+00:00",
+  "role_file_sha256": "18ab839983759446fa395cb1e713bbb457c58a5c741ab24d12993403e4f9cd2c",
+  "selector_source_sha256": "5ca08dbc3430c6a8ced8697941dc2b2b22d0bb56f9368adb38b688fd77d01589",
+  "plan_sha256": "42b164f68e4c6da54460cc69aa53c6a30756818a4d97c1eda0744f8aa9f0d3d9",
+  "group_count": {
+    "legacy_excluded": 40,
+    "phase1_excluded": 256,
+    "phase2_excluded": 256,
+    "completed_feedback_excluded": 224,
+    "completed_active_excluded": 152,
+    "all_prior_excluded": 928,
+    "warm": 32,
+    "pool": 32,
+    "terminal": 96,
+    "selected_development": 160,
+    "remaining_unselected": 7754
+  },
+  "known_eligible_sibling_rows_reserved": 196,
+  "raw_property_decodes_fits_queries_or_scores": 0
+}

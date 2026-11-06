@@ -1,0 +1,37 @@
+{
+  "actual_utc": "2026-11-06T07:23:26.261209+00:00",
+  "selector_source_sha256": "5ca08dbc3430c6a8ced8697941dc2b2b22d0bb56f9368adb38b688fd77d01589",
+  "plan_sha256": "42b164f68e4c6da54460cc69aa53c6a30756818a4d97c1eda0744f8aa9f0d3d9",
+  "approval_sha256": "b7752132f16ce3aba04f3a2b6fbdb9ef3bee43a9f23b84f73faff1796c08940b",
+  "inputs": {
+    "source_contract": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\task_contract\\MATERIAL_TASK_CONTRACT_V1.json",
+      "sha256": "2637532951c1e6b86ee8bdaa0cbcdb95a48982509de14770f87487e1b55a241d"
+    },
+    "eligible_metadata": {
+      "file": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\ELIGIBLE_METADATA.json",
+      "sha256": "165d48bc29f771e29f7e86a6bea1e57286eb81b49f29120905ba4ff4739660e4"
+    },
+    "legacy_roles": {
+      "file": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\pilot\\DATASET_ROLE_PLAN.json",
+      "sha256": "ea9120cf04bc78c8292be8ebba3eab6f9b1b0f830574b3e1a803386105451de8"
+    },
+    "phase1_roles": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\task_contract\\selection_once\\ADMISSION_ROLE_SELECTION.json",
+      "sha256": "0bc81d0400a4076c854af11e654ca3ca9bcbceb249f2ee6c26d356c53ceae9c0"
+    },
+    "phase2_roles": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\phase2_yj\\task_contract\\selection_once\\ADMISSION_ROLE_SELECTION.json",
+      "sha256": "aee4d2aa78f7522eae8aba2b8ac56e186b3c5d81059a6d3a5b44b16d1042350b"
+    },
+    "completed_feedback_roles": {
+      "file": "H:\\polymer_completion_public\\research\\reported_feedback_20261106T024504445715Z\\task_contract\\selection_once\\ROLE_SELECTION.json",
+      "sha256": "4c972bfc180841eb669077e6a772182bc76cb3d5bd5f69589096efa1c12724b1"
+    },
+    "completed_active_roles": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\task_contract\\selection_once\\ROLE_SELECTION.json",
+      "sha256": "2dbf2f4b3f7956ccbe91f454092d80e76d8b95ebb2a73c427d548899543da7dd"
+    }
+  },
+  "native_reads_and_models": 0
+}

@@ -1,0 +1,168 @@
+{
+  "kind": "statistical_generated_joint_posterior_predictive_missingY",
+  "statistical_generated": true,
+  "number_draws_not_new_materialN": true,
+  "n_draws": 131072,
+  "rows_per_joint_draw": 2,
+  "seed": 20261106,
+  "rng": "numpy.Generator(PCG64)",
+  "numpy_version": "2.1.3",
+  "hypothesis_ids": [
+    "affine",
+    "interaction",
+    "fullquad"
+  ],
+  "hypothesis_draw_counts": [
+    26125,
+    39073,
+    65874
+  ],
+  "retained_input_log_weights": [
+    -1.6094379124341003,
+    -1.2039728043259361,
+    -0.6931471805599453
+  ],
+  "normalized_log_weights": [
+    -1.6094379124341003,
+    -1.2039728043259361,
+    -0.6931471805599453
+  ],
+  "display_probabilities": [
+    0.2,
+    0.3,
+    0.5
+  ],
+  "display_weight_underflow_hypotheses": 0,
+  "probability_floor_used": false,
+  "H_draws": 131072,
+  "noise_variance_draws": 131072,
+  "coefficient_vector_draws": 131072,
+  "row_residual_draws": 262144,
+  "rowwise_H_or_parameter_resampling": false,
+  "all_rows_share_H_sigma_and_coefficients_per_draw": true,
+  "row_residuals_independent_given_shared_parameters": true,
+  "prior_core_reference_sha256": "1d74cde91519ce282c6ebee54e53807a2a79be0cebf19e06221eb4f16e8b7528",
+  "core_source_hash_read_or_verified_by_sampler": false,
+  "frozen_input_binding_must_be_verified_by_caller": true,
+  "data_source_reads": 0,
+  "model_updates": 0,
+  "samples_are_measurements": false,
+  "calibration_or_material_effect_claim": false,
+  "response_transform": {
+    "center": 0.5,
+    "sd": 0.7,
+    "s0": 2.0
+  },
+  "generative_law": "H~posterior; sigma2~IG(alpha_H,b_H); beta~N(m_H,sigma2 V_H); z_i=phi_H(x_i) beta+epsilon_i, epsilon_i iid N(0,sigma2)",
+  "actual_start_utc": "2026-11-06T08:11:40.077867+00:00",
+  "actual_end_utc": "2026-11-06T08:11:41.235544+00:00",
+  "sampling_elapsed_seconds": 0.16172050000022864,
+  "source_sha256": {
+    "joint_sampler.py": "5b77cde6f6356eb977596ea89564da04e95a0e57688414d142d40442cd44bfae",
+    "sampling_gate.py": "e4d0c2abf26491bc0f858fcf37528666a7bfce0896a93f221e17770d92d9adb9"
+  },
+  "fixture_sha256": "27f834b26bcfb03fb610aeb0d9acdd2a28159afe8396f8cbcba8780775dfdef9",
+  "proposal_sha256": "7c9a99e2ab34a2b64e3ad579f02357791a7df4b09eb3e4ed6035fc77f62a4ca8",
+  "plan_sha256": "a937c254f7960809ce2415566e96f1b320e3b315974629dcd12b5f9cd8a5fb07",
+  "npz_file": "draws_and_aux.npz",
+  "npz_sha256": "244b7a78e742bdcaf102ed3a19d57063813fd861f4020c6a40c8e4120f55b377",
+  "arrays": {
+    "native": {
+      "shape": [
+        131072,
+        2
+      ],
+      "dtype": "float64"
+    },
+    "z": {
+      "shape": [
+        131072,
+        2
+      ],
+      "dtype": "float64"
+    },
+    "H": {
+      "shape": [
+        131072
+      ],
+      "dtype": "int64"
+    },
+    "sigma2": {
+      "shape": [
+        131072
+      ],
+      "dtype": "float64"
+    },
+    "coef_h0": {
+      "shape": [
+        26125,
+        3
+      ],
+      "dtype": "float64"
+    },
+    "indices_h0": {
+      "shape": [
+        26125
+      ],
+      "dtype": "int64"
+    },
+    "coef_h1": {
+      "shape": [
+        39073,
+        4
+      ],
+      "dtype": "float64"
+    },
+    "indices_h1": {
+      "shape": [
+        39073
+      ],
+      "dtype": "int64"
+    },
+    "coef_h2": {
+      "shape": [
+        65874,
+        6
+      ],
+      "dtype": "float64"
+    },
+    "indices_h2": {
+      "shape": [
+        65874
+      ],
+      "dtype": "int64"
+    }
+  },
+  "component_array_index": [
+    {
+      "h": 0,
+      "id": "affine",
+      "coefficients_key": "coef_h0",
+      "draw_indices_key": "indices_h0",
+      "coefficient_dimension": 3,
+      "draws": 26125
+    },
+    {
+      "h": 1,
+      "id": "interaction",
+      "coefficients_key": "coef_h1",
+      "draw_indices_key": "indices_h1",
+      "coefficient_dimension": 4,
+      "draws": 39073
+    },
+    {
+      "h": 2,
+      "id": "fullquad",
+      "coefficients_key": "coef_h2",
+      "draw_indices_key": "indices_h2",
+      "coefficient_dimension": 6,
+      "draws": 65874
+    }
+  ],
+  "np_load_allow_pickle_required": false,
+  "all_saved_arrays_nonobject": true,
+  "input_sha256_before": "fa02da7adb262d0b983de8a47ebf0d0788b29ef0e2942351c98174e12b0a4d58",
+  "input_sha256_after": "fa02da7adb262d0b983de8a47ebf0d0788b29ef0e2942351c98174e12b0a4d58",
+  "input_unchanged": true,
+  "independent_validation_status": "NOT_PERFORMED_BY_PRODUCER"
+}

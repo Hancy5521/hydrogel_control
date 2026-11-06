@@ -1,0 +1,12 @@
+{
+  "actual_utc": "2026-11-06T08:14:24.834510+00:00",
+  "status": "PRE_EXECUTION_AUDITOR_SCHEMA_ALIGNMENT_NO_SCIENCE_OR_CRITERIA_CHANGE",
+  "old_driver_sha256": "586cb33072cad68aa1f35fc2575071a91a05e946a7a979d12977570a6472cd42",
+  "old_driver_preserved": "pre_execution_source_history/audit_material_states_schema_v1.py",
+  "new_driver_sha256": "8f48e2abbee2812222c82030cb8ad3649edb0eee6509bb98d63160d6b8ece471",
+  "reason": "New material transform stores the threeYJresponse coordinate arrays only; proxy_native center/SD live in native_reference_feature_transform and are already independently checked there. Remove erroneous expectation of duplicate proxy keys in transform.",
+  "state_evidence_numeric_tolerances_unchanged": true,
+  "no_independent_audit_executions_yet": true,
+  "root_material7source_or_input_values_changed": false,
+  "preoutput_state_criteria_sha256": "c56ab83e7f84366f86439a81c4d6cdafc9dae5354534a4d07df344048c89262d"
+}

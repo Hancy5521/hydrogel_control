@@ -1,0 +1,13 @@
+{
+  "actual_utc": "2026-11-06T08:11:40.077867+00:00",
+  "plan_sha256": "a937c254f7960809ce2415566e96f1b320e3b315974629dcd12b5f9cd8a5fb07",
+  "proposal_sha256": "7c9a99e2ab34a2b64e3ad579f02357791a7df4b09eb3e4ed6035fc77f62a4ca8",
+  "source_sha256": {
+    "joint_sampler.py": "5b77cde6f6356eb977596ea89564da04e95a0e57688414d142d40442cd44bfae",
+    "sampling_gate.py": "e4d0c2abf26491bc0f858fcf37528666a7bfce0896a93f221e17770d92d9adb9"
+  },
+  "fixture_sha256": "27f834b26bcfb03fb610aeb0d9acdd2a28159afe8396f8cbcba8780775dfdef9",
+  "python": "3.13.5",
+  "numpy": "2.1.3",
+  "scope": "OLD_SYNTHETIC_FIXTURE_ONLY_NO_MATERIAL"
+}

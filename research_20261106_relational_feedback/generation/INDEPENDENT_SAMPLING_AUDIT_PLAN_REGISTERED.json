@@ -1,0 +1,46 @@
+{
+  "actual_utc": "2026-11-06T08:18:03.391845+00:00",
+  "status": "REGISTERED_BEFORE_STORED_DRAW_INDEPENDENT_AUDIT",
+  "scope": "INDEPENDENT_STORED_JOINT_SAMPLES_ONCE",
+  "script_sha256": "5053a8e30d5dbea3410004831bc19f1f34c8da1e31d0ac157e90833c40f99ab5",
+  "inputs": {
+    "proposal": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\generation\\SAMPLING_GATE_PROPOSAL.json",
+      "sha256": "7c9a99e2ab34a2b64e3ad579f02357791a7df4b09eb3e4ed6035fc77f62a4ca8"
+    },
+    "fixture": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\execution_once\\RESULTS.json",
+      "sha256": "27f834b26bcfb03fb610aeb0d9acdd2a28159afe8396f8cbcba8780775dfdef9"
+    },
+    "producer_plan": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\generation\\SAMPLING_EXECUTION_PLAN_REGISTERED.json",
+      "sha256": "a937c254f7960809ce2415566e96f1b320e3b315974629dcd12b5f9cd8a5fb07"
+    },
+    "producer_result": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\generation\\execution_once\\RESULTS.json",
+      "sha256": "4f8f18d1927bd9f8226cf0d15eb549aadcad0d9c05a54cf24ba35a4c02ce6c8e"
+    },
+    "metadata": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\generation\\execution_once\\metadata.json",
+      "sha256": "e1912a839952bbc3ad820f1811e4f67e5cbf25c95b99735fa3907fb77a880923"
+    },
+    "input_binding": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\generation\\execution_once\\INPUT_BINDING.json",
+      "sha256": "017e40fdc0c7654ecf3bf062f52efa49219e4770911a32be4f6427e2dcf9453a"
+    },
+    "draw_archive": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\generation\\execution_once\\draws_and_aux.npz",
+      "sha256": "244b7a78e742bdcaf102ed3a19d57063813fd861f4020c6a40c8e4120f55b377"
+    },
+    "preoutput_criteria": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\generation\\INDEPENDENT_SAMPLING_PREOUTPUT_CRITERIA.json",
+      "sha256": "bb57683656557ee89e1acda571c0aec6401810e34344d90827a9b4061451c40b"
+    }
+  },
+  "numeric_scope": "loadactualdraws only; rebuildPhi/jointlatentmoments/CDF/standardrowresidual; no samplerimport or newdraw",
+  "MC_criteria": "all originalfixedproposal7c9a thresholds unchanged; seed20261106/D131072 preserved",
+  "deterministic_coordinate_roundtrip_abs": 2e-09,
+  "deterministic_coordinate_roundtrip_rel": 2e-11,
+  "root_primary_material_run_not_interrupted_or_repeated": true,
+  "new_material_N": 0
+}

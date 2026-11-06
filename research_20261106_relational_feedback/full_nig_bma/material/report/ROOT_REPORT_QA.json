@@ -1,0 +1,14 @@
+{
+  "actual_utc": "2026-11-06T09:14:30.282105+00:00",
+  "status": "LOCAL_REPORT_FILES_AND_FIGURES_REVIEWED",
+  "report_sha256": "61e90704c38cad245157e8614a3c229ee6fdc97d1286546d63e05afe9febffc0",
+  "local_links_checked": 12,
+  "missing_links": [],
+  "visual_review": [
+    "learning_curves.png:42summary source families represented, exact full/openloop endpoint overlap retained; axes/legends readable",
+    "model_weights.png:warm plus6policies, no floored probabilities, labels readable"
+  ],
+  "HTML_layout_visual_render": "not browser-rendered; local links/text and two scientific plot files inspected",
+  "score_audit_sha256": "a915eb4286f8d5b39cbff8ded665bd3a8ba31c35e098e829902c5b000757cfc3",
+  "no_scientific_rerun": true
+}

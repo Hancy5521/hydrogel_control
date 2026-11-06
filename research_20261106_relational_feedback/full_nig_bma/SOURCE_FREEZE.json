@@ -1,0 +1,15 @@
+{
+  "status": "SOURCE_FROZEN_AST_ONLY_NO_NUMERICAL_IMPORT_OR_EXECUTION",
+  "actual_utc": "2026-11-06T07:01:10.800873+00:00",
+  "source_sha256": {
+    "relation_posterior.py": "1d74cde91519ce282c6ebee54e53807a2a79be0cebf19e06221eb4f16e8b7528",
+    "risk_field.py": "cda5178b9c5138df647a0b9fffab2da30a19bde6082aa6fd4cc8b0910c6b92aa",
+    "run_gate.py": "707eb494a6a4fbf5c6dc3f7ca8280ddf493bde90324b2b6c9779a76a3a258d1e"
+  },
+  "proposal_sha256": "6ac2e7fc802bc22afb7dbd658d29e00efcae6d9c119bc3d5f9549b1efc715521",
+  "scientific_source_modules": 2,
+  "thin_synthetic_driver": 1,
+  "material_label_reads_or_fits": 0,
+  "single_fixture_no_parameter_scan": true,
+  "original_prior_stage_and_archives_unchanged": true
+}

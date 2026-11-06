@@ -1,0 +1,993 @@
+{
+  "status": "PASS",
+  "primary_mixture_laws": 1728,
+  "reference_laws": 2304,
+  "total_terminal_laws": 4032,
+  "secondary_prequery_mixture_laws": 48,
+  "feedback_component_NIG_updates": 144,
+  "warm_component_uses": 96,
+  "baseline_saved_fit_states": 18,
+  "baseline_state_checks": [
+    {
+      "fit_id": "GP_warm_shared",
+      "method": "GP",
+      "train_rows": 32,
+      "prediction_rows": 128,
+      "factor_backward": 6.820224698208856e-16,
+      "dual_backward": 4.786243631419839e-16,
+      "factor_residual_abs": 3.30291349841194e-15,
+      "dual_residual_abs": 3.1086244689504383e-15,
+      "conservative_condition_upper_bound": 30822189.888952233,
+      "fit_warnings": [
+        {
+          "category": "ConvergenceWarning",
+          "message": "The optimal value found for dimension 0 of parameter k2__noise_level is close to the specified lower bound 1e-06. Decreasing the bound and calling fit again may find a better value.",
+          "filename": "D:\\Anaconda\\Lib\\site-packages\\sklearn\\gaussian_process\\kernels.py",
+          "line": 442
+        }
+      ],
+      "predict_warnings": []
+    },
+    {
+      "fit_id": "RF_warm_shared",
+      "method": "RF",
+      "train_rows": 32,
+      "prediction_rows": 96,
+      "exact_tree_paths": 32768,
+      "exact_mass_positions": 3072,
+      "fit_warnings": []
+    },
+    {
+      "fit_id": "GP_full_native_budget4",
+      "method": "GP",
+      "train_rows": 36,
+      "prediction_rows": 96,
+      "factor_backward": 7.19100165009435e-16,
+      "dual_backward": 4.052938596071472e-16,
+      "factor_residual_abs": 3.552744595605693e-15,
+      "dual_residual_abs": 2.55351295663786e-15,
+      "conservative_condition_upper_bound": 34892637.09663289,
+      "fit_warnings": [
+        {
+          "category": "ConvergenceWarning",
+          "message": "The optimal value found for dimension 0 of parameter k2__noise_level is close to the specified lower bound 1e-06. Decreasing the bound and calling fit again may find a better value.",
+          "filename": "D:\\Anaconda\\Lib\\site-packages\\sklearn\\gaussian_process\\kernels.py",
+          "line": 442
+        }
+      ],
+      "predict_warnings": []
+    },
+    {
+      "fit_id": "RF_full_native_budget4",
+      "method": "RF",
+      "train_rows": 36,
+      "prediction_rows": 96,
+      "exact_tree_paths": 33792,
+      "exact_mass_positions": 3456,
+      "fit_warnings": []
+    },
+    {
+      "fit_id": "GP_full_native_budget8",
+      "method": "GP",
+      "train_rows": 40,
+      "prediction_rows": 96,
+      "factor_backward": 4.859802901239375e-16,
+      "dual_backward": 4.665404709893149e-16,
+      "factor_residual_abs": 2.4147486315179454e-15,
+      "dual_residual_abs": 3.1086244689504383e-15,
+      "conservative_condition_upper_bound": 22841601.538387295,
+      "fit_warnings": [],
+      "predict_warnings": []
+    },
+    {
+      "fit_id": "RF_full_native_budget8",
+      "method": "RF",
+      "train_rows": 40,
+      "prediction_rows": 96,
+      "exact_tree_paths": 34816,
+      "exact_mass_positions": 3840,
+      "fit_warnings": []
+    },
+    {
+      "fit_id": "GP_random_budget4",
+      "method": "GP",
+      "train_rows": 36,
+      "prediction_rows": 96,
+      "factor_backward": 7.080874741546496e-16,
+      "dual_backward": 7.286419856132853e-16,
+      "factor_residual_abs": 3.4972025627244996e-15,
+      "dual_residual_abs": 5.10702591327572e-15,
+      "conservative_condition_upper_bound": 31630716.199646346,
+      "fit_warnings": [
+        {
+          "category": "ConvergenceWarning",
+          "message": "The optimal value found for dimension 0 of parameter k2__noise_level is close to the specified lower bound 1e-06. Decreasing the bound and calling fit again may find a better value.",
+          "filename": "D:\\Anaconda\\Lib\\site-packages\\sklearn\\gaussian_process\\kernels.py",
+          "line": 442
+        }
+      ],
+      "predict_warnings": []
+    },
+    {
+      "fit_id": "RF_random_budget4",
+      "method": "RF",
+      "train_rows": 36,
+      "prediction_rows": 96,
+      "exact_tree_paths": 33792,
+      "exact_mass_positions": 3456,
+      "fit_warnings": []
+    },
+    {
+      "fit_id": "GP_random_budget8",
+      "method": "GP",
+      "train_rows": 40,
+      "prediction_rows": 96,
+      "factor_backward": 4.0518701068672445e-16,
+      "dual_backward": 4.2847962899688223e-16,
+      "factor_residual_abs": 2.4333599315143055e-15,
+      "dual_residual_abs": 3.3306690738754696e-15,
+      "conservative_condition_upper_bound": 36157359.69544143,
+      "fit_warnings": [
+        {
+          "category": "ConvergenceWarning",
+          "message": "The optimal value found for dimension 0 of parameter k2__noise_level is close to the specified lower bound 1e-06. Decreasing the bound and calling fit again may find a better value.",
+          "filename": "D:\\Anaconda\\Lib\\site-packages\\sklearn\\gaussian_process\\kernels.py",
+          "line": 442
+        }
+      ],
+      "predict_warnings": []
+    },
+    {
+      "fit_id": "RF_random_budget8",
+      "method": "RF",
+      "train_rows": 40,
+      "prediction_rows": 96,
+      "exact_tree_paths": 34816,
+      "exact_mass_positions": 3840,
+      "fit_warnings": []
+    },
+    {
+      "fit_id": "GP_policy_step01",
+      "method": "GP",
+      "train_rows": 33,
+      "prediction_rows": 128,
+      "factor_backward": 4.486454259514996e-16,
+      "dual_backward": 2.689271528547439e-16,
+      "factor_residual_abs": 2.164940615582454e-15,
+      "dual_residual_abs": 1.7763568394002505e-15,
+      "conservative_condition_upper_bound": 31770201.82816101,
+      "fit_warnings": [
+        {
+          "category": "ConvergenceWarning",
+          "message": "The optimal value found for dimension 0 of parameter k2__noise_level is close to the specified lower bound 1e-06. Decreasing the bound and calling fit again may find a better value.",
+          "filename": "D:\\Anaconda\\Lib\\site-packages\\sklearn\\gaussian_process\\kernels.py",
+          "line": 442
+        }
+      ],
+      "predict_warnings": []
+    },
+    {
+      "fit_id": "GP_policy_step02",
+      "method": "GP",
+      "train_rows": 34,
+      "prediction_rows": 128,
+      "factor_backward": 1.1768934374119634e-15,
+      "dual_backward": 7.36556828103991e-16,
+      "factor_residual_abs": 5.662161989575793e-15,
+      "dual_residual_abs": 4.773959005888173e-15,
+      "conservative_condition_upper_bound": 32772380.003975708,
+      "fit_warnings": [
+        {
+          "category": "ConvergenceWarning",
+          "message": "The optimal value found for dimension 0 of parameter k2__noise_level is close to the specified lower bound 1e-06. Decreasing the bound and calling fit again may find a better value.",
+          "filename": "D:\\Anaconda\\Lib\\site-packages\\sklearn\\gaussian_process\\kernels.py",
+          "line": 442
+        }
+      ],
+      "predict_warnings": []
+    },
+    {
+      "fit_id": "GP_policy_step03",
+      "method": "GP",
+      "train_rows": 35,
+      "prediction_rows": 128,
+      "factor_backward": 7.600952628310147e-16,
+      "dual_backward": 4.632524079536013e-16,
+      "factor_residual_abs": 3.635983264445547e-15,
+      "dual_residual_abs": 2.9976021664879227e-15,
+      "conservative_condition_upper_bound": 33738775.53973291,
+      "fit_warnings": [
+        {
+          "category": "ConvergenceWarning",
+          "message": "The optimal value found for dimension 0 of parameter k2__noise_level is close to the specified lower bound 1e-06. Decreasing the bound and calling fit again may find a better value.",
+          "filename": "D:\\Anaconda\\Lib\\site-packages\\sklearn\\gaussian_process\\kernels.py",
+          "line": 442
+        }
+      ],
+      "predict_warnings": []
+    },
+    {
+      "fit_id": "GP_policy_step04",
+      "method": "GP",
+      "train_rows": 36,
+      "prediction_rows": 128,
+      "factor_backward": 5.953863516375719e-16,
+      "dual_backward": 4.0926073919096623e-16,
+      "factor_residual_abs": 2.831080677156594e-15,
+      "dual_residual_abs": 2.6645352591003757e-15,
+      "conservative_condition_upper_bound": 34691991.65875461,
+      "fit_warnings": [
+        {
+          "category": "ConvergenceWarning",
+          "message": "The optimal value found for dimension 0 of parameter k2__noise_level is close to the specified lower bound 1e-06. Decreasing the bound and calling fit again may find a better value.",
+          "filename": "D:\\Anaconda\\Lib\\site-packages\\sklearn\\gaussian_process\\kernels.py",
+          "line": 442
+        }
+      ],
+      "predict_warnings": []
+    },
+    {
+      "fit_id": "GP_policy_step05",
+      "method": "GP",
+      "train_rows": 37,
+      "prediction_rows": 128,
+      "factor_backward": 7.559033598605323e-16,
+      "dual_backward": 5.441195252484105e-16,
+      "factor_residual_abs": 3.635988240711591e-15,
+      "dual_residual_abs": 3.3306690738754696e-15,
+      "conservative_condition_upper_bound": 35803991.65231479,
+      "fit_warnings": [
+        {
+          "category": "ConvergenceWarning",
+          "message": "The optimal value found for dimension 0 of parameter k2__noise_level is close to the specified lower bound 1e-06. Decreasing the bound and calling fit again may find a better value.",
+          "filename": "D:\\Anaconda\\Lib\\site-packages\\sklearn\\gaussian_process\\kernels.py",
+          "line": 442
+        }
+      ],
+      "predict_warnings": []
+    },
+    {
+      "fit_id": "GP_policy_step06",
+      "method": "GP",
+      "train_rows": 38,
+      "prediction_rows": 128,
+      "factor_backward": 3.1224707640073113e-16,
+      "dual_backward": 2.2116442114033058e-16,
+      "factor_residual_abs": 1.4988163298534595e-15,
+      "dual_residual_abs": 1.3322676295501878e-15,
+      "conservative_condition_upper_bound": 35414639.37865448,
+      "fit_warnings": [],
+      "predict_warnings": []
+    },
+    {
+      "fit_id": "GP_policy_step07",
+      "method": "GP",
+      "train_rows": 39,
+      "prediction_rows": 128,
+      "factor_backward": 3.25894737674242e-16,
+      "dual_backward": 2.548890905247635e-16,
+      "factor_residual_abs": 1.5681900222830342e-15,
+      "dual_residual_abs": 1.5543122344752192e-15,
+      "conservative_condition_upper_bound": 37784337.866845146,
+      "fit_warnings": [
+        {
+          "category": "ConvergenceWarning",
+          "message": "The optimal value found for dimension 0 of parameter k2__noise_level is close to the specified lower bound 1e-06. Decreasing the bound and calling fit again may find a better value.",
+          "filename": "D:\\Anaconda\\Lib\\site-packages\\sklearn\\gaussian_process\\kernels.py",
+          "line": 442
+        }
+      ],
+      "predict_warnings": []
+    },
+    {
+      "fit_id": "GP_policy_final_budget8",
+      "method": "GP",
+      "train_rows": 40,
+      "prediction_rows": 96,
+      "factor_backward": 3.9413822076682004e-16,
+      "dual_backward": 2.527719099582341e-16,
+      "factor_residual_abs": 1.8873836946728843e-15,
+      "dual_residual_abs": 1.5543122344752192e-15,
+      "conservative_condition_upper_bound": 34112419.01574154,
+      "fit_warnings": [],
+      "predict_warnings": []
+    }
+  ],
+  "physical_poolY_union": 19,
+  "actual_policy_sequences": {
+    "full_native": [
+      21,
+      10,
+      30,
+      20,
+      8,
+      6,
+      1,
+      9
+    ],
+    "warm_openloop": [
+      21,
+      10,
+      30,
+      20,
+      8,
+      1,
+      6,
+      9
+    ],
+    "random": [
+      8,
+      9,
+      17,
+      19,
+      18,
+      22,
+      15,
+      14
+    ],
+    "marginal_native": [
+      10,
+      8,
+      14,
+      6,
+      5,
+      0,
+      16,
+      24
+    ],
+    "model_MI": [
+      21,
+      10,
+      30,
+      8,
+      1,
+      22,
+      5,
+      2
+    ],
+    "gp_variance": [
+      2,
+      5,
+      6,
+      8,
+      10,
+      14,
+      20,
+      21
+    ]
+  },
+  "policy_alias_diagnostics": [
+    {
+      "left": "full_native",
+      "right": "warm_openloop",
+      "same_exact_sequence": false,
+      "same_final_set": true
+    },
+    {
+      "left": "full_native",
+      "right": "random",
+      "same_exact_sequence": false,
+      "same_final_set": false
+    },
+    {
+      "left": "full_native",
+      "right": "marginal_native",
+      "same_exact_sequence": false,
+      "same_final_set": false
+    },
+    {
+      "left": "full_native",
+      "right": "model_MI",
+      "same_exact_sequence": false,
+      "same_final_set": false
+    },
+    {
+      "left": "full_native",
+      "right": "gp_variance",
+      "same_exact_sequence": false,
+      "same_final_set": false
+    },
+    {
+      "left": "warm_openloop",
+      "right": "random",
+      "same_exact_sequence": false,
+      "same_final_set": false
+    },
+    {
+      "left": "warm_openloop",
+      "right": "marginal_native",
+      "same_exact_sequence": false,
+      "same_final_set": false
+    },
+    {
+      "left": "warm_openloop",
+      "right": "model_MI",
+      "same_exact_sequence": false,
+      "same_final_set": false
+    },
+    {
+      "left": "warm_openloop",
+      "right": "gp_variance",
+      "same_exact_sequence": false,
+      "same_final_set": false
+    },
+    {
+      "left": "random",
+      "right": "marginal_native",
+      "same_exact_sequence": false,
+      "same_final_set": false
+    },
+    {
+      "left": "random",
+      "right": "model_MI",
+      "same_exact_sequence": false,
+      "same_final_set": false
+    },
+    {
+      "left": "random",
+      "right": "gp_variance",
+      "same_exact_sequence": false,
+      "same_final_set": false
+    },
+    {
+      "left": "marginal_native",
+      "right": "model_MI",
+      "same_exact_sequence": false,
+      "same_final_set": false
+    },
+    {
+      "left": "marginal_native",
+      "right": "gp_variance",
+      "same_exact_sequence": false,
+      "same_final_set": false
+    },
+    {
+      "left": "model_MI",
+      "right": "gp_variance",
+      "same_exact_sequence": false,
+      "same_final_set": false
+    }
+  ],
+  "readout_diagnostics": [
+    {
+      "policy": "full_native",
+      "step": 0,
+      "mode": "full_native",
+      "selected_nodes": 64,
+      "last_max_abs_difference": 2.4646358114110978e-08,
+      "fullmaterial_2D_reintegration": false
+    },
+    {
+      "policy": "full_native",
+      "step": 1,
+      "mode": "full_native",
+      "selected_nodes": 64,
+      "last_max_abs_difference": 2.5847753354346636e-08,
+      "fullmaterial_2D_reintegration": false
+    },
+    {
+      "policy": "full_native",
+      "step": 2,
+      "mode": "full_native",
+      "selected_nodes": 64,
+      "last_max_abs_difference": 1.086432821484351e-08,
+      "fullmaterial_2D_reintegration": false
+    },
+    {
+      "policy": "full_native",
+      "step": 3,
+      "mode": "full_native",
+      "selected_nodes": 64,
+      "last_max_abs_difference": 9.9958732506511e-09,
+      "fullmaterial_2D_reintegration": false
+    },
+    {
+      "policy": "full_native",
+      "step": 4,
+      "mode": "full_native",
+      "selected_nodes": 64,
+      "last_max_abs_difference": 9.44269365130146e-09,
+      "fullmaterial_2D_reintegration": false
+    },
+    {
+      "policy": "full_native",
+      "step": 5,
+      "mode": "full_native",
+      "selected_nodes": 64,
+      "last_max_abs_difference": 5.140872654657569e-09,
+      "fullmaterial_2D_reintegration": false
+    },
+    {
+      "policy": "full_native",
+      "step": 6,
+      "mode": "full_native",
+      "selected_nodes": 64,
+      "last_max_abs_difference": 4.607003115802977e-09,
+      "fullmaterial_2D_reintegration": false
+    },
+    {
+      "policy": "full_native",
+      "step": 7,
+      "mode": "full_native",
+      "selected_nodes": 64,
+      "last_max_abs_difference": 4.719241535749985e-09,
+      "fullmaterial_2D_reintegration": false
+    },
+    {
+      "policy": "warm_openloop",
+      "step": 0,
+      "mode": "full_native",
+      "selected_nodes": 64,
+      "last_max_abs_difference": 2.4646358114110978e-08,
+      "fullmaterial_2D_reintegration": false
+    },
+    {
+      "policy": "warm_openloop",
+      "step": 1,
+      "mode": "full_native",
+      "selected_nodes": 64,
+      "last_max_abs_difference": 2.4490254948994483e-08,
+      "fullmaterial_2D_reintegration": false
+    },
+    {
+      "policy": "warm_openloop",
+      "step": 2,
+      "mode": "full_native",
+      "selected_nodes": 64,
+      "last_max_abs_difference": 1.1465036087177083e-08,
+      "fullmaterial_2D_reintegration": false
+    },
+    {
+      "policy": "warm_openloop",
+      "step": 3,
+      "mode": "full_native",
+      "selected_nodes": 64,
+      "last_max_abs_difference": 1.1404482799098892e-08,
+      "fullmaterial_2D_reintegration": false
+    },
+    {
+      "policy": "warm_openloop",
+      "step": 4,
+      "mode": "full_native",
+      "selected_nodes": 64,
+      "last_max_abs_difference": 1.1369803157995628e-08,
+      "fullmaterial_2D_reintegration": false
+    },
+    {
+      "policy": "warm_openloop",
+      "step": 5,
+      "mode": "full_native",
+      "selected_nodes": 64,
+      "last_max_abs_difference": 6.942195169418186e-09,
+      "fullmaterial_2D_reintegration": false
+    },
+    {
+      "policy": "warm_openloop",
+      "step": 6,
+      "mode": "full_native",
+      "selected_nodes": 64,
+      "last_max_abs_difference": 6.840762057508387e-09,
+      "fullmaterial_2D_reintegration": false
+    },
+    {
+      "policy": "warm_openloop",
+      "step": 7,
+      "mode": "full_native",
+      "selected_nodes": 64,
+      "last_max_abs_difference": 6.556538697383152e-09,
+      "fullmaterial_2D_reintegration": false
+    },
+    {
+      "policy": "marginal_native",
+      "step": 0,
+      "mode": "marginal_native",
+      "selected_nodes": 64,
+      "last_max_abs_difference": 5.934050051337181e-06,
+      "fullmaterial_2D_reintegration": false
+    },
+    {
+      "policy": "marginal_native",
+      "step": 1,
+      "mode": "marginal_native",
+      "selected_nodes": 64,
+      "last_max_abs_difference": 2.6095448504293017e-06,
+      "fullmaterial_2D_reintegration": false
+    },
+    {
+      "policy": "marginal_native",
+      "step": 2,
+      "mode": "marginal_native",
+      "selected_nodes": 64,
+      "last_max_abs_difference": 2.332544404737291e-06,
+      "fullmaterial_2D_reintegration": false
+    },
+    {
+      "policy": "marginal_native",
+      "step": 3,
+      "mode": "marginal_native",
+      "selected_nodes": 64,
+      "last_max_abs_difference": 1.713543916537219e-06,
+      "fullmaterial_2D_reintegration": false
+    },
+    {
+      "policy": "marginal_native",
+      "step": 4,
+      "mode": "marginal_native",
+      "selected_nodes": 64,
+      "last_max_abs_difference": 2.046950410061754e-06,
+      "fullmaterial_2D_reintegration": false
+    },
+    {
+      "policy": "marginal_native",
+      "step": 5,
+      "mode": "marginal_native",
+      "selected_nodes": 64,
+      "last_max_abs_difference": 7.896033089593857e-07,
+      "fullmaterial_2D_reintegration": false
+    },
+    {
+      "policy": "marginal_native",
+      "step": 6,
+      "mode": "marginal_native",
+      "selected_nodes": 64,
+      "last_max_abs_difference": 1.0301646184984747e-06,
+      "fullmaterial_2D_reintegration": false
+    },
+    {
+      "policy": "marginal_native",
+      "step": 7,
+      "mode": "marginal_native",
+      "selected_nodes": 64,
+      "last_max_abs_difference": 1.0494617725953503e-06,
+      "fullmaterial_2D_reintegration": false
+    },
+    {
+      "policy": "model_MI",
+      "step": 0,
+      "mode": "model_MI",
+      "selected_nodes": 64,
+      "last_max_abs_difference": 2.671758873168395e-10,
+      "fullmaterial_2D_reintegration": false
+    },
+    {
+      "policy": "model_MI",
+      "step": 1,
+      "mode": "model_MI",
+      "selected_nodes": 64,
+      "last_max_abs_difference": 7.790081947567362e-12,
+      "fullmaterial_2D_reintegration": false
+    },
+    {
+      "policy": "model_MI",
+      "step": 2,
+      "mode": "model_MI",
+      "selected_nodes": 64,
+      "last_max_abs_difference": 2.423833811611431e-12,
+      "fullmaterial_2D_reintegration": false
+    },
+    {
+      "policy": "model_MI",
+      "step": 3,
+      "mode": "model_MI",
+      "selected_nodes": 64,
+      "last_max_abs_difference": 1.962172245973011e-12,
+      "fullmaterial_2D_reintegration": false
+    },
+    {
+      "policy": "model_MI",
+      "step": 4,
+      "mode": "model_MI",
+      "selected_nodes": 64,
+      "last_max_abs_difference": 1.3115997816916941e-12,
+      "fullmaterial_2D_reintegration": false
+    },
+    {
+      "policy": "model_MI",
+      "step": 5,
+      "mode": "model_MI",
+      "selected_nodes": 64,
+      "last_max_abs_difference": 2.0424073470339844e-12,
+      "fullmaterial_2D_reintegration": false
+    },
+    {
+      "policy": "model_MI",
+      "step": 6,
+      "mode": "model_MI",
+      "selected_nodes": 64,
+      "last_max_abs_difference": 2.138445277517602e-12,
+      "fullmaterial_2D_reintegration": false
+    },
+    {
+      "policy": "model_MI",
+      "step": 7,
+      "mode": "model_MI",
+      "selected_nodes": 64,
+      "last_max_abs_difference": 3.623772302737728e-12,
+      "fullmaterial_2D_reintegration": false
+    }
+  ],
+  "all96terminalcontexts_retained": true,
+  "terminalY_reads": 0,
+  "SUT_imports_optimizer_or_model_refits": 0,
+  "materialfullVOI2Dreintegration": false,
+  "scope": "independent dense closed statistics/evidence/laws; native risk field audited through frozen passedpuregate plus actualstate/coordinates/averages/refinement/argmax; not terminal effect evaluation",
+  "actual_start_utc": "2026-11-06T09:00:45.300416+00:00",
+  "actual_end_utc": "2026-11-06T09:00:51.845274+00:00",
+  "script_sha256": "8f48e2abbee2812222c82030cb8ad3649edb0eee6509bb98d63160d6b8ece471",
+  "plan_sha256": "4bcb2ef7b9d8d8419b88fdd14a15c641b93d170e8e1f58ad2f26fc29299e28be",
+  "approval_sha256": "eacf20708d8bf3bc4eb24e2a9715a31b69bed3a9a6eb0be138defd044e350254",
+  "comparison_counts": {
+    "forecast_freeze_status": 1,
+    "forecast_plan_binding": 1,
+    "forecast_sources_binding": 1,
+    "123frozenpayloads": 1,
+    "role_counts": 1,
+    "visible_warm_identity": 32,
+    "visible_pool_identity": 32,
+    "visible_terminal_identity": 96,
+    "warm_transform_native_first_scale_s0": 3,
+    "warm_transform_u_center_warm": 3,
+    "warm_transform_u_sample_SD_warm": 3,
+    "warm_transform_rows": 1,
+    "response_center": 1,
+    "response_sd": 1,
+    "response_s0": 1,
+    "reference_feature_center": 2,
+    "reference_feature_sd": 2,
+    "known_pool_coordinates": 64,
+    "known_terminal_coordinates": 192,
+    "warm_logweights": 3,
+    "warm_expansion_center": 3,
+    "warm_expansion_sd": 3,
+    "warm_actual_label_count": 1,
+    "warm_modelid": 3,
+    "warm_NIG_mean": 13,
+    "warm_NIG_V": 61,
+    "warm_NIG_alpha": 3,
+    "warm_NIG_b": 3,
+    "warm_component_count": 3,
+    "closed_warm_log_evidence": 3,
+    "common_native_jacobian": 1,
+    "native_warm_log_evidence": 3,
+    "warm_evidence_order": 32,
+    "warm_predictive_evidence_increment": 96,
+    "warm_model_logweights": 96,
+    "checkpoint_logweights": 54,
+    "checkpoint_expansion_center": 54,
+    "checkpoint_expansion_sd": 54,
+    "checkpoint_actual_label_count": 18,
+    "checkpoint_modelid": 54,
+    "checkpoint_NIG_mean": 234,
+    "checkpoint_NIG_V": 1098,
+    "checkpoint_NIG_alpha": 54,
+    "checkpoint_NIG_b": 54,
+    "checkpoint_component_count": 54,
+    "checkpoint_prefix": 18,
+    "main_jid": 1728,
+    "mixture_law_coordinate": 2064,
+    "mixture_law_family": 2064,
+    "mixture_law_model_weight_override": 2064,
+    "mixture_lambda": 2064,
+    "mixture_s0": 2064,
+    "mixture_logweights": 6192,
+    "mixture_componentid": 6192,
+    "mixture_location": 6192,
+    "mixture_scale": 6192,
+    "mixture_df": 6192,
+    "mixture_displayweights": 6192,
+    "t_family": 576,
+    "t_coordinate": 576,
+    "t_lambda": 576,
+    "t_location": 576,
+    "t_scale": 576,
+    "t_df": 576,
+    "t_native_first_scale_s0": 576,
+    "preq_file_hash": 96,
+    "available_pool": 48,
+    "index_pool": 48,
+    "query_identity": 96,
+    "query_policy": 96,
+    "query_before_budget": 48,
+    "query_after_budget": 48,
+    "query_noY": 48,
+    "query_knownX": 48,
+    "query_plan": 48,
+    "query_sources": 48,
+    "prequery_logweights": 144,
+    "prequery_expansion_center": 144,
+    "prequery_expansion_sd": 144,
+    "prequery_actual_label_count": 48,
+    "prequery_modelid": 144,
+    "prequery_NIG_mean": 624,
+    "prequery_NIG_V": 2928,
+    "prequery_NIG_alpha": 144,
+    "prequery_NIG_b": 144,
+    "prequery_component_count": 144,
+    "acquisition_logweights": 144,
+    "acquisition_expansion_center": 144,
+    "acquisition_expansion_sd": 144,
+    "acquisition_actual_label_count": 48,
+    "acquisition_modelid": 144,
+    "acquisition_NIG_mean": 624,
+    "acquisition_NIG_V": 2928,
+    "acquisition_NIG_alpha": 144,
+    "acquisition_NIG_b": 144,
+    "acquisition_component_count": 144,
+    "openloop_tag": 48,
+    "argmax_position": 48,
+    "argmax_action": 48,
+    "readout_mode": 32,
+    "registered_readout_tol": 32,
+    "all96targetcontexts": 64,
+    "allremainingquerycontexts": 64,
+    "readout_targetlabels0": 64,
+    "fullreadout_paircount": 32,
+    "nativefield_target_average": 912,
+    "nativefield_diag_mean": 912,
+    "nativefield_within_mean": 912,
+    "nativefield_signedbetween_mean": 912,
+    "nativefield_components_sum": 87552,
+    "nativefield_signed_B_identity": 87552,
+    "nativefield_closure_identity": 87552,
+    "readout_refinement_difference": 32,
+    "selected_readout_nodes": 32,
+    "actual_action_values_are_lastlevel": 912,
+    "event_matches_update": 48,
+    "onecell_fee": 48,
+    "fee_count": 48,
+    "event_component_identity": 48,
+    "event_pool": 48,
+    "event_true_source": 48,
+    "not_synthetic": 48,
+    "event_prefreeze_hash": 48,
+    "complete_native_observation": 48,
+    "actual_modeled_response": 48,
+    "afterquery_logweights": 144,
+    "afterquery_expansion_center": 144,
+    "afterquery_expansion_sd": 144,
+    "afterquery_actual_label_count": 48,
+    "afterquery_modelid": 144,
+    "afterquery_NIG_mean": 624,
+    "afterquery_NIG_V": 2928,
+    "afterquery_NIG_alpha": 144,
+    "afterquery_NIG_b": 144,
+    "afterquery_component_count": 144,
+    "query_evidence_from_closedmarginal": 144,
+    "query_old_model_logweights": 144,
+    "query_new_model_logweights": 144,
+    "old_density_before_NIG_update": 48,
+    "probability_not_floored": 48,
+    "checkpoint_train_hash": 12,
+    "samephysicalcell_samevalue_acrosspolicies": 29,
+    "random_permutation": 8,
+    "random_scores": 8,
+    "scalar_readout_value_saved": 912,
+    "common_setup352": 1,
+    "validationYseparate96": 1,
+    "perpolicy8cells": 1,
+    "terminalYnotread": 1,
+    "actualphysicalpoolunion": 1,
+    "fit_payload_hash": 18,
+    "fit_training_hash": 18,
+    "fit_sources": 18,
+    "GP_Xfit": 952,
+    "GP_Xquery": 3008,
+    "GP_y_native": 476,
+    "GP_train_rows": 13,
+    "GP_prediction_rows": 13,
+    "GP_ymean": 13,
+    "GP_ySD": 13,
+    "GP_normalized_y": 476,
+    "GP_logtheta": 52,
+    "RF_Xfit32": 5,
+    "RF_Xquery32": 5,
+    "RF_y": 184,
+    "RF_train_rows": 5,
+    "RF_prediction_rows": 5,
+    "RF_OOB_original": 5,
+    "RF_no_bootstrap_CDF_multiplicity": 5,
+    "RF_tree_id": 1280,
+    "RF_train_paths": 1280,
+    "RF_query_paths": 1280,
+    "reference_jid": 2304,
+    "reference_family": 1440,
+    "reference_coordinate": 1440,
+    "GP_native_location": 864,
+    "GP_native_scale": 864,
+    "RF_support": 576,
+    "RF_exact_masses": 576,
+    "exact_reference_currentstate_hash": 864,
+    "reference_same_actual_training": 1824,
+    "GP_variance_action_value": 228
+  },
+  "max_absolute_errors": {
+    "warm_transform_native_first_scale_s0": 1.4210854715202004e-14,
+    "warm_transform_u_center_warm": 4.440892098500626e-16,
+    "warm_transform_u_sample_SD_warm": 6.661338147750939e-16,
+    "response_center": 4.440892098500626e-16,
+    "response_sd": 1.1102230246251565e-16,
+    "response_s0": 1.4210854715202004e-14,
+    "reference_feature_center": 0.0,
+    "reference_feature_sd": 2.220446049250313e-16,
+    "known_pool_coordinates": 1.1102230246251565e-15,
+    "known_terminal_coordinates": 2.220446049250313e-15,
+    "warm_logweights": 7.993605777301127e-15,
+    "warm_expansion_center": 2.220446049250313e-16,
+    "warm_expansion_sd": 3.3306690738754696e-15,
+    "warm_NIG_mean": 3.739646206866399e-16,
+    "warm_NIG_V": 2.498001805406602e-16,
+    "warm_NIG_alpha": 0.0,
+    "warm_NIG_b": 3.552713678800501e-15,
+    "closed_warm_log_evidence": 7.105427357601002e-15,
+    "common_native_jacobian": 0.0,
+    "native_warm_log_evidence": 2.842170943040401e-14,
+    "warm_predictive_evidence_increment": 1.176836406102666e-14,
+    "warm_model_logweights": 1.021405182655144e-14,
+    "checkpoint_logweights": 1.5987211554602254e-14,
+    "checkpoint_expansion_center": 2.220446049250313e-16,
+    "checkpoint_expansion_sd": 3.3306690738754696e-15,
+    "checkpoint_NIG_mean": 4.649058915617843e-16,
+    "checkpoint_NIG_V": 2.498001805406602e-16,
+    "checkpoint_NIG_alpha": 0.0,
+    "checkpoint_NIG_b": 7.105427357601002e-15,
+    "mixture_lambda": 0.0,
+    "mixture_s0": 1.4210854715202004e-14,
+    "mixture_logweights": 1.5987211554602254e-14,
+    "mixture_location": 1.9984014443252818e-15,
+    "mixture_scale": 6.661338147750939e-16,
+    "mixture_df": 0.0,
+    "mixture_displayweights": 4.3298697960381105e-15,
+    "t_lambda": 0.0,
+    "t_location": 8.881784197001252e-16,
+    "t_scale": 3.3306690738754696e-16,
+    "t_df": 0.0,
+    "t_native_first_scale_s0": 1.4210854715202004e-14,
+    "prequery_logweights": 1.5987211554602254e-14,
+    "prequery_expansion_center": 2.220446049250313e-16,
+    "prequery_expansion_sd": 3.3306690738754696e-15,
+    "prequery_NIG_mean": 4.579669976578771e-16,
+    "prequery_NIG_V": 2.498001805406602e-16,
+    "prequery_NIG_alpha": 0.0,
+    "prequery_NIG_b": 7.105427357601002e-15,
+    "acquisition_logweights": 1.5987211554602254e-14,
+    "acquisition_expansion_center": 2.220446049250313e-16,
+    "acquisition_expansion_sd": 3.3306690738754696e-15,
+    "acquisition_NIG_mean": 4.579669976578771e-16,
+    "acquisition_NIG_V": 2.498001805406602e-16,
+    "acquisition_NIG_alpha": 0.0,
+    "acquisition_NIG_b": 7.105427357601002e-15,
+    "registered_readout_tol": 0.0,
+    "nativefield_target_average": 1.3877787807814457e-17,
+    "nativefield_diag_mean": 1.3877787807814457e-17,
+    "nativefield_within_mean": 1.3877787807814457e-17,
+    "nativefield_signedbetween_mean": 1.734723475976807e-18,
+    "nativefield_components_sum": 0.0,
+    "nativefield_signed_B_identity": 0.0,
+    "nativefield_closure_identity": 0.0,
+    "readout_refinement_difference": 0.0,
+    "actual_action_values_are_lastlevel": 0.0,
+    "actual_modeled_response": 1.1657341758564144e-15,
+    "afterquery_logweights": 1.5987211554602254e-14,
+    "afterquery_expansion_center": 2.220446049250313e-16,
+    "afterquery_expansion_sd": 3.3306690738754696e-15,
+    "afterquery_NIG_mean": 4.649058915617843e-16,
+    "afterquery_NIG_V": 2.498001805406602e-16,
+    "afterquery_NIG_alpha": 0.0,
+    "afterquery_NIG_b": 7.105427357601002e-15,
+    "query_evidence_from_closedmarginal": 3.552713678800501e-14,
+    "query_old_model_logweights": 1.5987211554602254e-14,
+    "query_new_model_logweights": 1.5987211554602254e-14,
+    "scalar_readout_value_saved": 0.0,
+    "GP_Xfit": 8.881784197001252e-16,
+    "GP_Xquery": 4.440892098500626e-16,
+    "GP_y_native": 0.0,
+    "GP_ymean": 2.842170943040401e-14,
+    "GP_ySD": 7.105427357601002e-15,
+    "GP_normalized_y": 8.881784197001252e-16,
+    "GP_logtheta": 0.0,
+    "RF_y": 0.0,
+    "GP_native_location": 4.547473508864641e-13,
+    "GP_native_scale": 5.258016244624741e-13,
+    "GP_variance_action_value": 2.9103830456733704e-11
+  }
+}

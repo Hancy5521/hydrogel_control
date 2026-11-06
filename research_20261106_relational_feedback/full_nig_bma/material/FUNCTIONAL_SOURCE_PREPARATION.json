@@ -1,0 +1,30 @@
+{
+  "status": "FUNCTIONAL_SOURCE_READY_AST_ONLY_NO_NUMERICAL_IMPORT_OR_MATERIAL_FIT",
+  "actual_utc": "2026-11-06T07:10:34.181944+00:00",
+  "files": {
+    "code/relation_posterior.py": "1d74cde91519ce282c6ebee54e53807a2a79be0cebf19e06221eb4f16e8b7528",
+    "code/risk_field.py": "cda5178b9c5138df647a0b9fffab2da30a19bde6082aa6fd4cc8b0910c6b92aa",
+    "material/code/material_model.py": "f8cedbb1c40945b1af9f1e74b096b780f32eed36e9cd493e2e4fe2c11fe5d1bd",
+    "material/code/acquisition.py": "91f123bc0ea4d31f01a210c36e800246564a9284a7c75bad6adc259cf9d49478"
+  },
+  "foundation_unchanged": true,
+  "warm_role_count": 32,
+  "pool_role_count_expected": 32,
+  "terminal_role_count_expected": 96,
+  "new_numeric_reads_fits_or_queries": 0,
+  "material_roles_selected_by_this_preparation": 0,
+  "independent_static_review_pending": true,
+  "execution_level_not_yet_material_registered": "API default64 not experiment authorization",
+  "API": {
+    "material_model.fit_warm": "native32x3 -> ensemble, transform, response, native_features, exact modeled/native warm evidence",
+    "material_model.proxy_z": "transform, nativeNx2 -> modeled Nx2",
+    "material_model.response_z": "response, nativeY -> modeled zY",
+    "material_model.update_native": "ensemble, context_z, nativeY, response -> ensemble, evidence",
+    "material_model.law": "ensemble, context_z, response, optional logweights_override -> shared-u mixture_student_t law",
+    "material_model.affine_law": "same -> legacy student_t component0 law",
+    "material_model.openloop_from_warm": "warm ensemble, current actual ensemble -> acquisition-only warmmean/Evariance/Hweight, currentV/count surrogate",
+    "acquisition.risk_values": "ensemble, pool_z, terminal_z, response, mode(full_native/marginal_native/model_MI), count -> values, diagnostics"
+  },
+  "fairness": "all policies actual observations update all3NIG+H logweights for their forecasts; openloop is acquisition-only; no terminal targets in risk arguments",
+  "numeric_limits": "All three objectives use deterministic finite quadrature. Analytic native target/query tails do not enclose finite quadrature, CDF or IEEE error; MI omitted mass is not a rigorous MI tail bound."
+}

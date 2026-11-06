@@ -1,0 +1,104 @@
+{
+  "actual_utc": "2026-11-06T06:23:54.717063+00:00",
+  "status": "PROPOSED_SINGLE_BOUNDED_SYNTHETIC_PROTOCOL_NO_NUMERIC_EXECUTION",
+  "hypotheses": [
+    0,
+    1,
+    2
+  ],
+  "prior": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "target_means": [
+    -1,
+    0,
+    1
+  ],
+  "target_standard_deviations": [
+    1,
+    1,
+    1
+  ],
+  "probe_means": [
+    -1,
+    0,
+    1
+  ],
+  "probe_standard_deviations": [
+    0.75,
+    0.75,
+    0.75
+  ],
+  "fixed_probe_readings": [
+    -1,
+    1
+  ],
+  "remaining_queries": {
+    "qL": {
+      "means": [
+        -2,
+        2,
+        2
+      ],
+      "standard_deviations": [
+        1,
+        1,
+        1
+      ]
+    },
+    "qR": {
+      "means": [
+        -2,
+        -2,
+        2
+      ],
+      "standard_deviations": [
+        1,
+        1,
+        1
+      ]
+    }
+  },
+  "scalar_action_value_count": 8,
+  "conditional_independence": "fixedparameter Gaussian product models givenH, not Studentrho0",
+  "scope": "6 main VOI values plus2 nullcontrols only; no hypothesis/parameter/readout scan",
+  "primary_mathematical_identity": "Delta_qt=-0.5*sum(Cov[p(H|Z)]_ij*Eabs(Y_i-Y_j))",
+  "primary_mechanism_prediction": "priorqLqRtie;afterprobe-1 qL>qR;afterprobe+1 qR>qL, resolved beyond declared numeric errors",
+  "negative_controls": [
+    "querylikelihood identical acrossH ->0",
+    "targetCDF identical acrossH ->0"
+  ],
+  "producer_route": "analytic Gaussian pairwise absolute distances+1D posterior covariance",
+  "independent_route": "nativey/nativez direct CDF square double integral, no producer import",
+  "independent_finite_domain": {
+    "target": [
+      -12,
+      12
+    ],
+    "query": [
+      -14,
+      14
+    ],
+    "query_density_renormalized": false
+  },
+  "criteria": {
+    "gain_reference_absolute": 2e-08,
+    "gain_reference_relative": 2e-07,
+    "posterior_weight_absolute": 2e-12,
+    "null_covariance_rowsum_symmetry_PSD_absolute": 2e-10,
+    "rank": "margin exceeds sum of quadrature error estimates, analytic tails and declared tolerance; no predeterminedsuccess",
+    "warning": "error retained",
+    "negativevalue_clamp": false
+  },
+  "material_N_added": 0,
+  "must_not_claim": [
+    "newBMA theory",
+    "newproper-score theorem",
+    "finiteStudentrho0independence",
+    "actualmaterialperformance",
+    "topconferencereadiness"
+  ],
+  "next": "root science review; actualUTC/source freeze before a single numeric producer and independent audit"
+}

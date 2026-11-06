@@ -1,0 +1,72 @@
+{
+  "actual_utc": "2026-11-06T08:24:08.533191+00:00",
+  "scope": "bounded primary-source cross-field comparison; no material labels/fit/model changes",
+  "search_queries": [
+    "Eigen Schuster hypercycle cooperative integration self reproducing systems 1977 1978 doi",
+    "Bayesian model expansion active learning materials model discrepancy autonomous discovery hypotheses"
+  ],
+  "papers": [
+    {
+      "title": "The Hypercycle. Part B: The abstract hypercycle",
+      "doi": "10.1007/BF00420631",
+      "url": "https://link.springer.com/article/10.1007/BF00420631",
+      "version": "1978 publication",
+      "read_depth": "publisher abstract/metadata only; subscription fulltext not read",
+      "license": "subscription copyright; no PDF redistributed",
+      "finding": "Cyclic catalytic cooperation supports information integration; ordinary evidence reweighting alone is not that dynamical mechanism."
+    },
+    {
+      "title": "Open-ended Scientific Discovery via Bayesian Surprise",
+      "url": "https://arxiv.org/html/2507.00310v1",
+      "version": "2507.00310v1,2025-06-30; current repo README identifies NeurIPS2025 final title AutoDiscovery",
+      "read_depth": "abstract/introduction and selected sections2,3.1,3.2,algorithm1; not whole paper or appendix",
+      "license": "paper CC-BY-4.0",
+      "finding": "LLM belief elicitation and surprisal drive hypothesis search/MCTS; goal-free scientific agents and model expansion themselves already have close conference precedent. Our proposed criterion must be verified missing-target predictive utility, not surprise alone."
+    },
+    {
+      "title": "Hypothesis Learning in Automated Experiment: Application to Combinatorial Materials Libraries",
+      "doi": "10.1002/adma.202201345",
+      "url": "https://arxiv.org/abs/2112.06649",
+      "version": "v3,2022-04-21",
+      "read_depth": "abstract and publication/code metadata only; attempted v2HTML404, no fulltext read",
+      "license": "paper license not checked in this bounded pass; code separately MIT",
+      "finding": "Co-navigation of hypothesis and experimental spaces via structured GPs and policy refinement already exists for materials; conditional imputation and source-group evidence cost are the application distinction to test."
+    }
+  ],
+  "github": [
+    {
+      "url": "https://github.com/allenai/autodiscovery-neurips",
+      "paper_link_redirect": "https://github.com/allenai/autods",
+      "commit": "66aa2d513cafdb23bf38313ebef522ade93f8cd9",
+      "read_depth": "README and repository/ref metadata; first package-notices header only; no algorithm source inspection",
+      "license": "API license null; NOTICES dependency text does not establish original-code license",
+      "code_imported": false
+    },
+    {
+      "url": "https://github.com/ziatdinovmax/hypoAL",
+      "commit": "731142998c6b729f613ec22de86484fa88d15d8e",
+      "read_depth": "README/repo/ref metadata only; notebook not read or executed",
+      "license": "MIT per repo metadata/page",
+      "code_imported": false
+    }
+  ],
+  "failed_access_preserved": [
+    {
+      "url": "https://arxiv.org/html/2112.06649v2",
+      "result": "404; no repeated request"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41467-026-77209-5",
+      "result": "publisher cookie-authorization500 nonretryable; fulltext not read"
+    },
+    {
+      "url": "https://api.github.com/repos/allenai/autods",
+      "result": "301 Moved Permanently; connector does not automatically follow"
+    },
+    {
+      "url": "https://api.github.com/repositories/1021725015",
+      "result": "connector INVALID_ARGUMENT endpoint unsupported; public web exposed canonical repository, then supported repository fetch used"
+    }
+  ],
+  "claim_boundary": "Classic components may be cited and adapted; no global uniqueness demand. Need demonstrable material-specific task/mechanism benefit and exact prior attribution. No current material efficacy inference from reading."
+}

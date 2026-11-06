@@ -1,0 +1,86 @@
+{
+  "status": "SAMPLES_GENERATED_PRIMITIVES_SAVED_NOT_INDEPENDENTLY_VALIDATED",
+  "actual_start_utc": "2026-11-06T08:11:40.077867+00:00",
+  "actual_end_utc": "2026-11-06T08:11:41.254139+00:00",
+  "sampling_elapsed_seconds": 0.16172050000022864,
+  "source_sha256": {
+    "joint_sampler.py": "5b77cde6f6356eb977596ea89564da04e95a0e57688414d142d40442cd44bfae",
+    "sampling_gate.py": "e4d0c2abf26491bc0f858fcf37528666a7bfce0896a93f221e17770d92d9adb9"
+  },
+  "fixture_sha256": "27f834b26bcfb03fb610aeb0d9acdd2a28159afe8396f8cbcba8780775dfdef9",
+  "proposal_sha256": "7c9a99e2ab34a2b64e3ad579f02357791a7df4b09eb3e4ed6035fc77f62a4ca8",
+  "plan_sha256": "a937c254f7960809ce2415566e96f1b320e3b315974629dcd12b5f9cd8a5fb07",
+  "n_draws": 131072,
+  "rows": 2,
+  "H_counts": [
+    26125,
+    39073,
+    65874
+  ],
+  "H_frequencies": [
+    0.19931793212890625,
+    0.29810333251953125,
+    0.5025787353515625
+  ],
+  "modeled_z_empirical_mean": [
+    0.2596564542630385,
+    0.00484948163808373
+  ],
+  "modeled_z_empirical_covariance_ddof1": [
+    [
+      1.8006433343989432,
+      0.3486411445080865
+    ],
+    [
+      0.3486411445080865,
+      1.1245622612205652
+    ]
+  ],
+  "modeled_CDF_points": [
+    -2.0,
+    0.0,
+    2.0
+  ],
+  "modeled_empirical_CDF_by_row": [
+    [
+      0.042083740234375,
+      0.410858154296875,
+      0.9183425903320312
+    ],
+    [
+      0.03002166748046875,
+      0.497772216796875,
+      0.970123291015625
+    ]
+  ],
+  "native_CDF_thresholds": [
+    -1.535155896874297,
+    1.125,
+    5.605
+  ],
+  "native_empirical_CDF_by_row": [
+    [
+      0.042083740234375,
+      0.410858154296875,
+      0.9183425903320312
+    ],
+    [
+      0.03002166748046875,
+      0.497772216796875,
+      0.970123291015625
+    ]
+  ],
+  "input_unchanged": true,
+  "input_sha256_before": "fa02da7adb262d0b983de8a47ebf0d0788b29ef0e2942351c98174e12b0a4d58",
+  "input_sha256_after": "fa02da7adb262d0b983de8a47ebf0d0788b29ef0e2942351c98174e12b0a4d58",
+  "files": {
+    "draws_and_aux.npz": "244b7a78e742bdcaf102ed3a19d57063813fd861f4020c6a40c8e4120f55b377",
+    "metadata.json": "e1912a839952bbc3ad820f1811e4f67e5cbf25c95b99735fa3907fb77a880923",
+    "INPUT_BINDING.json": "017e40fdc0c7654ecf3bf062f52efa49219e4770911a32be4f6427e2dcf9453a"
+  },
+  "all_checks_reserved_for_independent_auditor": true,
+  "statistical_generated_not_measurements": true,
+  "new_material_N": 0,
+  "model_updates": 0,
+  "material_source_reads_or_fits": 0
+}

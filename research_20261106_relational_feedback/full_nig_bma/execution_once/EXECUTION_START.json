@@ -1,0 +1,14 @@
+{
+  "actual_utc": "2026-11-06T07:03:30.058157+00:00",
+  "plan_sha256": "f7d7a918303c77c6531cd347c6d213fff779f0049ff4e108a4f2e2ad1482e48f",
+  "proposal_sha256": "6ac2e7fc802bc22afb7dbd658d29e00efcae6d9c119bc3d5f9549b1efc715521",
+  "source_sha256": {
+    "relation_posterior.py": "1d74cde91519ce282c6ebee54e53807a2a79be0cebf19e06221eb4f16e8b7528",
+    "risk_field.py": "cda5178b9c5138df647a0b9fffab2da30a19bde6082aa6fd4cc8b0910c6b92aa",
+    "run_gate.py": "707eb494a6a4fbf5c6dc3f7ca8280ddf493bde90324b2b6c9779a76a3a258d1e"
+  },
+  "python": "3.13.5",
+  "numpy": "2.1.3",
+  "scipy": "1.15.3",
+  "scope": "ONE_SYNTHETIC_FIXTURE_NO_MATERIAL"
+}

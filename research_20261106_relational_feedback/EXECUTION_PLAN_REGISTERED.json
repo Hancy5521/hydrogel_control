@@ -1,0 +1,31 @@
+{
+  "kind": "relational_fixed_Gaussian_product_threeH_eightvalues",
+  "status": "REGISTERED",
+  "registered_actual_utc": "2026-11-06T06:31:14.616014+00:00",
+  "source_sha256": {
+    "hypothesis_model.py": "8022a91be02c6863d1134e26bc25025a45bdb35466a51b3a130683c68926c730",
+    "risk_message.py": "c33468fa17b74a5ad41f1398578974b801b50c80cf6ab5f62cbde72fa5373a40",
+    "run_bounded_gate.py": "b7be749024709cebb2addd010f2a752cf5beb3a3a6a665981dbf86a9a4411add"
+  },
+  "inputs": {
+    "fixed_proposal": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\independent_math\\BOUNDED_SYNTHETIC_PROTOCOL_PROPOSAL.json",
+      "sha256": "b44c8645ba08594be4cdaa4c4449f0a892a8e58e9d510f959fd5c80f8e3ee635"
+    },
+    "root_scope": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\START_AND_SCOPE.json",
+      "sha256": "d3cc00ee48cc924c3bd62c9343cd21eabc595f8084b50a1ecb8bfede84c375b0"
+    },
+    "static_review": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\independent_math\\STATIC_PRODUCER_REVIEW.json",
+      "sha256": "c5f5f4386d1432d03e3fd2a4bdf13bb3dac88ce81fc1a9038abb4f84f72ba438"
+    }
+  },
+  "fixed_query_domain": [
+    -14.0,
+    14.0
+  ],
+  "actual_new_materialvalues_fits": 0,
+  "criterion_source": "unchangedfixedproposal; no scans/tuning",
+  "next": "independentnativeCDFreferenceafterproducer; ifpass freshconditionalNIG-BMA design keepswithinH"
+}

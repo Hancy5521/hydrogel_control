@@ -1,0 +1,52 @@
+{
+  "actual_utc": "2026-11-05T09:58:02.738698+00:00",
+  "parent_source_gate_sha256": "86ee6469c90c98558ca069e9d7e5e05badb5f5bc6944f0dbbf94a9025bea0a6e",
+  "pilot_eligibility": "PILOT_ELIGIBILITY.json",
+  "pilot_eligibility_sha256": "e7b06d64fe29c550bd8e75febd64d853d38b20448914d47d705053aa7712361d",
+  "eligible_metadata": "ELIGIBLE_METADATA.json",
+  "eligible_metadata_sha256": "165d48bc29f771e29f7e86a6bea1e57286eb81b49f29120905ba4ff4739660e4",
+  "strict_input_leakage_boundary": "For the UCSB3-response task, agent AND every baseline receive only rho/S/kappa observed masks plus approved condition/composition features. Completely isolate sigma/PF/zT from learning/acquisition/validation inputs. Derived source fields are not independent evidence.",
+  "eligible_3_property_components": {
+    "ucsb": {
+      "rows": 703,
+      "full_source_linkage_components_with_eligible_rows": 62,
+      "candidate_targets": [
+        "rho (ohm.cm)",
+        "S [muV/K]",
+        "kappa [W/mK]"
+      ],
+      "requirements": "finite original3responses,Tfinite,srcnonempty,normalizedcomposition"
+    },
+    "jarvis": {
+      "rows": 11020,
+      "full_source_linkage_components_with_eligible_rows": 8842,
+      "candidate_targets": [
+        "e_form",
+        "gap opt",
+        "bulk modulus"
+      ],
+      "requirements": "finite original3responses,normalizedcomposition"
+    }
+  },
+  "all_group_links_built_on_full_source_not_eligible_subset": true,
+  "forty_group_pilot_feasible": true,
+  "no_actual_seed_role_or_row_split_selected": true,
+  "complete_case_selection_limit": "Pilot eligibility conditions select an originally observed three-response subset. Native property missingness/measurement selection can bias this cohort; results do not validate originally unmeasured missing cells.",
+  "JARVIS_elastic_name_caveat": {
+    "source_metadata_claim": "Matminer descriptor names bulk/shear asVRH",
+    "actual_current_preprocessor_mapping": {
+      "kv": "bulk modulus",
+      "gv": "shear modulus"
+    },
+    "preprocessor_commit": "02c60582dc31575298db91b9e978f9cab2966b44",
+    "preprocessor_path": "dev_scripts/dataset_management/prep_dataset_for_figshare.py",
+    "preprocessor_blob_sha1": "195560d318a0bb3824c5f8d3b7dbc4094c914eee",
+    "selected_lines_read": "551-619 plus search-local context; not whole file",
+    "selected_source_copy": "MATMINER_JARVIS_PREPROCESS_SELECTED.py.txt",
+    "license": "MATMINER_LICENSE",
+    "status": "Native tensor-file aggregation semantics not independently rederived; do not overstateVoigt vsVRH for physical claims. Use exact source bulk-modulus field for initial normalized benchmark.",
+    "modulus_units_basis": "JARVIS official elastic documentation usesGPa; no additional source conversion imposed."
+  },
+  "no_fits_or_predictor_scores": true,
+  "original_data_files_unmodified": true
+}

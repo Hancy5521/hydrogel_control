@@ -1,3 +1,7 @@
+Latest separate conditional-feedback checkpoint (6 November2026): [Chinese public report](research_20261106_relational_feedback/INDEX.html). A160-component development study implements full NIG model averaging, native CRPS query risk and shared-world joint sampling. CRPS34.124850 is competitive with listed GP/RF references, while warm-openloop reaches the same final set and frozen model weights are slightly better. All independent audits and limitations are retained; no extra adaptive-policy benefit, independent confirmation or top-conference readiness is claimed. Complete local numeric resources remain separate; MLST and every prior scientific file are preserved. Remote synchronization is not asserted.
+
+---
+
 Latest separate riskfield/active-feedback checkpoint (6 November2026): [Chinese public report](research_20261106_native_riskfield/INDEX.html). A152-component development study retains six query policies and strong GP/RF prediction references. Equal selected paths and numerical failures are explicit; no distinct self-catalytic policy, independent confirmation or submission-readiness claim. The complete local v2 archive and reviewed public subset are separately indexed; remote synchronization is not asserted. MLST and all previous history remain preserved.
 
 ---

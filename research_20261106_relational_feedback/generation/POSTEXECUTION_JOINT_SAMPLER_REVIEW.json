@@ -1,0 +1,30 @@
+{
+  "actual_utc": "2026-11-06T08:29:01.680261+00:00",
+  "status": "BOUNDED_JOINT_SAMPLER_CHECK_CLOSED_ROOT_MATERIAL_RUN_CONTINUES",
+  "actual_independent_receipt": {
+    "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\generation\\independent_execution_once\\INDEPENDENT_JOINT_SAMPLE_AUDIT.json",
+    "sha256": "efc96e9bc36487c1b7a982732fa51915f7257bfc1c742bddfb6ffff0ad390803"
+  },
+  "draws": 131072,
+  "distinct_response_rows_per_joint_draw": 2,
+  "new_material_N": 0,
+  "actual_sample_archive_sha256": "244b7a78e742bdcaf102ed3a19d57063813fd861f4020c6a40c8e4120f55b377",
+  "errors": {
+    "H_frequency": 0.002578735351562389,
+    "latent_mean": 0.004849481638083819,
+    "latent_covariance": 0.004744896898952744,
+    "standard_residual_mean": 0.004619050734054444,
+    "standard_residual_covariance": 0.005669420750649357,
+    "modeled_CDF": 0.002227783203125111,
+    "native_CDF": 0.002227783203125111,
+    "deterministic_inverse_forward_maxabs": 8.881784197001252e-15
+  },
+  "scope": "Oneoldfixed3NIG fixture; sharedH,sigma2,beta plus rowresidual semantics agree with analytic jointlatentmoments/marginalCDF and savedauxiliary checks. Samples are statisticalgeneration, never measurements or addedtrainingtruth.",
+  "limits": [
+    "FiniteMC pass is numericalinterface evidence, not calibration/materialeffect or exactseedstreamreplay.",
+    "Nativecovariance GaussianMCSE not asserted atnu6; momentcheck useslatentcoordinates and boundedCDF.",
+    "This does not test realmaterial efficacy or modify/rootrestartthecurrentforecast."
+  ],
+  "postreview_newdraws_fits_or_fullVOI_reintegrals": 0,
+  "next": "Unique real160 forecast globalfreeze then independent savedstate audit; only then firstterminalscore."
+}

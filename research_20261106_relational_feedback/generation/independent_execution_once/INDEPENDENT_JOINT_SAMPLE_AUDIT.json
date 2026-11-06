@@ -1,0 +1,115 @@
+{
+  "status": "PASS",
+  "fixed_draws": 131072,
+  "distinct_response_rows_perdraw": 2,
+  "new_material_N": 0,
+  "analytic_latent_mean": [
+    0.2562500000000001,
+    0.0
+  ],
+  "analytic_latent_covariance": [
+    [
+      1.7958984375000004,
+      0.35250000000000015
+    ],
+    [
+      0.35250000000000015,
+      1.1250000000000002
+    ]
+  ],
+  "empirical_latent_mean": [
+    0.2596564542630355,
+    0.004849481638083819
+  ],
+  "empirical_latent_covariance": [
+    [
+      1.8006433343989532,
+      0.3486411445080888
+    ],
+    [
+      0.3486411445080888,
+      1.1245622612205726
+    ]
+  ],
+  "standardized_row_residual_mean": [
+    -0.0003570205112047408,
+    0.004619050734054444
+  ],
+  "standardized_row_residual_covariance": [
+    [
+      0.9943305792493506,
+      -0.003997381998920591
+    ],
+    [
+      -0.003997381998920591,
+      0.9979367632939725
+    ]
+  ],
+  "analytic_CDF_byrow": [
+    [
+      0.04214130296328113,
+      0.4111216565159543,
+      0.9191422245632743
+    ],
+    [
+      0.030159152987607678,
+      0.5000000000000001,
+      0.9698408470123925
+    ]
+  ],
+  "empirical_modeled_CDF_byrow": [
+    [
+      0.042083740234375,
+      0.410858154296875,
+      0.9183425903320312
+    ],
+    [
+      0.03002166748046875,
+      0.497772216796875,
+      0.970123291015625
+    ]
+  ],
+  "empirical_native_CDF_byrow": [
+    [
+      0.042083740234375,
+      0.410858154296875,
+      0.9183425903320312
+    ],
+    [
+      0.03002166748046875,
+      0.497772216796875,
+      0.970123291015625
+    ]
+  ],
+  "bounded_CDF_binomial_standard_errors_descriptive": [
+    [
+      0.0005549447408287789,
+      0.0013590736916305598,
+      0.0007530040119573384
+    ],
+    [
+      0.0004723945110673829,
+      0.0013810679320049757,
+      0.00047239451106738167
+    ]
+  ],
+  "errors": {
+    "H_frequency": 0.002578735351562389,
+    "latent_mean": 0.004849481638083819,
+    "latent_covariance": 0.004744896898952744,
+    "standard_residual_mean": 0.004619050734054444,
+    "standard_residual_covariance": 0.005669420750649357,
+    "modeled_CDF": 0.002227783203125111,
+    "native_CDF": 0.002227783203125111,
+    "deterministic_inverse_forward_maxabs": 8.881784197001252e-15
+  },
+  "sampler_imports_newdraws_or_fits": 0,
+  "fixedseed_stream_not_regenerated": true,
+  "scope": "singleoldfixture finiteMC interface sanity; not calibration, modeltraining, materialeffect, or independent measurements",
+  "moment_limit": "latent fourth moments finite atnu6; no Gaussian MCSE for potentially unstable native covariance",
+  "actual_start_utc": "2026-11-06T08:19:01.666576+00:00",
+  "actual_end_utc": "2026-11-06T08:19:01.985523+00:00",
+  "script_sha256": "5053a8e30d5dbea3410004831bc19f1f34c8da1e31d0ac157e90833c40f99ab5",
+  "plan_sha256": "cd64731bd6045079d9dd1e8cf329dce41aca49e76298a5a424b8498aaec9da60",
+  "approval_sha256": "cfb9b329d172b5d18f7712c21a1379cf44554cb066867f6feb1eebc7f5cd9bd1"
+}

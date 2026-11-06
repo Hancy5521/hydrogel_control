@@ -1,0 +1,15 @@
+{
+  "status": "MATHEMATICAL_EXPLANATION_OF_ACTUAL_IMPLEMENTED_INTERFACE_AND_FIXED_MC_EVIDENCE",
+  "actual_utc": "2026-11-06T08:26:25.164053+00:00",
+  "sampler_source_sha256": "5b77cde6f6356eb977596ea89564da04e95a0e57688414d142d40442cd44bfae",
+  "sampler_gate_source_sha256": "e4d0c2abf26491bc0f858fcf37528666a7bfce0896a93f221e17770d92d9adb9",
+  "sampling_metadata_sha256": "e1912a839952bbc3ad820f1811e4f67e5cbf25c95b99735fa3907fb77a880923",
+  "independent_saved_sample_audit_sha256": "efc96e9bc36487c1b7a982732fa51915f7257bfc1c742bddfb6ffff0ad390803",
+  "math_note_sha256": "3076c1a0780a13d5894e9450ef74b66bc92ce48e083f779ee9cfdd21d0eb3575",
+  "new_draws_generated_by_note": 0,
+  "new_material_values_reads_or_fits": 0,
+  "current_prequery_or_terminal_artifacts_read": 0,
+  "models_or_running7source_changed": false,
+  "verified_status_scope": "Actual131072draws ofoneoldtwo-row artificialfixture only; no materialgenerationeffect,augmentationorcalibrationclaim",
+  "README_preparation_text_retained_not_overwritten": true
+}

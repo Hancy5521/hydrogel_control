@@ -1,0 +1,81 @@
+{
+  "actual_utc": "2026-11-06T09:05:26.372976+00:00",
+  "status": "REGISTERED_BEFORE_INDEPENDENT_ALL4080_SCORE_EXECUTION",
+  "scope": "INDEPENDENT_FRESH160_ALL_SCORES_ONCE",
+  "independent_sources": {
+    "audit_material_scores.py": "dcb24a1e4116827c7305b1bf051d384fc3fef767fc71ffac47bf82ab124af7b5"
+  },
+  "inputs": {
+    "science_plan": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\material\\EXECUTION_PLAN_REGISTERED.json",
+      "sha256": "fca8f2669d62a89d348a0f8beec93b291929bf15076567ff41b6e3faeb243521"
+    },
+    "forecast_freeze": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\material\\forecast_once\\FORECAST_FREEZE.json",
+      "sha256": "0cdaa614e18c28ab6cb5f384e248968fe0b84cdd62a0f336cce588463acbb0ef"
+    },
+    "roles": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\task_contract\\selection_once\\ROLE_SELECTION.json",
+      "sha256": "18ab839983759446fa395cb1e713bbb457c58a5c741ab24d12993403e4f9cd2c"
+    },
+    "state_audit": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\material\\independent_review\\independent_state_execution_once\\INDEPENDENT_FRESH160_STATES_AUDIT.json",
+      "sha256": "723caf12427ec6b61a975e26d4fa66215a932267101c0ac90d04bf2aa3c851f8"
+    },
+    "score_result": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\material\\score_once\\RESULTS.json",
+      "sha256": "901a6b91e9d28ef969c4f82a3fc5fbf01854fefb63a102e79d6952f822e1192b"
+    },
+    "score_start": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\material\\score_once\\TERMINAL_Y_REVEAL_START.json",
+      "sha256": "77ccde4f5f79284cccc44c7ac98e75e5ee0820112fb24578af1ee7dc2ab09330"
+    },
+    "terminal_truth": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\material\\score_once\\TERMINAL_TRUTH.json",
+      "sha256": "fa449c00b299a78d52c1cbf5d17b50ccbd319bb382673357cf313a7b80d4c9d1"
+    },
+    "preoutput_score_criteria": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\material\\independent_review\\PREOUTPUT_ALL_SCORE_CRITERIA.json",
+      "sha256": "1b51a3df1fb5b3fecffcc51a35518e696f779ec0d8db21915157fcfe4c538329"
+    },
+    "helper_bindings": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\material\\independent_review\\FROZEN_AUDIT_HELPER_BINDINGS.json",
+      "sha256": "8e88383604b0653b20b566bdd18c57ba6fc149eb696d96a338be4704e2ada7c4"
+    }
+  },
+  "helpers": {
+    "batch_transform": {
+      "file": "H:\\polymer_completion_public\\research\\reported_feedback_20261106T024504445715Z\\math_design\\saved_state_reference.py",
+      "sha256": "57f5e019d5f94878645c8970d26bdb581c965ce916196f87129fab5577272573"
+    },
+    "scalar_score_functions": {
+      "file": "H:\\polymer_completion_public\\research\\reported_feedback_20261106T024504445715Z\\math_design\\audit_saved_scores.py",
+      "sha256": "d2a9ee1adffd7bd40331f91f96118532808dbd30eda22119dee8ccbdfa01226f"
+    },
+    "native_CDF": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_yj_math\\saved_score_audit\\audit_phase2_scores.py",
+      "sha256": "257551f8e648a3ce832d1ada677b25168b53a0663ad0e6133a345427f8e3322a"
+    },
+    "full_fixture_reference": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\independent\\full_native_reference.py",
+      "sha256": "eb310af6a63d61e6d29ee30577f2f1b75afc98bda569433ca5b6e5d7a4ffd352"
+    },
+    "mixture_reference": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\independent\\scoring_math_reference.py",
+      "sha256": "8e461457d28400f8a85931a212876bc1bc9dd8e7f30d2df6acbf668e3ac37a90"
+    }
+  },
+  "producer_code_directory": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\material\\code",
+  "forecast_directory": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\material\\forecast_once",
+  "criteria_unchanged_from_preoutput": "1b51a3df1fb5b3fecffcc51a35518e696f779ec0d8db21915157fcfe4c538329",
+  "counts": {
+    "terminal": 4032,
+    "prequery": 48,
+    "total": 4080,
+    "coverage_events": 12240,
+    "summaries": 42,
+    "paired_final_differences": 1248
+  },
+  "reference_scope": "directnativeCDFmixture/scalar, exactFraction empiricalenergy; no SUTscore/rerunfit/rawread/fullVOI2D; literalfloating-signcounts bookkeeping only after independentnumeric agreement",
+  "basis": "Oneactualforecast0cdaa...+onefirstscore901a... underoriginalfca8...plan; savedstateactualPASS723caf...; no result-driven source or tolerance changes."
+}

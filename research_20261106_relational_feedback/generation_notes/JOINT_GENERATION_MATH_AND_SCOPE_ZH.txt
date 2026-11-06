@@ -1,0 +1,38 @@
+低维关系身份＋完整联合残差：当前已实现的生成接口与证据边界
+记录UTC：2026-11-06T08:26:25.164053+00:00。
+
+一、实现与验证到哪一步
+当前generation/joint_sampler.py已经实际实现sample_joint(ensemble, context_z, response, *, seed, n_draws, return_auxiliary=False)。输入是冻结的三NIG后验、N行完整两代理坐标、共享响应变换；输出native_draws[n_draws,N]和生成来源元数据。每个draw共享一个H、一组beta和sigma²，行残差各自独立。
+已完成一次固定旧人工two-row fixture的131072draw：保存样本独立审计PASS，收据SHA256=efc96e9bc36487c1b7a982732fa51915f7257bfc1c742bddfb6ffff0ad390803。独立审计只读已保存样本，没有重新采样或拟合。CDF最大偏差约0.002228、潜在协方差最大偏差约0.004745，逆/正变换最大误差约8.88e-15；均是该固定有限MC门的结果，不是所有输入/随机种子的数学证明。
+这不是新增真实材料、生成增强有效性或校准证据。generation/README_ZH.txt最后的“仅源码/未draw”属于执行前准备文字；当前执行状态应按实际START/COMPLETE与上述独立收据判定，不覆盖或篡改历史准备记录。
+
+二、低维结构究竟保留了什么
+给定H=h，状态为beta_h|s~N(m_h,s V_h)，s=sigma²~IG(alpha_h,b_h)。令N个不同材料的特征设计矩阵为Phi_h，维数d_h仅为3/4/6，L_hL_h^T=V_h。
+每一个完整生成世界r按顺序取
+ H^(r)~Categorical(pi)，s^(r)~IG(alpha_H,b_H)，
+ zeta^(r)~N_(d_H)(0,I)，epsilon^(r)~N_N(0,I)，二者独立，
+ beta^(r)=m_H+sqrt(s^(r))*L_H*zeta^(r)，
+ Z^(r)=Phi_H*m_H+sqrt(s^(r))*(Phi_H*L_H*zeta^(r)+epsilon^(r))。
+最后逐元素做Y_i^(r)=s0*inverseYJ_half(center+sd*Z_i^(r))，单位回到源bulk字段的原单位归属。
+低维H和回归系数不确定性负责“关系可能是什么”；N维epsilon仍负责每个未见材料剩余的不确定性。因此没有把完整分布强行压成低秩，也没有用少量地址码虚构N个独立测量。
+
+三、为什么不丢高维残差、也不随行重抽H
+在alpha_h>1时，潜坐标的精确条件协方差是
+ Cov(Z|H=h,D)=b_h/(alpha_h-1)*(I_N+Phi_h V_h Phi_h^T)。
+其中I_N保留完整残差秩；参数项可以低秩，但整个矩阵对N个不同未见单元仍正定。混合后
+ Cov(Z|D)=sum_h pi_h Cov(Z|H=h,D)
+           +sum_h pi_h (mu_h-mu_bar)(mu_h-mu_bar)^T，mu_h=Phi_h m_h。
+H身份的不确定性和H内参数/尺度不确定性都保留下来。即使某两行潜相关为0，有限自由度共享sigma²仍可能造成尾部/尺度依赖；不能按协方差0就删成独立。
+若将epsilon设0，生成会落在过小低秩子空间并低估残差；若每行分别抽H或beta，则会变成另一种“边缘分布乘积”，保留单行CDF却丢掉本项目VOI所用的跨材料依赖。这两种都不等价于当前联合后验。
+这里的低维是条件状态/关系身份，不是将任意N维连续随机信息无损编码进低维向量。N维残差随机数仍然存在。残差结构目前是给定共享sigma²的独立行创新，并没有学得任意高维残差协方差。
+
+四、真实使用接口的责任分界
+sample_joint是pure sampler：它不读原始材料文件，不更新模型，不调用oracle，不验证输入source/hash，也不自行去重物理身份。元数据明确写statistical_generated、samples_are_measurements=False、draw数不是材料N；调用控制器必须先验证模型状态、源码、身份与冻结来源。
+同一context可对应两个不同材料，两行仍有不同epsilon；同一个canonical材料cell不能被当作两个独立新单元抽样。已观测Y应先通过一次真实后验更新条件化，再只采样剩余未见单元；pure sampler本身不是自动clamp/身份控制器。当前实际API没有接入observed-mask的通用表格补全包装器，不能声称这一层已经执行验证。
+所有输出都是模型预测样本。可以按声明的seed复现，但重抽或复制并不增加测量。不能把它们回填为“真实标签”再喂给模型证明自己；未来做数据增强必须另有不接触已消费终端的协议，比较原始训练与增强训练在新真Y上的效果。
+本接口的N指多个材料的同一缺失Y（bulk）联合向量，已知输入是两个完整代理。它没有实现一个配方几十个性质的任意mask联合生成，也不生成配方/A/G；扩到多性质时需明确残差跨性质结构和数据依据，不把N换个名字当已实现。
+
+五、数值及论文主张
+alpha>1保证潜协方差和该YJ模型下的原生CRPS一阶矩需求；原生YJ逆函数正尾近似二次增长，原生方差还需更强的自由度条件（nu>4），高阶样本协方差误差更不能随意当Gaussian。当前fixture nu6的latent四阶矩存在，但原生四阶矩可能不稳定/不存在，所以真实门只对nativeCDF做检查，没有捏造native covariance的Gaussian MCSE。
+API保留logweights；极小概率转成浮点抽样概率可下溢，元数据明确计数，不加正概率floor；不承诺无限精度。向量化不需构造N×N Cholesky，但当前会存n_draws×N样本，不能据两行fixture宣称大规模材料生成速度/内存优势已证明。
+这套表示是经典BMA与NIG后验预测的清晰实现，不是新的Bayes算法，也不是agent本身。agent/闭环还需要真正的查询、先预测后披露、成本和模型更新；假设库扩展需未来独立纪元与新验证预算，不能靠采样让经典BMA自动长出此前先验质量为0的H。当前已有的是：一个保留高维残差和共享关系身份、可审计的联合概率生成接口，以及一次通过的人工有限MC核查；材料效果由正在进行的独立真实反馈试验另行决定。

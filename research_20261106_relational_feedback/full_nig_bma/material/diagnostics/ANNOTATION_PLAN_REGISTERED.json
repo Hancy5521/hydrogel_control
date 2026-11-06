@@ -1,0 +1,17 @@
+{
+  "actual_utc": "2026-11-06T08:34:01.262786+00:00",
+  "status": "REGISTERED_BEFORE_TERMINAL_Y_DISCLOSURE",
+  "source_sha256": "cc20e932553b562d4d353a2a5d9642596fdf507d3bffc0ef44507ef616b7e017",
+  "visible_input": {
+    "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\material\\forecast_once\\VISIBLE_INPUTS.json",
+    "sha256": "997b38cd276975303012ca968aa3203971deb020b8b659e57451a366c33ae9ca"
+  },
+  "fixed_ordered_rules": [
+    "contains O",
+    "else contains any F Cl Br I",
+    "else contains any S Se Te",
+    "remaining"
+  ],
+  "scope": "secondary descriptive analysis only; fixed main6policies/96targets unchanged; formula signatures not chemical phase labels; no subgroup efficacy claims before actual scores",
+  "prohibited": "no new selection, fits, target reads or tuning; all groups including small ones retained; source is same JARVIS not independent materials evidence"
+}

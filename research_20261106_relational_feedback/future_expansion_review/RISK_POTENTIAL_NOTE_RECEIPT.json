@@ -1,0 +1,17 @@
+{
+  "status": "SOURCE_ONLY_MATHEMATICAL_TASK_AND_INTERFACE_NOTE",
+  "actual_utc": "2026-11-06T08:34:53.526561+00:00",
+  "note_sha256": "7fee7e8affb5606490b6127dd4c6897b86f70e386511fa4e8c780029e33fd91c",
+  "derivation": "Direct conditional expectation and variance expansion for fixedjointmodel/fixedtargetset; no external theorem relied on",
+  "fixedtarget_model_expected_gain_not_actual_monotonicity": true,
+  "growth_changes_target_definition_and_normalization": true,
+  "belief_weights_not_resource_allocation": true,
+  "same_report_cell_repeat_not_independent_residual": true,
+  "current_sampler_ids_validation_added": false,
+  "existing_MC_gate_modified_or_rerun": false,
+  "current7_science_sources_modified": false,
+  "current_material_prequery_or_terminalY_artifacts_read": 0,
+  "models_executed_or_new_labels_generated": 0,
+  "hypothesis_expansion_executed": false,
+  "next": "Rootcontinuescurrentfixedtrial. Future repair/growth must be compared on commonfixedtargets and separately reservednewgroups, not changing objective denominators."
+}

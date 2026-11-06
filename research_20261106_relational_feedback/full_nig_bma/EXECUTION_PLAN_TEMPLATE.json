@@ -1,0 +1,38 @@
+{
+  "status": "TEMPLATE_NOT_AUTHORIZATION",
+  "approved_for_execution": false,
+  "actual_registered_utc": null,
+  "scope": "ONE_FIXED_SYNTHETIC_FULL_NIG_BMA_FIXTURE_NO_MATERIAL",
+  "proposal_sha256": "6ac2e7fc802bc22afb7dbd658d29e00efcae6d9c119bc3d5f9549b1efc715521",
+  "source_sha256": {
+    "relation_posterior.py": "1d74cde91519ce282c6ebee54e53807a2a79be0cebf19e06221eb4f16e8b7528",
+    "risk_field.py": "cda5178b9c5138df647a0b9fffab2da30a19bde6082aa6fd4cc8b0910c6b92aa",
+    "run_gate.py": "707eb494a6a4fbf5c6dc3f7ca8280ddf493bde90324b2b6c9779a76a3a258d1e"
+  },
+  "criteria": {
+    "conditional_NIG_vs_bivt_parameter_absolute": 2e-10,
+    "conditional_parameter_relative": 2e-10,
+    "Hweight_absolute": 2e-12,
+    "conditional_mixture_CDF_absolute": 2e-11,
+    "nativeVOI_independent_reference_absolute": 0.0002,
+    "nativeVOI_reference_relative": 2e-05,
+    "final_refinement_diagnostic_absolute": 2e-05,
+    "ideal_tail_account_absolute": 0.0001,
+    "signedbetween": "record raw; claimnegative only beyond numerical diagnostic uncertainties",
+    "decomposition_closure": "finiteintegration residual allowed only within recorded numericaldiagnostics +2*nativetargetwidth*sum_h(w_h*2*SF_tnu_h(64)); no hiddenrenormalization"
+  },
+  "levels": [
+    32,
+    64,
+    128,
+    256
+  ],
+  "Lv": 32,
+  "Lz": 64,
+  "notes": [
+    "Root must approve actual UTC and source/fixture hashes before the unique execution.",
+    "The raw signed between term is diagnostic and is not clipped.",
+    "Main full-mixture information value includes within-H parameter learning.",
+    "Independent reference is separate; producer PASS does not imply reference PASS."
+  ]
+}

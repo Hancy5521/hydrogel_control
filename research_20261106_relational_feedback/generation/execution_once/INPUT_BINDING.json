@@ -1,0 +1,179 @@
+{
+  "fixture_file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\execution_once\\RESULTS.json",
+  "fixture_sha256": "27f834b26bcfb03fb610aeb0d9acdd2a28159afe8396f8cbcba8780775dfdef9",
+  "proposal_sha256": "7c9a99e2ab34a2b64e3ad579f02357791a7df4b09eb3e4ed6035fc77f62a4ca8",
+  "plan_sha256": "a937c254f7960809ce2415566e96f1b320e3b315974629dcd12b5f9cd8a5fb07",
+  "source_sha256": {
+    "joint_sampler.py": "5b77cde6f6356eb977596ea89564da04e95a0e57688414d142d40442cd44bfae",
+    "sampling_gate.py": "e4d0c2abf26491bc0f858fcf37528666a7bfce0896a93f221e17770d92d9adb9"
+  },
+  "seed": 20261106,
+  "n_draws": 131072,
+  "actual_input": {
+    "ensemble": {
+      "models": [
+        {
+          "id": "affine",
+          "state": {
+            "mean": [
+              0,
+              0.6,
+              -0.2
+            ],
+            "V": [
+              [
+                0.5,
+                0.6,
+                0.0
+              ],
+              [
+                0.6,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.5
+              ]
+            ],
+            "alpha": 3.0,
+            "b": 1.5,
+            "labeled_updates": 0
+          }
+        },
+        {
+          "id": "interaction",
+          "state": {
+            "mean": [
+              0,
+              0.6,
+              -0.2,
+              0.5
+            ],
+            "V": [
+              [
+                0.5,
+                -0.6,
+                0.0,
+                0.0
+              ],
+              [
+                -0.6,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.5,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.25
+              ]
+            ],
+            "alpha": 3.0,
+            "b": 1.5,
+            "labeled_updates": 0
+          }
+        },
+        {
+          "id": "fullquad",
+          "state": {
+            "mean": [
+              0,
+              0.6,
+              -0.2,
+              0.5,
+              0.25,
+              -0.15
+            ],
+            "V": [
+              [
+                0.5,
+                0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.5,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.25,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.25,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.25
+              ]
+            ],
+            "alpha": 3.0,
+            "b": 1.5,
+            "labeled_updates": 0
+          }
+        }
+      ],
+      "log_weights": [
+        -1.6094379124341003,
+        -1.2039728043259361,
+        -0.6931471805599453
+      ],
+      "expansion_transform": null,
+      "response_coordinate": "shared_fixed_synthetic_response",
+      "true_label_updates": 0
+    },
+    "context_z": [
+      [
+        0.5,
+        -1.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "response": {
+      "center": 0.5,
+      "sd": 0.7,
+      "s0": 2.0
+    }
+  },
+  "input_sha256_before": "fa02da7adb262d0b983de8a47ebf0d0788b29ef0e2942351c98174e12b0a4d58",
+  "artificial_input_not_material": true
+}

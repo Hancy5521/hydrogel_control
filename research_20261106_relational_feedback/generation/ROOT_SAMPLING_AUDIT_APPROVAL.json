@@ -1,0 +1,8 @@
+{
+  "scope": "INDEPENDENT_STORED_JOINT_SAMPLES_ONCE",
+  "approved": true,
+  "actual_utc": "2026-11-06T08:18:59.869035+00:00",
+  "plan_sha256": "cd64731bd6045079d9dd1e8cf329dce41aca49e76298a5a424b8498aaec9da60",
+  "script_sha256": "5053a8e30d5dbea3410004831bc19f1f34c8da1e31d0ac157e90833c40f99ab5",
+  "no_redraw_or_main_forecast_change": true
+}

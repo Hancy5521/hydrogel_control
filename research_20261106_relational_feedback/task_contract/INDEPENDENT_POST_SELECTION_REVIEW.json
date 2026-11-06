@@ -1,0 +1,49 @@
+{
+  "actual_utc": "2026-11-06T07:30:39.036691+00:00",
+  "status": "PASS_INDEPENDENT_POST_SELECTION_METADATA_ONLY_REVIEW",
+  "selected_role_file": {
+    "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\task_contract\\selection_once\\ROLE_SELECTION.json",
+    "sha256": "18ab839983759446fa395cb1e713bbb457c58a5c741ab24d12993403e4f9cd2c"
+  },
+  "selector_source_sha256": "5ca08dbc3430c6a8ced8697941dc2b2b22d0bb56f9368adb38b688fd77d01589",
+  "selection_plan_sha256": "42b164f68e4c6da54460cc69aa53c6a30756818a4d97c1eda0744f8aa9f0d3d9",
+  "all7_metadata_input_hashes_verified": true,
+  "metadata_allowed_identity_fields_only": [
+    "artifact_native_index",
+    "component_id",
+    "composition_amounts",
+    "jid",
+    "mpid",
+    "normalized_composition",
+    "raw_row_zero_based"
+  ],
+  "original_components": 8842,
+  "eligible_rows": 11020,
+  "prior_cohort_exclusions": [
+    40,
+    256,
+    256,
+    224,
+    152
+  ],
+  "whole_prior_excluded": 928,
+  "remaining_before": 7914,
+  "selected_roles": {
+    "warm": 32,
+    "pool": 32,
+    "terminal": 96
+  },
+  "eligible_sibling_rows_reserved": 196,
+  "remaining_after": 7754,
+  "registered_hash_prefix": "relational_feedback_bma_onlyY_v1|",
+  "independent_hash_order_and_min_native_row_representatives_recomputed": true,
+  "common_setup_cells": 352,
+  "raw_gzip_opened_hashed_decoded": false,
+  "SUT_selector_import_or_execution": false,
+  "new_labels_fits_queries_or_scores": 0,
+  "limits": [
+    "Eligible-only metadata enumerates196 knownsiblings; ineligible source siblings not enumerated but entire canonical sourcecomponents remain reserved.",
+    "All160 groups consumed for development, not independent finalconfirmation.",
+    "Metadata review grants no propertyaccess or fit; separate actual source/scienceprotocol and approvals required."
+  ]
+}

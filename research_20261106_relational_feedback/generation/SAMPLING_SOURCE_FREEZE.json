@@ -1,0 +1,13 @@
+{
+  "status": "SOURCE_FROZEN_AST_ONLY_NO_DRAWS",
+  "actual_utc": "2026-11-06T08:05:53.543966+00:00",
+  "source_sha256": {
+    "joint_sampler.py": "5b77cde6f6356eb977596ea89564da04e95a0e57688414d142d40442cd44bfae",
+    "sampling_gate.py": "e4d0c2abf26491bc0f858fcf37528666a7bfce0896a93f221e17770d92d9adb9"
+  },
+  "proposal_sha256": "7c9a99e2ab34a2b64e3ad579f02357791a7df4b09eb3e4ed6035fc77f62a4ca8",
+  "fixture_sha256": "27f834b26bcfb03fb610aeb0d9acdd2a28159afe8396f8cbcba8780775dfdef9",
+  "driver_primitive_summary_not_independent_validation": true,
+  "primary_material_7sources_and_2core_unchanged": true,
+  "sampler_original_bytes_preserved": true
+}

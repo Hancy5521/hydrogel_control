@@ -1,0 +1,25 @@
+{
+  "actual_utc": "2026-11-06T08:38:14.713864+00:00",
+  "extends_ledger_sha256": "a6ef29a8becaed00adc5cb48e6af56b2758b84682b70a6a456aa8cbe54179b2c",
+  "source": {
+    "title": "Competition and Cooperation in Catalytic Selfreplication",
+    "authors": [
+      "J Hofbauer",
+      "P Schuster",
+      "K Sigmund"
+    ],
+    "year": 1981,
+    "journal": "Journal of Mathematical Biology 11:155-168",
+    "url": "https://homepage.univie.ac.at/josef.hofbauer/81jmb_HSS.pdf",
+    "read_depth": "extracted abstract/introduction/model sections pages0-4 plus generalized hypercycle setup/theorem statement pages7-8; no full proof read",
+    "doi": "not verified",
+    "license": "copyright Springer; author-hosted PDF read, not downloaded or redistributed"
+  },
+  "access_notes": [
+    "PDF14pages text available",
+    "page7 screenshot timeout; page8 screenshot source returned but no visual rendering inspected; no claim of visual QA"
+  ],
+  "scientific_increment": "The chemical persistence result assumes cyclic catalytic coupling and strictly positive growth factors. Our statistical predictive gains do not inherit those assumptions. Treat Eigen as design inspiration, separate belief weights from finite experiment/compute resources, and verify useful cross-task transfer on true measurements. No chemical-dynamics theorem claimed for agents.",
+  "current_main_science_changed": false,
+  "new_material_reads_fits": 0
+}

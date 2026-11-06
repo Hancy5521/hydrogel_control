@@ -1,0 +1,51 @@
+{
+  "actual_recorded_utc": "2026-11-06T06:19:57.384774+00:00",
+  "queries": [
+    {
+      "q": [
+        "active learning Bayesian model averaging regression materials",
+        "model discrimination CRPS sequential design",
+        "active learning model selection expected loss reduction regression"
+      ],
+      "tool": "web",
+      "result": "identified three primaryneighbors; ignored secondary/AI-summary pages"
+    },
+    {
+      "q": [
+        "Autonomous efficient experiment design for materials discovery with Bayesian model averaging arxiv",
+        "A Mutual Information Lower Bound for Multimodal Regression Active Learning arxiv"
+      ],
+      "result": "primaryAPS/arxiv andICML2026workshopstatus, notmainconferenceacceptedclaim"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Autonomous Efficient Experiment Design for Materials Discovery with Bayesian Model Averaging",
+      "doi": "10.1103/PhysRevMaterials.2.113803",
+      "url": "https://arxiv.org/abs/1803.05460",
+      "version": "2018article; arxivversionnotpinnedbeyondabs",
+      "reading_depth": "primary search abstract+introductionexcerpt; APS fulltextopen401 so nofullreadclaim",
+      "license": "unknown, nofulltextcopied",
+      "summary": "Materials BMA plus Bayesian optimization already learns promising compounds and model identity. BMA itself is not our novelty."
+    },
+    {
+      "title": "Active learning accelerates electrolyte solvent screening for anode-free lithium metal batteries",
+      "doi": "10.1038/s41467-025-63303-7",
+      "url": "https://www.nature.com/articles/s41467-025-63303-7",
+      "version": "published2025-09-25",
+      "reading_depth": "primaryinstitutionalPDFsearchabstract andmethodsfeature/model/acquisitionexcerpts; publisherfullpagepartial then nonretryablecookieredirect500",
+      "license": "notverifiedhere, nofulltextcopied",
+      "summary": "Four GP kernels are combined by BMA and weighted EI for electrolyte solvent optimization. Material BMA active loops have direct precedent; target distribution completion remains a distinct evaluation task, not a first-principles invention."
+    },
+    {
+      "title": "A Mutual Information Lower Bound for Multimodal Regression Active Learning",
+      "doi": "10.48550/arXiv.2605.14917",
+      "url": "https://arxiv.org/html/2605.14917v1",
+      "version": "v1,2026-05-14; separateprimaryOpenReviewPDFsaysICML2026workshopaccepted, notmaintrack",
+      "license": "CCBY-SA4.0 shownarxivHTML",
+      "reading_depth": "abstract/intro/relatedwork/sections2.1-2.2selected; tableofcontents only forlaterproofsandexperiments, notfullread",
+      "summary": "Fixed independent epistemic/aleatoric indices and Gaussian-mixture entropy bounds give a multimodal regression acquisition. It explicitly warns against moment-only uncertainty; simply adding two latent indices/mixtures would not be distinct. Our possible route must target missing-property conditional laws and genuine feedback, with all within-hypothesis dependencies retained."
+    }
+  ],
+  "reading_not_copying": "Noalgorithmimplementationorsourcecodeborrowedinthisphase; relevantpriorproper-scoreBEMPS/2025Fishkov remainparentledger"
+}

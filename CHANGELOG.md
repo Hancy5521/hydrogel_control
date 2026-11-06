@@ -1,3 +1,7 @@
+## 2026-11-06 Conditional relation feedback and joint generation
+
+Added a separately reviewed namespace with three-hypothesis NIG/BMA code, native proper-score acquisition, actual160-component development protocols, aggregate42-row results, independent state/all4080score audits and the fixed synthetic joint-sampler check. Same final openloop set and slightly stronger frozen-weight control are explicit; no generated label is a measurement. Complete local resources remain separate. All old science and MLST are unchanged; local archive does not imply remote upload or publication readiness.
+
 ## 2026-11-06 Native riskfield and active-Y development checkpoint
 
 Added a separate reviewed namespace with six program modules, fixed protocols/metadata, synthetic V1 failures/V2 repair, aggregate33-row report and independent audits. Complete local resource v2 archive is separately hashed. Six actual-label query trajectories are counterfactual reuse of the same24pool; native Student/Gaussian/open-loop paths coincide. Frozen MLST and prior studies remain unchanged; new public refs are pending local root commit/bundle, with no remote upload implied.

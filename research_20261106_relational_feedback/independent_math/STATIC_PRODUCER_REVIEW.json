@@ -1,0 +1,31 @@
+{
+  "actual_utc": "2026-11-06T06:30:22.642801+00:00",
+  "status": "PASS_STATIC_FIXED8_MECHANISM_SOURCE_NOT_NUMERIC_SUCCESS",
+  "source_sha256": {
+    "hypothesis_model.py": "8022a91be02c6863d1134e26bc25025a45bdb35466a51b3a130683c68926c730",
+    "risk_message.py": "c33468fa17b74a5ad41f1398578974b801b50c80cf6ab5f62cbde72fa5373a40",
+    "run_bounded_gate.py": "b7be749024709cebb2addd010f2a752cf5beb3a3a6a665981dbf86a9a4411add"
+  },
+  "proposal_sha256": "b44c8645ba08594be4cdaa4c4449f0a892a8e58e9d510f959fd5c80f8e3ee635",
+  "checks": {
+    "fixed3Gaussianproducts_conditionalindependence": true,
+    "all8fixturesasproposal": true,
+    "posterior_logsumexp_correct": true,
+    "GaussianDincludes_nonzero_diagonal": true,
+    "centered_weight_covariance_integral": true,
+    "querydensity_original_notrenormalized": true,
+    "native_target_exact_analytic_infinite_domain": true,
+    "main_nativeCDF_reference_finite_targettail_account": true,
+    "negative_null_roundoff_preserved": true,
+    "quad_warning_error_and_successflag": true,
+    "fixed8no_parameter_or_hypothesis_scan": true,
+    "no_newmaterialfit_read_or_new_BMAclaim": true
+  },
+  "limits": [
+    "Producer COMPLETE records execution, not mechanism success before independent value/rank/null checks.",
+    "Centered covariance truncated atquery[-14,14]differs infinitesimallyfromfullcovariance; originaldensitymissingtail bounded, no renormalization.",
+    "quad_vec error diagnostic not rigorous floatingpoint certificate."
+  ],
+  "review_numeric_executions": 0,
+  "decision": "root may freeze actual UTC and sources, approve once producer, then pin result to independent nativeCDF audit."
+}

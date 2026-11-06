@@ -1,0 +1,12 @@
+{
+  "scope": "RELATIONAL_FEEDBACK_FULL_NIG_BMA_ONLYY",
+  "approved": true,
+  "actual_utc": "2026-11-06T09:01:16.068197+00:00",
+  "plan_sha256": "fca8f2669d62a89d348a0f8beec93b291929bf15076567ff41b6e3faeb243521",
+  "allowed_phases": [
+    "score_after_freeze"
+  ],
+  "forecast_freeze_sha256": "0cdaa614e18c28ab6cb5f384e248968fe0b84cdd62a0f336cce588463acbb0ef",
+  "independent_all_saved_state_audit_sha256": "723caf12427ec6b61a975e26d4fa66215a932267101c0ac90d04bf2aa3c851f8",
+  "terminalY_first_evaluation_after_all4032_laws_freeze": true
+}

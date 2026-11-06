@@ -1,0 +1,10 @@
+{
+  "actual_utc": "2026-11-06T08:11:41.287727+00:00",
+  "status": "SAMPLES_GENERATED_PRIMITIVES_SAVED_NOT_INDEPENDENTLY_VALIDATED",
+  "results_sha256": "4f8f18d1927bd9f8226cf0d15eb549aadcad0d9c05a54cf24ba35a4c02ce6c8e",
+  "draws_sha256": "244b7a78e742bdcaf102ed3a19d57063813fd861f4020c6a40c8e4120f55b377",
+  "n_draws_not_new_materialN": true,
+  "new_material_N": 0,
+  "model_updates": 0,
+  "material_source_reads_or_fits": 0
+}

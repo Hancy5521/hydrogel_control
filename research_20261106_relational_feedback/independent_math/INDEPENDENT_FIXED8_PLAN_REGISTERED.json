@@ -1,0 +1,51 @@
+{
+  "actual_utc": "2026-11-06T06:32:04.930125+00:00",
+  "status": "REGISTERED_BEFORE_INDEPENDENT_NUMERIC_EXECUTION",
+  "scope": "INDEPENDENT_RELATIONAL_FIXED8_NATIVE_CDF_ONCE",
+  "independent_sources": {
+    "native_cdf_reference.py": "9f90c3e50e0a00d397940836a041e937b7c8509555194c2f21b76380665d986e",
+    "audit_fixed_eight.py": "096b731686a8c59bf3a5ca47a8787dddfbbae746520f5f3c44ed57fc4f0031cc"
+  },
+  "inputs": {
+    "producer_result": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\execution_once\\RESULTS.json",
+      "sha256": "94e966d61c90a94453cb33d55fc2c398d626d98416ab5e1a018fea0402adf17c"
+    },
+    "producer_plan": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\EXECUTION_PLAN_REGISTERED.json",
+      "sha256": "b603d22b4d481984caefcecd52ecec0bdcf268450802ac00e4c8f1aced80e8fe"
+    },
+    "preoutput_proposal": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\independent_math\\BOUNDED_SYNTHETIC_PROTOCOL_PROPOSAL.json",
+      "sha256": "b44c8645ba08594be4cdaa4c4449f0a892a8e58e9d510f959fd5c80f8e3ee635"
+    },
+    "independent_preoutput_freeze": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\independent_math\\INDEPENDENT_SOURCE_PREOUTPUT_FREEZE.json",
+      "sha256": "5896f04b8d070179a890ed46e0750706c668be82a8ebf371858c2eff33a6eda2"
+    },
+    "static_source_review": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\independent_math\\STATIC_PRODUCER_REVIEW.json",
+      "sha256": "c5f5f4386d1432d03e3fd2a4bdf13bb3dac88ce81fc1a9038abb4f84f72ba438"
+    }
+  },
+  "criteria": {
+    "fixed_action_values": 8,
+    "native_reference_abs": 2e-08,
+    "native_reference_rel": 2e-07,
+    "posteriorweights_abs": 2e-12,
+    "null_covariance_rowsum_symmetry_PSD_abs": 2e-10,
+    "rank": "gain margin exceeds sum of original finitequad error estimates+ideal tailbounds+declared tolerances; no tolerance respecification",
+    "native_target_bounds": [
+      -12,
+      12
+    ],
+    "native_query_bounds": [
+      -14,
+      14
+    ],
+    "querydensity_renormalized": false,
+    "IntegrationWarning": "error, all8attempted; retain failures",
+    "SUT_imports_newmaterial_or_fit": 0
+  },
+  "basis": "Original3H8scalar proposal and preoutput sources preserved; producer complete is not accepted as mechanism result before independent values/nulls/ranks."
+}

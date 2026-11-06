@@ -1,0 +1,29 @@
+完整NIG-BMA单fixture门：需要核对的公式
+
+每H的特征顺序严格见JSON。scalarNIG参数为 mean m,V,IG shape alpha,scale b，nu=2alpha。query/target不同物理行，残差独立但回归参数共享。
+phi_q,phi_t；h_q=1+phi_q V phi_q；h_t=1+phi_t V phi_t；rho=phi_q V phi_t/sqrt(h_q h_t)。
+各H query边际 t_nu(mu_q,s_q²)，mu_q=phi_q m,s_q²=b/alpha*h_q。
+旧query密度p_h(z)先更新logw_h(z)=logw_h+log p_h(z)−logsumexp，再用同一个实际modeledY z更新每H的NIG。
+共同nativeYJ/affine响应Jacobian对所有H相同，所以H权重中消去；不得忘记目标原单位风险积分的Jacobian s0*sd*g'(center+sd*u)。
+
+条件target分量：z_q=(z−mu_q)/s_q，df=nu+1，mu_cond=mu_t+rho*s_t*z_q，
+s_cond=s_t*sqrt((nu+z_q²)/(nu+1)*(1−rho²))。
+它应与独立denseprecision NIG actualY update后对target预测完全一致，而非只比较某一个CDF点。
+完整 target条件CDF为 sum_h w_h(z) T_(nu_h+1)((u−mu_cond,h)/s_cond,h)。
+原始targetCDF为 sum_h w_h T_nu_h((u−mu_t,h)/s_t,h)。
+mainDelta=E_Z ∫[F_mix(y|Z)−F_mix(y)]²dy，native y=s0*g(center+sd*u)。
+
+R_mix=sum_h w_h R_h+B，B=.5 sum_hk w_h w_k ∫(F_h−F_k)^2dy。
+Delta_total=sum_h w_h Delta_h+Bbefore−E_Z Bafter(Z)。
+当前t=(0,0)，各basis只留下intercept；每H m_intercept0,V_intercept .5,alpha3,b1.5，所以三个target marginal t完全相同，Bbefore=0。
+query context非零，各H mean/feature/V不同，真实query可改变模型权重，conditional target CDF也不同，E Bafter应正，signedbetween应负。
+因此用本一个fixture即能发现删within-H、误把Bafter当正收益或强行夹负between的错误。
+
+有限query截断的closure不能要求机器精确0。producer按每个component自己的[mu_q−64s_q,mu_q+64s_q]原密度积分，fullmixture posterior权重仍基于未截断query密度。
+定义a_h(z)=w_h p_h(z)1_{I_h}(z)，p_cut=sum a_h，fullposterior pi_h=w_h p_h/p。
+因初始targetCDF各H相同，finite closure缺口的绝对值≤目标native区间宽W×∫sum_h|a_h−p_cut*pi_h|dz
+≤2W×sum_h[w_h P_h(Z不在I_h)]
+=2W sum_h[w_h*2SF_tnu_h(64)]。
+这是cutoff误差账，不是quad/CDF/IEEE误差证书。target外尾及各数值积分误差还须单列；无密度重新归一化。
+
+本次只做这个固定ensemble×query×target的完整native风险，加两个人工modeled读数±1的解析posterior/conditionalCDF探针。不做参数扫描/新材料拟合，不把机制成功称为材料效果或新BMA理论。旧12reference只复用其保存表和收据，不重积分。

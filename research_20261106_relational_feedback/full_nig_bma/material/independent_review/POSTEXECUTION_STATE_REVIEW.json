@@ -1,0 +1,270 @@
+{
+  "actual_utc": "2026-11-06T09:06:37.404284+00:00",
+  "status": "READ_ONLY_POSTEXECUTION_STATE_REVIEW_ACTUAL_PASS",
+  "actual_receipt": {
+    "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\material\\independent_review\\independent_state_execution_once\\INDEPENDENT_FRESH160_STATES_AUDIT.json",
+    "sha256": "723caf12427ec6b61a975e26d4fa66215a932267101c0ac90d04bf2aa3c851f8"
+  },
+  "checked": {
+    "terminal_laws": 4032,
+    "prequery_laws": 48,
+    "feedback_NIG_updates": 144,
+    "GP_RF_saved_states": 18,
+    "all_terminal_contexts": 96,
+    "distinct_pool_target_cells_revealed_acrosscounterfactualpolicies": 19
+  },
+  "max_absolute_errors": {
+    "warm_transform_native_first_scale_s0": 1.4210854715202004e-14,
+    "warm_transform_u_center_warm": 4.440892098500626e-16,
+    "warm_transform_u_sample_SD_warm": 6.661338147750939e-16,
+    "response_center": 4.440892098500626e-16,
+    "response_sd": 1.1102230246251565e-16,
+    "response_s0": 1.4210854715202004e-14,
+    "reference_feature_center": 0.0,
+    "reference_feature_sd": 2.220446049250313e-16,
+    "known_pool_coordinates": 1.1102230246251565e-15,
+    "known_terminal_coordinates": 2.220446049250313e-15,
+    "warm_logweights": 7.993605777301127e-15,
+    "warm_expansion_center": 2.220446049250313e-16,
+    "warm_expansion_sd": 3.3306690738754696e-15,
+    "warm_NIG_mean": 3.739646206866399e-16,
+    "warm_NIG_V": 2.498001805406602e-16,
+    "warm_NIG_alpha": 0.0,
+    "warm_NIG_b": 3.552713678800501e-15,
+    "closed_warm_log_evidence": 7.105427357601002e-15,
+    "common_native_jacobian": 0.0,
+    "native_warm_log_evidence": 2.842170943040401e-14,
+    "warm_predictive_evidence_increment": 1.176836406102666e-14,
+    "warm_model_logweights": 1.021405182655144e-14,
+    "checkpoint_logweights": 1.5987211554602254e-14,
+    "checkpoint_expansion_center": 2.220446049250313e-16,
+    "checkpoint_expansion_sd": 3.3306690738754696e-15,
+    "checkpoint_NIG_mean": 4.649058915617843e-16,
+    "checkpoint_NIG_V": 2.498001805406602e-16,
+    "checkpoint_NIG_alpha": 0.0,
+    "checkpoint_NIG_b": 7.105427357601002e-15,
+    "mixture_lambda": 0.0,
+    "mixture_s0": 1.4210854715202004e-14,
+    "mixture_logweights": 1.5987211554602254e-14,
+    "mixture_location": 1.9984014443252818e-15,
+    "mixture_scale": 6.661338147750939e-16,
+    "mixture_df": 0.0,
+    "mixture_displayweights": 4.3298697960381105e-15,
+    "t_lambda": 0.0,
+    "t_location": 8.881784197001252e-16,
+    "t_scale": 3.3306690738754696e-16,
+    "t_df": 0.0,
+    "t_native_first_scale_s0": 1.4210854715202004e-14,
+    "prequery_logweights": 1.5987211554602254e-14,
+    "prequery_expansion_center": 2.220446049250313e-16,
+    "prequery_expansion_sd": 3.3306690738754696e-15,
+    "prequery_NIG_mean": 4.579669976578771e-16,
+    "prequery_NIG_V": 2.498001805406602e-16,
+    "prequery_NIG_alpha": 0.0,
+    "prequery_NIG_b": 7.105427357601002e-15,
+    "acquisition_logweights": 1.5987211554602254e-14,
+    "acquisition_expansion_center": 2.220446049250313e-16,
+    "acquisition_expansion_sd": 3.3306690738754696e-15,
+    "acquisition_NIG_mean": 4.579669976578771e-16,
+    "acquisition_NIG_V": 2.498001805406602e-16,
+    "acquisition_NIG_alpha": 0.0,
+    "acquisition_NIG_b": 7.105427357601002e-15,
+    "registered_readout_tol": 0.0,
+    "nativefield_target_average": 1.3877787807814457e-17,
+    "nativefield_diag_mean": 1.3877787807814457e-17,
+    "nativefield_within_mean": 1.3877787807814457e-17,
+    "nativefield_signedbetween_mean": 1.734723475976807e-18,
+    "nativefield_components_sum": 0.0,
+    "nativefield_signed_B_identity": 0.0,
+    "nativefield_closure_identity": 0.0,
+    "readout_refinement_difference": 0.0,
+    "actual_action_values_are_lastlevel": 0.0,
+    "actual_modeled_response": 1.1657341758564144e-15,
+    "afterquery_logweights": 1.5987211554602254e-14,
+    "afterquery_expansion_center": 2.220446049250313e-16,
+    "afterquery_expansion_sd": 3.3306690738754696e-15,
+    "afterquery_NIG_mean": 4.649058915617843e-16,
+    "afterquery_NIG_V": 2.498001805406602e-16,
+    "afterquery_NIG_alpha": 0.0,
+    "afterquery_NIG_b": 7.105427357601002e-15,
+    "query_evidence_from_closedmarginal": 3.552713678800501e-14,
+    "query_old_model_logweights": 1.5987211554602254e-14,
+    "query_new_model_logweights": 1.5987211554602254e-14,
+    "scalar_readout_value_saved": 0.0,
+    "GP_Xfit": 8.881784197001252e-16,
+    "GP_Xquery": 4.440892098500626e-16,
+    "GP_y_native": 0.0,
+    "GP_ymean": 2.842170943040401e-14,
+    "GP_ySD": 7.105427357601002e-15,
+    "GP_normalized_y": 8.881784197001252e-16,
+    "GP_logtheta": 0.0,
+    "RF_y": 0.0,
+    "GP_native_location": 4.547473508864641e-13,
+    "GP_native_scale": 5.258016244624741e-13,
+    "GP_variance_action_value": 2.9103830456733704e-11
+  },
+  "actual_policy_sequences": {
+    "full_native": [
+      21,
+      10,
+      30,
+      20,
+      8,
+      6,
+      1,
+      9
+    ],
+    "warm_openloop": [
+      21,
+      10,
+      30,
+      20,
+      8,
+      1,
+      6,
+      9
+    ],
+    "random": [
+      8,
+      9,
+      17,
+      19,
+      18,
+      22,
+      15,
+      14
+    ],
+    "marginal_native": [
+      10,
+      8,
+      14,
+      6,
+      5,
+      0,
+      16,
+      24
+    ],
+    "model_MI": [
+      21,
+      10,
+      30,
+      8,
+      1,
+      22,
+      5,
+      2
+    ],
+    "gp_variance": [
+      2,
+      5,
+      6,
+      8,
+      10,
+      14,
+      20,
+      21
+    ]
+  },
+  "alias_diagnostics": [
+    {
+      "left": "full_native",
+      "right": "warm_openloop",
+      "same_exact_sequence": false,
+      "same_final_set": true
+    },
+    {
+      "left": "full_native",
+      "right": "random",
+      "same_exact_sequence": false,
+      "same_final_set": false
+    },
+    {
+      "left": "full_native",
+      "right": "marginal_native",
+      "same_exact_sequence": false,
+      "same_final_set": false
+    },
+    {
+      "left": "full_native",
+      "right": "model_MI",
+      "same_exact_sequence": false,
+      "same_final_set": false
+    },
+    {
+      "left": "full_native",
+      "right": "gp_variance",
+      "same_exact_sequence": false,
+      "same_final_set": false
+    },
+    {
+      "left": "warm_openloop",
+      "right": "random",
+      "same_exact_sequence": false,
+      "same_final_set": false
+    },
+    {
+      "left": "warm_openloop",
+      "right": "marginal_native",
+      "same_exact_sequence": false,
+      "same_final_set": false
+    },
+    {
+      "left": "warm_openloop",
+      "right": "model_MI",
+      "same_exact_sequence": false,
+      "same_final_set": false
+    },
+    {
+      "left": "warm_openloop",
+      "right": "gp_variance",
+      "same_exact_sequence": false,
+      "same_final_set": false
+    },
+    {
+      "left": "random",
+      "right": "marginal_native",
+      "same_exact_sequence": false,
+      "same_final_set": false
+    },
+    {
+      "left": "random",
+      "right": "model_MI",
+      "same_exact_sequence": false,
+      "same_final_set": false
+    },
+    {
+      "left": "random",
+      "right": "gp_variance",
+      "same_exact_sequence": false,
+      "same_final_set": false
+    },
+    {
+      "left": "marginal_native",
+      "right": "model_MI",
+      "same_exact_sequence": false,
+      "same_final_set": false
+    },
+    {
+      "left": "marginal_native",
+      "right": "gp_variance",
+      "same_exact_sequence": false,
+      "same_final_set": false
+    },
+    {
+      "left": "model_MI",
+      "right": "gp_variance",
+      "same_exact_sequence": false,
+      "same_final_set": false
+    }
+  ],
+  "scientific_scope": [
+    "Fixed32warm and actualqueryprefix denseconjugate statistics/logevidence/modelweights agree with allstoredstates.",
+    "Query/evidence chronology, originalsourcecellidentity, legalaction argmax and fixedreadout refinement passed; no refit or terminaltruth read by stateaudit.",
+    "full_native and warm_openloop differ only by order within their common finalset; both also share their first4 actions. Their0/4/8 posteriorlaws should coincide within floating arithmetic.",
+    "Therefore an eventual benefit against random/MI/marginal objectives must not automatically be attributed to extra label-adaptive queryvalue over warmopenloop at the scored budgets.",
+    "Model posterior updates over threepredefined featurehypotheses do not identify a truephysical mechanism or solve arbitraryMNAR/partialunknownX.",
+    "This is a fresh development evaluation from one reportedDFTartifact, not wetmaterials or independentsource confirmation."
+  ],
+  "postreview_science_executions": 0,
+  "next": "Rootexecute alreadyregistered2271646...independent all4080 scores; only then summarize effects and limitation."
+}

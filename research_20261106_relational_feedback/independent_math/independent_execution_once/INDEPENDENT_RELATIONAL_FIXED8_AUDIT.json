@@ -1,0 +1,730 @@
+{
+  "status": "PASS",
+  "fixed_scalar_values": 8,
+  "independent_native_CDF_references": [
+    {
+      "id": "prior_qL",
+      "fixed_case": {
+        "id": "prior_qL",
+        "weights": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "query_means": [
+          -2.0,
+          2.0,
+          2.0
+        ],
+        "query_SD": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "target_means": [
+          -1.0,
+          0.0,
+          1.0
+        ],
+        "target_SD": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "native_reference": {
+        "value": 0.11420211856345217,
+        "outer_quad_error_estimate": 1.9555080349797306e-12,
+        "max_inner_quad_error_estimate": 1.320505748562567e-11,
+        "summed_error_estimate_diagnostic": 1.51605655206054e-11,
+        "inner_quad_calls": 294,
+        "ideal_arithmetic_target_tail": 3.418744312164897e-29,
+        "ideal_arithmetic_query_tail": 8.527114137972735e-32,
+        "query_density_renormalized": false,
+        "route": "direct native-query z mixture density times native-target y CDF squared; no D/C producer import",
+        "error_estimates_not_rigorous_floating_point_certificate": true
+      },
+      "independent_C": [
+        [
+          0.20621888731171006,
+          -0.10310944365585503,
+          -0.10310944365585503
+        ],
+        [
+          -0.10310944365585503,
+          0.05155472182792751,
+          0.05155472182792751
+        ],
+        [
+          -0.10310944365585503,
+          0.05155472182792751,
+          0.05155472182792751
+        ]
+      ],
+      "independent_D": [
+        [
+          1.1283791670955128,
+          1.3992824567484914,
+          2.1005090833200244
+        ],
+        [
+          1.3992824567484914,
+          1.1283791670955128,
+          1.3992824567484914
+        ],
+        [
+          2.1005090833200244,
+          1.3992824567484914,
+          1.1283791670955128
+        ]
+      ],
+      "C_quad_error_estimate": 3.531131544086266e-12,
+      "producer_value": 0.11420211856345214,
+      "min_saved_C_eigenvalue": -1.5896967414218184e-17
+    },
+    {
+      "id": "prior_qR",
+      "fixed_case": {
+        "id": "prior_qR",
+        "weights": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "query_means": [
+          -2.0,
+          -2.0,
+          2.0
+        ],
+        "query_SD": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "target_means": [
+          -1.0,
+          0.0,
+          1.0
+        ],
+        "target_SD": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "native_reference": {
+        "value": 0.11420211856345218,
+        "outer_quad_error_estimate": 1.9555079532366293e-12,
+        "max_inner_quad_error_estimate": 1.3205057444458286e-11,
+        "summed_error_estimate_diagnostic": 1.5160565397694915e-11,
+        "inner_quad_calls": 294,
+        "ideal_arithmetic_target_tail": 3.418744312164897e-29,
+        "ideal_arithmetic_query_tail": 8.527114137972735e-32,
+        "query_density_renormalized": false,
+        "route": "direct native-query z mixture density times native-target y CDF squared; no D/C producer import",
+        "error_estimates_not_rigorous_floating_point_certificate": true
+      },
+      "independent_C": [
+        [
+          0.05155472182792751,
+          0.05155472182792751,
+          -0.10310944365585502
+        ],
+        [
+          0.05155472182792751,
+          0.05155472182792751,
+          -0.10310944365585502
+        ],
+        [
+          -0.10310944365585502,
+          -0.10310944365585502,
+          0.20621888731171006
+        ]
+      ],
+      "independent_D": [
+        [
+          1.1283791670955128,
+          1.3992824567484914,
+          2.1005090833200244
+        ],
+        [
+          1.3992824567484914,
+          1.1283791670955128,
+          1.3992824567484914
+        ],
+        [
+          2.1005090833200244,
+          1.3992824567484914,
+          1.1283791670955128
+        ]
+      ],
+      "C_quad_error_estimate": 3.531131544086266e-12,
+      "producer_value": 0.11420211856345198,
+      "min_saved_C_eigenvalue": -1.1192349545434572e-17
+    },
+    {
+      "id": "after_negative_qL",
+      "fixed_case": {
+        "id": "after_negative_qL",
+        "weights": [
+          0.6945998653648461,
+          0.2855585416361259,
+          0.019841592999028095
+        ],
+        "query_means": [
+          -2.0,
+          2.0,
+          2.0
+        ],
+        "query_SD": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "target_means": [
+          -1.0,
+          0.0,
+          1.0
+        ],
+        "target_SD": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "native_reference": {
+        "value": 0.05896891510909139,
+        "outer_quad_error_estimate": 1.2671251404040347e-12,
+        "max_inner_quad_error_estimate": 8.81565946244871e-12,
+        "summed_error_estimate_diagnostic": 1.0082784602852745e-11,
+        "inner_quad_calls": 294,
+        "ideal_arithmetic_target_tail": 3.418744312164897e-29,
+        "ideal_arithmetic_query_tail": 8.527114137972735e-32,
+        "query_density_renormalized": false,
+        "route": "direct native-query z mixture density times native-target y CDF squared; no D/C producer import",
+        "error_estimates_not_rigorous_floating_point_certificate": true
+      },
+      "independent_C": [
+        [
+          0.19656008873934308,
+          -0.18378974309009147,
+          -0.012770345649251596
+        ],
+        [
+          -0.18378974309009147,
+          0.17184907618715758,
+          0.011940666902933869
+        ],
+        [
+          -0.012770345649251596,
+          0.011940666902933869,
+          0.0008296787463177254
+        ]
+      ],
+      "independent_D": [
+        [
+          1.1283791670955128,
+          1.3992824567484914,
+          2.1005090833200244
+        ],
+        [
+          1.3992824567484914,
+          1.1283791670955128,
+          1.3992824567484914
+        ],
+        [
+          2.1005090833200244,
+          1.3992824567484914,
+          1.1283791670955128
+        ]
+      ],
+      "C_quad_error_estimate": 1.993660876801046e-11,
+      "producer_value": 0.05896891510909129,
+      "min_saved_C_eigenvalue": -6.591672016818904e-20
+    },
+    {
+      "id": "after_negative_qR",
+      "fixed_case": {
+        "id": "after_negative_qR",
+        "weights": [
+          0.6945998653648461,
+          0.2855585416361259,
+          0.019841592999028095
+        ],
+        "query_means": [
+          -2.0,
+          -2.0,
+          2.0
+        ],
+        "query_SD": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "target_means": [
+          -1.0,
+          0.0,
+          1.0
+        ],
+        "target_SD": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "native_reference": {
+        "value": 0.011378873520595169,
+        "outer_quad_error_estimate": 1.610026745151115e-11,
+        "max_inner_quad_error_estimate": 1.935414568573799e-11,
+        "summed_error_estimate_diagnostic": 3.545441313724914e-11,
+        "inner_quad_calls": 252,
+        "ideal_arithmetic_target_tail": 3.418744312164897e-29,
+        "ideal_arithmetic_query_tail": 8.527114137972735e-32,
+        "query_density_renormalized": false,
+        "route": "direct native-query z mixture density times native-target y CDF squared; no D/C producer import",
+        "error_estimates_not_rigorous_floating_point_certificate": true
+      },
+      "independent_C": [
+        [
+          0.00802702343698476,
+          0.0033000079911336805,
+          -0.01132703142811844
+        ],
+        [
+          0.0033000079911336805,
+          0.0013566738439269898,
+          -0.004656681835060672
+        ],
+        [
+          -0.01132703142811844,
+          -0.004656681835060672,
+          0.015983713263179114
+        ]
+      ],
+      "independent_D": [
+        [
+          1.1283791670955128,
+          1.3992824567484914,
+          2.1005090833200244
+        ],
+        [
+          1.3992824567484914,
+          1.1283791670955128,
+          1.3992824567484914
+        ],
+        [
+          2.1005090833200244,
+          1.3992824567484914,
+          1.1283791670955128
+        ]
+      ],
+      "C_quad_error_estimate": 1.6026914738819846e-11,
+      "producer_value": 0.011378873520595155,
+      "min_saved_C_eigenvalue": -2.5257262997885095e-18
+    },
+    {
+      "id": "after_positive_qL",
+      "fixed_case": {
+        "id": "after_positive_qL",
+        "weights": [
+          0.019841592999028095,
+          0.2855585416361259,
+          0.6945998653648461
+        ],
+        "query_means": [
+          -2.0,
+          2.0,
+          2.0
+        ],
+        "query_SD": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "target_means": [
+          -1.0,
+          0.0,
+          1.0
+        ],
+        "target_SD": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "native_reference": {
+        "value": 0.011378873520595167,
+        "outer_quad_error_estimate": 1.6100267528472856e-11,
+        "max_inner_quad_error_estimate": 1.9354145678683793e-11,
+        "summed_error_estimate_diagnostic": 3.545441320715665e-11,
+        "inner_quad_calls": 252,
+        "ideal_arithmetic_target_tail": 3.418744312164897e-29,
+        "ideal_arithmetic_query_tail": 8.527114137972735e-32,
+        "query_density_renormalized": false,
+        "route": "direct native-query z mixture density times native-target y CDF squared; no D/C producer import",
+        "error_estimates_not_rigorous_floating_point_certificate": true
+      },
+      "independent_C": [
+        [
+          0.015983713263179114,
+          -0.004656681835060671,
+          -0.01132703142811844
+        ],
+        [
+          -0.004656681835060671,
+          0.0013566738439269898,
+          0.0033000079911336805
+        ],
+        [
+          -0.01132703142811844,
+          0.0033000079911336805,
+          0.00802702343698476
+        ]
+      ],
+      "independent_D": [
+        [
+          1.1283791670955128,
+          1.3992824567484914,
+          2.1005090833200244
+        ],
+        [
+          1.3992824567484914,
+          1.1283791670955128,
+          1.3992824567484914
+        ],
+        [
+          2.1005090833200244,
+          1.3992824567484914,
+          1.1283791670955128
+        ]
+      ],
+      "C_quad_error_estimate": 1.6026914717312116e-11,
+      "producer_value": 0.011378873520595158,
+      "min_saved_C_eigenvalue": 0.0
+    },
+    {
+      "id": "after_positive_qR",
+      "fixed_case": {
+        "id": "after_positive_qR",
+        "weights": [
+          0.019841592999028095,
+          0.2855585416361259,
+          0.6945998653648461
+        ],
+        "query_means": [
+          -2.0,
+          -2.0,
+          2.0
+        ],
+        "query_SD": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "target_means": [
+          -1.0,
+          0.0,
+          1.0
+        ],
+        "target_SD": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "native_reference": {
+        "value": 0.05896891510909138,
+        "outer_quad_error_estimate": 1.2671251261532635e-12,
+        "max_inner_quad_error_estimate": 8.815659481651914e-12,
+        "summed_error_estimate_diagnostic": 1.0082784607805178e-11,
+        "inner_quad_calls": 294,
+        "ideal_arithmetic_target_tail": 3.418744312164897e-29,
+        "ideal_arithmetic_query_tail": 8.527114137972735e-32,
+        "query_density_renormalized": false,
+        "route": "direct native-query z mixture density times native-target y CDF squared; no D/C producer import",
+        "error_estimates_not_rigorous_floating_point_certificate": true
+      },
+      "independent_C": [
+        [
+          0.0008296787463177254,
+          0.011940666902933869,
+          -0.012770345649251596
+        ],
+        [
+          0.011940666902933869,
+          0.17184907618715758,
+          -0.18378974309009144
+        ],
+        [
+          -0.012770345649251596,
+          -0.18378974309009144,
+          0.19656008873934308
+        ]
+      ],
+      "independent_D": [
+        [
+          1.1283791670955128,
+          1.3992824567484914,
+          2.1005090833200244
+        ],
+        [
+          1.3992824567484914,
+          1.1283791670955128,
+          1.3992824567484914
+        ],
+        [
+          2.1005090833200244,
+          1.3992824567484914,
+          1.1283791670955128
+        ]
+      ],
+      "C_quad_error_estimate": 1.993660876801046e-11,
+      "producer_value": 0.058968915109091274,
+      "min_saved_C_eigenvalue": -4.489932759325191e-19
+    },
+    {
+      "id": "null_query_after_negative",
+      "fixed_case": {
+        "id": "null_query_after_negative",
+        "weights": [
+          0.6945998653648461,
+          0.2855585416361259,
+          0.019841592999028095
+        ],
+        "query_means": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "query_SD": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "target_means": [
+          -1.0,
+          0.0,
+          1.0
+        ],
+        "target_SD": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "native_reference": {
+        "value": 5.941940943973706e-32,
+        "outer_quad_error_estimate": 9.9740582352254e-32,
+        "max_inner_quad_error_estimate": 1.2312723596010986e-35,
+        "summed_error_estimate_diagnostic": 9.975289507585003e-32,
+        "inner_quad_calls": 126,
+        "ideal_arithmetic_target_tail": 3.418744312164897e-29,
+        "ideal_arithmetic_query_tail": 8.527114137972735e-32,
+        "query_density_renormalized": false,
+        "route": "direct native-query z mixture density times native-target y CDF squared; no D/C producer import",
+        "error_estimates_not_rigorous_floating_point_certificate": true
+      },
+      "independent_C": [
+        [
+          2.434031582434826e-33,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          3.26936360361242e-36
+        ]
+      ],
+      "independent_D": [
+        [
+          1.1283791670955128,
+          1.3992824567484914,
+          2.1005090833200244
+        ],
+        [
+          1.3992824567484914,
+          1.1283791670955128,
+          1.3992824567484914
+        ],
+        [
+          2.1005090833200244,
+          1.3992824567484914,
+          1.1283791670955128
+        ]
+      ],
+      "C_quad_error_estimate": 4.488232199146866e-33,
+      "producer_value": -6.371123102647525e-34,
+      "min_saved_C_eigenvalue": 3.827030863155172e-35
+    },
+    {
+      "id": "null_target_after_negative",
+      "fixed_case": {
+        "id": "null_target_after_negative",
+        "weights": [
+          0.6945998653648461,
+          0.2855585416361259,
+          0.019841592999028095
+        ],
+        "query_means": [
+          -2.0,
+          2.0,
+          2.0
+        ],
+        "query_SD": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "target_means": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "target_SD": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "native_reference": {
+        "value": 8.57052086892763e-32,
+        "outer_quad_error_estimate": 9.875981672422826e-32,
+        "max_inner_quad_error_estimate": 1.426511494108616e-31,
+        "summed_error_estimate_diagnostic": 2.4141096613508986e-31,
+        "inner_quad_calls": 252,
+        "ideal_arithmetic_target_tail": 3.418744312164897e-29,
+        "ideal_arithmetic_query_tail": 8.527114137972735e-32,
+        "query_density_renormalized": false,
+        "route": "direct native-query z mixture density times native-target y CDF squared; no D/C producer import",
+        "error_estimates_not_rigorous_floating_point_certificate": true
+      },
+      "independent_C": [
+        [
+          0.19656008873934308,
+          -0.18378974309009147,
+          -0.012770345649251596
+        ],
+        [
+          -0.18378974309009147,
+          0.17184907618715758,
+          0.011940666902933869
+        ],
+        [
+          -0.012770345649251596,
+          0.011940666902933869,
+          0.0008296787463177254
+        ]
+      ],
+      "independent_D": [
+        [
+          1.1283791670955128,
+          1.1283791670955128,
+          1.1283791670955128
+        ],
+        [
+          1.1283791670955128,
+          1.1283791670955128,
+          1.1283791670955128
+        ],
+        [
+          1.1283791670955128,
+          1.1283791670955128,
+          1.1283791670955128
+        ]
+      ],
+      "C_quad_error_estimate": 1.993660876801046e-11,
+      "producer_value": -7.226207479615887e-17,
+      "min_saved_C_eigenvalue": -6.591672016818904e-20
+    }
+  ],
+  "mechanism_outcome_dependent_next_query": true,
+  "rankings": {
+    "after_negative": {
+      "qL_minus_qR": 0.047590041588496224,
+      "sum_numeric_proxies_tail_and_tolerance": 5.4115094923677414e-08,
+      "resolved": true,
+      "higher_action": "qL"
+    },
+    "after_positive": {
+      "qL_minus_qR": -0.04759004158849621,
+      "sum_numeric_proxies_tail_and_tolerance": 5.411509492375227e-08,
+      "resolved": true,
+      "higher_action": "qR"
+    }
+  },
+  "null_controls": [
+    {
+      "id": "null_query_after_negative",
+      "raw_producer_gain": -6.371123102647525e-34,
+      "raw_native_CDF_gain": 5.941940943973706e-32,
+      "covariance_trace": 1.1454642955940097e-33
+    },
+    {
+      "id": "null_target_after_negative",
+      "raw_producer_gain": -7.226207479615887e-17,
+      "raw_native_CDF_gain": 8.57052086892763e-32,
+      "covariance_trace": 0.3692388436728183
+    }
+  ],
+  "reference_domain": {
+    "native_query": [
+      -14,
+      14
+    ],
+    "native_target": [
+      -12,
+      12
+    ],
+    "query_density_renormalized": false
+  },
+  "new_material_labels_fits_or_SUT_imports": 0,
+  "all_cases_attempted": 8,
+  "scientific_scope": "synthetic fixedparameter Gaussian product hypotheses only; classic Bayes/proper-score mechanism, not new algorithm/material evidence",
+  "actual_start_utc": "2026-11-06T06:34:07.697960+00:00",
+  "actual_end_utc": "2026-11-06T06:34:10.397638+00:00",
+  "plan_sha256": "026423639850f95d2267e8afb7f9314b16432b4715779b5b498da0d47fc0e9da",
+  "source_sha256": "096b731686a8c59bf3a5ca47a8787dddfbbae746520f5f3c44ed57fc4f0031cc",
+  "approval_sha256": "69bac5881a6719b8b58e3653e9b9848d5eccbd41ea90859e05212ebeba3e96eb",
+  "comparison_counts": {
+    "fixed_weights": 24,
+    "fixed_query_means": 24,
+    "fixed_query_SD": 24,
+    "fixed_target_means": 24,
+    "fixed_target_SD": 24,
+    "native_CDF_vs_saved_C_D": 8,
+    "centered_weight_covariance": 72,
+    "Gaussian_absolute_distances": 72,
+    "covariance_row_sum": 24,
+    "covariance_symmetry": 72,
+    "saved_C_D_readout": 8,
+    "null_gain_producer": 2,
+    "null_gain_reference": 2,
+    "prior_mirror_tie": 1,
+    "opposite_probe_mirror_LR": 1,
+    "opposite_probe_mirror_RL": 1
+  },
+  "max_absolute_errors": {
+    "fixed_weights": 1.1102230246251565e-16,
+    "fixed_query_means": 0,
+    "fixed_query_SD": 0,
+    "fixed_target_means": 0,
+    "fixed_target_SD": 0,
+    "native_CDF_vs_saved_C_D": 1.942890293094024e-16,
+    "centered_weight_covariance": 8.326672684688674e-17,
+    "Gaussian_absolute_distances": 0,
+    "covariance_row_sum": 8.326672684688674e-17,
+    "covariance_symmetry": 0,
+    "saved_C_D_readout": 2.7755575615628914e-17,
+    "null_gain_producer": 7.226207479615887e-17,
+    "null_gain_reference": 8.57052086892763e-32,
+    "prior_mirror_tie": 1.3877787807814457e-17,
+    "opposite_probe_mirror_LR": 1.3877787807814457e-17,
+    "opposite_probe_mirror_RL": 1.734723475976807e-18
+  }
+}

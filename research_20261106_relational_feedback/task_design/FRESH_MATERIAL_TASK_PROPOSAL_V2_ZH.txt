@@ -1,0 +1,80 @@
+新鲜材料条件关联反馈：六策略收敛方案V2
+状态：仅设计；尚未选择新材料角色、读取新性质、拟合或评分。不是正式登记协议。
+记录UTC：2026-11-06T06:45:08.810552+00:00；Asia/Shanghai：2026-11-06T14:45:08.810552+08:00。
+
+一、从已完成结果出发，下一问题只保留一个
+旧152组件的固定NIG已达到本轮固定强参照水平，并有真实Y反馈后的概率预测改善；但native Student、Gaussian和开放环选点相同，IVR在预算4/8最终集合也相同。真Y进入后验不等于已证明动作层的自适应收益。下一任务只问：当“条件关联形式”本身不确定时，真实Y能否通过关联假设后验，改变随后选点，并改善同成本未见材料缺失Y的恢复？
+不再调整旧df、先验、当前64终端划分或做新的同组参数救援。BMA、NIG、proper-score acquisition都是经典机制；如成功，增量在材料报告字段的身份/成本约束、原生单位跨目标风险与可证伪关联反馈，而不是宣称BMA原创或Eigen超循环已经实现。
+
+二、数据来源、身份与角色（待root定稿后才执行选择）
+只用当前冻结的Matminer jarvis_dft_3d公开发布资产：原gzip SHA256=3d0fc1315b74cf84071f16aa25bb93434dafbc83867beb75872064ac245bd747。字段沿现有源合同：A=e_form，G=gap opt，Y=bulk modulus。目标是该发布报告的Y，不将旧计算标签称新湿实验/新DFT，也不把G=0自动解释为物理原子质量。
+沿已建立eligible元数据及jid/mpid/归一组成连通组件，先排除全部旧40+256+256+224+152=928组件与其全体兄弟；8842-928=7914未消费组件。计划取新160组件，剩7754。
+建议固定prefix=relational_feedback_bma_onlyY_v1|；按SHA256(prefix+component_id)、再component_id排序，前32 warm、次32 pool、后96 terminal；每组件最小eligible raw index为代表，全部兄弟保留到相同角色。禁止按Y大小、G是否为零、模型残差或已有预测筛选。元数据选择不能读取新性质。
+160组件均明确为这轮开发角色；SHA划分不是自动独立确认。pool同32组可被多策略反事实复用，不得乘以策略数或轨迹长度扩充材料N。完整原gzip在可信解析器内物理解析，模型只经角色/策略披露接口访问字段，不声称密码学盲测。
+
+三、预算与共同信息
+warm32完整三字段=96个原生cell；pool32双代理=64；terminal96双代理=192。共同setup=352个cell。六策略各恰好8次only-Y查询，单次成本1，每策略总口径352+8=360。不同策略共用池，其48个反事实查询事件的真实来源并集最多32个pool组件，不是48份新材料。
+终端96个Y仅供最终评分，另列96个验证披露cell，不进入学习预算或任何选点输入；若讨论包含验证的整个实验，则单策略为352+8+96=456个cell，全部反事实策略的唯一来源总披露为448+union(poolY)，上限480，而非把验证标签说成免费。这里仅作既有发布数据的披露成本代理，不能冒称真实实验节约。
+全部策略获得完全相同warm、全部pool/terminal已知A/G、角色顺序及成本。每策略单独的observed ledger；不得将另一个策略已披露Y送给本策略。terminalY只能在全部策略、参照和过程预测共同冻结后揭示。随机策略种子和同分按原pool序号取首的规则都在揭值前锁定；不按置信度提前STOP。
+
+四、三种且仅三种条件响应假设
+固定同一个warm-only YJ half变换和响应affine坐标，记响应zY，代理zA,zG。所有变换在warm后固定，不随反馈重估，不依terminalY；“full Bayes”仅指给定此声明warm参考后的完整条件贝叶斯计算，不声称预处理本身已贝叶斯化。
+公共特征库：1,zA,zG,zA*zG,zA^2,zG^2。后三列的中心/尺度只由warm代理确定，三个假设使用相同列定义；若某扩展列warm方差为0，固定scale=1并记录不可辨识，不按结果删除假设。原始warm变换非法/常数情形沿冻结预处理约定停止，不重选材料救援。
+H1 affine：1,zA,zG（维数3）。
+H2 interaction：1,zA,zG,zA*zG（维数4）。
+H3 full quadratic：六列（维数6）。
+这里是条件关联候选，不是三种被证实的材料机理，也不能用后验最大者宣称真实物理规律被识别。
+一个可直接冻结的保守起点：每H beta|sigma²~N(0,sigma²V0)，V0=I；sigma²~IG(alpha0=3,b0=1.5)，H先验概率1/3。不调参、不设posteriorweight floor/temperature/保留熵，也不强制维持多模型。root可在任何新角色/性质之前审定这个具体recipe；一旦登记则不能因新终端结果改它。warm-only坐标形成的初始化属于声明的经验参考，不冒充无条件的全原生数据生成证明。
+
+五、完整BMA概率与真正反馈
+每H保留完整NIG状态(theta_h,V_h,alpha_h,b_h)。warm32按同一proper先验更新后，使用确切NIG边际似然形成warm权重，而非拿训练RMSE任意softmax。标准NIG坐标下
+ log p(z|X,H)=-n/2 log(2pi)+1/2(log|Vn|-log|V0|)+alpha0 log b0-alpha_n log b_n+logGamma(alpha_n)-logGamma(alpha0).
+三个H共用的原生响应Jacobian在相对模型权重中抵消，但原生密度/logscore中仍必须保留。所有权重用logsumexp，不用weight floor掩盖下溢，保留logweights与真实数值诊断。
+新观测必须先用旧状态求predictive likelihood，再更新权重和各H NIG：
+ pi'_h ∝ pi_h p_h(zY_query | x_query,D)；
+ state'_h = exact_NIG_update(state_h,phi_h(x_query),zY_query)。
+不得先用该Y更新系数再反算它的predictive likelihood，造成重复使用。每个H都更新真实Y，不生成伪标签、不给模拟积分样本增加训练计数。
+预测CDF F_t(y)=sum_h pi_h F_h,t(y)。联合q,t必须共享同一H，并保留该H内共享beta/sigma²导致的条件关联；不可分别为q与t独立抽H。
+任意假想query读数z下：
+ pi_h(z)=pi_h p_h,q(z)/sum_j pi_j p_j,q(z)，
+ F_t|z(y)=sum_h pi_h(z) F_h,t|q=z(y)。
+其中F_h,t|q=z是相应NIG的二元t条件化，不能替成独立marginal。当前fixedGaussian 8例的between-model C:D不等于这个完整总VOI。
+
+六、六条策略，只改变查询，不混淆预测器
+P1 full_native_BMA：最大化平均96个terminal的原生CRPS Bayes期望风险减量
+ Delta(q)=mean_t integral_y E_Z[(F_t|Z(y)-F_t(y))²]dy。
+Z来自同一个当前BMA query边际；原生YJ inverse Jacobian、H内关联和H后验权重全部保留。该模型内期望非负不保证真实材料每一步CRPS下降。
+P2 warm_openloop：可以只看warm与已知contexts预先规划8步。每步参考state用warm mean、设计更新V、alpha=alpha_warm+k/2、b=(alpha-1)b_warm/(alpha_warm-1)，当前参考权重固定pi_warm；实际预测器仍用真实Y的完整Bayes状态。
+关键：P2每次surrogate的一步lookahead仍须从这个合法混合joint进行条件化，使用其pi_h(z)∝pi_warm_h p_h,q(z)。不能在条件CDF内部也强行固定权重，否则它不再是该joint的Bayes VOI。P2只是不把已披露的实际Y反馈到下一步选点参考状态，不是另造一个无定义的非Bayes acquisition。
+P3 random：揭值前固定均匀无放回32池顺序，每次取下一未选组。
+P4 marginal_native_CRPS_uncertainty：选择query本身的原生Bayes CRPS risk最大者，即U(q)=integral F_q(y)(1-F_q(y))dy。保留完整BMA边际，使用相同原生单位；它是逐点proper-score不确定性强近邻，不做跨terminal lookahead，不故意降为弱latent-sigma参照。
+P5 model_information：选择经典模型辨识量I(H;Yq)=H(pi)-E_Z[H(pi(.|Z))]最大者。用同一当前BMA query边际做一维积分，等价sum_h pi_h integral p_h,q(z) log[p_h,q(z)/p_mix,q(z)] dz；共享可逆响应变换不改变该MI。它不看terminal风险，不是本项目发明；与P1比较的是模型辨识和目标缺失恢复的差别。若后验自然集中或各H query预测相同，则信息量趋零，禁止用floor强制制造差异。
+P6 GP_variance：用固定原生GP recipe、仅该策略真Y每次重优化，按剩余pool原生predictive variance选点；必须保留其自己GP在0/4/8的terminal预测，不只用BMA评价GP选点。
+六条主轨迹在0/4/8都输出真实数据更新后的同一BMA预测，分离“选点变化”与“换预测器”。共有prior/变换、相同暖数据和每策略8查询。
+
+七、必要而有限的预测参照与消融
+(1) P1和random两条轨迹在0/4/8输出H1 affine NIG作为同信息线性强参照；它已是BMA内部component，不能另收费或宣称额外拟合。
+(2) P1与random在0/4/8，用各自同一warm+已查询真实Y训练固定GP和all-original-leaf RF。GP proxy尺度warm固定，normalize_y只用当前真训练标签；保留全部优化warning、状态和精确RF经验CDF权重。
+(3) GP_variance自己GP预测已在P6规定；warm GP/RF真实拟合只各一次并显式复用。
+(4) 仅在P1实际查询链做frozenwarmweights预测消融：每个H仍用P1同样真Y更新，但预测时用pi_warm代替实际posteriorweights。它是有效的固定权重混合预测参照，不冒充H后验，也不新定义frozenweights acquisition。它不增加查询、材料或拟合，不使用terminalY选择权重。
+不加入新神经网络、flow/扩散、LLM、额外gate或多套可挑的配置。若warm权重自然塌缩或full方法退化为affine，诚实保留；不通过floor刻意制造结构不确定性。
+
+八、逻辑预测数与实际拟合数提前算清
+预算集合0/4/8；主BMA为6*3*96=1728个terminal预测坐标。
+P1/random同信息H1为2*3*96=576；这两条GP/RF为2*2*3*96=1152；GP策略自己GP为3*96=288；P1 frozenweights预测为288。总计4032个逻辑terminal坐标，48个主BMA过程预测；合计4080坐标，不是新的材料N。
+实际sklearn拟合仍为18：共享warm GP/RF各1=2；P1/random预算4/8各GP/RF=8；GP选点步骤1..7及最终8新增8次GP。合计13 GP+5 RF；GP step4作选点和保存自身预测复用，warm按别名复用。另有3个经典warm NIG初始化及6*8*3=144次共轭状态更新，不能把它们和18次sklearn fit或4032坐标混为样本数。
+
+九、提前定义证据与失败口径
+主效果：96终端原生CRPS，固定预算8。完整列所有策略/参照及配对差，方向“candidate减参照”为负更好；0/4也保留。强基线水平可沿预先2%描述性带，但不是正式非劣效检验或显著性保证。中位数RMSE及80/90/95区间覆盖/宽度单独报告，CRPS改善不自动修复校准。
+动作价值：必须保存每步完整剩余action分数、真正law-before-reveal、posteriorweights、原生状态hash、单次成本；比较P1/openloop路径/最终集合。真实模型权重改变只是诊断，不能本身证明物理关联或泛化。
+预测权重价值：P1对其frozenweights预测参照，在相同query链/相同componentstate下比较。若有优势，仅支持反馈权重对预测的条件贡献；并不单独隔离某一个acquisition因素的因果收益。
+如果P1与openloop仍同路径，或者同成本CRPS不够、frozenweights相同/更好，则记录没有建立额外关系反馈收益，保留强基线，不在这96上重分组/换prior/H。来源相同的fresh开发组不叫独立批次确认。
+
+十、执行前来源与独立核查需求
+先固定本设计和完整数值recipe，再仅做元数据角色选择；真实拟合/揭值前登记实际UTC、六类科学输入与源码SHA/库版本/角色和全928排除；不使用文档准备时间冒充执行前登记。
+旧源合同、eligible元数据及五份父角色收据应全部pin；公开源名相同不构成独立来源，物理字段/单位/聚合语义沿已有追溯边界。root已读BMA材料2018PRM、2025NatureCommunications及2026MI-LB workshop，须从其真实台账引用准确DOI/版本/阅读范围；不得把workshop写成主会。此前proper-score回归官方GitHub commit=5aa17d8c108e432ba6ff28abd26300eee2ceeaa7，MIT，逐点CRPS acquisition已有直接先例，不能把P4或proper-score总称当首创。
+完整NIG-BMA总VOI先在独立有界数学例验证，至少核：共享H+withinH条件化、H只剩一个时退化、全H相同预测时不凭空增加价值、权重使用更新前likelihood、mixture native CRPS不是component CRPS平均。固定Gaussian之间模型的简化8例不能代替此验证；人工积分例不当材料增量。
+正式材料全部4032+48预测必须先冻结，再揭96终端Y；第三方独立核状态/费用/时间顺序、完整混合原生CDF积分评分和覆盖事件，保留失败。这里不执行这些步骤，不要求作者提供新资源；root定稿后公共源尚可支持下一有界内部试验。
+
+V2来源与冻结状态
+本稿根据root源代码编写前的明确科学定稿方向增加且只增加model_information经典参照，采用指定alpha0=3,b0=1.5,m0=0,V0=I；模型先验等概率、warm权重由真实warm条件边际似然决定。V1原稿保留，变更均发生在新角色选择及新性质读取之前，不是已有材料结果上的改参。仍是设计文稿，后续实际协议必须记录真正UTC、输入/源码hash及独立核查；不能把本文状态冒充已执行。

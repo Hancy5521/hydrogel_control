@@ -1,0 +1,41 @@
+{
+  "status": "REGISTERED",
+  "actual_registered_utc": "2026-11-06T07:26:23.512422+00:00",
+  "script_sha256": "68033afe31672362a61f6339ba447e55b3bdf906d77cc933dd0508cb82c5591d",
+  "inputs": {
+    "saved_full_NIG_fixture": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\execution_once\\RESULTS.json",
+      "sha256": "27f834b26bcfb03fb610aeb0d9acdd2a28159afe8396f8cbcba8780775dfdef9"
+    },
+    "frozen_core": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\code\\relation_posterior.py",
+      "sha256": "1d74cde91519ce282c6ebee54e53807a2a79be0cebf19e06221eb4f16e8b7528"
+    },
+    "material_model": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\material\\code\\material_model.py",
+      "sha256": "f8cedbb1c40945b1af9f1e74b096b780f32eed36e9cd493e2e4fe2c11fe5d1bd"
+    },
+    "mixture_scoring": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\material\\code\\mixture_scoring.py",
+      "sha256": "2e1e0106763aaaa9b69bc237aceb45161e597e62372bb75241dd3fa72925becb"
+    },
+    "scalar_score": {
+      "file": "H:\\polymer_completion_public\\research\\reported_feedback_20261106T024504445715Z\\code\\score.py",
+      "sha256": "dedad40898d0d9267481f73f5adf10952bd877ea603852c447fc7cbaa04ed0c8"
+    },
+    "scalar_scope": {
+      "file": "H:\\polymer_completion_public\\research\\reported_feedback_20261106T024504445715Z\\code\\data_scope.py",
+      "sha256": "34dbdb081757395d57680cdc843f455f174e32246a2f0eba24241e0984c488ad"
+    },
+    "scalar_transform": {
+      "file": "H:\\polymer_completion_public\\research\\reported_feedback_20261106T024504445715Z\\code\\joint_model.py",
+      "sha256": "5dee15b95546e81d1006358988fba7afdcc931273f28e55edf938f83845bd259"
+    },
+    "criteria": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\independent\\SCORING_UNIT_PREOUTPUT_CRITERIA.json",
+      "sha256": "81c52745d4e35682371e18eb0fa1e09765230728961a182eaf6494fce474595b"
+    }
+  },
+  "scope": "4scores2savedartificiallaws; nativey\u00b11;7quantiles each; no newfixtureorfullVOIreintegral",
+  "new_material_values_and_fits": 0
+}

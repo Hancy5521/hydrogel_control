@@ -1,0 +1,71 @@
+{
+  "actual_utc": "2026-11-06T08:21:07.838756+00:00",
+  "status": "FROZEN_HELPER_BINDINGS_FOR_ACTUAL_FORECAST_STATE_AND_FIRSTSCORE_AUDIT_PLANS",
+  "helpers": {
+    "batch_transform": {
+      "file": "H:\\polymer_completion_public\\research\\reported_feedback_20261106T024504445715Z\\math_design\\saved_state_reference.py",
+      "sha256": "57f5e019d5f94878645c8970d26bdb581c965ce916196f87129fab5577272573"
+    },
+    "scalar_tree": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\strong_baselines\\independent_review\\snapshot_audit\\audit_baseline_forecasts.py",
+      "sha256": "046b73114e29b70b004b8a32009264b9e9025babb528a76988f95a41bac0eaa3"
+    },
+    "baseline_state": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\active_onlyy\\independent_review\\model_reference.py",
+      "sha256": "87ca63d205191fb138827346e1c42588b5986d02aeaf411d9815cb85f2ceaaab"
+    },
+    "scalar_score_functions": {
+      "file": "H:\\polymer_completion_public\\research\\reported_feedback_20261106T024504445715Z\\math_design\\audit_saved_scores.py",
+      "sha256": "d2a9ee1adffd7bd40331f91f96118532808dbd30eda22119dee8ccbdfa01226f"
+    },
+    "native_CDF": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_yj_math\\saved_score_audit\\audit_phase2_scores.py",
+      "sha256": "257551f8e648a3ce832d1ada677b25168b53a0663ad0e6133a345427f8e3322a"
+    },
+    "full_fixture_reference": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\independent\\full_native_reference.py",
+      "sha256": "eb310af6a63d61e6d29ee30577f2f1b75afc98bda569433ca5b6e5d7a4ffd352"
+    },
+    "mixture_reference": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\independent\\scoring_math_reference.py",
+      "sha256": "8e461457d28400f8a85931a212876bc1bc9dd8e7f30d2df6acbf668e3ac37a90"
+    }
+  },
+  "same_directory_or_import_dependencies": {
+    "scalar_score_functions": [
+      "imports saved_state_reference =batch_transform; newaudit loads pinned57f helper into sys.modules under exact name before old independentmodule import"
+    ],
+    "mixture_reference": [
+      "imports full_native_reference =full_fixture_reference; newaudit loads pinnedeb310 into sys.modules first and verifies pathidentity"
+    ],
+    "baseline_state": [
+      "numpy only plus standardlibrary"
+    ],
+    "batch_transform": [
+      "numpy,scipy.stats.multivariate_t plus math"
+    ],
+    "native_CDF": [
+      "stdlib top-level; special/quad numericalbackends explicitly supplied by newaudit, never execute itsoldmain"
+    ],
+    "scalar_tree": [
+      "stdlib only, never execute itsoldmain"
+    ],
+    "new_state_auditor": [
+      "samefolder bma_state_reference.py"
+    ]
+  },
+  "state_plan_helper_keys": [
+    "batch_transform",
+    "scalar_tree",
+    "baseline_state"
+  ],
+  "score_plan_helper_keys": [
+    "batch_transform",
+    "scalar_score_functions",
+    "native_CDF",
+    "full_fixture_reference",
+    "mixture_reference"
+  ],
+  "call_scope": "Definitions/puremath only; no oldSUT/fit/main/science replays. full_fixture_reference native_reference(2D) is not invoked by scoreaudit.",
+  "no_numeric_execution": true
+}

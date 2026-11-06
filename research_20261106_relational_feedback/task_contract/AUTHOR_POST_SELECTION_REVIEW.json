@@ -1,0 +1,17 @@
+{
+  "status": "PASS_AUTHOR_POST_SELECTION_METADATA_COUNTS_BINDING_REVIEW",
+  "actual_utc": "2026-11-06T07:32:52.412950+00:00",
+  "metadata_role_sha256": "18ab839983759446fa395cb1e713bbb457c58a5c741ab24d12993403e4f9cd2c",
+  "author_role": "Selectorauthor; notindependentthirdparty. Separate53077195 independentreceipt exists.",
+  "representatives": {
+    "warm": 32,
+    "pool": 32,
+    "terminal": 96
+  },
+  "wholeprior_exclusions": 928,
+  "eligible_siblings": 196,
+  "remaining_unselected": 7754,
+  "new_material_raw_values_read": 0,
+  "selector_reruns": 0,
+  "SOURCE_PREPARATION_not_experiment": true
+}

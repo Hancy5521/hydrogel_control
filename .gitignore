@@ -88,3 +88,8 @@ new_weighting_summary.json
 
 # Reviewed aggregate-only native-riskfield checkpoint CSV
 !research_20261106_native_riskfield/active_onlyy/report/final/SUMMARY_BY_POLICY.csv
+
+# Reviewed aggregate-only conditional-feedback CSVs
+!research_20261106_relational_feedback/full_nig_bma/material/report/final/ALL42_SUMMARIES.csv
+!research_20261106_relational_feedback/full_nig_bma/material/report/final/MODEL_WEIGHTS.csv
+!research_20261106_relational_feedback/full_nig_bma/material/diagnostics/final/ALL_ELEMENT_SUMMARIES.csv

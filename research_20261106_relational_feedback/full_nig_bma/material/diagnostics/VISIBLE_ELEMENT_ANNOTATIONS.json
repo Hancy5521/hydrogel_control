@@ -1,0 +1,991 @@
+{
+  "status": "VISIBLE_IDENTITY_ANNOTATIONS_ONLY",
+  "actual_utc": "2026-11-06T08:34:02.175137+00:00",
+  "plan_sha256": "40811d281c1a19f88776ec996c23b79781367469a194195b3310451c2c1cb988",
+  "source_sha256": "cc20e932553b562d4d353a2a5d9642596fdf507d3bffc0ef44507ef616b7e017",
+  "visible_input_sha256": "997b38cd276975303012ca968aa3203971deb020b8b659e57451a366c33ae9ca",
+  "counts": {
+    "warm": {
+      "remaining_compositions": 14,
+      "no_O_contains_F_Cl_Br_I": 4,
+      "contains_O": 10,
+      "no_O_or_halogen_contains_S_Se_Te": 4
+    },
+    "pool": {
+      "contains_O": 11,
+      "remaining_compositions": 18,
+      "no_O_or_halogen_contains_S_Se_Te": 3
+    },
+    "terminal": {
+      "no_O_contains_F_Cl_Br_I": 14,
+      "contains_O": 28,
+      "remaining_compositions": 45,
+      "no_O_or_halogen_contains_S_Se_Te": 9
+    }
+  },
+  "annotations": [
+    {
+      "component_id": "jarvis_dft_3d_component_fed19c7f65de6f068587",
+      "role": "warm",
+      "signature": "remaining_compositions",
+      "element_count": 4
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_94d3c4a53b8889e5f3de",
+      "role": "warm",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_cf65b51d9b7b4fb99be7",
+      "role": "warm",
+      "signature": "no_O_contains_F_Cl_Br_I",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_f16724ec275574829f9f",
+      "role": "warm",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_b86df0470f55e2596a62",
+      "role": "warm",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_27206fc0ca0758a3bffa",
+      "role": "warm",
+      "signature": "contains_O",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_bcfe8e5eeda9066e5951",
+      "role": "warm",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_a84eb4c86feef0edc6b5",
+      "role": "warm",
+      "signature": "contains_O",
+      "element_count": 4
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_e57d8cbeabf29fe44fe8",
+      "role": "warm",
+      "signature": "contains_O",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_f2c280902ceef4675fe9",
+      "role": "warm",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_85b787da0cd9f83b5951",
+      "role": "warm",
+      "signature": "contains_O",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_faceb27c666a83d9e690",
+      "role": "warm",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_0419e99f876c1d90abaa",
+      "role": "warm",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_3a9eb183bc44b4490dba",
+      "role": "warm",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_0a1cec1eee7112cd187b",
+      "role": "warm",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_cef93fa68961406546ba",
+      "role": "warm",
+      "signature": "remaining_compositions",
+      "element_count": 1
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_3734242d5ef40f5c2fcc",
+      "role": "warm",
+      "signature": "contains_O",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_b0cc61e8c84170ab6576",
+      "role": "warm",
+      "signature": "contains_O",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_b4796e5fc567b42cd33a",
+      "role": "warm",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_f623180a1a44d9025504",
+      "role": "warm",
+      "signature": "no_O_or_halogen_contains_S_Se_Te",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_5ca73571cb20ed9daee3",
+      "role": "warm",
+      "signature": "no_O_or_halogen_contains_S_Se_Te",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_86d8062c7ed48b42980a",
+      "role": "warm",
+      "signature": "contains_O",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_90f20280d51a7ebbae2f",
+      "role": "warm",
+      "signature": "contains_O",
+      "element_count": 5
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_51d59e4185275c32d493",
+      "role": "warm",
+      "signature": "no_O_contains_F_Cl_Br_I",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_eae0ff322cf00c0cbc63",
+      "role": "warm",
+      "signature": "no_O_contains_F_Cl_Br_I",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_1cf1e1889f3f44facc00",
+      "role": "warm",
+      "signature": "no_O_or_halogen_contains_S_Se_Te",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_039f3cf0d1798a58b636",
+      "role": "warm",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_562bf4ad11b5d9c5841c",
+      "role": "warm",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_b01a35fdd478a475b0d3",
+      "role": "warm",
+      "signature": "contains_O",
+      "element_count": 4
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_77dd9ba46dc351c2eb0c",
+      "role": "warm",
+      "signature": "contains_O",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_1ac2d367b31800edb578",
+      "role": "warm",
+      "signature": "no_O_or_halogen_contains_S_Se_Te",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_f6cb0884f902f31821a8",
+      "role": "warm",
+      "signature": "no_O_contains_F_Cl_Br_I",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_1bb6aced9283d091d2a6",
+      "role": "pool",
+      "signature": "contains_O",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_578db0ac59b3b4b6022b",
+      "role": "pool",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_d9dd3c18a73314156da8",
+      "role": "pool",
+      "signature": "contains_O",
+      "element_count": 4
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_dc37f4faaa6540046445",
+      "role": "pool",
+      "signature": "no_O_or_halogen_contains_S_Se_Te",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_7a4b8ae1668523b64159",
+      "role": "pool",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_289f8288a3ce1d031cc5",
+      "role": "pool",
+      "signature": "contains_O",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_8ee2bbd3d9efe43f8502",
+      "role": "pool",
+      "signature": "contains_O",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_45f6ea0752c8de94d81e",
+      "role": "pool",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_eca789c8c6b03e5ac80f",
+      "role": "pool",
+      "signature": "contains_O",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_95ad5d1c1d59a2d82165",
+      "role": "pool",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_d0e29d3087633b1a6c90",
+      "role": "pool",
+      "signature": "contains_O",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_3c1cb02272bb17237a96",
+      "role": "pool",
+      "signature": "no_O_or_halogen_contains_S_Se_Te",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_85060027458113465ba8",
+      "role": "pool",
+      "signature": "contains_O",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_a9cf0c5bfacb7118d245",
+      "role": "pool",
+      "signature": "no_O_or_halogen_contains_S_Se_Te",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_02bb00c701fc0a26d854",
+      "role": "pool",
+      "signature": "contains_O",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_67937dc4cfd4b297d81c",
+      "role": "pool",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_86399d4232863bf96b9d",
+      "role": "pool",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_fe51114abb56dd5506d1",
+      "role": "pool",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_50308742406ce8c97654",
+      "role": "pool",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_556784d0ac0ff9062cd3",
+      "role": "pool",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_0fabab76f34048ff7cee",
+      "role": "pool",
+      "signature": "contains_O",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_a815abf1f5f759aa9604",
+      "role": "pool",
+      "signature": "contains_O",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_1a3b868470a12b944054",
+      "role": "pool",
+      "signature": "contains_O",
+      "element_count": 4
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_65348c0afe903ebe8d39",
+      "role": "pool",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_05240c0363127b68d05b",
+      "role": "pool",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_8349dd72a049cac77a37",
+      "role": "pool",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_9ef8f064a00c29f6e512",
+      "role": "pool",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_0163403c78640a92064a",
+      "role": "pool",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_9e23d311af461a81c92a",
+      "role": "pool",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_b370486990b798f7fac3",
+      "role": "pool",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_fee5fa9f24a165853c46",
+      "role": "pool",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_d07cab807e4054ffdd45",
+      "role": "pool",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_cce36f60c0c7dad449da",
+      "role": "terminal",
+      "signature": "no_O_contains_F_Cl_Br_I",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_ebabe0a67fd2c0bf9309",
+      "role": "terminal",
+      "signature": "contains_O",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_cd5bd2d7d5dcbdabb913",
+      "role": "terminal",
+      "signature": "contains_O",
+      "element_count": 4
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_15350f756bcd59fd17a3",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_cbdedafbbc74293b6ef9",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_60dd6b760de69b84a1fb",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_a7ebb0a62090c5036fd7",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_bed1840812e558f6a282",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_ec439ee0d6303e0856cd",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_c502880f3202bd5f8ba6",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_ffc85b4e96c6238d0996",
+      "role": "terminal",
+      "signature": "no_O_contains_F_Cl_Br_I",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_cc2f25ae6cb4c26687d6",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_9bac894ed2003f21ac58",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_a5edf2bd8105e8f3d0f8",
+      "role": "terminal",
+      "signature": "no_O_or_halogen_contains_S_Se_Te",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_1da00b99be16807105ce",
+      "role": "terminal",
+      "signature": "contains_O",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_c331eb8b3331f7857f64",
+      "role": "terminal",
+      "signature": "contains_O",
+      "element_count": 4
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_8d75b14f3848256c8ad5",
+      "role": "terminal",
+      "signature": "contains_O",
+      "element_count": 4
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_3adc508ed6584e5688c6",
+      "role": "terminal",
+      "signature": "no_O_or_halogen_contains_S_Se_Te",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_c830feffe7e352642603",
+      "role": "terminal",
+      "signature": "no_O_or_halogen_contains_S_Se_Te",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_8307f1611222d2cd3c56",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_12088acfc9f6d33501c3",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_1fe7e766327f47037613",
+      "role": "terminal",
+      "signature": "contains_O",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_5e2dfeeb56792b7915f0",
+      "role": "terminal",
+      "signature": "contains_O",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_388cb69d7b0eacab0612",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_c31092781f2c9e0c0511",
+      "role": "terminal",
+      "signature": "no_O_contains_F_Cl_Br_I",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_dc85995ee06db7f5c04c",
+      "role": "terminal",
+      "signature": "contains_O",
+      "element_count": 5
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_37cc9b6762c2fe48e501",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_1a71365137d9e7f61c82",
+      "role": "terminal",
+      "signature": "no_O_contains_F_Cl_Br_I",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_9a6a9992d6ec863f020a",
+      "role": "terminal",
+      "signature": "contains_O",
+      "element_count": 4
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_1fb587a9663d455f346f",
+      "role": "terminal",
+      "signature": "contains_O",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_634d75c070f9315afc1c",
+      "role": "terminal",
+      "signature": "contains_O",
+      "element_count": 4
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_843ee769bb21c5ecdcde",
+      "role": "terminal",
+      "signature": "no_O_contains_F_Cl_Br_I",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_98b5e58e2f66c25ed84a",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_c6dcb442b19ede93608d",
+      "role": "terminal",
+      "signature": "no_O_contains_F_Cl_Br_I",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_723b2ebaae30ef52be2c",
+      "role": "terminal",
+      "signature": "contains_O",
+      "element_count": 5
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_90511f4bb8bc8b2c12f6",
+      "role": "terminal",
+      "signature": "no_O_contains_F_Cl_Br_I",
+      "element_count": 1
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_3a020baefa449e546db0",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_8e90ce3ef4ca897a6de4",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_e54aaf7a665563077625",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_46b5ac97c9b169807f65",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_8d6fa857464798c2a2c9",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_d88e2c02ae6f6feedb4c",
+      "role": "terminal",
+      "signature": "contains_O",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_8d509239ff874414b242",
+      "role": "terminal",
+      "signature": "contains_O",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_48927098570860dd31d4",
+      "role": "terminal",
+      "signature": "contains_O",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_8b32e0a7e0aff6ec1a88",
+      "role": "terminal",
+      "signature": "contains_O",
+      "element_count": 4
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_88beaf4c012ebf06caf7",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_b4450c3f676d131c45c3",
+      "role": "terminal",
+      "signature": "contains_O",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_60a5ed009099de84e26f",
+      "role": "terminal",
+      "signature": "no_O_or_halogen_contains_S_Se_Te",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_436f804a2e36b6aaf5d1",
+      "role": "terminal",
+      "signature": "no_O_contains_F_Cl_Br_I",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_b24cc53850404531cf6f",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_a344bf9a8f1b66f3fd48",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_6b41543fc39220b4c37f",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_2bdc2c1ad4b83aebd077",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_c2725535ce739ac8852b",
+      "role": "terminal",
+      "signature": "no_O_contains_F_Cl_Br_I",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_621c489df878be479162",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_59d84c4832e51e0a2db9",
+      "role": "terminal",
+      "signature": "no_O_or_halogen_contains_S_Se_Te",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_55399ea4bc9ec06e16c9",
+      "role": "terminal",
+      "signature": "contains_O",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_e88a68c3954310ac2b0c",
+      "role": "terminal",
+      "signature": "no_O_contains_F_Cl_Br_I",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_2f47e2d91e8a5d208d6a",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_94e66ded097e0781085e",
+      "role": "terminal",
+      "signature": "no_O_or_halogen_contains_S_Se_Te",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_3977bb18227a335f91a9",
+      "role": "terminal",
+      "signature": "no_O_contains_F_Cl_Br_I",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_6eeb32966f7014a30d42",
+      "role": "terminal",
+      "signature": "no_O_contains_F_Cl_Br_I",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_7262ec45872b5cd6fdae",
+      "role": "terminal",
+      "signature": "contains_O",
+      "element_count": 4
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_658def7f500d2a6daae7",
+      "role": "terminal",
+      "signature": "contains_O",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_5dd47bb9632e9c25cec3",
+      "role": "terminal",
+      "signature": "contains_O",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_72c4a1d4aa584fb6c6f8",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_b2cdc312940260aa005d",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_a183010ea0dfec155f3e",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_45d92c9c38349f0e7658",
+      "role": "terminal",
+      "signature": "no_O_or_halogen_contains_S_Se_Te",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_a171d92c29e4f8be858b",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_f746db491033c01adcee",
+      "role": "terminal",
+      "signature": "contains_O",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_8d501e01ab21f2fb31a3",
+      "role": "terminal",
+      "signature": "contains_O",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_5094eda79719ad6514b6",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_835416945fb46d4d4052",
+      "role": "terminal",
+      "signature": "contains_O",
+      "element_count": 4
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_8bea67a94f3bca0af60a",
+      "role": "terminal",
+      "signature": "no_O_contains_F_Cl_Br_I",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_ec0a3c153effdbbe3c97",
+      "role": "terminal",
+      "signature": "no_O_or_halogen_contains_S_Se_Te",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_0f19e6b379dde7ea6984",
+      "role": "terminal",
+      "signature": "contains_O",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_867a52cf2857f3108268",
+      "role": "terminal",
+      "signature": "contains_O",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_632fdba03d428b4cef10",
+      "role": "terminal",
+      "signature": "no_O_or_halogen_contains_S_Se_Te",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_79c457e374217848f4b4",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_1d1e0a1ca53c49e00850",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_f488bca4fd414f4119b0",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_2e650763748181de90e6",
+      "role": "terminal",
+      "signature": "contains_O",
+      "element_count": 4
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_fb5b12369402228861a2",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_9c9e19bc7a416477645b",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_36dfdb179366ac289e44",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_d06c115403734e455860",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_39d6131fa9585fe6854c",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_200829c298432ff5ea2a",
+      "role": "terminal",
+      "signature": "no_O_contains_F_Cl_Br_I",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_b4f6308ab25f10dc1299",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_958cc355a9688ec04953",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_2cb4835bdccbf47e0c08",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_107addf476016d1bf8db",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 2
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_d179c16f4e85daf22f85",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_ea08c1d32559acd92c7f",
+      "role": "terminal",
+      "signature": "remaining_compositions",
+      "element_count": 3
+    },
+    {
+      "component_id": "jarvis_dft_3d_component_3236ad924dd695b3ff03",
+      "role": "terminal",
+      "signature": "contains_O",
+      "element_count": 3
+    }
+  ],
+  "target_values_read": 0,
+  "science_source_or_endpoint_change": false,
+  "not_independent_datasets_or_phase_labels": true
+}

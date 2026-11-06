@@ -1,0 +1,72 @@
+NIW的条件回归参数独立性：已知proxy后的单目标精确反馈通路
+
+本note为数学推导和未来设计，不改变本轮完整panel固定实验，不是新的训练结果或新定理。已经选读一个原始研究来源：Geiger与Heckerman，Annals of Statistics (2002)，Theorem5及其后Gaussian回归解释，作者托管扫描PDF pp1423–1425。该文说明Gaussian参数先验的独立分解。以下使用本项目自己的inverse-Wishart协方差记号重新推导，避免precision/scale和自由度混用。
+来源：https://dang.cs.technion.ac.il/journal_papers/geiger2002parameter.pdf
+DOI:10.1214/aos/1035844981。只选读相关页，未声称全文或Dawid–Lauritzen原文已读。论文许可未核实，不打包原PDF。
+
+一、精确分解
+设X为p维已见proxy，Y为单个目标，d=p+1。联合Gaussian参数满足
+  Sigma~IW_d(nu,Psi)，mu|Sigma~N_d(mu0,Sigma/kappa)。
+定义
+  S=Sigma_XX，beta=S^-1 Sigma_XY，
+  sigma2=Sigma_YY-Sigma_YX S^-1 Sigma_XY，
+  a=muY-beta^T muX，
+  b0=Psi_XX^-1 Psi_XY，psi=Psi_YY-Psi_YX Psi_XX^-1 Psi_XY。
+则(X边际参数muX,S)与(条件回归参数a,beta,sigma2)独立。具体地
+  S~IW_p(nu-1,Psi_XX)，muX|S~N_p(mu0X,S/kappa)，
+  sigma2~InverseGamma(shape=nu/2,scale=psi/2)，
+  beta|sigma2~N_p(b0,sigma2*Psi_XX^-1)，
+  a|beta,sigma2~N(mu0Y-beta^T mu0X,sigma2/kappa)。
+这里IG密度正比于v^(-alpha-1)*exp(-b/v)。条件regression的prior predictive自由度是nu，不是联合multivariate-t的nu-d+1。
+
+二、分解为何成立
+把Sigma写成
+  [[S,S*beta],[beta^T*S,sigma2+beta^T*S*beta]]。
+行列式为|S|*sigma2。对称协方差独立条目变换到(S,beta,sigma2)的Jacobian是|S|。
+逆矩阵的XX块为S^-1+beta*beta^T/sigma2，XY块为-beta/sigma2，YY块为1/sigma2。因此
+  tr(Psi*Sigma^-1)
+  =tr(Psi_XX*S^-1)+[psi+(beta-b0)^T*Psi_XX*(beta-b0)]/sigma2。
+将行列式幂、Jacobian与该指数合并，即分为IW_p(nu-1,Psi_XX)、IG(nu/2,psi/2)与beta条件normal。
+同时，mu的正态二次型分解为
+  (muX-mu0X)^T*S^-1*(muX-mu0X)
+  +[a+beta^T*mu0X-mu0Y]^2/sigma2。
+从muY到a的Jacobian为1，故均值部分也分解，得到所述独立性。该推导针对固定超参数的NIW；加入共享随机hyperprior后一般需重新检验独立性。
+
+三、诱导的Normal–InverseGamma回归先验
+令w=(a,beta)，z=(1,x)，m0=(mu0Y-b0^T*mu0X,b0)，则w|sigma2~N(m0,sigma2*K0^-1)，其中
+  K0=[[kappa,kappa*mu0X^T],
+      [kappa*mu0X,Psi_XX+kappa*mu0X*mu0X^T]]。
+alpha0=nu/2，b_IG0=psi/2。
+收到n个完整X且真实Y已被查询的样本，设计矩阵Z每行为(1,x_i)，有
+  Kn=K0+Z^T*Z，
+  mn=Kn^-1*(K0*m0+Z^T*y)，
+  alpha_n=(nu+n)/2，
+  b_IGn=b_IG0+0.5*[y^T*y+m0^T*K0*m0-mn^T*Kn*mn]。
+数值实现应优先用等价非负残差形式，避免大数相减：
+  b_IGn=b_IG0+0.5*[(y-Z*mn)^T*(y-Z*mn)+(mn-m0)^T*K0*(mn-m0)]。
+新x的目标predictive为t，df=nu+n，location=z^T*mn，
+  scale^2=(b_IGn/alpha_n)*(1+z^T*Kn^-1*z)。
+因完整数据NIW更新与该NIG更新针对同一联合模型，它们在完整已标样本上的conditional predictive必须完全等价（浮点误差除外）。这是下一有界人工等价门的直接oracle。
+
+四、为何仅有proxy的行不影响条件目标回归
+在当前固定Gaussian模型下，所有已见X与仅已标注子集L的Y似然分解为
+  product_i p(X_i|theta_X) * product_(i in L) p(Y_i|X_i,theta_cond)。
+先验theta_X与theta_cond独立，故未标注Y的proxy-only行只更新theta_X，不更新theta_cond。完整已标warm的后验仍有相同独立结构，可以把warm posterior作为未来NIG先验。
+这不等于“多行任意缺失仍是一个NIW”：一般joint posterior确实已非单个NIW；但在这个特定观察模式与先验下，目标conditional回归仍可精确更新。它说明不应把一项过宽的非共轭限制误用为本任务只能用粒子的结论。
+
+五、报告G分支模型中的适用条件
+若所有候选pool与terminal的原生A/G已付费可见，分支身份G==0/!=0已知。零分支X=A，非零分支X=(A,G)，每branch独立应用上式。Beta因子不进入known-branch conditional回归，未知物理零机制无需在此额外识别。这样未来可以先一次付费获得pool proxies，再逐次只购买真实Y，用精确NIG进行partial-Y反馈而不做theta粒子。
+共同proxy费用必须单列且所有强策略同价同信息；这是一项事先定义的已知上下文目标查询任务，不冒称所有任意cell动作都已解决。完整残差variance与回归参数不确定性均保留，不把joint材料分布强行低秩化。
+
+六、不能外推的边界
+1. 若G未知，branch未识别，Y的likelihood会混合两个回归，通常不再是两个可独立硬更新的NIG。
+2. 若某个X也缺失，需对其积分，会把theta_cond与theta_X耦合，当前结论不能直接套用。
+3. 多目标响应需要矩阵normal–inverseWishart等相应模型；多目标任意部分标签不自动保持scalarNIG共轭。
+4. 非NIW先验、共享随机hyperparameters、非线性regressor或由后续标签重学的坐标，都需另行推导。
+5. 查询策略必须只依赖已知context和历史已见标签。若原生缺失/选择依赖未见Y且机制未被处理，不能据此声称MNAR已识别。
+6. 该分解与BLR均有经典先例；可能的材料贡献在真实报告身份、字段状态、费用/验证台账及更有效的反馈/风险读出，而不是公式更名。
+
+七、一个后续非重复且有界的数学门（未执行）
+仅比较d=2与d=3两组非零均值、非对角Psi的明确人工输入，在0/1/2/3个已标样本后各取3个新X，共24个conditional-law比较：
+(a) 完整joint NIW更新再条件化；(b) 先诱导NIG再按Y|X更新；逐一对df/location/scale及后验state核等价。额外只读proxy-only行的theta_cond state必须保持不变（其joint边际参数可改变），并保留把nu-d+1误作回归df的反例。
+它检验了本轮已有NIW条件t审计未覆盖的“先joint更新还是先conditional分解”交换性，支持未来partial-Y exact实现；不重跑旧材料或旧toy，不将24比较叫新材料N。实际源码、输入、阈值及UTC须root另登记批准。当前完整panel材料实验按原方案继续，不等待此探索。

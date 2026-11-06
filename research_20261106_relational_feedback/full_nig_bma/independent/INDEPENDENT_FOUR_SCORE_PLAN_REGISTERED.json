@@ -1,0 +1,37 @@
+{
+  "actual_utc": "2026-11-06T07:28:46.022616+00:00",
+  "status": "REGISTERED_BEFORE_INDEPENDENT_SCORING_NUMERIC_EXECUTION",
+  "scope": "INDEPENDENT_FOUR_NATIVE_MIXTURE_SCORES_ONCE",
+  "independent_sources": {
+    "full_native_reference.py": "eb310af6a63d61e6d29ee30577f2f1b75afc98bda569433ca5b6e5d7a4ffd352",
+    "scoring_math_reference.py": "8e461457d28400f8a85931a212876bc1bc9dd8e7f30d2df6acbf668e3ac37a90",
+    "audit_mixture_score_gate.py": "05ef2f45cbdfcc76c1b8bae3b7179528339b8b39e5c6c68fd447b957bb442993"
+  },
+  "inputs": {
+    "fixed_proposal": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\FIXED_DATAFREE_GATE_PROPOSAL.json",
+      "sha256": "6ac2e7fc802bc22afb7dbd658d29e00efcae6d9c119bc3d5f9549b1efc715521"
+    },
+    "producer_result": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\material\\scoring_unit\\execution_once\\RESULTS.json",
+      "sha256": "23f6df1097beb04bf097d240d1e386369971732ebd73821e91bccc0006c06554"
+    },
+    "producer_plan": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\material\\scoring_unit\\PLAN_REGISTERED.json",
+      "sha256": "0644e43902c8dfc490d6e032868a2c7d05d0eb4663629f13dfd2172b95b36366"
+    },
+    "preoutput_criteria": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\independent\\SCORING_UNIT_PREOUTPUT_CRITERIA.json",
+      "sha256": "81c52745d4e35682371e18eb0fa1e09765230728961a182eaf6494fce474595b"
+    },
+    "old_fullgate_independent": {
+      "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\independent\\independent_execution_once\\INDEPENDENT_FULL_NIG_BMA_GATE_AUDIT.json",
+      "sha256": "46c9cc5c0c748d67944212b7b7bb94c06d4611ef9920b23cb6af8480d5761285"
+    }
+  },
+  "criteria_preserved_from_preoutput_sha256": "81c52745d4e35682371e18eb0fa1e09765230728961a182eaf6494fce474595b",
+  "same_two_oldfixedlaws": true,
+  "same_fournativetarget_scores": true,
+  "new_material_or_newmodel_or_fullVOI_2D": 0,
+  "reference_route": "nativeCDF fullrealaxis scoring/nativequantile roots/nativecommonJac logdensity; no SUT import/componentCRPS reuse"
+}

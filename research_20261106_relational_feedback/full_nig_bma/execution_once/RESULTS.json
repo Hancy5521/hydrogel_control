@@ -1,0 +1,2068 @@
+{
+  "status": "COMPLETE_ALL_PRODUCER_DIAGNOSTICS_PASS",
+  "actual_start_utc": "2026-11-06T07:03:30.058157+00:00",
+  "actual_end_utc": "2026-11-06T07:03:31.269413+00:00",
+  "elapsed_seconds": 1.16915599999993,
+  "plan_sha256": "f7d7a918303c77c6531cd347c6d213fff779f0049ff4e108a4f2e2ad1482e48f",
+  "proposal_sha256": "6ac2e7fc802bc22afb7dbd658d29e00efcae6d9c119bc3d5f9549b1efc715521",
+  "source_sha256": {
+    "relation_posterior.py": "1d74cde91519ce282c6ebee54e53807a2a79be0cebf19e06221eb4f16e8b7528",
+    "risk_field.py": "cda5178b9c5138df647a0b9fffab2da30a19bde6082aa6fd4cc8b0910c6b92aa",
+    "run_gate.py": "707eb494a6a4fbf5c6dc3f7ca8280ddf493bde90324b2b6c9779a76a3a258d1e"
+  },
+  "fixed_fixture": {
+    "actual_utc": "2026-11-06T06:43:46.460371+00:00",
+    "status": "FIXED_BEFORE_FULL_NIG_NUMERIC_OUTPUTS_NO_MATERIAL",
+    "kind": "ONE_FULL_NIG_BMA_FIXTURE_PLUS_ANALYTIC_LABEL_PROBES",
+    "basis_order": {
+      "affine": [
+        "1",
+        "x1",
+        "x2"
+      ],
+      "interaction": [
+        "1",
+        "x1",
+        "x2",
+        "x1*x2"
+      ],
+      "fullquad": [
+        "1",
+        "x1",
+        "x2",
+        "x1*x2",
+        "x1^2",
+        "x2^2"
+      ]
+    },
+    "weights": [
+      0.2,
+      0.3,
+      0.5
+    ],
+    "models": [
+      {
+        "id": "affine",
+        "mean": [
+          0,
+          0.6,
+          -0.2
+        ],
+        "V": [
+          [
+            0.5,
+            0.6,
+            0.0
+          ],
+          [
+            0.6,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.5
+          ]
+        ],
+        "alpha": 3.0,
+        "b": 1.5,
+        "labeled_updates": 0
+      },
+      {
+        "id": "interaction",
+        "mean": [
+          0,
+          0.6,
+          -0.2,
+          0.5
+        ],
+        "V": [
+          [
+            0.5,
+            -0.6,
+            0.0,
+            0.0
+          ],
+          [
+            -0.6,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.5,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.25
+          ]
+        ],
+        "alpha": 3.0,
+        "b": 1.5,
+        "labeled_updates": 0
+      },
+      {
+        "id": "fullquad",
+        "mean": [
+          0,
+          0.6,
+          -0.2,
+          0.5,
+          0.25,
+          -0.15
+        ],
+        "V": [
+          [
+            0.5,
+            0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.5,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.25,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.25
+          ]
+        ],
+        "alpha": 3.0,
+        "b": 1.5,
+        "labeled_updates": 0
+      }
+    ],
+    "query_context": [
+      0.5,
+      -1.0
+    ],
+    "target_context": [
+      0.0,
+      0.0
+    ],
+    "distinct_physical_rows": true,
+    "response_transform": {
+      "center": 0.5,
+      "sd": 0.7,
+      "s0": 2.0
+    },
+    "fixed_observed_modeled_query_Y": [
+      -1.0,
+      1.0
+    ],
+    "target_modeled_CDF_points": [
+      -2.0,
+      0.0,
+      2.0
+    ],
+    "main_native_risk_values": 1,
+    "within_components": 3,
+    "signedbetween": "Bbefore0 (targetmarginalCDFsidentical); Bafter>0, so Bbefore-E Bafter<0; neverclip",
+    "query_truncation": "eachcomponentstandardizedqZ in[-64,64], originalweighteddensity, no renormalization",
+    "target_domain": "union ofcomponentmodeledtarget[mu_h-32s_h,mu_h+32s_h] mapped commonnativeYJ",
+    "quadrature_levels": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "criteria": {
+      "conditional_NIG_vs_bivt_parameter_absolute": 2e-10,
+      "conditional_parameter_relative": 2e-10,
+      "Hweight_absolute": 2e-12,
+      "conditional_mixture_CDF_absolute": 2e-11,
+      "nativeVOI_independent_reference_absolute": 0.0002,
+      "nativeVOI_reference_relative": 2e-05,
+      "final_refinement_diagnostic_absolute": 2e-05,
+      "ideal_tail_account_absolute": 0.0001,
+      "signedbetween": "record raw; claimnegative only beyond numerical diagnostic uncertainties",
+      "decomposition_closure": "finiteintegration residual allowed only within recorded numericaldiagnostics +2*nativetargetwidth*sum_h(w_h*2*SF_tnu_h(64)); no hiddenrenormalization"
+    },
+    "reference": "independent directmodeledqueryz density ×nativeTargety CDFsquare; no producer import, no actualwarm/fit",
+    "scalar_singleH": "algebraicreduction and reuse old frozen12 reference/receipts only; no olddoubleintegration/researchreruns",
+    "prohibited": [
+      "materiallabels_or_fit",
+      "scanmeanVpriorquerytargetuntilgain",
+      "dropwithinH",
+      "clipnegativebetween",
+      "call3fixedhypothesesnewBayesalgorithm",
+      "current152tuning"
+    ],
+    "next": "rootfreezeactualsources/UTC oncegate; then freshmaterial32/32/96 prospective experiment if source and arithmetic pass"
+  },
+  "initial_ensemble": {
+    "models": [
+      {
+        "id": "affine",
+        "state": {
+          "mean": [
+            0,
+            0.6,
+            -0.2
+          ],
+          "V": [
+            [
+              0.5,
+              0.6,
+              0.0
+            ],
+            [
+              0.6,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.5
+            ]
+          ],
+          "alpha": 3.0,
+          "b": 1.5,
+          "labeled_updates": 0
+        }
+      },
+      {
+        "id": "interaction",
+        "state": {
+          "mean": [
+            0,
+            0.6,
+            -0.2,
+            0.5
+          ],
+          "V": [
+            [
+              0.5,
+              -0.6,
+              0.0,
+              0.0
+            ],
+            [
+              -0.6,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.5,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.25
+            ]
+          ],
+          "alpha": 3.0,
+          "b": 1.5,
+          "labeled_updates": 0
+        }
+      },
+      {
+        "id": "fullquad",
+        "state": {
+          "mean": [
+            0,
+            0.6,
+            -0.2,
+            0.5,
+            0.25,
+            -0.15
+          ],
+          "V": [
+            [
+              0.5,
+              0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.5,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.25,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.25,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.25
+            ]
+          ],
+          "alpha": 3.0,
+          "b": 1.5,
+          "labeled_updates": 0
+        }
+      }
+    ],
+    "log_weights": [
+      -1.6094379124341003,
+      -1.2039728043259361,
+      -0.6931471805599453
+    ],
+    "expansion_transform": null,
+    "response_coordinate": "shared_fixed_synthetic_response",
+    "true_label_updates": 0
+  },
+  "evaluations_by_level": [
+    {
+      "native_full_VOI": 0.03613563077581137,
+      "native_weighted_within_components": [
+        0.016689065472377546,
+        0.0036583499498646227,
+        0.018824619100238818
+      ],
+      "native_weighted_within_total": 0.039172034522480983,
+      "native_B_before": 2.3765922442215956e-35,
+      "native_E_B_after": 0.003036401455786261,
+      "native_signed_between": -0.003036401455786261,
+      "decomposition_closure": -2.2908833541106233e-09,
+      "signed_between_clipped": false,
+      "nodes_per_segment": 32,
+      "target_modeled_union": [
+        -27.712812921102035,
+        27.712812921102035
+      ],
+      "segments": [
+        {
+          "target_modeled_interval": [
+            -27.712812921102035,
+            -0.7142857142857143
+          ],
+          "nodes_per_segment": 32,
+          "full_value": 0.005245936877591243,
+          "within_components": [
+            0.002314335800741624,
+            0.0006463616621249961,
+            0.0027382613376178665
+          ],
+          "B_before": 1.3237151221494194e-37,
+          "E_B_after": 0.0004530217339296643,
+          "query_diagnostics": [
+            {
+              "generating_hypothesis": "affine",
+              "theta_nodes": 32,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215129,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 2.220446049250313e-16,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            },
+            {
+              "generating_hypothesis": "interaction",
+              "theta_nodes": 32,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215129,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 2.220446049250313e-16,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            },
+            {
+              "generating_hypothesis": "fullquad",
+              "theta_nodes": 32,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215129,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 2.220446049250313e-16,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            }
+          ]
+        },
+        {
+          "target_modeled_interval": [
+            -0.7142857142857143,
+            0.0
+          ],
+          "nodes_per_segment": 32,
+          "full_value": 0.009039085121310015,
+          "within_components": [
+            0.00445718201590682,
+            0.0007611076073757782,
+            0.004831463063052897
+          ],
+          "B_before": 0.0,
+          "E_B_after": 0.001010667547835983,
+          "query_diagnostics": [
+            {
+              "generating_hypothesis": "affine",
+              "theta_nodes": 32,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215129,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 2.220446049250313e-16,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            },
+            {
+              "generating_hypothesis": "interaction",
+              "theta_nodes": 32,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215129,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 2.220446049250313e-16,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            },
+            {
+              "generating_hypothesis": "fullquad",
+              "theta_nodes": 32,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215129,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 2.220446049250313e-16,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            }
+          ]
+        },
+        {
+          "target_modeled_interval": [
+            0.0,
+            27.712812921102035
+          ],
+          "nodes_per_segment": 32,
+          "full_value": 0.021850608776910113,
+          "within_components": [
+            0.009917547655729103,
+            0.0022508806803638484,
+            0.011254894699568054
+          ],
+          "B_before": 2.3633550930001014e-35,
+          "E_B_after": 0.0015727121740206137,
+          "query_diagnostics": [
+            {
+              "generating_hypothesis": "affine",
+              "theta_nodes": 32,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215129,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 2.220446049250313e-16,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            },
+            {
+              "generating_hypothesis": "interaction",
+              "theta_nodes": 32,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215129,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 2.220446049250313e-16,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            },
+            {
+              "generating_hypothesis": "fullquad",
+              "theta_nodes": 32,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215129,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 2.220446049250313e-16,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            }
+          ]
+        }
+      ],
+      "pair_laws": [
+        {
+          "id": "affine",
+          "mu_query": 0.5,
+          "mu_target": 0.0,
+          "scale_query": 1.1937336386313322,
+          "scale_target": 0.8660254037844386,
+          "nu": 6.0,
+          "rho": 0.38692066672533953,
+          "query_phi": [
+            1.0,
+            0.5,
+            -1.0
+          ],
+          "target_phi": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "different_rows_independent_residuals": true
+        },
+        {
+          "id": "interaction",
+          "mu_query": 0.25,
+          "mu_target": 0.0,
+          "scale_query": 0.9253377761660874,
+          "scale_target": 0.8660254037844386,
+          "nu": 6.0,
+          "rho": 0.12478692301566606,
+          "query_phi": [
+            1.0,
+            0.5,
+            -1.0,
+            -0.5
+          ],
+          "target_phi": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "different_rows_independent_residuals": true
+        },
+        {
+          "id": "fullquad",
+          "mu_query": 0.1625,
+          "mu_target": 0.0,
+          "scale_query": 1.1353688827865593,
+          "scale_target": 0.8660254037844386,
+          "nu": 6.0,
+          "rho": 0.25425669046549126,
+          "query_phi": [
+            1.0,
+            0.5,
+            -1.0,
+            -0.5,
+            0.25,
+            1.0
+          ],
+          "target_phi": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "different_rows_independent_residuals": true
+        }
+      ],
+      "weights_display_only": [
+        0.2,
+        0.3,
+        0.5
+      ],
+      "log_weights": [
+        -1.6094379124341003,
+        -1.2039728043259361,
+        -0.6931471805599453
+      ],
+      "tail": {
+        "component_bounds": [
+          {
+            "id": "affine",
+            "weight": 0.2,
+            "outer_component_bound": 2.1108072832283104e-05,
+            "weighted_outer_bound": 4.221614566456621e-06,
+            "query_tail_probability": 9.784872357735861e-10,
+            "I0_conservative_ignored_negative_term": 1.1894931940058042e-06,
+            "I1_conservative_ignored_negative_term": 2.3813079183062715e-05
+          },
+          {
+            "id": "interaction",
+            "weight": 0.3,
+            "outer_component_bound": 2.1108072832283104e-05,
+            "weighted_outer_bound": 6.332421849684931e-06,
+            "query_tail_probability": 9.784872357735861e-10,
+            "I0_conservative_ignored_negative_term": 1.1894931940058042e-06,
+            "I1_conservative_ignored_negative_term": 2.3813079183062715e-05
+          },
+          {
+            "id": "fullquad",
+            "weight": 0.5,
+            "outer_component_bound": 2.1108072832283104e-05,
+            "weighted_outer_bound": 1.0554036416141552e-05,
+            "query_tail_probability": 9.784872357735861e-10,
+            "I0_conservative_ignored_negative_term": 1.1894931940058042e-06,
+            "I1_conservative_ignored_negative_term": 2.3813079183062715e-05
+          }
+        ],
+        "native_target_window_width": 254.81160566394598,
+        "weighted_omitted_query_probability": 9.784872357735861e-10,
+        "outer_target_union_tail_bound_ideal_arithmetic": 2.1108072832283104e-05,
+        "inner_query_tail_bound_ideal_arithmetic": 2.493299036691436e-07,
+        "total_value_tail_bound_ideal_arithmetic": 2.135740273595225e-05,
+        "finite_query_decomposition_closure_allowance": 4.986598073382872e-07,
+        "not_IEEE_CDF_or_finite_quadrature_certificate": true,
+        "no_truncation_renormalization": true
+      },
+      "reported_native_objective": true,
+      "model_based_not_actual_outcome_guarantee": true
+    },
+    {
+      "native_full_VOI": 0.036135630522699955,
+      "native_weighted_within_components": [
+        0.016689065309583445,
+        0.0036583499996932726,
+        0.01882461899346167
+      ],
+      "native_weighted_within_total": 0.039172034302738384,
+      "native_B_before": 6.084185235118448e-35,
+      "native_E_B_after": 0.003036401485506434,
+      "native_signed_between": -0.003036401485506434,
+      "decomposition_closure": -2.294531995829241e-09,
+      "signed_between_clipped": false,
+      "nodes_per_segment": 64,
+      "target_modeled_union": [
+        -27.712812921102035,
+        27.712812921102035
+      ],
+      "segments": [
+        {
+          "target_modeled_interval": [
+            -27.712812921102035,
+            -0.7142857142857143
+          ],
+          "nodes_per_segment": 64,
+          "full_value": 0.00524593687994265,
+          "within_components": [
+            0.002314335800730517,
+            0.0006463616630705075,
+            0.0027382613384599962
+          ],
+          "B_before": 9.715686157165373e-37,
+          "E_B_after": 0.00045302173326354197,
+          "query_diagnostics": [
+            {
+              "generating_hypothesis": "affine",
+              "theta_nodes": 64,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215127,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 0.0,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            },
+            {
+              "generating_hypothesis": "interaction",
+              "theta_nodes": 64,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215127,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 0.0,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            },
+            {
+              "generating_hypothesis": "fullquad",
+              "theta_nodes": 64,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215127,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 0.0,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            }
+          ]
+        },
+        {
+          "target_modeled_interval": [
+            -0.7142857142857143,
+            0.0
+          ],
+          "nodes_per_segment": 64,
+          "full_value": 0.009039085121309997,
+          "within_components": [
+            0.00445718201590682,
+            0.0007611076073757777,
+            0.004831463063052897
+          ],
+          "B_before": 5.857001598707261e-35,
+          "E_B_after": 0.0010106675478360032,
+          "query_diagnostics": [
+            {
+              "generating_hypothesis": "affine",
+              "theta_nodes": 64,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215127,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 0.0,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            },
+            {
+              "generating_hypothesis": "interaction",
+              "theta_nodes": 64,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215127,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 0.0,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            },
+            {
+              "generating_hypothesis": "fullquad",
+              "theta_nodes": 64,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215127,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 0.0,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            }
+          ]
+        },
+        {
+          "target_modeled_interval": [
+            0.0,
+            27.712812921102035
+          ],
+          "nodes_per_segment": 64,
+          "full_value": 0.02185060852144731,
+          "within_components": [
+            0.00991754749294611,
+            0.0022508807292469873,
+            0.011254894591948776
+          ],
+          "B_before": 1.3002677483953262e-36,
+          "E_B_after": 0.001572712204406889,
+          "query_diagnostics": [
+            {
+              "generating_hypothesis": "affine",
+              "theta_nodes": 64,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215127,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 0.0,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            },
+            {
+              "generating_hypothesis": "interaction",
+              "theta_nodes": 64,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215127,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 0.0,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            },
+            {
+              "generating_hypothesis": "fullquad",
+              "theta_nodes": 64,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215127,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 0.0,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            }
+          ]
+        }
+      ],
+      "pair_laws": [
+        {
+          "id": "affine",
+          "mu_query": 0.5,
+          "mu_target": 0.0,
+          "scale_query": 1.1937336386313322,
+          "scale_target": 0.8660254037844386,
+          "nu": 6.0,
+          "rho": 0.38692066672533953,
+          "query_phi": [
+            1.0,
+            0.5,
+            -1.0
+          ],
+          "target_phi": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "different_rows_independent_residuals": true
+        },
+        {
+          "id": "interaction",
+          "mu_query": 0.25,
+          "mu_target": 0.0,
+          "scale_query": 0.9253377761660874,
+          "scale_target": 0.8660254037844386,
+          "nu": 6.0,
+          "rho": 0.12478692301566606,
+          "query_phi": [
+            1.0,
+            0.5,
+            -1.0,
+            -0.5
+          ],
+          "target_phi": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "different_rows_independent_residuals": true
+        },
+        {
+          "id": "fullquad",
+          "mu_query": 0.1625,
+          "mu_target": 0.0,
+          "scale_query": 1.1353688827865593,
+          "scale_target": 0.8660254037844386,
+          "nu": 6.0,
+          "rho": 0.25425669046549126,
+          "query_phi": [
+            1.0,
+            0.5,
+            -1.0,
+            -0.5,
+            0.25,
+            1.0
+          ],
+          "target_phi": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "different_rows_independent_residuals": true
+        }
+      ],
+      "weights_display_only": [
+        0.2,
+        0.3,
+        0.5
+      ],
+      "log_weights": [
+        -1.6094379124341003,
+        -1.2039728043259361,
+        -0.6931471805599453
+      ],
+      "tail": {
+        "component_bounds": [
+          {
+            "id": "affine",
+            "weight": 0.2,
+            "outer_component_bound": 2.1108072832283104e-05,
+            "weighted_outer_bound": 4.221614566456621e-06,
+            "query_tail_probability": 9.784872357735861e-10,
+            "I0_conservative_ignored_negative_term": 1.1894931940058042e-06,
+            "I1_conservative_ignored_negative_term": 2.3813079183062715e-05
+          },
+          {
+            "id": "interaction",
+            "weight": 0.3,
+            "outer_component_bound": 2.1108072832283104e-05,
+            "weighted_outer_bound": 6.332421849684931e-06,
+            "query_tail_probability": 9.784872357735861e-10,
+            "I0_conservative_ignored_negative_term": 1.1894931940058042e-06,
+            "I1_conservative_ignored_negative_term": 2.3813079183062715e-05
+          },
+          {
+            "id": "fullquad",
+            "weight": 0.5,
+            "outer_component_bound": 2.1108072832283104e-05,
+            "weighted_outer_bound": 1.0554036416141552e-05,
+            "query_tail_probability": 9.784872357735861e-10,
+            "I0_conservative_ignored_negative_term": 1.1894931940058042e-06,
+            "I1_conservative_ignored_negative_term": 2.3813079183062715e-05
+          }
+        ],
+        "native_target_window_width": 254.81160566394598,
+        "weighted_omitted_query_probability": 9.784872357735861e-10,
+        "outer_target_union_tail_bound_ideal_arithmetic": 2.1108072832283104e-05,
+        "inner_query_tail_bound_ideal_arithmetic": 2.493299036691436e-07,
+        "total_value_tail_bound_ideal_arithmetic": 2.135740273595225e-05,
+        "finite_query_decomposition_closure_allowance": 4.986598073382872e-07,
+        "not_IEEE_CDF_or_finite_quadrature_certificate": true,
+        "no_truncation_renormalization": true
+      },
+      "reported_native_objective": true,
+      "model_based_not_actual_outcome_guarantee": true
+    },
+    {
+      "native_full_VOI": 0.036135630522698164,
+      "native_weighted_within_components": [
+        0.016689065309582574,
+        0.0036583499996931286,
+        0.0188246189934607
+      ],
+      "native_weighted_within_total": 0.0391720343027364,
+      "native_B_before": 2.0576483324562837e-34,
+      "native_E_B_after": 0.0030364014855062257,
+      "native_signed_between": -0.0030364014855062257,
+      "decomposition_closure": -2.2945320097070288e-09,
+      "signed_between_clipped": false,
+      "nodes_per_segment": 128,
+      "target_modeled_union": [
+        -27.712812921102035,
+        27.712812921102035
+      ],
+      "segments": [
+        {
+          "target_modeled_interval": [
+            -27.712812921102035,
+            -0.7142857142857143
+          ],
+          "nodes_per_segment": 128,
+          "full_value": 0.005245936879941918,
+          "within_components": [
+            0.0023143358007301673,
+            0.0006463616630704369,
+            0.0027382613384596068
+          ],
+          "B_before": 2.1699894745828844e-35,
+          "E_B_after": 0.00045302173326346304,
+          "query_diagnostics": [
+            {
+              "generating_hypothesis": "affine",
+              "theta_nodes": 128,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215184,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 5.662137425588298e-15,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            },
+            {
+              "generating_hypothesis": "interaction",
+              "theta_nodes": 128,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215184,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 5.662137425588298e-15,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            },
+            {
+              "generating_hypothesis": "fullquad",
+              "theta_nodes": 128,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215184,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 5.662137425588298e-15,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            }
+          ]
+        },
+        {
+          "target_modeled_interval": [
+            -0.7142857142857143,
+            0.0
+          ],
+          "nodes_per_segment": 128,
+          "full_value": 0.009039085121310055,
+          "within_components": [
+            0.004457182015906845,
+            0.0007611076073757828,
+            0.004831463063052927
+          ],
+          "B_before": 1.8220385983307277e-34,
+          "E_B_after": 0.0010106675478360097,
+          "query_diagnostics": [
+            {
+              "generating_hypothesis": "affine",
+              "theta_nodes": 128,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215184,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 5.662137425588298e-15,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            },
+            {
+              "generating_hypothesis": "interaction",
+              "theta_nodes": 128,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215184,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 5.662137425588298e-15,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            },
+            {
+              "generating_hypothesis": "fullquad",
+              "theta_nodes": 128,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215184,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 5.662137425588298e-15,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            }
+          ]
+        },
+        {
+          "target_modeled_interval": [
+            0.0,
+            27.712812921102035
+          ],
+          "nodes_per_segment": 128,
+          "full_value": 0.021850608521446192,
+          "within_components": [
+            0.009917547492945562,
+            0.0022508807292469088,
+            0.011254894591948167
+          ],
+          "B_before": 1.8610786667267713e-36,
+          "E_B_after": 0.0015727122044067528,
+          "query_diagnostics": [
+            {
+              "generating_hypothesis": "affine",
+              "theta_nodes": 128,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215184,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 5.662137425588298e-15,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            },
+            {
+              "generating_hypothesis": "interaction",
+              "theta_nodes": 128,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215184,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 5.662137425588298e-15,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            },
+            {
+              "generating_hypothesis": "fullquad",
+              "theta_nodes": 128,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215184,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 5.662137425588298e-15,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            }
+          ]
+        }
+      ],
+      "pair_laws": [
+        {
+          "id": "affine",
+          "mu_query": 0.5,
+          "mu_target": 0.0,
+          "scale_query": 1.1937336386313322,
+          "scale_target": 0.8660254037844386,
+          "nu": 6.0,
+          "rho": 0.38692066672533953,
+          "query_phi": [
+            1.0,
+            0.5,
+            -1.0
+          ],
+          "target_phi": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "different_rows_independent_residuals": true
+        },
+        {
+          "id": "interaction",
+          "mu_query": 0.25,
+          "mu_target": 0.0,
+          "scale_query": 0.9253377761660874,
+          "scale_target": 0.8660254037844386,
+          "nu": 6.0,
+          "rho": 0.12478692301566606,
+          "query_phi": [
+            1.0,
+            0.5,
+            -1.0,
+            -0.5
+          ],
+          "target_phi": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "different_rows_independent_residuals": true
+        },
+        {
+          "id": "fullquad",
+          "mu_query": 0.1625,
+          "mu_target": 0.0,
+          "scale_query": 1.1353688827865593,
+          "scale_target": 0.8660254037844386,
+          "nu": 6.0,
+          "rho": 0.25425669046549126,
+          "query_phi": [
+            1.0,
+            0.5,
+            -1.0,
+            -0.5,
+            0.25,
+            1.0
+          ],
+          "target_phi": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "different_rows_independent_residuals": true
+        }
+      ],
+      "weights_display_only": [
+        0.2,
+        0.3,
+        0.5
+      ],
+      "log_weights": [
+        -1.6094379124341003,
+        -1.2039728043259361,
+        -0.6931471805599453
+      ],
+      "tail": {
+        "component_bounds": [
+          {
+            "id": "affine",
+            "weight": 0.2,
+            "outer_component_bound": 2.1108072832283104e-05,
+            "weighted_outer_bound": 4.221614566456621e-06,
+            "query_tail_probability": 9.784872357735861e-10,
+            "I0_conservative_ignored_negative_term": 1.1894931940058042e-06,
+            "I1_conservative_ignored_negative_term": 2.3813079183062715e-05
+          },
+          {
+            "id": "interaction",
+            "weight": 0.3,
+            "outer_component_bound": 2.1108072832283104e-05,
+            "weighted_outer_bound": 6.332421849684931e-06,
+            "query_tail_probability": 9.784872357735861e-10,
+            "I0_conservative_ignored_negative_term": 1.1894931940058042e-06,
+            "I1_conservative_ignored_negative_term": 2.3813079183062715e-05
+          },
+          {
+            "id": "fullquad",
+            "weight": 0.5,
+            "outer_component_bound": 2.1108072832283104e-05,
+            "weighted_outer_bound": 1.0554036416141552e-05,
+            "query_tail_probability": 9.784872357735861e-10,
+            "I0_conservative_ignored_negative_term": 1.1894931940058042e-06,
+            "I1_conservative_ignored_negative_term": 2.3813079183062715e-05
+          }
+        ],
+        "native_target_window_width": 254.81160566394598,
+        "weighted_omitted_query_probability": 9.784872357735861e-10,
+        "outer_target_union_tail_bound_ideal_arithmetic": 2.1108072832283104e-05,
+        "inner_query_tail_bound_ideal_arithmetic": 2.493299036691436e-07,
+        "total_value_tail_bound_ideal_arithmetic": 2.135740273595225e-05,
+        "finite_query_decomposition_closure_allowance": 4.986598073382872e-07,
+        "not_IEEE_CDF_or_finite_quadrature_certificate": true,
+        "no_truncation_renormalization": true
+      },
+      "reported_native_objective": true,
+      "model_based_not_actual_outcome_guarantee": true
+    },
+    {
+      "native_full_VOI": 0.03613563052270034,
+      "native_weighted_within_components": [
+        0.016689065309583678,
+        0.003658349999693297,
+        0.01882461899346187
+      ],
+      "native_weighted_within_total": 0.03917203430273884,
+      "native_B_before": 2.5104270745303298e-34,
+      "native_E_B_after": 0.0030364014855064907,
+      "native_signed_between": -0.0030364014855064907,
+      "decomposition_closure": -2.294532008405986e-09,
+      "signed_between_clipped": false,
+      "nodes_per_segment": 256,
+      "target_modeled_union": [
+        -27.712812921102035,
+        27.712812921102035
+      ],
+      "segments": [
+        {
+          "target_modeled_interval": [
+            -27.712812921102035,
+            -0.7142857142857143
+          ],
+          "nodes_per_segment": 256,
+          "full_value": 0.005245936879942849,
+          "within_components": [
+            0.002314335800730616,
+            0.0006463616630705251,
+            0.0027382613384601038
+          ],
+          "B_before": 1.0041605838734172e-35,
+          "E_B_after": 0.00045302173326356495,
+          "query_diagnostics": [
+            {
+              "generating_hypothesis": "affine",
+              "theta_nodes": 256,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215128,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 1.1102230246251565e-16,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            },
+            {
+              "generating_hypothesis": "interaction",
+              "theta_nodes": 256,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215128,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 1.1102230246251565e-16,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            },
+            {
+              "generating_hypothesis": "fullquad",
+              "theta_nodes": 256,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215128,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 1.1102230246251565e-16,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            }
+          ]
+        },
+        {
+          "target_modeled_interval": [
+            -0.7142857142857143,
+            0.0
+          ],
+          "nodes_per_segment": 256,
+          "full_value": 0.009039085121309999,
+          "within_components": [
+            0.004457182015906815,
+            0.0007611076073757778,
+            0.0048314630630528965
+          ],
+          "B_before": 1.328201479521553e-34,
+          "E_B_after": 0.0010106675478360036,
+          "query_diagnostics": [
+            {
+              "generating_hypothesis": "affine",
+              "theta_nodes": 256,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215128,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 1.1102230246251565e-16,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            },
+            {
+              "generating_hypothesis": "interaction",
+              "theta_nodes": 256,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215128,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 1.1102230246251565e-16,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            },
+            {
+              "generating_hypothesis": "fullquad",
+              "theta_nodes": 256,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215128,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 1.1102230246251565e-16,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            }
+          ]
+        },
+        {
+          "target_modeled_interval": [
+            0.0,
+            27.712812921102035
+          ],
+          "nodes_per_segment": 256,
+          "full_value": 0.021850608521447497,
+          "within_components": [
+            0.009917547492946247,
+            0.002250880729246994,
+            0.011254894591948868
+          ],
+          "B_before": 1.081809536621435e-34,
+          "E_B_after": 0.0015727122044069221,
+          "query_diagnostics": [
+            {
+              "generating_hypothesis": "affine",
+              "theta_nodes": 256,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215128,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 1.1102230246251565e-16,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            },
+            {
+              "generating_hypothesis": "interaction",
+              "theta_nodes": 256,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215128,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 1.1102230246251565e-16,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            },
+            {
+              "generating_hypothesis": "fullquad",
+              "theta_nodes": 256,
+              "weighted_original_density": true,
+              "renormalized": false,
+              "mass_quadrature": 0.9999999990215128,
+              "mass_analytic": 0.9999999990215127,
+              "mass_absolute_difference": 1.1102230246251565e-16,
+              "posterior_query_logweights_retained": true,
+              "display_weight_underflow_nodes": 0
+            }
+          ]
+        }
+      ],
+      "pair_laws": [
+        {
+          "id": "affine",
+          "mu_query": 0.5,
+          "mu_target": 0.0,
+          "scale_query": 1.1937336386313322,
+          "scale_target": 0.8660254037844386,
+          "nu": 6.0,
+          "rho": 0.38692066672533953,
+          "query_phi": [
+            1.0,
+            0.5,
+            -1.0
+          ],
+          "target_phi": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "different_rows_independent_residuals": true
+        },
+        {
+          "id": "interaction",
+          "mu_query": 0.25,
+          "mu_target": 0.0,
+          "scale_query": 0.9253377761660874,
+          "scale_target": 0.8660254037844386,
+          "nu": 6.0,
+          "rho": 0.12478692301566606,
+          "query_phi": [
+            1.0,
+            0.5,
+            -1.0,
+            -0.5
+          ],
+          "target_phi": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "different_rows_independent_residuals": true
+        },
+        {
+          "id": "fullquad",
+          "mu_query": 0.1625,
+          "mu_target": 0.0,
+          "scale_query": 1.1353688827865593,
+          "scale_target": 0.8660254037844386,
+          "nu": 6.0,
+          "rho": 0.25425669046549126,
+          "query_phi": [
+            1.0,
+            0.5,
+            -1.0,
+            -0.5,
+            0.25,
+            1.0
+          ],
+          "target_phi": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "different_rows_independent_residuals": true
+        }
+      ],
+      "weights_display_only": [
+        0.2,
+        0.3,
+        0.5
+      ],
+      "log_weights": [
+        -1.6094379124341003,
+        -1.2039728043259361,
+        -0.6931471805599453
+      ],
+      "tail": {
+        "component_bounds": [
+          {
+            "id": "affine",
+            "weight": 0.2,
+            "outer_component_bound": 2.1108072832283104e-05,
+            "weighted_outer_bound": 4.221614566456621e-06,
+            "query_tail_probability": 9.784872357735861e-10,
+            "I0_conservative_ignored_negative_term": 1.1894931940058042e-06,
+            "I1_conservative_ignored_negative_term": 2.3813079183062715e-05
+          },
+          {
+            "id": "interaction",
+            "weight": 0.3,
+            "outer_component_bound": 2.1108072832283104e-05,
+            "weighted_outer_bound": 6.332421849684931e-06,
+            "query_tail_probability": 9.784872357735861e-10,
+            "I0_conservative_ignored_negative_term": 1.1894931940058042e-06,
+            "I1_conservative_ignored_negative_term": 2.3813079183062715e-05
+          },
+          {
+            "id": "fullquad",
+            "weight": 0.5,
+            "outer_component_bound": 2.1108072832283104e-05,
+            "weighted_outer_bound": 1.0554036416141552e-05,
+            "query_tail_probability": 9.784872357735861e-10,
+            "I0_conservative_ignored_negative_term": 1.1894931940058042e-06,
+            "I1_conservative_ignored_negative_term": 2.3813079183062715e-05
+          }
+        ],
+        "native_target_window_width": 254.81160566394598,
+        "weighted_omitted_query_probability": 9.784872357735861e-10,
+        "outer_target_union_tail_bound_ideal_arithmetic": 2.1108072832283104e-05,
+        "inner_query_tail_bound_ideal_arithmetic": 2.493299036691436e-07,
+        "total_value_tail_bound_ideal_arithmetic": 2.135740273595225e-05,
+        "finite_query_decomposition_closure_allowance": 4.986598073382872e-07,
+        "not_IEEE_CDF_or_finite_quadrature_certificate": true,
+        "no_truncation_renormalization": true
+      },
+      "reported_native_objective": true,
+      "model_based_not_actual_outcome_guarantee": true
+    }
+  ],
+  "synthetic_fixed_label_probes": [
+    {
+      "artificial_modeled_query_Y": -1.0,
+      "not_a_material_measurement": true,
+      "evidence": {
+        "preupdate_logpredictive": [
+          -1.955156141747174,
+          -1.8122151240597337,
+          -1.6510019039236918
+        ],
+        "old_log_weights": [
+          -1.6094379124341003,
+          -1.2039728043259361,
+          -0.6931471805599453
+        ],
+        "new_log_weights": [
+          -1.8114293909762025,
+          -1.2630232651805984,
+          -0.5909844212785655
+        ],
+        "new_weights_display_only": [
+          0.1634203781623861,
+          0.2827977601704054,
+          0.5537818616672083
+        ],
+        "evidence_before_NIG_update": true,
+        "native_shared_response_Jacobian_cancels": true,
+        "probability_floor": false
+      },
+      "updated_models": [
+        {
+          "id": "affine",
+          "updated_NIG": {
+            "mean": [
+              -0.4210526315789474,
+              0.021052631578947323,
+              0.06315789473684208
+            ],
+            "V": [
+              [
+                0.27543859649122804,
+                0.29122807017543856,
+                0.14035087719298245
+              ],
+              [
+                0.29122807017543856,
+                0.5754385964912281,
+                0.1929824561403509
+              ],
+              [
+                0.14035087719298245,
+                0.1929824561403509,
+                0.41228070175438597
+              ]
+            ],
+            "alpha": 3.5,
+            "b": 1.8947368421052633,
+            "labeled_updates": 1
+          },
+          "updated_NIG_target_law": {
+            "mu": -0.4210526315789474,
+            "scale": 0.8309410325674583,
+            "nu": 7.0
+          },
+          "bivariate_conditional_target_law": {
+            "mu": -0.4210526315789473,
+            "scale": 0.8309410325674583,
+            "nu": 7.0
+          },
+          "conditional_parameter_absolute_differences": {
+            "mu": 1.1102230246251565e-16,
+            "scale": 0.0,
+            "nu": 0.0
+          }
+        },
+        {
+          "id": "interaction",
+          "updated_NIG": {
+            "mean": [
+              -0.14598540145985403,
+              0.672992700729927,
+              0.16496350364963502,
+              0.5912408759124088
+            ],
+            "V": [
+              [
+                0.47664233576642334,
+                -0.5883211678832116,
+                0.05839416058394161,
+                0.014598540145985403
+              ],
+              [
+                -0.5883211678832116,
+                0.9941605839416059,
+                -0.0291970802919708,
+                -0.0072992700729927
+              ],
+              [
+                0.05839416058394161,
+                -0.0291970802919708,
+                0.35401459854014594,
+                -0.03649635036496351
+              ],
+              [
+                0.014598540145985403,
+                -0.0072992700729927,
+                -0.03649635036496351,
+                0.24087591240875914
+              ]
+            ],
+            "alpha": 3.5,
+            "b": 1.9562043795620438,
+            "labeled_updates": 1
+          },
+          "updated_NIG_target_law": {
+            "mu": -0.14598540145985403,
+            "scale": 0.9084703319745786,
+            "nu": 7.0
+          },
+          "bivariate_conditional_target_law": {
+            "mu": -0.14598540145985403,
+            "scale": 0.9084703319745786,
+            "nu": 7.0
+          },
+          "conditional_parameter_absolute_differences": {
+            "mu": 0.0,
+            "scale": 0.0,
+            "nu": 0.0
+          }
+        },
+        {
+          "id": "fullquad",
+          "updated_NIG": {
+            "mean": [
+              -0.22545454545454546,
+              0.3745454545454545,
+              0.025454545454545452,
+              0.5563636363636364,
+              0.2218181818181818,
+              -0.2627272727272727
+            ],
+            "V": [
+              [
+                0.403030303030303,
+                -0.09696969696969697,
+                0.09696969696969697,
+                0.024242424242424242,
+                -0.012121212121212121,
+                -0.048484848484848485
+              ],
+              [
+                -0.09696969696969697,
+                0.9030303030303031,
+                0.09696969696969697,
+                0.024242424242424242,
+                -0.012121212121212121,
+                -0.048484848484848485
+              ],
+              [
+                0.09696969696969697,
+                0.09696969696969697,
+                0.403030303030303,
+                -0.024242424242424242,
+                0.012121212121212121,
+                0.048484848484848485
+              ],
+              [
+                0.024242424242424242,
+                0.024242424242424242,
+                -0.024242424242424242,
+                0.24393939393939393,
+                0.0030303030303030303,
+                0.012121212121212121
+              ],
+              [
+                -0.012121212121212121,
+                -0.012121212121212121,
+                0.012121212121212121,
+                0.0030303030303030303,
+                0.24848484848484848,
+                -0.006060606060606061
+              ],
+              [
+                -0.048484848484848485,
+                -0.048484848484848485,
+                0.048484848484848485,
+                0.012121212121212121,
+                -0.006060606060606061,
+                0.22575757575757577
+              ]
+            ],
+            "alpha": 3.5,
+            "b": 1.7620909090909092,
+            "labeled_updates": 1
+          },
+          "updated_NIG_target_law": {
+            "mu": -0.22545454545454546,
+            "scale": 0.8404534392047394,
+            "nu": 7.0
+          },
+          "bivariate_conditional_target_law": {
+            "mu": -0.22545454545454546,
+            "scale": 0.8404534392047392,
+            "nu": 7.0
+          },
+          "conditional_parameter_absolute_differences": {
+            "mu": 0.0,
+            "scale": 1.1102230246251565e-16,
+            "nu": 0.0
+          }
+        }
+      ],
+      "updated_log_weights": [
+        -1.8114293909762025,
+        -1.2630232651805984,
+        -0.5909844212785655
+      ],
+      "bivariate_query_posterior_weights": [
+        0.1634203781623861,
+        0.2827977601704054,
+        0.5537818616672083
+      ],
+      "weight_max_absolute_difference": 0.0,
+      "target_modeled_CDF_points": [
+        -2.0,
+        0.0,
+        2.0
+      ],
+      "mixture_CDF_from_updated_NIG": [
+        0.03961535262437209,
+        0.6042325844242907,
+        0.9819138896431162
+      ],
+      "mixture_CDF_from_bivariate_conditionals": [
+        0.03961535262437209,
+        0.6042325844242907,
+        0.9819138896431162
+      ],
+      "mixture_CDF_max_absolute_difference": 0.0
+    },
+    {
+      "artificial_modeled_query_Y": 1.0,
+      "not_a_material_measurement": true,
+      "evidence": {
+        "preupdate_logpredictive": [
+          -1.2383756974861275,
+          -1.246470393612278,
+          -1.3912026446163606
+        ],
+        "old_log_weights": [
+          -1.6094379124341003,
+          -1.2039728043259361,
+          -0.6931471805599453
+        ],
+        "new_log_weights": [
+          -1.5333346557673753,
+          -1.1359642437853619,
+          -0.7698708710234536
+        ],
+        "new_weights_display_only": [
+          0.21581479799766543,
+          0.321112341427094,
+          0.46307286057524055
+        ],
+        "evidence_before_NIG_update": true,
+        "native_shared_response_Jacobian_cancels": true,
+        "probability_floor": false
+      },
+      "updated_models": [
+        {
+          "id": "affine",
+          "updated_NIG": {
+            "mean": [
+              0.14035087719298245,
+              0.7929824561403509,
+              -0.28771929824561404
+            ],
+            "V": [
+              [
+                0.27543859649122804,
+                0.29122807017543856,
+                0.14035087719298245
+              ],
+              [
+                0.29122807017543856,
+                0.5754385964912281,
+                0.1929824561403509
+              ],
+              [
+                0.14035087719298245,
+                0.1929824561403509,
+                0.41228070175438597
+              ]
+            ],
+            "alpha": 3.5,
+            "b": 1.543859649122807,
+            "labeled_updates": 1
+          },
+          "updated_NIG_target_law": {
+            "mu": 0.14035087719298245,
+            "scale": 0.7500663178406546,
+            "nu": 7.0
+          },
+          "bivariate_conditional_target_law": {
+            "mu": 0.14035087719298245,
+            "scale": 0.7500663178406547,
+            "nu": 7.0
+          },
+          "conditional_parameter_absolute_differences": {
+            "mu": 0.0,
+            "scale": 1.1102230246251565e-16,
+            "nu": 0.0
+          }
+        },
+        {
+          "id": "interaction",
+          "updated_NIG": {
+            "mean": [
+              0.08759124087591243,
+              0.5562043795620438,
+              -0.41897810218978104,
+              0.44525547445255476
+            ],
+            "V": [
+              [
+                0.47664233576642334,
+                -0.5883211678832116,
+                0.05839416058394161,
+                0.014598540145985403
+              ],
+              [
+                -0.5883211678832116,
+                0.9941605839416059,
+                -0.0291970802919708,
+                -0.0072992700729927
+              ],
+              [
+                0.05839416058394161,
+                -0.0291970802919708,
+                0.35401459854014594,
+                -0.03649635036496351
+              ],
+              [
+                0.014598540145985403,
+                -0.0072992700729927,
+                -0.03649635036496351,
+                0.24087591240875914
+              ]
+            ],
+            "alpha": 3.5,
+            "b": 1.6642335766423357,
+            "labeled_updates": 1
+          },
+          "updated_NIG_target_law": {
+            "mu": 0.08759124087591243,
+            "scale": 0.8379358577351248,
+            "nu": 7.0
+          },
+          "bivariate_conditional_target_law": {
+            "mu": 0.08759124087591243,
+            "scale": 0.8379358577351247,
+            "nu": 7.0
+          },
+          "conditional_parameter_absolute_differences": {
+            "mu": 0.0,
+            "scale": 1.1102230246251565e-16,
+            "nu": 0.0
+          }
+        },
+        {
+          "id": "fullquad",
+          "updated_NIG": {
+            "mean": [
+              0.16242424242424242,
+              0.7624242424242424,
+              -0.3624242424242424,
+              0.4593939393939394,
+              0.2703030303030303,
+              -0.06878787878787879
+            ],
+            "V": [
+              [
+                0.403030303030303,
+                -0.09696969696969697,
+                0.09696969696969697,
+                0.024242424242424242,
+                -0.012121212121212121,
+                -0.048484848484848485
+              ],
+              [
+                -0.09696969696969697,
+                0.9030303030303031,
+                0.09696969696969697,
+                0.024242424242424242,
+                -0.012121212121212121,
+                -0.048484848484848485
+              ],
+              [
+                0.09696969696969697,
+                0.09696969696969697,
+                0.403030303030303,
+                -0.024242424242424242,
+                0.012121212121212121,
+                0.048484848484848485
+              ],
+              [
+                0.024242424242424242,
+                0.024242424242424242,
+                -0.024242424242424242,
+                0.24393939393939393,
+                0.0030303030303030303,
+                0.012121212121212121
+              ],
+              [
+                -0.012121212121212121,
+                -0.012121212121212121,
+                0.012121212121212121,
+                0.0030303030303030303,
+                0.24848484848484848,
+                -0.006060606060606061
+              ],
+              [
+                -0.048484848484848485,
+                -0.048484848484848485,
+                0.048484848484848485,
+                0.012121212121212121,
+                -0.006060606060606061,
+                0.22575757575757577
+              ]
+            ],
+            "alpha": 3.5,
+            "b": 1.636030303030303,
+            "labeled_updates": 1
+          },
+          "updated_NIG_target_law": {
+            "mu": 0.16242424242424242,
+            "scale": 0.8098324503654822,
+            "nu": 7.0
+          },
+          "bivariate_conditional_target_law": {
+            "mu": 0.16242424242424242,
+            "scale": 0.8098324503654822,
+            "nu": 7.0
+          },
+          "conditional_parameter_absolute_differences": {
+            "mu": 0.0,
+            "scale": 0.0,
+            "nu": 0.0
+          }
+        }
+      ],
+      "updated_log_weights": [
+        -1.5333346557673753,
+        -1.1359642437853619,
+        -0.7698708710234536
+      ],
+      "bivariate_query_posterior_weights": [
+        0.21581479799766543,
+        0.321112341427094,
+        0.46307286057524055
+      ],
+      "weight_max_absolute_difference": 0.0,
+      "target_modeled_CDF_points": [
+        -2.0,
+        0.0,
+        2.0
+      ],
+      "mixture_CDF_from_updated_NIG": [
+        0.01672278705656913,
+        0.4361749059149044,
+        0.9730517417846419
+      ],
+      "mixture_CDF_from_bivariate_conditionals": [
+        0.016722787056569127,
+        0.4361749059149044,
+        0.9730517417846419
+      ],
+      "mixture_CDF_max_absolute_difference": 3.469446951953614e-18
+    }
+  ],
+  "last_refinement_differences": {
+    "native_full_VOI": 2.1788126858268697e-15,
+    "native_weighted_within_total": 2.4424906541753444e-15,
+    "native_B_before": 4.5277874207404613e-35,
+    "native_E_B_after": 2.649790109554573e-16,
+    "native_signed_between": 2.649790109554573e-16
+  },
+  "last_within_component_refinement_differences": [
+    1.1032841307212493e-15,
+    1.682681771697503e-16,
+    1.169203622808368e-15
+  ],
+  "max_refinement_proxy": 2.4424906541753444e-15,
+  "decomposition_closure_diagnostic_allowance": 4.986598146657591e-07,
+  "max_conditional_parameter_algebra_difference": 1.1102230246251565e-16,
+  "max_weight_algebra_difference": 0.0,
+  "max_mixture_CDF_algebra_difference": 3.469446951953614e-18,
+  "checks": {
+    "conditional_parameter_algebra": true,
+    "model_weight_algebra": true,
+    "conditional_mixture_CDF_algebra": true,
+    "final_refinement_diagnostic": true,
+    "ideal_tail_account": true,
+    "finite_cutoff_decomposition_diagnostic": true,
+    "no_negative_between_clipping": true
+  },
+  "criteria_unchanged": true,
+  "signed_between_is_negative_beyond_recorded_numerical_proxy": true,
+  "not_independent_reference_PASS_until_separate_audit": true,
+  "material_reads_fits_or_queries": 0,
+  "classical_method_not_claimed_new_Bayesian_algorithm": true,
+  "limitations": [
+    "Single artificial fixture; no material benefit or active-policy effect.",
+    "Finite quadrature refinement is a diagnostic, not rigorous error certificate.",
+    "CDF library and floating-point errors are not enclosed by analytic tail bounds.",
+    "No parameter scans, old material rescue, new model stack or signed-term clipping."
+  ]
+}

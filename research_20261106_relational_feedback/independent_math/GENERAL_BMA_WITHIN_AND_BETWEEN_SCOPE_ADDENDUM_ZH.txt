@@ -1,0 +1,11 @@
+一般 NIG-BMA 与本固定产品门的边界
+
+对于会在真实标签后更新的component回归模型，F_t(y|z)=Σ_h π_h(z)F_ht(y|z)。不能只更新H权重而冻结会变化的component预测，然后称完整BayesVOI。
+定义 R_h 为component真实predictive下的Bayes CRPS风险，B=.5 Σ_hk w_h w_k ∫(F_h−F_k)^2dy，则
+R_mix=Σ_h w_h R_h+B，
+Δ_total=Σ_h w_h Δ_h+B_before−E_Z B_after(Z)。
+该分解是代数恒等式。各component within-H VOI Δ_h非负，但 B_before−E B_after 不保证非负，不能把后一项命名为一般独立的“非负模型识别收益”。例如不同H的q/t相关方向相反且边际相同，查询前component targetCDF相同B_before=0，条件后CDF反而分开，使B_after>0；negativebetween会抵消部分within-H收益。总proper-score VOI仍非负。
+
+当前固定三H门给定H、所有参数固定且q/t独立，因此F_ht(y|z)=F_ht(y)，within-H VOI=0，总收益才精确化为C:D形式和纯可辨识反馈。有限t rho=0并不满足此条件。
+未来若每H保留NIG参数后验，必须保留旧native t kernel代表within-H项，并对完整条件mixture进行正确原单位参考积分。只跑本三H产品人工门，不是在材料上证明了删within-H也足够，更不能靠在旧152组改hypothesis来救分。
+这条界线不妨碍成熟Bayes机制的引用组合和材料适配；实际创新需由明确材料任务、真实query信息与强控制下的作用、风险读出计算/缓存/误差证据支持。

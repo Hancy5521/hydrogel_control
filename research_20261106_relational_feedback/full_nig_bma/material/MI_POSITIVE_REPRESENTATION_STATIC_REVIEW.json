@@ -1,0 +1,19 @@
+{
+  "actual_utc": "2026-11-06T07:21:45.746662+00:00",
+  "status": "PASS_STATIC_MI_POSITIVE_REPRESENTATION_BEFORE_MATERIAL_EXECUTION",
+  "source_sha256": "8f28260590132c18b8e0b6bc44ab409112f5dba9d8b433bbe8f9b84840fc8338",
+  "supersedes_only_MI_scope_of_limited_review_sha256": "68474185696976158505f787eb14fcc9b1a4d65761106e6cce19cd2e641a0c66",
+  "proof": [
+    "For normalized p=posteriorH,q=priorH, KL(p||q)=sum[p log(p/q)-p+q].",
+    "Writing r=logp-logq: r>=0 uses p[r+expm1(-r)]; r<0 uses q[exp(r)r-expm1(r)]. Both are nonnegative f-divergence terms.",
+    "Near0, p*r^2*(1/2-r/6+r^2/24-r^3/120+r^4/720) is the fixed Taylor representation; no clipping.",
+    "Integrating nodeKL under original mixture query density is exactly I(H;Yq); eachgeneratingH theta truncation retainsoriginalmass.",
+    "Pointwise KL(p||q)<=max_h(-logq_h), because sum p logp<=0. Thus omittedquerymixturemass*max(-normalizedlogprior) bounds the missedMI in ideal arithmetic.",
+    "Logweights remainfinite even if displayprobabilities underflow; no floors/temperature/reservation."
+  ],
+  "limits": [
+    "Analytic tail bound is not a finitequadrature/CDF/IEEE certificate.",
+    "Actualcontroller must enforce fixedprelabel numericalrefinement and sourceprovenance."
+  ],
+  "numeric_execution_or_material_reads_by_review": 0
+}

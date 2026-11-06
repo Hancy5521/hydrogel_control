@@ -1,0 +1,13 @@
+{
+  "status": "DESIGN_AND_BOUNDED_READING_ONLY_NO_CURRENT_TRIAL_INTERVENTION",
+  "actual_utc": "2026-11-06T08:16:38.453789+00:00",
+  "source_ledger_sha256": "e69a100cb2ccf029fca8c408533acae49c4abc9405a1cbf22b6c33b7926acb74",
+  "proposal_sha256": "91876e67d0b65bcf0b4aea05bc95bff3d994180d595409bd5da29f7c486145c1",
+  "queries": 3,
+  "unique_primary_pages": 5,
+  "current_run_artifacts_read": 0,
+  "native_Y_reads_fits_scores_newmodels": 0,
+  "current_3H_6policy_modified": false,
+  "evalue_or_model_expansion_claimed_implemented": false,
+  "next": "Root continues the actualfixedtrial and scoring. Futurecritic/one-slotrevision requires a separate prospectiveepoch and paidnewvalidation, with predictive/reporting-null limitations."
+}

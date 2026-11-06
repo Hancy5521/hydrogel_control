@@ -1,0 +1,120 @@
+{
+  "status": "DESIGN_ONLY_NOT_REGISTERED_NO_NEW_ROLES_OR_VALUES",
+  "actual_utc": "2026-11-06T06:43:20.064837+00:00",
+  "actual_Asia_Shanghai": "2026-11-06T14:43:20.064837+08:00",
+  "question": "Can actual disclosedY update conditional-relation hypothesis uncertainty sufficiently to alter subsequent native-target-risk queries and improve same-cost missingY recovery?",
+  "source_reference_not_read": {
+    "dataset": "Matminer jarvis_dft_3d existing published snapshot",
+    "raw_sha256": "3d0fc1315b74cf84071f16aa25bb93434dafbc83867beb75872064ac245bd747",
+    "field_order": [
+      "e_form",
+      "gap opt",
+      "bulk modulus"
+    ]
+  },
+  "identity": {
+    "prior_components_excluded": 928,
+    "parent_component_counts": [
+      40,
+      256,
+      256,
+      224,
+      152
+    ],
+    "original_eligible_components": 8842,
+    "remaining_before_selection": 7914,
+    "proposed_new_components": 160,
+    "remaining_after_selection": 7754,
+    "new_role_counts": {
+      "warm": 32,
+      "pool": 32,
+      "terminal": 96
+    },
+    "hash_prefix_proposed": "relational_feedback_bma_onlyY_v1|",
+    "selection_executed": false,
+    "all_new_roles_development": true
+  },
+  "cost": {
+    "warm_complete3": 96,
+    "pool_dual_proxies": 64,
+    "terminal_dual_proxies": 192,
+    "common_setup": 352,
+    "per_policy_onlyY": 8,
+    "per_policy_total_including_setup": 360,
+    "policies": 5,
+    "counterfactual_query_events": 40,
+    "unique_pool_Y_revelation_upper_bound": 32,
+    "counterfactual_reuse_does_not_multiply_materialN": true
+  },
+  "hypotheses": {
+    "affine": [
+      "1",
+      "zA",
+      "zG"
+    ],
+    "interaction": [
+      "1",
+      "zA",
+      "zG",
+      "zA*zG"
+    ],
+    "quadratic": [
+      "1",
+      "zA",
+      "zG",
+      "zA*zG",
+      "zA^2",
+      "zG^2"
+    ]
+  },
+  "proposed_prior_not_yet_root_frozen": {
+    "model_prior_probabilities": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "coefficient_mean": 0,
+    "V0_intercept": 10,
+    "V0_other_standardized_feature_diagonal": 1,
+    "IG_alpha0": 3,
+    "IG_b0": 2,
+    "shared_warm_only_coordinates": true,
+    "no_weight_floor_or_temperature_or_entropy_reservation": true
+  },
+  "policies": [
+    "full_native_cross_target_CRPS_BMA",
+    "warm_openloop_same_legal_joint_lookahead",
+    "fixed_random",
+    "marginal_native_CRPS_uncertainty",
+    "GP_variance_own_GP_prediction"
+  ],
+  "predictor_ablation": "candidate_chain_componentstates_actualY_updated_but_predictiveweights_frozenatwarm; not an acquisition",
+  "logical_forecast_counts": {
+    "main_BMA": 1440,
+    "sameinfo_affine_NIG_all5policies": 1440,
+    "GP_RF_on_candidate_and_random": 1152,
+    "GPpolicy_own_GP": 288,
+    "candidate_frozenweights_prediction": 288,
+    "terminal_total": 4608,
+    "prequential_main_BMA": 40
+  },
+  "computation_counts_proposed": {
+    "sklearn_fits": 18,
+    "GP": 13,
+    "RF": 5,
+    "warm_NIG_initializations": 3,
+    "exact_NIG_updates": 120
+  },
+  "full_joint_coupling_required": true,
+  "fixedGaussian_betweenH_eightcase_gate_is_not_total_NIG_BMA_VOI": true,
+  "openloop_one_step_conditionalweights_still_Bayesian": true,
+  "science_execution_by_this_proposal": {
+    "new_metadata_selections": 0,
+    "raw_values_reads": 0,
+    "models_fits": 0,
+    "queries": 0,
+    "terminal_scores": 0
+  },
+  "proposal_sha256": "f0c8346fcc9e6b4d1538850545d589aca80a84e0d59c8572d0a984a0975ba341",
+  "root_action": "Finalize the single recipe before any new roles/values; then independent fulljoint math and bounded source/metadata registration before actualmaterialfit. No author-only blocker asserted."
+}

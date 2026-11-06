@@ -1,0 +1,16 @@
+{
+  "actual_utc": "2026-11-06T08:10:06.525186+00:00",
+  "status": "INDEPENDENT_SOURCE_PREPARED_NO_SAMPLER_IMPORT_OR_DRAWS",
+  "source_sha256": "5053a8e30d5dbea3410004831bc19f1f34c8da1e31d0ac157e90833c40f99ab5",
+  "fixed_proposal_sha256": "7c9a99e2ab34a2b64e3ad579f02357791a7df4b09eb3e4ed6035fc77f62a4ca8",
+  "MC_tolerances": "all fixedproposal7c9a checks unchanged",
+  "extra_deterministic_interface_check": "inverseYJthenforward standardizedroundtrip abs<=2e-9+rel2e-11; not a statisticaltest or newdraw",
+  "reference": "rebuild3featurePhi, mixture StudentmarginalCDF and latentjointmoments; reconstruct perdraw standardrowresiduals fromsharedsavedH/sigma/beta",
+  "not_done": [
+    "no samplerimport or randomdraw",
+    "no fit/modelupdate",
+    "no newmaterials",
+    "no fullVOI2Drecomputation"
+  ],
+  "next": "actualproducerarchive/results/inputmetadata pinned in an independent root-executed onceplan"
+}

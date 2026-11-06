@@ -1,0 +1,208 @@
+{
+  "status": "PASS",
+  "one_fixed_mixture_native_risk_reference": {
+    "full_native_VOI": 0.03613563052269998,
+    "weighted_within_native_VOI": 0.03917203430273843,
+    "Bbefore_native": 0.0,
+    "expected_Bafter_native": 0.0030364014855064412,
+    "signed_between_native": -0.0030364014855064412,
+    "finite_closure_raw": -2.294532009273348e-09,
+    "by_generating_H": [
+      {
+        "generating_H": 0,
+        "weighted_total_native": 0.009154068131053012,
+        "weighted_within_H_native": 0.016689065309583483,
+        "weighted_expected_Bafter_native": 0.0006608245500841527,
+        "query_domain": [
+          -75.89895287240526,
+          76.89895287240526
+        ],
+        "quad_error_estimate": 1.5219854904828493e-15
+      },
+      {
+        "generating_H": 1,
+        "weighted_total_native": 0.007845215876657489,
+        "weighted_within_H_native": 0.003658349999693274,
+        "weighted_expected_Bafter_native": 0.0007475451648518129,
+        "query_domain": [
+          -58.97161767462959,
+          59.47161767462959
+        ],
+        "quad_error_estimate": 7.010383876774217e-16
+      },
+      {
+        "generating_H": 2,
+        "weighted_total_native": 0.019136346514989477,
+        "weighted_within_H_native": 0.018824618993461675,
+        "weighted_expected_Bafter_native": 0.0016280317705704758,
+        "query_domain": [
+          -72.5011084983398,
+          72.82610849833979
+        ],
+        "quad_error_estimate": 2.2005880642694313e-15
+      }
+    ],
+    "target_modeled_domain": [
+      -27.712812921102035,
+      27.712812921102035
+    ],
+    "target_native_domain": [
+      -17.02918305201748,
+      237.7824226119285
+    ],
+    "ideal_tails": {
+      "target_VOI_ideal_upper_bound": 6.457209470934194e-06,
+      "query_omitted_mixture_mass": 9.784872357735861e-10,
+      "query_VOI_ideal_upper_bound": 2.493299036691436e-07,
+      "native_target_interval_width": 254.81160566394598,
+      "finite_closure_ideal_bound_for_equal_initial_targetCDF": 4.986598073382872e-07,
+      "not_a_IEEE_or_quad_error_bound": true
+    },
+    "outer_quad_error_sum": 4.423611942429702e-15,
+    "max_inner_quad_error_estimate": 3.2955701673026203e-12,
+    "error_proxy_not_directed_certificate": true,
+    "SUT_import_or_fit_or_material_reads": 0
+  },
+  "label_and_CDF_probes": [
+    {
+      "modeled_query_Y": -1.0,
+      "posterior_H_weights": [
+        0.1634203781623861,
+        0.2827977601704054,
+        0.5537818616672083
+      ],
+      "independent_mixture_CDF_at_fixed_points": [
+        0.039615352624372095,
+        0.6042325844242907,
+        0.9819138896431162
+      ],
+      "native_query_Y_artificial": -0.38227685039286524
+    },
+    {
+      "modeled_query_Y": 1.0,
+      "posterior_H_weights": [
+        0.21581479799766543,
+        0.321112341427094,
+        0.46307286057524055
+      ],
+      "independent_mixture_CDF_at_fixed_points": [
+        0.016722787056569127,
+        0.4361749059149044,
+        0.9730517417846419
+      ],
+      "native_query_Y_artificial": 3.12
+    }
+  ],
+  "negative_signedbetween_resolved": true,
+  "producer_refinement_pass": true,
+  "producer_ideal_tail_pass": true,
+  "producer_status": "COMPLETE_ALL_PRODUCER_DIAGNOSTICS_PASS",
+  "producer_all_recorded_diagnostics_pass": true,
+  "algorithm_gate_ready": true,
+  "singleH_reduction": "classical bivt/conditionalNIG formula; previous fixed12 receipts reused, no old2D calculations",
+  "new_material_reads_fits_or_SUT_imports": 0,
+  "scientific_scope": "onefixed fullNIG-BMA arithmetic gate; no material benefit, newBayesprinciple or topconference readiness",
+  "actual_start_utc": "2026-11-06T07:06:48.067232+00:00",
+  "actual_end_utc": "2026-11-06T07:08:08.041192+00:00",
+  "script_sha256": "a2b4bbe2af7b3958d89b3d5ddba024a2e367f5ccb8ad5fc2e00af2794c1a80b0",
+  "plan_sha256": "9fd8a7d21475484651a4b512018307e43fb90b56d320e9f0a9c32972197d31b9",
+  "approval_sha256": "868de144d9fb1d403d633bae661b20cf50486e08b2fd4375487a0ab3fc650d80",
+  "comparison_counts": {
+    "exact_fixed_fixture": 1,
+    "result_plan_binding": 1,
+    "result_proposal_binding": 1,
+    "result_sources": 1,
+    "no_material": 1,
+    "initial_weights": 3,
+    "model_order": 3,
+    "initial_mean": 13,
+    "initial_V": 61,
+    "initial_alpha": 3,
+    "initial_b": 3,
+    "level_nodes": 1,
+    "signed_between_not_clipped": 4,
+    "jointbivt_mu_query": 12,
+    "jointbivt_mu_target": 12,
+    "jointbivt_scale_query": 12,
+    "jointbivt_scale_target": 12,
+    "jointbivt_rho": 12,
+    "jointbivt_nu": 12,
+    "raw_signedbetween": 4,
+    "raw_within_sum": 4,
+    "raw_closure": 4,
+    "fixed_query_probe": 2,
+    "Bayes_H_weights": 6,
+    "bivt_H_weights": 6,
+    "old_query_logdensity_before_update": 6,
+    "density_evidence_before_update": 2,
+    "common_nativeJac_cancels": 2,
+    "no_H_probability_floor": 2,
+    "dense_NIG_update_mean": 26,
+    "dense_NIG_update_V": 122,
+    "dense_NIG_update_alpha": 6,
+    "dense_NIG_update_b": 6,
+    "one_actual_label_update": 6,
+    "dense_target_law_mu": 6,
+    "joint_bivt_condition_mu": 6,
+    "independent_update_equals_jointcondition_mu": 6,
+    "dense_target_law_scale": 6,
+    "joint_bivt_condition_scale": 6,
+    "independent_update_equals_jointcondition_scale": 6,
+    "dense_target_law_nu": 6,
+    "joint_bivt_condition_nu": 6,
+    "independent_update_equals_jointcondition_nu": 6,
+    "full_mixture_CDF_after_denseupdate": 6,
+    "full_mixture_CDF_after_bivt": 6,
+    "native_reference_native_full_VOI": 1,
+    "native_reference_native_weighted_within_total": 1,
+    "native_reference_native_B_before": 1,
+    "native_reference_native_E_B_after": 1,
+    "native_reference_native_signed_between": 1,
+    "native_reference_within_components": 3,
+    "initial_same_targetCDF_Bbefore": 1,
+    "saved_refinement_proxy": 1
+  },
+  "max_absolute_errors": {
+    "initial_weights": 0,
+    "initial_mean": 0,
+    "initial_V": 0,
+    "initial_alpha": 0,
+    "initial_b": 0,
+    "jointbivt_mu_query": 0,
+    "jointbivt_mu_target": 0,
+    "jointbivt_scale_query": 0,
+    "jointbivt_scale_target": 0,
+    "jointbivt_rho": 0,
+    "jointbivt_nu": 0,
+    "raw_signedbetween": 0,
+    "raw_within_sum": 0,
+    "raw_closure": 0,
+    "fixed_query_probe": 0,
+    "Bayes_H_weights": 0,
+    "bivt_H_weights": 0,
+    "old_query_logdensity_before_update": 2.220446049250313e-16,
+    "dense_NIG_update_mean": 2.220446049250313e-16,
+    "dense_NIG_update_V": 2.220446049250313e-16,
+    "dense_NIG_update_alpha": 0,
+    "dense_NIG_update_b": 2.220446049250313e-16,
+    "dense_target_law_mu": 1.1102230246251565e-16,
+    "joint_bivt_condition_mu": 0,
+    "independent_update_equals_jointcondition_mu": 9.71445146547012e-17,
+    "dense_target_law_scale": 1.1102230246251565e-16,
+    "joint_bivt_condition_scale": 0,
+    "independent_update_equals_jointcondition_scale": 1.1102230246251565e-16,
+    "dense_target_law_nu": 0,
+    "joint_bivt_condition_nu": 0,
+    "independent_update_equals_jointcondition_nu": 0,
+    "full_mixture_CDF_after_denseupdate": 6.938893903907228e-18,
+    "full_mixture_CDF_after_bivt": 6.938893903907228e-18,
+    "native_reference_native_full_VOI": 3.608224830031759e-16,
+    "native_reference_native_weighted_within_total": 4.0939474033052647e-16,
+    "native_reference_native_B_before": 2.5104270745303298e-34,
+    "native_reference_native_E_B_after": 4.9439619065339e-17,
+    "native_reference_native_signed_between": 4.9439619065339e-17,
+    "native_reference_within_components": 1.942890293094024e-16,
+    "initial_same_targetCDF_Bbefore": 2.5104270745303298e-34,
+    "saved_refinement_proxy": 0
+  }
+}

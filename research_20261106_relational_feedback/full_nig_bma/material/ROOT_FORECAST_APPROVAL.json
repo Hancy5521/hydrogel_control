@@ -1,0 +1,10 @@
+{
+  "scope": "RELATIONAL_FEEDBACK_FULL_NIG_BMA_ONLYY",
+  "approved": true,
+  "actual_utc": "2026-11-06T07:36:51.994659+00:00",
+  "plan_sha256": "fca8f2669d62a89d348a0f8beec93b291929bf15076567ff41b6e3faeb243521",
+  "allowed_phases": [
+    "forecast"
+  ],
+  "independent_registered_source_clearance_sha256": "37b22084a219316b72a38fd491ee7cae3ed95b8d059369c9621f918179ba4f34"
+}

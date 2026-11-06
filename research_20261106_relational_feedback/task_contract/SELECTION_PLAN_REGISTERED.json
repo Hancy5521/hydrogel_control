@@ -1,0 +1,82 @@
+{
+  "kind": "RELATIONAL_FEEDBACK_ONLYY_METADATA_ROLE_SELECTION",
+  "status": "REGISTERED",
+  "registered_actual_utc": "2026-11-06T07:23:25.253192+00:00",
+  "template_created_actual_utc": "2026-11-06T07:19:10.542793+00:00",
+  "source_sha256": "5ca08dbc3430c6a8ced8697941dc2b2b22d0bb56f9368adb38b688fd77d01589",
+  "configuration": {
+    "version": "relational_feedback_bma_onlyY_v1",
+    "dataset": "jarvis_dft_3d",
+    "hash_prefix": "relational_feedback_bma_onlyY_v1|",
+    "order": "SHA256(prefix+component_id)hexascending,thencomponent_idascending",
+    "original_eligible_components": 8842,
+    "original_eligible_rows": 11020,
+    "legacy_excluded": 40,
+    "phase1_excluded": 256,
+    "phase2_excluded": 256,
+    "completed_feedback_excluded": 224,
+    "completed_active_excluded": 152,
+    "all_prior_excluded": 928,
+    "remaining_before_selection": 7914,
+    "selected_development_groups": 160,
+    "warm": 32,
+    "pool": 32,
+    "terminal": 96,
+    "remaining_after_selection": 7754,
+    "role_order": "first32warm,next32pool,next96terminal",
+    "representative": "minimumeligibleintegerraw_row_zero_basedperfullsourcecomponent",
+    "pool_sequence": "fixedmetadatahashselectionorder;policyactionsmaylaterquerywithinpoolonlyunderseparatescienceprotocol",
+    "whole_components_and_all_siblings_reserved": true,
+    "all160groups_development_not_final_confirmation": true,
+    "planned_common_setup_cells": {
+      "warm": 96,
+      "pool_dual_proxies": 64,
+      "terminal_dual_proxies": 192,
+      "total": 352
+    },
+    "terminal_Y_validation_cells_outside_learning_budget": 96,
+    "future_perpolicy_onlyY_queries": 8,
+    "future_counterfactual_policies": 6,
+    "counterfactual_reuse_same32pool_does_not_add_materialN": true,
+    "metadata_roles_authorize_native_reads_fits_or_queries": false
+  },
+  "inputs": {
+    "source_contract": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\task_contract\\MATERIAL_TASK_CONTRACT_V1.json",
+      "sha256": "2637532951c1e6b86ee8bdaa0cbcdb95a48982509de14770f87487e1b55a241d"
+    },
+    "eligible_metadata": {
+      "file": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\ELIGIBLE_METADATA.json",
+      "sha256": "165d48bc29f771e29f7e86a6bea1e57286eb81b49f29120905ba4ff4739660e4"
+    },
+    "legacy_roles": {
+      "file": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\pilot\\DATASET_ROLE_PLAN.json",
+      "sha256": "ea9120cf04bc78c8292be8ebba3eab6f9b1b0f830574b3e1a803386105451de8"
+    },
+    "phase1_roles": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\task_contract\\selection_once\\ADMISSION_ROLE_SELECTION.json",
+      "sha256": "0bc81d0400a4076c854af11e654ca3ca9bcbceb249f2ee6c26d356c53ceae9c0"
+    },
+    "phase2_roles": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\phase2_yj\\task_contract\\selection_once\\ADMISSION_ROLE_SELECTION.json",
+      "sha256": "aee4d2aa78f7522eae8aba2b8ac56e186b3c5d81059a6d3a5b44b16d1042350b"
+    },
+    "completed_feedback_roles": {
+      "file": "H:\\polymer_completion_public\\research\\reported_feedback_20261106T024504445715Z\\task_contract\\selection_once\\ROLE_SELECTION.json",
+      "sha256": "4c972bfc180841eb669077e6a772182bc76cb3d5bd5f69589096efa1c12724b1"
+    },
+    "completed_active_roles": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\task_contract\\selection_once\\ROLE_SELECTION.json",
+      "sha256": "2dbf2f4b3f7956ccbe91f454092d80e76d8b95ebb2a73c427d548899543da7dd"
+    }
+  },
+  "raw_asset_reference_not_read": {
+    "file": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\jarvis_dft_3d.json.gz",
+    "sha256": "3d0fc1315b74cf84071f16aa25bb93434dafbc83867beb75872064ac245bd747",
+    "bytes": 30669285,
+    "pin_source": "priorDATA_MANIFEST, no gzipopened/hashesrecomputed thisphase"
+  },
+  "required_approval_scope": "METADATA_ONLY_RELATIONAL_FEEDBACK_ONLYY_SELECTION",
+  "output_schema": "selection_once/ROLE_SELECTION.json;representatives.warm32/pool32/terminal96;all928excluded;7754remaining;352setup/8onlyY perpolicy future;96terminalY validation separate",
+  "metadata_only": "No native source open/hash/decode, no response-based filtering; exactmetadata identityroles only. Sixcounterfactualpolicies may laterreuse same32pool withoutaddingmaterialN. True fit/query/score requires separately registeredscienceprotocol."
+}

@@ -1,0 +1,8 @@
+{
+  "scope": "INDEPENDENT_FRESH160_ALL_SCORES_ONCE",
+  "approved": true,
+  "actual_utc": "2026-11-06T09:06:11.949275+00:00",
+  "plan_sha256": "2271646dd9140d170942fdcc8a87c3daff8cb544082b764fb39da6dd84cfbb57",
+  "script_sha256": "dcb24a1e4116827c7305b1bf051d384fc3fef767fc71ffac47bf82ab124af7b5",
+  "read_existing_truth_and_forecasts_only": true
+}

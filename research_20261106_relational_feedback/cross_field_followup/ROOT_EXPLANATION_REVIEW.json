@@ -1,0 +1,10 @@
+{
+  "actual_utc": "2026-11-06T08:38:14.713864+00:00",
+  "status": "REVIEWED_FINALIZED_MATHEMATICAL_EXPLANATIONS",
+  "files": {
+    "future_expansion_review/RISK_POTENTIAL_REPAIR_GROWTH_ZH.txt": "7fee7e8affb5606490b6127dd4c6897b86f70e386511fa4e8c780029e33fd91c",
+    "generation_notes/JOINT_GENERATION_MATH_AND_SCOPE_ZH.txt": "3076c1a0780a13d5894e9450ef74b66bc92ce48e083f779ee9cfdd21d0eb3575"
+  },
+  "review": "fixed-model conditional-CDF martingale identity yields expected nonnegative CRPS reduction, not realized material efficacy. Joint NIG covariance retains I_N and shared identity/parameters. Existing API omits general observed-mask/identity layer; no high-dimensional multi-property efficacy claim. Native first-moment and higher-moment distinctions checked algebraically.",
+  "new_fits_scores_or_draws": 0
+}

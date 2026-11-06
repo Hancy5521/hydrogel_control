@@ -1,0 +1,43 @@
+{
+  "actual_utc": "2026-11-05T14:45:01.402218+00:00",
+  "status": "DRAFT_CONCEPTS_ADDRESSED_OPERATIONAL_ADMISSION_PENDING",
+  "artifact_role": "封包后外部研究规划附录；不在已封存ZIP内，不修改封存包或公开worktree。",
+  "reviewed_inputs_sha256": {
+    "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\data_feasibility\\MATERIAL_TASK_CONTRACT_DRAFT_ZH.txt": "b601ae4a37f138cd4739e0d5f77876f14a239260ceddadc0b1509f70c2911418",
+    "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\data_feasibility\\UNUSED_IDENTITY_FEASIBILITY_FINAL.json": "491f8279437d20840076e610668c1d6965815c088bbd390cd6d3004384c166a4"
+  },
+  "minimum_gates": [
+    {
+      "gate": "完整联合信息与公平动作",
+      "draft_already_handles": "第2/4/5段已指出：单proxy边际不学θ，但双proxy panel与anchor可学θ；池内R有直接目标收益。强基线须允许V、E-first、R-first、STOP和同包观测。",
+      "still_undetermined": "实际初始anchor集合、每种缺失模式的完整联合似然、同包更新与重用规则，以及强full-joint规划器和矩近似比较的同一合法动作表尚未落实。不能把纯R-first数学界直接移植给混合panel。"
+    },
+    {
+      "gate": "评分必须对应实际目标单位",
+      "draft_already_handles": "第1/6段区分转导主池与独立audit，并明确只有仿射变换可用sigma缩放CRPS；非线性CDF变换不能直接沿用潜尺度核作原单位效果。",
+      "still_undetermined": "尚未冻结bulk源字段的最终评分单位、目标权重、warm-only边际估计/变换方案及原单位评分器。若选非线性变换，必须另定义原单位CDF/样本CRPS。"
+    },
+    {
+      "gate": "费用与字段父信息",
+      "draft_already_handles": "第3/7段禁止R/V同目标因角色不同凭空设不同instrument cost；可用原生单元格披露预算，并如实承认真实父计算/费用未知。",
+      "still_undetermined": "三字段的观察键、初始信息计费、单格/同包披露规则和去重账本尚未冻结。真实DFT作业与耗时当前元数据不足；可明确选择离线情景继续，但不得编出物理成本或节约结论。"
+    },
+    {
+      "gate": "完整配方组与oracle/truth隔离",
+      "draft_already_handles": "第5/7段要求在线只返回合法付费值，最终truth冻结后揭示；整组audit只给anchor、Y禁止query。元数据确有8802个未消费JARVIS配方组/10973行可供后续设计。",
+      "still_undetermined": "实际warm/dev/主池/audit整组角色尚未选择和登记。必须排除旧40组、绑定同formula全部结构；1172个剩余组含多结构，不能跨角色扩大N。新组仍同一旧DFT源，且只评价原来有限值的遮挡，不能称外部湿实验或原生空白真值验证。"
+    }
+  ],
+  "next_single_executable_action": {
+    "action": "仅用现有元数据与草案，生成一份可机器审阅的MATERIAL_TASK_CONTRACT_V1.json。",
+    "required_content": "一次落实字段/单位/变换、初始信息与完整动作-似然表、同包/披露成本与去重、强baseline范围、旧组排除和未来整组角色约束；所有缺失物理事实标unknown。",
+    "stop_boundary": "此步不选实际split、不读取新Y、不增加模型或调用关闭端点；契约审查通过后，再另行登记warm-only统计适配与真实标签准入协议。"
+  },
+  "why_not_start_material_fit_now": "草案已避免主要概念误用，但尚不是可执行、source-pinned、同信息同成本的实证协议；不能为启动拟合硬贴Gaussian星形假设。",
+  "new_Y_reads_models_fits_scores_downloads": 0,
+  "sealed_ZIP_remains_external_unchanged": {
+    "path": "H:\\PolymerReview\\Relation_Moment_20261105T124422Z.zip",
+    "sha256": "2b9825b8d023ba8d070c95d0b182e8536d639e8662782dd292ad69a66fa208fe",
+    "this_appendix_embedded": false
+  }
+}

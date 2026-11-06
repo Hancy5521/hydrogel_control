@@ -1,0 +1,10 @@
+{
+  "status": "DESIGN_ADDENDUM_A_FORMAL_CRITICISM_B_EXPLORATION_SEPARATED",
+  "actual_utc": "2026-11-06T08:28:38.391247+00:00",
+  "original_proposal_sha256": "91876e67d0b65bcf0b4aea05bc95bff3d994180d595409bd5da29f7c486145c1",
+  "addendum_sha256": "f8e1e303b83aad0a2e99d3b68aa2a4ab8d0cca3e400133c9b23d7db3cd266e1c",
+  "original_unchanged": true,
+  "current_science_or_data_access": false,
+  "new_H_created_fitted_or_tested": false,
+  "updated_recommendation": "Exploration neednotwait forlowpowercriticismrejection; all efficacy remainsfuturetrueYvalidation, no misappliedalpha claims."
+}

@@ -1,0 +1,32 @@
+{
+  "actual_utc": "2026-11-06T08:00:23.658835+00:00",
+  "status": "PASS_STATIC_SHARED_PARAMETER_JOINT_SAMPLER_NOT_MC_RESULT",
+  "sampler_source_sha256": "5b77cde6f6356eb977596ea89564da04e95a0e57688414d142d40442cd44bfae",
+  "proposal_sha256": "7c9a99e2ab34a2b64e3ad579f02357791a7df4b09eb3e4ed6035fc77f62a4ca8",
+  "checks": {
+    "one_H_per_joint_draw": true,
+    "one_IGsigma2_b_over_Gammaalpha_perdraw": true,
+    "one_beta_m_plus_sqrtSigma_cholVnormal_perdraw": true,
+    "same_beta_sigma_H_acrossallrows": true,
+    "independent_rowresiduals_given_parameters": true,
+    "full3_4_6featuremap_order_matches_frozen_core": true,
+    "shared_nativeYJ_affine_inverse": true,
+    "source_and_state_IO_modelupdates_none": true,
+    "auxiliary_H_sigma_coeff_and_z_retained": true,
+    "probabilities_normalize_only_rounding_no_floor": true,
+    "physical_duplicates_belong_controller_distinctrows_contract": true,
+    "no_draw_as_materialN_or_pseudolabel_training": true
+  },
+  "analytic_law": {
+    "componentmean": "Phi m",
+    "componentcovariance": "b/(alpha-1)*(I+Phi V PhiT)",
+    "mixturecovariance": "sum w[componentcov+(mu_h-mu)(mu_h-mu)T]",
+    "jointnotindependentmarginals": "shared H/sigma/beta; finite-t zero correlation not independence"
+  },
+  "moment_limits": [
+    "Fixednu6 has finite latentfourthmoments, so latentmean/covariance checks have finite moment-based MCvariance.",
+    "InverseYJ positivebranch growsquadratically. Nativefourthmoments may fail atnu6; do not attach Gaussian covarianceMCSE based on nonexistent moments. NativeCDF indicators remain bounded."
+  ],
+  "read_source_only_no_import_draw_or_material": true,
+  "decision": "Root may register exactoldfixture/seed131072/source and run oneboundedMCproducer. Independent audit rebuilds analyticjointmoments/CDF and auxiliaryresiduals fromsaveddraws without samplerimport or newdraw."
+}

@@ -1,0 +1,73 @@
+{
+  "status": "PASS_FINAL_CROSS_OWNER_IO_INTERFACE_CLEARANCE_FOR_EXACT_REGISTERED_FORECAST",
+  "actual_utc": "2026-11-06T07:36:40.057765+00:00",
+  "registered_plan_sha256": "fca8f2669d62a89d348a0f8beec93b291929bf15076567ff41b6e3faeb243521",
+  "source_freeze_sha256": "ee47b75a7db62c71444b69db7a00d0a69ec41516727cfcd5b6743ff106e5dadd",
+  "source_sha256": {
+    "material_model.py": "f8cedbb1c40945b1af9f1e74b096b780f32eed36e9cd493e2e4fe2c11fe5d1bd",
+    "acquisition.py": "8f28260590132c18b8e0b6bc44ab409112f5dba9d8b433bbe8f9b84840fc8338",
+    "reference_models.py": "8d5af2ca70be9983b755bcfb2d833ee0cd33feb6389f84552719ed7beaa2e2f7",
+    "data_io.py": "505ee6d907969920765f4d68a39e3a1bf3dd41d121381db4dfc16e6b1bf04579",
+    "run_material.py": "0ccfb08635cd639eef2cd42f0de2c44b8c94bc205bd7e9c62798a0e183f49243",
+    "mixture_scoring.py": "2e1e0106763aaaa9b69bc237aceb45161e597e62372bb75241dd3fa72925becb",
+    "score.py": "1653a47619ed52d5ac3e7d47a1d37009c80173b9e40190b1adeb614a868daea0"
+  },
+  "registered_actual_utc": "2026-11-06T07:35:00.699653+00:00",
+  "crossowner_task_API_compatibility": {
+    "run_material.py": [
+      "BASE_FILES",
+      "BUDGETS",
+      "Disclosure",
+      "FORECAST_STATUS",
+      "POLICIES",
+      "REF_POLICIES",
+      "configuration",
+      "sha",
+      "sources",
+      "utc",
+      "validate",
+      "write"
+    ],
+    "score.py": [
+      "BUDGETS",
+      "POLICIES",
+      "REF_POLICIES",
+      "read",
+      "reveal_terminal_truth",
+      "score_module",
+      "sha",
+      "sources",
+      "utc",
+      "validate",
+      "verify_freeze",
+      "write"
+    ],
+    "mixture_scoring.py": []
+  },
+  "nonraw_dependencies_rechecked": [
+    "inputs/roles",
+    "inputs/root_scope",
+    "external_sources/foundation_relation_posterior",
+    "external_sources/foundation_risk_field",
+    "external_sources/warm_joint_model",
+    "external_sources/legacy_score_scope",
+    "external_sources/legacy_score",
+    "math_receipts/independent_full_NIG_BMA_total_VOI",
+    "math_receipts/independent_four_native_mixture_scores"
+  ],
+  "confirmed_contract": [
+    "fullmixture before trueY with action/policy/identity/source/plan/step, normalized3Hlogweights, actualBayespredictor nooverride",
+    "6separate ledgers each8of32onlyY; truequerydensity-before-allNIGupdates done by owner core; no generatedtraininglabels",
+    "32warm/32pool/96terminal and928priorwholecomponent exclusion; sameinfoGP/RF/affine + ownGP + fixedwarmweightspredictiveablation",
+    "352common+8learnercells;96terminalvalidation separate; no actualwet/DFTsavingclaim",
+    "4032terminal+48prequery laws,42summaries,18sklearnfits13GP5RF,123distinctpayload freeze before terminalY",
+    "All numerical rules and properconditionaljoint definitions source-frozen before new values; failstop remains, no newgateorrecipechange requested"
+  ],
+  "ownership_limit": "Reviewer authored oracle and selector; this is final cross-owner interface/protocol consistency clearance, not independent mathematical validation. Separate actual46c9/fa817 and independentmetadata53077195 receipts supply that evidence.",
+  "new_raw_native_values_reads_hashes_or_decodes_by_reviewer": 0,
+  "models_imported_or_executed_by_reviewer": 0,
+  "new_metadata_selections_by_reviewer": 0,
+  "blocking_findings": [],
+  "source_changes_requested": false,
+  "clearance_scope": "Root may approve and execute this exact registered forecast after its independent source clearance. No result or calibration/policyeffect assumed."
+}

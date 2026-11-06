@@ -1,0 +1,10 @@
+{
+  "actual_utc": "2026-11-06T07:15:16.644553+00:00",
+  "root_request_before_material_execution": true,
+  "old_source_sha256": "91f123bc0ea4d31f01a210c36e800246564a9284a7c75bad6adc259cf9d49478",
+  "new_source_sha256": "8f28260590132c18b8e0b6bc44ab409112f5dba9d8b433bbe8f9b84840fc8338",
+  "change": "same exact MI objective now E_query KL(posteriorH||priorH), positive per-node f-divergence with retained finite logweights and omittedmass*max(-logw) tail bound",
+  "old_source_preserved": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\material\\pre_execution_history\\acquisition_91f123bc0ea4.py",
+  "numerical_import_fit_or_new_material_reads": 0,
+  "old_static_receipt_scope": "old SHA preserved; new source requires static review"
+}

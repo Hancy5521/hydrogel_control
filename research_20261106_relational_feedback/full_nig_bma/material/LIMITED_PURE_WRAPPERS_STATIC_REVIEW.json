@@ -1,0 +1,29 @@
+{
+  "actual_utc": "2026-11-06T07:11:52.844036+00:00",
+  "status": "PASS_LIMITED_STATIC_REVIEW_TWO_PURE_TASK_WRAPPERS_NOT_MATERIAL_EXECUTION_CLEARANCE",
+  "sources": {
+    "material_model.py": "f8cedbb1c40945b1af9f1e74b096b780f32eed36e9cd493e2e4fe2c11fe5d1bd",
+    "acquisition.py": "91f123bc0ea4d31f01a210c36e800246564a9284a7c75bad6adc259cf9d49478"
+  },
+  "checks": {
+    "warm32_only_nativeSD_YJ_affine_fixed": true,
+    "warm_feature_expansion_only": true,
+    "shared_nativeJacobian_evidence": true,
+    "warm_conditional_model_evidence_not_equal_posterior": true,
+    "full_tmixture_CDF_SF_not_averaged_quantiles": true,
+    "openloop_warmH_and_mean_expectedvariance_currentV_count": true,
+    "openloop_hypothetical_lookahead_fullBayes": true,
+    "native_marginal_BayesCRPS_CDF_times_SF": true,
+    "model_MI_target_H_not_full_parameter_entropy": true,
+    "full_native_mean_over_all_targetcontexts": true,
+    "no_query_or_material_I_O": true,
+    "no_SUT_fit_or_numeric_execution": true
+  },
+  "integration_limits": [
+    "risk_values supplies a single requested32/64/128/256 level; actualcontroller must preregister refinement/tail rules before any labelqueries.",
+    "MI omitted query mass is recorded, not claimed a rigorous MI integralerrorbound.",
+    "Warm coordinates are empirically fixed conditioning information; transformuncertainty not integrated.",
+    "Actual controller source/ledger/forecastfreeze/score requires separate fullsource review before material execution."
+  ],
+  "numerical_execution_by_review": 0
+}

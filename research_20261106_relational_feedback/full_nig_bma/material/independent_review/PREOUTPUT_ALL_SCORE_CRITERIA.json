@@ -1,0 +1,43 @@
+{
+  "actual_utc": "2026-11-06T07:53:22.519458+00:00",
+  "status": "INDEPENDENT_ALL4080_SCORE_SOURCE_PREPARED_WHILE_FORECAST_RUNNING_BEFORE_TERMINAL_TRUTH",
+  "source": {
+    "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\material\\independent_review\\audit_material_scores.py",
+    "sha256": "dcb24a1e4116827c7305b1bf051d384fc3fef767fc71ffac47bf82ab124af7b5"
+  },
+  "expected_counts": {
+    "all_scores": 4080,
+    "terminal": 4032,
+    "prequery": 48,
+    "coverage": 12240,
+    "summaries": 42,
+    "paired_final": 1248
+  },
+  "criteria": {
+    "mixture_CRPS_abs": 0.0002,
+    "mixture_CRPS_rel": 2e-05,
+    "scalar_and_empirical_CRPS_abs": 2e-06,
+    "scalar_and_empirical_CRPS_rel": 2e-08,
+    "mixture_PIT_CDF_abs": 2e-10,
+    "native_quantile_interval_abs": 2e-07,
+    "native_quantile_interval_rel": 2e-09,
+    "NLL_abs": 2e-09,
+    "NLL_rel": 2e-11,
+    "coverage_events": "exact",
+    "literal_floating_signs": "verify fromsaved producer deltas after independentnumeric agreement; nearzero signs not independentstatisticalevidence"
+  },
+  "reference_routes": [
+    "newmixture directnativeCDF square/survival square entireaxis; nativeroot; nativecommonJac stats.t.logpdf",
+    "oldindependent scalar nativeCDF",
+    "oldindependent Fraction empiricalenergy"
+  ],
+  "forbidden": [
+    "SUT_score_execution",
+    "model_fit",
+    "raw_or_unselected_properties",
+    "fullVOI2D_reintegration",
+    "tolerance_rescue_after_terminalY"
+  ],
+  "numeric_executions_by_preparation": 0,
+  "next": "pin actual firstscore result/truth/start plus actualstatePASS andfreeze; root exactonce independent audit"
+}

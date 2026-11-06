@@ -1,0 +1,42 @@
+{
+  "actual_utc": "2026-11-06T07:01:56.425183+00:00",
+  "status": "PASS_STATIC_FULL_NIG_BMA_SOURCE_NOT_NUMERIC_RESULT",
+  "source_sha256": {
+    "relation_posterior.py": "1d74cde91519ce282c6ebee54e53807a2a79be0cebf19e06221eb4f16e8b7528",
+    "risk_field.py": "cda5178b9c5138df647a0b9fffab2da30a19bde6082aa6fd4cc8b0910c6b92aa",
+    "run_gate.py": "707eb494a6a4fbf5c6dc3f7ca8280ddf493bde90324b2b6c9779a76a3a258d1e"
+  },
+  "source_freeze_sha256": "bcf50f6f1456a9a2e21f13bce509984b420b79037043a470aeb6dfb747a5d529",
+  "template_sha256": "27a7e733b0209ffa7d8ac1d8c87f7ddd931c128870cab8a06855415f178b8bf6",
+  "proposal_sha256": "6ac2e7fc802bc22afb7dbd658d29e00efcae6d9c119bc3d5f9549b1efc715521",
+  "checks": {
+    "features3_4_6_fixed_order": true,
+    "shared_response_coordinates": true,
+    "model_logodds_use_preupdate_predictive_density": true,
+    "same_true_scalar_updates_each_component_once": true,
+    "complete_joint_bivt_query_target_conditionals": true,
+    "allH_posterior_weights_inside_fullCDF": true,
+    "generatingH_theta_original_t_density": true,
+    "query_truncation_no_renormalization": true,
+    "nativeJac_s0_sd_inverseYJderivative": true,
+    "within_H_predictive_learning_retained": true,
+    "Bbefore_and_expected_Bafter_separate": true,
+    "signedbetween_not_clipped": true,
+    "equal_target_CDF_initial_fixture": true,
+    "closure_cutoff_allowance_2querytail": true,
+    "two_label_probes_from_same_original_ensemble": true,
+    "targetCDF3probes_fixed": true,
+    "original_levels_and_thresholds_bound": true,
+    "failure_diagnostics_not_silent_success": true,
+    "old12only_saved_reference_provenance": true
+  },
+  "limits": [
+    "C:D pure-product identity is not substituted for fullNIG mixtures.",
+    "Ideal tail bounds do not enclose quadrature, CDF or floating-point errors.",
+    "Three times lastrefinement difference in closure allowance is a diagnostic, not a guaranteed numerical bound.",
+    "Single synthetic fixture checks algorithm arithmetic, not material effect or new BMA principle.",
+    "Future actual material controller must enforce source/query provenance outside these pure APIs."
+  ],
+  "review_science_import_numeric_executions": 0,
+  "decision": "root may actualUTC register exact3source/proposal and execute one fixedgate; independent directnativeCDF audit required before using as checked numerical foundation."
+}

@@ -1,0 +1,68 @@
+{
+  "status": "PASS_STATIC_INTERFACE_AND_SOURCE_SCOPE_REVIEW_NO_VALUES",
+  "actual_utc": "2026-11-06T07:24:29.865292+00:00",
+  "source_sha256": {
+    "acquisition.py": "8f28260590132c18b8e0b6bc44ab409112f5dba9d8b433bbe8f9b84840fc8338",
+    "data_io.py": "505ee6d907969920765f4d68a39e3a1bf3dd41d121381db4dfc16e6b1bf04579",
+    "material_model.py": "f8cedbb1c40945b1af9f1e74b096b780f32eed36e9cd493e2e4fe2c11fe5d1bd",
+    "mixture_scoring.py": "2e1e0106763aaaa9b69bc237aceb45161e597e62372bb75241dd3fa72925becb",
+    "reference_models.py": "8d5af2ca70be9983b755bcfb2d833ee0cd33feb6389f84552719ed7beaa2e2f7",
+    "run_material.py": "0ccfb08635cd639eef2cd42f0de2c44b8c94bc205bd7e9c62798a0e183f49243",
+    "score.py": "1653a47619ed52d5ac3e7d47a1d37009c80173b9e40190b1adeb614a868daea0"
+  },
+  "provided_task_API_used": {
+    "run_material.py": [
+      "BASE_FILES",
+      "BUDGETS",
+      "Disclosure",
+      "FORECAST_STATUS",
+      "POLICIES",
+      "REF_POLICIES",
+      "configuration",
+      "sha",
+      "sources",
+      "utc",
+      "validate",
+      "write"
+    ],
+    "score.py": [
+      "BUDGETS",
+      "POLICIES",
+      "REF_POLICIES",
+      "read",
+      "reveal_terminal_truth",
+      "score_module",
+      "sha",
+      "sources",
+      "utc",
+      "validate",
+      "verify_freeze",
+      "write"
+    ],
+    "mixture_scoring.py": []
+  },
+  "numeric_configuration_AST_only": {
+    "common_native_cell_cost": 352,
+    "terminal_Y_validation_cells_separate_from_learning": 96,
+    "main_terminal_laws": 1728,
+    "reference_terminal_laws": 2304,
+    "method_budget_summaries": 42,
+    "actual_GP_fits": 13,
+    "actual_RF_fits": 5
+  },
+  "runtime_contract": [
+    "7sciencefiles source-bound, two classic core files externally hash-bound",
+    "32warm/32pool/96terminal,928exclusions and originalrow/jid/mpid/formula identities",
+    "6independentledgersexact8poolY, lawmodel_weight_overrideFalse, fullmixture3H closes beforeY",
+    "1728main+2304references=4032,48preq,18fits,123distinct payloads; score-after-all-freeze",
+    "18actualsklearnfits vs3warmNIGinitializations/96warmresponseuses/144feedbackNIGupdates separate",
+    "same-information GP/RF/affine references, GP own trajectory and fixedwarmweights prediction ablation; no pseudoY",
+    "acq32/64/128/256 tolerances fixednative2e-5/MI2e-8, safeSTOPbeforelabel",
+    "legacy scalar score loader exactold3dependencies included; no sourcepreview execution"
+  ],
+  "reviewer_ownership_limit": "Reviewer authored data_io and selector; this is API compatibility against other owners runner/scorer, not independent numerical validation of own oracle. Full independent mathematical/source review remains separate.",
+  "native_raw_values_read": 0,
+  "science_module_imports_or_models_executed": 0,
+  "new_metadata_selection_executions": 0,
+  "source_changes_requested": false
+}

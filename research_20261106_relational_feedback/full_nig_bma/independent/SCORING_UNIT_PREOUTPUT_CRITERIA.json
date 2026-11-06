@@ -1,0 +1,49 @@
+{
+  "actual_utc": "2026-11-06T07:24:52.601143+00:00",
+  "status": "PREOUTPUT_BOUNDED_NEW_MIXTURE_SCORE_FAMILY_CRITERIA_NO_NUMERIC_EXECUTION",
+  "old_fixed_proposal_sha256": "6ac2e7fc802bc22afb7dbd658d29e00efcae6d9c119bc3d5f9549b1efc715521",
+  "actual_old_fullgate_result_sha256": "27f834b26bcfb03fb610aeb0d9acdd2a28159afe8396f8cbcba8780775dfdef9",
+  "actual_old_independent_fullgate_sha256": "46c9cc5c0c748d67944212b7b7bb94c06d4611ef9920b23cb6af8480d5761285",
+  "saved_laws": [
+    "initial_ensemble_targetcontext0_0",
+    "independent_positive_modeledqueryY1_update_from_original_ensemble_targetcontext0_0"
+  ],
+  "native_hypothetical_targets": [
+    -1,
+    1
+  ],
+  "scoring_cases": 4,
+  "probabilities_perlaw": [
+    0.025,
+    0.05,
+    0.1,
+    0.5,
+    0.9,
+    0.95,
+    0.975
+  ],
+  "criteria": {
+    "CRPS_abs": 0.0002,
+    "CRPS_rel": 2e-05,
+    "CDF_PIT_or_quantile_root_probability_abs": 2e-10,
+    "native_quantile_value_abs": 2e-07,
+    "native_quantile_value_rel": 2e-09,
+    "NLL_abs": 2e-09,
+    "NLL_rel": 2e-11,
+    "coverage_events": "exact"
+  },
+  "independent_route": "nativeY fullrealaxis integral ofmixtureCDFsquare + survivalCDFsquare; nativeYquantileroot; stats.t.logpdf + commonJac; no componentCRPS/disagreement subtraction",
+  "source": {
+    "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\independent\\scoring_math_reference.py",
+    "sha256": "8e461457d28400f8a85931a212876bc1bc9dd8e7f30d2df6acbf668e3ac37a90"
+  },
+  "old_reference_source_sha256": "eb310af6a63d61e6d29ee30577f2f1b75afc98bda569433ca5b6e5d7a4ffd352",
+  "prohibited": [
+    "newmaterialornewsyntheticmodels",
+    "fullVOI2Drerun",
+    "parameterortruthselection",
+    "quantileaverage",
+    "componentCRPSaveragewithoutdisagreement"
+  ],
+  "numeric_executions_by_preparation": 0
+}

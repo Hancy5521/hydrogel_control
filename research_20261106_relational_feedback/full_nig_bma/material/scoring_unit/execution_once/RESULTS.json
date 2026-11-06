@@ -1,0 +1,1945 @@
+{
+  "status": "COMPLETE_FIXED_FOUR_MIXTURE_SCORES",
+  "law_records": [
+    {
+      "id": "initial",
+      "law": {
+        "coordinate": "u=YJ_half(native/s0)",
+        "family": "mixture_student_t",
+        "components": [
+          {
+            "id": "affine",
+            "location": 0.5,
+            "scale": 0.606217782649107,
+            "df": 6.0
+          },
+          {
+            "id": "interaction",
+            "location": 0.5,
+            "scale": 0.606217782649107,
+            "df": 6.0
+          },
+          {
+            "id": "fullquad",
+            "location": 0.5,
+            "scale": 0.606217782649107,
+            "df": 6.0
+          }
+        ],
+        "log_weights": [
+          -1.6094379124341003,
+          -1.2039728043259361,
+          -0.6931471805599453
+        ],
+        "weights_display_only": [
+          0.2,
+          0.3,
+          0.5
+        ],
+        "native_first_scale_s0": 2.0,
+        "lambda": 0.5,
+        "unit": "source bulk GPa attribution, aggregation qualified",
+        "model_weight_override": false
+      },
+      "scores": [
+        {
+          "native_target": -1.0,
+          "score": {
+            "CRPS_native": 1.441055000860934,
+            "squared_error_native": 4.515625,
+            "predictive_median_native": 1.125,
+            "intervals": {
+              "0.8": {
+                "lower": -0.6892597709306995,
+                "upper": 3.6879085940585083,
+                "width": 4.377168364989208,
+                "covered": false
+              },
+              "0.9": {
+                "lower": -1.1927521270679042,
+                "upper": 4.763806841828363,
+                "width": 5.9565589688962675,
+                "covered": true
+              },
+              "0.95": {
+                "lower": -1.65947178349949,
+                "upper": 5.933584327183855,
+                "width": 7.593056110683345,
+                "covered": true
+              }
+            },
+            "PIT_left": 0.06576446600867336,
+            "PIT_right": 0.06576446600867336,
+            "PIT_midpoint": 0.06576446600867336,
+            "PIT_kind": "continuous_mixture",
+            "log_density_native": -2.3874191687667037,
+            "negative_log_density_native": 2.3874191687667037,
+            "native_CDF_plus_SF_error": 2.220446049250313e-16,
+            "mixture_CRPS_decomposition": {
+              "weighted_component_CRPS": 1.441055000860934,
+              "subtract_CDF_disagreement": 2.0918864708566165e-32,
+              "disagreement_numerics": {
+                "finite_U_window": [
+                  -18.898969044771423,
+                  19.898969044771423
+                ],
+                "adaptive_quad_error_estimate": 2.265393731540827e-32,
+                "outer_tail_bound_ideal_arithmetic": 2.1108072832283107e-05,
+                "not_a_directed_rounding_or_CDF_error_certificate": true
+              },
+              "component_scores": [
+                {
+                  "CRPS_native": 1.4410550008609337,
+                  "predictive_median_native": 1.125,
+                  "squared_error_native": 4.515625,
+                  "PIT_left": 0.06576446600867335,
+                  "PIT_right": 0.06576446600867335,
+                  "PIT_midpoint": 0.06576446600867335,
+                  "PIT_kind": "continuous transported Studentt",
+                  "intervals": {
+                    "0.8": {
+                      "lower": -0.6892597709306995,
+                      "upper": 3.6879085940585083,
+                      "width": 4.377168364989208,
+                      "covered": false
+                    },
+                    "0.9": {
+                      "lower": -1.1927521270679042,
+                      "upper": 4.763806841828363,
+                      "width": 5.9565589688962675,
+                      "covered": true
+                    },
+                    "0.95": {
+                      "lower": -1.65947178349949,
+                      "upper": 5.933584327183855,
+                      "width": 7.593056110683345,
+                      "covered": true
+                    }
+                  },
+                  "log_density_native": -2.3874191687667037,
+                  "score_numerics": {
+                    "method": "native CDF_SF integral in standard latent coordinate with inverse Jacobian",
+                    "quadrature_error_estimate_native": 1.6011698177751386e-14,
+                    "analytic_tail_total_log_bound_ideal_arithmetic": -23.6396439483752,
+                    "analytic_tail_total_display_native": 5.4129383286590996e-11,
+                    "tail_display_underflow_not_zero_mathematical_tail": false,
+                    "tail_each_log_bound": [
+                      -25.66577918240357,
+                      -23.78102790245377
+                    ],
+                    "tail_cut_standard_t": 16.0,
+                    "tail_doublings": 0,
+                    "actual_quadrature_segments": [
+                      {
+                        "lower_standard_t": -16.0,
+                        "upper_standard_t": -8.0,
+                        "probability_function": "CDF",
+                        "integral_native": 4.8509199508871454e-09,
+                        "quaderr_estimate_native": 3.268402382379486e-18
+                      },
+                      {
+                        "lower_standard_t": -8.0,
+                        "upper_standard_t": -4.0,
+                        "probability_function": "CDF",
+                        "integral_native": 4.415288964516875e-06,
+                        "quaderr_estimate_native": 2.5129957008124073e-18
+                      },
+                      {
+                        "lower_standard_t": -4.0,
+                        "upper_standard_t": -2.0,
+                        "probability_function": "CDF",
+                        "integral_native": 0.000709934954979504,
+                        "quaderr_estimate_native": 7.881861330044692e-18
+                      },
+                      {
+                        "lower_standard_t": -2.0,
+                        "upper_standard_t": -1.7453763894903143,
+                        "probability_function": "CDF",
+                        "integral_native": 0.0007683593378906514,
+                        "quaderr_estimate_native": 8.530502281119417e-18
+                      },
+                      {
+                        "lower_standard_t": -1.7453763894903143,
+                        "upper_standard_t": -1.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.6217527203405254,
+                        "quaderr_estimate_native": 6.902841857453772e-15
+                      },
+                      {
+                        "lower_standard_t": -1.0,
+                        "upper_standard_t": -0.8247860988423227,
+                        "probability_function": "SF",
+                        "integral_native": 0.1330003347391843,
+                        "quaderr_estimate_native": 1.4766003391029546e-15
+                      },
+                      {
+                        "lower_standard_t": -0.8247860988423227,
+                        "upper_standard_t": 0.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.4728115836477042,
+                        "quaderr_estimate_native": 5.2492630647516436e-15
+                      },
+                      {
+                        "lower_standard_t": 0.0,
+                        "upper_standard_t": 1.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.18782402959531216,
+                        "quaderr_estimate_native": 2.0852656223459237e-15
+                      },
+                      {
+                        "lower_standard_t": 1.0,
+                        "upper_standard_t": 2.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.02230120658478517,
+                        "quaderr_estimate_native": 2.475931302735065e-16
+                      },
+                      {
+                        "lower_standard_t": 2.0,
+                        "upper_standard_t": 4.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.0018635929558540121,
+                        "quaderr_estimate_native": 2.069003808118377e-17
+                      },
+                      {
+                        "lower_standard_t": 4.0,
+                        "upper_standard_t": 8.0,
+                        "probability_function": "SF",
+                        "integral_native": 1.8780024443460544e-05,
+                        "quaderr_estimate_native": 3.505161325058814e-19
+                      },
+                      {
+                        "lower_standard_t": 8.0,
+                        "upper_standard_t": 16.0,
+                        "probability_function": "SF",
+                        "integral_native": 3.854037043030556e-08,
+                        "quaderr_estimate_native": 6.899847915542902e-18
+                      }
+                    ],
+                    "score_absolute_plus_relative_tolerance_native": 2.441055000860934e-09,
+                    "score_return_is_truncated_integral_with_declared_tail_error": true,
+                    "not_a_directed_IEEE_or_CDF_library_error_certificate": true
+                  }
+                },
+                {
+                  "CRPS_native": 1.4410550008609337,
+                  "predictive_median_native": 1.125,
+                  "squared_error_native": 4.515625,
+                  "PIT_left": 0.06576446600867335,
+                  "PIT_right": 0.06576446600867335,
+                  "PIT_midpoint": 0.06576446600867335,
+                  "PIT_kind": "continuous transported Studentt",
+                  "intervals": {
+                    "0.8": {
+                      "lower": -0.6892597709306995,
+                      "upper": 3.6879085940585083,
+                      "width": 4.377168364989208,
+                      "covered": false
+                    },
+                    "0.9": {
+                      "lower": -1.1927521270679042,
+                      "upper": 4.763806841828363,
+                      "width": 5.9565589688962675,
+                      "covered": true
+                    },
+                    "0.95": {
+                      "lower": -1.65947178349949,
+                      "upper": 5.933584327183855,
+                      "width": 7.593056110683345,
+                      "covered": true
+                    }
+                  },
+                  "log_density_native": -2.3874191687667037,
+                  "score_numerics": {
+                    "method": "native CDF_SF integral in standard latent coordinate with inverse Jacobian",
+                    "quadrature_error_estimate_native": 1.6011698177751386e-14,
+                    "analytic_tail_total_log_bound_ideal_arithmetic": -23.6396439483752,
+                    "analytic_tail_total_display_native": 5.4129383286590996e-11,
+                    "tail_display_underflow_not_zero_mathematical_tail": false,
+                    "tail_each_log_bound": [
+                      -25.66577918240357,
+                      -23.78102790245377
+                    ],
+                    "tail_cut_standard_t": 16.0,
+                    "tail_doublings": 0,
+                    "actual_quadrature_segments": [
+                      {
+                        "lower_standard_t": -16.0,
+                        "upper_standard_t": -8.0,
+                        "probability_function": "CDF",
+                        "integral_native": 4.8509199508871454e-09,
+                        "quaderr_estimate_native": 3.268402382379486e-18
+                      },
+                      {
+                        "lower_standard_t": -8.0,
+                        "upper_standard_t": -4.0,
+                        "probability_function": "CDF",
+                        "integral_native": 4.415288964516875e-06,
+                        "quaderr_estimate_native": 2.5129957008124073e-18
+                      },
+                      {
+                        "lower_standard_t": -4.0,
+                        "upper_standard_t": -2.0,
+                        "probability_function": "CDF",
+                        "integral_native": 0.000709934954979504,
+                        "quaderr_estimate_native": 7.881861330044692e-18
+                      },
+                      {
+                        "lower_standard_t": -2.0,
+                        "upper_standard_t": -1.7453763894903143,
+                        "probability_function": "CDF",
+                        "integral_native": 0.0007683593378906514,
+                        "quaderr_estimate_native": 8.530502281119417e-18
+                      },
+                      {
+                        "lower_standard_t": -1.7453763894903143,
+                        "upper_standard_t": -1.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.6217527203405254,
+                        "quaderr_estimate_native": 6.902841857453772e-15
+                      },
+                      {
+                        "lower_standard_t": -1.0,
+                        "upper_standard_t": -0.8247860988423227,
+                        "probability_function": "SF",
+                        "integral_native": 0.1330003347391843,
+                        "quaderr_estimate_native": 1.4766003391029546e-15
+                      },
+                      {
+                        "lower_standard_t": -0.8247860988423227,
+                        "upper_standard_t": 0.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.4728115836477042,
+                        "quaderr_estimate_native": 5.2492630647516436e-15
+                      },
+                      {
+                        "lower_standard_t": 0.0,
+                        "upper_standard_t": 1.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.18782402959531216,
+                        "quaderr_estimate_native": 2.0852656223459237e-15
+                      },
+                      {
+                        "lower_standard_t": 1.0,
+                        "upper_standard_t": 2.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.02230120658478517,
+                        "quaderr_estimate_native": 2.475931302735065e-16
+                      },
+                      {
+                        "lower_standard_t": 2.0,
+                        "upper_standard_t": 4.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.0018635929558540121,
+                        "quaderr_estimate_native": 2.069003808118377e-17
+                      },
+                      {
+                        "lower_standard_t": 4.0,
+                        "upper_standard_t": 8.0,
+                        "probability_function": "SF",
+                        "integral_native": 1.8780024443460544e-05,
+                        "quaderr_estimate_native": 3.505161325058814e-19
+                      },
+                      {
+                        "lower_standard_t": 8.0,
+                        "upper_standard_t": 16.0,
+                        "probability_function": "SF",
+                        "integral_native": 3.854037043030556e-08,
+                        "quaderr_estimate_native": 6.899847915542902e-18
+                      }
+                    ],
+                    "score_absolute_plus_relative_tolerance_native": 2.441055000860934e-09,
+                    "score_return_is_truncated_integral_with_declared_tail_error": true,
+                    "not_a_directed_IEEE_or_CDF_library_error_certificate": true
+                  }
+                },
+                {
+                  "CRPS_native": 1.4410550008609337,
+                  "predictive_median_native": 1.125,
+                  "squared_error_native": 4.515625,
+                  "PIT_left": 0.06576446600867335,
+                  "PIT_right": 0.06576446600867335,
+                  "PIT_midpoint": 0.06576446600867335,
+                  "PIT_kind": "continuous transported Studentt",
+                  "intervals": {
+                    "0.8": {
+                      "lower": -0.6892597709306995,
+                      "upper": 3.6879085940585083,
+                      "width": 4.377168364989208,
+                      "covered": false
+                    },
+                    "0.9": {
+                      "lower": -1.1927521270679042,
+                      "upper": 4.763806841828363,
+                      "width": 5.9565589688962675,
+                      "covered": true
+                    },
+                    "0.95": {
+                      "lower": -1.65947178349949,
+                      "upper": 5.933584327183855,
+                      "width": 7.593056110683345,
+                      "covered": true
+                    }
+                  },
+                  "log_density_native": -2.3874191687667037,
+                  "score_numerics": {
+                    "method": "native CDF_SF integral in standard latent coordinate with inverse Jacobian",
+                    "quadrature_error_estimate_native": 1.6011698177751386e-14,
+                    "analytic_tail_total_log_bound_ideal_arithmetic": -23.6396439483752,
+                    "analytic_tail_total_display_native": 5.4129383286590996e-11,
+                    "tail_display_underflow_not_zero_mathematical_tail": false,
+                    "tail_each_log_bound": [
+                      -25.66577918240357,
+                      -23.78102790245377
+                    ],
+                    "tail_cut_standard_t": 16.0,
+                    "tail_doublings": 0,
+                    "actual_quadrature_segments": [
+                      {
+                        "lower_standard_t": -16.0,
+                        "upper_standard_t": -8.0,
+                        "probability_function": "CDF",
+                        "integral_native": 4.8509199508871454e-09,
+                        "quaderr_estimate_native": 3.268402382379486e-18
+                      },
+                      {
+                        "lower_standard_t": -8.0,
+                        "upper_standard_t": -4.0,
+                        "probability_function": "CDF",
+                        "integral_native": 4.415288964516875e-06,
+                        "quaderr_estimate_native": 2.5129957008124073e-18
+                      },
+                      {
+                        "lower_standard_t": -4.0,
+                        "upper_standard_t": -2.0,
+                        "probability_function": "CDF",
+                        "integral_native": 0.000709934954979504,
+                        "quaderr_estimate_native": 7.881861330044692e-18
+                      },
+                      {
+                        "lower_standard_t": -2.0,
+                        "upper_standard_t": -1.7453763894903143,
+                        "probability_function": "CDF",
+                        "integral_native": 0.0007683593378906514,
+                        "quaderr_estimate_native": 8.530502281119417e-18
+                      },
+                      {
+                        "lower_standard_t": -1.7453763894903143,
+                        "upper_standard_t": -1.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.6217527203405254,
+                        "quaderr_estimate_native": 6.902841857453772e-15
+                      },
+                      {
+                        "lower_standard_t": -1.0,
+                        "upper_standard_t": -0.8247860988423227,
+                        "probability_function": "SF",
+                        "integral_native": 0.1330003347391843,
+                        "quaderr_estimate_native": 1.4766003391029546e-15
+                      },
+                      {
+                        "lower_standard_t": -0.8247860988423227,
+                        "upper_standard_t": 0.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.4728115836477042,
+                        "quaderr_estimate_native": 5.2492630647516436e-15
+                      },
+                      {
+                        "lower_standard_t": 0.0,
+                        "upper_standard_t": 1.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.18782402959531216,
+                        "quaderr_estimate_native": 2.0852656223459237e-15
+                      },
+                      {
+                        "lower_standard_t": 1.0,
+                        "upper_standard_t": 2.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.02230120658478517,
+                        "quaderr_estimate_native": 2.475931302735065e-16
+                      },
+                      {
+                        "lower_standard_t": 2.0,
+                        "upper_standard_t": 4.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.0018635929558540121,
+                        "quaderr_estimate_native": 2.069003808118377e-17
+                      },
+                      {
+                        "lower_standard_t": 4.0,
+                        "upper_standard_t": 8.0,
+                        "probability_function": "SF",
+                        "integral_native": 1.8780024443460544e-05,
+                        "quaderr_estimate_native": 3.505161325058814e-19
+                      },
+                      {
+                        "lower_standard_t": 8.0,
+                        "upper_standard_t": 16.0,
+                        "probability_function": "SF",
+                        "integral_native": 3.854037043030556e-08,
+                        "quaderr_estimate_native": 6.899847915542902e-18
+                      }
+                    ],
+                    "score_absolute_plus_relative_tolerance_native": 2.441055000860934e-09,
+                    "score_return_is_truncated_integral_with_declared_tail_error": true,
+                    "not_a_directed_IEEE_or_CDF_library_error_certificate": true
+                  }
+                }
+              ],
+              "mixture_quantiles_are_roots_not_averaged": true
+            }
+          }
+        },
+        {
+          "native_target": 1.0,
+          "score": {
+            "CRPS_native": 0.3877776590786285,
+            "squared_error_native": 0.015625,
+            "predictive_median_native": 1.125,
+            "intervals": {
+              "0.8": {
+                "lower": -0.6892597709306995,
+                "upper": 3.6879085940585083,
+                "width": 4.377168364989208,
+                "covered": true
+              },
+              "0.9": {
+                "lower": -1.1927521270679042,
+                "upper": 4.763806841828363,
+                "width": 5.9565589688962675,
+                "covered": true
+              },
+              "0.95": {
+                "lower": -1.65947178349949,
+                "upper": 5.933584327183855,
+                "width": 7.593056110683345,
+                "covered": true
+              }
+            },
+            "PIT_left": 0.46815356442980316,
+            "PIT_right": 0.46815356442980316,
+            "PIT_midpoint": 0.46815356442980316,
+            "PIT_kind": "continuous_mixture",
+            "log_density_native": -1.359829329636176,
+            "negative_log_density_native": 1.359829329636176,
+            "native_CDF_plus_SF_error": 2.220446049250313e-16,
+            "mixture_CRPS_decomposition": {
+              "weighted_component_CRPS": 0.3877776590786285,
+              "subtract_CDF_disagreement": 2.0918864708566165e-32,
+              "disagreement_numerics": {
+                "finite_U_window": [
+                  -18.898969044771423,
+                  19.898969044771423
+                ],
+                "adaptive_quad_error_estimate": 2.265393731540827e-32,
+                "outer_tail_bound_ideal_arithmetic": 2.1108072832283107e-05,
+                "not_a_directed_rounding_or_CDF_error_certificate": true
+              },
+              "component_scores": [
+                {
+                  "CRPS_native": 0.3877776590786284,
+                  "predictive_median_native": 1.125,
+                  "squared_error_native": 0.015625,
+                  "PIT_left": 0.46815356442980305,
+                  "PIT_right": 0.46815356442980305,
+                  "PIT_midpoint": 0.46815356442980305,
+                  "PIT_kind": "continuous transported Studentt",
+                  "intervals": {
+                    "0.8": {
+                      "lower": -0.6892597709306995,
+                      "upper": 3.6879085940585083,
+                      "width": 4.377168364989208,
+                      "covered": true
+                    },
+                    "0.9": {
+                      "lower": -1.1927521270679042,
+                      "upper": 4.763806841828363,
+                      "width": 5.9565589688962675,
+                      "covered": true
+                    },
+                    "0.95": {
+                      "lower": -1.65947178349949,
+                      "upper": 5.933584327183855,
+                      "width": 7.593056110683345,
+                      "covered": true
+                    }
+                  },
+                  "log_density_native": -1.3598293296361763,
+                  "score_numerics": {
+                    "method": "native CDF_SF integral in standard latent coordinate with inverse Jacobian",
+                    "quadrature_error_estimate_native": 4.31797061612443e-15,
+                    "analytic_tail_total_log_bound_ideal_arithmetic": -23.6396439483752,
+                    "analytic_tail_total_display_native": 5.4129383286590996e-11,
+                    "tail_display_underflow_not_zero_mathematical_tail": false,
+                    "tail_each_log_bound": [
+                      -25.66577918240357,
+                      -23.78102790245377
+                    ],
+                    "tail_cut_standard_t": 16.0,
+                    "tail_doublings": 0,
+                    "actual_quadrature_segments": [
+                      {
+                        "lower_standard_t": -16.0,
+                        "upper_standard_t": -8.0,
+                        "probability_function": "CDF",
+                        "integral_native": 4.8509199508871454e-09,
+                        "quaderr_estimate_native": 3.268402382379486e-18
+                      },
+                      {
+                        "lower_standard_t": -8.0,
+                        "upper_standard_t": -4.0,
+                        "probability_function": "CDF",
+                        "integral_native": 4.415288964516875e-06,
+                        "quaderr_estimate_native": 2.5129957008124073e-18
+                      },
+                      {
+                        "lower_standard_t": -4.0,
+                        "upper_standard_t": -2.0,
+                        "probability_function": "CDF",
+                        "integral_native": 0.000709934954979504,
+                        "quaderr_estimate_native": 7.881861330044692e-18
+                      },
+                      {
+                        "lower_standard_t": -2.0,
+                        "upper_standard_t": -1.0,
+                        "probability_function": "CDF",
+                        "integral_native": 0.012097266899568485,
+                        "quaderr_estimate_native": 1.3430664246936712e-16
+                      },
+                      {
+                        "lower_standard_t": -1.0,
+                        "upper_standard_t": -0.8247860988423227,
+                        "probability_function": "CDF",
+                        "integral_native": 0.008221464665417916,
+                        "quaderr_estimate_native": 9.12765936768913e-17
+                      },
+                      {
+                        "lower_standard_t": -0.8247860988423227,
+                        "upper_standard_t": -0.08332031600276961,
+                        "probability_function": "CDF",
+                        "integral_native": 0.12145986374670469,
+                        "quaderr_estimate_native": 1.3484753729942586e-15
+                      },
+                      {
+                        "lower_standard_t": -0.08332031600276961,
+                        "upper_standard_t": 0.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.033277060971308024,
+                        "quaderr_estimate_native": 3.6944959282201346e-16
+                      },
+                      {
+                        "lower_standard_t": 0.0,
+                        "upper_standard_t": 1.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.18782402959531216,
+                        "quaderr_estimate_native": 2.0852656223459237e-15
+                      },
+                      {
+                        "lower_standard_t": 1.0,
+                        "upper_standard_t": 2.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.02230120658478517,
+                        "quaderr_estimate_native": 2.475931302735065e-16
+                      },
+                      {
+                        "lower_standard_t": 2.0,
+                        "upper_standard_t": 4.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.0018635929558540121,
+                        "quaderr_estimate_native": 2.069003808118377e-17
+                      },
+                      {
+                        "lower_standard_t": 4.0,
+                        "upper_standard_t": 8.0,
+                        "probability_function": "SF",
+                        "integral_native": 1.8780024443460544e-05,
+                        "quaderr_estimate_native": 3.505161325058814e-19
+                      },
+                      {
+                        "lower_standard_t": 8.0,
+                        "upper_standard_t": 16.0,
+                        "probability_function": "SF",
+                        "integral_native": 3.854037043030556e-08,
+                        "quaderr_estimate_native": 6.899847915542902e-18
+                      }
+                    ],
+                    "score_absolute_plus_relative_tolerance_native": 1.3877776590786284e-09,
+                    "score_return_is_truncated_integral_with_declared_tail_error": true,
+                    "not_a_directed_IEEE_or_CDF_library_error_certificate": true
+                  }
+                },
+                {
+                  "CRPS_native": 0.3877776590786284,
+                  "predictive_median_native": 1.125,
+                  "squared_error_native": 0.015625,
+                  "PIT_left": 0.46815356442980305,
+                  "PIT_right": 0.46815356442980305,
+                  "PIT_midpoint": 0.46815356442980305,
+                  "PIT_kind": "continuous transported Studentt",
+                  "intervals": {
+                    "0.8": {
+                      "lower": -0.6892597709306995,
+                      "upper": 3.6879085940585083,
+                      "width": 4.377168364989208,
+                      "covered": true
+                    },
+                    "0.9": {
+                      "lower": -1.1927521270679042,
+                      "upper": 4.763806841828363,
+                      "width": 5.9565589688962675,
+                      "covered": true
+                    },
+                    "0.95": {
+                      "lower": -1.65947178349949,
+                      "upper": 5.933584327183855,
+                      "width": 7.593056110683345,
+                      "covered": true
+                    }
+                  },
+                  "log_density_native": -1.3598293296361763,
+                  "score_numerics": {
+                    "method": "native CDF_SF integral in standard latent coordinate with inverse Jacobian",
+                    "quadrature_error_estimate_native": 4.31797061612443e-15,
+                    "analytic_tail_total_log_bound_ideal_arithmetic": -23.6396439483752,
+                    "analytic_tail_total_display_native": 5.4129383286590996e-11,
+                    "tail_display_underflow_not_zero_mathematical_tail": false,
+                    "tail_each_log_bound": [
+                      -25.66577918240357,
+                      -23.78102790245377
+                    ],
+                    "tail_cut_standard_t": 16.0,
+                    "tail_doublings": 0,
+                    "actual_quadrature_segments": [
+                      {
+                        "lower_standard_t": -16.0,
+                        "upper_standard_t": -8.0,
+                        "probability_function": "CDF",
+                        "integral_native": 4.8509199508871454e-09,
+                        "quaderr_estimate_native": 3.268402382379486e-18
+                      },
+                      {
+                        "lower_standard_t": -8.0,
+                        "upper_standard_t": -4.0,
+                        "probability_function": "CDF",
+                        "integral_native": 4.415288964516875e-06,
+                        "quaderr_estimate_native": 2.5129957008124073e-18
+                      },
+                      {
+                        "lower_standard_t": -4.0,
+                        "upper_standard_t": -2.0,
+                        "probability_function": "CDF",
+                        "integral_native": 0.000709934954979504,
+                        "quaderr_estimate_native": 7.881861330044692e-18
+                      },
+                      {
+                        "lower_standard_t": -2.0,
+                        "upper_standard_t": -1.0,
+                        "probability_function": "CDF",
+                        "integral_native": 0.012097266899568485,
+                        "quaderr_estimate_native": 1.3430664246936712e-16
+                      },
+                      {
+                        "lower_standard_t": -1.0,
+                        "upper_standard_t": -0.8247860988423227,
+                        "probability_function": "CDF",
+                        "integral_native": 0.008221464665417916,
+                        "quaderr_estimate_native": 9.12765936768913e-17
+                      },
+                      {
+                        "lower_standard_t": -0.8247860988423227,
+                        "upper_standard_t": -0.08332031600276961,
+                        "probability_function": "CDF",
+                        "integral_native": 0.12145986374670469,
+                        "quaderr_estimate_native": 1.3484753729942586e-15
+                      },
+                      {
+                        "lower_standard_t": -0.08332031600276961,
+                        "upper_standard_t": 0.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.033277060971308024,
+                        "quaderr_estimate_native": 3.6944959282201346e-16
+                      },
+                      {
+                        "lower_standard_t": 0.0,
+                        "upper_standard_t": 1.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.18782402959531216,
+                        "quaderr_estimate_native": 2.0852656223459237e-15
+                      },
+                      {
+                        "lower_standard_t": 1.0,
+                        "upper_standard_t": 2.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.02230120658478517,
+                        "quaderr_estimate_native": 2.475931302735065e-16
+                      },
+                      {
+                        "lower_standard_t": 2.0,
+                        "upper_standard_t": 4.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.0018635929558540121,
+                        "quaderr_estimate_native": 2.069003808118377e-17
+                      },
+                      {
+                        "lower_standard_t": 4.0,
+                        "upper_standard_t": 8.0,
+                        "probability_function": "SF",
+                        "integral_native": 1.8780024443460544e-05,
+                        "quaderr_estimate_native": 3.505161325058814e-19
+                      },
+                      {
+                        "lower_standard_t": 8.0,
+                        "upper_standard_t": 16.0,
+                        "probability_function": "SF",
+                        "integral_native": 3.854037043030556e-08,
+                        "quaderr_estimate_native": 6.899847915542902e-18
+                      }
+                    ],
+                    "score_absolute_plus_relative_tolerance_native": 1.3877776590786284e-09,
+                    "score_return_is_truncated_integral_with_declared_tail_error": true,
+                    "not_a_directed_IEEE_or_CDF_library_error_certificate": true
+                  }
+                },
+                {
+                  "CRPS_native": 0.3877776590786284,
+                  "predictive_median_native": 1.125,
+                  "squared_error_native": 0.015625,
+                  "PIT_left": 0.46815356442980305,
+                  "PIT_right": 0.46815356442980305,
+                  "PIT_midpoint": 0.46815356442980305,
+                  "PIT_kind": "continuous transported Studentt",
+                  "intervals": {
+                    "0.8": {
+                      "lower": -0.6892597709306995,
+                      "upper": 3.6879085940585083,
+                      "width": 4.377168364989208,
+                      "covered": true
+                    },
+                    "0.9": {
+                      "lower": -1.1927521270679042,
+                      "upper": 4.763806841828363,
+                      "width": 5.9565589688962675,
+                      "covered": true
+                    },
+                    "0.95": {
+                      "lower": -1.65947178349949,
+                      "upper": 5.933584327183855,
+                      "width": 7.593056110683345,
+                      "covered": true
+                    }
+                  },
+                  "log_density_native": -1.3598293296361763,
+                  "score_numerics": {
+                    "method": "native CDF_SF integral in standard latent coordinate with inverse Jacobian",
+                    "quadrature_error_estimate_native": 4.31797061612443e-15,
+                    "analytic_tail_total_log_bound_ideal_arithmetic": -23.6396439483752,
+                    "analytic_tail_total_display_native": 5.4129383286590996e-11,
+                    "tail_display_underflow_not_zero_mathematical_tail": false,
+                    "tail_each_log_bound": [
+                      -25.66577918240357,
+                      -23.78102790245377
+                    ],
+                    "tail_cut_standard_t": 16.0,
+                    "tail_doublings": 0,
+                    "actual_quadrature_segments": [
+                      {
+                        "lower_standard_t": -16.0,
+                        "upper_standard_t": -8.0,
+                        "probability_function": "CDF",
+                        "integral_native": 4.8509199508871454e-09,
+                        "quaderr_estimate_native": 3.268402382379486e-18
+                      },
+                      {
+                        "lower_standard_t": -8.0,
+                        "upper_standard_t": -4.0,
+                        "probability_function": "CDF",
+                        "integral_native": 4.415288964516875e-06,
+                        "quaderr_estimate_native": 2.5129957008124073e-18
+                      },
+                      {
+                        "lower_standard_t": -4.0,
+                        "upper_standard_t": -2.0,
+                        "probability_function": "CDF",
+                        "integral_native": 0.000709934954979504,
+                        "quaderr_estimate_native": 7.881861330044692e-18
+                      },
+                      {
+                        "lower_standard_t": -2.0,
+                        "upper_standard_t": -1.0,
+                        "probability_function": "CDF",
+                        "integral_native": 0.012097266899568485,
+                        "quaderr_estimate_native": 1.3430664246936712e-16
+                      },
+                      {
+                        "lower_standard_t": -1.0,
+                        "upper_standard_t": -0.8247860988423227,
+                        "probability_function": "CDF",
+                        "integral_native": 0.008221464665417916,
+                        "quaderr_estimate_native": 9.12765936768913e-17
+                      },
+                      {
+                        "lower_standard_t": -0.8247860988423227,
+                        "upper_standard_t": -0.08332031600276961,
+                        "probability_function": "CDF",
+                        "integral_native": 0.12145986374670469,
+                        "quaderr_estimate_native": 1.3484753729942586e-15
+                      },
+                      {
+                        "lower_standard_t": -0.08332031600276961,
+                        "upper_standard_t": 0.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.033277060971308024,
+                        "quaderr_estimate_native": 3.6944959282201346e-16
+                      },
+                      {
+                        "lower_standard_t": 0.0,
+                        "upper_standard_t": 1.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.18782402959531216,
+                        "quaderr_estimate_native": 2.0852656223459237e-15
+                      },
+                      {
+                        "lower_standard_t": 1.0,
+                        "upper_standard_t": 2.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.02230120658478517,
+                        "quaderr_estimate_native": 2.475931302735065e-16
+                      },
+                      {
+                        "lower_standard_t": 2.0,
+                        "upper_standard_t": 4.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.0018635929558540121,
+                        "quaderr_estimate_native": 2.069003808118377e-17
+                      },
+                      {
+                        "lower_standard_t": 4.0,
+                        "upper_standard_t": 8.0,
+                        "probability_function": "SF",
+                        "integral_native": 1.8780024443460544e-05,
+                        "quaderr_estimate_native": 3.505161325058814e-19
+                      },
+                      {
+                        "lower_standard_t": 8.0,
+                        "upper_standard_t": 16.0,
+                        "probability_function": "SF",
+                        "integral_native": 3.854037043030556e-08,
+                        "quaderr_estimate_native": 6.899847915542902e-18
+                      }
+                    ],
+                    "score_absolute_plus_relative_tolerance_native": 1.3877776590786284e-09,
+                    "score_return_is_truncated_integral_with_declared_tail_error": true,
+                    "not_a_directed_IEEE_or_CDF_library_error_certificate": true
+                  }
+                }
+              ],
+              "mixture_quantiles_are_roots_not_averaged": true
+            }
+          }
+        }
+      ],
+      "quantiles": [
+        {
+          "probability": 0.025,
+          "native_quantile": -1.6594717834994905
+        },
+        {
+          "probability": 0.05,
+          "native_quantile": -1.1927521270679042
+        },
+        {
+          "probability": 0.1,
+          "native_quantile": -0.6892597709306991
+        },
+        {
+          "probability": 0.5,
+          "native_quantile": 1.125
+        },
+        {
+          "probability": 0.9,
+          "native_quantile": 3.6879085940585083
+        },
+        {
+          "probability": 0.95,
+          "native_quantile": 4.763806841828363
+        },
+        {
+          "probability": 0.975,
+          "native_quantile": 5.933584327183855
+        }
+      ]
+    },
+    {
+      "id": "after_positive",
+      "law": {
+        "coordinate": "u=YJ_half(native/s0)",
+        "family": "mixture_student_t",
+        "components": [
+          {
+            "id": "affine",
+            "location": 0.5982456140350877,
+            "scale": 0.5250464224884581,
+            "df": 7.0
+          },
+          {
+            "id": "interaction",
+            "location": 0.5613138686131387,
+            "scale": 0.5865551004145874,
+            "df": 7.0
+          },
+          {
+            "id": "fullquad",
+            "location": 0.6136969696969696,
+            "scale": 0.5668827152558376,
+            "df": 7.0
+          }
+        ],
+        "log_weights": [
+          -1.5333346557673753,
+          -1.1359642437853619,
+          -0.7698708710234536
+        ],
+        "weights_display_only": [
+          0.21581479799766543,
+          0.321112341427094,
+          0.46307286057524055
+        ],
+        "native_first_scale_s0": 2.0,
+        "lambda": 0.5,
+        "unit": "source bulk GPa attribution, aggregation qualified",
+        "model_weight_override": false
+      },
+      "scores": [
+        {
+          "native_target": -1.0,
+          "score": {
+            "CRPS_native": 1.6651152710271913,
+            "squared_error_native": 5.590111341375212,
+            "predictive_median_native": 1.3643416295821578,
+            "intervals": {
+              "0.8": {
+                "lower": -0.39235247505211474,
+                "upper": 3.752594273702422,
+                "width": 4.144946748754537,
+                "covered": false
+              },
+              "0.9": {
+                "lower": -0.8667102485629967,
+                "upper": 4.7086768414603695,
+                "width": 5.575387090023366,
+                "covered": false
+              },
+              "0.95": {
+                "lower": -1.2964070455740533,
+                "upper": 5.717913384913888,
+                "width": 7.014320430487941,
+                "covered": true
+              }
+            },
+            "PIT_left": 0.04054213807809122,
+            "PIT_right": 0.04054213807809122,
+            "PIT_midpoint": 0.04054213807809122,
+            "PIT_kind": "continuous_mixture",
+            "log_density_native": -2.739625615115777,
+            "negative_log_density_native": 2.739625615115777,
+            "native_CDF_plus_SF_error": 0.0,
+            "mixture_CRPS_decomposition": {
+              "weighted_component_CRPS": 1.6659890086099602,
+              "subtract_CDF_disagreement": 0.000873737582769043,
+              "disagreement_numerics": {
+                "finite_U_window": [
+                  -18.20844934465366,
+                  19.331077081879933
+                ],
+                "adaptive_quad_error_estimate": 1.304747790774723e-09,
+                "outer_tail_bound_ideal_arithmetic": 2.133846139756873e-06,
+                "not_a_directed_rounding_or_CDF_error_certificate": true
+              },
+              "component_scores": [
+                {
+                  "CRPS_native": 1.704448841298825,
+                  "predictive_median_native": 1.375440135426285,
+                  "squared_error_native": 5.642715836994047,
+                  "PIT_left": 0.03175625082039261,
+                  "PIT_right": 0.03175625082039261,
+                  "PIT_midpoint": 0.03175625082039261,
+                  "PIT_kind": "continuous transported Studentt",
+                  "intervals": {
+                    "0.8": {
+                      "lower": -0.27974496389044273,
+                      "upper": 3.581629500608081,
+                      "width": 3.8613744644985237,
+                      "covered": false
+                    },
+                    "0.9": {
+                      "lower": -0.7299666528696496,
+                      "upper": 4.454778986635527,
+                      "width": 5.184745639505177,
+                      "covered": false
+                    },
+                    "0.95": {
+                      "lower": -1.137587689505326,
+                      "upper": 5.371967196114106,
+                      "width": 6.509554885619432,
+                      "covered": true
+                    }
+                  },
+                  "log_density_native": -2.9064332237955446,
+                  "score_numerics": {
+                    "method": "native CDF_SF integral in standard latent coordinate with inverse Jacobian",
+                    "quadrature_error_estimate_native": 1.8939273709936243e-14,
+                    "analytic_tail_total_log_bound_ideal_arithmetic": -26.86915224279163,
+                    "analytic_tail_total_display_native": 2.1422761239765007e-12,
+                    "tail_display_underflow_not_zero_mathematical_tail": false,
+                    "tail_each_log_bound": [
+                      -28.793331569341746,
+                      -27.026971084854118
+                    ],
+                    "tail_cut_standard_t": 16.0,
+                    "tail_doublings": 0,
+                    "actual_quadrature_segments": [
+                      {
+                        "lower_standard_t": -16.0,
+                        "upper_standard_t": -8.0,
+                        "probability_function": "CDF",
+                        "integral_native": 7.665007668723199e-10,
+                        "quaderr_estimate_native": 3.5101485226743535e-18
+                      },
+                      {
+                        "lower_standard_t": -8.0,
+                        "upper_standard_t": -4.0,
+                        "probability_function": "CDF",
+                        "integral_native": 1.9117107735082844e-06,
+                        "quaderr_estimate_native": 4.6493885959997425e-18
+                      },
+                      {
+                        "lower_standard_t": -4.0,
+                        "upper_standard_t": -2.202326821463923,
+                        "probability_function": "CDF",
+                        "integral_native": 0.00028307850290273587,
+                        "quaderr_estimate_native": 3.1428027169903656e-18
+                      },
+                      {
+                        "lower_standard_t": -2.202326821463923,
+                        "upper_standard_t": -2.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.16328422219488803,
+                        "quaderr_estimate_native": 1.812819030387747e-15
+                      },
+                      {
+                        "lower_standard_t": -2.0,
+                        "upper_standard_t": -1.1394147039412286,
+                        "probability_function": "SF",
+                        "integral_native": 0.6883842432106014,
+                        "quaderr_estimate_native": 7.642600366015733e-15
+                      },
+                      {
+                        "lower_standard_t": -1.1394147039412286,
+                        "upper_standard_t": -1.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.10510248622728612,
+                        "quaderr_estimate_native": 1.1668720015488144e-15
+                      },
+                      {
+                        "lower_standard_t": -1.0,
+                        "upper_standard_t": 0.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.5621007972259682,
+                        "quaderr_estimate_native": 6.240572472404262e-15
+                      },
+                      {
+                        "lower_standard_t": 0.0,
+                        "upper_standard_t": 1.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.16586290469730322,
+                        "quaderr_estimate_native": 1.8414481572615407e-15
+                      },
+                      {
+                        "lower_standard_t": 1.0,
+                        "upper_standard_t": 2.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.01816910145634187,
+                        "quaderr_estimate_native": 2.0171754773581207e-16
+                      },
+                      {
+                        "lower_standard_t": 2.0,
+                        "upper_standard_t": 4.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.0012528877507743336,
+                        "quaderr_estimate_native": 1.39098482818049e-17
+                      },
+                      {
+                        "lower_standard_t": 4.0,
+                        "upper_standard_t": 8.0,
+                        "probability_function": "SF",
+                        "integral_native": 7.202309179846116e-06,
+                        "quaderr_estimate_native": 2.413372523515939e-19
+                      },
+                      {
+                        "lower_standard_t": 8.0,
+                        "upper_standard_t": 16.0,
+                        "probability_function": "SF",
+                        "integral_native": 5.246304976273136e-09,
+                        "quaderr_estimate_native": 7.79060921251356e-18
+                      }
+                    ],
+                    "score_absolute_plus_relative_tolerance_native": 2.7044488412988253e-09,
+                    "score_return_is_truncated_integral_with_declared_tail_error": true,
+                    "not_a_directed_IEEE_or_CDF_library_error_certificate": true
+                  }
+                },
+                {
+                  "CRPS_native": 1.581538101648731,
+                  "predictive_median_native": 1.2801643667750013,
+                  "squared_error_native": 5.199149539510444,
+                  "PIT_left": 0.04899269694723801,
+                  "PIT_right": 0.04899269694723801,
+                  "PIT_midpoint": 0.04899269694723801,
+                  "PIT_kind": "continuous transported Studentt",
+                  "intervals": {
+                    "0.8": {
+                      "lower": -0.5064154651753531,
+                      "upper": 3.7502703587594044,
+                      "width": 4.256685823934758,
+                      "covered": false
+                    },
+                    "0.9": {
+                      "lower": -0.9867297708403667,
+                      "upper": 4.743953558509361,
+                      "width": 5.730683329349728,
+                      "covered": false
+                    },
+                    "0.95": {
+                      "lower": -1.4224340880236657,
+                      "upper": 5.794521772922398,
+                      "width": 7.216955860946063,
+                      "covered": true
+                    }
+                  },
+                  "log_density_native": -2.5870749502645984,
+                  "score_numerics": {
+                    "method": "native CDF_SF integral in standard latent coordinate with inverse Jacobian",
+                    "quadrature_error_estimate_native": 1.757642970197207e-14,
+                    "analytic_tail_total_log_bound_ideal_arithmetic": -26.685930116452276,
+                    "analytic_tail_total_display_native": 2.5730475139112574e-12,
+                    "tail_display_underflow_not_zero_mathematical_tail": false,
+                    "tail_each_log_bound": [
+                      -28.68255164028009,
+                      -26.83187340004146
+                    ],
+                    "tail_cut_standard_t": 16.0,
+                    "tail_doublings": 0,
+                    "actual_quadrature_segments": [
+                      {
+                        "lower_standard_t": -16.0,
+                        "upper_standard_t": -8.0,
+                        "probability_function": "CDF",
+                        "integral_native": 8.237127392026727e-10,
+                        "quaderr_estimate_native": 3.759816565396653e-18
+                      },
+                      {
+                        "lower_standard_t": -8.0,
+                        "upper_standard_t": -4.0,
+                        "probability_function": "CDF",
+                        "integral_native": 2.0508070007279358e-06,
+                        "quaderr_estimate_native": 4.815466442315225e-18
+                      },
+                      {
+                        "lower_standard_t": -4.0,
+                        "upper_standard_t": -2.0,
+                        "probability_function": "CDF",
+                        "integral_native": 0.0005629648795056423,
+                        "quaderr_estimate_native": 6.250165712824909e-18
+                      },
+                      {
+                        "lower_standard_t": -2.0,
+                        "upper_standard_t": -1.9084175937552248,
+                        "probability_function": "CDF",
+                        "integral_native": 0.00018328804240236388,
+                        "quaderr_estimate_native": 2.0349060481357636e-18
+                      },
+                      {
+                        "lower_standard_t": -1.9084175937552248,
+                        "upper_standard_t": -1.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.7664467640957632,
+                        "quaderr_estimate_native": 8.50926844648562e-15
+                      },
+                      {
+                        "lower_standard_t": -1.0,
+                        "upper_standard_t": -0.9569669894889539,
+                        "probability_function": "SF",
+                        "integral_native": 0.03371406330227684,
+                        "quaderr_estimate_native": 3.7430129331857784e-16
+                      },
+                      {
+                        "lower_standard_t": -0.9569669894889539,
+                        "upper_standard_t": 0.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.5743895962292566,
+                        "quaderr_estimate_native": 6.3770055483886765e-15
+                      },
+                      {
+                        "lower_standard_t": 0.0,
+                        "upper_standard_t": 1.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.1842307964824635,
+                        "quaderr_estimate_native": 2.045372720998623e-15
+                      },
+                      {
+                        "lower_standard_t": 1.0,
+                        "upper_standard_t": 2.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.02056135012720838,
+                        "quaderr_estimate_native": 2.2827684328606135e-16
+                      },
+                      {
+                        "lower_standard_t": 2.0,
+                        "upper_standard_t": 4.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.0014387892723371697,
+                        "quaderr_estimate_native": 1.5973769777324007e-17
+                      },
+                      {
+                        "lower_standard_t": 4.0,
+                        "upper_standard_t": 8.0,
+                        "probability_function": "SF",
+                        "integral_native": 8.431318033474831e-06,
+                        "quaderr_estimate_native": 4.406679408098908e-19
+                      },
+                      {
+                        "lower_standard_t": 8.0,
+                        "upper_standard_t": 16.0,
+                        "probability_function": "SF",
+                        "integral_native": 6.268770600717221e-09,
+                        "quaderr_estimate_native": 8.930057007704465e-18
+                      }
+                    ],
+                    "score_absolute_plus_relative_tolerance_native": 2.581538101648731e-09,
+                    "score_return_is_truncated_integral_with_declared_tail_error": true,
+                    "not_a_directed_IEEE_or_CDF_library_error_certificate": true
+                  }
+                },
+                {
+                  "CRPS_native": 1.7066263014623513,
+                  "predictive_median_native": 1.4157059247015609,
+                  "squared_error_native": 5.835635114638222,
+                  "PIT_left": 0.03877685591477621,
+                  "PIT_right": 0.03877685591477621,
+                  "PIT_midpoint": 0.03877685591477621,
+                  "PIT_kind": "continuous transported Studentt",
+                  "intervals": {
+                    "0.8": {
+                      "lower": -0.3609699705396804,
+                      "upper": 3.833820525772914,
+                      "width": 4.194790496312594,
+                      "covered": false
+                    },
+                    "0.9": {
+                      "lower": -0.8381367681865909,
+                      "upper": 4.799568719066105,
+                      "width": 5.637705487252696,
+                      "covered": false
+                    },
+                    "0.95": {
+                      "lower": -1.2695037180824205,
+                      "upper": 5.817696924097793,
+                      "width": 7.087200642180213,
+                      "covered": true
+                    }
+                  },
+                  "log_density_native": -2.7832399689302636,
+                  "score_numerics": {
+                    "method": "native CDF_SF integral in standard latent coordinate with inverse Jacobian",
+                    "quadrature_error_estimate_native": 1.896500041884167e-14,
+                    "analytic_tail_total_log_bound_ideal_arithmetic": -26.73983413458166,
+                    "analytic_tail_total_display_native": 2.4380218208993292e-12,
+                    "tail_display_underflow_not_zero_mathematical_tail": false,
+                    "tail_each_log_bound": [
+                      -28.716665820881342,
+                      -26.888922921397562
+                    ],
+                    "tail_cut_standard_t": 16.0,
+                    "tail_doublings": 0,
+                    "actual_quadrature_segments": [
+                      {
+                        "lower_standard_t": -16.0,
+                        "upper_standard_t": -8.0,
+                        "probability_function": "CDF",
+                        "integral_native": 8.078284183483158e-10,
+                        "quaderr_estimate_native": 3.708606020990925e-18
+                      },
+                      {
+                        "lower_standard_t": -8.0,
+                        "upper_standard_t": -4.0,
+                        "probability_function": "CDF",
+                        "integral_native": 2.017464830108039e-06,
+                        "quaderr_estimate_native": 5.040800084765812e-18
+                      },
+                      {
+                        "lower_standard_t": -4.0,
+                        "upper_standard_t": -2.0670504548600728,
+                        "probability_function": "CDF",
+                        "integral_native": 0.00045308973243152927,
+                        "quaderr_estimate_native": 5.030306531667353e-18
+                      },
+                      {
+                        "lower_standard_t": -2.0670504548600728,
+                        "upper_standard_t": -2.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.05741203999477891,
+                        "quaderr_estimate_native": 6.37401686929039e-16
+                      },
+                      {
+                        "lower_standard_t": -2.0,
+                        "upper_standard_t": -1.0825819048301808,
+                        "probability_function": "SF",
+                        "integral_native": 0.7759121025731809,
+                        "quaderr_estimate_native": 8.614354813620615e-15
+                      },
+                      {
+                        "lower_standard_t": -1.0825819048301808,
+                        "upper_standard_t": -1.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.06584442344850998,
+                        "quaderr_estimate_native": 7.310199495570433e-16
+                      },
+                      {
+                        "lower_standard_t": -1.0,
+                        "upper_standard_t": 0.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.6045724288103056,
+                        "quaderr_estimate_native": 6.712102305187546e-15
+                      },
+                      {
+                        "lower_standard_t": 0.0,
+                        "upper_standard_t": 1.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.18099623113038937,
+                        "quaderr_estimate_native": 2.009461831713348e-15
+                      },
+                      {
+                        "lower_standard_t": 1.0,
+                        "upper_standard_t": 2.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.020033086434951015,
+                        "quaderr_estimate_native": 2.224119381438851e-16
+                      },
+                      {
+                        "lower_standard_t": 2.0,
+                        "upper_standard_t": 4.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.001392781620821401,
+                        "quaderr_estimate_native": 1.5462982237106638e-17
+                      },
+                      {
+                        "lower_standard_t": 4.0,
+                        "upper_standard_t": 8.0,
+                        "probability_function": "SF",
+                        "integral_native": 8.093479852949268e-06,
+                        "quaderr_estimate_native": 3.542531389382548e-19
+                      },
+                      {
+                        "lower_standard_t": 8.0,
+                        "upper_standard_t": 16.0,
+                        "probability_function": "SF",
+                        "integral_native": 5.964471223474318e-09,
+                        "quaderr_estimate_native": 8.650945676719499e-18
+                      }
+                    ],
+                    "score_absolute_plus_relative_tolerance_native": 2.7066263014623514e-09,
+                    "score_return_is_truncated_integral_with_declared_tail_error": true,
+                    "not_a_directed_IEEE_or_CDF_library_error_certificate": true
+                  }
+                }
+              ],
+              "mixture_quantiles_are_roots_not_averaged": true
+            }
+          }
+        },
+        {
+          "native_target": 1.0,
+          "score": {
+            "CRPS_native": 0.4011983307793157,
+            "squared_error_native": 0.13274482304658225,
+            "predictive_median_native": 1.3643416295821578,
+            "intervals": {
+              "0.8": {
+                "lower": -0.39235247505211474,
+                "upper": 3.752594273702422,
+                "width": 4.144946748754537,
+                "covered": true
+              },
+              "0.9": {
+                "lower": -0.8667102485629967,
+                "upper": 4.7086768414603695,
+                "width": 5.575387090023366,
+                "covered": true
+              },
+              "0.95": {
+                "lower": -1.2964070455740533,
+                "upper": 5.717913384913888,
+                "width": 7.014320430487941,
+                "covered": true
+              }
+            },
+            "PIT_left": 0.4025761407460561,
+            "PIT_right": 0.4025761407460561,
+            "PIT_midpoint": 0.4025761407460561,
+            "PIT_kind": "continuous_mixture",
+            "log_density_native": -1.315207784967588,
+            "negative_log_density_native": 1.315207784967588,
+            "native_CDF_plus_SF_error": 1.1102230246251565e-16,
+            "mixture_CRPS_decomposition": {
+              "weighted_component_CRPS": 0.40207206836208476,
+              "subtract_CDF_disagreement": 0.000873737582769043,
+              "disagreement_numerics": {
+                "finite_U_window": [
+                  -18.20844934465366,
+                  19.331077081879933
+                ],
+                "adaptive_quad_error_estimate": 1.304747790774723e-09,
+                "outer_tail_bound_ideal_arithmetic": 2.133846139756873e-06,
+                "not_a_directed_rounding_or_CDF_error_certificate": true
+              },
+              "component_scores": [
+                {
+                  "CRPS_native": 0.38125220584652775,
+                  "predictive_median_native": 1.375440135426285,
+                  "squared_error_native": 0.14095529528890727,
+                  "PIT_left": 0.39256391707095833,
+                  "PIT_right": 0.39256391707095833,
+                  "PIT_midpoint": 0.39256391707095833,
+                  "PIT_kind": "continuous transported Studentt",
+                  "intervals": {
+                    "0.8": {
+                      "lower": -0.27974496389044273,
+                      "upper": 3.581629500608081,
+                      "width": 3.8613744644985237,
+                      "covered": true
+                    },
+                    "0.9": {
+                      "lower": -0.7299666528696496,
+                      "upper": 4.454778986635527,
+                      "width": 5.184745639505177,
+                      "covered": true
+                    },
+                    "0.95": {
+                      "lower": -1.137587689505326,
+                      "upper": 5.371967196114106,
+                      "width": 6.509554885619432,
+                      "covered": true
+                    }
+                  },
+                  "log_density_native": -1.2517528169547139,
+                  "score_numerics": {
+                    "method": "native CDF_SF integral in standard latent coordinate with inverse Jacobian",
+                    "quadrature_error_estimate_native": 4.2488400020794435e-15,
+                    "analytic_tail_total_log_bound_ideal_arithmetic": -26.86915224279163,
+                    "analytic_tail_total_display_native": 2.1422761239765007e-12,
+                    "tail_display_underflow_not_zero_mathematical_tail": false,
+                    "tail_each_log_bound": [
+                      -28.793331569341746,
+                      -27.026971084854118
+                    ],
+                    "tail_cut_standard_t": 16.0,
+                    "tail_doublings": 0,
+                    "actual_quadrature_segments": [
+                      {
+                        "lower_standard_t": -16.0,
+                        "upper_standard_t": -8.0,
+                        "probability_function": "CDF",
+                        "integral_native": 7.665007668723199e-10,
+                        "quaderr_estimate_native": 3.5101485226743535e-18
+                      },
+                      {
+                        "lower_standard_t": -8.0,
+                        "upper_standard_t": -4.0,
+                        "probability_function": "CDF",
+                        "integral_native": 1.9117107735082844e-06,
+                        "quaderr_estimate_native": 4.6493885959997425e-18
+                      },
+                      {
+                        "lower_standard_t": -4.0,
+                        "upper_standard_t": -2.0,
+                        "probability_function": "CDF",
+                        "integral_native": 0.0005264101998075779,
+                        "quaderr_estimate_native": 5.844327242239021e-18
+                      },
+                      {
+                        "lower_standard_t": -2.0,
+                        "upper_standard_t": -1.1394147039412286,
+                        "probability_function": "CDF",
+                        "integral_native": 0.006888461766705214,
+                        "quaderr_estimate_native": 7.647728857646212e-17
+                      },
+                      {
+                        "lower_standard_t": -1.1394147039412286,
+                        "upper_standard_t": -1.0,
+                        "probability_function": "CDF",
+                        "integral_native": 0.003845598370590175,
+                        "quaderr_estimate_native": 4.2694718544901974e-17
+                      },
+                      {
+                        "lower_standard_t": -1.0,
+                        "upper_standard_t": -0.28331946449017015,
+                        "probability_function": "CDF",
+                        "integral_native": 0.06927450387950382,
+                        "quaderr_estimate_native": 7.691014922650987e-16
+                      },
+                      {
+                        "lower_standard_t": -0.28331946449017015,
+                        "upper_standard_t": 0.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.11542321769274247,
+                        "quaderr_estimate_native": 1.2814551385880443e-15
+                      },
+                      {
+                        "lower_standard_t": 0.0,
+                        "upper_standard_t": 1.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.16586290469730322,
+                        "quaderr_estimate_native": 1.8414481572615407e-15
+                      },
+                      {
+                        "lower_standard_t": 1.0,
+                        "upper_standard_t": 2.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.01816910145634187,
+                        "quaderr_estimate_native": 2.0171754773581207e-16
+                      },
+                      {
+                        "lower_standard_t": 2.0,
+                        "upper_standard_t": 4.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.0012528877507743336,
+                        "quaderr_estimate_native": 1.39098482818049e-17
+                      },
+                      {
+                        "lower_standard_t": 4.0,
+                        "upper_standard_t": 8.0,
+                        "probability_function": "SF",
+                        "integral_native": 7.202309179846116e-06,
+                        "quaderr_estimate_native": 2.413372523515939e-19
+                      },
+                      {
+                        "lower_standard_t": 8.0,
+                        "upper_standard_t": 16.0,
+                        "probability_function": "SF",
+                        "integral_native": 5.246304976273136e-09,
+                        "quaderr_estimate_native": 7.79060921251356e-18
+                      }
+                    ],
+                    "score_absolute_plus_relative_tolerance_native": 1.3812522058465277e-09,
+                    "score_return_is_truncated_integral_with_declared_tail_error": true,
+                    "not_a_directed_IEEE_or_CDF_library_error_certificate": true
+                  }
+                },
+                {
+                  "CRPS_native": 0.3960815816878054,
+                  "predictive_median_native": 1.2801643667750013,
+                  "squared_error_native": 0.07849207241043747,
+                  "PIT_left": 0.42710728730413244,
+                  "PIT_right": 0.42710728730413244,
+                  "PIT_midpoint": 0.42710728730413244,
+                  "PIT_kind": "continuous transported Studentt",
+                  "intervals": {
+                    "0.8": {
+                      "lower": -0.5064154651753531,
+                      "upper": 3.7502703587594044,
+                      "width": 4.256685823934758,
+                      "covered": true
+                    },
+                    "0.9": {
+                      "lower": -0.9867297708403667,
+                      "upper": 4.743953558509361,
+                      "width": 5.730683329349728,
+                      "covered": true
+                    },
+                    "0.95": {
+                      "lower": -1.4224340880236657,
+                      "upper": 5.794521772922398,
+                      "width": 7.216955860946063,
+                      "covered": true
+                    }
+                  },
+                  "log_density_native": -1.3376404731935891,
+                  "score_numerics": {
+                    "method": "native CDF_SF integral in standard latent coordinate with inverse Jacobian",
+                    "quadrature_error_estimate_native": 4.415218470445756e-15,
+                    "analytic_tail_total_log_bound_ideal_arithmetic": -26.685930116452276,
+                    "analytic_tail_total_display_native": 2.5730475139112574e-12,
+                    "tail_display_underflow_not_zero_mathematical_tail": false,
+                    "tail_each_log_bound": [
+                      -28.68255164028009,
+                      -26.83187340004146
+                    ],
+                    "tail_cut_standard_t": 16.0,
+                    "tail_doublings": 0,
+                    "actual_quadrature_segments": [
+                      {
+                        "lower_standard_t": -16.0,
+                        "upper_standard_t": -8.0,
+                        "probability_function": "CDF",
+                        "integral_native": 8.237127392026727e-10,
+                        "quaderr_estimate_native": 3.759816565396653e-18
+                      },
+                      {
+                        "lower_standard_t": -8.0,
+                        "upper_standard_t": -4.0,
+                        "probability_function": "CDF",
+                        "integral_native": 2.0508070007279358e-06,
+                        "quaderr_estimate_native": 4.815466442315225e-18
+                      },
+                      {
+                        "lower_standard_t": -4.0,
+                        "upper_standard_t": -2.0,
+                        "probability_function": "CDF",
+                        "integral_native": 0.0005629648795056423,
+                        "quaderr_estimate_native": 6.250165712824909e-18
+                      },
+                      {
+                        "lower_standard_t": -2.0,
+                        "upper_standard_t": -1.0,
+                        "probability_function": "CDF",
+                        "integral_native": 0.011426259790360197,
+                        "quaderr_estimate_native": 1.2685696704606504e-16
+                      },
+                      {
+                        "lower_standard_t": -1.0,
+                        "upper_standard_t": -0.9569669894889539,
+                        "probability_function": "CDF",
+                        "integral_native": 0.0016303042537543968,
+                        "quaderr_estimate_native": 1.8100013196624652e-17
+                      },
+                      {
+                        "lower_standard_t": -0.9569669894889539,
+                        "upper_standard_t": -0.1906455604101326,
+                        "probability_function": "CDF",
+                        "integral_native": 0.09551595867413548,
+                        "quaderr_estimate_native": 1.0604401653917015e-15
+                      },
+                      {
+                        "lower_standard_t": -0.1906455604101326,
+                        "upper_standard_t": 0.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.08070466899052309,
+                        "quaderr_estimate_native": 8.960018170803063e-16
+                      },
+                      {
+                        "lower_standard_t": 0.0,
+                        "upper_standard_t": 1.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.1842307964824635,
+                        "quaderr_estimate_native": 2.045372720998623e-15
+                      },
+                      {
+                        "lower_standard_t": 1.0,
+                        "upper_standard_t": 2.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.02056135012720838,
+                        "quaderr_estimate_native": 2.2827684328606135e-16
+                      },
+                      {
+                        "lower_standard_t": 2.0,
+                        "upper_standard_t": 4.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.0014387892723371697,
+                        "quaderr_estimate_native": 1.5973769777324007e-17
+                      },
+                      {
+                        "lower_standard_t": 4.0,
+                        "upper_standard_t": 8.0,
+                        "probability_function": "SF",
+                        "integral_native": 8.431318033474831e-06,
+                        "quaderr_estimate_native": 4.406679408098908e-19
+                      },
+                      {
+                        "lower_standard_t": 8.0,
+                        "upper_standard_t": 16.0,
+                        "probability_function": "SF",
+                        "integral_native": 6.268770600717221e-09,
+                        "quaderr_estimate_native": 8.930057007704465e-18
+                      }
+                    ],
+                    "score_absolute_plus_relative_tolerance_native": 1.3960815816878054e-09,
+                    "score_return_is_truncated_integral_with_declared_tail_error": true,
+                    "not_a_directed_IEEE_or_CDF_library_error_certificate": true
+                  }
+                },
+                {
+                  "CRPS_native": 0.4159291828071607,
+                  "predictive_median_native": 1.4157059247015609,
+                  "squared_error_native": 0.1728114158319798,
+                  "PIT_left": 0.3902315004833872,
+                  "PIT_right": 0.3902315004833872,
+                  "PIT_midpoint": 0.3902315004833872,
+                  "PIT_kind": "continuous transported Studentt",
+                  "intervals": {
+                    "0.8": {
+                      "lower": -0.3609699705396804,
+                      "upper": 3.833820525772914,
+                      "width": 4.194790496312594,
+                      "covered": true
+                    },
+                    "0.9": {
+                      "lower": -0.8381367681865909,
+                      "upper": 4.799568719066105,
+                      "width": 5.637705487252696,
+                      "covered": true
+                    },
+                    "0.95": {
+                      "lower": -1.2695037180824205,
+                      "upper": 5.817696924097793,
+                      "width": 7.087200642180213,
+                      "covered": true
+                    }
+                  },
+                  "log_density_native": -1.3304727977055701,
+                  "score_numerics": {
+                    "method": "native CDF_SF integral in standard latent coordinate with inverse Jacobian",
+                    "quadrature_error_estimate_native": 4.6353838293582625e-15,
+                    "analytic_tail_total_log_bound_ideal_arithmetic": -26.73983413458166,
+                    "analytic_tail_total_display_native": 2.4380218208993292e-12,
+                    "tail_display_underflow_not_zero_mathematical_tail": false,
+                    "tail_each_log_bound": [
+                      -28.716665820881342,
+                      -26.888922921397562
+                    ],
+                    "tail_cut_standard_t": 16.0,
+                    "tail_doublings": 0,
+                    "actual_quadrature_segments": [
+                      {
+                        "lower_standard_t": -16.0,
+                        "upper_standard_t": -8.0,
+                        "probability_function": "CDF",
+                        "integral_native": 8.078284183483158e-10,
+                        "quaderr_estimate_native": 3.708606020990925e-18
+                      },
+                      {
+                        "lower_standard_t": -8.0,
+                        "upper_standard_t": -4.0,
+                        "probability_function": "CDF",
+                        "integral_native": 2.017464830108039e-06,
+                        "quaderr_estimate_native": 5.040800084765812e-18
+                      },
+                      {
+                        "lower_standard_t": -4.0,
+                        "upper_standard_t": -2.0,
+                        "probability_function": "CDF",
+                        "integral_native": 0.0005568560309434943,
+                        "quaderr_estimate_native": 6.18234386954846e-18
+                      },
+                      {
+                        "lower_standard_t": -2.0,
+                        "upper_standard_t": -1.0825819048301808,
+                        "probability_function": "CDF",
+                        "integral_native": 0.008781343650831112,
+                        "quaderr_estimate_native": 9.749249908298631e-17
+                      },
+                      {
+                        "lower_standard_t": -1.0825819048301808,
+                        "upper_standard_t": -1.0,
+                        "probability_function": "CDF",
+                        "integral_native": 0.0026215414156157773,
+                        "quaderr_estimate_native": 2.910495639625063e-17
+                      },
+                      {
+                        "lower_standard_t": -1.0,
+                        "upper_standard_t": -0.28966702016956686,
+                        "probability_function": "CDF",
+                        "integral_native": 0.07319756754053233,
+                        "quaderr_estimate_native": 8.126562483005399e-16
+                      },
+                      {
+                        "lower_standard_t": -0.28966702016956686,
+                        "upper_standard_t": 0.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.1283396572660935,
+                        "quaderr_estimate_native": 1.4248564246931827e-15
+                      },
+                      {
+                        "lower_standard_t": 0.0,
+                        "upper_standard_t": 1.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.18099623113038937,
+                        "quaderr_estimate_native": 2.009461831713348e-15
+                      },
+                      {
+                        "lower_standard_t": 1.0,
+                        "upper_standard_t": 2.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.020033086434951015,
+                        "quaderr_estimate_native": 2.224119381438851e-16
+                      },
+                      {
+                        "lower_standard_t": 2.0,
+                        "upper_standard_t": 4.0,
+                        "probability_function": "SF",
+                        "integral_native": 0.001392781620821401,
+                        "quaderr_estimate_native": 1.5462982237106638e-17
+                      },
+                      {
+                        "lower_standard_t": 4.0,
+                        "upper_standard_t": 8.0,
+                        "probability_function": "SF",
+                        "integral_native": 8.093479852949268e-06,
+                        "quaderr_estimate_native": 3.542531389382548e-19
+                      },
+                      {
+                        "lower_standard_t": 8.0,
+                        "upper_standard_t": 16.0,
+                        "probability_function": "SF",
+                        "integral_native": 5.964471223474318e-09,
+                        "quaderr_estimate_native": 8.650945676719499e-18
+                      }
+                    ],
+                    "score_absolute_plus_relative_tolerance_native": 1.4159291828071608e-09,
+                    "score_return_is_truncated_integral_with_declared_tail_error": true,
+                    "not_a_directed_IEEE_or_CDF_library_error_certificate": true
+                  }
+                }
+              ],
+              "mixture_quantiles_are_roots_not_averaged": true
+            }
+          }
+        }
+      ],
+      "quantiles": [
+        {
+          "probability": 0.025,
+          "native_quantile": -1.2964070455740528
+        },
+        {
+          "probability": 0.05,
+          "native_quantile": -0.8667102485629965
+        },
+        {
+          "probability": 0.1,
+          "native_quantile": -0.3923524750521143
+        },
+        {
+          "probability": 0.5,
+          "native_quantile": 1.3643416295821578
+        },
+        {
+          "probability": 0.9,
+          "native_quantile": 3.752594273702422
+        },
+        {
+          "probability": 0.95,
+          "native_quantile": 4.7086768414603695
+        },
+        {
+          "probability": 0.975,
+          "native_quantile": 5.717913384913888
+        }
+      ]
+    }
+  ],
+  "new_material_measurements_fits_or_joint_VOI_reintegrals": 0,
+  "scope": "only original fixed full-NIG fixture initial/after+1 laws; native hypothetical y=-1/+1",
+  "actual_start_utc": "2026-11-06T07:26:25.853143+00:00",
+  "actual_end_utc": "2026-11-06T07:26:26.991353+00:00",
+  "plan_sha256": "0644e43902c8dfc490d6e032868a2c7d05d0eb4663629f13dfd2172b95b36366",
+  "approval_sha256": "bdbe68c6a56b5a6aafa9d15d13c7ad57038f92f00cf1f368bb36204eef10be70"
+}

@@ -1,0 +1,67 @@
+{
+  "actual_utc": "2026-11-06T06:40:59.986765+00:00",
+  "status": "FIXED8_PRODUCT_GAUSSIAN_MECHANISM_PHASE_CLOSED_ROOT_RESEARCH_CONTINUES",
+  "actual_independent_receipt": {
+    "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\independent_math\\independent_execution_once\\INDEPENDENT_RELATIONAL_FIXED8_AUDIT.json",
+    "sha256": "067a609d327e7bc9dfdc7ee66c182e9ae32e2de0873f00456be45b03017db06b"
+  },
+  "actual_producer_result_sha256": "94e966d61c90a94453cb33d55fc2c398d626d98416ab5e1a018fea0402adf17c",
+  "scalar_values": 8,
+  "rankings": {
+    "after_negative": {
+      "qL_minus_qR": 0.047590041588496224,
+      "sum_numeric_proxies_tail_and_tolerance": 5.4115094923677414e-08,
+      "resolved": true,
+      "higher_action": "qL"
+    },
+    "after_positive": {
+      "qL_minus_qR": -0.04759004158849621,
+      "sum_numeric_proxies_tail_and_tolerance": 5.411509492375227e-08,
+      "resolved": true,
+      "higher_action": "qR"
+    }
+  },
+  "null_controls": [
+    {
+      "id": "null_query_after_negative",
+      "raw_producer_gain": -6.371123102647525e-34,
+      "raw_native_CDF_gain": 5.941940943973706e-32,
+      "covariance_trace": 1.1454642955940097e-33
+    },
+    {
+      "id": "null_target_after_negative",
+      "raw_producer_gain": -7.226207479615887e-17,
+      "raw_native_CDF_gain": 8.57052086892763e-32,
+      "covariance_trace": 0.3692388436728183
+    }
+  ],
+  "max_absolute_errors": {
+    "fixed_weights": 1.1102230246251565e-16,
+    "fixed_query_means": 0,
+    "fixed_query_SD": 0,
+    "fixed_target_means": 0,
+    "fixed_target_SD": 0,
+    "native_CDF_vs_saved_C_D": 1.942890293094024e-16,
+    "centered_weight_covariance": 8.326672684688674e-17,
+    "Gaussian_absolute_distances": 0,
+    "covariance_row_sum": 8.326672684688674e-17,
+    "covariance_symmetry": 0,
+    "saved_C_D_readout": 2.7755575615628914e-17,
+    "null_gain_producer": 7.226207479615887e-17,
+    "null_gain_reference": 8.57052086892763e-32,
+    "prior_mirror_tie": 1.3877787807814457e-17,
+    "opposite_probe_mirror_LR": 1.3877787807814457e-17,
+    "opposite_probe_mirror_RL": 1.734723475976807e-18
+  },
+  "supported": "Within a fixed3H product-Gaussian artificial example, an observed synthetic probe changes posterior association-hypothesis weights and reverses the numerically resolved best subsequent query under native CRPS. Both query identifiability and target distribution disagreement are needed.",
+  "limits": [
+    "No new material labels, model fits, source verification or actual scientific performance evidence.",
+    "Classic finite-Bayes/proper-score decomposition, not a new BMA algorithm.",
+    "The two fixed probe readings are possible mathematical conditional inputs, not generated/selected material measurements.",
+    "Raw nulls including negative roundoff were retained without clipping.",
+    "GivenH independence only fixed product models; not rho0 finiteStudent.",
+    "Current fullNIG-BMA source must retainwithinH information and possiblynegative signedbetween; the C:D product shortcut alone cannot substitute."
+  ],
+  "postreview_numerical_executions": 0,
+  "next": "Single fixeddatafree fullNIG-BMA correctnessgate (not modelsearch), then fresh material prospective protocol."
+}

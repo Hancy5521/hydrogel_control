@@ -1,0 +1,15 @@
+{
+  "actual_utc": "2026-11-06T06:27:34.734900+00:00",
+  "status": "INDEPENDENT_REFERENCE_SOURCE_PREPARED_NO_IMPORT_OR_NUMERIC_EXECUTION",
+  "sources": {
+    "native_cdf_reference.py": "9f90c3e50e0a00d397940836a041e937b7c8509555194c2f21b76380665d986e",
+    "audit_fixed_eight.py": "096b731686a8c59bf3a5ca47a8787dddfbbae746520f5f3c44ed57fc4f0031cc"
+  },
+  "proposal_sha256": "b44c8645ba08594be4cdaa4c4449f0a892a8e58e9d510f959fd5c80f8e3ee635",
+  "fixed_scalar_count": 8,
+  "family": "fixedparameter3Gaussianproducthypotheses",
+  "direct_route": "nativequeryz/nativeyCDFsquare double integration; no producer C/D reuse",
+  "original_tolerances_retained": true,
+  "new_source_property_decode_fit_or_numeric_tests": 0,
+  "next": "rootproducerfixedschema confirmation, source review, actual result pin, root exact once execution"
+}

@@ -1,0 +1,38 @@
+{
+  "actual_utc": "2026-11-06T07:33:20.287810+00:00",
+  "status": "BOUNDED_NEW_MIXTURE_SCORING_FAMILY_CHECK_CLOSED",
+  "actual_independent_receipt": {
+    "file": "H:\\polymer_completion_public\\research\\relational_feedback_20261106T061957384774Z\\full_nig_bma\\independent\\four_score_independent_execution_once\\INDEPENDENT_FOUR_MIXTURE_SCORES_AUDIT.json",
+    "sha256": "fa817f5e8825b485e94101e3e3ccb33ad4932fdfc8bace0c027f826956e0d8ad"
+  },
+  "four_native_scores_checked": 4,
+  "native_quantile_roots_checked": 14,
+  "PIT_and_logdensity_NLL_events": 4,
+  "coverage_events": 12,
+  "max_absolute_errors": {
+    "law_s0": 0,
+    "law_logweight": 0,
+    "component_location": 1.1102230246251565e-16,
+    "component_scale": 0,
+    "component_df": 0,
+    "native_quantile": 1.5088374993865727e-11,
+    "quantile_native_CDF_root": 9.99644811372491e-13,
+    "native_mixture_CRPS_direct_CDF": 4.49936199409251e-11,
+    "mixture_PIT_left": 1.1102230246251565e-16,
+    "mixture_PIT_right": 1.1102230246251565e-16,
+    "mixture_PIT_midpoint": 1.1102230246251565e-16,
+    "mixture_native_logdensity": 4.440892098500626e-16,
+    "mixture_native_NLL": 4.440892098500626e-16,
+    "mixture_native_median": 1.162847595992389e-12,
+    "mixture_native_squared_error": 5.496936239524075e-12,
+    "interval_lower": 7.716383088052226e-12,
+    "interval_upper": 1.5088374993865727e-11,
+    "interval_width": 2.2804869104220415e-11
+  },
+  "reference_route": "nativeYentireCDFsquare/survivalCDFsquare; nativeYroot; stats.t.logpdf+commonJac",
+  "new_material_or_model_or_fullVOI_2D": 0,
+  "postreview_numeric_executions": 0,
+  "supported": "Native CRPS mixture disagreement sign, sharedYJ units, mixture quantile roots, nativePIT/density agree with independent directnativeCDF scoring on two saved fixedlaws.",
+  "not_supported": "No new materials, activequery gain, calibration or topconference result established by this necessary unitcheck.",
+  "next": "Finalsource7/preregistered160 materialforecast once, independent storedstate audit, separately approved terminalscore."
+}
