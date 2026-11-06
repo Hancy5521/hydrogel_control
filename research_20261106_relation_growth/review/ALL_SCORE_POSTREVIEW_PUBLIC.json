@@ -1,0 +1,498 @@
+{
+  "status": "INDEPENDENT_ALL672_PASS_SCIENTIFIC_PRIMARY_ENDPOINT_NOT_IMPROVED_STAGE_CLOSED_TO_FURTHER_WRITES",
+  "actual_utc": "2026-11-06T10:37:58.094402+00:00",
+  "actual_science_result_sha256": "fc9b965cdd71799b747f9ad533e73e43bc885683d9bd4d672f37abd295eced64",
+  "actual_plan_sha256": "727fd6db72ea985d4ca89e80d1c3a7c633c6feaa029cf60767c9f539ff8fe698",
+  "all_scores": 672,
+  "coverage_events": 2016,
+  "method_batch_summaries": 28,
+  "paired_differences": 576,
+  "maximum_absolute_errors": {
+    "score_target": 0,
+    "mixture_CRPS": 1.1687006917782128e-10,
+    "mixture_native_median": 2.2708945834892802e-11,
+    "mixture_squared_error": 2.2541826183442026e-09,
+    "mixture_PIT_left": 1.1102230246251565e-16,
+    "mixture_PIT_right": 1.1102230246251565e-16,
+    "mixture_PIT_midpoint": 1.1102230246251565e-16,
+    "mixture_logdensity": 8.881784197001252e-16,
+    "mixture_NLL": 8.881784197001252e-16,
+    "mixture_interval_lower": 1.8914647625933867e-11,
+    "mixture_interval_upper": 3.8255620893323794e-11,
+    "mixture_interval_width": 3.8255620893323794e-11,
+    "CRPS_native": 4.18509671362699e-12,
+    "squared_error_native": 0,
+    "predictive_median_native": 0,
+    "PIT_left": 1.1102230246251565e-16,
+    "PIT_right": 1.1102230246251565e-16,
+    "PIT_midpoint": 1.1102230246251565e-16,
+    "native_log_density": 2.842170943040401e-14,
+    "native_interval_lower": 5.684341886080802e-14,
+    "native_interval_upper": 5.684341886080802e-14,
+    "native_interval_width": 1.1368683772161603e-13,
+    "summary_CRPS": 3.659295089164516e-12,
+    "summary_RMSE": 5.115907697472721e-13,
+    "summary_exact_coverage": 0,
+    "summary_interval_width": 5.4569682106375694e-12,
+    "paired_difference": 1.1652900866465643e-10,
+    "paired_mean": 1.2507772595427014e-12,
+    "paired_descriptive_SE": 1.2878587085651816e-13
+  },
+  "independent_summaries": {
+    "old3_BMA": {
+      "0": {
+        "groups": 96,
+        "CRPS_native_mean": 31.653283748724277,
+        "RMSE_median_native": 57.419462883277994,
+        "coverage": {
+          "0.8": 0.8125,
+          "0.9": 0.9479166666666666,
+          "0.95": 0.9791666666666666
+        },
+        "width_native_mean": {
+          "0.8": 150.5012701924797,
+          "0.9": 193.69452300815115,
+          "0.95": 231.50520866645832
+        }
+      },
+      "1": {
+        "groups": 32,
+        "CRPS_native_mean": 36.54303858662552,
+        "RMSE_median_native": 66.55213641801782,
+        "coverage": {
+          "0.8": 0.75,
+          "0.9": 0.875,
+          "0.95": 0.96875
+        },
+        "width_native_mean": {
+          "0.8": 151.1472767207196,
+          "0.9": 194.6975480254157,
+          "0.95": 232.93159384762805
+        }
+      },
+      "2": {
+        "groups": 32,
+        "CRPS_native_mean": 33.493778587818035,
+        "RMSE_median_native": 59.4716054885863,
+        "coverage": {
+          "0.8": 0.78125,
+          "0.9": 0.96875,
+          "0.95": 0.96875
+        },
+        "width_native_mean": {
+          "0.8": 150.9078284162121,
+          "0.9": 194.1651108655906,
+          "0.95": 231.98509958931507
+        }
+      },
+      "3": {
+        "groups": 32,
+        "CRPS_native_mean": 24.923034071729276,
+        "RMSE_median_native": 43.873972150010715,
+        "coverage": {
+          "0.8": 0.90625,
+          "0.9": 1.0,
+          "0.95": 1.0
+        },
+        "width_native_mean": {
+          "0.8": 149.44870544050738,
+          "0.9": 192.22091013344718,
+          "0.95": 229.59893256243177
+        }
+      }
+    },
+    "grown4_BMA": {
+      "0": {
+        "groups": 96,
+        "CRPS_native_mean": 31.67326059444237,
+        "RMSE_median_native": 57.49373512435853,
+        "coverage": {
+          "0.8": 0.8229166666666666,
+          "0.9": 0.9479166666666666,
+          "0.95": 0.9791666666666666
+        },
+        "width_native_mean": {
+          "0.8": 150.70411498903067,
+          "0.9": 193.99965187123618,
+          "0.95": 231.93443588256608
+        }
+      },
+      "1": {
+        "groups": 32,
+        "CRPS_native_mean": 36.46809944913093,
+        "RMSE_median_native": 66.5290669705565,
+        "coverage": {
+          "0.8": 0.75,
+          "0.9": 0.875,
+          "0.95": 0.96875
+        },
+        "width_native_mean": {
+          "0.8": 151.50668862452582,
+          "0.9": 195.22981957718298,
+          "0.95": 233.6668999869391
+        }
+      },
+      "2": {
+        "groups": 32,
+        "CRPS_native_mean": 33.53325709379424,
+        "RMSE_median_native": 59.567947458366895,
+        "coverage": {
+          "0.8": 0.8125,
+          "0.9": 0.96875,
+          "0.95": 0.96875
+        },
+        "width_native_mean": {
+          "0.8": 150.83902014398186,
+          "0.9": 194.07448920085653,
+          "0.95": 231.8741259634152
+        }
+      },
+      "3": {
+        "groups": 32,
+        "CRPS_native_mean": 25.018425240401953,
+        "RMSE_median_native": 44.06962240902618,
+        "coverage": {
+          "0.8": 0.90625,
+          "0.9": 1.0,
+          "0.95": 1.0
+        },
+        "width_native_mean": {
+          "0.8": 149.7666361985843,
+          "0.9": 192.694646835669,
+          "0.95": 230.26228169734395
+        }
+      }
+    },
+    "H_new": {
+      "0": {
+        "groups": 96,
+        "CRPS_native_mean": 32.80574400074042,
+        "RMSE_median_native": 59.43790289521345,
+        "coverage": {
+          "0.8": 0.8333333333333334,
+          "0.9": 0.9375,
+          "0.95": 0.9791666666666666
+        },
+        "width_native_mean": {
+          "0.8": 151.2685210281231,
+          "0.9": 194.67406913161383,
+          "0.95": 232.6672104542388
+        }
+      },
+      "1": {
+        "groups": 32,
+        "CRPS_native_mean": 36.21603785600459,
+        "RMSE_median_native": 66.48471811445984,
+        "coverage": {
+          "0.8": 0.78125,
+          "0.9": 0.84375,
+          "0.95": 0.96875
+        },
+        "width_native_mean": {
+          "0.8": 153.44141792736454,
+          "0.9": 197.6496452020183,
+          "0.95": 236.45643322231405
+        }
+      },
+      "2": {
+        "groups": 32,
+        "CRPS_native_mean": 34.02541482234896,
+        "RMSE_median_native": 60.67638582698888,
+        "coverage": {
+          "0.8": 0.84375,
+          "0.9": 0.96875,
+          "0.95": 0.96875
+        },
+        "width_native_mean": {
+          "0.8": 149.68155993958683,
+          "0.9": 192.58245224559403,
+          "0.95": 230.08668663040442
+        }
+      },
+      "3": {
+        "groups": 32,
+        "CRPS_native_mean": 28.175779323867708,
+        "RMSE_median_native": 49.967503059064995,
+        "coverage": {
+          "0.8": 0.875,
+          "0.9": 1.0,
+          "0.95": 1.0
+        },
+        "width_native_mean": {
+          "0.8": 150.68258521741788,
+          "0.9": 193.79010994722924,
+          "0.95": 231.45851150999798
+        }
+      }
+    },
+    "H_anchor": {
+      "0": {
+        "groups": 96,
+        "CRPS_native_mean": 31.18775550035788,
+        "RMSE_median_native": 57.003034264543395,
+        "coverage": {
+          "0.8": 0.8333333333333334,
+          "0.9": 0.9270833333333334,
+          "0.95": 0.9791666666666666
+        },
+        "width_native_mean": {
+          "0.8": 147.07781576786644,
+          "0.9": 189.3079924911281,
+          "0.95": 226.2852292786848
+        }
+      },
+      "1": {
+        "groups": 32,
+        "CRPS_native_mean": 34.77121786517839,
+        "RMSE_median_native": 64.58809848853042,
+        "coverage": {
+          "0.8": 0.78125,
+          "0.9": 0.84375,
+          "0.95": 0.96875
+        },
+        "width_native_mean": {
+          "0.8": 148.371896096867,
+          "0.9": 191.13399680725777,
+          "0.95": 228.70068611786257
+        }
+      },
+      "2": {
+        "groups": 32,
+        "CRPS_native_mean": 31.696210556062397,
+        "RMSE_median_native": 57.099326943607295,
+        "coverage": {
+          "0.8": 0.8125,
+          "0.9": 0.96875,
+          "0.95": 0.96875
+        },
+        "width_native_mean": {
+          "0.8": 148.1542401379113,
+          "0.9": 190.61855601640514,
+          "0.95": 227.7442007214674
+        }
+      },
+      "3": {
+        "groups": 32,
+        "CRPS_native_mean": 27.095838079832856,
+        "RMSE_median_native": 48.12569108404638,
+        "coverage": {
+          "0.8": 0.90625,
+          "0.9": 0.96875,
+          "0.95": 1.0
+        },
+        "width_native_mean": {
+          "0.8": 144.70731106882107,
+          "0.9": 186.17142464972142,
+          "0.95": 222.41080099672436
+        }
+      }
+    },
+    "affine": {
+      "0": {
+        "groups": 96,
+        "CRPS_native_mean": 32.7912909248455,
+        "RMSE_median_native": 59.368569642438935,
+        "coverage": {
+          "0.8": 0.8229166666666666,
+          "0.9": 0.9375,
+          "0.95": 0.9791666666666666
+        },
+        "width_native_mean": {
+          "0.8": 150.98608375020743,
+          "0.9": 194.3174564778585,
+          "0.95": 232.24792198330906
+        }
+      },
+      "1": {
+        "groups": 32,
+        "CRPS_native_mean": 37.163022565904996,
+        "RMSE_median_native": 67.62638518844221,
+        "coverage": {
+          "0.8": 0.75,
+          "0.9": 0.84375,
+          "0.95": 0.96875
+        },
+        "width_native_mean": {
+          "0.8": 151.47603285111686,
+          "0.9": 195.11343346765958,
+          "0.95": 233.41922997109575
+        }
+      },
+      "2": {
+        "groups": 32,
+        "CRPS_native_mean": 34.02977045088672,
+        "RMSE_median_native": 60.376072489278556,
+        "coverage": {
+          "0.8": 0.84375,
+          "0.9": 0.96875,
+          "0.95": 0.96875
+        },
+        "width_native_mean": {
+          "0.8": 152.1829713154097,
+          "0.9": 195.80077201601844,
+          "0.95": 233.930305045681
+        }
+      },
+      "3": {
+        "groups": 32,
+        "CRPS_native_mean": 27.181079757744783,
+        "RMSE_median_native": 48.53125880585821,
+        "coverage": {
+          "0.8": 0.875,
+          "0.9": 1.0,
+          "0.95": 1.0
+        },
+        "width_native_mean": {
+          "0.8": 149.29924708409573,
+          "0.9": 192.03816394989752,
+          "0.95": 229.39423093315042
+        }
+      }
+    },
+    "GP10": {
+      "0": {
+        "groups": 96,
+        "CRPS_native_mean": 34.86165047739532,
+        "RMSE_median_native": 61.662232146183285,
+        "coverage": {
+          "0.8": 0.8645833333333334,
+          "0.9": 0.9270833333333334,
+          "0.95": 0.96875
+        },
+        "width_native_mean": {
+          "0.8": 167.2313956574601,
+          "0.9": 214.6391726113941,
+          "0.95": 255.75834900853442
+        }
+      },
+      "1": {
+        "groups": 32,
+        "CRPS_native_mean": 37.6044297400285,
+        "RMSE_median_native": 67.01874469867623,
+        "coverage": {
+          "0.8": 0.8125,
+          "0.9": 0.875,
+          "0.95": 0.9375
+        },
+        "width_native_mean": {
+          "0.8": 163.58793418898338,
+          "0.9": 209.96284044325762,
+          "0.95": 250.18615554456005
+        }
+      },
+      "2": {
+        "groups": 32,
+        "CRPS_native_mean": 36.487631185585556,
+        "RMSE_median_native": 64.42097331177246,
+        "coverage": {
+          "0.8": 0.875,
+          "0.9": 0.9375,
+          "0.95": 0.96875
+        },
+        "width_native_mean": {
+          "0.8": 168.639012302902,
+          "0.9": 216.4458290166933,
+          "0.95": 257.9111128951228
+        }
+      },
+      "3": {
+        "groups": 32,
+        "CRPS_native_mean": 30.49289050657191,
+        "RMSE_median_native": 52.58439574937564,
+        "coverage": {
+          "0.8": 0.90625,
+          "0.9": 0.96875,
+          "0.95": 1.0
+        },
+        "width_native_mean": {
+          "0.8": 169.46724048049492,
+          "0.9": 217.50884837423135,
+          "0.95": 259.17777858592046
+        }
+      }
+    },
+    "RF10": {
+      "0": {
+        "groups": 96,
+        "CRPS_native_mean": 28.773427145197527,
+        "RMSE_median_native": 53.68396519184057,
+        "coverage": {
+          "0.8": 0.8645833333333334,
+          "0.9": 0.9479166666666666,
+          "0.95": 0.96875
+        },
+        "width_native_mean": {
+          "0.8": 145.91813541666667,
+          "0.9": 180.06992708333334,
+          "0.95": 202.74625
+        }
+      },
+      "1": {
+        "groups": 32,
+        "CRPS_native_mean": 32.40583611424817,
+        "RMSE_median_native": 60.018282137872376,
+        "coverage": {
+          "0.8": 0.75,
+          "0.9": 0.875,
+          "0.95": 0.90625
+        },
+        "width_native_mean": {
+          "0.8": 137.69771875,
+          "0.9": 175.947875,
+          "0.95": 198.9256875
+        }
+      },
+      "2": {
+        "groups": 32,
+        "CRPS_native_mean": 29.94917061267644,
+        "RMSE_median_native": 55.28303577697909,
+        "coverage": {
+          "0.8": 0.90625,
+          "0.9": 0.96875,
+          "0.95": 1.0
+        },
+        "width_native_mean": {
+          "0.8": 156.01559375,
+          "0.9": 193.65753125,
+          "0.95": 218.12665625
+        }
+      },
+      "3": {
+        "groups": 32,
+        "CRPS_native_mean": 23.965274708667973,
+        "RMSE_median_native": 44.58134274173727,
+        "coverage": {
+          "0.8": 0.9375,
+          "0.9": 1.0,
+          "0.95": 1.0
+        },
+        "width_native_mean": {
+          "0.8": 144.04109375,
+          "0.9": 170.604375,
+          "0.95": 191.18640625
+        }
+      }
+    }
+  },
+  "primary_grown4_minus_old3_CRPS": 0.019976845718096936,
+  "selected_descriptor": 3,
+  "anchor_descriptor": 0,
+  "conclusions": [
+    "All saved forecasts and native scores are arithmetically consistent; no additional fit, source read, new score or descriptor search was run by this reviewer.",
+    "Grown4 did not improve the predefined old3 primary endpoint. The selected f_C_plus_N component did not beat the response-independent O_present anchor.",
+    "The fixed all10-feature RF10 is substantially better in this development cohort. Preserve it as a strong reference, not as a failed baseline to remove.",
+    "The experiment tests one fixed proposal and three shared disclosure batches, not autonomous growing-material validation or a proven general-purpose self-improvement agent.",
+    "No retuning, same128 cohort rescue, alternative split, extra descriptor or outcome-selected initialization is authorized by this failure.",
+    "Any subsequent model work starts in a separate stage; use these128 only as consumed development history, not independent confirmation."
+  ],
+  "scientific_decision": "Reject the current single-slot birth as a successful improvement. Keep implementation/evidence and move to a separately specified reference-preserving question.",
+  "no_claims": [
+    "new model-validation material campaign",
+    "hydrogel wet experiment",
+    "selection-valid global Bayes factor",
+    "top-conference standard achieved"
+  ],
+  "new_fit_new_raw_read_new_label_or_new_score_counts": 0,
+  "actual_independent_audit_sha256": "0b559a063f0ba09c0869e7a8f8e677b927246d99a2e9a8d34c581c2f05528a3e",
+  "public_export_scope": "Aggregate audit findings/source pins only;local audit paths and fitted baseline diagnostics omitted."
+}

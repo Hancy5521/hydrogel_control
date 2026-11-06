@@ -1,0 +1,92 @@
+{
+  "status": "STATIC_PASS_V2_CROSS_MODULE_INTERFACES_AND_DISCLOSURE_ORDER",
+  "actual_utc": "2026-11-06T10:18:40.665097+00:00",
+  "asia_shanghai": "2026-11-06T18:18:40.665097+08:00",
+  "scope": "All seven source modules text/AST, template and metadata only; no scientific imports or functions, OOF, new raw property decode, fits, scoring or generation executed.",
+  "source_sha256": {
+    "baselines.py": "8a8e8aa94f313a22e3b56fca58a1ff7ddb93b51c94fe8f5e3ca752faf3cb3d27",
+    "experiment_io.py": "51f23992ea6f74f723816b2412dde68dee620615284a98d3ab7dd788e4b18042",
+    "growth_models.py": "3530d82d9f67cdf63bd2e5cf88bbf22d95f29bed9cb8fe9daf9be455c1a48c56",
+    "probability.py": "8354b3d619760034c2089ae1b053deed01578b25160c067642074cbe1fd1c548",
+    "proposal.py": "b5e71441ea36135ff89686f2a184abb8819e78a31c2d0b424405148961d6f622",
+    "run_growth.py": "df34f1c0d3df8efb3af9de1b5166f164982156e970607d4a9a62a24b8c9e6491",
+    "score_growth.py": "78c3f2900f899524751291b6404426467a33c34365bbdebe37f953eeafb09ea8"
+  },
+  "pure_source_freeze_V2_sha256": "049f30c39a5c6d8edc814c9119dd2833649661c1fe345a0f7836acdcdc8d6a10",
+  "method_spec_V2_sha256": "a2548130e5fb6cf2b06a56cf172700a849f50d0f87eda0b8eb8cab546ff9b7e4",
+  "roles_sha256": "e622c0117962b384de0a149576f48b11d51027233558873d583cb64275a609d3",
+  "findings_requiring_science_source_fix": [],
+  "checks": {
+    "history40": {
+      "source": "experiment_io.history40",
+      "evidence": "Extracts old visible warm32 only, then eight full_native records in step0..7 order; verifies old forecast/outcome file SHA against the sealed old freeze and exact query identity; source paths match old producer API names. Uses old32 transforms and full_native budget8 states, not old96 terminalY or other query-policy labels.",
+      "old_terminal_Y_decoded_by_this_review": false
+    },
+    "anchor_before_OOF": {
+      "evidence": "run_growth.py45-49 calls response-free prepare_anchor, writes/closes ANCHOR_PREPARED and ANCHOR_FREEZE with SHA, then calls propose. prepare_anchor consumes only old known proxies/descriptors/IDs and old proxy transform/basis. No future128 values enter feature selection.",
+      "OOF": "propose makes five explicit32/8 folds; each fit_old_three recalculates all training32 coordinates/three priors; selection is deterministic over8 fixed dictionary items. No eligible item stops before fresh Disclosure."
+    },
+    "one_birth_and_initialization": {
+      "evidence": "Only selected descriptor becomes H_new once. Metadata/proxy-only H_anchor is same capacity. Old three states are checked against recomputation then retained; 3H/4H priors normalize absolute common40 evidences. H_new/H_anchor alias shares one component/update. No generated labels or newH after future outcomes."
+    },
+    "fresh_roles_and_information": {
+      "counts": {
+        "previously_consumed": 1088,
+        "new_development": 128,
+        "new_fit": 32,
+        "prequential_batches": [
+          32,
+          32,
+          32
+        ],
+        "remaining": 7626
+      },
+      "evidence": "128 unique components, all disjoint from1088 prior IDs;32 initial fit and three32-row validation batches. initial discloses all two-proxy contexts and only fit32 trueY. Dataset is physically parsed by trusted IO, not cryptographic blindness."
+    },
+    "batch_freeze_before_reveal": {
+      "evidence": "For each role, writes STATE_BEFORE, GP10_STATE, RF10_STATE and all7x32 FORECASTS; closes and SHA-pins all4 payloads before Disclosure.reveal. Oracle verifies scope/source/plan/method list, file hashes, exact method-component cross-product and full identity equality; role sequence/repeat guards ensure once-only batch reveal."
+    },
+    "no_within_batch_advantage": {
+      "training_rows_before_each_batch": [
+        72,
+        104,
+        136
+      ],
+      "evidence": "Every method predicts the whole batch from one fixed suite/train. Shared32 trueY are revealed only after all224 forecasts; only then update_batch and append identical rows/descriptors for next GP/RF full refit. No NIG prediction/update interleave inside a batch."
+    },
+    "strong_same_information_references": {
+      "features": 10,
+      "RF": [
+        {
+          "line": 70,
+          "max_features_literal": 1.0,
+          "literal_type": "float"
+        }
+      ],
+      "evidence": "Both GP and RF receive two native proxies plus all8 known descriptors with frozen old32-proxy/old40-descriptor scales; targets/history/query rows align. RF V2 float1.0 admits all10 features, strengthening prior int1 recipe before execution. Three fits each, six actual sklearn fits in planned run."
+    },
+    "core_and_loader_pins": {
+      "dependency_keys": [
+        "nig_core",
+        "legacy_scalar_score",
+        "legacy_joint_model",
+        "legacy_data_scope"
+      ],
+      "evidence": "All four declared dependency file hashes match. bootstrap_core checks exact original NIG hash/path before growth_models import; scalar scorer imports frozen same-folder joint_model/data_scope. Main validates all7 source SHA and all input/dependency pins before authorized phase execution."
+    },
+    "saved_score_only": {
+      "coordinates": 672,
+      "evidence": "score_growth checks exact global complete-batch freeze/source/plan and all saved payload SHA; then reads saved forecasts/truth only, performs no fit or new proposal. Reports all7 methods per batch/overall and descriptive paired differences; no IID-campaign or new active-query claim."
+    }
+  },
+  "protocol_preparation_state": {
+    "template_file": "H:\\polymer_completion_public\\research\\relation_growth_20261106T093155Z\\EXECUTION_PLAN_TEMPLATE.json",
+    "template_sha256_at_review": "adb0f66ddf12c2385ff2ab061a9db823e61c25aeacee792fc4b0a645e2ec86e6",
+    "template_status": "TEMPLATE_NOT_EXECUTION_AUTHORIZATION",
+    "registered_execution_claimed": false,
+    "pre_execution_alignment_note": "The inspected original template still pins V1 baselines/spec. Final V2 registration should bind current seven-source SHA above and SOURCE_ONLY_METHOD_SPEC_V2 SHA above, preserving V1 template history. This is the already-in-progress source preparation update, not an additional scientific gate."
+  },
+  "no_extra_approval_or_scientific_gate_added": true,
+  "scientific_imports_functions_fits_OOF_scores_draws_newraw_decodes": 0,
+  "reviewer_source_edits": 0
+}

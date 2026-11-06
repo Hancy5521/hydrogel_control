@@ -1,0 +1,52 @@
+单槽组成生长：纯模型层调用说明（仅源码，尚未执行）
+
+四模块边界：growth_models.py=坐标/字典/注册基函数/共享NIG状态；proposal.py=只旧40的
+OOF提议；probability.py=1..4混合law原单位proper评分；baselines.py=同10维信息GP/RF。
+没有数据IO、角色选择、真实披露controller或任何自动执行。旧3H源码不改，只明确复用
+被冻结core的scalar_law/logpredictive/update_nig三个generic函数，不patch旧固定3H validator。
+
+root需从已封存研究取：
+old_snapshot：旧MODEL_STATES完整dict，至少transform、warm_ensemble.expansion_transform、
+native_reference_feature_transform；old_final3：full_native预算8的ensemble。
+history_native40：旧warm32原顺序，接原full_native的8次真实query顺序，shape(40,3)。
+component_ids40与composition40必须同这个次序。所有这些只是开发历史，不是新确认。
+
+先逐条 composition_descriptors(amountsdict) 获得descriptor40(40,8)。
+prepared=proposal.prepare_anchor(ids40,history_native40[:,:2],descriptor40,old_snapshot)。
+这个函数没有Y参数，仅按已知组成和代理基函数资格定anchor/折ID；root须先保存冻结收据。
+注册真实UTC/源码/输入以后，才可调用 proposal.propose(history_native40,prepared)。
+它确实会做5折，每折32训练重新估计全部代理/响应/扩展变换与3H后验，对留出8给nativeCDF；
+不能在source准备时偷跑。输出40条原单位OOF law/CDF残差、5个折模型、所有8项得分。
+SVD只用于排序；最终Hnew仍加40中心/样本SD后的原组成描述符，不塞隐含fullquad修正。
+
+suite=initialize_growth(history_native40,descriptor40,old_snapshot,old_final3,proposal_result)。
+先按共同40历史/同old32变换重算旧3绝对evidence并核旧checkpoint，然后保留其exact旧状态；
+Hnew按相同40条件拟合。grown4权重从4个absolute logevidence和等1/4 prior一起归一化，
+绝不把旧3 normalized logweights与新H的absolute evidence混起来。此为条件于选择的开发
+初始化，不能当选择后仍有效的Bayes因子证明。Hnew=anchor时两方法指向同一个component，
+更新一次、law完全相同，不额外fit；必须报告alias而不是创造自动提议优越性。
+
+新epoch所有响应/代理坐标仍用old32固定值；descriptor尺度只用old40。新增32共同训练揭示
+后可 update_batch(suite,Xnative32,D32,Y32)，得到训练数72的suite。随后每批32开始，
+所有7方法的整批law与state先冻结，才揭示整批真Y；再共同update_batch一次到下一批。
+三批预测前训练数72/104/136。pure函数不能验证物理披露，controller负责证明这个顺序。
+
+五个NIG方法ID：old3_BMA、grown4_BMA、H_new、H_anchor、affine。
+调用 law(suite,method_id,native_proxy2,descriptor8) 返回旧u坐标student_t标量或generic
+mixture_student_t（components/log_weights/native_first_scale_s0/lambda=.5）。
+probability.score_law(y,law,scalar_score) 对标量/GP/RF转交调用者注入的冻结scalar scorer，
+对1..4混合law计算真正混合CDF disagreement扣除项与混合分位数，不能平均component分数。
+
+GP10/RF10每批各fit一次，train_X=[两native代理,八原描述符]共10列；
+transform=growth_models.baseline_transform(old_snapshot,descriptor40)。
+fit_gp(train_X,y_native,prediction_X,transform) 与 fit_forest同签名；三批共6次sklearn fits。
+前2列沿old32 native中心/SD，8列沿old40组成中心/SD；常量组成维保留原中心、scale1，
+不利用新批数据重新标准化，也不偷偷丢掉额外8项信息。新批不同组成的偏离仍可以输入。
+
+所有常数/阈值、sourcehash与限制见SOURCE_ONLY_METHOD_SPEC_FINAL.json/SOURCE_FREEZE.json。
+当前四模块仅AST核查，没有import执行、fit、OOF、抽样、选择新组或读取原性质。
+
+V2事前强化：RF10的max_features现在是浮点1.0，即每个节点可使用全部10维；
+这与V1继承的整数1（仅抽1维）不同。其余森林参数、leafCDF、7方法和总6次sklearn fit不变。
+变更发生任何新值读取/OOF/fit/选组之前，V1完整原字节保存在pre_execution_history/v1_unexecuted。
+当前权威源码绑定为SOURCE_FREEZE_V2.json与SOURCE_ONLY_METHOD_SPEC_V2.json，不能仍称每个RF参数原字面不变。

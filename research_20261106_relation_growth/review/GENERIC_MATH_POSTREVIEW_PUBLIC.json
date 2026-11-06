@@ -1,0 +1,18 @@
+{
+  "status": "POSTEXECUTION_READONLY_PASS_REVIEW",
+  "actual_utc": "2026-11-06T10:22:46.605169+00:00",
+  "source_sha256": "c7abd44a6f047af07eba167992fdd8f3fd33dc38938f64d2c4dea3b42e515089",
+  "plan_sha256": "71012bb91b57e01eaf80af8faf79ef58e1d9e5b55b232fa0d2ba4805cce8f249",
+  "all_checks": 56,
+  "maximum_absolute_errors_by_kind": {
+    "native_CRPS": 1.9203527656941333e-12,
+    "PIT": 5.551115123125783e-17,
+    "log_density": 0.0,
+    "quantile": 5.4143356464919634e-11,
+    "distribution_identity": 5.551115123125783e-17
+  },
+  "fits_newlabels_materialreads": 0,
+  "meaning": "Generic1..4 scorer preserves a duplicated/split component mixture and a scalar-as-singleton distribution, independently checked in nativeCDF coordinates; not new material or predictive-gain evidence.",
+  "actual_audit_sha256": "6142dbf63f8c63d34ecec66bf9bf30d2383732d07a3267713ab759dff0fae8c6",
+  "public_export_scope": "Aggregate audit findings/source pins only;local audit paths and fitted baseline diagnostics omitted."
+}

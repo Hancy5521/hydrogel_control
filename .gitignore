@@ -93,3 +93,7 @@ new_weighting_summary.json
 !research_20261106_relational_feedback/full_nig_bma/material/report/final/ALL42_SUMMARIES.csv
 !research_20261106_relational_feedback/full_nig_bma/material/report/final/MODEL_WEIGHTS.csv
 !research_20261106_relational_feedback/full_nig_bma/material/diagnostics/final/ALL_ELEMENT_SUMMARIES.csv
+
+# Reviewed negative-growth public subset
+!research_20261106_relation_growth/
+!research_20261106_relation_growth/**

@@ -1,0 +1,16 @@
+{
+  "status": "V2_FOUR_PURE_SOURCES_AST_ONLY_NO_EXECUTION",
+  "actual_utc": "2026-11-06T10:15:23.679093+00:00",
+  "source_sha256": {
+    "baselines.py": "8a8e8aa94f313a22e3b56fca58a1ff7ddb93b51c94fe8f5e3ca752faf3cb3d27",
+    "growth_models.py": "3530d82d9f67cdf63bd2e5cf88bbf22d95f29bed9cb8fe9daf9be455c1a48c56",
+    "probability.py": "8354b3d619760034c2089ae1b053deed01578b25160c067642074cbe1fd1c548",
+    "proposal.py": "b5e71441ea36135ff89686f2a184abb8819e78a31c2d0b424405148961d6f622"
+  },
+  "method_spec_sha256": "a2548130e5fb6cf2b06a56cf172700a849f50d0f87eda0b8eb8cab546ff9b7e4",
+  "change_receipt_sha256": "c84430e2c4f22ee391268408987844c9c6e129c2e587e445719284d410fc45f7",
+  "parent_v1_source_freeze_sha256": "73dc0561cfe4e1864e38e1ce4e537fc349873dcf78dbb21cbee688bf25dc4822",
+  "core_reference_sha256": "1d74cde91519ce282c6ebee54e53807a2a79be0cebf19e06221eb4f16e8b7528",
+  "raw_reads_fit_OOF_sampling_or_selection": 0,
+  "independent_V2_static_clearance_pending": true
+}

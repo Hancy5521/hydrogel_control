@@ -1,0 +1,172 @@
+{
+  "status": "SOURCE_ONLY_METHOD_SPEC_V2_BEFORE_ANY_FIT_OOF_NEW_VALUE_OR_SELECTION",
+  "actual_utc": "2026-11-06T09:47:22.716910+00:00",
+  "scope": "single-slot composition proposal from old40;128fresh32fit+3x32prequential;7methods672native scores; not old96 rescue",
+  "modules": {
+    "growth_models.py": "pure dictionary/coordinates/generic basis registry, shared unique component states and3H/4H evidence, no IO",
+    "proposal.py": "metadata-only anchor frozen before OOF residual scores; deterministic5fold40 OOF and SVD proposal",
+    "probability.py": "generic1..4 mixture native proper CRPS/CDF/quantiles with injected frozen scalar scorer",
+    "baselines.py": "fixed10DGP/RF recipes, full same information,3fits each"
+  },
+  "dictionary": [
+    "O_present",
+    "f_O",
+    "f_H",
+    "f_C_plus_N",
+    "f_F_Cl_Br_I",
+    "f_S_Se_Te",
+    "element_count",
+    "stoichiometric_entropy"
+  ],
+  "composition": "positive finite atomic stoichiometric fractions, zero amounts ignored,negative/nonfinite/invalid/empty rejected; not polymer mass/volume recipes",
+  "folds": {
+    "count": 5,
+    "rows_per_holdout": 8,
+    "train_rows": 32,
+    "seed": 20261106,
+    "hash_prefix": "relation_growth_oof5_v1|20261106|",
+    "sort": "SHA256(prefix+component_id)hex,then component_id",
+    "assignment": "contiguous sorted chunks8 -> fold0..4",
+    "within_train_order": "original history40 order",
+    "all_proxy_response_and_fullquad_preprocessing": "fit on fold32 only; heldout8 native CDF from3H BMA; no40 global preprocessing before OOF forecasts"
+  },
+  "proposal": {
+    "bounded_directional_residual": "native OOFmixtureCDF(actualY)-0.5",
+    "projection_basis": "40 known proxies in old32 fixed fullquad coordinate, includes intercept; diagnostics only",
+    "svd_rcond": 1e-10,
+    "constant_relative_tol": 1e-12,
+    "residual_relative_norm_tol": 1e-10,
+    "score": "abs(dot(residual_g,residual_r))/(norm_g*norm_r); store signedcosine too",
+    "r_nearzero_tol": 1e-12,
+    "tie_absolute_tol": 1e-12,
+    "tie": "earliest fixed dictionary item within1e-12 of maximum",
+    "all_g_degenerate": "explicit no proposal, no fabricated Hnew",
+    "low_r_signal": "score0, firsteligible=anchor, mark exploratory/no evidence of signal",
+    "anchor": "first metadata/proxy-eligible item, computed and externally frozen BEFORE OOF score calculation",
+    "actual_Hnew_basis": "[1,x1,x2,40standardized selected raw descriptor]; SVD residualization used only for ranking"
+  },
+  "representation": {
+    "old_epoch_proxy_response": "fixed old32 nativeSD/YJhalf/affine and old32poly expansion; no newepoch refit",
+    "composition_scales": "center and sampleSD from old40; constants set scale1 with center retained so old40 centered0",
+    "baseline10D": "old32 nativeproxy center/sampleSD + all8 old40standardized descriptors; same10 information forGP/RF",
+    "baseline_constant_descriptor": "centering remains old40 mean;scale1 forconstant/numericallyconstant; flags explicit; future deviations retained"
+  },
+  "NIG": {
+    "mean0": 0.0,
+    "V0": "identity per3/4/6 dimensions",
+    "alpha0": 3.0,
+    "b0": 1.5,
+    "core_reference_sha256": "1d74cde91519ce282c6ebee54e53807a2a79be0cebf19e06221eb4f16e8b7528",
+    "reused_functions_only": [
+      "scalar_law",
+      "logpredictive",
+      "update_nig"
+    ],
+    "no_fixed3H_validate_monkeypatch": true
+  },
+  "initialization": {
+    "history40_order": "oldwarm32 then original full_native query8 chronological",
+    "old3_absolute_evidence": "recompute common40 modeled conditional evidence from fixed priors/old32coordinates; verify normalized ratios and component states against frozen oldfinal3",
+    "old3_states": "preserve frozen oldfinal3 exact bytes after verification",
+    "library3_prior": "equal1/3 before40",
+    "library4_prior": "equal1/4 before same40 with selected Hnew conditional proposal; use all4 absolute evidences, never combine old normalizedweights with rawHnew evidence",
+    "postselection_warning": "historical initialization conditional on selected proposal is development initialization, not selection-valid Bayesfactor proof",
+    "anchor_equals_new": "exact state/law alias and no extra fit/state update"
+  },
+  "schedule": {
+    "old_history": 40,
+    "fresh": 128,
+    "initial_new_fit": 32,
+    "batches": 3,
+    "batch_rows": 32,
+    "training_rows_before_batch": [
+      72,
+      104,
+      136
+    ],
+    "all7batch_forecasts_frozen_before32Y": true,
+    "batch_interior_updates": false,
+    "GP_fits": 3,
+    "RF_fits": 3,
+    "method_ids": [
+      "old3_BMA",
+      "grown4_BMA",
+      "H_new",
+      "H_anchor",
+      "affine",
+      "GP10",
+      "RF10"
+    ]
+  },
+  "baseline_recipe": {
+    "GP": "Constant(1,.01..100)*ARD_RBF(ones10,.01..100)+White(.01,1e-6..10),normalize_y current,alpha1e-8,0restarts",
+    "RF": "256trees,min_samples_leaf3,max_features=1.0 float(all10predictors),bootstrapTrue,criterion squared_error,seed20261106,n_jobs2,all-original leafCDF variant",
+    "native_target": "unchanged nativeY; same row history and10known inputs",
+    "seed": 20261106,
+    "RF_max_features_type": "float",
+    "RF_preexecution_change": "Old2D int1 inherited into10D sampled only1 of10; V2 fixes all10 as sklearn regression default before any new output; no result-driven tuning."
+  },
+  "planned_API": {
+    "growth_models.initialize_growth": "history_native40,descriptor40,old_snapshot,oldfinal3,proposal -> suite with unique components/libraries/evidence",
+    "growth_models.update_batch": "suite, proxy_nativeNx2, descriptorsNx8, nativeYN -> new suite, evidence; caller reveals whole batch first",
+    "growth_models.law": "suite,method_id,native_proxy2,descriptor8 -> scalar student_t or generic mixture_student_t",
+    "proposal.prepare_anchor": "history IDs/proxies/descriptors+old snapshot -> metadata-only eligibility/projection/scales/anchor receipt",
+    "proposal.propose": "history native40+prepared -> OOFrecords/all8scores/one selected index, no new data",
+    "baselines.fit_gp/fit_forest": "native_XtrainNx10,y_native,prediction_XMx10,fixedtransform -> laws,state",
+    "probability.score_law": "native_y,1..4mixture_law,injected_scalar_score -> proper mixture metrics"
+  },
+  "execution_by_this_spec": {
+    "fit": 0,
+    "OOF": 0,
+    "raw_properties_read": 0,
+    "new_roles_selected": 0,
+    "draws": 0
+  },
+  "requires_before_calls": "root actualUTC/input+sourcehash registration and independent static review",
+  "initial_spec_sha256": "3e40f2909d7ee9e9c0c0bd9ce53dc72f2703398b8381c9aef3906078b7823f6d",
+  "final_source_prepared_actual_utc": "2026-11-06T10:15:23.673871+00:00",
+  "numerical_verification_constants": {
+    "old40_state_and_logodds_atol": 1e-09,
+    "old40_state_and_logodds_rtol": 1e-09,
+    "constant_descriptor_centering": "old40 mean;exactconstants zero up to float roundoff;scale1;future raw deviations retained",
+    "mixture_logweight_normalization_tolerance": 1e-10,
+    "native_CDF_disagreement_window_component_scales": 32,
+    "adaptive_quad_epsabs": 2e-09,
+    "adaptive_quad_epsrel": 2e-10,
+    "adaptive_quad_limit": 250,
+    "mixture_quantile_xtol": 1e-12,
+    "mixture_quantile_rtol": "8*float64eps",
+    "quantile_bracket_max_expansions": 8,
+    "quantile_bracket_expand_factor": 2,
+    "component_df_minimum_strictly_greater_than": 2,
+    "no_CRPS_or_weight_negative_clipping": true
+  },
+  "actual_API": {
+    "proposal.prepare_anchor": "component_ids40, history_proxy_native40, descriptors40, old_snapshot -> prepared;root must freeze before propose",
+    "proposal.propose": "history_native40, prepared -> selected_index, all8scores, OOFrecords, prepared; no newvalues",
+    "growth_models.initialize_growth": "history_native40, descriptor40, old_snapshot, old_final3, proposal -> suite",
+    "growth_models.update_batch": "suite, native_proxies_Nx2, descriptors_Nx8, native_Y_N -> new suite, evidence; only after entire batch reveal",
+    "growth_models.law": "suite, method_id, native_proxy2, descriptor8 -> scalar student_t or mixture_student_t",
+    "growth_models.composition_descriptors": "known atomic amountsdict -> fixed8vector",
+    "growth_models.baseline_transform": "old_snapshot, descriptors40 -> fixed center/sd10",
+    "baselines.fit_gp/fit_forest": "train_X_Nx10,y_native_N,prediction_X_Mx10,transform -> laws,state",
+    "probability.score_law": "native_target,law,injected_frozen_scalar_scorer -> proper native score",
+    "probability.cdf_native": "law,native_target,survival=False -> nativeCDF/SF for OOF"
+  },
+  "old_snapshot_required_keys": [
+    "transform",
+    "warm_ensemble.expansion_transform",
+    "native_reference_feature_transform"
+  ],
+  "old_final3": "Full_native budget8 ensemble from sealed checkpoint; exact original states used after independent recomputation check.",
+  "row_alignment": "Prepared anchor binds known40proxy anddescriptor arrays; propose/init reject changed order/proxies/descriptors. Raw targets are absent from prepare_anchor arguments.",
+  "library_evidence_rule": "old3 normalized from absoluteE3-log3;grown4 normalized from absoluteE4-log4; unique componentstate updates once/row even when Hnew=anchor.",
+  "source_sha256": {
+    "baselines.py": "8a8e8aa94f313a22e3b56fca58a1ff7ddb93b51c94fe8f5e3ca752faf3cb3d27",
+    "growth_models.py": "3530d82d9f67cdf63bd2e5cf88bbf22d95f29bed9cb8fe9daf9be455c1a48c56",
+    "probability.py": "8354b3d619760034c2089ae1b053deed01578b25160c067642074cbe1fd1c548",
+    "proposal.py": "b5e71441ea36135ff89686f2a184abb8819e78a31c2d0b424405148961d6f622"
+  },
+  "version": "V2_RF10_FIXED_ALL_FEATURES_PREEXECUTION_ADAPTATION",
+  "parent_v1_final_spec_sha256": "5af5704ea113d92efb141216293f355f5d96dce4da4c897eaaea5667dabed042"
+}

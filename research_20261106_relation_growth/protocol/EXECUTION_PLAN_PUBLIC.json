@@ -1,0 +1,109 @@
+{
+  "kind": "SINGLE_SLOT_COMPOSITION_GROWTH_FRESH128",
+  "source_sha256": {
+    "growth_models.py": "3530d82d9f67cdf63bd2e5cf88bbf22d95f29bed9cb8fe9daf9be455c1a48c56",
+    "proposal.py": "b5e71441ea36135ff89686f2a184abb8819e78a31c2d0b424405148961d6f622",
+    "probability.py": "8354b3d619760034c2089ae1b053deed01578b25160c067642074cbe1fd1c548",
+    "baselines.py": "8a8e8aa94f313a22e3b56fca58a1ff7ddb93b51c94fe8f5e3ca752faf3cb3d27",
+    "experiment_io.py": "51f23992ea6f74f723816b2412dde68dee620615284a98d3ab7dd788e4b18042",
+    "run_growth.py": "df34f1c0d3df8efb3af9de1b5166f164982156e970607d4a9a62a24b8c9e6491",
+    "score_growth.py": "78c3f2900f899524751291b6404426467a33c34365bbdebe37f953eeafb09ea8"
+  },
+  "libraries": {
+    "numpy": "2.1.3",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.6.1",
+    "joblib": "1.4.2"
+  },
+  "schedule": {
+    "old40_history_only": "oldwarm32+full_nativechronological8, ignoreold96terminal/othercounterfactualYs",
+    "proposal": "old40 metadata anchor close+hash before15foldNIGfits; proposal frozen once",
+    "new_components": 128,
+    "new_initial_fit": 32,
+    "validation_batches": [
+      32,
+      32,
+      32
+    ],
+    "training_before_batches": [
+      72,
+      104,
+      136
+    ],
+    "method_ids": [
+      "old3_BMA",
+      "grown4_BMA",
+      "H_new",
+      "H_anchor",
+      "affine",
+      "GP10",
+      "RF10"
+    ],
+    "score_coordinates": 672,
+    "actual_sklearn_fits": 6,
+    "all224batch_laws_before_current32Y": true,
+    "batch_Y_shared_all_methods_then_update": true,
+    "third_batch_updates_finalstate_not_extra_validation": true
+  },
+  "cost": {
+    "incremental_native_context_cells": 256,
+    "incremental_initial_fit_Y": 32,
+    "incremental_prequential_validation_Y": 96,
+    "incremental_total": 384,
+    "historical40_training_cells_reused_separate": 120,
+    "different_methods_OOF_or_reweighting_do_not_add_materialN": true
+  },
+  "primary_endpoint": "mean_grown4_BMA_CRPS_minus_old3_BMA_across_exact96fresh_prequentialgroups",
+  "secondary": [
+    "H_new_minus_H_anchor",
+    "H_new_minus_affine",
+    "grown4_minus_H_new",
+    "grown4_minus_GP10",
+    "grown4_minus_RF10",
+    "all7methods_eachbatch_and_overall"
+  ],
+  "uncertainty": "paired96differences/SE and three32batch summaries descriptive; shared/adaptive training, no formal IIDcampaign CI or2percent noninferiority claim",
+  "initialization": "proper common40 conditional likelihood, old32 coordinate; equal4prior and absolute evidences; feature selection not selection-corrected evidence",
+  "proposal_scope": "8fixed atomicstoichiometry descriptors; same8+two proxies toGP/RF, one4coefHnew, metadata-only samecapacityHanchor, no futureYselection",
+  "stopping_rules": [
+    "identity/source/hash/budget mismatch stops before next truth",
+    "no identifiable feature stops before fresh128 property exposure; no forced novelty",
+    "bad finite/scoring value or source error retained, no samecohort recipe rescue/resplit",
+    "GP/RF optimizer warnings retained, no tuning/restarts after futureY"
+  ],
+  "scoring_independent_tolerances": {
+    "mixture_CRPS_abs": 0.0002,
+    "mixture_CRPS_rel": 2e-05,
+    "legacy_scalar_CRPS_abs": 2e-06,
+    "legacy_scalar_CRPS_rel": 2e-08
+  },
+  "publication_limits": [
+    "all128development_same_DFT_source",
+    "not arbitrarymask multi-property joint completion",
+    "fixedshared schedule, no new activequery victory",
+    "no generatedlabels/wet/DFT/physicalsaving"
+  ],
+  "registered_actual_utc": "2026-11-06T10:19:23.320543+00:00",
+  "registered_Asia_Shanghai": "2026-11-06T18:19:23.320543+08:00",
+  "preexecution_baseline_adaptation": "RF10 max_features=float1.0 all10, rather than inherited int1; before any fit/OOF/new property decode; V1 source/template preserved",
+  "status": "PUBLIC_PROTOCOL_PROVENANCE_NOT_EXECUTION_AUTHORIZATION",
+  "original_registered_plan_sha256": "26093d97eb6b66f1b2156af0efdf1e6109f4cfbebb8c7d787fb97b01f87c3ca3",
+  "original_status": "REGISTERED",
+  "input_sha256_only": {
+    "roles": "e622c0117962b384de0a149576f48b11d51027233558873d583cb64275a609d3",
+    "roles_registration": "1960702c6eb4e8d523778051a1e9518379e90bcf786aef0b3a88edf54cffe794",
+    "source_method_spec": "a2548130e5fb6cf2b06a56cf172700a849f50d0f87eda0b8eb8cab546ff9b7e4",
+    "old_visible": "997b38cd276975303012ca968aa3203971deb020b8b659e57451a366c33ae9ca",
+    "old_states": "fcc8113fc884753f838bab74df1082a2aa55a5ac76c001b16faaa0a8797ab3c6",
+    "old_prequential_index": "1398387d45105110cec01fe7b7fc3ab58d57b0f0a06dae670921593289d398d0",
+    "old_forecast_freeze": "0cdaa614e18c28ab6cb5f384e248968fe0b84cdd62a0f336cce588463acbb0ef",
+    "raw_source": "3d0fc1315b74cf84071f16aa25bb93434dafbc83867beb75872064ac245bd747"
+  },
+  "dependency_sha256_only": {
+    "nig_core": "1d74cde91519ce282c6ebee54e53807a2a79be0cebf19e06221eb4f16e8b7528",
+    "legacy_scalar_score": "dedad40898d0d9267481f73f5adf10952bd877ea603852c447fc7cbaa04ed0c8",
+    "legacy_joint_model": "5dee15b95546e81d1006358988fba7afdcc931273f28e55edf938f83845bd259",
+    "legacy_data_scope": "34dbdb081757395d57680cdc843f455f174e32246a2f0eba24241e0984c488ad"
+  },
+  "scope": "Paths to local identity/numeric payloads and approval/run logs omitted;full local archive remains separate."
+}

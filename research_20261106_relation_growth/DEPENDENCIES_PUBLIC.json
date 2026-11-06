@@ -1,0 +1,30 @@
+{
+  "status": "EXISTING_PUBLIC_SOURCE_DEPENDENCY_MAP_NO_MODEL_OR_DATA",
+  "dependencies": [
+    {
+      "dependency_key": "nig_core",
+      "existing_repository_relative_path": "research_20261106_relational_feedback/full_nig_bma/code/relation_posterior.py",
+      "sha256": "1d74cde91519ce282c6ebee54e53807a2a79be0cebf19e06221eb4f16e8b7528",
+      "copy_existing_bytes": false
+    },
+    {
+      "dependency_key": "legacy_scalar_score",
+      "existing_repository_relative_path": "research_20261106_relational_feedback/frozen_dependencies/reported_code/score.py",
+      "sha256": "dedad40898d0d9267481f73f5adf10952bd877ea603852c447fc7cbaa04ed0c8",
+      "copy_existing_bytes": false
+    },
+    {
+      "dependency_key": "legacy_joint_model",
+      "existing_repository_relative_path": "research_20261106_relational_feedback/frozen_dependencies/reported_code/joint_model.py",
+      "sha256": "5dee15b95546e81d1006358988fba7afdcc931273f28e55edf938f83845bd259",
+      "copy_existing_bytes": false
+    },
+    {
+      "dependency_key": "legacy_data_scope",
+      "existing_repository_relative_path": "research_20261106_relational_feedback/frozen_dependencies/reported_code/data_scope.py",
+      "sha256": "34dbdb081757395d57680cdc843f455f174e32246a2f0eba24241e0984c488ad",
+      "copy_existing_bytes": false
+    }
+  ],
+  "source_origin": "pinned original execution dependency hashes;existing parent checkout verified"
+}

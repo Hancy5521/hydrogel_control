@@ -1,0 +1,158 @@
+{
+  "actual_utc": "2026-11-06T11:35:33.613659+00:00",
+  "root_reviewed_plan_sha256": "ba9daa62d374b6e7284322205b3d7de5a3966720fb45e596ea8dbc70f0fdaea5",
+  "complete_local_archive": {
+    "file": "H:/PolymerReview/Relation_Growth_20261106T093155Z.zip",
+    "sha256": "6bbfbcf7f950d4aecb7869fe6f5de1d8b915b9d6431a7025192d8a84b4bfeae5",
+    "not_in_public_subset": true
+  },
+  "public_subset": true,
+  "self_excluded": true,
+  "files": [
+    {
+      "path": "code/baselines.py",
+      "bytes": 7621,
+      "sha256": "8a8e8aa94f313a22e3b56fca58a1ff7ddb93b51c94fe8f5e3ca752faf3cb3d27"
+    },
+    {
+      "path": "code/experiment_io.py",
+      "bytes": 11383,
+      "sha256": "51f23992ea6f74f723816b2412dde68dee620615284a98d3ab7dd788e4b18042"
+    },
+    {
+      "path": "code/growth_models.py",
+      "bytes": 15005,
+      "sha256": "3530d82d9f67cdf63bd2e5cf88bbf22d95f29bed9cb8fe9daf9be455c1a48c56"
+    },
+    {
+      "path": "code/probability.py",
+      "bytes": 9812,
+      "sha256": "8354b3d619760034c2089ae1b053deed01578b25160c067642074cbe1fd1c548"
+    },
+    {
+      "path": "code/proposal.py",
+      "bytes": 6727,
+      "sha256": "b5e71441ea36135ff89686f2a184abb8819e78a31c2d0b424405148961d6f622"
+    },
+    {
+      "path": "code/run_growth.py",
+      "bytes": 8457,
+      "sha256": "df34f1c0d3df8efb3af9de1b5166f164982156e970607d4a9a62a24b8c9e6491"
+    },
+    {
+      "path": "code/score_growth.py",
+      "bytes": 5765,
+      "sha256": "78c3f2900f899524751291b6404426467a33c34365bbdebe37f953eeafb09ea8"
+    },
+    {
+      "path": "SOURCE_ONLY_METHOD_SPEC_V2.json",
+      "bytes": 9851,
+      "sha256": "a2548130e5fb6cf2b06a56cf172700a849f50d0f87eda0b8eb8cab546ff9b7e4"
+    },
+    {
+      "path": "SOURCE_FREEZE_V2.json",
+      "bytes": 996,
+      "sha256": "049f30c39a5c6d8edc814c9119dd2833649661c1fe345a0f7836acdcdc8d6a10"
+    },
+    {
+      "path": "MODEL_INTERFACE_ZH.txt",
+      "bytes": 4357,
+      "sha256": "d0ff6311dd6b2e3cf7fd5c85458833867d8b44fef923f67aa15e2937b31311f7"
+    },
+    {
+      "path": "RF10_PREEXECUTION_STRENGTHENING_RECEIPT.json",
+      "bytes": 3596,
+      "sha256": "c84430e2c4f22ee391268408987844c9c6e129c2e587e445719284d410fc45f7"
+    },
+    {
+      "path": "independent_review/audit_growth_states.py",
+      "bytes": 22598,
+      "sha256": "abb034ff0507beaf1c29c1c556d57c0abebc0e07ef499e535f80b80803116073"
+    },
+    {
+      "path": "independent_review/audit_growth_scores.py",
+      "bytes": 12127,
+      "sha256": "edd35dae07c381785fa05cb9ebaf129ce66f3390ae2375a1e0aec267cdc7b949"
+    },
+    {
+      "path": "independent_review/growth_reference.py",
+      "bytes": 9611,
+      "sha256": "12c5408ad8c252dd5aa392efe099d6da9ddc60570ef03cec6408e94b00b0b944"
+    },
+    {
+      "path": "independent_math/generic_mixture_alias_gate/audit_generic_mixture.py",
+      "bytes": 9615,
+      "sha256": "c7abd44a6f047af07eba167992fdd8f3fd33dc38938f64d2c4dea3b42e515089"
+    },
+    {
+      "path": "independent_io_review/STATIC_INTERFACE_AND_DISCLOSURE_REVIEW_V2.json",
+      "bytes": 6451,
+      "sha256": "906671185593607f80f5462ed02b9f6b4a7d1610ea79842aaac7564c9cbdffc0"
+    },
+    {
+      "path": "independent_io_review/STATIC_INTERFACE_AND_DISCLOSURE_REVIEW_V2_ZH.txt",
+      "bytes": 547,
+      "sha256": "e59633115488106183123e3d189dbc7bf83a442eb27d0c5c9042f268af183f9b"
+    },
+    {
+      "path": "independent_math/PURE_MODEL_STATIC_REVIEW_V2.json",
+      "bytes": 1745,
+      "sha256": "8bef502734396fdfa5a8199dd3bad9e58eec2b0b588668559619f91227b8a8f5"
+    },
+    {
+      "path": "report/final/ALL28_SUMMARIES.csv",
+      "bytes": 2243,
+      "sha256": "1198e18a34c1809518bff62ee0fe64188f1898c5005dac8f992967bc5161c956"
+    },
+    {
+      "path": "report/final/ALL8_PROPOSAL_SCORES.csv",
+      "bytes": 1068,
+      "sha256": "f037696508875a996a9a3e67e801e2fc66cfe193892bfd732bcf0939b034f70b"
+    },
+    {
+      "path": "report/final/all_results.png",
+      "bytes": 205466,
+      "sha256": "cd2ae7902845e304fae97794cded94534b6c0d1d4a6d842cd2c9493b945b6a9e"
+    },
+    {
+      "path": "report/final/REPORT_AGGREGATE_PUBLIC.json",
+      "bytes": 11261,
+      "sha256": "d60395c9074ca66eaedf0cb8cf2cd6ab5341df550f8e7289682999fba757479a"
+    },
+    {
+      "path": "review/STATE_POSTREVIEW_PUBLIC.json",
+      "bytes": 17121,
+      "sha256": "5681c31aff03579c07d821e0c77f4b80b7b35d6ca22d6908b5863946711a5646"
+    },
+    {
+      "path": "review/ALL_SCORE_POSTREVIEW_PUBLIC.json",
+      "bytes": 15065,
+      "sha256": "9643be09bc5e54d2ec265890f5ca0b4e1ee98e9c2717d7971882a2c6c08a4e2e"
+    },
+    {
+      "path": "review/GENERIC_MATH_POSTREVIEW_PUBLIC.json",
+      "bytes": 1008,
+      "sha256": "80eb34762c3919ed101811929d7e18924a2fc7bdfa226cf4870a78c64d88146c"
+    },
+    {
+      "path": "protocol/EXECUTION_PLAN_PUBLIC.json",
+      "bytes": 5239,
+      "sha256": "06e98ebfd93b218273dfb954286a30d15f0dfc38821f0a082fdbee183113b5ea"
+    },
+    {
+      "path": "report/final/RESULTS_AND_NEXT_ZH.html",
+      "bytes": 6309,
+      "sha256": "ba8715f031e968bd209038d2fe541a04e14658ce40238e3418952763b618dd89"
+    },
+    {
+      "path": "README_ZH.txt",
+      "bytes": 2067,
+      "sha256": "d8df9099284f381a2c96bd694993f1f21f9f84afb5abcc5a108c894bb554b669"
+    },
+    {
+      "path": "DEPENDENCIES_PUBLIC.json",
+      "bytes": 1415,
+      "sha256": "57ee5223bf0cd3195f51f93eb3b9e3e25031c7e7dacc56f582745b8aecbc10db"
+    }
+  ]
+}

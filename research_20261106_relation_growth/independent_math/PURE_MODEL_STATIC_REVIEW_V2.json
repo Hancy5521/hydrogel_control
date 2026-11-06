@@ -1,0 +1,29 @@
+{
+  "status": "PASS_INDEPENDENT_STATIC_MATH_V2_NO_FITS_OR_NEW_VALUES",
+  "actual_utc": "2026-11-06T10:16:24.568700+00:00",
+  "parent_v1_review_sha256": "2fb614cf10609ad26970d13458bec904640f73fb7402b4534cbe044f88973e67",
+  "V2_baseline": {
+    "file": "H:\\polymer_completion_public\\research\\relation_growth_20261106T093155Z\\code\\baselines.py",
+    "sha256": "8a8e8aa94f313a22e3b56fca58a1ff7ddb93b51c94fe8f5e3ca752faf3cb3d27",
+    "max_features_python_type": "float",
+    "literal_value": 1.0,
+    "meaning": "All10 features eligible at every split, replacing V1 int1 single candidate feature; same256 trees/minleaf3/bootstrap/seed and same information10D as GP."
+  },
+  "V2_source_freeze": {
+    "file": "H:\\polymer_completion_public\\research\\relation_growth_20261106T093155Z\\SOURCE_FREEZE_V2.json",
+    "sha256": "049f30c39a5c6d8edc814c9119dd2833649661c1fe345a0f7836acdcdc8d6a10"
+  },
+  "V2_spec": {
+    "file": "H:\\polymer_completion_public\\research\\relation_growth_20261106T093155Z\\SOURCE_ONLY_METHOD_SPEC_V2.json",
+    "sha256": "a2548130e5fb6cf2b06a56cf172700a849f50d0f87eda0b8eb8cab546ff9b7e4"
+  },
+  "other_three_pure_sources_unchanged": {
+    "growth_models.py": "3530d82d9f67cdf63bd2e5cf88bbf22d95f29bed9cb8fe9daf9be455c1a48c56",
+    "proposal.py": "b5e71441ea36135ff89686f2a184abb8819e78a31c2d0b424405148961d6f622",
+    "probability.py": "8354b3d619760034c2089ae1b053deed01578b25160c067642074cbe1fd1c548"
+  },
+  "prior_findings_remain_valid": true,
+  "tiny_scorer_gate_pending_root_execution": true,
+  "fit_raw_decode_OOF_counts": 0,
+  "scope": "Pure model mathematics only; separate owner reviews controller/IO. Strengthened RF is predefined before any new-data fit, not chosen from outcome."
+}

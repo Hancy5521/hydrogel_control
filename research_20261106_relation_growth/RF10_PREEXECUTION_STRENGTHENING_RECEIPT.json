@@ -1,0 +1,75 @@
+{
+  "status": "ONE_BASELINE_PARAMETER_STRENGTHENED_BEFORE_EXECUTION",
+  "actual_utc": "2026-11-06T10:15:23.677453+00:00",
+  "reason": "Dimension changed from2to10; inherited integer1 sampled1feature and could weaken same-information reference. Root instructed regression default float1.0, all10features, before any output.",
+  "old_RF_max_features": 1,
+  "old_python_type": "int",
+  "new_RF_max_features": 1.0,
+  "new_python_type": "float",
+  "other_RF_hyperparameters_and_leaf_CDF": "unchanged",
+  "GP": "unchanged",
+  "method_count": 7,
+  "sklearn_fits_total": 6,
+  "RF_fits": 3,
+  "GP_fits": 3,
+  "history_preserved": [
+    {
+      "original_relative_path": "code/baselines.py",
+      "preserved_relative_path": "pre_execution_history/v1_unexecuted/code/baselines.py",
+      "sha256": "80b0ccbd804c61befcc013d52ab22b39d411fcbefc60f8c454240e9881c8f86d"
+    },
+    {
+      "original_relative_path": "code/growth_models.py",
+      "preserved_relative_path": "pre_execution_history/v1_unexecuted/code/growth_models.py",
+      "sha256": "3530d82d9f67cdf63bd2e5cf88bbf22d95f29bed9cb8fe9daf9be455c1a48c56"
+    },
+    {
+      "original_relative_path": "code/probability.py",
+      "preserved_relative_path": "pre_execution_history/v1_unexecuted/code/probability.py",
+      "sha256": "8354b3d619760034c2089ae1b053deed01578b25160c067642074cbe1fd1c548"
+    },
+    {
+      "original_relative_path": "code/proposal.py",
+      "preserved_relative_path": "pre_execution_history/v1_unexecuted/code/proposal.py",
+      "sha256": "b5e71441ea36135ff89686f2a184abb8819e78a31c2d0b424405148961d6f622"
+    },
+    {
+      "original_relative_path": "SOURCE_ONLY_METHOD_SPEC.json",
+      "preserved_relative_path": "pre_execution_history/v1_unexecuted/SOURCE_ONLY_METHOD_SPEC.json",
+      "sha256": "3e40f2909d7ee9e9c0c0bd9ce53dc72f2703398b8381c9aef3906078b7823f6d"
+    },
+    {
+      "original_relative_path": "SOURCE_ONLY_METHOD_SPEC_FINAL.json",
+      "preserved_relative_path": "pre_execution_history/v1_unexecuted/SOURCE_ONLY_METHOD_SPEC_FINAL.json",
+      "sha256": "5af5704ea113d92efb141216293f355f5d96dce4da4c897eaaea5667dabed042"
+    },
+    {
+      "original_relative_path": "SOURCE_FREEZE.json",
+      "preserved_relative_path": "pre_execution_history/v1_unexecuted/SOURCE_FREEZE.json",
+      "sha256": "73dc0561cfe4e1864e38e1ce4e537fc349873dcf78dbb21cbee688bf25dc4822"
+    },
+    {
+      "original_relative_path": "MODEL_INTERFACE_ZH.txt",
+      "preserved_relative_path": "pre_execution_history/v1_unexecuted/MODEL_INTERFACE_ZH.txt",
+      "sha256": "36e100639a28576d79646df5aa170e05cb611e7ae7ef0f2d8371b3dbc9dcac07"
+    }
+  ],
+  "V1_four_source_freeze_sha256": "73dc0561cfe4e1864e38e1ce4e537fc349873dcf78dbb21cbee688bf25dc4822",
+  "V1_baselines_sha256": "80b0ccbd804c61befcc013d52ab22b39d411fcbefc60f8c454240e9881c8f86d",
+  "V2_baselines_sha256": "8a8e8aa94f313a22e3b56fca58a1ff7ddb93b51c94fe8f5e3ca752faf3cb3d27",
+  "new_source_sha256": {
+    "baselines.py": "8a8e8aa94f313a22e3b56fca58a1ff7ddb93b51c94fe8f5e3ca752faf3cb3d27",
+    "growth_models.py": "3530d82d9f67cdf63bd2e5cf88bbf22d95f29bed9cb8fe9daf9be455c1a48c56",
+    "probability.py": "8354b3d619760034c2089ae1b053deed01578b25160c067642074cbe1fd1c548",
+    "proposal.py": "b5e71441ea36135ff89686f2a184abb8819e78a31c2d0b424405148961d6f622"
+  },
+  "source_only_counts": {
+    "raw_reads": 0,
+    "fit": 0,
+    "OOF": 0,
+    "new_group_selection": 0,
+    "sampling": 0
+  },
+  "old_sealed_studies_mutated": false,
+  "do_not_claim_RF_literal_parameter_unchanged_from_V1": true
+}

@@ -1,0 +1,362 @@
+{
+  "status": "ACCEPTED_NEGATIVE_SINGLE_SLOT_GROWTH_CHECKPOINT",
+  "actual_utc": "2026-11-06T10:53:38.197316+00:00",
+  "results_sha256": "fc9b965cdd71799b747f9ad533e73e43bc885683d9bd4d672f37abd295eced64",
+  "all672_independent_audit_sha256": "0b559a063f0ba09c0869e7a8f8e677b927246d99a2e9a8d34c581c2f05528a3e",
+  "main_grown4_minus_old3": 0.01997684571780702,
+  "all28_rows": [
+    {
+      "method": "old3_BMA",
+      "batch": "0",
+      "groups": 96,
+      "CRPS_native_mean": 31.653283748723343,
+      "RMSE_median_native": 57.41946288327813,
+      "coverage90": 0.9479166666666666,
+      "width90_native_mean": 193.69452300815223
+    },
+    {
+      "method": "old3_BMA",
+      "batch": "1",
+      "groups": 32,
+      "CRPS_native_mean": 36.54303858662552,
+      "RMSE_median_native": 66.55213641801801,
+      "coverage90": 0.875,
+      "width90_native_mean": 194.6975480254166
+    },
+    {
+      "method": "old3_BMA",
+      "batch": "2",
+      "groups": 32,
+      "CRPS_native_mean": 33.493778587818056,
+      "RMSE_median_native": 59.471605488586086,
+      "coverage90": 0.96875,
+      "width90_native_mean": 194.16511086559083
+    },
+    {
+      "method": "old3_BMA",
+      "batch": "3",
+      "groups": 32,
+      "CRPS_native_mean": 24.923034071726452,
+      "RMSE_median_native": 43.87397215001123,
+      "coverage90": 1.0,
+      "width90_native_mean": 192.2209101334492
+    },
+    {
+      "method": "grown4_BMA",
+      "batch": "0",
+      "groups": 96,
+      "CRPS_native_mean": 31.67326059444115,
+      "RMSE_median_native": 57.4937351243585,
+      "coverage90": 0.9479166666666666,
+      "width90_native_mean": 193.99965187123908
+    },
+    {
+      "method": "grown4_BMA",
+      "batch": "1",
+      "groups": 32,
+      "CRPS_native_mean": 36.468099449130925,
+      "RMSE_median_native": 66.52906697055653,
+      "coverage90": 0.875,
+      "width90_native_mean": 195.22981957718355
+    },
+    {
+      "method": "grown4_BMA",
+      "batch": "2",
+      "groups": 32,
+      "CRPS_native_mean": 33.53325709379424,
+      "RMSE_median_native": 59.5679474583667,
+      "coverage90": 0.96875,
+      "width90_native_mean": 194.074489200862
+    },
+    {
+      "method": "grown4_BMA",
+      "batch": "3",
+      "groups": 32,
+      "CRPS_native_mean": 25.018425240398294,
+      "RMSE_median_native": 44.0696224090263,
+      "coverage90": 1.0,
+      "width90_native_mean": 192.6946468356717
+    },
+    {
+      "method": "H_new",
+      "batch": "0",
+      "groups": 96,
+      "CRPS_native_mean": 32.80574400074045,
+      "RMSE_median_native": 59.43790289521345,
+      "coverage90": 0.9375,
+      "width90_native_mean": 194.67406913161383
+    },
+    {
+      "method": "H_new",
+      "batch": "1",
+      "groups": 32,
+      "CRPS_native_mean": 36.21603785600459,
+      "RMSE_median_native": 66.48471811445984,
+      "coverage90": 0.84375,
+      "width90_native_mean": 197.6496452020183
+    },
+    {
+      "method": "H_new",
+      "batch": "2",
+      "groups": 32,
+      "CRPS_native_mean": 34.02541482234904,
+      "RMSE_median_native": 60.67638582698888,
+      "coverage90": 0.96875,
+      "width90_native_mean": 192.58245224559403
+    },
+    {
+      "method": "H_new",
+      "batch": "3",
+      "groups": 32,
+      "CRPS_native_mean": 28.175779323867708,
+      "RMSE_median_native": 49.967503059064995,
+      "coverage90": 1.0,
+      "width90_native_mean": 193.79010994722924
+    },
+    {
+      "method": "H_anchor",
+      "batch": "0",
+      "groups": 96,
+      "CRPS_native_mean": 31.18775550035787,
+      "RMSE_median_native": 57.003034264543395,
+      "coverage90": 0.9270833333333334,
+      "width90_native_mean": 189.3079924911281
+    },
+    {
+      "method": "H_anchor",
+      "batch": "1",
+      "groups": 32,
+      "CRPS_native_mean": 34.7712178651785,
+      "RMSE_median_native": 64.58809848853042,
+      "coverage90": 0.84375,
+      "width90_native_mean": 191.13399680725777
+    },
+    {
+      "method": "H_anchor",
+      "batch": "2",
+      "groups": 32,
+      "CRPS_native_mean": 31.696210556062397,
+      "RMSE_median_native": 57.099326943607295,
+      "coverage90": 0.96875,
+      "width90_native_mean": 190.61855601640514
+    },
+    {
+      "method": "H_anchor",
+      "batch": "3",
+      "groups": 32,
+      "CRPS_native_mean": 27.095838079832724,
+      "RMSE_median_native": 48.12569108404638,
+      "coverage90": 0.96875,
+      "width90_native_mean": 186.17142464972142
+    },
+    {
+      "method": "affine",
+      "batch": "0",
+      "groups": 96,
+      "CRPS_native_mean": 32.79129092484551,
+      "RMSE_median_native": 59.368569642438935,
+      "coverage90": 0.9375,
+      "width90_native_mean": 194.3174564778585
+    },
+    {
+      "method": "affine",
+      "batch": "1",
+      "groups": 32,
+      "CRPS_native_mean": 37.163022565904996,
+      "RMSE_median_native": 67.62638518844221,
+      "coverage90": 0.84375,
+      "width90_native_mean": 195.11343346765958
+    },
+    {
+      "method": "affine",
+      "batch": "2",
+      "groups": 32,
+      "CRPS_native_mean": 34.029770450886765,
+      "RMSE_median_native": 60.376072489278556,
+      "coverage90": 0.96875,
+      "width90_native_mean": 195.80077201601844
+    },
+    {
+      "method": "affine",
+      "batch": "3",
+      "groups": 32,
+      "CRPS_native_mean": 27.181079757744783,
+      "RMSE_median_native": 48.53125880585821,
+      "coverage90": 1.0,
+      "width90_native_mean": 192.03816394989752
+    },
+    {
+      "method": "GP10",
+      "batch": "0",
+      "groups": 96,
+      "CRPS_native_mean": 34.86165047739532,
+      "RMSE_median_native": 61.662232146183285,
+      "coverage90": 0.9270833333333334,
+      "width90_native_mean": 214.63917261139412
+    },
+    {
+      "method": "GP10",
+      "batch": "1",
+      "groups": 32,
+      "CRPS_native_mean": 37.60442974002851,
+      "RMSE_median_native": 67.01874469867623,
+      "coverage90": 0.875,
+      "width90_native_mean": 209.96284044325768
+    },
+    {
+      "method": "GP10",
+      "batch": "2",
+      "groups": 32,
+      "CRPS_native_mean": 36.487631185585556,
+      "RMSE_median_native": 64.42097331177246,
+      "coverage90": 0.9375,
+      "width90_native_mean": 216.44582901669332
+    },
+    {
+      "method": "GP10",
+      "batch": "3",
+      "groups": 32,
+      "CRPS_native_mean": 30.49289050657191,
+      "RMSE_median_native": 52.58439574937564,
+      "coverage90": 0.96875,
+      "width90_native_mean": 217.50884837423138
+    },
+    {
+      "method": "RF10",
+      "batch": "0",
+      "groups": 96,
+      "CRPS_native_mean": 28.773427145197527,
+      "RMSE_median_native": 53.68396519184057,
+      "coverage90": 0.9479166666666666,
+      "width90_native_mean": 180.06992708333334
+    },
+    {
+      "method": "RF10",
+      "batch": "1",
+      "groups": 32,
+      "CRPS_native_mean": 32.40583611424817,
+      "RMSE_median_native": 60.018282137872376,
+      "coverage90": 0.875,
+      "width90_native_mean": 175.947875
+    },
+    {
+      "method": "RF10",
+      "batch": "2",
+      "groups": 32,
+      "CRPS_native_mean": 29.949170612676436,
+      "RMSE_median_native": 55.28303577697909,
+      "coverage90": 0.96875,
+      "width90_native_mean": 193.65753125
+    },
+    {
+      "method": "RF10",
+      "batch": "3",
+      "groups": 32,
+      "CRPS_native_mean": 23.96527470866797,
+      "RMSE_median_native": 44.58134274173727,
+      "coverage90": 1.0,
+      "width90_native_mean": 170.604375
+    }
+  ],
+  "all8_development_proposal_scores": [
+    {
+      "index": 0,
+      "descriptor_id": "O_present",
+      "eligible": true,
+      "exclusion_reason": null,
+      "standardized_norm": 6.244997998398398,
+      "residual_norm": 3.855456835603095,
+      "relative_residual_norm": 0.617367185160327,
+      "signed_standardized_inner_product": 0.04999596462078255,
+      "absolute_score": 0.04999596462078255
+    },
+    {
+      "index": 1,
+      "descriptor_id": "f_O",
+      "eligible": true,
+      "exclusion_reason": null,
+      "standardized_norm": 6.244997998398399,
+      "residual_norm": 4.12684461292296,
+      "relative_residual_norm": 0.6608240089078229,
+      "signed_standardized_inner_product": 0.1965537017891525,
+      "absolute_score": 0.1965537017891525
+    },
+    {
+      "index": 2,
+      "descriptor_id": "f_H",
+      "eligible": true,
+      "exclusion_reason": null,
+      "standardized_norm": 6.244997998398397,
+      "residual_norm": 4.62214524306745,
+      "relative_residual_norm": 0.7401355843913566,
+      "signed_standardized_inner_product": 0.12106666376548779,
+      "absolute_score": 0.12106666376548779
+    },
+    {
+      "index": 3,
+      "descriptor_id": "f_C_plus_N",
+      "eligible": true,
+      "exclusion_reason": null,
+      "standardized_norm": 6.244997998398399,
+      "residual_norm": 6.126369639943155,
+      "relative_residual_norm": 0.9810042599716337,
+      "signed_standardized_inner_product": 0.29281649401914434,
+      "absolute_score": 0.29281649401914434
+    },
+    {
+      "index": 4,
+      "descriptor_id": "f_F_Cl_Br_I",
+      "eligible": true,
+      "exclusion_reason": null,
+      "standardized_norm": 6.244997998398399,
+      "residual_norm": 5.470662998726235,
+      "relative_residual_norm": 0.8760071660758336,
+      "signed_standardized_inner_product": -0.20575109951821588,
+      "absolute_score": 0.20575109951821588
+    },
+    {
+      "index": 5,
+      "descriptor_id": "f_S_Se_Te",
+      "eligible": true,
+      "exclusion_reason": null,
+      "standardized_norm": 6.244997998398399,
+      "residual_norm": 5.969107828542695,
+      "relative_residual_norm": 0.9558222164480342,
+      "signed_standardized_inner_product": -0.20925801143610961,
+      "absolute_score": 0.20925801143610961
+    },
+    {
+      "index": 6,
+      "descriptor_id": "element_count",
+      "eligible": true,
+      "exclusion_reason": null,
+      "standardized_norm": 6.244997998398398,
+      "residual_norm": 4.897350978065055,
+      "relative_residual_norm": 0.784203770653095,
+      "signed_standardized_inner_product": 0.11236197097536425,
+      "absolute_score": 0.11236197097536425
+    },
+    {
+      "index": 7,
+      "descriptor_id": "stoichiometric_entropy",
+      "eligible": true,
+      "exclusion_reason": null,
+      "standardized_norm": 6.244997998398399,
+      "residual_norm": 5.080820837752768,
+      "relative_residual_norm": 0.8135824605637667,
+      "signed_standardized_inner_product": 0.1897896236653526,
+      "absolute_score": 0.1897896236653526
+    }
+  ],
+  "selected": "f_C_plus_N",
+  "anchor": "O_present",
+  "elapsed_run_seconds": 14.981485300002532,
+  "decision": "Main endpoint not improved; do not adopt this automatic proposal as a demonstrated gain. Preserve strongest RF reference and all failures.",
+  "limits": [
+    "All128development;96groupsvalidated in three sequential batches, not96 independent campaigns.",
+    "Cross-stage CRPS not comparable because target cohorts/information differ.",
+    "PIT-residual correlation is not the original-unit proper-loss objective; exact failure cause not established by one run.",
+    "Fullquad residualization differs from the affine basis actually admitted; this is a design question, not a proven causal explanation."
+  ],
+  "public_export_scope": "Aggregate28method-batch rows and8developmentproposal scores only;global trained-library weight map omitted;no per-material identity/Y/law/state."
+}

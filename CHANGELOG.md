@@ -1,3 +1,5 @@
+2026-11-06：单槽组成关联生长，主CRPS差+0.0199768457（未改善）；RF10更强。独立状态及672评分通过；完整本地ZIP已封存，新增公开源码与汇总。
+
 ## 2026-11-06 Conditional relation feedback and joint generation
 
 Added a separately reviewed namespace with three-hypothesis NIG/BMA code, native proper-score acquisition, actual160-component development protocols, aggregate42-row results, independent state/all4080score audits and the fixed synthetic joint-sampler check. Same final openloop set and slightly stronger frozen-weight control are explicit; no generated label is a measurement. Complete local resources remain separate. All old science and MLST are unchanged; local archive does not imply remote upload or publication readiness.
