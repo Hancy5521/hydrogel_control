@@ -78,6 +78,11 @@
       "sha256": "69e53adc4a1fd310a4ee1fed96a5197587158e10085c039612d28842ccab3807"
     },
     {
+      "path": "CHECKPOINT.json",
+      "bytes": 966,
+      "sha256": "31e925a73cedd99b58a4d7c95143f202ba069a5acc5e5a781831c345307dc39c"
+    },
+    {
       "path": "independent_discrete_score_math.py",
       "bytes": 6006,
       "sha256": "6470606f46dce4e3cfddc5f718d94d56811aea4b2c6415b9b8c3d900cc8f0a18"

@@ -1,9 +1,9 @@
 {
   "checkpoint": "material-admission-20261106",
   "parent_commit": "75555e143ddfa5f1ab86dfc8f15b62386a032c1e",
-  "actual_utc": "2026-11-06T02:35:02.029795+00:00",
+  "actual_utc": "2026-11-06T02:38:26.522788+00:00",
   "self_excluded": true,
-  "administrative_correction": "first manifest generation used quoted git ls-files text and failed on Chinese filename; no scientific payload changed; original intermediary commit e5f6da5 preserved in history; use NUL-delimited UTF8 inventory",
+  "administrative_history": "initial unicode manifest generation failure and later root-level newcheckpoint namespace failure preserved; science and originalZIP unchanged",
   "files": [
     {
       "path": ".gitattributes",
@@ -34,12 +34,6 @@
       "bytes": 784,
       "sha256": "12925e23d2c6905b231350ecbdf48893a742af6f4d4c9f63e478fc25eb05eb3c",
       "git_blob_sha1": "53752962722c9281a268a1f746ff899299b498ad"
-    },
-    {
-      "path": "MATERIAL_ADMISSION_CHECKPOINT.json",
-      "bytes": 966,
-      "sha256": "31e925a73cedd99b58a4d7c95143f202ba069a5acc5e5a781831c345307dc39c",
-      "git_blob_sha1": "b4043d6cf8c506d70a9d8e79fca98b9a1b86f1d1"
     },
     {
       "path": "MODEL_CARD.md",
@@ -4638,6 +4632,12 @@
       "git_blob_sha1": "a33f9493e33fe7edb76287ec3345c95b05e11c87"
     },
     {
+      "path": "research/material_admission_20261106/CHECKPOINT.json",
+      "bytes": 966,
+      "sha256": "31e925a73cedd99b58a4d7c95143f202ba069a5acc5e5a781831c345307dc39c",
+      "git_blob_sha1": "b4043d6cf8c506d70a9d8e79fca98b9a1b86f1d1"
+    },
+    {
       "path": "research/material_admission_20261106/INDEPENDENT_DISCRETE_SCORE_PLAN_REGISTERED.json",
       "bytes": 3719,
       "sha256": "ac446b030c2663b272784f293f7ed2e7b89986c6a1c27946168269d7516e4649",
@@ -4675,9 +4675,9 @@
     },
     {
       "path": "research/material_admission_20261106/PUBLIC_MANIFEST.json",
-      "bytes": 44646,
-      "sha256": "6be517ae6576b686e04ceeb7c83935f25c22de349779b1f3092875c0fc5d4f03",
-      "git_blob_sha1": "1d3e3afe3f6acfa6252f61462e7ad9e2ebbd7b57"
+      "bytes": 44800,
+      "sha256": "fceb69c5d4e22fa61208818a940e40abbe625d7b3bcc94eaefe1de5a91c0da42",
+      "git_blob_sha1": "68bdea7403c4dac3e557a9143f169e311770f8b0"
     },
     {
       "path": "research/material_admission_20261106/README.txt",
