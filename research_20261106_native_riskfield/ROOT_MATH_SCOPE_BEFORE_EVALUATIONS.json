@@ -1,0 +1,68 @@
+{
+  "kind": "root_prefrozen_native_riskfield_mechanism_scope",
+  "actual_utc": "2026-11-06T04:10:13.769025+00:00",
+  "new_real_material_reads_or_fits": 0,
+  "fixture_family": "validsingleNIG regression posterior, differentphysicalrows evenatmatchingcontexts",
+  "NIG": {
+    "m": [
+      0,
+      1
+    ],
+    "V": [
+      [
+        0.2,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "alpha": 3,
+    "beta": 1.5,
+    "df": 6,
+    "phi": "[1,x]"
+  },
+  "terminal_contexts": {
+    "tplus": 1.0,
+    "tminus": -1.0
+  },
+  "query_contexts": {
+    "qplus": 1.0,
+    "qminus": -1.1
+  },
+  "source_scale_s0": 2.0,
+  "native_map": "s0*inverseYJhalf(mu_t+st*v);mu_t=phi_t@m,st=sqrt(beta/alpha*(1+phi_t@V@phi_t))",
+  "rho": "phi_q@V@phi_t /sqrt((1+phi_q@V@phi_q)*(1+phi_t@V@phi_t))",
+  "eight_main_cases": [
+    "four Studentt native pairs allqxtarget",
+    "signmirror firstpair",
+    "Studentt df6rho0native mu1/stsqrt1.1/s02",
+    "Gaussianrho0same native mu1/stsqrt1.1/s02 exact0",
+    "Studenttdf6rho0affine mu1/stsqrt1.1/s02 analyticBayesCRPSrisk"
+  ],
+  "four_additional_fair_references": "latent-momentmatched transported Gaussian atsamefourqxtarget nativeobjective; stdG=st*sqrt(df/(df-2));same native meanparameter andcorrelation, not native-momentmatching",
+  "bounded_total_law_evaluations": 12,
+  "numerics": {
+    "outer_standardized_v_truncation": 32,
+    "inner_standardized_z_truncation": 64,
+    "producer_GL_levels": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "v_split": "both0 and-nativeYJmu/st withinbounds; nodesforeachsegment",
+    "inner_probability_range": "CDFt(-Lz)toCDFt(+Lz), retainedunnormalizedprobabilitymass",
+    "final_refinement_absolute_diagnostic": 2e-05,
+    "analytic_total_tail_upper_bound": 0.0001,
+    "independent_method_agreement_absolute": 0.0002,
+    "independent_method_agreement_relative": 2e-05
+  },
+  "comparison": "native Student querysum versus latentStudent andlatentmomentGaussianclosed querysums; also all4propernativeGaussianpairvalues; reportallrankings, no forcedstrictreversal/speedup",
+  "Gaussian_reference": "deterministicOwen/positivePlackett1D native kernel, not slowrandomMC weakbaseline",
+  "proof_claims": "analytictail/coupling-modelbound separate from quadratureestimates andIEEEarithmetic; no materialefficacy, calibratedrisk orfirstinventionclaim",
+  "failure_rule": "retainfixedfixtures; do notsweepcontexts/priors afteroutcomes tofindreversal; a numericaldefect may get separatelyregisteredrepair while preservingfailure",
+  "next_if_math_supported": "onefresh64warm24querypool64terminal active-onlyYpilot,B8,clearfullnativeVOI/random/IVR/GPstrongreferences, current224consumedexcluded; actualfutureprotocolstillneedsregistration",
+  "archive_not_stop": true
+}

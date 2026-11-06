@@ -1,0 +1,66 @@
+{
+  "actual_utc": "2026-11-06T05:56:45.707354+00:00",
+  "status": "PINNED_PUBLIC_SOURCE_ONLY_NO_EXECUTION",
+  "files": {
+    "active_learning_pinned.json": {
+      "bytes": 15837,
+      "sha256": "b618f170b7968f04f390d2b248b81dca4fec1ec3bd1c5be6bd6ea75155b2bf1f"
+    },
+    "active_learning_pinned.py": {
+      "bytes": 10703,
+      "sha256": "45e9b6bca0d74e384c7e15b2de3064425cf0f32807e0228ba323db788419b3eb"
+    },
+    "API_INITIAL_RECEIPTS.json": {
+      "bytes": 1010,
+      "sha256": "77331632dc107e14c25d3972511566ba29a940e23cda99f93af94f21904502d4"
+    },
+    "API_PINNED_RECEIPTS.json": {
+      "bytes": 2925,
+      "sha256": "51e50fb96b1379fd1a617a108cc945359f8e0ba7812aa6c14605386a4689acaf"
+    },
+    "API_RUN.json": {
+      "bytes": 607,
+      "sha256": "766438d90e2dc935697228b5a36cee37a48b944b2be5d815b49730b97729b16d"
+    },
+    "license_pinned.json": {
+      "bytes": 2525,
+      "sha256": "303f001617f4fecf46cdb077ddfe30a6ef08de41179381edce767d33c0817646"
+    },
+    "license_pinned.txt": {
+      "bytes": 1097,
+      "sha256": "b175f6ef5d8cef92285d4bf8c8288f3df56fddf50a96b4b9ffabf840335eb245"
+    },
+    "main_commit.json": {
+      "bytes": 538526,
+      "sha256": "3f21807136f16ac4f8465e3a6830027641d934f7e1ce6b7e81998595d30fb972"
+    },
+    "PRIOR_ART_AND_CODE_LEDGER.json": {
+      "bytes": 9786,
+      "sha256": "48d6fb0123c4a6c85d960d37a3cec8f251e34a3a42ff3edba4a7e6e363831b95"
+    },
+    "readme.json": {
+      "bytes": 4347,
+      "sha256": "553ec14915b3f9c774093282dde4235cd36a43ebb7346ece0bd034eac3577719"
+    },
+    "README_original.md": {
+      "bytes": 2539,
+      "sha256": "5d3e2593bd7de49bc2bed2a775fe2ef590e749584d209dc6ecb87cf8d43533c4"
+    },
+    "readme_pinned.json": {
+      "bytes": 4527,
+      "sha256": "e5d95e5f2c9e228d9eddcc199e5b87c07ef9e250183488dc99515a279579559d"
+    },
+    "readme_pinned.txt": {
+      "bytes": 2539,
+      "sha256": "5d3e2593bd7de49bc2bed2a775fe2ef590e749584d209dc6ecb87cf8d43533c4"
+    },
+    "uncertainty_measures_pinned.json": {
+      "bytes": 21824,
+      "sha256": "b5faa68ce0c0594b32582853c5dd87e58d40ee5c49d3b7e800591ab10b4477bd"
+    },
+    "uncertainty_measures_pinned.py": {
+      "bytes": 14967,
+      "sha256": "fc62ffbde6a396468e1f63d8e7d7beff59d3aea694381f1cc5a9aa1b1b717b53"
+    }
+  }
+}

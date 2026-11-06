@@ -1,0 +1,7 @@
+{
+  "actual_utc": "2026-11-06T04:16:49.994164+00:00",
+  "first_attempt": "root guessed PLAN_TEMPLATE insteadactualEXECUTION_PLAN_TEMPLATE; secondCLI alsofailedmissingplan beforeoutputdir/numericalevaluation; sourceimports only",
+  "science_sources_or_configs_changed": false,
+  "actual_material_or_math_evaluation_in_failed_launch": 0,
+  "remedy": "readactualtemplate; registerexactUTC/hash; execute only after successfulregistration"
+}

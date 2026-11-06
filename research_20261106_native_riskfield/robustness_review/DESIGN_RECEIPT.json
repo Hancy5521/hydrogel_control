@@ -1,0 +1,18 @@
+{
+  "status": "DESIGN_ONLY_NOT_IMPLEMENTED_OR_EXECUTED",
+  "actual_utc": "2026-11-06T05:47:06.629833+00:00",
+  "actual_Asia_Shanghai": "2026-11-06T13:47:06.629833+08:00",
+  "selected_primary_papers": 3,
+  "source_files_downloaded": 0,
+  "model_fits": 0,
+  "native_numeric_reads": 0,
+  "metadata_selection_executions_by_reviewer": 0,
+  "file_sha256": {
+    "MINIMAL_INTERVAL_DIAGNOSTIC_PROTOCOL_ZH.txt": "0727c61bc6ef3835640aedb6586936fe1b245f8a649a54c230b4df319542f26b",
+    "PRIMARY_SOURCE_LEDGER.json": "a96deaaee1b3c8b4a109771fb5d4dea8647b1d78c9bf5fba70ec419e8ab47f88"
+  },
+  "current_NIG_active_protocol_changed": false,
+  "old_128_reused_or_tuned": false,
+  "old_archives_changed": false,
+  "next_action": "Root continues current fixed NIG active experiment. Consider a separately preregistered, costed new-group interval diagnostic only after current results. No author resource currently required for this design."
+}

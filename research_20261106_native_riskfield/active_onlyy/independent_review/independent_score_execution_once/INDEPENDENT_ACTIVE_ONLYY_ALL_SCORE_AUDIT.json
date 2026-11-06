@@ -1,0 +1,883 @@
+{
+  "status": "PASS",
+  "all_score_coordinates": 2160,
+  "primary_NIG_score_coordinates": 1152,
+  "reference_score_coordinates": 960,
+  "secondary_prequential_coordinates": 48,
+  "all_coverage_events": 6480,
+  "method_budget_summaries": 33,
+  "paired_difference_coordinates": 1088,
+  "unique_law_outcome_reference_scores": 1251,
+  "reference_routes": {
+    "native_CDF": 931,
+    "empirical_energy": 320
+  },
+  "max_native_CDF_quad_error_estimate": 2.2888501714899133e-08,
+  "independent_summary_NIG": {
+    "native_student": {
+      "0": {
+        "formula_groups": 64,
+        "mean_CRPS_native": 31.853064467185654,
+        "RMSE_predictive_median_native": 58.21890181075838,
+        "coverage": {
+          "0.8": 0.828125,
+          "0.9": 0.875,
+          "0.95": 0.953125
+        },
+        "mean_interval_width_native": {
+          "0.8": 149.26322493918894,
+          "0.9": 192.3533263008934,
+          "0.95": 230.25213607669426
+        },
+        "PIT_ECDF_deviation_descriptive": 0.16801100332472174,
+        "mean_PIT_left": 0.4616354173234363,
+        "mean_PIT_right": 0.4616354173234363
+      },
+      "4": {
+        "formula_groups": 64,
+        "mean_CRPS_native": 31.343019318126753,
+        "RMSE_predictive_median_native": 57.63915168338265,
+        "coverage": {
+          "0.8": 0.828125,
+          "0.9": 0.875,
+          "0.95": 0.953125
+        },
+        "mean_interval_width_native": {
+          "0.8": 144.99301456159992,
+          "0.9": 186.82708367865263,
+          "0.95": 223.60154737789813
+        },
+        "PIT_ECDF_deviation_descriptive": 0.15679825069433834,
+        "mean_PIT_left": 0.466675023717185,
+        "mean_PIT_right": 0.466675023717185
+      },
+      "8": {
+        "formula_groups": 64,
+        "mean_CRPS_native": 31.24151989468356,
+        "RMSE_predictive_median_native": 57.77571548499563,
+        "coverage": {
+          "0.8": 0.828125,
+          "0.9": 0.875,
+          "0.95": 0.953125
+        },
+        "mean_interval_width_native": {
+          "0.8": 142.19651597622914,
+          "0.9": 183.20078903459856,
+          "0.95": 219.22833749100755
+        },
+        "PIT_ECDF_deviation_descriptive": 0.14763710166555344,
+        "mean_PIT_left": 0.47177478058504924,
+        "mean_PIT_right": 0.47177478058504924
+      }
+    },
+    "native_gaussian": {
+      "0": {
+        "formula_groups": 64,
+        "mean_CRPS_native": 31.853064467185654,
+        "RMSE_predictive_median_native": 58.21890181075838,
+        "coverage": {
+          "0.8": 0.828125,
+          "0.9": 0.875,
+          "0.95": 0.953125
+        },
+        "mean_interval_width_native": {
+          "0.8": 149.26322493918894,
+          "0.9": 192.3533263008934,
+          "0.95": 230.25213607669426
+        },
+        "PIT_ECDF_deviation_descriptive": 0.16801100332472174,
+        "mean_PIT_left": 0.4616354173234363,
+        "mean_PIT_right": 0.4616354173234363
+      },
+      "4": {
+        "formula_groups": 64,
+        "mean_CRPS_native": 31.343019318126753,
+        "RMSE_predictive_median_native": 57.63915168338265,
+        "coverage": {
+          "0.8": 0.828125,
+          "0.9": 0.875,
+          "0.95": 0.953125
+        },
+        "mean_interval_width_native": {
+          "0.8": 144.99301456159992,
+          "0.9": 186.82708367865263,
+          "0.95": 223.60154737789813
+        },
+        "PIT_ECDF_deviation_descriptive": 0.15679825069433834,
+        "mean_PIT_left": 0.466675023717185,
+        "mean_PIT_right": 0.466675023717185
+      },
+      "8": {
+        "formula_groups": 64,
+        "mean_CRPS_native": 31.24151989468356,
+        "RMSE_predictive_median_native": 57.77571548499563,
+        "coverage": {
+          "0.8": 0.828125,
+          "0.9": 0.875,
+          "0.95": 0.953125
+        },
+        "mean_interval_width_native": {
+          "0.8": 142.19651597622914,
+          "0.9": 183.20078903459856,
+          "0.95": 219.22833749100755
+        },
+        "PIT_ECDF_deviation_descriptive": 0.14763710166555344,
+        "mean_PIT_left": 0.47177478058504924,
+        "mean_PIT_right": 0.47177478058504924
+      }
+    },
+    "latent_ivr": {
+      "0": {
+        "formula_groups": 64,
+        "mean_CRPS_native": 31.853064467185654,
+        "RMSE_predictive_median_native": 58.21890181075838,
+        "coverage": {
+          "0.8": 0.828125,
+          "0.9": 0.875,
+          "0.95": 0.953125
+        },
+        "mean_interval_width_native": {
+          "0.8": 149.26322493918894,
+          "0.9": 192.3533263008934,
+          "0.95": 230.25213607669426
+        },
+        "PIT_ECDF_deviation_descriptive": 0.16801100332472174,
+        "mean_PIT_left": 0.4616354173234363,
+        "mean_PIT_right": 0.4616354173234363
+      },
+      "4": {
+        "formula_groups": 64,
+        "mean_CRPS_native": 31.343019318126753,
+        "RMSE_predictive_median_native": 57.63915168338265,
+        "coverage": {
+          "0.8": 0.828125,
+          "0.9": 0.875,
+          "0.95": 0.953125
+        },
+        "mean_interval_width_native": {
+          "0.8": 144.99301456159992,
+          "0.9": 186.82708367865263,
+          "0.95": 223.60154737789813
+        },
+        "PIT_ECDF_deviation_descriptive": 0.15679825069433834,
+        "mean_PIT_left": 0.466675023717185,
+        "mean_PIT_right": 0.466675023717185
+      },
+      "8": {
+        "formula_groups": 64,
+        "mean_CRPS_native": 31.24151989468356,
+        "RMSE_predictive_median_native": 57.77571548499563,
+        "coverage": {
+          "0.8": 0.828125,
+          "0.9": 0.875,
+          "0.95": 0.953125
+        },
+        "mean_interval_width_native": {
+          "0.8": 142.19651597622914,
+          "0.9": 183.20078903459856,
+          "0.95": 219.22833749100752
+        },
+        "PIT_ECDF_deviation_descriptive": 0.14763710166555344,
+        "mean_PIT_left": 0.47177478058504924,
+        "mean_PIT_right": 0.47177478058504924
+      }
+    },
+    "random": {
+      "0": {
+        "formula_groups": 64,
+        "mean_CRPS_native": 31.853064467185654,
+        "RMSE_predictive_median_native": 58.21890181075838,
+        "coverage": {
+          "0.8": 0.828125,
+          "0.9": 0.875,
+          "0.95": 0.953125
+        },
+        "mean_interval_width_native": {
+          "0.8": 149.26322493918894,
+          "0.9": 192.3533263008934,
+          "0.95": 230.25213607669426
+        },
+        "PIT_ECDF_deviation_descriptive": 0.16801100332472174,
+        "mean_PIT_left": 0.4616354173234363,
+        "mean_PIT_right": 0.4616354173234363
+      },
+      "4": {
+        "formula_groups": 64,
+        "mean_CRPS_native": 32.16239723769176,
+        "RMSE_predictive_median_native": 57.832113162989586,
+        "coverage": {
+          "0.8": 0.828125,
+          "0.9": 0.921875,
+          "0.95": 0.984375
+        },
+        "mean_interval_width_native": {
+          "0.8": 161.67581947522163,
+          "0.9": 208.31363745258415,
+          "0.95": 249.32550742336795
+        },
+        "PIT_ECDF_deviation_descriptive": 0.1963988984182909,
+        "mean_PIT_left": 0.4461972225621157,
+        "mean_PIT_right": 0.4461972225621157
+      },
+      "8": {
+        "formula_groups": 64,
+        "mean_CRPS_native": 32.03383083287655,
+        "RMSE_predictive_median_native": 57.59016703600094,
+        "coverage": {
+          "0.8": 0.828125,
+          "0.9": 0.921875,
+          "0.95": 0.984375
+        },
+        "mean_interval_width_native": {
+          "0.8": 158.8457437612237,
+          "0.9": 204.62726552374593,
+          "0.95": 244.8546946529967
+        },
+        "PIT_ECDF_deviation_descriptive": 0.2076748858556502,
+        "mean_PIT_left": 0.4440149874255115,
+        "mean_PIT_right": 0.4440149874255115
+      }
+    },
+    "gp_variance": {
+      "0": {
+        "formula_groups": 64,
+        "mean_CRPS_native": 31.853064467185654,
+        "RMSE_predictive_median_native": 58.21890181075838,
+        "coverage": {
+          "0.8": 0.828125,
+          "0.9": 0.875,
+          "0.95": 0.953125
+        },
+        "mean_interval_width_native": {
+          "0.8": 149.26322493918894,
+          "0.9": 192.3533263008934,
+          "0.95": 230.25213607669426
+        },
+        "PIT_ECDF_deviation_descriptive": 0.16801100332472174,
+        "mean_PIT_left": 0.4616354173234363,
+        "mean_PIT_right": 0.4616354173234363
+      },
+      "4": {
+        "formula_groups": 64,
+        "mean_CRPS_native": 31.36965786996225,
+        "RMSE_predictive_median_native": 57.81042114490791,
+        "coverage": {
+          "0.8": 0.828125,
+          "0.9": 0.875,
+          "0.95": 0.953125
+        },
+        "mean_interval_width_native": {
+          "0.8": 145.25775220291212,
+          "0.9": 187.17184069702876,
+          "0.95": 224.02012387300306
+        },
+        "PIT_ECDF_deviation_descriptive": 0.15207763876653957,
+        "mean_PIT_left": 0.4692957672236715,
+        "mean_PIT_right": 0.4692957672236715
+      },
+      "8": {
+        "formula_groups": 64,
+        "mean_CRPS_native": 31.265152827656664,
+        "RMSE_predictive_median_native": 57.872579987998485,
+        "coverage": {
+          "0.8": 0.828125,
+          "0.9": 0.875,
+          "0.95": 0.9375
+        },
+        "mean_interval_width_native": {
+          "0.8": 141.9356294039579,
+          "0.9": 182.86109368434578,
+          "0.95": 218.81818851330047
+        },
+        "PIT_ECDF_deviation_descriptive": 0.14790527382317586,
+        "mean_PIT_left": 0.4736008329044299,
+        "mean_PIT_right": 0.4736008329044299
+      }
+    },
+    "warm_openloop": {
+      "0": {
+        "formula_groups": 64,
+        "mean_CRPS_native": 31.853064467185654,
+        "RMSE_predictive_median_native": 58.21890181075838,
+        "coverage": {
+          "0.8": 0.828125,
+          "0.9": 0.875,
+          "0.95": 0.953125
+        },
+        "mean_interval_width_native": {
+          "0.8": 149.26322493918894,
+          "0.9": 192.3533263008934,
+          "0.95": 230.25213607669426
+        },
+        "PIT_ECDF_deviation_descriptive": 0.16801100332472174,
+        "mean_PIT_left": 0.4616354173234363,
+        "mean_PIT_right": 0.4616354173234363
+      },
+      "4": {
+        "formula_groups": 64,
+        "mean_CRPS_native": 31.343019318126753,
+        "RMSE_predictive_median_native": 57.63915168338265,
+        "coverage": {
+          "0.8": 0.828125,
+          "0.9": 0.875,
+          "0.95": 0.953125
+        },
+        "mean_interval_width_native": {
+          "0.8": 144.99301456159992,
+          "0.9": 186.82708367865263,
+          "0.95": 223.60154737789813
+        },
+        "PIT_ECDF_deviation_descriptive": 0.15679825069433834,
+        "mean_PIT_left": 0.466675023717185,
+        "mean_PIT_right": 0.466675023717185
+      },
+      "8": {
+        "formula_groups": 64,
+        "mean_CRPS_native": 31.24151989468356,
+        "RMSE_predictive_median_native": 57.77571548499563,
+        "coverage": {
+          "0.8": 0.828125,
+          "0.9": 0.875,
+          "0.95": 0.953125
+        },
+        "mean_interval_width_native": {
+          "0.8": 142.19651597622914,
+          "0.9": 183.20078903459856,
+          "0.95": 219.22833749100755
+        },
+        "PIT_ECDF_deviation_descriptive": 0.14763710166555344,
+        "mean_PIT_left": 0.47177478058504924,
+        "mean_PIT_right": 0.47177478058504924
+      }
+    }
+  },
+  "independent_summary_strong_references": {
+    "native_student": {
+      "GP": {
+        "0": {
+          "formula_groups": 64,
+          "mean_CRPS_native": 37.01611384399688,
+          "RMSE_predictive_median_native": 64.41502042089962,
+          "coverage": {
+            "0.8": 0.8125,
+            "0.9": 0.9375,
+            "0.95": 0.953125
+          },
+          "mean_interval_width_native": {
+            "0.8": 159.90267538629664,
+            "0.9": 205.2328619774452,
+            "0.95": 244.5500385741861
+          },
+          "PIT_ECDF_deviation_descriptive": 0.23889482364384074,
+          "mean_PIT_left": 0.40610226199518945,
+          "mean_PIT_right": 0.40610226199518945
+        },
+        "4": {
+          "formula_groups": 64,
+          "mean_CRPS_native": 36.9960411347748,
+          "RMSE_predictive_median_native": 64.3995314443256,
+          "coverage": {
+            "0.8": 0.8125,
+            "0.9": 0.9375,
+            "0.95": 0.953125
+          },
+          "mean_interval_width_native": {
+            "0.8": 159.85173816694135,
+            "0.9": 205.16748476418596,
+            "0.95": 244.47213681970885
+          },
+          "PIT_ECDF_deviation_descriptive": 0.23688542528008089,
+          "mean_PIT_left": 0.4065882239230555,
+          "mean_PIT_right": 0.4065882239230555
+        },
+        "8": {
+          "formula_groups": 64,
+          "mean_CRPS_native": 36.98976328328637,
+          "RMSE_predictive_median_native": 64.37977988014592,
+          "coverage": {
+            "0.8": 0.8125,
+            "0.9": 0.9375,
+            "0.95": 0.953125
+          },
+          "mean_interval_width_native": {
+            "0.8": 158.57643115561325,
+            "0.9": 203.53064593580197,
+            "0.95": 242.5217230567072
+          },
+          "PIT_ECDF_deviation_descriptive": 0.23544378662126342,
+          "mean_PIT_left": 0.40615790825183207,
+          "mean_PIT_right": 0.40615790825183207
+        }
+      },
+      "RF": {
+        "0": {
+          "formula_groups": 64,
+          "mean_CRPS_native": 33.22607066124228,
+          "RMSE_predictive_median_native": 62.424156301867626,
+          "coverage": {
+            "0.8": 0.828125,
+            "0.9": 0.890625,
+            "0.95": 0.890625
+          },
+          "mean_interval_width_native": {
+            "0.8": 155.65534375,
+            "0.9": 180.306453125,
+            "0.95": 199.116640625
+          },
+          "PIT_ECDF_deviation_descriptive": null,
+          "mean_PIT_left": 0.4474015537278477,
+          "mean_PIT_right": 0.44784918806372664
+        },
+        "4": {
+          "formula_groups": 64,
+          "mean_CRPS_native": 32.592794866257584,
+          "RMSE_predictive_median_native": 61.16996254622239,
+          "coverage": {
+            "0.8": 0.828125,
+            "0.9": 0.890625,
+            "0.95": 0.890625
+          },
+          "mean_interval_width_native": {
+            "0.8": 155.466640625,
+            "0.9": 178.373421875,
+            "0.95": 200.068296875
+          },
+          "PIT_ECDF_deviation_descriptive": null,
+          "mean_PIT_left": 0.4439690699044337,
+          "mean_PIT_right": 0.4444421562188896
+        },
+        "8": {
+          "formula_groups": 64,
+          "mean_CRPS_native": 31.95519518170644,
+          "RMSE_predictive_median_native": 61.077351268186966,
+          "coverage": {
+            "0.8": 0.796875,
+            "0.9": 0.875,
+            "0.95": 0.890625
+          },
+          "mean_interval_width_native": {
+            "0.8": 153.21125,
+            "0.9": 176.851703125,
+            "0.95": 198.224359375
+          },
+          "PIT_ECDF_deviation_descriptive": null,
+          "mean_PIT_left": 0.4432845120848661,
+          "mean_PIT_right": 0.44369006339526357
+        }
+      }
+    },
+    "random": {
+      "GP": {
+        "0": {
+          "formula_groups": 64,
+          "mean_CRPS_native": 37.01611384399688,
+          "RMSE_predictive_median_native": 64.41502042089962,
+          "coverage": {
+            "0.8": 0.8125,
+            "0.9": 0.9375,
+            "0.95": 0.953125
+          },
+          "mean_interval_width_native": {
+            "0.8": 159.90267538629664,
+            "0.9": 205.2328619774452,
+            "0.95": 244.5500385741861
+          },
+          "PIT_ECDF_deviation_descriptive": 0.23889482364384074,
+          "mean_PIT_left": 0.40610226199518945,
+          "mean_PIT_right": 0.40610226199518945
+        },
+        "4": {
+          "formula_groups": 64,
+          "mean_CRPS_native": 37.060891107997236,
+          "RMSE_predictive_median_native": 64.54872518728826,
+          "coverage": {
+            "0.8": 0.828125,
+            "0.9": 0.953125,
+            "0.95": 0.96875
+          },
+          "mean_interval_width_native": {
+            "0.8": 177.66310105871142,
+            "0.9": 228.0281215431882,
+            "0.95": 271.71226567758083
+          },
+          "PIT_ECDF_deviation_descriptive": 0.21313275619932526,
+          "mean_PIT_left": 0.4119421618479381,
+          "mean_PIT_right": 0.4119421618479381
+        },
+        "8": {
+          "formula_groups": 64,
+          "mean_CRPS_native": 37.12172014428815,
+          "RMSE_predictive_median_native": 64.71605092489816,
+          "coverage": {
+            "0.8": 0.828125,
+            "0.9": 0.9375,
+            "0.95": 0.96875
+          },
+          "mean_interval_width_native": {
+            "0.8": 173.7671382053243,
+            "0.9": 223.02770735607842,
+            "0.95": 265.75390466968827
+          },
+          "PIT_ECDF_deviation_descriptive": 0.21293390665397094,
+          "mean_PIT_left": 0.4106815677279684,
+          "mean_PIT_right": 0.4106815677279684
+        }
+      },
+      "RF": {
+        "0": {
+          "formula_groups": 64,
+          "mean_CRPS_native": 33.22607066124228,
+          "RMSE_predictive_median_native": 62.424156301867626,
+          "coverage": {
+            "0.8": 0.828125,
+            "0.9": 0.890625,
+            "0.95": 0.890625
+          },
+          "mean_interval_width_native": {
+            "0.8": 155.65534375,
+            "0.9": 180.306453125,
+            "0.95": 199.116640625
+          },
+          "PIT_ECDF_deviation_descriptive": null,
+          "mean_PIT_left": 0.4474015537278477,
+          "mean_PIT_right": 0.44784918806372664
+        },
+        "4": {
+          "formula_groups": 64,
+          "mean_CRPS_native": 33.1725482798293,
+          "RMSE_predictive_median_native": 62.39580337738569,
+          "coverage": {
+            "0.8": 0.859375,
+            "0.9": 0.875,
+            "0.95": 0.890625
+          },
+          "mean_interval_width_native": {
+            "0.8": 162.583671875,
+            "0.9": 203.168890625,
+            "0.95": 232.5463125
+          },
+          "PIT_ECDF_deviation_descriptive": null,
+          "mean_PIT_left": 0.44741176029780766,
+          "mean_PIT_right": 0.44787095737107946
+        },
+        "8": {
+          "formula_groups": 64,
+          "mean_CRPS_native": 32.85350842798031,
+          "RMSE_predictive_median_native": 62.09383867884961,
+          "coverage": {
+            "0.8": 0.828125,
+            "0.9": 0.875,
+            "0.95": 0.890625
+          },
+          "mean_interval_width_native": {
+            "0.8": 156.36671875,
+            "0.9": 199.12084375,
+            "0.95": 231.61835937499998
+          },
+          "PIT_ECDF_deviation_descriptive": null,
+          "mean_PIT_left": 0.4432528526804955,
+          "mean_PIT_right": 0.4437212444910504
+        }
+      }
+    },
+    "gp_variance": {
+      "GP": {
+        "0": {
+          "formula_groups": 64,
+          "mean_CRPS_native": 37.01611384399688,
+          "RMSE_predictive_median_native": 64.41502042089962,
+          "coverage": {
+            "0.8": 0.8125,
+            "0.9": 0.9375,
+            "0.95": 0.953125
+          },
+          "mean_interval_width_native": {
+            "0.8": 159.90267538629664,
+            "0.9": 205.2328619774452,
+            "0.95": 244.5500385741861
+          },
+          "PIT_ECDF_deviation_descriptive": 0.23889482364384074,
+          "mean_PIT_left": 0.40610226199518945,
+          "mean_PIT_right": 0.40610226199518945
+        },
+        "4": {
+          "formula_groups": 64,
+          "mean_CRPS_native": 36.95082805167584,
+          "RMSE_predictive_median_native": 64.3497219286545,
+          "coverage": {
+            "0.8": 0.8125,
+            "0.9": 0.9375,
+            "0.95": 0.953125
+          },
+          "mean_interval_width_native": {
+            "0.8": 160.50395286587826,
+            "0.9": 206.00459326761285,
+            "0.95": 245.4696131245821
+          },
+          "PIT_ECDF_deviation_descriptive": 0.2344519279843848,
+          "mean_PIT_left": 0.40814623040097264,
+          "mean_PIT_right": 0.40814623040097264
+        },
+        "8": {
+          "formula_groups": 64,
+          "mean_CRPS_native": 36.91998429202917,
+          "RMSE_predictive_median_native": 64.30250122728198,
+          "coverage": {
+            "0.8": 0.8125,
+            "0.9": 0.9375,
+            "0.95": 0.953125
+          },
+          "mean_interval_width_native": {
+            "0.8": 157.418183338735,
+            "0.9": 202.04405095693258,
+            "0.95": 240.75033588252916
+          },
+          "PIT_ECDF_deviation_descriptive": 0.2323527676338163,
+          "mean_PIT_left": 0.407981469900865,
+          "mean_PIT_right": 0.407981469900865
+        }
+      }
+    }
+  },
+  "independent_candidate_final": 31.24151989468356,
+  "independent_best_reference_ratio": 1.0,
+  "within2percent_descriptive": true,
+  "actual_sequences": {
+    "native_student": [
+      11,
+      22,
+      12,
+      16,
+      8,
+      20,
+      0,
+      3
+    ],
+    "native_gaussian": [
+      11,
+      22,
+      12,
+      16,
+      8,
+      20,
+      0,
+      3
+    ],
+    "latent_ivr": [
+      11,
+      22,
+      12,
+      16,
+      20,
+      8,
+      0,
+      3
+    ],
+    "random": [
+      1,
+      8,
+      17,
+      10,
+      19,
+      18,
+      9,
+      22
+    ],
+    "gp_variance": [
+      11,
+      3,
+      16,
+      12,
+      15,
+      20,
+      8,
+      22
+    ],
+    "warm_openloop": [
+      11,
+      22,
+      12,
+      16,
+      8,
+      20,
+      0,
+      3
+    ]
+  },
+  "alias_paths": [
+    {
+      "left": "native_student",
+      "right": "native_gaussian",
+      "exact_sequence_equal": true,
+      "same_final_set": true
+    },
+    {
+      "left": "native_student",
+      "right": "latent_ivr",
+      "exact_sequence_equal": false,
+      "same_final_set": true
+    },
+    {
+      "left": "native_student",
+      "right": "random",
+      "exact_sequence_equal": false,
+      "same_final_set": false
+    },
+    {
+      "left": "native_student",
+      "right": "gp_variance",
+      "exact_sequence_equal": false,
+      "same_final_set": false
+    },
+    {
+      "left": "native_student",
+      "right": "warm_openloop",
+      "exact_sequence_equal": true,
+      "same_final_set": true
+    },
+    {
+      "left": "native_gaussian",
+      "right": "latent_ivr",
+      "exact_sequence_equal": false,
+      "same_final_set": true
+    },
+    {
+      "left": "native_gaussian",
+      "right": "random",
+      "exact_sequence_equal": false,
+      "same_final_set": false
+    },
+    {
+      "left": "native_gaussian",
+      "right": "gp_variance",
+      "exact_sequence_equal": false,
+      "same_final_set": false
+    },
+    {
+      "left": "native_gaussian",
+      "right": "warm_openloop",
+      "exact_sequence_equal": true,
+      "same_final_set": true
+    },
+    {
+      "left": "latent_ivr",
+      "right": "random",
+      "exact_sequence_equal": false,
+      "same_final_set": false
+    },
+    {
+      "left": "latent_ivr",
+      "right": "gp_variance",
+      "exact_sequence_equal": false,
+      "same_final_set": false
+    },
+    {
+      "left": "latent_ivr",
+      "right": "warm_openloop",
+      "exact_sequence_equal": false,
+      "same_final_set": true
+    },
+    {
+      "left": "random",
+      "right": "gp_variance",
+      "exact_sequence_equal": false,
+      "same_final_set": false
+    },
+    {
+      "left": "random",
+      "right": "warm_openloop",
+      "exact_sequence_equal": false,
+      "same_final_set": false
+    },
+    {
+      "left": "gp_variance",
+      "right": "warm_openloop",
+      "exact_sequence_equal": false,
+      "same_final_set": false
+    }
+  ],
+  "comparison_counts": {
+    "all_laws_freeze_before_terminalY": 1,
+    "truth_identity": 64,
+    "score_jid": 2112,
+    "native_target": 2112,
+    "CRPS_native": 2160,
+    "squared_error_native": 2160,
+    "predictive_median_native": 2160,
+    "PIT_left": 2160,
+    "PIT_right": 2160,
+    "PIT_midpoint": 2160,
+    "native_log_density": 1776,
+    "native_interval_lower": 6480,
+    "native_interval_upper": 6480,
+    "native_interval_width": 6480,
+    "exact_interval_event": 6480,
+    "discrete_no_density": 384,
+    "summary_formula_groups": 33,
+    "summary_mean_CRPS_native": 33,
+    "summary_RMSE_predictive_median_native": 33,
+    "summary_mean_PIT_left": 33,
+    "summary_mean_PIT_right": 33,
+    "summary_PIT_ECDF": 27,
+    "summary_exact_coverage": 99,
+    "summary_interval_width": 99,
+    "discrete_no_uniformPIT_claim": 6,
+    "paired_policy_CRPS_difference": 960,
+    "paired_active_GP": 64,
+    "paired_own_final_minus_warm": 64,
+    "candidate_final_CRPS": 1,
+    "complete_final_control_names": 1,
+    "final_control_CRPS": 10,
+    "best_reference_ratio": 1,
+    "within2percent_descriptive": 1,
+    "secondary_policy": 48,
+    "secondary_step": 48,
+    "secondary_pool_index": 48,
+    "secondary_group": 48,
+    "secondary_freeze_sha": 48,
+    "secondary_update_sha": 48,
+    "secondary_not_confirmation": 48,
+    "secondary_true_target": 48,
+    "result_actual_sequences": 1,
+    "result_path_aliases": 1,
+    "score_status": 1,
+    "score_actual_fits": 1,
+    "score_common_cell_cost": 1,
+    "score_fixed_policy_cost": 1
+  },
+  "max_absolute_errors": {
+    "native_target": 0,
+    "CRPS_native": 1.1979750524915289e-11,
+    "squared_error_native": 0,
+    "predictive_median_native": 0,
+    "PIT_left": 2.220446049250313e-16,
+    "PIT_right": 2.220446049250313e-16,
+    "PIT_midpoint": 2.220446049250313e-16,
+    "native_log_density": 4.263256414560601e-14,
+    "native_interval_lower": 5.684341886080802e-14,
+    "native_interval_upper": 5.684341886080802e-14,
+    "native_interval_width": 1.1368683772161603e-13,
+    "summary_mean_CRPS_native": 1.8118839761882555e-13,
+    "summary_RMSE_predictive_median_native": 7.105427357601002e-15,
+    "summary_mean_PIT_left": 5.551115123125783e-17,
+    "summary_mean_PIT_right": 5.551115123125783e-17,
+    "summary_PIT_ECDF": 5.551115123125783e-17,
+    "summary_exact_coverage": 0,
+    "summary_interval_width": 1.1368683772161603e-13,
+    "paired_policy_CRPS_difference": 1.1965539670200087e-11,
+    "paired_active_GP": 3.552713678800501e-14,
+    "paired_own_final_minus_warm": 8.526512829121202e-14,
+    "candidate_final_CRPS": 3.552713678800501e-15,
+    "final_control_CRPS": 7.105427357601002e-14,
+    "best_reference_ratio": 0,
+    "secondary_true_target": 0
+  },
+  "original_SUT_imports_fit_or_score_replays": 0,
+  "raw_data_or_new_material_reads": 0,
+  "scope": "saved score arithmetic for fixed152 developmentgroups; no independent source confirmation, significance or actual wet/DFT efficiency claim",
+  "actual_start_utc": "2026-11-06T06:16:59.543069+00:00",
+  "actual_end_utc": "2026-11-06T06:17:01.540880+00:00",
+  "source_sha256": "474ee5f79e587c2da212c94f3e41be5bffe913fefeb63179b25e7ed8ca8bf494",
+  "plan_sha256": "349bad28300b1dcf0b01b89057944fbb59143428d2df39a5ae0a16fdd27a301a",
+  "approval_sha256": "c8dfacb3c7e28c7c9f6cd839d16b2bd1f7d920ae80ebb40287b1a0d2fa57f3c5"
+}

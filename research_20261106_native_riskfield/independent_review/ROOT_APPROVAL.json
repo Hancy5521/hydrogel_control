@@ -1,0 +1,8 @@
+{
+  "approved": true,
+  "scope": "INDEPENDENT_NATIVE_RISKFIELD_FIXED12_ONCE",
+  "plan_sha256": "5a68ba32372bb365870acfab9b02795f6d9a5a63cebc8d771c492a851a2ec803",
+  "script_sha256": "cc7d708e1d6613624d7db313e12dfc31695d5fb877f13e63985c000c38d205dd",
+  "actual_utc": "2026-11-06T04:20:24.160557+00:00",
+  "limits": "evaluateall12savedfixedcases evenwhenfail; originalrefinementfalse preserved; no SUT/numericalproducer replay/material labels"
+}

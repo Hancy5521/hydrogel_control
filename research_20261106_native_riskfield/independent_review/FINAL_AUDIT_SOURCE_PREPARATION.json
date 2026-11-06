@@ -1,0 +1,14 @@
+{
+  "actual_utc": "2026-11-06T04:19:42.672054+00:00",
+  "kind": "pre_first_audit_execution_collection_control_revision",
+  "status": "SOURCE_READY_COLLECT_ALL_FIXED12_NUMERICAL_REFERENCE_FAILURES",
+  "previous_unexecuted_driver_sha256": "5afefc53c81a05f353de3996b6be14906bb9cdb53aa19ef41f767ef61ed2785e",
+  "previous_preparation_sha256": "62195961f4552508690e1131bd7f52765df5051e7264c258978375067c8ded5f",
+  "final_driver_sha256": "cc7d708e1d6613624d7db313e12dfc31695d5fb877f13e63985c000c38d205dd",
+  "native_reference_sha256": "bc0763d9af89b449dcc1dd0a19dce0f86c1b9d40a5a5e6d57b113b1fdd5fa927",
+  "preoutput_criteria_sha256": "bc6dd13eed25a0d0a473a4e80c7c78e8f08243715b567a2f695a480d3802ff50",
+  "reason": "Producerhasknownconvergencefailure;fullextentindependentauditmustcollecteveryfixedreferenceinsteadofabortingfirstnumericagreementfailure. Thisis auditcollectioncontrol,notfixture/model/tolerancechange.",
+  "thresholds_fixtures_mathematical_functions_changed": false,
+  "numerical_audit_execution_or_result_reads_by_this_preparation": 0,
+  "failure_semantics": "Anyreferenceagreementviolationretainall12tableandreturnFAIL_NUMERICAL_REFERENCE_AGREEMENT;originalallrefinementdiagnosticfalsepreservedseparately evenifauditPASS."
+}

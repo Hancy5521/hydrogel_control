@@ -1,0 +1,11 @@
+{
+  "approved": true,
+  "scope": "NATIVE_RISKFIELD_FIXED_MECHANISM_GATE",
+  "plan_sha256": "b7246bb23c8f757fe8606ff6a52e82cf128677bbf106158dbbabd3a0f54bd834",
+  "allowed_phases": [
+    "math_gate"
+  ],
+  "actual_utc": "2026-11-06T04:16:49.607763+00:00",
+  "static_source_review_sha256": "662c4f2f7375c9b8d135c746ee97867ff24e639bbe456710b28fb762a8568d42",
+  "limits": "12artificialcases,no materialreading/fit;no forcedrank/speedup"
+}

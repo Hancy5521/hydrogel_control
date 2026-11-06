@@ -1,0 +1,226 @@
+{
+  "actual_utc": "2026-11-06T06:19:01.939247+00:00",
+  "status": "READ_ONLY_POSTEXECUTION_REVIEW_OF_ACTUAL_PASS",
+  "actual_state_receipt": {
+    "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\active_onlyy\\independent_review\\independent_state_execution_once\\INDEPENDENT_ACTIVE_ONLYY_STATE_AUDIT.json",
+    "sha256": "b2c735778e35e128ccd672bf15589a4986f17b5d5911631abae5e99f17eab347"
+  },
+  "verified_scope": {
+    "NIG_terminal_laws": 1152,
+    "strong_reference_terminal_laws": 960,
+    "prequential_trueY_updates": 48,
+    "saved_GP_states": 13,
+    "saved_RF_states": 5,
+    "physical_pool_groups_revealed": 15,
+    "terminalY_read_by_state_audit": 0
+  },
+  "numeric_max_errors": {
+    "fixed_warm_native_first_scale_s0": 2.220446049250313e-16,
+    "fixed_warm_u_center_warm": 4.440892098500626e-16,
+    "fixed_warm_u_sample_SD_warm": 2.220446049250313e-16,
+    "fixed_warm_proxy_native_center_warm": 4.440892098500626e-16,
+    "fixed_warm_proxy_native_sample_SD_warm": 2.220446049250313e-16,
+    "response_center": 4.440892098500626e-16,
+    "response_sd": 0.0,
+    "response_s0": 0.0,
+    "reference_feature_center": 4.440892098500626e-16,
+    "reference_feature_sd": 2.220446049250313e-16,
+    "known_pool_z": 4.440892098500626e-16,
+    "known_terminal_z": 6.661338147750939e-16,
+    "warm_NIW_dimension": 0.0,
+    "warm_NIW_n": 0.0,
+    "warm_NIW_kappa": 0.0,
+    "warm_NIW_nu": 0.0,
+    "warm_NIW_mean": 7.114267775315114e-16,
+    "warm_NIW_Psi": 4.263256414560601e-14,
+    "warm_NIG_mean": 8.480086856424508e-16,
+    "warm_NIG_V": 2.7755575615628914e-17,
+    "warm_NIG_alpha": 0.0,
+    "warm_NIG_b": 0.0,
+    "checkpoint_NIG_mean": 8.881784197001252e-16,
+    "checkpoint_NIG_V": 2.7755575615628914e-17,
+    "checkpoint_NIG_alpha": 0.0,
+    "checkpoint_NIG_b": 7.105427357601002e-15,
+    "t_lambda": 0.0,
+    "t_location": 6.661338147750939e-16,
+    "t_scale": 2.220446049250313e-16,
+    "t_df": 0.0,
+    "t_native_first_scale_s0": 0.0,
+    "prequery_NIG_mean": 9.072603779358701e-16,
+    "prequery_NIG_V": 2.7755575615628914e-17,
+    "prequery_NIG_alpha": 0.0,
+    "prequery_NIG_b": 7.105427357601002e-15,
+    "acquisition_NIG_mean": 9.072603779358701e-16,
+    "acquisition_NIG_V": 2.7755575615628914e-17,
+    "acquisition_NIG_alpha": 0.0,
+    "acquisition_NIG_b": 7.105427357601002e-15,
+    "risk_df": 0.0,
+    "risk_max_abs_rho": 5.551115123125783e-17,
+    "actual_label_coordinate": 8.881784197001252e-16,
+    "after_NIG_mean": 9.072603779358701e-16,
+    "after_NIG_V": 2.7755575615628914e-17,
+    "after_NIG_alpha": 0.0,
+    "after_NIG_b": 7.105427357601002e-15,
+    "latent_IVR_values": 3.903127820947816e-18,
+    "GP_Xfit": 6.661338147750939e-16,
+    "GP_Xquery": 6.661338147750939e-16,
+    "GP_y_native": 0.0,
+    "GP_ymean": 0.0,
+    "GP_ySD": 7.105427357601002e-15,
+    "GP_normalized_y": 4.440892098500626e-16,
+    "GP_logtheta": 0.0,
+    "RF_y": 0.0,
+    "GP_native_location": 7.105427357601002e-14,
+    "GP_native_scale": 1.4210854715202004e-14,
+    "GP_variance_acquisition": 1.8189894035458565e-12
+  },
+  "alias_findings": [
+    {
+      "left": "native_student",
+      "right": "native_gaussian",
+      "same_exact_action_sequence": true,
+      "same_final_selected_set": true,
+      "budget_alias_diagnostics": [
+        {
+          "budget": 0,
+          "same_selected_set": true,
+          "max_primary_law_parameter_abs_difference": 0.0
+        },
+        {
+          "budget": 4,
+          "same_selected_set": true,
+          "max_primary_law_parameter_abs_difference": 0.0
+        },
+        {
+          "budget": 8,
+          "same_selected_set": true,
+          "max_primary_law_parameter_abs_difference": 0.0
+        }
+      ]
+    },
+    {
+      "left": "native_student",
+      "right": "latent_ivr",
+      "same_exact_action_sequence": false,
+      "same_final_selected_set": true,
+      "budget_alias_diagnostics": [
+        {
+          "budget": 0,
+          "same_selected_set": true,
+          "max_primary_law_parameter_abs_difference": 0.0
+        },
+        {
+          "budget": 4,
+          "same_selected_set": true,
+          "max_primary_law_parameter_abs_difference": 0.0
+        },
+        {
+          "budget": 8,
+          "same_selected_set": true,
+          "max_primary_law_parameter_abs_difference": 2.220446049250313e-16
+        }
+      ]
+    },
+    {
+      "left": "native_student",
+      "right": "warm_openloop",
+      "same_exact_action_sequence": true,
+      "same_final_selected_set": true,
+      "budget_alias_diagnostics": [
+        {
+          "budget": 0,
+          "same_selected_set": true,
+          "max_primary_law_parameter_abs_difference": 0.0
+        },
+        {
+          "budget": 4,
+          "same_selected_set": true,
+          "max_primary_law_parameter_abs_difference": 0.0
+        },
+        {
+          "budget": 8,
+          "same_selected_set": true,
+          "max_primary_law_parameter_abs_difference": 0.0
+        }
+      ]
+    },
+    {
+      "left": "native_gaussian",
+      "right": "latent_ivr",
+      "same_exact_action_sequence": false,
+      "same_final_selected_set": true,
+      "budget_alias_diagnostics": [
+        {
+          "budget": 0,
+          "same_selected_set": true,
+          "max_primary_law_parameter_abs_difference": 0.0
+        },
+        {
+          "budget": 4,
+          "same_selected_set": true,
+          "max_primary_law_parameter_abs_difference": 0.0
+        },
+        {
+          "budget": 8,
+          "same_selected_set": true,
+          "max_primary_law_parameter_abs_difference": 2.220446049250313e-16
+        }
+      ]
+    },
+    {
+      "left": "native_gaussian",
+      "right": "warm_openloop",
+      "same_exact_action_sequence": true,
+      "same_final_selected_set": true,
+      "budget_alias_diagnostics": [
+        {
+          "budget": 0,
+          "same_selected_set": true,
+          "max_primary_law_parameter_abs_difference": 0.0
+        },
+        {
+          "budget": 4,
+          "same_selected_set": true,
+          "max_primary_law_parameter_abs_difference": 0.0
+        },
+        {
+          "budget": 8,
+          "same_selected_set": true,
+          "max_primary_law_parameter_abs_difference": 0.0
+        }
+      ]
+    },
+    {
+      "left": "latent_ivr",
+      "right": "warm_openloop",
+      "same_exact_action_sequence": false,
+      "same_final_selected_set": true,
+      "budget_alias_diagnostics": [
+        {
+          "budget": 0,
+          "same_selected_set": true,
+          "max_primary_law_parameter_abs_difference": 0.0
+        },
+        {
+          "budget": 4,
+          "same_selected_set": true,
+          "max_primary_law_parameter_abs_difference": 0.0
+        },
+        {
+          "budget": 8,
+          "same_selected_set": true,
+          "max_primary_law_parameter_abs_difference": 2.220446049250313e-16
+        }
+      ]
+    }
+  ],
+  "scientific_interpretation": [
+    "Student-native, latent-matched-Gaussian-native and warm-openloop have identical action sequences and exact terminal laws at0/4/8.",
+    "Latent IVR differs in within-budget ordering but has same selected sets at4/8; max final law-parameter difference2.220446049250313e-16.",
+    "True-label feedback updates prediction; this cohort does not establish extra acquisition benefit from outcomes, finite-df modeling, or native-loss readout over these controls.",
+    "Known-context conditional NIG affine VOI has a common outcome-dependent scale factor; its action ranking is outcome independent conditional on selected contexts. Native nonlinear readout can depend on posterior mean weights; actual distinct useful choices require evidence.",
+    "All source guards, same-information controls, exact weights and prequential timing passed; identical-policy paths are a scientific limitation, not an arithmetic failure."
+  ],
+  "numeric_executions_by_this_postreview": 0,
+  "next": "Root-approved independent nativeCDF/energy score audit under registered349bad... plan; preserve all current results without fit/reselection."
+}

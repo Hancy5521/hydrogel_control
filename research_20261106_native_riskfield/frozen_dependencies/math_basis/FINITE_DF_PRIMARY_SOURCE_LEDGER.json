@@ -1,0 +1,17 @@
+{
+  "actual_utc": "2026-11-06T03:03:05.111478+00:00",
+  "kind": "selected_primary_conditional_student_t_reading",
+  "url": "https://arxiv.org/pdf/1604.00561v1",
+  "title": "On the Conditional Distribution of the Multivariate t Distribution",
+  "author": "Peng Ding",
+  "version": "arXiv1604.00561v1,2016-04-02",
+  "read_depth": "selectedsections2–3,ConclusionOne pp2–4;notclaimfull7pagepapernewlyread",
+  "license": "notestablished;noPDFdownloadorredistribution",
+  "new_search_queries": 0,
+  "direct_primary_open": 1,
+  "related_previously_read_source": "oldrun root NIW conditionalmath ledger;thisboundedrevisitforzero-correlationconditional-scale interpretation",
+  "proofnote_file": "H:\\polymer_completion_public\\research\\reported_feedback_20261106T024504445715Z\\math_design\\FINITE_DF_SCALE_FEEDBACK_VALUE_PROOF_ZH.txt",
+  "proofnote_sha256": "22bf39a3fb09ba7887bab0603d375843e77647b6ce7fe4dd4db507aaf15c5b74",
+  "claims": "classicStudenttconditional+CRPSlawtotalvariance taskadaptation,notnewtheorem/algorithm",
+  "new_fit_material_data_reads_numerical_executions": 0
+}

@@ -1,0 +1,12 @@
+{
+  "status": "REPORT_PREFLIGHT_REJECTION_RETAINED",
+  "recorded_actual_utc": "2026-11-06T06:18:36.719609+00:00",
+  "failed_report_source_sha256": "06b1339bfbe742ad0b95b32c2ce9eb05fc068c1a72ffea11a9a51f2a03b651da",
+  "actual_action": "Read-only report renderer invoked; failed at input audit binding assertion before output directory creation",
+  "reason": "Template assumed independent receipt directly contained resultsSHA; actual receipt binds auditplanSHA, which in turn pins score_resultSHA.",
+  "error": "AssertionError: Audit must bind the actual completed resultSHA",
+  "final_output_created": false,
+  "science_source_or_results_changed": false,
+  "model_fit_query_or_CDF_scoring_reexecuted": false,
+  "repair": "Validate receipt.plan_sha256 against explicit independent scoreplan, then verify its score_result path/hash against actual input; preserve full binding, no weakened audit condition."
+}

@@ -1,0 +1,28 @@
+{
+  "actual_utc": "2026-11-06T05:47:39.762737+00:00",
+  "status": "PASS_INDEPENDENT_READONLY_ACTIVE152_ROLE_SELECTION_REVIEW",
+  "role_sha256": "2dbf2f4b3f7956ccbe91f454092d80e76d8b95ebb2a73c427d548899543da7dd",
+  "selection_plan_sha256": "9a2241150c3be526c5b96bad1ecce21c6f72d1f1860783d94aed40a5d6390d29",
+  "source_sha256": "42397764dd879ae7c4d8f56e06b708e14ff74572c2767b804c3f9e90f987a946",
+  "all_six_input_sha256": {
+    "source_contract": "2637532951c1e6b86ee8bdaa0cbcdb95a48982509de14770f87487e1b55a241d",
+    "eligible_metadata": "165d48bc29f771e29f7e86a6bea1e57286eb81b49f29120905ba4ff4739660e4",
+    "legacy_roles": "ea9120cf04bc78c8292be8ebba3eab6f9b1b0f830574b3e1a803386105451de8",
+    "phase1_roles": "0bc81d0400a4076c854af11e654ca3ca9bcbceb249f2ee6c26d356c53ceae9c0",
+    "phase2_roles": "aee4d2aa78f7522eae8aba2b8ac56e186b3c5d81059a6d3a5b44b16d1042350b",
+    "completed_feedback_roles": "4c972bfc180841eb669077e6a772182bc76cb3d5bd5f69589096efa1c12724b1"
+  },
+  "original_eligible_groups": 8842,
+  "prior_whole_groups_excluded": 776,
+  "new_groups": {
+    "warm": 64,
+    "pool": 24,
+    "terminal_development": 64
+  },
+  "remaining_unselected": 7914,
+  "known_eligible_sibling_rows_reserved": 181,
+  "minimum_eligible_representatives_hash_order_and_siblings_recomputed_without_selector_import": true,
+  "selector_main_or_science_called": false,
+  "raw_gzip_open_hash_or_new_native_property_reads": 0,
+  "limitation": "Metadataonlyreview,not authorization tofit/query/score. Wholecomponents consumeddevelopment. Counterfactualpolicies reusepool andcannotmultiplymaterialN."
+}

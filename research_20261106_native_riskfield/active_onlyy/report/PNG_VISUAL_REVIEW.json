@@ -1,0 +1,8 @@
+{
+  "status": "PASS_SCIENTIFIC_PNG_VISUAL_REVIEW",
+  "actual_utc": "2026-11-06T06:20:45.393043+00:00",
+  "image_sha256": "8e48df6f9a792314a7d52c2552708c83363b0808573ac463cff52902082b3148",
+  "inspection": "view_image returned actual PNG. Both panels, legends, ticks, cost labels, shared-pool/development warning and duplicate-policy annotation visually readable. Curves use actual unshifted budgets and retain overlap; no misleading offset or winner removal.",
+  "root_view_still_available": true,
+  "clarification": "IVR final law differs from exact stored native law by at most2.22e-16 per independent state audit; coincidence annotation refers to same analytical posterior/display precision, not byte identity. Exact sequence/law aliases apply to native_student/native_gaussian/warm_openloop."
+}

@@ -1,0 +1,217 @@
+{
+  "actual_utc": "2026-11-05T09:51:54.053160+00:00",
+  "artifact_kind": "New-direction public material benchmark admission; not independent confirmation of hydrogel paper",
+  "decision": "TWO_TABLES_ADMITTED_FOR_A_PREREGISTERED_OFFLINE_PILOT_ONLY",
+  "parent_run": "20261105T093229687251Z",
+  "scientific_purpose": "Test separately whether a verified repair-and-expansion controller improves acquisition/completion per revealed original property information, beyond random/uncertainty/self-training/standard strong tabular baselines.",
+  "manifest": "DATA_MANIFEST.json",
+  "manifest_sha256": "5000ecb55aefae7259467b5cb23a570ae1762bce4333155cf411cbfb0aaa4343",
+  "datasets": [
+    {
+      "id": "ucsb_thermoelectrics",
+      "recommended_role": "Small experimental transport-completion and discovery pilot",
+      "primary_target_fields": {
+        "rho (ohm.cm)": "electrical resistivity, 1093 finite positive",
+        "S [muV/K]": "signed Seebeck coefficient,1093 finite",
+        "kappa [W/mK]": "thermal conductivity,714 finite positive/379 native missing"
+      },
+      "condition_inputs": [
+        "composition",
+        "T [K]",
+        "crystallinity",
+        "synthesis"
+      ],
+      "condition_identity_gaps": {
+        "temperature_missing_rows": 11,
+        "source_missing_rows": 7,
+        "source_citations": 108,
+        "preparation_or_sample_UUID_available": false
+      },
+      "strict_input_isolation": [
+        "sigma [S/cm]",
+        "PF [W/mK^2]",
+        "zT"
+      ],
+      "isolation_reason": "sigma=1/rho; PF can reveal|S| fromrho, and PF*T/zT can revealkappa. Exclude these derived fields from BOTH agent and baselines for the primary predictive task; a separate algebraic consistency demonstration is not an independent verification.",
+      "native_group_options": {
+        "simple_normalized_compositions": 282,
+        "source_or_composition_connected_components": {
+          "n_components": 74,
+          "largest_component_row_counts": [
+            138,
+            127,
+            39,
+            36,
+            36,
+            33,
+            32,
+            28,
+            24,
+            23
+          ],
+          "link_tokens": [
+            "src",
+            "normalized_composition"
+          ],
+          "meaning": "Conservative metadata linkage only, not certified independent physical batches."
+        },
+        "source_only_components_including7unlinked_unknown_source_rows": {
+          "n_components": 115,
+          "largest_component_row_counts": [
+            40,
+            32,
+            32,
+            28,
+            27,
+            24,
+            24,
+            24,
+            20,
+            20
+          ],
+          "link_tokens": [
+            "src"
+          ],
+          "meaning": "Conservative metadata linkage only, not certified independent physical batches."
+        }
+      },
+      "group_limit": "74components are conservative metadata linkages, not certified new physical batches; unrecorded specimen overlap remains unknown. Missing-source rows must not become seven independent papers by default.",
+      "target_transform_not_selected": "Positive resistivity/thermal conductivity permit log if preregistered; signedS must preserve sign. Temperature is a condition, not a target to synthesize.",
+      "original_values_remain_unmodified": true
+    },
+    {
+      "id": "jarvis_dft_3d",
+      "recommended_role": "Larger naturally incomplete computational solid-state pilot",
+      "primary_candidate_target_fields": {
+        "e_form": "formation energy,eV/atom,25923finite",
+        "gap opt": "OptB88vdW gap,eV,23455finite",
+        "bulk modulus": "VRH elastic modulus,11032finite",
+        "shear modulus": "VRH elastic modulus,11032finite"
+      },
+      "units_note": "Moduli are treated as GPa in JARVIS elastic documentation; the Matminer column descriptor itself omits explicit unit text, so retain this attribution rather than inventing wet units.",
+      "identity": {
+        "jid_unique": 25923,
+        "mpid_unique": 25923,
+        "normalized_formula_groups": 20088,
+        "conservative_linkage": {
+          "n_components": 20088,
+          "largest_component_row_counts": [
+            65,
+            53,
+            27,
+            26,
+            25,
+            23,
+            21,
+            20,
+            20,
+            19
+          ],
+          "link_tokens": [
+            "jid",
+            "mpid",
+            "normalized_composition"
+          ],
+          "meaning": "Conservative metadata linkage only, not certified independent physical batches."
+        }
+      },
+      "native_core_target_row_availability": {
+        "1": 2456,
+        "2": 12435,
+        "3": 12,
+        "4": 11020
+      },
+      "same_run_bundle_dependencies": [
+        "K andG share elastic tensor calculations; they are separate responses but not separate newDFTjobs",
+        "dielectric x/y/z share optical/response calculations",
+        "gap opt vsTBmBJ are different computational fidelities, not wet replicate truths"
+      ],
+      "native_nonpositive_elastic_counts": {
+        "bulk_negative": 4,
+        "shear_negative": 177
+      },
+      "elastic_sign_policy": "Retain original source values; negative computed moduli may reflect instability or source issues, and cannot silently be made positive/logged/removed after performance. Fix target validity/transform policy before fitting.",
+      "candidate_pool_expansion": "Only original material IDs with originally available hidden labels are a scored offline oracle. Hypothetical generated structures without a new independent calculation cannot yield verified discovered materials.",
+      "known_structure_assumption": "Using relaxedstructure as free input does not account for its original DFT cost. Composition-only features are a simpler initial budget-consistent option.",
+      "version_limit": "Pinned old processed25923-table is intentionally a stable benchmark, not the latest full JARVIS76k source."
+    }
+  ],
+  "not_yet_executed": [
+    "predictor fitting",
+    "imputation or active-learning oracle actions",
+    "candidate generation",
+    "hidden-target scoring",
+    "learned verification",
+    "new DFT calculations",
+    "wet laboratory tests"
+  ],
+  "all_old_MLST_data_preserved_and_unopened": true,
+  "actual_download_bytes": 30712466,
+  "actual_search_scope": {
+    "web_queries": [
+      "site.github.com materialsproject matbench experimental glass steel yield data multi property",
+      "site.github.com usnistgov jarvis dft_3d json data download figshare",
+      "site.github.com materials data experimental multi property superconductors NIMS dataset",
+      "\"ucsb_thermoelectrics\" \"figshare\"",
+      "\"jarvis_dft_3d.json.gz\" figshare",
+      "\"UCSB Thermoelectrics Database\" license",
+      "site.jarvis.nist.gov \"bulk modulus\" \"GPa\"",
+      "site:jarvis-tools.readthedocs.io \"bulk_modulus_kv\" \"GPa\"",
+      "site:jarvis.nist.gov \"shear modulus\""
+    ],
+    "query_count": 9,
+    "query_actual_UTC": "Exact child browser per-query UTC not captured; before this ledger timestamp in the current manual run. Download/metadata HTTP UTC captured in individual receipts.",
+    "bounded_platforms_relied_on": [
+      "official Matminer documentation and GitHub",
+      "original Figshare metadata and data links",
+      "official JARVIS documentation/GitHub",
+      "official PMLR MADE record and linked author GitHub"
+    ],
+    "nonprimary_search_results_used_as_evidence": false,
+    "not_an_exhaustive_dataset_survey": true
+  },
+  "source_access_failures_or_corrections": [
+    "Old matminer/datasets metadata and directory paths404 because current repo uses src/matminer/datasets; root directory read identified src, then one valid metadata retrieval. No absence claim from404.",
+    "materialsproject/matminer guessed repository404, not relied on.",
+    "Two exact underscored Figshare title searches returned0; one catalog title search and one UCSB search identified exact matching file articles.",
+    "Browser Figshare JSON endpoint inaccessible through web tool; direct official JSON GET succeeded and was archived.",
+    "PMC7067065 returned recaptcha, not bypassed or claimed full paper read.",
+    "Public S3 signed redirect query was removed from local receipts; stableURLs/hash retained. No user credentials or auth secrets read."
+  ],
+  "native_vs_imposed_missingness": "Both tables contain genuine source NaNs. Only finite original cells may be hidden/revealed for scored offline experiments; genuine missing cells have no reference truth and cannot be counted as validated completions. A proposal that inserts generated labels cannot enlarge measured-oracle counts.",
+  "validation_boundary": "Structural/rule consistency is not an independent property measurement. Density/model predictions or correlated outputs cannot certify their own truth. All arms need identical allowed information, hidden-cell or bundled-query budgets, split policy and stop criteria.",
+  "cross_material_claim_boundary": "UCSB experimental transport and JARVIS computed solid-state properties are two different environments. Running both supports task-family breadth only; cross-domain generalization requires fixed policy/hyperparameters and explicit unseen-chemistry or heldout-environment design. Different sources do not by themselves certify transfer.",
+  "MADE": "MADE_READ_SCOPE.json",
+  "MADE_conclusion": "MIT official ICML2026 environment is a close comparator. Its ORB/MACE/analytic oracles are ML potentials/LennardJones, not independent real measurements; default MP/API or model setup not executed.",
+  "source_schema_audit": "SCHEMA_AND_IDENTITY_AUDIT.json",
+  "source_schema_audit_sha256": "7cf450e69af894463a548705944f457ba184e209b2cf0c2d99ae3639f1bb5a17",
+  "physical_sign_audit": "PHYSICAL_SIGN_COUNTS.json",
+  "baseline_feasibility": {
+    "minimum_predictive": [
+      "per-property Ridge or Gaussian linear baseline with training-only scaling",
+      "ExtraTrees/RandomForest composition+known-properties baseline",
+      "IterativeImputer or graph-feature propagation with exactly matched observed cells"
+    ],
+    "minimum_acquisition": [
+      "random acquisition",
+      "uncertainty-only acquisition",
+      "diversity/farthest-point or greedy information selection",
+      "ordinary active learning without pseudo-label feedback",
+      "self-training with a fixed external-label retention policy"
+    ],
+    "negative_controls": [
+      "closed-loop with shuffled catalytic edge weights but same oracle budget",
+      "pseudo-label-only recycling without external truth",
+      "same query schedule with catalytic update disabled",
+      "repair-only vs expansion-only vs combined under equal total cost"
+    ],
+    "efficacy_not_yet_known": true
+  },
+  "first_pilot_requirements": [
+    "Register true unit/group mapping, seed list, target roles, masks, native missingness support, split and all baselines before fitting.",
+    "Freeze oracle unit: property-cell disclosure is an offline abstraction; same elastic tensor/rule-derived values should be additionally assessed with bundled-information cost.",
+    "Hold final material groups inaccessible to agent/controller fitting, use separate acquisition pool, development selection and final evaluation.",
+    "No performance-driven dropping of negative elastic values or missing source/temperature records; eligibility or missingness handling must be fixed first.",
+    "Report error/discovery gain per original oracle budget and independent group, negative results and run-to-run uncertainty; do not claim actual lab or DFT-walltime savings."
+  ]
+}

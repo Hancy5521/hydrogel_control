@@ -1,0 +1,29 @@
+{
+  "status": "PASS_STATIC_METADATA_SOURCE_FINAL_REVIEW_NO_SELECTION",
+  "actual_utc": "2026-11-06T05:38:02.911747+00:00",
+  "source_sha256": "42397764dd879ae7c4d8f56e06b708e14ff74572c2767b804c3f9e90f987a946",
+  "template_sha256": "aafdcdb8076962970fb60ed6263831c1402467217b19fe239f036741b79303a4",
+  "checks": [
+    "Exactrootprefix native_riskfield_active_onlyY_v1|",
+    "Original8842metadata components+11020rows; sixmetadataJSON inputs pinned andunchanged",
+    "Disjoint40+256+256+224 fullcomponentexclusions checked in source;776excluded",
+    "Fixedhashsort first152,cut64/88 -> warm64/pool24/terminal64;7914remaining",
+    "Percomponent minimaleligible rawrow/allknowneligible siblings; unlistedineligible siblingsnotinvented",
+    "Poolsequence/contextsetup368 andperpolicy8onlyY areprospective,rolesauthorize no numericread",
+    "Metadata selection requires REGISTERED actualUTC+exactscope/source/planapproval, outputnewdir,failureretained",
+    "Onlystdlib, no rawfile/gzip/modelimport/network",
+    "Source/template untouched frombeforeuserpause; noselectiondir yet"
+  ],
+  "registered_fields_for_root": {
+    "status": "REGISTERED",
+    "registered_actual_utc": "actualUTCbeforeexec,timezoneaware+00:00",
+    "source_sha256": "42397764dd879ae7c4d8f56e06b708e14ff74572c2767b804c3f9e90f987a946"
+  },
+  "approval_scope": "METADATA_ONLY_NATIVE_RISKFIELD_ONLYY_SELECTION",
+  "metadata_numeric_reads_selection_and_queries": 0,
+  "limits": [
+    "Static review byselectorpreparer, notthirdpartynumericalvalidation",
+    "Fullsourcecomponent construction reused fromparentidentityregistry; not rebuilt fromrawproperties",
+    "Deterministichashholdoutgroup isdevelopmentrole, notautomaticexchangeability/batchindependenceguarantee"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "approved": true,
+  "scope": "METADATA_ONLY_NATIVE_RISKFIELD_ONLYY_SELECTION",
+  "plan_sha256": "9a2241150c3be526c5b96bad1ecce21c6f72d1f1860783d94aed40a5d6390d29",
+  "source_sha256": "42397764dd879ae7c4d8f56e06b708e14ff74572c2767b804c3f9e90f987a946",
+  "actual_utc": "2026-11-06T05:38:44.079953+00:00",
+  "scope_limits": "identities only,152wholecomponents;no nativevalue/fit/score authorisation",
+  "static_review_sha256": "bd91e7b5fa791212cc53460c4eaca98499fe8d56f269e726c7ccb74b08bdbc76"
+}

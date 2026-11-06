@@ -1,0 +1,50 @@
+有限自由度下“零相关但验证仍有价值”的精确回归分析
+
+这是同一已知branch内Normal–InverseGamma后验的数学说明，尚无新的数值或材料实验。它不改变当前完整panel研究，不把Bayesian VOI、尺度混合或Student-t条件化称为新发明。它解释为什么两个静态边际预测几乎一样的模型，仍可能给验证动作不同的价值。
+
+一、共享同一回归后验的两个新材料
+当前同branch参数posterior为w|sigma2~N(m,sigma2*V)，sigma2~IG(alpha,b)，令nu=2alpha，c=b/alpha。不同原生材料的剩余误差在该模型下条件独立。已知两个完整context，phiq=(1,xq)，phit=(1,xt)。两个未来标量响应Zq、Yt的joint predictive是二元Student-t：
+  mean=(phiq*m,phit*m)，df=nu，
+  scale=c*[[1+phiq*V*phiq^T, phiq*V*phit^T],
+           [phit*V*phiq^T, 1+phit*V*phit^T]]。
+不同材料共享同一回归权重和variance后验，而不共享同一个残差噪声样本。此处的矩阵为t scale，不是covariance；nu>2时Pearson相关与scale相关相同：
+  rho=(phiq*V*phit^T)/sqrt((1+phiq*V*phiq^T)*(1+phit*V*phit^T))。
+
+二、零rho不代表独立
+标准化Zq得到z=(Zq-muq)/sq；由multivariate-t条件化公式，
+  Yt|Zq=z ~ t_(nu+1)(mut+rho*st*z,
+                    scale=st*sqrt((nu+z^2)/(nu+1)*(1-rho^2)))。
+即使rho=0，条件location不变，scale仍随|z|变化。因此有限nu下Yt和Zq不独立。极端验证结果更新了共享残差尺度的不确定性；没有线性相关也可以改变目标分布。
+若用同均值同covariance的joint Gaussian且rho=0，则两变量独立，验证这个query对该目标无信息。这个Gaussian是一个有明确差别的机制对照，不是证明新算法胜过完整Bayesian VOI的强基线。
+
+三、原单位CRPS的Bayes价值恒等式
+令目标原生变量Yraw=h(U)，h为固定warm变换的严格递增逆映射。给定当前数据D与已见context，未来query Z是真实新cell；不把预测当query观测。模型内最优CRPS预测是当前/条件CDF本身。
+对任意具有有限一阶绝对矩的CDF F，R(F)=E[CRPS(F,Y)]=integral F(y)*(1-F(y))dy。
+令F_Z(y)=P(Yraw<=y|D,Z)，由tower有E_Z F_Z(y)=F(y)。因此
+  DeltaR=R(F)-E_Z R(F_Z)
+        =integral Var_Z[F_Z(y)]dy >=0。
+这个非负性是在当前Bayesian模型下的期望价值；模型失配时真实材料评价可下降，不能用此恒等式掩盖负结果。
+
+若U为标准化latent坐标，则h(u)=s0*g(center+SD*u)，故
+  DeltaR=s0*SD*integral Var_Z[F_(U|Z)(u|Z)]*g'(center+SD*u)du。
+若u直接表示affine之前的YJ坐标，才可简写为s0*integral Var_Z[F_(U|Z)(u|Z)]*g'(u)du。不能漏掉SD或错用g'坐标。
+查询的原生YJ值与latent值之间是一一可逆映射，所以条件信息相同；非线性变换改变原单位损失的权重，不凭空增加query信息。
+
+四、rho=0时何时严格大于零
+要求有限nu、sq>0、st>0、query可非退化地取得不同|z|，并且h严格递增且目标原单位一阶绝对矩有限。在rho=0条件下，对任一u!=mut，conditional CDF随|z|非平凡变化；在一个正长度区间内Var_Z F_(U|Z)(u)>0。若h'在该区间为正，则积分严格大于零。
+本项目YJ半次逆映射的导数处处为正，正尾二次增长。nu>2足以使其原生一阶绝对矩有限；当前branch prior及warm后验nu>=6满足此条件。这个结果不是要求每次实际验证都提高CRPS，只保证模型内事前平均值为正。
+
+五、Gaussian极限
+在muq,mut,sq,st固定、rho=0且nu趋于无穷的标准极限下，随机尺度集中，二元t趋于独立joint Gaussian，DeltaR趋于0。对非线性原生损失需要相应一致可积条件，不能只凭点态CDF收敛交换无穷积分。本项目二次尾YJ在nu有大于4的统一下界且scale固定时具有统一可控二阶原生矩，可给出所需的尾控制。若scale或rho随nu以未规定方式改变，不能无条件沿用该极限结论。
+
+六、必须保留的适用范围
+1. 只对同一回归posterior成立。当前零gap/nonzero-gap两branch独立，且branch由已知原生G指定；不同branch query与target的回归参数独立，crossbranch预测联合是两个t的乘积，不是一个二元t，crossbranch该项验证价值为0。Beta在knownbranch预测中抵消，不能拿它强行桥接。
+2. 必须是不同、尚未观测的canonical cell。重复读同一物理cell不产生新的独立残差，也不增加自由度或费用。兄弟材料的真实残差相关性若存在，需要另行建模；整formula分组只是控制泄漏，不证明iid模型为真。
+3. X全部已见、branch已知、合法query只依赖已知context和已见历史时，可以精确NIG更新；unknownbranch/缺X/任意多目标部分标签不能自动套用。
+4. “零相关也有价值”与“静态边际CRPS近Gaussian”都是机制动机，不是材料效果，也不单独构成算法原创。
+5. 若研究计算贡献或新query策略，强对照必须包含同posterior、同真实信息、同动作和费用的完整Bayesian myopic VOI/适当规划与优化精确读出，不能只打败忽略scale学习的Gaussian对照。
+
+七、一个清晰的后续检查方向
+先完成现有完整panel材料pilot。随后可以单独实际UTC登记一项有限范围数值门：固定一个合法NIG posterior与一对使phiq*V*phit^T=0的不同context，核对二元t条件密度/真query后NIG更新相等，独立两种原单位CRPS积分给出严格正的模型内VOI；nu增大时该值趋近Gaussian0。包括不同branch独立对照。该门不需新材料数据，但尚未登记或执行；不将其命名为新算法。
+
+原始来源：Peng Ding (2016), On the Conditional Distribution of the Multivariate t Distribution, arXiv:1604.00561v1，已选读§2–3及Conclusion One pp2–4。链接：https://arxiv.org/pdf/1604.00561v1。它支持条件t自由度和scale公式；CRPS tower恒等式和本项目任务边界在此按定义自行推导，未声称其发表过本项目全部结论。

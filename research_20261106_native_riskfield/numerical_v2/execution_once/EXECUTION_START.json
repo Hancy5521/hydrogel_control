@@ -1,0 +1,15 @@
+{
+  "actual_utc": "2026-11-06T05:39:08.382189+00:00",
+  "source_sha256": {
+    "posterior_update.py": "625c6f1b72aa838097502c08292f4dbc5cb5612012725ca1502c36adc3cb254e",
+    "activefield.py": "c8a650feb965880ac8c8be13c1bd7ac5c8cf16d8264dbe303d7f344aae5d98d4",
+    "run_gate.py": "2d15e71db58780e6b8ae1833965999306cb47a1dd039dded9abcaf53d148690d"
+  },
+  "plan_sha256": "f66d9a097ebee4c7d706e95e8aa1666bf6569fb58b85bd76e3d408b5a2a973cf",
+  "approval_sha256": "17a339324aaec7c525f5dd33801674d573336c7ffbc13ea802ca28b894a139a3",
+  "libraries": {
+    "numpy": "2.1.3",
+    "scipy": "1.15.3"
+  },
+  "new_real_labels_fits_or_agent_calls": 0
+}

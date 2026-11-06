@@ -1,0 +1,13 @@
+{
+  "actual_utc": "2026-11-06T06:14:30.892755+00:00",
+  "status": "SOURCE_PREPARED_BEFORE_TERMINAL_SCORE_VALUES",
+  "source": {
+    "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\active_onlyy\\independent_review\\audit_saved_scores.py",
+    "sha256": "474ee5f79e587c2da212c94f3e41be5bffe913fefeb63179b25e7ed8ca8bf494"
+  },
+  "numerical_execution": 0,
+  "SUT_imports": 0,
+  "all_scores": 2160,
+  "original_tolerances": "same as prior independent nativeCDF score audits:CRPS2e-6+2e-8rel;PIT2e-12;interval2e-7+2e-9rel;density2e-9+2e-11rel;coverage exact",
+  "next": "after root actual terminal scoring, bind actual results/truth/start/state receipt to a registered independent plan; root alone executes"
+}

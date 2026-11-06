@@ -1,0 +1,42 @@
+{
+  "status": "PASS_POST_SELECTION_METADATA_ROLE_AND_IDENTITY_CHECK",
+  "actual_utc": "2026-11-06T05:50:40.515388+00:00",
+  "role_sha256": "2dbf2f4b3f7956ccbe91f454092d80e76d8b95ebb2a73c427d548899543da7dd",
+  "source_sha256": "42397764dd879ae7c4d8f56e06b708e14ff74572c2767b804c3f9e90f987a946",
+  "source_input_hashes_checked": 6,
+  "component_counts": {
+    "eligible": 8842,
+    "prior_consumed": 776,
+    "new152": 152,
+    "remaining": 7914
+  },
+  "representative_counts": {
+    "warm": 64,
+    "pool": 24,
+    "terminal": 64
+  },
+  "known_eligible_siblings_selected": 181,
+  "canonical_identity_checks": [
+    "normalized composition recomputed from metadata composition amounts using exact rational fractions",
+    "all eligible rows sharing jid/mpid/normalized composition map to a single registered component",
+    "all prior parent role component sets rederived from pinned metadata roles; counts40/256/256/224 pairwise disjoint",
+    "new role hash order rederived from prefix and component IDs, independent of selector execution",
+    "minimal raw index representative and complete eligible sibling enumeration verified for every selected group"
+  ],
+  "scope_limits": [
+    "Reviewer also prepared selector; this is independently written metadata consistency logic, not an independent third party audit of selector originality",
+    "No native numeric values/raw gzip/source hash opened",
+    "Eligible-only metadata cannot enumerate unlisted ineligible siblings; entire registered source component remains reserved",
+    "New152 are development groups, not independent confirmation",
+    "Counterfactual policies reuse same24 pool; N is152, not policy trajectories"
+  ],
+  "planned_setup_cells": {
+    "warm": 192,
+    "pool_AG": 48,
+    "terminal_AG": 128,
+    "total": 368
+  },
+  "future_onlyY_queries_per_policy": 8,
+  "native_values_read": 0,
+  "model_execution": false
+}

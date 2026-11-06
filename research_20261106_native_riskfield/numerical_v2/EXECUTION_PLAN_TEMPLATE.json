@@ -1,0 +1,108 @@
+{
+  "kind": "native_riskfield_fixed_mechanism_gate",
+  "status": "TEMPLATE",
+  "registered_actual_utc": null,
+  "source_sha256": {
+    "posterior_update.py": "625c6f1b72aa838097502c08292f4dbc5cb5612012725ca1502c36adc3cb254e",
+    "activefield.py": "c8a650feb965880ac8c8be13c1bd7ac5c8cf16d8264dbe303d7f344aae5d98d4",
+    "run_gate.py": "2d15e71db58780e6b8ae1833965999306cb47a1dd039dded9abcaf53d148690d"
+  },
+  "configuration": {
+    "version": "fixed_native_NIG_riskfield_gate_v2_angle_query",
+    "NIG": {
+      "mean": [
+        0.0,
+        1.0
+      ],
+      "V": [
+        [
+          0.2,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "alpha": 3.0,
+      "b": 1.5
+    },
+    "terminal_contexts": {
+      "tplus": 1.0,
+      "tminus": -1.0
+    },
+    "query_contexts": {
+      "qplus": 1.0,
+      "qminus": -1.1
+    },
+    "s0": 2.0,
+    "mechanism_cases": 8,
+    "extra_native_matched_Gaussian_cases": 4,
+    "levels": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "outer_Lv": 32.0,
+    "query_Lz": 64.0,
+    "query_weights": "originaltdensityinatanThetaInterval, no renormalization",
+    "v_split": "0and-mu/scale insidefixedbounds",
+    "Gaussian_kernel": "OwenT1D, positivePlackett-angle fallback when negativeorrelativecancellation",
+    "negative_kernel_hard_clamp": false,
+    "final_refinement_abs_diagnostic": 2e-05,
+    "analytic_tail_bound_max": 0.0001,
+    "independent_agreement_abs": 0.0002,
+    "independent_agreement_rel": 2e-05,
+    "algebra_abs": 2e-10,
+    "algebra_rel": 2e-10,
+    "NIG_conditional_z_probes": [
+      -1.0,
+      0.0,
+      1.0
+    ],
+    "rho_bound_probe_existing_case_pairs": [
+      [
+        0,
+        5
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        0,
+        4
+      ]
+    ],
+    "libraries": {
+      "numpy": "2.1.3",
+      "scipy": "1.15.3"
+    },
+    "no_new_material_source_or_fit_or_agent": true,
+    "rank_reversal_or_speedup_required": false,
+    "failure_policy": "retainallfixedcases, no prior/context sweep; separate registered numerical repair if needed"
+  },
+  "root_scope": {
+    "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\ROOT_MATH_SCOPE_BEFORE_EVALUATIONS.json",
+    "sha256": "1a70a1e6d7f23ee847032fc314046ac7144a17d1a22a5e1540202ac819a703bf"
+  },
+  "repair_inputs": {
+    "V1_execution_complete": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\execution_once\\EXECUTION_COMPLETE.json",
+      "sha256": "c697a43d6a16c732a3abf3aed0e3bc8b2012ce963d68b7711272b8ccb075b706"
+    },
+    "V1_independent_audit": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\independent_review\\execution_once\\INDEPENDENT_NATIVE_RISKFIELD_FIXED12_AUDIT.json",
+      "sha256": "0e2cf2e3787f98fd500d3311eea959f0eb6360926a78f9efbda0544df5649ca0"
+    },
+    "coordinate_change_spec": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\numerical_v2\\CHANGE_SPEC_BEFORE_EXECUTION.json",
+      "sha256": "d35bf51c21731ac5ec86e8a1f7c2fcf31ddfaaba0576e6a3ca66b2ed9342f6a5"
+    }
+  }
+}

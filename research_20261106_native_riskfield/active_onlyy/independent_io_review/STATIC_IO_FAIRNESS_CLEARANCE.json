@@ -1,0 +1,121 @@
+{
+  "status": "PASS_STATIC_IO_AND_SCIENTIFIC_FAIRNESS_REVIEW_CLEAR_FOR_REGISTERED_FORECAST",
+  "actual_utc": "2026-11-06T06:07:06.951722+00:00",
+  "reviewer": "/root/results_report",
+  "review_kind": "Read-only source/AST/metadata/pin review; independent of core code producer, not a numerical posterior/score audit",
+  "plan_sha256": "2a9eccf508cd849d0397e7984037e6a70d99e2185bbb37397fcb001ee914d1fd",
+  "source_freeze_sha256": "3e810e4c655c8f51b6f05e77f37e56d4ebca7b6792b6b9eb1dca380357a594e1",
+  "source_sha256": {
+    "posterior_update.py": "625c6f1b72aa838097502c08292f4dbc5cb5612012725ca1502c36adc3cb254e",
+    "risk_readout.py": "fd726e343cfaa3b09cf8fd9e66bf6bc3bdafa2b644205505d2d6ad04f9139ebe",
+    "reference_models.py": "8d5af2ca70be9983b755bcfb2d833ee0cd33feb6389f84552719ed7beaa2e2f7",
+    "data_io.py": "d695aaa81f3f1f3db3a9717dbdbc517b7d55b445775e7c0858f24a21aa4b1b6e",
+    "run_active.py": "96f2ae79109de7a1550fe48b18832e49cdc6aefb9db0dd336fb9a99a6155078b",
+    "score.py": "d18f8f768ad14ca2b43d5b9dc43a3ec3c976da5d53c507dd57c31f35613c252f"
+  },
+  "nonraw_dependency_sha256_verified": {
+    "inputs/roles": "2dbf2f4b3f7956ccbe91f454092d80e76d8b95ebb2a73c427d548899543da7dd",
+    "inputs/root_scope": "f1825f4c433eadda170686e1b0e419cb95b6d79c31b71dabf751a15f1c92f0a1",
+    "external_sources/warm_joint_model": "5dee15b95546e81d1006358988fba7afdcc931273f28e55edf938f83845bd259",
+    "external_sources/legacy_score_scope": "34dbdb081757395d57680cdc843f455f174e32246a2f0eba24241e0984c488ad",
+    "external_sources/legacy_score": "dedad40898d0d9267481f73f5adf10952bd877ea603852c447fc7cbaa04ed0c8",
+    "math_receipts/independent_native_readout": "552b5aa96636413532db47600aeca92ad22aca39fe2f7d1b7bfe1734a1b680fe"
+  },
+  "checks": [
+    {
+      "topic": "registration_and_source",
+      "result": "PASS",
+      "source": "data_io.py:96-110; run_active.py:54-58,205; score.py:35-41,116",
+      "finding": "Registered actualUTC06:05:28.327821+00:00 and six hashes/config are pinned. The executor requires root scope/exactplan/allowedphase and verifies current inputs, libraries, external modules and math receipt before data extraction. This review binds the actual registered plan; future actual start must follow it."
+    },
+    {
+      "topic": "material_roles_and_identity",
+      "result": "PASS",
+      "source": "data_io.py:79-94,149-160; pinned role metadata review",
+      "finding": "64warm/24pool/64terminal,152 unique components;776wholecomponents excluded. Runtime checks raw index/native index/jid/mpid/canonical composition. All known181eligible siblings and minimum representatives were checked separately. Unlisted ineligible siblings cannot be enumerated but remain reserved by source component."
+    },
+    {
+      "topic": "same_information_and_cost",
+      "result": "PASS",
+      "source": "data_io.py:162-191; run_active.py:62-73,95-96,165-170",
+      "finding": "All policies receive same64completewarm,24pool dualcontexts,64terminal dualcontexts. Shared nativecells=64*3+24*2+64*2=368. Six independent observed sets start empty; each policy obtains exactly8distinct poolY at cost1 per canonical cell. Pseudolabels never update NIG. Same24pool counterfactual reuse does not multiply materialN."
+    },
+    {
+      "topic": "law_before_each_query",
+      "result": "PASS",
+      "source": "run_active.py:151-178; data_io.py:167-184",
+      "finding": "For all6*8 action steps, source/plan/policy/identity/budget bound acquisition+actual prequential NIG law is written exclusively and closed before Disclosure checks and reveals trueY. Source carries original rawSHA and no-generated-label flag. Predicted law is NIG for all48prequential records, including GP-selected trajectory; GP own terminal predictions are separately retained."
+    },
+    {
+      "topic": "independent_policy_updates",
+      "result": "PASS",
+      "source": "run_active.py:95-96,167-170; posterior_update.py:53-66",
+      "finding": "Each trajectory deep-copies warm NIG and warm training rows. Posterior sees only that policy actual queriedY and known contexts. Other policy labels are not passed through model/controller path. NIG update is exact classic regression state update; no newglobalNIW update from pool/terminalcontexts."
+    },
+    {
+      "topic": "openloop_label_blind_acquisition",
+      "result": "PASS",
+      "source": "run_active.py:117-124; posterior_update.py:58-64",
+      "finding": "Openloop acquisition keeps warmmean, uses only design-dependentV and observed-count alpha=warmalpha+step/2, and b preserving expected residualvariance. V update depends selected contexts, not Y. The actual predictor NIG nevertheless uses real observed labels, ensuring policy-only comparison. No forecast-mean label is treated as observation. Count/df evolution is defined prospectively and is not a fake label."
+    },
+    {
+      "topic": "branch_and_probability_scope",
+      "result": "PASS_WITH_EXPLICIT_LIMIT",
+      "source": "data_io.py:55-76; run_active.py:65-72; posterior_update.py; risk_readout.py:176-229",
+      "finding": "Single pooled p2 conditionalNIG, validknown G0 context, no spike/Beta branch used. Warm transforms are fixed. Gaussian control matches latent mean/covariance then uses same nativeYJ loss; it is not native moment matched. Native Student-t risk is model-internal lookahead, not guaranteed per-step true improvement or a new proper-score principle. ActualnewGcounts remain unknown before execution."
+    },
+    {
+      "topic": "GP_RF_same_training_and_own_GP_policy",
+      "result": "PASS",
+      "source": "reference_models.py:18-104; run_active.py:78-110,132-147,187-201",
+      "finding": "GP/RF receive identical warm+actual selectedY rows for native_student/random at budgets0/4/8. Native proxy feature scale is warm-fixed; GP normalize_y and optimizer legally use current train labels only. All-original-leaf RF includes OOB original rows with exact fractionweights, declared variant. GPvariance policy fits only its actualtrainlabels, selects from remainingpool predictivevariance and retains its own GP predictions at0/4/8, not only NIG predictions. Whitenoise is included consistently."
+    },
+    {
+      "topic": "fit_count_and_aliases",
+      "result": "PASS",
+      "source": "run_active.py:89-110,132-144,187-215; data_io.py:55-76",
+      "finding": "Shared warm GP/RF2 + native_student/random budgets4/8 references8 + GPpolicy steps1..7/final8 =18 actual sklearnfits, GP13/RF5. GPstep4 terminal prediction reuses same fit; sharedwarm is alias, notrefit. Count18 means sklearnfits, separate from initial classic warm NIW calculation and48exactNIGlabelupdates.1152main+960reference=2112logicalterminal laws,48prequential; none is materialN."
+    },
+    {
+      "topic": "full_terminal_freeze_before_Y",
+      "result": "PASS",
+      "source": "run_active.py:203-221; data_io.py:194-225; score.py:35-49",
+      "finding": "All6policies,baselinefits,1152+960terminal laws and48forecast/outcome pairs freeze together with123payload hashes. Only later score phase verifies freeze then creates reveal-start and accesses64terminalY. Complete rawgzip trustedparser physically decodes source; this is logical API disclosure control, not cryptographic ignorance."
+    },
+    {
+      "topic": "scoring_and_failures",
+      "result": "PASS",
+      "source": "score.py:47-121; run_active.py:223-226",
+      "finding": "Frozen native proper-score implementation reused; cache aliases only exactly sameY+law. Every64terminal per policy/budget/reference retained; all policy pairings and within2percentdescriptive comparator reported.48process scores are secondary, not independent terminalconfirmation. Forced8queries, no outcome-basedSTOP, no posthoc recipe rescue; failures persist."
+    }
+  ],
+  "blocking_findings": [],
+  "clearance_scope": "Only exact registered forecast recipe. Root approval still governs actual execution. Saved48prequential order/cost/2112law state and numerical scores require independent postexecution audits; no future result has been predicted.",
+  "counts": {
+    "material_components_development": 152,
+    "warm": 64,
+    "shared_pool": 24,
+    "terminal_development": 64,
+    "common_native_cells": 368,
+    "per_policy_queries": 8,
+    "policies": 6,
+    "total_counterfactual_query_events": 48,
+    "main_terminal_law_coordinates": 1152,
+    "reference_terminal_law_coordinates": 960,
+    "secondary_prequential_coordinates": 48,
+    "expected_actual_sklearn_fits": 18,
+    "expected_GP": 13,
+    "expected_RF": 5
+  },
+  "native_raw_file_opened_or_hashed_by_reviewer": false,
+  "new_Y_read": 0,
+  "model_imports_fits_forecasts_or_scores_executed_by_reviewer": 0,
+  "new_gate_or_recipe_changes_requested": false,
+  "interpretation_limits": [
+    "All152 are development, not independent final confirmation.",
+    "Same released computationalsource does not establish newwetexperiments, newDFTgeneration, batchgeneralization or measured laboratorysaving.",
+    "Proper-score acquisition, uncertain-scale dependence and NIW/NIG mechanisms have direct prior art; materials native-objective adaptive effects remain to be measured.",
+    "Raw fullparse is trusted disclosure, not cryptoblindness.",
+    "Current predictive family may remain misspecified/undercovered; static/independent numericalPASS does not establish calibration."
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "scope": "INDEPENDENT_NATIVE_READOUT_UNIT_ONCE",
+  "approved": true,
+  "actual_utc": "2026-11-06T06:00:32.263366+00:00",
+  "plan_sha256": "dff1b6d19a0a80d897dcaee2028ba5cec2e909ce6fb260ac3928c7f2dd9a2243",
+  "script_sha256": "948a16d43916e14c79294f6c2ce43b8ead53d39a821cd255784d7d5aa05e0131"
+}

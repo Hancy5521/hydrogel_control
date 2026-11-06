@@ -1,0 +1,438 @@
+{
+  "actual_utc": "2026-11-06T04:19:48.788000+00:00",
+  "status": "READ_ONLY_FROZEN_V1_DIAGNOSIS_NO_NEW_QUADRATURE",
+  "result_file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\execution_once\\RESULTS.json",
+  "result_sha256": "cf342e1e4d41054ee81a75e69d0b14d4cab30ce84abdd36555dc1f7634a38172",
+  "observed_refinements": [
+    {
+      "fixture_id": "qplus_tplus",
+      "family": "student_t",
+      "values": [
+        0.3507027229961533,
+        0.35241264760167357,
+        0.3530204162695322,
+        0.35323851078304
+      ],
+      "successive_signed_changes": [
+        0.0017099246055202744,
+        0.0006077686678586103,
+        0.00021809451350784936
+      ],
+      "final_convergence_pass": false,
+      "tail_budget_pass": true,
+      "last_segment_changes": [
+        {
+          "lower_v": -32.0,
+          "upper_v": -0.9534625892455922,
+          "last_refinement_signed_change": 2.1350880452977727e-05,
+          "share_of_total_signed_change": 0.09789737536065664
+        },
+        {
+          "lower_v": -0.9534625892455922,
+          "upper_v": 0.0,
+          "last_refinement_signed_change": 3.163999812150209e-07,
+          "share_of_total_signed_change": 0.0014507470918273854
+        },
+        {
+          "lower_v": 0.0,
+          "upper_v": 32.0,
+          "last_refinement_signed_change": 0.00019642723307369825,
+          "share_of_total_signed_change": 0.9006518775477069
+        }
+      ]
+    },
+    {
+      "fixture_id": "qplus_tminus",
+      "family": "student_t",
+      "values": [
+        0.08276387849406704,
+        0.08339876233345649,
+        0.08363645727146202,
+        0.08372534124987177
+      ],
+      "successive_signed_changes": [
+        0.0006348838393894496,
+        0.000237694938005531,
+        8.888397840975393e-05
+      ],
+      "final_convergence_pass": false,
+      "tail_budget_pass": true,
+      "last_segment_changes": [
+        {
+          "lower_v": -32.0,
+          "upper_v": 0.0,
+          "last_refinement_signed_change": 1.1683449569817317e-05,
+          "share_of_total_signed_change": 0.13144606912121748
+        },
+        {
+          "lower_v": 0.0,
+          "upper_v": 0.9534625892455922,
+          "last_refinement_signed_change": 3.1395477657555904e-07,
+          "share_of_total_signed_change": 0.0035321863646587894
+        },
+        {
+          "lower_v": 0.9534625892455922,
+          "upper_v": 32.0,
+          "last_refinement_signed_change": 7.688657406336452e-05,
+          "share_of_total_signed_change": 0.8650217445141628
+        }
+      ]
+    },
+    {
+      "fixture_id": "qminus_tplus",
+      "family": "student_t",
+      "values": [
+        0.17644950539140158,
+        0.17745239485028708,
+        0.17780973602505984,
+        0.1779375966508863
+      ],
+      "successive_signed_changes": [
+        0.001002889458885492,
+        0.00035734117477276284,
+        0.00012786062582645363
+      ],
+      "final_convergence_pass": false,
+      "tail_budget_pass": true,
+      "last_segment_changes": [
+        {
+          "lower_v": -32.0,
+          "upper_v": -0.9534625892455922,
+          "last_refinement_signed_change": 1.434065417705091e-05,
+          "share_of_total_signed_change": 0.11215848572894996
+        },
+        {
+          "lower_v": -0.9534625892455922,
+          "upper_v": 0.0,
+          "last_refinement_signed_change": 4.126613562319137e-07,
+          "share_of_total_signed_change": 0.0032274310685137943
+        },
+        {
+          "lower_v": 0.0,
+          "upper_v": 32.0,
+          "last_refinement_signed_change": 0.00011310731029316734,
+          "share_of_total_signed_change": 0.8846140832025091
+        }
+      ]
+    },
+    {
+      "fixture_id": "qminus_tminus",
+      "family": "student_t",
+      "values": [
+        0.20436305698216756,
+        0.20568505251172736,
+        0.20617779010023932,
+        0.20636232870921056
+      ],
+      "successive_signed_changes": [
+        0.0013219955295598051,
+        0.0004927375885119545,
+        0.0001845386089712464
+      ],
+      "final_convergence_pass": false,
+      "tail_budget_pass": true,
+      "last_segment_changes": [
+        {
+          "lower_v": -32.0,
+          "upper_v": 0.0,
+          "last_refinement_signed_change": 1.999353853691932e-05,
+          "share_of_total_signed_change": 0.1083433902985287
+        },
+        {
+          "lower_v": 0.0,
+          "upper_v": 0.9534625892455922,
+          "last_refinement_signed_change": 2.2059139555274943e-07,
+          "share_of_total_signed_change": 0.0011953671742866586
+        },
+        {
+          "lower_v": 0.9534625892455922,
+          "upper_v": 32.0,
+          "last_refinement_signed_change": 0.00016432447903878128,
+          "share_of_total_signed_change": 0.8904612425272223
+        }
+      ]
+    },
+    {
+      "fixture_id": "case1_rho_sign_mirror",
+      "family": "student_t",
+      "values": [
+        0.3507027229961531,
+        0.35241264760167357,
+        0.3530204162695322,
+        0.35323851078304014
+      ],
+      "successive_signed_changes": [
+        0.001709924605520441,
+        0.0006077686678586103,
+        0.00021809451350796039
+      ],
+      "final_convergence_pass": false,
+      "tail_budget_pass": true,
+      "last_segment_changes": [
+        {
+          "lower_v": -32.0,
+          "upper_v": -0.9534625892455922,
+          "last_refinement_signed_change": 2.135088045296385e-05,
+          "share_of_total_signed_change": 0.09789737536054316
+        },
+        {
+          "lower_v": -0.9534625892455922,
+          "upper_v": 0.0,
+          "last_refinement_signed_change": 3.163999812011431e-07,
+          "share_of_total_signed_change": 0.001450747091763015
+        },
+        {
+          "lower_v": 0.0,
+          "upper_v": 32.0,
+          "last_refinement_signed_change": 0.00019642723307375376,
+          "share_of_total_signed_change": 0.900651877547503
+        }
+      ]
+    },
+    {
+      "fixture_id": "Studentt_rho0_native",
+      "family": "student_t",
+      "values": [
+        0.00858475515878602,
+        0.008868660256734504,
+        0.008976404787984475,
+        0.00901611829203502
+      ],
+      "successive_signed_changes": [
+        0.0002839050979484836,
+        0.00010774453124997099,
+        3.971350405054461e-05
+      ],
+      "final_convergence_pass": false,
+      "tail_budget_pass": true,
+      "last_segment_changes": [
+        {
+          "lower_v": -32.0,
+          "upper_v": -0.9534625892455922,
+          "last_refinement_signed_change": 5.560863383376668e-06,
+          "share_of_total_signed_change": 0.14002449585660295
+        },
+        {
+          "lower_v": -0.9534625892455922,
+          "upper_v": 0.0,
+          "last_refinement_signed_change": 2.939607072092662e-07,
+          "share_of_total_signed_change": 0.007402033999194161
+        },
+        {
+          "lower_v": 0.0,
+          "upper_v": 32.0,
+          "last_refinement_signed_change": 3.3858679959958456e-05,
+          "share_of_total_signed_change": 0.8525734701441974
+        }
+      ]
+    },
+    {
+      "fixture_id": "Gaussian_rho0_native",
+      "family": "normal",
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "successive_signed_changes": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "final_convergence_pass": true,
+      "tail_budget_pass": true,
+      "last_segment_changes": []
+    },
+    {
+      "fixture_id": "Studentt_rho0_affine_target",
+      "family": "student_t",
+      "values": [
+        0.005404088957390138,
+        0.005562559285344923,
+        0.005618829179980681,
+        0.005637935362255507
+      ],
+      "successive_signed_changes": [
+        0.00015847032795478482,
+        5.626989463575812e-05,
+        1.9106182274825946e-05
+      ],
+      "final_convergence_pass": true,
+      "tail_budget_pass": true,
+      "last_segment_changes": [
+        {
+          "lower_v": -32.0,
+          "upper_v": -0.9534625892455922,
+          "last_refinement_signed_change": 9.293120621416996e-06,
+          "share_of_total_signed_change": 0.4863933824007054
+        },
+        {
+          "lower_v": -0.9534625892455922,
+          "upper_v": 0.0,
+          "last_refinement_signed_change": 2.5997051610851703e-07,
+          "share_of_total_signed_change": 0.013606617605184829
+        },
+        {
+          "lower_v": 0.0,
+          "upper_v": 32.0,
+          "last_refinement_signed_change": 9.55309113730065e-06,
+          "share_of_total_signed_change": 0.4999999999941211
+        }
+      ]
+    },
+    {
+      "fixture_id": "qplus_tplus_matchedGaussian_native",
+      "family": "normal",
+      "values": [
+        0.3556124466928502,
+        0.3556124468707242,
+        0.35561244687069843,
+        0.3556124468707292
+      ],
+      "successive_signed_changes": [
+        1.7787399331226084e-10,
+        -2.5757174171303632e-14,
+        3.0753177782116836e-14
+      ],
+      "final_convergence_pass": true,
+      "tail_budget_pass": true,
+      "last_segment_changes": [
+        {
+          "lower_v": -32.0,
+          "upper_v": -0.778498944161523,
+          "last_refinement_signed_change": 1.0134254546656507e-14,
+          "share_of_total_signed_change": 0.3295351985559567
+        },
+        {
+          "lower_v": -0.778498944161523,
+          "upper_v": 0.0,
+          "last_refinement_signed_change": 0.0,
+          "share_of_total_signed_change": 0.0
+        },
+        {
+          "lower_v": 0.0,
+          "upper_v": 32.0,
+          "last_refinement_signed_change": 2.0622392682412283e-14,
+          "share_of_total_signed_change": 0.6705776173285198
+        }
+      ]
+    },
+    {
+      "fixture_id": "qplus_tminus_matchedGaussian_native",
+      "family": "normal",
+      "values": [
+        0.07968234473483987,
+        0.07968234859713112,
+        0.0796823485971239,
+        0.07968234859713291
+      ],
+      "successive_signed_changes": [
+        3.862291250711358e-09,
+        -7.216449660063518e-15,
+        9.006684287271582e-15
+      ],
+      "final_convergence_pass": true,
+      "tail_budget_pass": true,
+      "last_segment_changes": [
+        {
+          "lower_v": -32.0,
+          "upper_v": 0.0,
+          "last_refinement_signed_change": 4.954370247389761e-15,
+          "share_of_total_signed_change": 0.5500770416024653
+        },
+        {
+          "lower_v": 0.0,
+          "upper_v": 0.778498944161523,
+          "last_refinement_signed_change": -1.734723475976807e-17,
+          "share_of_total_signed_change": -0.001926040061633282
+        },
+        {
+          "lower_v": 0.778498944161523,
+          "upper_v": 32.0,
+          "last_refinement_signed_change": 4.066191827689636e-15,
+          "share_of_total_signed_change": 0.4514637904468413
+        }
+      ]
+    },
+    {
+      "fixture_id": "qminus_tplus_matchedGaussian_native",
+      "family": "normal",
+      "values": [
+        0.1745579719359836,
+        0.17455798514468387,
+        0.17455798514467083,
+        0.1745579851446863
+      ],
+      "successive_signed_changes": [
+        1.3208700272437923e-08,
+        -1.304512053934559e-14,
+        1.5459855617905305e-14
+      ],
+      "final_convergence_pass": true,
+      "tail_budget_pass": true,
+      "last_segment_changes": [
+        {
+          "lower_v": -32.0,
+          "upper_v": -0.778498944161523,
+          "last_refinement_signed_change": 5.011616122096996e-15,
+          "share_of_total_signed_change": 0.3241696588868941
+        },
+        {
+          "lower_v": -0.778498944161523,
+          "upper_v": 0.0,
+          "last_refinement_signed_change": -2.0816681711721685e-17,
+          "share_of_total_signed_change": -0.0013464991023339318
+        },
+        {
+          "lower_v": 0.0,
+          "upper_v": 32.0,
+          "last_refinement_signed_change": 1.04638520070921e-14,
+          "share_of_total_signed_change": 0.6768402154398564
+        }
+      ]
+    },
+    {
+      "fixture_id": "qminus_tminus_matchedGaussian_native",
+      "family": "normal",
+      "values": [
+        0.20467677704319304,
+        0.20467678178411863,
+        0.2046767817841006,
+        0.20467678178412288
+      ],
+      "successive_signed_changes": [
+        4.74092559654693e-09,
+        -1.8041124150158794e-14,
+        2.2287727219350018e-14
+      ],
+      "final_convergence_pass": true,
+      "tail_budget_pass": true,
+      "last_segment_changes": [
+        {
+          "lower_v": -32.0,
+          "upper_v": 0.0,
+          "last_refinement_signed_change": 1.214306433183765e-14,
+          "share_of_total_signed_change": 0.5448318804483188
+        },
+        {
+          "lower_v": 0.0,
+          "upper_v": 0.778498944161523,
+          "last_refinement_signed_change": -1.3877787807814457e-17,
+          "share_of_total_signed_change": -0.0006226650062266501
+        },
+        {
+          "lower_v": 0.778498944161523,
+          "upper_v": 32.0,
+          "last_refinement_signed_change": 1.0158540675320182e-14,
+          "share_of_total_signed_change": 0.45579078455790784
+        }
+      ]
+    }
+  ],
+  "inference": "Slow Student queryquantile endpoint convergence is supported, not causally isolated because both quadraturelevels varytogether. Gaussian uses sameouter segmentation and convergesrapidly; t affine still slow; nativepositive-vsegments dominate changes. No conclusion of analyticformula defect.",
+  "recommendation": "single coordinatechange to z=sqrt(nu)tan(theta), keeporiginalt densitycos^(nu-1)/Beta and originalLz64,levels32/64/128/256,targetLv32,12fixtures,allthresholds. PrepareV2source/protocol separately; do notoverwriteV1 or runbeforeapproval.",
+  "new_function_imports_quadratures_material_labels_or_fits": 0,
+  "original_sources_results_thresholds_modified": false,
+  "native_Gaussian_and_Student_same_query_choice_retained": true
+}

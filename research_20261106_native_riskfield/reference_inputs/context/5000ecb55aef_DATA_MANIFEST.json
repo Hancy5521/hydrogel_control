@@ -1,0 +1,113 @@
+{
+  "actual_utc": "2026-11-05T09:51:54.053160+00:00",
+  "actual_asia_shanghai": "2026-11-05T17:51:54.053160+08:00",
+  "artifact_kind": "two downloaded original public benchmark tables plus provenance; not new measurements",
+  "downloaded_dataset_bytes": 30712466,
+  "download_limit_bytes": 100000000,
+  "matminer_metadata_commit": "02c60582dc31575298db91b9e978f9cab2966b44",
+  "metadata_blob_sha1": "adf353223dbb9f9cc833ca67a08592b46033deb5",
+  "datasets": [
+    {
+      "id": "ucsb_thermoelectrics",
+      "file": "ucsb_thermoelectrics.json.gz",
+      "bytes": 43181,
+      "sha256": "7d0c9c74fd52995b876bd251a7732b5498314702441fa463197fb492be68ecc0",
+      "matched_pinned_official_matminer_hash": true,
+      "stable_download_url": "https://ndownloader.figshare.com/files/28333845",
+      "download_started_utc": "2026-11-05T09:40:47.633806+00:00",
+      "download_finished_utc": "2026-11-05T09:40:50.304951+00:00",
+      "doi": "10.6084/m9.figshare.14746212.v1",
+      "article_version": 1,
+      "official_metadata_url": "https://api.figshare.com/v2/articles/14746212",
+      "license_as_published": {
+        "value": 1,
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "data_kind": "experimental literature aggregation",
+      "rows": 1093,
+      "columns": [
+        "composition",
+        "crystallinity",
+        "synthesis",
+        "spacegroup",
+        "rho (ohm.cm)",
+        "S [muV/K]",
+        "PF [W/mK^2]",
+        "zT",
+        "kappa [W/mK]",
+        "sigma [S/cm]",
+        "T [K]",
+        "src"
+      ],
+      "source_metadata_snapshot": "ucsb_matminer_article.json",
+      "source_metadata_sha256": "78ee2109326b14d8f7c96e56980634bca942b1f77872c1b079837a477630bd85",
+      "computed_properties_are_wet_measurements": null,
+      "supplied_row_index": "artifact-local handle, never sufficient physical identity",
+      "schema_audit_reference": "SCHEMA_AND_IDENTITY_AUDIT.json"
+    },
+    {
+      "id": "jarvis_dft_3d",
+      "file": "jarvis_dft_3d.json.gz",
+      "bytes": 30669285,
+      "sha256": "3d0fc1315b74cf84071f16aa25bb93434dafbc83867beb75872064ac245bd747",
+      "matched_pinned_official_matminer_hash": true,
+      "stable_download_url": "https://ndownloader.figshare.com/files/13376507",
+      "download_started_utc": "2026-11-05T09:40:58.902746+00:00",
+      "download_finished_utc": "2026-11-05T09:41:28.343500+00:00",
+      "doi": "10.6084/m9.figshare.7261832.v1",
+      "article_version": 1,
+      "official_metadata_url": "https://api.figshare.com/v2/articles/7261832",
+      "license_as_published": {
+        "value": 3,
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "data_kind": "DFT computational material properties",
+      "rows": 25923,
+      "columns": [
+        "epsilon_x opt",
+        "epsilon_y opt",
+        "epsilon_z opt",
+        "structure",
+        "e_form",
+        "shear modulus",
+        "structure initial",
+        "jid",
+        "bulk modulus",
+        "gap tbmbj",
+        "epsilon_x tbmbj",
+        "epsilon_y tbmbj",
+        "epsilon_z tbmbj",
+        "mpid",
+        "gap opt",
+        "composition"
+      ],
+      "source_metadata_snapshot": "jarvis_matminer_article.json",
+      "source_metadata_sha256": "76f4e8a388eeb77c7a4c0c4e05fac554adf6d8efe59e52737b66871ac437d70a",
+      "computed_properties_are_wet_measurements": false,
+      "supplied_row_index": "artifact-local handle, never sufficient physical identity",
+      "schema_audit_reference": "SCHEMA_AND_IDENTITY_AUDIT.json"
+    }
+  ],
+  "raw_numeric_fits_or_predictor_scores": 0,
+  "source_truth_read_scope": "Curator loaded original rows for schema, finite/missing counts, sign counts and metadata linkage; no candidate model outputs, train/test split, algorithms or performance-driven selection evaluated. Future offline benchmark protocol must still freeze roles and expose hidden true cells only via an oracle.",
+  "raw_gzip_contains_nonstandard_missing_values": "Native JSON numeric NaN may appear; source reader must convert only missing markers to a mask, never replace with measured zero.",
+  "jarvis_upstream_additional_rights": {
+    "original_doi": "10.6084/m9.figshare.6815699.v2",
+    "original_metadata_url": "https://api.figshare.com/v2/articles/6815699/versions/2",
+    "license": {
+      "value": 1,
+      "name": "CC BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "Processed source publishes MIT; retain upstream CC BY4 provenance/attribution rather than asserting MIT overrides original rights."
+  },
+  "not_downloaded": [
+    "Matbench Discovery full structures/training data",
+    "latest JARVIS76k 2022 snapshot",
+    "QM9",
+    "MADE27.4MB energy table or model weights",
+    "expanded UCSB Dopant_dataset Zenodo v1.0 metadata checked only"
+  ]
+}

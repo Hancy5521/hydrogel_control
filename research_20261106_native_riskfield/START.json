@@ -1,0 +1,10 @@
+{
+  "kind": "new_bounded_substudy_of_active_manual_run",
+  "actual_utc": "2026-11-06T04:05:36.174748+00:00",
+  "manual_run": "20261106T024504445715Z",
+  "parent_completed_science_stage": "H:\\polymer_completion_public\\research\\reported_feedback_20261106T024504445715Z",
+  "purpose": "test nonlinear native risk kernel reuse and fair fullnative-objective reference before new active material selection",
+  "new_data_fits": 0,
+  "new_material_roles_selected": false,
+  "separate_stage_keeps_completed_feedback_snapshot_immutable": true
+}

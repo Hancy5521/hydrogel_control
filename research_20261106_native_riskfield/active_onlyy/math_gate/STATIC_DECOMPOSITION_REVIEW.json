@@ -1,0 +1,13 @@
+{
+  "actual_utc": "2026-11-06T05:56:05.393653+00:00",
+  "kind": "independent_static_positive_branch_decomposition_review",
+  "status": "PASS_STATIC_POOLED_CONDITIONAL_NIG_NATIVE_RISK_READOUT",
+  "reviewed_source_file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\active_onlyy\\code\\risk_readout.py",
+  "reviewed_source_sha256": "fd726e343cfaa3b09cf8fd9e66bf6bc3bdafa2b644205505d2d6ad04f9139ebe",
+  "equations": "h(u)>=0and<=-u/2 on u<0;K even implies integralvK0;Delta=s0s[(1+mu/2)k0+negativeUcorrection];mu>=0 correction<=.5s0s(sI1(mu/s)-muI0(mu/s));nu>2 givesfiniteexpectations",
+  "source_numerical_choices": "smallnegativeu binomial c2=.5,c3=7/12 stable;positive decomposition fullaffine+nonnegativecorrection;mu<0fullpositiveintegral;normalinternalstdmatchedlatent;vectorizedqueriesmeanalltargets;fixedresponseaffinemapapplied",
+  "tail_source_review": "sourcepositiveouteruses+abs(mu)I0,safebutlooserthanminimalbound;innerboundsconservative;negative-directallpositive;noinvalidnegativeclamps",
+  "no_claim_all_material_target_means_positive": true,
+  "new_data_fits_or_numeric_execution": 0,
+  "scope": "staticformulas/APIonly,pendingoneboundedsourceunitgateandindependentstoredresultaudit"
+}

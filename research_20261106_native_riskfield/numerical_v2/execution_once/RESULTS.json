@@ -1,0 +1,4024 @@
+{
+  "status": "COMPLETE_FIXED12_NATIVE_RISKFIELD_MECHANISM_GATE",
+  "actual_end_utc": "2026-11-06T05:39:10.326691+00:00",
+  "source_sha256": {
+    "posterior_update.py": "625c6f1b72aa838097502c08292f4dbc5cb5612012725ca1502c36adc3cb254e",
+    "activefield.py": "c8a650feb965880ac8c8be13c1bd7ac5c8cf16d8264dbe303d7f344aae5d98d4",
+    "run_gate.py": "2d15e71db58780e6b8ae1833965999306cb47a1dd039dded9abcaf53d148690d"
+  },
+  "plan_sha256": "f66d9a097ebee4c7d706e95e8aa1666bf6569fb58b85bd76e3d408b5a2a973cf",
+  "configuration": {
+    "version": "fixed_native_NIG_riskfield_gate_v2_angle_query",
+    "NIG": {
+      "mean": [
+        0.0,
+        1.0
+      ],
+      "V": [
+        [
+          0.2,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "alpha": 3.0,
+      "b": 1.5
+    },
+    "terminal_contexts": {
+      "tplus": 1.0,
+      "tminus": -1.0
+    },
+    "query_contexts": {
+      "qplus": 1.0,
+      "qminus": -1.1
+    },
+    "s0": 2.0,
+    "mechanism_cases": 8,
+    "extra_native_matched_Gaussian_cases": 4,
+    "levels": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "outer_Lv": 32.0,
+    "query_Lz": 64.0,
+    "query_weights": "originaltdensityinatanThetaInterval, no renormalization",
+    "v_split": "0and-mu/scale insidefixedbounds",
+    "Gaussian_kernel": "OwenT1D, positivePlackett-angle fallback when negativeorrelativecancellation",
+    "negative_kernel_hard_clamp": false,
+    "final_refinement_abs_diagnostic": 2e-05,
+    "analytic_tail_bound_max": 0.0001,
+    "independent_agreement_abs": 0.0002,
+    "independent_agreement_rel": 2e-05,
+    "algebra_abs": 2e-10,
+    "algebra_rel": 2e-10,
+    "NIG_conditional_z_probes": [
+      -1.0,
+      0.0,
+      1.0
+    ],
+    "rho_bound_probe_existing_case_pairs": [
+      [
+        0,
+        5
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        0,
+        4
+      ]
+    ],
+    "libraries": {
+      "numpy": "2.1.3",
+      "scipy": "1.15.3"
+    },
+    "no_new_material_source_or_fit_or_agent": true,
+    "rank_reversal_or_speedup_required": false,
+    "failure_policy": "retainallfixedcases, no prior/context sweep; separate registered numerical repair if needed"
+  },
+  "NIG_state": {
+    "mean": [
+      0.0,
+      1.0
+    ],
+    "V": [
+      [
+        0.2,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "alpha": 3.0,
+    "b": 1.5,
+    "labeled_updates": 0
+  },
+  "evaluations": [
+    {
+      "fixture": {
+        "id": "qplus_tplus",
+        "family": "student_t",
+        "mu": 1.0,
+        "scale": 1.0488088481701516,
+        "rho": 0.5454545454545454,
+        "nu": 6.0,
+        "s0": 2.0,
+        "loss_coordinate": "YJ_half",
+        "query_id": "qplus",
+        "target_id": "tplus",
+        "query_context": [
+          1.0
+        ],
+        "target_context": [
+          1.0
+        ],
+        "exact_NIG_pair": {
+          "mu_query": 1.0,
+          "mu_target": 1.0,
+          "scale_query": 1.0488088481701516,
+          "scale_target": 1.0488088481701516,
+          "nu": 6.0,
+          "rho": 0.5454545454545454,
+          "distinct_physical_rows_independent_residuals": true
+        }
+      },
+      "levels": [
+        {
+          "value": 0.353363696727536,
+          "nodes_per_segment": 32,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": -0.9534625892455922,
+              "value": 0.031860668703614745,
+              "target_nodes": 32,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215129,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 2.220446049250313e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 32,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": -0.9534625892455922,
+              "upper_v": 0.0,
+              "value": 0.09739591258855401,
+              "target_nodes": 32,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215129,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 2.220446049250313e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 32,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 32.0,
+              "value": 0.2241071154353672,
+              "target_nodes": 32,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215129,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 2.220446049250313e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 32,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "query_z_cut": 64.0,
+            "I0_closed_difference_display": 1.9897360161602734e-07,
+            "I1_closed_difference_display": 7.964765704826286e-06,
+            "I0_safe_ignored_negative_term_bound": 1.1894931940058042e-06,
+            "I1_safe_ignored_negative_term_bound": 2.3813079183062715e-05,
+            "outer_tail_bound_ideal_arithmetic": 5.987408012300676e-05,
+            "query_tail_bound_ideal_arithmetic": 6.765974168035726e-07,
+            "total_bound_ideal_arithmetic": 6.055067753981033e-05,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.0213807000000088
+        },
+        {
+          "value": 0.3533636932830058,
+          "nodes_per_segment": 64,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": -0.9534625892455922,
+              "value": 0.031860668983904515,
+              "target_nodes": 64,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215127,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 0.0,
+                "renormalized_query_weights": false,
+                "query_nodes": 64,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": -0.9534625892455922,
+              "upper_v": 0.0,
+              "value": 0.09739591258855386,
+              "target_nodes": 64,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215127,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 0.0,
+                "renormalized_query_weights": false,
+                "query_nodes": 64,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 32.0,
+              "value": 0.22410711171054745,
+              "target_nodes": 64,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215127,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 0.0,
+                "renormalized_query_weights": false,
+                "query_nodes": 64,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "query_z_cut": 64.0,
+            "I0_closed_difference_display": 1.9897360161602734e-07,
+            "I1_closed_difference_display": 7.964765704826286e-06,
+            "I0_safe_ignored_negative_term_bound": 1.1894931940058042e-06,
+            "I1_safe_ignored_negative_term_bound": 2.3813079183062715e-05,
+            "outer_tail_bound_ideal_arithmetic": 5.987408012300676e-05,
+            "query_tail_bound_ideal_arithmetic": 6.765974168035726e-07,
+            "total_bound_ideal_arithmetic": 6.055067753981033e-05,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.01638499999899068
+        },
+        {
+          "value": 0.3533636932830038,
+          "nodes_per_segment": 128,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": -0.9534625892455922,
+              "value": 0.03186066898389935,
+              "target_nodes": 128,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215184,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 5.662137425588298e-15,
+                "renormalized_query_weights": false,
+                "query_nodes": 128,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": -0.9534625892455922,
+              "upper_v": 0.0,
+              "value": 0.09739591258855448,
+              "target_nodes": 128,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215184,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 5.662137425588298e-15,
+                "renormalized_query_weights": false,
+                "query_nodes": 128,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 32.0,
+              "value": 0.22410711171054998,
+              "target_nodes": 128,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215184,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 5.662137425588298e-15,
+                "renormalized_query_weights": false,
+                "query_nodes": 128,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "query_z_cut": 64.0,
+            "I0_closed_difference_display": 1.9897360161602734e-07,
+            "I1_closed_difference_display": 7.964765704826286e-06,
+            "I0_safe_ignored_negative_term_bound": 1.1894931940058042e-06,
+            "I1_safe_ignored_negative_term_bound": 2.3813079183062715e-05,
+            "outer_tail_bound_ideal_arithmetic": 5.987408012300676e-05,
+            "query_tail_bound_ideal_arithmetic": 6.765974168035726e-07,
+            "total_bound_ideal_arithmetic": 6.055067753981033e-05,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.050101000000722706
+        },
+        {
+          "value": 0.3533636932830241,
+          "nodes_per_segment": 256,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": -0.9534625892455922,
+              "value": 0.03186066898390629,
+              "target_nodes": 256,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215128,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 1.1102230246251565e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 256,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": -0.9534625892455922,
+              "upper_v": 0.0,
+              "value": 0.09739591258855389,
+              "target_nodes": 256,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215128,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 1.1102230246251565e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 256,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 32.0,
+              "value": 0.22410711171056388,
+              "target_nodes": 256,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215128,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 1.1102230246251565e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 256,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "query_z_cut": 64.0,
+            "I0_closed_difference_display": 1.9897360161602734e-07,
+            "I1_closed_difference_display": 7.964765704826286e-06,
+            "I0_safe_ignored_negative_term_bound": 1.1894931940058042e-06,
+            "I1_safe_ignored_negative_term_bound": 2.3813079183062715e-05,
+            "outer_tail_bound_ideal_arithmetic": 5.987408012300676e-05,
+            "query_tail_bound_ideal_arithmetic": 6.765974168035726e-07,
+            "total_bound_ideal_arithmetic": 6.055067753981033e-05,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.12646910000148637
+        }
+      ],
+      "final_refinement_abs_diagnostic": 2.0261570199409107e-14,
+      "convergence_diagnostic_pass": true,
+      "analytic_tail_budget_pass": true,
+      "finite_quadrature_not_analytically_bounded": true
+    },
+    {
+      "fixture": {
+        "id": "qplus_tminus",
+        "family": "student_t",
+        "mu": -1.0,
+        "scale": 1.0488088481701516,
+        "rho": -0.36363636363636365,
+        "nu": 6.0,
+        "s0": 2.0,
+        "loss_coordinate": "YJ_half",
+        "query_id": "qplus",
+        "target_id": "tminus",
+        "query_context": [
+          1.0
+        ],
+        "target_context": [
+          -1.0
+        ],
+        "exact_NIG_pair": {
+          "mu_query": 1.0,
+          "mu_target": -1.0,
+          "scale_query": 1.0488088481701516,
+          "scale_target": 1.0488088481701516,
+          "nu": 6.0,
+          "rho": -0.36363636363636365,
+          "distinct_physical_rows_independent_residuals": true
+        }
+      },
+      "levels": [
+        {
+          "value": 0.08377890539748789,
+          "nodes_per_segment": 32,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": 0.0,
+              "value": 0.03277641071507798,
+              "target_nodes": 32,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215129,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 2.220446049250313e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 32,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 0.9534625892455922,
+              "value": 0.02762117124529613,
+              "target_nodes": 32,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215129,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 2.220446049250313e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 32,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.9534625892455922,
+              "upper_v": 32.0,
+              "value": 0.023381323437113778,
+              "target_nodes": 32,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215129,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 2.220446049250313e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 32,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "query_z_cut": 64.0,
+            "I0_closed_difference_display": 1.9897360161602734e-07,
+            "I1_closed_difference_display": 7.964765704826286e-06,
+            "I0_safe_ignored_negative_term_bound": 1.1894931940058042e-06,
+            "I1_safe_ignored_negative_term_bound": 2.3813079183062715e-05,
+            "outer_tail_bound_ideal_arithmetic": 5.987408012300676e-05,
+            "query_tail_bound_ideal_arithmetic": 6.080568510782567e-07,
+            "total_bound_ideal_arithmetic": 6.0482136974085016e-05,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.008663799999339972
+        },
+        {
+          "value": 0.0837789050324589,
+          "nodes_per_segment": 64,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": 0.0,
+              "value": 0.03277641027848034,
+              "target_nodes": 64,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215127,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 0.0,
+                "renormalized_query_weights": false,
+                "query_nodes": 64,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 0.9534625892455922,
+              "value": 0.027621171245296117,
+              "target_nodes": 64,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215127,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 0.0,
+                "renormalized_query_weights": false,
+                "query_nodes": 64,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.9534625892455922,
+              "upper_v": 32.0,
+              "value": 0.02338132350868244,
+              "target_nodes": 64,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215127,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 0.0,
+                "renormalized_query_weights": false,
+                "query_nodes": 64,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "query_z_cut": 64.0,
+            "I0_closed_difference_display": 1.9897360161602734e-07,
+            "I1_closed_difference_display": 7.964765704826286e-06,
+            "I0_safe_ignored_negative_term_bound": 1.1894931940058042e-06,
+            "I1_safe_ignored_negative_term_bound": 2.3813079183062715e-05,
+            "outer_tail_bound_ideal_arithmetic": 5.987408012300676e-05,
+            "query_tail_bound_ideal_arithmetic": 6.080568510782567e-07,
+            "total_bound_ideal_arithmetic": 6.0482136974085016e-05,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.01841959999910614
+        },
+        {
+          "value": 0.08377890503245426,
+          "nodes_per_segment": 128,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": 0.0,
+              "value": 0.03277641027847749,
+              "target_nodes": 128,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215184,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 5.662137425588298e-15,
+                "renormalized_query_weights": false,
+                "query_nodes": 128,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 0.9534625892455922,
+              "value": 0.027621171245296297,
+              "target_nodes": 128,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215184,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 5.662137425588298e-15,
+                "renormalized_query_weights": false,
+                "query_nodes": 128,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.9534625892455922,
+              "upper_v": 32.0,
+              "value": 0.02338132350868048,
+              "target_nodes": 128,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215184,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 5.662137425588298e-15,
+                "renormalized_query_weights": false,
+                "query_nodes": 128,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "query_z_cut": 64.0,
+            "I0_closed_difference_display": 1.9897360161602734e-07,
+            "I1_closed_difference_display": 7.964765704826286e-06,
+            "I0_safe_ignored_negative_term_bound": 1.1894931940058042e-06,
+            "I1_safe_ignored_negative_term_bound": 2.3813079183062715e-05,
+            "outer_tail_bound_ideal_arithmetic": 5.987408012300676e-05,
+            "query_tail_bound_ideal_arithmetic": 6.080568510782567e-07,
+            "total_bound_ideal_arithmetic": 6.0482136974085016e-05,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.04553999999916414
+        },
+        {
+          "value": 0.08377890503246024,
+          "nodes_per_segment": 256,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": 0.0,
+              "value": 0.03277641027848097,
+              "target_nodes": 256,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215128,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 1.1102230246251565e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 256,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 0.9534625892455922,
+              "value": 0.027621171245296124,
+              "target_nodes": 256,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215128,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 1.1102230246251565e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 256,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.9534625892455922,
+              "upper_v": 32.0,
+              "value": 0.02338132350868315,
+              "target_nodes": 256,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215128,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 1.1102230246251565e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 256,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "query_z_cut": 64.0,
+            "I0_closed_difference_display": 1.9897360161602734e-07,
+            "I1_closed_difference_display": 7.964765704826286e-06,
+            "I0_safe_ignored_negative_term_bound": 1.1894931940058042e-06,
+            "I1_safe_ignored_negative_term_bound": 2.3813079183062715e-05,
+            "outer_tail_bound_ideal_arithmetic": 5.987408012300676e-05,
+            "query_tail_bound_ideal_arithmetic": 6.080568510782567e-07,
+            "total_bound_ideal_arithmetic": 6.0482136974085016e-05,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.12502459999996063
+        }
+      ],
+      "final_refinement_abs_diagnostic": 5.981326545168031e-15,
+      "convergence_diagnostic_pass": true,
+      "analytic_tail_budget_pass": true,
+      "finite_quadrature_not_analytically_bounded": true
+    },
+    {
+      "fixture": {
+        "id": "qminus_tplus",
+        "family": "student_t",
+        "mu": 1.0,
+        "scale": 1.0488088481701516,
+        "rho": -0.3908612780318036,
+        "nu": 6.0,
+        "s0": 2.0,
+        "loss_coordinate": "YJ_half",
+        "query_id": "qminus",
+        "target_id": "tplus",
+        "query_context": [
+          -1.1
+        ],
+        "target_context": [
+          1.0
+        ],
+        "exact_NIG_pair": {
+          "mu_query": -1.1,
+          "mu_target": 1.0,
+          "scale_query": 1.0977249200050074,
+          "scale_target": 1.0488088481701516,
+          "nu": 6.0,
+          "rho": -0.3908612780318036,
+          "distinct_physical_rows_independent_residuals": true
+        }
+      },
+      "levels": [
+        {
+          "value": 0.17801031831345188,
+          "nodes_per_segment": 32,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": -0.9534625892455922,
+              "value": 0.01612070527466604,
+              "target_nodes": 32,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215129,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 2.220446049250313e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 32,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": -0.9534625892455922,
+              "upper_v": 0.0,
+              "value": 0.04899060721790804,
+              "target_nodes": 32,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215129,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 2.220446049250313e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 32,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 32.0,
+              "value": 0.1128990058208778,
+              "target_nodes": 32,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215129,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 2.220446049250313e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 32,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "query_z_cut": 64.0,
+            "I0_closed_difference_display": 1.9897360161602734e-07,
+            "I1_closed_difference_display": 7.964765704826286e-06,
+            "I0_safe_ignored_negative_term_bound": 1.1894931940058042e-06,
+            "I1_safe_ignored_negative_term_bound": 2.3813079183062715e-05,
+            "outer_tail_bound_ideal_arithmetic": 5.987408012300676e-05,
+            "query_tail_bound_ideal_arithmetic": 6.765974168035726e-07,
+            "total_bound_ideal_arithmetic": 6.055067753981033e-05,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.009144000001469976
+        },
+        {
+          "value": 0.1780103165646093,
+          "nodes_per_segment": 64,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": -0.9534625892455922,
+              "value": 0.01612070541335517,
+              "target_nodes": 64,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215127,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 0.0,
+                "renormalized_query_weights": false,
+                "query_nodes": 64,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": -0.9534625892455922,
+              "upper_v": 0.0,
+              "value": 0.048990607217908,
+              "target_nodes": 64,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215127,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 0.0,
+                "renormalized_query_weights": false,
+                "query_nodes": 64,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 32.0,
+              "value": 0.11289900393334613,
+              "target_nodes": 64,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215127,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 0.0,
+                "renormalized_query_weights": false,
+                "query_nodes": 64,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "query_z_cut": 64.0,
+            "I0_closed_difference_display": 1.9897360161602734e-07,
+            "I1_closed_difference_display": 7.964765704826286e-06,
+            "I0_safe_ignored_negative_term_bound": 1.1894931940058042e-06,
+            "I1_safe_ignored_negative_term_bound": 2.3813079183062715e-05,
+            "outer_tail_bound_ideal_arithmetic": 5.987408012300676e-05,
+            "query_tail_bound_ideal_arithmetic": 6.765974168035726e-07,
+            "total_bound_ideal_arithmetic": 6.055067753981033e-05,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.02748269999938202
+        },
+        {
+          "value": 0.17801031656460128,
+          "nodes_per_segment": 128,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": -0.9534625892455922,
+              "value": 0.01612070541335246,
+              "target_nodes": 128,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215184,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 5.662137425588298e-15,
+                "renormalized_query_weights": false,
+                "query_nodes": 128,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": -0.9534625892455922,
+              "upper_v": 0.0,
+              "value": 0.04899060721790831,
+              "target_nodes": 128,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215184,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 5.662137425588298e-15,
+                "renormalized_query_weights": false,
+                "query_nodes": 128,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 32.0,
+              "value": 0.11289900393334051,
+              "target_nodes": 128,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215184,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 5.662137425588298e-15,
+                "renormalized_query_weights": false,
+                "query_nodes": 128,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "query_z_cut": 64.0,
+            "I0_closed_difference_display": 1.9897360161602734e-07,
+            "I1_closed_difference_display": 7.964765704826286e-06,
+            "I0_safe_ignored_negative_term_bound": 1.1894931940058042e-06,
+            "I1_safe_ignored_negative_term_bound": 2.3813079183062715e-05,
+            "outer_tail_bound_ideal_arithmetic": 5.987408012300676e-05,
+            "query_tail_bound_ideal_arithmetic": 6.765974168035726e-07,
+            "total_bound_ideal_arithmetic": 6.055067753981033e-05,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.04818840000007185
+        },
+        {
+          "value": 0.17801031656461147,
+          "nodes_per_segment": 256,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": -0.9534625892455922,
+              "value": 0.01612070541335597,
+              "target_nodes": 256,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215128,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 1.1102230246251565e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 256,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": -0.9534625892455922,
+              "upper_v": 0.0,
+              "value": 0.048990607217908023,
+              "target_nodes": 256,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215128,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 1.1102230246251565e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 256,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 32.0,
+              "value": 0.11289900393334748,
+              "target_nodes": 256,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215128,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 1.1102230246251565e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 256,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "query_z_cut": 64.0,
+            "I0_closed_difference_display": 1.9897360161602734e-07,
+            "I1_closed_difference_display": 7.964765704826286e-06,
+            "I0_safe_ignored_negative_term_bound": 1.1894931940058042e-06,
+            "I1_safe_ignored_negative_term_bound": 2.3813079183062715e-05,
+            "outer_tail_bound_ideal_arithmetic": 5.987408012300676e-05,
+            "query_tail_bound_ideal_arithmetic": 6.765974168035726e-07,
+            "total_bound_ideal_arithmetic": 6.055067753981033e-05,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.12759319999895524
+        }
+      ],
+      "final_refinement_abs_diagnostic": 1.0186296250935811e-14,
+      "convergence_diagnostic_pass": true,
+      "analytic_tail_budget_pass": true,
+      "finite_quadrature_not_analytically_bounded": true
+    },
+    {
+      "fixture": {
+        "id": "qminus_tminus",
+        "family": "student_t",
+        "mu": -1.0,
+        "scale": 1.0488088481701516,
+        "rho": 0.564577401601494,
+        "nu": 6.0,
+        "s0": 2.0,
+        "loss_coordinate": "YJ_half",
+        "query_id": "qminus",
+        "target_id": "tminus",
+        "query_context": [
+          -1.1
+        ],
+        "target_context": [
+          -1.0
+        ],
+        "exact_NIG_pair": {
+          "mu_query": -1.1,
+          "mu_target": -1.0,
+          "scale_query": 1.0977249200050074,
+          "scale_target": 1.0488088481701516,
+          "nu": 6.0,
+          "rho": 0.564577401601494,
+          "distinct_physical_rows_independent_residuals": true
+        }
+      },
+      "levels": [
+        {
+          "value": 0.2064743269195266,
+          "nodes_per_segment": 32,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": 0.0,
+              "value": 0.08078015109075927,
+              "target_nodes": 32,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215129,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 2.220446049250313e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 32,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 0.9534625892455922,
+              "value": 0.06826911461134007,
+              "target_nodes": 32,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215129,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 2.220446049250313e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 32,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.9534625892455922,
+              "upper_v": 32.0,
+              "value": 0.05742506121742727,
+              "target_nodes": 32,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215129,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 2.220446049250313e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 32,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "query_z_cut": 64.0,
+            "I0_closed_difference_display": 1.9897360161602734e-07,
+            "I1_closed_difference_display": 7.964765704826286e-06,
+            "I0_safe_ignored_negative_term_bound": 1.1894931940058042e-06,
+            "I1_safe_ignored_negative_term_bound": 2.3813079183062715e-05,
+            "outer_tail_bound_ideal_arithmetic": 5.987408012300676e-05,
+            "query_tail_bound_ideal_arithmetic": 6.080568510782567e-07,
+            "total_bound_ideal_arithmetic": 6.0482136974085016e-05,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.010260200000629993
+        },
+        {
+          "value": 0.20647432698690138,
+          "nodes_per_segment": 64,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": 0.0,
+              "value": 0.0807801503770746,
+              "target_nodes": 64,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215127,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 0.0,
+                "renormalized_query_weights": false,
+                "query_nodes": 64,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 0.9534625892455922,
+              "value": 0.06826911461133972,
+              "target_nodes": 64,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215127,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 0.0,
+                "renormalized_query_weights": false,
+                "query_nodes": 64,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.9534625892455922,
+              "upper_v": 32.0,
+              "value": 0.057425061998487056,
+              "target_nodes": 64,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215127,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 0.0,
+                "renormalized_query_weights": false,
+                "query_nodes": 64,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "query_z_cut": 64.0,
+            "I0_closed_difference_display": 1.9897360161602734e-07,
+            "I1_closed_difference_display": 7.964765704826286e-06,
+            "I0_safe_ignored_negative_term_bound": 1.1894931940058042e-06,
+            "I1_safe_ignored_negative_term_bound": 2.3813079183062715e-05,
+            "outer_tail_bound_ideal_arithmetic": 5.987408012300676e-05,
+            "query_tail_bound_ideal_arithmetic": 6.080568510782567e-07,
+            "total_bound_ideal_arithmetic": 6.0482136974085016e-05,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.020167699998637545
+        },
+        {
+          "value": 0.20647432698691115,
+          "nodes_per_segment": 128,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": 0.0,
+              "value": 0.08078015037706783,
+              "target_nodes": 128,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215184,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 5.662137425588298e-15,
+                "renormalized_query_weights": false,
+                "query_nodes": 128,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 0.9534625892455922,
+              "value": 0.06826911461134015,
+              "target_nodes": 128,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215184,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 5.662137425588298e-15,
+                "renormalized_query_weights": false,
+                "query_nodes": 128,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.9534625892455922,
+              "upper_v": 32.0,
+              "value": 0.05742506199850317,
+              "target_nodes": 128,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215184,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 5.662137425588298e-15,
+                "renormalized_query_weights": false,
+                "query_nodes": 128,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "query_z_cut": 64.0,
+            "I0_closed_difference_display": 1.9897360161602734e-07,
+            "I1_closed_difference_display": 7.964765704826286e-06,
+            "I0_safe_ignored_negative_term_bound": 1.1894931940058042e-06,
+            "I1_safe_ignored_negative_term_bound": 2.3813079183062715e-05,
+            "outer_tail_bound_ideal_arithmetic": 5.987408012300676e-05,
+            "query_tail_bound_ideal_arithmetic": 6.080568510782567e-07,
+            "total_bound_ideal_arithmetic": 6.0482136974085016e-05,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.049336899999616435
+        },
+        {
+          "value": 0.20647432698692597,
+          "nodes_per_segment": 256,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": 0.0,
+              "value": 0.08078015037707649,
+              "target_nodes": 256,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215128,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 1.1102230246251565e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 256,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 0.9534625892455922,
+              "value": 0.06826911461133975,
+              "target_nodes": 256,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215128,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 1.1102230246251565e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 256,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.9534625892455922,
+              "upper_v": 32.0,
+              "value": 0.05742506199850972,
+              "target_nodes": 256,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215128,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 1.1102230246251565e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 256,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "query_z_cut": 64.0,
+            "I0_closed_difference_display": 1.9897360161602734e-07,
+            "I1_closed_difference_display": 7.964765704826286e-06,
+            "I0_safe_ignored_negative_term_bound": 1.1894931940058042e-06,
+            "I1_safe_ignored_negative_term_bound": 2.3813079183062715e-05,
+            "outer_tail_bound_ideal_arithmetic": 5.987408012300676e-05,
+            "query_tail_bound_ideal_arithmetic": 6.080568510782567e-07,
+            "total_bound_ideal_arithmetic": 6.0482136974085016e-05,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.13847370000075898
+        }
+      ],
+      "final_refinement_abs_diagnostic": 1.482147737874584e-14,
+      "convergence_diagnostic_pass": true,
+      "analytic_tail_budget_pass": true,
+      "finite_quadrature_not_analytically_bounded": true
+    },
+    {
+      "fixture": {
+        "id": "case1_rho_sign_mirror",
+        "family": "student_t",
+        "mu": 1.0,
+        "scale": 1.0488088481701516,
+        "rho": -0.5454545454545454,
+        "nu": 6.0,
+        "s0": 2.0,
+        "loss_coordinate": "YJ_half",
+        "query_id": "qplus",
+        "target_id": "tplus",
+        "query_context": [
+          1.0
+        ],
+        "target_context": [
+          1.0
+        ],
+        "exact_NIG_pair": {
+          "mu_query": 1.0,
+          "mu_target": 1.0,
+          "scale_query": 1.0488088481701516,
+          "scale_target": 1.0488088481701516,
+          "nu": 6.0,
+          "rho": 0.5454545454545454,
+          "distinct_physical_rows_independent_residuals": true
+        },
+        "synthetic_symmetry_probe_not_another_pool_action": true
+      },
+      "levels": [
+        {
+          "value": 0.353363696727536,
+          "nodes_per_segment": 32,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": -0.9534625892455922,
+              "value": 0.031860668703614745,
+              "target_nodes": 32,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215129,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 2.220446049250313e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 32,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": -0.9534625892455922,
+              "upper_v": 0.0,
+              "value": 0.09739591258855403,
+              "target_nodes": 32,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215129,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 2.220446049250313e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 32,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 32.0,
+              "value": 0.2241071154353672,
+              "target_nodes": 32,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215129,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 2.220446049250313e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 32,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "query_z_cut": 64.0,
+            "I0_closed_difference_display": 1.9897360161602734e-07,
+            "I1_closed_difference_display": 7.964765704826286e-06,
+            "I0_safe_ignored_negative_term_bound": 1.1894931940058042e-06,
+            "I1_safe_ignored_negative_term_bound": 2.3813079183062715e-05,
+            "outer_tail_bound_ideal_arithmetic": 5.987408012300676e-05,
+            "query_tail_bound_ideal_arithmetic": 6.765974168035726e-07,
+            "total_bound_ideal_arithmetic": 6.055067753981033e-05,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.008752800000365824
+        },
+        {
+          "value": 0.35336369328300576,
+          "nodes_per_segment": 64,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": -0.9534625892455922,
+              "value": 0.03186066898390451,
+              "target_nodes": 64,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215127,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 0.0,
+                "renormalized_query_weights": false,
+                "query_nodes": 64,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": -0.9534625892455922,
+              "upper_v": 0.0,
+              "value": 0.09739591258855386,
+              "target_nodes": 64,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215127,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 0.0,
+                "renormalized_query_weights": false,
+                "query_nodes": 64,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 32.0,
+              "value": 0.22410711171054742,
+              "target_nodes": 64,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215127,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 0.0,
+                "renormalized_query_weights": false,
+                "query_nodes": 64,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "query_z_cut": 64.0,
+            "I0_closed_difference_display": 1.9897360161602734e-07,
+            "I1_closed_difference_display": 7.964765704826286e-06,
+            "I0_safe_ignored_negative_term_bound": 1.1894931940058042e-06,
+            "I1_safe_ignored_negative_term_bound": 2.3813079183062715e-05,
+            "outer_tail_bound_ideal_arithmetic": 5.987408012300676e-05,
+            "query_tail_bound_ideal_arithmetic": 6.765974168035726e-07,
+            "total_bound_ideal_arithmetic": 6.055067753981033e-05,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.01825710000048275
+        },
+        {
+          "value": 0.3533636932830038,
+          "nodes_per_segment": 128,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": -0.9534625892455922,
+              "value": 0.03186066898389936,
+              "target_nodes": 128,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215184,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 5.662137425588298e-15,
+                "renormalized_query_weights": false,
+                "query_nodes": 128,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": -0.9534625892455922,
+              "upper_v": 0.0,
+              "value": 0.09739591258855448,
+              "target_nodes": 128,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215184,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 5.662137425588298e-15,
+                "renormalized_query_weights": false,
+                "query_nodes": 128,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 32.0,
+              "value": 0.22410711171054998,
+              "target_nodes": 128,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215184,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 5.662137425588298e-15,
+                "renormalized_query_weights": false,
+                "query_nodes": 128,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "query_z_cut": 64.0,
+            "I0_closed_difference_display": 1.9897360161602734e-07,
+            "I1_closed_difference_display": 7.964765704826286e-06,
+            "I0_safe_ignored_negative_term_bound": 1.1894931940058042e-06,
+            "I1_safe_ignored_negative_term_bound": 2.3813079183062715e-05,
+            "outer_tail_bound_ideal_arithmetic": 5.987408012300676e-05,
+            "query_tail_bound_ideal_arithmetic": 6.765974168035726e-07,
+            "total_bound_ideal_arithmetic": 6.055067753981033e-05,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.04523430000153894
+        },
+        {
+          "value": 0.3533636932830241,
+          "nodes_per_segment": 256,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": -0.9534625892455922,
+              "value": 0.03186066898390629,
+              "target_nodes": 256,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215128,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 1.1102230246251565e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 256,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": -0.9534625892455922,
+              "upper_v": 0.0,
+              "value": 0.09739591258855389,
+              "target_nodes": 256,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215128,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 1.1102230246251565e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 256,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 32.0,
+              "value": 0.22410711171056388,
+              "target_nodes": 256,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215128,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 1.1102230246251565e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 256,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "query_z_cut": 64.0,
+            "I0_closed_difference_display": 1.9897360161602734e-07,
+            "I1_closed_difference_display": 7.964765704826286e-06,
+            "I0_safe_ignored_negative_term_bound": 1.1894931940058042e-06,
+            "I1_safe_ignored_negative_term_bound": 2.3813079183062715e-05,
+            "outer_tail_bound_ideal_arithmetic": 5.987408012300676e-05,
+            "query_tail_bound_ideal_arithmetic": 6.765974168035726e-07,
+            "total_bound_ideal_arithmetic": 6.055067753981033e-05,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.13056529999994382
+        }
+      ],
+      "final_refinement_abs_diagnostic": 2.0261570199409107e-14,
+      "convergence_diagnostic_pass": true,
+      "analytic_tail_budget_pass": true,
+      "finite_quadrature_not_analytically_bounded": true
+    },
+    {
+      "fixture": {
+        "id": "Studentt_rho0_native",
+        "family": "student_t",
+        "mu": 1.0,
+        "scale": 1.0488088481701516,
+        "rho": 0.0,
+        "nu": 6.0,
+        "s0": 2.0,
+        "loss_coordinate": "YJ_half"
+      },
+      "levels": [
+        {
+          "value": 0.009038846016499765,
+          "nodes_per_segment": 32,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": -0.9534625892455922,
+              "value": 0.001679153570435767,
+              "target_nodes": 32,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215129,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 2.220446049250313e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 32,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": -0.9534625892455922,
+              "upper_v": 0.0,
+              "value": 0.0007650332427046077,
+              "target_nodes": 32,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215129,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 2.220446049250313e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 32,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 32.0,
+              "value": 0.006594659203359389,
+              "target_nodes": 32,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215129,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 2.220446049250313e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 32,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "query_z_cut": 64.0,
+            "I0_closed_difference_display": 1.9897360161602734e-07,
+            "I1_closed_difference_display": 7.964765704826286e-06,
+            "I0_safe_ignored_negative_term_bound": 1.1894931940058042e-06,
+            "I1_safe_ignored_negative_term_bound": 2.3813079183062715e-05,
+            "outer_tail_bound_ideal_arithmetic": 5.987408012300676e-05,
+            "query_tail_bound_ideal_arithmetic": 6.765974168035726e-07,
+            "total_bound_ideal_arithmetic": 6.055067753981033e-05,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.009325900000476395
+        },
+        {
+          "value": 0.009038846972615151,
+          "nodes_per_segment": 64,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": -0.9534625892455922,
+              "value": 0.0016791535724609112,
+              "target_nodes": 64,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215127,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 0.0,
+                "renormalized_query_weights": false,
+                "query_nodes": 64,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": -0.9534625892455922,
+              "upper_v": 0.0,
+              "value": 0.0007650332427046074,
+              "target_nodes": 64,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215127,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 0.0,
+                "renormalized_query_weights": false,
+                "query_nodes": 64,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 32.0,
+              "value": 0.006594660157449633,
+              "target_nodes": 64,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215127,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 0.0,
+                "renormalized_query_weights": false,
+                "query_nodes": 64,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "query_z_cut": 64.0,
+            "I0_closed_difference_display": 1.9897360161602734e-07,
+            "I1_closed_difference_display": 7.964765704826286e-06,
+            "I0_safe_ignored_negative_term_bound": 1.1894931940058042e-06,
+            "I1_safe_ignored_negative_term_bound": 2.3813079183062715e-05,
+            "outer_tail_bound_ideal_arithmetic": 5.987408012300676e-05,
+            "query_tail_bound_ideal_arithmetic": 6.765974168035726e-07,
+            "total_bound_ideal_arithmetic": 6.055067753981033e-05,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.019410200000493205
+        },
+        {
+          "value": 0.009038846972615137,
+          "nodes_per_segment": 128,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": -0.9534625892455922,
+              "value": 0.001679153572460777,
+              "target_nodes": 128,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215184,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 5.662137425588298e-15,
+                "renormalized_query_weights": false,
+                "query_nodes": 128,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": -0.9534625892455922,
+              "upper_v": 0.0,
+              "value": 0.0007650332427046125,
+              "target_nodes": 128,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215184,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 5.662137425588298e-15,
+                "renormalized_query_weights": false,
+                "query_nodes": 128,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 32.0,
+              "value": 0.006594660157449747,
+              "target_nodes": 128,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215184,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 5.662137425588298e-15,
+                "renormalized_query_weights": false,
+                "query_nodes": 128,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "query_z_cut": 64.0,
+            "I0_closed_difference_display": 1.9897360161602734e-07,
+            "I1_closed_difference_display": 7.964765704826286e-06,
+            "I0_safe_ignored_negative_term_bound": 1.1894931940058042e-06,
+            "I1_safe_ignored_negative_term_bound": 2.3813079183062715e-05,
+            "outer_tail_bound_ideal_arithmetic": 5.987408012300676e-05,
+            "query_tail_bound_ideal_arithmetic": 6.765974168035726e-07,
+            "total_bound_ideal_arithmetic": 6.055067753981033e-05,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.04267740000068443
+        },
+        {
+          "value": 0.009038846972615103,
+          "nodes_per_segment": 256,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": -0.9534625892455922,
+              "value": 0.0016791535724609385,
+              "target_nodes": 256,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215128,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 1.1102230246251565e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 256,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": -0.9534625892455922,
+              "upper_v": 0.0,
+              "value": 0.0007650332427046073,
+              "target_nodes": 256,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215128,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 1.1102230246251565e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 256,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 32.0,
+              "value": 0.006594660157449557,
+              "target_nodes": 256,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215128,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 1.1102230246251565e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 256,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "query_z_cut": 64.0,
+            "I0_closed_difference_display": 1.9897360161602734e-07,
+            "I1_closed_difference_display": 7.964765704826286e-06,
+            "I0_safe_ignored_negative_term_bound": 1.1894931940058042e-06,
+            "I1_safe_ignored_negative_term_bound": 2.3813079183062715e-05,
+            "outer_tail_bound_ideal_arithmetic": 5.987408012300676e-05,
+            "query_tail_bound_ideal_arithmetic": 6.765974168035726e-07,
+            "total_bound_ideal_arithmetic": 6.055067753981033e-05,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.12950240000100166
+        }
+      ],
+      "final_refinement_abs_diagnostic": 3.469446951953614e-17,
+      "convergence_diagnostic_pass": true,
+      "analytic_tail_budget_pass": true,
+      "finite_quadrature_not_analytically_bounded": true
+    },
+    {
+      "fixture": {
+        "id": "Gaussian_rho0_native",
+        "family": "normal",
+        "mu": 1.0,
+        "scale": 1.0488088481701516,
+        "rho": 0.0,
+        "nu": null,
+        "s0": 2.0,
+        "loss_coordinate": "YJ_half",
+        "same_scale_parameter_not_moment_matching_claim": true
+      },
+      "levels": [
+        {
+          "value": 0.0,
+          "nodes_per_segment": 32,
+          "segments": [],
+          "exact_model_zero_independence": true,
+          "tail": {
+            "total_bound_ideal_arithmetic": 0.0
+          },
+          "elapsed_seconds_descriptive_only": 8.999999408842996e-06
+        },
+        {
+          "value": 0.0,
+          "nodes_per_segment": 64,
+          "segments": [],
+          "exact_model_zero_independence": true,
+          "tail": {
+            "total_bound_ideal_arithmetic": 0.0
+          },
+          "elapsed_seconds_descriptive_only": 4.200001058052294e-06
+        },
+        {
+          "value": 0.0,
+          "nodes_per_segment": 128,
+          "segments": [],
+          "exact_model_zero_independence": true,
+          "tail": {
+            "total_bound_ideal_arithmetic": 0.0
+          },
+          "elapsed_seconds_descriptive_only": 9.800000043469481e-06
+        },
+        {
+          "value": 0.0,
+          "nodes_per_segment": 256,
+          "segments": [],
+          "exact_model_zero_independence": true,
+          "tail": {
+            "total_bound_ideal_arithmetic": 0.0
+          },
+          "elapsed_seconds_descriptive_only": 3.0000010156072676e-06
+        }
+      ],
+      "final_refinement_abs_diagnostic": 0.0,
+      "convergence_diagnostic_pass": true,
+      "analytic_tail_budget_pass": true,
+      "finite_quadrature_not_analytically_bounded": true
+    },
+    {
+      "fixture": {
+        "id": "Studentt_rho0_affine_target",
+        "family": "student_t",
+        "mu": 1.0,
+        "scale": 1.0488088481701516,
+        "rho": 0.0,
+        "nu": 6.0,
+        "s0": 2.0,
+        "loss_coordinate": "affine"
+      },
+      "levels": [
+        {
+          "value": 0.005647240851331286,
+          "nodes_per_segment": 32,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": -0.9534625892455922,
+              "value": 0.00215554124694938,
+              "target_nodes": 32,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215129,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 2.220446049250313e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 32,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": -0.9534625892455922,
+              "upper_v": 0.0,
+              "value": 0.0006680791060847511,
+              "target_nodes": 32,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215129,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 2.220446049250313e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 32,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 32.0,
+              "value": 0.0028236204982971546,
+              "target_nodes": 32,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215129,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 2.220446049250313e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 32,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "query_z_cut": 64.0,
+            "I0_closed_difference_display": 1.9897360161602734e-07,
+            "I1_closed_difference_display": 7.964765704826286e-06,
+            "I0_safe_ignored_negative_term_bound": 1.1894931940058042e-06,
+            "I1_safe_ignored_negative_term_bound": 2.3813079183062715e-05,
+            "outer_tail_bound_ideal_arithmetic": 4.990203946845849e-06,
+            "query_tail_bound_ideal_arithmetic": 1.3135949704971399e-07,
+            "total_bound_ideal_arithmetic": 5.121563443895563e-06,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.00826499999857333
+        },
+        {
+          "value": 0.005647240712494941,
+          "nodes_per_segment": 64,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": -0.9534625892455922,
+              "value": 0.002155541250162722,
+              "target_nodes": 64,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215127,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 0.0,
+                "renormalized_query_weights": false,
+                "query_nodes": 64,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": -0.9534625892455922,
+              "upper_v": 0.0,
+              "value": 0.000668079106084751,
+              "target_nodes": 64,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215127,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 0.0,
+                "renormalized_query_weights": false,
+                "query_nodes": 64,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 32.0,
+              "value": 0.0028236203562474684,
+              "target_nodes": 64,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215127,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 0.0,
+                "renormalized_query_weights": false,
+                "query_nodes": 64,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "query_z_cut": 64.0,
+            "I0_closed_difference_display": 1.9897360161602734e-07,
+            "I1_closed_difference_display": 7.964765704826286e-06,
+            "I0_safe_ignored_negative_term_bound": 1.1894931940058042e-06,
+            "I1_safe_ignored_negative_term_bound": 2.3813079183062715e-05,
+            "outer_tail_bound_ideal_arithmetic": 4.990203946845849e-06,
+            "query_tail_bound_ideal_arithmetic": 1.3135949704971399e-07,
+            "total_bound_ideal_arithmetic": 5.121563443895563e-06,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.01688769999964279
+        },
+        {
+          "value": 0.00564724071249487,
+          "nodes_per_segment": 128,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": -0.9534625892455922,
+              "value": 0.0021555412501625976,
+              "target_nodes": 128,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215184,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 5.662137425588298e-15,
+                "renormalized_query_weights": false,
+                "query_nodes": 128,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": -0.9534625892455922,
+              "upper_v": 0.0,
+              "value": 0.0006680791060847547,
+              "target_nodes": 128,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215184,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 5.662137425588298e-15,
+                "renormalized_query_weights": false,
+                "query_nodes": 128,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 32.0,
+              "value": 0.002823620356247518,
+              "target_nodes": 128,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215184,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 5.662137425588298e-15,
+                "renormalized_query_weights": false,
+                "query_nodes": 128,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "query_z_cut": 64.0,
+            "I0_closed_difference_display": 1.9897360161602734e-07,
+            "I1_closed_difference_display": 7.964765704826286e-06,
+            "I0_safe_ignored_negative_term_bound": 1.1894931940058042e-06,
+            "I1_safe_ignored_negative_term_bound": 2.3813079183062715e-05,
+            "outer_tail_bound_ideal_arithmetic": 4.990203946845849e-06,
+            "query_tail_bound_ideal_arithmetic": 1.3135949704971399e-07,
+            "total_bound_ideal_arithmetic": 5.121563443895563e-06,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.049924999999348074
+        },
+        {
+          "value": 0.005647240712494926,
+          "nodes_per_segment": 256,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": -0.9534625892455922,
+              "value": 0.0021555412501627416,
+              "target_nodes": 256,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215128,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 1.1102230246251565e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 256,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": -0.9534625892455922,
+              "upper_v": 0.0,
+              "value": 0.0006680791060847509,
+              "target_nodes": 256,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215128,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 1.1102230246251565e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 256,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 32.0,
+              "value": 0.0028236203562474337,
+              "target_nodes": 256,
+              "kernel_diagnostics": {
+                "query_theta_interval": [
+                  -1.532541721279615,
+                  1.532541721279615
+                ],
+                "query_probability_mass_integrated": 0.9999999990215128,
+                "analytic_query_probability_mass": 0.9999999990215127,
+                "query_mass_quadrature_abs_difference": 1.1102230246251565e-16,
+                "renormalized_query_weights": false,
+                "query_nodes": 256,
+                "coordinate": "z=sqrt(nu)*tan(theta)",
+                "weighted_original_density": "cos(theta)^(nu-1)/Beta(1/2,nu/2)"
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "query_z_cut": 64.0,
+            "I0_closed_difference_display": 1.9897360161602734e-07,
+            "I1_closed_difference_display": 7.964765704826286e-06,
+            "I0_safe_ignored_negative_term_bound": 1.1894931940058042e-06,
+            "I1_safe_ignored_negative_term_bound": 2.3813079183062715e-05,
+            "outer_tail_bound_ideal_arithmetic": 4.990203946845849e-06,
+            "query_tail_bound_ideal_arithmetic": 1.3135949704971399e-07,
+            "total_bound_ideal_arithmetic": 5.121563443895563e-06,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.10963989999982005
+        }
+      ],
+      "final_refinement_abs_diagnostic": 5.637851296924623e-17,
+      "convergence_diagnostic_pass": true,
+      "analytic_tail_budget_pass": true,
+      "finite_quadrature_not_analytically_bounded": true
+    },
+    {
+      "fixture": {
+        "id": "qplus_tplus_matchedGaussian_native",
+        "family": "normal",
+        "mu": 1.0,
+        "scale": 1.284523257866513,
+        "rho": 0.5454545454545454,
+        "nu": null,
+        "s0": 2.0,
+        "loss_coordinate": "YJ_half",
+        "query_id": "qplus",
+        "target_id": "tplus",
+        "query_context": [
+          1.0
+        ],
+        "target_context": [
+          1.0
+        ],
+        "exact_NIG_pair": {
+          "mu_query": 1.0,
+          "mu_target": 1.0,
+          "scale_query": 1.0488088481701516,
+          "scale_target": 1.0488088481701516,
+          "nu": 6.0,
+          "rho": 0.5454545454545454,
+          "distinct_physical_rows_independent_residuals": true
+        },
+        "matched_latent_mean_covariance_not_native_moment_match": true
+      },
+      "levels": [
+        {
+          "value": 0.3556124466928502,
+          "nodes_per_segment": 32,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": -0.778498944161523,
+              "value": 0.030351097480819458,
+              "target_nodes": 32,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 18,
+                "raw_Owen_min": -1.317220556465328e-43,
+                "fallback_nodes": 20,
+                "positive_angle_exp_underflow_nodes": 186,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            },
+            {
+              "lower_v": -0.778498944161523,
+              "upper_v": 0.0,
+              "value": 0.10369643863958765,
+              "target_nodes": 32,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 0,
+                "raw_Owen_min": 0.028362494221830653,
+                "fallback_nodes": 0,
+                "positive_angle_exp_underflow_nodes": 0,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 32.0,
+              "value": 0.22156491057244307,
+              "target_nodes": 32,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 17,
+                "raw_Owen_min": -3.25008188747211e-48,
+                "fallback_nodes": 20,
+                "positive_angle_exp_underflow_nodes": 183,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "outer_tail_bound_ideal_arithmetic": 1.0575758612818095e-221,
+            "query_tail_bound_ideal_arithmetic": 0.0,
+            "total_bound_ideal_arithmetic": 1.0575758612818095e-221,
+            "Gaussian_query_integrated_by_Owen_or_positive_angle_no_query_truncation": true,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.009104000000661472
+        },
+        {
+          "value": 0.3556124468707242,
+          "nodes_per_segment": 64,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": -0.778498944161523,
+              "value": 0.030351099016803246,
+              "target_nodes": 64,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 37,
+                "raw_Owen_min": -8.4302115613781e-42,
+                "fallback_nodes": 40,
+                "positive_angle_exp_underflow_nodes": 755,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            },
+            {
+              "lower_v": -0.778498944161523,
+              "upper_v": 0.0,
+              "value": 0.10369643863958765,
+              "target_nodes": 64,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 0,
+                "raw_Owen_min": 0.028331943443940882,
+                "fallback_nodes": 0,
+                "positive_angle_exp_underflow_nodes": 0,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 32.0,
+              "value": 0.22156490921433328,
+              "target_nodes": 64,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 33,
+                "raw_Owen_min": -2.0402905640569337e-42,
+                "fallback_nodes": 40,
+                "positive_angle_exp_underflow_nodes": 745,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "outer_tail_bound_ideal_arithmetic": 1.0575758612818095e-221,
+            "query_tail_bound_ideal_arithmetic": 0.0,
+            "total_bound_ideal_arithmetic": 1.0575758612818095e-221,
+            "Gaussian_query_integrated_by_Owen_or_positive_angle_no_query_truncation": true,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.013712800000575953
+        },
+        {
+          "value": 0.35561244687069843,
+          "nodes_per_segment": 128,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": -0.778498944161523,
+              "value": 0.030351099016795557,
+              "target_nodes": 128,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 68,
+                "raw_Owen_min": -3.452799416096349e-42,
+                "fallback_nodes": 81,
+                "positive_angle_exp_underflow_nodes": 3031,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            },
+            {
+              "lower_v": -0.778498944161523,
+              "upper_v": 0.0,
+              "value": 0.10369643863958765,
+              "target_nodes": 128,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 0,
+                "raw_Owen_min": 0.028324163101116517,
+                "fallback_nodes": 0,
+                "positive_angle_exp_underflow_nodes": 0,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 32.0,
+              "value": 0.22156490921431524,
+              "target_nodes": 128,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 61,
+                "raw_Owen_min": -8.4302115613781e-42,
+                "fallback_nodes": 79,
+                "positive_angle_exp_underflow_nodes": 2995,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "outer_tail_bound_ideal_arithmetic": 1.0575758612818095e-221,
+            "query_tail_bound_ideal_arithmetic": 0.0,
+            "total_bound_ideal_arithmetic": 1.0575758612818095e-221,
+            "Gaussian_query_integrated_by_Owen_or_positive_angle_no_query_truncation": true,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.03340339999886055
+        },
+        {
+          "value": 0.3556124468707292,
+          "nodes_per_segment": 256,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": -0.778498944161523,
+              "value": 0.03035109901680569,
+              "target_nodes": 256,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 135,
+                "raw_Owen_min": -2.511126848070072e-41,
+                "fallback_nodes": 160,
+                "positive_angle_exp_underflow_nodes": 11922,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            },
+            {
+              "lower_v": -0.778498944161523,
+              "upper_v": 0.0,
+              "value": 0.10369643863958765,
+              "target_nodes": 256,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 0,
+                "raw_Owen_min": 0.028322200067684683,
+                "fallback_nodes": 0,
+                "positive_angle_exp_underflow_nodes": 0,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 32.0,
+              "value": 0.22156490921433586,
+              "target_nodes": 256,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 138,
+                "raw_Owen_min": -5.380986103007298e-41,
+                "fallback_nodes": 156,
+                "positive_angle_exp_underflow_nodes": 12018,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "outer_tail_bound_ideal_arithmetic": 1.0575758612818095e-221,
+            "query_tail_bound_ideal_arithmetic": 0.0,
+            "total_bound_ideal_arithmetic": 1.0575758612818095e-221,
+            "Gaussian_query_integrated_by_Owen_or_positive_angle_no_query_truncation": true,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.06259769999996934
+        }
+      ],
+      "final_refinement_abs_diagnostic": 3.0753177782116836e-14,
+      "convergence_diagnostic_pass": true,
+      "analytic_tail_budget_pass": true,
+      "finite_quadrature_not_analytically_bounded": true
+    },
+    {
+      "fixture": {
+        "id": "qplus_tminus_matchedGaussian_native",
+        "family": "normal",
+        "mu": -1.0,
+        "scale": 1.284523257866513,
+        "rho": -0.36363636363636365,
+        "nu": null,
+        "s0": 2.0,
+        "loss_coordinate": "YJ_half",
+        "query_id": "qplus",
+        "target_id": "tminus",
+        "query_context": [
+          1.0
+        ],
+        "target_context": [
+          -1.0
+        ],
+        "exact_NIG_pair": {
+          "mu_query": 1.0,
+          "mu_target": -1.0,
+          "scale_query": 1.0488088481701516,
+          "scale_target": 1.0488088481701516,
+          "nu": 6.0,
+          "rho": -0.36363636363636365,
+          "distinct_physical_rows_independent_residuals": true
+        },
+        "matched_latent_mean_covariance_not_native_moment_match": true
+      },
+      "levels": [
+        {
+          "value": 0.07968234473483987,
+          "nodes_per_segment": 32,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": 0.0,
+              "value": 0.032664341149932496,
+              "target_nodes": 32,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 18,
+                "raw_Owen_min": -7.824090399073146e-35,
+                "fallback_nodes": 21,
+                "positive_angle_exp_underflow_nodes": 225,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 0.778498944161523,
+              "value": 0.02939663055491791,
+              "target_nodes": 32,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 0,
+                "raw_Owen_min": 0.011967783628580142,
+                "fallback_nodes": 0,
+                "positive_angle_exp_underflow_nodes": 0,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            },
+            {
+              "lower_v": 0.778498944161523,
+              "upper_v": 32.0,
+              "value": 0.017621373029989458,
+              "target_nodes": 32,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 19,
+                "raw_Owen_min": -3.467708334925748e-37,
+                "fallback_nodes": 21,
+                "positive_angle_exp_underflow_nodes": 228,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "outer_tail_bound_ideal_arithmetic": 1.0575758612818095e-221,
+            "query_tail_bound_ideal_arithmetic": 0.0,
+            "total_bound_ideal_arithmetic": 1.0575758612818095e-221,
+            "Gaussian_query_integrated_by_Owen_or_positive_angle_no_query_truncation": true,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.007757999999739695
+        },
+        {
+          "value": 0.07968234859713112,
+          "nodes_per_segment": 64,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": 0.0,
+              "value": 0.03266434626107613,
+              "target_nodes": 64,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 36,
+                "raw_Owen_min": -3.9000081373841526e-33,
+                "fallback_nodes": 42,
+                "positive_angle_exp_underflow_nodes": 910,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 0.778498944161523,
+              "value": 0.029396630554917914,
+              "target_nodes": 64,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 0,
+                "raw_Owen_min": 0.011953910215733277,
+                "fallback_nodes": 0,
+                "positive_angle_exp_underflow_nodes": 0,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            },
+            {
+              "lower_v": 0.778498944161523,
+              "upper_v": 32.0,
+              "value": 0.01762137178113708,
+              "target_nodes": 64,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 38,
+                "raw_Owen_min": -1.7999757246966277e-38,
+                "fallback_nodes": 43,
+                "positive_angle_exp_underflow_nodes": 924,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "outer_tail_bound_ideal_arithmetic": 1.0575758612818095e-221,
+            "query_tail_bound_ideal_arithmetic": 0.0,
+            "total_bound_ideal_arithmetic": 1.0575758612818095e-221,
+            "Gaussian_query_integrated_by_Owen_or_positive_angle_no_query_truncation": true,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.013119400000505266
+        },
+        {
+          "value": 0.0796823485971239,
+          "nodes_per_segment": 128,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": 0.0,
+              "value": 0.03266434626107203,
+              "target_nodes": 128,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 65,
+                "raw_Owen_min": -1.504632769052528e-36,
+                "fallback_nodes": 84,
+                "positive_angle_exp_underflow_nodes": 3652,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 0.778498944161523,
+              "value": 0.02939663055491793,
+              "target_nodes": 128,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 0,
+                "raw_Owen_min": 0.011950377256412265,
+                "fallback_nodes": 0,
+                "positive_angle_exp_underflow_nodes": 0,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            },
+            {
+              "lower_v": 0.778498944161523,
+              "upper_v": 32.0,
+              "value": 0.017621371781133943,
+              "target_nodes": 128,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 74,
+                "raw_Owen_min": -9.62964972193618e-34,
+                "fallback_nodes": 85,
+                "positive_angle_exp_underflow_nodes": 3694,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "outer_tail_bound_ideal_arithmetic": 1.0575758612818095e-221,
+            "query_tail_bound_ideal_arithmetic": 0.0,
+            "total_bound_ideal_arithmetic": 1.0575758612818095e-221,
+            "Gaussian_query_integrated_by_Owen_or_positive_angle_no_query_truncation": true,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.029131799999959185
+        },
+        {
+          "value": 0.07968234859713291,
+          "nodes_per_segment": 256,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": 0.0,
+              "value": 0.03266434626107698,
+              "target_nodes": 256,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 145,
+                "raw_Owen_min": -7.101866669927932e-34,
+                "fallback_nodes": 166,
+                "positive_angle_exp_underflow_nodes": 14639,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 0.778498944161523,
+              "value": 0.029396630554917914,
+              "target_nodes": 256,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 0,
+                "raw_Owen_min": 0.01194948587776909,
+                "fallback_nodes": 0,
+                "positive_angle_exp_underflow_nodes": 0,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            },
+            {
+              "lower_v": 0.778498944161523,
+              "upper_v": 32.0,
+              "value": 0.01762137178113801,
+              "target_nodes": 256,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 143,
+                "raw_Owen_min": -8.425943506694157e-34,
+                "fallback_nodes": 170,
+                "positive_angle_exp_underflow_nodes": 14579,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "outer_tail_bound_ideal_arithmetic": 1.0575758612818095e-221,
+            "query_tail_bound_ideal_arithmetic": 0.0,
+            "total_bound_ideal_arithmetic": 1.0575758612818095e-221,
+            "Gaussian_query_integrated_by_Owen_or_positive_angle_no_query_truncation": true,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.06683560000055877
+        }
+      ],
+      "final_refinement_abs_diagnostic": 9.006684287271582e-15,
+      "convergence_diagnostic_pass": true,
+      "analytic_tail_budget_pass": true,
+      "finite_quadrature_not_analytically_bounded": true
+    },
+    {
+      "fixture": {
+        "id": "qminus_tplus_matchedGaussian_native",
+        "family": "normal",
+        "mu": 1.0,
+        "scale": 1.284523257866513,
+        "rho": -0.3908612780318036,
+        "nu": null,
+        "s0": 2.0,
+        "loss_coordinate": "YJ_half",
+        "query_id": "qminus",
+        "target_id": "tplus",
+        "query_context": [
+          -1.1
+        ],
+        "target_context": [
+          1.0
+        ],
+        "exact_NIG_pair": {
+          "mu_query": -1.1,
+          "mu_target": 1.0,
+          "scale_query": 1.0977249200050074,
+          "scale_target": 1.0488088481701516,
+          "nu": 6.0,
+          "rho": -0.3908612780318036,
+          "distinct_physical_rows_independent_residuals": true
+        },
+        "matched_latent_mean_covariance_not_native_moment_match": true
+      },
+      "levels": [
+        {
+          "value": 0.1745579719359836,
+          "nodes_per_segment": 32,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": -0.778498944161523,
+              "value": 0.0142158222391012,
+              "target_nodes": 32,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 19,
+                "raw_Owen_min": -3.467708334925748e-37,
+                "fallback_nodes": 21,
+                "positive_angle_exp_underflow_nodes": 224,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            },
+            {
+              "lower_v": -0.778498944161523,
+              "upper_v": 0.0,
+              "value": 0.052185508695971584,
+              "target_nodes": 32,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 0,
+                "raw_Owen_min": 0.013913837661930661,
+                "fallback_nodes": 0,
+                "positive_angle_exp_underflow_nodes": 0,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 32.0,
+              "value": 0.10815664100091082,
+              "target_nodes": 32,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 18,
+                "raw_Owen_min": -6.770847460736376e-35,
+                "fallback_nodes": 21,
+                "positive_angle_exp_underflow_nodes": 221,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "outer_tail_bound_ideal_arithmetic": 1.0575758612818095e-221,
+            "query_tail_bound_ideal_arithmetic": 0.0,
+            "total_bound_ideal_arithmetic": 1.0575758612818095e-221,
+            "Gaussian_query_integrated_by_Owen_or_positive_angle_no_query_truncation": true,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.006428000000596512
+        },
+        {
+          "value": 0.17455798514468387,
+          "nodes_per_segment": 64,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": -0.778498944161523,
+              "value": 0.014215822933166974,
+              "target_nodes": 64,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 38,
+                "raw_Owen_min": -1.7999757246966277e-38,
+                "fallback_nodes": 42,
+                "positive_angle_exp_underflow_nodes": 901,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            },
+            {
+              "lower_v": -0.778498944161523,
+              "upper_v": 0.0,
+              "value": 0.05218550869597158,
+              "target_nodes": 64,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 0,
+                "raw_Owen_min": 0.013897860028603715,
+                "fallback_nodes": 0,
+                "positive_angle_exp_underflow_nodes": 0,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 32.0,
+              "value": 0.10815665351554533,
+              "target_nodes": 64,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 35,
+                "raw_Owen_min": -9.4039548065783e-38,
+                "fallback_nodes": 42,
+                "positive_angle_exp_underflow_nodes": 892,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "outer_tail_bound_ideal_arithmetic": 1.0575758612818095e-221,
+            "query_tail_bound_ideal_arithmetic": 0.0,
+            "total_bound_ideal_arithmetic": 1.0575758612818095e-221,
+            "Gaussian_query_integrated_by_Owen_or_positive_angle_no_query_truncation": true,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.013148199999704957
+        },
+        {
+          "value": 0.17455798514467083,
+          "nodes_per_segment": 128,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": -0.778498944161523,
+              "value": 0.014215822933163199,
+              "target_nodes": 128,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 73,
+                "raw_Owen_min": -8.125016952883651e-35,
+                "fallback_nodes": 85,
+                "positive_angle_exp_underflow_nodes": 3620,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            },
+            {
+              "lower_v": -0.778498944161523,
+              "upper_v": 0.0,
+              "value": 0.052185508695971584,
+              "target_nodes": 128,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 0,
+                "raw_Owen_min": 0.013893791188434007,
+                "fallback_nodes": 0,
+                "positive_angle_exp_underflow_nodes": 0,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 32.0,
+              "value": 0.10815665351553605,
+              "target_nodes": 128,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 64,
+                "raw_Owen_min": -9.639053676742758e-37,
+                "fallback_nodes": 83,
+                "positive_angle_exp_underflow_nodes": 3581,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "outer_tail_bound_ideal_arithmetic": 1.0575758612818095e-221,
+            "query_tail_bound_ideal_arithmetic": 0.0,
+            "total_bound_ideal_arithmetic": 1.0575758612818095e-221,
+            "Gaussian_query_integrated_by_Owen_or_positive_angle_no_query_truncation": true,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.03417099999933271
+        },
+        {
+          "value": 0.1745579851446863,
+          "nodes_per_segment": 256,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": -0.778498944161523,
+              "value": 0.01421582293316821,
+              "target_nodes": 256,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 142,
+                "raw_Owen_min": -4.513898307157584e-35,
+                "fallback_nodes": 169,
+                "positive_angle_exp_underflow_nodes": 14286,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            },
+            {
+              "lower_v": -0.778498944161523,
+              "upper_v": 0.0,
+              "value": 0.052185508695971564,
+              "target_nodes": 256,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 0,
+                "raw_Owen_min": 0.013892764603364416,
+                "fallback_nodes": 0,
+                "positive_angle_exp_underflow_nodes": 0,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 32.0,
+              "value": 0.10815665351554651,
+              "target_nodes": 256,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 145,
+                "raw_Owen_min": -5.657419211637505e-34,
+                "fallback_nodes": 164,
+                "positive_angle_exp_underflow_nodes": 14354,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "outer_tail_bound_ideal_arithmetic": 1.0575758612818095e-221,
+            "query_tail_bound_ideal_arithmetic": 0.0,
+            "total_bound_ideal_arithmetic": 1.0575758612818095e-221,
+            "Gaussian_query_integrated_by_Owen_or_positive_angle_no_query_truncation": true,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.0648401999987982
+        }
+      ],
+      "final_refinement_abs_diagnostic": 1.5459855617905305e-14,
+      "convergence_diagnostic_pass": true,
+      "analytic_tail_budget_pass": true,
+      "finite_quadrature_not_analytically_bounded": true
+    },
+    {
+      "fixture": {
+        "id": "qminus_tminus_matchedGaussian_native",
+        "family": "normal",
+        "mu": -1.0,
+        "scale": 1.284523257866513,
+        "rho": 0.564577401601494,
+        "nu": null,
+        "s0": 2.0,
+        "loss_coordinate": "YJ_half",
+        "query_id": "qminus",
+        "target_id": "tminus",
+        "query_context": [
+          -1.1
+        ],
+        "target_context": [
+          -1.0
+        ],
+        "exact_NIG_pair": {
+          "mu_query": -1.1,
+          "mu_target": -1.0,
+          "scale_query": 1.0977249200050074,
+          "scale_target": 1.0488088481701516,
+          "nu": 6.0,
+          "rho": 0.564577401601494,
+          "distinct_physical_rows_independent_residuals": true
+        },
+        "matched_latent_mean_covariance_not_native_moment_match": true
+      },
+      "levels": [
+        {
+          "value": 0.20467677704319304,
+          "nodes_per_segment": 32,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": 0.0,
+              "value": 0.08299949980562936,
+              "target_nodes": 32,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 17,
+                "raw_Owen_min": -3.25008188747211e-48,
+                "fallback_nodes": 20,
+                "positive_angle_exp_underflow_nodes": 177,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 0.778498944161523,
+              "value": 0.07290153857380738,
+              "target_nodes": 32,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 0,
+                "raw_Owen_min": 0.03059978557469925,
+                "fallback_nodes": 0,
+                "positive_angle_exp_underflow_nodes": 0,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            },
+            {
+              "lower_v": 0.778498944161523,
+              "upper_v": 32.0,
+              "value": 0.0487757386637563,
+              "target_nodes": 32,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 18,
+                "raw_Owen_min": -1.14906474074635e-43,
+                "fallback_nodes": 20,
+                "positive_angle_exp_underflow_nodes": 180,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "outer_tail_bound_ideal_arithmetic": 1.0575758612818095e-221,
+            "query_tail_bound_ideal_arithmetic": 0.0,
+            "total_bound_ideal_arithmetic": 1.0575758612818095e-221,
+            "Gaussian_query_integrated_by_Owen_or_positive_angle_no_query_truncation": true,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.005934499999057152
+        },
+        {
+          "value": 0.20467678178411863,
+          "nodes_per_segment": 64,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": 0.0,
+              "value": 0.08299950527019187,
+              "target_nodes": 64,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 33,
+                "raw_Owen_min": -1.9506074623401454e-42,
+                "fallback_nodes": 39,
+                "positive_angle_exp_underflow_nodes": 719,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 0.778498944161523,
+              "value": 0.07290153857380739,
+              "target_nodes": 64,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 0,
+                "raw_Owen_min": 0.030567121839966155,
+                "fallback_nodes": 0,
+                "positive_angle_exp_underflow_nodes": 0,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            },
+            {
+              "lower_v": 0.778498944161523,
+              "upper_v": 32.0,
+              "value": 0.04877573794011936,
+              "target_nodes": 64,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 37,
+                "raw_Owen_min": -2.5111268480700722e-42,
+                "fallback_nodes": 40,
+                "positive_angle_exp_underflow_nodes": 727,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "outer_tail_bound_ideal_arithmetic": 1.0575758612818095e-221,
+            "query_tail_bound_ideal_arithmetic": 0.0,
+            "total_bound_ideal_arithmetic": 1.0575758612818095e-221,
+            "Gaussian_query_integrated_by_Owen_or_positive_angle_no_query_truncation": true,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.010980200000631157
+        },
+        {
+          "value": 0.2046767817841006,
+          "nodes_per_segment": 128,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": 0.0,
+              "value": 0.08299950527018186,
+              "target_nodes": 128,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 61,
+                "raw_Owen_min": -2.5111268480700722e-42,
+                "fallback_nodes": 78,
+                "positive_angle_exp_underflow_nodes": 2890,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 0.778498944161523,
+              "value": 0.0729015385738074,
+              "target_nodes": 128,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 0,
+                "raw_Owen_min": 0.030558803345147073,
+                "fallback_nodes": 0,
+                "positive_angle_exp_underflow_nodes": 0,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            },
+            {
+              "lower_v": 0.778498944161523,
+              "upper_v": 32.0,
+              "value": 0.04877573794011133,
+              "target_nodes": 128,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 69,
+                "raw_Owen_min": -3.004383907512408e-42,
+                "fallback_nodes": 80,
+                "positive_angle_exp_underflow_nodes": 2927,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "outer_tail_bound_ideal_arithmetic": 1.0575758612818095e-221,
+            "query_tail_bound_ideal_arithmetic": 0.0,
+            "total_bound_ideal_arithmetic": 1.0575758612818095e-221,
+            "Gaussian_query_integrated_by_Owen_or_positive_angle_no_query_truncation": true,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.026612999999997555
+        },
+        {
+          "value": 0.20467678178412288,
+          "nodes_per_segment": 256,
+          "segments": [
+            {
+              "lower_v": -32.0,
+              "upper_v": 0.0,
+              "value": 0.08299950527019401,
+              "target_nodes": 256,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 137,
+                "raw_Owen_min": -2.4393803666966416e-41,
+                "fallback_nodes": 155,
+                "positive_angle_exp_underflow_nodes": 11592,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            },
+            {
+              "lower_v": 0.0,
+              "upper_v": 0.778498944161523,
+              "value": 0.07290153857380739,
+              "target_nodes": 256,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 0,
+                "raw_Owen_min": 0.030556704529294654,
+                "fallback_nodes": 0,
+                "positive_angle_exp_underflow_nodes": 0,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            },
+            {
+              "lower_v": 0.778498944161523,
+              "upper_v": 32.0,
+              "value": 0.04877573794012149,
+              "target_nodes": 256,
+              "kernel_diagnostics": {
+                "exact_zero_rho_independence": false,
+                "raw_Owen_negative_nodes": 133,
+                "raw_Owen_min": -8.161162256227735e-42,
+                "fallback_nodes": 159,
+                "positive_angle_exp_underflow_nodes": 11488,
+                "fallback_formula": "K=1/(2pi) integral_0^asin(rho²) exp[-v²/(1+sin(theta))]dtheta",
+                "hard_negative_clamp_used": false
+              }
+            }
+          ],
+          "exact_model_zero_independence": false,
+          "tail": {
+            "outer_v_cut": 32.0,
+            "outer_tail_bound_ideal_arithmetic": 1.0575758612818095e-221,
+            "query_tail_bound_ideal_arithmetic": 0.0,
+            "total_bound_ideal_arithmetic": 1.0575758612818095e-221,
+            "Gaussian_query_integrated_by_Owen_or_positive_angle_no_query_truncation": true,
+            "not_IEEE_directed_or_CDF_error_certificate": true
+          },
+          "elapsed_seconds_descriptive_only": 0.07515180000154942
+        }
+      ],
+      "final_refinement_abs_diagnostic": 2.2287727219350018e-14,
+      "convergence_diagnostic_pass": true,
+      "analytic_tail_budget_pass": true,
+      "finite_quadrature_not_analytically_bounded": true
+    }
+  ],
+  "conditional_update_probes": [
+    {
+      "fixture_id": "qplus_tplus",
+      "standardized_hypothetical_z": -1.0,
+      "hypothetical_modeled_query": -0.04880884817015163,
+      "NIG_updated_target": {
+        "mu": 0.4279224464526446,
+        "scale": 0.8790490729915326,
+        "nu": 7.0
+      },
+      "conditional_bivariate_t_target": {
+        "mu": 0.42792244645264466,
+        "scale": 0.8790490729915327,
+        "nu": 7.0
+      },
+      "absolute_differences": {
+        "mu": 5.551115123125783e-17,
+        "scale": 1.1102230246251565e-16,
+        "nu": 0.0
+      },
+      "not_a_real_measurement_or_persisted_material_training_label": true
+    },
+    {
+      "fixture_id": "qplus_tplus",
+      "standardized_hypothetical_z": 0.0,
+      "hypothetical_modeled_query": 1.0,
+      "NIG_updated_target": {
+        "mu": 1.0,
+        "scale": 0.8138413004619895,
+        "nu": 7.0
+      },
+      "conditional_bivariate_t_target": {
+        "mu": 1.0,
+        "scale": 0.8138413004619897,
+        "nu": 7.0
+      },
+      "absolute_differences": {
+        "mu": 0.0,
+        "scale": 1.1102230246251565e-16,
+        "nu": 0.0
+      },
+      "not_a_real_measurement_or_persisted_material_training_label": true
+    },
+    {
+      "fixture_id": "qplus_tplus",
+      "standardized_hypothetical_z": 1.0,
+      "hypothetical_modeled_query": 2.0488088481701516,
+      "NIG_updated_target": {
+        "mu": 1.5720775535473555,
+        "scale": 0.8790490729915326,
+        "nu": 7.0
+      },
+      "conditional_bivariate_t_target": {
+        "mu": 1.5720775535473552,
+        "scale": 0.8790490729915327,
+        "nu": 7.0
+      },
+      "absolute_differences": {
+        "mu": 2.220446049250313e-16,
+        "scale": 1.1102230246251565e-16,
+        "nu": 0.0
+      },
+      "not_a_real_measurement_or_persisted_material_training_label": true
+    },
+    {
+      "fixture_id": "qplus_tminus",
+      "standardized_hypothetical_z": -1.0,
+      "hypothetical_modeled_query": -0.04880884817015163,
+      "NIG_updated_target": {
+        "mu": -0.6186149643017631,
+        "scale": 0.9770084209183945,
+        "nu": 7.0
+      },
+      "conditional_bivariate_t_target": {
+        "mu": -0.6186149643017631,
+        "scale": 0.9770084209183945,
+        "nu": 7.0
+      },
+      "absolute_differences": {
+        "mu": 0.0,
+        "scale": 0.0,
+        "nu": 0.0
+      },
+      "not_a_real_measurement_or_persisted_material_training_label": true
+    },
+    {
+      "fixture_id": "qplus_tminus",
+      "standardized_hypothetical_z": 0.0,
+      "hypothetical_modeled_query": 1.0,
+      "NIG_updated_target": {
+        "mu": -1.0,
+        "scale": 0.9045340337332909,
+        "nu": 7.0
+      },
+      "conditional_bivariate_t_target": {
+        "mu": -1.0,
+        "scale": 0.9045340337332909,
+        "nu": 7.0
+      },
+      "absolute_differences": {
+        "mu": 0.0,
+        "scale": 0.0,
+        "nu": 0.0
+      },
+      "not_a_real_measurement_or_persisted_material_training_label": true
+    },
+    {
+      "fixture_id": "qplus_tminus",
+      "standardized_hypothetical_z": 1.0,
+      "hypothetical_modeled_query": 2.0488088481701516,
+      "NIG_updated_target": {
+        "mu": -1.381385035698237,
+        "scale": 0.9770084209183945,
+        "nu": 7.0
+      },
+      "conditional_bivariate_t_target": {
+        "mu": -1.381385035698237,
+        "scale": 0.9770084209183945,
+        "nu": 7.0
+      },
+      "absolute_differences": {
+        "mu": 0.0,
+        "scale": 0.0,
+        "nu": 0.0
+      },
+      "not_a_real_measurement_or_persisted_material_training_label": true
+    },
+    {
+      "fixture_id": "qminus_tplus",
+      "standardized_hypothetical_z": -1.0,
+      "hypothetical_modeled_query": -2.1977249200050073,
+      "NIG_updated_target": {
+        "mu": 1.4099387668068493,
+        "scale": 0.9653756820372469,
+        "nu": 7.0
+      },
+      "conditional_bivariate_t_target": {
+        "mu": 1.4099387668068493,
+        "scale": 0.9653756820372469,
+        "nu": 7.0
+      },
+      "absolute_differences": {
+        "mu": 0.0,
+        "scale": 0.0,
+        "nu": 0.0
+      },
+      "not_a_real_measurement_or_persisted_material_training_label": true
+    },
+    {
+      "fixture_id": "qminus_tplus",
+      "standardized_hypothetical_z": 0.0,
+      "hypothetical_modeled_query": -1.1,
+      "NIG_updated_target": {
+        "mu": 1.0,
+        "scale": 0.8937642102617188,
+        "nu": 7.0
+      },
+      "conditional_bivariate_t_target": {
+        "mu": 1.0,
+        "scale": 0.8937642102617188,
+        "nu": 7.0
+      },
+      "absolute_differences": {
+        "mu": 0.0,
+        "scale": 0.0,
+        "nu": 0.0
+      },
+      "not_a_real_measurement_or_persisted_material_training_label": true
+    },
+    {
+      "fixture_id": "qminus_tplus",
+      "standardized_hypothetical_z": 1.0,
+      "hypothetical_modeled_query": -0.002275079994992657,
+      "NIG_updated_target": {
+        "mu": 0.5900612331931507,
+        "scale": 0.9653756820372469,
+        "nu": 7.0
+      },
+      "conditional_bivariate_t_target": {
+        "mu": 0.5900612331931507,
+        "scale": 0.9653756820372469,
+        "nu": 7.0
+      },
+      "absolute_differences": {
+        "mu": 0.0,
+        "scale": 0.0,
+        "nu": 0.0
+      },
+      "not_a_real_measurement_or_persisted_material_training_label": true
+    },
+    {
+      "fixture_id": "qminus_tminus",
+      "standardized_hypothetical_z": -1.0,
+      "hypothetical_modeled_query": -2.1977249200050073,
+      "NIG_updated_target": {
+        "mu": -1.59213377427656,
+        "scale": 0.8656659825596682,
+        "nu": 7.0
+      },
+      "conditional_bivariate_t_target": {
+        "mu": -1.5921337742765602,
+        "scale": 0.8656659825596683,
+        "nu": 7.0
+      },
+      "absolute_differences": {
+        "mu": 2.220446049250313e-16,
+        "scale": 1.1102230246251565e-16,
+        "nu": 0.0
+      },
+      "not_a_real_measurement_or_persisted_material_training_label": true
+    },
+    {
+      "fixture_id": "qminus_tminus",
+      "standardized_hypothetical_z": 0.0,
+      "hypothetical_modeled_query": -1.1,
+      "NIG_updated_target": {
+        "mu": -1.0,
+        "scale": 0.8014509663430958,
+        "nu": 7.0
+      },
+      "conditional_bivariate_t_target": {
+        "mu": -1.0,
+        "scale": 0.8014509663430959,
+        "nu": 7.0
+      },
+      "absolute_differences": {
+        "mu": 0.0,
+        "scale": 1.1102230246251565e-16,
+        "nu": 0.0
+      },
+      "not_a_real_measurement_or_persisted_material_training_label": true
+    },
+    {
+      "fixture_id": "qminus_tminus",
+      "standardized_hypothetical_z": 1.0,
+      "hypothetical_modeled_query": -0.002275079994992657,
+      "NIG_updated_target": {
+        "mu": -0.40786622572344,
+        "scale": 0.8656659825596682,
+        "nu": 7.0
+      },
+      "conditional_bivariate_t_target": {
+        "mu": -0.4078662257234399,
+        "scale": 0.8656659825596683,
+        "nu": 7.0
+      },
+      "absolute_differences": {
+        "mu": 1.1102230246251565e-16,
+        "scale": 1.1102230246251565e-16,
+        "nu": 0.0
+      },
+      "not_a_real_measurement_or_persisted_material_training_label": true
+    }
+  ],
+  "rho_coupling_probes": [
+    {
+      "left_fixture": "qplus_tplus",
+      "right_fixture": "Studentt_rho0_native",
+      "observed_value_difference": 0.344324846310409,
+      "analytic_coupling": {
+        "target_L2_norm": 1.6278820596099708,
+        "constant": 6.751151248998323,
+        "chord": 0.56896325855288,
+        "angle_distance": 0.5769313452364567,
+        "bound_ideal_arithmetic": 3.8411570136134316,
+        "scope": "conditional risk W1 first, then E_Z; not unconditional identical-marginal W1 or finite-quad bound"
+      },
+      "within_analytic_plus_predeclared_agreement_tolerance": true
+    },
+    {
+      "left_fixture": "qminus_tplus",
+      "right_fixture": "Studentt_rho0_native",
+      "observed_value_difference": 0.16897146959199638,
+      "analytic_coupling": {
+        "target_L2_norm": 1.6278820596099708,
+        "constant": 6.751151248998323,
+        "chord": 0.39887442287024855,
+        "angle_distance": 0.40156712150838786,
+        "bound_ideal_arithmetic": 2.692861558153964,
+        "scope": "conditional risk W1 first, then E_Z; not unconditional identical-marginal W1 or finite-quad bound"
+      },
+      "within_analytic_plus_predeclared_agreement_tolerance": true
+    },
+    {
+      "left_fixture": "qplus_tminus",
+      "right_fixture": "qminus_tminus",
+      "observed_value_difference": 0.12269542195446573,
+      "analytic_coupling": {
+        "target_L2_norm": 1.6278820596099708,
+        "constant": 6.751151248998323,
+        "chord": 0.9342649088767896,
+        "angle_distance": 0.9720896932589616,
+        "bound_ideal_arithmetic": 6.307363706458843,
+        "scope": "conditional risk W1 first, then E_Z; not unconditional identical-marginal W1 or finite-quad bound"
+      },
+      "within_analytic_plus_predeclared_agreement_tolerance": true
+    },
+    {
+      "left_fixture": "qplus_tplus",
+      "right_fixture": "case1_rho_sign_mirror",
+      "observed_value_difference": 0.0,
+      "analytic_coupling": {
+        "target_L2_norm": 1.6278820596099708,
+        "constant": 6.751151248998323,
+        "chord": 1.0909090909090908,
+        "angle_distance": 1.1538626904729135,
+        "bound_ideal_arithmetic": 7.364892271634534,
+        "scope": "conditional risk W1 first, then E_Z; not unconditional identical-marginal W1 or finite-quad bound"
+      },
+      "within_analytic_plus_predeclared_agreement_tolerance": true
+    }
+  ],
+  "summary": {
+    "fixed_evaluations": 12,
+    "NIG_conditional_probes": 12,
+    "algebra_pass": true,
+    "all_refinement_diagnostics_pass": true,
+    "all_analytic_tail_budgets_pass": true,
+    "rho_sign_symmetry_abs_difference": 0.0,
+    "finite_Student_rho0_positive_value_observed": true,
+    "Gaussian_rho0_exact_value": 0.0,
+    "affine_rho0_closed_value": 0.005647256745715203,
+    "affine_rho0_GL_vs_closed_abs_difference": 1.6033220276608084e-08,
+    "rankings": {
+      "Studentt_native": {
+        "qplus_mean_value": 0.21857129915774215,
+        "qminus_mean_value": 0.19224232177576872,
+        "signed_qplus_minus_qminus": 0.02632897738197343,
+        "summed_numerical_proxy_and_tail": 0.00012103281453952069,
+        "higher_value_query": "qplus",
+        "resolved_on_declared_proxies_only": true,
+        "not_directed_global_numerical_certificate": true
+      },
+      "matchedGaussian_native": {
+        "qplus_mean_value": 0.21764739773393105,
+        "qminus_mean_value": 0.1896173834644046,
+        "signed_qplus_minus_qminus": 0.02803001426952645,
+        "summed_numerical_proxy_and_tail": 3.875372245332187e-14,
+        "higher_value_query": "qplus",
+        "resolved_on_declared_proxies_only": true,
+        "not_directed_global_numerical_certificate": true
+      },
+      "Studentt_affine": {
+        "qplus_mean_value": 0.1658220895643321,
+        "qminus_mean_value": 0.18240969893755082,
+        "signed_qplus_minus_qminus": -0.016587609373218737,
+        "summed_numerical_proxy_and_tail": 0.0,
+        "higher_value_query": "qminus",
+        "resolved_on_declared_proxies_only": true,
+        "not_directed_global_numerical_certificate": true
+      },
+      "matchedGaussian_affine": {
+        "qplus_mean_value": 0.16691527336961282,
+        "qminus_mean_value": 0.18420091871325112,
+        "signed_qplus_minus_qminus": -0.0172856453436383,
+        "summed_numerical_proxy_and_tail": 0.0,
+        "higher_value_query": "qminus",
+        "resolved_on_declared_proxies_only": true,
+        "not_directed_global_numerical_certificate": true
+      }
+    },
+    "rank_reversal_not_required_or_prewritten": true,
+    "no_material_effectiveness_or_adaptive_campaign_claim": true
+  },
+  "independent_reference_audit_not_yet_executed": true,
+  "analytic_bound_and_refinement_proxy_not_complete_global_error_certificate": true
+}

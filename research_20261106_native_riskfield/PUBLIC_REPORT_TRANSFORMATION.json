@@ -1,0 +1,64 @@
+{
+  "actual_utc": "2026-11-06T06:37:34.561949+00:00",
+  "original_report_sha256": "e9e7fb490f4afd014e9afef871b0552f07b2dc901516c1342ccfaec42b61128c",
+  "public_report_sha256": "02516bbcbe1be995c7325aa616ce7fa7300d31a35ea2f333579507b9be73b1ec",
+  "changes": "resource links and public-scope banner only; no numeric/model/claim changes",
+  "resource_links": [
+    {
+      "attribute": "src",
+      "original": "learning_curves.png",
+      "public": "learning_curves.png"
+    },
+    {
+      "attribute": "href",
+      "original": "../../EXECUTION_PLAN_REGISTERED.json",
+      "public": "../../EXECUTION_PLAN_REGISTERED.json"
+    },
+    {
+      "attribute": "href",
+      "original": "../../SOURCE_FREEZE.json",
+      "public": "../../SOURCE_FREEZE.json"
+    },
+    {
+      "attribute": "href",
+      "original": "../../independent_io_review/STATIC_IO_FAIRNESS_CLEARANCE.json",
+      "public": "../../independent_io_review/STATIC_IO_FAIRNESS_CLEARANCE.json"
+    },
+    {
+      "attribute": "href",
+      "original": "../../independent_io_review/SAVED_FORECAST_IO_AUDIT.json",
+      "public": "../../independent_io_review/SAVED_FORECAST_IO_AUDIT.json"
+    },
+    {
+      "attribute": "href",
+      "original": "../../independent_review/independent_score_execution_once/INDEPENDENT_ACTIVE_ONLYY_ALL_SCORE_AUDIT.json",
+      "public": "../../independent_review/independent_score_execution_once/INDEPENDENT_ACTIVE_ONLYY_ALL_SCORE_AUDIT.json"
+    },
+    {
+      "attribute": "href",
+      "original": "../../code/run_active.py",
+      "public": "../../code/run_active.py"
+    },
+    {
+      "attribute": "href",
+      "original": "../../score_once/RESULTS.json",
+      "public": "../../../LOCAL_DATA_BOUNDARY_ZH.txt"
+    },
+    {
+      "attribute": "href",
+      "original": "SUMMARY_BY_POLICY.csv",
+      "public": "SUMMARY_BY_POLICY.csv"
+    },
+    {
+      "attribute": "href",
+      "original": "REPORT_AGGREGATE.json",
+      "public": "REPORT_AGGREGATE.json"
+    },
+    {
+      "attribute": "href",
+      "original": "REPORT_FILES.json",
+      "public": "../../../PUBLIC_REPORT_TRANSFORMATION.json"
+    }
+  ],
+  "original_REPORT_FILES_sha256": "0358ff8b2c2b1e00181c845b8b20c835a2b1a2dc71703d3334d6b43f8fda5f53"
+}

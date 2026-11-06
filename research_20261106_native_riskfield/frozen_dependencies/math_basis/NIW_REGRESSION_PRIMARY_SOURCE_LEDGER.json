@@ -1,0 +1,23 @@
+{
+  "actual_utc": "2026-11-06T02:58:24.924532+00:00",
+  "kind": "primary_source_selected_reading_for_NIW_regression_parameter_independence",
+  "queries": [
+    "Geiger Heckerman Gaussian parameter independence normal Wishart linear regression prior theorem 2002 full pdf"
+  ],
+  "query_count": 1,
+  "primary_sources": [
+    {
+      "url": "https://dang.cs.technion.ac.il/journal_papers/geiger2002parameter.pdf",
+      "DOI": "10.1214/aos/1035844981",
+      "version": "2002 Annals of Statistics article,author-hosted scanned PDF with cover30pages",
+      "read_depth": "selected Theorem5 and explanation pp1423–1425,plusGaussian regression context;not fullpaper",
+      "license": "notestablished;noPDFdownloadorredistribution",
+      "supports": "Gaussian globalparameterindependence undernormal-Wishart; project own covariance-NIW algebra supplied separately"
+    }
+  ],
+  "proofnote_file": "H:\\polymer_completion_public\\research\\reported_feedback_20261106T024504445715Z\\math_design\\NIW_CONDITIONAL_PARAMETER_INDEPENDENCE_PROOF_ZH.txt",
+  "proofnote_sha256": "6c576deb4ebc83806bc6815c6c800cd1ebae9dbdd5c9e28a8c3d1eae1767687f",
+  "classification": "classic parameter-independence adaptation,not newtheorem",
+  "numerical_execution_new_material_labels_fits": 0,
+  "does_not_delay_or_change_current_completepanel_protocol": true
+}

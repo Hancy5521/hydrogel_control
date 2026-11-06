@@ -1,0 +1,22 @@
+{
+  "actual_utc": "2026-11-06T05:38:34.720273+00:00",
+  "status": "PASS_STATIC_V2_TRIG_QUERY_COORDINATE_REPAIR",
+  "source_sha256": {
+    "posterior_update.py": "625c6f1b72aa838097502c08292f4dbc5cb5612012725ca1502c36adc3cb254e",
+    "activefield.py": "c8a650feb965880ac8c8be13c1bd7ac5c8cf16d8264dbe303d7f344aae5d98d4",
+    "run_gate.py": "2d15e71db58780e6b8ae1833965999306cb47a1dd039dded9abcaf53d148690d"
+  },
+  "source_freeze_sha256": "b7d254f88dc8472e8d35590ed0b7ba02516c4c28648d51459bb835ff26de9d4f",
+  "V1_source_freeze_sha256": "e8e09e94ddb2ff3fbbf6925f3ff6602dabf1d971eca43c1a8e203a34858f1494",
+  "changed_math_functions": [
+    "student_kernel"
+  ],
+  "posterior_update_identical_to_V1": true,
+  "all_other_activefield_functions_AST_identical_to_V1": true,
+  "reviewed_theta_derivation": "z=sqrt(nu)*tanθ;originalt_density_dz=cos^(nu-1)θ/Beta(.5,nu/2)dθ;cospositiveonatanLzlimits;conditionalarg=sqrt((nu+1)/(nu*(1-rho²)))*(vcosθ-rho sqrtνsinθ)",
+  "bounds_and_objective": "Lv32/Lz64 stilltruncated;sameoldouter/innertailaccounts;no weight renormalization;no source/model/fixture/tolerance change;Gaussian strongnative referenceidentical",
+  "root_spec_before_numerics": "CHANGE_SPEC_BEFORE_EXECUTION.json",
+  "independent_reference": "separate nativeTargetx/directstandardZpdfreference_v2 prepared;notSUTimportorθmethod",
+  "numeric_runs_or_data_reads": 0,
+  "known_previous_reference_failure": "Finite-native-qinnerQUADPACKIntegrationWarning;not a theoretical divergence claim"
+}

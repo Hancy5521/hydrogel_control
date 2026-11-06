@@ -1,0 +1,384 @@
+{
+  "artifact_kind": "METADATA_ONLY_MATERIAL_TASK_CONTRACT_V1",
+  "status": "PROPOSED_OPERATIONAL_CONTRACT_PENDING_ROOT_INDEPENDENT_REVIEW_NOT_EXPERIMENT_REGISTRATION",
+  "actual_created_utc": "2026-11-05T15:04:01.827199+00:00",
+  "actual_asia_shanghai": "2026-11-05T23:04:01.827199+08:00",
+  "source_builder_sha256": "2764b642a06242a8bf0d31751ff770397750521af462f5bbd2fa4c97c5078f5d",
+  "input_sha256": {
+    "D:\\codex-root\\polymer_completion\\docs\\RESUME_CURRENT.md": "35a456f4b85715c94a260941fa75f65e3dc63dc901a4e8e200c6aeb7a842d42e",
+    "D:\\codex-root\\polymer_completion\\docs\\RESEARCH_QUEUE.md": "fadcedc0d315b3ee439100533fcfd9ca8a3942edeb38c6dfeb3b8d9ebea77bed",
+    "H:\\relation_moment_delivery_qa_20261105\\NEXT_MATERIAL_ADMISSION_REVIEW.json": "36f124b91649353d4c9aacaa9ea544bcc91b51e489e7582417218ed302c4642a",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\DATA_MANIFEST.json": "5000ecb55aefae7259467b5cb23a570ae1762bce4333155cf411cbfb0aaa4343",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\MM_METADATA_SELECTION.json": "300ca45c1f729ce9bd1b6512d7f132f2d327d0868ed6c6935311562952bb0e6f",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\SOURCE_GATE.json": "86ee6469c90c98558ca069e9d7e5e05badb5f5bc6944f0dbbf94a9025bea0a6e",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\SOURCE_GATE_PILOT_ADDENDUM.json": "7c0fc10397de2d85e13b101e5a78570feea7d1ef80473a852e482c552eefda22",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\ELIGIBLE_METADATA.json": "165d48bc29f771e29f7e86a6bea1e57286eb81b49f29120905ba4ff4739660e4",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\PILOT_ELIGIBILITY.json": "e7b06d64fe29c550bd8e75febd64d853d38b20448914d47d705053aa7712361d",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\audit_schemas.py": "383ab51fdd570e10fada07d0a7446f881fc8ee55916f2d5abd44f2918301b0ca",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\pilot_eligibility.py": "e1cc8fe7c88f1c33d0420627564ec526173f335f8d14ba9b22c58301ccf1b676",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\MATMINER_JARVIS_PREPROCESS_SELECTED.py.txt": "034ba9f525e673f3d2a3922d66b6540a267842dcc520f595ddd9de11db56fcfd",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\MATMINER_LICENSE": "e4df766c6937dad4a0f0646e2afbbc1689aacb3a0c30db687acbd86f73083cc4",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\pilot\\DATASET_ROLE_PLAN.json": "ea9120cf04bc78c8292be8ebba3eab6f9b1b0f830574b3e1a803386105451de8",
+    "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\data_feasibility\\UNUSED_IDENTITY_FEASIBILITY_FINAL.json": "491f8279437d20840076e610668c1d6965815c088bbd390cd6d3004384c166a4",
+    "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\data_feasibility\\MATERIAL_TASK_CONTRACT_DRAFT_ZH.txt": "b601ae4a37f138cd4739e0d5f77876f14a239260ceddadc0b1509f70c2911418"
+  },
+  "prohibitions_current_phase": {
+    "new_property_response_reads": false,
+    "gzip_open": false,
+    "actual_new_split_or_seed_selection": false,
+    "model_import_fit_prediction_score": false,
+    "network_download": false,
+    "old_consumed_group_reuse": false
+  },
+  "dataset": {
+    "id": "jarvis_dft_3d",
+    "kind": "existing DFT computational source, not wet measurements or newDFT jobs",
+    "processed_doi": "10.6084/m9.figshare.7261832.v1",
+    "processed_article_version": 1,
+    "raw_asset_sha256_from_prior_manifest_not_reread": "3d0fc1315b74cf84071f16aa25bb93434dafbc83867beb75872064ac245bd747",
+    "raw_asset_bytes_from_prior_manifest": 30669285,
+    "raw_asset_opened_this_run": false,
+    "original_upstream_doi": "10.6084/m9.figshare.6815699.v2",
+    "processed_license": "MIT as published; retain upstream CC BY4 attribution/provenance",
+    "original_rows": 25923,
+    "not_latest_JARVIS_full_database": true,
+    "task_field_count": 3,
+    "field_roles": [
+      {
+        "role": "B0",
+        "source_field": "e_form",
+        "upstream_field": "form_enp",
+        "meaning": "DFT formation energy per atom",
+        "unit": "eV/atom",
+        "unit_status": "explicit in pinned Matminer descriptor/preprocessor docstring",
+        "source_mapping": "rename only; no numeric conversion in selected preprocessor"
+      },
+      {
+        "role": "B1",
+        "source_field": "gap opt",
+        "upstream_field": "op_gap",
+        "meaning": "OptB88vdW DFT band gap",
+        "unit": "eV",
+        "unit_status": "explicit in pinned Matminer descriptor/preprocessor docstring",
+        "source_mapping": "rename only; no numeric conversion in selected preprocessor"
+      },
+      {
+        "role": "Y",
+        "source_field": "bulk modulus",
+        "upstream_field": "kv",
+        "meaning": "exact source bulk field; aggregation qualified",
+        "unit": "GPa (existing JARVIS documentation attribution)",
+        "unit_status": "qualified: earlier source gate attributes GPa to official elastic documentation; Matminer column descriptor itself omits unit text. No new unit/aggregation certification this run.",
+        "source_mapping": "kv renamed bulk modulus without rescaling; descriptor says VRH, while native aggregation has not been independently rederived",
+        "physical_name_policy": "Use source bulk-modulus field; do not silently relabel kv as newly verified VRH/Voigt."
+      }
+    ],
+    "all_other_property_fields_unavailable_to_every_method": true,
+    "marginal_target_values_not_embedded_in_contract": true
+  },
+  "identity": {
+    "unit_key": [
+      "dataset_raw_asset_sha256",
+      "jid"
+    ],
+    "artifact_locator_only": [
+      "raw_row_zero_based",
+      "artifact_native_index"
+    ],
+    "additional_alias": "mpid",
+    "cell_key": [
+      "dataset_raw_asset_sha256",
+      "jid",
+      "exact_source_field"
+    ],
+    "formula_group_key": "component_id in pinned ELIGIBLE_METADATA",
+    "group_construction": "Full original source linkage on nonmissing jid OR mpid OR exact normalized_composition, before complete-case filtering. Reuse existing component IDs; do not rebuild on a selected subset.",
+    "composition_normalization": "Pinned clean_formula uses exact Fraction element fractions sorted by element; rejects unsupported formula syntax.",
+    "same_formula_multistructure_policy": "All structure/JID rows in one component must retain one role; structure siblings are not independent formula samples.",
+    "residual_limits": "Formula/ID components are conservative source identity, not certified independent experiments, batches or DFT-run independence."
+  },
+  "eligibility_and_consumption": {
+    "prior_eligible_rows": 11020,
+    "prior_eligible_formula_components": 8842,
+    "rule": "All3original source targets finite plus normalizedcomposition according to prior fixed metadata gate. No new Y-based eligibility decision.",
+    "complete_case_bias": "Score only imposed hiding of originally finite cells; original native blanks have no oracle truth and are not validated completions.",
+    "old_consumed_component_count": 40,
+    "old_consumed_component_ids": [
+      "jarvis_dft_3d_component_00d2f5b657d841aabfca",
+      "jarvis_dft_3d_component_0bb92a3213a2a6bc17fd",
+      "jarvis_dft_3d_component_1c642df8c1ca4e1a1737",
+      "jarvis_dft_3d_component_1e3aeb9f803d27518392",
+      "jarvis_dft_3d_component_269fc75cabf305546701",
+      "jarvis_dft_3d_component_3209bfea60997932c47c",
+      "jarvis_dft_3d_component_3e692c78390eac509d14",
+      "jarvis_dft_3d_component_3f3715e79f2426be775d",
+      "jarvis_dft_3d_component_4f3330232e7bc88e4ed0",
+      "jarvis_dft_3d_component_514c5d5e4291eb137566",
+      "jarvis_dft_3d_component_5cb439772ee63b3d512b",
+      "jarvis_dft_3d_component_7295544c9dceca0ea498",
+      "jarvis_dft_3d_component_7ca19eeab12a433e186f",
+      "jarvis_dft_3d_component_7ef446d3257bd28619b1",
+      "jarvis_dft_3d_component_81ac6ccfbfb60cc77ad9",
+      "jarvis_dft_3d_component_81d9a15acd0479690da3",
+      "jarvis_dft_3d_component_86ae7887ea1b664a8ff3",
+      "jarvis_dft_3d_component_8b29b2b196ea3b7e869b",
+      "jarvis_dft_3d_component_900efa16ba4e5110d95b",
+      "jarvis_dft_3d_component_9212fc4f4814637c4b84",
+      "jarvis_dft_3d_component_9b71d999c529f6c940bb",
+      "jarvis_dft_3d_component_a2b9b32ce068ee83a2a4",
+      "jarvis_dft_3d_component_a32256b3b38e421d9863",
+      "jarvis_dft_3d_component_a5739d987503081a793e",
+      "jarvis_dft_3d_component_a8d2ad69f11ccc9570c8",
+      "jarvis_dft_3d_component_ae633509c9a03de71957",
+      "jarvis_dft_3d_component_b23253a46e7236b8e65e",
+      "jarvis_dft_3d_component_b4e62f8aec1e77703c92",
+      "jarvis_dft_3d_component_b5b9d44117eb96486b8d",
+      "jarvis_dft_3d_component_b83cb34f1b71b2bfba30",
+      "jarvis_dft_3d_component_bd56c7e91989a43a1b4b",
+      "jarvis_dft_3d_component_c82cad4a4c74d416371e",
+      "jarvis_dft_3d_component_ca7a3c701d7aaaaba4b9",
+      "jarvis_dft_3d_component_d34c2686846fa745800c",
+      "jarvis_dft_3d_component_e140d652b4878bbe0f42",
+      "jarvis_dft_3d_component_e1473d6029737ed35613",
+      "jarvis_dft_3d_component_e1d4111ab39bb722e771",
+      "jarvis_dft_3d_component_e459341ce07cceeb9787",
+      "jarvis_dft_3d_component_e4734a15b20aec494a37",
+      "jarvis_dft_3d_component_e4bf6ded48f441d32c88"
+    ],
+    "old_consumed_JID_rows": 47,
+    "exclusion_scope": "Whole original components, not just queried cells or selected row subset.",
+    "remaining_components": 8802,
+    "remaining_eligible_rows": 10973,
+    "remaining_multistructure_components": 1172,
+    "remaining_component_id_source": {
+      "path": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\pilot\\DATASET_ROLE_PLAN.json",
+      "sha256": "ea9120cf04bc78c8292be8ebba3eab6f9b1b0f830574b3e1a803386105451de8",
+      "json_pointer": "datasets.jarvis_dft_3d.unused_eligible_group_ids"
+    },
+    "no_actual_new_component_assigned_to_any_role": true,
+    "no_selection_by_target_range_sign_or_performance": true,
+    "negative_bulk_policy": "Preserve native values; no positivity/log filtering or deletion chosen after performance."
+  },
+  "permitted_free_metadata": {
+    "predictive_features": [
+      "composition element fractions only, computable from composition_amounts"
+    ],
+    "identity_only_not_predictor": [
+      "jid",
+      "mpid",
+      "component_id",
+      "artifact_native_index",
+      "raw_row_zero_based"
+    ],
+    "not_free": [
+      "all3property values unless explicitly observed",
+      "other13property/structure fields",
+      "unqueried sibling-row properties"
+    ],
+    "relaxed_structure_cost": "Not provided as an input in this contract; real upstream relaxation cost not measured."
+  },
+  "roles_not_yet_assigned": {
+    "warm": {
+      "purpose": "fit/freeze affine field marginals and candidate relation prior after a separate actual-UTC warm-only protocol",
+      "property_access": "Only explicitly registered warm cells in future; none read now"
+    },
+    "development": {
+      "purpose": "statistical checks/model choices and thresholds before finalpool/audit; separate approval required",
+      "no_target_feedback_from_audit": true
+    },
+    "primary_pool": {
+      "purpose": "transductive finite-pool acquisition/completion",
+      "initial_Y": "all bulk modulus cells hidden",
+      "initial_proxy_policy": "pending root freeze; same metadata-only mask policy for every method, initial supplied values/costs recorded",
+      "online_actions": "all7native same-unit panels plus STOP below"
+    },
+    "audit": {
+      "purpose": "whole-component heldout conditional material prediction within the same DFT source",
+      "Y_query_ever_allowed": false,
+      "anchors": "fixed sourcefield mask before target reveal; same anchors for every method",
+      "online_adaptive_requests": "none; only predefined anchors supplied",
+      "conditioning_proposal": "Freeze learned parameters and acquisition history first. Per audit unit use full joint conditioning on its own supplied anchors, including their theta likelihood; do not train/hyperparameter-select from auditY or sequentially tune on audit performance. Exact anchor policy awaits root review."
+    }
+  },
+  "role_plan_state": {
+    "actual_component_role_table": null,
+    "counts": null,
+    "seeds": null,
+    "row_cap": null,
+    "split_hash": null,
+    "must_be_full_component_disjoint": true,
+    "chemical_system_generalization": "If claimed, additionally isolate elemental systems by metadata before target use; not automatic from formula grouping."
+  },
+  "native_cell_cost_scenario": {
+    "unit_name": "one newly disclosed original finite property-cell",
+    "cost_per_new_cell": 1,
+    "is_measured_DFT_or_instrument_cost": false,
+    "hard_budget": null,
+    "budget_status": "pending root prefit freeze",
+    "panel_cost": "cardinality(requested_cell_keys minus already_observed_cell_keys)",
+    "initial_costs": "Warm and supplied anchors are common to all arms, explicitly counted separately and/or in total before protocol. Never free asymmetric input.",
+    "R_V_equality": "R and V naming the same original target cell have identical disclosure cost; no invented cheap-repair/expensive-verification prices.",
+    "physical_shared_parent_cost": "Unknown; native-cell scenario does not assert separate physical DFT jobs or actual CPU savings.",
+    "same_source_elastic_fields": "bulk/shear share an elastic workflow; shear is unavailable, not a free validator."
+  },
+  "legal_actions": {
+    "single_unit_panels": [
+      [
+        "e_form"
+      ],
+      [
+        "gap opt"
+      ],
+      [
+        "bulk modulus"
+      ],
+      [
+        "e_form",
+        "gap opt"
+      ],
+      [
+        "e_form",
+        "bulk modulus"
+      ],
+      [
+        "gap opt",
+        "bulk modulus"
+      ],
+      [
+        "e_form",
+        "gap opt",
+        "bulk modulus"
+      ]
+    ],
+    "STOP": {
+      "fields": [],
+      "cost": 0,
+      "likelihood_update": "none"
+    },
+    "R_E_V_are_semantic_aliases_not_extra_actions": {
+      "R": "newtarget on a unit with priorproxy; if inpool it also directly lowers own target risk",
+      "E": "newproxy cell on a candidateunit",
+      "V": "directnewtarget cell, samecell/cost as R when unit/field coincide"
+    },
+    "no_cross_unit_discount_panels": true,
+    "runtime_validation_order": [
+      "checkunit role and nativefinite eligibility metadata",
+      "canonicalize requestedfield subset to permittedpanel",
+      "remove already-known cellkeys for cost and new evidence",
+      "if no newcells, return NOOP with0cost and no likelihood multiplication",
+      "reject atomically if remainingbudget insufficient or auditY requested",
+      "oracle returns only accepted newcell values; record IDs/source/field/step/cost",
+      "one conditional joint likelihood for newcell set given all prior observations on that unit",
+      "never charge/reuse oldknown cells or treat predictions/derived values as newmeasurements"
+    ],
+    "sameunit_repeated_observation": "No replicate measurements exist in this table; repeatquery does not create independent likelihood or replicate evidence."
+  },
+  "candidate_statistical_model_pending_independent_freeze": {
+    "implemented_or_fitted": false,
+    "form": "finite theta=(rho0,rho1); standardized Y=Z, B_i=rho_i Z+sqrt(1-rho_i^2)*epsilon_i",
+    "correlation_matrix_order": [
+      "e_form",
+      "gap opt",
+      "bulk modulus"
+    ],
+    "correlation_matrix_formula": [
+      [
+        "1",
+        "rho0*rho1",
+        "rho0"
+      ],
+      [
+        "rho0*rho1",
+        "1",
+        "rho1"
+      ],
+      [
+        "rho0",
+        "rho1",
+        "1"
+      ]
+    ],
+    "rho_domain": "eachabsrho<1",
+    "joint_update": "w_h_new proportional w_h_old * p_h(z_newfields | z_alreadyobserved_sameunit,metadata); retain full hypothesis weights and all actual outcomes.",
+    "singleproxy_scope": "A single B_i marginal is theta-invariant only under fixed common marginal assumptions; it alone cannot learn theta.",
+    "jointproxy_scope": "(B0,B1) marginal depends on rho0*rho1 and can update theta. Do not multiply marginal proxy likelihoods or apply pureproxy formula to jointpanel.",
+    "all_masks": "Use the fullGaussian submatrix conditioning for any observed/new subset, including targetfirst, proxyfirst, jointpanel and existinganchors.",
+    "pure_R_first_moment_kernel_scope": "Only a valid conditional subroutine. It is not a bound/optimality claim for this full mixed-action task without additional derivation.",
+    "H_prior_grid_and_estimator": null,
+    "H_reason": "Choose from statistical accuracy/development requirements, never enlarge merely to show acceleration.",
+    "model_assumptions_not_physical_facts": [
+      "sharedGaussian marginals after affine normalization",
+      "global finite relation structure",
+      "crossunit independence conditional ontheta/metadata"
+    ],
+    "must_check_with_approved_warm_only_data": [
+      "nonzero finitefieldscale",
+      "Gaussian/tail/pointmass adequacy including bandgap zero behavior if present",
+      "pairwise and joint dependence fit",
+      "negativebulk/heterogeneouschemistry preserved",
+      "whether x-conditioned marginals or another statistical family are needed; stop/review rather than forcefit"
+    ]
+  },
+  "loss_and_transforms": {
+    "primary_field": "bulk modulus",
+    "primary_unit_label": "native source bulk coordinate; GPa attribution qualified above",
+    "primary_group_macro_formula": "(1/G_pool)*sum_g[(1/n_g)*sum_u CRPS(F_u_final,y_u_native)]",
+    "known_target_rule": "Queried Y is represented as its knownpointmass, so its CRPS contribution0 under the same accounting for all methods; not described as an accurate imputation.",
+    "required_companions": [
+      "number/cost of actualYdisclosures",
+      "initial and finalobservedfraction",
+      "unqueriedYconditional error explicitly secondary and potentially different masks",
+      "heldoutaudit properCRPS withYnever queried",
+      "uncertainty intervalcoverage/width if calibration discussed"
+    ],
+    "target_weight": 1,
+    "affine_standardization_proposal": "Per field z=(native-warmmean)/warmSD, positive finite scale fitted only on future registeredwarm cells; actualstatvalues not set.",
+    "original_unit_conversion": "For eachfixed affine target transform, nativeCRPS=positive_sigma_Y*standardizedCRPS; shifts irrelevant.",
+    "nonlinear_CDF_transform": "Not enabled inV1. If laterchosen, latentGaussian kernel is not nativeCRPS; new original-unit integration/sample-score protocol and review required.",
+    "audit_score": "Whole-component macroCRPS on frozen conditional predictions; targets evaluator-only afterpredictionfreeze.",
+    "no_truth_or_prediction_as_measurement": true
+  },
+  "strong_baseline_contract": {
+    "shared": [
+      "samewarm/devcells",
+      "sameinitialknown masks and costs",
+      "sameformula roles",
+      "sameunit/fieldoracle",
+      "sameposterior and jointlikelihood for plannercomparisons",
+      "samefulllegalactions/budget/horizon/tie rules",
+      "sameoriginalunit evaluator"
+    ],
+    "required": [
+      "fulljoint strong planning/reference withdirectY,proxyfirst,targetfirst,STOPandpanels",
+      "competent exactstreamed/cached implementation for any matched restrictedmoment computation",
+      "simple random/greedy immediateproper-risk disclosure baseline",
+      "strongtabular predictor suited to approvedsameinformation task, selected onlywithdevelopmentdata"
+    ],
+    "planning_horizon_or_numerical_integration": null,
+    "not_yet_implemented_or_verified": true,
+    "claims": "Decision-readout equivalence/efficiency is distinct from material predictive superiority; no material strongbaseline result exists yet."
+  },
+  "oracle_and_truth_boundaries": {
+    "online": "Returns only registered legal accepted newnativecells; hidden evaluatorTruth never imported by agent.",
+    "freeze": "Allactions, queryreceipts and predictiveCDFs/samples hashed before finalunqueriedpool/audit target reveal.",
+    "evaluated_truth": "Originallyfinite nativeDFT labels only, no newwetmeasurements; not source-native missingcells.",
+    "audit_target_access": "Prohibited for policy/model selection/training and queries; only final evaluator after freeze.",
+    "repeat_policy": "No retuning/reseeding/resplitting on consumedconfirmresults; any future correction preserves failure andrequires newprotocol."
+  },
+  "unknown_facts_not_invented": [
+    "nativekvaggregation Voigt/VRH semantic discrepancy",
+    "originalperfield DFT parentrun and incrementalruntime/fee",
+    "complete-case measurement/computationselection bias",
+    "physicalindependence of sameformula structures andsourcecomputations",
+    "statisticaladequacy of Gaussianstar/commonmarginal model",
+    "precise actioninitialization/horizon/auditanchorpolicy and future samplecounts"
+  ],
+  "readiness": {
+    "metadata_schema_identity_and_offline_cost_rules": "specified for independent review",
+    "experimental_preregistration_complete": false,
+    "source_oracle_model_code_frozen": false,
+    "warm_label_access_authorized_by_this_contract": false,
+    "next_gate": "Root independentlyreviews contract and closes explicit model/action/score choices, then separatelyregisters an actual-UTC source/input-pinned warm-only fit/diagnostic protocol.",
+    "no_author_wetexperiment_needed_for_next_metadata/modelgate": true
+  }
+}

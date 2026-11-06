@@ -1,0 +1,14 @@
+{
+  "actual_utc": "2026-11-06T05:39:10.345160+00:00",
+  "status": "COMPLETE_FIXED12_NATIVE_RISKFIELD_MECHANISM_GATE",
+  "source_sha256": {
+    "posterior_update.py": "625c6f1b72aa838097502c08292f4dbc5cb5612012725ca1502c36adc3cb254e",
+    "activefield.py": "c8a650feb965880ac8c8be13c1bd7ac5c8cf16d8264dbe303d7f344aae5d98d4",
+    "run_gate.py": "2d15e71db58780e6b8ae1833965999306cb47a1dd039dded9abcaf53d148690d"
+  },
+  "plan_sha256": "f66d9a097ebee4c7d706e95e8aa1666bf6569fb58b85bd76e3d408b5a2a973cf",
+  "files": {
+    "EXECUTION_START.json": "abdd62706174d38da1e4429ae30939905e5a463ec5240f33af0ed0557102f312",
+    "RESULTS.json": "c36bdefbd93a82cf50f1d656ca5da391ac2a5e9455ae0bb23ca25a856894214e"
+  }
+}

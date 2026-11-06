@@ -1,0 +1,46 @@
+{
+  "status": "V2_ONLY_SOURCE_PREPARED_NO_IMPORT_OR_NUMERICAL_EXECUTION",
+  "actual_utc": "2026-11-06T04:22:31.122246+00:00",
+  "actual_Asia_Shanghai": "2026-11-06T12:22:31.122246+08:00",
+  "source_sha256": {
+    "posterior_update.py": "625c6f1b72aa838097502c08292f4dbc5cb5612012725ca1502c36adc3cb254e",
+    "activefield.py": "c8a650feb965880ac8c8be13c1bd7ac5c8cf16d8264dbe303d7f344aae5d98d4",
+    "run_gate.py": "2d15e71db58780e6b8ae1833965999306cb47a1dd039dded9abcaf53d148690d"
+  },
+  "template_sha256": "1987984e5ea723b62d05803eebd541e30fa028dc52a8c9f7871545b2634bf9d8",
+  "V1_source_freeze_sha256": "e8e09e94ddb2ff3fbbf6925f3ff6602dabf1d971eca43c1a8e203a34858f1494",
+  "V1_sources_original_hashes_rechecked": {
+    "posterior_update.py": "625c6f1b72aa838097502c08292f4dbc5cb5612012725ca1502c36adc3cb254e",
+    "activefield.py": "620d6bc122ccef37de551fee52ba90d26c1894de185de7a560b4d25eff797aa2",
+    "run_gate.py": "b49a2e60c6012b79171646bbd6949e780ff142b5b94bbf3a075d5b879e84ed91"
+  },
+  "V1_execution_receipt_and_audit_pinned": {
+    "V1_execution_complete": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\execution_once\\EXECUTION_COMPLETE.json",
+      "sha256": "c697a43d6a16c732a3abf3aed0e3bc8b2012ce963d68b7711272b8ccb075b706"
+    },
+    "V1_independent_audit": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\independent_review\\execution_once\\INDEPENDENT_NATIVE_RISKFIELD_FIXED12_AUDIT.json",
+      "sha256": "0e2cf2e3787f98fd500d3311eea959f0eb6360926a78f9efbda0544df5649ca0"
+    },
+    "coordinate_change_spec": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\numerical_v2\\CHANGE_SPEC_BEFORE_EXECUTION.json",
+      "sha256": "d35bf51c21731ac5ec86e8a1f7c2fcf31ddfaaba0576e6a3ca66b2ed9342f6a5"
+    }
+  },
+  "only_activefield_AST_function_changed": "student_kernel",
+  "NIGposterior_module_byte_identical": true,
+  "Gaussian_targettail_affine_coupling_functions_AST_identical": true,
+  "unchanged_parameters": [
+    "12fixtures",
+    "LV32",
+    "LZ64",
+    "32/64/128/256levels",
+    "allscientific/numericalcriteria",
+    "nativeobjective/rankcomparators"
+  ],
+  "driver_changes_only": "configurationversion/querycoordinate description and requiredrepairinputprovenancehashchecks",
+  "old_material_feedback_and_risk_v1_originals_not_modified": true,
+  "new_data_fit_quad_or_cdf_calls": 0,
+  "next": "independentstaticV2coordinate review then rootnewUTCregisteredprotocol/exactapproval once"
+}

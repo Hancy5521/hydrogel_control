@@ -1,3 +1,7 @@
+## 2026-11-06 Native riskfield and active-Y development checkpoint
+
+Added a separate reviewed namespace with six program modules, fixed protocols/metadata, synthetic V1 failures/V2 repair, aggregate33-row report and independent audits. Complete local resource v2 archive is separately hashed. Six actual-label query trajectories are counterfactual reuse of the same24pool; native Student/Gaussian/open-loop paths coincide. Frozen MLST and prior studies remain unchanged; new public refs are pending local root commit/bundle, with no remote upload implied.
+
 2026-11-06: add separately frozen native-coordinate material admission, fixed GP/forest references and mixed-measure cell-ledger mechanism check. 512 development groups/9 cumulative fits; no independent confirmation or completed agent claim. Preserve parent75555e1, original MLST and negative results.
 
 # Completed research milestones

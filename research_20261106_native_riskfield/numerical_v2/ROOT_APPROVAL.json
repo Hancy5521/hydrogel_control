@@ -1,0 +1,12 @@
+{
+  "approved": true,
+  "scope": "NATIVE_RISKFIELD_FIXED_MECHANISM_GATE",
+  "plan_sha256": "f66d9a097ebee4c7d706e95e8aa1666bf6569fb58b85bd76e3d408b5a2a973cf",
+  "allowed_phases": [
+    "math_gate"
+  ],
+  "actual_utc": "2026-11-06T05:39:06.684723+00:00",
+  "static_source_review_sha256": "ee14ac3b3bda895e20325e888bdbc5b8ef696d2a1067c6df059eeac128f4ee63",
+  "independent_referenceV2_already_pass": "309063e261a2ebc4df7237ce83977b829525218fb506e7a09d41ce8b0b6476d6",
+  "scope_limits": "only\u03b8 coordinate correction; same12fixedcases/domains/tols/GLlevels, no materialtraining"
+}

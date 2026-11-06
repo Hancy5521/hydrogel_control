@@ -1,0 +1,101 @@
+{
+  "status": "BOUNDED_PRIMARY_SOURCE_REVIEW_COMPLETED_NO_MODEL_EXECUTION",
+  "actual_utc": "2026-11-06T05:47:06.629833+00:00",
+  "actual_Asia_Shanghai": "2026-11-06T13:47:06.629833+08:00",
+  "scientific_question": "How to address measured undercoverage without mistaking numerical correctness or interval calibration for an improved probability generator or improved adaptive query policy?",
+  "scope": "Three selected primary method papers. This is a bounded selected-section review, not an exhaustive novelty search and not full reading of all papers.",
+  "queries": [
+    "active learning model misspecification uncertainty sampling failures regression calibration primary paper",
+    "Conformal prediction under feedback covariate shift biomolecular design Fannjiang 2022 PNAS",
+    "Evaluating Predictive Uncertainty Under Dataset Shift Ovadia 2019 NeurIPS official"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Active Learning for Misspecified Models",
+      "authors": [
+        "Masashi Sugiyama"
+      ],
+      "venue": "NeurIPS 2005",
+      "version": "Official published conference PDF; no upstream code commit used",
+      "url": "https://proceedings.neurips.cc/paper/2005/hash/0c1c995b77ea7312f887ddd9f9d35de5-Abstract.html",
+      "read_url": "https://proceedings.neurips.cc/paper_files/paper/2005/file/0c1c995b77ea7312f887ddd9f9d35de5-Paper.pdf",
+      "doi": null,
+      "license": "Exact redistribution license not independently verified; no PDF/source redistributed",
+      "actual_read_depth": "Introduction and selected sections 2-4, pages 1-5, assumptions/formula discussion and selected toy interpretation; not every experiment or proof. The conference text points proofs to an extended version.",
+      "finding_zh": "模型失配时，改变采样输入分布可引入偏差；仅降低模型方差不足。文中重要性加权与渐近条件不能直接变成当前有限样本原生单位CRPS证书。",
+      "application_limit_zh": "本文不是对任意主动学习、任意未知采样密度或当前NIW算法的校准保证。"
+    },
+    {
+      "id": "S2",
+      "title": "Conformal prediction under feedback covariate shift for biomolecular design",
+      "authors": [
+        "Clara Fannjiang",
+        "Stephen Bates",
+        "Anastasios N. Angelopoulos",
+        "Jennifer Listgarten",
+        "Michael I. Jordan"
+      ],
+      "venue": "PNAS 119(43), e2204569119 (2022)",
+      "version": "Publisher online publication 2022-10-18; arXiv:2202.03613 current metadata separately exposes v5 revised 2025-04-03, not assumed identical to publisher 2022",
+      "url": "https://www.pnas.org/doi/10.1073/pnas.2204569119",
+      "read_url": "https://www.pnas.org/doi/10.1073/pnas.2204569119",
+      "doi": "10.1073/pnas.2204569119",
+      "metadata_url": "https://arxiv.org/abs/2202.03613",
+      "license": "Publisher copyright section states CC BY-NC-ND 4.0; no article/PDF copied into project",
+      "actual_read_depth": "Publisher abstract and selected sections 1, 2A-C and 2E, theorem 1, absolute-continuity requirement and split discussion; no SI proof audit. Copyright and Data/Code Availability section read. Official GitHub linked by paper but repository not inspected or executed in this bounded review.",
+      "official_code_reference_not_inspected": "https://github.com/clarafy/conformal-for-design",
+      "finding_zh": "反馈协变量转移可处理训练数据影响设计分布，但要求不变的条件响应、所需密度比及绝对连续等条件；输出是预测集合覆盖，不是生成概率密度。",
+      "application_limit_zh": "当前risk-field使用目标上下文参与选点，不能仅将材料分组后套普通split conformal。后续独立校准/审计上下文不得参与模型或动作选择；转移权重未知时不宣称转移覆盖。"
+    },
+    {
+      "id": "S3",
+      "title": "When Active Learning Fails, Uncalibrated Out of Distribution Uncertainty Quantification Might Be the Problem",
+      "authors": [
+        "Ashley S. Dale",
+        "Kangming Li",
+        "Brian DeCost",
+        "Hao Wan",
+        "Yuchen Han",
+        "Yao Fehlis",
+        "Jason Hattrick-Simpers"
+      ],
+      "venue": "arXiv preprint; acceptance elsewhere not verified",
+      "version": "arXiv:2511.17760v1, submitted 2025-11-21",
+      "url": "https://arxiv.org/abs/2511.17760",
+      "read_url": "https://arxiv.org/html/2511.17760v1",
+      "doi": "10.48550/arXiv.2511.17760",
+      "license": "Full HTML identifies CC BY 4.0; no source/article redistributed",
+      "actual_read_depth": "Abstract; selected introduction, ID/OOD data split and evaluation, calibration/results/discussion and Data/Code Availability. Did not audit all supplementary experiments or reproduce results.",
+      "code_availability_qualified": "v1 says code will be released on GitHub upon acceptance; present-day repository/release status not independently checked, so no claim that code currently does not exist.",
+      "finding_zh": "直接涉及JARVIS等材料的主动学习；ID残差校准未必改善OOD与选点效用。统一线性缩放不改变不确定性排序。区间可靠性、排序质量和数据效率应分别评估。",
+      "application_limit_zh": "论文用JARVIS-22，当前用冻结2018发布源，不是同一快照直接复现；本项目不能宣称首次发现材料主动学习欠校准或首次校准材料主动学习。"
+    }
+  ],
+  "search_discovered_not_method_read": [
+    {
+      "title": "Can You Trust Your Model’s Uncertainty? Evaluating Predictive Uncertainty Under Dataset Shift",
+      "authors_lead": "Yaniv Ovadia",
+      "year": 2019,
+      "depth": "Search result / abstract discovery only, not counted among the three selected method readings"
+    }
+  ],
+  "access_failures_preserved": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9618043/",
+      "result": "Browser/captcha barrier, stopped without bypass; primary publisher accessed instead"
+    },
+    {
+      "url": "https://clarafy.github.io/research/pnas_2022.pdf",
+      "result": "404; no repeated retries, publisher accessed instead"
+    }
+  ],
+  "actions_not_performed": [
+    "No paper/source code download or redistribution",
+    "No GitHub repository checkout or code execution",
+    "No native materials raw numeric read",
+    "No model fit, forecast, terminal scoring or tuning",
+    "No selection execution by this reviewer"
+  ],
+  "decision": "Keep current NIG active experiment frozen; propose one separately costed prospective interval diagnostic, with new unused same-source groups and explicit exchangeability scope. Do not present the conformal layer as a generative distribution or as a novel mechanism."
+}

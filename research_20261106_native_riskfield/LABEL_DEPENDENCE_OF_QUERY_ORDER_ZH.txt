@@ -1,0 +1,20 @@
+固定NIG下，对象选择何时真正依赖新标签（未执行数学说明）
+
+前提：统一scalar NIG，所有candidate和terminal context已知，固定warm坐标；query费用相同、真实更新保留完整posterior；不重新学习kernel/hyperprior。该结论不外推到GP在每个新标签后重新优化hyperparameters的情形，也不自动覆盖分branch或多property。
+
+令当前w|sigma²~N(m,sigma²V)，sigma²~IG(alpha,b)，nu=2alpha，目标t scale s_t=sqrt[(b/alpha)*(1+phi_t^T V phi_t)]。
+真实Y到来时，V'=V−Vphi_q phi_q^T V/(1+phi_q^T Vphi_q)，只依context；alpha'=alpha+.5只依次数；m'和b'才依新Y。
+query-target rho_qt=phi_q^T Vphi_t/sqrt[(1+phi_q^TVphi_q)(1+phi_t^TVphi_t)]，也只依已选context。
+
+Affine目标CRPS风险下，动作价值为
+ Delta_q = mean_t s0*s_t*[C_nu−A_nu*C_(nu+1)*sqrt(1−rho_qt²)]。
+第一个term对q共同，A_nu、C_(nu+1)、sqrt(b/alpha)也对q共同，因此argmax只依phi/V；m不出现，b只是正scale因子。只要每步的对象选择继续这个affine myopic规则，整个选择顺序可以不读取新Y就由context预先计算。若有正STOP阈值，动作价值的整体scale会影响是否STOP，但对象排序仍如此。把该流程直接称为“根据真实验证自我改选”会夸大它的label依赖。
+
+在本项目native YJ目标下，
+ Delta_q=mean_t s0*s_t*integral K_nu(rho_qt,v)*g'(mu_t+s_t v)dv。
+mu_t=phi_t^Tm，s_t含b，二者进入随target而变的原单位权重；真实新Y更新m/b后，下一query对象才有改变的可能。可检验的问题应包括：实际新active轨迹是否发生了这种区别，是否有助于相同预算的新terminal性质恢复；理论上“可能”不能替代真实策略序列和评分。
+
+拟议报告
+逐step保存所有合法动作的native/affine完整分数、所选ID、posterior状态指纹、真实Y披露顺序、费用及STOP理由。可用一条预先登记的warm-openloop/context-only计划作机制消融；它的设计和是否纳入六策略必须在新Y前冻结。完整native Bayesian VOI仍是同后验/同目标/同动作集合的强参考，kernel近似若只复现它的选择，贡献范围在可靠计算而非额外材料预测优势。
+
+本说明只做代数分析，无新Y、数值、fit、实验或科学源码改动。Affine排序等价与finite-df rho0正价值可同时成立；不能把后者单独当新选点机制。实际材料分布失配、覆盖不足和随机反馈的小增量仍需要新冻结组上检验，不能用模型内期望非负掩盖。

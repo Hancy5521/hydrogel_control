@@ -1,0 +1,111 @@
+{
+  "kind": "active_onlyY_pooled_conditional_NIG",
+  "status": "REGISTERED",
+  "registered_actual_utc": "2026-11-06T06:05:28.327821+00:00",
+  "source_sha256": {
+    "posterior_update.py": "625c6f1b72aa838097502c08292f4dbc5cb5612012725ca1502c36adc3cb254e",
+    "risk_readout.py": "fd726e343cfaa3b09cf8fd9e66bf6bc3bdafa2b644205505d2d6ad04f9139ebe",
+    "reference_models.py": "8d5af2ca70be9983b755bcfb2d833ee0cd33feb6389f84552719ed7beaa2e2f7",
+    "data_io.py": "d695aaa81f3f1f3db3a9717dbdbc517b7d55b445775e7c0858f24a21aa4b1b6e",
+    "run_active.py": "96f2ae79109de7a1550fe48b18832e49cdc6aefb9db0dd336fb9a99a6155078b",
+    "score.py": "d18f8f768ad14ca2b43d5b9dc43a3ec3c976da5d53c507dd57c31f35613c252f"
+  },
+  "configuration": {
+    "version": "active_onlyY_pooled_NIG_v1",
+    "policies": [
+      "native_student",
+      "native_gaussian",
+      "latent_ivr",
+      "random",
+      "gp_variance",
+      "warm_openloop"
+    ],
+    "budgets": [
+      0,
+      4,
+      8
+    ],
+    "warm": 64,
+    "pool": 24,
+    "terminal_development": 64,
+    "queries_per_policy": 8,
+    "common_native_cell_cost": 368,
+    "perquery_Y_cost": 1,
+    "forced_budget_no_early_STOP": true,
+    "model": "singlepooledp2 conditionalNIG; G0 validknowncontext, no branchorBeta",
+    "warm_coordinates": "fixedall3YJhalf/nativeSD thenfixedwarmu mean/sampleSD",
+    "owncontexts_update_global_NIG": false,
+    "primary_prediction": "actualYupdatedNIG for all6policy trajectories",
+    "warm_openloop_acquisition": "warmmean;currentVdesignonly;alpha=warmalpha+i/2;b=(alpha-1)*warmb/(warmalpha-1);predictiveactualNIGtrueYupdated",
+    "Gaussian_acquisition": "latentmean/covariance matched then same nativeYJCRPS; not nativemomentmatch",
+    "latent_IVR": "mean_t (b/(alpha-1))*(phi_qVphi_t)^2/(1+phi_qVphi_q), latentvarianceobjective",
+    "random_seed": 20261106,
+    "tie_rule": "first inoriginalrolepoolorder",
+    "GP_variance": "currentGP predictivevarianceincludingWhite onremainingpool;fixedoriginalkernelrecipe;reoptimizeactualYonly",
+    "GP_RF_X_scales": "fixedwarmnativeproxymean/sampleSD",
+    "GP_normalize_y": "currentactualtrainlabels",
+    "reference_prediction_policies": [
+      "native_student",
+      "random"
+    ],
+    "reference_prediction_budgets": [
+      0,
+      4,
+      8
+    ],
+    "main_terminal_laws": 1152,
+    "reference_terminal_laws": 960,
+    "secondary_prequential_laws": 48,
+    "actual_sklearn_fits": 18,
+    "actual_GP_fits": 13,
+    "actual_RF_fits": 5,
+    "shared_warm_GP_RF_fits": 2,
+    "reference_fit_total_including_shared": 10,
+    "extra_GP_policy_fits": 8,
+    "GP_policy_own_prediction_laws": 192,
+    "libraries": {
+      "numpy": "2.1.3",
+      "scipy": "1.15.3",
+      "scikit-learn": "1.6.1",
+      "joblib": "1.4.2"
+    },
+    "native_score": "unchangedfrozenreported-feedbackscore_law; nativeYJJac/empiricalCDF",
+    "all152_components_consumed_development": true,
+    "counterfactual_policy_reuse_not_materialN": true,
+    "new_noise_model_flow_LLM_or_pseudolabels": false
+  },
+  "inputs": {
+    "raw_source": {
+      "file": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\jarvis_dft_3d.json.gz",
+      "sha256": "3d0fc1315b74cf84071f16aa25bb93434dafbc83867beb75872064ac245bd747"
+    },
+    "roles": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\task_contract\\selection_once\\ROLE_SELECTION.json",
+      "sha256": "2dbf2f4b3f7956ccbe91f454092d80e76d8b95ebb2a73c427d548899543da7dd"
+    },
+    "root_scope": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\active_onlyy\\PRELABEL_SCIENCE_SCOPE.json",
+      "sha256": "f1825f4c433eadda170686e1b0e419cb95b6d79c31b71dabf751a15f1c92f0a1"
+    }
+  },
+  "external_sources": {
+    "warm_joint_model": {
+      "file": "H:\\polymer_completion_public\\research\\reported_feedback_20261106T024504445715Z\\code\\joint_model.py",
+      "sha256": "5dee15b95546e81d1006358988fba7afdcc931273f28e55edf938f83845bd259"
+    },
+    "legacy_score_scope": {
+      "file": "H:\\polymer_completion_public\\research\\reported_feedback_20261106T024504445715Z\\code\\data_scope.py",
+      "sha256": "34dbdb081757395d57680cdc843f455f174e32246a2f0eba24241e0984c488ad"
+    },
+    "legacy_score": {
+      "file": "H:\\polymer_completion_public\\research\\reported_feedback_20261106T024504445715Z\\code\\score.py",
+      "sha256": "dedad40898d0d9267481f73f5adf10952bd877ea603852c447fc7cbaa04ed0c8"
+    }
+  },
+  "math_receipts": {
+    "independent_native_readout": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\active_onlyy\\math_gate\\independent_execution_once\\INDEPENDENT_READOUT_UNIT_AUDIT.json",
+      "sha256": "552b5aa96636413532db47600aeca92ad22aca39fe2f7d1b7bfe1734a1b680fe"
+    }
+  }
+}

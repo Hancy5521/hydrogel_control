@@ -1,0 +1,40 @@
+{
+  "actual_utc": "2026-11-06T06:19:50.388809+00:00",
+  "status": "CURRENT_ACTIVE_ONLYY_PHASE_CLOSED_WITH_ACTUAL_AUDITS_ROOT_RESEARCH_CONTINUES",
+  "score_receipt": {
+    "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\active_onlyy\\independent_review\\independent_score_execution_once\\INDEPENDENT_ACTIVE_ONLYY_ALL_SCORE_AUDIT.json",
+    "sha256": "cf229cfeca4972778fdd10ade30e98885be48b62184cc381184a21249300f97f"
+  },
+  "state_receipt_sha256": "b2c735778e35e128ccd672bf15589a4986f17b5d5911631abae5e99f17eab347",
+  "verified_score_extent": {
+    "all_scores": 2160,
+    "all_coverage_events": 6480,
+    "summaries": 33,
+    "paired_differences": 1088,
+    "unique_law_outcome_integrations": 1251
+  },
+  "max_score_error": 1.1979750524915289e-11,
+  "max_summary_CRPS_error": 1.8118839761882555e-13,
+  "max_nativeCDF_quad_error_estimate": 2.2888501714899133e-08,
+  "candidate_CRPS_by_budget": {
+    "0": 31.853064467185654,
+    "4": 31.343019318126753,
+    "8": 31.24151989468356
+  },
+  "final_random_NIG_CRPS": 32.03383083287655,
+  "final_candidate_sameinformation_RF_CRPS": 31.95519518170644,
+  "final_GPvariance_own_GP_CRPS": 36.91998429202917,
+  "candidate_90coverage_final": 0.875,
+  "random_90coverage_final": 0.921875,
+  "candidate_to_best_reference_ratio": 1.0,
+  "scope_limits": [
+    "This cohort supports true measured-source label feedback and competitive prediction on an explicit reported-property task.",
+    "Candidate, native-Gaussian acquisition, latent-IVR and warm-openloop final predictive laws coincide within floating arithmetic; do not claim unique policy superiority.",
+    "Nominal90percent candidate coverage0.875 is descriptive and under nominal; no reliable-calibration claim.",
+    "All152 groups are development, queried union15, not48 new material measurements. Source is reported DFT, not hydrogel/wet experiment.",
+    "No independent-source or new-batch confirmation, actual wet/DFT savings, significant improvement, BMA novelty or top-conference readiness asserted.",
+    "Current152 must not be retuned/reselected to manufacture a policy difference."
+  ],
+  "postreview_numeric_science_executions": 0,
+  "next": "Bounded identifiable-relation mathematical protocol, then fresh material evidence if mechanism survives; root run remains active."
+}

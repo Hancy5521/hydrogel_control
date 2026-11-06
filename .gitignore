@@ -85,3 +85,6 @@ new_weighting_summary.json
 
 # Reviewed aggregate only for native-unit material admission
 !research/material_admission_20261106/report/final/MATCHED_PHASE2_AGGREGATES.csv
+
+# Reviewed aggregate-only native-riskfield checkpoint CSV
+!research_20261106_native_riskfield/active_onlyy/report/final/SUMMARY_BY_POLICY.csv

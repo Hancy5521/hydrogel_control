@@ -1,0 +1,466 @@
+{
+  "status": "PASS_SAVED_FORECAST_IO_IDENTITY_COST_TRAINING_ORDER_AUDIT",
+  "actual_utc": "2026-11-06T06:14:52.326253+00:00",
+  "reviewer": "/root/results_report",
+  "plan_sha256": "2a9eccf508cd849d0397e7984037e6a70d99e2185bbb37397fcb001ee914d1fd",
+  "forecast_freeze_sha256": "f8e7f8f3e4eeb8c1383f496472e1f0b15a35500ab4f84f2165717ac702b89aaa",
+  "source_sha256": {
+    "posterior_update.py": "625c6f1b72aa838097502c08292f4dbc5cb5612012725ca1502c36adc3cb254e",
+    "risk_readout.py": "fd726e343cfaa3b09cf8fd9e66bf6bc3bdafa2b644205505d2d6ad04f9139ebe",
+    "reference_models.py": "8d5af2ca70be9983b755bcfb2d833ee0cd33feb6389f84552719ed7beaa2e2f7",
+    "data_io.py": "d695aaa81f3f1f3db3a9717dbdbc517b7d55b445775e7c0858f24a21aa4b1b6e",
+    "run_active.py": "96f2ae79109de7a1550fe48b18832e49cdc6aefb9db0dd336fb9a99a6155078b",
+    "score.py": "d18f8f768ad14ca2b43d5b9dc43a3ec3c976da5d53c507dd57c31f35613c252f"
+  },
+  "hashed_payloads": 123,
+  "all48_samepolicy_predicted_before_trueY_reveals": true,
+  "all18_actual_fit_training_rows_reconstructed_from_visiblewarm_and_samepolicy_revealedY": true,
+  "sklearn_fit_counts": {
+    "GP": 13,
+    "RF": 5
+  },
+  "samepolicy_reference_fit_binding": true,
+  "sharedwarm_and_GPstep4_alias_not_extra_fit": true,
+  "all2112_terminal_laws_frozen_without_terminalY": true,
+  "roles": {
+    "warm": 64,
+    "pool": 24,
+    "terminal": 64
+  },
+  "native_common_setup_cells": 368,
+  "new_Y_perpolicy": {
+    "native_student": 8,
+    "native_gaussian": 8,
+    "latent_ivr": 8,
+    "random": 8,
+    "gp_variance": 8,
+    "warm_openloop": 8
+  },
+  "counterfactual_query_events": 48,
+  "source_pool_groups_with_any_Y_revealed": 15,
+  "materialN": 152,
+  "actual_query_paths": {
+    "native_student": [
+      11,
+      22,
+      12,
+      16,
+      8,
+      20,
+      0,
+      3
+    ],
+    "native_gaussian": [
+      11,
+      22,
+      12,
+      16,
+      8,
+      20,
+      0,
+      3
+    ],
+    "latent_ivr": [
+      11,
+      22,
+      12,
+      16,
+      20,
+      8,
+      0,
+      3
+    ],
+    "random": [
+      1,
+      8,
+      17,
+      10,
+      19,
+      18,
+      9,
+      22
+    ],
+    "gp_variance": [
+      11,
+      3,
+      16,
+      12,
+      15,
+      20,
+      8,
+      22
+    ],
+    "warm_openloop": [
+      11,
+      22,
+      12,
+      16,
+      8,
+      20,
+      0,
+      3
+    ]
+  },
+  "path_observations": {
+    "native_student_native_gaussian_warm_openloop_equal": true,
+    "IVR_same_final_set": true,
+    "IVR_same_first4": true
+  },
+  "risk_call_metadata_only": {
+    "count": 24,
+    "sum_seconds": 28.775543100004143,
+    "max_nodes_per_segment": 64,
+    "max_observed_last_refinement_change": 7.385294372580509e-10,
+    "max_ideal_tail_bound": 2.0932141860534194e-40
+  },
+  "saved_fit_warning_categories_all": {},
+  "timing_order_records": [
+    {
+      "policy": "native_student",
+      "step": 0,
+      "prediction_utc": "2026-11-06T06:07:57.253578+00:00",
+      "reveal_utc": "2026-11-06T06:07:57.271398+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "native_student",
+      "step": 1,
+      "prediction_utc": "2026-11-06T06:07:59.161350+00:00",
+      "reveal_utc": "2026-11-06T06:07:59.179959+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "native_student",
+      "step": 2,
+      "prediction_utc": "2026-11-06T06:08:00.998809+00:00",
+      "reveal_utc": "2026-11-06T06:08:01.017644+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "native_student",
+      "step": 3,
+      "prediction_utc": "2026-11-06T06:08:02.737846+00:00",
+      "reveal_utc": "2026-11-06T06:08:02.756166+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "native_student",
+      "step": 4,
+      "prediction_utc": "2026-11-06T06:08:05.430983+00:00",
+      "reveal_utc": "2026-11-06T06:08:05.447200+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "native_student",
+      "step": 5,
+      "prediction_utc": "2026-11-06T06:08:07.006871+00:00",
+      "reveal_utc": "2026-11-06T06:08:07.023328+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "native_student",
+      "step": 6,
+      "prediction_utc": "2026-11-06T06:08:08.506420+00:00",
+      "reveal_utc": "2026-11-06T06:08:08.522866+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "native_student",
+      "step": 7,
+      "prediction_utc": "2026-11-06T06:08:09.932683+00:00",
+      "reveal_utc": "2026-11-06T06:08:09.948917+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "native_gaussian",
+      "step": 0,
+      "prediction_utc": "2026-11-06T06:08:11.204936+00:00",
+      "reveal_utc": "2026-11-06T06:08:11.221574+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "native_gaussian",
+      "step": 1,
+      "prediction_utc": "2026-11-06T06:08:11.430826+00:00",
+      "reveal_utc": "2026-11-06T06:08:11.447247+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "native_gaussian",
+      "step": 2,
+      "prediction_utc": "2026-11-06T06:08:11.650790+00:00",
+      "reveal_utc": "2026-11-06T06:08:11.668800+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "native_gaussian",
+      "step": 3,
+      "prediction_utc": "2026-11-06T06:08:11.885707+00:00",
+      "reveal_utc": "2026-11-06T06:08:11.904703+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "native_gaussian",
+      "step": 4,
+      "prediction_utc": "2026-11-06T06:08:12.146721+00:00",
+      "reveal_utc": "2026-11-06T06:08:12.166419+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "native_gaussian",
+      "step": 5,
+      "prediction_utc": "2026-11-06T06:08:12.378049+00:00",
+      "reveal_utc": "2026-11-06T06:08:12.396420+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "native_gaussian",
+      "step": 6,
+      "prediction_utc": "2026-11-06T06:08:12.584917+00:00",
+      "reveal_utc": "2026-11-06T06:08:12.602097+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "native_gaussian",
+      "step": 7,
+      "prediction_utc": "2026-11-06T06:08:12.779343+00:00",
+      "reveal_utc": "2026-11-06T06:08:12.797011+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "latent_ivr",
+      "step": 0,
+      "prediction_utc": "2026-11-06T06:08:12.825353+00:00",
+      "reveal_utc": "2026-11-06T06:08:12.843122+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "latent_ivr",
+      "step": 1,
+      "prediction_utc": "2026-11-06T06:08:12.849447+00:00",
+      "reveal_utc": "2026-11-06T06:08:12.866591+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "latent_ivr",
+      "step": 2,
+      "prediction_utc": "2026-11-06T06:08:12.872132+00:00",
+      "reveal_utc": "2026-11-06T06:08:12.889718+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "latent_ivr",
+      "step": 3,
+      "prediction_utc": "2026-11-06T06:08:12.896039+00:00",
+      "reveal_utc": "2026-11-06T06:08:12.915045+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "latent_ivr",
+      "step": 4,
+      "prediction_utc": "2026-11-06T06:08:12.939131+00:00",
+      "reveal_utc": "2026-11-06T06:08:12.957780+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "latent_ivr",
+      "step": 5,
+      "prediction_utc": "2026-11-06T06:08:12.963872+00:00",
+      "reveal_utc": "2026-11-06T06:08:12.982387+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "latent_ivr",
+      "step": 6,
+      "prediction_utc": "2026-11-06T06:08:12.988537+00:00",
+      "reveal_utc": "2026-11-06T06:08:13.007816+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "latent_ivr",
+      "step": 7,
+      "prediction_utc": "2026-11-06T06:08:13.014219+00:00",
+      "reveal_utc": "2026-11-06T06:08:13.032737+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "random",
+      "step": 0,
+      "prediction_utc": "2026-11-06T06:08:13.062576+00:00",
+      "reveal_utc": "2026-11-06T06:08:13.081560+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "random",
+      "step": 1,
+      "prediction_utc": "2026-11-06T06:08:13.088489+00:00",
+      "reveal_utc": "2026-11-06T06:08:13.106960+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "random",
+      "step": 2,
+      "prediction_utc": "2026-11-06T06:08:13.111893+00:00",
+      "reveal_utc": "2026-11-06T06:08:13.126720+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "random",
+      "step": 3,
+      "prediction_utc": "2026-11-06T06:08:13.131764+00:00",
+      "reveal_utc": "2026-11-06T06:08:13.146501+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "random",
+      "step": 4,
+      "prediction_utc": "2026-11-06T06:08:14.178708+00:00",
+      "reveal_utc": "2026-11-06T06:08:14.194863+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "random",
+      "step": 5,
+      "prediction_utc": "2026-11-06T06:08:14.199756+00:00",
+      "reveal_utc": "2026-11-06T06:08:14.214427+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "random",
+      "step": 6,
+      "prediction_utc": "2026-11-06T06:08:14.219852+00:00",
+      "reveal_utc": "2026-11-06T06:08:14.235142+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "random",
+      "step": 7,
+      "prediction_utc": "2026-11-06T06:08:14.239896+00:00",
+      "reveal_utc": "2026-11-06T06:08:14.254179+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "gp_variance",
+      "step": 0,
+      "prediction_utc": "2026-11-06T06:08:15.262726+00:00",
+      "reveal_utc": "2026-11-06T06:08:15.277732+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "gp_variance",
+      "step": 1,
+      "prediction_utc": "2026-11-06T06:08:15.355600+00:00",
+      "reveal_utc": "2026-11-06T06:08:15.373772+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "gp_variance",
+      "step": 2,
+      "prediction_utc": "2026-11-06T06:08:15.452863+00:00",
+      "reveal_utc": "2026-11-06T06:08:15.470844+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "gp_variance",
+      "step": 3,
+      "prediction_utc": "2026-11-06T06:08:15.562462+00:00",
+      "reveal_utc": "2026-11-06T06:08:15.581915+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "gp_variance",
+      "step": 4,
+      "prediction_utc": "2026-11-06T06:08:15.669954+00:00",
+      "reveal_utc": "2026-11-06T06:08:15.687074+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "gp_variance",
+      "step": 5,
+      "prediction_utc": "2026-11-06T06:08:15.765299+00:00",
+      "reveal_utc": "2026-11-06T06:08:15.782435+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "gp_variance",
+      "step": 6,
+      "prediction_utc": "2026-11-06T06:08:15.858527+00:00",
+      "reveal_utc": "2026-11-06T06:08:15.875206+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "gp_variance",
+      "step": 7,
+      "prediction_utc": "2026-11-06T06:08:15.962649+00:00",
+      "reveal_utc": "2026-11-06T06:08:15.980757+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "warm_openloop",
+      "step": 0,
+      "prediction_utc": "2026-11-06T06:08:18.064187+00:00",
+      "reveal_utc": "2026-11-06T06:08:18.080913+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "warm_openloop",
+      "step": 1,
+      "prediction_utc": "2026-11-06T06:08:19.956135+00:00",
+      "reveal_utc": "2026-11-06T06:08:19.972332+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "warm_openloop",
+      "step": 2,
+      "prediction_utc": "2026-11-06T06:08:21.914497+00:00",
+      "reveal_utc": "2026-11-06T06:08:21.930273+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "warm_openloop",
+      "step": 3,
+      "prediction_utc": "2026-11-06T06:08:23.654736+00:00",
+      "reveal_utc": "2026-11-06T06:08:23.670401+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "warm_openloop",
+      "step": 4,
+      "prediction_utc": "2026-11-06T06:08:25.321987+00:00",
+      "reveal_utc": "2026-11-06T06:08:25.338147+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "warm_openloop",
+      "step": 5,
+      "prediction_utc": "2026-11-06T06:08:26.914495+00:00",
+      "reveal_utc": "2026-11-06T06:08:26.931279+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "warm_openloop",
+      "step": 6,
+      "prediction_utc": "2026-11-06T06:08:28.411920+00:00",
+      "reveal_utc": "2026-11-06T06:08:28.428662+00:00",
+      "same_source_identity_and_cost": true
+    },
+    {
+      "policy": "warm_openloop",
+      "step": 7,
+      "prediction_utc": "2026-11-06T06:08:29.848106+00:00",
+      "reveal_utc": "2026-11-06T06:08:29.867610+00:00",
+      "same_source_identity_and_cost": true
+    }
+  ],
+  "native_raw_file_opened_or_hashed": false,
+  "terminalY_read_or_scored": 0,
+  "models_imported_refit_or_rescored": 0,
+  "saved_already_revealed_pool_outcomes_parsed": 48,
+  "limitations": [
+    "Independent I/O and source-binding audit, not a duplicate numerical posterior/CRPS audit.",
+    "Logicaltrustedfullparse disclosure, notcryptographicblindness.",
+    "Sixcounterfactual trajectories do notmultiplymaterialN.",
+    "Observed identicalactions mean native/finite-df-specific policygain is notestablished regardlessof laterpredictive gain.",
+    "No newrecipe/df/terminaltuning requested."
+  ]
+}

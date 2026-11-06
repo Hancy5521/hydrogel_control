@@ -1,0 +1,17 @@
+{
+  "status": "PASS_STATIC_REPORT_HASH_SUMMARY_LINK_QA",
+  "actual_utc": "2026-11-06T06:20:16.767596+00:00",
+  "report_script_sha256": "db6e4fcfafccbf1f2ac3081a838c6a2c7eed8831df34fb904f670089ddd09820",
+  "result_sha256": "dedca9a97c86e259708133d5750111c9b9e653546ebe411f92890fd37f1347b3",
+  "independent_score_audit_sha256": "cf229cfeca4972778fdd10ade30e98885be48b62184cc381184a21249300f97f",
+  "report_html_sha256": "e9e7fb490f4afd014e9afef871b0552f07b2dc901516c1342ccfaec42b61128c",
+  "aggregate_sha256": "4964eeb55f5f3b53e397f22709de66a0f73be964fb8da68dec757341e6c85c70",
+  "PNG_sha256": "8e48df6f9a792314a7d52c2552708c83363b0808573ac463cff52902082b3148",
+  "local_links_checked": 11,
+  "broken_links": [],
+  "summary_rows": 33,
+  "actual_negative_policy_alias_explanation_present": true,
+  "coverage_numerator_denominator_present": true,
+  "no_scientific_model_rerun": true,
+  "PNG_visual_review": "Pending separate view_image; hashes/links/summary checked only"
+}

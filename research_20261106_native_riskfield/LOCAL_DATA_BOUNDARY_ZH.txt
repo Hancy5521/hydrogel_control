@@ -1,0 +1,4 @@
+公开子集仅含程序、协议/metadata、聚合表图、真实来源阅读范围、数学控制/失败和独立审计。
+原公共gzip、逐个真实Y、逐条概率law、所有拟合modelstates及本地RUN/EVENTS不上传。
+完整v2本地ZIP为Native_Riskfield_20261106T040518Z_v2.zip，SHA 110ea9cb0c8483a2c48886d75ff69dbdae3ff1ae5db752dbc62a69a35871835a。
+旧MLST和全部既有Git历史保持原样。公开README/source不等于完整数据环境，现有公开材料可按DOI和SHA另取；完整本地包包含确切代码/数据/依赖与默认prepare-only入口。

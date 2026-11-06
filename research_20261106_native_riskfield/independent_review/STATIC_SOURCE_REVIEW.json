@@ -1,0 +1,23 @@
+{
+  "actual_utc": "2026-11-06T04:15:08.564500+00:00",
+  "kind": "independent_static_native_riskfield_source_math_review",
+  "status": "PASS_STATIC_FIXED12_MECHANISM_AND_SAMEOBJECTIVE_REFERENCE_SOURCE_PENDING_EXACT_ROOT_EXECUTION",
+  "source_sha256": {
+    "posterior_update.py": "625c6f1b72aa838097502c08292f4dbc5cb5612012725ca1502c36adc3cb254e",
+    "activefield.py": "620d6bc122ccef37de551fee52ba90d26c1894de185de7a560b4d25eff797aa2",
+    "run_gate.py": "b49a2e60c6012b79171646bbd6949e780ff142b5b94bbf3a075d5b879e84ed91"
+  },
+  "source_freeze_sha256": "e8e09e94ddb2ff3fbbf6925f3ff6602dabf1d971eca43c1a8e203a34858f1494",
+  "preoutput_independent_criteria_sha256": "bc6dd13eed25a0d0a473a4e80c7c78e8f08243715b567a2f695a480d3802ff50",
+  "independent_native_reference_source_sha256": "bc0763d9af89b449dcc1dd0a19dce0f86c1b9d40a5a5e6d57b113b1fdd5fa927",
+  "reviewed": "all3source;knownNIGpairpositivecov;partialYrankoneupdate;condt nu+1;kernelCDF/SFpositivevariance;fixedunnormalizedZprobweights;GL4levels;propernativeYJJac;Owenrho²withpositiveanglefallback;tailI0I1bound;affineclosedcoefficient;couplingconditionalW1;all12retainedno forcedreversal",
+  "notable_scope_limits": [
+    "normaltransportmatcheslatentnotnative moments",
+    "signmirrorcaseandnormalextras retainoriginalStudent exact_NIG_pair onlyasreference metadata;notnewNIGquery actions",
+    "rho couplingprobes useconditional risk W1 ratherthanidenticalunconditionalmarginalW1",
+    "finitequadrature/CDF/IEEE errornotcoveredbyideal tail orrho bounds",
+    "no speedupornewpolicyclaimfrompositivezero-rhoorclassicNIGalone",
+    "crossbranchindependent0isanalytictheoreticalboundary;currentAPIcontainsno multi-branchpolicyandnogenuinebranchdata evidence"
+  ],
+  "new_mathematical_numeric_runs_or_material_reads": 0
+}

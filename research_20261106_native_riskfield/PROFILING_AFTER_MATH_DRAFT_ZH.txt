@@ -1,0 +1,21 @@
+数学门后计算瓶颈核查草案（未执行，V2独立通过后才可登记）
+
+目的
+风险场压缩只有在优化完整读出确实占用有意义成本时才值得实现。本profile不训练、评分材料效果或救旧terminal，只借当前已消费实验保存的真实context几何作自然计算负载。旧224来源组继续视为已消费，profile不会让它们重新变成确认集。
+
+固定自然负载
+使用reported_feedback_20261106T024504445715Z/forecast_once下原字节MODEL_STATES、VISIBLE_INITIAL_INPUTS、QUERY_LEDGER：warm pooledNIW64的后验；旧pool32的已见双proxy；旧terminal128的已见双proxy。只读取这些已冻结值，绝不新解析rawgzip，也不读取新Y或重新fit。32×128=4096 query-target pairs，使用原来真实自然规模，不扩大H/候选数来制造优势。该旧pool的Y在原实验已经消费，profile只计算固定warm模型反事实风险，不称新的active验证或材料N。
+
+最小优化完整读出
+posterior_update.from_niw给出完整NIG；context用原warm三坐标变换；预测mu_z/scale_z映射mu_u=centerY+SDY*mu_z、scale_u=SDY*scale_z，rho不变。必须留fullposterior与native第一scale s0Y。
+每个posterior state只准备一次：theta节点及原pdf权重；每target的分段v节点、marginalCDF/SF、YJJac和原单位GL权重；全部rho矩阵。把query×target按小块流式广播到v×theta，用CDF/SF正差平方并积分。使用float64，不创造低秩posterior、不替换模型。向量化完整baseline享有全部公共cache；candidate若存在也必须分摊这些共同准备费用。
+建议API：prepare_full_readout(state,target_contexts,warm_transform,outer_nodes,inner_nodes)；full_values_for_queries(prepared,pool_contexts,query_chunk,target_chunk)；scalar_cached_value(prepared,q,t)用于只读等价参考。模块可以仍保持posterior_update与activefield两个core，profile runner只有协议/计时/收据。
+
+计时与审计
+V2成功后另登记具体node counts、固定chunk、自然输入SHA、版本、线程与计时次数；不因观察速度或risk值后变换规模。建议先64/128两个预定级别全矩阵并保存其差，针对预声明16个pair用相同node设置的scalar_cached独立实现核对（不是重新计算材料CRPS）。若需第三个级别或更细数值，须预声明或单独协议，不能在输出后只保留最佳计时。
+分别报告NIW→NIG和几何准备、共用theta/target-CDF/Jac准备、完整readout、全部验证耗时。数值数组峰值估算与真正RSS分别标明；不得将数组估算冒充系统内存。CPU/GPU都不用虚构：只有实际测过才报告。GL cache、batch/vectorization属于成熟优化，不能单独改名新算法。
+
+决策
+若优化fullnative读出已很快、风险值都太近需更精积分，或角度近似界太松，就不实施压缩分支。下一152组直接fullnative NIG真实active查询仍可推进；计算工作只作为可复现可靠底座。若确有可审计瓶颈，再在相同输入/动作/posterior/数值质量下比较低维risk读出与完整强参考，必须含fallback比例和共同成本，不以速度换不可见action regret。
+
+目前只保存了source/design范围，0新数据、0fit、0risk matrix数值或计时。V2原source和失败V1均不修改。

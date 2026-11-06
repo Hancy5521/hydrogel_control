@@ -1,0 +1,70 @@
+{
+  "actual_registered_utc": "2026-11-06T04:09:06.088527+00:00",
+  "kind": "independent_native_riskfield_preoutput_criteria",
+  "status": "FIXED_BEFORE_ANY_NEW_KERNEL_NUMERICAL_EXECUTION_OR_OUTPUT_READ",
+  "finite_known_NIG_fixture": {
+    "V_diagonal": [
+      0.2,
+      1.0
+    ],
+    "m": [
+      0.0,
+      1.0
+    ],
+    "alpha": 3.0,
+    "IG_scale": 1.5,
+    "nu": 6.0,
+    "terminal_x": [
+      1.0,
+      -1.0
+    ],
+    "query_x": [
+      1.0,
+      -1.1
+    ],
+    "independentphysicalrowsnotrepeatcells": true,
+    "native_first_scale_s0": 2.0,
+    "target_latent_scale": "sqrt1.1"
+  },
+  "evaluation_count": 12,
+  "mechanism8": [
+    "qplus_tplus",
+    "qplus_tminus",
+    "qminus_tplus",
+    "qminus_tminus",
+    "case1_rho_sign_mirror",
+    "Studentt_rho0_native",
+    "Gaussian_rho0_native",
+    "Studentt_rho0_affine_target"
+  ],
+  "additional4_sameobjective_references": "fouroriginalNIGpairrho,matchedlatentGaussianmeans/covariance,scale=s_t*sqrt(nu/(nu-2)),sameYJnativeCRPS",
+  "truncation": {
+    "standard_target_Lv": 32.0,
+    "standard_query_Lz": 64.0,
+    "query_density_not_renormalized": true,
+    "target_splits": [
+      0.0,
+      "-mu/s"
+    ],
+    "producer_GL_levels": [
+      32,
+      64,
+      128,
+      256
+    ]
+  },
+  "fixed_criteria": {
+    "producer_final_refinement_abs_max_for_convergence_diagnostic": 2e-05,
+    "analytic_outer_plus_inner_tail_abs_max": 0.0001,
+    "independent_native_reference_agreement_abs": 0.0002,
+    "independent_native_reference_agreement_rel": 2e-05,
+    "algebra_scalar_abs": 2e-10,
+    "algebra_scalar_rel": 2e-10,
+    "Gaussianrho0_and_crossbranch_analytic": "exact0",
+    "mechanism_positivity": "finiteStudenttrho0strictpositive,nonlinear/nativecomparisonsnotprewrittenwins"
+  },
+  "independent_reference_route": "directtarget-native-x integration ofconditional-CDFvariance; directquery-native-YJ-densityintegration withforwardT+Jac,notproducerouterinverseJac/quantileGL;affine closedform coefficient;Gaussian OwenT checkedagainstpositivePlackettangularformula or independentconditionalnativeintegration",
+  "claim_policy": "Rankonlynumericallyresolvedifobservedmarginexceedsallretainedanalytic truncation+numericalrefinement/reference-error estimates;notdirectedIEEEcertificate. MechanismPASS does not force rankreversal or speedup;failures retainednoresweep.",
+  "source_data_reads_fits_numerical_execution": 0,
+  "no_consumed128_terminal_tuning": true
+}

@@ -1,0 +1,157 @@
+{
+  "status": "BOUNDED_PRIOR_SOURCE_REVIEW_COMPLETED_NO_MODEL_EXECUTION",
+  "actual_utc": "2026-11-06T05:56:45.707354+00:00",
+  "actual_Asia_Shanghai": "2026-11-06T13:56:45.707354+08:00",
+  "papers": [
+    {
+      "id": "R1",
+      "citation": "Thomas-Mitchell et al. (2023), Machine Learning: Science and Technology 4, 045034",
+      "doi": "10.1088/2632-2153/ad0ab5",
+      "title": "Not independently transcribed; DOI/publisher article identifier supplied and retained rather than inventing title",
+      "publisher_pdf_url": "https://pure.ulster.ac.uk/ws/portalfiles/portal/130243323/Thomas-Mitchell_2023_Mach._Learn._Sci._Technol._4_045034.pdf",
+      "version": "2023 published publisher PDF, 20 pages, as actually read by parent root",
+      "license": "CC BY 4.0 verified by parent root; not independently reread in this bounded API task",
+      "reader": "/root",
+      "recording_agent": "/root/results_report",
+      "actual_reading_depth": "Abstract/introduction, section2.4 MEPE, section2.6 Student-t process, selected section3.2 and conclusion search excerpts; not fullpaper reading or experiment reproduction.",
+      "source_receipt_provenance": "Parent explicitly supplied completed reading scope; no duplicate retrieval by recording agent.",
+      "summary_en_under200words": "This materials active-learning publication is a direct contextual precedent for predictive-error/uncertainty acquisition and Student-t process use. It prevents claiming that Student-t modeling, uncertain-scale information, or active materials querying are novel by themselves. The parent read selected methods and results, not the full paper. No theorem, baseline equivalence or empirical advantage over this work has been established by the present record."
+    },
+    {
+      "id": "R2",
+      "citation": "Fishkov et al. (2025), Uncertainty Quantification for Regression using Proper Scoring Rules",
+      "authors": [
+        "Alexander Fishkov",
+        "Kajetan Schweighofer",
+        "Mykyta Ielanskyi",
+        "Nikita Kotelevskii",
+        "Mohsen Guizani",
+        "Maxim Panov"
+      ],
+      "url": "https://arxiv.org/abs/2509.26610",
+      "read_version": "arXiv:2509.26610v1 only",
+      "doi": "10.48550/arXiv.2509.26610",
+      "pages": 38,
+      "license": "Paper CC BY 4.0 verified by parent root; code independently verified MIT at pinned commit",
+      "reader": "/root for selected paper sections; /root/results_report for selected official source",
+      "actual_paper_reading_depth": "Abstract/main sections2-3.2, Tables2-3, section5.5 and selected appendixE5. Not all38pages or all proofs/experiments.",
+      "summary_en_under200words": "The work develops regression uncertainty measures from proper scoring rules and evaluates their use, including active learning. The inspected official implementation represents predictions by Gaussian ensemble means/variances, computes pointwise CRPS-derived Bayes/excess quantities, and samples queries from a softmax of those quantities. This is a direct precedent for proper-score acquisition, so that umbrella is not an original contribution here. The inspected path does not compute our proposed native-unit cross-target conditional lookahead or exact NIG only-Y update. That local code distinction is not an exhaustive novelty guarantee or evidence of better performance."
+    }
+  ],
+  "official_code": {
+    "repository": "https://github.com/ml-jku/regression-uncertainty",
+    "branch_observed": "main",
+    "commit_sha": "5aa17d8c108e432ba6ff28abd26300eee2ceeaa7",
+    "commit_utc": "2025-09-30T12:00:57Z",
+    "license": "MIT",
+    "copyright": "Copyright (c) 2025 Institute for Machine Learning, JKU Linz",
+    "license_file_sha256": "b175f6ef5d8cef92285d4bf8c8288f3df56fddf50a96b4b9ffabf840335eb245",
+    "actual_API_requests": 6,
+    "bounded_limit": 7,
+    "authorization": "None; urllib public GitHub API requests, no authentication files/tokens accessed",
+    "readme_exact_links": [
+      "./source/utils/uncertainty_measures.py",
+      "active_learning.py"
+    ],
+    "pinned_sources": [
+      {
+        "name": "readme_pinned",
+        "path": "README.md",
+        "url": "https://api.github.com/repos/ml-jku/regression-uncertainty/contents/README.md?ref=5aa17d8c108e432ba6ff28abd26300eee2ceeaa7",
+        "actual_utc": "2026-11-06T05:55:17.691007+00:00",
+        "commit_sha": "5aa17d8c108e432ba6ff28abd26300eee2ceeaa7",
+        "result": "OK",
+        "status_code": 200,
+        "bytes": 2539,
+        "git_blob_sha": "6e88127f7aeb7c42311cb04b3f5a1179e3913a0e",
+        "sha256": "5d3e2593bd7de49bc2bed2a775fe2ef590e749584d209dc6ecb87cf8d43533c4",
+        "api_response_sha256": "e5d95e5f2c9e228d9eddcc199e5b87c07ef9e250183488dc99515a279579559d",
+        "saved_file": "readme_pinned.txt",
+        "rate_remaining": "42"
+      },
+      {
+        "name": "license_pinned",
+        "path": "LICENSE",
+        "url": "https://api.github.com/repos/ml-jku/regression-uncertainty/contents/LICENSE?ref=5aa17d8c108e432ba6ff28abd26300eee2ceeaa7",
+        "actual_utc": "2026-11-06T05:55:17.692282+00:00",
+        "commit_sha": "5aa17d8c108e432ba6ff28abd26300eee2ceeaa7",
+        "result": "OK",
+        "status_code": 200,
+        "bytes": 1097,
+        "git_blob_sha": "1634ba66904dbacf8e66e82d11d5f99f08361310",
+        "sha256": "b175f6ef5d8cef92285d4bf8c8288f3df56fddf50a96b4b9ffabf840335eb245",
+        "api_response_sha256": "303f001617f4fecf46cdb077ddfe30a6ef08de41179381edce767d33c0817646",
+        "saved_file": "license_pinned.txt",
+        "rate_remaining": "43"
+      },
+      {
+        "name": "active_learning_pinned",
+        "path": "active_learning.py",
+        "url": "https://api.github.com/repos/ml-jku/regression-uncertainty/contents/active_learning.py?ref=5aa17d8c108e432ba6ff28abd26300eee2ceeaa7",
+        "actual_utc": "2026-11-06T05:55:17.693171+00:00",
+        "commit_sha": "5aa17d8c108e432ba6ff28abd26300eee2ceeaa7",
+        "result": "OK",
+        "status_code": 200,
+        "bytes": 10703,
+        "git_blob_sha": "d9e1c7f68e1b5ae962347edc68fab5fe33cf4917",
+        "sha256": "45e9b6bca0d74e384c7e15b2de3064425cf0f32807e0228ba323db788419b3eb",
+        "api_response_sha256": "b618f170b7968f04f390d2b248b81dca4fec1ec3bd1c5be6bd6ea75155b2bf1f",
+        "saved_file": "active_learning_pinned.py",
+        "rate_remaining": "44"
+      },
+      {
+        "name": "uncertainty_measures_pinned",
+        "path": "source/utils/uncertainty_measures.py",
+        "url": "https://api.github.com/repos/ml-jku/regression-uncertainty/contents/source/utils/uncertainty_measures.py?ref=5aa17d8c108e432ba6ff28abd26300eee2ceeaa7",
+        "actual_utc": "2026-11-06T05:55:17.693863+00:00",
+        "commit_sha": "5aa17d8c108e432ba6ff28abd26300eee2ceeaa7",
+        "result": "OK",
+        "status_code": 200,
+        "bytes": 14967,
+        "git_blob_sha": "0fc2dd7bd6ab51eb9bf94727d23a463c87c7ac17",
+        "sha256": "fc62ffbde6a396468e1f63d8e7d7beff59d3aea694381f1cc5a9aa1b1b717b53",
+        "api_response_sha256": "b5faa68ce0c0594b32582853c5dd87e58d40ee5c49d3b7e800591ab10b4477bd",
+        "saved_file": "uncertainty_measures_pinned.py",
+        "rate_remaining": "45"
+      }
+    ],
+    "selected_code_reading_depth": {
+      "active_learning.py": "Inspected ensemble-prediction inputs/outputs lines34-79 and loop/acquisition/evaluation lines198-265, with argument/scoring dispatch context; no imported modules inspected or executed.",
+      "source/utils/uncertainty_measures.py": "Inspected helper and CRPS uncertainty decomposition lines1-150. Other scoring-rule functions were returned and saved but not independently audited.",
+      "LICENSE": "All21 lines read; preserved with downloaded source."
+    },
+    "new_algorithm_source_reused": false,
+    "installed_or_imported_or_executed": false,
+    "model_or_dataset_downloaded": false,
+    "observations": [
+      {
+        "file": "active_learning.py",
+        "lines": "239-249",
+        "observation": "Acquisition consumes per-pool-row Gaussian ensemble means/variances, computes an uncertainty dictionary and selects via softmax+torch.multinomial. The printed commented topk is not the actual selected code path."
+      },
+      {
+        "file": "uncertainty_measures.py",
+        "lines": "20-150",
+        "observation": "Gaussian absolute-difference A helper and pairwise means/variances form CRPS Bayes/excess uncertainty outputs. This path does not perform native YJ inverse-Jacobian integration or exact conditional NIG label updates."
+      }
+    ],
+    "scope_limits": [
+      "Only selected official source path inspected, not the entire repository or all cited literature.",
+      "Test inputs are forwarded for evaluation in the active loop, but inspected acquisition calculation uses pool quantities; no claim that all possible repository algorithms lack cross-target design.",
+      "No empirical comparison, adaptation or model execution performed."
+    ]
+  },
+  "failed_root_access_attempts_not_repeated": [
+    {
+      "source": "arXiv2509.26610v1 HTML",
+      "result": "Root reported timeout; no duplicate retry by recording agent",
+      "original_receipt_here": false
+    },
+    {
+      "source": "arXiv2509.26610v2",
+      "result": "Root reported404; onlyv1 verified; no attempt to invent/retrievev2",
+      "original_receipt_here": false
+    }
+  ],
+  "science_impact": "Retain current fixed NIG experiment. Proper-score acquisition/Student-t uncertainty are prior art. Any paper contribution must rely on auditable material task adaptation and actual native-objective adaptive-versus-open-loop gains, if obtained. No current result or protocol changed."
+}

@@ -1,0 +1,993 @@
+{
+  "actual_utc": "2026-11-06T06:43:37.557211+00:00",
+  "reviewed_plan_sha256": "bb98373b9c0efaed620b6d31b08decdb7fd2078074d417d072427e2a452c375e",
+  "source_sealed_zip_sha256": "110ea9cb0c8483a2c48886d75ff69dbdae3ff1ae5db752dbc62a69a35871835a",
+  "public_subset": true,
+  "self_excluded": true,
+  "files": [
+    {
+      "path": "active_onlyy/ALGORITHM_AND_EXPERIMENT_ZH.txt",
+      "bytes": 6352,
+      "sha256": "e635cd45598b5d64728ee242b2be869aac7a915a5ea054f0b98cadd49990b089",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/code/data_io.py",
+      "bytes": 14731,
+      "sha256": "d695aaa81f3f1f3db3a9717dbdbc517b7d55b445775e7c0858f24a21aa4b1b6e",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/code/posterior_update.py",
+      "bytes": 4632,
+      "sha256": "625c6f1b72aa838097502c08292f4dbc5cb5612012725ca1502c36adc3cb254e",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/code/reference_models.py",
+      "bytes": 6844,
+      "sha256": "8d5af2ca70be9983b755bcfb2d833ee0cd33feb6389f84552719ed7beaa2e2f7",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/code/risk_readout.py",
+      "bytes": 11103,
+      "sha256": "fd726e343cfaa3b09cf8fd9e66bf6bc3bdafa2b644205505d2d6ad04f9139ebe",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/code/run_active.py",
+      "bytes": 17373,
+      "sha256": "96f2ae79109de7a1550fe48b18832e49cdc6aefb9db0dd336fb9a99a6155078b",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/code/score.py",
+      "bytes": 9208,
+      "sha256": "d18f8f768ad14ca2b43d5b9dc43a3ec3c976da5d53c507dd57c31f35613c252f",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/EXECUTION_PLAN_REGISTERED.json",
+      "bytes": 4935,
+      "sha256": "2a9eccf508cd849d0397e7984037e6a70d99e2185bbb37397fcb001ee914d1fd",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/EXECUTION_PLAN_TEMPLATE.json",
+      "bytes": 4903,
+      "sha256": "9eb6abfa29427bf058842870253dd86db62948ae7770e45d4cd36d6b8ac4241f",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/independent_io_review/SAVED_FORECAST_IO_AUDIT.json",
+      "bytes": 14509,
+      "sha256": "0a4639d4a36b1510aaffe842d27b521e35339cac71aa1916539d08d9fe2c3033",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/independent_io_review/STATIC_IO_FAIRNESS_CLEARANCE.json",
+      "bytes": 9440,
+      "sha256": "148664b58da05ecf7b56f8f65f84331d11cd552666fe6b205458b222692c9880",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/independent_review/audit_saved_forecasts.py",
+      "bytes": 20347,
+      "sha256": "7a8f1792df3a256b77798363defbe683282780cc87b66ed1476af29f086b5501",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/independent_review/audit_saved_scores.py",
+      "bytes": 14545,
+      "sha256": "474ee5f79e587c2da212c94f3e41be5bffe913fefeb63179b25e7ed8ca8bf494",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/independent_review/independent_score_execution_once/INDEPENDENT_ACTIVE_ONLYY_ALL_SCORE_AUDIT.json",
+      "bytes": 27714,
+      "sha256": "cf229cfeca4972778fdd10ade30e98885be48b62184cc381184a21249300f97f",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/independent_review/independent_state_execution_once/INDEPENDENT_ACTIVE_ONLYY_STATE_AUDIT.json",
+      "bytes": 30622,
+      "sha256": "b2c735778e35e128ccd672bf15589a4986f17b5d5911631abae5e99f17eab347",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/independent_review/model_reference.py",
+      "bytes": 8536,
+      "sha256": "87ca63d205191fb138827346e1c42588b5986d02aeaf411d9815cb85f2ceaaab",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/independent_review/POSTEXECUTION_SCORE_AND_PHASE_REVIEW.json",
+      "bytes": 2360,
+      "sha256": "8ba245ba53ef3e57416c1b8c4c934c8f3a78339c450b24d33a0bd1c9a8705bf5",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/independent_review/POSTEXECUTION_STATE_REVIEW.json",
+      "bytes": 8238,
+      "sha256": "5b502a609545d4ec904a85b156212e7cf7184eb227d0e8783f31c86f10a61944",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/independent_review/ROOT_ALL_SCORE_APPROVAL.json",
+      "bytes": 307,
+      "sha256": "c8dfacb3c7e28c7c9f6cd839d16b2bd1f7d920ae80ebb40287b1a0d2fa57f3c5",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/independent_review/ROOT_SAVED_STATE_APPROVAL.json",
+      "bytes": 311,
+      "sha256": "49aff441dbfa61f2bcb0a9dc5b9fa383cef6fb9e1f66887a18f8bfd796eb7abf",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/independent_review/SAVED_STATE_PLAN_REGISTERED.json",
+      "bytes": 3483,
+      "sha256": "d45be51e5f6cfe7e0f63e47e0830507799d6e3834bb0b82a4ae6442c3dd4f33b",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/independent_review/SCORE_PLAN_REGISTERED.json",
+      "bytes": 4341,
+      "sha256": "349bad28300b1dcf0b01b89057944fbb59143428d2df39a5ae0a16fdd27a301a",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/independent_review/SCORE_SOURCE_PREOUTPUT_FREEZE.json",
+      "bytes": 754,
+      "sha256": "bb8a41880a2598609fdaba47f250ebff2f7561f5bb0b286f354374891fcac06a",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/INDEPENDENT_STATIC_SOURCE_REVIEW.json",
+      "bytes": 4866,
+      "sha256": "5ee504ade079b259c35214e144eb5805bedaaff5789d22a190c53456a3b57e7e",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/math_gate/audit_unit_gate.py",
+      "bytes": 7716,
+      "sha256": "948a16d43916e14c79294f6c2ce43b8ead53d39a821cd255784d7d5aa05e0131",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/math_gate/execution_once/READOUT_UNIT_RESULTS.json",
+      "bytes": 17411,
+      "sha256": "22909dbeb4f3730c26a6aaff2eb6ee193dfbf17de9c891592c01078fb6f9b7ec",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/math_gate/independent_execution_once/INDEPENDENT_READOUT_UNIT_AUDIT.json",
+      "bytes": 9047,
+      "sha256": "552b5aa96636413532db47600aeca92ad22aca39fe2f7d1b7bfe1734a1b680fe",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/math_gate/INDEPENDENT_UNIT_PLAN_REGISTERED.json",
+      "bytes": 1885,
+      "sha256": "dff1b6d19a0a80d897dcaee2028ba5cec2e909ce6fb260ac3928c7f2dd9a2243",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/math_gate/ROOT_INDEPENDENT_UNIT_APPROVAL.json",
+      "bytes": 303,
+      "sha256": "150ca9ba9daa70d4cd618305843e4751770cf6b29c657cfa8f669dd9cd2619db",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/math_gate/ROOT_UNIT_APPROVAL.json",
+      "bytes": 225,
+      "sha256": "39d66751d730de0d5f243a79e245e921768be0d802c4a4b500f0c185597fab06",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/math_gate/run_unit_gate.py",
+      "bytes": 4014,
+      "sha256": "85882f0b9a2c5bd924e40c3aea0082ebd7d64e5cbfab16d3c7a3394b65ccc218",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/math_gate/STATIC_DECOMPOSITION_REVIEW.json",
+      "bytes": 1244,
+      "sha256": "aab66407b99569b4ba5eaf9197bd4a30632022255a21eac51af99e27f7b98bef",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/math_gate/UNIT_PLAN_REGISTERED.json",
+      "bytes": 1989,
+      "sha256": "e19798c597b5677cfe11b2c71add3c8cbb79217750b8ae963562e08daa96467c",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/PRELABEL_SCIENCE_SCOPE.json",
+      "bytes": 3664,
+      "sha256": "f1825f4c433eadda170686e1b0e419cb95b6d79c31b71dabf751a15f1c92f0a1",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/report/final/learning_curves.png",
+      "bytes": 229787,
+      "sha256": "8e48df6f9a792314a7d52c2552708c83363b0808573ac463cff52902082b3148",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/report/final/REPORT_AGGREGATE.json",
+      "bytes": 20084,
+      "sha256": "4964eeb55f5f3b53e397f22709de66a0f73be964fb8da68dec757341e6c85c70",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/report/final/SUMMARY_BY_POLICY.csv",
+      "bytes": 3613,
+      "sha256": "5778f2b278715fa417a0ef678c7f5f3417d0a42a35b0c1ebad5419ba01eceff8",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/report/PNG_VISUAL_REVIEW.json",
+      "bytes": 807,
+      "sha256": "1029ee3f9656968861ff31c10f47248dee4c64fde2be7b25c4e3778f533b7dc1",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/report/RENDER_PREFLIGHT_REJECTION_1.json",
+      "bytes": 919,
+      "sha256": "ed35de929e331b2e3a8ecd845a30175b937bee57210209c659cfdb888029694b",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/report/render_report.py",
+      "bytes": 13382,
+      "sha256": "db6e4fcfafccbf1f2ac3081a838c6a2c7eed8831df34fb904f670089ddd09820",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/report/STATIC_REPORT_QA.json",
+      "bytes": 987,
+      "sha256": "adecf416ad24e4f5e80ae493bfd7be77a8c112604775a2321a69747681e9c283",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/ROOT_FIRST_SCORE_APPROVAL.json",
+      "bytes": 367,
+      "sha256": "9120370e986db988a7b7774d6b5df9cccfdce962261e54ea1c2ccd52b4fe4878",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/ROOT_FORECAST_APPROVAL.json",
+      "bytes": 442,
+      "sha256": "2b0bb41f0d5e287504f93787a827cda78aceb0dc9a745e0e15f2295fc8496b7d",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/SOURCE_FREEZE.json",
+      "bytes": 2189,
+      "sha256": "3e810e4c655c8f51b6f05e77f37e56d4ebca7b6792b6b9eb1dca380357a594e1",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "ADMIN_LAUNCH_REJECTION_1.json",
+      "bytes": 442,
+      "sha256": "38a3b1e668192a5de34005ecf87fffe577ae57463f11b9e70b528eede585f356",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "code/activefield.py",
+      "bytes": 8590,
+      "sha256": "620d6bc122ccef37de551fee52ba90d26c1894de185de7a560b4d25eff797aa2",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "code/posterior_update.py",
+      "bytes": 4632,
+      "sha256": "625c6f1b72aa838097502c08292f4dbc5cb5612012725ca1502c36adc3cb254e",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "code/run_gate.py",
+      "bytes": 13159,
+      "sha256": "b49a2e60c6012b79171646bbd6949e780ff142b5b94bbf3a075d5b879e84ed91",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "DATA_ATTRIBUTION.txt",
+      "bytes": 418,
+      "sha256": "8fc657ac702f12abd342f3c8a58b257121627e45562683d26c8d47025af02b7d",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "diagnosis/V1_REFINEMENT_READONLY_DIAGNOSIS.json",
+      "bytes": 14152,
+      "sha256": "54fb8c8f24dc6aa471d1214b233469bba101f636b38af8a46aef7fcdd76310e5",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "execution_once/EXECUTION_COMPLETE.json",
+      "bytes": 716,
+      "sha256": "c697a43d6a16c732a3abf3aed0e3bc8b2012ce963d68b7711272b8ccb075b706",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "execution_once/EXECUTION_START.json",
+      "bytes": 651,
+      "sha256": "f23c0b64fd86213c18150177d3a26ea9717687af21d19d6f0833ee1b2cdf85e5",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "execution_once/RESULTS.json",
+      "bytes": 142006,
+      "sha256": "cf342e1e4d41054ee81a75e69d0b14d4cab30ce84abdd36555dc1f7634a38172",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "EXECUTION_PLAN_REGISTERED.json",
+      "bytes": 2468,
+      "sha256": "b7246bb23c8f757fe8606ff6a52e82cf128677bbf106158dbbabd3a0f54bd834",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "EXECUTION_PLAN_TEMPLATE.json",
+      "bytes": 2438,
+      "sha256": "ac39097fd42e6da01919a20aa7597736729cad3c697742239daa888d0ab2fff2",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "frozen_dependencies/independent_other_helpers/audit_baseline_forecasts.py",
+      "bytes": 19819,
+      "sha256": "046b73114e29b70b004b8a32009264b9e9025babb528a76988f95a41bac0eaa3",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "frozen_dependencies/independent_other_helpers/audit_phase2_scores.py",
+      "bytes": 21065,
+      "sha256": "257551f8e648a3ce832d1ada677b25168b53a0663ad0e6133a345427f8e3322a",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "frozen_dependencies/independent_reported_helpers/audit_saved_scores.py",
+      "bytes": 14891,
+      "sha256": "d2a9ee1adffd7bd40331f91f96118532808dbd30eda22119dee8ccbdfa01226f",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "frozen_dependencies/independent_reported_helpers/saved_state_reference.py",
+      "bytes": 3899,
+      "sha256": "57f5e019d5f94878645c8970d26bdb581c965ce916196f87129fab5577272573",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "frozen_dependencies/math_basis/FINITE_DF_PRIMARY_SOURCE_LEDGER.json",
+      "bytes": 1099,
+      "sha256": "de3a0068492ae22fb07f2b5ffa151241a6ad1372e1d83d1ebcda5bb2d8851961",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "frozen_dependencies/math_basis/FINITE_DF_SCALE_FEEDBACK_VALUE_PROOF_ZH.txt",
+      "bytes": 6075,
+      "sha256": "22bf39a3fb09ba7887bab0603d375843e77647b6ce7fe4dd4db507aaf15c5b74",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "frozen_dependencies/math_basis/NIW_CONDITIONAL_PARAMETER_INDEPENDENCE_PROOF_ZH.txt",
+      "bytes": 6356,
+      "sha256": "6c576deb4ebc83806bc6815c6c800cd1ebae9dbdd5c9e28a8c3d1eae1767687f",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "frozen_dependencies/math_basis/NIW_REGRESSION_PRIMARY_SOURCE_LEDGER.json",
+      "bytes": 1358,
+      "sha256": "2297f16848c2648995c7b74da1db27a2934256726dd2499bf646d885e9e0b26d",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "frozen_dependencies/reported_code/data_scope.py",
+      "bytes": 15820,
+      "sha256": "34dbdb081757395d57680cdc843f455f174e32246a2f0eba24241e0984c488ad",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "frozen_dependencies/reported_code/joint_model.py",
+      "bytes": 9774,
+      "sha256": "5dee15b95546e81d1006358988fba7afdcc931273f28e55edf938f83845bd259",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "frozen_dependencies/reported_code/score.py",
+      "bytes": 20236,
+      "sha256": "dedad40898d0d9267481f73f5adf10952bd877ea603852c447fc7cbaa04ed0c8",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "independent_review/audit_fixed_gate.py",
+      "bytes": 16646,
+      "sha256": "cc7d708e1d6613624d7db313e12dfc31695d5fb877f13e63985c000c38d205dd",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "independent_review/execution_once/INDEPENDENT_NATIVE_RISKFIELD_FIXED12_AUDIT.json",
+      "bytes": 4107,
+      "sha256": "0e2cf2e3787f98fd500d3311eea959f0eb6360926a78f9efbda0544df5649ca0",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "independent_review/FINAL_AUDIT_SOURCE_PREPARATION.json",
+      "bytes": 1247,
+      "sha256": "49cfe24f15a83453ac8d68334924b62b163886bac812fe98beaefc7d799fb819",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "independent_review/native_reference.py",
+      "bytes": 5715,
+      "sha256": "bc0763d9af89b449dcc1dd0a19dce0f86c1b9d40a5a5e6d57b113b1fdd5fa927",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "independent_review/OWEN_OFFICIAL_SOURCE_LEDGER.json",
+      "bytes": 737,
+      "sha256": "2e7756f92642a60eb270957081942671c74712bf8fadfcc3a44937280b091768",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "independent_review/PLAN_REGISTERED.json",
+      "bytes": 2351,
+      "sha256": "5a68ba32372bb365870acfab9b02795f6d9a5a63cebc8d771c492a851a2ec803",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "independent_review/pre_execution_history/audit_fixed_gate.py",
+      "bytes": 15707,
+      "sha256": "5afefc53c81a05f353de3996b6be14906bb9cdb53aa19ef41f767ef61ed2785e",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "independent_review/pre_execution_history/SOURCE_PREPARATION.json",
+      "bytes": 947,
+      "sha256": "62195961f4552508690e1131bd7f52765df5051e7264c258978375067c8ded5f",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "independent_review/PREOUTPUT_CRITERIA.json",
+      "bytes": 2501,
+      "sha256": "bc6dd13eed25a0d0a473a4e80c7c78e8f08243715b567a2f695a480d3802ff50",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "independent_review/reference_v2/audit_fixed_gate.py",
+      "bytes": 17512,
+      "sha256": "f4120b75255d894577cbe065f20d0ba134a16dec6bfe8101d759264fc39f3797",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "independent_review/reference_v2/audit_theta_v2_saved_table.py",
+      "bytes": 6702,
+      "sha256": "6b17ee9b9a2b2118558b55d5c8b62d7caefc4486d281077b3a904d2d45384f05",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "independent_review/reference_v2/execution_once/INDEPENDENT_NATIVE_RISKFIELD_FIXED12_AUDIT.json",
+      "bytes": 20882,
+      "sha256": "309063e261a2ebc4df7237ce83977b829525218fb506e7a09d41ce8b0b6476d6",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "independent_review/reference_v2/native_reference.py",
+      "bytes": 5707,
+      "sha256": "407740674f6c45bced1ec2cc86e7ba0c3f2b3405e8003b4027ddca0d56896bb8",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "independent_review/reference_v2/PLAN_REGISTERED.json",
+      "bytes": 2573,
+      "sha256": "78b4ebe66f4406fb87c503ae4c1fd336cd3ea499bed5365a6c0f5c90fbd878c4",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "independent_review/reference_v2/ROOT_APPROVAL.json",
+      "bytes": 435,
+      "sha256": "30bf2a56f949bab86b7e285fbd94fa7d34e4d639a490bdf8cd5fc934709df00a",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "independent_review/reference_v2/ROOT_THETA_TABLE_APPROVAL.json",
+      "bytes": 316,
+      "sha256": "dfa7fac15ac9b9c533d13ca413ae3564947a5cb5c0566d4876d54eae838a5b71",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "independent_review/reference_v2/SOURCE_PREPARATION.json",
+      "bytes": 1700,
+      "sha256": "8014bd4a69dc8f756808188f95a61f44b06fd611928718befdd62a8e630c5a2d",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "independent_review/reference_v2/theta_saved_table_execution_once/INDEPENDENT_THETA_V2_SAVED_REFERENCE_AUDIT.json",
+      "bytes": 8529,
+      "sha256": "ad5dcb71591014533c04a69e9ce063896c3657c2bbd96da8851df3735a3be603",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "independent_review/reference_v2/THETA_V2_TABLE_AUDIT_PLAN_REGISTERED.json",
+      "bytes": 2169,
+      "sha256": "5da6f2893f51a8db4f610792d4f71e9198958ea2b8a9265607d0b5b6cd9a22c7",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "independent_review/ROOT_APPROVAL.json",
+      "bytes": 450,
+      "sha256": "b5ad9be97618aad757cc5e8d3b3752a1a21ead54a89e6d80cef082229c448ce4",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "independent_review/SOURCE_PREPARATION.json",
+      "bytes": 947,
+      "sha256": "62195961f4552508690e1131bd7f52765df5051e7264c258978375067c8ded5f",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "independent_review/STATIC_SOURCE_REVIEW.json",
+      "bytes": 1800,
+      "sha256": "662c4f2f7375c9b8d135c746ee97867ff24e639bbe456710b28fb762a8568d42",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "LABEL_DEPENDENCE_OF_QUERY_ORDER_ZH.txt",
+      "bytes": 2565,
+      "sha256": "01cc612cab63eda669f3cb528f7d77f42eb4c0c7b74215676872d5ff4df12219",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "numerical_v2/CHANGE_SPEC_BEFORE_EXECUTION.json",
+      "bytes": 1341,
+      "sha256": "d35bf51c21731ac5ec86e8a1f7c2fcf31ddfaaba0576e6a3ca66b2ed9342f6a5",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "numerical_v2/code/activefield.py",
+      "bytes": 9437,
+      "sha256": "c8a650feb965880ac8c8be13c1bd7ac5c8cf16d8264dbe303d7f344aae5d98d4",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "numerical_v2/code/posterior_update.py",
+      "bytes": 4632,
+      "sha256": "625c6f1b72aa838097502c08292f4dbc5cb5612012725ca1502c36adc3cb254e",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "numerical_v2/code/run_gate.py",
+      "bytes": 13792,
+      "sha256": "2d15e71db58780e6b8ae1833965999306cb47a1dd039dded9abcaf53d148690d",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "numerical_v2/execution_once/EXECUTION_COMPLETE.json",
+      "bytes": 716,
+      "sha256": "85ce9f7ec1c73e95e66bca5a48a2bb4094a577242b56deebe701bb61f43d9104",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "numerical_v2/execution_once/EXECUTION_START.json",
+      "bytes": 651,
+      "sha256": "abdd62706174d38da1e4429ae30939905e5a463ec5240f33af0ed0557102f312",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "numerical_v2/execution_once/RESULTS.json",
+      "bytes": 165140,
+      "sha256": "c36bdefbd93a82cf50f1d656ca5da391ac2a5e9455ae0bb23ca25a856894214e",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "numerical_v2/EXECUTION_PLAN_REGISTERED.json",
+      "bytes": 3338,
+      "sha256": "f66d9a097ebee4c7d706e95e8aa1666bf6569fb58b85bd76e3d408b5a2a973cf",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "numerical_v2/EXECUTION_PLAN_TEMPLATE.json",
+      "bytes": 3308,
+      "sha256": "1987984e5ea723b62d05803eebd541e30fa028dc52a8c9f7871545b2634bf9d8",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "numerical_v2/INDEPENDENT_STATIC_COORDINATE_REVIEW.json",
+      "bytes": 1516,
+      "sha256": "ee14ac3b3bda895e20325e888bdbc5b8ef696d2a1067c6df059eeac128f4ee63",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "numerical_v2/README_ZH.txt",
+      "bytes": 2830,
+      "sha256": "2a0ea8face1764a8ad0ce6894c5c1d75c947852d371905c516a0dddbcbac065a",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "numerical_v2/ROOT_APPROVAL.json",
+      "bytes": 591,
+      "sha256": "17a339324aaec7c525f5dd33801674d573336c7ffbc13ea802ca28b894a139a3",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "numerical_v2/SOURCE_FREEZE.json",
+      "bytes": 2589,
+      "sha256": "b7d254f88dc8472e8d35590ed0b7ba02516c4c28648d51459bb835ff26de9d4f",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "PROFILING_AFTER_MATH_DRAFT_ZH.txt",
+      "bytes": 3328,
+      "sha256": "d7dbf6c3ba049f3a6038074ebfaf395a31bfec34910ea3c0bc72bd596199eec5",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "README_ZH.txt",
+      "bytes": 6390,
+      "sha256": "fa40d507a34ccd73acd5ee91892cba81bb25e5a34e12a04716868e823c16d69c",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "reference_inputs/context/034ba9f525e6_MATMINER_JARVIS_PREPROCESS_SELECTED.py.txt",
+      "bytes": 4346,
+      "sha256": "034ba9f525e673f3d2a3922d66b6540a267842dcc520f595ddd9de11db56fcfd",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "reference_inputs/context/300ca45c1f72_MM_METADATA_SELECTION.json",
+      "bytes": 12172,
+      "sha256": "300ca45c1f729ce9bd1b6512d7f132f2d327d0868ed6c6935311562952bb0e6f",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "reference_inputs/context/36f124b91649_NEXT_MATERIAL_ADMISSION_REVIEW.json",
+      "bytes": 4025,
+      "sha256": "36f124b91649353d4c9aacaa9ea544bcc91b51e489e7582417218ed302c4642a",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "reference_inputs/context/383ab51fdd57_audit_schemas.py",
+      "bytes": 8694,
+      "sha256": "383ab51fdd570e10fada07d0a7446f881fc8ee55916f2d5abd44f2918301b0ca",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "reference_inputs/context/491f8279437d_UNUSED_IDENTITY_FEASIBILITY_FINAL.json",
+      "bytes": 13144,
+      "sha256": "491f8279437d20840076e610668c1d6965815c088bbd390cd6d3004384c166a4",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "reference_inputs/context/5000ecb55aef_DATA_MANIFEST.json",
+      "bytes": 4956,
+      "sha256": "5000ecb55aefae7259467b5cb23a570ae1762bce4333155cf411cbfb0aaa4343",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "reference_inputs/context/7c0fc10397de_SOURCE_GATE_PILOT_ADDENDUM.json",
+      "bytes": 2886,
+      "sha256": "7c0fc10397de2d85e13b101e5a78570feea7d1ef80473a852e482c552eefda22",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "reference_inputs/context/86ee6469c90c_SOURCE_GATE.json",
+      "bytes": 11859,
+      "sha256": "86ee6469c90c98558ca069e9d7e5e05badb5f5bc6944f0dbbf94a9025bea0a6e",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "reference_inputs/context/b601ae4a37f1_MATERIAL_TASK_CONTRACT_DRAFT_ZH.txt",
+      "bytes": 3954,
+      "sha256": "b601ae4a37f138cd4739e0d5f77876f14a239260ceddadc0b1509f70c2911418",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "reference_inputs/context/e1cc8fe7c88f_pilot_eligibility.py",
+      "bytes": 5826,
+      "sha256": "e1cc8fe7c88f1c33d0420627564ec526173f335f8d14ba9b22c58301ccf1b676",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "reference_inputs/context/e7b06d64fe29_PILOT_ELIGIBILITY.json",
+      "bytes": 3176,
+      "sha256": "e7b06d64fe29c550bd8e75febd64d853d38b20448914d47d705053aa7712361d",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "reference_inputs/selection/completed_feedback_roles.json",
+      "bytes": 924852,
+      "sha256": "4c972bfc180841eb669077e6a772182bc76cb3d5bd5f69589096efa1c12724b1",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "reference_inputs/selection/eligible_metadata.json",
+      "bytes": 4625679,
+      "sha256": "165d48bc29f771e29f7e86a6bea1e57286eb81b49f29120905ba4ff4739660e4",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "reference_inputs/selection/legacy_roles.json",
+      "bytes": 576872,
+      "sha256": "ea9120cf04bc78c8292be8ebba3eab6f9b1b0f830574b3e1a803386105451de8",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "reference_inputs/selection/phase1_roles.json",
+      "bytes": 978532,
+      "sha256": "0bc81d0400a4076c854af11e654ca3ca9bcbceb249f2ee6c26d356c53ceae9c0",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "reference_inputs/selection/phase2_roles.json",
+      "bytes": 962857,
+      "sha256": "aee4d2aa78f7522eae8aba2b8ac56e186b3c5d81059a6d3a5b44b16d1042350b",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "reference_inputs/selection/source_contract.json",
+      "bytes": 22165,
+      "sha256": "2637532951c1e6b86ee8bdaa0cbcdb95a48982509de14770f87487e1b55a241d",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 198,
+      "sha256": "8482cde20e4a36ef4a9491b1ef7bb281abeaa33658881e881e0662e4951a41c4",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "robustness_review/DESIGN_RECEIPT.json",
+      "bytes": 942,
+      "sha256": "43bf06d2d88b1bebbc89c9adb976023c62730e89a442a54818bb3042507fab97",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "robustness_review/MINIMAL_INTERVAL_DIAGNOSTIC_PROTOCOL_ZH.txt",
+      "bytes": 7572,
+      "sha256": "0727c61bc6ef3835640aedb6586936fe1b245f8a649a54c230b4df319542f26b",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "robustness_review/PRIMARY_SOURCE_LEDGER.json",
+      "bytes": 6821,
+      "sha256": "a96deaaee1b3c8b4a109771fb5d4dea8647b1d78c9bf5fba70ec419e8ab47f88",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "ROOT_APPROVAL.json",
+      "bytes": 443,
+      "sha256": "3e0f2f98aab1172098fd201fc1230b4a5680ec9610114339b49baf846ef64523",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "ROOT_MATH_SCOPE_BEFORE_EVALUATIONS.json",
+      "bytes": 2823,
+      "sha256": "1a70a1e6d7f23ee847032fc314046ac7144a17d1a22a5e1540202ac819a703bf",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "SOURCE_FREEZE.json",
+      "bytes": 1522,
+      "sha256": "e8e09e94ddb2ff3fbbf6925f3ff6602dabf1d971eca43c1a8e203a34858f1494",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "source_review/ACTIVE_TASK_POSITIONING_ZH.txt",
+      "bytes": 3366,
+      "sha256": "987fa04161133027ebc28c6a44286824e10ad4cdc9f9a4197063c25b7e530dd6",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "source_review/proper_score_prior_api/active_learning_pinned.json",
+      "bytes": 15837,
+      "sha256": "b618f170b7968f04f390d2b248b81dca4fec1ec3bd1c5be6bd6ea75155b2bf1f",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "source_review/proper_score_prior_api/active_learning_pinned.py",
+      "bytes": 10703,
+      "sha256": "45e9b6bca0d74e384c7e15b2de3064425cf0f32807e0228ba323db788419b3eb",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "source_review/proper_score_prior_api/API_INITIAL_RECEIPTS.json",
+      "bytes": 1010,
+      "sha256": "77331632dc107e14c25d3972511566ba29a940e23cda99f93af94f21904502d4",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "source_review/proper_score_prior_api/API_PINNED_RECEIPTS.json",
+      "bytes": 2925,
+      "sha256": "51e50fb96b1379fd1a617a108cc945359f8e0ba7812aa6c14605386a4689acaf",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "source_review/proper_score_prior_api/API_RUN.json",
+      "bytes": 607,
+      "sha256": "766438d90e2dc935697228b5a36cee37a48b944b2be5d815b49730b97729b16d",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "source_review/proper_score_prior_api/license_pinned.json",
+      "bytes": 2525,
+      "sha256": "303f001617f4fecf46cdb077ddfe30a6ef08de41179381edce767d33c0817646",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "source_review/proper_score_prior_api/license_pinned.txt",
+      "bytes": 1097,
+      "sha256": "b175f6ef5d8cef92285d4bf8c8288f3df56fddf50a96b4b9ffabf840335eb245",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "source_review/proper_score_prior_api/main_commit.json",
+      "bytes": 538526,
+      "sha256": "3f21807136f16ac4f8465e3a6830027641d934f7e1ce6b7e81998595d30fb972",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "source_review/proper_score_prior_api/PRIOR_ART_AND_CODE_LEDGER.json",
+      "bytes": 9786,
+      "sha256": "48d6fb0123c4a6c85d960d37a3cec8f251e34a3a42ff3edba4a7e6e363831b95",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "source_review/proper_score_prior_api/readme.json",
+      "bytes": 4347,
+      "sha256": "553ec14915b3f9c774093282dde4235cd36a43ebb7346ece0bd034eac3577719",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "source_review/proper_score_prior_api/README_original.md",
+      "bytes": 2539,
+      "sha256": "5d3e2593bd7de49bc2bed2a775fe2ef590e749584d209dc6ecb87cf8d43533c4",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "source_review/proper_score_prior_api/readme_pinned.json",
+      "bytes": 4527,
+      "sha256": "e5d95e5f2c9e228d9eddcc199e5b87c07ef9e250183488dc99515a279579559d",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "source_review/proper_score_prior_api/readme_pinned.txt",
+      "bytes": 2539,
+      "sha256": "5d3e2593bd7de49bc2bed2a775fe2ef590e749584d209dc6ecb87cf8d43533c4",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "source_review/proper_score_prior_api/SOURCE_MANIFEST.json",
+      "bytes": 2334,
+      "sha256": "cce64508eb6d4b20aa781b8c29f2780ee486c759a7b76c13d083a82904264bde",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "source_review/proper_score_prior_api/uncertainty_measures_pinned.json",
+      "bytes": 21824,
+      "sha256": "b5faa68ce0c0594b32582853c5dd87e58d40ee5c49d3b7e800591ab10b4477bd",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "source_review/proper_score_prior_api/uncertainty_measures_pinned.py",
+      "bytes": 14967,
+      "sha256": "fc62ffbde6a396468e1f63d8e7d7beff59d3aea694381f1cc5a9aa1b1b717b53",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "source_review/ROOT_PRIMARY_READING_LEDGER.json",
+      "bytes": 2266,
+      "sha256": "ede9d18a91d81576406e1a05d7c3c8a8f5dddb05056f433c1c97cf1192896c00",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "START.json",
+      "bytes": 546,
+      "sha256": "a504b5f75ceabff8b15c5a05380c4944b93d2cee84aecc120ff3efd5ac70c6d2",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "task_contract/INDEPENDENT_POST_SELECTION_REVIEW.json",
+      "bytes": 1616,
+      "sha256": "e7d66313f55b7223562468766fe74d72a427e6ce7986b6409560c74c9c358e3b",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "task_contract/POST_SELECTION_METADATA_REVIEW.json",
+      "bytes": 1930,
+      "sha256": "e09eb1d465352518a4b3e8fd0e8e371e0f92c8825f01ff2be33e4f382eaf21be",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "task_contract/README_ZH.txt",
+      "bytes": 2829,
+      "sha256": "9e4633f8623bf26bd57e6c2c55f582664c6c1b6cb76ca8d6f7cc84f22c4c7527",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "task_contract/ROOT_SELECTION_APPROVAL.json",
+      "bytes": 504,
+      "sha256": "36a0d211c0f28adc828ec10cadd50c22c9f8fb7611c14e0009e530e9ab8beb0e",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "task_contract/select_roles.py",
+      "bytes": 11518,
+      "sha256": "42397764dd879ae7c4d8f56e06b708e14ff74572c2767b804c3f9e90f987a946",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "task_contract/selection_once/METADATA_SELECTION_COMPLETE.json",
+      "bytes": 797,
+      "sha256": "703ef45585c2a8772d326dd22675ebd891a6bd75df431b8376cf38dd468af664",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "task_contract/selection_once/METADATA_SELECTION_START.json",
+      "bytes": 1989,
+      "sha256": "fc18c8b14eea549ebc7b50a79373f9df8e354587adef6ff8c8d567b07b6e2482",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "task_contract/selection_once/ROLE_SELECTION.json",
+      "bytes": 797573,
+      "sha256": "2dbf2f4b3f7956ccbe91f454092d80e76d8b95ebb2a73c427d548899543da7dd",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "task_contract/SELECTION_PLAN_REGISTERED.json",
+      "bytes": 4229,
+      "sha256": "9a2241150c3be526c5b96bad1ecce21c6f72d1f1860783d94aed40a5d6390d29",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "task_contract/SELECTION_PLAN_TEMPLATE.json",
+      "bytes": 4197,
+      "sha256": "aafdcdb8076962970fb60ed6263831c1402467217b19fe239f036741b79303a4",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "task_contract/SOURCE_PREPARATION.json",
+      "bytes": 786,
+      "sha256": "39502124a8498aa55bb535fd3c0f2f56f60a1d4afeec7a040d09b46d635f6dd6",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "task_contract/STATIC_FINAL_REVIEW_AT_RESUME.json",
+      "bytes": 1772,
+      "sha256": "bd91e7b5fa791212cc53460c4eaca98499fe8d56f269e726c7ccb74b08bdbc76",
+      "role": "original_reviewed_public_source_protocol_metadata_summary_or_synthetic_control"
+    },
+    {
+      "path": "active_onlyy/report/final/RESULTS_AND_LIMITS_PUBLIC_ZH.html",
+      "bytes": 10332,
+      "sha256": "02516bbcbe1be995c7325aa616ce7fa7300d31a35ea2f333579507b9be73b1ec",
+      "role": "derived_report_links_and_scope_banner_only"
+    },
+    {
+      "path": "PUBLIC_REPORT_TRANSFORMATION.json",
+      "bytes": 2272,
+      "sha256": "5c6482010541d6cde94d297e86805ebfc96be52985e6076ca8e32bf67f4d0387",
+      "role": "explicit_public_report_derivation_receipt"
+    },
+    {
+      "path": "LOCAL_DATA_BOUNDARY_ZH.txt",
+      "bytes": 584,
+      "sha256": "001bd48c3a1beca8bb7b1b8d0008616e5bd78a784bdea2fe9e8cbcd195a04149",
+      "role": "public_private_resource_boundary"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1286,
+      "sha256": "c5bf36cf289653ac1955f21e8f27d9db2ceeb4abfa8d43268758546f92fc0d65",
+      "role": "public_checkpoint_scope"
+    },
+    {
+      "path": "INDEX.html",
+      "bytes": 580,
+      "sha256": "befe734a6b164600457187e36654d549d41f6ba29b590f072616ba8d70dfb3c0",
+      "role": "public_local_entry"
+    }
+  ]
+}

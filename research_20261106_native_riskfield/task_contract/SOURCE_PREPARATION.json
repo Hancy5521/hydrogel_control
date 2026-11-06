@@ -1,0 +1,11 @@
+{
+  "status": "SOURCE_AND_TEMPLATE_READY_NO_SELECTION_OR_NUMERIC_EXECUTION",
+  "actual_utc": "2026-11-06T04:16:06.133849+00:00",
+  "source_sha256": "42397764dd879ae7c4d8f56e06b708e14ff74572c2767b804c3f9e90f987a946",
+  "template_sha256": "aafdcdb8076962970fb60ed6263831c1402467217b19fe239f036741b79303a4",
+  "original_selector_reference_sha256": "6917d4a58b0e955be327831bd63a4b5ebb37b3edc24bad719c1c5351502468ec",
+  "specific_independent_change": "Newprefix/152roles64-24-64/exclude776includingfinished224/remaining8066->7914,6metadata-pins. Oldstageandsealedarchiveunchanged.",
+  "metadata_selection_executed": false,
+  "raw_values_read_or_downloads_models_or_queries": 0,
+  "pending": "Root actualUTCregistration + source/plan exactapproval before singlemetadata selection"
+}

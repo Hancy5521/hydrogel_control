@@ -1,0 +1,29 @@
+{
+  "kind": "independent_native_readout_unit_savedresult_audit",
+  "status": "REGISTERED_PENDING_EXACT_ROOT_EXECUTION_APPROVAL",
+  "actual_registered_utc": "2026-11-06T05:59:15.516338+00:00",
+  "script_sha256": "948a16d43916e14c79294f6c2ce43b8ead53d39a821cd255784d7d5aa05e0131",
+  "inputs": {
+    "unit_plan": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\active_onlyy\\math_gate\\UNIT_PLAN_REGISTERED.json",
+      "sha256": "e19798c597b5677cfe11b2c71add3c8cbb79217750b8ae963562e08daa96467c"
+    },
+    "unit_result": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\active_onlyy\\math_gate\\execution_once\\READOUT_UNIT_RESULTS.json",
+      "sha256": "22909dbeb4f3730c26a6aaff2eb6ee193dfbf17de9c891592c01078fb6f9b7ec"
+    },
+    "old_fixed12_result": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\numerical_v2\\execution_once\\RESULTS.json",
+      "sha256": "c36bdefbd93a82cf50f1d656ca5da391ac2a5e9455ae0bb23ca25a856894214e"
+    },
+    "old_independent_reference": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\independent_review\\reference_v2\\execution_once\\INDEPENDENT_NATIVE_RISKFIELD_FIXED12_AUDIT.json",
+      "sha256": "309063e261a2ebc4df7237ce83977b829525218fb506e7a09d41ce8b0b6476d6"
+    },
+    "static_core_review": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\active_onlyy\\math_gate\\STATIC_DECOMPOSITION_REVIEW.json",
+      "sha256": "aab66407b99569b4ba5eaf9197bd4a30632022255a21eac51af99e27f7b98bef"
+    }
+  },
+  "scope": "old12nativeCDFreferences reused,no2Dreintegral;8newscalarconditionalCDFkernelcheckedindependent1Dquad;h/directpositivecorrectionbound/APImean/affinetransform;noSUTimportornewmaterial"
+}

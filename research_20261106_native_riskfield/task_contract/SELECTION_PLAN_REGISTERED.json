@@ -1,0 +1,75 @@
+{
+  "kind": "NATIVE_RISKFIELD_ONLYY_METADATA_ROLE_SELECTION",
+  "status": "REGISTERED",
+  "registered_actual_utc": "2026-11-06T05:38:44.064654+00:00",
+  "template_created_actual_utc": "2026-11-06T04:16:06.131521+00:00",
+  "source_sha256": "42397764dd879ae7c4d8f56e06b708e14ff74572c2767b804c3f9e90f987a946",
+  "configuration": {
+    "version": "native_riskfield_active_onlyY_v1",
+    "dataset": "jarvis_dft_3d",
+    "hash_prefix": "native_riskfield_active_onlyY_v1|",
+    "order": "SHA256(prefix+component_id)hexascending,thencomponent_idascending",
+    "original_eligible_components": 8842,
+    "original_eligible_rows": 11020,
+    "legacy_excluded": 40,
+    "phase1_excluded": 256,
+    "phase2_excluded": 256,
+    "completed_feedback_excluded": 224,
+    "all_prior_excluded": 776,
+    "remaining_before_selection": 8066,
+    "selected_development_groups": 152,
+    "warm": 64,
+    "pool": 24,
+    "terminal": 64,
+    "remaining_after_selection": 7914,
+    "role_order": "first64warm,next24pool,next64terminal",
+    "representative": "minimumeligibleintegerraw_row_zero_basedperfullsourcecomponent",
+    "pool_sequence": "fixedmetadatahashselectionorder;policyactionsmaylaterquerywithinpoolonlyunderseparatescienceprotocol",
+    "whole_components_and_all_siblings_reserved": true,
+    "all152groups_development_not_final_confirmation": true,
+    "planned_common_setup_cells": {
+      "warm": 192,
+      "pool_dual_proxies": 48,
+      "terminal_dual_proxies": 128,
+      "total": 368
+    },
+    "future_perpolicy_onlyY_queries": 8,
+    "counterfactual_reuse_same24pool_does_not_add_materialN": true,
+    "metadata_roles_authorize_native_reads_fits_or_queries": false
+  },
+  "inputs": {
+    "source_contract": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\task_contract\\MATERIAL_TASK_CONTRACT_V1.json",
+      "sha256": "2637532951c1e6b86ee8bdaa0cbcdb95a48982509de14770f87487e1b55a241d"
+    },
+    "eligible_metadata": {
+      "file": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\ELIGIBLE_METADATA.json",
+      "sha256": "165d48bc29f771e29f7e86a6bea1e57286eb81b49f29120905ba4ff4739660e4"
+    },
+    "legacy_roles": {
+      "file": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\pilot\\DATASET_ROLE_PLAN.json",
+      "sha256": "ea9120cf04bc78c8292be8ebba3eab6f9b1b0f830574b3e1a803386105451de8"
+    },
+    "phase1_roles": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\task_contract\\selection_once\\ADMISSION_ROLE_SELECTION.json",
+      "sha256": "0bc81d0400a4076c854af11e654ca3ca9bcbceb249f2ee6c26d356c53ceae9c0"
+    },
+    "phase2_roles": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\phase2_yj\\task_contract\\selection_once\\ADMISSION_ROLE_SELECTION.json",
+      "sha256": "aee4d2aa78f7522eae8aba2b8ac56e186b3c5d81059a6d3a5b44b16d1042350b"
+    },
+    "completed_feedback_roles": {
+      "file": "H:\\polymer_completion_public\\research\\reported_feedback_20261106T024504445715Z\\task_contract\\selection_once\\ROLE_SELECTION.json",
+      "sha256": "4c972bfc180841eb669077e6a772182bc76cb3d5bd5f69589096efa1c12724b1"
+    }
+  },
+  "raw_asset_reference_not_read": {
+    "file": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\jarvis_dft_3d.json.gz",
+    "sha256": "3d0fc1315b74cf84071f16aa25bb93434dafbc83867beb75872064ac245bd747",
+    "bytes": 30669285,
+    "pin_source": "priorDATA_MANIFEST, no gzipopened/hashesrecomputed thisphase"
+  },
+  "required_approval_scope": "METADATA_ONLY_NATIVE_RISKFIELD_ONLYY_SELECTION",
+  "output_schema": "selection_once/ROLE_SELECTION.json;representatives.warm64/pool24/terminal64;all776excluded;7914remaining;poolallcontexts futurecommon48cell,terminal128cell,warm192cell=368setup;8onlyY perpolicy future",
+  "metadata_only": "No native source open/hash/decode, no response-based filtering, actual query/fit/score requires new science protocol. Counterfactual multiple policies reuse the same24pool, no independent materialN increase."
+}

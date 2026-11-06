@@ -1,0 +1,76 @@
+{
+  "status": "REGISTERED_BEFORE_INDEPENDENT_SCORE_EXECUTION",
+  "actual_utc": "2026-11-06T06:15:36.675263+00:00",
+  "scope": "INDEPENDENT_ACTIVE_ONLYY_ALL_SCORES_ONCE",
+  "independent_sources": {
+    "audit_saved_scores.py": "474ee5f79e587c2da212c94f3e41be5bffe913fefeb63179b25e7ed8ca8bf494"
+  },
+  "independent_references": {
+    "batch": {
+      "file": "H:\\polymer_completion_public\\research\\reported_feedback_20261106T024504445715Z\\math_design\\saved_state_reference.py",
+      "sha256": "57f5e019d5f94878645c8970d26bdb581c965ce916196f87129fab5577272573"
+    },
+    "allscore_functions": {
+      "file": "H:\\polymer_completion_public\\research\\reported_feedback_20261106T024504445715Z\\math_design\\audit_saved_scores.py",
+      "sha256": "d2a9ee1adffd7bd40331f91f96118532808dbd30eda22119dee8ccbdfa01226f"
+    },
+    "native_CDF": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_yj_math\\saved_score_audit\\audit_phase2_scores.py",
+      "sha256": "257551f8e648a3ce832d1ada677b25168b53a0663ad0e6133a345427f8e3322a"
+    }
+  },
+  "inputs": {
+    "science_plan": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\active_onlyy\\EXECUTION_PLAN_REGISTERED.json",
+      "sha256": "2a9eccf508cd849d0397e7984037e6a70d99e2185bbb37397fcb001ee914d1fd"
+    },
+    "forecast_freeze": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\active_onlyy\\forecast_once\\FORECAST_FREEZE.json",
+      "sha256": "f8e7f8f3e4eeb8c1383f496472e1f0b15a35500ab4f84f2165717ac702b89aaa"
+    },
+    "roles": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\task_contract\\selection_once\\ROLE_SELECTION.json",
+      "sha256": "2dbf2f4b3f7956ccbe91f454092d80e76d8b95ebb2a73c427d548899543da7dd"
+    },
+    "state_audit": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\active_onlyy\\independent_review\\independent_state_execution_once\\INDEPENDENT_ACTIVE_ONLYY_STATE_AUDIT.json",
+      "sha256": "b2c735778e35e128ccd672bf15589a4986f17b5d5911631abae5e99f17eab347"
+    },
+    "score_result": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\active_onlyy\\score_once\\RESULTS.json",
+      "sha256": "dedca9a97c86e259708133d5750111c9b9e653546ebe411f92890fd37f1347b3"
+    },
+    "score_start": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\active_onlyy\\score_once\\TERMINAL_Y_REVEAL_START.json",
+      "sha256": "a8adc08457659588f9368a5c7831d3e37a11081a5d716baedbd0416dde32a409"
+    },
+    "terminal_truth": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\active_onlyy\\score_once\\TERMINAL_TRUTH.json",
+      "sha256": "9b636aacae84cbec1d7feaaf093dbae48106d542e13239e0c239b7930f80e18b"
+    },
+    "source_preoutput_freeze": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\active_onlyy\\independent_review\\SCORE_SOURCE_PREOUTPUT_FREEZE.json",
+      "sha256": "bb8a41880a2598609fdaba47f250ebff2f7561f5bb0b286f354374891fcac06a"
+    }
+  },
+  "forecast_directory": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\active_onlyy\\forecast_once",
+  "producer_code_directory": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\active_onlyy\\code",
+  "criteria": {
+    "all_coordinates": 2160,
+    "coverage_events": "exact",
+    "summaries": 33,
+    "paired_differences": 1088,
+    "CRPS_absolute": 2e-06,
+    "CRPS_relative": 2e-08,
+    "PIT_absolute": 2e-12,
+    "PIT_relative": 2e-12,
+    "quantile_absolute": 2e-07,
+    "quantile_relative": 2e-09,
+    "density_absolute": 2e-09,
+    "density_relative": 2e-11,
+    "empirical_mass": "exact Fraction input, independent energy score",
+    "IntegrationWarning": "error; preserve actual failure",
+    "fits_or_original_score_execution": 0
+  },
+  "basis": "Source frozen before actual terminal result values; exact original score tolerances retained. Native-target CDF integration and empirical energy differ from producer transformed-coordinate integral/sorted-CDF route."
+}

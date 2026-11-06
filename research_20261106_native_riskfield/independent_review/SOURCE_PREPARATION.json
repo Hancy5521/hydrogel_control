@@ -1,0 +1,13 @@
+{
+  "actual_utc": "2026-11-06T04:18:07.209274+00:00",
+  "status": "INDEPENDENT_SOURCE_PREPARED_AST_ONLY_NO_NUMERIC",
+  "source_sha256": {
+    "native_reference.py": "bc0763d9af89b449dcc1dd0a19dce0f86c1b9d40a5a5e6d57b113b1fdd5fa927",
+    "audit_fixed_gate.py": "5afefc53c81a05f353de3996b6be14906bb9cdb53aa19ef41f767ef61ed2785e"
+  },
+  "preoutputcriteria_sha256": "bc6dd13eed25a0d0a473a4e80c7c78e8f08243715b567a2f695a480d3802ff50",
+  "coverage": "all12fixedvalues+4levels diagnostics+12conditionalprobes+4rhoboundprobes+tailintegralactualquad+Owenpositivekernelidentity+4rankings",
+  "independent_route": "target/query nativecoordinate adaptivequad usesforwardYJJac,noSUTimport;affineStudenttclosedform;precisionmatrixNIGupdate vsrankone;tailactualSFintegral;GaussianpositivePlackettquad vsOwen",
+  "runtime_scope": "no materialdata,fit,originalproducer/calculationrerun,orresweep",
+  "formal_plan_pending_actual_producer_result": true
+}

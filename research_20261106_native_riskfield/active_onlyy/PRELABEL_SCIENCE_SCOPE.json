@@ -1,0 +1,77 @@
+{
+  "kind": "delegated_prelabel_active_onlyY_scientific_scope_pending_exact_root_approval",
+  "actual_utc": "2026-11-06T06:04:35.467454+00:00",
+  "status": "DESIGN_BEFORE_ANY_NEW_NUMERIC_PROPERTY_EXTRACTION_OR_FIT",
+  "configuration": {
+    "version": "active_onlyY_pooled_NIG_v1",
+    "policies": [
+      "native_student",
+      "native_gaussian",
+      "latent_ivr",
+      "random",
+      "gp_variance",
+      "warm_openloop"
+    ],
+    "budgets": [
+      0,
+      4,
+      8
+    ],
+    "warm": 64,
+    "pool": 24,
+    "terminal_development": 64,
+    "queries_per_policy": 8,
+    "common_native_cell_cost": 368,
+    "perquery_Y_cost": 1,
+    "forced_budget_no_early_STOP": true,
+    "model": "singlepooledp2 conditionalNIG; G0 validknowncontext, no branchorBeta",
+    "warm_coordinates": "fixedall3YJhalf/nativeSD thenfixedwarmu mean/sampleSD",
+    "owncontexts_update_global_NIG": false,
+    "primary_prediction": "actualYupdatedNIG for all6policy trajectories",
+    "warm_openloop_acquisition": "warmmean;currentVdesignonly;alpha=warmalpha+i/2;b=(alpha-1)*warmb/(warmalpha-1);predictiveactualNIGtrueYupdated",
+    "Gaussian_acquisition": "latentmean/covariance matched then same nativeYJCRPS; not nativemomentmatch",
+    "latent_IVR": "mean_t (b/(alpha-1))*(phi_qVphi_t)^2/(1+phi_qVphi_q), latentvarianceobjective",
+    "random_seed": 20261106,
+    "tie_rule": "first inoriginalrolepoolorder",
+    "GP_variance": "currentGP predictivevarianceincludingWhite onremainingpool;fixedoriginalkernelrecipe;reoptimizeactualYonly",
+    "GP_RF_X_scales": "fixedwarmnativeproxymean/sampleSD",
+    "GP_normalize_y": "currentactualtrainlabels",
+    "reference_prediction_policies": [
+      "native_student",
+      "random"
+    ],
+    "reference_prediction_budgets": [
+      0,
+      4,
+      8
+    ],
+    "main_terminal_laws": 1152,
+    "reference_terminal_laws": 960,
+    "secondary_prequential_laws": 48,
+    "actual_sklearn_fits": 18,
+    "actual_GP_fits": 13,
+    "actual_RF_fits": 5,
+    "shared_warm_GP_RF_fits": 2,
+    "reference_fit_total_including_shared": 10,
+    "extra_GP_policy_fits": 8,
+    "GP_policy_own_prediction_laws": 192,
+    "libraries": {
+      "numpy": "2.1.3",
+      "scipy": "1.15.3",
+      "scikit-learn": "1.6.1",
+      "joblib": "1.4.2"
+    },
+    "native_score": "unchangedfrozenreported-feedbackscore_law; nativeYJJac/empiricalCDF",
+    "all152_components_consumed_development": true,
+    "counterfactual_policy_reuse_not_materialN": true,
+    "new_noise_model_flow_LLM_or_pseudolabels": false
+  },
+  "primary_endpoint": "budget8 mean64terminal nativeCRPS native_student NIG vs all6sameNIGpolicies plusGPownactiveprediction andcandidate/randomsame-informationGP_RF; full0/4/8curves",
+  "interpretation": "fixedB8samecellfees;2percentdescriptiveonly,noformalnoninferiority;all152development, no actualwet/DFTcostsavingclaim",
+  "openloop": "m0fixed;Vcontextdesignonly;alpha0+i/2;b=(alpha-1)*b0/(alpha0-1) preservingwarm E[sigma2];actualpredictor usesactualY NIG",
+  "full_same_information_predictors": "candidate/randomGP_RF0/4/8;GPvariancesownGP0/4/8,warmalias,step4reuse,extraGPfinal8,total18",
+  "branch": "singlepooledconditionalregression;G=0validknowncontext,noXprobabilityorBeta/spike",
+  "source_access": "allpublicgzipphysicallyparsedtrustedreader;selectedmodelinputs only;eachpolicytargetYafteritsownlawfreeze;terminalYfirstafterallpoliciesglobalfreeze",
+  "negative_results": "allmetrics/pathsretain;sameactionsequencealiasesnotindependentpolicyimprovement;modelVOInotguaranteedtruegain;noold128/64rescue",
+  "new_response_reads_fits_or_query_calls": 0
+}

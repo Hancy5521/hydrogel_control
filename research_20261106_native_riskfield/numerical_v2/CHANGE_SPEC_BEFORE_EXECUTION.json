@@ -1,0 +1,21 @@
+{
+  "actual_utc": "2026-11-06T04:20:45.609976+00:00",
+  "status": "ONLY_PRE_EXECUTION_NUMERICAL_COORDINATE_REPAIR_SPEC",
+  "V1_source_freeze_sha256": "e8e09e94ddb2ff3fbbf6925f3ff6602dabf1d971eca43c1a8e203a34858f1494",
+  "V1_execution_complete_sha256": "c697a43d6a16c732a3abf3aed0e3bc8b2012ce963d68b7711272b8ccb075b706",
+  "V1_readonly_diagnosis_sha256": "54fb8c8f24dc6aa471d1214b233469bba101f636b38af8a46aef7fcdd76310e5",
+  "root_authorization": "parentroot approved uniqueV2 repair; preserveV1 model/fixture/threshold/levels andsource/results",
+  "old_coordinate": "quantile p overCDFt(-64),CDFt(+64)",
+  "new_coordinate": "z=sqrt(nu)*tan(theta), theta=atan(+-64/sqrt(nu)); weightedcos(theta)^(nu-1)/Beta(1/2,nu/2)",
+  "conditional_argument": "sqrt((nu+1)/(nu*(1-rho²)))*(v*cos(theta)-rho*sqrt(nu)*sin(theta))",
+  "invariants": [
+    "12fixtures,allmodelparameters",
+    "Lv32,Lz64,GL32/64/128/256",
+    "2e-5refinement,1e-4tail,independentagreement2e-4+2e-5rel",
+    "nativeGaussianstrongreference,allrankingcomparisons",
+    "noPDFrenormalization,nohardclamp",
+    "V1code/threshold/resultsimmutable"
+  ],
+  "attribution_limit": "V1coupledrefinementcannotstrictlyattributeinnererror; V2 changesonlycoordinate tests numericalconsistency, not modelimprovement",
+  "new_material_reads_fits_or_numerical_execution": 0
+}

@@ -1,0 +1,20 @@
+{
+  "actual_utc": "2026-11-06T05:37:34.256688+00:00",
+  "kind": "independent_reference_v2_preexecution_numerical_repair",
+  "status": "SOURCE_PREPARED_AST_ONLY_NO_IMPORT_NUMERICAL_EXECUTION",
+  "reason": "V1targetandquerydomainswerealreadyfinite;QUADPACKwarnedininnernative-queryquadratureonthefourthfixture. Thisisnumericalreferencefailure,notknownmathematicaldivergence.",
+  "changes": "only inner reference coordinate native-query q to directstandardized z, original density over[-64,64], fixedbreaks[-16,-8,-4,-2,0,2,4,8,16]; sametarget-native-xfinitewindow. Eachfixture errorretainedandall12attempted,no placeholdervalues.",
+  "unchanged": "12fixtures,models,target/querystandardizeddomains,Lv32/Lz64,originaltolerances,originalV1producer/source/output,warning-as-errorbehavior,nativeobjective",
+  "previous_failed_audit_file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\independent_review\\execution_once\\INDEPENDENT_NATIVE_RISKFIELD_FIXED12_AUDIT.json",
+  "previous_failed_audit_sha256": "0e2cf2e3787f98fd500d3311eea959f0eb6360926a78f9efbda0544df5649ca0",
+  "previous_source_sha256": {
+    "native_reference.py": "bc0763d9af89b449dcc1dd0a19dce0f86c1b9d40a5a5e6d57b113b1fdd5fa927",
+    "audit_fixed_gate.py": "cc7d708e1d6613624d7db313e12dfc31695d5fb877f13e63985c000c38d205dd"
+  },
+  "source_sha256": {
+    "native_reference.py": "407740674f6c45bced1ec2cc86e7ba0c3f2b3405e8003b4027ddca0d56896bb8",
+    "audit_fixed_gate.py": "f4120b75255d894577cbe065f20d0ba134a16dec6bfe8101d759264fc39f3797"
+  },
+  "preoutput_criteria_sha256": "bc6dd13eed25a0d0a473a4e80c7c78e8f08243715b567a2f695a480d3802ff50",
+  "no_new_data_fit_or_numerical_runs": true
+}

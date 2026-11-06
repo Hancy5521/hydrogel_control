@@ -1,0 +1,36 @@
+{
+  "kind": "bounded_positive_branch_readout_unit_gate",
+  "status": "REGISTERED_PENDING_EXACT_ROOT_APPROVAL",
+  "actual_registered_utc": "2026-11-06T05:56:06.744157+00:00",
+  "script_sha256": "85882f0b9a2c5bd924e40c3aea0082ebd7d64e5cbfab16d3c7a3394b65ccc218",
+  "inputs": {
+    "core_source": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\active_onlyy\\code\\risk_readout.py",
+      "sha256": "fd726e343cfaa3b09cf8fd9e66bf6bc3bdafa2b644205505d2d6ad04f9139ebe"
+    },
+    "old_fixed12_result": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\numerical_v2\\execution_once\\RESULTS.json",
+      "sha256": "c36bdefbd93a82cf50f1d656ca5da391ac2a5e9455ae0bb23ca25a856894214e"
+    },
+    "old_independent_reference": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\independent_review\\reference_v2\\execution_once\\INDEPENDENT_NATIVE_RISKFIELD_FIXED12_AUDIT.json",
+      "sha256": "309063e261a2ebc4df7237ce83977b829525218fb506e7a09d41ce8b0b6476d6"
+    },
+    "static_review": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\active_onlyy\\math_gate\\STATIC_DECOMPOSITION_REVIEW.json",
+      "sha256": "aab66407b99569b4ba5eaf9197bd4a30632022255a21eac51af99e27f7b98bef"
+    }
+  },
+  "fixed_scope": "old12storedindependentreferences reused,no new2Dquad;8uniqueStudentscalarsnu6/70,mu±1,rho0/.6,scale1/s02;fixedvKprobes0/.5/2/8andnegativehprobe;two_publicAPI_contextquerieswithnontrivialresponseaffine",
+  "fixed_tolerances": {
+    "native_ref_abs": 0.0002,
+    "native_ref_rel": 2e-05,
+    "kernel_abs": 2e-08,
+    "kernel_rel": 2e-06,
+    "algebra_abs": 2e-10,
+    "algebra_rel": 2e-10,
+    "refinement_diagnostic": 2e-05
+  },
+  "new_data_or_materialfits": 0,
+  "independent_auditor": "separateauditornoSUTimports,one-dimensionalstandardzCDFvariancequadandstaticnegativehformula"
+}

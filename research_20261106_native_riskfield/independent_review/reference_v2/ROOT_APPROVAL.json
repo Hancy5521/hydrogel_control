@@ -1,0 +1,8 @@
+{
+  "approved": true,
+  "scope": "INDEPENDENT_NATIVE_RISKFIELD_FIXED12_ONCE",
+  "plan_sha256": "78b4ebe66f4406fb87c503ae4c1fd336cd3ea499bed5365a6c0f5c90fbd878c4",
+  "script_sha256": "f4120b75255d894577cbe065f20d0ba134a16dec6bfe8101d759264fc39f3797",
+  "actual_utc": "2026-11-06T05:38:17.735669+00:00",
+  "limits": "newindependentquery-z coordinate only;fixed12/V1producer/unchangeddomainsandtols; originalwarningFAILpreserved"
+}

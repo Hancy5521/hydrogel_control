@@ -1,0 +1,38 @@
+{
+  "kind": "independent_native_riskfield_fixed12_native_reference_audit",
+  "status": "REGISTERED_PENDING_EXACT_ROOT_EXECUTION_APPROVAL",
+  "actual_registered_utc": "2026-11-06T04:19:42.755712+00:00",
+  "independent_source_sha256": {
+    "native_reference.py": "bc0763d9af89b449dcc1dd0a19dce0f86c1b9d40a5a5e6d57b113b1fdd5fa927",
+    "audit_fixed_gate.py": "cc7d708e1d6613624d7db313e12dfc31695d5fb877f13e63985c000c38d205dd"
+  },
+  "inputs": {
+    "producer_plan": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\EXECUTION_PLAN_REGISTERED.json",
+      "sha256": "b7246bb23c8f757fe8606ff6a52e82cf128677bbf106158dbbabd3a0f54bd834"
+    },
+    "producer_result": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\execution_once\\RESULTS.json",
+      "sha256": "cf342e1e4d41054ee81a75e69d0b14d4cab30ce84abdd36555dc1f7634a38172"
+    },
+    "producer_start": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\execution_once\\EXECUTION_START.json",
+      "sha256": "f23c0b64fd86213c18150177d3a26ea9717687af21d19d6f0833ee1b2cdf85e5"
+    },
+    "producer_complete": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\execution_once\\EXECUTION_COMPLETE.json",
+      "sha256": "c697a43d6a16c732a3abf3aed0e3bc8b2012ce963d68b7711272b8ccb075b706"
+    },
+    "preoutput_criteria": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\independent_review\\PREOUTPUT_CRITERIA.json",
+      "sha256": "bc6dd13eed25a0d0a473a4e80c7c78e8f08243715b567a2f695a480d3802ff50"
+    },
+    "static_review": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\independent_review\\STATIC_SOURCE_REVIEW.json",
+      "sha256": "662c4f2f7375c9b8d135c746ee97867ff24e639bbe456710b28fb762a8568d42"
+    }
+  },
+  "producer_code_directory": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\code",
+  "prepared_collection_revision_sha256": "49cfe24f15a83453ac8d68334924b62b163886bac812fe98beaefc7d799fb819",
+  "scope": "all12fixedreferencevalues,collectednumericfailures,allNIG/coupling/tail/affine/Owenchecks,allrankings;noSUTimportororiginalcalculationsrerun/no newmaterial"
+}

@@ -1,0 +1,13 @@
+{
+  "actual_utc": "2026-11-06T04:15:10.260428+00:00",
+  "kind": "bounded_official_numerical_function_definition_reading",
+  "url": "https://docs.scipy.org/doc/scipy-1.15.3/reference/generated/scipy.special.owens_t.html",
+  "version": "SciPy1.15.3 official runtime-matched docs",
+  "read_depth": "APIandreference definition only;notPatefieldTandyfullpaper",
+  "source_original_reference_aslisted": "M.Patefield,D.Tandy(2000),FastandaccuratecalculationofOwensTfunction",
+  "supports": "APIidentity/implementationcontext;GaussianconditionalreplicaandpositivePlackettangleidentityderivedindependentlyhere",
+  "search_queries": 0,
+  "direct_official_page_opens": 1,
+  "copied_source_or_remote_PDFs": 0,
+  "new_numerical_runs": 0
+}

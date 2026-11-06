@@ -1,0 +1,38 @@
+{
+  "actual_utc": "2026-11-06T04:12:09.207325+00:00",
+  "queries": [
+    "Bayesian active learning proper scoring rules CRPS acquisition expected risk reduction",
+    "Owen T function bivariate normal equal arguments Phi two h h correlation formula"
+  ],
+  "primary_sources": [
+    {
+      "url": "https://arxiv.org/abs/2312.10116",
+      "doi": "10.1109/TPAMI.2023.3343359",
+      "version": "v1 2023-12-15,TPAMI2023; extends NeurIPS2021 BEMPS",
+      "depth": "abstract/introduction+sectionheadings viaHTML; selectedmethodreadcontinue",
+      "finding": "Generic expected-loss/proper-score acquisition alreadypublished. Do not claim nativeCRPS expectedriskreduction as a firstprinciple invention. Our possibleincrement is materialcompletion/realfeedback identity and exactStudent/transform risk kernelcomputationalreuse.",
+      "license": "CCBY4.0HTML; no paper copied or thirdpartycode executed"
+    },
+    {
+      "url": "https://auai.org/uai2020/proceedings/334_supp.pdf",
+      "title": "Batch simulations and uncertainty quantification in Gaussian process surrogate approximate Bayesian computation",
+      "version": "UAI2020 PMLR124 author main+supp bundled20pages",
+      "depth": "abstract/methodbackground and selectedOwen lookahead formulas only, notall20pages",
+      "finding": "Gaussian lookahead/Owen computation has directprecedent; useoptimized deterministic Gaussianreference notslowMC",
+      "license": "author/PMLR proceedings metadata viewed, notredistributed"
+    },
+    {
+      "url": "https://docs.scipy.org/doc/scipy-1.15.3/reference/generated/scipy.special.owens_t.html",
+      "version": "runtime matching1.15.3",
+      "depth": "functiondefinition andreferences",
+      "finding": "deterministicT implementation anddefinition available; positivePlackettintegral independentreference avoids cancellation",
+      "license": "SciPyBSD3code dependency, docs only viewed"
+    }
+  ],
+  "failures": [
+    "guessed334_main.pdf unavailable once; official334_supp.pdf accessible containsmain+supp; no repetitivefetch"
+  ],
+  "secondary_search_results": "notreliedon for technicalclaim; primaryformula independentlyderived",
+  "new_material_data_or_fits": 0,
+  "paperreading_not_claimed_fullhundreds": true
+}

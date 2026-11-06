@@ -1,0 +1,55 @@
+{
+  "status": "REGISTERED_BEFORE_INDEPENDENT_AUDIT_EXECUTION",
+  "actual_utc": "2026-11-06T06:12:15.853918+00:00",
+  "scope": "INDEPENDENT_ACTIVE_ONLYY_SAVED_FORECAST_ONCE",
+  "independent_sources": {
+    "model_reference.py": "87ca63d205191fb138827346e1c42588b5986d02aeaf411d9815cb85f2ceaaab",
+    "audit_saved_forecasts.py": "7a8f1792df3a256b77798363defbe683282780cc87b66ed1476af29f086b5501"
+  },
+  "inputs": {
+    "science_plan": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\active_onlyy\\EXECUTION_PLAN_REGISTERED.json",
+      "sha256": "2a9eccf508cd849d0397e7984037e6a70d99e2185bbb37397fcb001ee914d1fd"
+    },
+    "roles": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\task_contract\\selection_once\\ROLE_SELECTION.json",
+      "sha256": "2dbf2f4b3f7956ccbe91f454092d80e76d8b95ebb2a73c427d548899543da7dd"
+    },
+    "forecast_freeze": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\active_onlyy\\forecast_once\\FORECAST_FREEZE.json",
+      "sha256": "f8e7f8f3e4eeb8c1383f496472e1f0b15a35500ab4f84f2165717ac702b89aaa"
+    },
+    "static_source_review": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\active_onlyy\\INDEPENDENT_STATIC_SOURCE_REVIEW.json",
+      "sha256": "5ee504ade079b259c35214e144eb5805bedaaff5789d22a190c53456a3b57e7e"
+    },
+    "independent_helper_gate": {
+      "file": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\active_onlyy\\math_gate\\independent_execution_once\\INDEPENDENT_READOUT_UNIT_AUDIT.json",
+      "sha256": "552b5aa96636413532db47600aeca92ad22aca39fe2f7d1b7bfe1734a1b680fe"
+    }
+  },
+  "producer_code_directory": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\active_onlyy\\code",
+  "forecast_directory": "H:\\polymer_completion_public\\research\\native_riskfield_20261106T040518Z\\active_onlyy\\forecast_once",
+  "independent_batch_helper": {
+    "file": "H:\\polymer_completion_public\\research\\reported_feedback_20261106T024504445715Z\\math_design\\saved_state_reference.py",
+    "sha256": "57f5e019d5f94878645c8970d26bdb581c965ce916196f87129fab5577272573"
+  },
+  "independent_baseline_helper": {
+    "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\strong_baselines\\independent_review\\snapshot_audit\\audit_baseline_forecasts.py",
+    "sha256": "046b73114e29b70b004b8a32009264b9e9025babb528a76988f95a41bac0eaa3"
+  },
+  "criteria": {
+    "state_absolute": 2e-09,
+    "state_relative": 2e-11,
+    "GP_normwise_backward": 1e-11,
+    "GP_native_law_absolute": 2e-06,
+    "GP_native_law_relative": 2e-08,
+    "RF_float32_paths_and_Fraction_mass": "exact",
+    "all1152t_and960native_reference_laws": true,
+    "all48_actual_prefixes_and18_baseline_saved_fits": true,
+    "no_SUT_import_or_fit_or_raw_decode_or_terminalY": true,
+    "native_risk_actual_readout_scope": "check stored NIG/transform/df/family/refinement/coordinates/alllegalargmax; use alreadyactual independent fixed-readout gate; no re-integration ofmaterial riskfield",
+    "same_sequence_and_same_set_final_law_aliases": "report; not success criterion"
+  },
+  "basis": "Original math/state/GP/RF tolerances retained; audit source prepared after actual forecast but before independent execution and before terminal scoring."
+}

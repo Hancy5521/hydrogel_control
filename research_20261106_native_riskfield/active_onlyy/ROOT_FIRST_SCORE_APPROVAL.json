@@ -1,0 +1,10 @@
+{
+  "scope": "ACTIVE_ONLYY_FIXED_NIG_PILOT",
+  "approved": true,
+  "actual_utc": "2026-11-06T06:13:33.105159+00:00",
+  "plan_sha256": "2a9eccf508cd849d0397e7984037e6a70d99e2185bbb37397fcb001ee914d1fd",
+  "allowed_phases": [
+    "score_after_freeze"
+  ],
+  "independent_saved_state_sha256": "b2c735778e35e128ccd672bf15589a4986f17b5d5911631abae5e99f17eab347"
+}

@@ -1,3 +1,7 @@
+Latest separate riskfield/active-feedback checkpoint (6 November2026): [Chinese public report](research_20261106_native_riskfield/INDEX.html). A152-component development study retains six query policies and strong GP/RF prediction references. Equal selected paths and numerical failures are explicit; no distinct self-catalytic policy, independent confirmation or submission-readiness claim. The complete local v2 archive and reviewed public subset are separately indexed; remote synchronization is not asserted. MLST and all previous history remain preserved.
+
+---
+
 Latest separate material-development checkpoint (6 November 2026): [Chinese entry](research/material_admission_20261106/INDEX.html). Fixed native-unit completion reaches the level of two fixed nonlinear references on consumed development groups. All failures, source/likelihood limitations and independent audits are retained; no verified paid-feedback agent or new independent material confirmation. Complete local resources include the original public DFT asset; this reviewed public subset omits response-bearing snapshots and records all transformations. MLST manuscripts and frozen runtime remain unchanged. New refs are locally archived; remote synchronization is not asserted.
 
 ---
