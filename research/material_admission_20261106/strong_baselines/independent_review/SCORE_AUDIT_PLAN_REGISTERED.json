@@ -1,0 +1,59 @@
+{
+  "kind": "independent_saved_fixed_baseline_all_scores_audit",
+  "status": "PREPARED_PENDING_EXACT_ROOT_APPROVAL",
+  "actual_registered_utc": "2026-11-06T02:13:08.229082+00:00",
+  "script_sha256": "66e2451739eaf9d58dcbace1cdda93b504218bc45098180c1024e00f5f970e4f",
+  "preparation_sha256": "e3004f31f8c0e2b2e337528055517fbdf1385064c6c355f95a8075d934848f6f",
+  "forecast_directory": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\strong_baselines\\forecast_once",
+  "baseline_code_directory": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\strong_baselines\\code",
+  "inputs": {
+    "baseline_plan": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\strong_baselines\\EXECUTION_PLAN_REGISTERED.json",
+      "sha256": "0543eae0e4ac5f1f89fc3a36256770cb2b160f51bb3b2ff657a8b2cdbb46b754"
+    },
+    "forecast_freeze": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\strong_baselines\\forecast_once\\FORECAST_FREEZE.json",
+      "sha256": "e113ea9443af88aa858d85fd6579cd6f85b6458c02aa69c071c4140ab4eeb697"
+    },
+    "forecasts": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\strong_baselines\\forecast_once\\FORECASTS.json",
+      "sha256": "e202fd4935e04e461b3c8028e281d3275c7bafae97e3ad57c76c455b84aefabc"
+    },
+    "score_start": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\strong_baselines\\score_once\\SAVED_TRUTH_SCORE_START.json",
+      "sha256": "436ae743a59ac5c9440339e6d33e97ba2cc1516b79a79ce9de920e47f64d4905"
+    },
+    "baseline_result": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\strong_baselines\\score_once\\RESULTS.json",
+      "sha256": "bf93dc63890a326a07240ce4d9acec5664cb42002b79b6e25c7a0cccd9ac5165"
+    },
+    "snapshot_audit": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\strong_baselines\\independent_review\\snapshot_audit\\execution_once\\INDEPENDENT_FIXED_BASELINE_SNAPSHOT_AUDIT.json",
+      "sha256": "cdeed4b33594fd20ed267e658a46ca681aa125349734a99f086d52d5e8b86470"
+    },
+    "root_scope": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\strong_baselines\\ROOT_FIXED_BASELINE_SCOPE_BEFORE_FITS.json",
+      "sha256": "faeecf390cb0df9889ad7c1245a2c7f50859a8bac7df2e0d1bc39a365ca5304a"
+    },
+    "truth": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\phase2_yj\\score_once\\DIAGNOSTIC_TRUTH.json",
+      "sha256": "8c4d416f677cce33215767b572bb05984f9b4a5e66be9c3f5733845b96cb50db"
+    },
+    "roles": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\phase2_yj\\task_contract\\selection_once\\ADMISSION_ROLE_SELECTION.json",
+      "sha256": "aee4d2aa78f7522eae8aba2b8ac56e186b3c5d81059a6d3a5b44b16d1042350b"
+    },
+    "candidate_result": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\phase2_yj\\score_once\\RESULTS.json",
+      "sha256": "4bf07550b9b4840967b6cca13d4a81c190616e7a4bdb47813126793bde2b5711"
+    }
+  },
+  "fixed_tolerance": {
+    "score_abs": 2e-08,
+    "score_rel": 2e-10,
+    "PIT_abs": 2e-12,
+    "PIT_rel": 2e-12,
+    "empirical_Fraction_mass_and_coverage_events": "exact"
+  },
+  "scope": "all1536saved baseline scores; GaussianCDF integral independent of closedform, RFpairwise energy independent of stepCDF; no SUT import or training or original candidate rescoring"
+}

@@ -1,0 +1,8 @@
+{
+  "actual_approved_utc": "2026-11-05T15:57:05.406219+00:00",
+  "approved": true,
+  "scope": "METADATA_ONLY_FIXED_YJ_PHASE2_SELECTION",
+  "plan_sha256": "0f871da742e2ad319521318d71a862957cbf90c9ac43b45e0179cb418c5ff16a",
+  "source_sha256": "94cb0089c54b2b1fa414ddb764f6656431876ff9bfc16c23bc36cccee7c2fdfe",
+  "scope_limit": "New256fullformula development groups; old40andphase1256excluded; no rawresponse/gzip/model/fit/score access. Scientific source protocol required separately."
+}

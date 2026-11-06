@@ -1,3 +1,5 @@
+2026-11-06: add separately frozen native-coordinate material admission, fixed GP/forest references and mixed-measure cell-ledger mechanism check. 512 development groups/9 cumulative fits; no independent confirmation or completed agent claim. Preserve parent75555e1, original MLST and negative results.
+
 # Completed research milestones
 
 ## Current reviewed manuscript and public reproduction companion

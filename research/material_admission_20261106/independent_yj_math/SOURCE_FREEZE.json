@@ -1,0 +1,7 @@
+{
+  "actual_frozen_utc": "2026-11-05T15:54:46.534577+00:00",
+  "script_sha256": "18db027000ccb9ed656bd6a034d8005847c924f5bcd14fb246018b4c5a056119",
+  "plan_sha256": "2b0b0d53e3793f4892bed6a6f651ad77b2bf0f8e8bf1417fe0e212f227856ac2",
+  "status": "AST_ONLY_NOT_IMPORTED_OR_EXECUTED",
+  "command": "D:\\Anaconda\\python.exe -B H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_yj_math\\audit_yj_half.py --plan H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_yj_math\\EXECUTION_PLAN.json --approval H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_yj_math\\ROOT_MATH_APPROVAL.json --output-dir H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_yj_math\\execution_once"
+}

@@ -1,0 +1,16 @@
+{
+  "run_id": "20261106T020921917619Z",
+  "start_utc": "2026-11-06T02:09:21.917619+00:00",
+  "start_Asia_Shanghai": "2026-11-06T10:09:21.917619+08:00",
+  "trigger": "manual user continue after interrupted turn",
+  "question": "Does the frozen native-coordinate material completion backbone match fixed nonlinear strong references before pursuing paid relationship feedback?",
+  "stage": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z",
+  "parent_interrupted_run": "20261105T145420019666Z",
+  "resume": "baseline6fits1536laws frozen at2026-11-05T16:51:43.229013Z; audit/scoring pending; no duplicate fit",
+  "baseline_forecast_freeze_sha256": "e113ea9443af88aa858d85fd6579cd6f85b6458c02aa69c071c4140ab4eeb697",
+  "old_run_receipts_preserved": true,
+  "active_python_git_processes_at_check": 0,
+  "automations_and_goal_paused": true,
+  "quota_exhaustion_or_reset_observed": false,
+  "MLST_pointer_sha256": "c8eae975548c8bee95517f9eed100f7159f63de060112e47152e6f1b188458f0"
+}

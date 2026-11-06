@@ -1,0 +1,173 @@
+{
+  "kind": "phase2_fixed_YJ_half_material_admission",
+  "status": "TEMPLATE",
+  "registered_actual_utc": null,
+  "source_sha256": {
+    "yj_model.py": "892e90922091b424ab1fd8d94f5901a2a8585861f39e7f3ebe54eca3166e98bc",
+    "run_phase2.py": "3df8cbab90b58b5ad2a56691d34b16bdceb3748d5a033cb5752dd9469c9acf0b",
+    "score_phase2.py": "0160ad1b175ce47295579ad020575b1db63bdd0fce27076c167f81f36217a964"
+  },
+  "parent_source_sha256": {
+    "admission_io.py": "90011d05e1071b02422622249006cf669bd88e2f7792f8da87f87e0589188466",
+    "niw_predictive.py": "a8d74e5398f2bb606efb195d3395324f014ba3f9b4f801a67b022c1cc6687818",
+    "score_admission.py": "ef7e29f8dab89a0a644011b8c188fcbeaa178095bbd823d082be8887e0aaccc0"
+  },
+  "inputs": {
+    "raw_source": {
+      "file": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\jarvis_dft_3d.json.gz",
+      "sha256": "3d0fc1315b74cf84071f16aa25bb93434dafbc83867beb75872064ac245bd747"
+    },
+    "roles": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\phase2_yj\\task_contract\\selection_once\\ADMISSION_ROLE_SELECTION.json",
+      "sha256": "aee4d2aa78f7522eae8aba2b8ac56e186b3c5d81059a6d3a5b44b16d1042350b"
+    },
+    "phase1_roles": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\task_contract\\selection_once\\ADMISSION_ROLE_SELECTION.json",
+      "sha256": "0bc81d0400a4076c854af11e654ca3ca9bcbceb249f2ee6c26d356c53ceae9c0"
+    },
+    "contract": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\task_contract\\MATERIAL_TASK_CONTRACT_V1.json",
+      "sha256": "2637532951c1e6b86ee8bdaa0cbcdb95a48982509de14770f87487e1b55a241d"
+    },
+    "root_scope": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\phase2_yj\\ROOT_FIXED_POWER_SCOPE_BEFORE_NEW_LABELS.json",
+      "sha256": "34b487c1946644bd13699309368064f5df38d59477c5f18683b430c5be4ac578"
+    }
+  },
+  "stable_sources_sha256": {
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\DATA_MANIFEST.json": "5000ecb55aefae7259467b5cb23a570ae1762bce4333155cf411cbfb0aaa4343",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\MM_METADATA_SELECTION.json": "300ca45c1f729ce9bd1b6512d7f132f2d327d0868ed6c6935311562952bb0e6f",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\SOURCE_GATE.json": "86ee6469c90c98558ca069e9d7e5e05badb5f5bc6944f0dbbf94a9025bea0a6e",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\SOURCE_GATE_PILOT_ADDENDUM.json": "7c0fc10397de2d85e13b101e5a78570feea7d1ef80473a852e482c552eefda22",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\ELIGIBLE_METADATA.json": "165d48bc29f771e29f7e86a6bea1e57286eb81b49f29120905ba4ff4739660e4",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\PILOT_ELIGIBILITY.json": "e7b06d64fe29c550bd8e75febd64d853d38b20448914d47d705053aa7712361d",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\audit_schemas.py": "383ab51fdd570e10fada07d0a7446f881fc8ee55916f2d5abd44f2918301b0ca",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\pilot_eligibility.py": "e1cc8fe7c88f1c33d0420627564ec526173f335f8d14ba9b22c58301ccf1b676",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\MATMINER_JARVIS_PREPROCESS_SELECTED.py.txt": "034ba9f525e673f3d2a3922d66b6540a267842dcc520f595ddd9de11db56fcfd",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\MATMINER_LICENSE": "e4df766c6937dad4a0f0646e2afbbc1689aacb3a0c30db687acbd86f73083cc4",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\pilot\\DATASET_ROLE_PLAN.json": "ea9120cf04bc78c8292be8ebba3eab6f9b1b0f830574b3e1a803386105451de8",
+    "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\data_feasibility\\UNUSED_IDENTITY_FEASIBILITY_FINAL.json": "491f8279437d20840076e610668c1d6965815c088bbd390cd6d3004384c166a4",
+    "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\data_feasibility\\MATERIAL_TASK_CONTRACT_DRAFT_ZH.txt": "b601ae4a37f138cd4739e0d5f77876f14a239260ceddadc0b1509f70c2911418",
+    "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\task_contract\\MATERIAL_TASK_CONTRACT_V1.json": "2637532951c1e6b86ee8bdaa0cbcdb95a48982509de14770f87487e1b55a241d",
+    "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\task_contract\\selection_once\\ADMISSION_ROLE_SELECTION.json": "0bc81d0400a4076c854af11e654ca3ca9bcbceb249f2ee6c26d356c53ceae9c0",
+    "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\admission\\score_once\\RESULTS.json": "bd290374748c7b22735a87955e9edd4cdb3112db8706a88bfaaec3d75e3e6ef9"
+  },
+  "configuration": {
+    "version": "phase2_fixed_YJ_half_reference_v1",
+    "dataset": "jarvis_dft_3d",
+    "new_fit_groups": 64,
+    "new_diagnostic_development_groups": 192,
+    "old40_and_all_phase1_256_whole_components_excluded": true,
+    "models": [
+      "raw_joint_t",
+      "raw_momentmatched_Gaussian",
+      "yj_joint_t",
+      "yj_latent_momentmatched_Gaussian",
+      "yj_target_marginal"
+    ],
+    "masks": [
+      [],
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "mask_names": [
+      "none",
+      "e_form",
+      "gap_opt",
+      "both"
+    ],
+    "forecast_count": 3840,
+    "actual_NIW_fits": 2,
+    "target_fields": [
+      "e_form",
+      "gap opt",
+      "bulk modulus"
+    ],
+    "target_index": 2,
+    "lambda": 0.5,
+    "same_fixed_lambda_all3fields": true,
+    "transform": "v=native/s0_fitSD; u=YJ_half(v); z=(u-fit_mean_u)/fit_SD_u",
+    "prior": {
+      "p": 3,
+      "m0": [
+        0,
+        0,
+        0
+      ],
+      "kappa0": 1,
+      "nu0": 7,
+      "Lambda0_diagonal": [
+        3,
+        3,
+        3
+      ]
+    },
+    "empirical_reference_not_native_scale_pure_Bayes": true,
+    "own_row_proxy_conditioning_only": true,
+    "all_diag_groups_are_development": true,
+    "raw_scores": "unchanged parent closed CRPS",
+    "yj_scores": "deterministic native CDF_SF integral with nonconstant inverse Jacobian",
+    "score_absolute_tolerance_native": 1e-08,
+    "score_relative_tolerance": 1e-08,
+    "quad_subinterval_limit": 200,
+    "tail_initial_standard_cut": 16.0,
+    "tail_max_standard_cut": 1000000.0,
+    "tail_max_doublings": 16,
+    "tail_each_absolute_budget_fraction": 0.125,
+    "tail_bounds_are_ideal_arithmetic_not_IEEE_intervals": true,
+    "fixed_integral_subdivision_points": [
+      -16.0,
+      -8.0,
+      -4.0,
+      -1.0,
+      0.0,
+      1.0,
+      4.0,
+      8.0,
+      16.0
+    ],
+    "coverage_levels": [
+      0.8,
+      0.9,
+      0.95
+    ],
+    "RMSE_point_forecast": "native_predictive_median_for_every_model",
+    "gates": {
+      "YJdual_to_own_none_CRPS_ratio_max": 0.98,
+      "YJdual_to_best_same_information_reference_CRPS_ratio_max": 1.02,
+      "references": [
+        "raw_joint_t",
+        "raw_momentmatched_Gaussian",
+        "yj_latent_momentmatched_Gaussian"
+      ],
+      "YJdual_90_coverage_min": 0.8,
+      "YJdual_PIT_ECDF_max_deviation_max": 0.15
+    },
+    "PIT_threshold_is_descriptive_not_exact_KS_or_calibration": true,
+    "no_lambda_prior_role_selection_or_threshold_tuning": true,
+    "stage1_NO_GO_retained_and_not_rescored": true,
+    "transported_latent_Gaussian_is_not_native_momentmatched_Gaussian": true,
+    "readout_transport_or_star_moment_certificate_not_inherited": true,
+    "new_wet_DFT_or_allocation_agent_calls": 0
+  },
+  "independent_math_receipts": {
+    "niw_t": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_niw_math\\execution_once\\INDEPENDENT_NIW_T_CRPS_AUDIT.json",
+      "sha256": "8bd92f408575b9e7d033569c2fef9a7e6e3aaa7f3a8a0352df00f0ecff784a9e",
+      "reuse_existing_math_audit_not_reexecute": true
+    },
+    "YJ_native_probability_and_score": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_yj_math\\execution_once\\INDEPENDENT_YJ_HALF_MATH_AUDIT.json",
+      "sha256": "702669f0a1903d6adb1869d7e9a002cfcbe5e8790cf151d53c7a4fa870d113f3",
+      "reuse_existing_math_audit_not_reexecute": true
+    }
+  }
+}

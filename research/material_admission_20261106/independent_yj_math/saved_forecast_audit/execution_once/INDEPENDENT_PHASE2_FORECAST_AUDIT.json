@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "checked_laws": 3840,
+  "checked_native_raw_laws": 1536,
+  "checked_transformed_u_laws": 2304,
+  "independent_reference_pipelines": 2,
+  "diagnostic_formula_groups": 192,
+  "target_reads": 0,
+  "native_gzip_reads": 0,
+  "per_numeric_counts": {
+    "native_first_scale_s0": 3,
+    "raw_center": 3,
+    "raw_sd": 3,
+    "raw_posterior_location": 3,
+    "raw_predictive_location": 3,
+    "raw_posterior_Psi": 9,
+    "raw_predictive_shape": 9,
+    "raw_predictive_covariance": 9,
+    "raw_prior_Psi": 9,
+    "YJ_center": 3,
+    "YJ_sd": 3,
+    "YJ_posterior_location": 3,
+    "YJ_predictive_location": 3,
+    "YJ_posterior_Psi": 9,
+    "YJ_predictive_shape": 9,
+    "YJ_predictive_covariance": 9,
+    "YJ_prior_Psi": 9,
+    "raw_native_location": 1536,
+    "raw_native_scale": 1536,
+    "YJ_u_location": 2304,
+    "YJ_u_scale": 2304,
+    "YJ_law_s0": 2304
+  },
+  "max_absolute_errors": {
+    "native_first_scale_s0": 1.4210854715202004e-14,
+    "raw_center": 6.661338147750939e-16,
+    "raw_sd": 1.4210854715202004e-14,
+    "raw_posterior_location": 3.937021648863055e-16,
+    "raw_predictive_location": 3.937021648863055e-16,
+    "raw_posterior_Psi": 2.842170943040401e-14,
+    "raw_predictive_shape": 4.440892098500626e-16,
+    "raw_predictive_covariance": 4.440892098500626e-16,
+    "raw_prior_Psi": 0.0,
+    "YJ_center": 2.220446049250313e-16,
+    "YJ_sd": 2.220446049250313e-16,
+    "YJ_posterior_location": 1.5788652436736602e-16,
+    "YJ_predictive_location": 1.5788652436736602e-16,
+    "YJ_posterior_Psi": 2.842170943040401e-14,
+    "YJ_predictive_shape": 3.3306690738754696e-16,
+    "YJ_predictive_covariance": 4.440892098500626e-16,
+    "YJ_prior_Psi": 0.0,
+    "raw_native_location": 1.7053025658242404e-13,
+    "raw_native_scale": 1.4210854715202004e-14,
+    "YJ_u_location": 6.661338147750939e-16,
+    "YJ_u_scale": 3.3306690738754696e-16,
+    "YJ_law_s0": 1.4210854715202004e-14
+  },
+  "scope": "Snapshot forecast arithmetic and transform/model byte bindings only. Not source algorithm replay, independent material confirmation, score or calibration result.",
+  "start_utc": "2026-11-05T16:10:23.176425+00:00",
+  "end_utc": "2026-11-05T16:10:23.335543+00:00",
+  "script_sha256": "da087d238e7b99dd0f4994505cf0b3634f8af5a23526a496af28dcedf43d3742",
+  "plan_sha256": "c754ce74efb446305df298e5d8b65f8517340f7c001edc0977177916d0c37674",
+  "approval_sha256": "7d0176f4b3f6ccd2ae27b5f88fea138464f489a09e3a680843c90f45b2e18516",
+  "producer_imports_or_calls": 0,
+  "native_source_or_diagnostic_target_reads": 0,
+  "random_samples": 0,
+  "original_fit_or_timing_replays": 0,
+  "independent_helper_source_pins": {
+    "NIW": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_niw_math\\saved_audit\\audit_saved.py",
+      "sha256": "e2fe488d4cd75ed35854ad8105539e04f0eab2ef08f086ef92f01cce70e39177",
+      "only_functions_used": [
+        "Checks",
+        "build_reference",
+        "reference_law"
+      ],
+      "scope": "Own audited scalarfsum/smallmatrix independentreference, notproducer"
+    },
+    "YJ": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_yj_math\\audit_yj_half.py",
+      "sha256": "18db027000ccb9ed656bd6a034d8005847c924f5bcd14fb246018b4c5a056119",
+      "only_functions_used": [
+        "transform"
+      ],
+      "scope": "Own stable scalarYJ math reference, notproducer; no helpermain/scientificaudit rerun"
+    }
+  }
+}

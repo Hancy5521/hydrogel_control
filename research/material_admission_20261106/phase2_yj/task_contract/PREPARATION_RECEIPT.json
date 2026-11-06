@@ -1,0 +1,13 @@
+{
+  "actual_utc": "2026-11-05T15:52:44.750710+00:00",
+  "status": "PHASE2_SELECTOR_PREPARED_NOT_EXECUTED",
+  "source_sha256": "94cb0089c54b2b1fa414ddb764f6656431876ff9bfc16c23bc36cccee7c2fdfe",
+  "template_sha256": "f0f03c286b8f5b97b7c2a133d27a228b26b0e7bd4e32e777935096827a0751ec",
+  "stable_input_count": 16,
+  "AST_only": true,
+  "new_group_selection_calls": 0,
+  "rawgzip_or_newproperties_read": 0,
+  "phase1_numeric_result_hashed_not_decoded": true,
+  "fit_or_score_calls": 0,
+  "phase1_sources_results_packaging_unchanged": true
+}

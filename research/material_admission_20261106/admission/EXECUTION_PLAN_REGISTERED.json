@@ -1,0 +1,108 @@
+{
+  "kind": "full_joint_warm_only_material_admission",
+  "status": "REGISTERED",
+  "registered_actual_utc": "2026-11-05T15:23:55.922828+00:00",
+  "source_sha256": {
+    "admission_io.py": "90011d05e1071b02422622249006cf669bd88e2f7792f8da87f87e0589188466",
+    "niw_predictive.py": "a8d74e5398f2bb606efb195d3395324f014ba3f9b4f801a67b022c1cc6687818",
+    "score_admission.py": "ef7e29f8dab89a0a644011b8c188fcbeaa178095bbd823d082be8887e0aaccc0"
+  },
+  "inputs": {
+    "raw_source": {
+      "file": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\jarvis_dft_3d.json.gz",
+      "sha256": "3d0fc1315b74cf84071f16aa25bb93434dafbc83867beb75872064ac245bd747"
+    },
+    "roles": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\task_contract\\selection_once\\ADMISSION_ROLE_SELECTION.json",
+      "sha256": "0bc81d0400a4076c854af11e654ca3ca9bcbceb249f2ee6c26d356c53ceae9c0"
+    },
+    "contract": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\task_contract\\MATERIAL_TASK_CONTRACT_V1.json",
+      "sha256": "2637532951c1e6b86ee8bdaa0cbcdb95a48982509de14770f87487e1b55a241d"
+    },
+    "root_scope": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\root_review\\ROOT_ADMISSION_SCOPE_BEFORE_LABELS.json",
+      "sha256": "e94362b605db22944b1ae3ca58287998232fef56bffab586f8d2a8e368457023"
+    }
+  },
+  "configuration": {
+    "version": "full_joint_niw_model_admission_v1",
+    "dataset": "jarvis_dft_3d",
+    "fit_groups": 64,
+    "diagnostic_development_groups": 192,
+    "one_row_per_formula_group": true,
+    "target_fields": [
+      "e_form",
+      "gap opt",
+      "bulk modulus"
+    ],
+    "target_index": 2,
+    "models": [
+      "niw_joint_t",
+      "gaussian_momentmatched",
+      "independent_target_marginal"
+    ],
+    "masks": [
+      [],
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "mask_names": [
+      "none",
+      "e_form",
+      "gap_opt",
+      "both"
+    ],
+    "forecast_count": 2304,
+    "prior": {
+      "p": 3,
+      "m0": [
+        0,
+        0,
+        0
+      ],
+      "kappa0": 1,
+      "nu0": 7,
+      "Lambda0_diagonal": [
+        3,
+        3,
+        3
+      ]
+    },
+    "transform": "fit64_only_affine_sample_SD_empirical_reference",
+    "gaussian_definition": "same NIW predictive location and moment-matched full predictive covariance",
+    "independent_role": "same target t marginal, identity/association ablation, not a third independent algorithm",
+    "diag_proxy_values_accumulated_into_warm_posterior": false,
+    "Student_t_CRPS": "closed_beta_formula_scoringRules_author_article_p26",
+    "coverage_levels": [
+      0.8,
+      0.9,
+      0.95
+    ],
+    "primary_mask": "both",
+    "gates": {
+      "dual_vs_niw_none_CRPS_ratio_max": 0.98,
+      "dual_vs_gaussian_CRPS_ratio_max": 1.02,
+      "dual_90_coverage_min": 0.8,
+      "dual_PIT_empirical_CDF_max_deviation_max": 0.15
+    },
+    "PIT_threshold_is_descriptive_not_KS_p_or_calibration_guarantee": true,
+    "model_is_empirical_reference_not_native_prior_pure_Bayes": true,
+    "all_diagnostic_groups_consumed_as_development": true,
+    "allocation_agent_or_pseudo_label_training": false,
+    "full_gzip_physically_parsed_in_trusted_reader": true,
+    "unselected_response_summaries_or_model_use": false
+  },
+  "independent_math_receipt": {
+    "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_niw_math\\execution_once\\INDEPENDENT_NIW_T_CRPS_AUDIT.json",
+    "sha256": "8bd92f408575b9e7d033569c2fef9a7e6e3aaa7f3a8a0352df00f0ecff784a9e"
+  }
+}

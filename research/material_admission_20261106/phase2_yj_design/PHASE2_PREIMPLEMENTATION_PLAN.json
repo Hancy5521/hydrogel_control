@@ -1,0 +1,89 @@
+{
+  "kind": "FIXED_YJ_HALF_FULL_JOINT_PHASE2_PREIMPLEMENTATION",
+  "status": "MATH_AND_PLAN_ONLY_NO_SOURCE_OR_EXECUTION_AUTHORIZATION",
+  "previous_raw_NIW_campaign_status": "NO_GO retained; do not retune gates/prior or score YJ on phase1",
+  "hypothesis_formation": "posthoc after phase1 diagnostics; fixed before phase2 selection/values, not globally ex-ante label-free",
+  "cohort": {
+    "actual_group_ids_selected": false,
+    "new_whole_formula_components": 256,
+    "fit": 64,
+    "diagnostic_development": 192,
+    "independent_confirmation": 0,
+    "exclude_whole_components": ["old40 consumed groups", "all phase1 256 groups and all their source-linked siblings"],
+    "one_metadata_representative_per_component": true,
+    "no_target_filter_or_new_sibling_structure_reuse": true
+  },
+  "transform_fixed_before_phase2": {
+    "lambda": 0.5,
+    "coordinates": ["e_form", "gap opt", "bulk modulus"],
+    "same_lambda_all_coordinates": true,
+    "first_scale": "s0_j=phase2 fit64 native sample SD, >0; v=x/s0_j, no initial centering",
+    "positive_T": "2*(sqrt(1+v)-1)",
+    "negative_T": "-((1-v)^(3/2)-1)/(3/2)",
+    "positive_inverse": "u+u^2/4",
+    "negative_inverse": "1-(1-3u/2)^(2/3)",
+    "second_affine": "a_j=mean_fit T(x/s0_j), b_j=sampleSD_fit T(x/s0_j); z=(u-a_j)/b_j",
+    "all_transform_statistics_fit_only": true,
+    "prior": "same empirical-reference NIW p3,m0=0,kappa1,nu7,Lambda3I in z coordinates",
+    "columnwise_lambda_or_other_hyperparameter_search": false
+  },
+  "mathematical_requirements": {
+    "strict_monotone_real_axis_bijection": true,
+    "native_first_absolute_moment": "latent nondegenerate Student-t df>2 necessary and sufficient",
+    "native_second_moment": "df>4 necessary and sufficient",
+    "prior_predictive_df": 5,
+    "fit_predictive_df": 69,
+    "conditional_df": "69+k for k own-row proxies",
+    "inverse_location_is_native_mean": false,
+    "point_prediction_for_secondary_RMSE": "native predictive median for all models, explicitly labelled",
+    "asinh_or_log_inverse_with_finite_df_t_has_infinite_native_first_moment": true
+  },
+  "models_same_information_not_same_posterior": [
+    "raw NIW joint-t",
+    "raw moment-matched full predictive Gaussian",
+    "fixed YJ-half NIW joint-t",
+    "YJ-half target marginal identity/association ablation"
+  ],
+  "masks": [[], [0], [1], [0, 1]],
+  "forecast_count": 3072,
+  "all_forecast_and_transform_parameter_freeze_before_target_reveal": true,
+  "native_unit_scoring": {
+    "raw_models": "existing independently audited closed CRPS, recomputed only on new cohort under its plan",
+    "YJ_models": "deterministic native CDF integral or change-of-variable integral including nonconstant inverse Jacobian",
+    "latent_standard_t_integrand_weight": "s0_Y*s_u*gprime(m_u+s_u*t)",
+    "split_points": ["t of actual target", "-m_u/s_u where inverse branch changes"],
+    "right_tail_uses_SF": true,
+    "potential_independent_tail_envelope": "power-tail Student-t C_nu bound with log-domain constants; not IEEE interval claim",
+    "numerical_tolerances_and_max_refinement": "must be root-pinned in future source/plan before Y; unresolved now",
+    "latent_CRPS_times_constant_SD_allowed": false,
+    "unconverged_scores_dropped_or_clipped": false
+  },
+  "same_four_admission_gates": {
+    "YJdual_to_own_none_CRPS_ratio_max": 0.98,
+    "YJdual_to_raw_conditional_Gaussian_CRPS_ratio_max": 1.02,
+    "YJdual_90_central_coverage_min": 0.8,
+    "YJdual_PIT_ECDF_max_deviation_max": 0.15,
+    "PIT_is_descriptive_not_exact_KS_or_calibration_guarantee": true
+  },
+  "failure_policy": {
+    "stop_full_campaign_if_any_gate_fails": true,
+    "do_not_change_old_or_new_thresholds_after_scoring": true,
+    "do_not_automatically_scan_lambda_or_transform_subsets": true,
+    "preserve_every_model_mask_negative_result": true
+  },
+  "not_inherited": [
+    "old pure-proxy/star moment certificate",
+    "Gaussian-native target readout transport closed expectation",
+    "native Gaussian-mixture analytic CRPS after nonlinear inverse",
+    "full online-feedback NIW conjugacy with multiple partial rows",
+    "independent material confirmation or novel catalytic algorithm"
+  ],
+  "next_order_if_root_and_independent_math_accept": [
+    "approve only new metadata exclusion/selection contract; no new response reads",
+    "choose unique new 256 whole-formula cohort once and freeze actual IDs/hash",
+    "freeze a minimal source design with native CDF scoring and independent numerical audit plan",
+    "register actualUTC, inputs, source and all tolerances; root approval before one material run",
+    "fit64/forecast all3072 first, then separate native target reveal/scoring",
+    "apply unchanged four gates and retain all failures, with no same-cohort model rescue"
+  ]
+}

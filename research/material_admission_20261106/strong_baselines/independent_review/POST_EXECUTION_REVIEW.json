@@ -1,0 +1,35 @@
+{
+  "actual_utc": "2026-11-06T02:14:54.988084+00:00",
+  "kind": "readonly_independent_baseline_postexecution_review",
+  "status": "PASS",
+  "score_audit_file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\strong_baselines\\independent_review\\score_execution_once\\INDEPENDENT_FIXED_BASELINE_SCORE_AUDIT.json",
+  "score_audit_sha256": "6737a2e236437f4bd9d104a12e3c4ae9c8deffe72c40f0fd9ba92f34a5bdcd2a",
+  "snapshot_audit_sha256": "cdeed4b33594fd20ed267e658a46ca681aa125349734a99f086d52d5e8b86470",
+  "all_saved_forecast_laws": 1536,
+  "GP_CDF_integral_scores": 768,
+  "RF_pairwise_energy_scores": 768,
+  "all_interval_events": 4608,
+  "all_method_mask_summaries": 8,
+  "GP_CRPS_max_abs_diff": 5.684341886080802e-14,
+  "RF_CRPS_max_abs_diff": 5.684341886080802e-14,
+  "summary_CRPS_max_abs_diff": 1.4210854715202004e-14,
+  "coverage_event_mismatches": 0,
+  "candidate_best_ratio": 0.9981006446271814,
+  "within_fixed_root_descriptive_screen": true,
+  "numerical_warnings": [],
+  "max_gaussian_quad_error_estimate": 1.6679662669707402e-09,
+  "GP_conservative_condition_upper_bounds": [
+    4.41881705365314,
+    13.290769622464211,
+    18.98916477160806
+  ],
+  "GP_all_fit_and_predict_warnings": [],
+  "read_only_postexecution_no_fits_or_score_replays": true,
+  "limits": [
+    "Independent saved-state and scoring arithmetic, not new independent materials validation.",
+    "All64fit192diagnostic source groups are already consumed development.",
+    "Candidate reference mean read from frozen main summary; original candidate predictions/scores not recomputed.",
+    "Root baseline recipes and original four admission gates unchanged.",
+    "Tiny point difference does not establish statistical superiority, calibration, generalization or agent feedback benefit."
+  ]
+}

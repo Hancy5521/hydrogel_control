@@ -1,0 +1,8 @@
+{
+  "approved": true,
+  "scope": "INDEPENDENT_MIXED_MEASURE_GATE_ONCE",
+  "plan_sha256": "ce6648d35d59edd582749b123819484699a65bde7f9347b1d9086132dfab5afc",
+  "script_sha256": "2c31f11f0908b0a1c626c135847d701da326d9b74b854fcfe3f85a451b408128",
+  "actual_utc": "2026-11-06T02:29:03.986073+00:00",
+  "limits": "fullsavedartificialtrajectories only; no materialfit, no producerimport"
+}

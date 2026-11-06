@@ -1,0 +1,11 @@
+{
+  "actual_utc": "2026-11-05T15:44:37.451040+00:00",
+  "status": "PREPARED_NOT_EXECUTED",
+  "source_sha256": "ae77ae16229e4978666c8d57b5c85874eef2d09224aa33cd8a14fe51f07d6773",
+  "template_sha256": "19ba4ff7dfb6099ae654ece9b70c95cbc105ba63b521d7cea5b7efe51d74ec62",
+  "AST_only": true,
+  "frozen_input_count": 5,
+  "gzip_or_semantic_property_reads_inpreparation": 0,
+  "fits_or_scores": 0,
+  "seal_still_waiting": true
+}

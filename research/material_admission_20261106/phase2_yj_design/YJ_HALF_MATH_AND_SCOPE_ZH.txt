@@ -1,0 +1,132 @@
+Phase2固定Yeo-Johnson表示假设：纯数学与单次开发方案
+==================================================
+
+判断
+----
+给定lambda=1/2的全实轴变换及root提出的inverse均正确，严格单调、可逆。将NIW放在固定变换后的仿射坐标，并用原单位CDF积分评分，在数学上可行，没有发现必然使该方案无效的障碍。它仍可能因材料错设、零gap点质量、不同化学族或均值结构而失败。成熟变换+NIW不是新算法；本轮只提出一个与raw-Gaussian不同、明确且有界的表示假设。
+
+原phase1四门的PIT失败仍保留NO_GO。不得改旧门、在phase1新算本模型、用新模型解释为旧NO_GO撤销，或把phase2开发结果称独立确认。本文件不写模型源码、不选择新组、不读取新材料响应、不数值运行。
+
+1.固定所有坐标与次序
+-------------------
+推荐事前明确同一个lambda=.5作用三个原始字段e_form/gap opt/bulk，不做按列lambda搜索。每列先以本phase2的64fit原值样本SD s0_j>0定义v_j=x_j/s0_j，不先减均值；令u_j=T(v_j)。再用同64fit的u均值a_j及样本SD b_j>0定义z_j=(u_j-a_j)/b_j，在z坐标放与raw参考相同的NIW(0,kappa1,nu7,Lambda3I)。
+
+raw NIW/Gaussian用同64fit原值的均值及s0作原仿射标准化。两个pipeline得到不同的经验参考模型/后验，不是共享同一posterior的调度算法比较；共享的是原生信息、fit/开发组、proxy输入和评估真值。
+
+此处先验仍是在fit依赖尺度上放0/I的empirical reference，不是native尺度上在数据前独立固定的纯全Bayes。所有s0/a/b只用fit64；192开发proxy不累积进入共享fit，target绝不参与参数/变换选择。
+
+2.变换、反变换及导数
+-------------------
+对任意实v：
+ v>=0: T(v)=2(sqrt(1+v)-1)，T'(v)=(1+v)^(-1/2)；
+ v<0:  T(v)=-[(1-v)^(3/2)-1]/(3/2)，T'(v)=(1-v)^(1/2)。
+T'(v)>0，T(0)=0；两端分别趋+infinity/-infinity，所以它是R到R的双射。
+
+对任意实u，其inverse g为
+ u>=0: g(u)=(1+u/2)^2-1=u+u²/4，g'(u)=1+u/2；
+ u<0:  g(u)=1-(1-3u/2)^(2/3)，g'(u)=(1-3u/2)^(-1/3)。
+两侧导数在0都为1。直接代入可验证g(T(v))=v、T(g(u))=u。它保持正负和零，不要求删除负bulk或给负数取绝对值，也没有log的定义域问题。
+
+未来实现应在v约0时用稳定等价式：正侧T=2v/(sqrt(1+v)+1)；负侧T=-expm1(1.5*log1p(-v))/1.5；负侧g=-expm1((2/3)*log1p(-1.5u))；正侧g=u+u²/4。不能靠clip输入/输出修浮点溢出，超支持范围应显式停止。此处没有运行这些公式，也不宣称IEEE区间认证。
+
+3.NIW条件t怎样回到原单位
+-----------------------
+给定本行已许可的原proxy x_O，先按fit-only s0/a/b转成z_O，再用完整joint-t的同一条件公式。目标z_Y|z_O的预测为t_nu(m_z,s_z)，s_z是t scale而非SD。令
+  m_u=a_Y+b_Y*m_z，s_u=b_Y*s_z>0，
+则u_Y|x_O~t_nu(m_u,s_u)，原目标X_Y=s0_Y*g(u_Y)。
+
+原单位CDF为
+  F_X(x|x_O)=T_nu((T(x/s0_Y)-m_u)/s_u)。
+单调quantile为
+  Q_X(p|x_O)=s0_Y*g(m_u+s_u*t_nu^{-1}(p))。
+因此PIT和中央80/90/95%区间可直接在原坐标得到，不需要假装反变换后的law仍是Student-t或Gaussian。
+
+非线性g(m_u)是原单位predictive median，不是原单位mean。为避免增加另一个数值积分/点预测定义，本phase2建议所有模型的RMSE明确为RMSE of predictive median；raw对称t/Gaussian的median恰等于mean。若以后要报Bayes-optimal平方损失的mean，应另算s0 E[g(U)]，不可把inverse(location)命名mean。
+
+4.条件density和观测似然
+-----------------------
+原单位目标density需要Jacobian：
+ p_X(x|x_O)=t_nu((T(x/s0)-m_u)/s_u) * T'(x/s0)/(s0*s_u)。
+完整native联合density为latent联合t density乘各坐标T'(x_j/s0_j)/(s0_j*b_j)。条件化时proxy的Jacobian在分子/分母中抵消；剩下目标Jacobian不能删。若未来做逐hypothesis完整likelihood更新，所有hypothesis共享同一个固定变换时native-query Jacobian在权重归一化中可抵消，但需先按正确模型写出。若变换因hypothesis或新观察而变，则不能沿用该抵消理由。
+
+本phase2没有在线allocation/posterior-feedback；同一行自己的真实proxy通过完整条件t发挥作用，其他诊断行不更新warm参数。
+
+5.原单位CRPS不是潜尺度CRPS乘常数
+--------------------------------
+正loss的原单位CDF定义：
+ CRPS_X(F,x*)=int_{-infinity}^{x*} F_X(x)^2 dx
+              +int_{x*}^{infinity} [1-F_X(x)]² dx。
+
+可以在标准t坐标t=(u-m_u)/s_u积分，但必须保留
+ x(t)=s0*g(m_u+s_u*t)，
+ dx/dt=J(t)=s0*s_u*g'(m_u+s_u*t)>0。
+令t*=(T(x*/s0)-m_u)/s_u，t0=-m_u/s_u，积分为
+ int_{-infinity}^{t*} T_nu(t)^2 J(t) dt
+ +int_{t*}^{infinity} SF_nu(t)^2 J(t) dt。
+两段还应在t0处分割导数分支；右侧使用SF，不通过1-CDF产生消减。漏掉J(t)、仅乘fitSD或用潜尺度closed t CRPS作主分数，都是换了任务。
+
+raw NIW和raw Gaussian仍可用已有已审closed score，并在新cohort同一原单位比较。YJ主分数应使用上述确定性原单位积分，独立核查可直接在native x坐标做CDF积分或用另一个可靠积分表示。主单位保持源bulk字段的GPa归属与aggregation限定，不从变换命名推导新的物理来源。
+
+数值准备建议：固定abs/rel目标精度而非固定少量节点；给每条score保存积分误差估计、左右tail界、是否达到容差。容差与最大细化次数在源码/协议冻结前统一，不能按模型胜负放宽。自适应数值细化不是搜索lambda，但非收敛score也不能悄悄跳过。所有3072个预测先冻结，方可读取192个目标并开始数值评分。
+
+6.矩存在性：为何不能盲用asinh/log inverse
+----------------------------------------
+u趋+infinity时g(u)=u²/4+u；u趋-infinity时|g(u)|为O(|u|^(2/3))。因此对非退化双尾Student-t：
+ E|s0*g(U)|有限，当且仅当nu>2；
+ E|s0*g(U)|²有限，当且仅当nu>4。
+必要性来自其永远存在的正尾二次项，不会因m_u<0就消失；充分性来自全局|g(u)|<=C(1+|u|²)。
+
+本模型p3、nu0=7的prior predictive df=5，fit64 posterior predictive df=69，每加k个本行proxy后的conditional df=69+k，均满足一阶与二阶要求。若未来改维度/先验/样本量，必须重新验证；不能只检查nu>1的latent closed CRPS条件就声称native一阶矩存在。
+
+CDF积分本身的有限性条件可比一阶矩弱：正尾X有power-tail指数nu/2，平方SF积分需nu>1。这里仍要求更严格的nu>2（本方案实际>4），以使energy identity、W1、native mean等常用论断均有合适基础。不要把“CDF score可能有限”与“一阶矩存在”混成一件事。
+
+相反，若latent U是任意有限df非退化t，asinh的inverse sinh(U)具有指数尾增长，log的inverse exp(U)也如此；t没有非零指数矩，故native一阶矩发散。其正尾CDF衰减只为log-power，常规原单位CRPS平方尾积分也发散。Gaussian latent则不存在这一相同障碍，但那是另一模型，不能把Gaussian结论套到NIW-t。
+
+7.可用于核验的解析尾包络（理想算术）
+-----------------------------------
+标准t density为c_nu(1+t²/nu)^(-(nu+1)/2)，
+ c_nu=Gamma((nu+1)/2)/(sqrt(nu*pi)*Gamma(nu/2))。
+对t>0，有SF_nu(t)<=C_nu*t^(-nu)，C_nu=c_nu*nu^((nu-1)/2)，左尾同理。该界在小t很松，可与1取min；计算常数应在log域，避免大df产生中间溢出。
+
+选L>=max(1,|t*|,|m_u|/s_u)，使右tail内u>=0、左tail内u<=0。
+右边J(t)<=s0*s_u*(1+|m_u|/2+s_u*t/2)，故截断右尾score<=
+ s0*s_u*C_nu²*[(1+|m_u|/2)*L^(1-2nu)/(2nu-1)
+                     +(s_u/2)*L^(2-2nu)/(2nu-2)]，nu>1。
+左边g'(u)<=1，左尾score<=s0*s_u*C_nu²*L^(1-2nu)/(2nu-1)。
+
+这是理想算术的安全但可能保守包络。未来可将它与数值积分误差预算分开，记录固定规则下逐步扩大L直到目标或上限；不得把quad自身返回的小误差当外尾已控制。它不是已经实现的严格IEEE有向区间或库CDF误差认证。
+
+8.真正不同的新开发cohort与比较
+-----------------------------
+新phase2必须从剩余metadata中整component排除旧40组及phase1全部256组，再用唯一事前固定排序选新的256个whole formula组；每组一个metadata代表，64fit+192dev，所有兄弟仍同角色预留。不能只排除前轮被读取的cell或换同formula的另一结构。这个文件不选择实际ID。
+
+四个固定角色，同cohort同proxy masks：
+  raw NIW joint-t；
+  raw moment-matched full predictive Gaussian；
+  fixed lambda=.5 YJ-NIW joint-t；
+  YJ-NIW target marginal（no-transfer/0proxy identity，不算第四个独立算法）。
+每个在0/{e_form}/{gap}/{both}四模式预测，共4*4*192=3072条law；所有变换参数、NIW参数与law全部冻结，然后才揭示192原native bulk。raw模型也在这个新cohort重新拟合/评分，不拿phase1的35.5451和新score跨组直接相减。
+
+沿用最终四门，主候选为YJ双proxy，参考为同cohort、同信息raw conditional Gaussian：
+-YJboth宏nativeCRPS <=.98 * YJnone宏nativeCRPS；
+-YJboth宏nativeCRPS <=1.02 * rawGaussianboth宏nativeCRPS；
+-YJboth90%中央区间coverage>=.80；
+-YJboth PIT经验CDF最大偏差<=.15。
+全部mask/模型/区间宽度/median-RMSE/逐组paired gains完整保存，失败也保存。不额外要求“超越phase1”，因为cohort不同；不因某项失败改主模式或把参考换成更弱分布。
+
+lambda=.5不是在phase2数据上拟合或在phase1上扫描出来的数值最优参数；但整个方向明确是在见过phase1模型诊断失败后提出的。应称“posthoc形成假设、phase2前固定”，不能称全部研究在任何标签之前已预想或严格label-free。phase1和phase2的192组均为适配开发，方法选择后仍需真正未消费的确认组，不能合并为独立确认N。
+
+9.真实风险与停止门
+------------------
+变换可以改变一个NIW参考家族的适配性，但不会凭坐标重表达自动改善PIT。若只对同一个原native law作等价单调重表达，PIT完全不变；潜在改善来自重新拟合后产生了不同joint分布。因此phase2仍可能保留原来的PIT偏差，甚至更差。
+
+lambda=.5减弱正侧大bulk，但会放大负侧e_form，且不为gap的真实点质量建模；不能保证三元elliptical t正确。连续模型在zero-gap子群的假设仍须报告，不能因为目标bulk分数尚可就称物理有效三元生成器。保留源negative bulk是忠实来源策略，不是证明物理可行。
+
+只允许本次固定lambda/no-search的单一表示假设。任一模型门失败，停止当前大campaign；不要自动扫lambda=.25/.75、按列lambda、只变target或改先验来救分。若发现实现/积分错误，保留失败并由root审批实际修正，不能删差行。真正新表示/数据条件应另写科学理由和全新未消费组门，不把无限试新cohort伪装独立验证。
+
+本方案不会自动继承旧star-rho矩证书、完整Gaussian target的prototype-W1解析coupling、或当前readout-transport idea的Gaussian仿射均值/常残差形式。inverse YJ后的native target不是Gaussian，原Gaussian-mixture energy闭式也不能直接用。它不提供自催化/多agent算法增益、实际DFT节约或顶会准备结论。
+
+10.本轮来源/执行记录边界
+-----------------------
+Yeo-Johnson为成熟变换；本轮按root给定lambda=.5表达式独立核inverse、导数、tail与矩存在性。尝试打开其Biometrika原论文DOI10.1093/biomet/87.4.954的官方endpoint失败（non-retryable），没有重试、下载或冒称全文阅读。
+Student-t/NIW及CRPS原理沿用本轮已记录的官方Murphy/scoringRules/Gneiting有限阅读与独立数学收据；不重复执行先前数学族。本文件没有新的材料值、拟合/预测/评分或新可执行模型。独立代理并行重核，不把双方阅读范围混成自己的阅读数量。

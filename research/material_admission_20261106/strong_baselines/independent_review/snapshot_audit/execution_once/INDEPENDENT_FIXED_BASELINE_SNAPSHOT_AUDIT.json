@@ -1,0 +1,127 @@
+{
+  "status": "PASS",
+  "all_saved_forecast_coordinates": 1536,
+  "GP_learned_laws": 576,
+  "forest_learned_CDF_laws": 576,
+  "none_mask_laws": 384,
+  "GP_state_checks": [
+    {
+      "mask": [
+        0
+      ],
+      "kernel_entries_rebuilt": 4096,
+      "native_laws_rebuilt": 192,
+      "factor_residual_normInf": 8.239936510889834e-16,
+      "factor_normwise_backward_error": 7.622077595445737e-17,
+      "dual_residual_normInf": 1.7763568394002505e-15,
+      "dual_normwise_backward_error": 1.0002867823217987e-16,
+      "conservative_spectral_condition_upper_bound": 4.41881705365314,
+      "not_a_global_hyperparameter_optimum_or_forward_error_guarantee": true,
+      "fit_warnings_retained": [],
+      "predict_warnings_retained": []
+    },
+    {
+      "mask": [
+        1
+      ],
+      "kernel_entries_rebuilt": 4096,
+      "native_laws_rebuilt": 192,
+      "factor_residual_normInf": 9.056261391936846e-16,
+      "factor_normwise_backward_error": 3.829459412249788e-17,
+      "dual_residual_normInf": 6.661338147750939e-16,
+      "dual_normwise_backward_error": 2.10263027662958e-17,
+      "conservative_spectral_condition_upper_bound": 13.290769622464211,
+      "not_a_global_hyperparameter_optimum_or_forward_error_guarantee": true,
+      "fit_warnings_retained": [],
+      "predict_warnings_retained": []
+    },
+    {
+      "mask": [
+        0,
+        1
+      ],
+      "kernel_entries_rebuilt": 4096,
+      "native_laws_rebuilt": 192,
+      "factor_residual_normInf": 1.3832246053871808e-15,
+      "factor_normwise_backward_error": 4.261453575353246e-17,
+      "dual_residual_normInf": 1.4432899320127035e-15,
+      "dual_normwise_backward_error": 3.681676168885326e-17,
+      "conservative_spectral_condition_upper_bound": 18.98916477160806,
+      "not_a_global_hyperparameter_optimum_or_forward_error_guarantee": true,
+      "fit_warnings_retained": [],
+      "predict_warnings_retained": []
+    }
+  ],
+  "forest_state_checks": [
+    {
+      "mask": "e_form",
+      "trees_replayed": 256,
+      "exact_training_paths": 16384,
+      "exact_diagnostic_paths": 49152,
+      "CDF_laws_rebuilt": 192,
+      "exact_Fraction_mass_positions": 12288,
+      "fit_warnings_retained": [],
+      "scope": "Replay frozen tree partitions and all-original-row CDF only, not rerun bootstrap training or officialQRF."
+    },
+    {
+      "mask": "gap_opt",
+      "trees_replayed": 256,
+      "exact_training_paths": 16384,
+      "exact_diagnostic_paths": 49152,
+      "CDF_laws_rebuilt": 192,
+      "exact_Fraction_mass_positions": 12288,
+      "fit_warnings_retained": [],
+      "scope": "Replay frozen tree partitions and all-original-row CDF only, not rerun bootstrap training or officialQRF."
+    },
+    {
+      "mask": "both",
+      "trees_replayed": 256,
+      "exact_training_paths": 16384,
+      "exact_diagnostic_paths": 49152,
+      "CDF_laws_rebuilt": 192,
+      "exact_Fraction_mass_positions": 12288,
+      "fit_warnings_retained": [],
+      "scope": "Replay frozen tree partitions and all-original-row CDF only, not rerun bootstrap training or officialQRF."
+    }
+  ],
+  "RF_tree_paths_exact": 196608,
+  "RF_learned_Fraction_mass_positions_exact": 36864,
+  "RF_none_uniform_Fraction_mass_positions_exact": 12288,
+  "posthoc_development_not_confirmation": true,
+  "scope": "Saved kernel/factor/dual and tree-state arithmetic only; no sklearn/SUT fit/predict, optimizer rerun, material outcome scoring or calibration guarantee.",
+  "start_utc": "2026-11-06T02:11:04.429787+00:00",
+  "end_utc": "2026-11-06T02:11:07.397111+00:00",
+  "script_sha256": "046b73114e29b70b004b8a32009264b9e9025babb528a76988f95a41bac0eaa3",
+  "plan_sha256": "b8df0c89ccaa048d6a496d997787389f03cd0e30501f78bb73db79411c5a6421",
+  "approval_sha256": "54af3e27ad4f7cc0d30ea7614e00b5d75a7609434c1dfaaa7cdff5e3e746af65",
+  "numeric_comparison_counts": {
+    "feature_mean": 2,
+    "feature_sampleSD": 2,
+    "GP_none_location": 192,
+    "GP_none_sampleSD": 192,
+    "GP_train_features": 256,
+    "GP_log_theta": 10,
+    "GP_target_mean": 3,
+    "GP_target_population_SD": 3,
+    "GP_normalized_fit_target": 192,
+    "GP_native_location": 576,
+    "GP_native_std": 576
+  },
+  "max_absolute_errors": {
+    "feature_mean": 6.661338147750939e-16,
+    "feature_sampleSD": 2.220446049250313e-16,
+    "GP_none_location": 0.0,
+    "GP_none_sampleSD": 1.4210854715202004e-14,
+    "GP_train_features": 0.0,
+    "GP_log_theta": 0.0,
+    "GP_target_mean": 0.0,
+    "GP_target_population_SD": 0.0,
+    "GP_normalized_fit_target": 0.0,
+    "GP_native_location": 5.684341886080802e-14,
+    "GP_native_std": 1.4210854715202004e-14
+  },
+  "producer_or_sklearn_imports": 0,
+  "original_training_prediction_or_timing_replays": 0,
+  "native_gzip_or_diagnostic_target_reads": 0,
+  "random_samples": 0
+}

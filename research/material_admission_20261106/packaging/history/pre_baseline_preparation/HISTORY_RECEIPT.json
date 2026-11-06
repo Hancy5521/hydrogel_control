@@ -1,0 +1,13 @@
+{
+  "actual_utc": "2026-11-06T02:12:21.558129+00:00",
+  "kind": "preserve_previous_packaging_preparation_before_baseline_wrapper_extension",
+  "files_sha256": {
+    "build_resources.py": "bb4b86b8df562a777aa1283a76dcd0307bd1ac2cce078f33a31571b0f90d9f4f",
+    "reproduce.py": "cd80b0f24717f8670de36e1c2e033b8166f0c93b6ea793d518dc037df926c0e5",
+    "RESOURCE_GUIDE_ZH.txt": "ff51dca79d863acb65e6546a5ff54d3988302059f984747f202b0ce6bd413c2b",
+    "DETAILED_ALGORITHM_AND_CODE_ZH.txt": "cdaca0395df5d4f24442e4420f799f38b8ffa2a20275114c12bc1f87e52a6010",
+    "PACKAGING_PREPARATION_PHASE2_RECEIPT.json": "64dadfa897fd2a27221a3af3f3ac147141bae17ab798b1352c492f41d1538306"
+  },
+  "no_science_sources_changed": true,
+  "not_a_past_science_run": true
+}

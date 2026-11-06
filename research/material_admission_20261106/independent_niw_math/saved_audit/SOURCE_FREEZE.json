@@ -1,0 +1,11 @@
+{
+  "actual_created_utc": "2026-11-05T15:30:45.309338+00:00",
+  "status": "SOURCE_AST_ONLY_NO_EXECUTION",
+  "script_sha256": "e2fe488d4cd75ed35854ad8105539e04f0eab2ef08f086ef92f01cce70e39177",
+  "plan_sha256": "8d71908e029520488d5940ed24f9cec249b3bc63e5c40c8c1e31be2bf3472e58",
+  "forecast_freeze_sha256": "6333233218f62dbe4911b2172adf1650b4427e68bf2cb59a31307733e5fbc8e9",
+  "commands": {
+    "forecast": "D:\\Anaconda\\python.exe -B H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_niw_math\\saved_audit\\audit_saved.py --phase forecast --plan H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_niw_math\\saved_audit\\EXECUTION_PLAN.json --approval H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_niw_math\\saved_audit\\ROOT_FORECAST_APPROVAL.json --output-dir H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_niw_math\\saved_audit\\forecast_audit_once",
+    "score": "D:\\Anaconda\\python.exe -B H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_niw_math\\saved_audit\\audit_saved.py --phase score --plan H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_niw_math\\saved_audit\\EXECUTION_PLAN.json --approval H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_niw_math\\saved_audit\\ROOT_SCORE_APPROVAL.json --output-dir H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_niw_math\\saved_audit\\score_audit_once"
+  }
+}

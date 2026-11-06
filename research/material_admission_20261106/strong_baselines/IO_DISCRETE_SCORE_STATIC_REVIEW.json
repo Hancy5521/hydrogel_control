@@ -1,0 +1,38 @@
+{
+  "status": "PASS_STATIC_REGISTERED_SCOPE_ONLY",
+  "actual_utc": "2026-11-05T16:40:21.278584+00:00",
+  "reviewer": "cross_material_data independent metadata/IO review",
+  "source_pins": [
+    {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\strong_baselines\\code\\baseline_models.py",
+      "sha256": "a602b50663b64490af26a11a65b5effb7753e61aa6e9b8f71c8221a78898cfd5"
+    },
+    {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\strong_baselines\\code\\run_baselines.py",
+      "sha256": "15a545172bedbf7af04d8fca5a7608f954be89e89d169087ea88aa3ed748c6c5"
+    },
+    {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\strong_baselines\\code\\score_baselines.py",
+      "sha256": "0199da5a70f4290df4ae685879961ab92003e1f8fe7123f55f2b4b0220b463d2"
+    }
+  ],
+  "scope": [
+    "Forecast reads only phase2 frozen visible64x3fit192x2proxies; rawgzip absent",
+    "Diagnostic truth and frozen candidate result are neither opened nor hashed during forecast; scorer first verifies1536unique laws and5files then score-only hash/read",
+    "Same192 identities matched to phase2 roles; fit-only centering/sampleSD; own mask features; exact6fits not8",
+    "All negative/zero native fit labels retained; empirical supports all64warm observations including OOB per tree; bootstrap multiplicity excluded explicitly",
+    "Forest apply uses standardized float32 values; frozen leafids and float32 arrays retained",
+    "Exact Fraction probability masses sum1; duplicate support grouped; positive interval CDF score; endpoints inclusive coverage; empirical quantiles may produce zero-width intervals",
+    "PITleft/right/midpoint separated; no continuous-uniform PIT gate for empirical laws",
+    "Gaussian WhiteKernel test noise included; alpha training-only; no target score during hyperparameter fit"
+  ],
+  "limitations": [
+    "Static source inspection only; independent fixed mathematics control pending approval/execution",
+    "Empirical arithmetic uses exact masses but support widths and score sums are binary floats; no universal float robustness proof",
+    "QRF-inspired all-original-leaf variant is not an official QRF implementation; disclose variant",
+    "Posthoc new baseline on already-consumed development, no independent confirmation and no candidate/gate retuning"
+  ],
+  "statistical_execution": 0,
+  "material_native_values_opened": 0,
+  "rawgzip_opened": 0
+}

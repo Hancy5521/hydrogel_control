@@ -1,0 +1,42 @@
+{
+  "actual_recorded_utc": "2026-11-05T16:27:12.193869+00:00",
+  "question": "Add two competent fixed nonlinear conditional-distribution reference learners after analytic-model admission; no changes to candidate or consumed development roles.",
+  "kind": "POSTHOC_SAME_COHORT_STRONG_BASELINE_EXPANSION_PLANNED",
+  "source_reading": [
+    {
+      "url": "https://jmlr.org/papers/v7/meinshausen06a.html",
+      "title": "Quantile Regression Forests",
+      "version": "Meinshausen2006 JMLR7(35):983-999",
+      "depth": "officialabstract, selectedPDF methods tobe checked; not fullpaper claim",
+      "use": "motivation for leaf-weighted empirical distribution baseline, exactvariant(alloriginaltrainingpoints including OOB forCDF) must be namedexplicitly, not claim an official QRF package execution"
+    },
+    {
+      "url": "https://scikit-learn.org/1.6/modules/gaussian_process.html",
+      "depth": "officialversioned GPR predictive-distribution andkernelhyperparameter method sections",
+      "use": "fixed GPR baseline withnoise in predictive std, warm-only preprocessing"
+    },
+    {
+      "url": "https://scikit-learn.org/1.6/modules/generated/sklearn.gaussian_process.GaussianProcessRegressor.html",
+      "depth": "versionedAPI parameter/predict reference",
+      "use": "normalize_y/WhiteKernel/alpha/optimizer/restarts reproducibility"
+    }
+  ],
+  "version_caution": "Initial/stablewebURLs currentlyshow1.9.1; runtime stays installed1.6.1 andversioned1.6reference. No package upgrade/install.",
+  "installed_versions_checked_without_fitting": {
+    "scikit-learn": "1.6.1",
+    "numpy": "2.1.3",
+    "scipy": "1.15.3",
+    "joblib": "1.4.2",
+    "threadpoolctl": "3.5.0"
+  },
+  "scientific_design": "Baseline recipes fixed before their outputs; all preexisting candidate results remain frozen. Cohort2isalreadyconsumeddevelopment and this reference addition is posthoc, not independent confirmation; mainphase2admission thresholds are not rewritten.",
+  "pending_sources_no_fits_yet": true,
+  "counts_planned": {
+    "baselines": 2,
+    "masks": 4,
+    "diagnostic_development_groups": 192,
+    "laws": 1536,
+    "nonempty_mask_fits": 6,
+    "extra_native_material_labels": 0
+  }
+}

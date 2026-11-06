@@ -1,0 +1,10 @@
+{
+  "status": "REPORT_SOURCE_READY_BEFORE_ONE_RENDER",
+  "actual_utc": "2026-11-06T02:19:36.711272+00:00",
+  "script_sha256": "f3f96d7c5856528e8e505291f0ca9581550b87787c327166cb17d350a08fe02c",
+  "guide_sha256": "f08ba8a4d678e058f85af89c0d6be7efe55e03364445c601fed0cdec838cf429",
+  "scope": "root-approved read-only frozen summaries to offlineHTML/CSV/PNG; no fits forecasts scoring resampling",
+  "pre_render_development_fixes": "An f-string literal math-brace caused AST parse failure before any output. Fixed literal, simplified phase1 direct summary role selection, added exact audits and correct phase1 model names; no scientific files changed.",
+  "source_imported_or_scientific_run": false,
+  "pending": "single render then source/hash/link/count QA and PNG visual inspection"
+}

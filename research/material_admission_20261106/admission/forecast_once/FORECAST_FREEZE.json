@@ -1,0 +1,20 @@
+{
+  "status": "COMPLETE_ALL_FORECASTS_FROZEN",
+  "actual_utc": "2026-11-05T15:24:11.371956+00:00",
+  "plan_sha256": "aab1111cbcdc5c04f46e51431f0c15bb7cddd557edfe5f55fa75349440cd7d55",
+  "source_sha256": {
+    "admission_io.py": "90011d05e1071b02422622249006cf669bd88e2f7792f8da87f87e0589188466",
+    "niw_predictive.py": "a8d74e5398f2bb606efb195d3395324f014ba3f9b4f801a67b022c1cc6687818",
+    "score_admission.py": "ef7e29f8dab89a0a644011b8c188fcbeaa178095bbd823d082be8887e0aaccc0"
+  },
+  "files": {
+    "VISIBLE_INPUTS.json": "1aeb1d361b4b3f74b6e829c15f046854bce5a14360add3dac93f0e09b5b54477",
+    "MODEL.json": "abc7b42ffa033133e8dd8a05d50a759e670e72fa24d07175c91cc099b44952b2",
+    "FORECASTS.json": "cadadee59b12a07f19d0d8a1fe354b556752aaf2f2efd4e91a287a3b04251019",
+    "EXTRACTION_RECEIPT.json": "c34e5afb592536c8082794965a2295f7e3e27274de6ab86852a07cc00b40bb0c",
+    "EXECUTION_START.json": "a014a0b95a5e07418b1207c932d8810cf09de9f796d4269ff96284d19c804e21"
+  },
+  "forecast_count": 2304,
+  "diagnostic_target_model_access": 0,
+  "physical_full_source_parse_disclosed": true
+}

@@ -1,0 +1,11 @@
+{
+  "actual_finalization_utc": "2026-11-05T15:47:04.101302+00:00",
+  "scope": "Readings and symbolic mathematics only; no implementation or numerical/material runs",
+  "files": {
+    "MATHEMATICAL_GATE_ZH.txt": "286052951afeef1399c0c1835abf8b1a3f0ed74a6ec3a0fcbdf6c6cad2f5ace9",
+    "PRIMARY_SOURCE_LEDGER.json": "496135c7ced48ec876649bfc17ed347f229692f4e962b7665b6ec18bc6df82ed"
+  },
+  "status": "MATH_CONDITIONAL_GO_AWAIT_SOURCE_ADAPTATION_DIAGNOSIS",
+  "newY_reads": 0,
+  "newfits_runs": 0
+}

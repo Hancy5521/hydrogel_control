@@ -1,0 +1,25 @@
+{
+  "actual_utc": "2026-11-06T02:12:49.888197+00:00",
+  "status": "SCORE_AUDIT_SOURCE_PREPARED_BEFORE_SAVED_SCORE_READ",
+  "script_file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\strong_baselines\\independent_review\\audit_baseline_scores.py",
+  "script_sha256": "66e2451739eaf9d58dcbace1cdda93b504218bc45098180c1024e00f5f970e4f",
+  "execution_or_SUT_imports": 0,
+  "score_target_reads": 0,
+  "extent": {
+    "all_forecast_scores": 1536,
+    "Gaussian_CDF_integrals": 768,
+    "RF_energy_scores": 768,
+    "coverage_events": 4608,
+    "summaries": 8
+  },
+  "fixed_numerical_tolerance": {
+    "score_and_summary_abs": 2e-08,
+    "score_and_summary_rel": 2e-10,
+    "continuous_PIT_abs": 2e-12,
+    "continuous_PIT_rel": 2e-12,
+    "empirical_PIT_mass": "exactFractions",
+    "interval_coverage_events": "exact"
+  },
+  "no_original_candidate_rescore": true,
+  "formal_plan_pending_actual_producer_score": true
+}

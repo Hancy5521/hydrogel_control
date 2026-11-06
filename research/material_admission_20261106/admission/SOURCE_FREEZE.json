@@ -1,0 +1,32 @@
+{
+  "kind": "WARM_ONLY_ADMISSION_SOURCE_FREEZE_SYNTAX_ONLY",
+  "actual_utc": "2026-11-05T15:19:15.332474+00:00",
+  "actual_Asia_Shanghai": "2026-11-05T23:19:15.332474+08:00",
+  "source_sha256": {
+    "admission_io.py": "90011d05e1071b02422622249006cf669bd88e2f7792f8da87f87e0589188466",
+    "niw_predictive.py": "a8d74e5398f2bb606efb195d3395324f014ba3f9b4f801a67b022c1cc6687818",
+    "score_admission.py": "ef7e29f8dab89a0a644011b8c188fcbeaa178095bbd823d082be8887e0aaccc0"
+  },
+  "source_bytes": {
+    "admission_io.py": 14617,
+    "niw_predictive.py": 6138,
+    "score_admission.py": 9033
+  },
+  "AST_syntax": "PASS",
+  "source_import_fit_prediction_score_calls": 0,
+  "raw_gzip_open_or_bytes_hash_in_this_preparation": false,
+  "raw_source_sha_reused_from_pinned_metadata": "3d0fc1315b74cf84071f16aa25bb93434dafbc83867beb75872064ac245bd747",
+  "other_input_sha256": {
+    "roles": "0bc81d0400a4076c854af11e654ca3ca9bcbceb249f2ee6c26d356c53ceae9c0",
+    "contract": "2637532951c1e6b86ee8bdaa0cbcdb95a48982509de14770f87487e1b55a241d",
+    "root_scope": "e94362b605db22944b1ae3ca58287998232fef56bffab586f8d2a8e368457023"
+  },
+  "independent_math_receipt": {
+    "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_niw_math\\execution_once\\INDEPENDENT_NIW_T_CRPS_AUDIT.json",
+    "sha256": "8bd92f408575b9e7d033569c2fef9a7e6e3aaa7f3a8a0352df00f0ecff784a9e"
+  },
+  "execution_plan_template_sha256": "53280678ab417ec2325041bc6371f784c416aaebeb97da4e1d3880fc7ea053be",
+  "README_sha256": "7d729741fd0c96ce90122c6a7af825fd02d39e376545d40b5de1dc44342fc0d0",
+  "final_scope_amendment_sha256": "2b49dda07f70260a20b9efbfbba411fad26345c3b769b9536b4199bb566b9bb3",
+  "root_exact_registered_plan_approval_still_required": true
+}

@@ -1,0 +1,47 @@
+{
+  "actual_utc": "2026-11-05T15:35:30.567063+00:00",
+  "question": "Can conditional Gaussian-mixture terminal-risk readout be compressed while all full theta states and observation likelihoods are retained, with native-unit first-moment transport error bounds?",
+  "new_queries": [
+    "Gaussian mixture reduction Wasserstein CRPS error bound",
+    "Bayesian experimental design Gaussian mixture reduction approximation error bound",
+    "posterior mixture compression continuous ranked probability score Wasserstein"
+  ],
+  "query_count": 3,
+  "scope": "Separate bounded direct-neighbor extension of full-joint readout idea, not a repeat of old moment/Taylor search. No new numerical prototype or material fit for this idea.",
+  "selected_primary_reading": [
+    {
+      "url": "https://www.cs.kent.ac.uk/pubs/2007/2797/",
+      "title": "Kullback-Leibler approach to Gaussian mixture reduction",
+      "author": "Andrew R. Runnalls",
+      "version": "2007; institutional bibliographic record",
+      "read_depth": "institution-hosted abstract only; fullPDF not fetched",
+      "license": "not established, no paper redistributed",
+      "known_overlap": "Mixture merging and computable discrepancy bounds are mature; do not claim these new. Record page metadata not independently checked."
+    },
+    {
+      "url": "https://doi.org/10.1109/LSP.2018.2865829",
+      "title": "Wasserstein-Distance-Based Gaussian Mixture Reduction",
+      "version": "2018",
+      "read_depth": "indexed official title/DOI only; publisher page blocked by JS verification",
+      "license": "unknown; no fetch workaround or redistribution",
+      "known_overlap": "Using transport distance for Gaussian mixture reduction is direct prior art; full bound details not verified."
+    },
+    {
+      "url": "https://jmlr.org/papers/v27/24-1199.html",
+      "title": "Finite Neural Networks as Mixtures of Gaussian Processes: From Provable Error Bounds to Prior Selection",
+      "authors": [
+        "Steven Adams",
+        "Andrea Patanè",
+        "Morteza Lahijanian",
+        "Luca Laurenti"
+      ],
+      "version": "JMLR27(33),2026",
+      "read_depth": "officialabstract only; no52pagefullread",
+      "license": "officialJMLR page, paper license not separately checked; no redistribution",
+      "known_overlap": "Provable Wasserstein approximation of distribution mixtures and weighted component transport already exist in another task."
+    }
+  ],
+  "provisional_difference": "Retain fine theta/likelihood for genuine future feedback, approximate only terminal native-CRPS Bayes-risk readout by aggregating predictive component weights. This is a candidate task/compute adaptation, not a certified novel algorithm. Model mismatch, continuous posterior approximation and outcome integration error are separate.",
+  "current_evidence": "Pure mathematical reasoning only, no new implementation/timing/material score for this idea.",
+  "no_novelty_guarantee": true
+}

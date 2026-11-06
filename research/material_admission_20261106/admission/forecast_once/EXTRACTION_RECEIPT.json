@@ -1,0 +1,11 @@
+{
+  "actual_utc": "2026-11-05T15:24:10.588724+00:00",
+  "physical_scope": "Complete compressed JSON source and all payload rows parsed by trusted reader",
+  "model_visible_fit_cells": 192,
+  "model_visible_diagnostic_proxy_cells": 384,
+  "diagnostic_target_cells_explicitly_extracted_for_model": 0,
+  "unselected_rows_used_for_property_statistics_or_model": false,
+  "unselected_rows_discarded_without_response_summaries": true,
+  "truth_extraction_entrypoint": "score_admission only after complete forecast freeze",
+  "access_contract_not_cryptographic_blinding": true
+}

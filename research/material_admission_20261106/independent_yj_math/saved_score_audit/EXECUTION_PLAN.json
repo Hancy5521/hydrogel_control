@@ -1,0 +1,142 @@
+{
+  "kind": "INDEPENDENT_PHASE2_NATIVE_SCORE_ALL_COORDINATES",
+  "registered_actual_utc": "2026-11-05T16:35:19.624107+00:00",
+  "registered_actual_asia_shanghai": "2026-11-06T00:35:19.624107+08:00",
+  "status": "SOURCE_AST_ONLY_AWAITING_ROOT_APPROVAL_NOT_EXECUTED",
+  "script_sha256": "257551f8e648a3ce832d1ada677b25168b53a0663ad0e6133a345427f8e3322a",
+  "phase2_directory": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\phase2_yj",
+  "phase2_plan_sha256": "0bc6c752457732cd535608510ae12da01f89fa0eb83f30fa0d67516dccdc8bba",
+  "producer_source_sha256": {
+    "yj_model.py": "892e90922091b424ab1fd8d94f5901a2a8585861f39e7f3ebe54eca3166e98bc",
+    "run_phase2.py": "3df8cbab90b58b5ad2a56691d34b16bdceb3748d5a033cb5752dd9469c9acf0b",
+    "score_phase2.py": "0160ad1b175ce47295579ad020575b1db63bdd0fce27076c167f81f36217a964"
+  },
+  "parent_source_sha256": {
+    "admission_io.py": "90011d05e1071b02422622249006cf669bd88e2f7792f8da87f87e0589188466",
+    "niw_predictive.py": "a8d74e5398f2bb606efb195d3395324f014ba3f9b4f801a67b022c1cc6687818",
+    "score_admission.py": "ef7e29f8dab89a0a644011b8c188fcbeaa178095bbd823d082be8887e0aaccc0"
+  },
+  "role_sha256": "aee4d2aa78f7522eae8aba2b8ac56e186b3c5d81059a6d3a5b44b16d1042350b",
+  "forecast_freeze_sha256": "dcd88d11401f7f8953e9b921bf3ab2a157740c937084b106e77c61732e806faf",
+  "forecast_artifact_sha256": {
+    "EXECUTION_START.json": "8440b79699eafb7c51c8b6a0da85e5c6c11a2208ee6c2dc7a63a331f3a2c35fe",
+    "VISIBLE_INPUTS.json": "0337959bb3f5d32172f16af816048c9879c0b057c13753e0ea9d1a5adffd2181",
+    "EXTRACTION_RECEIPT.json": "9823abce9269aedc9ebafd92a5af5e4df9b73d1fbca2f2d50980295f1a7ebc1e",
+    "FIT_REFERENCE.json": "a6f28ae8213bd1808f91aec038f65558cb13856354a9706bfca8dc7590bde747",
+    "FORECASTS.json": "d9c8939dba94f2507b1f7a60b6457bfa457907241b5cc41fc705c4bdea254fea"
+  },
+  "score_artifact_sha256": {
+    "RESULTS.json": "4bf07550b9b4840967b6cca13d4a81c190616e7a4bdb47813126793bde2b5711",
+    "DIAGNOSTIC_TRUTH.json": "8c4d416f677cce33215767b572bb05984f9b4a5e66be9c3f5733845b96cb50db",
+    "TARGET_REVEAL_START.json": "a7d16e3b67612cb08f588e367134d853ab2e93e99047985b47527df30f173fb9"
+  },
+  "saved_forecast_audit": {
+    "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_yj_math\\saved_forecast_audit\\execution_once\\INDEPENDENT_PHASE2_FORECAST_AUDIT.json",
+    "sha256": "dd4b611846e90fdcfc1b9478bbf294ebfa04e87a64e488a5c3e0663a84b1fa9c"
+  },
+  "pretarget_extent": {
+    "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_yj_math\\ROOT_NATIVE_SCORE_AUDIT_EXTENT_BEFORE_TARGETS.json",
+    "sha256": "ddf2c760f7e1035f3f7748ca4316625872d477e108694da9e96c84fad466cfa8",
+    "actual_registered_utc": "2026-11-05T16:12:25.725592+00:00",
+    "interpretation": "Rootpretargetscopeexpandedfrom40spotstoall3840beforetargets. Thispostscorecodepreparationdoesnotselectcoordinates orchangefixedtol."
+  },
+  "independent_YJ_helper": {
+    "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_yj_math\\audit_yj_half.py",
+    "sha256": "18db027000ccb9ed656bd6a034d8005847c924f5bcd14fb246018b4c5a056119",
+    "only_functions_used": [
+      "transform",
+      "inverse"
+    ],
+    "not_used_for_CRPS": [
+      "inverse_derivative",
+      "jacobian",
+      "crps_two_coordinates",
+      "anymainorauditfunction"
+    ]
+  },
+  "administrative_approval_time_addendum": {
+    "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\phase2_yj\\ROOT_APPROVAL_TIME_FIELD_ADDENDUM.json",
+    "sha256": "4fe237afac57225fdb3563cba30647821368c4750e78cf4654a25d2146138676",
+    "interpretation": "Standalonecorrectslocaldisplayonly. V2original464576... andallcanonicalUTC/sciencepinsunchanged; not afit rerun."
+  },
+  "coverage": {
+    "all_native_CDF_CRPS_coordinates": 3840,
+    "law_roles": 5,
+    "masks": 4,
+    "actual_diagnostic_formula_groups": 192,
+    "interval_coverage_booleans": 11520,
+    "summary_model_masks": 20,
+    "paired_gain_and_reference_coordinates": 1344,
+    "unique_integral_count": "Runtime reported separately; exactsame lawdictionary+nativeoutcome maycache,3840coordinatecomparisonsmandatory",
+    "no_score_based_subselection": true
+  },
+  "fixed40_spots": {
+    "diagnostic_role_indices": [
+      0,
+      191
+    ],
+    "component_ids": [
+      "jarvis_dft_3d_component_fc908208a460502ba91f",
+      "jarvis_dft_3d_component_118295d8b8514d676f7b"
+    ],
+    "law_roles": [
+      "raw_joint_t",
+      "raw_momentmatched_Gaussian",
+      "yj_joint_t",
+      "yj_latent_momentmatched_Gaussian",
+      "yj_target_marginal"
+    ],
+    "masks": [
+      "none",
+      "e_form",
+      "gap_opt",
+      "both"
+    ],
+    "CDF_integral_coordinates": 40,
+    "unique_formula_groups": 2,
+    "native_integral_comparison_absolute": 5e-07,
+    "native_integral_comparison_relative": 2e-08,
+    "intended_reference": "Independentnative-xCDF/SFintegral; notproducertruncatedweighted-zintegration",
+    "statement": "Coordinatesandloosecrosschecktolerancesfixedbeforephase2truth. Separatefuturecode/sourceplan+approvalrequired; no scoreexecutionortruthaccess authorizedbythisfile."
+  },
+  "numerical_method": {
+    "raw": "NativeCDFviaaffinex=mu+scale*v;CDF/SFsquares,splitnative0andtarget",
+    "YJ": "NativeCDFviaaffinex=s0*v;forwardT(v)insideCDF((T(v)-muU)/scaleU),splitv0andnative target/s0; no inverseJacobian weight in CRPS integral",
+    "quad_epsabs": 2e-10,
+    "quad_epsrel": 2e-10,
+    "quad_limit": 400,
+    "IntegrationWarning_is_error": true,
+    "all_CRPS_comparison_absolute": 5e-07,
+    "all_CRPS_comparison_relative": 2e-08,
+    "CRPS_summary_absolute_relative": "Same5e-7+2e-8relative; not tighter than native coordinate tolerance",
+    "paired_CRPS_difference_bound": "Sum of the two constituent nativeCRPS absolute+relative tolerances",
+    "other_probability_quantile_logdensity_median_summary_absolute": 2e-09,
+    "other_probability_relative": 2e-11,
+    "quad_error_estimate_not_a_rigorous_interval": true
+  },
+  "all_checks": [
+    "3840complete nativeintegrals andexactinventory",
+    "PIT/80-90-95quantiles/coverage/nativepredictivemedianRMSE/logdensity/native-toUlogJac",
+    "20modelmask nativeCRPS/PIT/medianRMSE/intervalsummaries",
+    "192x4YJgain and192x3reference differences",
+    "YJmarginalidentity/noextraindependentlawclaim",
+    "strongmin3nativeunitreference andall4frozengates",
+    "pretargetextent/forecast-beforetruth/scorecompletechronology"
+  ],
+  "approval_required_fields": [
+    "approved:true",
+    "scope:INDEPENDENT_PHASE2_NATIVE_SCORE_ALL_COORDINATES_ONCE",
+    "script_sha256",
+    "plan_sha256"
+  ],
+  "expected_output": "execution_once/INDEPENDENT_PHASE2_ALL_NATIVE_SCORE_AUDIT.json",
+  "prohibitions": [
+    "No producer imports/calls",
+    "No rawgzip/unselectednativecell reads",
+    "No originalfits/predictions/scores/timings replay",
+    "No rootpastmathaudit rerun",
+    "No MonteCarlo/randomsamples",
+    "No postresultspot/tolerance selection"
+  ],
+  "failure_rule": "Onceapprovedexecuteonceandretainanyerror/partialcounts/progress; no rerun or tolerancechange toerase failure. Referenceintegral computationalcost is audit cost, not a benchmark speedclaim."
+}

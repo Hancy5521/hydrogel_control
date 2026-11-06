@@ -1,0 +1,22 @@
+{
+  "kind": "PURE_MATHEMATICAL_READOUT_IDEA_RECEIPT",
+  "actual_utc": "2026-11-05T15:35:03.910595+00:00",
+  "actual_Asia_Shanghai": "2026-11-05T23:35:03.910595+08:00",
+  "artifacts": {
+    "READOUT_TRANSPORT_PROOF_AND_LIMITS_ZH.txt": {
+      "sha256": "7ab294106219fc39d24a18c46b5c9183ffdd7ca3414891225fbcaf1edd2d741f",
+      "bytes": 14477
+    },
+    "MATHEMATICAL_SCOPE.json": {
+      "sha256": "4f8224c8a76ce90bce86cdb87ff15d4628df11fea656edc2fe0cc90fd64173a3",
+      "bytes": 4444
+    }
+  },
+  "checks_performed": "Manual coupling, triangle, tower and folded-normal derivations; exact rational counterexample by hand; JSON parse only. No numerical evaluation or model code.",
+  "new_material_response_reads": 0,
+  "new_model_code_files": 0,
+  "new_fit_prediction_score_or_synthetic_calls": 0,
+  "old_sources_or_current_admission_modified": false,
+  "novelty_or_material_effect_certified": false,
+  "one_resume_point": "Await current real admission; retain this math-only idea without execution. Only if a real feedback task and readout bottleneck exist, define one separately frozen representation experiment."
+}

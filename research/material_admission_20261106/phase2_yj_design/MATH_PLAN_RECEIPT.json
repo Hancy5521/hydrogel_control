@@ -1,0 +1,24 @@
+{
+  "kind": "YJ_HALF_PHASE2_MATH_PLAN_ONLY_RECEIPT",
+  "actual_utc": "2026-11-05T15:47:56.710596+00:00",
+  "actual_Asia_Shanghai": "2026-11-05T23:47:56.710596+08:00",
+  "artifacts": {
+    "YJ_HALF_MATH_AND_SCOPE_ZH.txt": {
+      "sha256": "930bdadeb37d69c108451e5b749a8ecf05979482af1b925f6dab8c607b132808",
+      "bytes": 12000
+    },
+    "PHASE2_PREIMPLEMENTATION_PLAN.json": {
+      "sha256": "b48edc21e3f2c85da507aba4f61c7923512b85d61665c090ed133a706bf28faf",
+      "bytes": 4766
+    }
+  },
+  "actions": "Manual inverse/derivative/tail/moment/CRPS-change-of-variable derivations and JSON syntax only",
+  "new_material_response_reads": 0,
+  "new_group_selection": 0,
+  "new_model_source_files": 0,
+  "fit_prediction_score_or_numerical_calls": 0,
+  "phase1_source_result_gate_changes": 0,
+  "readout_transport_proof_modified_or_bound_to_effectiveness": false,
+  "official_Yeo_Johnson_DOI_endpoint_open": "non-retryable access failure; not retried, no fulltext claim",
+  "one_resume_point": "Root and independent mathematical acceptance before any phase2 source or metadata selection; no native response access authorized."
+}

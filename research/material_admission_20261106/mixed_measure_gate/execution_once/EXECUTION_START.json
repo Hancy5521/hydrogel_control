@@ -1,0 +1,12 @@
+{
+  "actual_utc": "2026-11-06T02:28:02.837432+00:00",
+  "plan_sha256": "0c866c0c1fb41d86a213602f095c62c4118fb24b52460952e6d4bf40b485b61b",
+  "approval_sha256": "0cc4a3482e15c6b65e1e3221f1110487307aa883abe6b86a835ffa02708c8931",
+  "source_sha256": {
+    "mixed_likelihood.py": "a4ee50ef350ee7d9a3dbcf094d615aa68cd059b35d1e422a91068cdc7e65eea4",
+    "run_gate.py": "6b4915725044a2218e0c721721d7ce8c4abbcdce823bce75f09a713cad404a67"
+  },
+  "real_material_data_or_model_fit": 0,
+  "RNG_calls": 0,
+  "mechanism": "known synthetic parameters"
+}

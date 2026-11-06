@@ -1,0 +1,29 @@
+{
+  "actual_utc": "2026-11-05T15:58:26.760347+00:00",
+  "status": "PASS_PHASE2_READ_ONLY_METADATA_ROLE_REVIEW",
+  "role_file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\phase2_yj\\task_contract\\selection_once\\ADMISSION_ROLE_SELECTION.json",
+  "role_sha256": "aee4d2aa78f7522eae8aba2b8ac56e186b3c5d81059a6d3a5b44b16d1042350b",
+  "registered_plan_sha256": "0f871da742e2ad319521318d71a862957cbf90c9ac43b45e0179cb418c5ff16a",
+  "selector_source_sha256": "94cb0089c54b2b1fa414ddb764f6656431876ff9bfc16c23bc36cccee7c2fdfe",
+  "stable16_current_hashes_match": true,
+  "legacy40_and_phase1_256_whole_components_excluded": 296,
+  "no_previous_formula_overlap": true,
+  "hash_prefix_and_tie_order_independently_reconstructed": true,
+  "fit": 64,
+  "diagnostic_development": 192,
+  "remaining_unselected": 8290,
+  "known_eligible_sibling_rows_reserved": 310,
+  "selected_multistructure_groups": 28,
+  "all_minimum_eligible_raw_row_representatives_verified": true,
+  "all_known_sibling_IDs_match_full_eligible_metadata": true,
+  "ineligible_original_siblings_not_enumerated_but_whole_components_reserved": true,
+  "all256_newgroups_development_not_independent_confirmation": true,
+  "NO_GO_phase1_historical_source_hashed_not_decoded_or_recomputed": {
+    "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\admission\\score_once\\RESULTS.json",
+    "sha256": "bd290374748c7b22735a87955e9edd4cdb3112db8706a88bfaaec3d75e3e6ef9",
+    "purpose": "Historicaldecision:phase1NO_GO preserved. Hashonly; no JSON target decoding or score recomputation by selector."
+  },
+  "new_native_or_gzip_reads": 0,
+  "selector_model_or_scoring_reexecutions": 0,
+  "old_source_results_and_packaging_unchanged": true
+}

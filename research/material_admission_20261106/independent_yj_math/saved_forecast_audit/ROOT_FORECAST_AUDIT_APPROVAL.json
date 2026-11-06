@@ -1,0 +1,8 @@
+{
+  "actual_approved_utc": "2026-11-05T16:10:20.237797+00:00",
+  "approved": true,
+  "scope": "INDEPENDENT_PHASE2_SAVED_FORECAST_ONCE",
+  "script_sha256": "da087d238e7b99dd0f4994505cf0b3634f8af5a23526a496af28dcedf43d3742",
+  "plan_sha256": "c754ce74efb446305df298e5d8b65f8517340f7c001edc0977177916d0c37674",
+  "scope_limit": "Only saved64fit+192proxy and3840law arithmetic using pinned own independently verified helpers; no SUT/rawsource/truth/score access or replay. Preserve any failure."
+}

@@ -1,0 +1,8 @@
+{
+  "actual_utc": "2026-11-06T02:31:06.434867+00:00",
+  "url": "https://github.com/usnistgov/jarvis/blob/52eb756d1a5512779502bb6cec564af2fd322c6a/LICENSE.rst",
+  "depth": "full short Terms of Use",
+  "finding": "NIST employee US government works; nonexclusive permission granted subject notice and disclaimer; potential foreign copyright",
+  "source_code_copied_or_executed": false,
+  "does_not_relicense_2018_dataset": true
+}

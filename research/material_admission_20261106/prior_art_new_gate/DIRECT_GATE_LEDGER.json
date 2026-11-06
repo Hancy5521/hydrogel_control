@@ -1,0 +1,81 @@
+{
+  "created_utc": "2026-11-05T15:01:30Z",
+  "created_asia_shanghai": "2026-11-05T23:01:30+08:00",
+  "scope": "New bounded gate: learned material relations, legal paid repair/expansion/target-verification actions, and detectability of approximation-induced decision failure. No response arrays or material model run.",
+  "search_budget": {"maximum_new_queries": 4, "actual_new_queries": 4, "search_calls": 2, "budget_closed": true},
+  "query_time_scope": "Actual first check 2026-11-05T14:56:30Z; queries and reads occurred before creation time. Per-query seconds were not independently captured and are not invented.",
+  "queries": [
+    "Bayesian experimental design multitask unknown correlation task selection materials Bayesian model uncertainty acquisition decision reliability",
+    "Bayesian optimization acquisition function approximation decision error model misspecification nonmyopic value of information posterior correlation",
+    "active learning matrix completion Bayesian covariance uncertainty identifiability missing data co observations experimental design materials",
+    "\"Sequential Selection with Unknown Correlation Structures\" pdf Qu Ryzhov \"Approximation-Aware\" Bayesian Optimization"
+  ],
+  "selected_method_readings": [
+    {
+      "id": "AABO2025v2",
+      "title": "Approximation-Aware Bayesian Optimization",
+      "authors": "Natalie Maus et al.",
+      "url": "https://arxiv.org/html/2406.04308v2",
+      "metadata_url": "https://arxiv.org/abs/2406.04308",
+      "version": "arXiv2406.04308v2, 9 June 2025; v1 6 June 2024; journal/conference not independently verified here",
+      "license": "Article HTML: CC BY-SA 4.0. Repository API license null and attempted LICENSE file404; code reuse permission not established; no code copied.",
+      "actual_reading": "Selected introduction, section2 expected utility/approximate inference, section3.1 EULBO equations7–8, section3.3 KG/one-shot construction, section6 limitations. Not entire experiments/appendices/proofs.",
+      "overlap_and_limit": "Already couples a utility-aware posterior approximation and KG/EI acquisition through a variational objective. Decision-aware approximation is not a new general principle. Selected sections do not establish our material old-row/new-row/paid-native-target task or a certificate separating approximation error from model misspecification.",
+      "official_repo": "https://github.com/nataliemaus/aabo",
+      "repo_commit": "b1072730abe35b14ce024b98012073382bb5ac63",
+      "repo_reading": "Metadata, latest commit diff (loop timing), article-linked provenance only; implementation not ported or executed."
+    },
+    {
+      "id": "IABO_EIML2025",
+      "title": "Imprecise Acquisitions in Bayesian Optimization",
+      "authors": "Valentin Margraf et al.",
+      "url": "https://mcml.ai/uploads/MHR%2B25a.pdf",
+      "version": "15-page authors-institution PDF; footer explicitly 1st Workshop on Epistemic Intelligence in Machine Learning (EIML2025), not established as main-conference paper",
+      "license": "Reuse license not independently established. Citation and selected reading only; no downloaded article added to delivery and no code copied.",
+      "actual_reading": "Selected sections2 and4.1–4.3: hyperposterior mixture, acquisition-level aggregation, candidate maximizers, stochastic dominance and likelihood alpha-cut; appendix algorithms1–2/code pointer. Not full experiments/checklist reading.",
+      "overlap_and_limit": "Already retains hyperparameter-induced acquisition disagreement and aggregates at the decision level. An ensemble disagreement gate or robust ranking is not alone a new mechanism. Its per-model acquisitions are not the same as integrating a shared relation posterior with future observations that update that posterior.",
+      "official_code_pointer": "https://anonymous.4open.science/r/imprecise_acquisitions-5E61/README.md",
+      "repo_commit": null,
+      "repo_reading": "Only pointer in author PDF, not fetched; commit/license unknown."
+    },
+    {
+      "id": "AuxCov2026",
+      "title": "Covariance matrix completion via auxiliary information",
+      "authors": "Joseph R. Steneman and Giuseppe Vinci",
+      "url": "https://link.springer.com/article/10.1007/s11222-026-10963-0",
+      "doi": "10.1007/s11222-026-10963-0",
+      "version": "Statistics and Computing36:226, version of record3 October2026",
+      "license": "Article CC BY4.0; official repository MIT, complete license patch read.",
+      "actual_reading": "Selected section3.1 assumptions,3.2 regression/regularization algorithm,3.3 theorem statement and observed-pair moment requirements (not proof audit),3.4 cross-validation,3.5 bootstrap, section6 and rights/code metadata. Not full neuroscience experiments or appendices.",
+      "overlap_and_limit": "Already completes structurally unobserved covariances using auxiliary relationships and quantifies estimator uncertainty. Extra auxiliary assumptions are essential; incomplete observed marginals cannot by themselves identify every missing relationship. The selected method is static estimation; authors list Bayesian extension as future work.",
+      "official_repo": "https://github.com/gvincistat/auxcov",
+      "repo_commit": "8a9881982b20cf202bb552a2956d3f2be12ba3d7",
+      "repo_reading": "Repository metadata and complete MIT-license commit patch only, no algorithm code port/execution."
+    }
+  ],
+  "additional_primary_abstract_only": {
+    "id": "Qu2015",
+    "title": "Sequential Selection with Unknown Correlation Structures",
+    "authors": "Huashuai Qu, Ilya O. Ryzhov, Michael C. Fu, Zi Ding",
+    "url": "https://pubsonline.informs.org/doi/10.1287/opre.2015.1395",
+    "doi": "10.1287/opre.2015.1395",
+    "version": "Operations Research63(4):931–948, published1 July2015",
+    "license": "Copyright2015 INFORMS; no reuse permission established; no article redistributed.",
+    "actual_reading": "Official publisher abstract and publication metadata only. Publisher ViewPDF link redirected to abstract; full method not accessed, so no claim to independent formula/theorem audit.",
+    "overlap": "Official abstract explicitly describes simultaneous unknown mean/correlation learning and value-of-information selection anticipating future correlation beliefs. Thus learned covariance plus forward-looking sequential selection cannot be presented as an unoccupied general direction."
+  },
+  "access_failures": [
+    {"operation": "Qu publisher ViewPDF", "outcome": "Redirected to abstract; stopped, no bypass."},
+    {"operation": "GitHub fetch_commit first attempt", "outcome": "Connector required repo_full_name/commit_sha rather than guessed argument names; schema error only. Correct schema subsequently succeeded for both public repos."},
+    {"operation": "aabo LICENSE fetch", "outcome": "404; repository metadata also license:null. Absence of a permissive grant is retained as unknown, not inferred permission."},
+    {"operation": "auxcov DESCRIPTION fetch", "outcome": "404; repository metadata/actual LICENCE.txt commit patch used instead. No repeated path guessing."}
+  ],
+  "old_work_reused_not_reread_or_counted": ["Bayes-adaptive planning", "OneShot nonmyopic BO2020", "partialKG function networks2024/2025", "SafeMTBO2024", "MADE", "prior CRPS-VOI/moment/Taylor reviews", "old fixed-ICM allocation failure and exact controls"],
+  "decision": "CONDITIONAL_GO for a material-task and decision-reliability/compute contribution; NO_GO for claiming generic covariance-learning, robust model-disagreement, utility-aware approximation or hypercycle nomenclature as a new algorithm.",
+  "material_response_reads": 0,
+  "fits_scores_scientific_runs": 0,
+  "new_paper_full_reads": 0,
+  "new_selected_method_reads": 3,
+  "additional_abstract_only_reads": 1,
+  "scope_limit": "Four-query bounded search is neither exhaustive novelty clearance nor a guarantee of top-conference acceptance."
+}

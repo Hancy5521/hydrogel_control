@@ -1,0 +1,888 @@
+{
+  "status": "PASS",
+  "start_utc": "2026-11-05T15:57:06.526555+00:00",
+  "end_utc": "2026-11-05T15:57:07.739114+00:00",
+  "script_sha256": "18db027000ccb9ed656bd6a034d8005847c924f5bcd14fb246018b4c5a056119",
+  "plan_sha256": "2b0b0d53e3793f4892bed6a6f651ad77b2bf0f8e8bf1417fe0e212f227856ac2",
+  "approval_sha256": "fdf8b279621e74ddb6a22806874c8238f125c5d99a411a8ba020a33f58ff3600",
+  "scipy": "1.15.3",
+  "Python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]",
+  "families": [
+    {
+      "name": "roundtrip_derivative_and_primary_formula",
+      "status": "PASS",
+      "details": {
+        "roundtrip_coordinates": 9,
+        "rows": [
+          {
+            "v": -1000000.0,
+            "u": -666667666.0002496,
+            "roundtrip_error": 3.4924596548080444e-10,
+            "official_SciPy_formula_error": 0.0,
+            "inverse_derivative_product_error": 2.220446049250313e-16
+          },
+          {
+            "v": -3.5,
+            "u": -5.697294364012261,
+            "roundtrip_error": 8.881784197001252e-16,
+            "official_SciPy_formula_error": 0.0,
+            "inverse_derivative_product_error": 0.0
+          },
+          {
+            "v": -1e-08,
+            "u": -1.0000000025e-08,
+            "roundtrip_error": 1.6543612251060553e-24,
+            "official_SciPy_formula_error": 0.0,
+            "inverse_derivative_product_error": 0.0
+          },
+          {
+            "v": -1e-12,
+            "u": -1.00000000000025e-12,
+            "roundtrip_error": 2.0194839173657902e-28,
+            "official_SciPy_formula_error": 0.0,
+            "inverse_derivative_product_error": 0.0
+          },
+          {
+            "v": 0.0,
+            "u": 0.0,
+            "roundtrip_error": 0.0,
+            "official_SciPy_formula_error": 0.0,
+            "inverse_derivative_product_error": 0.0
+          },
+          {
+            "v": 1e-12,
+            "u": 9.9999999999975e-13,
+            "roundtrip_error": 0.0,
+            "official_SciPy_formula_error": 0.0,
+            "inverse_derivative_product_error": 0.0
+          },
+          {
+            "v": 1e-08,
+            "u": 9.999999975e-09,
+            "roundtrip_error": 0.0,
+            "official_SciPy_formula_error": 1.6543612251060553e-24,
+            "inverse_derivative_product_error": 0.0
+          },
+          {
+            "v": 2.5,
+            "u": 1.7416573867739416,
+            "roundtrip_error": 4.440892098500626e-16,
+            "official_SciPy_formula_error": 2.220446049250313e-16,
+            "inverse_derivative_product_error": 2.220446049250313e-16
+          },
+          {
+            "v": 1000000.0,
+            "u": 1998.0009999997499,
+            "roundtrip_error": 2.3283064365386963e-10,
+            "official_SciPy_formula_error": 2.2737367544323206e-13,
+            "inverse_derivative_product_error": 1.1102230246251565e-16
+          }
+        ],
+        "finite_difference_coordinates": 5,
+        "derivatives": [
+          {
+            "coordinate": -4.0,
+            "step": 5e-05,
+            "forward_error": 6.998845947236987e-13,
+            "inverse_error": 3.991029728922513e-12
+          },
+          {
+            "coordinate": -0.1,
+            "step": 1.1000000000000001e-05,
+            "forward_error": 5.232703159663288e-12,
+            "inverse_error": 1.4389489599864191e-11
+          },
+          {
+            "coordinate": 0.0,
+            "step": 1e-05,
+            "forward_error": 4.1664449668132875e-12,
+            "inverse_error": 8.333334022836425e-12
+          },
+          {
+            "coordinate": 0.2,
+            "step": 1.2e-05,
+            "forward_error": 1.2191581078013769e-11,
+            "inverse_error": 4.0611958240788226e-13
+          },
+          {
+            "coordinate": 3.0,
+            "step": 4e-05,
+            "forward_error": 3.275602011854062e-12,
+            "inverse_error": 5.8264504332328215e-12
+          }
+        ]
+      }
+    },
+    {
+      "name": "CDF_quantiles_intervals_and_density_Jacobian",
+      "status": "PASS",
+      "details": {
+        "quantile_coordinates": 40,
+        "quantiles": [
+          {
+            "configuration": 0,
+            "df": null,
+            "p": 1e-06,
+            "native_quantile": -2.9542142435324448,
+            "CDF_inverse_error": 2.329340604949326e-21
+          },
+          {
+            "configuration": 0,
+            "df": null,
+            "p": 0.025,
+            "native_quantile": -0.3406063357407024,
+            "CDF_inverse_error": 3.469446951953614e-17
+          },
+          {
+            "configuration": 0,
+            "df": null,
+            "p": 0.5,
+            "native_quantile": 2.4000000000000004,
+            "CDF_inverse_error": 0.0
+          },
+          {
+            "configuration": 0,
+            "df": null,
+            "p": 0.975,
+            "native_quantile": 6.245909564207244,
+            "CDF_inverse_error": 1.1102230246251565e-16
+          },
+          {
+            "configuration": 0,
+            "df": null,
+            "p": 0.999999,
+            "native_quantile": 13.639438981802776,
+            "CDF_inverse_error": 0.0
+          },
+          {
+            "configuration": 0,
+            "df": 5.0,
+            "p": 1e-06,
+            "native_quantile": -14.437889923625322,
+            "CDF_inverse_error": 3.955008588967142e-18
+          },
+          {
+            "configuration": 0,
+            "df": 5.0,
+            "p": 0.025,
+            "native_quantile": -0.9919898075420281,
+            "CDF_inverse_error": 0.0
+          },
+          {
+            "configuration": 0,
+            "df": 5.0,
+            "p": 0.5,
+            "native_quantile": 2.4000000000000004,
+            "CDF_inverse_error": 0.0
+          },
+          {
+            "configuration": 0,
+            "df": 5.0,
+            "p": 0.975,
+            "native_quantile": 7.670113784082291,
+            "CDF_inverse_error": 0.0
+          },
+          {
+            "configuration": 0,
+            "df": 5.0,
+            "p": 0.999999,
+            "native_quantile": 132.3742934610908,
+            "CDF_inverse_error": 0.0
+          },
+          {
+            "configuration": 0,
+            "df": 69.0,
+            "p": 1e-06,
+            "native_quantile": -3.3048554925045814,
+            "CDF_inverse_error": 2.617109460867134e-16
+          },
+          {
+            "configuration": 0,
+            "df": 69.0,
+            "p": 0.025,
+            "native_quantile": -0.37985178100865263,
+            "CDF_inverse_error": 1.3877787807814457e-17
+          },
+          {
+            "configuration": 0,
+            "df": 69.0,
+            "p": 0.5,
+            "native_quantile": 2.4000000000000004,
+            "CDF_inverse_error": 0.0
+          },
+          {
+            "configuration": 0,
+            "df": 69.0,
+            "p": 0.975,
+            "native_quantile": 6.324600535513224,
+            "CDF_inverse_error": 0.0
+          },
+          {
+            "configuration": 0,
+            "df": 69.0,
+            "p": 0.999999,
+            "native_quantile": 15.003982593780725,
+            "CDF_inverse_error": 2.220446049250313e-16
+          },
+          {
+            "configuration": 0,
+            "df": 71.0,
+            "p": 1e-06,
+            "native_quantile": -3.2943941154406007,
+            "CDF_inverse_error": 2.0044335894591533e-16
+          },
+          {
+            "configuration": 0,
+            "df": 71.0,
+            "p": 0.025,
+            "native_quantile": -0.3787313202908873,
+            "CDF_inverse_error": 0.0
+          },
+          {
+            "configuration": 0,
+            "df": 71.0,
+            "p": 0.5,
+            "native_quantile": 2.4000000000000004,
+            "CDF_inverse_error": 0.0
+          },
+          {
+            "configuration": 0,
+            "df": 71.0,
+            "p": 0.975,
+            "native_quantile": 6.322341520181929,
+            "CDF_inverse_error": 0.0
+          },
+          {
+            "configuration": 0,
+            "df": 71.0,
+            "p": 0.999999,
+            "native_quantile": 14.961846369256024,
+            "CDF_inverse_error": 2.220446049250313e-16
+          },
+          {
+            "configuration": 1,
+            "df": null,
+            "p": 1e-06,
+            "native_quantile": -3.272884620024308,
+            "CDF_inverse_error": 6.988021814847978e-21
+          },
+          {
+            "configuration": 1,
+            "df": null,
+            "p": 0.025,
+            "native_quantile": -1.9890216054900325,
+            "CDF_inverse_error": 1.8041124150158794e-16
+          },
+          {
+            "configuration": 1,
+            "df": null,
+            "p": 0.5,
+            "native_quantile": -0.8594057805606322,
+            "CDF_inverse_error": 0.0
+          },
+          {
+            "configuration": 1,
+            "df": null,
+            "p": 0.975,
+            "native_quantile": 1.1515652383445807,
+            "CDF_inverse_error": 1.1102230246251565e-16
+          },
+          {
+            "configuration": 1,
+            "df": null,
+            "p": 0.999999,
+            "native_quantile": 8.491832968530183,
+            "CDF_inverse_error": 0.0
+          },
+          {
+            "configuration": 1,
+            "df": 5.0,
+            "p": 1e-06,
+            "native_quantile": -9.601949977607651,
+            "CDF_inverse_error": 3.95310276483582e-18
+          },
+          {
+            "configuration": 1,
+            "df": 5.0,
+            "p": 0.025,
+            "native_quantile": -2.2924721876307754,
+            "CDF_inverse_error": 0.0
+          },
+          {
+            "configuration": 1,
+            "df": 5.0,
+            "p": 0.5,
+            "native_quantile": -0.8594057805606322,
+            "CDF_inverse_error": 0.0
+          },
+          {
+            "configuration": 1,
+            "df": 5.0,
+            "p": 0.975,
+            "native_quantile": 2.2790801380532404,
+            "CDF_inverse_error": 0.0
+          },
+          {
+            "configuration": 1,
+            "df": 5.0,
+            "p": 0.999999,
+            "native_quantile": 224.49725511137723,
+            "CDF_inverse_error": 0.0
+          },
+          {
+            "configuration": 1,
+            "df": 69.0,
+            "p": 1e-06,
+            "native_quantile": -3.4550424080175546,
+            "CDF_inverse_error": 2.617206869656068e-16
+          },
+          {
+            "configuration": 1,
+            "df": 69.0,
+            "p": 0.025,
+            "native_quantile": -2.0068579042162322,
+            "CDF_inverse_error": 1.3877787807814457e-17
+          },
+          {
+            "configuration": 1,
+            "df": 69.0,
+            "p": 0.5,
+            "native_quantile": -0.8594057805606322,
+            "CDF_inverse_error": 0.0
+          },
+          {
+            "configuration": 1,
+            "df": 69.0,
+            "p": 0.975,
+            "native_quantile": 1.2089529395043537,
+            "CDF_inverse_error": 0.0
+          },
+          {
+            "configuration": 1,
+            "df": 69.0,
+            "p": 0.999999,
+            "native_quantile": 10.151067598123891,
+            "CDF_inverse_error": 2.220446049250313e-16
+          },
+          {
+            "configuration": 1,
+            "df": 71.0,
+            "p": 1e-06,
+            "native_quantile": -3.4495851364811667,
+            "CDF_inverse_error": 2.0044335894591533e-16
+          },
+          {
+            "configuration": 1,
+            "df": 71.0,
+            "p": 0.025,
+            "native_quantile": -2.006347799856175,
+            "CDF_inverse_error": 4.163336342344337e-17
+          },
+          {
+            "configuration": 1,
+            "df": 71.0,
+            "p": 0.5,
+            "native_quantile": -0.8594057805606322,
+            "CDF_inverse_error": 0.0
+          },
+          {
+            "configuration": 1,
+            "df": 71.0,
+            "p": 0.975,
+            "native_quantile": 1.2072968772709094,
+            "CDF_inverse_error": 0.0
+          },
+          {
+            "configuration": 1,
+            "df": 71.0,
+            "p": 0.999999,
+            "native_quantile": 10.09879971602632,
+            "CDF_inverse_error": 2.220446049250313e-16
+          }
+        ],
+        "density_normalizations": 8,
+        "normalizations": [
+          {
+            "configuration": 0,
+            "df": null,
+            "native_density_integral": 1.0,
+            "reported_quad_error": 9.92040462606424e-10
+          },
+          {
+            "configuration": 0,
+            "df": 5.0,
+            "native_density_integral": 0.999999999996777,
+            "reported_quad_error": 1.1801852284471147e-09
+          },
+          {
+            "configuration": 0,
+            "df": 69.0,
+            "native_density_integral": 0.9999999999999978,
+            "reported_quad_error": 8.564830990964852e-10
+          },
+          {
+            "configuration": 0,
+            "df": 71.0,
+            "native_density_integral": 1.0000000000000069,
+            "reported_quad_error": 8.500901773951225e-10
+          },
+          {
+            "configuration": 1,
+            "df": null,
+            "native_density_integral": 0.9999999999999993,
+            "reported_quad_error": 1.1864341376447677e-09
+          },
+          {
+            "configuration": 1,
+            "df": 5.0,
+            "native_density_integral": 0.9999999999999994,
+            "reported_quad_error": 4.8188792467681396e-11
+          },
+          {
+            "configuration": 1,
+            "df": 69.0,
+            "native_density_integral": 0.9999999999999977,
+            "reported_quad_error": 1.300371972240121e-09
+          },
+          {
+            "configuration": 1,
+            "df": 71.0,
+            "native_density_integral": 1.0000000000000069,
+            "reported_quad_error": 1.2947442023737707e-09
+          }
+        ],
+        "CDF_density_derivative_coordinates": 16,
+        "density_derivatives": [
+          {
+            "configuration": 0,
+            "df": null,
+            "native_x": -3.2,
+            "CDF_derivative_density_error": 1.5215236737903e-14
+          },
+          {
+            "configuration": 0,
+            "df": null,
+            "native_x": 2.4,
+            "CDF_derivative_density_error": 1.3021639322374767e-11
+          },
+          {
+            "configuration": 0,
+            "df": 5.0,
+            "native_x": -3.2,
+            "CDF_derivative_density_error": 8.73385998939602e-13
+          },
+          {
+            "configuration": 0,
+            "df": 5.0,
+            "native_x": 2.4,
+            "CDF_derivative_density_error": 1.4716228236011375e-11
+          },
+          {
+            "configuration": 0,
+            "df": 69.0,
+            "native_x": -3.2,
+            "CDF_derivative_density_error": 4.8045023363398054e-14
+          },
+          {
+            "configuration": 0,
+            "df": 69.0,
+            "native_x": 2.4,
+            "CDF_derivative_density_error": 1.3275852639438313e-11
+          },
+          {
+            "configuration": 0,
+            "df": 71.0,
+            "native_x": -3.2,
+            "CDF_derivative_density_error": 4.678742338221423e-14
+          },
+          {
+            "configuration": 0,
+            "df": 71.0,
+            "native_x": 2.4,
+            "CDF_derivative_density_error": 1.480141009757574e-11
+          },
+          {
+            "configuration": 1,
+            "df": null,
+            "native_x": -3.2,
+            "CDF_derivative_density_error": 8.213332798438517e-13
+          },
+          {
+            "configuration": 1,
+            "df": null,
+            "native_x": 2.4,
+            "CDF_derivative_density_error": 2.524038270057538e-12
+          },
+          {
+            "configuration": 1,
+            "df": 5.0,
+            "native_x": -3.2,
+            "CDF_derivative_density_error": 1.133165089539645e-11
+          },
+          {
+            "configuration": 1,
+            "df": 5.0,
+            "native_x": 2.4,
+            "CDF_derivative_density_error": 1.9712061843923934e-12
+          },
+          {
+            "configuration": 1,
+            "df": 69.0,
+            "native_x": -3.2,
+            "CDF_derivative_density_error": 1.650845123579367e-12
+          },
+          {
+            "configuration": 1,
+            "df": 69.0,
+            "native_x": 2.4,
+            "CDF_derivative_density_error": 2.8433783105796806e-12
+          },
+          {
+            "configuration": 1,
+            "df": 71.0,
+            "native_x": -3.2,
+            "CDF_derivative_density_error": 1.6242195712305382e-12
+          },
+          {
+            "configuration": 1,
+            "df": 71.0,
+            "native_x": 2.4,
+            "CDF_derivative_density_error": 2.5141971837783217e-12
+          }
+        ],
+        "synthetic_interval_event_checks": 48,
+        "PIT_coverage_interpretation": "Same frozen probability law: monotone coordinate change preserves PIT and interval events, not a calibration repair."
+      }
+    },
+    {
+      "name": "native_CRPS_two_coordinate_integrals",
+      "status": "PASS",
+      "details": {
+        "fixed_cases": 16,
+        "rows": [
+          {
+            "configuration": 0,
+            "df": null,
+            "native_target": -3.2,
+            "native_x_CDF_integral": 4.795224544821299,
+            "latent_z_weighted_CDF_integral": 4.7952245448212985,
+            "absolute_error": 8.881784197001252e-16,
+            "native_reported_quad_error": 5.329808954276602e-10,
+            "latent_reported_quad_error": 6.626105545018758e-10
+          },
+          {
+            "configuration": 0,
+            "df": null,
+            "native_target": 2.4,
+            "native_x_CDF_integral": 0.3926119132046567,
+            "latent_z_weighted_CDF_integral": 0.39261191320465716,
+            "absolute_error": 4.440892098500626e-16,
+            "native_reported_quad_error": 1.476175776284531e-10,
+            "latent_reported_quad_error": 2.6535330890548423e-09
+          },
+          {
+            "configuration": 0,
+            "df": 5.0,
+            "native_target": -3.2,
+            "native_x_CDF_integral": 4.665285170512185,
+            "latent_z_weighted_CDF_integral": 4.665285170512127,
+            "absolute_error": 5.773159728050814e-14,
+            "native_reported_quad_error": 4.047790317453339e-09,
+            "latent_reported_quad_error": 5.86346719075764e-10
+          },
+          {
+            "configuration": 0,
+            "df": 5.0,
+            "native_target": 2.4,
+            "native_x_CDF_integral": 0.43187686643958334,
+            "latent_z_weighted_CDF_integral": 0.43187686643958323,
+            "absolute_error": 1.1102230246251565e-16,
+            "native_reported_quad_error": 2.4999321642459782e-12,
+            "latent_reported_quad_error": 2.8002058610509468e-11
+          },
+          {
+            "configuration": 0,
+            "df": 69.0,
+            "native_target": -3.2,
+            "native_x_CDF_integral": 4.787060021085793,
+            "latent_z_weighted_CDF_integral": 4.787060021085791,
+            "absolute_error": 1.7763568394002505e-15,
+            "native_reported_quad_error": 2.502424401503744e-10,
+            "latent_reported_quad_error": 4.5531547337484486e-10
+          },
+          {
+            "configuration": 0,
+            "df": 69.0,
+            "native_target": 2.4,
+            "native_x_CDF_integral": 0.39518293835348806,
+            "latent_z_weighted_CDF_integral": 0.39518293835348767,
+            "absolute_error": 3.885780586188048e-16,
+            "native_reported_quad_error": 9.93351006388359e-10,
+            "latent_reported_quad_error": 8.577693002892055e-10
+          },
+          {
+            "configuration": 0,
+            "df": 71.0,
+            "native_target": -3.2,
+            "native_x_CDF_integral": 4.787292840620711,
+            "latent_z_weighted_CDF_integral": 4.787292840620711,
+            "absolute_error": 0.0,
+            "native_reported_quad_error": 2.554812402573455e-10,
+            "latent_reported_quad_error": 4.661805258393557e-10
+          },
+          {
+            "configuration": 0,
+            "df": 71.0,
+            "native_target": 2.4,
+            "native_x_CDF_integral": 0.39510997662773456,
+            "latent_z_weighted_CDF_integral": 0.3951099766277341,
+            "absolute_error": 4.440892098500626e-16,
+            "native_reported_quad_error": 9.750952761616728e-10,
+            "latent_reported_quad_error": 8.510764072766372e-10
+          },
+          {
+            "configuration": 1,
+            "df": null,
+            "native_target": -3.2,
+            "native_x_CDF_integral": 2.019227657955133,
+            "latent_z_weighted_CDF_integral": 2.0192276579551325,
+            "absolute_error": 4.440892098500626e-16,
+            "native_reported_quad_error": 1.4122359341228008e-10,
+            "latent_reported_quad_error": 2.859569176685582e-10
+          },
+          {
+            "configuration": 1,
+            "df": null,
+            "native_target": 2.4,
+            "native_x_CDF_integral": 2.740675479400979,
+            "latent_z_weighted_CDF_integral": 2.7406754794009798,
+            "absolute_error": 8.881784197001252e-16,
+            "native_reported_quad_error": 5.651647287774313e-10,
+            "latent_reported_quad_error": 1.1079907593518979e-09
+          },
+          {
+            "configuration": 1,
+            "df": 5.0,
+            "native_target": -3.2,
+            "native_x_CDF_integral": 1.964245059486965,
+            "latent_z_weighted_CDF_integral": 1.964245059486674,
+            "absolute_error": 2.90878432451791e-13,
+            "native_reported_quad_error": 1.2398071351209034e-09,
+            "latent_reported_quad_error": 1.1272140382582907e-10
+          },
+          {
+            "configuration": 1,
+            "df": 5.0,
+            "native_target": 2.4,
+            "native_x_CDF_integral": 2.611016159657631,
+            "latent_z_weighted_CDF_integral": 2.611016159657205,
+            "absolute_error": 4.2588155224621005e-13,
+            "native_reported_quad_error": 1.8619851494412664e-09,
+            "latent_reported_quad_error": 1.5758814659502938e-09
+          },
+          {
+            "configuration": 1,
+            "df": 69.0,
+            "native_target": -3.2,
+            "native_x_CDF_integral": 2.0157654693500895,
+            "latent_z_weighted_CDF_integral": 2.0157654693500886,
+            "absolute_error": 8.881784197001252e-16,
+            "native_reported_quad_error": 2.1184422607677157e-10,
+            "latent_reported_quad_error": 2.7256094112313476e-10
+          },
+          {
+            "configuration": 1,
+            "df": 69.0,
+            "native_target": 2.4,
+            "native_x_CDF_integral": 2.7314748311576644,
+            "latent_z_weighted_CDF_integral": 2.7314748311576644,
+            "absolute_error": 0.0,
+            "native_reported_quad_error": 6.241196830835662e-10,
+            "latent_reported_quad_error": 4.47644617697136e-10
+          },
+          {
+            "configuration": 1,
+            "df": 71.0,
+            "native_target": -3.2,
+            "native_x_CDF_integral": 2.015864308824732,
+            "latent_z_weighted_CDF_integral": 2.0158643088247317,
+            "absolute_error": 4.440892098500626e-16,
+            "native_reported_quad_error": 2.2010770908988762e-10,
+            "latent_reported_quad_error": 2.8548756119228283e-10
+          },
+          {
+            "configuration": 1,
+            "df": 71.0,
+            "native_target": 2.4,
+            "native_x_CDF_integral": 2.731735291077491,
+            "latent_z_weighted_CDF_integral": 2.7317352910774906,
+            "absolute_error": 4.440892098500626e-16,
+            "native_reported_quad_error": 6.287245228481541e-10,
+            "latent_reported_quad_error": 4.5994051589708103e-10
+          }
+        ],
+        "scope": "Two independent coordinate quadratures of same exact CDF, not independent models or material measurements. Error estimates are not outward-rounded certificates."
+      }
+    },
+    {
+      "name": "finite_moments_median_and_atom_preservation",
+      "status": "PASS",
+      "details": {
+        "tail_moment_thresholds": [
+          {
+            "df": 1.0,
+            "native_first_absolute_moment_by_tail_theory": false,
+            "native_second_moment_by_tail_theory": false
+          },
+          {
+            "df": 2.0,
+            "native_first_absolute_moment_by_tail_theory": false,
+            "native_second_moment_by_tail_theory": false
+          },
+          {
+            "df": 4.0,
+            "native_first_absolute_moment_by_tail_theory": true,
+            "native_second_moment_by_tail_theory": false
+          },
+          {
+            "df": 5.0,
+            "native_first_absolute_moment_by_tail_theory": true,
+            "native_second_moment_by_tail_theory": true
+          },
+          {
+            "df": 69.0,
+            "native_first_absolute_moment_by_tail_theory": true,
+            "native_second_moment_by_tail_theory": true
+          },
+          {
+            "df": 71.0,
+            "native_first_absolute_moment_by_tail_theory": true,
+            "native_second_moment_by_tail_theory": true
+          }
+        ],
+        "finite_moment_laws_integrated": 8,
+        "moments": [
+          {
+            "configuration": 0,
+            "df": null,
+            "native_mean_density_integral": 2.5435293163934096,
+            "native_median_inverse_latent_location": 2.4000000000000004,
+            "strict_Jensen_mean_minus_median": 0.14352931639340927,
+            "native_absolute_first_moment_integral": 2.587807530965626,
+            "native_second_moment_integral": 9.336967795691608,
+            "reported_quad_errors": [
+              9.795438501829398e-10,
+              9.795438501829398e-10,
+              1.6497932208901732e-08
+            ]
+          },
+          {
+            "configuration": 0,
+            "df": 5.0,
+            "native_mean_density_integral": 2.631845984391217,
+            "native_median_inverse_latent_location": 2.4000000000000004,
+            "strict_Jensen_mean_minus_median": 0.23184598439121684,
+            "native_absolute_first_moment_integral": 2.7684914384881663,
+            "native_second_moment_integral": 12.146716307716593,
+            "reported_quad_errors": [
+              3.771762172946983e-09,
+              3.771762172946983e-09,
+              1.2790068542213284e-08
+            ]
+          },
+          {
+            "configuration": 0,
+            "df": 69.0,
+            "native_mean_density_integral": 2.547707201975532,
+            "native_median_inverse_latent_location": 2.4000000000000004,
+            "strict_Jensen_mean_minus_median": 0.14770720197553144,
+            "native_absolute_first_moment_integral": 2.596597269667019,
+            "native_second_moment_integral": 9.44805688994476,
+            "reported_quad_errors": [
+              5.330981697272672e-09,
+              5.330981697272672e-09,
+              6.911064314721264e-09
+            ]
+          },
+          {
+            "configuration": 0,
+            "df": 71.0,
+            "native_mean_density_integral": 2.5475863524206748,
+            "native_median_inverse_latent_location": 2.4000000000000004,
+            "strict_Jensen_mean_minus_median": 0.14758635242067442,
+            "native_absolute_first_moment_integral": 2.596342596701124,
+            "native_second_moment_integral": 9.444829011371688,
+            "reported_quad_errors": [
+              5.806191436512818e-10,
+              5.806191436512818e-10,
+              7.1165717477114064e-09
+            ]
+          },
+          {
+            "configuration": 1,
+            "df": null,
+            "native_mean_density_integral": -0.7576320034062671,
+            "native_median_inverse_latent_location": -0.8594057805606322,
+            "strict_Jensen_mean_minus_median": 0.10177377715436509,
+            "native_absolute_first_moment_integral": 0.9441136392756433,
+            "native_second_moment_integral": 1.198977077255983,
+            "reported_quad_errors": [
+              2.591460205018079e-09,
+              2.591460205018079e-09,
+              1.3351796539451838e-09
+            ]
+          },
+          {
+            "configuration": 1,
+            "df": 5.0,
+            "native_mean_density_integral": -0.6587373608647347,
+            "native_median_inverse_latent_location": -0.8594057805606322,
+            "strict_Jensen_mean_minus_median": 0.20066841969589755,
+            "native_absolute_first_moment_integral": 1.0983537451401513,
+            "native_second_moment_integral": 2.851104477299761,
+            "reported_quad_errors": [
+              1.0853682476967042e-09,
+              1.0853682476967042e-09,
+              2.925598733513228e-10
+            ]
+          },
+          {
+            "configuration": 1,
+            "df": 69.0,
+            "native_mean_density_integral": -0.7535414890683945,
+            "native_median_inverse_latent_location": -0.8594057805606322,
+            "strict_Jensen_mean_minus_median": 0.10586429149223775,
+            "native_absolute_first_moment_integral": 0.9512154945785878,
+            "native_second_moment_integral": 1.2248758537408553,
+            "reported_quad_errors": [
+              2.1524940848016336e-09,
+              2.1524940848016336e-09,
+              1.3554817832397832e-09
+            ]
+          },
+          {
+            "configuration": 1,
+            "df": 71.0,
+            "native_mean_density_integral": -0.7536606408783133,
+            "native_median_inverse_latent_location": -0.8594057805606322,
+            "strict_Jensen_mean_minus_median": 0.10574513968231891,
+            "native_absolute_first_moment_integral": 0.951009689099414,
+            "native_second_moment_integral": 1.224102753218627,
+            "reported_quad_errors": [
+              1.9998025230777928e-09,
+              1.9998025230777928e-09,
+              1.393785053603925e-09
+            ]
+          }
+        ],
+        "point_mass_at_zero_before": 0.5,
+        "point_mass_at_zero_after": 0.5,
+        "important_limit": "Moment existence proved by asymptotic polynomial tails, not by finite quadrature. Integrals only crosscheck finite df5/69/71 and Normal cases. Monotone YJ does not remove atoms; inverse location is a median, not a raw mean."
+      }
+    }
+  ],
+  "native_material_reads": 0,
+  "producer_imports_or_executions": 0,
+  "random_samples": 0,
+  "scope": "Fixed hypothetical mathematical audit only; no new material model or cohort evidence, no calibration guarantee or numerical interval proof."
+}

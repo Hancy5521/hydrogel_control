@@ -1,0 +1,30 @@
+{
+  "actual_review_utc": "2026-11-05T16:41:43.666192+00:00",
+  "status": "PASS_READ_ONLY_NO_RERUN",
+  "result_sha256": "5c09b7b672d88921ae461d2d0bcd2afad79200170e09794ffae1090e039cba7b",
+  "audit_source_and_plan_unchanged": true,
+  "coverage": {
+    "native_CDF_score_coordinates": 3840,
+    "unique_exact_law_outcome_native_integrals": 3060,
+    "cache_hits_not_new_observations": 780,
+    "fixed_spot_coordinates": 40,
+    "unique_spot_formula_groups": 2,
+    "PIT_quantile_median_logdensity_Jacobian_coordinates": 3840,
+    "coverage_booleans": 11520,
+    "model_mask_summaries": 20,
+    "paired_gain_and_reference_coordinates": 1344
+  },
+  "max_native_CRPS_error": 5.987743634250364e-11,
+  "max_summary_CRPS_error": 1.8545165403338615e-12,
+  "admission_criteria_preserved": {
+    "conditional_gain_at_least2percent": true,
+    "within2percent_all_same_information_strong_references": true,
+    "dual90coverage_at_least0p80": true,
+    "dual_PIT_ECDF_deviation_at_most0p15": true
+  },
+  "admission_status_preserved": "PASS_FOR_SEPARATE_FEEDBACK_TASK_DESIGN_ONLY",
+  "scope": "Read ownsaved independentresult/counts andsource/planhashes only; zero producerimport,nativegzipread,quadrature rerun or statisticalfit. NumericalauditPASS does notestablishcalibration/independentconfirmation/agentgain/fieldstrongbaseline win. RawmodelPITalso passed this newdevelopmentcohort; do notattributeallimprovementtofixingpreviouscalibration.",
+  "pretarget_fullinventory_scope_preserved": true,
+  "directnative_CDF_not_producer_inverseJac_integrator": true,
+  "new_material_measurements": 0
+}

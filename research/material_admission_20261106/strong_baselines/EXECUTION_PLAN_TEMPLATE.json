@@ -1,0 +1,131 @@
+{
+  "kind": "posthoc_fixed_learning_strong_baseline_check",
+  "status": "TEMPLATE",
+  "registered_actual_utc": null,
+  "source_sha256": {
+    "baseline_models.py": "a602b50663b64490af26a11a65b5effb7753e61aa6e9b8f71c8221a78898cfd5",
+    "run_baselines.py": "15a545172bedbf7af04d8fca5a7608f954be89e89d169087ea88aa3ed748c6c5",
+    "score_baselines.py": "0199da5a70f4290df4ae685879961ab92003e1f8fe7123f55f2b4b0220b463d2"
+  },
+  "parent_source_sha256": {
+    "admission_io.py": "90011d05e1071b02422622249006cf669bd88e2f7792f8da87f87e0589188466",
+    "niw_predictive.py": "a8d74e5398f2bb606efb195d3395324f014ba3f9b4f801a67b022c1cc6687818",
+    "score_admission.py": "ef7e29f8dab89a0a644011b8c188fcbeaa178095bbd823d082be8887e0aaccc0"
+  },
+  "configuration": {
+    "version": "posthoc_fixed_learning_baselines_v1",
+    "fit_rows": 64,
+    "diagnostic_development_rows": 192,
+    "methods": [
+      "gpr_fixed_recipe",
+      "forest_all_original_leaf_cdf"
+    ],
+    "masks": [
+      [],
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "mask_names": [
+      "none",
+      "e_form",
+      "gap_opt",
+      "both"
+    ],
+    "nonempty_mask_fits_per_method": 3,
+    "actual_total_fits": 6,
+    "none_mask_fits": 0,
+    "forecast_laws": 1536,
+    "native_features": [
+      "e_form",
+      "gap opt"
+    ],
+    "native_target": "bulk modulus",
+    "feature_transform": "fit64 means and sampleSD in float64, no diagnostic values in fit",
+    "GPR": {
+      "normalize_y": true,
+      "alpha": 1e-08,
+      "optimizer": "fmin_l_bfgs_b",
+      "n_restarts_optimizer": 0,
+      "random_state": 20261106,
+      "kernel": "Constant(1,[.01,100])*RBF(ones(k),[.01,100])+White(.01,[1e-6,10])",
+      "feature_dtype": "float64",
+      "test_noise": "learned WhiteKernel included, alpha only training diagonal",
+      "none": "fixed fit-target mean/sampleSD Gaussian, no GP fit"
+    },
+    "forest": {
+      "n_estimators": 256,
+      "min_samples_leaf": 3,
+      "max_features": 1,
+      "bootstrap": true,
+      "criterion": "squared_error",
+      "random_state": 20261106,
+      "n_jobs": 2,
+      "max_depth": null,
+      "tree_input_dtype": "float32",
+      "CDF_weight_rule": "average1/n_leaf_all_original; includesOOB, no bootstrap multiplicity",
+      "mass_arithmetic": "exact Fraction over64original source target positions",
+      "none": "uniform64empirical native target marginal, no fit",
+      "scope": "explicit QRF-inspired all-original-leaf variant, not an official QRF package run"
+    },
+    "libraries": {
+      "scikit-learn": "1.6.1",
+      "numpy": "2.1.3",
+      "scipy": "1.15.3",
+      "joblib": "1.4.2"
+    },
+    "coverage_levels": [
+      0.8,
+      0.9,
+      0.95
+    ],
+    "RMSE_point_forecast": "predictive_median",
+    "empirical_quantile": "inf{x:F(x)>=p}, exact rational mass, source-value ties kept",
+    "empirical_PIT": "left/right/midpoint separately; no continuous uniformity gate",
+    "candidate_comparison": "read frozen phase2summary only, candidate/best-new both-mask mean nativeCRPS ratio",
+    "posthoc_added_baselines_on_consumed_development_not_confirmation": true,
+    "original_model_fit_score_or_four_gates_changed": false,
+    "hyperparameter_sweep_library_upgrade_new_network_or_agent": false
+  },
+  "inputs": {
+    "visible_inputs": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\phase2_yj\\forecast_once\\VISIBLE_INPUTS.json",
+      "sha256": "0337959bb3f5d32172f16af816048c9879c0b057c13753e0ea9d1a5adffd2181"
+    },
+    "phase2_freeze": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\phase2_yj\\forecast_once\\FORECAST_FREEZE.json",
+      "sha256": "dcd88d11401f7f8953e9b921bf3ab2a157740c937084b106e77c61732e806faf"
+    },
+    "phase2_roles": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\phase2_yj\\task_contract\\selection_once\\ADMISSION_ROLE_SELECTION.json",
+      "sha256": "aee4d2aa78f7522eae8aba2b8ac56e186b3c5d81059a6d3a5b44b16d1042350b"
+    },
+    "phase2_registered_plan": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\phase2_yj\\EXECUTION_PLAN_REGISTERED.json",
+      "sha256": "0bc6c752457732cd535608510ae12da01f89fa0eb83f30fa0d67516dccdc8bba"
+    },
+    "diagnostic_truth": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\phase2_yj\\score_once\\DIAGNOSTIC_TRUTH.json",
+      "sha256": null
+    },
+    "candidate_results": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\phase2_yj\\score_once\\RESULTS.json",
+      "sha256": "4bf07550b9b4840967b6cca13d4a81c190616e7a4bdb47813126793bde2b5711"
+    },
+    "root_scope": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\strong_baselines\\ROOT_FIXED_BASELINE_SCOPE_BEFORE_FITS.json",
+      "sha256": null
+    }
+  },
+  "independent_score_audit_receipt": {
+    "file": null,
+    "sha256": null
+  }
+}

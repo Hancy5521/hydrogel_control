@@ -1,0 +1,8 @@
+{
+  "created_actual_utc": "2026-11-05T15:10:05.434262+00:00",
+  "source_sha256": "79f04a2308ea020a49012664de7527036a7dce88777619ba1af18701ebc8e6a5",
+  "plan_sha256": "df7cc6ae2afee78993469bc2e28d1849e42f9fa42084d84a0ecddbe25b552131",
+  "scope_sha256": "ebb8fd8ea3a98ab57d3e41b3fc897c416ec521984215ae5c7740329490fe418c",
+  "status": "AST_ONLY_NO_EXECUTION",
+  "command": "D:\\Anaconda\\python.exe -B H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_niw_math\\audit_niw_t.py --plan H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_niw_math\\EXECUTION_PLAN.json --approval H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_niw_math\\ROOT_MATH_APPROVAL.json --output-dir H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_niw_math\\execution_once"
+}

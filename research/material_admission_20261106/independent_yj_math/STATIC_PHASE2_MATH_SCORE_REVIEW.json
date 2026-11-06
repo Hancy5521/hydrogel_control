@@ -1,0 +1,110 @@
+{
+  "actual_review_utc": "2026-11-05T16:04:25.935511+00:00",
+  "actual_review_asia_shanghai": "2026-11-06T00:04:25.935511+08:00",
+  "status": "PASS_STATIC_PHASE2_MATH_SCORE_GATE",
+  "producer_source_sha256": {
+    "yj_model.py": "892e90922091b424ab1fd8d94f5901a2a8585861f39e7f3ebe54eca3166e98bc",
+    "run_phase2.py": "3df8cbab90b58b5ad2a56691d34b16bdceb3748d5a033cb5752dd9469c9acf0b",
+    "score_phase2.py": "0160ad1b175ce47295579ad020575b1db63bdd0fce27076c167f81f36217a964"
+  },
+  "template_sha256": "d0a6099c081648bdc8bb02e1d3f6c74b9b86a85479d0342ada35aa1bb3bbb964",
+  "source_freeze_sha256": "06f86ca5e668030fb7a1f028df23b978df639ae92f54603a241462a23971e5b4",
+  "parent_source_sha256_unchanged": {
+    "admission_io.py": "90011d05e1071b02422622249006cf669bd88e2f7792f8da87f87e0589188466",
+    "niw_predictive.py": "a8d74e5398f2bb606efb195d3395324f014ba3f9b4f801a67b022c1cc6687818",
+    "score_admission.py": "ef7e29f8dab89a0a644011b8c188fcbeaa178095bbd823d082be8887e0aaccc0"
+  },
+  "input_receipt": {
+    "raw_source": {
+      "expected_sha256": "3d0fc1315b74cf84071f16aa25bb93434dafbc83867beb75872064ac245bd747",
+      "not_opened_or_rehashed_by_reviewer": true
+    },
+    "roles": {
+      "verified_sha256": "aee4d2aa78f7522eae8aba2b8ac56e186b3c5d81059a6d3a5b44b16d1042350b"
+    },
+    "phase1_roles": {
+      "verified_sha256": "0bc81d0400a4076c854af11e654ca3ca9bcbceb249f2ee6c26d356c53ceae9c0"
+    },
+    "contract": {
+      "verified_sha256": "2637532951c1e6b86ee8bdaa0cbcdb95a48982509de14770f87487e1b55a241d"
+    },
+    "root_scope": {
+      "verified_sha256": "34b487c1946644bd13699309368064f5df38d59477c5f18683b430c5be4ac578"
+    }
+  },
+  "stable_provenance_bindings_verified": 16,
+  "math_receipts_verified": {
+    "niw_t": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_niw_math\\execution_once\\INDEPENDENT_NIW_T_CRPS_AUDIT.json",
+      "sha256": "8bd92f408575b9e7d033569c2fef9a7e6e3aaa7f3a8a0352df00f0ecff784a9e",
+      "reuse_existing_math_audit_not_reexecute": true
+    },
+    "YJ_native_probability_and_score": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_yj_math\\execution_once\\INDEPENDENT_YJ_HALF_MATH_AUDIT.json",
+      "sha256": "702669f0a1903d6adb1869d7e9a002cfcbe5e8790cf151d53c7a4fa870d113f3",
+      "reuse_existing_math_audit_not_reexecute": true
+    }
+  },
+  "checks": [
+    {
+      "name": "stable_YJ_half_transform_inverse_derivative",
+      "status": "PASS",
+      "evidence": "Positive transform rationalized2v/(sqrt(1+v)+1); negativeexpm1/log1p; inverseu+u^2/4 ornegativeexpm1; gprimecorrect; sign/zero preserved, numericaloverflowraises."
+    },
+    {
+      "name": "fit_only_two_pipeline_model",
+      "status": "PASS",
+      "evidence": "Native64fit sampleSDs0 from unchangedparent; U=T(native/s0) then unchangedparent64fit mean/sampleSD/NIW; no diagnostic fitting/anchoraccumulation. Samefixedlambda.5all3fields. Exactlytwo referencefits andfive readoutroles, empiricalnativeprior scope."
+    },
+    {
+      "name": "native_probability_and_density_Jacobian",
+      "status": "PASS",
+      "evidence": "Transported law storeslocation/scale already inU-space, so targetlogJ islogTprime(native/s0)-logs0 (helpersecondscale1); standardlogpdf((T-muU)/sigmaU)-logsigmaU givescorrectnative density. PITandquantiles monotonebackmap; inverseUlocation ismedian, notmean."
+    },
+    {
+      "name": "native_CRPS_nonconstant_Jacobian_and_cuts",
+      "status": "PASS",
+      "evidence": "Standardlatentt coordinateweight=s0*sigmaU*gprime(muU+sigmaU*t), notconstantscaleCRPS. target_t andbranch_t included asbreakpoints; CDFleft/SFright selectedpersegment; fixedsubdivisions retained; warning/nonfinite/negativefails preserved."
+    },
+    {
+      "name": "analytic_infinite_tail_bounds",
+      "status": "PASS",
+      "evidence": "ForStudentt cnu(1+t^2/nu)^(-(nu+1)/2), SF<=Cnu*t^-nu whereCnu=cnu*nu^((nu-1)/2). leftweight<=s0*sigmaU;right<=s0*sigmaU*(A+B*t),A=1+abs(muU)/2,B=sigmaU/2,providedcut>=abs(muU)/sigmaU. Source logleft/right integration denominators2nu-1,2nu-2correct. NormalMillsSF<=phi/t givesleft<=pre*exp(-L^2)/(4piL^3),right<=pre*exp(-L^2)/(4pi)*(A/L^3+B/L^2),matchingcode. df69+k>4 ensuresnative first/second moments. Boundsideal, doesnotboundSciPyCDFerror ormakequadestimatea rigorousIEEEinterval."
+    },
+    {
+      "name": "fixed_numerical_error_handling",
+      "status": "PASS",
+      "evidence": "cutincludesbothswitch+target;twoideal-tail budgetsfixedat1/8nativeabsTol each;doublingmax16/cutcap1e6predeclared. abs/relpieceallocationsandfinalcombinedestimateguardpresent. Underflowdisplay0explicitlymarkednotmathematicalzero. Returntruncatedintegralwithdeclaredtailerror, notexactinfiniteintegralclaim."
+    },
+    {
+      "name": "fair_roles_metrics_and_prelabel_four_gates",
+      "status": "PASS",
+      "evidence": "RawNIWandrawfullmomentGaussian preserved; transportedlatentGaussian explicitlynotnativeGaussian/same-nativemoments. AllrolesRMSEofnativepredictivemedian. CandidateYJboth<=.98YJnone;<=1.02min(rawt,rawGaussian,YJlatentGaussian)both;90coverage>=.8;PITD<=.15. Gatesdescriptive andalloutputsretained."
+    },
+    {
+      "name": "complete_prediction_freeze_before_truth",
+      "status": "PASS",
+      "evidence": "Source/parent/role/stableinputsandmathpins,old40+phase1256exclusions. Complete3840uniquegroup/model/maskexpectedkeys plusfivefrozenartifacthashes/JID/family/df/coordinate/s0guard before evaluatorreveal. Scorecacheusesexactsameoutcome/law;sameformula/sampleidentitynotinflated. Trustedfullgzipphysicalparse disclosed, notsecuritysandbox."
+    }
+  ],
+  "necessary_source_corrections": [],
+  "operations_performed": [
+    "readproducer3sourcefiles/template/rootscope",
+    "ASTparseonly",
+    "read/hashmetadataandpreviousreceipts",
+    "hash16stableinputsandparent3sourcefiles"
+  ],
+  "producer_imports_or_calls": 0,
+  "new_material_response_reads": 0,
+  "raw_gzip_open_or_rehash": false,
+  "scientific_scope_limits": [
+    "ClassicalYJandNIWadaptation, notnewalgorithm",
+    "All256newgroupsdevelopment, notindependentconfirmation",
+    "MonotoneYJpreservesatomsandfixedlawPIT/coverage; sourceadequacy remains empirical",
+    "Oldphase1NO_GOretained, notrescored",
+    "Oldmoment/readouttransportcertificate notinherited",
+    "MathPASS/staticPASSdonotestablishnewmaterialperformance",
+    "Actualnew64fit/192targetresponse access still requiresactualUTC registeredsource-boundphaseapproval"
+  ],
+  "next_audit": "Afteractualforecastfreeze, prepareseparate independentlyimplemented savedfit-transform/law audit; do not import producer or inferstage2scorebeforetruth."
+}

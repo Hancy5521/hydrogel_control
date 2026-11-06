@@ -1,0 +1,20 @@
+{
+  "status": "PASS_PRODUCER_PRESENTATION_QA",
+  "actual_utc": "2026-11-06T02:20:25.549654+00:00",
+  "report_artifacts_sha256": {
+    "matched_development_results.png": "00073d8f29f48fad7d143acc931dc1b09be1b7a828c8af0f7e27819bea36de07",
+    "MATCHED_PHASE2_AGGREGATES.csv": "342fb7d797e0a1f1e469c4911787aa32c18db32d859e6e63e58b1034769838f6",
+    "REPORT_AGGREGATE.json": "0d8957855fc5b7ecbca42620e1b7489c671ad955ea3c39dc86fe21aa662fd89c",
+    "REPORT_GENERATION_RECEIPT.json": "dbf0ce0ce004f01be4515fe786396e9cab64d14fd6e23d31d91bb11f4f39d3d8",
+    "RESULTS_AND_NEXT_STEPS_ZH.html": "f659ebdc7ae93ef0ec9e730499fab2004d8bf46e2df22730f6258a761ae3b78c"
+  },
+  "local_link_occurrences": 22,
+  "external_source_links_not_network_rechecked": 8,
+  "local_anchors": 7,
+  "csv_unique_method_mask_rows": 28,
+  "summary_cells_compared": 140,
+  "source_inputs_rehashed": 11,
+  "science_source_files_unchanged": 9,
+  "scope": "presentation source/hash/count/link check only; no independent scientific claim, no targetread/refit/rescore/resampling; PNG visual QA delegated root",
+  "preparation_receipt_sha256": "739043ac9a81cc5e28376c9bff415959ab1fb9c610b5ca6caffc984e3acc604c"
+}

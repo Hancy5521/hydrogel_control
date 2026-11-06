@@ -1,0 +1,104 @@
+{
+  "kind": "WARM_ONLY_FULL_JOINT_MODEL_ADMISSION_PREPARATION",
+  "status": "DESIGN_ONLY_NOT_REGISTERED_NOT_EXECUTABLE",
+  "actual_group_selection": false,
+  "native_response_read_authorized_by_this_file": false,
+  "model_implementation_or_fit_authorized_by_this_file": false,
+  "source": "existing official JARVIS DFT 3D metadata and pinned source, not a new download",
+  "cohort": {
+    "formula_groups": 256,
+    "representative_rows_per_group": 1,
+    "fit_groups_first_in_metadata_order": 64,
+    "diagnostic_development_groups_remaining": 192,
+    "independent_confirmation_groups": 0,
+    "actual_group_ids": null,
+    "ordering": "One deterministic metadata-only rule and salt, chosen in contract before response access; all old consumed formula groups excluded, all same-formula rows retain full group role",
+    "response_based_row_selection_or_resplit": false,
+    "complete_case_mask_selection_bias_reported": true
+  },
+  "coordinates": ["e_form", "gap_opt", "bulk"],
+  "native_units_pending_contract_pin": ["source energy-per-atom unit", "source energy unit", "GPa source bulk field"],
+  "target_index": 2,
+  "conditional_masks": [[], [0], [1], [0, 1]],
+  "primary_mask": [0, 1],
+  "fit_only_transform": "affine per-coordinate sample mean and sample SD from 64 fit rows only; zero or nonfinite SD fails",
+  "prohibited_transforms": ["log_abs", "response_clipping", "diagnostic_based_scaling", "rank_Gaussianization"],
+  "niw_prior_scale_convention": {
+    "p": 3,
+    "m0": [0, 0, 0],
+    "kappa0": 1,
+    "nu0": 7,
+    "Lambda0": [[3, 0, 0], [0, 3, 0], [0, 0, 3]],
+    "inverse_wishart_density_exponent": "-(nu0+p+1)/2",
+    "inverse_wishart_exponential": "-trace(Lambda0 inverse(Sigma))/2",
+    "prior_expected_Sigma": "identity; Lambda0/(nu0-p-1)",
+    "posterior_predictive_df_after_64_complete_rows": 69
+  },
+  "models": [
+    "NIW full joint posterior-predictive t with exact own-row conditional t",
+    "moment-matched full posterior-predictive Gaussian with exact own-row conditional Gaussian",
+    "independent NIW marginal t; bulk ignores all proxies and is identical to joint-t at zero proxy"
+  ],
+  "diagnostic_anchors_update_shared_warm_posterior": false,
+  "per_row_conditional_t_is_not_claimed_as_multirow_partial_NIW_conjugacy": true,
+  "prediction_freeze": {
+    "fit_response_cells": 192,
+    "diagnostic_proxy_cells": 384,
+    "target_cells_hidden_until_all_forecasts_frozen": 192,
+    "models": 3,
+    "masks": 4,
+    "diagnostic_rows": 192,
+    "scalar_bulk_forecasts": 2304,
+    "source_and_model_hashes_required": true,
+    "subsets_or_winners_only_freeze": false
+  },
+  "scoring": {
+    "orientation": "positive loss; smaller is better",
+    "primary": "equal-formula-group mean bulk CRPS in native GPa at two-proxy mask",
+    "secondary": ["all four mask CRPS", "RMSE", "80/95 central interval coverage and width", "PIT", "per-group paired conditional transfer"],
+    "student_t_CRPS": "independently audited deterministic CDF/SF improper integration in standardized t coordinate; then affine native-unit scaling",
+    "proposed_standardized_quad_abs_tolerance": 1e-8,
+    "proposed_quad_relative_tolerance": 1e-8,
+    "Gaussian_CRPS": "closed form, independently compared with CDF integration",
+    "GH5_or_sample_CRPS_as_primary": false,
+    "calibration_guarantee_claim": false
+  },
+  "proposed_model_no_go_gates_root_must_pin_before_reveal": {
+    "no_positive_two_proxy_joint_t_CRPS_gain_over_independent_marginal": "STOP relation-feedback task support, no same-cohort retuning",
+    "joint_t_two_proxy_CRPS_more_than_1_10_times_Gaussian": "STOP model adequacy",
+    "any_mask_95_interval_coverage_below_0_80": "STOP serious undercoverage",
+    "these_thresholds_are_universal_statistical_tests": false,
+    "actual_material_results_available": false
+  },
+  "minimal_modules_to_prepare_after_contract_gate": [
+    {"name": "admission_io.py", "owns": "whole-formula roles, strict allowed cell access, provenance and freeze CLI", "forbidden": "target scoring or response-driven role changes"},
+    {"name": "niw_predictive.py", "owns": "fit-only affine and NIW sufficient statistics, three laws and full conditionals", "forbidden": "source paths, truth access, optimizer, agent or network"},
+    {"name": "score_admission.py", "owns": "validate complete freeze then reveal native target, independent scoring and diagnostics", "forbidden": "refit or feedback into selected cohort"}
+  ],
+  "independent_math_audit_needed": [
+    "IW density/scale and NIW posterior against explicit sufficient-statistic identities",
+    "multivariate t scale versus covariance and both single-proxy conditionals",
+    "joint versus sequential conditioning of the same row",
+    "zero-proxy joint-t equals independent marginal",
+    "native affine equivariance of positive-loss CRPS",
+    "Student-t CRPS against a genuinely independent numerical or analytic oracle",
+    "full prediction freeze precedes all target reveal; per-row proxy guards"
+  ],
+  "fitting_allocation_or_agent_in_this_admission": false,
+  "future_feedback_pilot_is_separate": {
+    "full_mu_Sigma_posterior_required": true,
+    "all_native_cell_subsets_direct_V_STOP_and_same_costs_required": true,
+    "mixed_panel_proxy_theta_information_must_not_be_discarded": true,
+    "old_pure_proxy_moment_bound_applicability_assumed": false,
+    "same_posterior_full_joint_planner_is_main_strong_baseline": true,
+    "additional_catalytic_algorithm_gain_currently_proven": false
+  },
+  "required_next_order": [
+    "metadata-only MATERIAL_TASK_CONTRACT_V1 and independent operational admission review",
+    "pin actual formula groups, representative rows, all input hashes and actual UTC protocol before new response access",
+    "prepare only the three minimal modules then source-freeze and independent math/API review",
+    "root exact source-and-plan approval before one admission run",
+    "freeze all model/mask forecasts, then separate target scoring",
+    "retain failures and root decision; no automatic upgrade, resplit or allocation pilot"
+  ]
+}

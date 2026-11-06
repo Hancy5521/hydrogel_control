@@ -1,0 +1,32 @@
+{
+  "actual_utc": "2026-11-05T15:36:54.055222+00:00",
+  "status": "PACKAGING_TOOLS_PREPARED_NOT_RUN_OR_SEALED",
+  "files": {
+    "build_resources.py": {
+      "sha256": "1278efb736612c37562095bf4830128ffa18ac46b7c79d065a95ce2c46cc0e91",
+      "AST": "PASS",
+      "imported_or_executed": false
+    },
+    "verify_resources.py": {
+      "sha256": "f1483625a157b58502f7551cef8a4eb154d4862c1ddac1df88df90427d9a9e14",
+      "AST": "PASS",
+      "imported_or_executed": false
+    },
+    "reproduce.py": {
+      "sha256": "5478603e4d2d7ceec4b8693b6edff6283e7d97947dea00e9149136717e616d4f",
+      "AST": "PASS",
+      "imported_or_executed": false
+    },
+    "RESOURCE_GUIDE_ZH.txt": {
+      "sha256": "36d2344cc289f06fe2362b231ebde262c2d5520fce88e4872ede63f545b16446"
+    }
+  },
+  "required_before_builder": "RootREADY_FOR_LOCAL_SCIENCE_PACKAGE gate with science_and_independent_audits_frozen=true, actualfinal artifact roles andSHA. Scientific gate failure still may be honestly archived; packaging doesnotmeanadmissionpass.",
+  "local_public_native_gzip_will_be_embedded_after_authorization": true,
+  "stable_reference_inputs_to_embed": 13,
+  "old_archives_external_unchanged": true,
+  "default_reproduction": "prepareonly, explicit--runrequired; forecastandscoreseparate withfullfreeze beforetruth",
+  "builder_or_wrapper_or_model_executions": 0,
+  "rawgzip_reads_or_copies_thispreparation": 0,
+  "public_Git_mutations": 0
+}

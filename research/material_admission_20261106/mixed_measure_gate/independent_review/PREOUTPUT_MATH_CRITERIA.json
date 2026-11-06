@@ -1,0 +1,42 @@
+{
+  "actual_registered_utc": "2026-11-06T02:20:16.783385+00:00",
+  "kind": "independent_mixed_measure_gate_preoutput_criteria",
+  "status": "FIXED_BEFORE_PRODUCER_EXECUTION_OR_RESULT_READ",
+  "oracle": "SciPy multivariate_normal PDF on original marginal submatrix, direct cumulative full observed likelihood from raw synthetic cells; no SUT import",
+  "numerical_tolerance": {
+    "posterior_weights_abs": 2e-11,
+    "posterior_weights_rel": 2e-10,
+    "log_likelihood_abs": 2e-10,
+    "log_likelihood_rel": 2e-10,
+    "predictive_Y_mean_abs": 2e-10,
+    "predictive_Y_mean_rel": 2e-10,
+    "cost_identity_dedup_rejection_and_zero_likelihood_increment": "exact",
+    "simplex_mass_abs": 2e-12
+  },
+  "hypotheses": 4,
+  "prior": [
+    0.1,
+    0.2,
+    0.3,
+    0.4
+  ],
+  "spike_probabilities": [
+    0.1,
+    0.3,
+    0.6,
+    0.8
+  ],
+  "rho": [
+    -0.6,
+    -0.2,
+    0.25,
+    0.65
+  ],
+  "spike_AY": "mean[h*.2,-h*.1];cov[[1,rho],[rho,1]]",
+  "slab_AGY": "mean[h*.2,.3-h*.1,-h*.1];covij=rho**abs(i-j)",
+  "dominating_measure": "delta0 plus Lebesgue for G; zero likelihood mass branch only, nonzero density slab only, unobserved G marginalizes both",
+  "negative_G_support_preserved": true,
+  "scope": "720permutations of6canonicalcells across2rows, each6steps;6positiveG orders; exact ledger alias/conflict/terminal/STOP consistency and adversarial likelihood controls",
+  "new_material_data_or_fits_or_numerical_execution": 0,
+  "failure_policy": "Preserve failed source/result and fix only real implementation/schema bugs transparently; never relax math tolerances after outcomes. This finite-h oracle is not continuous NIW posterior accuracy or true material atom identification."
+}

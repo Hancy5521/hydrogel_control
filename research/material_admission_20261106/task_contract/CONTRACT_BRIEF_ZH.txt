@@ -1,0 +1,13 @@
+真实材料任务契约V1：元数据部分已落地，尚未获准读取标签
+
+字段与追溯：B0=e_form（上游form_enp，eV/atom），B1=gap opt（上游op_gap，eV），Y=bulk modulus（上游kv）。bulk沿用既有GPa文档归属，但列描述VRH与kv映射差异未被独立解决，不能改名或擅自缩放。本轮没有打开gzip。
+
+费用与动作：3个单格、3个双字段panel、全3字段panel及STOP完整列出。只按新披露原生cell各1计费，已知cell不重收、不重乘似然；R/V同一cell同价。双proxy、target-first、E-first和同包均进入完整联合处理，不能用纯proxy公式代替。
+
+身份与目标：全源jid/mpid/规范formula连通组沿用旧ID，40个已消费组显式排除；剩8802组10973行，1172多结构组不得跨角色。主池初始Y隐藏，允许购买后风险0但单列观测率，属于转导获取；另留整组audit，Y禁止查询。尚未给任何新组分配角色。
+
+评分：原生bulk坐标CRPS，按组等权；仅允许warm-only仿射标准化后用正scale换回原单位。非线性CDF变换不在V1启用，不能拿潜变量kernel冒充原单位效果。
+
+转入warm-only前还须root关闭：实际warm整组角色和只允许读哪些cell；边际/关系假设、H与先验的统计依据；initial anchor、完整联合动作/预算/horizon、audit条件化规则及源码/评分器。随后独立登记实际UTC及源码/输入SHA，再准入warm响应。真实DFT费用、父运行和bulk聚合仍标未知；这些不妨碍明确离线披露情景下的warm统计诊断，却阻止物理节约或已验证VRH的主张。
+
+契约2637532951c1e6b86ee8bdaa0cbcdb95a48982509de14770f87487e1b55a241d；精确输入SHA与只读来源脚本记录在JSON及CONTRACT_BUILD_RECEIPT中。无新split、模型、拟合、预测或评分；这不是已完成预登记。

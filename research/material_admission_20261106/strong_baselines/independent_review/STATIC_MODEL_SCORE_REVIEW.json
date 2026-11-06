@@ -1,0 +1,77 @@
+{
+  "actual_review_utc": "2026-11-05T16:42:58.600545+00:00",
+  "status": "PASS_STATIC_FIXED_RECIPES_PENDING_REGISTRATION_AND_SCORE_MATH",
+  "source_sha256": {
+    "baseline_models.py": "a602b50663b64490af26a11a65b5effb7753e61aa6e9b8f71c8221a78898cfd5",
+    "run_baselines.py": "15a545172bedbf7af04d8fca5a7608f954be89e89d169087ea88aa3ed748c6c5",
+    "score_baselines.py": "0199da5a70f4290df4ae685879961ab92003e1f8fe7123f55f2b4b0220b463d2"
+  },
+  "template_sha256": "cea59416caebb5ad26710440ce8727e13b0c6a71eaa422aa1a0724d2c0615f28",
+  "source_freeze_sha256": "012d4bda0cc672593320a4330169d6643d1281d26f3a6283ee84bc2503fcb8fd",
+  "parents_unchanged": {
+    "admission_io.py": "90011d05e1071b02422622249006cf669bd88e2f7792f8da87f87e0589188466",
+    "niw_predictive.py": "a8d74e5398f2bb606efb195d3395324f014ba3f9b4f801a67b022c1cc6687818",
+    "score_admission.py": "ef7e29f8dab89a0a644011b8c188fcbeaa178095bbd823d082be8887e0aaccc0"
+  },
+  "model_visible_provenance_hashes_verified": {
+    "visible_inputs": "0337959bb3f5d32172f16af816048c9879c0b057c13753e0ea9d1a5adffd2181",
+    "phase2_freeze": "dcd88d11401f7f8953e9b921bf3ab2a157740c937084b106e77c61732e806faf",
+    "phase2_roles": "aee4d2aa78f7522eae8aba2b8ac56e186b3c5d81059a6d3a5b44b16d1042350b",
+    "phase2_registered_plan": "0bc6c752457732cd535608510ae12da01f89fa0eb83f30fa0d67516dccdc8bba"
+  },
+  "primary_readings_sha256": "b30f26cb398c9f4dff9d5b822f9ccdd69fd4d4df30782d8367799690aa374183",
+  "checks": [
+    {
+      "name": "same_information_and_posthoc_scope",
+      "status": "PASS",
+      "evidence": "Onlyalreadyfrozen64x3fit and192x2proxyvalues;eachmaskfeatureselection,no diagnosticfeaturestandardizationorYfit. Model/source/gates/candidatefrozen. Sixactualnewbaselinefits(2methodsx3nonempty masks),nonefits0;1536readoutlawsnotnewmeasurements. Addedafterconsumedcandidate development outcomes, not independentconfirmation."
+    },
+    {
+      "name": "fixed_GPR_recipe_and_noise",
+      "status": "PASS",
+      "evidence": "Constant*ARD_RBF+White, normalize_y,population-targetnormalizationstate,alpha1e-8trainingnugget,oneboundedL-BFGSfit/nooptimizerrestarts,fixedseed. PredictivestandarddeviationincludestestWhiteKernelnoise,crosswhite0;alphaonlytrain. Learnedkernel/L/dual/Xtrain/ynorm/meanstd/warningsfullysavedforindependentreconstruction. No claimglobaloptimumortunedSOTA."
+    },
+    {
+      "name": "explicit_forest_distribution",
+      "status": "PASS",
+      "evidence": "Fixed256trees/minleaf3/max_featuresint1/bootstrap/seed/n_jobs2. Inputfloat32explicitandtreechildren/feature/threshold/leafIDs/stateexported. ExactFractionmass1/(256*n_leaf_all_original)over64originaltrainpositionsinclOOB,nobootstrapmultiplicity. ExplicitQRF-inspiredvariant,notofficialQRFpackage;itsCDFmeanneednotequalsklearnRFbootstrapweightedpointprediction."
+    },
+    {
+      "name": "finite_empirical_CRPS_and_quantiles",
+      "status": "PASS_STATIC_PENDING_NUMERICAL_CONTROL",
+      "evidence": "SupporttiesmergedwithexactFractions,totalmass1/nonnegative;CRPSpiecewiseCDFsquareintervalsumwithtargetcut/outside-supportsegmentscorrect. QuantileinfCDF>=p exactrational0.1/0.05/0.025bounds andlower1/2median. Zero-widthdiscreteintervalsvalid;noneuniform64empirical. NoMonteCarlo,pseudomeasurementsornegativeCRPSclipping."
+    },
+    {
+      "name": "discrete_vs_continuous_probability_diagnostics",
+      "status": "PASS",
+      "evidence": "EmpiricalPITleft/right/midpointandFractionsexplicit;continuousECDFgateisNoneforforest,midpointnotclaimeduniform. GPusesparentalreadyindependentlyauditedNormalCRPSandcontinuousPIT. AllintervalcoverageandmedianRMSEinrawsourceunit."
+    },
+    {
+      "name": "complete_freeze_before_saved_truth_use",
+      "status": "PASS",
+      "evidence": "Exact1536uniqueexpectedmethod/mask/groupkeysandfiveartifacthashesbefore score-onlytruth/candidatevalidationreads. Forecastvalidationexplicitlyskipshashing/openingtruthandcandidateobjects;scorechecksafterfreeze. CandidateJSONphysicallyparsedbutonlyexistingsummaryused,noYJmodelrescore. Sourceparentpinscheckedbefore/afterfits/scores."
+    }
+  ],
+  "necessary_source_corrections": [],
+  "pending_execution_requirements": [
+    "Rootscopefile/hash,existingdiagnostictruthSHA andindependentempirical/GaussianscoremathPASSreceiptmustreplacenulltemplatefields",
+    "ActualUTCregisteredplan+source-boundphaseapprovalbeforeanysklearnimport/fit",
+    "Snapshotstate/scoreindependentverificationaftersixfitsbeforecallingtheresultrobust",
+    "Allwarningsandfailedrecipesretained;nohyperparameterrescue/sweepbasedonnewbaselineoutcomes"
+  ],
+  "audit_preparation_limits": {
+    "producer_or_sklearn_imports": 0,
+    "fits_or_predictions": 0,
+    "new_material_response_reads": 0,
+    "raw_gzip_reads": 0,
+    "numerical_score_runs": 0
+  },
+  "administrative_read_failure": "Initiallyguessedphase2_yj/strong_baselinespathdidnotexist;resolvedactualstage/strong_baselineswithrg. Nocodeorexperimentexecuted.",
+  "scientific_limits": [
+    "Competentfixedreferencefamilies,notguaranteedbestpossible/tunedfieldSOTA",
+    "All192groupsremainconsumeddevelopment;noindependentmaterial/batch/sourcevalidation",
+    "EmpiricalCDFvariance/coverageandGPnoiseareassumptions,nocalibrationguarantee",
+    "Rootoriginalphase2fourgateadmissionandcandidateunchanged;posthocnewcomparisondoesnotretroactivelybecomepreplannedconfirmation",
+    "OriginalsourcebulkGPa/aggregationqualificationretained"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "actual_utc": "2026-11-05T16:51:35.914092+00:00",
+  "source": "Already-frozen phase2 VISIBLE_INPUTS, no raw gzip or new group",
+  "visible_inputs_sha256": "0337959bb3f5d32172f16af816048c9879c0b057c13753e0ea9d1a5adffd2181",
+  "fit_native_cells": 192,
+  "diagnostic_proxy_cells": 384,
+  "diagnostic_truth_or_candidate_result_file_opened_by_forecast_process": false
+}

@@ -1,0 +1,53 @@
+材料反馈：完整本地研究资源与复现说明
+==================================
+
+先看INDEX.html及其链接的最终中文报告。本文件解释程序、信息边界和复现，不替代实际结果／独立审计。全部正负结果以封存协议、FORECAST_FREEZE及评分收据为准；封包成功不表示科学准入成功或已经可投稿。
+
+一、这版做了什么
+本轮从前一关系矩数学检查点进入真实公开DFT数据的统计准入。JARVIS原三字段为e_form、gap opt、bulk modulus。目标是源bulk字段，GPa归属与kv/VRH聚合命名仍限定；不是新湿实验或新DFT计算。
+旧40个已消费formula组全部排除。固定元数据哈希规则选256个新formula组，每组取最小原始eligible行号的一行：64用于拟合，192用于诊断，全部是开发资料。331条已知eligible siblings及整个原component一并预留，不能把剩余兄弟结构改称新确认。8546个未选组不用于本轮性质统计。
+这不是完整修补—扩展—验证智能体，也没有用生成标签自训练。旧star-copula是保留但未采用的候选；实际准入采用完整三变量NIW参考模型。前一矩近似的纯代理理论界不能自动套到本轮完整联合模型。
+
+二、三模块怎样配合
+admission/code/admission_io.py：绑定原始源、角色、契约、root事前范围与全部源码；可信解析；只把fit64×3值及diagnostic192×2proxy提供给模型；保存全部预测并冻结。
+admission/code/niw_predictive.py：只在64fit数据上计算仿射中心与样本SD，固定NIW参考先验，得到完整joint预测t及按本单位0/1/2proxy条件化的目标分布；没有文件读取或诊断目标输入。
+admission/code/score_admission.py：先检查2304个唯一group/model/mask预测及全部冻结文件SHA，再单独提取192个诊断目标；计算原单位CRPS、区间与PIT诊断，不回拟合。
+
+三个比较角色是完整NIW联合t、其完整预测协方差匹配的Gaussian、以及相同目标t边际的关联消融。最后一项不是第三个独立训练算法。每个诊断单位4个proxy mask、3个比较角色，共2304条概率律；不是2304个材料或2304次独立实验。
+标准化只用fit64，故原单位先验依赖拟合数据，属于明确的empirical reference，不能说是原生尺度上完全事前的数据独立Bayes先验。预测t的scale不是协方差。无proxy预测df69，条件化k个proxy后df69+k；所有分布最终换回原生bulk坐标评分，不用非线性CDF变换的潜尺度CRPS冒充原单位结果。
+
+三、数据到底读到了哪里
+完整本地包内含原公共gzip：trusted_data/jarvis_dft_3d.json.gz，30,669,285字节，SHA256
+3d0fc1315b74cf84071f16aa25bb93434dafbc83867beb75872064ac245bd747。
+普通JSON解析物理上经过全部原始行和属性，绝不能说只物理读取64个材料。可信提取进程将其他行数值丢弃，不做性质min/max／均值／分布／有限率等汇总；producer只获fit三列和诊断两proxy。诊断bulk仅由评分入口在全预测冻结后提取，角色隔离不是加密或防恶意调用安全沙箱。
+原始gzip本身包含未来未选数据，属于可信reader资源，不是默认producer可见矩阵。不要将整个源表、诊断目标或其他源字段传入拟合接口。已知ID／规范formula／原始row及artifact index逐条核对；负bulk和零gap不按结果删改。
+只有原先有限的字段可被遮挡评分；本轮没有恢复原生空白真值。256组全部开发，诊断失败不能在同组换先验、阈值、变换、代表行或随机种子救分。实际结果未满足条件时应停止对应完整campaign或另定不同问题，并保留失败。
+
+四、完整本地与公开Git的范围
+本地包包含本轮源码、元数据选择与实际UTC协议、13份稳定旧来源及许可、原公共gzip、原始真实可见数据／模型／预测、后续原单位评分与诊断真值、独立数学和保存数值审计、来源ledger、报告及说明。最终文件逐一列于PACKAGE_MANIFEST.json。
+原6.49MB矩研究包、47.4MB首轮pilot和MLST大归档只作明确历史引用，不嵌套复制或覆盖。它们不是运行这次已封存256组NIW准入所缺的隐式输入。Python／NumPy／SciPy等运行环境不内嵌，按requirements.txt安装；不需要GPU、LLM或服务器。
+下载原论文PDF、阅读全文提取文件、编译/cache及认证信息不分发。角色/来源ledger记录实际阅读范围，不声称各100篇全文完成。完整本地数值载荷不自动进入公开Git；Git另用root白名单，只公开获准源码、元数据、派生结果与说明。
+活跃RESUME/QUEUE等3项行政read-time哈希是历史阅读溯源；不能把现在的文档拷贝当成旧哈希字节。13稳定来源和契约/角色则是科学输入绑定，原件或精确副本可在reference_inputs与INPUT_BINDINGS核对。
+
+五、先核验，默认只生成计划
+解压到短路径，保留单一ASCII顶层目录。先运行：
+  python verify_resources.py
+可加--zip指向原ZIP，核CRC、成员与载荷字节。标准库核验只读字节，不解码性质、不运行实验。
+
+仅准备一个可审阅的新复现计划：
+  python reproduce.py --phase forecast --output-dir H:/NEW_MATERIAL_PLAN --prepare-only
+即使省略--prepare-only，默认仍不运行。它写当前真实UTC的新计划／手动复现阶段记录，重映射包内所有源/角色/独立审计路径。字节校验可能读取整个gzip压缩字节，但不解压、提取标签或拟合。输出目录必须不存在且位于包外。
+
+只有明确需要重复已消费计算时，才显式执行：
+  python reproduce.py --phase forecast --output-dir H:/NEW_FORECAST_REPRO --run
+完成后先准备评分阶段：
+  python reproduce.py --phase score --forecast-reproduction H:/NEW_FORECAST_REPRO --output-dir H:/NEW_SCORE_PLAN --prepare-only
+明确执行评分：
+  python reproduce.py --phase score --forecast-reproduction H:/NEW_FORECAST_REPRO --output-dir H:/NEW_SCORE_REPRO --run
+score要求外部forecast复现已实际完成全2304freeze。它保留同一forecast协议的原字节/SHA，另写当前时间的score批准记录；不能为换时间而改协议破坏冻结绑定。不要直接编辑封存历史协议或改其绝对路径再说预登记未变。
+两个阶段应在同一包位置完成；若移动包，先重新准备新的forecast复现，不能改旧协议指向新位置。包装器不会直接对已封存的原预测篡改plan SHA后重评分。原结果检查可读保存分数与独立审计；任何实际重放仍是相同开发组，不是独立确认。
+
+六、判读限制与下一步
+本轮最多回答这个参考统计模型是否值得进入另行设计的反馈任务。描述性CRPS／覆盖／PIT门不是严格非劣效检验、可靠校准保证、材料领域强基线或顶会达标认证。原DFT值不是湿测，离线披露cell预算不是原DFT作业费用。
+后续若要研究真正付费关系反馈，必须给完整联合强基线相同信息、V/E-first/R-first/STOP/同包动作与成本；不能把纯proxy不学关系误写为完整闭环已完成，也不能用同目标R/V名称虚构不同instrument cost。实际共测、原单位损失、全formula身份与未消费验证组仍需按新协议落实。
+封包/核验不会自动重跑任何已完成统计、控制或计时，不创建自动任务、不上传私有数据、不投稿。现有模型、旧论文与旧封存包保持。

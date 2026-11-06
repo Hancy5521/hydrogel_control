@@ -1,0 +1,45 @@
+材料反馈研究资源：阅读、程序和复现说明（本地完整包）
+
+请先打开 INDEX.html，阅读 root 冻结的最终报告。报告和其绑定的结果/独立审计决定科学结论；本说明不把包装完成当作论文或智能体完成。
+
+这次保存了什么
+1. 两阶段完整开发记录：每阶段64个fit配方组、192个diagnostic开发组；阶段2排除了阶段1及旧pilot的全部材料/配方component。共512个不同材料代表，不是512个独立实验。
+2. 阶段1完整NIW原单位模型及NO_GO失败、事后诊断；阶段2固定Yeo–Johnson λ=0.5的两坐标模型，以及所有比较法、完整3840条概率预测与原单位评分。
+3. 在已经消费的阶段2开发集上追加的固定GP和森林叶条件CDF对照，保留全部源码、状态、警告、预测、评分和审计；这是posthoc强参照检查，不是新材料数或独立确认。
+4. 实际源码、模板与真实UTC注册协议、角色、可见输入、真值揭示、冻结、失败、独立数学和保存结果审计、来源ledger。所有数值预测及真值仅供本地研究包，公开Git另用root白名单。
+5. 原公共jarvis_dft_3d.json.gz约30.67MB及其原SHA；13份外部稳定元数据/来源/许可原件；阶段2全部16个来源绑定，其中3份本stage内部资料只保留原有文件、不重复拷贝。
+
+这次没有混入什么
+不嵌套先前6.49MB、47.38MB或MLST大包；它们的历史路径和SHA在ARCHIVE_REFERENCES.json。下载论文全文、运行时cache、编译文件和第三方运行库不分发。旧源代码和科学结果不因包装重写。这个包不等同于已完成自催化反馈系统，也不代替水凝胶独立实验。
+
+先验证包完整性
+在解压后的唯一短ASCII顶层目录打开终端：
+  python verify_resources.py
+如要一起检查下载ZIP成员及CRC：
+  python verify_resources.py --zip "H:\PolymerReview\Material_Feedback_20261106T020921Z.zip"
+校验器仅用Python标准库核SHA/尺寸/成员/CRC，不拟合模型、不计算材料评分。PACKAGE_MANIFEST.json列出每个有效文件的尺寸和SHA，自身除外。
+
+六个复现模式（默认只准备）
+  python reproduce.py --mode phase1-forecast --output-dir H:\MaterialReplay\p1_forecast --prepare-only
+  python reproduce.py --mode phase2-forecast --output-dir H:\MaterialReplay\p2_forecast --prepare-only
+  python reproduce.py --mode baseline-forecast --output-dir H:\MaterialReplay\baseline_forecast --prepare-only
+不写--run也是只准备。准备会校验本地资源、写一个新的实际UTC复现协议和复现来源记录，生成命令但不调用科学模块、不解压性质JSON、不产生新材料实验。输出目录必须不存在且位于资源包之外。可把整个目录移动到别的盘，路径由本地RESOURCE_PATH_MAP.json重映射，不依赖旧H盘stage。
+
+只有读者明确决定重放时，才将--prepare-only改为--run。预测完成后才可评分：
+  python reproduce.py --mode phase1-score --forecast-reproduction H:\MaterialReplay\p1_forecast --output-dir H:\MaterialReplay\p1_score --prepare-only
+  python reproduce.py --mode phase2-score --forecast-reproduction H:\MaterialReplay\p2_forecast --output-dir H:\MaterialReplay\p2_score --prepare-only
+  python reproduce.py --mode baseline-score --forecast-reproduction H:\MaterialReplay\baseline_forecast --output-dir H:\MaterialReplay\baseline_score --prepare-only
+评分入口要求同阶段真实执行完成的外部预测目录、完整预测冻结和精确协议SHA；不能把prepared-only目录当作已完成预测。评分复用预测协议的原字节，另记新的评分UTC和批准收据，避免新时间戳破坏预测冻结绑定。历史科学协议和结果始终保留。此处的手动复现记录只授权重放已消费开发资料，不是原研究批准，也不是新独立确认。
+
+GP/森林对照有独立的strong_baselines/README.txt、冻结模板及两步原始CLI；六模式wrapper也提供对应两步，仍默认只准备，不自动重跑这6次拟合。baseline-forecast直接使用包内原来冻结的阶段2可见输入，不必先运行phase2-forecast，也不必重新解析gzip。原阶段2注册协议和freeze保持原字节，以满足强基线源代码中固定来源SHA核验；wrapper只为本次重放建立新路径协议，不修改历史原件。baseline-score必须使用本次baseline-forecast执行完成的外部目录，不能拿另一次phase2重放冒充。任何重放仍是开发资料重复，不增加独立材料数。只需评估现有成果时，直接读冻结评分和审计，完全不需要重放。
+
+环境
+verify_resources.py和默认prepare-only只需Python标准库。科学重放使用原固定环境：Python3.13.5；NumPy2.1.3、SciPy1.15.3；追加对照scikit-learn1.6.1、joblib1.4.2。requirements.txt列出库版本但不包含安装包，不自动安装/升级。可视化若需Matplotlib请看报告说明。原结果中留存实际版本，不把换环境重放叫逐位同一数值。
+
+算法和文件讲解
+DETAILED_ALGORITHM_AND_CODE_ZH.txt解释数据身份、遮挡任务、NIW后验、条件分布、固定YJ变换、原单位CRPS积分、GP/森林CDF边界及文件调用关系。来源单位的限定、阶段1失败、阶段2开发属性和额外对照的posthoc属性都必须保留。进一步独立材料验证及真正成本/分配闭环仍应另立方案，不通过本地资源完整性推断。
+
+更长的核心推导与逐模块讲解保存在root_review/DETAILED_ALGORITHM_AND_CODE_ZH.txt，GP与森林的实际配方在strong_baselines/README.txt。readout_transport_idea中的“保留完整关系后验、压缩决策读出”目前属于数学范围与误差界讨论，尚无压缩算法运行、计时或材料效能证据，不是本次模型性能改进来源。
+
+真实运行日志与中断边界
+run_logs/20261105T145420019666Z和run_logs/20261106T020921917619Z分别保存原启动及本次手动恢复的RUN.json、EVENTS.jsonl真实字节快照，由root最终gate绑定。原中断轮不补造SUMMARY；快照之后实际完成的本轮SUMMARY、交付核查或Git收据作为同名包外补充保存，不回写已封存ZIP。自动化与Goal仍暂停，日志不表示额度已耗尽或论文目标已完成。

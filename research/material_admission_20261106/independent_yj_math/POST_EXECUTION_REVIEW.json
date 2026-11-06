@@ -1,0 +1,35 @@
+{
+  "actual_review_utc": "2026-11-05T15:58:53.833351+00:00",
+  "status": "PASS_READ_ONLY_NO_RERUN",
+  "result_sha256": "702669f0a1903d6adb1869d7e9a002cfcbe5e8790cf151d53c7a4fa870d113f3",
+  "source_and_plan_unchanged": true,
+  "families": 4,
+  "coverage": {
+    "roundtrip": 9,
+    "finite_difference": 5,
+    "quantile_inverse": 40,
+    "density_normalization": 8,
+    "density_derivative": 16,
+    "synthetic_interval_events": 48,
+    "two_coordinate_CRPS": 16,
+    "finite_moment_laws": 8
+  },
+  "max_CRPS_two_coordinate_error": 4.2588155224621005e-13,
+  "max_quantile_CDF_error": 2.617206869656068e-16,
+  "max_density_normalization_error": 3.2229774404868294e-12,
+  "max_roundtrip_absolute_error": 3.4924596548080444e-10,
+  "roundtrip_large_coordinate_note": "Absolute3.49e-10 occurs near magnitude1e6 and is within predeclared absolute+relative criterion; do not report it as allpoints<2e-10.",
+  "minimum_strict_Jensen_gap": 0.10177377715436509,
+  "zero_atom_mass_preserved": 0.5,
+  "interpretation": [
+    "Finite-numerical checks support implementation formulas only; no materials result",
+    "Moment existence from analytic tailpowers, not finitequad",
+    "Quaderror estimates not rigorous machineintervals",
+    "Native inverse location median differs from native mean",
+    "Fixedlaw PIT/coverage invariant; monotone YJ does not remove atoms",
+    "Original phase1 NO_GO preserved; phase2 requires separatelyregistered source/cohort and label approval"
+  ],
+  "source_or_math_reruns": 0,
+  "producer_imports": 0,
+  "new_material_response_reads": 0
+}

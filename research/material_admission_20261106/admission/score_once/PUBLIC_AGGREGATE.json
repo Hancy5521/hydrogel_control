@@ -1,0 +1,230 @@
+{
+  "status": "COMPLETE_DEVELOPMENT_MODEL_ADMISSION",
+  "actual_end_utc": "2026-11-05T15:33:30.905156+00:00",
+  "source_sha256": {
+    "admission_io.py": "90011d05e1071b02422622249006cf669bd88e2f7792f8da87f87e0589188466",
+    "niw_predictive.py": "a8d74e5398f2bb606efb195d3395324f014ba3f9b4f801a67b022c1cc6687818",
+    "score_admission.py": "ef7e29f8dab89a0a644011b8c188fcbeaa178095bbd823d082be8887e0aaccc0"
+  },
+  "plan_sha256": "aab1111cbcdc5c04f46e51431f0c15bb7cddd557edfe5f55fa75349440cd7d55",
+  "forecast_freeze_sha256": "6333233218f62dbe4911b2172adf1650b4427e68bf2cb59a31307733e5fbc8e9",
+  "formula_groups_fit": 64,
+  "summary": {
+    "niw_joint_t": {
+      "none": {
+        "formula_groups": 192,
+        "equal_group_mean_CRPS_native": 36.98694704313318,
+        "RMSE_native": 67.0018788382064,
+        "PIT_empirical_CDF_max_deviation": 0.15586440033724436,
+        "PIT_is_not_strictly_IID_under_shared_learned_Bayes_parameters": true,
+        "coverage": {
+          "0.8": 0.8385416666666666,
+          "0.9": 0.9427083333333334,
+          "0.95": 0.9583333333333334
+        },
+        "mean_interval_width_native": {
+          "0.8": 166.16713912226996,
+          "0.9": 214.10568908225972,
+          "0.95": 256.1895915399345
+        }
+      },
+      "e_form": {
+        "formula_groups": 192,
+        "equal_group_mean_CRPS_native": 36.98780891645041,
+        "RMSE_native": 67.16215068133253,
+        "PIT_empirical_CDF_max_deviation": 0.14113647518695027,
+        "PIT_is_not_strictly_IID_under_shared_learned_Bayes_parameters": true,
+        "coverage": {
+          "0.8": 0.8489583333333334,
+          "0.9": 0.9322916666666666,
+          "0.95": 0.9583333333333334
+        },
+        "mean_interval_width_native": {
+          "0.8": 165.67815068270755,
+          "0.9": 213.46361738927416,
+          "0.95": 255.4058806755387
+        }
+      },
+      "gap_opt": {
+        "formula_groups": 192,
+        "equal_group_mean_CRPS_native": 36.328845994796836,
+        "RMSE_native": 65.58489497026055,
+        "PIT_empirical_CDF_max_deviation": 0.17867389948467982,
+        "PIT_is_not_strictly_IID_under_shared_learned_Bayes_parameters": true,
+        "coverage": {
+          "0.8": 0.8229166666666666,
+          "0.9": 0.9375,
+          "0.95": 0.9583333333333334
+        },
+        "mean_interval_width_native": {
+          "0.8": 157.99588432145129,
+          "0.9": 203.56560512595365,
+          "0.95": 243.5630637591527
+        }
+      },
+      "both": {
+        "formula_groups": 192,
+        "equal_group_mean_CRPS_native": 35.545068607979054,
+        "RMSE_native": 64.99547464552472,
+        "PIT_empirical_CDF_max_deviation": 0.16699234023509207,
+        "PIT_is_not_strictly_IID_under_shared_learned_Bayes_parameters": true,
+        "coverage": {
+          "0.8": 0.796875,
+          "0.9": 0.9270833333333334,
+          "0.95": 0.953125
+        },
+        "mean_interval_width_native": {
+          "0.8": 151.98932451713947,
+          "0.9": 195.81590730318064,
+          "0.95": 234.2769169156297
+        }
+      }
+    },
+    "gaussian_momentmatched": {
+      "none": {
+        "formula_groups": 192,
+        "equal_group_mean_CRPS_native": 36.98453065760678,
+        "RMSE_native": 67.0018788382064,
+        "PIT_empirical_CDF_max_deviation": 0.15546891297087628,
+        "PIT_is_not_strictly_IID_under_shared_learned_Bayes_parameters": true,
+        "coverage": {
+          "0.8": 0.84375,
+          "0.9": 0.9479166666666666,
+          "0.95": 0.9583333333333334
+        },
+        "mean_interval_width_native": {
+          "0.8": 167.01431382211922,
+          "0.9": 214.36055109213143,
+          "0.95": 255.42635099112718
+        }
+      },
+      "e_form": {
+        "formula_groups": 192,
+        "equal_group_mean_CRPS_native": 36.99272319882627,
+        "RMSE_native": 67.16215068133253,
+        "PIT_empirical_CDF_max_deviation": 0.13951086039128308,
+        "PIT_is_not_strictly_IID_under_shared_learned_Bayes_parameters": true,
+        "coverage": {
+          "0.8": 0.84375,
+          "0.9": 0.9375,
+          "0.95": 0.9583333333333334
+        },
+        "mean_interval_width_native": {
+          "0.8": 166.66662142889206,
+          "0.9": 213.91429273668223,
+          "0.95": 254.89460136298476
+        }
+      },
+      "gap_opt": {
+        "formula_groups": 192,
+        "equal_group_mean_CRPS_native": 36.296936921996696,
+        "RMSE_native": 65.58489497026055,
+        "PIT_empirical_CDF_max_deviation": 0.17846490891114158,
+        "PIT_is_not_strictly_IID_under_shared_learned_Bayes_parameters": true,
+        "coverage": {
+          "0.8": 0.8333333333333334,
+          "0.9": 0.9375,
+          "0.95": 0.9583333333333334
+        },
+        "mean_interval_width_native": {
+          "0.8": 158.9349155555858,
+          "0.9": 203.9907556819517,
+          "0.95": 243.06997763487337
+        }
+      },
+      "both": {
+        "formula_groups": 192,
+        "equal_group_mean_CRPS_native": 35.5246058544312,
+        "RMSE_native": 64.99547464552472,
+        "PIT_empirical_CDF_max_deviation": 0.16486794091626034,
+        "PIT_is_not_strictly_IID_under_shared_learned_Bayes_parameters": true,
+        "coverage": {
+          "0.8": 0.8020833333333334,
+          "0.9": 0.9270833333333334,
+          "0.95": 0.953125
+        },
+        "mean_interval_width_native": {
+          "0.8": 153.13347279272526,
+          "0.9": 196.54468450807167,
+          "0.95": 234.19743658441215
+        }
+      }
+    },
+    "independent_target_marginal": {
+      "none": {
+        "formula_groups": 192,
+        "equal_group_mean_CRPS_native": 36.98694704313318,
+        "RMSE_native": 67.0018788382064,
+        "PIT_empirical_CDF_max_deviation": 0.15586440033724436,
+        "PIT_is_not_strictly_IID_under_shared_learned_Bayes_parameters": true,
+        "coverage": {
+          "0.8": 0.8385416666666666,
+          "0.9": 0.9427083333333334,
+          "0.95": 0.9583333333333334
+        },
+        "mean_interval_width_native": {
+          "0.8": 166.16713912226996,
+          "0.9": 214.10568908225972,
+          "0.95": 256.1895915399345
+        }
+      },
+      "e_form": {
+        "formula_groups": 192,
+        "equal_group_mean_CRPS_native": 36.98694704313318,
+        "RMSE_native": 67.0018788382064,
+        "PIT_empirical_CDF_max_deviation": 0.15586440033724436,
+        "PIT_is_not_strictly_IID_under_shared_learned_Bayes_parameters": true,
+        "coverage": {
+          "0.8": 0.8385416666666666,
+          "0.9": 0.9427083333333334,
+          "0.95": 0.9583333333333334
+        },
+        "mean_interval_width_native": {
+          "0.8": 166.16713912226996,
+          "0.9": 214.10568908225972,
+          "0.95": 256.1895915399345
+        }
+      },
+      "gap_opt": {
+        "formula_groups": 192,
+        "equal_group_mean_CRPS_native": 36.98694704313318,
+        "RMSE_native": 67.0018788382064,
+        "PIT_empirical_CDF_max_deviation": 0.15586440033724436,
+        "PIT_is_not_strictly_IID_under_shared_learned_Bayes_parameters": true,
+        "coverage": {
+          "0.8": 0.8385416666666666,
+          "0.9": 0.9427083333333334,
+          "0.95": 0.9583333333333334
+        },
+        "mean_interval_width_native": {
+          "0.8": 166.16713912226996,
+          "0.9": 214.10568908225972,
+          "0.95": 256.1895915399345
+        }
+      },
+      "both": {
+        "formula_groups": 192,
+        "equal_group_mean_CRPS_native": 36.98694704313318,
+        "RMSE_native": 67.0018788382064,
+        "PIT_empirical_CDF_max_deviation": 0.15586440033724436,
+        "PIT_is_not_strictly_IID_under_shared_learned_Bayes_parameters": true,
+        "coverage": {
+          "0.8": 0.8385416666666666,
+          "0.9": 0.9427083333333334,
+          "0.95": 0.9583333333333334
+        },
+        "mean_interval_width_native": {
+          "0.8": 166.16713912226996,
+          "0.9": 214.10568908225972,
+          "0.95": 256.1895915399345
+        }
+      }
+    }
+  },
+  "public_export": {
+    "source_file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\admission\\score_once\\RESULTS.json",
+    "source_sha256": "bd290374748c7b22735a87955e9edd4cdb3112db8706a88bfaaec3d75e3e6ef9",
+    "excluded": "per-forecast scores, native truth and response-bearing fit/predictive states",
+    "not_original_receipt": true
+  }
+}

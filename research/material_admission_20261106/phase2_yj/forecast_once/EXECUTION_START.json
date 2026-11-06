@@ -1,0 +1,123 @@
+{
+  "actual_utc": "2026-11-05T16:06:35.023991+00:00",
+  "source_sha256": {
+    "yj_model.py": "892e90922091b424ab1fd8d94f5901a2a8585861f39e7f3ebe54eca3166e98bc",
+    "run_phase2.py": "3df8cbab90b58b5ad2a56691d34b16bdceb3748d5a033cb5752dd9469c9acf0b",
+    "score_phase2.py": "0160ad1b175ce47295579ad020575b1db63bdd0fce27076c167f81f36217a964"
+  },
+  "parent_source_sha256": {
+    "admission_io.py": "90011d05e1071b02422622249006cf669bd88e2f7792f8da87f87e0589188466",
+    "niw_predictive.py": "a8d74e5398f2bb606efb195d3395324f014ba3f9b4f801a67b022c1cc6687818",
+    "score_admission.py": "ef7e29f8dab89a0a644011b8c188fcbeaa178095bbd823d082be8887e0aaccc0"
+  },
+  "plan_sha256": "0bc6c752457732cd535608510ae12da01f89fa0eb83f30fa0d67516dccdc8bba",
+  "approval_sha256": "464576b6add96720c308cf2031f3725e5a385d2927c47cc0e3b6f18072a87e0b",
+  "configuration": {
+    "version": "phase2_fixed_YJ_half_reference_v1",
+    "dataset": "jarvis_dft_3d",
+    "new_fit_groups": 64,
+    "new_diagnostic_development_groups": 192,
+    "old40_and_all_phase1_256_whole_components_excluded": true,
+    "models": [
+      "raw_joint_t",
+      "raw_momentmatched_Gaussian",
+      "yj_joint_t",
+      "yj_latent_momentmatched_Gaussian",
+      "yj_target_marginal"
+    ],
+    "masks": [
+      [],
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "mask_names": [
+      "none",
+      "e_form",
+      "gap_opt",
+      "both"
+    ],
+    "forecast_count": 3840,
+    "actual_NIW_fits": 2,
+    "target_fields": [
+      "e_form",
+      "gap opt",
+      "bulk modulus"
+    ],
+    "target_index": 2,
+    "lambda": 0.5,
+    "same_fixed_lambda_all3fields": true,
+    "transform": "v=native/s0_fitSD; u=YJ_half(v); z=(u-fit_mean_u)/fit_SD_u",
+    "prior": {
+      "p": 3,
+      "m0": [
+        0,
+        0,
+        0
+      ],
+      "kappa0": 1,
+      "nu0": 7,
+      "Lambda0_diagonal": [
+        3,
+        3,
+        3
+      ]
+    },
+    "empirical_reference_not_native_scale_pure_Bayes": true,
+    "own_row_proxy_conditioning_only": true,
+    "all_diag_groups_are_development": true,
+    "raw_scores": "unchanged parent closed CRPS",
+    "yj_scores": "deterministic native CDF_SF integral with nonconstant inverse Jacobian",
+    "score_absolute_tolerance_native": 1e-08,
+    "score_relative_tolerance": 1e-08,
+    "quad_subinterval_limit": 200,
+    "tail_initial_standard_cut": 16.0,
+    "tail_max_standard_cut": 1000000.0,
+    "tail_max_doublings": 16,
+    "tail_each_absolute_budget_fraction": 0.125,
+    "tail_bounds_are_ideal_arithmetic_not_IEEE_intervals": true,
+    "fixed_integral_subdivision_points": [
+      -16.0,
+      -8.0,
+      -4.0,
+      -1.0,
+      0.0,
+      1.0,
+      4.0,
+      8.0,
+      16.0
+    ],
+    "coverage_levels": [
+      0.8,
+      0.9,
+      0.95
+    ],
+    "RMSE_point_forecast": "native_predictive_median_for_every_model",
+    "gates": {
+      "YJdual_to_own_none_CRPS_ratio_max": 0.98,
+      "YJdual_to_best_same_information_reference_CRPS_ratio_max": 1.02,
+      "references": [
+        "raw_joint_t",
+        "raw_momentmatched_Gaussian",
+        "yj_latent_momentmatched_Gaussian"
+      ],
+      "YJdual_90_coverage_min": 0.8,
+      "YJdual_PIT_ECDF_max_deviation_max": 0.15
+    },
+    "PIT_threshold_is_descriptive_not_exact_KS_or_calibration": true,
+    "no_lambda_prior_role_selection_or_threshold_tuning": true,
+    "stage1_NO_GO_retained_and_not_rescored": true,
+    "transported_latent_Gaussian_is_not_native_momentmatched_Gaussian": true,
+    "readout_transport_or_star_moment_certificate_not_inherited": true,
+    "new_wet_DFT_or_allocation_agent_calls": 0
+  },
+  "new_cohort_development_only": true,
+  "phase1_NO_GO_preserved": true
+}

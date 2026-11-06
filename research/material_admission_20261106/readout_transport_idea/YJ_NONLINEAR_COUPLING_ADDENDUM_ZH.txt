@@ -1,0 +1,56 @@
+YJ逆变换下的native读出耦合：纯数学附录
+====================================
+
+这是一份独立数学补充，不修改当前phase2源码/参数/score，不授权新的模型、试验或材料响应读取；不把它绑定为当前NIW/YJ材料有效性证据。root提出的L2形式成立，其作用是替代错误的“latent W1乘一个常数scale”，不是新算法或自动数值积分证书。
+
+1.全实轴增长与导数
+-----------------
+g为lambda=.5的YJ inverse。u>=0时g=u+u²/4,g'=1+u/2；u<0时g=1-(1-3u/2)^(2/3)，g'=(1-3u/2)^(-1/3)<=1。
+因此全实轴上
+  |g(u)|<=1+u²，g'(u)<=1+.5|u|。
+正侧第一式等价于.75u²-u+1>=0；负侧由凹函数切线不等式(1+1.5r)^(2/3)-1<=r及r<=1+r²得到。
+
+所以U具有有限二阶矩时native=s0*g(U)有有限一阶绝对矩；对有限df t，需要df>2。原证明不能只要求latent一阶矩，因为g正侧二次增长。
+
+2.同一coupling的原单位W1界
+-------------------------
+任意二阶可积coupling(U,V)，由积分形式均值定理和g'界，安全地有
+ |g(U)-g(V)|<=|U-V|[1+.5(|U|+|V|)]。
+取期望并用Cauchy-Schwarz：
+ E|s0*g(U)-s0*g(V)|
+ <=s0[1+.5||U||_2+.5||V||_2]||U-V||_2。
+以同一coupling构造边际后，W1(native F,native G)不超过上式。这里L2范数都针对同一coupling分布，不是样本SD，也不能漏掉均值平方。
+
+这个系数可进一步改进（非必要的更紧版本）：沿线段积分有int_0^1 |(1-t)U+tV|dt<=(|U|+|V|)/2，故上述.5系数可替换为.25。root给的.5版本仍完全安全，未来实现可选择一个固定已审版本，不能在结果差时临时更换证明/阈值。本附录只记录数学，不选择实际算法。
+
+3.逐theta Gaussian条件下的解析L2量
+--------------------------------
+沿用主证明：query z|theta_h~N(m_h,V_h)，同一个独立epsilon~N(0,1)，原/近似latent target为
+ U_h=c_h+b_h^T z+s_h epsilon，
+ V_h=c_g+b_g^T z+s_g epsilon。
+map与prototype系数固定于当前状态/动作、在未来z前已确定；所有原theta likelihood/后验权重保留。
+
+定义mU=c_h+b_h^T m_h，vU=b_h^T V_h b_h+s_h²；mV/vV同理，mD=delta_c+delta_b^T m_h，vD=delta_b^T V_h delta_b+delta_s²。
+令L_Uh=sqrt(mU²+vU)，L_Vh=sqrt(mV²+vV)，L_Dh=sqrt(mD²+vD)。query坐标相关性留在完整V_h中，残差标准差而非方差做差。
+
+先给定h构造coupling、再用精确posterior的塔式恒等式，得到预期native表示误差上界
+ eta_native,a=s0*sum_h w_h [1+.5 L_Uh+.5 L_Vh] L_Dh。
+它通常比直接压缩latent W1后乘常数更保守/合理，也可用上段.25版本变紧。它是一个具体coupling经Cauchy-Schwarz的上界，不是最优W1、最优prototype或实际材料误差。
+
+同一z到达后可以只对epsilon作L2范数求点态界，处理罕见分支；预期小不意味着每个z的误差小。prototype若依赖未来z，不能把随机系数塞进上述固定系数Gaussian闭式预期；必须重新做对整个规则有效的证明。
+
+4.为何不能只乘latent误差
+-----------------------
+g并非全局Lipschitz。取latent点质量U=M,V=M+delta，M>=0,delta>0，latent W1=delta，而native差=s0[delta(1+M/2)+delta²/4]。M可以任意大，所以不存在一个与位置无关的小固定scale，将所有latent W1直接变成native W1。非退化Gaussian平滑也保留此增长问题。
+
+只要native一阶矩有限，原CRPS一般coupling结论继续成立：内部Bayes-risk差<=native W1，实际观测CRPS差<=2 native W1。不能把这些系数套在未转换的latent eta上。动作比较仍需加积分/有限posterior近似误差；多步adaptive界仍需另证，当前附录均未认证。
+
+5.范围区别与强计算基线
+---------------------
+上述闭式L2量适用于每个原theta下固定full Gaussian、合法query和固定prototype。当前admission将连续NIW整合成条件t；本附录不是直接替换其native scorer的代码。一般L2不等式可用于其他分布，但要重新证明所用coupling及其矩，不能把条件t的z相关scale当固定Gaussian残差。
+
+对于共同单调YJ target transport，完整native mixture的CDF可以直接写为各原分量Gaussian CDF的加权和。用M个数值积分节点求R(F)=int F(1-F) dx，完整读出成本是O(H*M)，而非必然O(H²)。固定audit law时还可预缓存H×M CDF表并用batch矩阵乘法；也可流式逐节点/分块压低内存。这是prototype法必须公平比较的强baseline。
+
+Kprototype可使CDF组合读出变为O(K*M)，但仍有完整H的likelihood、权重更新/聚合、prototype构造/重建和L2界计算。缓存条件改变、积分精度、尾预算及fallback都须一并计入。若H小或posterior更新才是瓶颈，就没有实现此压缩的理由；不得只打一个重算所有H²CDF/能量项的弱循环。
+
+本数学附录没有新数值验证、source或材料结论；旧readout证明保留，phase2原模型/门及原单位积分源码不变。未来是否实施仍取决于材料任务、真实bottleneck和独立可审协议。

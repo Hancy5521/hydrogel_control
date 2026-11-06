@@ -1,0 +1,13 @@
+{
+  "actual_utc": "2026-11-05T15:33:19.926390+00:00",
+  "source_sha256": {
+    "admission_io.py": "90011d05e1071b02422622249006cf669bd88e2f7792f8da87f87e0589188466",
+    "niw_predictive.py": "a8d74e5398f2bb606efb195d3395324f014ba3f9b4f801a67b022c1cc6687818",
+    "score_admission.py": "ef7e29f8dab89a0a644011b8c188fcbeaa178095bbd823d082be8887e0aaccc0"
+  },
+  "plan_sha256": "aab1111cbcdc5c04f46e51431f0c15bb7cddd557edfe5f55fa75349440cd7d55",
+  "approval_sha256": "8d075b9bb823f5f6e08c1b5afbecc699cdb35b181ede3ff45eb77930f74e5777",
+  "forecast_freeze_sha256": "6333233218f62dbe4911b2172adf1650b4427e68bf2cb59a31307733e5fbc8e9",
+  "all2304_forecasts_verified_before_native_target_extraction": true,
+  "physical_full_gzip_reparse_disclosed": true
+}

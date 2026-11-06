@@ -1,0 +1,23 @@
+phase1 NO_GO：冻结数据的事后描述诊断
+
+原门限与失败状态完全保留；没有新拟合、概率评分或新材料。
+fit64 bulk：{"n": 64, "mean": 101.924109375, "median": 83.7, "sample_SD": 65.15350088368656, "skewness_population_moment": 0.475519779035683, "negative_count": 0, "zero_count": 0, "minimum": 9.133, "maximum": 251.2}
+diagnostic192 bulk：{"n": 192, "mean": 96.31909895833333, "median": 80.75, "sample_SD": 66.94157960205621, "skewness_population_moment": 1.2799367555563392, "negative_count": 0, "zero_count": 0, "minimum": 7.3, "maximum": 375.611}
+
+model | mask | CRPS | 90coverage | PITmean/median | PITD
+niw_joint_t | none | 36.986947 | 0.942708 | 0.444434 / 0.371289 | 0.155864
+niw_joint_t | e_form | 36.987809 | 0.932292 | 0.445352 / 0.366870 | 0.141136
+niw_joint_t | gap_opt | 36.328846 | 0.937500 | 0.435379 / 0.350192 | 0.178674
+niw_joint_t | both | 35.545069 | 0.927083 | 0.438140 / 0.353490 | 0.166992
+gaussian_momentmatched | none | 36.984531 | 0.947917 | 0.444963 / 0.372610 | 0.155469
+gaussian_momentmatched | e_form | 36.992723 | 0.937500 | 0.446205 / 0.369122 | 0.139511
+gaussian_momentmatched | gap_opt | 36.296937 | 0.937500 | 0.436316 / 0.352241 | 0.178465
+gaussian_momentmatched | both | 35.524606 | 0.927083 | 0.439353 / 0.354948 | 0.164868
+independent_target_marginal | none | 36.986947 | 0.942708 | 0.444434 / 0.371289 | 0.155864
+independent_target_marginal | e_form | 36.986947 | 0.942708 | 0.444434 / 0.371289 | 0.155864
+independent_target_marginal | gap_opt | 36.986947 | 0.942708 | 0.444434 / 0.371289 | 0.155864
+independent_target_marginal | both | 36.986947 | 0.942708 | 0.444434 / 0.371289 | 0.155864
+
+所有12组合的80/90/95coverage、宽度、PIT十bin及最大偏差位置见DIAGNOSIS.json。
+gap==0、gap>0、gap<0（即使为空也保留）分别给fit/diag bulk与全部12组合描述，未按Y筛选。所有组收益与正负胜负保留于JSON和CSV。
+这些只解释当前失败可能的统计表现，不恢复准入资格，不证明分层或非线性新模型有效；当前256组与siblings不能变成未来独立确认。

@@ -1,0 +1,14 @@
+{
+  "recorded_actual_utc": "2026-11-05T16:06:30.778218+00:00",
+  "kind": "ROOT_ADMINISTRATIVE_LAUNCH_FAILURE_PRESERVED",
+  "exit_code": 1,
+  "command": "run_phase2.py --plan EXECUTION_PLAN_REGISTERED.json --approval ROOT_FORECAST_APPROVAL.json --output-dir forecast_once",
+  "error": "ValueError: Root approval of this exact plan and process phase required",
+  "root_record_scope": "PHASE2_FIXED_YJ_HALF_MATERIAL_ADMISSION",
+  "source_required_scope": "PHASE2_FIXED_YJ_HALF_ADMISSION",
+  "failed_before": "validate returned; outputmkdir/rawgzipparse/fit/prediction not reached",
+  "output_directory_did_not_exist": true,
+  "new_phase2_fit_or_property_access": 0,
+  "source_protocol_roles_thresholds_changed": false,
+  "original_approval_sha256": "5032b5f3f84e50204da9d6526bda3079719c131be8e114f2c6babd73cdd9374f"
+}

@@ -1,0 +1,35 @@
+{
+  "kind": "FIXED_STRONG_BASELINE_SOURCE_FREEZE_AST_ONLY",
+  "actual_utc": "2026-11-05T16:36:43.326629+00:00",
+  "actual_Asia_Shanghai": "2026-11-06T00:36:43.326629+08:00",
+  "source_sha256": {
+    "baseline_models.py": "a602b50663b64490af26a11a65b5effb7753e61aa6e9b8f71c8221a78898cfd5",
+    "run_baselines.py": "15a545172bedbf7af04d8fca5a7608f954be89e89d169087ea88aa3ed748c6c5",
+    "score_baselines.py": "0199da5a70f4290df4ae685879961ab92003e1f8fe7123f55f2b4b0220b463d2"
+  },
+  "source_bytes": {
+    "baseline_models.py": 9026,
+    "run_baselines.py": 14179,
+    "score_baselines.py": 10873
+  },
+  "AST_syntax": "PASS",
+  "template_sha256": "cea59416caebb5ad26710440ce8727e13b0c6a71eaa422aa1a0724d2c0615f28",
+  "README_sha256": "58f0497b0d50bf0261dd803eeb1d28b5bd15d5256e88aa2a80ae884840723706",
+  "parent_sources_unchanged": {
+    "admission_io.py": "90011d05e1071b02422622249006cf669bd88e2f7792f8da87f87e0589188466",
+    "niw_predictive.py": "a8d74e5398f2bb606efb195d3395324f014ba3f9b4f801a67b022c1cc6687818",
+    "score_admission.py": "ef7e29f8dab89a0a644011b8c188fcbeaa178095bbd823d082be8887e0aaccc0"
+  },
+  "source_imports_sklearn_imports_fits_or_predictions": 0,
+  "raw_gzip_visible_fit_values_truth_or_candidate_score_objects_read": false,
+  "input_hash_metadata_reused_from_completed_phase2_freeze": true,
+  "pending_before_actual_registration": [
+    "root pre-baseline scope file/hash",
+    "score-only existing truth SHA from root metadata",
+    "independent baseline Gaussian/empirical score-audit receipt file/hash",
+    "actualUTC and root exact-plan approval"
+  ],
+  "no_main_model_gate_result_or_source_change": true,
+  "no_baseline_outcomes_observed": true,
+  "score_only_files_are_not_opened_or_hashed_by_forecast_process": true
+}

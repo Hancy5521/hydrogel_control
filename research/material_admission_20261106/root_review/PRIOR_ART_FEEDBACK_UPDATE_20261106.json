@@ -1,0 +1,47 @@
+{
+  "actual_utc": "2026-11-06T02:12:57.011792+00:00",
+  "read_session": "20261106T020921917619Z",
+  "queries": [
+    "site.proceedings.mlr.press Bayesian active learning multi output unknown correlations experimental design information acquisition",
+    "site.proceedings.neurips.cc active feature acquisition missing labels joint distribution Bayesian experimental design",
+    "site.nature.com materials autonomous discovery closed loop self driving laboratories uncertainty validation multi property"
+  ],
+  "sources": [
+    {
+      "url": "https://proceedings.mlr.press/v238/bickford-smith24a.html",
+      "title": "Making Better Use of Unlabelled Data in Bayesian Active Learning",
+      "version": "AISTATS2024 PMLR238 pp847-855",
+      "depth": "abstract and selected PDF pp3-5, sections3/4.1/4.2; not full18pages",
+      "finding": "Fixed representation plus probabilistic head and compatible update assumed by acquisition are direct precedents. Their read section explains mismatch between assumed Bayesian and actual approximate updates.",
+      "license": "paper metadata author/PMLR; no paper/code redistributed",
+      "official_code": "https://github.com/fbickfordsmith/epig",
+      "code_read_depth": "README rendered incompletely; one guessed raw main/LICENSE 404. License and commit unverified; no copy or execution."
+    },
+    {
+      "url": "https://proceedings.mlr.press/v151/li22d.html",
+      "title": "Safe Active Learning for Multi-Output Gaussian Processes",
+      "version": "AISTATS2022 PMLR151 pp4512-4551",
+      "depth": "abstract and selected PDF pp2-4 sections3.1/3.2 and beginning3.3; not full40pages/proofs",
+      "finding": "Partially observed multi-output Gaussian likelihood and HMC hyperparameter inference already exist. Treat learned correlation plus query outputs as referenced baseline machinery, not an original principle.",
+      "license": "author/PMLR metadata; no source redistribution"
+    },
+    {
+      "url": "https://proceedings.mlr.press/v54/chen17b.html",
+      "title": "Near-optimal Bayesian Active Learning with Correlated and Noisy Tests",
+      "version": "AISTATS2017",
+      "depth": "abstract/metadata only",
+      "finding": "Conditional dependence and greedy information failures predate this work. We did not verify proof assumptions or execute ECED.",
+      "license": "author/PMLR metadata; not redistributed"
+    },
+    {
+      "url": "https://arxiv.org/html/2607.04508v1",
+      "doi": "10.48550/arXiv.2607.04508",
+      "title": "Compressing the Validation Bottleneck: An Agentic Self-Driving Lab for Scientific Discovery",
+      "version": "v1 submitted2026-07-05; article states accepted ICML2026 AIforScience Workshop, not main conference",
+      "depth": "selected entire short main text sections1-4 and AppendixA.1/A.2; cited papers not read via this reference list",
+      "finding": "Prior-aware DOE plus cost-aware surrogate measurement and verifier gating is a close materials agent conceptual precedent. Sections use future-tense evaluations; not evidence of their completed material benchmark wins. Our prospective difference must be measured partial-property relationship feedback and bounded native-risk readout, not just repair/grow agent labels.",
+      "license": "arXiv perpetual non-exclusive, viewed only not redistributed"
+    }
+  ],
+  "scope": "bounded direct-neighbor extension; not exhaustive novelty or100-paper full reading; no new data download/modelfit."
+}

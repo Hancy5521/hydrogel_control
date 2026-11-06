@@ -1,0 +1,11 @@
+{
+  "actual_approved_utc": "2026-11-05T15:14:37.040533+00:00",
+  "approved": true,
+  "scope": "METADATA_ONLY_MATERIAL_FEEDBACK_ADMISSION_SELECTION",
+  "plan_sha256": "48509f75cf5c5dbd117fda54af45056baf5c631a58b6de5caed551994571061e",
+  "source_sha256": "910c3613e5536b9e29532dc547ba6bc92c80b085544a2a38077b640c725727d6",
+  "no_new_property_response_or_gzip_access": true,
+  "no_fit_or_prediction_or_scoring": true,
+  "fixed_development_cohort": "64 fit +192 diagnostic whole-formula groups; all256 and siblings permanently development, not independent confirmation",
+  "new_statistical_source_protocol_required_later": true
+}

@@ -1,0 +1,8 @@
+{
+  "actual_approved_utc": "2026-11-05T16:36:28.234806+00:00",
+  "approved": true,
+  "scope": "INDEPENDENT_PHASE2_NATIVE_SCORE_ALL_COORDINATES_ONCE",
+  "script_sha256": "257551f8e648a3ce832d1ada677b25168b53a0663ad0e6133a345427f8e3322a",
+  "plan_sha256": "05444f1f55e4216666152a2921aeb6d5acfdd611daa69f1ad7bf28a97cc45cbf",
+  "scope_limit": "Every3840fixed native-coordinateCDF/SF comparison plus probability/interval/median/density/summary/gate arithmetic; exactlaw/outcome caching separatelyreported. No producer/rawsource/refits/replay. Alltolerancesandallinventoryfixedbeforephase2targets by separateextent."
+}

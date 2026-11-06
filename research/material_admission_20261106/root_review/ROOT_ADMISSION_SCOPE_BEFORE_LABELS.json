@@ -1,0 +1,64 @@
+{
+  "actual_recorded_utc": "2026-11-05T15:16:03.090242+00:00",
+  "status": "PREFIT_SCOPE_DECISIONS_NO_PROPERTY_ACCESS",
+  "metadata_contract_sha256": "2637532951c1e6b86ee8bdaa0cbcdb95a48982509de14770f87487e1b55a241d",
+  "metadata_selection_plan_sha256": "48509f75cf5c5dbd117fda54af45056baf5c631a58b6de5caed551994571061e",
+  "fixed_role_file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\task_contract\\selection_once\\ADMISSION_ROLE_SELECTION.json",
+  "role_sha256": "0bc81d0400a4076c854af11e654ca3ca9bcbceb249f2ee6c26d356c53ceae9c0",
+  "cohort_roles": {
+    "fit": 64,
+    "diagnostic": 192,
+    "all_development": 256,
+    "unselected_formula_groups_left": 8546,
+    "independent_confirmation": 0
+  },
+  "statistical_reference": "Full trivariate NIW followed by exact one-new-row conditional-t; replaces unadopted Gaussian-star candidate for this admission only. No agent or complete budget campaign.",
+  "prior_on_fit_only_standardized_coordinates": {
+    "dimension": 3,
+    "mu0": [
+      0,
+      0,
+      0
+    ],
+    "kappa0": 1,
+    "nu0": 7,
+    "Psi0_diagonal": [
+      3,
+      3,
+      3
+    ]
+  },
+  "standardization_status": "64fit center and sampleSD estimated once. A zero or nonfinite scale stops. This makes native-scale prior data-dependent/empirical; conditional conjugate NIW algebra is exact for the specified standardized reference, not a data-independent native prior or a calibration guarantee. No diagnostic scale fitting.",
+  "main_pattern": "both native proxies e_form and gap opt; bulk target hidden until all predictions frozen",
+  "all_patterns": [
+    "none",
+    "e_form",
+    "gap opt",
+    "both"
+  ],
+  "comparison_references": [
+    "full NIW joint predictive t",
+    "moment-matched posterior-predictive full Gaussian, not MLE plugin",
+    "same t bulk marginal independent-of-proxy relationship ablation; identical to full t at no-proxy and not a third separately fitted algorithm"
+  ],
+  "descriptive_admission_gates": {
+    "full_NIW_both_native_mean_CRPS_reduction_vs_own_no_proxy_marginal_at_least": 0.02,
+    "full_NIW_both_mean_CRPS_no_more_than_Gaussian_factor": 1.02,
+    "full_NIW_both_90percent_interval_empirical_coverage_at_least": 0.8,
+    "full_NIW_both_PIT_empirical_CDF_max_deviation_at_most": 0.15,
+    "interpretation": "Predeclared practical go/no-go screens only; not inferential equality/noninferiority, calibrated probability guarantees or field superiority."
+  },
+  "failure_rule": "A failed descriptive or technical gate stops this simple NIW full campaign. Preserve all masks and references. Do not change the threshold, prior, group order or seed to rescue the consumed256 cohort. A genuinely different scientific model requires separate explicit scope and protocol; any reuse stays development.",
+  "score": "Studentt closed-form CRPS loss primary, Gaussian closed form, raw-unit affine scale. Independent review uses CDF/SF quadrature and density-energy comparison. Original probability law stored as df/location/scale; tscale never called covariance.",
+  "prediction_truth_order": "trusted source extraction only after frozen source/actual-UTC protocol; fit64x3 and diagnostic192x2 proxies exposed to predictor,192target truths separated; freeze all2304laws before separate evaluator target reveal. Full gzip physical parse must be disclosed; unselected values not used or summarized.",
+  "not_claimed": [
+    "paid feedback allocation improvement",
+    "material strong-baseline win",
+    "independent batch/source validation",
+    "native missingness ground-truth recovery",
+    "complete Eigen autocatalysis or new Bayes planner",
+    "general NIW conjugacy after many partial-data rows",
+    "old moment bounds valid for full model"
+  ],
+  "math_result_sha256": "8bd92f408575b9e7d033569c2fef9a7e6e3aaa7f3a8a0352df00f0ecff784a9e"
+}

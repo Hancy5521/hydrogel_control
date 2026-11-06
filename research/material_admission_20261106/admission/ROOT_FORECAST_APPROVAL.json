@@ -1,0 +1,22 @@
+{
+  "actual_approved_utc": "2026-11-05T15:23:57.541601+00:00",
+  "actual_asia_shanghai": "2026-11-05T23:23:57.541654+08:00",
+  "approved": true,
+  "scope": "WARM_ONLY_NIW_MATERIAL_ADMISSION",
+  "plan_sha256": "aab1111cbcdc5c04f46e51431f0c15bb7cddd557edfe5f55fa75349440cd7d55",
+  "allowed_phases": [
+    "forecast"
+  ],
+  "source_sha256": {
+    "admission_io.py": "90011d05e1071b02422622249006cf669bd88e2f7792f8da87f87e0589188466",
+    "niw_predictive.py": "a8d74e5398f2bb606efb195d3395324f014ba3f9b4f801a67b022c1cc6687818",
+    "score_admission.py": "ef7e29f8dab89a0a644011b8c188fcbeaa178095bbd823d082be8887e0aaccc0"
+  },
+  "independent_static_math_score_gate_sha256": "ec4d2a30a19359433f25df45ea1e6c22b69a623074a187e3749ec262d89db6d0",
+  "independent_static_IO_gate_sha256": "8e8d7ae3c0f6479761f0ead62557fcf12255cd9006aeb3428eca55e94e042fa9",
+  "authorized_new_native_model_inputs": "64fit*3 and192diagnostic*2proxy, trusted fullsource parse explicitly disclosed",
+  "diagnostic_target_to_model_allowed": false,
+  "score_phase_approved_now": false,
+  "future_independent_confirmation_claim": false,
+  "unmodified_model_prior_groups_thresholds_required": true
+}

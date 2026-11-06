@@ -1,0 +1,28 @@
+{
+  "kind": "independent_saved_fixed_baseline_snapshot_arithmetic",
+  "status": "PREPARED_PENDING_EXACT_ROOT_APPROVAL",
+  "actual_registered_utc": "2026-11-06T02:10:28.605009+00:00",
+  "script_sha256": "046b73114e29b70b004b8a32009264b9e9025babb528a76988f95a41bac0eaa3",
+  "baseline_directory": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\strong_baselines",
+  "baseline_plan_sha256": "0543eae0e4ac5f1f89fc3a36256770cb2b160f51bb3b2ff657a8b2cdbb46b754",
+  "source_sha256": {
+    "baseline_models.py": "a602b50663b64490af26a11a65b5effb7753e61aa6e9b8f71c8221a78898cfd5",
+    "run_baselines.py": "15a545172bedbf7af04d8fca5a7608f954be89e89d169087ea88aa3ed748c6c5",
+    "score_baselines.py": "0199da5a70f4290df4ae685879961ab92003e1f8fe7123f55f2b4b0220b463d2"
+  },
+  "role_sha256": "aee4d2aa78f7522eae8aba2b8ac56e186b3c5d81059a6d3a5b44b16d1042350b",
+  "visible_inputs_sha256": "0337959bb3f5d32172f16af816048c9879c0b057c13753e0ea9d1a5adffd2181",
+  "forecast_freeze_sha256": "e113ea9443af88aa858d85fd6579cd6f85b6458c02aa69c071c4140ab4eeb697",
+  "forecast_artifact_sha256": {
+    "EXECUTION_START.json": "ee10e52022516131641d1aa22816e994ad6c2c4618e2716de586c58f27ef486c",
+    "INPUT_SCOPE_RECEIPT.json": "d63ab08771e38d8a3554f0de6598c0248d99d51094dbb1f9ece4702c1a966b7f",
+    "LIBRARY_VERSIONS.json": "63d17105e46a5f32fb40be96cd8d60512f20361b98d027b376a31c5871a5e95f",
+    "MODEL_STATES.json": "42d716066b24069c636ec28273b8767d40c8924b6e500824f27461d9e039acd3",
+    "FORECASTS.json": "e202fd4935e04e461b3c8028e281d3275c7bafae97e3ad57c76c455b84aefabc"
+  },
+  "criteria": {
+    "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\strong_baselines\\independent_review\\snapshot_audit\\PRESTATE_MATH_CRITERIA.json",
+    "sha256": "c96d75155047086556c40676ec7dc33d3f574fd3e097484938e43d6a1bf27b0a"
+  },
+  "scope": "all1536saved forecasts; GP576 learned laws,RF576 learned laws,384marginal; no native target read/no sklearn or SUT import/no fit or predict rerun"
+}

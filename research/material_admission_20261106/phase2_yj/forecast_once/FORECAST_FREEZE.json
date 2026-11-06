@@ -1,0 +1,25 @@
+{
+  "status": "COMPLETE_ALL3840_FORECASTS_FROZEN",
+  "actual_utc": "2026-11-05T16:06:46.255247+00:00",
+  "source_sha256": {
+    "yj_model.py": "892e90922091b424ab1fd8d94f5901a2a8585861f39e7f3ebe54eca3166e98bc",
+    "run_phase2.py": "3df8cbab90b58b5ad2a56691d34b16bdceb3748d5a033cb5752dd9469c9acf0b",
+    "score_phase2.py": "0160ad1b175ce47295579ad020575b1db63bdd0fce27076c167f81f36217a964"
+  },
+  "parent_source_sha256": {
+    "admission_io.py": "90011d05e1071b02422622249006cf669bd88e2f7792f8da87f87e0589188466",
+    "niw_predictive.py": "a8d74e5398f2bb606efb195d3395324f014ba3f9b4f801a67b022c1cc6687818",
+    "score_admission.py": "ef7e29f8dab89a0a644011b8c188fcbeaa178095bbd823d082be8887e0aaccc0"
+  },
+  "plan_sha256": "0bc6c752457732cd535608510ae12da01f89fa0eb83f30fa0d67516dccdc8bba",
+  "files": {
+    "EXECUTION_START.json": "8440b79699eafb7c51c8b6a0da85e5c6c11a2208ee6c2dc7a63a331f3a2c35fe",
+    "VISIBLE_INPUTS.json": "0337959bb3f5d32172f16af816048c9879c0b057c13753e0ea9d1a5adffd2181",
+    "EXTRACTION_RECEIPT.json": "9823abce9269aedc9ebafd92a5af5e4df9b73d1fbca2f2d50980295f1a7ebc1e",
+    "FIT_REFERENCE.json": "a6f28ae8213bd1808f91aec038f65558cb13856354a9706bfca8dc7590bde747",
+    "FORECASTS.json": "d9c8939dba94f2507b1f7a60b6457bfa457907241b5cc41fc705c4bdea254fea"
+  },
+  "forecast_count": 3840,
+  "diagnostic_target_model_access": 0,
+  "physical_whole_source_parse_disclosed": true
+}

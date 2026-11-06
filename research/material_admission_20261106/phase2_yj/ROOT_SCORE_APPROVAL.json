@@ -1,0 +1,18 @@
+{
+  "actual_approved_utc": "2026-11-05T16:12:27.856571+00:00",
+  "approved": true,
+  "scope": "PHASE2_FIXED_YJ_HALF_ADMISSION",
+  "plan_sha256": "0bc6c752457732cd535608510ae12da01f89fa0eb83f30fa0d67516dccdc8bba",
+  "allowed_phases": [
+    "score_after_freeze"
+  ],
+  "forecast_audit_result": {
+    "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_yj_math\\saved_forecast_audit\\execution_once\\INDEPENDENT_PHASE2_FORECAST_AUDIT.json",
+    "sha256": "dd4b611846e90fdcfc1b9478bbf294ebfa04e87a64e488a5c3e0663a84b1fa9c"
+  },
+  "forecast_freeze_sha256": "dcd88d11401f7f8953e9b921bf3ab2a157740c937084b106e77c61732e806faf",
+  "192_diagnostic_native_targets_evaluator_only": true,
+  "target_model_training_or_transform_selection_access": false,
+  "all_models_masks_four_gates_and_sources_preserved": true,
+  "no_original_phase1_rescore_or_changes": true
+}

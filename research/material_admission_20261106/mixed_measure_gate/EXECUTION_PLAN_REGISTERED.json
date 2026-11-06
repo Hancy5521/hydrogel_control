@@ -1,0 +1,125 @@
+{
+  "kind": "synthetic_mixed_measure_canonical_cell_gate",
+  "status": "REGISTERED",
+  "registered_actual_utc": "2026-11-06T02:28:01.021505+00:00",
+  "source_sha256": {
+    "mixed_likelihood.py": "a4ee50ef350ee7d9a3dbcf094d615aa68cd059b35d1e422a91068cdc7e65eea4",
+    "run_gate.py": "6b4915725044a2218e0c721721d7ce8c4abbcdce823bce75f09a713cad404a67"
+  },
+  "configuration": {
+    "version": "fixed_mixed_measure_cell_ledger_v1",
+    "prior_h": [
+      0.1,
+      0.2,
+      0.3,
+      0.4
+    ],
+    "gap_atom_probability_by_h": [
+      0.1,
+      0.3,
+      0.6,
+      0.8
+    ],
+    "rho_by_h": [
+      -0.6,
+      -0.2,
+      0.25,
+      0.65
+    ],
+    "h_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "zero_branch": {
+      "coordinates": [
+        "A",
+        "Y"
+      ],
+      "mean": [
+        ".2*h",
+        "-.1*h"
+      ],
+      "covariance": "[[1,rho],[rho,1]]",
+      "G": "point mass at zero"
+    },
+    "slab_branch": {
+      "coordinates": [
+        "A",
+        "G",
+        "Y"
+      ],
+      "mean": [
+        ".2*h",
+        ".3-.1*h",
+        "-.1*h"
+      ],
+      "covariance": "rho**abs(i-j)",
+      "G_domain": "all real, including negative values"
+    },
+    "base_measure": "A,Y: Lebesgue; observed G: delta_0 + Lebesgue; absent G: projected marginal measure",
+    "row_dependence": "conditionally independent across r0/r1 given h; correlated fields within row",
+    "canonical_aliases": {
+      "r0": "r0",
+      "r1": "r1",
+      "rowA": "r0",
+      "duplicate_report": "r0",
+      "rowB": "r1",
+      "held_out": "held_out",
+      "terminal": "held_out",
+      "terminal_report": "held_out"
+    },
+    "terminal_rows": [
+      "held_out"
+    ],
+    "cell_cost": 1,
+    "same_cell_rule": "exact numeric equality; same value zero evidence and cost; conflict atomic reject",
+    "empty_panel_rule": "legal STOP, exactly zero evidence/cost and unchanged state",
+    "main_cells": [
+      [
+        "r0",
+        "A",
+        0.7
+      ],
+      [
+        "r0",
+        "G",
+        0.0
+      ],
+      [
+        "r0",
+        "Y",
+        1.2
+      ],
+      [
+        "r1",
+        "A",
+        -0.4
+      ],
+      [
+        "r1",
+        "G",
+        -0.6
+      ],
+      [
+        "r1",
+        "Y",
+        0.1
+      ]
+    ],
+    "main_orders": 720,
+    "main_steps": 4320,
+    "positive_variant": "only r1G=-.6 becomes+.6; six permutations of field order, each field r0 thenr1",
+    "positive_orders": 6,
+    "positive_steps": 36,
+    "behavior_case_count": 17,
+    "absolute_max_norm_tolerance": 1e-11,
+    "naive_wrong_control": "product of six one-cell marginals versus proper within-row joint density",
+    "producer_density": "NumPy Cholesky and solve; no SciPy",
+    "real_material_data_access": 0,
+    "fits": 0,
+    "agent_runs": 0,
+    "scope": "fixed known-mechanism mathematical invariance checks, not new material evidence or a new algorithm"
+  }
+}

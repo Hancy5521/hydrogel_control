@@ -1,0 +1,76 @@
+{
+  "actual_recorded_utc": "2026-11-05T15:54:38.287805+00:00",
+  "phase": "new_fixed_power_representation_development_followup",
+  "historical_phase1_result_sha256": "bd290374748c7b22735a87955e9edd4cdb3112db8706a88bfaaec3d75e3e6ef9",
+  "historical_phase1_NO_GO_preserved": true,
+  "why_new_hypothesis": "Frozen phase1 diagnostics show native bulk skewness0.476fit and1.280development; conditional PITmedian0.3535 andD0.16699. This suggests a shape/coordinate hypothesis but is not causal proof. Direction was formed after phase1 results, not global ex-ante discovery.",
+  "protocol_requirement": "New256 previously not selected/model-exposed/scored formula groups, exclude old40 plus allphase1256wholecomponents/siblings; allnew256 remain development. No repeat fit/score on phase1, no retuning of its gates. Fullsource was physically parsed earlier by trusted reader; unused means no model or score exposure, not cryptographic/byte-unread status.",
+  "representatives": "one minimum raw-row-zero-based eligible representative per component;64fit192diagnostic; allsiblings same consumeddevelopment role",
+  "fixed_transform": {
+    "family": "Yeo-Johnson",
+    "lambda": 0.5,
+    "all_three_fields_same_lambda": true,
+    "pre_scale": "positive sampleSD of each native field on new64fit only",
+    "positive_formula": "2*(sqrt(1+v)-1)",
+    "negative_formula": "-((1-v)^1.5-1)/1.5",
+    "inverse_positive": "u+0.25*u^2",
+    "inverse_negative": "1-(1-1.5*u)^(2/3)",
+    "second_stage": "fit-affine center/sampleSD of transformed64fit, then same full NIW prior; empirical native prior, not pure data-independent Bayes",
+    "negative_and_zero_values_retained": true,
+    "no_lambda_or_feature_search": true
+  },
+  "law_roles": [
+    "raw_joint_t",
+    "raw_momentmatched_gaussian",
+    "yj_joint_t",
+    "yj_latent_momentmatched_gaussian",
+    "yj_target_marginal_ablation"
+  ],
+  "actual_fit_pipelines": 2,
+  "law_roles_not_independent_training_algorithms": true,
+  "masks": [
+    "none",
+    "e_form",
+    "gap_opt",
+    "both"
+  ],
+  "expected_frozen_laws": 3840,
+  "main_pattern": "both native proxies",
+  "score": "Original-unit CRPS via deterministic CDF/SF integral with inverse-map Jacobian for transported laws; sameoriginalunit source bulk field. Rawlaws use existingclosedCRPS or independently matchedintegral; never latentCRPS timesSD for nonlinear maps.",
+  "point_summary": "predictive native median for every role; inverse latentlocation is not mean. If RMSE reported label medianRMSE.",
+  "interval_levels": [
+    0.8,
+    0.9,
+    0.95
+  ],
+  "native_moment_requirements": {
+    "absolute_first": "nondegenerate Studentt latent requiresdf>2; satisfied prior5/posterior69+k",
+    "second": "requiresdf>4; satisfied prior5/posterior69+k",
+    "asinh_or_log_inverse_with_Studentt": "native exponential tails cause divergent absolute firstmoment for any finite nondegenerate tdf, not used"
+  },
+  "prelabel_descriptive_gates": {
+    "yj_dual_to_yj_none_CRPS_ratio_max": 0.98,
+    "yj_dual_to_best_of_raw_t_rawGaussian_yjGaussian_dual_CRPS_ratio_max": 1.02,
+    "yj_dual_90interval_empirical_coverage_min": 0.8,
+    "yj_dual_PIT_ECDF_max_deviation_max": 0.15,
+    "same_four_gate_meaning_not_universal_journal_requirements": true
+  },
+  "hard_checks": [
+    "metadataformula disjoint andparentfrozen",
+    "independentYJmath gate before native response access",
+    "puretransform/inverse/Jacobian andnativefinite score",
+    "all3840model/mask/group laws frozen before native192target reveal",
+    "no diagnostic target used tofit transformorprior",
+    "all5roles/all4masks retained regardless result"
+  ],
+  "limits": [
+    "YJ is a classical transform, no first-invention claim",
+    "zero gap pointmass persists; does not establish a correct fully mixed generative likelihood",
+    "PIT/coverage of a fixed law are invariant under coordinate expression; improvement ifany comes from fitting a different distribution",
+    "independentofconsumedgroups does not mean a new DFTsource, batch,wetexperiment or finalconfirmation",
+    "readout transport math idea remains unimplemented anddoes not certify probability model orquadrature",
+    "passing this admission only supports separate feedback-task design, not automatic fullcampaign or topconference readiness"
+  ],
+  "stop": "retain everyfailedgate; no samecohort lambda/prior/reseed rescue, no automaticagent campaign.",
+  "scientific_execution_authorized_by_this_file": false
+}

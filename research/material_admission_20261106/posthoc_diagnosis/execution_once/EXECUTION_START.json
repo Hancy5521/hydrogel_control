@@ -1,0 +1,30 @@
+{
+  "actual_utc": "2026-11-05T15:45:43.342604+00:00",
+  "source_sha256": "ae77ae16229e4978666c8d57b5c85874eef2d09224aa33cd8a14fe51f07d6773",
+  "plan_sha256": "e3e822a97823719075d9271113e2d22cfb153399532752bfbf4a2283f0f803a0",
+  "approval_sha256": "e30d901f6e864b9d7653e556cd725a6ef895ee6febd8a13a02bf37991b66fc57",
+  "inputs": {
+    "VISIBLE_INPUTS": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\admission\\forecast_once\\VISIBLE_INPUTS.json",
+      "sha256": "1aeb1d361b4b3f74b6e829c15f046854bce5a14360add3dac93f0e09b5b54477"
+    },
+    "MODEL": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\admission\\forecast_once\\MODEL.json",
+      "sha256": "abc7b42ffa033133e8dd8a05d50a759e670e72fa24d07175c91cc099b44952b2"
+    },
+    "FORECASTS": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\admission\\forecast_once\\FORECASTS.json",
+      "sha256": "cadadee59b12a07f19d0d8a1fe354b556752aaf2f2efd4e91a287a3b04251019"
+    },
+    "DIAGNOSTIC_TRUTH": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\admission\\score_once\\DIAGNOSTIC_TRUTH.json",
+      "sha256": "0d43c1dbeb6a075c67075784a81f143927465576cdea780a098a1481f7e8772c"
+    },
+    "RESULTS": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\admission\\score_once\\RESULTS.json",
+      "sha256": "bd290374748c7b22735a87955e9edd4cdb3112db8706a88bfaaec3d75e3e6ef9"
+    }
+  },
+  "posthoc_descriptive_only": true,
+  "gzip_or_new_group_access": false
+}

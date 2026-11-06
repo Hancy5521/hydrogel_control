@@ -1,0 +1,24 @@
+{
+  "actual_utc": "2026-11-06T02:30:06.106849+00:00",
+  "kind": "readonly_postexecution_mixed_measure_independent_review",
+  "status": "PASS",
+  "independent_audit_file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\mixed_measure_gate\\independent_review\\execution_once\\INDEPENDENT_MIXED_MEASURE_GATE_AUDIT.json",
+  "independent_audit_sha256": "5647f02a418ae7f3de14ac2a0b923df081351dc16442b181235d0b642efa5a0b",
+  "main_720_orders_all4320steps": true,
+  "positive6orders_all36steps": true,
+  "all17transaction_cases_and7marginal_controls": true,
+  "state_log_likelihood_max_abs_difference": 1.7763568394002505e-15,
+  "state_posterior_weight_max_abs_difference": 5.551115123125783e-16,
+  "incremental_log_evidence_max_abs_difference": 1.7763568394002505e-15,
+  "wrong_product_of_cell_marginals_posterior_max_difference": 0.10226305658216384,
+  "exact_duplicate_STOP_zero_evidence_cases": 5,
+  "exact_atomic_rejections": 9,
+  "new_data_fits_or_producer_replays_in_postreview": 0,
+  "limits": [
+    "Finite known mechanism math consistency only; neither new algorithm nor material prediction improvement.",
+    "Four h vary means,p0,rho simultaneously; posterior shift not isolated relation learning.",
+    "Actual JARVIS gapzero producer/snapshot semantics unresolved; do not claim known physical atom.",
+    "Continuous NIW particle posterior accuracy not established by finite-h gate.",
+    "Counterfactual permutations are calculation paths,not materialN."
+  ]
+}

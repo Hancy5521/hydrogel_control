@@ -1,0 +1,29 @@
+{
+  "actual_recorded_utc": "2026-11-05T16:42:58.598432+00:00",
+  "new_web_search_queries": 0,
+  "sources": [
+    {
+      "url": "https://jmlr.org/papers/v7/meinshausen06a.html",
+      "pdf_url": "https://jmlr.org/papers/volume7/meinshausen06a/meinshausen06a.pdf",
+      "version": "Meinshausen2006,JMLR7(35):983-999,17pageofficialPDF",
+      "actual_reading": "Officialabstract andselectedsections2–3,pages985–987,equations4–6/algorithm. No17pagefullread orconsistencyproofaudit.",
+      "license": "Articlecopyright2006JMLR;codepackagepermissionsnotestablished,nocodecopied.",
+      "relevance": "Leaf-normalizedoriginal-observationweightsandweightedCDFareclassicQRFmotivation. ExactalloriginalinclOOB/no-bootstrapmultiplicity variantdeclared; noofficialquantregForestexecution orconsistency/calibrationguarantee."
+    },
+    {
+      "url": "https://scikit-learn.org/1.6/modules/generated/sklearn.gaussian_process.kernels.WhiteKernel.html",
+      "version": "Official1.6.1docs",
+      "actual_reading": "noisevariance meaning,call(X,Y),diag APIsections;notlibrarysourceimplementationexecution.",
+      "relevance": "Predictionnoisepolicyexplicit;testdiagonal versuscrosscovariancedistinguished.",
+      "license": "Officialsklearndocs;nocodecopied."
+    },
+    {
+      "url": "https://scikit-learn.org/1.6/modules/generated/sklearn.ensemble.RandomForestRegressor.html",
+      "version": "Official1.6.1docs",
+      "actual_reading": "max_featuresinteger/floatdifference,fit/apply/predictfloat32conversion,seed/bootstrappolicy.",
+      "relevance": "Explicitfloat32inputstateandtreebranchreplaynecessary;max_features1isonefeature,not1.0allfeatures.",
+      "license": "Officialsklearndocs;nocodecopied."
+    }
+  ],
+  "scope": "Boundeddirectprimaryreadsforstaticbaselinereview;nobroadliteraturequery,nopackageimport/execution."
+}

@@ -1,0 +1,23 @@
+{
+  "actual_utc": "2026-11-06T02:25:56.786795+00:00",
+  "kind": "bounded_source_trace_before_material_joint_likelihood",
+  "tool": "connected GitHub read-only fetch plus official source search",
+  "queries": [
+    "site.github.com/usnistgov/jarvis op_gap optb88vdw gap zero bandgap function",
+    "site.github.com/hackingmaterials/matminer jarvis_dft_3d form_enp op_gap kv"
+  ],
+  "original_dataset": "Matminer jarvis_dft_3d frozen2018 snapshot DOI10.6084/m9.figshare.7261832.v1",
+  "reviewed_code_url": "https://github.com/usnistgov/jarvis/blob/52eb756d1a5512779502bb6cec564af2fd322c6a/jarvis/io/vasp/outputs.py",
+  "code_path_latest_commit_at_fetch": "52eb756d1a5512779502bb6cec564af2fd322c6a",
+  "commit_date": "2024-05-04T22:11:36Z",
+  "reading_depth": "selected functions bandgap lines611-618, get_indir_gap1631-1660, bandgap_occupation_tol1661-1700; not entire2453lines",
+  "finding": "Distinct extraction APIs coexist: get_indir_gap returns an edge difference without clamp, while occupation-tolerance API floors its result atzero. Therefore source-level nonpositive handling may be calculation/report semantics rather than a physical pointmass.",
+  "inference_limit": "This2024file is NOT proven the producer of the2018op_gap column. No proof yet which extraction API or preprocessing set each frozen value. Do not impose censoring/spike or delete negative frozen values based only on currentcode.",
+  "license_check": "initial guessed LICENSE404; directory names identified LICENSE.rst, pinned file read separately. No sourcecode copied or executed.",
+  "failures": [
+    "one guessed LICENSE path404; no retry sameendpoint",
+    "initial whole source tool output unexpectedly large; further reads bounded toselectedfunctions"
+  ],
+  "new_material_response_reads_or_fits": 0,
+  "next": "reconcile frozen datasetfield producer/version before applying mixed measure or censored material likelihood; artificial gate remains semantic consistency only"
+}

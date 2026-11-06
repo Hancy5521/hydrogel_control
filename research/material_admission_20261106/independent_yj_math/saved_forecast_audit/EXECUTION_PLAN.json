@@ -1,0 +1,113 @@
+{
+  "kind": "INDEPENDENT_PHASE2_SAVED_FORECAST_AUDIT",
+  "registered_actual_utc": "2026-11-05T16:08:48.042262+00:00",
+  "registered_actual_asia_shanghai": "2026-11-06T00:08:48.042262+08:00",
+  "status": "SOURCE_FROZEN_AST_ONLY_AWAIT_ROOT_APPROVAL_NOT_EXECUTED",
+  "script_sha256": "da087d238e7b99dd0f4994505cf0b3634f8af5a23526a496af28dcedf43d3742",
+  "phase2_directory": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\phase2_yj",
+  "phase2_plan_sha256": "0bc6c752457732cd535608510ae12da01f89fa0eb83f30fa0d67516dccdc8bba",
+  "producer_source_sha256": {
+    "yj_model.py": "892e90922091b424ab1fd8d94f5901a2a8585861f39e7f3ebe54eca3166e98bc",
+    "run_phase2.py": "3df8cbab90b58b5ad2a56691d34b16bdceb3748d5a033cb5752dd9469c9acf0b",
+    "score_phase2.py": "0160ad1b175ce47295579ad020575b1db63bdd0fce27076c167f81f36217a964"
+  },
+  "parent_source_sha256": {
+    "admission_io.py": "90011d05e1071b02422622249006cf669bd88e2f7792f8da87f87e0589188466",
+    "niw_predictive.py": "a8d74e5398f2bb606efb195d3395324f014ba3f9b4f801a67b022c1cc6687818",
+    "score_admission.py": "ef7e29f8dab89a0a644011b8c188fcbeaa178095bbd823d082be8887e0aaccc0"
+  },
+  "role_sha256": "aee4d2aa78f7522eae8aba2b8ac56e186b3c5d81059a6d3a5b44b16d1042350b",
+  "forecast_freeze_sha256": "dcd88d11401f7f8953e9b921bf3ab2a157740c937084b106e77c61732e806faf",
+  "forecast_artifact_sha256": {
+    "EXECUTION_START.json": "8440b79699eafb7c51c8b6a0da85e5c6c11a2208ee6c2dc7a63a331f3a2c35fe",
+    "VISIBLE_INPUTS.json": "0337959bb3f5d32172f16af816048c9879c0b057c13753e0ea9d1a5adffd2181",
+    "EXTRACTION_RECEIPT.json": "9823abce9269aedc9ebafd92a5af5e4df9b73d1fbca2f2d50980295f1a7ebc1e",
+    "FIT_REFERENCE.json": "a6f28ae8213bd1808f91aec038f65558cb13856354a9706bfca8dc7590bde747",
+    "FORECASTS.json": "d9c8939dba94f2507b1f7a60b6457bfa457907241b5cc41fc705c4bdea254fea"
+  },
+  "actual_forecast_approval": {
+    "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\phase2_yj\\ROOT_FORECAST_APPROVAL_V2.json",
+    "sha256": "464576b6add96720c308cf2031f3725e5a385d2927c47cc0e3b6f18072a87e0b"
+  },
+  "independent_NIW_helper": {
+    "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_niw_math\\saved_audit\\audit_saved.py",
+    "sha256": "e2fe488d4cd75ed35854ad8105539e04f0eab2ef08f086ef92f01cce70e39177",
+    "only_functions_used": [
+      "Checks",
+      "build_reference",
+      "reference_law"
+    ],
+    "scope": "Own audited scalarfsum/smallmatrix independentreference, notproducer"
+  },
+  "independent_YJ_helper": {
+    "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_yj_math\\audit_yj_half.py",
+    "sha256": "18db027000ccb9ed656bd6a034d8005847c924f5bcd14fb246018b4c5a056119",
+    "only_functions_used": [
+      "transform"
+    ],
+    "scope": "Own stable scalarYJ math reference, notproducer; no helpermain/scientificaudit rerun"
+  },
+  "numeric_tolerances": {
+    "native_default_absolute": 2e-09,
+    "relative": 2e-11,
+    "standardized_locations_shape_covariance_absolute": 2e-12,
+    "posterior_Psi_absolute": 2e-11,
+    "fixedprior_Psi_exact_absolute_relative": 0
+  },
+  "coverage": {
+    "newfit_rows": 64,
+    "references_reconstructed": 2,
+    "raw_native_forecast_laws": 1536,
+    "YJ_u_parameter_laws_with_native_inverse_definition": 2304,
+    "all_forecast_laws": 3840,
+    "all_native_first_scales": 2304,
+    "all_model_mask_identity_keys": 3840,
+    "diagnostic_formula_groups": 192,
+    "YJ_marginal_identity_controls": "192groupsx4maskcoordinates,notindependentnewmethods"
+  },
+  "forbidden_reads": [
+    "nativegzip",
+    "DIAGNOSTIC_TRUTH.json",
+    "RESULTS.json",
+    "anynewunselectedresponse"
+  ],
+  "allowed_reads": "Actualregisteredplan/roles/sourcehashes and exact5forecastpayloads plusownSHA-pinnedmathhelper source; no sourcealgorithmimport or calls",
+  "launch_provenance": "Rootreportedfirstlaunch rejectedbadapprovalscopebeforeoutput/gzip/fit andpreserved administrativefailure. OnlycorrectedV2approval authorizedactualforecast; scientificplan/source/roles unchanged. Thisaudit binds successfulstartapproval bytehash; not a repeatedstatisticalfit claim.",
+  "future_score_audit_predeclared_spots_not_authorized_now": {
+    "diagnostic_role_indices": [
+      0,
+      191
+    ],
+    "component_ids": [
+      "jarvis_dft_3d_component_fc908208a460502ba91f",
+      "jarvis_dft_3d_component_118295d8b8514d676f7b"
+    ],
+    "law_roles": [
+      "raw_joint_t",
+      "raw_momentmatched_Gaussian",
+      "yj_joint_t",
+      "yj_latent_momentmatched_Gaussian",
+      "yj_target_marginal"
+    ],
+    "masks": [
+      "none",
+      "e_form",
+      "gap_opt",
+      "both"
+    ],
+    "CDF_integral_coordinates": 40,
+    "unique_formula_groups": 2,
+    "native_integral_comparison_absolute": 5e-07,
+    "native_integral_comparison_relative": 2e-08,
+    "intended_reference": "Independentnative-xCDF/SFintegral; notproducertruncatedweighted-zintegration",
+    "statement": "Coordinatesandloosecrosschecktolerancesfixedbeforephase2truth. Separatefuturecode/sourceplan+approvalrequired; no scoreexecutionortruthaccess authorizedbythisfile."
+  },
+  "approval_required_fields": [
+    "approved:true",
+    "scope:INDEPENDENT_PHASE2_SAVED_FORECAST_ONCE",
+    "script_sha256",
+    "plan_sha256"
+  ],
+  "expected_output": "execution_once/INDEPENDENT_PHASE2_FORECAST_AUDIT.json",
+  "failure_rule": "Executeonceafterrootapproval; retain failure/errors withoutoutcome-dependenttuning/replay. Independentarithmeticreconstruction isverification, not a newresearchfit/model."
+}

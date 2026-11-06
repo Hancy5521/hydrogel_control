@@ -1,0 +1,10 @@
+{
+  "actual_recorded_utc": "2026-11-05T16:15:57.807407+00:00",
+  "kind": "ADMINISTRATIVE_LOCAL_TIME_FIELD_CLARIFICATION_NO_SCIENCE_MUTATION",
+  "original_bound_approval_file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\phase2_yj\\ROOT_FORECAST_APPROVAL_V2.json",
+  "original_approval_sha256": "464576b6add96720c308cf2031f3725e5a385d2927c47cc0e3b6f18072a87e0b",
+  "canonical_approved_utc_unchanged": "2026-11-05T16:06:32.996743+00:00",
+  "stale_copied_original_local_field": "2026-11-06T00:05:14.749131+08:00",
+  "correct_asia_shanghai_for_V2_canonical_utc": "2026-11-06T00:06:32.996743+08:00",
+  "explanation": "V2 copied the original approval local-time display while canonicalUTC was correctly renewed. All actual start/freeze chronology uses canonical awareUTC. Preserve originalV2bytes bound by execution receipt; this standalone addendum corrects the local display only. No model/source/roles/threshold/input/forecast/score change."
+}

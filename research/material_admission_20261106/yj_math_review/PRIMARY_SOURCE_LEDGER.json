@@ -1,0 +1,47 @@
+{
+  "task": "Only fixed Yeo-Johnson representation mathematics and maturity/moment-source check; not unknown-correlation/VOI search.",
+  "new_queries": [
+    "\"A New Family of Power Transformations to Improve Normality or Symmetry\" Yeo Johnson 2000 pdf"
+  ],
+  "sources": [
+    {
+      "title": "A new family of power transformations to improve normality or symmetry",
+      "authors": "In-Kwon Yeo and Richard A. Johnson",
+      "doi": "10.1093/biomet/87.4.954",
+      "url": "https://doi.org/10.1093/biomet/87.4.954",
+      "version": "Biometrika87(4):954–959,1December2000",
+      "actual_reading": "Official publisher indexed abstract and metadata only. Fullpaper not accessed. Establishes that whole-real-line power transform is an existing method; no claim to rereading its asymptotic proof.",
+      "license": "Copyright2000; fulltext reuse not established; no article download or redistribution.",
+      "access_failure": "Official abstract direct open and DOI redirected to inaccessible publisher/CDN route; stopped. Indexed official abstract available in one query, not a paywall bypass."
+    },
+    {
+      "title": "scipy.stats.yeojohnson official implementation documentation",
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.yeojohnson.html",
+      "version": "OnlineSciPy1.18.0 manual opened5Nov2026; no claim this is installed local runtime",
+      "actual_reading": "Formula/whole-real-line domain, fixed explicit lambda versus likelihood-optimized default, original YeoJohnson reference; no implementation executed.",
+      "license": "Official documentation, SciPy community. No source code copied; documentation reuse terms not independently audited.",
+      "implication": "lambda1/2 branches checked against primary implementation formula. Fixed lambda must be explicit; default fitlambda is not this new hypothesis."
+    },
+    {
+      "title": "scipy.stats.t official density documentation",
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.t.html",
+      "version": "OnlineSciPy1.18.0 manual opened5Nov2026; source density primary API documentation",
+      "actual_reading": "Density tail and affine location-scale convention. Polynomial inverse moment thresholds derived independently in MATHEMATICAL_GATE_ZH.txt from density asymptotics, not attributed to an unread theorem.",
+      "license": "Official documentation; no code copied or executed."
+    }
+  ],
+  "independently_derived_not_claimed_new": [
+    "lambda1/2 inverse and derivative",
+    "native first moment df>2 and second moment df>4",
+    "native CDF/PIT/quantile/Jacobian",
+    "weighted original-unit CRPS changeofvariables",
+    "exponential inverse nonintegrability under finite-df Studentt"
+  ],
+  "new_mathematical_or_material_runs": 0,
+  "new_material_response_or_group_reads": 0,
+  "decision": "MATHEMATICALLY_COHERENT_CLASSICAL_REPRESENTATION_HYPOTHESIS; statistical adequacy, original-unit quadrature and task value unproven; no new cohort run authorized by this file.",
+  "clock_check_before_write_utc": "2026-11-05T15:44:53Z",
+  "clock_check_before_write_asia_shanghai": "2026-11-05T23:44:53+08:00",
+  "finalized_actual_utc": "2026-11-05T15:47:02.402923+00:00",
+  "finalized_actual_asia_shanghai": "2026-11-05T23:47:02.402923+08:00"
+}

@@ -1,0 +1,13 @@
+追加机制检查：已完成什么，以及不能推出什么
+
+本说明独立于主材料报告；原报告和9份材料源码原字节保持冻结。
+720种六个cell揭示顺序全部得到相同最终后验，另6种正值变体、17项事务控制和7项边际/原子控制通过。独立SciPy边际oracle核对每一步，共4356次step，loglik/evidence误差不超过1.78e-15，后验误差不超过5.56e-16。重复报告/同值cell和STOP不加证据、不收费；冲突、terminal和非法输入拒绝后状态原样。
+错误的“各性质边际密度直接相乘”负控制产生约0.102263的最大后验权重偏移，说明相关panel必须按联合似然处理。此差异是已知人工机制下的实现反例，不是材料补齐评分收益。
+
+新增源码只有两个明确模块：code/mixed_likelihood.py处理混合测度和物理cell台账；code/run_gate.py是固定fixture实验入口。独立实现位于independent_review，以不同SciPy原始子矩阵边际重建，既未导入producer，也未重fit材料。完整结果 execution_once/RESULTS.json，独立结果 independent_review/execution_once/INDEPENDENT_MIXED_MEASURE_GATE_AUDIT.json；计划、实际UTC和源码SHA均已登记，源码未在看结果后改变。
+四个假设同时改变mean、p0和rho，不能称已单独学会高阶相关方向。没有真实新测量、没有新增材料N，也没有完成连续NIW粒子或反馈agent。
+
+源语义的新发现：官方JARVIS工具outputs.py固定commit52eb756d1a5512779502bb6cec564af2fd322c6a中，get_indir_gap直接返回能带差，bandgap_occupation_tol会把负差截到零。这个2024版文件尚未被证明是2018 Matminer op_gap的实际生成器。故“零是物理点质量”与“零是报告/数值截断”仍应区分，不能把本人工spike-slab直接训练到现有材料上，不能按此删除负值。
+追溯收据：../root_review/JARVIS_GAP_SEMANTICS_TRACE_20261106.json。软件LICENSE.rst已阅读NIST许可；没有复制或运行第三方源码。数据集自己的MIT/上游CCBY归属另保留在完整包中，软件许可不替代数据来源许可。
+
+这一步消除了后续闭环实现的一类明确逻辑风险。下一唯一科学动作是核对冻结数据快照的字段产生链，并确定与其对应的混合/删失/连续观测似然，再冻结真实partial-observation posterior方案和一项新组付费反馈协议。强基线已处于开发竞争水平，无需回到那192个组调参或堆新网络。主贡献仍需证明真实反馈对另一批材料补齐的增量，或者原单位有误差界读出相对于优化精确实现的实际计算收益。

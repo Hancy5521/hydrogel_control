@@ -1,0 +1,69 @@
+{
+  "kind": "PHASE2_FIXED_POWER_METADATA_SELECTION",
+  "status": "REGISTERED",
+  "registered_actual_utc": "2026-11-05T15:57:03.635838+00:00",
+  "template_created_actual_utc": "2026-11-05T15:52:44.748244+00:00",
+  "source_sha256": "94cb0089c54b2b1fa414ddb764f6656431876ff9bfc16c23bc36cccee7c2fdfe",
+  "configuration": {
+    "version": "fixed_YJ_power_phase2_metadata_v1",
+    "dataset": "jarvis_dft_3d",
+    "hash_prefix": "material_feedback_fixed_power_v1|",
+    "tie_break": "component_id ascending after SHA256 hexadecimal digest",
+    "legacy_excluded_components": 40,
+    "phase1_development_excluded_components": 256,
+    "total_prior_excluded_components": 296,
+    "expected_remaining_before_selection": 8546,
+    "selected_development_components": 256,
+    "fit_components": 64,
+    "diagnostic_components": 192,
+    "remaining_after_selection": 8290,
+    "role_order": "first64fit,next192diagnostic;all256development",
+    "representative_rule": "smallest eligible integer raw_row_zero_based within fullsource component",
+    "whole_component_and_all_siblings_reserved": true,
+    "fixed_transform_hypothesis": "Yeo-Johnson lambda0.5, all-real invertible; no parameter estimated by selector",
+    "expected_followup_scope_only": "5lawroles x4masks x192diagnostic=3840forecasts; two pipelinefits need separate scientific approval",
+    "actual_native_response_access_or_fit": false
+  },
+  "stable_input_sha256": {
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\DATA_MANIFEST.json": "5000ecb55aefae7259467b5cb23a570ae1762bce4333155cf411cbfb0aaa4343",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\MM_METADATA_SELECTION.json": "300ca45c1f729ce9bd1b6512d7f132f2d327d0868ed6c6935311562952bb0e6f",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\SOURCE_GATE.json": "86ee6469c90c98558ca069e9d7e5e05badb5f5bc6944f0dbbf94a9025bea0a6e",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\SOURCE_GATE_PILOT_ADDENDUM.json": "7c0fc10397de2d85e13b101e5a78570feea7d1ef80473a852e482c552eefda22",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\ELIGIBLE_METADATA.json": "165d48bc29f771e29f7e86a6bea1e57286eb81b49f29120905ba4ff4739660e4",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\PILOT_ELIGIBILITY.json": "e7b06d64fe29c550bd8e75febd64d853d38b20448914d47d705053aa7712361d",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\audit_schemas.py": "383ab51fdd570e10fada07d0a7446f881fc8ee55916f2d5abd44f2918301b0ca",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\pilot_eligibility.py": "e1cc8fe7c88f1c33d0420627564ec526173f335f8d14ba9b22c58301ccf1b676",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\MATMINER_JARVIS_PREPROCESS_SELECTED.py.txt": "034ba9f525e673f3d2a3922d66b6540a267842dcc520f595ddd9de11db56fcfd",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\MATMINER_LICENSE": "e4df766c6937dad4a0f0646e2afbbc1689aacb3a0c30db687acbd86f73083cc4",
+    "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\pilot\\DATASET_ROLE_PLAN.json": "ea9120cf04bc78c8292be8ebba3eab6f9b1b0f830574b3e1a803386105451de8",
+    "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\data_feasibility\\UNUSED_IDENTITY_FEASIBILITY_FINAL.json": "491f8279437d20840076e610668c1d6965815c088bbd390cd6d3004384c166a4",
+    "H:\\polymer_completion_public\\research\\relation_complementarity_20261105T124422210519Z\\data_feasibility\\MATERIAL_TASK_CONTRACT_DRAFT_ZH.txt": "b601ae4a37f138cd4739e0d5f77876f14a239260ceddadc0b1509f70c2911418",
+    "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\task_contract\\MATERIAL_TASK_CONTRACT_V1.json": "2637532951c1e6b86ee8bdaa0cbcdb95a48982509de14770f87487e1b55a241d",
+    "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\task_contract\\selection_once\\ADMISSION_ROLE_SELECTION.json": "0bc81d0400a4076c854af11e654ca3ca9bcbceb249f2ee6c26d356c53ceae9c0",
+    "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\admission\\score_once\\RESULTS.json": "bd290374748c7b22735a87955e9edd4cdb3112db8706a88bfaaec3d75e3e6ef9"
+  },
+  "administrative_read_time_provenance_sha256": {
+    "D:\\codex-root\\polymer_completion\\docs\\RESUME_CURRENT.md": "35a456f4b85715c94a260941fa75f65e3dc63dc901a4e8e200c6aeb7a842d42e",
+    "D:\\codex-root\\polymer_completion\\docs\\RESEARCH_QUEUE.md": "fadcedc0d315b3ee439100533fcfd9ca8a3942edeb38c6dfeb3b8d9ebea77bed",
+    "H:\\relation_moment_delivery_qa_20261105\\NEXT_MATERIAL_ADMISSION_REVIEW.json": "36f124b91649353d4c9aacaa9ea544bcc91b51e489e7582417218ed302c4642a"
+  },
+  "administrative_files_are_not_runtime_guards": true,
+  "eligible_metadata_file": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\ELIGIBLE_METADATA.json",
+  "old_role_file": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\pilot\\DATASET_ROLE_PLAN.json",
+  "phase1_role_file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\task_contract\\selection_once\\ADMISSION_ROLE_SELECTION.json",
+  "phase1_NO_GO_decision_reference": {
+    "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\admission\\score_once\\RESULTS.json",
+    "sha256": "bd290374748c7b22735a87955e9edd4cdb3112db8706a88bfaaec3d75e3e6ef9",
+    "purpose": "Historicaldecision:phase1NO_GO preserved. Hashonly; no JSON target decoding or score recomputation by selector."
+  },
+  "raw_asset_reference_not_read": {
+    "file": "H:\\polymer_completion_public\\research\\hypercycle_agents_20261105T093229687251Z\\data\\jarvis_dft_3d.json.gz",
+    "sha256": "3d0fc1315b74cf84071f16aa25bb93434dafbc83867beb75872064ac245bd747",
+    "bytes": 30669285,
+    "pin_source": "priorDATA_MANIFEST, no gzipopened/hashesrecomputed thisphase"
+  },
+  "required_approval_scope": "METADATA_ONLY_FIXED_YJ_PHASE2_SELECTION",
+  "output_schema": "ADMISSION_ROLE_SELECTION.json;representatives.fit64/diagnostic192,selected_groups withallknowneligible siblings,296excluded,8290remaining;rolesauthorize no responseaccess",
+  "hypothesis_scope": "NewfixedYJlambda0.5 fullrealinvertible candidate; twofullNIWpipelinefits/5law4mask3840 need separate prelabel scientific source/plan approval. No oldmodel/source/gate changes.",
+  "actual_phase2_selection_or_new_response_read": false
+}

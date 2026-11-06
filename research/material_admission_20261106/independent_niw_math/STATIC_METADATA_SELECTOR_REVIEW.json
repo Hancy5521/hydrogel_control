@@ -1,0 +1,28 @@
+{
+  "actual_review_utc": "2026-11-05T15:15:50.432020+00:00",
+  "status": "PASS_STATIC_METADATA_SELECTOR_ONLY",
+  "selector_sha256": "910c3613e5536b9e29532dc547ba6bc92c80b085544a2a38077b640c725727d6",
+  "template_sha256": "e265fadc3d2283d5765848a69147e5a7b8d7639c9d8772354fc4b050eadd8e43",
+  "contract_sha256": "2637532951c1e6b86ee8bdaa0cbcdb95a48982509de14770f87487e1b55a241d",
+  "stable_input_bindings_verified": 13,
+  "source_executed_or_imported": false,
+  "native_gzip_opened": false,
+  "new_responses_read": 0,
+  "actual_new_roles_not_reviewed_yet": true,
+  "checked": [
+    "Strict metadata field whitelist, duplicate original row/JID guard",
+    "Old40wholecomponent exclusion and all8802unused metadata inventory",
+    "Fixed SHA256 salt ordering, mineligible-native-row representative,64fit/192diagnostic",
+    "Allselected siblings retained as development, no independentconfirmation claim",
+    "No nativeproperty field/source parser/model import in selector",
+    "No runtime dependency on mutable administrative docs hashes",
+    "FullNIW metadata note supersedes unadopted historicalstar candidate",
+    "No hidden selection through target value/sign/range/model score"
+  ],
+  "necessary_source_corrections": [],
+  "scope_limits": [
+    "This is static source/template review, not execution of selector or realized role output audit",
+    "Trusted extractor physically parses whole public gzip; later perrolepayload isolation is not crypto/processsecurity",
+    "Statistical implementation preparation text still has proposedquad scorer; final protocol must explicitly pin adoptedscorer and empiricalreferenceprior before fitting"
+  ]
+}

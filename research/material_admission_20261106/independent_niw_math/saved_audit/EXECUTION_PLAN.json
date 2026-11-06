@@ -1,0 +1,117 @@
+{
+  "kind": "INDEPENDENT_SAVED_NIW_TWO_STAGE_AUDIT",
+  "registered_actual_utc": "2026-11-05T15:30:45.306233+00:00",
+  "registered_actual_asia_shanghai": "2026-11-05T23:30:45.306233+08:00",
+  "status": "FROZEN_AWAITING_ROOT_PHASE_APPROVAL_NO_EXECUTION",
+  "script_sha256": "e2fe488d4cd75ed35854ad8105539e04f0eab2ef08f086ef92f01cce70e39177",
+  "admission_directory": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\admission",
+  "admission_plan_sha256": "aab1111cbcdc5c04f46e51431f0c15bb7cddd557edfe5f55fa75349440cd7d55",
+  "producer_source_sha256": {
+    "admission_io.py": "90011d05e1071b02422622249006cf669bd88e2f7792f8da87f87e0589188466",
+    "niw_predictive.py": "a8d74e5398f2bb606efb195d3395324f014ba3f9b4f801a67b022c1cc6687818",
+    "score_admission.py": "ef7e29f8dab89a0a644011b8c188fcbeaa178095bbd823d082be8887e0aaccc0"
+  },
+  "role_sha256": "0bc81d0400a4076c854af11e654ca3ca9bcbceb249f2ee6c26d356c53ceae9c0",
+  "forecast_freeze_sha256": "6333233218f62dbe4911b2172adf1650b4427e68bf2cb59a31307733e5fbc8e9",
+  "forecast_artifact_sha256": {
+    "VISIBLE_INPUTS.json": "1aeb1d361b4b3f74b6e829c15f046854bce5a14360add3dac93f0e09b5b54477",
+    "MODEL.json": "abc7b42ffa033133e8dd8a05d50a759e670e72fa24d07175c91cc099b44952b2",
+    "FORECASTS.json": "cadadee59b12a07f19d0d8a1fe354b556752aaf2f2efd4e91a287a3b04251019",
+    "EXTRACTION_RECEIPT.json": "c34e5afb592536c8082794965a2295f7e3e27274de6ab86852a07cc00b40bb0c",
+    "EXECUTION_START.json": "a014a0b95a5e07418b1207c932d8810cf09de9f796d4269ff96284d19c804e21"
+  },
+  "forecast_stage": {
+    "scope": "Only source/role/registeredplan/freeze/visiblefit-and-proxy/MODEL/FORECASTS; no nativegzip,diagnostictruth orscoredresults",
+    "method": "Purestdlib scalarfsum statistics and explicit1x1/2x2 solves; independently reconstruct64fit reference and all2304native law parameters; no producer import/call",
+    "numeric_tolerances": {
+      "native_default_abs": 2e-09,
+      "native_default_rel": 2e-11,
+      "standardized_location_shape_cov_abs": 2e-12,
+      "posterior_Psi_abs": 2e-11,
+      "same_common_relative": 2e-11,
+      "fixedprior_exact_abs_rel": 0
+    },
+    "checks": [
+      "64fit means/sampleSD and all NIWsufficientstats/shape/covariance",
+      "2304native loc/scale/df/family andownmask",
+      "all192marginalidentity controls",
+      "exact5filehash/2304unique keys/roleJID/sourceplan/actualUTC chronology"
+    ],
+    "approval_scope": "INDEPENDENT_SAVED_NIW_FORECAST_ONCE",
+    "output_subdirectory": "forecast_audit_once"
+  },
+  "score_stage": {
+    "scope": "Only frozenforecast/commonmetadata plus alreadyfrozen3scorefiles after separate root approval; no rawsource/SUT/refit",
+    "future_score_directory": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\admission\\score_once",
+    "future_score_input_hashes_must_be_bound_by_score_approval": [
+      "DIAGNOSTIC_TRUTH.json",
+      "RESULTS.json",
+      "TARGET_REVEAL_START.json"
+    ],
+    "root_score_approval_must_bind_forecast_audit_PASS": true,
+    "all_independent_closed_score_coordinates": 2304,
+    "all_interval_coverage_booleans": 6912,
+    "all_model_mask_summaries": 12,
+    "paired_gain_coordinates": 768,
+    "CDF_quad_fixed_coordinates": {
+      "diagnostic_role_indices": [
+        0,
+        191
+      ],
+      "diagnostic_component_ids": [
+        "jarvis_dft_3d_component_d417434123506472b26f",
+        "jarvis_dft_3d_component_e1bd27350c86b24fc100"
+      ],
+      "models": [
+        "niw_joint_t",
+        "gaussian_momentmatched",
+        "independent_target_marginal"
+      ],
+      "masks": [
+        "none",
+        "e_form",
+        "gap_opt",
+        "both"
+      ],
+      "total_coordinates": 24,
+      "unique_formula_groups": 2,
+      "repeated_identical_marginal_laws_are_coordinates_not_independent_cases": true
+    },
+    "independent_closed_calculation": "stdlib normalCDF/quantile,lgamma Studenttdensity/beta and scipy.special.stdtr/stdtrit, scalarfsum summaries; no producer import",
+    "numeric_tolerances": {
+      "closed_PIT_interval_summary_abs": 2e-09,
+      "closed_relative": 2e-11,
+      "CDF_quad_compare_abs": 5e-08,
+      "CDF_quad_compare_rel": 2e-08,
+      "standardized_quad_epsabs": 2e-10,
+      "standardized_quad_epsrel": 2e-10,
+      "quad_limit": 400,
+      "IntegrationWarning_is_error": true
+    },
+    "native_CDF_integral": "Integrate standardized distribution CDF/SF squares then multiply by fixed native scale. Exact positive affine identity; output score is nativeunit. Quadrature error estimate is diagnostic, not certified interval.",
+    "gates": "Same four frozen prelabel gates; strict matching ofallcriteria/status with no postreveal tolerancetuning",
+    "approval_scope": "INDEPENDENT_SAVED_NIW_SCORE_ONCE",
+    "output_subdirectory": "score_audit_once"
+  },
+  "approval_required_common_fields": [
+    "approved:true",
+    "scope",
+    "plan_sha256",
+    "script_sha256"
+  ],
+  "score_approval_additional_fields": [
+    "forecast_audit_result:{file,sha256}",
+    "score_artifact_sha256:{exact3files}"
+  ],
+  "prohibitions": [
+    "no producerimport/replay",
+    "no rawgzip or newunselectedYread",
+    "no originalforecast/refit/timingrun",
+    "no randomsamples",
+    "no cases/tolerances changedaftertruth",
+    "do not call24CDFspots2304independentquadraturechecks"
+  ],
+  "failure_rule": "Executeeachapprovedphaseonce. Saveanyerror/traceback/counts; do not retune tolerances or rerun to erase failure.",
+  "source_static_inspection": "ast.parse only, no audit import/execution or scientific computation during preparation",
+  "scientific_scope": "Independent savedartifact numerical verification only; all192diagnosticsdevelopment; no new material task/measurement/confirmation or calibration guarantee."
+}

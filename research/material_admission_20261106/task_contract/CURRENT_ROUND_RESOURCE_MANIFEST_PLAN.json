@@ -1,0 +1,119 @@
+{
+  "actual_utc": "2026-11-05T15:18:54.236578+00:00",
+  "kind": "CURRENT_ROUND_COMPLETE_RESOURCE_MANIFEST_PLAN_ONLY",
+  "status": "NO_ARCHIVE_OR_PUBLIC_EXPORT_CREATED",
+  "must_preserve_without_rerun": [
+    {
+      "scope": "task contract and source evidence",
+      "paths": [
+        "task_contract/MATERIAL_TASK_CONTRACT_V1.json",
+        "task_contract/CONTRACT_BUILD_RECEIPT.json",
+        "task_contract/create_contract_metadata_only.py",
+        "task_contract/CONTRACT_BRIEF_ZH.txt"
+      ],
+      "note": "Oldstarcandidate explicitly notadopted; fullNIWadmission supersession mustbe in actualprotocol, not edited into history."
+    },
+    {
+      "scope": "metadata selection",
+      "paths": [
+        "task_contract/selector.py",
+        "task_contract/SELECTION_PLAN_TEMPLATE.json",
+        "task_contract/SELECTION_PLAN_REGISTERED.json",
+        "task_contract/ROOT_METADATA_SELECTION_APPROVAL.json",
+        "task_contract/selection_once/",
+        "task_contract/SELECTION_READ_ONLY_REVIEW.json",
+        "task_contract/TRUSTED_EXTRACTOR_DESIGN_ZH.txt"
+      ],
+      "note": "Pin actualroleSHA0bc81d0400a4076c854af11e654ca3ca9bcbceb249f2ee6c26d356c53ceae9c0;64fit/192diag/331knowneligible siblings. Whole256sourcecomponents development; no futureconfirmation reuse."
+    },
+    {
+      "scope": "new NIW admission source/protocol",
+      "paths": [
+        "core-owned3modules oncefrozen",
+        "sourcefreeze andsyntaxreceipts",
+        "actualUTC extraction/fit/forecastfreeze/score approvals andprotocols",
+        "all failure/initial-source artifacts and independent audits"
+      ],
+      "note": "Do not snapshot incomplete active source as frozen; collect actualbytes andSHA only afterroot freeze."
+    },
+    {
+      "scope": "numerical admission artifacts iflaterauthorized",
+      "paths": [
+        "trusted fit64threefield payload",
+        "diagnostic192twoproxy producer payload",
+        "separatesealed diagnosticY evaluator artifact",
+        "identity/fullsiblings extractionledger",
+        "fittedwarm-onlyscale/model",
+        "frozenall-mask forecasts",
+        "postfreeze originalunitscores andnegativefindings"
+      ],
+      "note": "Expectedfuture resources, not yet created/approved by thismanifestplan. Keep producer/evaluator visibility roles explicit; no selfgenerated labels."
+    },
+    {
+      "scope": "reproduction dependencies",
+      "paths": [
+        "requirements withactualversions",
+        "run/verify/prepare wrappers",
+        "field mappings andunit/aggregation qualifications",
+        "source/data licenses andattribution",
+        "input-binding manifest androlemanifest"
+      ],
+      "note": "Defaultdeliveryvalidation onlybytes/metadata preparation unless separately authorized numericalrerun."
+    },
+    {
+      "scope": "human review",
+      "paths": [
+        "clearChinese report/algorithm guide",
+        "actualscope andnegativefindings",
+        "runlogs and exactresume point"
+      ],
+      "note": "Noclaim admissiondiagnostic is independentconfirmation or wetexperiment."
+    }
+  ],
+  "input_packaging": {
+    "stable_metadata": "Copy13stable evidencefiles byteexact or bind clearly namedreferencecopy; original16readtimeSHA include3administrativeprovenanceitems.",
+    "administrative_docs": "ActiveRESUME/QUEUE readtimeSHA may be historical. If copied now, label currentactualsnapshot withcurrentSHA; do notpretend itmatches historicalbytes. These are notruntime scientificdependencies.",
+    "raw_public_JARVIS": "If claiming a selfcontained trusted-extraction reproduction pack, include originalpublicgzip unchanged with prior3d0fc1315b74cf84071f16aa25bb93434dafbc83867beb75872064ac245bd747 pin andMIT/upstreamCCBY attribution. Otherwise explicitlymark as externalrequiredinput andprovidepin/path; do notcall theincrement fullyselfcontained. No gzipread/copy performed inthisphase.",
+    "visibility": "Fullnativegzip anddiagnosticY are trusted-reader/evaluator resources, never default producerinput; physicalfullparse and role-level exposure distinctions remain explicit.",
+    "historical_archives": "Earlier6.49MBmoment/47.4MBpilot/MLST archives remain immutable externalreferences withtheiractualSHA; no nestedlargearchive duplication required for a clearly scoped currentincrement."
+  },
+  "public_Git_scope_proposal": {
+    "include": [
+      "newcode/requirements",
+      "metadata-only role/source schemas andcurrentpublicsourceprovenance",
+      "registeredprotocols/sourcepins",
+      "derivedscores/audits/report andboundedreproduction guide"
+    ],
+    "exclude": [
+      "rawgzip assets",
+      "fit/diag native numericpayloads unless separately reviewed",
+      "sealeddiagY",
+      "NPZ/compiled/runtime caches",
+      "downloadedcopyrightpapers",
+      "oldprivatehydrogel measurements",
+      "credentials/secretlogs"
+    ],
+    "final_authority": "rootseparatecuration andindependentreview; thisplan doesnotpublish or choosea license forprivateassets."
+  },
+  "final_seal_and_delivery": {
+    "required": [
+      "everypayloadbytes+SHAmanifest",
+      "singleWindows-safe topfolder",
+      "noabsolute runtime dependency exceptexplicitexternalassets",
+      "strictsource/data/role/freeze/resultbindings",
+      "ZIPCRC/fullsourcebytecomparison",
+      "allrelativeHTMLlinks resolve",
+      "move andrun bytes/prepare-only verification",
+      "retaininitialfailures before fixes"
+    ],
+    "forbidden": [
+      "rerunfit/score justtoincreasecheckcounts",
+      "overwriteoldsealedarchives",
+      "dropnegativecases",
+      "labelallpublicmetadata rowsasnewindependentmaterials"
+    ]
+  },
+  "new_native_property_reads_copies_or_fits": 0,
+  "new_manifest_or_ZIP_frozen": false,
+  "new_public_worktree_mutations": 0
+}

@@ -1,0 +1,62 @@
+{
+  "status": "COMPLETE_REPORT_FROM_FROZEN_SUMMARIES",
+  "start_utc": "2026-11-06T02:19:39.466144+00:00",
+  "end_utc": "2026-11-06T02:19:41.737595+00:00",
+  "report_source_sha256": "f3f96d7c5856528e8e505291f0ca9581550b87787c327166cb17d350a08fe02c",
+  "input_sha256": {
+    "phase1": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\admission\\score_once\\RESULTS.json",
+      "sha256": "bd290374748c7b22735a87955e9edd4cdb3112db8706a88bfaaec3d75e3e6ef9"
+    },
+    "phase1_forecast_audit": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_niw_math\\saved_audit\\forecast_audit_once\\INDEPENDENT_SAVED_NIW_FORECAST_AUDIT.json",
+      "sha256": "f07eb5979d5e8ceb0cf7400d99bed3b3742d10744bc7c966e4b4d772ac18cbd6"
+    },
+    "phase1_score_audit": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_niw_math\\saved_audit\\score_audit_once\\INDEPENDENT_SAVED_NIW_SCORE_AUDIT.json",
+      "sha256": "3636bbc7790a84bca6ba49e23b3389b536184fa3c96b202fb02aee2a2458d506"
+    },
+    "phase2": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\phase2_yj\\score_once\\RESULTS.json",
+      "sha256": "4bf07550b9b4840967b6cca13d4a81c190616e7a4bdb47813126793bde2b5711"
+    },
+    "native_score_audit": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_yj_math\\saved_score_audit\\execution_once\\INDEPENDENT_PHASE2_ALL_NATIVE_SCORE_AUDIT.json",
+      "sha256": "5c09b7b672d88921ae461d2d0bcd2afad79200170e09794ffae1090e039cba7b"
+    },
+    "baseline": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\strong_baselines\\score_once\\RESULTS.json",
+      "sha256": "bf93dc63890a326a07240ce4d9acec5664cb42002b79b6e25c7a0cccd9ac5165"
+    },
+    "baseline_forecast_audit": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\strong_baselines\\independent_review\\snapshot_audit\\execution_once\\INDEPENDENT_FIXED_BASELINE_SNAPSHOT_AUDIT.json",
+      "sha256": "cdeed4b33594fd20ed267e658a46ca681aa125349734a99f086d52d5e8b86470"
+    },
+    "baseline_score_audit": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\strong_baselines\\independent_review\\score_execution_once\\INDEPENDENT_FIXED_BASELINE_SCORE_AUDIT.json",
+      "sha256": "6737a2e236437f4bd9d104a12e3c4ae9c8deffe72c40f0fd9ba92f34a5bdcd2a"
+    },
+    "baseline_plan": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\strong_baselines\\EXECUTION_PLAN_REGISTERED.json",
+      "sha256": "0543eae0e4ac5f1f89fc3a36256770cb2b160f51bb3b2ff657a8b2cdbb46b754"
+    },
+    "baseline_scope": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\strong_baselines\\ROOT_FIXED_BASELINE_SCOPE_BEFORE_FITS.json",
+      "sha256": "faeecf390cb0df9889ad7c1245a2c7f50859a8bac7df2e0d1bc39a365ca5304a"
+    },
+    "baseline_freeze": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\strong_baselines\\forecast_once\\FORECAST_FREEZE.json",
+      "sha256": "e113ea9443af88aa858d85fd6579cd6f85b6458c02aa69c071c4140ab4eeb697"
+    }
+  },
+  "artifact_sha256": {
+    "matched_development_results.png": "00073d8f29f48fad7d143acc931dc1b09be1b7a828c8af0f7e27819bea36de07",
+    "MATCHED_PHASE2_AGGREGATES.csv": "342fb7d797e0a1f1e469c4911787aa32c18db32d859e6e63e58b1034769838f6",
+    "REPORT_AGGREGATE.json": "0d8957855fc5b7ecbca42620e1b7489c671ad955ea3c39dc86fe21aa662fd89c",
+    "RESULTS_AND_NEXT_STEPS_ZH.html": "f659ebdc7ae93ef0ec9e730499fab2004d8bf46e2df22730f6258a761ae3b78c"
+  },
+  "root_render_only_flag": true,
+  "new_material_fit_forecast_score_or_resample": 0,
+  "no_SUT_or_sklearn_import": true,
+  "next": "Independent source/hash/link/count and rendered PNG review; then root release gate."
+}

@@ -1,0 +1,165 @@
+只压缩终端CRPS读出，保留完整关系学习：数学核对
+===========================================
+
+结论先行
+--------
+root提出的耦合界在下列明确条件下成立：固定有限full-Gaussian关系假设；后验及每个观测panel的完整似然不被压缩；仅将某个目标的条件Gaussian分量近似为少量prototype，并聚合已经正确更新的原假设权重。其逐次Bayes-CRPS风险误差可被W1控制；实际观测CRPS差一般需要常数2，常数1有明确反例。
+
+原逐坐标三角界是安全的。由于query在每个原假设下仍Gaussian，可进一步直接求“仿射差+残差差”的folded-normal期望，得到一个通常更紧、保留query坐标相关性的解析耦合代价。这不是最优W1距离，不是新定理，也不解决真实材料模型、有限particle、数值积分或长时规划误差。
+
+本文件为纯数学重推与反例。没有写/运行新模型、读取材料响应、重跑旧矩case或变更当前NIW admission。当前真实admission仍由原冻结源码/协议独立处理；此想法不替代其结果。
+
+1.精确状态与被近似对象
+---------------------
+当前真实已观测信息、身份、状态、mask、成本历史合记D。有限关系假设theta_h,h=1..H的权重w_h>=0，sum w_h=1。D只能含真正获准原生观测，预测/补齐值不能作为新增证据。
+
+对一个合法动作a，令新披露panel为z，长度d_a。所有已知cell/派生重复事前去重；动作可为任意原生单格或同包panel，也可包含直接target。给定theta_h,D,a：
+  z ~ q_ah = N(m_ah,V_ah)，
+  Y | z,theta_h,D,a ~ N(c_ah+b_ah^T z, s_ah²)。
+允许s_ah=0表示已知目标或确定条件值。新panel的观测分布应合法；若有退化Gaussian，可用共同支配测度解释Bayes更新，不能把奇异密度误当普通Lebesgue密度。实际软件的fresh-panel接口可更严格要求V_ah正定。
+
+三元full-Gaussian给定任意已有mask和新panel都具有上述仿射条件形式，不要求各theta观测边际相同、proxy与theta独立、星形协方差或零相关。其系数、query均值/协方差都由原full joint与当前D确定，不使用未知query结果。
+
+精确观测更新为
+  p_a(z)=sum_h w_h q_ah(z)，
+  w_h(z)=w_h q_ah(z)/p_a(z)，
+对p_a-a.e. z成立。若同一行已经观察O，再买S，q_ah必须是p(z_S|z_O,theta_h,D)，不得重复乘已经计入的完整joint。对同包用完整多元条件似然，不能拆成错误独立边际。
+
+真实条件预测是
+  F_z = sum_h w_h(z) N(c_ah+b_ah^T z,s_ah²)。
+它保留全部H假设及Gaussian残差。维度H是关系假设数，不是性质列数；本方法不要求完整材料数据低秩。
+
+2.prototype只用于读出
+--------------------
+在固定D/a/目标下，预先指定map g_a(h)到K个prototype，参数(c_ag,b_ag,s_ag)，s_ag>=0。map及参数可依赖当前D/a/w及已知metadata，但在对未来z取期望时必须固定，不许偷看该z。
+
+先用全部原始q_ah更新w_h(z)，再令
+  W_ag(z)=sum_{h:g_a(h)=g} w_h(z)，
+  G_z=sum_g W_ag(z) N(c_ag+b_ag^T z,s_ag²)。
+
+W_g(z)不是用prototype likelihood更新的posterior。一般有
+  sum_{h in g} w_h q_h(z) != W_g * q_g(z)。
+即使各h当前目标读出相同，其未来观测似然也可能完全不同。删除簇内原theta、用簇均值替代q_h或把生成target当观测，都会改变关系学习，失去本证明的前提。
+
+prototype无需是新的物理机制；它仅定义一个标量目标的近似条件预测读出。不同目标各自压缩时，并不自动得到一致的多性质joint generator。若要生成整行/多目标联合样本，最保守做法仍从完整theta及其full covariance生成；这里不认证逐列prototype组合的联合分布。
+
+3.条件Wasserstein-1界
+--------------------
+固定一个z。抽原h~w(z)，再抽共同epsilon~N(0,1)：
+  X=c_ah+b_ah^T z+s_ah epsilon，
+  U=c_ag(h)+b_ag(h)^T z+s_ag(h) epsilon。
+X边际为F_z，U边际恰为聚合后的G_z，所以这是合法coupling。记
+  delta_c_h=c_ah-c_ag(h)，delta_b_h=b_ah-b_ag(h)，delta_s_h=s_ah-s_ag(h)。
+因此
+  W1(F_z,G_z) <= epsilon_a(z)
+    :=sum_h w_h(z) E_epsilon|delta_c_h+delta_b_h^T z+delta_s_h epsilon|。
+
+这里delta_s是标准差之差，不是方差之差。s与prototype s必须非负；epsilon仅是用于构造coupling的共同标准Gaussian，不是注入新数据噪声或新观测。若delta_s=0，内层期望为绝对仿射差；若两者全相同，该h误差严格0。
+
+令A(mu,v)=E|N(mu,v)|。v>0时
+  A(mu,v)=sqrt(2v/pi)exp[-mu²/(2v)]
+          +|mu|[2Phi(|mu|/sqrt(v))-1]，
+v=0时A(mu,0)=|mu|。于是epsilon_a(z)=sum_h w_h(z)A(delta_c_h+delta_b_h^T z,delta_s_h²)。
+这给出点态coupling代价，不必声称求到了最优W1。所有量使用真实target/proxy单位；非线性target变换后不能把该界直接当原单位界。
+
+4.Bayes CRPS风险常数1成立；观测CRPS常数1不成立
+------------------------------------------------
+统一采用越低越好的正loss CRPS(F,y)=E|X-y|-.5E|X-X'|。令内部Bayes风险
+  R(F)=E_{Y~F}CRPS(F,Y)=.5E|X-X'|。
+这是以模型自身分布为真值的entropy风险，不是已经测得的材料损失。
+
+取任何F/G coupling(X,U)，以及独立同分布副本(X',U')：
+  |R(F)-R(G)|
+  <=.5E||(X-X')|-|(U-U')||
+  <=.5E|X-U|+.5E|X'-U'|=E|X-U|。
+对coupling取inf，得到|R(F)-R(G)|<=W1(F,G)。
+
+固定任意实际y，用|E|X-y|-E|U-y||<=W1以及上式：
+  |CRPS(F,y)-CRPS(G,y)|<=2W1(F,G)。
+这一点态替换误差对任意y成立，即使F/G均为错误材料模型；但它只说明两个预测彼此接近，不说明其绝对预测好或校准。
+
+常数1反例（精确手算，不执行）：F=delta_0，G=(1-p)delta_0+p delta_M，0<p<1,M>0，y=M。
+  W1(F,G)=pM，CRPS(F,M)=M，CRPS(G,M)=(1-p)²M，
+  差值=(2p-p²)M，差值/W1=2-p。
+p=1/4,M=1时差值7/16，W1=1/4，已违反常数1；p趋0时趋近2，所以2一般不能降低。
+
+这不依赖只允许退化Gaussian：将F/G同时与N(0,sigma²)卷积，成为非退化Gaussian/mixture；其到原点质量版本的W1均<=sigma sqrt(2/pi)。两次score替换合计改变差值至多4sigma sqrt(2/pi)<4sigma。取p=1/4,M=100sigma，原差175sigma/4，平滑后仍>159sigma/4，而新W1<=25sigma，所以常数1仍失败。该论证没有数值近似或材料值。
+
+补充：若最终预测也由F改为G，以F为真值的期望excess CRPS正好是int(F-G)²，<=int|F-G|=W1。它与R(G)-R(F)不是同一个量，不可混写。若只近似规划读出、最终保存完整F，则无需引入这种额外预测分布替换。
+
+5.塔式恒等式与解析预期界
+-----------------------
+对任何非负/可积的f_h(z)，由p_a(z)w_h(z)=w_h q_ah(z)：
+  E_{z~p_a}[sum_h w_h(z)f_h(z)]
+    =sum_h w_h E_{z~q_ah}[f_h(z)]。
+无需q_ah跨theta相同，也无需query坐标相互独立。此恒等式成立依赖精确完整likelihood及posterior权重；换成prototype likelihood后的weights通常不再满足它。
+
+原建议的简单界成立：
+  E_z W1(F_z,G_z) <= eta_simple,a
+   =sum_h w_h[|delta_c_h|+sum_j|delta_b_hj|E_{q_ah}|z_j|
+                         +sqrt(2/pi)|delta_s_h|]。
+每个E|z_j|为已知Gaussian边际的folded first moment。相关性不影响逐坐标三角不等式，因此它允许full joint panel，但可能很松且依赖坐标原点。
+
+更紧、同样解析的coupling代价：因为给定h时z~N(m_ah,V_ah)，且条件残差epsilon独立于z，
+  delta_c_h+delta_b_h^T z+delta_s_h epsilon
+    ~N(delta_c_h+delta_b_h^T m_ah,
+       delta_b_h^T V_ah delta_b_h+delta_s_h²)。
+故
+  E_z epsilon_a(z) = eta_folded,a
+   =sum_h w_h A(delta_c_h+delta_b_h^T m_ah,
+                delta_b_h^T V_ah delta_b_h+delta_s_h²)
+   <=eta_simple,a。
+于是
+  |E_z R(F_z)-E_z R(G_z)|<=eta_folded,a，
+  E_z|CRPS(F_z,y(z))-CRPS(G_z,y(z))|<=2eta_folded,a
+对模型query分布成立；y(z)甚至可任意依赖z，因为先用点态不等式。
+
+eta_folded是所选coupling的精确期望，不是W1的精确解，更不是整个规划值积分的精确解。它避免先对正负delta_b逐坐标绝对值造成的松弛。V_ah保留query坐标相关性，计算每h至多d_a维二次型；三性质任务d_a<=3时额外代价小。若prototype参数/map看过同一个未来z再变，不能直接把随机delta系数代入这个固定系数Gaussian公式；只能保留点态界，或另求对整个自适应规则有效的期望界。
+
+6.单动作值、直接target与选择误差
+-------------------------------
+定义Q_a=E_z R(F_z)，近似读出Qtilde_a=E_z R(G_z)。若成本也在目标中，同加已知lambda*c_a，或仅用同一hard-budget合法动作集，表示误差不变。令eta_a为上述folded界，则
+  Q_a in [Qtilde_a-eta_a,Qtilde_a+eta_a]。
+风险非负，可在数学区间端点取max(0,lower)，这与数值伪造PSD/clip预测误差不同。
+
+若用Qtilde最小的a_hat，a_star为同模型/动作/预算下Q最小者：
+  Q_a_hat-Q_a_star<=eta_a_hat+eta_a_star<=2max_a eta_a。
+若有数值积分估计Qhat且已独立证明其绝对误差xi_a，应使用总区间Qhat+-eta_a+-xi_a。没有xi证书时，不能把上述解析表示界说成动作选择已认证；退回完整读出只消除了prototype表示误差，不自动消除GH/QMC/MC误差。
+
+直接query目标Y后，该目标条件分布在每个h均为delta_{z_Y}。应直接用exact zero terminal risk，无需压缩或聚类；map可任意但读出必须仍是z_Y。若终点是多个目标的平均，仅被真实query的目标那一项为0，其他材料目标仍有风险；不能因动作叫V就把全任务风险清零。
+
+多个同单位目标按固定非负权重alpha_j汇总时，表示界可加总sum_j alpha_j eta_aj。不同物理单位需事先给出有解释的权重，不可把GPa/eV直接混加。该CRPS界不认证极值发现、top-k、hypervolume或阈值效用，它们须各自重新论证。
+
+7.不能自动认证多步自适应
+-----------------------
+每个动作一条无条件eta_a，不足以控制第二动作可随z选择的策略。需要对每个到达状态D/a/z与其全部合法后续b保留条件界，并处理E_z max_b eta_ab(z)；一般不能交换为max_b E_z eta_ab(z)。旧“同F不同adaptive收益”的教训在这里仍存在。
+
+若所有策略都共享精确likelihood/状态转移，唯一近似发生在同一个终端score，且能证明所有可达终端状态上统一误差<=epsilon_bar，则Bellman最小化与期望的非扩张性给值误差<=epsilon_bar、近似最优策略regret<=2epsilon_bar。这是附带很强统一条件的经典结论；Gaussian z无界时，系数误差通常不能提供有限小的全状态统一界。本文件没有证明现实完整反馈agent的该条件，也没有将单步平均界改名为全预算regret证书。
+
+即便eta_a很小，罕见z也可能令某个原小权重theta的posterior接近1，从而产生很大的实际conditional误差。平均界不是每分支误差界、coverage保证或稀有材料保护。实际z到达后可以重新计算点态epsilon_a(z)，必要时完整读出；这种fallback是否用于前瞻策略，必须在未来协议中同样建模并计入成本，不能事后只修坏点不报。
+
+8.强基线与什么时候没有计算价值
+-----------------------------
+原full theta/mean/covariance、逐h观测likelihood、精确posterior更新仍是O(H)存储/计算，不能宣称完整H被压缩成K。新增map/prototypes、权重聚合、误差界与构造/重建时间都要计入。
+
+原Gaussian-mixture target风险读出通常为O(H²)，Kprototype读出为O(K²)，但还要O(H)聚合以及每动作/目标构造与bound。固定query禁止audit的各theta目标law不随新action改变时，强基线可预缓存原H×H的A矩阵，并做batch/blocked w^T Cw；不能反复重建normal CDF来把它故意写慢。原H小（例如32）时，该基线可能已经足够快，prototype构造/界反而更贵。未来新panel改变目标条件均值时原C可能要更新，但必须按相同cache条件公平核实。
+
+既有OT/Gaussian mixture reduction与decision-aware approximation是直接方法邻居。本方案新增的潜在任务价值是“读出可以近似但关系学习不被假压缩/伪反馈破坏”，不是新的聚类、Wasserstein或Bayes理论。root另做有界直接近邻核查，此文件不追加重复检索或自称已排除雷同。
+
+必要负结果包括：
+-所有theta的目标(c,b,s)相同，K=1精确；这只是明显可合并，不是非平凡算法效果。
+-各theta观测likelihood不同、当前target相同：可以合并当前读出，绝不允许合并关系后验；未来目标会暴露区别。
+-异质target profiles太分散，K接近H才使界有用：回退完整读出，不能放宽epsilon救加速。
+-大|z|或强罕见分支使平均界与点态差很大：只称平均误差，必要时fallback。
+-理论界覆盖浮点下溢/积分误差的错误说法：本文件全为理想算术，未来软件仍须单独审计。
+-当前材料admission不通过，或完整likelihood/规划而非终端读出才是瓶颈：不实现此压缩来救材料分数，不人为扩大H演示速度。
+
+9.建议后续门与本轮停止点
+----------------------
+本轮只记录数学成立及局限。下一步必须先等待当前完整NIW材料admission结果，不能用本证明取代真实模型准入。只有后续小材料反馈任务确实需要有限full-Gaussian posterior且profiling显示终端读出是重要成本，才有理由另行登记prototype构造/精度/全动作基线比较。
+
+届时以完整原后验和原预测作oracle读出，对K/构造开销/pointwise与expected误差/实际选择误差作单一事前协议；不承诺新算法胜过完整planner。若Q区间重叠、K过大或计算收益不存在，回退完整读出并保存负结果。当前不写新训练源码、不做任何数值试验、不读新材料标签、不改当前admission。
+
+来源与真实阅读范围
+------------------
+CRPS energy identity沿用已选读Gneiting/Raftery2007作者官方PDF §4.2（原文反号与常用positive loss已区分）：https://sites.stat.washington.edu/people/raftery/Research/PDF/Gneiting2007jasa.pdf 。本文件其余coupling/tower/triangle/folded-normal推导为独立数学核对，不自称首创；无新的全文阅读数。OT/Gaussian-mixture reduction/decision近邻由root另记有限阅读范围，当前文件不伪造已完成文献覆盖或材料实验。

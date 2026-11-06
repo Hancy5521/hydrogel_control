@@ -1,0 +1,14 @@
+{
+  "actual_utc": "2026-11-05T15:13:09.290436+00:00",
+  "status": "SELECTOR_PREPARED_NOT_IMPORTED_OR_EXECUTED",
+  "selector_sha256": "910c3613e5536b9e29532dc547ba6bc92c80b085544a2a38077b640c725727d6",
+  "template_sha256": "e265fadc3d2283d5765848a69147e5a7b8d7639c9d8772354fc4b050eadd8e43",
+  "AST_only": true,
+  "stable_input_count": 13,
+  "historical_administrative_provenance_count": 3,
+  "metadata_selection_calls": 0,
+  "new_native_response_reads": 0,
+  "gzip_reads": 0,
+  "fits_or_scores": 0,
+  "root_actualUTC_registration_and_exactapproval_required": true
+}

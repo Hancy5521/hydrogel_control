@@ -1,0 +1,55 @@
+固定lambda=1/2的Yeo-Johnson表示假设：独立数学门
+状态：数学与直接来源选读；未实现、未数值执行、未读新材料组/响应、未改变旧NO_GO。
+
+结论：公式与有限矩前提成立，可以保留为一个单独的新表示假设；它是成熟变换的适配，不能称新变换或新算法。是否值得新cohort仍要等待源适配诊断及root决定。本文件不授权拟合。
+
+1. 严格定义整个坐标链
+对某个原生性质x，用fit-only正有限尺度s0，先v=x/s0，再u=T(v)，最后z=(u-a)/b；a是仅fit样本的u均值，b是仅fit样本的正有限sampleSD。lambda固定为1/2，不能用后续诊断数据优化lambda或重新缩放。
+T(v)=2(sqrt(1+v)-1), v>=0;
+T(v)=-((1-v)^(3/2)-1)/(3/2), v<0.
+g(u)=T^-1(u)=(1+u/2)^2-1, u>=0;
+g(u)=1-(1-3u/2)^(2/3), u<0.
+因此原单位逆映射h(z)=s0*g(a+bz)。T/g在全实轴上连续、严格递增、双射，分支在0接合。不得将只对非负材料值合法的log分支偷偷用于负bulk。
+
+2. 导数与密度Jacobian
+T'(v)=(1+v)^(-1/2)于v>=0；T'(v)=(1-v)^(1/2)于v<0。
+g'(u)=1+u/2于u>=0；g'(u)=(1-3u/2)^(-1/3)于u<0。
+二者为正，0处均为1，h'(z)=s0*b*g'(a+bz)。
+z_x=(T(x/s0)-a)/b。
+f_X(x)=f_Z(z_x)*T'(x/s0)/(s0*b)。
+log f_X=log f_Z(z_x)-log(s0)-log(b)+log T'(x/s0)，
+其中logT'在正分支为-0.5log(1+v)，负分支为+0.5log(1-v)。
+三维joint密度加三项坐标Jacobian；自身proxy条件密度可由joint/marginal比例核对。若transform在所有关系hypotheses间冻结相同，给定proxy的Jacobian对theta似然权重是公共因子；若hypothesis-dependent或每次再拟合，则不能丢掉它。
+
+3. Student-t原单位矩：一阶df>2，二阶df>4
+非退化latent Student-t的任一尾密度渐近为常数*|z|^(-nu-1)。其绝对q阶矩有限当且仅当q<nu。
+固定a、b>0时，h(z)正尾增长为O(z^2)，且具有非零二次主项；负尾增长为O(-|z|^(2/3))。因此对p>0，E|X|^p有限当且仅当nu>2p。负尾只要求nu>2p/3，正尾是限制条件。严格等号的边界矩发散。有限location/scale不改变该阶数。
+所以一阶绝对矩需nu>2；二阶矩需nu>4。p3、NIW先验nu0=7所给单行prior-predictive自由度为5，满足两者；完整fit后69及条件69+k也满足。此结论条件于冻结的有限a,b,s0，不为数据依赖尺度给出额外全Bayes校准保证。
+常见错误：将t的scale当variance；以latent均值存在(nu>1)代替native均值存在；只检查一阶就声称native RMSE的模型期望有限；认为对称latent t经过非线性逆后仍有对称native均值。
+
+4. 为什么不直接用asinh/log逆配Student-t
+exp或sinh的逆尾增长为指数，而Student-t没有任何非零指数绝对矩。非退化有限自由度时native E|X|会发散。对log逆的正尾，P(X>x)约为(log x)^(-nu)，于是native CRPS右尾的积分约为integral (log x)^(-2nu) dx，也发散。sinh有同类两侧问题。
+lambda=1/2的YJ逆只呈多项式增长，避开了这个明确障碍。这是矩存在性的选择理由，不是保证YJ对材料更准确。
+
+5. 原单位CDF、PIT、分位数与coverage
+F_X(x)=F_Z(z_x)，SF_X(x)=SF_Z(z_x)。native分位数Q_X(p)=h(Q_Z(p))。
+PIT必须是F_Z(z_y)，区间端点必须分别逆变换；native宽度=h(q_hi)-h(q_lo)，不能乘一个固定latent宽度。若目标评估使用连续模型但真实分布有点质量，PIT均匀性本就需要另外的离散/随机化处理，不能靠YJ宣称解决。
+严格单调变换不会改变同一个已拟合概率律的PIT与coverage事件。若先变换数据再重新拟合，改变的是模型族在native空间的形状，才可能有不同预测表现；仅重命名旧坐标不能修好旧PIT。
+变换也保留点质量。例如gap=0的大量atom仍是一个atom；连续NIW在该proxy上的假设不会被单调变换自动变真。跨化学系统、来源/状态异质性同样不会仅因变换而消失。
+
+6. 原单位CRPS必须使用变量权重积分
+对真实原单位读数y，z_y=(T(y/s0)-a)/b：
+CRPS_X(F,y)=integral_{-infinity}^{z_y} F_Z(z)^2*h'(z) dz
+             +integral_{z_y}^{infinity} SF_Z(z)^2*h'(z) dz。
+这由原单位CDF定义和严格递增换元直接得到。h'不是常数，因此不能沿用上一版的nativeCRPS=scale*latentCRPS，也不能套Student-t闭式后只改单位标签。可用原单位x坐标CDF积分作为独立核查，但两种积分都需要单独登记数值精度和尾误差。
+为数值稳定，两个积分建议在z0=-a/b（inverse分支切换）与z_y处预定分段；upper tail用SF而非1-CDF。逆导数需保持正值，遇到溢出/积分warning应保留失败，不以截断负预测救分数。
+有限native一阶绝对矩足以保证常见有限一阶矩分布类上的CRPS与能量表达式有意义。更细地说，这个特定变换的点态CDF平方积分在nu>1时也可收敛；但这不能代替native均值、Bayes风险和本文拟用有限一阶矩决策保证的nu>2要求。本方案已有df5以上，无需利用较弱边界来扩大主张。
+
+7. 逆latent location是native median，不是mean
+若Z的条件t/Normal对称，latent location等于latent median，故h(location)是native median。一般E[h(Z)]不等于h(E[Z])。需要raw mean时必须另算integral h(z)f_Z(z) dz（并先满足矩条件），或明确将RMSE点估计称为inverse-location/median，而不是误标raw conditional mean。
+若Gaussian对照是在latent空间同矩后经h逆映射，那么native分布不是Gaussian。名称需明确为YJ-transported latent Gaussian；它和上一版native Gaussian是不同参考。是否在新cohort保留native Gaussian强基线，须在新protocol前明确，不得通过名称混淆删掉强基线。
+
+8. go/no-go与旧结果身份
+旧native-NIW的NO_GO由PIT阈值产生，数学审计PASS不改变其科学决策。旧3.898%条件CRPS收益、Gaussian近乎相同的表现及90%coverage约92.7%都保留。
+YJ是依据已消费开发结果提出的新假设。若随后试验，应另列预先冻结lambda/转换链/原单位评分/强基线/实际UTC/sourcehash的新protocol，排除旧40+本轮256整component。新256的作用和是否为development/confirmation由root预先说明；不得将同一旧192重算后称独立修复成功。
+本轮没有拟合新cohort，没有修补旧门槛，没有形成新材料效果结论，也没有证明顶会投稿所需的任务、强基线与闭环价值。

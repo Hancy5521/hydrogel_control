@@ -1,0 +1,22 @@
+{
+  "status": "FINAL_PREPARATION_ONLY_AWAIT_ROOT_RELEASE_GATE_NO_SEAL",
+  "actual_utc": "2026-11-06T02:29:26.843023+00:00",
+  "actual_Asia_Shanghai": "2026-11-06T10:29:26.843023+08:00",
+  "builder_sha256": "6b9db649c88717772efceab21786d21c9cf6b929f19de2ae62aadc980dbb4316",
+  "reproduce_sha256": "bada9d7677ddf5f5a9b3cfb456220d72b6c5b1168039a01b64ffc3b6d802b61d",
+  "verify_sha256": "f1483625a157b58502f7551cef8a4eb154d4862c1ddac1df88df90427d9a9e14",
+  "previous_preparation_receipt_sha256": "7f7fd0873dc38e0b3702e0211e1cedbcc8f1419b06f1d8e68f86056da6645960",
+  "history": "history/pre_mixed_gate_index/HISTORY_RECEIPT.json",
+  "approved_non_scientific_index_links": {
+    "optional_artifact_role": "mixed_measure_addendum",
+    "additional_guide_if_present": "report/BASELINE_ALGORITHM_AND_CODE_ZH.txt"
+  },
+  "main_frozen_science_sources_unchanged": true,
+  "mixed_gate_frozen_sources_unchanged": true,
+  "wrapper_modes": 6,
+  "mixed_gate_manual_separate_CLI": "mixed_measure_gate/README_ZH.txt",
+  "mixed_gate_full720results_in_complete_local_package": "recursive stage copy after rootgate; no default public export implied",
+  "no_source_import_model_fit_or_numeric_execution_by_this_preparation": true,
+  "target": "H:/PolymerReview/Material_Feedback_20261106T020921Z",
+  "pending": "root actualfinalaudit/addendum/two runlog snapshots/release_gate; explicitbuild; fresh relocated verification andprepare-only smoke checks"
+}

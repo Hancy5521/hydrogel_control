@@ -1,0 +1,9 @@
+{
+  "actual_utc": "2026-11-06T02:28:35.046070+00:00",
+  "kind": "preserve_index_builder_before_approved_optional_addendum_links",
+  "source_sha256": {
+    "build_resources.py": "45df1aaf50f1972187f1a3cf304cd0c3db223afbf67ca44d0457977dc2d1d451",
+    "PACKAGING_PREPARATION_BASELINE_RECEIPT.json": "7f7fd0873dc38e0b3702e0211e1cedbcc8f1419b06f1d8e68f86056da6645960"
+  },
+  "not_scientific_model_source": true
+}

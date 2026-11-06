@@ -1,0 +1,18 @@
+{
+  "actual_approved_utc": "2026-11-05T16:06:32.996743+00:00",
+  "actual_Asia_Shanghai": "2026-11-06T00:05:14.749131+08:00",
+  "approved": true,
+  "scope": "PHASE2_FIXED_YJ_HALF_ADMISSION",
+  "plan_sha256": "0bc6c752457732cd535608510ae12da01f89fa0eb83f30fa0d67516dccdc8bba",
+  "allowed_phases": [
+    "forecast"
+  ],
+  "independent_static_math_score_review_sha256": "173a63a174b6c2408af46e71e0d53909574bad01dc2f33feac39e708de4de29c",
+  "independent_static_IO_review_sha256": "fc766507323776a491816129168a89ba54056eb3bb9b96a069c5ed1e827a58a8",
+  "new_model_inputs": "New64fitx3/new192diagx2proxy only; original rawgzip physicallyparsed in trustedreader,notcrypto blinded",
+  "new_diag_target_reveal_allowed_now": false,
+  "phase1_NO_GO_and_sources_remain_unchanged": true,
+  "all_newgroups_development_not_confirmation": true,
+  "administrative_correction": "Exact scope spelling only; original bad root approval and launch failure retained. All actual scientific plan/source/input/threshold bindings unchanged.",
+  "original_failed_approval_sha256": "5032b5f3f84e50204da9d6526bda3079719c131be8e114f2c6babd73cdd9374f"
+}

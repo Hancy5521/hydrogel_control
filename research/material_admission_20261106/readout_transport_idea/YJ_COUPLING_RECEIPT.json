@@ -1,0 +1,11 @@
+{
+  "kind": "YJ_NATIVE_L2_COUPLING_MATH_ONLY_RECEIPT",
+  "actual_utc": "2026-11-05T16:03:41.966532+00:00",
+  "actual_Asia_Shanghai": "2026-11-06T00:03:41.966532+08:00",
+  "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\readout_transport_idea\\YJ_NONLINEAR_COUPLING_ADDENDUM_ZH.txt",
+  "sha256": "dbb85b8b2e87ecf160c1890e200cc2689467ce5c1f17f33b46f309a0b6748c21",
+  "derivations": "Manual derivative/integral mean-value/Cauchy-Schwarz and conditional Gaussian moments; no numeric calculation",
+  "new_model_code_or_data_reads_or_numerical_experiments": 0,
+  "phase2_or_phase1_sources_modified": false,
+  "not_a_material_or_integral_error_certificate": true
+}

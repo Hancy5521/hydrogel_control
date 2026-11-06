@@ -1,0 +1,78 @@
+{
+  "kind": "bounded_finite_hypothesis_mixed_measure_consistency_gate",
+  "actual_spec_lock_utc": "2026-11-06T02:20:50.081383+00:00",
+  "status": "SPEC_ONLY_NO_NUMERIC_EXECUTION",
+  "material_labels_fits_or_policy_runs": 0,
+  "prior": [
+    0.1,
+    0.2,
+    0.3,
+    0.4
+  ],
+  "spike_probability": [
+    0.1,
+    0.3,
+    0.6,
+    0.8
+  ],
+  "rho": [
+    -0.6,
+    -0.2,
+    0.25,
+    0.65
+  ],
+  "h_indices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "spike_branch": "G=0, independent defined2D(A,Y)Gaussian mean[.2h,-.1h] covariance[[1,rho],[rho,1]], NOT slab G0 conditional nor slab AY marginal",
+  "slab_branch": "3D(A,G,Y)Gaussian mean[.2h,.3-.1h,-.1h], AR1 covariance rho**abs(i-j), signed G permitted",
+  "base_measure": "Lebesgue(A) x (delta0(G)+Lebesgue(G)) x Lebesgue(Y); atG0 RN contribution fromspike only; G missing sum branch observed marginals",
+  "canonical_rows": [
+    "r0",
+    "r1"
+  ],
+  "aliases": {
+    "rowA": "r0",
+    "duplicate_report": "r0"
+  },
+  "terminal_row": "held_out, unavailable to all actions",
+  "fields": [
+    "A",
+    "G",
+    "Y"
+  ],
+  "fixture_values": {
+    "r0": {
+      "A": 0.7,
+      "G": 0.0,
+      "Y": 1.2
+    },
+    "r1": {
+      "A": -0.4,
+      "G": -0.6,
+      "Y": 0.1
+    }
+  },
+  "positive_variant": "r1.G=.6; six fixedorders only; no extra material units",
+  "primary_cases": "all720 permutations of6canonicalcells; each of6steps saved; fullbatch endpoint; h support unchanged",
+  "fee": "one per newly disclosedcanonical physical cell; paneldedup, samevalue repeats0, STOP0; no independent-evidencecount peralias",
+  "transaction_rejects": [
+    "conflictingexistingvalue",
+    "conflictingaliaseswithinpanel",
+    "nonfinitevalue",
+    "unknownfield",
+    "terminalrow",
+    "unknownrow"
+  ],
+  "posterior": "logprior+sum row log joint-marginal likelihood; incremental row joint difference, not productunivariate; adaptive design factors cancel only when design depends on observedhistory, not hiddenh",
+  "independent_audit": "own SciPy observedsubmatrix multivariateGaussian marginals, no producerimport; scalarweights/rnlikelihoods and ledger counts inclnaivefactorizationnegativecontrol",
+  "limitations": [
+    "formal finite analyticmodel float64check, not rationalexact or calibratedmateriallikelihood",
+    "gap0 atom generator or reportcensoring unknown for actualsource",
+    "no continuousNIWparticle accuracy or actioneffectivenessinferred",
+    "no empiricalfeedbackloop/novelalgorithmclaim"
+  ]
+}

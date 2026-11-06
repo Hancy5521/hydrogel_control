@@ -1,0 +1,37 @@
+{
+  "kind": "independent_full_saved_mixed_measure_gate_audit",
+  "status": "PREPARED_PENDING_EXACT_ROOT_APPROVAL",
+  "actual_registered_utc": "2026-11-06T02:28:35.578533+00:00",
+  "independent_source_sha256": {
+    "oracle_math.py": "6cd4caf41bec5088ef7fa5199428ae91fdc4fdbcc9ef3d35dddfc56ed00426a5",
+    "audit_mixed_measure.py": "2c31f11f0908b0a1c626c135847d701da326d9b74b854fcfe3f85a451b408128"
+  },
+  "criteria": {
+    "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\mixed_measure_gate\\independent_review\\PREOUTPUT_MATH_CRITERIA.json",
+    "sha256": "d3700ee203a25fc81a515a7fbee478c7e3314ffb24797edfe4f6f585807af102"
+  },
+  "producer_code_directory": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\mixed_measure_gate\\code",
+  "inputs": {
+    "producer_plan": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\mixed_measure_gate\\EXECUTION_PLAN_REGISTERED.json",
+      "sha256": "0c866c0c1fb41d86a213602f095c62c4118fb24b52460952e6d4bf40b485b61b"
+    },
+    "execution_start": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\mixed_measure_gate\\execution_once\\EXECUTION_START.json",
+      "sha256": "7c49b52c4c60288de04b506932aa27dfcf0b3a23a38d0ee33a8ff26d37f28e0b"
+    },
+    "execution_complete": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\mixed_measure_gate\\execution_once\\EXECUTION_COMPLETE.json",
+      "sha256": "f9bea9dcb02125c6e97fb6b65585c70b773568bb9271df3f21395c0ae87da81c"
+    },
+    "producer_result": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\mixed_measure_gate\\execution_once\\RESULTS.json",
+      "sha256": "9d51067d4bf81b54a14be1197589bc118c9e4871dc0892b327faf816cd784900"
+    },
+    "static_source_review": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\mixed_measure_gate\\independent_review\\STATIC_SOURCE_AND_MATH_REVIEW.json",
+      "sha256": "24bc71dc0bf113d56b69ce22b0c7426afe229a3d20d2e2a3892a8d99519c582b"
+    }
+  },
+  "scope": "all720/4320 main and6/36positive order steps,17transactions,7mixedmeasurecontrols,wrongmarginalproduct; SciPy observedmarginals exact finiteh; no SUT import or producer replay or materials"
+}

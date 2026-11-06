@@ -1,0 +1,44 @@
+{
+  "actual_utc": "2026-11-05T16:03:46.511072+00:00",
+  "status": "PASS_PHASE2_STATIC_IO_ONLY_PENDING_ACTUAL_ROOT_FORECAST_APPROVAL",
+  "new_source_sha256": {
+    "run_phase2.py": "3df8cbab90b58b5ad2a56691d34b16bdceb3748d5a033cb5752dd9469c9acf0b",
+    "yj_model.py": "892e90922091b424ab1fd8d94f5901a2a8585861f39e7f3ebe54eca3166e98bc",
+    "score_phase2.py": "0160ad1b175ce47295579ad020575b1db63bdd0fce27076c167f81f36217a964"
+  },
+  "parent_source_actual_sha256_unchanged": {
+    "admission_io.py": "90011d05e1071b02422622249006cf669bd88e2f7792f8da87f87e0589188466",
+    "niw_predictive.py": "a8d74e5398f2bb606efb195d3395324f014ba3f9b4f801a67b022c1cc6687818",
+    "score_admission.py": "ef7e29f8dab89a0a644011b8c188fcbeaa178095bbd823d082be8887e0aaccc0"
+  },
+  "template_sha256": "d0a6099c081648bdc8bb02e1d3f6c74b9b86a85479d0342ada35aa1bb3bbb964",
+  "role_sha256": "aee4d2aa78f7522eae8aba2b8ac56e186b3c5d81059a6d3a5b44b16d1042350b",
+  "phase1_roles_sha256": "0bc81d0400a4076c854af11e654ca3ca9bcbceb249f2ee6c26d356c53ceae9c0",
+  "root_scope_sha256": "34b487c1946644bd13699309368064f5df38d59477c5f18683b430c5be4ac578",
+  "stable16_current_hashes_match": true,
+  "raw_asset_reference_not_opened_by_reviewer": "3d0fc1315b74cf84071f16aa25bb93434dafbc83867beb75872064ac245bd747",
+  "IO_checks": [
+    "Phase2validate uses oldcontract40 exclusion via pinnedparentvalidator and separately rejects all256phase1components; fixedphase2roleSHA already independently reviewed. No rehash selection or alternate representative.",
+    "Trustedfullgzip parser is reused read-only. Onlyfit64threefields anddiagnostic192twoproxies are exposed; rawindex/artifactindex/JID/MPID/composition checks remain.",
+    "Neitherparentnativegetter nornewall-realtransform discards negativebulk,negativeformationenergy or exactzero gap; scale/domain problemsstopinstead ofselecting newrows.",
+    "Twofitreferences use onlyfit64 native_values; per-row lawcalls only own0/1/2proxy subset. No diagnosticY or cross-diagnostic accumulation into sharedfits.",
+    "New3840uniquekeys=192groups x5lawroles x4masks verified with fiveartifactSHAfreeze; group/JID/family/df/native-vsYJcoordinate andYJlambda/s0 validity checked.",
+    "Scorephasevalidates new/parent/source/inputscope andcompletefreeze beforeTARGET_REVEAL_START, then parenttruthgetter extracts only192diagnosticY.",
+    "Originalphase1NO_GO/results are bound historicalprovenance, notrescored ormutated; allnew256 remain development, notindependentconfirmation."
+  ],
+  "score_entry_line_order": {
+    "validate": 198,
+    "verify_freeze": 199,
+    "reveal_diagnostic_truth": 209
+  },
+  "interpretation_limits": [
+    "Honest-caller auditedAPI boundary, not cryptographic ormalicious-caller sandbox. Fullsourcephysicallyparsed; only role-level explicit extraction is restricted.",
+    "Ineligible-source siblingidentities notnewlyenumerated; entirecomponentdevelopment exclusion derives fromprevious fullsourcegraph+fixedrawSHA.",
+    "TransportedlatentGaussian is not a native-momentmatchedGaussian. Nativequadrature/tail/finitefirstmoment correctness are separate mathematicalgate scope.",
+    "ExactregisteredUTC/configuration/sourcehash andphaseapproval required beforeactualparse; a TEMPLATE alone is nonexecutable."
+  ],
+  "blocking_IO_bugs": [],
+  "necessary_source_changes": [],
+  "newrawgzip_or_nativeproperty_reads_by_reviewer": 0,
+  "producer_imports_or_fit_predict_score_executions_by_reviewer": 0
+}

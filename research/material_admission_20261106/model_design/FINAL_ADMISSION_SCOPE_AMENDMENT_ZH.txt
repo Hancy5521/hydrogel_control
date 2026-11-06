@@ -1,0 +1,25 @@
+模型准入最终预数据范围补充（取代起草建议，不修改旧研究）
+
+本文件补充MODEL_AND_FEEDBACK_DESIGN_ZH.txt及ADMISSION_IMPLEMENTATION_PREPARATION_PLAN.json中的早期建议；两者保留为设计历史。实际可执行范围以root ROOT_ADMISSION_SCOPE_BEFORE_LABELS.json、最终执行模板及已冻结三模块为准，不从历史建议读出额外授权。
+
+1.已按独立metadata协议选择256组，64fit/192diagnostic；全部192为开发，不是独立确认，不再重切。role文件SHA0bc81d0400a4076c854af11e654ca3ca9bcbceb249f2ee6c26d356c53ceae9c0。所有同sourcecomponent兄弟仍整体预留同角色，已知eligible兄弟不等于穷尽所有ineligible兄弟。
+
+2.最终门：dual-proxy NIW原单位宏CRPS比同NIW无proxy至少低2%，且不劣于conditional moment-matched Gaussian超过2%；dual-proxy90%中央区间coverage>=0.80；dual-proxy PIT经验CDF最大偏差<=0.15。它们是决定是否值得小型反馈任务的描述门，不是精确KS检验、材料校准保证或顶会标准。任何失败STOP完整campaign，不在此192组换先验/scale/阈值/样本。
+
+3.三比较者为joint NIW-t、同均值/完整predictive covariance的moment-matched Gaussian、以及NIW target marginal。最后一个在无proxy时是恒等对照，在其他mask是关联消融，不把它另算原创算法。单/双proxy都用完整joint条件分布；192行proxy不累积更新共享fit posterior。
+
+4.fit64均值/样本SD确定仿射尺度后才在该尺度设置0/I参考NIW prior。因此它是data-dependent empirical reference pipeline；给定该尺度的NIW算术是解析条件Bayes，但外层不是在native尺度数据前独立固定的纯全Bayes。独立数学门验证代数，不等于验证这一经验参考模型在材料上成立。
+
+5.Student-t producer主CRPS使用scoringRules作者文稿p26 beta闭式，df>1。独立数学代理已用CDF/SF积分、density-energy积分和闭式交叉核验；本producer不重跑这些数学族。Gaussian闭式与同单位仿射缩放；不使用GH5或样本CRPS作主分数。
+Student-t标准化loss为
+ z(2T_nu(z)-1)+2 f_nu(z)(nu+z²)/(nu-1)
+ -(2sqrt(nu)/(nu-1))*B(1/2,nu-1/2)/B(1/2,nu/2)²，
+再乘positive native scale；程序可用|z|利用对称性，beta在log域求值。
+原作者官方文稿：https://stat.ethz.ch/CRAN/web/packages/scoringRules/vignettes/article.pdf
+本轮本人只选读p26公式/df>1及preface版本说明（2023-05-23；对应JSS2019），未复制软件代码或全文，也未将访问权当再分发许可。Murphy与CRPS原理阅读范围沿用设计文档；Ding2016 conditional-t由root/独立数学代理核查，不冒称本人精读。
+
+6.可信提取器会物理读取/解析完整30,669,285B gzip与全25923行payload；不是物理只读256行。model API仅见64x3 fit数值与192x2 diagnostic proxy，无diag bulk。未选原生性质不做统计/训练/评分；payload随后释放。诊断target仅在完整2304预测冻结验证后由独立评分入口提取。它是可审计接口隔离，不是密码学盲法；source字节hash验证也会读完整压缩文件，但不等于将全部响应交给模型。
+
+7.独立NIW/t/CRPS数学4族PASS已有精确批准收据；最终执行模板绑定原收据，producer不重跑。源码准备与AST解析不导入/执行model、不读gzip；真实提取/拟合/预测必须等待root actualUTC+exact plan/hash批准，评分再检查完整freeze。
+
+8.本轮优先完整NIW，不采用旧star/pure-proxy模型；旧rho矩tail和restricted R-first策略界不适用于此general joint admission。无allocation/agent/主动反馈、无新湿实验或DFT、无新算法有效性结论。通过只给下一步新任务设计理由；失败保留并停止完整闭环，不用纯合成救材料分数。

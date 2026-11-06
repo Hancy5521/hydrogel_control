@@ -1,0 +1,22 @@
+{
+  "actual_review_utc": "2026-11-05T15:12:22.368985+00:00",
+  "status": "PASS_READ_ONLY",
+  "result_sha256": "8bd92f408575b9e7d033569c2fef9a7e6e3aaa7f3a8a0352df00f0ecff784a9e",
+  "source_unchanged": true,
+  "plan_unchanged": true,
+  "families": 4,
+  "conditional_density_coordinates": 54,
+  "CRPS_fixed_cases": 24,
+  "invalid_parameter_rejections": 4,
+  "max_NIW_error": 1.457167719820518e-15,
+  "max_conditional_density_error": 1.1102230246251565e-15,
+  "max_CDF_closed_CRPS_error": 2.1094237467877974e-15,
+  "max_CDF_energy_CRPS_error": 6.272760089132134e-14,
+  "scope": "Read saved result, hashes and finite coverage only; zero reruns/imports/material reads. Does not validate producer or materials. Quad estimates are numerical diagnostics, not interval certificates.",
+  "important_conventions": [
+    "EpriorSigma=I, prior t-shape=1.2I and predictive covariance=2I",
+    "conditional df and shape depend on proxy count/Mahalanobis",
+    "df1.5 finite CRPS despite infinite variance",
+    "fit-only centering/SD defines empirical reference prior on data-dependent coordinates, not pre-fixed native-scale prior or calibration guarantee"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "status": "PREPARATION_ONLY_NOT_SEALED_NOT_EXECUTED",
+  "actual_utc": "2026-11-05T16:43:38.378074+00:00",
+  "actual_shanghai_time": "2026-11-06T00:43:38.378104+08:00",
+  "packaging_sha256": {
+    "build_resources.py": "bb4b86b8df562a777aa1283a76dcd0307bd1ac2cce078f33a31571b0f90d9f4f",
+    "verify_resources.py": "f1483625a157b58502f7551cef8a4eb154d4862c1ddac1df88df90427d9a9e14",
+    "reproduce.py": "cd80b0f24717f8670de36e1c2e033b8166f0c93b6ea793d518dc037df926c0e5",
+    "RESOURCE_GUIDE_ZH.txt": "ff51dca79d863acb65e6546a5ff54d3988302059f984747f202b0ce6bd413c2b",
+    "DETAILED_ALGORITHM_AND_CODE_ZH.txt": "cdaca0395df5d4f24442e4420f799f38b8ffa2a20275114c12bc1f87e52a6010"
+  },
+  "original_scientific_source_sha256": {
+    "admission\\code\\admission_io.py": "90011d05e1071b02422622249006cf669bd88e2f7792f8da87f87e0589188466",
+    "admission\\code\\niw_predictive.py": "a8d74e5398f2bb606efb195d3395324f014ba3f9b4f801a67b022c1cc6687818",
+    "admission\\code\\score_admission.py": "ef7e29f8dab89a0a644011b8c188fcbeaa178095bbd823d082be8887e0aaccc0",
+    "phase2_yj\\code\\run_phase2.py": "3df8cbab90b58b5ad2a56691d34b16bdceb3748d5a033cb5752dd9469c9acf0b",
+    "phase2_yj\\code\\score_phase2.py": "0160ad1b175ce47295579ad020575b1db63bdd0fce27076c167f81f36217a964",
+    "phase2_yj\\code\\yj_model.py": "892e90922091b424ab1fd8d94f5901a2a8585861f39e7f3ebe54eca3166e98bc",
+    "strong_baselines\\code\\baseline_models.py": "a602b50663b64490af26a11a65b5effb7753e61aa6e9b8f71c8221a78898cfd5",
+    "strong_baselines\\code\\run_baselines.py": "15a545172bedbf7af04d8fca5a7608f954be89e89d169087ea88aa3ed748c6c5",
+    "strong_baselines\\code\\score_baselines.py": "0199da5a70f4290df4ae685879961ab92003e1f8fe7123f55f2b4b0220b463d2"
+  },
+  "phase2_summary_source_sha256": "4bf07550b9b4840967b6cca13d4a81c190616e7a4bdb47813126793bde2b5711",
+  "default": "prepare-only; four phase1/phase2 forecast/score modes; score requires same-phase completed replay freeze",
+  "offline_bindings": "13 originalexternalcopies +3 alreadyincludedstagefiles =16 stableprovenance; RESOURCE_PATH_MAP generatedbybuilder",
+  "math_or_material_models_executed": 0,
+  "rawgzip_opened_or_copied_in_preparation": false,
+  "old_packs_or_Git_modified": false,
+  "preparation_history": "history/pre_phase2_preparation retained",
+  "baseline": "recursive source/state/results/audits included only at finalrootgate; frozen baseline CLI separate; no automatic refit",
+  "release_gate_required_roles": [
+    "phase1_forecast_freeze",
+    "phase1_score_results",
+    "phase1_independent_saved_audit",
+    "phase2_forecast_freeze",
+    "phase2_score_results",
+    "phase2_independent_saved_audit",
+    "strong_baseline_terminal_record",
+    "strong_baseline_independent_audit",
+    "report"
+  ],
+  "pending": "root final science report and all actual independent audits/terminal baseline record; then explicit release gate and build approval"
+}

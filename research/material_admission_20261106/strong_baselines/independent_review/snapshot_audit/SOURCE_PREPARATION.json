@@ -1,0 +1,19 @@
+{
+  "actual_preparation_utc": "2026-11-05T16:50:31.352476+00:00",
+  "status": "SOURCE_AST_ONLY_PENDING_ACTUAL_FORECAST_FREEZE_AND_PLAN",
+  "script_sha256": "046b73114e29b70b004b8a32009264b9e9025babb528a76988f95a41bac0eaa3",
+  "criteria_sha256": "c96d75155047086556c40676ec7dc33d3f574fd3e097484938e43d6a1bf27b0a",
+  "source_imports_or_numerical_execution": 0,
+  "baseline_state_or_outcome_reads": 0,
+  "code_scope": "Purestdlib snapshot arithmetic. GPnormwisefactor/dualchecks+fixednative2e-6/2e-8forwardcomparison;RFallfloat32paths/Fractionmassesexact. Needactualcomplete1536freeze5payloadshaandregisteredplanbeforefreezingexecutionPLAN.",
+  "planned_coverage": {
+    "forecast_laws": 1536,
+    "GPlearned": 576,
+    "RFlearned": 576,
+    "none_laws": 384,
+    "RFtreepaths": 196608,
+    "RFlearnedmasspositions": 36864,
+    "RFnonemasspositions": 12288
+  },
+  "failure_policy": "Nooutput-basedcriteriatuning. Epochorderingrequiresbothcriteriaandactualplanbeforefitstart,notunnecessaryorderbetweenthetwo."
+}

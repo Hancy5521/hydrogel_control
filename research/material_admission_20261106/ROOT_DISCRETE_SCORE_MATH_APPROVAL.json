@@ -1,0 +1,8 @@
+{
+  "actual_approved_utc": "2026-11-05T16:42:52.222260+00:00",
+  "approved": true,
+  "scope": "INDEPENDENT_FIXED_DISCRETE_GAUSSIAN_SCORE_MATH",
+  "plan_sha256": "ac446b030c2663b272784f293f7ed2e7b89986c6a1c27946168269d7516e4649",
+  "source_sha256": "6470606f46dce4e3cfddc5f718d94d56811aea4b2c6415b9b8c3d900cc8f0a18",
+  "scope_limit": "8fixedrational laws,exactstepCDF/energy identity andquantiles;4GaussianCDFquadcontrols. No SUT/MLfits/native-materialinputs, norepeatorchangedtolerance."
+}

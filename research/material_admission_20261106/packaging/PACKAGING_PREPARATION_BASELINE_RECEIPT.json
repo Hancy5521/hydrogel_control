@@ -1,0 +1,52 @@
+{
+  "status": "PREPARATION_ONLY_NOT_SEALED_NO_MODEL_OR_SCORE_EXECUTION",
+  "actual_utc": "2026-11-06T02:17:00.632903+00:00",
+  "actual_Asia_Shanghai": "2026-11-06T10:17:00.632903+08:00",
+  "packaging_sha256": {
+    "build_resources.py": "45df1aaf50f1972187f1a3cf304cd0c3db223afbf67ca44d0457977dc2d1d451",
+    "verify_resources.py": "f1483625a157b58502f7551cef8a4eb154d4862c1ddac1df88df90427d9a9e14",
+    "reproduce.py": "bada9d7677ddf5f5a9b3cfb456220d72b6c5b1168039a01b64ffc3b6d802b61d",
+    "RESOURCE_GUIDE_ZH.txt": "3161b000ccb977d756e68ddf954f0ba1ae69b4fca8891d2164fbe54eca65867f",
+    "DETAILED_ALGORITHM_AND_CODE_ZH.txt": "26839b4c09031ed46cef030cdfe746c02df6d22d410cc08ba037c7f319d9349f"
+  },
+  "previous_preparation_preserved": "history/pre_baseline_preparation/HISTORY_RECEIPT.json",
+  "original_scientific_source_sha256": {
+    "admission\\code\\admission_io.py": "90011d05e1071b02422622249006cf669bd88e2f7792f8da87f87e0589188466",
+    "admission\\code\\niw_predictive.py": "a8d74e5398f2bb606efb195d3395324f014ba3f9b4f801a67b022c1cc6687818",
+    "admission\\code\\score_admission.py": "ef7e29f8dab89a0a644011b8c188fcbeaa178095bbd823d082be8887e0aaccc0",
+    "phase2_yj\\code\\run_phase2.py": "3df8cbab90b58b5ad2a56691d34b16bdceb3748d5a033cb5752dd9469c9acf0b",
+    "phase2_yj\\code\\score_phase2.py": "0160ad1b175ce47295579ad020575b1db63bdd0fce27076c167f81f36217a964",
+    "phase2_yj\\code\\yj_model.py": "892e90922091b424ab1fd8d94f5901a2a8585861f39e7f3ebe54eca3166e98bc",
+    "strong_baselines\\code\\baseline_models.py": "a602b50663b64490af26a11a65b5effb7753e61aa6e9b8f71c8221a78898cfd5",
+    "strong_baselines\\code\\run_baselines.py": "15a545172bedbf7af04d8fca5a7608f954be89e89d169087ea88aa3ed748c6c5",
+    "strong_baselines\\code\\score_baselines.py": "0199da5a70f4290df4ae685879961ab92003e1f8fe7123f55f2b4b0220b463d2"
+  },
+  "core_detailed_guide_unmodified_sha256": "5ea5514bb4d40a237116bc3564d10696700adaf6df7517c287f5a461ebc8863e",
+  "changes": [
+    "six portable prepare-only/default forecast-score modes for phase1,phase2,baseline",
+    "baseline reuses original archived phase2 visible inputs/freeze and registeredplan bytes; no prerequisite phase2 refit",
+    "same original forecast protocol bytes required by separate score replay",
+    "two actual RUN/EVENTS log snapshots required in root gate; no fabricated close",
+    "new immutable target root and Windows-compatible ZIP_DEFLATED short ASCII wrapper",
+    "detailed explanatory guide and root guide linked separately; neither readout transport implementation nor loop success implied"
+  ],
+  "default_target": "H:/PolymerReview/Material_Feedback_20261106T020921Z",
+  "static_checks": {
+    "three_packaging_sources_AST": "PASS",
+    "nine_original_scientific_sources_unchanged": "PASS",
+    "core_algorithm_guide_original": "PASS",
+    "no_scientific_import_or_numerical_execution": true,
+    "archive_NOT_created": true
+  },
+  "science_or_audit_invocations": 0,
+  "rawgzip_opened_or_copied": false,
+  "old_zip_or_Git_worktree_changed": false,
+  "release_gate_required": {
+    "status": "READY_FOR_LOCAL_SCIENCE_PACKAGE",
+    "science_and_independent_audits_frozen": true,
+    "required_stage_file_sha256": "all final science/audit/report and4log files root pins",
+    "run_log_snapshots": "two entries, run_id andfiles_sha256 containing stage-relative run_logs/<id>/RUN.json andEVENTS.jsonl"
+  },
+  "next": "root finish actual scores and independent audits/report, copyactualtwo logs and create final gate, explicitlyrunbuilder; independentlyverifythenreadportablepreparemetadataonly at relocatedcopy",
+  "scope": "512 distinct development formula representatives;1536baseline laws reusephase2192; no independentconfirmation or onlineagent. No recursive oldarchives."
+}

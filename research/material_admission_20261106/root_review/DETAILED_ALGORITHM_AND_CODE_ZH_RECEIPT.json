@@ -1,0 +1,23 @@
+{
+  "kind": "DETAILED_ALGORITHM_CODE_EXPLANATION_RECEIPT",
+  "actual_utc": "2026-11-05T16:21:45.192976+00:00",
+  "actual_Asia_Shanghai": "2026-11-06T00:21:45.192976+08:00",
+  "document_file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\root_review\\DETAILED_ALGORITHM_AND_CODE_ZH.txt",
+  "document_sha256": "5ea5514bb4d40a237116bc3564d10696700adaf6df7517c287f5a461ebc8863e",
+  "document_bytes": 28389,
+  "all_six_frozen_source_sha256_unchanged": {
+    "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\admission\\code\\admission_io.py": "90011d05e1071b02422622249006cf669bd88e2f7792f8da87f87e0589188466",
+    "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\admission\\code\\niw_predictive.py": "a8d74e5398f2bb606efb195d3395324f014ba3f9b4f801a67b022c1cc6687818",
+    "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\admission\\code\\score_admission.py": "ef7e29f8dab89a0a644011b8c188fcbeaa178095bbd823d082be8887e0aaccc0",
+    "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\phase2_yj\\code\\yj_model.py": "892e90922091b424ab1fd8d94f5901a2a8585861f39e7f3ebe54eca3166e98bc",
+    "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\phase2_yj\\code\\run_phase2.py": "3df8cbab90b58b5ad2a56691d34b16bdceb3748d5a033cb5752dd9469c9acf0b",
+    "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\phase2_yj\\code\\score_phase2.py": "0160ad1b175ce47295579ad020575b1db63bdd0fce27076c167f81f36217a964"
+  },
+  "content_scope": "Chinese algorithm/code/reproduction guide, native-moment/Jacobian/numerical-scope guards, known Bayes-replicator interpretation; no copied phase2 outcome numbers",
+  "new_source_changes_or_model_runs_or_data_response_reads": 0,
+  "phase2_result_JSON_opened_by_this_document_task": false,
+  "protocol_approval_metadata_read_only": true,
+  "root_time_addendum_sha256": "4fe237afac57225fdb3563cba30647821368c4750e78cf4654a25d2146138676",
+  "final_report_entry": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\report\\RESULTS_AND_NEXT_STEPS_ZH.html",
+  "result_interpretation_owned_by_root": true
+}

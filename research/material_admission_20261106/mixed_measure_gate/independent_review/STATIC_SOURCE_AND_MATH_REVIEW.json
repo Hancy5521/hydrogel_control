@@ -1,0 +1,24 @@
+{
+  "actual_utc": "2026-11-06T02:27:31.518644+00:00",
+  "status": "PASS_STATIC_SOURCE_MATH_AND_LEDGER_GATE_ONLY",
+  "producer_source_sha256": {
+    "mixed_likelihood.py": "a4ee50ef350ee7d9a3dbcf094d615aa68cd059b35d1e422a91068cdc7e65eea4",
+    "run_gate.py": "6b4915725044a2218e0c721721d7ce8c4abbcdce823bce75f09a713cad404a67"
+  },
+  "independent_source_sha256": {
+    "oracle_math.py": "6cd4caf41bec5088ef7fa5199428ae91fdc4fdbcc9ef3d35dddfc56ed00426a5",
+    "audit_mixed_measure.py": "2c31f11f0908b0a1c626c135847d701da326d9b74b854fcfe3f85a451b408128"
+  },
+  "preoutput_criteria_sha256": "d3700ee203a25fc81a515a7fbee478c7e3314ffb24797edfe4f6f585807af102",
+  "reviewed": "Fullsource, knownmixture/spikevsdensity projection,partialmarginals,transactionaldedup,prior-to-currentloglikratios,720orderspositive6behavior17,noSUTimportoracle",
+  "terminal_resolution": "held_out canonical; terminal/terminal_report aliases; not legalquery domain",
+  "empty_panel_resolution": "empty panel is legalzeroevidencezerochargeSTOP",
+  "prepared_not_executed": true,
+  "no_material_data_fit_or_numerical_execution": true,
+  "limits": [
+    "720fixedorderingcases are not independent materials.",
+    "hchangesmean,p0,rhojointly;cannotisolatelearnedcorrelationeffect.",
+    "finitehypothesisconsistencydoesnotprovecalibrationorcontinuousNIWposterioraccuracy.",
+    "syntheticatomknownbyconstruction,notrealJARVISzerooriginidentified."
+  ]
+}

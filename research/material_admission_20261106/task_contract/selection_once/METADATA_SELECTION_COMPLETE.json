@@ -1,0 +1,13 @@
+{
+  "status": "COMPLETE_METADATA_SELECTION_NO_PROPERTY_ACCESS",
+  "actual_utc": "2026-11-05T15:14:38.325742+00:00",
+  "role_file_sha256": "0bc81d0400a4076c854af11e654ca3ca9bcbceb249f2ee6c26d356c53ceae9c0",
+  "selector_source_sha256": "910c3613e5536b9e29532dc547ba6bc92c80b085544a2a38077b640c725727d6",
+  "plan_sha256": "48509f75cf5c5dbd117fda54af45056baf5c631a58b6de5caed551994571061e",
+  "selected_development_components": 256,
+  "representative_rows": 256,
+  "known_eligible_sibling_rows_reserved": 331,
+  "all256_whole_components_reserved_including_unlisted_ineligible_siblings": true,
+  "numeric_fit_or_score_calls": 0,
+  "raw_gzip_or_new_property_reads": 0
+}

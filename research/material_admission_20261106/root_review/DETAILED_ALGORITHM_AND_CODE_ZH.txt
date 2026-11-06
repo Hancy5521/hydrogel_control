@@ -1,0 +1,294 @@
+核心算法、代码与复现说明
+======================
+项目：原生材料性质的完整联合概率条件补齐
+本轮目录：H:/polymer_completion_public/research/material_feedback_20261105T145420019666Z
+最终结果报告入口：H:/polymer_completion_public/research/material_feedback_20261105T145420019666Z/report/RESULTS_AND_NEXT_STEPS_ZH.html
+报告由root随后汇总；本说明不预填尚未知的phase2胜负或是否通过准入。
+
+这份说明回答四件事：模型到底学什么，缺失值如何变成概率预测，两个研究阶段实现了什么，以及外部评估者怎样核查程序没有偷看目标、改旧结果或把数学候选说成已实现的智能体。它解释当前源程序，不是论文录用、泛化、校准或新算法认证。
+
+一、先把主线说清楚
+------------------
+最初目标是：材料配方与性质表十分稀疏，希望由已共测的性质学习可信联合关系，再用一个材料已经知道的性质，恢复它尚未知道的性质；同时保留关系本身的不确定性，不把补出来的均值当实测。
+
+当前有界任务将该大问题缩小为一个可逐项核查的材料例子：三个原生DFT字段为e_form、gap opt、bulk modulus，前两个作为proxy，最后一个作为目标。预测内容不是一张“已经补完整并当成真值”的表，而是每个缺失bulk对应的条件分布、区间、CDF和概率分数。只评价原来有有限原始值、后来按协议遮住的cell；原生空白没有oracle真值，当前未验证那些空白的正确答案。
+
+当前实现的主干是完整三元NIW概率参考模型；phase2在一个全新开发cohort上检验一个固定的Yeo-Johnson半幂表示。二者都属于经典统计模型的材料适配，不因换名称就成为新学习算法。原先固定关系B的资源权重调度器失败、原矩表示的速度/精度结果、后来的W1读出数学候选均保留，各自证据不混用。
+
+尤其要区分三种行为：
+1.训练时由完整共测估计一个联合分布；
+2.预测一个新材料时，给定它自己的proxy进行条件化；
+3.主动花费预算获取新原生target，再更新跨材料关系并选择下一测量。
+本轮admission做了1和2，没有执行3。不能把条件预测程序称为已经运行的生成—验证—自催化智能体。
+
+二、数据身份与模型可见信息
+------------------------
+来源是已固定版本的JARVIS DFT公开处理表，不是新湿实验，也不是本程序新启动的DFT作业。原始压缩文件为：
+H:/polymer_completion_public/research/hypercycle_agents_20261105T093229687251Z/data/jarvis_dft_3d.json.gz
+SHA256=3d0fc1315b74cf84071f16aa25bb93434dafbc83867beb75872064ac245bd747
+
+字段必须逐字使用处理表列名：
+-e_form：上游form_enp，formation energy，eV/atom；
+-gap opt：上游op_gap，OptB88vdW band gap，eV；
+-bulk modulus：上游kv重命名，保留原数值，沿用GPa文档归属。
+bulk的具体聚合命名仍有来源限定，不能把处理表描述直接升级为本轮重新验证过的VRH/Voigt物理结论。负bulk、零gap照原值保留，不按预测效果删除、取绝对值或截断。
+
+formula组使用既有全源身份图的component_id。图在完整源上按JID、MPID及精确规范化composition联结，在完整case筛选之前就已确定。相同formula的多个结构仍归一个保守组；不跨fit/diagnostic角色拆开充当独立材料N。component不等于独立制备、独立实验室或独立DFT运行的认证。
+
+phase1已消费256组（64fit+192diagnostic），加上更早40组，均从phase2整组排除。phase2另选256个新whole formula组，每组按metadata规则选一个代表行；其64fit/192diagnostic全部是开发，不是独立确认集。未被选为代表的同组结构也仍预留同一开发角色，不因没查询而重新成为新材料。
+
+这里的“隐藏”是可信程序接口的访问约束，不是密码学安全：
+-可信提取器必须物理解析整个30,669,285B gzip及完整JSON payload；不能说只物理读了256行。
+-它只向模型暴露64x3个fit原值，以及192x2个diagnostic proxy原值。
+-未选行的性质不做统计、不训练、不评分，payload之后释放。
+-诊断bulk不传给模型、变换选择或预测函数；另一个评分CLI在全部预测冻结验证后才显式提取它。
+source字节hash也会顺序读完整压缩文件，但不会因此自动将全部性质交给模型。
+
+一个开发cohort模型可见fit cell192个、proxy cell384个；最终评分再揭示192个target，共768个被使用的原生cell。四种mask或五种law反复评价同一target，不会变成更多材料或新测量。
+
+三、完整NIW为什么不是固定相关矩阵
+------------------------------
+设标准化三性质为z=(z0,z1,z2)^T。给定未知mu和Sigma，每个材料代表行服从完整N_3(mu,Sigma)。Sigma为完整对称正定矩阵，有三个方差和三项协方差；没有硬星形、全表低秩或proxy与关系无关的限制。
+
+NIW的两层是：
+ Sigma~Inverse-Wishart_p(nu0,Lambda0)，
+ mu|Sigma~N(m0,Sigma/kappa0)。
+程序采用的IW约定明确为密度中有
+ |Sigma|^(-(nu0+p+1)/2) exp[-tr(Lambda0 Sigma^-1)/2]。
+Lambda是这个约定下的scale，不能误作precision或直接套另一个库的相反定义。
+
+参考先验固定p=3,m0=0,kappa0=1,nu0=7,Lambda0=3I。此时E[Sigma]=Lambda0/(nu0-p-1)=I。但prior predictive的covariance不是I：其df为5、t scale为6I/5、covariance为2I。条件参数Sigma、t scale和预测covariance是不同对象。
+
+先验是在fit-only经验尺度上放置的。原值先由64fit的均值/样本SD标准化，因此完整pipeline不是在native单位、数据到来前独立固定先验的纯全Bayes。准确说法是：给定该经验变换后，NIW算术具有解析条件Bayes形式。这一限定不妨碍比较参考模型，但不能被删成“无任何数据依赖的纯先验”。
+
+对n=64个完整fit行，记zbar为均值，T=sum_i(z_i-zbar)(z_i-zbar)^T，更新为
+ kappa_n=kappa0+n=65，nu_n=nu0+n=71；
+ m_n=(kappa0*m0+n*zbar)/kappa_n；
+ Lambda_n=Lambda0+T+(kappa0*n/kappa_n)(zbar-m0)(zbar-m0)^T。
+
+新行posterior predictive是三元t，其
+ df=nu_n-p+1=69，location=m_n，
+ scale S=(kappa_n+1)/(kappa_n*df)*Lambda_n。
+它的covariance为df/(df-2)*S，而不是S本身。代码分别保存这两项，外部核查不要用scale当作Gaussian协方差。
+
+这已经把mu/Sigma的不确定性积分到预测分布中；但它没有在本轮主动获取新target以后反复更新跨行关系。未来多行partial-data后验一般不再是同一个简单NIW，须另写完整推断器，不能把当前解析新行条件t直接重复套用。
+
+四、已知本行proxy以后，目标怎样变化
+--------------------------------
+bulk为目标Y；允许的四个mask是：无proxy、仅e_form、仅gap opt、两个proxy都有。对joint t按可见O和目标Y分块，令k=|O|，
+ delta=(z_O-m_O)^T S_OO^-1(z_O-m_O)。
+目标条件law仍为t，
+ df_cond=df+k；
+ m_cond=m_Y+S_YO S_OO^-1(z_O-m_O)；
+ S_cond=(df+delta)/(df+k)*(S_YY-S_YO S_OO^-1 S_OY)。
+
+第一项根据本行proxy移动目标中心；Schur项反映条件相关结构；(df+delta)/(df+k)还会按这个proxy值是否极端改变条件scale。即便某线性协方差为零，共同t径向尺度仍可产生分布依赖，不能把零Pearson相关直接等同独立。
+
+两个proxy用完整joint条件化，不能各算一条独立消息再重复相乘。每次预测只传本行该mask允许的proxy；192个diagnostic行的proxy不累计回fit参数。无proxy预测不获益于提前知道的其他诊断行。
+
+Gaussian参考使用joint t的同一location及完整predictive covariance C=df/(df-2)*S，然后做Gaussian的完整条件公式。它是较强的同矩参考，不是故意忽略均值不确定性的窄插件。Gaussian条件variance为Schur项；不同于t的df/delta放缩。
+
+五、phase2为什么是一个不同的表示假设
+-----------------------------------
+phase1原值联合模型没有通过所有事前门，不能通过调门或把同组重复试验叫确认来“修复”。phase2在另一个全新开发cohort上固定检验一个经典非线性表示，不在lambda、先验或字段子集上搜索。
+
+对每列x_j，先用同64fit原值样本SD s0_j>0形成v_j=x_j/s0_j（这里不先减均值）。统一固定lambda=.5：
+ v>=0: u=T(v)=2(sqrt(1+v)-1)；
+ v<0:  u=T(v)=-[(1-v)^(3/2)-1]/(3/2)。
+然后用同64fit的u均值a_j及样本SD b_j>0形成z_j=(u_j-a_j)/b_j，按相同NIW参考先验训练。
+
+三个字段共用lambda=.5，没有target专用lambda或看诊断结果挑字段。raw参考仍在同64fit原值上训练。因此phase2实际只有两套NIW fit：raw和YJ；后面的Gaussian和边际控制是这两套参考的读出，不是五份独立训练数据。
+
+T严格递增且从全实轴映到全实轴，支持原始负值和零。inverse为
+ u>=0: g(u)=u+u²/4；
+ u<0:  g(u)=1-(1-3u/2)^(2/3)。
+导数为
+ u>=0: g'(u)=1+u/2；
+ u<0:  g'(u)=(1-3u/2)^(-1/3)。
+
+实现用稳定等价式避免近零相消，例如正侧T=v/[.5(sqrt(1+v)+1)]，负侧用log1p/expm1；非有限尺度或不能表示的输入显式停止，不clip原始值。
+
+这个inverse正尾是二次增长，因此非退化latent t的native一阶绝对矩需df>2，native二阶矩需df>4。当前prior df5、fit predictive df69及conditional69+k均满足。不能盲用asinh/log inverse搭配任意有限df t：指数inverse会产生无穷native一阶矩，latent上有限的概率分数也不能掩盖原单位问题。
+
+本方向是在见过phase1诊断以后形成的研究假设；“lambda未在phase2拟合”不等于整个研究从未看过标签。成熟YJ变换不是算法原创。它也不会消除gap=0的真实点质量、保证三元t正确或自动使PIT校准；如果只是将同一分布等价换坐标，PIT不会改变。可能改善的原因只能是变换后重新拟合了一个不同的模型家族。
+
+六、两套fit产生哪五种law
+-----------------------
+每个diagnostic行、每个mask均保存五个固定角色：
+
+1.raw_joint_t：raw完整NIW预测/条件t。
+2.raw_momentmatched_Gaussian：raw joint t同location和完整predictive covariance的Gaussian，再完整条件化。
+3.yj_joint_t：YJ空间NIW条件t，经固定inverse回原单位的分布。
+4.yj_latent_momentmatched_Gaussian：先在YJ的u空间用同矩Gaussian条件化，再通过同一inverse回原单位。
+5.yj_target_marginal：角色3的无proxy target边际，所有mask下都忽略proxy，用作关联消融和恒等检查。
+
+角色4只在latent u空间与相应联合t同矩；经过非线性inverse以后一般不再native同矩，也不再是native Gaussian。角色5在无proxy时必须与角色3逐参数完全相同，它不是第五种独立学习算法。
+
+这五个角色、四个mask与192个组形成3840条预测law。其目的之一是防止把YJ的任何收益误归于t尾部或条件结构，而忽略一个同样YJ表示的Gaussian参考。全部强参考始终可用，不能最后只挑最弱比较者。
+
+law记录中的coordinate必须先看：
+-coordinate=native时，location/scale直接是原单位参数；
+-coordinate=u=YJ_half(native/s0)时，location/scale是dimensionless u参数，s0负责返回目标单位。
+不要仅见目标unit写GPa，就把YJ law的location数字当GPa或当native mean。
+
+七、原单位CDF、区间、logJac与中位数
+--------------------------------
+对某条YJ预测，假设u|proxy具有location m_u、scale s_u与标准CDF H（t或normal）。原目标X=s0*g(u)，所以
+ F_X(x|proxy)=H((T(x/s0)-m_u)/s_u)；
+ Q_X(p|proxy)=s0*g(m_u+s_u*H^-1(p))。
+
+PIT是F_X(actual bulk)；中央80/90/95%区间用相应quantile。inverse(location)=s0*g(m_u)是native predictive median；非线性后它一般不是native mean。代码统一报告RMSE of predictive median，raw对称模型的median恰等于mean，避免模型间偷偷换点预测定义。
+
+native density还必须乘Jacobian：
+ p_X(x|proxy)=h((T(x/s0)-m_u)/s_u)/s_u * T'(x/s0)/s0。
+T'正侧为(1+v)^(-1/2)，负侧为(1-v)^(1/2)。scorer保存target处native-to-u logJac及native log-density，以便独立核算。前述对fit u做的第二层仿射a/b已包含在m_u/s_u中；不能重复乘b或漏掉s0。
+
+八、原单位CRPS怎样算，为什么不能用潜尺度闭式代替
+------------------------------------------------
+采用越低越好的正loss：
+ CRPS(F,y)=E|X-y|-.5E|X-X'|
+         =int_{-infinity}^y F(x)²dx +int_y^{infinity}SF(x)²dx。
+它与目标同单位。raw Gaussian/Student-t使用原来已审的closed positive-loss公式。YJ逆后的native分布不是t，必须在原单位积分。
+
+为稳定积分，程序使用标准latent t变量t（这里t是积分变量，不是声明family一定为Student-t）：
+ u=m_u+s_u*t，x=s0*g(u)，
+ J(t)=dx/dt=s0*s_u*g'(m_u+s_u*t)>0；
+ t_y=(T(y/s0)-m_u)/s_u，t0=-m_u/s_u。
+积分左半为H(t)²J(t)，右半为SF(t)²J(t)。t_y是CDF/SF切换点，t0是inverse分支切换点，二者都显式切段。若省略J(t)，或只把latent CRPS乘一个fitSD，就已经换了评分任务。
+
+固定数值设置在协议中绑定：native abs/rel目标各1e-8，quad每段limit200；固定中央分段点-16/-8/-4/-1/0/1/4/8/16，再加入t_y/t0和左右截断点。截断至少16并超出目标/分支，最多1e6、最多16次倍增。不按模型输赢调整这些设置。
+
+尾部不只相信quad返回误差。标准t有SF(t)<=C_nu*t^-nu，其中C_nu=c_nu*nu^((nu-1)/2)；normal使用SF(t)<=phi(t)/t。右侧inverse导数被1+|m_u|/2+s_u*t/2控制，左侧越过分支后导数<=1，因而能解析上界两侧被截断的CRPS尾。程序在log域计算并保存左右tail界，即使其显示值下溢为0也保留真实非零数学尾的log说明。
+
+每条score附带：实际分段积分、每段quaderr估计、总quaderr、截断点、倍增次数、左右tail log包络与容差。任一积分警告、非有限结果或总预算不满足都保留失败并停止，不删坏行、不clip负误差、不悄悄改精度。
+
+必须理解边界：这些tail包络是理想算术公式；quaderr是数值估计，不是全程向外舍入的IEEE区间，也不自动认证底层CDF库误差。独立数值门会用不同坐标积分核查。相同law/相同outcome可缓存同一确定性分数以减少重复，但所有3840记录仍保存，缓存不增加独立样本。
+
+九、最终门与结果报告如何读
+------------------------
+主候选固定为yj_joint_t双proxy，主评分是192个formula组等权平均的native bulk CRPS。四个预标签准入条件全部需要满足：
+1.YJdual CRPS <=.98*YJnone，至少2%条件收益；
+2.YJdual CRPS <=1.02*min(raw joint-t dual,raw Gaussian dual,YJ latent-Gaussian dual)，与全部同信息强参考的最小损失比较；
+3.YJdual 90%中央区间coverage>=.80；
+4.YJdual PIT经验CDF最大偏差<=.15。
+
+PIT经验CDF偏差按排序u_(i)的max[i/n-u_(i),u_(i)-(i-1)/n]计算，但不输出精确KS p值。模型共享拟合参数、PIT不是严格独立同分布，这里只是事前描述门，不是校准定理。CRPS好也不能抵消覆盖/PIT失败。
+
+全部五角色x四mask的20行汇总、逐组差值、宽度、PIT和3840条原单位score都保存。通过只表示值得另行设计小反馈任务，不表示已经达到领域强基线、独立批次泛化或顶会投稿要求。失败则停止本候选的大campaign，不在同192组更换lambda/prior/gates/代表行。
+
+本说明的算法部分在phase2 score汇总前写成，不在这里另抄一套可能漂移的胜负数字。正式结论和失败解释以root的report/RESULTS_AND_NEXT_STEPS_ZH.html及其独立score/审计原始收据为准。phase1结果是历史NO_GO，phase2无论如何都不回写它。
+
+十、六个源码模块怎样分工
+----------------------
+父目录：H:/polymer_completion_public/research/material_feedback_20261105T145420019666Z/admission/code/
+
+admission_io.py：原可信extractor、元数据身份/角色检查、原admission CLI与freeze。phase2只调用其受控extract_visible/reveal_diagnostic_truth及部分metadata guard，不调用旧main重跑phase1。
+niw_predictive.py：纯NIW数学，fit_niw、conditional_t、conditional_gaussian、predict_law；没有数据路径、真值读取或agent。phase2的两套reference都复用它。
+score_admission.py：原raw closed normal/t CRPS与概率诊断。phase2只复用raw分数/PIT辅助，不改旧分数或旧gate。
+
+新目录：H:/polymer_completion_public/research/material_feedback_20261105T145420019666Z/phase2_yj/code/
+
+yj_model.py：T/g/g'及logJac、父源码hash检查、两套fit适配、五种law读出。它不读取原始source、不选组、不知道diag target。实际NIWfit次数由fit_reference固定为2。
+run_phase2.py：精确计划/root批准、16stable来源、原/新角色与排除检查、复用可信extractor、调用两套fit、生成3840law并整体freeze。没有评分。
+score_phase2.py：另一个CLI进程，先核完整freeze/3840tuple，再提取192个target；closed/raw与native/YJ积分、所有诊断/四门/配对差值在此完成；没有refit。
+
+父三模块SHA256：
+admission_io.py=90011d05e1071b02422622249006cf669bd88e2f7792f8da87f87e0589188466
+niw_predictive.py=a8d74e5398f2bb606efb195d3395324f014ba3f9b4f801a67b022c1cc6687818
+score_admission.py=ef7e29f8dab89a0a644011b8c188fcbeaa178095bbd823d082be8887e0aaccc0
+
+新三模块SHA256：
+yj_model.py=892e90922091b424ab1fd8d94f5901a2a8585861f39e7f3ebe54eca3166e98bc
+run_phase2.py=3df8cbab90b58b5ad2a56691d34b16bdceb3748d5a033cb5752dd9469c9acf0b
+score_phase2.py=0160ad1b175ce47295579ad020575b1db63bdd0fce27076c167f81f36217a964
+
+先看这些函数边界，比只看文件名更能发现泄漏：模型只接受fit64x3及当前mask proxy；source IO不计算材料score；scorer只在全体law冻结后得到diag target。可信提取器本身仍可物理看到完整source，所以这不是恶意进程安全沙箱，外部审查需要看实际调用路径。
+
+十一、冻结流程、文件与复现入口
+----------------------------
+正式phase2注册计划：phase2_yj/EXECUTION_PLAN_REGISTERED.json
+SHA256=0bc6c752457732cd535608510ae12da01f89fa0eb83f30fa0d67516dccdc8bba
+计划绑定新/父源码、固定shape配置、16stable来源、原始source、contract、phase1角色、新角色、root预标签scope，以及两份独立数学PASS。
+
+phase2实际角色：phase2_yj/task_contract/selection_once/ADMISSION_ROLE_SELECTION.json
+SHA256=aee4d2aa78f7522eae8aba2b8ac56e186b3c5d81059a6d3a5b44b16d1042350b
+root预标签scope：phase2_yj/ROOT_FIXED_POWER_SCOPE_BEFORE_NEW_LABELS.json
+SHA256=34b487c1946644bd13699309368064f5df38d59477c5f18683b430c5be4ac578
+
+forecast进程按实际批准完成两套fit与全部3840law；主要输出：
+-EXECUTION_START.json：实际时间、plan/source/approvalhash；
+-VISIBLE_INPUTS.json：fit原值和允许proxy，未含diag target；
+-EXTRACTION_RECEIPT.json：诚实的全source物理解析与模型可见scope；
+-FIT_REFERENCE.json：两套affine/NIW参数；
+-FORECASTS.json：3840个group/model/mask/JID/law；
+-FORECAST_FREEZE.json：以上五文件的精确hash整体绑定。
+
+正式完整freeze：phase2_yj/forecast_once/FORECAST_FREEZE.json
+SHA256=dcd88d11401f7f8953e9b921bf3ab2a157740c937084b106e77c61732e806faf
+独立saved-forecast审计：independent_yj_math/saved_forecast_audit/execution_once/INDEPENDENT_PHASE2_FORECAST_AUDIT.json
+SHA256=dd4b611846e90fdcfc1b9478bbf294ebfa04e87a64e488a5c3e0663a84b1fa9c
+
+scorer在另一个实际批准后启动，先核上面manifest文件名、每个hash、完整3840tuple、JID、coordinate/family/df/lambda/s0，再写TARGET_REVEAL_START.json。之后才提取DIAGNOSTIC_TRUTH.json和score。它保留逐forecast评分、20行summary、paired differences、数值误差和最终gate。没有只冻结胜出模型或只展示通过mask的路径。
+
+独立数学收据并不等于材料效果：
+-independent_niw_math/execution_once/INDEPENDENT_NIW_T_CRPS_AUDIT.json，SHA256=8bd92f408575b9e7d033569c2fef9a7e6e3aaa7f3a8a0352df00f0ecff784a9e；
+-independent_yj_math/execution_once/INDEPENDENT_YJ_HALF_MATH_AUDIT.json，SHA256=702669f0a1903d6adb1869d7e9a002cfcbe5e8790cf151d53c7a4fa870d113f3。
+source静态正确、保存预测重算通过与真实材料指标通过，是三个不同层次。
+
+实际曾保留一次启动失败：最初root批准scope拼写不符，程序在validate阶段拒绝，尚未开始source响应提取/fit；随后V2只更正scope，不改科学计划/源码。失败留存不是一次材料fit或重复确认。V2批准文件的Asia/Shanghai辅助时间字段曾沿用旧值，实际UTC为2026-11-05T16:06:32.996743Z；应对应2026-11-06T00:06:32.996743+08。原绑定文件不回写，root已另留phase2_yj/ROOT_APPROVAL_TIME_FIELD_ADDENDUM.json更正收据；这不影响科学hash与结果。
+
+只读评估建议顺序：先读root最终report，再看实际plan/role/scope及SOURCE_FREEZE，核源hash，然后检查FORECAST_FREEZE和独立saved-forecast审计，最后读score原收据及误差。不要先挑一个图或一个CRPS数字判断算法。
+
+获准独立复现时的CLI结构如下；不要覆盖原输出目录，也不要自动重跑已消费cohort去换结果。独立复现仍是复算，不增加材料N：
+
+D:/Anaconda/python.exe H:/polymer_completion_public/research/material_feedback_20261105T145420019666Z/phase2_yj/code/run_phase2.py
+ --plan H:/polymer_completion_public/research/material_feedback_20261105T145420019666Z/phase2_yj/EXECUTION_PLAN_REGISTERED.json
+ --approval <精确批准forecast的复现授权文件>
+ --output-dir <一个不存在的新复现forecast目录>
+
+D:/Anaconda/python.exe H:/polymer_completion_public/research/material_feedback_20261105T145420019666Z/phase2_yj/code/score_phase2.py
+ --plan H:/polymer_completion_public/research/material_feedback_20261105T145420019666Z/phase2_yj/EXECUTION_PLAN_REGISTERED.json
+ --approval <精确批准score_after_freeze的复现授权文件>
+ --forecast-dir <上一步整体冻结的forecast目录>
+ --output-dir <另一个不存在的新复现score目录>
+
+当前原审批分别为ROOT_FORECAST_APPROVAL_V2.json和ROOT_SCORE_APPROVAL.json；程序会核scope/phase/planhash，不接受模板状态。完整重拟合需要原30.7MB source及全部绑定资源，不能假设一个只含源码的轻量包包含所有历史数据；资源实际范围以交付manifest为准。若移位，路径绑定需形成明确重放协议，不能偷偷改原计划文件。
+
+十二、“低维编码”“场/势”“自催化”现在哪些做了、哪些没有
+---------------------------------------------------
+当前NIW的n/均值/scatter是经典联合分布充分统计，不是新的对完整材料表的无损低维编码。三性质参考也不能被扩大成已经解决任意几十性质、任意缺失机制的高维材料补全。
+
+先前relation-moment工作证明/实现的是特定Gaussian-copula价值读出编码；它保留完整关系假设与残差，不是将全部性质压成低秩。其数值/速度结果来自独立合成计算面板，没有在本次材料任务使用。全joint、不同mu/Sigma或非线性YJ inverse不满足旧纯proxy前提，不能继承旧tail证书。
+
+本轮另存readout_transport_idea的纯数学候选：保留full theta与完整观测likelihood，仅把目标读出Gaussian components近似为少量prototype，利用coupling/W1限制CRPS读出误差。YJ非线性扩展需要原单位L2矩界。该候选没有被实现为材料算法，没有运行智能体，不能将其数学证明当phase2有效性证据；任何实现还要与强cached/blocked/CDF读出基线公平比较，成本可能根本不在读出。
+
+“势/风场/修网”目前是启发和对信息流的解释。没有训练一个新的可辨识势函数，没有运行扩散/flow matching网络，也没有让多个独立验证agent产生真正新材料知识。只有真正付费原生target返回并进入完整关系后验，才可研究修复—扩展的反馈；模型自采样、互相赞同或多次重抽样不构成新观测。
+
+十三、下一真正付费反馈pilot的三条必要条件
+---------------------------------------
+第一，当前联合概率参考应先有可接受的材料适配证据，并明确未来partial-data关系后验怎样更新。每个已买cell都进入完整条件似然，多个proxy和target都不能被当免费/无关系信息。必须确有真实target反馈改变其他材料预测的可检验路径，不能把当前own-row条件化或生成标签改名为关系自学习。
+
+第二，另留未消费整formula任务与目标隔离，统一原生cell/panel去重账本和费用，给所有方法同样初始信息、全部合法动作、直接target V及STOP。若费用只是公开表格披露情景，应明确不能称实际DFT/实验节约；query禁止audit的目标不能成为在线调参反馈。已消费phase1/phase2开发组不再冒充新确认。
+
+第三，与同后验、同动作/成本的完整joint一步/两步强规划器公平比较，单列posterior近似、表示、连续观测积分及实际材料误差。只有已定位的计算瓶颈或新的材料任务收益，才支持额外方法；若完整planner等价/更好就保留经典适配结论，不为了Eigen叙事加控制器/网络。任何新任务均先协议/sourcefreeze/独立门，再执行，不能把本说明当已完成闭环。
+
+十四、公式来源与阅读范围
+----------------------
+本说明是对当前程序的中文解释，公式为经典模型的重述/推导，没有复制长篇原文。已核对的技术入口包括Murphy2007 Gaussian/NIW作者稿§9、Ding2016 conditional-t原文（由root/独立数学代理核查）、Gneiting/Raftery2007 §4.2及scoringRules作者文稿的CRPS公式；本轮实际阅读范围与访问失败分别记录在model_design、phase2_yj_design和independent_*收据，不扩写成全部论文全文精读。
+
+Yeo-Johnson、NIW、VOI/未知相关性序贯选择、OT/mixture reduction均有成熟先例。能否形成研究贡献，需要任务、合法信息、效果、强基线和复现证据共同支持；这份程序说明不把现有组件的组合名称当作原创证明，也不保证分区、顶会或录用。
+
+十五、Bayes更新与replicator的解释桥梁
+----------------------------------
+用户提出的Eigen启发可以帮助解释信息反馈，但应先区分已知数学联系和新机制。设未来一个明确有限关系假设集合的当前权重为w_h(0)，真正新观测的完整条件likelihood为L_h>0。引入一个只用于解释的likelihood温度t：
+ w_h(t)=w_h(0)*L_h^t / sum_k[w_k(0)*L_k^t]，0<=t<=1。
+对log w_h(t)求导，得到
+ dw_h/dt=w_h(t)[log L_h-sum_k w_k(t)log L_k]。
+
+这就是一个已知的Bayes/replicator形式：比当前平均更支持新观测的假设，其概率质量增加；其他假设减少。t=0为更新前，t=1为完整Bayes更新。这里t不是实际实验时间、年龄或网络生长时间；log likelihood也不是已经测出的物理催化速率。对所有h共同的密度单位/Jacobian常数在括号内相消，所以不能靠变单位制造促进率。
+
+上述导数需在有限正likelihood支持上解释。若某些L_h=0，普通离散Bayes仍可消除其支持，但不能把log0无穷强度不加说明地塞进有限ODE。当前NIW程序采用解析后验，没有实现这一有限h网格、ODE积分、温度调度或新的replicator agent；这里是数学解释，不是新实验或第六种预测law。
+
+“真实观测驱动概率质量变化”与用户修网/愈合的启发相容，但一般replicator/Bayes联系并不等于已证明Eigen超循环。超循环需要进一步说明不同信息获取模块之间真实、可检测、付费且非同义的促进路径。当前没有测出这样的模块催化矩阵；条件补齐、元数据排序、同一模型多次自采样不会自动产生它。
+
+如果以后实现闭环，L_h只能来自获准原生观测的完整条件似然，并对所有合法planner保持相同。不能把生成target当新测量反馈，也不能让prototype近似likelihood替代原theta学习，再声称它是“自催化”。真正贡献仍需由新的材料任务证据或经强基线核实的计算/决策增量建立。

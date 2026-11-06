@@ -1,0 +1,9 @@
+{
+  "actual_utc": "2026-11-06T02:23:26.199002+00:00",
+  "status": "PASS_ROOT_VISUAL_QA",
+  "image": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\report\\final\\matched_development_results.png",
+  "sha256": "00073d8f29f48fad7d143acc931dc1b09be1b7a828c8af0f7e27819bea36de07",
+  "observed": "three panels fully visible; labels/legend/numerical endpoints legible, axes coherent, development/no-calibration/agent limitations visible; no clipping requiring rerender",
+  "scientific_source_or_scores_changed": false,
+  "report_sha256": "f659ebdc7ae93ef0ec9e730499fab2004d8bf46e2df22730f6258a761ae3b78c"
+}

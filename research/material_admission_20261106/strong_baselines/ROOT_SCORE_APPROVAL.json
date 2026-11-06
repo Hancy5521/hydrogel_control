@@ -1,0 +1,12 @@
+{
+  "approved": true,
+  "scope": "POSTHOC_FIXED_STRONG_BASELINES",
+  "plan_sha256": "0543eae0e4ac5f1f89fc3a36256770cb2b160f51bb3b2ff657a8b2cdbb46b754",
+  "allowed_phases": [
+    "score_after_freeze"
+  ],
+  "actual_utc": "2026-11-06T02:11:22.498136+00:00",
+  "forecast_freeze_sha256": "e113ea9443af88aa858d85fd6579cd6f85b6458c02aa69c071c4140ab4eeb697",
+  "independent_saved_forecast_audit_sha256": "cdeed4b33594fd20ed267e658a46ca681aa125349734a99f086d52d5e8b86470",
+  "scope_limits": "saved192targets already consumeddevelopment; no candidate rescore or refit; fixed original1536forecastlaws only"
+}

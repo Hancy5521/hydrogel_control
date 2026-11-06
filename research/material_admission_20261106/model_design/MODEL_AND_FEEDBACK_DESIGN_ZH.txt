@@ -1,0 +1,136 @@
+真实材料关系反馈：先做模型准入，不先造新的调度器
+==============================================
+
+本文件只做科学设计。尚未选择新formula组、读取新性质响应、拟合、预测、评分或实现新模型；不修改旧40轨迹、28个矩读出case、冻结源码、结果包或MLST资产。时间及输入hash另见DESIGN_RECEIPT.json。以下数量/先验按root在新数据揭示前给定的准入范围；它不是已经完成的预登记或材料结果。
+
+一、建议收敛为哪一条路线
+------------------------
+推荐先接受经典完整三元联合模型，完成一次有界的材料条件预测准入。只有它在新开发组上确实存在可利用的跨性质信息、概率尺度没有明显失真，再另行申请带付费target反馈的小任务。不要为了讲Eigen，先叠一个名为催化的控制器。
+
+选择A（本轮推荐）：三元完整Gaussian的NIW后验。三性质可任意相关，均值/方差/相关性均有不确定性；warm完整共测有解析后验。新行0/1/2个proxy的预测使用精确条件Student-t。它不是硬星形，不要求proxy边际与关系无关。优点是容量小、每个条件化可独立审计；缺点是跨化学族同分布Gaussian可能严重错设，gap存在点质量、bulk有长尾，且它不建模配方均值趋势。它只能先支持同一数据源的性质共测补齐任务，不能自动声称跨材料族泛化。
+
+选择B（暂不执行）：低维metadata均值回归加完整残差协方差，使用matrix-normal/inverse-Wishart或其他明确层次后验。它能分开已知材料差异和残差关联，但引入元数据特征选择、额外先验及回归失配。仅在A通过当前纯数学检查却显示明确均值趋势失配后，另写新假设、新开发协议才可考虑；不得在同192个诊断组反复筛特征/超参，最后称独立确认。
+
+选择C（暂不执行）：一般Gaussian-mixture/半参数联合分布加完整后验更新。它可处理多峰及部分原生离散性，但会显著扩大识别与规划成本，容易从本项目的关系反馈问题滑向模型堆叠。没有新材料证据或明确错误定位时不采用。
+
+因此本轮唯一可推进的实际科学动作是A的warm-only admission；B/C是事前记录的不同研究问题，不是A失败后自动打补丁的分支。
+
+二、创新与经典强基线的诚实边界
+----------------------------
+未知相关性学习与前瞻VOI有直接先例。Qu/Ryzhov/Fu/Ding, Operations Research 2015, DOI10.1287/opre.2015.1395，官方摘要明确同时学习未知均值与未知相关结构，并在VOI中考虑未来关系信念变化。本轮只重核官方摘要，未读其完整推导。NIW、Gaussian条件分布、CRPS、Bayes规划、面板计费和多角色闭环分别都不是新机制。
+
+可证伪的材料任务贡献是：在原始身份、状态、原生cell与共同费用约束下，区分直接补齐本行的收益、真实共测更新关系后对其他材料的收益，以及把预测反馈误当新测量造成的虚假改进。若后续发现一种保留全联合信息、可检查决策误差且更省资源的近似，可以另作计算贡献；目前旧纯proxy矩界不能保证这一点，禁止硬移植。
+
+若一个“催化”策略与同后验、全动作、同成本的完整规划器等价，它就是该经典规划器的一种解释，不能另报算法收益。若它更差，应保留失败并使用经典规划器作任务基线。任何超越规划器的表面材料收益先查近似误差、有限预算目标不同、额外标签或计费不公平；不能把随机一次高分当新原理。
+
+本轮admission既不比较agent，也不承诺顶会创新成立。它排除一个基本风险：在明显错误的联合模型上追求控制技巧。
+
+三、完整三元NIW的定义（避免Wishart参数约定歧义）
+------------------------------------------------
+令x=(e_form,gap_opt,bulk)^T。所有坐标仅用64个fit组的均值a_j与样本SD s_j作仿射标准化z_j=(x_j-a_j)/s_j。零/非有限SD直接STOP，不用常数1掩盖无信息列；所有变换保持原生值，包括负bulk和零gap。不做log(abs)、分位数Gaussian化、截尾、异常值按响应筛除或从192诊断组估尺度。
+
+模型是各原始材料代表行z_i | mu,Sigma iid N_3(mu,Sigma)。这是统计交换性假设，不是DFT物理定律；每formula只保留一个按metadata稳定排序选出的代表行，全部同formula结构仍同角色归组，不能将同formula多结构当独立N。
+
+先验：Sigma~IW_p(nu0,Lambda0)，mu|Sigma~N(m0,Sigma/kappa0)。明确IW密度的Sigma项为
+  |Sigma|^(-(nu0+p+1)/2) exp[-tr(Lambda0 Sigma^-1)/2]。
+固定p=3,m0=0,kappa0=1,nu0=7,Lambda0=3I。因此E[Sigma]=Lambda0/(nu0-p-1)=I；不要把Lambda当成precision或直接传给采用不同约定的库。
+
+64个完整fit组，n=64，均值zbar，scatter T=sum_i(z_i-zbar)(z_i-zbar)^T：
+  kappa_n=kappa0+n, nu_n=nu0+n,
+  m_n=(kappa0*m0+n*zbar)/kappa_n,
+  Lambda_n=Lambda0+T+(kappa0*n/kappa_n)(zbar-m0)(zbar-m0)^T。
+来源：Murphy2007 §9.1–9.3，作者原文由Harvard官方课程镜像托管。此处为标准共轭参数重述，无新定理。
+
+一条新材料的完整posterior predictive是三元t：
+  nu=nu_n-p+1=69,
+  location=m_n,
+  scale S=(kappa_n+1)/(kappa_n*nu)*Lambda_n。
+这里S是t的scale，不是协方差；Cov=nu/(nu-2)*S。必须将df/scale/covariance三者分别存储。
+
+四、0/1/2proxy条件化必须使用完整信息
+-----------------------------------
+bulk固定为目标，O取empty、{e_form}、{gap_opt}、{e_form,gap_opt}四种模式；H={bulk}。令k=|O|，delta=(z_O-m_O)^T S_OO^-1(z_O-m_O)，则
+  nu_cond=nu+k,
+  m_cond=m_H+S_HO*S_OO^-1*(z_O-m_O),
+  S_cond=(nu+delta)/(nu+k) * (S_HH-S_HO*S_OO^-1*S_OH)。
+O为空时回到完整t的bulk边际。这是同一新行联合t的条件分布：proxy值既影响条件均值，也影响尾部/scale和关系信念；不能把两个proxy当独立消息相乘，不能沿用proxy-only“不学theta”的设定。
+
+每个诊断行只用该行当次许可proxy条件化。192行proxy不累积加入64组warm posterior；四种模式不是四次新增共测，也不增加材料N。否则后出现的行会免费利用之前诊断数据，且普通NIW已不再是partial-data联合后验。
+
+条件t只解决“一个新行给定自己的proxy”的解析预测。它不证明跨多个partial行更新后仍NIW。未来真正在线闭环需显式表示p(mu,Sigma|所有已付费partial信息)，例如固定finite full-(mu,Sigma)粒子及其完整条件似然权重，或另一个经审计的推断器。必须把当前admission和该未来推断任务分开。
+
+五、三个比较者与原单位CRPS
+-------------------------
+比较者全部用相同64fit数据、相同仿射尺度、相同四种可见mask，所有参数在诊断target读取前冻结：
+
+1.NIW joint-t：上面的精确posterior predictive及条件t。
+2.Gaussian强参考：用joint-t的同一location与完整predictive covariance C=nu/(nu-2)*S构建N(m_n,C)，然后完整Gaussian条件化。它比只用E[Sigma]、忽略均值不确定性的插件更审慎；如程序将它命名plugin，清单必须写明moment-matched posterior-predictive Gaussian。
+3.独立边际参考：bulk使用同一个NIW joint-t的bulk边际，忽略所有proxy。它在0proxy时必须与1逐值完全相同；额外proxy下保持同一边际，从而直接隔离跨性质条件传递价值。它不是额外拟合出的弱分布。
+
+使用正向loss CRPS(F,y)=E|X-y|-.5E|X-X'|，越低越好。Gneiting/Raftery2007原文首先采用越高越好的相反符号，§4.2也明确常用negative orientation；本项目统一loss符号，不能复制时反号。
+
+Gaussian loss可解析计算。Student-t loss可用CDF积分：
+  integral_{-infty}^y F(t)^2 dt + integral_y^infty (1-F(t))^2 dt。
+实现准备优先选标准化一元t的确定性自适应积分，右尾用SF避免1-CDF消减；正向仿射乘s_bulk回GPa。预期积分abs/rel容差各1e-8（标准化尺度），不收敛/非有限/误差超过已冻结容差就拒绝该评分。不要用未审计的少节点GH或有限Monte-Carlo样本CRPS替代主评分。独立审计应有不同实现的CDF积分或已核验t-CRPS公式，不把同一数值函数重跑叫独立核查。
+
+bulk主CRPS单位GPa；RMSE/区间宽度同单位。不同性质单位不混成无解释平均。所有192组等权，四mask分别报告；主模式事前固定双proxy，不看结果改主终点。报告80%/95%中央区间、PIT、coverage和每组paired gain。低CRPS不自动代表校准，192个同源开发组也不代表独立批次。
+
+六、唯一warm-only准入范围
+------------------------
+固定256个尚未消费JARVIS formula组，先按源metadata与完整旧组排除生成唯一排序；每组按无响应metadata稳定hash取一个代表行。前64组fit，后192组全部是模型适配诊断，统称开发cohort；不叫确认集，不看诊断后挑组/重排/增加seed。来源、原单位、真实完整case选择偏差与负bulk保留由contract明确。
+
+实际选择必须在MATERIAL_TASK_CONTRACT_V1通过独立门后，由另一个实际UTC协议写定具体group/rowID与metadata/hash。本文件不选择它们。完整原始source payload可在可信IO容器中包含所有值，但model API只获得64x3 fit数组及当前mask允许proxy；隔离是可审计访问契约，不冒称密码学盲法。
+
+阶段A只放行64x3=192个原生fit cell；阶段B允许192x2=384个诊断proxy作固定mask输入；三个模型x四maskx192组的2304条bulk预测全部冻结、hash绑定后，独立评分阶段才揭示192个bulk真值。诊断完整三格最终被消费共576个cell，连同fit共768原生cell；多mask预测不重复计标签、论文N或测量。
+
+本阶段不运行allocation、不选新动作、不用诊断target学习/改模型、不更新在线catalytic矩阵、不运行旧模型，也不以新数据集名称冒充新湿实验。即使通过，也仅准许继续考虑下一门真正付费反馈pilot。
+
+七、准入判断与停止（建议root在揭示前冻结）
+-------------------------------------------
+技术门：每个source/group/row/field唯一，旧组完全排除；fit和诊断formula不交叉；全部输入有限，SD>0；NIW/IW约定正确；所有conditional scale严格正；顺序条件化与联合条件化一致；0proxy joint-t=独立边际；Gauss/t积分独立核对；预测冻结早于target reveal。任何硬门失败就停止，不先看材料score再补故事。
+
+模型门：所有四mask原单位CRPS/coverage/PIT完整报告。建议在当前pilot将以下作为NO-GO而非调参触发器：双proxy joint-t宏CRPS不优于独立bulk边际；或其宏CRPS比moment-matched Gaussian差超过10%；或任一模式95%中央区间覆盖低于80%。这些是事先给定的实用容忍门，不是普适统计检验。逐组不确定性/coverage采样误差和长尾均保留，不以阈值通过证明真实校准。root可以在读Y前选择更合适的容忍，但不得在读诊断target后改门。
+
+任何分布都不应仅为共测而被保留。A失败后，先解释是均值异质、尾部/点质量、样本关系弱、源字段不适配还是数字错误。若没有额外清晰假设与新未消费组，不自动上B/C，不再做纯合成挽救材料分数。通过也不能证明新算法达到领域强基线：该阶段仅有三个最小统计参考，后续真正方法仍需相同信息下的材料强预测器/规划器。
+
+八、未来真正关系反馈pilot的完整数学轮廓（不在本轮执行）
+------------------------------------------------------
+若admission通过，可从新的未消费整formula组另行登记四个可query材料和一个query禁止audit池。audit每行可以按固定政策披露真实proxy；其费用/是否初始免费作为共同情景明示，所有方法都要将这些proxy完整计入关系后验。audit target在整个在线过程禁止query，最终才冻结揭示，避免直接买target就自动提高主指标；另报可query池中已验证target数量，绝不把预测/代数推断算验证。
+
+使用warm后验抽取有限的full(mu,Sigma)假设theta_h，初始等权，只作为一个明确的有限近似模型而非无误差连续NIW后验。所有方法共享同一假设、相同weights、初始信息、oracle和成本。不同unit给定theta独立只是模型假设；同formula多行不被拆作独立unit。
+
+当前行i已有O_i，实际新披露subset S与O_i不交叉：
+  likelihood_h = Normal(z_i,S | z_i,O_i,mu_h,Sigma_h)，
+  log w'_h = log w_h + log likelihood_h - logsumexp(...).
+同一行下一次查询必须用条件似然而不是再次乘完整joint；同包subset一次使用完整多元条件似然。重复cell不更新不收费；真实观测不因“不符合预测”被拒收。所有新观测都更新full关系权重，包括仅proxy及双proxy包；不再声称proxy不学theta。若finite bank支持不足或ESS坍缩，只能按预定门停止/报告近似失效，不能偷偷生成新标签或未经登记重采样救分。
+
+每行所有非空unknown-cell subset都是合法动作，cost=新原生cell数，同一字段Y不会因叫R或V而改变费用；共享父计算/实物时间未知，所以是离线披露情景，不称新DFT/实验节约。四行每行至多7个subset，总至多28个动作；直接bulk V、proxy-first、target-first、repair已有行、展开新行及STOP都在其中。R/E只是随mask变化的描述，不是不同oracle或额外资源权利。多cell包按相同cell总费用，而非伪造便宜panel。
+
+混合预测的单目标原单位CRPS可解析：
+  A(d,v)=2sqrt(v)*phi(d/sqrt(v))+d*(2Phi(d/sqrt(v))-1)，A(d,0)=|d|。
+  CRPS=sum_h w_h A(y-m_h,v_h)-.5 sum_hk w_hw_k A(m_h-m_k,v_h+v_k)。
+每个audit行自己的proxy固定且不可再query时，其各particle目标conditional law固定；预缓存C_hk为各audit行A(m_h-m_k,v_h+v_k)的等权平均，模型Bayes risk=.5 w^T C w。这是保留完整joint后验的经典二次readout，通常无须旧rho矩近似。它也必须提供给完整planner，不能仅加速新方法来制造优势。若audit条件信息会继续变，必须明确重建相应项，不能沿用过期cache。
+
+强对照是同一full-joint模型的全动作一步VOI、全动作两decision自适应lookahead（含实际剩余费用与STOP，不冒称全预算最优）、direct-target-only、固定/随机分配，以及冻结关系的机理消融。冻结关系有意换了推断假设，只能作消融，不能取代主强基线。若新候选算法就是其中一个planner，不另报超循环优越性。
+
+连续obs积分不能再用默认GH5。可比较同样预注册随机数预算的全动作Monte-Carlo/QMC lookahead，重复独立scramble、增加固定预定预算核动作价值稳定性，报告估计误差。采样积分没有自动消除nested max的选择偏差：需要独立子样本评估选定分支，或明确上下界/偏差审计。不能把“高节点同一积分器”叫精确两步；精确仅指有限Gaussian模型条件化及闭式CRPS。
+
+实用上先限制四个可query组而不是扩H求速度，利用小H和完整条件mask缓存，预先给整轮计算/内存上限。若所有合法动作的二步评估在登记资源内跑不完，保留失败并拒绝非近视算法结论；不悄悄删除昂贵panel或不给基线V。原矩方法可另被判定为不适配；不为把它接入材料强行加星形或无信息proxy假设。
+
+未来允许的“闭环”：真实付费proxy/target返回->完整条件似然更新->新预测冻结->选择下一合法付费动作。它只有真实target回归训练后才形成跨材料关系反馈，仍是经典Bayes-adaptive过程，不是Eigen方程或生物催化的实证。任务证据和算法增量分开判断。
+
+九、最小实现准备边界
+--------------------
+仅准备三个小模块的契约，不先写可执行拟合代码：
+1.admission_io.py：metadata整组role准入、许可cell读出、模型调用/预测冻结的CLI与hash收据；不评分。
+2.niw_predictive.py：fit-only仿射/NIW参数、joint-t/Gauss/边际三种预测、完整mask条件化；无数据路径和真值读取。
+3.score_admission.py：先验证全部2304预测manifest，再独立揭示bulk；原单位CRPS/coverage/PIT/逐组差值与失败；不改模型。
+三者均无网络下载/自动重试、旧run调用、伪标签训练或大agent框架。先完成contract/实际组/源码freeze/协议与独立数学门，再申请一次执行；本设计不授权任何新标签揭示。
+
+十、本轮真实阅读范围与来源
+--------------------------
+- Murphy2007，Conjugate Bayesian analysis of the Gaussian distribution，2007-10-03版本；选读§9.1–9.3及IW参数约定，非整篇精读。Harvard官方课程镜像：https://web-static-aws.seas.harvard.edu/courses/cs281/papers/murphy-2007.pdf 。MIT官方镜像本轮open超时，未反复重试。论文可访问不等于可再分发许可，未下载/复制全文到包。
+- Gneiting/Raftery2007，JASA102(477)，DOI10.1198/016214506000001437；选读§4.2/eq20–21及negative orientation说明，核loss符号/原单位尺度/energy identity，非整篇精读。作者官方页：https://sites.stat.washington.edu/people/raftery/Research/PDF/Gneiting2007jasa.pdf 。未复制原文长段、无再分发许可声明。
+- Qu等2015，DOI10.1287/opre.2015.1395，官方摘要重核，未读全文：https://pubsonline.informs.org/doi/10.1287/opre.2015.1395 。它是未知相关性VOI的直接先例，足以禁止将NIW+自迭代本身标原创。
+
+以上均为技术来源有限阅读记录；不计成新的数百篇论文学习或材料有效性证据。

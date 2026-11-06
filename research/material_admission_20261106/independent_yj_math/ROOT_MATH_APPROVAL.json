@@ -1,0 +1,8 @@
+{
+  "actual_approved_utc": "2026-11-05T15:57:05.419125+00:00",
+  "approved": true,
+  "scope": "INDEPENDENT_YJ_HALF_MATH_ONCE",
+  "plan_sha256": "2b0b0d53e3793f4892bed6a6f651ad77b2bf0f8e8bf1417fe0e212f227856ac2",
+  "script_sha256": "18db027000ccb9ed656bd6a034d8005847c924f5bcd14fb246018b4c5a056119",
+  "scope_limit": "Only independent fixed hypotheticalYJ math; 16two-coordinate nativeCRPS,40quantiles,moments,density,atom/median controls; no producer or material cells."
+}

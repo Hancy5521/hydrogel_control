@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "details": {
+    "checked_all_forecasts": 2304,
+    "formula_groups": 192,
+    "independent_fit_reconstruction": "scalar fsum and explicit1x1/2x2 solves, no SUT",
+    "forbidden_data_opened": [],
+    "diagnostic_target_reads": 0,
+    "native_gzip_reads": 0,
+    "scope": "Saved forecasts only; no target scoring or material-effectiveness conclusion."
+  },
+  "phase": "forecast",
+  "start_utc": "2026-11-05T15:32:40.451851+00:00",
+  "end_utc": "2026-11-05T15:32:40.504628+00:00",
+  "script_sha256": "e2fe488d4cd75ed35854ad8105539e04f0eab2ef08f086ef92f01cce70e39177",
+  "plan_sha256": "8d71908e029520488d5940ed24f9cec249b3bc63e5c40c8c1e31be2bf3472e58",
+  "approval_sha256": "0ee70adc4687bde5c51a0da205dc5807c5039a4efdf6ffacd2a6bb381ff01166",
+  "checked_numeric_counts": {
+    "fit_center": 3,
+    "fit_sample_SD": 3,
+    "posterior_location": 3,
+    "predictive_location": 3,
+    "posterior_Lambda": 9,
+    "predictive_shape": 9,
+    "predictive_covariance": 9,
+    "prior_Psi": 9,
+    "forecast_native_location": 2304,
+    "forecast_native_scale": 2304
+  },
+  "max_absolute_errors": {
+    "fit_center": 2.220446049250313e-16,
+    "fit_sample_SD": 0.0,
+    "posterior_location": 1.6140934742627275e-16,
+    "predictive_location": 1.6140934742627275e-16,
+    "posterior_Lambda": 1.4210854715202004e-14,
+    "predictive_shape": 2.220446049250313e-16,
+    "predictive_covariance": 2.220446049250313e-16,
+    "prior_Psi": 0.0,
+    "forecast_native_location": 5.684341886080802e-14,
+    "forecast_native_scale": 1.4210854715202004e-14
+  },
+  "producer_imports_or_calls": 0,
+  "native_gzip_reads": 0,
+  "random_samples": 0,
+  "new_model_fits_or_original_timing_runs": 0,
+  "Python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]"
+}

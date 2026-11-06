@@ -1,0 +1,63 @@
+详细算法与代码讲解：真实材料概率补全的模型准入研究
+
+一、目标、这次工作的层级与材料身份
+最初目标是：已知某材料的一部分性质，补全缺失性质，同时给出可检查的预测分布，再把有限真实查询用于修复和扩展材料信息。闭环中“数据生成”只能生成模型样本，不能冒充新测量或新DFT。Eigen超循环和组织修复是系统设计启发；目前材料部分没有证明自催化智能体、泛化到所有材料或实际实验节约。
+这次只完成闭环之前的模型准入任务：先检查三性质联合概率模型，能否利用同一材料自己已知的两个proxy，改善第三性质的原单位预测。数据来自公开JARVIS DFT，经Matminer发布；不是湿实验、新DFT计算或本项目新合成标签。三列是e_form（eV/atom，原form_enp）、gap opt（eV，原op_gap）与bulk modulus（GPa来源归属，原kv）。bulk聚合定义仍按来源作限定，不自行把它改名或换算为另一弹性量。
+归一化化学式、jid、mpid组成full-source身份component，然后才筛完整三列；不能先筛再把兄弟结构拆成独立材料。每组取metadata原行号最小代表。未选兄弟同component全部标消费；已有元数据仅展示eligible兄弟，不编造不完整兄弟清单等于全部原记录。
+
+二、可见信息和角色
+阶段1：先排旧40component；固定SHA顺序选256新component，前64fit，后192diagnostic，剩8546。阶段2：再整体排除阶段1的256，换预声明hash前缀选新的256，仍64/192，剩8290。两次192都属于开发资料，不是独立确认。只选择元数据，不依据性质挑组。
+每阶段model可见64×3拟合原值和192×2诊断proxy；诊断bulk始终先不提供。gzip包含整个JSON，可信reader物理解析全源后，检查原行index/jid/mpid/归一化组成，只暴露允许的切片。其余行不形成性质统计，诊断目标由独立评分入口在全部预测冻结后再抽出。它是审计访问契约，不是加密隔离，不能声称reader只物理读取256行。
+四mask为空、仅e_form、仅gap opt、两proxy。每个诊断材料只条件于自身允许proxy，不把192诊断proxy累计更新全局后验。遮挡是人为设计的补全任务；完整标签在离线oracle中存在，不把这份源数据描述为原生MNAR稀疏矩阵。
+
+三、阶段1：完整联合NIW参考模型
+admission/code/niw_predictive.py是纯数学模块，无数据I/O。对fit64的三列按仅fit均值和样本SD做仿射标准化，保留完整3×3相关协方差，没有把完整分布硬压为低秩。由于坐标来自fit数据，先验是经验参考，不是原单位固定独立的纯Bayes先验。
+p=3；标准化NIW先验m0=0,kappa0=1,nu0=7,Lambda0=3I。n=64后：
+  kappa=65, nu=71,
+  m=64*zbar/65,
+  Lambda=3I+sum_i(zi-zbar)(zi-zbar)^T+(64/65)zbar*zbar^T。
+后验预测为df=nu-p+1=69的多元t，尺度S=66*Lambda/(65*69)，协方差69*S/67。S不是协方差，不可混用。
+观测k个proxy xO后，目标t位置为mY+SYO*SOO^{-1}(xO-mO)，df=69+k，尺度平方=(69+delta)/(69+k)*(SYY-SYO*SOO^{-1}*SOY)，delta为proxy马氏平方。k=0时就是目标边缘。原单位由fit仿射坐标精确反变换。
+三角色是联合t、同预测均值/完整协方差的Gaussian、同目标t边缘的关联消融；后者不是第三次独立训练。Gaussian按其自身观测条件分布评分，全部保留同信息比较。3角色×4mask×192=2304条law，不是2304个材料。
+admission_io.py负责来源hash、身份、访问契约、预测冻结；score_admission.py只在冻结通过后揭示目标，以闭式t/Gaussian CRPS、coverage和PIT评分。阶段1四项预声明准入中PIT偏差约0.166992超过0.15，故NO_GO完整保留。其后分析是posthoc诊断，不能消除这次失败。
+
+四、阶段2：固定Yeo–Johnson半幂坐标
+phase2_yj/code/yj_model.py读取新64fit，拟合raw和YJ两个完整NIW模型，固定所有三列lambda=0.5，不搜索lambda、先验、mask、阈值或角色。不删除负bulk，不为bandgap=0另删样本。
+令s0为该列fit原单位样本SD；v=x/s0，u=g(v)，再按fit的u均值/样本SD得到z。固定g是：
+  v>=0：g(v)=2*(sqrt(1+v)-1)；
+  v<0 ：g(v)=-((1-v)^(3/2)-1)/(3/2)。
+其全实域严格递增逆映射h为：
+  u>=0：h(u)=u+u²/4；
+  u<0 ：h(u)=1-(1-1.5u)^(2/3)。
+h'(u)在u>=0是1+u/2，在u<0是(1-1.5u)^(-1/3)，均为正。正尾逆映射二次增长；预测t的df至少69，大于2，故原单位一阶绝对矩有限，原单位CRPS有定义。有限矩不等于所有IEEE极端输入均有严格数值证书。
+五law是raw_joint_t、raw_momentmatched_Gaussian、yj_joint_t、yj_latent_momentmatched_Gaussian、yj_target_marginal。后一个Gaussian是在潜坐标匹配均值/协方差，再运输回原单位；它不是原单位momentmatchedGaussian。5×4×192=3840law；两个NIWfit共享同64材料，不算两批材料。
+run_phase2.py只读复用父trustedreader，另验证排除阶段1全部component，冻结五文件后才让score_phase2.py揭示192原目标。原父三模块字节不改，阶段1失败不覆写。
+
+五、为何必须在原单位评分
+CRPS(F,y)=integral_{-inf}^y F(t)^2 dt+integral_y^inf(1-F(t))² dt；数值越小越好，是完整分布评分。非线性YJ会改变积分测度，潜坐标CRPS不能乘一个固定SD就叫原单位CRPS。
+若原单位目标x=s0*h(u)，u*=g(y/s0)，则：
+ CRPS_native=s0*[integral_{-inf}^{u*} FU(u)^2*h'(u)du+integral_{u*}^{inf} SFU(u)^2*h'(u)du]。
+score_phase2.py使用CDF/SF、非恒定逆Jacobian和预声明分段/尾界数值积分。CDF与SF各用于适当尾部以减少相消；尾界针对理想数学量，不冒充向外舍入IEEE区间。原单位中位数和区间由单调反变换给出。所有模型一律用预测中位数计算RMSE，不混用某法均值和某法中位数。
+score模块保留绝对/相对容差、每条quad误差估计和tail证书；独立保存law的原单位CDF审计另核全部坐标。数学控制及材料评分审计与SUT分开，不把同一个函数调用两遍当独立审计。
+
+六、阶段结果如何理解
+阶段1双proxy NIW CRPS约35.5451，对自身none约下降3.898%，与完整Gaussian几乎相同，但PIT准入失败。
+阶段2YJ双proxy约33.20961，自身none约36.30351；同信息rawt约35.47353，rawGaussian约35.48337，YJ潜Gaussian约33.19841。YJt基本追平而非超越最强该组Gaussian。其90%覆盖约0.93229、PIT偏差约0.08416。这个阶段rawt的PIT约0.1144也通过，不能宣称只有YJ修好了校准；前后cohort不同，不能把35.5451到33.20961直接当同材料消融。
+阶段2四个旧准入门通过只表示这项开发任务过门，完整独立审计和新强baseline见最终报告；不能推出所有材料强基线、独立新批次泛化、湿实验节约或自动修复扩展智能体已经成立。
+
+七、追加强学习参照：固定GP和森林叶条件CDF
+strong_baselines/code只用阶段2已冻结VISIBLE_INPUTS，不重新读gzip或新组；追加方法的时间是posthoc，候选已固定、旧四门不改。3非空mask×2method=6fit，none各用固定fit目标边缘，不额外拟合。2×4×192=1536law仍是同192材料。
+GP：64fit-only标准化proxy；Constant*RBF+White核、normalize_y=True、alpha=1e-8、单次L-BFGS-B优化且n_restarts_optimizer=0。预测Gaussian包含learned White测试噪声，alpha只放训练对角。完整训练Cholesky、dual系数、核参数、警告、环境版本留档，不把零restart解释为没有超参数优化。
+森林：256树、min_samples_leaf=3、max_features=1、bootstrap=True、固定random_state；sklearn输入明确float32，保存实际float32数组、树阈值、leafid，以免用float64手工路由发生边界不一致。条件CDF权重w_j=平均每树 I(original_train_j与query同leaf)/n_leaf_all_original。每树在全部原始64个fit行上取叶成员，包括该树OOB原行，不按bootstrap重复倍数计CDF权重。它是明确披露的QRF-inspired变体，不是声称跑了某官方QRF软件。
+经验分布由原64个真实fit目标及精确Fraction质量构成，不是新增生成测量。重复support要合并质量，零weight合法。CRPS可由各段正项(stepCDF-indicator)²*区间长度求和，等价于sum w|x-y| - 1/2 sum wj wk|xj-xk|；精确质量不代表最终float原单位宽度/加和完全有理。
+PIT必须分别记录P(X<y)、P(X<=y)、二者中点。离散中点不是连续uniformPIT，不套连续KS或原连续准入门。分位数是inf{x:F(x)>=p}，经验预测区间可能零宽且边界覆盖用闭区间。独立有理数学控制检验这类边界；它不是材料效果验证。
+
+八、源码调用和资源地图
+根目录reproduce.py默认只生成本地重放计划。phase1预测调用admission_io.py，评分调用score_admission.py；phase2预测调用run_phase2.py，评分调用score_phase2.py。阶段2数学模块只读父NIW。所有score入口先验完整预测freeze与同源协议SHA，再揭示/读取对应目标。
+trusted_data/保留原公共gzip；reference_inputs/保留13份外部稳定原件和许可；RESOURCE_PATH_MAP.json把阶段2原16绝对路径映射到移动后的包内文件。后3份是本stage原有contract、phase1角色和phase1失败RESULTS，复用原路径不复制新内容。历史活跃docs只保留阅读时SHA，不伪造其旧字节、不要求今天的RESUME仍等于旧SHA。
+phase1/phase2角色表、execution协议、forecast freeze、score结果与每次独立审计都分别保留。PACKAGING_PREPARATION历史保存尚未执行工具的版本，不冒充历史科学运行。PACKAGE_MANIFEST逐文件核字节，verify_resources.py不运行模型。
+
+九、创新的诚实边界和下一步
+NIW、Yeo–Johnson、CRPS、GP、森林CDF、主动学习和超循环都有先例，不把经典名词换名当新算法。本次增量是为材料修复/扩展机制先核完整联合分布的真实准入、明确原单位概率效果、全组身份与信息公平、失败停止规则和强参照；这本身是机制路线所需实证基础，尚不能独立构成顶会创新保证。
+真正的下一方法贡献必须回答：关系学习和目标获取是否在相同合法信息/完整动作集合/相同披露预算下产生可证伪互补收益。单proxy若自身透露关系参数就不能套“纯proxy不学theta”公式；联合proxy的边缘可能随theta变化；R/E/直接目标/STOP/同bundle都应公平比较。原native cell披露成本是离线scenario，不是假装DFT计算费用。
+未来独立确认要保留整formula/来源component，禁止用已消费开发组重切。对于校准、真实测量费用、材料约束、结构兄弟及湿实验泛化，现有元数据不能支持的事实仍标未知；可用独立材料数据或作者实验解决，不能通过生成预测标签、反复重抽样或来源改名制造新证据。

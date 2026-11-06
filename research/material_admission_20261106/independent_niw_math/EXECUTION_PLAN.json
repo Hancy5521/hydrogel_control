@@ -1,0 +1,52 @@
+{
+  "scope": "INDEPENDENT_SYNTHETIC_NIW_T_CRPS_ONCE",
+  "registered_actual_utc": "2026-11-05T15:10:05.432105+00:00",
+  "registered_actual_asia_shanghai": "2026-11-05T23:10:05.432105+08:00",
+  "status": "FROZEN_AWAITING_ROOT_REVIEW_AND_APPROVAL_NOT_EXECUTED",
+  "script": "audit_niw_t.py",
+  "script_sha256": "79f04a2308ea020a49012664de7527036a7dce88777619ba1af18701ebc8e6a5",
+  "math_scope_sha256": "ebb8fd8ea3a98ab57d3e41b3fc897c416ec521984215ae5c7740329490fe418c",
+  "source_inspection": "ast.parse only; no import or source execution; no scientific library import",
+  "fixed_families": [
+    {
+      "name": "NIW_batch_sequential_prior_and_affine",
+      "definition": "p3 kappa1 nu7 Psi3I mu0, four fixed hypothetical rows in source; batch versus sequential and reverse; prior predictive shape/covariance and diagonal-affine updates",
+      "tolerance_absolute": 2e-13
+    },
+    {
+      "name": "conditional_t_joint_over_marginal_density",
+      "definition": "prior and fixed four-row posterior; targets0/1/2;0/1/2proxies;z=-2/0/1.5;54 density points,18 affine tuples; check zero-linear-correlation shared-scale response",
+      "tolerance_absolute": 2e-12,
+      "tolerance_relative": 2e-11
+    },
+    {
+      "name": "Student_t_CRPS_CDF_energy_and_closed",
+      "definition": "df1.5/2.5/5/12;z=-2/0/.75;(loc,scale)=(-1,.7)/(3,2.3):24fixed cases; independent squaredCDF+SF integration, density-energy integration, beta closed formula; positive affine invariance",
+      "quad_epsabs": 2e-10,
+      "quad_epsrel": 2e-10,
+      "quad_limit": 400,
+      "comparison_absolute": 2e-08,
+      "comparison_relative": 2e-08,
+      "closed_affine_absolute": 2e-12,
+      "closed_affine_relative": 2e-12,
+      "IntegrationWarning_is_error": true
+    },
+    {
+      "name": "finite_first_moment_and_invalid_input_guards",
+      "definition": "df1 and.9,scale0,NaNvalue:4rejects;df1.5valid CRPS despite infinite variance"
+    }
+  ],
+  "expected_output": "execution_once/INDEPENDENT_NIW_T_CRPS_AUDIT.json",
+  "approval_required_fields": [
+    "scope",
+    "plan_sha256",
+    "script_sha256"
+  ],
+  "approval_required_scope": "INDEPENDENT_SYNTHETIC_NIW_T_CRPS_ONCE",
+  "material_response_reads": 0,
+  "producer_imports_or_executions": 0,
+  "random_samples": 0,
+  "network_calls_by_audit": 0,
+  "failure_rule": "Execute once, retain any family error/traceback. Do not change cases or tolerances after outcomes. Numerical integration error estimates are diagnostics, not formal outward-rounded certificates.",
+  "interpretation": "Mathematical controls only. Does not validate producer SUT or material effectiveness; independent reference can later be used in a separately registered saved-prediction comparison."
+}

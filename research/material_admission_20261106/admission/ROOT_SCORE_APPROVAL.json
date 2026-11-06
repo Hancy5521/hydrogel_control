@@ -1,0 +1,18 @@
+{
+  "actual_approved_utc": "2026-11-05T15:33:16.566225+00:00",
+  "approved": true,
+  "scope": "WARM_ONLY_NIW_MATERIAL_ADMISSION",
+  "plan_sha256": "aab1111cbcdc5c04f46e51431f0c15bb7cddd557edfe5f55fa75349440cd7d55",
+  "allowed_phases": [
+    "score_after_freeze"
+  ],
+  "forecast_audit_result": {
+    "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_niw_math\\saved_audit\\forecast_audit_once\\INDEPENDENT_SAVED_NIW_FORECAST_AUDIT.json",
+    "sha256": "f07eb5979d5e8ceb0cf7400d99bed3b3742d10744bc7c966e4b4d772ac18cbd6"
+  },
+  "complete_forecast_freeze_sha256": "6333233218f62dbe4911b2172adf1650b4427e68bf2cb59a31307733e5fbc8e9",
+  "native_diagnostic_target_cells_authorized_for_evaluator": 192,
+  "target_model_training_access_allowed": false,
+  "statistical_thresholds_source_groups_prior_remain_unchanged": true,
+  "role": "all diagnostic rows are consumed development, not confirmation; outcomes may stop current full campaign"
+}

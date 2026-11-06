@@ -1,0 +1,40 @@
+{
+  "actual_utc": "2026-11-05T15:22:42.924330+00:00",
+  "status": "PASS_BOUNDED_NIW_ADMISSION_IO_STATIC_GATE_PENDING_ROOT_EXECUTION_APPROVAL",
+  "source_sha256": {
+    "admission_io.py": "90011d05e1071b02422622249006cf669bd88e2f7792f8da87f87e0589188466",
+    "niw_predictive.py": "a8d74e5398f2bb606efb195d3395324f014ba3f9b4f801a67b022c1cc6687818",
+    "score_admission.py": "ef7e29f8dab89a0a644011b8c188fcbeaa178095bbd823d082be8887e0aaccc0"
+  },
+  "template_sha256": "53280678ab417ec2325041bc6371f784c416aaebeb97da4e1d3880fc7ea053be",
+  "role_sha256": "0bc81d0400a4076c854af11e654ca3ca9bcbceb249f2ee6c26d356c53ceae9c0",
+  "contract_sha256": "2637532951c1e6b86ee8bdaa0cbcdb95a48982509de14770f87487e1b55a241d",
+  "raw_source_sha_reference_not_opened_by_reviewer": "3d0fc1315b74cf84071f16aa25bb93434dafbc83867beb75872064ac245bd747",
+  "checks": [
+    "Registeredexactsource/config/role/contract/rootprefitscope andphase approvals bind execution;rawchecksum occurs only in futureapprovedrunner.",
+    "Trustedreader physicallyparses allsourceJSON; onlyfit64threefields/diagnostic192twoproxies explicitly extractedforproducer. No unselectedproperty summary, range/signfilter ormodeluse.",
+    "Selectedoriginalrawindex/artifactindex/JID/MPID/exactnormalizedcomposition checked beforevalueextraction. Nativefinitevalue conversion doesnotdelete negativebulk orzero gap.",
+    "Fitinputcontains only64representatives. Diagnosticownproxy masks passed to predict_law; IOdoesnotaccumulate diagnosticanchors into sharedfitstatistics.",
+    "Scorer verifies complete5-file freezeSHA andall2304unique group/model/mask/JID/validlaw entries before diagnosticY extraction. Targetreveal startreceipt writtenfirst.",
+    "All256formula components remain development. RolefileSHA and prior metadata gate secure wholecomponentexclusion;unselected8546no newnumericstatistics.",
+    "Native target law/sourceunit used; rootmodel/scorer mathreview separate, no duplicate numericalaudit."
+  ],
+  "score_entry_line_order": {
+    "validate": 111,
+    "verify_forecast_freeze": 112,
+    "reveal_diagnostic_truth": 121
+  },
+  "explicit_limits": [
+    "Audited honest-caller APIcontract, not encryption or malicious-caller security boundary. reveal_diagnostic_truth helper itself relies on authorized scorer callorder.",
+    "Source parser accepts source-native missing constants in unselectedrows; onlyselectedrequestedcells are checkedfinite. Thisavoidsglobalunselectedlabelstatistics.",
+    "No new fullsource ineligible-sibling enumeration implemented. Wholegroup reservation derives from previouslyvalidated fullsourcecomponentIDs+rawSHA; do not claim alloriginalsiblings were independently re-enumerated.",
+    "NIWempiricalfit scaling, latent prior validity and CRPS formula correctness are root/otherindependentmathreview scope.",
+    "All192diagnostic rows aredevelopment, notindependentconfirmation or a materialstrongbaseline result."
+  ],
+  "blocking_bugs_found": [],
+  "necessary_source_changes": [],
+  "producer_imports_or_executions_by_reviewer": 0,
+  "gzip_reads_or_new_native_property_access_by_reviewer": 0,
+  "fits_predictions_scores_by_reviewer": 0,
+  "next_step": "Onlyroot actualUTC source/input-pinned protocol and explicit forecastphase approval can initiate trustedparse/fit. Scorephase approval only aftercomplete2304freeze."
+}

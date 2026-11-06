@@ -1,3 +1,7 @@
+Latest separate material-development checkpoint (6 November 2026): [Chinese entry](research/material_admission_20261106/INDEX.html). Fixed native-unit completion reaches the level of two fixed nonlinear references on consumed development groups. All failures, source/likelihood limitations and independent audits are retained; no verified paid-feedback agent or new independent material confirmation. Complete local resources include the original public DFT asset; this reviewed public subset omits response-bearing snapshots and records all transformations. MLST manuscripts and frozen runtime remain unchanged. New refs are locally archived; remote synchronization is not asserted.
+
+---
+
 # Relation-moment decision readout checkpoint — 5 November 2026
 
 [Chinese report and program](research/relation_20261105/INDEX.html) · [guide](research/relation_20261105/RESOURCE_GUIDE_ZH.txt) · [new checkpoint identity](RELATION_MOMENT_CHECKPOINT.json).

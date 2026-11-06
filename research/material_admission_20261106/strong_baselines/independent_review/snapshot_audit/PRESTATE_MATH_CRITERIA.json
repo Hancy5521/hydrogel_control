@@ -1,0 +1,31 @@
+{
+  "actual_registered_utc": "2026-11-05T16:47:51.260139+00:00",
+  "status": "CRITERIA_FIXED_BEFORE_ANY_BASELINE_STATE_OR_OUTCOME_READ",
+  "GP": {
+    "K_equals_LLt_normwise_backward_error_max": 1e-11,
+    "Kalpha_equals_ynormalized_normwise_backward_error_max": 1e-11,
+    "kernel_matrix_norm": "max row absolute sum, scalar math.fsum",
+    "LLt_denominator": "normInf(K)+normInf(L)*normInf(Ltranspose)",
+    "dual_denominator": "normInf(K)*normInf(alpha)+normInf(ynormalized)",
+    "also_report_absolute_residuals": true,
+    "report_conservative_spectral_condition_upper_bound": "(64*C+white+alpha_nugget)/(white+alpha_nugget)",
+    "native_predictive_mean_std_abs": 2e-06,
+    "native_predictive_mean_std_rel": 2e-08,
+    "state_feature_and_normalization_abs": 2e-09,
+    "state_feature_relative": 2e-11,
+    "prediction": "own scalarRBF,crossWhite0,testdiagonalWhite,storedL forward substitution; nooptimizer/sklearnfit/predict"
+  },
+  "RF": {
+    "X_branch_dtype": "exactfloat32viaStandardlibrarystruct",
+    "branch_rule": "<=thresholdleftelseRight",
+    "all_tree_paths": "3forests*256trees*(64train+192diag)=196608",
+    "leaf_Fraction_masses": "exactalloriginalrowweights sum_t1/(256*n_leaf_all_original);all576laws*64positions=36864checks",
+    "native_support_and_metadata": "exact",
+    "no_bootstrap_training_rerun": true
+  },
+  "total_forecast_laws": 1536,
+  "fits_verified_as_saved_states": 6,
+  "new_fits_or_math_execution_now": 0,
+  "new_response_or_baseline_output_reads_now": 0,
+  "failure_policy": "Keepfailure; nooutcomebasedtolerancerelaxation. Backwarderror is a numericaldiagnostic notglobaloptimizerprooforforwardguarantee forillconditionedGP."
+}

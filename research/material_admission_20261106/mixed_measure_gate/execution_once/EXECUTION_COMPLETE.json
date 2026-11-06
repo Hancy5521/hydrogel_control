@@ -1,0 +1,14 @@
+{
+  "actual_utc": "2026-11-06T02:28:06.016067+00:00",
+  "status": "PASS_SYNTHETIC_MIXED_MEASURE_CANONICAL_CELL_GATE",
+  "source_sha256": {
+    "mixed_likelihood.py": "a4ee50ef350ee7d9a3dbcf094d615aa68cd059b35d1e422a91068cdc7e65eea4",
+    "run_gate.py": "6b4915725044a2218e0c721721d7ce8c4abbcdce823bce75f09a713cad404a67"
+  },
+  "plan_sha256": "0c866c0c1fb41d86a213602f095c62c4118fb24b52460952e6d4bf40b485b61b",
+  "files": {
+    "EXECUTION_START.json": "7c49b52c4c60288de04b506932aa27dfcf0b3a23a38d0ee33a8ff26d37f28e0b",
+    "RESULTS.json": "9d51067d4bf81b54a14be1197589bc118c9e4871dc0892b327faf816cd784900"
+  },
+  "no_new_real_labels_or_model_fits_or_agent_runs": true
+}

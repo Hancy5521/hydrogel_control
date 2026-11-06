@@ -1,0 +1,9 @@
+{
+  "actual_freeze_utc": "2026-11-05T16:35:19.627712+00:00",
+  "status": "AST_ONLY_NO_AUDIT_OR_SUT_EXECUTION_NO_DIAGNOSTIC_Y_DESERIALIZATION",
+  "script_sha256": "257551f8e648a3ce832d1ada677b25168b53a0663ad0e6133a345427f8e3322a",
+  "plan_sha256": "05444f1f55e4216666152a2921aeb6d5acfdd611daa69f1ad7bf28a97cc45cbf",
+  "all3840_pretarget_extent_sha256": "ddf2c760f7e1035f3f7748ca4316625872d477e108694da9e96c84fad466cfa8",
+  "source_preparation_readscope": "Readmetadata plans/extent andownhelper source;scorepayloadbytesonlySHAhashed,diagnosticY/RESULTSnotparsedtodesigncases",
+  "command": "D:\\Anaconda\\python.exe -B H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_yj_math\\saved_score_audit\\audit_phase2_scores.py --plan H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_yj_math\\saved_score_audit\\EXECUTION_PLAN.json --approval H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_yj_math\\saved_score_audit\\ROOT_SCORE_AUDIT_APPROVAL.json --output-dir H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_yj_math\\saved_score_audit\\execution_once"
+}

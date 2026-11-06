@@ -1,0 +1,9 @@
+{
+  "actual_approved_utc": "2026-11-05T15:45:42.091167+00:00",
+  "scope": "FROZEN_PHASE1_POSTHOC_DIAGNOSIS_ONLY",
+  "approved": true,
+  "plan_sha256": "e3e822a97823719075d9271113e2d22cfb153399532752bfbf4a2283f0f803a0",
+  "source_sha256": "ae77ae16229e4978666c8d57b5c85874eef2d09224aa33cd8a14fe51f07d6773",
+  "no_new_group_response_or_model_calls": true,
+  "original_NO_GO_unchanged": true
+}

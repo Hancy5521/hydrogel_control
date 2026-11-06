@@ -1,0 +1,185 @@
+{
+  "status": "PASS_SYNTHETIC_MIXED_MEASURE_CANONICAL_CELL_GATE",
+  "actual_end_utc": "2026-11-06T02:28:04.787009+00:00",
+  "source_sha256": {
+    "mixed_likelihood.py": "a4ee50ef350ee7d9a3dbcf094d615aa68cd059b35d1e422a91068cdc7e65eea4",
+    "run_gate.py": "6b4915725044a2218e0c721721d7ce8c4abbcdce823bce75f09a713cad404a67"
+  },
+  "plan_sha256": "0c866c0c1fb41d86a213602f095c62c4118fb24b52460952e6d4bf40b485b61b",
+  "summary": {
+    "main_order_cases": 720,
+    "main_steps": 4320,
+    "positive_order_cases": 6,
+    "positive_steps": 36,
+    "transaction_cases": 17,
+    "max_abs_main_order_posterior_difference": 0.0,
+    "independent_material_observations": 0,
+    "counterfactual_order_cases_not_independent_materials": true,
+    "all_six_new_native_cells_cost": 6,
+    "branch_parameter_estimation_or_material_performance_claim": false
+  },
+  "atom_and_marginal_controls": [
+    {
+      "observed": {},
+      "log_likelihood_per_h": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "weights_for_one_row": [
+        0.10000000000000002,
+        0.2,
+        0.29999999999999993,
+        0.4
+      ]
+    },
+    {
+      "observed": {
+        "G": 0.0
+      },
+      "log_likelihood_per_h": [
+        -2.3025850929940455,
+        -1.2039728043259361,
+        -0.5108256237659907,
+        -0.2231435513142097
+      ],
+      "weights_for_one_row": [
+        0.017543859649122816,
+        0.10526315789473684,
+        0.31578947368421045,
+        0.5614035087719298
+      ]
+    },
+    {
+      "observed": {
+        "G": -0.6
+      },
+      "log_likelihood_per_h": [
+        -1.4292990488624988,
+        -1.595613477143405,
+        -2.0802292650788274,
+        -2.7083764456387733
+      ],
+      "weights_for_one_row": [
+        0.1861706210834071,
+        0.3152910949865381,
+        0.2912976636009004,
+        0.2072406203291543
+      ]
+    },
+    {
+      "observed": {
+        "G": 0.6
+      },
+      "log_likelihood_per_h": [
+        -1.069299048862499,
+        -1.3556134771434052,
+        -1.9602292650788278,
+        -2.7083764456387733
+      ],
+      "weights_for_one_row": [
+        0.22175353229129366,
+        0.3330855295517871,
+        0.27293908070275963,
+        0.17222185745415955
+      ]
+    },
+    {
+      "observed": {
+        "A": 0.7,
+        "Y": 1.2
+      },
+      "log_likelihood_per_h": [
+        -2.60753441243082,
+        -2.833458236036788,
+        -2.8072804572086714,
+        -3.280234303539824
+      ],
+      "weights_for_one_row": [
+        0.14097036769242408,
+        0.2249263616399881,
+        0.34633826915228044,
+        0.2877650015153075
+      ]
+    },
+    {
+      "observed": {
+        "A": 0.7,
+        "G": 0.0,
+        "Y": 1.2
+      },
+      "log_likelihood_per_h": [
+        -6.212631108089181,
+        -4.167272206808487,
+        -3.297766762939884,
+        -3.574375987309249
+      ],
+      "weights_for_one_row": [
+        0.007827305219061706,
+        0.12104039968525523,
+        0.4331546932955957,
+        0.4379776018000873
+      ]
+    },
+    {
+      "observed": {
+        "A": -0.4,
+        "G": -0.6,
+        "Y": 0.1
+      },
+      "log_likelihood_per_h": [
+        -3.662451512643425,
+        -3.694335215699162,
+        -4.182234477017269,
+        -4.859717497972753
+      ],
+      "weights_for_one_row": [
+        0.16865504043371352,
+        0.32672502843480183,
+        0.30087195401699957,
+        0.20374797711448508
+      ]
+    }
+  ],
+  "naive_product_control": {
+    "status": "INTENTIONAL_WRONG_CONTROL_NOT_A_SUPPORTED_MODEL",
+    "correct_within_row_joint": {
+      "log_likelihood_per_h": [
+        -9.875082620732606,
+        -7.8616074225076495,
+        -7.4800012399571525,
+        -8.434093485282002
+      ],
+      "weights": [
+        0.015200950271352227,
+        0.22768892254273568,
+        0.5002218065693901,
+        0.256888320616522
+      ],
+      "total_cost": 6
+    },
+    "wrong_product_one_cell_marginals": {
+      "log_likelihood_per_h": [
+        -8.457638274675235,
+        -7.645340414288032,
+        -7.656809021663509,
+        -8.317274129771674
+      ],
+      "weights": [
+        0.05955539066136991,
+        0.26836603635311873,
+        0.39795874998722625,
+        0.27411982299828525
+      ]
+    },
+    "max_abs_posterior_difference": 0.10226305658216384,
+    "meaning": "naively multiplying dependent cell marginals changes relation posterior; no material advantage claimed"
+  },
+  "public_export": {
+    "source_file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\mixed_measure_gate\\execution_once\\RESULTS.json",
+    "source_sha256": "9d51067d4bf81b54a14be1197589bc118c9e4871dc0892b327faf816cd784900",
+    "excluded": "per-forecast scores, native truth and response-bearing fit/predictive states",
+    "not_original_receipt": true
+  }
+}

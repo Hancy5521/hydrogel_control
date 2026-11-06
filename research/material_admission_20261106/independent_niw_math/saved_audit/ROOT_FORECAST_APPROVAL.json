@@ -1,0 +1,9 @@
+{
+  "actual_approved_utc": "2026-11-05T15:32:38.465594+00:00",
+  "approved": true,
+  "scope": "INDEPENDENT_SAVED_NIW_FORECAST_ONCE",
+  "plan_sha256": "8d71908e029520488d5940ed24f9cec249b3bc63e5c40c8c1e31be2bf3472e58",
+  "script_sha256": "e2fe488d4cd75ed35854ad8105539e04f0eab2ef08f086ef92f01cce70e39177",
+  "reviewed_scope": "One independent saved-law audit; purestdlib scalar fit-statistics/NIW reference; all2304 laws; no producer imports, rawgzip, diagnostic target or score files.",
+  "diagnostic_target_access_authorized": false
+}

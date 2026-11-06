@@ -1,0 +1,8 @@
+{
+  "actual_utc": "2026-11-05T15:57:06.237227+00:00",
+  "source_sha256": "94cb0089c54b2b1fa414ddb764f6656431876ff9bfc16c23bc36cccee7c2fdfe",
+  "plan_sha256": "0f871da742e2ad319521318d71a862957cbf90c9ac43b45e0179cb418c5ff16a",
+  "approval_sha256": "8c6301b2ecfaab0b0c805d98779f01ed86d8658620754cdd4c3af9be4e9ed626",
+  "raw_gzip_opened": false,
+  "phase1_NO_GO_result_hashed_not_decoded": true
+}

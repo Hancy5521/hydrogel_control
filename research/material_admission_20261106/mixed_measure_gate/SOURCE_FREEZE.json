@@ -1,0 +1,23 @@
+{
+  "actual_utc": "2026-11-06T02:25:41.702101+00:00",
+  "actual_Asia_Shanghai": "2026-11-06T10:25:41.702101+08:00",
+  "status": "SOURCE_PREPARATION_ONLY_AST_NO_IMPORT_NO_NUMERICAL_EXECUTION",
+  "source_sha256": {
+    "mixed_likelihood.py": "a4ee50ef350ee7d9a3dbcf094d615aa68cd059b35d1e422a91068cdc7e65eea4",
+    "run_gate.py": "6b4915725044a2218e0c721721d7ce8c4abbcdce823bce75f09a713cad404a67"
+  },
+  "execution_plan_template_sha256": "fb02f1971b5699defaa62297f2bd49e7ce4f9cd33c553f940c07173dcdc5ba4d",
+  "root_preexecution_spec_sha256": "4c1a26a219803e3d5ccd0b64837ffc5141c1669de4f5bda1982eaf91cc0880af",
+  "module_boundary": {
+    "mixed_likelihood.py": "fixed four-hypothesis mixed RN marginal likelihood; canonical transactional cell ledger",
+    "run_gate.py": "exactfixedfixtures/protocol/720orders/6positiveorders/17transactioncontrols/outputreceipts"
+  },
+  "pre_execution_clarifications": [
+    "empty panel legal STOP zero cost/evidence",
+    "held_out canonical terminal; terminal/terminal_report aliases; rowB→r1 metadata only"
+  ],
+  "science_source_imports_fits_or_numeric_checks": 0,
+  "material_rows_read": 0,
+  "stochastic_draws": 0,
+  "next": "independent static source review, root actual UTC registration and exact approval before once-only fixed synthetic execution"
+}

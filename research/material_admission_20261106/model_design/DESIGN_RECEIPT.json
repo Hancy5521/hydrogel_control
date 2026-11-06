@@ -1,0 +1,20 @@
+{
+  "kind": "MODEL_DESIGN_AND_STATIC_IMPLEMENTATION_PREPARATION_RECEIPT",
+  "actual_utc": "2026-11-05T15:19:15.332474+00:00",
+  "actual_Asia_Shanghai": "2026-11-05T23:19:15.332474+08:00",
+  "inputs_read_only": {
+    "D:\\codex-root\\polymer_completion\\docs\\RESUME_CURRENT.md": "read latest header and historical allocator conclusions",
+    "prior task draft": "read existing draft/next-admission review",
+    "prior allocator decision": "read saved failure, no rescore"
+  },
+  "design_files_sha256": {
+    "MODEL_AND_FEEDBACK_DESIGN_ZH.txt": "df19c3977a4ea536fe6146a28ef7e9366ca0cff17b55eed6ea2b1d15718b4a8e",
+    "ADMISSION_IMPLEMENTATION_PREPARATION_PLAN.json": "fde7b394f2807a6d27efe43f4e7be97448b113ce85bcb8ba74aec92bafbef38b",
+    "FINAL_ADMISSION_SCOPE_AMENDMENT_ZH.txt": "2b49dda07f70260a20b9efbfbba411fad26345c3b769b9536b4199bb566b9bb3"
+  },
+  "admission_freeze_sha256": "69e53adc4a1fd310a4ee1fed96a5197587158e10085c039612d28842ccab3807",
+  "new_material_responses_read": 0,
+  "new_fits_predictions_scores": 0,
+  "new_source_models_imported": 0,
+  "note": "historical design suggestions explicitly superseded by final pre-label root scope; no material conclusions"
+}

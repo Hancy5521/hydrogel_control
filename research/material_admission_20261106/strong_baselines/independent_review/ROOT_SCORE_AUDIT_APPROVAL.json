@@ -1,0 +1,8 @@
+{
+  "approved": true,
+  "scope": "INDEPENDENT_FIXED_BASELINE_SCORES_ONCE",
+  "plan_sha256": "e6266c701333112c04318d08dec681bdd111b5902c922fb0f1e6fb22bd21659a",
+  "script_sha256": "66e2451739eaf9d58dcbace1cdda93b504218bc45098180c1024e00f5f970e4f",
+  "actual_utc": "2026-11-06T02:13:35.769007+00:00",
+  "all1536_frozen_scores": "768normalCDF integral plus768forest independentenergy; no refit/rescore of originalcandidate"
+}

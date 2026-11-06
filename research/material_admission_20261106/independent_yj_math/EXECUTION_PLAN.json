@@ -1,0 +1,147 @@
+{
+  "scope": "INDEPENDENT_YJ_HALF_MATH_ONCE",
+  "registered_actual_utc": "2026-11-05T15:54:46.531934+00:00",
+  "registered_actual_asia_shanghai": "2026-11-05T23:54:46.531934+08:00",
+  "status": "SOURCE_FROZEN_AST_ONLY_AWAITING_ROOT_APPROVAL_NOT_EXECUTED",
+  "script_sha256": "18db027000ccb9ed656bd6a034d8005847c924f5bcd14fb246018b4c5a056119",
+  "prior_math_scope_sha256": "286052951afeef1399c0c1835abf8b1a3f0ed74a6ec3a0fcbdf6c6cad2f5ace9",
+  "source_ledger_sha256": "496135c7ced48ec876649bfc17ed347f229692f4e962b7665b6ec18bc6df82ed",
+  "fixed_configs": [
+    {
+      "s0": 2.5,
+      "a": 0.4,
+      "b": 0.8,
+      "loc": 0.5,
+      "scale": 0.6
+    },
+    {
+      "s0": 0.7,
+      "a": -0.9,
+      "b": 1.3,
+      "loc": -0.5,
+      "scale": 1.1
+    }
+  ],
+  "latent_distributions": [
+    "Normal",
+    "Student_t_df5",
+    "Student_t_df69",
+    "Student_t_df71"
+  ],
+  "native_targets": [
+    -3.2,
+    2.4
+  ],
+  "quantile_probabilities": [
+    1e-06,
+    0.025,
+    0.5,
+    0.975,
+    0.999999
+  ],
+  "families": [
+    {
+      "name": "roundtrip_derivative_and_primary_formula",
+      "roundtrip_coordinates": [
+        -1000000.0,
+        -3.5,
+        -1e-08,
+        -1e-12,
+        0.0,
+        1e-12,
+        1e-08,
+        2.5,
+        1000000.0
+      ],
+      "roundtrip_and_SciPy_definition_abs": 2e-10,
+      "roundtrip_relative": 2e-11,
+      "inverse_derivative_product_abs_rel": 2e-11,
+      "finite_difference_coordinates": [
+        -4.0,
+        -0.1,
+        0.0,
+        0.2,
+        3.0
+      ],
+      "finite_difference_step": "1e-5*(1+abs(coordinate))",
+      "finite_difference_abs_rel": 5e-08
+    },
+    {
+      "name": "CDF_quantiles_intervals_and_density_Jacobian",
+      "quantile_coordinates": 40,
+      "CDF_inverse_abs_rel": 5e-10,
+      "density_normalizations": 8,
+      "density_normalization_abs_rel": 5e-08,
+      "CDF_density_derivative_coordinates": 16,
+      "density_derivative_abs": 2e-08,
+      "density_derivative_relative": 2e-07,
+      "interval_event_checks": 48,
+      "interval_levels": [
+        0.8,
+        0.9,
+        0.95
+      ]
+    },
+    {
+      "name": "native_CRPS_two_coordinate_integrals",
+      "fixed_CRPS_cases": 16,
+      "comparison_absolute": 2e-07,
+      "comparison_relative": 2e-08,
+      "methods": "native-x CDF/SF integral split0,y vs latent-z CDF/SF withhprime split-a/b,z_y; no affineconstant substitution"
+    },
+    {
+      "name": "finite_moments_median_and_atom_preservation",
+      "moment_laws_integrated": 8,
+      "density_integrals": [
+        "native mean",
+        "native absolute first moment",
+        "native second moment"
+      ],
+      "strict_Jensen_mean_median_minimum_gap": 1e-05,
+      "moment_existence_theory_df": [
+        1.0,
+        2.0,
+        4.0,
+        5.0,
+        69.0,
+        71.0
+      ],
+      "moment_existence_rules": "nondegenerate t: firstabsolute df>2,second df>4 by analytic tails, not quadrature",
+      "synthetic_atoms": {
+        "values": [
+          -1.0,
+          0.0,
+          2.0
+        ],
+        "masses": [
+          0.2,
+          0.5,
+          0.3
+        ],
+        "preserved_mass_at_zero": 0.5
+      }
+    }
+  ],
+  "all_numerical_integrals": {
+    "quad_epsabs": 2e-09,
+    "quad_epsrel": 2e-09,
+    "quad_limit": 400,
+    "IntegrationWarning_is_error": true,
+    "reported_quad_errors_are_not_outward_interval_certificates": true
+  },
+  "approval_required_fields": [
+    "approved:true",
+    "scope:INDEPENDENT_YJ_HALF_MATH_ONCE",
+    "plan_sha256",
+    "script_sha256"
+  ],
+  "expected_output": "execution_once/INDEPENDENT_YJ_HALF_MATH_AUDIT.json",
+  "read_and_execution_limits": [
+    "No producer import or calls",
+    "No material payload/gzip/labels/cohort reads",
+    "No random samples or original statisticalfit",
+    "No lambda optimization; explicit.5",
+    "Fail preserved; no outcome-based tolerancetuning or rerun"
+  ],
+  "interpretation": "Fixed mathematical controls, not materials performance/calibration/causal closedloop evidence. Sign and pointmass preserved. Nonlinear inverse latentlocation is median, not rawmean."
+}

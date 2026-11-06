@@ -1,0 +1,78 @@
+{
+  "kind": "FULL_POSTERIOR_PRESERVING_TERMINAL_READOUT_TRANSPORT_IDEA",
+  "status": "PURE_MATH_VALID_UNDER_EXPLICIT_ASSUMPTIONS_NOT_EXECUTION_OR_NOVELTY_CERTIFICATION",
+  "new_model_source_written": false,
+  "numerical_experiments_run": false,
+  "new_material_values_read": false,
+  "current_real_admission_replaced_or_modified": false,
+  "model": {
+    "finite_full_Gaussian_theta_hypotheses": true,
+    "exact_original_weight_and_observation_likelihood_retained": true,
+    "query_given_theta": "N(m_ah,V_ah), full arbitrary native panel conditional on existing observations",
+    "target_given_query_theta": "N(c_ah+b_ah^T z,s_ah^2), s_ah>=0",
+    "prototype_coefficients_fixed_before_future_query_outcome": true,
+    "prototype_std_not_variance_difference": true,
+    "proxy_marginal_theta_independence_required": false,
+    "star_covariance_required": false
+  },
+  "representation": {
+    "weights": "W_g(z)=sum_{h:g(h)=g} exact w_h(z)",
+    "collapsed_posterior_likelihood_allowed": false,
+    "full_theta_or_residual_distribution_compressed": false,
+    "different_scalar_readouts_automatically_define_coherent_joint_generator": false
+  },
+  "proved_ideal_arithmetic_bounds": {
+    "conditional_W1": "W1(F_z,G_z)<=sum_h w_h(z) A(delta_c_h+delta_b_h^T z,delta_s_h^2)",
+    "Bayes_CRPS_entropy_risk_difference": "abs(R(F)-R(G))<=W1(F,G), R(F)=0.5 E_F|Y-Yprime|",
+    "observed_CRPS_difference": "abs(CRPS(F,y)-CRPS(G,y))<=2 W1(F,G)",
+    "tower_identity": "E_z sum_h w_h(z)f_h(z)=sum_h w_h E_{z|h}f_h(z)",
+    "simple_expected_eta": "sum_h w_h [abs(delta_c_h)+sum_j abs(delta_b_hj) E_h abs(z_j)+sqrt(2/pi)abs(delta_s_h)]",
+    "tighter_expected_coupling_eta": "sum_h w_h A(delta_c_h+delta_b_h^T m_ah,delta_b_h^T V_ah delta_b_h+delta_s_h^2)",
+    "tighter_eta_is_exact_coupling_cost_not_exact_optimal_W1": true,
+    "single_action_risk_interval": "Q_a in [Qtilde_a-eta_a,Qtilde_a+eta_a]",
+    "single_decision_approx_argmin_regret": "at most eta_selected+eta_optimal <=2 max eta",
+    "representation_error_does_not_include_integral_error": true
+  },
+  "exact_counterexample_constant_one_is_false": {
+    "F": "delta0",
+    "G": "(3/4)delta0+(1/4)delta1",
+    "observed_y": "1",
+    "W1": "1/4",
+    "CRPS_F": "1",
+    "CRPS_G": "9/16",
+    "absolute_score_difference": "7/16",
+    "difference_divided_W1": "7/4",
+    "arbitrarily_near_sharp_two": "general p gives ratio2-p as p approaches0",
+    "nondegenerate_Gaussian_smoothing_counterexample_also_proved": true
+  },
+  "direct_target_action": {
+    "queried_targets_own_terminal_risk": "exact0, no approximation",
+    "all_other_task_targets_risk_automatically_zero": false,
+    "costs_and_deduplicated_native_cells_still_charged": true
+  },
+  "not_certified": [
+    "full multi-round adaptive planning from one-step average eta",
+    "every rare observation branch or material subgroup",
+    "GH_QMC_MC or finite posterior-bank approximation error",
+    "numerical underflow or outward IEEE interval correctness",
+    "material model correctness or predictive calibration",
+    "top-k discovery hypervolume or arbitrary decision utilities",
+    "a novel algorithm or extra catalytic mechanism",
+    "a speedup or memory advantage against strong exact cached/blocked readout"
+  ],
+  "future_go_conditions": [
+    "current NIW material admission independently completes and supports a useful task",
+    "actual full-posterior material feedback task is legally source-admitted and separately registered",
+    "profiling shows terminal Gaussian-mixture risk readout is material computation cost",
+    "small K with useful expected and branch-specific bounds is feasible without changing likelihoods",
+    "all prototype/bound/cache/aggregation/fallback costs fairly compared with full cached and blocked exact baseline"
+  ],
+  "stop_conditions": [
+    "readout is not the bottleneck or H already small",
+    "K nearly H or expected-bound intervals overlap beyond requested precision",
+    "full posterior or query likelihood would have to be collapsed to get a claimed speedup",
+    "material model admission fails and compression is only used to rescue score",
+    "new claimed evidence depends on hidden target reads, pseudo-label promotion or unfair action costs"
+  ],
+  "one_resume_point": "Await current real admission; retain this math-only idea without execution. Only if a real feedback task and readout bottleneck exist, define one separately frozen representation experiment."
+}

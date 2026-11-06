@@ -1,0 +1,7 @@
+{
+  "actual_freeze_utc": "2026-11-05T16:08:48.044748+00:00",
+  "script_sha256": "da087d238e7b99dd0f4994505cf0b3634f8af5a23526a496af28dcedf43d3742",
+  "plan_sha256": "c754ce74efb446305df298e5d8b65f8517340f7c001edc0977177916d0c37674",
+  "status": "AST_ONLY_NO_SUT_IMPORT_OR_NEWY_READ_NO_AUDIT_EXECUTION",
+  "command": "D:\\Anaconda\\python.exe -B H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_yj_math\\saved_forecast_audit\\audit_phase2_forecasts.py --plan H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_yj_math\\saved_forecast_audit\\EXECUTION_PLAN.json --approval H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_yj_math\\saved_forecast_audit\\ROOT_FORECAST_AUDIT_APPROVAL.json --output-dir H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_yj_math\\saved_forecast_audit\\execution_once"
+}

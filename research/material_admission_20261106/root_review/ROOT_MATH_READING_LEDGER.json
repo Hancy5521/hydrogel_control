@@ -1,0 +1,45 @@
+{
+  "actual_utc": "2026-11-05T15:05:24.281594+00:00",
+  "scope": "Three bounded primary mathematical reference queries; selected methods/formulas only, not full papers read, no downloads redistributed.",
+  "queries": [
+    "Ding 2016 conditional distribution multivariate t distribution arxiv",
+    "scoringRules crps_t Student t beta formula documentation",
+    "Murphy conjugate Bayesian analysis Gaussian distribution normal inverse Wishart 2007"
+  ],
+  "sources": [
+    {
+      "url": "https://www.cs.ubc.ca/~murphyk/Papers/bayesGauss.pdf",
+      "version": "last updated2007-10-03",
+      "read_depth": "introduction conventions; section9 pp19-20 NIW density, posterior update and eq258 predictive; not full29pages",
+      "license": "not established; read by URL, not redistributed",
+      "use": "classic NIW baseline formulas, not originality"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1604.00561",
+      "version": "v1,2016-04-02",
+      "DOI": "10.1080/00031305.2016.1164756",
+      "read_depth": "abstract, multivariate-t parameterization, conditional proof/conclusions selected text; not entire7pages",
+      "license": "arXiv original-paper permission not independently rechecked; no redistribution",
+      "use": "conditionalt df and scale, distinguish scale from covariance"
+    },
+    {
+      "url": "https://stat.ethz.ch/CRAN/web/packages/scoringRules/vignettes/article.pdf",
+      "version": "author article vignette; preface2023-05-23, corresponding JSS2019 article",
+      "read_depth": "proper-scoring definition/finite-first-moment CRPS identity, appendix Student-t closed expression p26 and Gaussian-mixture section selected; not full38pages",
+      "license": "package/article access does not infer new source-copy license; formulas independently implemented with attribution, no paper redistribution",
+      "use": "classical t CRPS score expression, independent CDF-integral crosscheck"
+    }
+  ],
+  "access_failures": [
+    {
+      "url": "https://arxiv.org/html/1604.00561v3",
+      "result": "404; resolved once to primary PDF v1, no v3 claim"
+    },
+    {
+      "url": "https://cbmm.mit.edu/sites/default/files/learning-hub/Murphy07_gaussian.pdf",
+      "result": "web fetch timeout; resolved once to author UBC primary original"
+    }
+  ],
+  "root_new_queries": 3,
+  "new_material_response_access": 0
+}

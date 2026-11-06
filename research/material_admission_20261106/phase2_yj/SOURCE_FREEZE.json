@@ -1,0 +1,49 @@
+{
+  "kind": "PHASE2_YJ_IMPLEMENTATION_SOURCE_FREEZE_AST_ONLY",
+  "actual_utc": "2026-11-05T16:00:49.688455+00:00",
+  "actual_Asia_Shanghai": "2026-11-06T00:00:49.688455+08:00",
+  "source_sha256": {
+    "yj_model.py": "892e90922091b424ab1fd8d94f5901a2a8585861f39e7f3ebe54eca3166e98bc",
+    "run_phase2.py": "3df8cbab90b58b5ad2a56691d34b16bdceb3748d5a033cb5752dd9469c9acf0b",
+    "score_phase2.py": "0160ad1b175ce47295579ad020575b1db63bdd0fce27076c167f81f36217a964"
+  },
+  "source_bytes": {
+    "yj_model.py": 6150,
+    "run_phase2.py": 12363,
+    "score_phase2.py": 15599
+  },
+  "parent_source_sha256_unchanged": {
+    "admission_io.py": "90011d05e1071b02422622249006cf669bd88e2f7792f8da87f87e0589188466",
+    "niw_predictive.py": "a8d74e5398f2bb606efb195d3395324f014ba3f9b4f801a67b022c1cc6687818",
+    "score_admission.py": "ef7e29f8dab89a0a644011b8c188fcbeaa178095bbd823d082be8887e0aaccc0"
+  },
+  "AST_syntax": "PASS",
+  "plan_template_sha256": "d0a6099c081648bdc8bb02e1d3f6c74b9b86a85479d0342ada35aa1bb3bbb964",
+  "README_sha256": "c4395b396d34aa6597e148cdea5e5d824b69594993912db4959ed4fd7e0fe42a",
+  "actual_metadata_role_sha256": "aee4d2aa78f7522eae8aba2b8ac56e186b3c5d81059a6d3a5b44b16d1042350b",
+  "root_prelabel_scope_sha256": "34b487c1946644bd13699309368064f5df38d59477c5f18683b430c5be4ac578",
+  "independent_mathematical_receipts": {
+    "niw_t": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_niw_math\\execution_once\\INDEPENDENT_NIW_T_CRPS_AUDIT.json",
+      "sha256": "8bd92f408575b9e7d033569c2fef9a7e6e3aaa7f3a8a0352df00f0ecff784a9e",
+      "reuse_existing_math_audit_not_reexecute": true
+    },
+    "YJ_native_probability_and_score": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\independent_yj_math\\execution_once\\INDEPENDENT_YJ_HALF_MATH_AUDIT.json",
+      "sha256": "702669f0a1903d6adb1869d7e9a002cfcbe5e8790cf151d53c7a4fa870d113f3",
+      "reuse_existing_math_audit_not_reexecute": true
+    }
+  },
+  "stable_source_bindings_reused_from_selector_count": 16,
+  "producer_imports_or_function_execution": 0,
+  "raw_gzip_open_or_hash_reread_in_preparation": false,
+  "new_material_property_values_read": 0,
+  "phase1_sources_results_gates_modified": false,
+  "exact_root_approval_still_required": true,
+  "api": [
+    "yj_model.transform/inverse/inverse_derivative/log_native_to_standardized_jacobian",
+    "yj_model.fit_reference(values64x3)/predict_law",
+    "run_phase2.validate/verify_freeze and forecast CLI",
+    "score_phase2.native_crps_integral/score_law/admission_gates and score CLI"
+  ]
+}

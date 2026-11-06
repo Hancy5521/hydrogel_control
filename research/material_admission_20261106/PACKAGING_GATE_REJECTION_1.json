@@ -1,0 +1,9 @@
+{
+  "actual_utc": "2026-11-06T02:31:28.617992+00:00",
+  "status": "REJECTED_BEFORE_PACKAGE_WRITE",
+  "action": "first packaging gate invocation",
+  "cause": "root pinned suffix whitelist omitted EVENTS.jsonl from required_stage_file_sha256 although snapshot itself existed and was recorded in run_log_snapshots",
+  "scientific_sources_plans_results_audits_changed": false,
+  "original_bad_gate_preserved_sha256": "522fe6467260a58fbef0ab801229ca7340555f615909480b4203df84a71a5070",
+  "remedy": "separateV2gate pins all4exactlogfiles; no builder/science edits or reruns"
+}

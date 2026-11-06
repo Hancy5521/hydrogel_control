@@ -1,0 +1,16 @@
+{
+  "actual_utc": "2026-11-06T02:33:45.340943+00:00",
+  "parent_commit": "75555e143ddfa5f1ab86dfc8f15b62386a032c1e",
+  "entry": "research/material_admission_20261106/INDEX.html",
+  "local_full_zip": "H:/PolymerReview/Material_Feedback_20261106T020921Z.zip",
+  "local_full_zip_sha256": "4e227e1602146b81528c1eeb06f27141c549103fe59b1112de2a93d5e4527c6f",
+  "scope": "512developmentgroups,128fit+384diagnostic;9cumulativefits,7680forecastcoordinates;samephase2posthocstrongbaselines; noindependentconfirmation",
+  "main_CRPS": 33.209613123447035,
+  "GP_CRPS": 33.272810013915745,
+  "forest_CRPS": 33.81538334800276,
+  "best_analytic_YJ_Gaussian_CRPS": 33.19841276305914,
+  "mixed_gate": "artificial720orders and independent observed-marginal consistency, not newmaterialefficacy",
+  "remote_new_refs_synced": false,
+  "MLST_untouched": true,
+  "next": "resolve2018op_gap producersemantics; partial-observationposterior and actualpaidfeedback increment"
+}

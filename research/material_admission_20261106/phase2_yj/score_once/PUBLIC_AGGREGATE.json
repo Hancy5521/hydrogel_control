@@ -1,0 +1,355 @@
+{
+  "status": "COMPLETE_PHASE2_DEVELOPMENT_MODEL_ADMISSION",
+  "actual_end_utc": "2026-11-05T16:13:13.771548+00:00",
+  "source_sha256": {
+    "yj_model.py": "892e90922091b424ab1fd8d94f5901a2a8585861f39e7f3ebe54eca3166e98bc",
+    "run_phase2.py": "3df8cbab90b58b5ad2a56691d34b16bdceb3748d5a033cb5752dd9469c9acf0b",
+    "score_phase2.py": "0160ad1b175ce47295579ad020575b1db63bdd0fce27076c167f81f36217a964"
+  },
+  "parent_source_sha256": {
+    "admission_io.py": "90011d05e1071b02422622249006cf669bd88e2f7792f8da87f87e0589188466",
+    "niw_predictive.py": "a8d74e5398f2bb606efb195d3395324f014ba3f9b4f801a67b022c1cc6687818",
+    "score_admission.py": "ef7e29f8dab89a0a644011b8c188fcbeaa178095bbd823d082be8887e0aaccc0"
+  },
+  "plan_sha256": "0bc6c752457732cd535608510ae12da01f89fa0eb83f30fa0d67516dccdc8bba",
+  "forecast_freeze_sha256": "dcd88d11401f7f8953e9b921bf3ab2a157740c937084b106e77c61732e806faf",
+  "formula_groups_fit": 64,
+  "summary": {
+    "raw_joint_t": {
+      "none": {
+        "formula_groups": 192,
+        "equal_group_mean_CRPS_native": 36.735491106147855,
+        "RMSE_of_predictive_median_native": 65.90131746435854,
+        "PIT_empirical_CDF_max_deviation": 0.1469802767118668,
+        "coverage": {
+          "0.8": 0.8802083333333334,
+          "0.9": 0.9270833333333334,
+          "0.95": 0.953125
+        },
+        "mean_interval_width_native": {
+          "0.8": 188.6555368075881,
+          "0.9": 243.08189886840773,
+          "0.95": 290.86126879105416
+        }
+      },
+      "e_form": {
+        "formula_groups": 192,
+        "equal_group_mean_CRPS_native": 38.07228364153414,
+        "RMSE_of_predictive_median_native": 67.69603229440331,
+        "PIT_empirical_CDF_max_deviation": 0.09414107219169546,
+        "coverage": {
+          "0.8": 0.875,
+          "0.9": 0.9322916666666666,
+          "0.95": 0.953125
+        },
+        "mean_interval_width_native": {
+          "0.8": 182.37412179004107,
+          "0.9": 234.97509837643005,
+          "0.95": 281.1440313419376
+        }
+      },
+      "gap_opt": {
+        "formula_groups": 192,
+        "equal_group_mean_CRPS_native": 34.73217109377041,
+        "RMSE_of_predictive_median_native": 62.27387697153216,
+        "PIT_empirical_CDF_max_deviation": 0.11881126707811306,
+        "coverage": {
+          "0.8": 0.9010416666666666,
+          "0.9": 0.9375,
+          "0.95": 0.9583333333333334
+        },
+        "mean_interval_width_native": {
+          "0.8": 177.9286676322392,
+          "0.9": 229.24747091588515,
+          "0.95": 274.2910146375773
+        }
+      },
+      "both": {
+        "formula_groups": 192,
+        "equal_group_mean_CRPS_native": 35.47352671471148,
+        "RMSE_of_predictive_median_native": 63.4589484389201,
+        "PIT_empirical_CDF_max_deviation": 0.11441219918794922,
+        "coverage": {
+          "0.8": 0.8958333333333334,
+          "0.9": 0.9375,
+          "0.95": 0.9583333333333334
+        },
+        "mean_interval_width_native": {
+          "0.8": 177.43358259608462,
+          "0.9": 228.59709438466595,
+          "0.95": 273.4967920935648
+        }
+      }
+    },
+    "raw_momentmatched_Gaussian": {
+      "none": {
+        "formula_groups": 192,
+        "equal_group_mean_CRPS_native": 36.7558595943306,
+        "RMSE_of_predictive_median_native": 65.90131746435854,
+        "PIT_empirical_CDF_max_deviation": 0.14889831197796516,
+        "coverage": {
+          "0.8": 0.8802083333333334,
+          "0.9": 0.9270833333333334,
+          "0.95": 0.953125
+        },
+        "mean_interval_width_native": {
+          "0.8": 189.617364751513,
+          "0.9": 243.37125288592372,
+          "0.95": 289.99473431131815
+        }
+      },
+      "e_form": {
+        "formula_groups": 192,
+        "equal_group_mean_CRPS_native": 38.10726587327303,
+        "RMSE_of_predictive_median_native": 67.69603229440331,
+        "PIT_empirical_CDF_max_deviation": 0.09603393337373786,
+        "coverage": {
+          "0.8": 0.875,
+          "0.9": 0.9322916666666666,
+          "0.95": 0.953125
+        },
+        "mean_interval_width_native": {
+          "0.8": 183.38207655305646,
+          "0.9": 235.36834712382867,
+          "0.95": 280.4586839246066
+        }
+      },
+      "gap_opt": {
+        "formula_groups": 192,
+        "equal_group_mean_CRPS_native": 34.74465557658606,
+        "RMSE_of_predictive_median_native": 62.27387697153216,
+        "PIT_empirical_CDF_max_deviation": 0.12120459684339803,
+        "coverage": {
+          "0.8": 0.9010416666666666,
+          "0.9": 0.9375,
+          "0.95": 0.9583333333333334
+        },
+        "mean_interval_width_native": {
+          "0.8": 179.05267334349924,
+          "0.9": 229.81161826231823,
+          "0.95": 273.83743309598447
+        }
+      },
+      "both": {
+        "formula_groups": 192,
+        "equal_group_mean_CRPS_native": 35.48336541970608,
+        "RMSE_of_predictive_median_native": 63.4589484389201,
+        "PIT_empirical_CDF_max_deviation": 0.11830387239745906,
+        "coverage": {
+          "0.8": 0.8958333333333334,
+          "0.9": 0.9479166666666666,
+          "0.95": 0.9583333333333334
+        },
+        "mean_interval_width_native": {
+          "0.8": 178.549026062732,
+          "0.9": 229.16519397573697,
+          "0.95": 273.06717104976235
+        }
+      }
+    },
+    "yj_joint_t": {
+      "none": {
+        "formula_groups": 192,
+        "equal_group_mean_CRPS_native": 36.303513892173335,
+        "RMSE_of_predictive_median_native": 67.19415332159,
+        "PIT_empirical_CDF_max_deviation": 0.10883891901785939,
+        "coverage": {
+          "0.8": 0.859375,
+          "0.9": 0.9270833333333334,
+          "0.95": 0.953125
+        },
+        "mean_interval_width_native": {
+          "0.8": 163.56517339194622,
+          "0.9": 210.77072581484205,
+          "0.95": 252.47197318137628
+        }
+      },
+      "e_form": {
+        "formula_groups": 192,
+        "equal_group_mean_CRPS_native": 37.02729910261608,
+        "RMSE_of_predictive_median_native": 67.70790713287052,
+        "PIT_empirical_CDF_max_deviation": 0.08319523857424425,
+        "coverage": {
+          "0.8": 0.8489583333333334,
+          "0.9": 0.921875,
+          "0.95": 0.9583333333333334
+        },
+        "mean_interval_width_native": {
+          "0.8": 161.06318469843484,
+          "0.9": 207.58005034216407,
+          "0.95": 248.6231646940887
+        }
+      },
+      "gap_opt": {
+        "formula_groups": 192,
+        "equal_group_mean_CRPS_native": 33.74218405099772,
+        "RMSE_of_predictive_median_native": 62.330000503423804,
+        "PIT_empirical_CDF_max_deviation": 0.08425600603741949,
+        "coverage": {
+          "0.8": 0.859375,
+          "0.9": 0.9322916666666666,
+          "0.95": 0.953125
+        },
+        "mean_interval_width_native": {
+          "0.8": 153.68788510495082,
+          "0.9": 198.11209197642026,
+          "0.95": 237.24640744986672
+        }
+      },
+      "both": {
+        "formula_groups": 192,
+        "equal_group_mean_CRPS_native": 33.209613123447035,
+        "RMSE_of_predictive_median_native": 61.60290224025959,
+        "PIT_empirical_CDF_max_deviation": 0.08416476171557899,
+        "coverage": {
+          "0.8": 0.8645833333333334,
+          "0.9": 0.9322916666666666,
+          "0.95": 0.9583333333333334
+        },
+        "mean_interval_width_native": {
+          "0.8": 153.57738725762445,
+          "0.9": 197.9604878018221,
+          "0.95": 237.05436641875045
+        }
+      }
+    },
+    "yj_latent_momentmatched_Gaussian": {
+      "none": {
+        "formula_groups": 192,
+        "equal_group_mean_CRPS_native": 36.3023508597214,
+        "RMSE_of_predictive_median_native": 67.19415332159,
+        "PIT_empirical_CDF_max_deviation": 0.11048147103454392,
+        "coverage": {
+          "0.8": 0.859375,
+          "0.9": 0.9270833333333334,
+          "0.95": 0.953125
+        },
+        "mean_interval_width_native": {
+          "0.8": 164.39908241627447,
+          "0.9": 211.02212288950525,
+          "0.95": 251.7114409837359
+        }
+      },
+      "e_form": {
+        "formula_groups": 192,
+        "equal_group_mean_CRPS_native": 37.04957422309115,
+        "RMSE_of_predictive_median_native": 67.70790713287052,
+        "PIT_empirical_CDF_max_deviation": 0.08534690478240033,
+        "coverage": {
+          "0.8": 0.84375,
+          "0.9": 0.9270833333333334,
+          "0.95": 0.9583333333333334
+        },
+        "mean_interval_width_native": {
+          "0.8": 161.9345341507333,
+          "0.9": 207.89478698915227,
+          "0.95": 247.96291742034853
+        }
+      },
+      "gap_opt": {
+        "formula_groups": 192,
+        "equal_group_mean_CRPS_native": 33.74135764742525,
+        "RMSE_of_predictive_median_native": 62.330000503423804,
+        "PIT_empirical_CDF_max_deviation": 0.08640995534704272,
+        "coverage": {
+          "0.8": 0.859375,
+          "0.9": 0.9322916666666666,
+          "0.95": 0.953125
+        },
+        "mean_interval_width_native": {
+          "0.8": 154.66659094519613,
+          "0.9": 198.6029549292889,
+          "0.95": 236.84588407250877
+        }
+      },
+      "both": {
+        "formula_groups": 192,
+        "equal_group_mean_CRPS_native": 33.19841276305914,
+        "RMSE_of_predictive_median_native": 61.60290224025959,
+        "PIT_empirical_CDF_max_deviation": 0.0873406436136508,
+        "coverage": {
+          "0.8": 0.8697916666666666,
+          "0.9": 0.9322916666666666,
+          "0.95": 0.9583333333333334
+        },
+        "mean_interval_width_native": {
+          "0.8": 154.43597770882988,
+          "0.9": 198.30465253147267,
+          "0.95": 236.4890711416446
+        }
+      }
+    },
+    "yj_target_marginal": {
+      "none": {
+        "formula_groups": 192,
+        "equal_group_mean_CRPS_native": 36.303513892173335,
+        "RMSE_of_predictive_median_native": 67.19415332159,
+        "PIT_empirical_CDF_max_deviation": 0.10883891901785939,
+        "coverage": {
+          "0.8": 0.859375,
+          "0.9": 0.9270833333333334,
+          "0.95": 0.953125
+        },
+        "mean_interval_width_native": {
+          "0.8": 163.56517339194622,
+          "0.9": 210.77072581484205,
+          "0.95": 252.47197318137628
+        }
+      },
+      "e_form": {
+        "formula_groups": 192,
+        "equal_group_mean_CRPS_native": 36.303513892173335,
+        "RMSE_of_predictive_median_native": 67.19415332159,
+        "PIT_empirical_CDF_max_deviation": 0.10883891901785939,
+        "coverage": {
+          "0.8": 0.859375,
+          "0.9": 0.9270833333333334,
+          "0.95": 0.953125
+        },
+        "mean_interval_width_native": {
+          "0.8": 163.56517339194622,
+          "0.9": 210.77072581484205,
+          "0.95": 252.47197318137628
+        }
+      },
+      "gap_opt": {
+        "formula_groups": 192,
+        "equal_group_mean_CRPS_native": 36.303513892173335,
+        "RMSE_of_predictive_median_native": 67.19415332159,
+        "PIT_empirical_CDF_max_deviation": 0.10883891901785939,
+        "coverage": {
+          "0.8": 0.859375,
+          "0.9": 0.9270833333333334,
+          "0.95": 0.953125
+        },
+        "mean_interval_width_native": {
+          "0.8": 163.56517339194622,
+          "0.9": 210.77072581484205,
+          "0.95": 252.47197318137628
+        }
+      },
+      "both": {
+        "formula_groups": 192,
+        "equal_group_mean_CRPS_native": 36.303513892173335,
+        "RMSE_of_predictive_median_native": 67.19415332159,
+        "PIT_empirical_CDF_max_deviation": 0.10883891901785939,
+        "coverage": {
+          "0.8": 0.859375,
+          "0.9": 0.9270833333333334,
+          "0.95": 0.953125
+        },
+        "mean_interval_width_native": {
+          "0.8": 163.56517339194622,
+          "0.9": 210.77072581484205,
+          "0.95": 252.47197318137628
+        }
+      }
+    }
+  },
+  "public_export": {
+    "source_file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\phase2_yj\\score_once\\RESULTS.json",
+    "source_sha256": "4bf07550b9b4840967b6cca13d4a81c190616e7a4bdb47813126793bde2b5711",
+    "excluded": "per-forecast scores, native truth and response-bearing fit/predictive states",
+    "not_original_receipt": true
+  }
+}

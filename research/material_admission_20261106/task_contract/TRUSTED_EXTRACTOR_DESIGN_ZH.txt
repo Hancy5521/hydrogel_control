@@ -1,0 +1,14 @@
+可信提取器设计：尚未实现／执行，不是性质读取许可
+
+输入须绑定获准selector源码/实际计划、ADMISSION_ROLE_SELECTION.json及固定原始gzip的SHA。当前selector只列eligible siblings；整个component已预留开发，未列出的ineligible siblings不能未来独立使用。
+
+必须坦诚区分三个边界：
+1. 物理解析：原processed gzip是columns/index/data容器。普通JSON解压解析会物理经过整个25923行文件，包含本轮不用的性质。不能说“物理只读warm”或“只解析256行”。
+2. 可信提取进程：核原始gzip SHA及版本，按原始row/JID/MPID/规范formula检查256代表行。可用身份/成分字段重建全源连通图，核对原component与补记选组完整siblings身份；不得依性质更换代表行或重选组。其他行的数值只由解析器暂存后丢弃，不计算min/max、均值、分布、有限率、负值率等新数值汇总，不保存到输出。
+3. producer可见载荷：fit64只提供3原生列e_form/gap opt/bulk modulus，共192cell；diagnostic192只提供2proxy列e_form/gap opt，共384cell。diagnostic的192个bulk目标仅写入独立评估角色的sealed真值载荷，producer输入、日志和调参路径都不得包含它。封存是受审角色隔离与hash绑定，未实施前不冒称密码或系统ACL保护。
+
+未来提取时先验证全部ID/预定代表与字段映射，任何不符就停止；不能改用同组另一行救数据。只检查获准输出的字段/评估真值是否符合原准入预期。输出应分别有fit载荷、diag-proxy载荷、diag-target sealed载荷和身份/源码/输入hash收据；绝不输出剩余8546组的任何性质，也不汇总它们。全源siblings身份清单可以补证，但不改变本次整组开发预留决定。
+
+本轮统计准入对象为完整NIW的三变量预测，而非旧star候选。诊断四种proxy mask应只从已批准的2proxy载荷遮挡，不再次打开全源。诊断目标仅在预测冻结后由独立评分器揭示；全部256组均为开发，后续不能把同组/siblings称新确认。
+
+实际执行前还必须由root登记真实UTC、提取器源码/角色表/原始文件SHA、哪些进程能读哪些载荷和评分冻结顺序，并独立批准。当前仅完成元数据选择器准备，未打开gzip、未选新组、未产生上述数值载荷。

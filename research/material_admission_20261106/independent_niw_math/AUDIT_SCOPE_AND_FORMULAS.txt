@@ -1,0 +1,50 @@
+Independent mathematics only. Source is not imported/executed before SHA-bound root approval.
+
+Parameter convention: Sigma~IW_p(nu,Psi), density proportional to
+|Sigma|^(-(nu+p+1)/2) exp[-tr(Psi Sigma^-1)/2], and
+mu|Sigma~Normal(mu0,Sigma/kappa).
+
+Batch complete-row sufficient statistics:
+kappa_n=kappa_0+n; nu_n=nu_0+n;
+mu_n=(kappa_0 mu_0+n xbar)/kappa_n;
+Psi_n=Psi_0+sum_i (x_i-xbar)(x_i-xbar)^T
+        +(kappa_0 n/kappa_n)(xbar-mu_0)(xbar-mu_0)^T.
+Predictive: t_df(mu_n,S), df=nu_n-p+1,
+S=(kappa_n+1)Psi_n/(kappa_n df).
+S is a shape matrix, not covariance. Covariance=df S/(df-2) only when df>2.
+For p3,kappa1,nu7,Psi3I: E[Sigma]=I, predictive df5,shape1.2I,covariance2I.
+
+Partition with k observed proxies o and one target t:
+delta=(x_o-mu_o)^T S_oo^-1 (x_o-mu_o),
+mu_c=mu_t+S_to S_oo^-1(x_o-mu_o),
+df_c=df+k,
+S_c=(df+delta)/(df+k)*(S_tt-S_to S_oo^-1 S_ot).
+Independent check uses scipy multivariate_t JOINT DENSITY / proxy MARGINAL DENSITY,
+not a second copy of the conditional formula. Includes target permutations and
+native-unit positive diagonal affine transforms. No multivariate-CDF randomness.
+Zero linear correlation does not imply t independence, because t components
+share a random radial scale; this is explicitly checked.
+
+CRPS check1: integral_{-infinity}^y F(x)^2 dx + integral_y^infinity SF(x)^2 dx.
+CRPS check2: integral |x-y| f(x)dx - 0.5 integral A(x)f(x)dx,
+where A(x)=E|T-x|=x(2T_df(x)-1)+2 f_df(x)(df+x^2)/(df-1)
+for standardized Student-t; the second term uses density quadrature and symmetry.
+These are compared to the classical beta-function closed formula, not advertised
+as a new formula. df1.5 tests finite CRPS despite infinite variance. df<=1 rejected.
+The integrals are numerical crosschecks with declared tolerances, not outward
+rounded rigorous interval arithmetic.
+
+Source references supplied/read at differing depths:
+Parent reported selected methods in Murphy2007 bayesGauss.pdf section9,
+Ding2016 arXiv1604.00561 and scoringRules author article p26. Those were not
+independently reread here and are not extra full-paper reading claims.
+Child independently opened official SciPy t and multivariate_t docs on
+2026-11-05T15:07:11Z. Docs page is onlinev1.18.0; execution records actual
+installed version separately; only longstanding pdf/logpdf/cdf/sf APIs used.
+https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.t.html
+https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.multivariate_t.html
+
+No producer source, material file, labels, random sample, fit, oracle query,
+scientific benchmark repeat or network is accessed by this audit script.
+PASS establishes these finite mathematical checks only; it does not establish
+producer correctness or any material prediction gain.

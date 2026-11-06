@@ -1,0 +1,32 @@
+{
+  "actual_review_utc": "2026-11-05T15:44:53.318290+00:00",
+  "status": "PASS_READ_ONLY_NO_RERUN",
+  "forecast_result_sha256": "f07eb5979d5e8ceb0cf7400d99bed3b3742d10744bc7c966e4b4d772ac18cbd6",
+  "score_result_sha256": "3636bbc7790a84bca6ba49e23b3389b536184fa3c96b202fb02aee2a2458d506",
+  "audit_source_and_plan_unchanged": true,
+  "coverage": {
+    "forecast_laws": 2304,
+    "native_closed_scores": 2304,
+    "PIT_scores": 2304,
+    "coverage_booleans": 6912,
+    "model_mask_summaries": 12,
+    "paired_gain_coordinates": 768,
+    "native_CDF_quad_spots": 24,
+    "CDF_quad_unique_formula_groups": 2
+  },
+  "max_forecast_native_location_error": 5.684341886080802e-14,
+  "max_forecast_native_scale_error": 1.4210854715202004e-14,
+  "max_native_CRPS_error": 2.0463630789890885e-12,
+  "max_CDF_spot_error": 1.9539925233402755e-12,
+  "admission_criteria_preserved": {
+    "at_least_2percent_CRPS_gain_vs_own_no_proxy": true,
+    "within_2percent_conditional_Gaussian_CRPS": true,
+    "dual_90_coverage_at_least_0p80": true,
+    "dual_PIT_ECDF_max_deviation_at_most_0p15": false
+  },
+  "admission_decision_preserved": "NO_GO_STOP_FULL_CAMPAIGN_NO_RETUNE",
+  "interpretation": "AuditPASS establishes saved arithmetic/coverage/bindings, not modeladmissionPASS. Original fourgate NO_GO remains. Rootreported3.898percent conditionalCRPSgain, near-Gaussianparity and90coverage92.7percent are compatible with a PIT gate failure; no thresholdchange or rescore performed.",
+  "reads": "Only own saved audit results, own source and plan hashes; no gzip/DIAGNOSTIC_TRUTH/material response payload opened by this postreview.",
+  "source_numerical_reruns": 0,
+  "new_material_validation": false
+}

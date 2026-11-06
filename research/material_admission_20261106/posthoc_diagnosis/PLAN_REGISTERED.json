@@ -1,0 +1,54 @@
+{
+  "kind": "FROZEN_PHASE1_POSTHOC_FAILURE_DIAGNOSIS",
+  "status": "REGISTERED",
+  "registered_actual_utc": "2026-11-05T15:45:42.088686+00:00",
+  "template_actual_created_utc": "2026-11-05T15:44:37.447999+00:00",
+  "source_sha256": "ae77ae16229e4978666c8d57b5c85874eef2d09224aa33cd8a14fe51f07d6773",
+  "inputs": {
+    "VISIBLE_INPUTS": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\admission\\forecast_once\\VISIBLE_INPUTS.json",
+      "sha256": "1aeb1d361b4b3f74b6e829c15f046854bce5a14360add3dac93f0e09b5b54477"
+    },
+    "MODEL": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\admission\\forecast_once\\MODEL.json",
+      "sha256": "abc7b42ffa033133e8dd8a05d50a759e670e72fa24d07175c91cc099b44952b2"
+    },
+    "FORECASTS": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\admission\\forecast_once\\FORECASTS.json",
+      "sha256": "cadadee59b12a07f19d0d8a1fe354b556752aaf2f2efd4e91a287a3b04251019"
+    },
+    "DIAGNOSTIC_TRUTH": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\admission\\score_once\\DIAGNOSTIC_TRUTH.json",
+      "sha256": "0d43c1dbeb6a075c67075784a81f143927465576cdea780a098a1481f7e8772c"
+    },
+    "RESULTS": {
+      "file": "H:\\polymer_completion_public\\research\\material_feedback_20261105T145420019666Z\\admission\\score_once\\RESULTS.json",
+      "sha256": "bd290374748c7b22735a87955e9edd4cdb3112db8706a88bfaaec3d75e3e6ef9"
+    }
+  },
+  "preserved_admission_status": "NO_GO_STOP_FULL_CAMPAIGN_NO_RETUNE",
+  "fixed_scope": [
+    "All4masks x3reference mean savednativeCRPS,RMSE,80/90/95coverage/width,fullPITshape; no CDF/scorelaw recomputation.",
+    "Fit64 vsdiagnostic192 nativebulk mean,median,sampleSD(n-1),population-moment skewness m3/m2^1.5,negative/zero counts,min/max; retain extremes.",
+    "PIT10bins[j/10,(j+1)/10),lastincludes1;mean,median,0/1counts;D+ i/n-u,D- u-(i-1)/n; report allmaxlocations within1e-15onlyfortiedlocations,not changeD.",
+    "Everyreference/mask pairedCRPSgain vsown no-proxy,positive/negative/exact0counts;NIW-vs-Gaussianpaired descriptions.",
+    "Predefinedrawgapopt==0,>0,<0 groups in fit anddiagnostic; includeemptygroups and all12reference/mask metrics ineach. NoYthresholding/subsetmodel/refit.",
+    "All192group conditionalgains exported; everydiagnostic stilldevelopment. Originalthresholds/sources/forecasts remainunchanged."
+  ],
+  "prohibitions": [
+    "No gzip or unseenrows/groups",
+    "No SUT/model imports or numerical fit",
+    "No CDF/CRPS probability-law recomputation or calibration adjustment",
+    "No prior/threshold/transform/seed/representative changes",
+    "No claiming subgroupdescriptions as independentvalidation or a fixednewmodel"
+  ],
+  "approval_fields": [
+    "approved",
+    "plan_sha256",
+    "source_sha256",
+    "scope"
+  ],
+  "required_scope": "FROZEN_PHASE1_POSTHOC_DIAGNOSIS_ONLY",
+  "failed_execution": "PreserveFAILED_STOPandpartialoutputs; reportroot before anyfix/retry.",
+  "actual_execution_state": "NOT_EXECUTED"
+}

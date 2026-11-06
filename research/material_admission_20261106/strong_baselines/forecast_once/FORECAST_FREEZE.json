@@ -1,0 +1,26 @@
+{
+  "status": "COMPLETE_ALL1536_BASELINE_LAWS_FROZEN",
+  "actual_utc": "2026-11-05T16:51:43.229013+00:00",
+  "source_sha256": {
+    "baseline_models.py": "a602b50663b64490af26a11a65b5effb7753e61aa6e9b8f71c8221a78898cfd5",
+    "run_baselines.py": "15a545172bedbf7af04d8fca5a7608f954be89e89d169087ea88aa3ed748c6c5",
+    "score_baselines.py": "0199da5a70f4290df4ae685879961ab92003e1f8fe7123f55f2b4b0220b463d2"
+  },
+  "parent_source_sha256": {
+    "admission_io.py": "90011d05e1071b02422622249006cf669bd88e2f7792f8da87f87e0589188466",
+    "niw_predictive.py": "a8d74e5398f2bb606efb195d3395324f014ba3f9b4f801a67b022c1cc6687818",
+    "score_admission.py": "ef7e29f8dab89a0a644011b8c188fcbeaa178095bbd823d082be8887e0aaccc0"
+  },
+  "plan_sha256": "0543eae0e4ac5f1f89fc3a36256770cb2b160f51bb3b2ff657a8b2cdbb46b754",
+  "files": {
+    "EXECUTION_START.json": "ee10e52022516131641d1aa22816e994ad6c2c4618e2716de586c58f27ef486c",
+    "INPUT_SCOPE_RECEIPT.json": "d63ab08771e38d8a3554f0de6598c0248d99d51094dbb1f9ece4702c1a966b7f",
+    "LIBRARY_VERSIONS.json": "63d17105e46a5f32fb40be96cd8d60512f20361b98d027b376a31c5871a5e95f",
+    "MODEL_STATES.json": "42d716066b24069c636ec28273b8767d40c8924b6e500824f27461d9e039acd3",
+    "FORECASTS.json": "e202fd4935e04e461b3c8028e281d3275c7bafae97e3ad57c76c455b84aefabc"
+  },
+  "forecast_count": 1536,
+  "actual_fits": 6,
+  "none_fits": 0,
+  "no_main_model_refit_or_score_or_new_material_sample": true
+}

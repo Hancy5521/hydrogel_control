@@ -1,0 +1,158 @@
+新增强基线：算法、代码与评审说明
+================================
+
+本说明对应 strong_baselines/code/ 的三个冻结模块。它不修改主模型、原四项准入门或先前水凝胶/MLST成果，不授权重新拟合。实际执行、源码hash、输出与独立检查以原始JSON收据为准。
+
+一、为什么追加这两个参考
+-----------------------
+仅在NIW–t与几种Gaussian解析分布之间比较，不能建立“达到较强非线性学习参考”的证据。本次加入Gaussian process回归和森林条件经验分布。它们都只使用相同64个训练formula代表行和相同192个开发组的可见e_form/gap_opt，不利用配方或晶体结构描述符。
+
+这两项的配方在新增基线输出前固定，但追加发生在主候选结果已知之后；这叫事后加强开发参考，不叫独立确认。新增原生标签与材料组为0。原候选与原生评分未重算，只有新基线6次拟合、1536条新law的评分。
+
+四种可见掩码为none、仅e_form、仅gap_opt、both。两个方法分别对三个非空掩码拟合，因此总共2×3=6次；none使用固定训练目标边际，无拟合。每种方法/掩码均保留192组，不能挑个别材料或只保留好掩码。
+
+二、输入与标准化
+---------------
+输入来自阶段2已经冻结的VISIBLE_INPUTS.json，而不是重新打开原gzip挑资料。fit为64×3；diagnostic只包含192×2代理性质。每行还绑定原身份与整组角色。训练目标为源bulk原生数值，训练过程无诊断目标。
+
+仅用fit64计算代理特征均值m_j和样本标准差s_j（ddof=1）：
+    z_ij=(x_ij−m_j)/s_j。
+GP使用float64标准化特征。森林明确将标准化后的输入转为float32后fit/apply，并保存其确切float32数值。独立树遍历必须使用同一输入精度，否则边界样本可能走到不同叶子。
+
+特征或训练目标出现非有限、形状不符、样本SD不为正即拒绝，不自动补值、裁剪、删除材料或把“常数”悄悄替换成小方差。诊断目标不能参与标准化或模型配方选择。
+
+三、GP：定义的是原生目标预测分布
+-----------------------------
+基础核为：
+    k_signal(z,z′)=C exp[−0.5 Σ_j ((z_j−z′_j)/l_j)^2]。
+训练协方差为：
+    K=k_signal(X,X)+(noise+alpha) I。
+固定alpha=1e−8，只作用训练对角线；WhiteKernel的noise为拟合参数。
+
+实际scikit-learn配置：
+    GaussianProcessRegressor(normalize_y=True, alpha=1e−8,
+      optimizer='fmin_l_bfgs_b', n_restarts_optimizer=0,
+      random_state=20261106)
+    ConstantKernel(1,[0.01,100])
+      * RBF(ones(k),[0.01,100])
+      + WhiteKernel(0.01,[1e−6,10])。
+
+normalize_y使用训练目标均值与总体SD（ddof=0），不是前述代理特征样本SD；两者不可混写。GP拟合的是原生bulk目标，不是YJ目标。条件预测在标准化目标尺度为：
+    μ*=k_*^T K^−1 y_norm
+    σ*²=C+noise−||L^−1 k_*||²，K=LLᵀ。
+恢复原单位：
+    location=y_mean+y_SD_population μ*
+    scale=y_SD_population sqrt(σ*²)。
+
+测试对角线包含WhiteKernel的noise，训练nugget alpha不额外加入测试方差；WhiteKernel跨训练/测试输入的交叉协方差为0。忽略这个区别会错误得到窄区间或在独立重建时使用不同分布。
+
+每个非空掩码保存学习后的kernel字符串、C/长度尺度/noise、log参数与bounds、dual系数alpha_、Cholesky L_、标准化X/y、目标均值与总体SD、边际似然及全部fit/predict warnings。优化碰到边界或发警告不会被隐藏或触发新seed重试。保存状态不是第二次拟合。
+
+none掩码直接使用N(mean(yfit), sampleSD(yfit)^2)，即训练目标均值与样本SD构造的固定Gaussian边际，不调用GP fit。这样none不与非空掩码的normalize_y内部总体SD混淆。
+
+四、森林：从叶成员构造确切概率质量
+-------------------------------
+训练使用：
+    RandomForestRegressor(n_estimators=256,min_samples_leaf=3,
+      max_features=1,bootstrap=True,criterion='squared_error',
+      random_state=20261106,n_jobs=2,max_depth=None)。
+
+max_features是整数1：每个节点抽一个候选特征。它不是float1.0，后者表示全部特征比例。该选择是事先冻结配方，不声称森林已超参优化到该数据集的最优。
+
+令l_t(z)为查询在树t的叶ID；把所有原始64条训练行重新送入树，得l_t(z_j)。查询叶内原始成员数n_t(z)为：
+    n_t(z)=Σ_{j=1}^{64} 1[l_t(z_j)=l_t(z)]。
+目标y_j的质量为：
+    w_j(z)=(1/256) Σ_{t=1}^{256}
+                     1[l_t(z_j)=l_t(z)]/n_t(z)。
+条件分布为：
+    F_z(y)=Σ_j w_j(z) 1[y_j≤y]。
+
+这里CDF成员使用所有原始训练行，包括对该树的OOB行，不按bootstrap重复次数再加权；树本身仍由bootstrap训练。这是明确的QRF启发的all-original-leaf变体，不是声称运行官方Quantile Regression Forests包。它作为可复核的分布性森林参考使用。
+
+每个分支质量用Fraction(1,256*n_leaf)累加，64个位置质量和必须严格等于1；零质量允许。训练目标重复值保留原位置，在CDF意义上自然合并质量，不能误当成额外独立测量。
+
+none为64个训练目标各1/64的原生经验边际。每条law保存原始64个支持位置、Fraction字符串质量及浮点展示值；这不是从生成模型抽64次样本，所以没有MC随机误差，也不增加原始材料数。
+
+五、为什么保存整棵树
+-----------------
+每棵树保存children_left/right、feature、threshold、n_node_samples、weighted_n_node_samples、training_tree_value、所有原始训练行与诊断行的叶ID；另存精确float32输入。
+
+独立脚本不重新调用rf.fit或rf.apply，而是用标准库遍历：
+    if x[feature] <= threshold: go left
+    else: go right。
+最终叶ID逐项匹配，再独立重建Fraction质量。3个非空掩码×256棵树×(64训练+192诊断)=196608条路径全部核对。learned576条law有36864个原位置质量，none192条有12288个质量；均可exact核查。
+
+模型状态含训练原生目标和特征。它属于本地完整资源包，公开导出应按用户既有数据政策单独处理；不能误把状态文件当成无数据的纯源码。
+
+六、原单位评分与离散PIT
+---------------------
+Gaussian使用原生正向CRPS：
+    CRPS=σ[z(2Φ(z)−1)+2φ(z)−1/sqrt(pi)]，z=(y−μ)/σ。
+其CDF积分核查走另一条路径：
+    ∫_{−∞}^y F(x)^2 dx + ∫_y^{∞}(1−F(x))² dx。
+
+森林主评分按确切step-CDF区间积分，独立核查使用有限支持能量式：
+    CRPS=Σ_j w_j|y_j−y|
+          −0.5 Σ_j Σ_k w_j w_k |y_j−y_k|。
+两者均是该经验概率分布的原生CRPS，不是把森林均值当Gaussian评分，也不是抽样近似。
+
+中心区间用q(p)=inf{x:F(x)≥p}；支持点质量可以产生零宽区间。预测中位数同样用q(0.5)，RMSE对应中位数而非森林均值。
+
+森林PIT同时记录：
+    PIT_left = F(y−)
+    PIT_right= F(y)
+    PIT_mid  = (PIT_left+PIT_right)/2。
+midpoint一般不服从连续Uniform(0,1)，因此不对森林套用NIW/GP的连续PIT ECDF D准入门。若当前材料目标没有正好落在训练支持点上，left/right可能相等，但不改变分布本身为离散这一事实。
+
+七、源码职责与调用顺序
+---------------------
+baseline_models.py：只管理固定配置、fit-only输入变换、GP与森林拟合、精确叶权重和导出law/状态。导入模块不会自动导入sklearn并训练；sklearn导入在明确fit函数里。
+
+run_baselines.py：核source/parent源码hash、固定recipe、角色、冻结VISIBLE、独立评分数学PASS和root精确批准；完整冻结1536law及五个文件后才返回成功。forecast不打开或hash diagnostic_truth和candidate_results；它们作为仅score字段在计划中保留。
+
+score_baselines.py：首先核完整forecast freeze与所有组/方法/掩码键；此后才核并读取既有冻结192目标、按新law计算原生评分。候选只读取已经存在的摘要，没有重新拟合或重新评分。结果保留每个掩码和每组原始评分。
+
+两份实际root审批分开给forecast和score_after_freeze；所有计划/来源/审批hash必须精确一致。重放必须使用新目录并显式授权，不覆盖原输出，也不借重放产生独立确认次数。
+
+三模块冻结hash：
+    baseline_models.py
+      a602b50663b64490af26a11a65b5effb7753e61aa6e9b8f71c8221a78898cfd5
+    run_baselines.py
+      15a545172bedbf7af04d8fca5a7608f954be89e89d169087ea88aa3ed748c6c5
+    score_baselines.py
+      0199da5a70f4290df4ae685879961ab92003e1f8fe7123f55f2b4b0220b463d2
+
+八、独立核查与它不保证的事
+-----------------------
+离散/高斯评分数学先在明确的精确概率质量、点质量、重复值、零质量及Gaussian案例上交叉核验。随后对实际保存state独立检查1536law，既不运行优化器也不重新训练森林。
+
+GP预先锁定Kα与LLᵀ的∞范数相对backward residual≤1e−11，并保留绝对残差与保守条件上界。重建原生mean/std容差是abs2e−6+rel2e−8，早于实际state固定。小backward residual不等于病态系统的forward解具有同等可靠度；未因结果事后放宽标准。
+
+独立score审计涵盖768个Gaussian native CDF积分、768个森林能量评分、4608个区间覆盖事件、8组方法/掩码摘要与候选相对值。数值正确不等于模型真实校准；审计不用新增材料标签，也不能用它的运行时间与主程序声称公平算法加速。
+
+九、本次实际结果怎样读
+-------------------
+当前双锚点摘要：
+    固定YJ–NIW–t                 33.209613123447035
+    YJ潜尺度同矩Gaussian          33.19841276305914
+    固定GP                       33.272810013915745
+    森林全原始叶CDF               33.81538334800276
+
+相对最强新增非线性参考GP，候选CRPS比值为0.9981006446271812，即仅约0.19%更低；不叫大幅领先或统计显著。对照使用同信息同开发组，支持“在这一严格性质条件任务上达到这两种固定非线性参考开发水平”。它不能证明所有材料模型SOTA或水凝胶泛化。
+
+最佳解析YJ Gaussian仍比NIW–t略好。保留NIW的潜在价值在于后续显式关系不确定性和真实反馈更新，不在于本轮静态预测已证明Bayesian显著优胜。这一路径必须另做可证伪任务，不能把未来理由当本轮效果。
+
+预先固定的描述门为candidate/best-new-both≤1.02，已通过；不是正式非劣效性检验，不代表新cohort确认。原四项阶段2准入门与第一阶段NO_GO都没有改写。只看both的主端点不允许抹去e_form单锚点性能较差等其他结果。
+
+十、最短只读评审入口
+-------------------
+1. report/final/RESULTS_AND_NEXT_STEPS_ZH.html：整体结果、匹配表与创新边界。
+2. strong_baselines/EXECUTION_PLAN_REGISTERED.json：实际UTC、固定配置与输入pin。
+3. strong_baselines/forecast_once/FORECAST_FREEZE.json：完整预测与五文件冻结。
+4. strong_baselines/independent_review/snapshot_audit/execution_once/
+       INDEPENDENT_FIXED_BASELINE_SNAPSHOT_AUDIT.json：独立状态核查。
+5. strong_baselines/score_once/RESULTS.json：全部结果，含每组评分；不必先打开巨大state。
+6. strong_baselines/independent_review/score_execution_once/
+       INDEPENDENT_FIXED_BASELINE_SCORE_AUDIT.json：独立原生评分。
+
+所有资源以最终包manifest和交付收据为准；本说明不预写已经公开上传或同步GitHub。原始主要论文和官网文档只保留URL/版本/实际阅读范围，不复制全文。官方源为Meinshausen2006 JMLR与scikit-learn1.6系列GP/forest文档，具体阅读范围见root_review来源账本。

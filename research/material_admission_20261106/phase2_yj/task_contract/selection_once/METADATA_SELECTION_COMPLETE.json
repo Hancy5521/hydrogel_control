@@ -1,0 +1,13 @@
+{
+  "status": "COMPLETE_PHASE2_METADATA_SELECTION_NO_PROPERTY_ACCESS",
+  "actual_utc": "2026-11-05T15:57:06.415488+00:00",
+  "role_file_sha256": "aee4d2aa78f7522eae8aba2b8ac56e186b3c5d81059a6d3a5b44b16d1042350b",
+  "selector_source_sha256": "94cb0089c54b2b1fa414ddb764f6656431876ff9bfc16c23bc36cccee7c2fdfe",
+  "registered_plan_sha256": "0f871da742e2ad319521318d71a862957cbf90c9ac43b45e0179cb418c5ff16a",
+  "fit": 64,
+  "diagnostic": 192,
+  "prior_excluded_components": 296,
+  "remaining": 8290,
+  "known_eligible_sibling_rows_reserved": 310,
+  "new_native_property_reads_fit_or_scores": 0
+}
