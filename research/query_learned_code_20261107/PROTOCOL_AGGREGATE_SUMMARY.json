@@ -1,0 +1,90 @@
+{
+  "registered_plan_sha256": "9de18bb80b9f8320ffd306d7ac1deca1b5fa66b75407058265c224f349ddb696",
+  "registered_actual_utc": "2026-11-07T13:09:58.2461810+00:00",
+  "recipe": {
+    "historical_groups": 808,
+    "oof_folds": 5,
+    "pool_groups": 512,
+    "queries": 128,
+    "batch_size": 32,
+    "remaining": 384,
+    "confirm_reserved": 1024,
+    "available_before": 6279,
+    "future_development_remaining": 4743,
+    "oof_hash_prefix": "query_code_oof_v1|",
+    "confirm_hash_prefix": "query_code_confirm_v1|",
+    "trial_hash_prefix": "query_risk_code_v1|",
+    "g_descriptor_index": 5,
+    "epsilon": "1/100",
+    "tau": "1/4",
+    "pit_bins": [
+      "0",
+      "1/20",
+      "1/2",
+      "19/20",
+      "1"
+    ],
+    "query_mixture": [
+      "1/4",
+      "3/8",
+      "3/8"
+    ],
+    "model_calls": 10
+  },
+  "fixed_NGBoost_recipe": {
+    "version": "0.5.11",
+    "Dist": "Normal",
+    "Score": "CRPScore",
+    "Base": {
+      "class": "DecisionTreeRegressor",
+      "criterion": "friedman_mse",
+      "max_depth": 3
+    },
+    "natural_gradient": true,
+    "n_estimators": 500,
+    "learning_rate": 0.01,
+    "minibatch_frac": 1.0,
+    "col_sample": 1.0,
+    "verbose": false,
+    "tol": 0.0001,
+    "random_state": 20261107,
+    "validation_fraction": 0.1,
+    "early_stopping_rounds": null,
+    "validation_data_passed": false
+  },
+  "planned_fit_accounting": {
+    "initial_prior_optimization_calls": 7,
+    "prior_synthetic_v1_calls": 10,
+    "synthetic_v2_regression_calls": 10,
+    "exact_face_linear_solve": "not an extra optimizer; one selected face per QP",
+    "ordinary_queryERM_QP_calls": 1,
+    "material_model_level_calls": 10,
+    "adaptive_QP_calls": 4
+  },
+  "planned_metrics": {
+    "primary": "native properCRPS of10 methods oncommonremaining384",
+    "secondary": [
+      "mean_prediction_RMSE",
+      "mean_prediction_MAE",
+      "80/90/95equal_tail_coverage",
+      "80/90/95mean_interval_width"
+    ],
+    "forecasts_and_native_summaries_frozen_before_remainingY": true,
+    "no_Monte_Carlo_sample_approximation": true
+  },
+  "stopping_and_interpretation": {
+    "old_studies": "no rerun or override",
+    "primary": "First native proper CRPS comparison on common384 remaining labels with same128 query information",
+    "failure": "retain failed phase and started receipts, no automatic rerun/refit",
+    "retuning_on_this384": "not allowed",
+    "scope": "computed bulk property finite-pool development; not wet data, independent batch generalization, full Eigen hypercycle or arbitrary joint matrix completion",
+    "confirmation1024": "permanently reserved, identity metadata only; no additional property/model feature disclosure"
+  },
+  "actual_material_model_calls": 10,
+  "actual_material_optimizer_calls": 12,
+  "actual_synthetic_optimizer_calls_v1_v2_separate": [
+    10,
+    10
+  ],
+  "no_actual_seed_tickets_role_ids_or_model_states_exported": true
+}

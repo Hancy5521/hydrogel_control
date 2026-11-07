@@ -1,0 +1,43 @@
+v1失败诊断与v2事前数值修改（SOURCE ONLY，待真实UTC登记）
+
+本记录基于已保存numerical_gate/GATE_RESULTS.json，不重复执行v1。
+v1的core及gate全部字节保留；v2在core_v2和numerical_gate_v2独立保存。
+
+1. v1第四项预期错误，算法输出正确
+所有Y在最大支持右侧时，未正则CRPS希望H集中于最大支持；但本目标有tau=1/4
+的参考Gram距离正则。该四原子族确实能表达解析最优：
+H*=(tau/(1+tau))*F+(1/(1+tau))*delta_max=.2F+.8delta_max。
+因此theta*=(.01,.09,.09,.81)，每项高于epsilon*p，最优是内部点。
+v1实际theta与解析值一致、KKT约4e-14，失败的是boundary_reached断言。
+不能放宽容差或修改v1结果将其刷成PASS。v2改为比较这个已推导的解析最优，
+误差<=1e-10；另以手给合法floor候选核原子保留/CRPS恒等式，不增加拟合。
+
+2. v1第六项真实数值缺口
+32查询fit通过；64/96/128的SLSQP均success且stationarity满足固定1e-6标准，
+但complementarity分别2.182e-7、1.757e-7、1.235e-7超过固定1e-7*scale。
+SLSQP ftol控制目标/停止量，不保证每个后验KKT残差；不能把success当证书，
+也不应通过放宽残差门消除此问题。v1依约回prior，后续查询也受回退影响。
+
+3. v2唯一实质solver修正：单一选定面的精确KKT修正
+仍且仅一次SLSQP，同目标、tau、maxiter1000、ftol1e-12、analyticjac及所有原阈值。
+原始s仍先通过同float/Fraction归一。按已有active阈值s<=1e-8选定唯一面，
+active置精确0；记其余为F，s0为该面起点，H为原目标在s上的精确Hessian，
+g(s0)为原目标精确梯度，C为逐块sum约束，解一次线性系统：
+H_FF delta-C_F'lambda=-g_F(s0)，C_F delta=1-C_F s0。
+奇异一致系统只用精确RREF，未定修正变量固定0；不ridge、不枚举面、不换起点，
+不宣称正交保留kernel投影。候选须精确s>=0、逐块sum1、free g=lambda、
+active g>=lambda、原目标不劣prior；错面/不一致/负质量/负dual均回prior。
+凸PSD Gram目标的完整primal/dual/stationarity检查是充分最优条件。
+
+4. 防止把累计查询估计的大分母传播到下批q
+精确修正候选仅保存为计算证书。实际用于生成候选/下批查询的s必须再转有限float，
+再按原十进制往返Fraction和逐块归一；重新算实际USED theta的原始目标及KKT，
+仍使用v1原阈值。记录exact s/theta/梯度/lambda、primal/dual、float往返变化、
+实际USED解与原SLSQP解。精确证书通过不替代实际USED解的核查。
+
+5. 回归范围与停止
+重复相同六项固定合成门（不是独立新确认），相同生成/查询seed，最多十次SLSQP。
+第六项修正theta会改变后续自适应查询，因此不声称v1/v2后续查询完全一致。
+同一bounded源回归不得扩展为材料收益。任何失败保留，不再试错调阈值。
+root须另存actual_registration_utc及v2所有输入/源码hash后才能运行。
+v1十次调用和失败都永久保留，不计作v2十次。无材料或旧512输入。

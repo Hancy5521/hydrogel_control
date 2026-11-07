@@ -113,3 +113,8 @@ new_weighting_summary.json
 # Reviewed remaining-risk source/aggregate checkpoint
 !research_20261107_remaining_risk/
 !research_20261107_remaining_risk/**
+
+# Reviewed source/aggregate query-learning checkpoint
+!research/
+!research/query_learned_code_20261107/
+!research/query_learned_code_20261107/**

@@ -1,0 +1,34 @@
+{
+  "status": "PASS_INDEPENDENT_COMMON384_NATIVE_SCORE_AUDIT",
+  "final_freeze_sha256": "e6b0ac96f268eddc5a796d6b50cf39b7354c821d2f4c8219b5ac75f3b4b7bf36",
+  "scores_receipt_sha256": "cc5e414f9f6aeb131cdf7855711bb155e1b76f5a1962c13c919d7aff2619a537",
+  "native_CRPS_values_checked": 3840,
+  "maximum_native_CRPS_absolute_difference": 1.8189894035458565e-12,
+  "mean_CRPS_native_independent": {
+    "F808": 23.625361362809485,
+    "priorglobal": 23.493757331778678,
+    "priorcontext": 23.472936337884416,
+    "Beta": 23.505605777580588,
+    "geometryRiskCode": 24.53063653341239,
+    "plainQueryERM": 24.302888454888265,
+    "RF936": 23.829009571600363,
+    "GP936": 27.630106494656605,
+    "CRPS936": 23.86842588598779,
+    "NGBoost936": 40.77249550699445
+  },
+  "source_trace": {
+    "original_identity_rows": 512,
+    "already_disclosed_proxy_cells": 1024,
+    "already_queried_target_cells": 384,
+    "unqueried_target_columns_accessed": 0,
+    "physical_public_JSON_decode_not_crypto_isolation": true
+  },
+  "new_unique_targets": 0,
+  "fits_or_optimizers": 0,
+  "SUT_imports": 0,
+  "scope": "Saved already-consumed384 targets only; queries do not enter main remaining CRPS, no posthoc recut or refit.",
+  "actual_start_utc": "2026-11-07T13:39:12.355034+00:00",
+  "actual_end_utc": "2026-11-07T13:39:56.378532+00:00",
+  "audit_source_sha256": "665db3b7bf0a112cc0b85b33010813680dd5886623e1d62fee73044dd0de6d3a",
+  "plan_sha256": "9de18bb80b9f8320ffd306d7ac1deca1b5fa66b75407058265c224f349ddb696"
+}

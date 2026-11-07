@@ -1,0 +1,54 @@
+查询学习风险码核心：接口与数学（源码准备记录，不表示数值/材料实验已经通过）
+
+仅两个Python模块，不新增训练框架、不改旧512结论：
+cdf_geometry.py：精确有限CDF几何；risk_code.py：一次约束学习和可预测查询状态。
+
+1. 输入与保留的信息
+geometry(law)接受原native weighted_empirical字典：support_native、weight_fractions。
+支持值float表示它真实的二进制数，不先十进制截断；概率字符串精确Fraction。
+相同原子合并，只删精确零质量。四个PIT区间(0,.05,.5,.95,1)按重叠质量分配，
+p=(.05,.45,.45,.05)。geometry(law)为3维；.lift(g)为6维，g只能是已知状态/配方，
+不能由待补真值构造。低维的是改变量及风险统计，不是把原始经验分布压成低秩。
+
+2. 精确风险几何
+F=sum p_j F_j；h=(F_1-F_4,F_2-F_4,F_3-F_4)。
+context basis=((1-g)h,g h)。beta每个块等于theta前三项减p前三项。
+CRPS(H,Y)-CRPS(F,Y)=beta'Q beta+2 beta'c(Y)，
+Q=int hh'，c(Y)=int h(F-1[z>=Y])。
+按排序原子一次prefix扫描建Q、c的前缀和与上下界。c(Y)用二分查位置，
+支持外为常量；分段线性c与CRPS差的all-real极值均在支持结点/常量尾端。
+.Q、.c_bounds、.c(Y)、.candidate(theta)、.gap_bounds(theta)均返回精确Fraction。
+.candidate保留原参考所有正质量原子，无额外生成虚构观测。
+
+3. 真实查询后学习
+fit_code(Q,c_estimate,prior_theta,remaining_count)保持完整4/8个simplex变量s，
+theta=.01*p+.99*s；tau=1/4。目标均值为
+[beta'Q beta + 2 beta'P_range(Q)c_estimate + tau(beta-beta_prior)'Q(beta-beta_prior)]/|R|。
+range(Q)用精确RREF求rank/nullspace，满秩P=I，秩0为0，其他用列基B(B'B)^-1B'。
+不能因小float特征值删方向；特征值只作诊断。保留完整s避免投影beta破坏simplex。
+真实c_R必在range(Q_R)是Gram几何事实；随机剩余池投影后的估计不宣称无偏，
+不宣称普遍降方差，也不是置信序列或自动安全采纳。
+返回FitResult(theta,proposed_theta,accepted,diagnostics)。一次SLSQP，无重启；
+失败或后处理KKT不达标回prior，仍保存原始解/失败原因。阈值见数值门事前协议。
+
+4. 四批查询状态
+QueryState(geometries)只接收冻结预测几何，不接收全池真值。
+start_batch(theta)提交这32个draw共同的候选；draw(rng)先提交被抽index/q/ticket，
+然后且仅然后observe(selected_true_Y)更新：
+m_i=(lo_i+hi_i)/2；M=sum_all m_i；r_i=c_i-m_i；
+Z_t=M+sum_past r_i+(c_I-m_I)/q_I；Chat_R=mean_t Z_t-sum_queried c_i。
+上述每draw Z_t对冻结总量有条件期望，不能把随机R的最终投影估计泛称无偏。
+q=1/4 uniform +3/8 normalized(max_coordinate c_width)
+                 +3/8 normalized(current candidate-reference all-real CRPS gapwidth)。
+某分量总权重0时该分量用uniform，所以任何remaining对象q>=1/(4|R|)>0。
+抽样所有q和ticket均为Fraction/整数；生产seed由外层在预测冻结后从OS取得。
+有限PRNG是复现实现，概率命题使用理想随机ticket假设，二者须明确区分。
+每32查询后，外层用remaining_Q()/remaining_estimate()实际fit后提交下批theta。
+第一次使用已冻结prior。核心只执行数学/状态，不负责标签读取/材料组划分。
+
+5. 对照与范围
+fit_query_erm(queried_geometries,queried_targets,remaining_Q,prior_theta,remaining_count)
+用相同prior、tau和remaining Gram正则，训练项是普通均权查询CRPS均值，不用IPW。
+自适应查询后它不是无偏activeERM，应按普通queryERM名称报告；同信息基线另由pipeline拟合。
+经典CRPS、CDF校准、残差HT总量、simplexQP、Gram投影各有先例。研究增量待由
+可复核的真查询-学习-下批查询闭环和材料留出效果证明，数值门不是材料强基线证据。

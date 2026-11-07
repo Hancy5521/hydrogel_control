@@ -1,0 +1,68 @@
+{
+  "actual_utc": "2026-11-07T13:44:16.718738+00:00",
+  "scope": "All independent gates/metadata/inference/query/scores, no new training or data",
+  "first_failure_source_exact_recovered": true,
+  "reports": [
+    {
+      "file": "V1_SAVED_AUDIT.json",
+      "sha256": "d5720806c9ee1d1dd4c09cbf2176973f6347209edd610c9c580fcee99d8dcfe3",
+      "status": "PASS_INDEPENDENT_SAVED_ARITHMETIC_NOT_A_LEARNER_GATE_PASS",
+      "actual_end_utc": "2026-11-07T12:45:03.570249+00:00"
+    },
+    {
+      "file": "V2_SAVED_AUDIT.json",
+      "sha256": "7444857c34c844362bf3a25a0f293d1d611e5d279df25a222c9d9024fbf773dc",
+      "status": "PASS_INDEPENDENT_SAVED_ARITHMETIC_NOT_A_LEARNER_GATE_PASS",
+      "actual_end_utc": "2026-11-07T12:56:41.384097+00:00"
+    },
+    {
+      "file": "METADATA_SAVED_AUDIT.json",
+      "sha256": "466368724b2caebfab0ac6185244dc47916aa6160fbfa58bb651a3faf829ca36",
+      "status": "PASS_INDEPENDENT_METADATA_ONLY_ROLE_AUDIT",
+      "actual_end_utc": "2026-11-07T13:12:17.191900+00:00"
+    },
+    {
+      "file": "INITIAL_SAVED_AUDIT.json",
+      "sha256": "be445bfd69b31869b70171ca20445be042a2927d3f7e8eef765eaeee60a63d9b",
+      "status": "PASS_INDEPENDENT_INITIAL_RF_OOF_AND_EXACT_GEOMETRY_AUDIT",
+      "actual_end_utc": "2026-11-07T13:24:30.639686+00:00"
+    },
+    {
+      "file": "QUERY_SAVED_AUDIT.json",
+      "sha256": "72e1daa310ebe0190ad0e4f2295d2ec18402059de5b980686baa4281a7534fab",
+      "status": "PASS_INDEPENDENT_ACTUAL128_QUERY_ESTIMATOR_AND_HEAD_AUDIT",
+      "actual_end_utc": "2026-11-07T13:29:25.234703+00:00"
+    },
+    {
+      "file": "FINAL_SAVED_AUDIT.json",
+      "sha256": "d80edf99763128b848bb893cb608b4e3c7656ec4e81e3558fa27c708c1cdea8b",
+      "status": "PASS_INDEPENDENT_FINAL10_FORECAST_AND_SAVED_STATE_AUDIT",
+      "actual_end_utc": "2026-11-07T13:36:03.614075+00:00"
+    },
+    {
+      "file": "SCORE_SAVED_AUDIT.json",
+      "sha256": "1f5a66eb4208bc7c834b7589c9cfa00747f1e83206e72fa091c2006cdf4b1771",
+      "status": "PASS_INDEPENDENT_COMMON384_NATIVE_SCORE_AUDIT",
+      "actual_end_utc": "2026-11-07T13:39:56.378532+00:00"
+    }
+  ],
+  "source_versions": [
+    {
+      "file": "source_versions\\audit_harness_first_failure.py",
+      "sha256": "496c7f28e1829289f149d888f6a23fd19ccbb7e1751be4ab5509d83330102d05"
+    },
+    {
+      "file": "source_versions\\audit_harness_initial.py",
+      "sha256": "7c004dd4dc1ff8482c53d1376f3cc19461350101b42cfcf4ed13116310c24d8b"
+    },
+    {
+      "file": "source_versions\\audit_harness_metadata.py",
+      "sha256": "ca7e27631081245d7db6eba03f05d441412d18ddb7f67a055451f65f4a1b99fb"
+    },
+    {
+      "file": "source_versions\\audit_harness_pre_score.py",
+      "sha256": "78aeb016d297b4cd525c43a9d298e2946c0a3abb471026cf4785dab121707f01"
+    }
+  ],
+  "scientific_decision": "Current development trial fails strongest RF/CRPSforest and ordinary queryERM comparisons; numerical/source audits PASS do not turn it into efficacy success."
+}

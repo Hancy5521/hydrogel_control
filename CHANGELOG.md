@@ -1,3 +1,7 @@
+## 7 November 2026 — Query-learned risk code, negative material result
+
+Archive 10 model fits, 12 material head optimizations and all ten methods. Main CRPS is 2.944% worse than RF936; preserve numerical failures and fixed-head diagnostic. Public source/aggregates only; no raw materials, cases, states, seeds or tickets.
+
 ## 7 November2026 — Remaining-risk512 and low-dimensional code principle checkpoint
 
 Preserve alpha0/no adopted gain after384queries and128researchcensus. Keep rawG small gains, independent audit counts, own formulas and six nonmaterial handcases. No raw materials, case outputs, model states, actual seed/tickets or private logs uploaded.

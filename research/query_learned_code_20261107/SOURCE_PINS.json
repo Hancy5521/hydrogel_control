@@ -1,0 +1,44 @@
+{
+  "complete_local_resource": {
+    "filename": "Query_Learned_Code_20261107.zip",
+    "bytes": 83195299,
+    "sha256": "fe498e2f12d2753def933a1d702c593ec04e601766b6d2bbebded65cc0bfb309",
+    "uploaded_to_Git": false,
+    "local_full_resource_public_source_subset_separate": true
+  },
+  "sealed_package_manifest_sha256": "df40fbf0075131b5a95f7da133ac4462db903bc88360c1794ed547bc6556cd06",
+  "original_scientific_plan_sha256": "9de18bb80b9f8320ffd306d7ac1deca1b5fa66b75407058265c224f349ddb696",
+  "runtime_pure_dependencies_already_in_parent": {
+    "identity_graph": {
+      "existing_public_path": "research_20261107_remaining_risk/metadata/select_identity.py",
+      "sha256": "611e8b54eb372d4fa0893404a8e38e946b8c818e40184b41d8b266b364e35541"
+    },
+    "empirical_native": {
+      "existing_public_path": "research_20261107_remaining_risk/dependencies/empirical_native.py",
+      "sha256": "6d76cdf584da6fdc917554942dd8a19abd8785928d2621af28ff049ec577239b"
+    },
+    "simplex_transport": {
+      "existing_public_path": "research_20261107_reference_transport/code/simplex_transport.py",
+      "sha256": "63b792c6c436dc33c9951395730419d52ee4ca596043c11a28896f08a8249710"
+    },
+    "calibration_views": {
+      "existing_public_path": "research_20261107_reference_transport/code/calibration_views.py",
+      "sha256": "b97b48b952a40680df48f6aa4f2ae26cde9d422c8cf6b10d2adcf61183ae68ae"
+    },
+    "baselines": {
+      "existing_public_path": "research_20261107_physical_reference/dependencies/baselines.py",
+      "sha256": "8a8e8aa94f313a22e3b56fca58a1ff7ddb93b51c94fe8f5e3ca752faf3cb3d27"
+    },
+    "crps_tree": {
+      "existing_public_path": "research_20261107_physical_reference/dependencies/crps_tree.py",
+      "sha256": "deb1f8eb5f38ca3d6649559bf47f00d62377309bb6b25c301242aa2e5ec7ab11"
+    },
+    "crps_forest": {
+      "existing_public_path": "research_20261107_physical_reference/dependencies/crps_forest.py",
+      "sha256": "0b33e35d8b2205c7c31cc48888d4e285ee75308ec783cee138acf36a183ece17"
+    }
+  },
+  "public_subset_is_not_complete_material_reproduction": true,
+  "original_MLST_main_commit": "05a40915be149857b2bb9cf65144d53fa9b24f37",
+  "no_new_license_assumed": "Existing RIGHTS_AND_PROVENANCE.md remains authoritative"
+}

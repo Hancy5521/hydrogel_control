@@ -1,0 +1,112 @@
+{
+  "reports": {
+    "V1_SAVED_AUDIT.json": {
+      "status": "PASS_INDEPENDENT_SAVED_ARITHMETIC_NOT_A_LEARNER_GATE_PASS",
+      "receipt_sha256": "d5720806c9ee1d1dd4c09cbf2176973f6347209edd610c9c580fcee99d8dcfe3",
+      "actual_start_utc": "2026-11-07T12:44:59.681618+00:00",
+      "actual_end_utc": "2026-11-07T12:45:03.570249+00:00",
+      "scalar_counts_and_errors": {
+        "source_gate_passed": false,
+        "fits_or_optimizers_called": 0,
+        "SUT_imports": 0,
+        "new_material_cells_read": 0
+      }
+    },
+    "V2_SAVED_AUDIT.json": {
+      "status": "PASS_INDEPENDENT_SAVED_ARITHMETIC_NOT_A_LEARNER_GATE_PASS",
+      "receipt_sha256": "7444857c34c844362bf3a25a0f293d1d611e5d279df25a222c9d9024fbf773dc",
+      "actual_start_utc": "2026-11-07T12:56:36.929567+00:00",
+      "actual_end_utc": "2026-11-07T12:56:41.384097+00:00",
+      "scalar_counts_and_errors": {
+        "source_gate_passed": true,
+        "fits_or_optimizers_called": 0,
+        "SUT_imports": 0,
+        "same_synthetic_cases_are_numerical_regression_not_new_confirmation": true,
+        "new_material_cells_read": 0
+      }
+    },
+    "METADATA_SAVED_AUDIT.json": {
+      "status": "PASS_INDEPENDENT_METADATA_ONLY_ROLE_AUDIT",
+      "receipt_sha256": "466368724b2caebfab0ac6185244dc47916aa6160fbfa58bb651a3faf829ca36",
+      "actual_start_utc": "2026-11-07T13:12:16.442776+00:00",
+      "actual_end_utc": "2026-11-07T13:12:17.191900+00:00",
+      "scalar_counts_and_errors": {
+        "all_source_rows_checked": 26979,
+        "eligible_rows_checked": 11020,
+        "whole_groups_reserved_and_siblings_checked": 1536,
+        "prior_consumed_groups": 1920,
+        "confirm1024": 1024,
+        "development512": 512,
+        "future_development4743": 4743,
+        "fits": 0,
+        "new_property_cells_read": 0,
+        "SUT_imports": 0,
+        "composition_is_identity_metadata_not_unread_all_features_claim": true
+      }
+    },
+    "INITIAL_SAVED_AUDIT.json": {
+      "status": "PASS_INDEPENDENT_INITIAL_RF_OOF_AND_EXACT_GEOMETRY_AUDIT",
+      "receipt_sha256": "be445bfd69b31869b70171ca20445be042a2927d3f7e8eef765eaeee60a63d9b",
+      "actual_start_utc": "2026-11-07T13:22:38.662581+00:00",
+      "actual_end_utc": "2026-11-07T13:24:30.639686+00:00",
+      "scalar_counts_and_errors": {
+        "OOF_exclusion_groups": 808,
+        "initial_truth_free_geometries_exact": 512,
+        "actual_code_laws_checked": 1024,
+        "new_targets_read": 0,
+        "SUT_imports": 0,
+        "fits": 0
+      }
+    },
+    "QUERY_SAVED_AUDIT.json": {
+      "status": "PASS_INDEPENDENT_ACTUAL128_QUERY_ESTIMATOR_AND_HEAD_AUDIT",
+      "receipt_sha256": "72e1daa310ebe0190ad0e4f2295d2ec18402059de5b980686baa4281a7534fab",
+      "actual_start_utc": "2026-11-07T13:28:35.844973+00:00",
+      "actual_end_utc": "2026-11-07T13:29:25.234703+00:00",
+      "scalar_counts_and_errors": {
+        "exact_tickets_queries": 128,
+        "exact_batch_fullpool_gap_arrays": 4,
+        "Q_Chat_updates": 4,
+        "remaining_laws_exact": 768,
+        "new_unqueried_targets_read": 0,
+        "SUT_imports": 0,
+        "optimizer_calls": 0
+      }
+    },
+    "FINAL_SAVED_AUDIT.json": {
+      "status": "PASS_INDEPENDENT_FINAL10_FORECAST_AND_SAVED_STATE_AUDIT",
+      "receipt_sha256": "d80edf99763128b848bb893cb608b4e3c7656ec4e81e3558fa27c708c1cdea8b",
+      "actual_start_utc": "2026-11-07T13:34:39.286722+00:00",
+      "actual_end_utc": "2026-11-07T13:36:03.614075+00:00",
+      "scalar_counts_and_errors": {
+        "same936_training_groups": 936,
+        "all10_laws_frozen_on_common384": 3840,
+        "deterministic_native_summaries_checked": 3840,
+        "Beta_frozen512_maximum_CDF_error": 9.992007221626409e-16,
+        "fits_or_optimizers": 0,
+        "SUT_imports": 0,
+        "remaining_Y_cells_read": 0
+      }
+    },
+    "SCORE_SAVED_AUDIT.json": {
+      "status": "PASS_INDEPENDENT_COMMON384_NATIVE_SCORE_AUDIT",
+      "receipt_sha256": "1f5a66eb4208bc7c834b7589c9cfa00747f1e83206e72fa091c2006cdf4b1771",
+      "actual_start_utc": "2026-11-07T13:39:12.355034+00:00",
+      "actual_end_utc": "2026-11-07T13:39:56.378532+00:00",
+      "scalar_counts_and_errors": {
+        "native_CRPS_values_checked": 3840,
+        "maximum_native_CRPS_absolute_difference": 1.8189894035458565e-12,
+        "new_unique_targets": 0,
+        "fits_or_optimizers": 0,
+        "SUT_imports": 0
+      }
+    }
+  },
+  "all_arithmetic_pass_does_not_mean_efficacy_pass": true,
+  "material_model_fit_calls": 10,
+  "material_head_optimizer_calls": 12,
+  "final_native_score_positions": 3840,
+  "final_interval_events": 11520,
+  "current_target_labels_consumed": 512,
+  "new_measurements": 0
+}

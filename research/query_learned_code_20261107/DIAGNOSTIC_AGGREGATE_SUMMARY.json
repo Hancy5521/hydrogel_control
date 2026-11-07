@@ -1,0 +1,31 @@
+{
+  "status": "PASS_POSTSCORE_FIXED_USED_HEAD_RISK_IDENTITY_NOT_NEW_CONFIRMATION",
+  "source_receipt_sha256": "25888599456cdd8b5c0507755b9aecac40fe532b84678fd30d96176abf23fc28",
+  "decomposition_native": {
+    "known_nonnegative_curvature": 0.469550012371832,
+    "estimated_linear_at_prior": -1.1915868742419162,
+    "true_linear_at_prior": 0.5881501831561452,
+    "estimated_candidate_minus_prior": -0.7220368618700841,
+    "true_candidate_minus_prior": 1.0577001955279772,
+    "two_delta_dot_true_minus_estimated_c_over_N": 1.7797370573980613,
+    "fixed_tau_prior_penalty": 0.117387503092958,
+    "estimated_regularized_objective_change": -0.6046493587771261,
+    "saved_mean_score_difference_float": 1.0577001955279748,
+    "saved_mean_score_identity_error": 2.4424906541753444e-15
+  },
+  "gradient_at_prior_euclidean_cosine": -0.9842829535627634,
+  "maximum_per_object_identity_error": 8.881784197001252e-15,
+  "individual_records_coordinates_targets_and_parameter_vectors_excluded": true,
+  "scope": {
+    "posthoc_descriptive": true,
+    "new_fits": 0,
+    "new_model_predicts": 0,
+    "new_candidate_scores": 0,
+    "new_raw_source_reads": 0,
+    "new_targets_acquired": 0,
+    "oracle_coefficients_computed": false,
+    "hyperparameters_searched": false,
+    "OOF_vs_remaining_not_matched_reference": true,
+    "no_variance_or_bias_causality_identified_by_one_realization": true
+  }
+}

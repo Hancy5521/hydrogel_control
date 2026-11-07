@@ -1,3 +1,7 @@
+# Latest separate query-learned-code checkpoint — 7 November 2026
+
+Actual query-learning feedback was implemented, but the method missed the strongest RF/CRPS-forest controls (+2.944%/+2.774% CRPS). Read [research/query_learned_code_20261107](research/query_learned_code_20261107/index.html) for the negative result, source and aggregate audit trail. Original MLST remains separate.
+
 # Latest separate remaining-risk checkpoint — 7 November2026
 
 The frozen-reference correction has a small0.866% new-group forecast gain, while the registered remaining-risk adoption returnsalpha0 and zero primary improvement. Read [research_20261107_remaining_risk](research_20261107_remaining_risk/index.html) for all aggregates, negative results and the unexecuted low-dimensional code learning direction. Prior MLST remains separate.

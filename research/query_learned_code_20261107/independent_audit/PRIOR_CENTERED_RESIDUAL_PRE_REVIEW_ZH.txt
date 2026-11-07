@@ -1,0 +1,33 @@
+先验中心残差信息：独立代数预审（未执行候选）
+2026-11-07；本稿只推导，不新选材料，不fit、不重score当前384，不改变首轮方法。
+
+冻结原参考F_i、差CDF向量h_i、Q_i=∫h_i h_i'；固定已学先验beta_p，
+H_pi=F_i+h_i'beta_p。原未知统计c_i(Y)=∫h_i(F_i−1{z≥Y})。
+对Y~H_pi，E1{z≥Y}=H_pi(z)，故
+ E_Hpi c_i(Y)=∫h_i(F_i−H_pi)=−Q_i beta_p。
+原子分布的结点等号不影响Lebesgue积分。有限支持让所有差CDF积分有限；真实Y仍可在支持外。
+因此m_i*=−Q_i beta_p为已知预测均值，r_i*=c_i+Q_i beta_p在先验预测下均值为0。
+m_i*是c_i有效分布下的期望，每个坐标在原精确c界内。残差区间整体平移、宽度不变。
+
+在固定全池、当前q抽取前由过去决定时，令
+ W_t=Σpast r_i* + r_I*/q_I，E_draw(W_t|过去,固定真实总体)=Σall r_i*。
+余池梯度估计Ghat_R=mean_t W_t−Σqueried r_i*。
+若继续用原通用C估计Chat_R（但m换成m*），严格有
+ Ghat_R=Q_R beta_p+Chat_R。
+因此学习delta=beta−beta_p时，原正则目标去常数写为
+ (1+tau) delta'Q_R delta+2 delta'Ghat_R。
+完整两个simplex/floor可行域保持；不是把delta当无约束低维点，也不重切PIT分段。
+每步Z/W对固定全池总量的设计条件均值成立，不等于给定已实现随机remaining集的条件无偏。
+
+模型下的准确改进声明：对任一预定PSD度量A，
+ E_Hpi[(c_i−m)'A(c_i−m)]
+ =E_Hpi[(c_i−m_i*)'A(c_i−m_i*)]+(m−m_i*)'A(m−m_i*)。
+所以m_i*最小化该预测分布下逐单位二阶残差（不一定唯一，取决于A）。
+这不证明任意固定真实材料总体下普遍降方差；prior偏差、q随历史改变、随机Q_R以及根据
+同一个噪声估计选delta，都可能使真实预测变差。不能称已获得安全采用、固定点稳定或自动收敛定理。
+模型辅助抽样/预测辅助总量估计已有经典先例，本稿不主张新总量估计器或新CRPS损失。
+
+最小可证伪协议建议：只替换midpoint为上述先验预测均值。保留原F/h/PIT分段、prior、
+tau、floor及q混合定义。若同时将proposal gap改成相对Hprior或重切PIT，首批q会改变，
+就不再是单一中心修改的对照。下批q随实际新学theta变化属原算法内预定适应，必须照实记录。
+下一材料效果必须另用全新开发组且同标签强基线；当前384只作已消费失败诊断，不能重新拟合追分。

@@ -1,0 +1,35 @@
+查询学习风险码：六项有界数值门（SOURCE ONLY，须由root另存真实UTC登记才可执行）
+
+输入仅固定四原子合成经验分布，不读取材料、旧512、6279池或任何未查询材料真值。
+核心仅cdf_geometry.py/risk_code.py两模块。门脚本run_gate.py共六项，固定随机种子
+用于可重复的数值生成，不冒充材料实验或独立确认。预计且仅允许十次SLSQP调用：
+前五项各一次，第六项四个32查询批后各一次，加最终普通queryERM一次。
+
+1 global3D满秩训练，analyticjac与中央差分，任意支持内/外标签精确CRPS恒等式和界。
+2 g=1/3常数的6D奇异训练，确切rank3和nullspace*c=0，不人为ridge。
+3 单原子rank0训练；独立额外对角1,1e-30,1e-60精确rank3，不能删小非零方向。
+4 所有真值1e6在支持外，训练到simplex边界但epsilon=1/100支持floor严格保留全原子。
+5 256条生成真值，隐藏context方向只用于生成，不向learner传方向；实际fit后须偏离prior，
+  且在已知生成总体的确切期望CRPS低于reference。只说明合成可学习性，不说明材料有效。
+6 256对象四32批真实生成标签查询，4次c_R更新，候选指导下批q；每批第一个draw前枚举
+  验证Z总量条件期望，128个不放回查询、余128，记录全q/tickets/Y/c/Z和最终queryERM。
+
+固定solver：SLSQP一次，analyticjac，maxiter1000、ftol1e-12，无重启无选择最优。
+tau=1/4。实际优化目标除remaining_count；Gram奇异不换目标，不加ridge。
+完整4或8个s坐标，theta=epsilon*p+(1-epsilon)s。原始sum误差<=1e-8、min>=-1e-10；
+容差内负值clip0，十进制float往返Fraction，逐块精确归一。超限失败回prior。
+后处理真实同一目标和梯度重新算：scale=max(1,maxabs g_prior,maxabs g_candidate)，
+active s<=1e-8；free stationarity<=1e-6*scale；active dual<=1e-6*scale；
+complementarity<=1e-7*scale；目标不得劣于prior超过1e-10*max(1,|prior目标|)。
+上述阈值已由root事前同意、独立审计agent静态确认；没有通过数值结果反调阈值。
+central difference h=1e-6，max abs误差<=1e-6*max(1,maxabs analyticjac)。
+
+gate PASS需六项全部PASS、十次调用收据齐全。失败保留全部结果，不重跑选种子。
+失败改变方法须新版本/新协议明确说明；不能把gate通过写作材料强基线证据。
+主剩余池投影是随机R的point估计几何，并非无偏性/降方差/CS定理。
+普通queryERM均权查询CRPS均值，使用同prior/tau/剩余Gram正则，无IPW，不称无偏activeERM。
+
+运行格式（实际登记后root决定）：
+D:\Anaconda\python.exe -X utf8 -B run_gate.py --registration <实际登记json> --output <新结果json>
+需要registration.actual_registration_utc。若output已存在则拒绝重复运行。
+每case输出原始law/g/生成真值/Q/c/prior及raw/processed theta和全部solver/KKT，供独立实现复核。

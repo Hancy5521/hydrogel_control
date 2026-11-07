@@ -1,0 +1,27 @@
+独立数学预审：真实查询学习概率码（源码未运行）
+实际写入UTC以文件mtime及本轮父日志为准；2026-11-07。
+范围：独立阅读并重推 learned_code SOURCE_ONLY_DESIGN、NUMERICAL_DESIGN_PENDING_REVIEW 与 uniform_code MATHEMATICAL_CANDIDATE。未执行任何数值门、拟合、角色选择或新属性访问；本稿不等于动态审计PASS。
+
+一、主恒等式
+冻结参考F_i及四PIT条件CDF，h_i为三差CDF及固定g的六维提升。CRPS差=beta'Q_i beta+2 beta'c_i(Y)，其中Q_i=∫h_i h_i'，c_i(Y)=∫h_i(F_i−1{z≥Y})。h支持有限，Y可位于支持外。差CDF的支持之外积分为零，不能因此裁掉真实Y或给Y虚构界。
+Q_R=Σ剩余Q_i是Gram。其零向量v满足每项∫(v'h_i)^2=0，故v'c_R=0。exact range(Q_R)事实成立；近零浮点特征值并非exact zero证据。
+
+二、查询估计的准确陈述
+M=Σ全池m，r_i=c_i−m_i，过去集合S。若整张q在当前I抽取前已由过去信息固定，Z=M+ΣS r_i+r_I/q_I的条件均值为固定全池C，q为本步conditional概率而非最终inclusion probability。采样固定128步时mean(Z)−ΣS c_i估计实际随机剩余C_R，其无条件误差均值为0；给定已实现剩余集合的条件无偏一般不成立。
+P_R依赖随机剩余集合，故P_R Chat_R并不自动保留无偏性，更不自动得到降方差或风险改善定理。它只强制与已知预测几何相容。使用同一估计挑beta还引入选择效应；实际剩384盲测是主要判据。
+q=1/4 uniform+3/8 width-norm+3/8 current-gapwidth-norm始终有正支持。任一归一项总和为0时须预定uniform替代；gapwidth需在当前draw前针对所有remaining求得，不能只看选中对象后回填。若用精确PPS，保存真实条件q和随机ticket，不把近似float q当精确收据。
+
+三、QP和数值可证伪项
+完整两个simplex可行域保留；投影的是c估计而非任意beta，不能投影beta后假定仍满足floor。目标为beta'Q beta+2 beta'cproj+tau(beta−prior)'Q(beta−prior)，tau=1/4；均值目标除当前remaining_count。theta=epsilon p+(1−epsilon)s，epsilon=.01，s每块simplex4。梯度链式为2 A'[(1+tau)Q beta+cproj−tau Q prior]/n。
+先核solver success/finite/raw simplex；把微负s裁0并exact归一后重新计算实际objective、gradient和KKT。每块free坐标梯度共λ，active梯度≥λ，complementarity s_j(g_j−λ)=0。free阈值、尺度及stationarity/dual/complementarity容差必须预登记，不由材料剩384成绩决定。
+exact rank0可返回reference/prior，fullrank P=I；奇异时用exact rational basis B构造B(B'B)^−1B'，不加ridge、不按small eigen cutoff删方向。计算float solver与exact符号投影的区别须明示。
+
+四、实验反证和合理失败
+新code须胜同128实际query-label的ordinary ERM和936标签强基线才有主价值；仅胜RF808不是同信息强基线结论。q偏向大尺度/极端支持可能耗掉不利位置；本轮固定共同query，只能比较学习器，不能证明query policy优越。g0占多数可令某端点不可辨；几何消冗余不是新材料证据。
+128 queries不得在主剩384结果中用共同真值零误差抵销剩余损害。原始效果无需CS门；plugin QP改善不等于保守证书。保留全部10方法、失败、负收益、覆盖宽度与训练调用账。
+1024 final预留只读metadata；512开发trial尚未选择。后续若由这384反馈设计新方法，不能再称同384独立确认。
+
+五、后续独立审计入口要求
+只消费saved reference atoms/weights、query draw前状态/概率、批次Q/c/P/解、最终10方法预测freeze及最后384披露/score收据；不import被审核心。独立energy-form CRPS与CDF积分交叉验证；独立重建每步全池Z与真实queried减法；exact支撑floor和range/kernel一致性；actual unknown-direction learner cases必须从训练标签运行优化而非预先给定theta。本轮尚未执行这些动态核查。
+
+引用阅读范围：沿用先前已记录的CRPS凸组合、ICLS与经典总量估计先例；本独立预审未新增网页阅读，不称首次估计量/新损失/完整超循环已经成立。

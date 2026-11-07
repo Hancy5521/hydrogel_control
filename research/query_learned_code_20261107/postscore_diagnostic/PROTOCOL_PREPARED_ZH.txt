@@ -1,0 +1,19 @@
+已消费结果后的固定模型诊断：不是新材料确认或新模型测试
+
+根代理已读首轮真实开发结果，授权一次saved-only损失恒等式分解。方法明显劣于
+强基线和历史prior，不能从384已消费对象再选tau、oracle方向或新候选翻案。
+本脚本只处理实际USED theta与实际冻结808 prior。先绑定脚本、独立几何cache、
+已消费384/128标签、最后一批Q/Chat、已存scores/aggregate，再实际UTC登记执行。
+
+delta=beta_USED-beta_prior；C_R=sum_remaining c_i(Y_i)。
+code-prior = [delta'Q_R delta+2delta'(Q_R beta_prior+C_R)]/384。
+分离曲率、估计linear、真实linear、2delta'(C_R-Chat_R)/384及原固定tau正则。
+cache来自独立已审几何；c(Y)只对独立支持结点c作精确线性插值/尾常数，不调用
+被审源码或任何模型。每点及均值对已存CRPS差要求绝对误差<=1e-9。
+记录逐维c误差、相应风险误差贡献、prior处真/估计梯度方向cosine。
+附OOF808、查询128、剩余384的c均值仅作posthoc descriptive；OOF参考本来不同，
+单次实现不能识别估计器系统偏差或泛称主动查询导致偏差，不给因果/方差定理。
+
+不新增theta、不拟合、不预测、不重新评分旧方法，不读取原始表/新标签、不重分组。
+本输出只解释已注册失败，下一步改进必须在其他未消费开发对象另行登记。
+不修改core_v2/audit_harness/reference_math/已冻结结果。输出存在时拒绝重复执行。
