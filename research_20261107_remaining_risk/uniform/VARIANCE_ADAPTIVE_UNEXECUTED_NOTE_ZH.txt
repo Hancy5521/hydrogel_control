@@ -1,0 +1,23 @@
+方差自适应证据的后续选项：只作推导，不改已封存512
+
+当前失败来自界太宽，并非源码错误。允许改善统计功效，但不在同512上更换lambda/抽样种子/次序追求新的采用结果。原Hoeffding核心与全部结果永久保留。此项是经典方法适配候选，不另堆模型，不把原修正收益和新增控制层成功混为一谈。
+
+文献已核查Waudby-Smith/Ramdas的RSS讨论稿§3.1/3.2与补充A.1/A.2。其empirical-Bernstein过程是直接先例；不称新CS。完整版本/许可尚未核，阅读范围如ledger，不声称读完82页。
+
+对未来同类冻结loss-gap池，已知m_i、w_i和r_i=d_i-m_i，q=w/W。当前条件无偏总量增量
+  Z_t=M+P_(t-1)+r_I/q_I，E[Z_t|past]=D。
+其可预测区间[a_t,a_t+W_t]，a_t=M+P_(t-1)-W_t/2。令
+  X_t=(Z_t-a_t)/W_t=1/2+r_I/w_I ∈[0,1]，
+  mu_t(D)=(D-a_t)/W_t。
+X_t的条件均值随已查集合变；不能直接声称满足文献固定mu模型。必须从其one-step conditional inequality重推。Z_t的已知区间中心也通常不是未知D，不能声称|Z_t-D|<=W_t/2。
+
+若对任意predictable h_t∈[0,1]和lambda_t∈(0,1)，运用标准one-step empirical-Bernstein inequality，则候选指数过程每步形为
+  lambda_t*(X_t-mu_t(D)) - psi(lambda_t)*(X_t-h_t)^2，
+  psi(lambda)=-log(1-lambda)-lambda。
+这里psi为合并了原文v=4(error)^2与psi_E=psi/4后的记法，不可再乘/漏乘4。上侧/下侧需分别作并集预算；lambda、h只能用过去值和当前已知界，不得先看当前Y。按同一one-step论证反射X可得两侧过程。
+
+展开D项后，系数A_t=sum_s lambda_s/W_s，估计项S_t=sum_s lambda_s Z_s/W_s。相应候选上界形为
+  U_t=[S_t+log(1/eta)+sum_s psi(lambda_s)*(X_s-h_s)^2]/A_t。
+这个式子是从条件过程推出的未来适配，不是本轮已实现/已获材料收益。需要独立证明、向外算术与有限手算后才能注册任何新材料实验。可先用固定维度less lambda网格和预定过去样本预测；是否真比Hoeffding更好必须验证，不能只因叫方差自适应就宣称成功。
+
+若采用向量c统计，坐标范围、联合误差预算、动态remaining减法与range(Q_R)约束都须保留；不能把逐坐标保证当成免费连续参数保证。该研究服务于低维修正学习的单一主线，当前没有新增统计核心、优化器、真实目标或重复512评分。后续是否实现此选项，在六门原理和新的学习器设计后再定；普通verified-query ERM与参考强基线必须独立保留。

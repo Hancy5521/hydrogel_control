@@ -1,0 +1,19 @@
+{
+  "status": "PASS_SIX_EXACT_PRINCIPLE_HANDCASES",
+  "actual_start_utc": "2026-11-07T09:45:05.693046+00:00",
+  "actual_end_utc": "2026-11-07T09:45:05.757344+00:00",
+  "plan_sha256": "abad718fd65296edc4fa475f7a6ec79fcc34c057e074656e1f269314dfa20298",
+  "new_fits_or_materials": 0,
+  "current512_access_or_changes": 0,
+  "monte_carlo_coverage_trials": 0,
+  "limit": "Exact finite handcases validate identities, not a new theorem, optimizer, material gain or CS power.",
+  "case_count": 6,
+  "identity_positions42": 42,
+  "conditional_prefixes10": 10,
+  "null_Q_box_upper_example": "6/125 versus actual0; feasible simplex blocks",
+  "exact_nontrivial_handcase_gap": "-3/25 with robust upper-9/100",
+  "case4_theta_manually_predeclared_not_trained": true,
+  "historical_field_learned_feasible_theta_does_not_mean_learning": true,
+  "author_gate_not_independent_numerical_audit": true,
+  "result_sha256": "6741400526bb4012de8050a8e65324819e97aa17fefe885dc560341978fab786"
+}

@@ -1,3 +1,7 @@
+## 7 November2026 — Remaining-risk512 and low-dimensional code principle checkpoint
+
+Preserve alpha0/no adopted gain after384queries and128researchcensus. Keep rawG small gains, independent audit counts, own formulas and six nonmaterial handcases. No raw materials, case outputs, model states, actual seed/tickets or private logs uploaded.
+
 ## 7 November2026 — Physical-reference three-cycle checkpoint
 
 Preserve failure ofthe registered adoption primary while retaining fixed-repair G192gain vsRF/independentCRPSforest. Addbyte-identicalsource,all120aggregates,10pairedstatisticsandaggregatefigures. No rawdata,materialIDs,states,individualvectorsorprivatelogs. Full localresource remainsseparate.

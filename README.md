@@ -1,3 +1,7 @@
+# Latest separate remaining-risk checkpoint — 7 November2026
+
+The frozen-reference correction has a small0.866% new-group forecast gain, while the registered remaining-risk adoption returnsalpha0 and zero primary improvement. Read [research_20261107_remaining_risk](research_20261107_remaining_risk/index.html) for all aggregates, negative results and the unexecuted low-dimensional code learning direction. Prior MLST remains separate.
+
 # Latest separate physical-reference checkpoint — 7 November2026
 
 The registered adoption primary failed (+0.007537 CRPS); the fixed repair model remainscompetitive onG192. Read [research_20261107_physical_reference](research_20261107_physical_reference/index.html) for allcontrols/coverage/costs andboundedclaims. This separate publicsource/aggregate checkpoint doesnotmodifythe archivedMLSTpaper.

@@ -1,0 +1,43 @@
+{
+  "status": "PUBLIC_SUMMARY_OF_ACTUAL_REGISTERED_PROTOCOL",
+  "scientific_plan_sha256": "54a7a1fd656bc72b9d757184cb31643645211624e97d3161447ab9ace2192905",
+  "reference_model_training_rows": 296,
+  "new_groups": 512,
+  "new_proxy_cells": 1024,
+  "query_cells": 384,
+  "research_census_cells": 128,
+  "unique_targets_total": 512,
+  "new_model_fits_or_optimizers": 0,
+  "known_proxies": [
+    "e_form",
+    "gap opt"
+  ],
+  "known_descriptors": 8,
+  "target": "bulk modulus",
+  "source_unit": "source bulk GPa attribution, aggregation qualified",
+  "fixed_delta": "1/20",
+  "fixed_lambda_exponents": [
+    -6,
+    -5,
+    -4,
+    -3,
+    -2,
+    -1,
+    0,
+    1,
+    2
+  ],
+  "decimal_precision": 100,
+  "known_seed_time_policy": "OSentropy after all forecasts freeze; actual seed and tickets excluded from public subset",
+  "primary": "uniform native mean CRPS(Halpha)-CRPS(F) onexactADOPTION_FREEZE remaining_ids beforecensus",
+  "actual_frozen_alpha": "0",
+  "strict_certificate": false,
+  "total_target_access_count_includes_remaining_research_census": true,
+  "original_whole_source_identity_graph": "25923+1056 metadata rows; old1408 and all dielectric964 groups/aliases excluded",
+  "fresh_groups_before_selection": 6791,
+  "selected_groups": 512,
+  "unconsumed_groups_after_selection": 6279,
+  "protected_dielectric19_not_selected_or_emitted": true,
+  "physical_measurement_or_DFT_savings_measured": false,
+  "same512_closed_no_reselection_retuning_or_new_confirmation": true
+}

@@ -1,0 +1,61 @@
+{
+  "status": "BOUNDED_PRIMARY_SOURCE_READING_NOT_EXHAUSTIVE_NOVELTY_SEARCH",
+  "actual_utc": "2026-11-07T06:27:05.398957+00:00",
+  "queries": [
+    "safe semi supervised learning least squares known covariance Loog 2016 intrinsically constrained",
+    "CRPS optimal linear combination forecasts quadratic programming confidence robust combination",
+    "active learning quadratic loss uniform confidence finite population risk minimization prediction powered"
+  ],
+  "new_materials_or_fit": 0,
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/1507.06802",
+      "version": "1507.06802v1,24Jul2015",
+      "license": "arXiv perpetual non-exclusive; no full text redistributed",
+      "depth": "Sections3.1/3.2 equations1-5 and Theorem4.1/proof selected paragraphs; not full paper",
+      "lesson": "Quadratic known second moments and implicit constraints for safe least-squares have prior art; their proof is limited 1D/no intercept."
+    },
+    {
+      "url": "https://arxiv.org/html/1512.08240v2",
+      "doi": "10.1016/j.patcog.2016.09.009",
+      "version": "v2,27Jan2017; arXiv notice corrects published equation typos",
+      "license": "arXiv perpetual non-exclusive; no full text redistributed",
+      "depth": "Selected related work USM, sections3/4.1/4.2, Theorem1 and proof through Eq15, USM baseline; not full paper",
+      "lesson": "Known covariance plug-in alone is not universal safety. Robust QP and pessimistic/semi-supervised objectives have direct precedents; this proposed finite-pool proper-score controller does not inherit their 1D theorem."
+    },
+    {
+      "url": "https://jmlr.csail.mit.edu/papers/v13/minsker12a.html",
+      "version": "JMLR13(3):67-90,2012",
+      "license": "not checked; no copied article",
+      "depth": "Official abstract only, not PDF methods",
+      "lesson": "Active learning with confidence bands/regression estimators has old precedents; no first-active-learning claim."
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0169207023001371",
+      "doi": "10.1016/j.ijforecast.2023.12.005",
+      "version": "IJF40(4):1449-1466,2024, as indexed publisher metadata",
+      "license": "not checked; no copied article",
+      "depth": "Publisher search abstract and section-outline snippet only; direct open403. Not methods read.",
+      "lesson": "Nonlinear probabilistic combination/CRPS/online Newton already exist."
+    },
+    {
+      "url": "https://www.annualreviews.org/content/journals/10.1146/annurev-statistics-042424-050626",
+      "doi": "10.1146/annurev-statistics-042424-050626",
+      "version": "AnnualReviewStats13:271-296,2026; firstonline13Nov2025",
+      "license": "publisher declares CC BY4.0 with third-party caveat",
+      "depth": "Publisher metadata/license/abstract and references only; fulltext endpoint inaccessible. Not full review read.",
+      "lesson": "Proper-score estimation is mature; do not label proper-score quadratic identity a new score."
+    }
+  ],
+  "failed_endpoints": [
+    {
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0169207023001371",
+      "result": "403 on direct open; not retried"
+    },
+    {
+      "url": "https://www.annualreviews.org/deliver/fulltext/statistics/13/1/annurev-statistics-042424-050626.html?itemId=/content/journals/10.1146/annurev-statistics-042424-050626&mimeType=html&fmt=ahah",
+      "result": "tool inaccessible; no alternative access workaround"
+    }
+  ],
+  "not_yet_checked": "Prediction-powered uniform hypothesis fitting and conservative active distributional calibration direct neighbours remain for future targeted audit; absence not established."
+}

@@ -1,0 +1,181 @@
+{
+  "namespace": "research_20261107_remaining_risk",
+  "prepared_actual_utc": "2026-11-07T10:18:23.532377+00:00",
+  "self_excluded": true,
+  "files": [
+    {
+      "path": "code/freeze_forecasts.py",
+      "bytes": 7972,
+      "sha256": "47eb96b09fd9ecc56c5e16658b772f42fe198a8ae443261bbe26d74735e21b38",
+      "role": "byte-identical actually executed task source, no material values"
+    },
+    {
+      "path": "code/pilot_io.py",
+      "bytes": 10237,
+      "sha256": "a61f66cadf6eb8fbcc58982d8a5957d0aaf9b2b0114607ad44e3b1dfe6efef55",
+      "role": "byte-identical actually executed task source, no material values"
+    },
+    {
+      "path": "code/query_and_score.py",
+      "bytes": 19733,
+      "sha256": "1b958f28cebd1db1589965f6ec8daaefcd8952d5273dfbbcd87b024d5398384d",
+      "role": "byte-identical actually executed task source, no material values"
+    },
+    {
+      "path": "dependencies/empirical_native.py",
+      "bytes": 8607,
+      "sha256": "6d76cdf584da6fdc917554942dd8a19abd8785928d2621af28ff049ec577239b",
+      "role": "byte-identical pure dependency empirical_native"
+    },
+    {
+      "path": "dependencies/affine_reference.py",
+      "bytes": 4435,
+      "sha256": "cd6aae1045ea6a64fab4af82046d053188da9c5ef828462d4059e51a84041bbf",
+      "role": "byte-identical pure dependency affine_reference"
+    },
+    {
+      "path": "dependencies/directed_confidence.py",
+      "bytes": 5049,
+      "sha256": "dc2a06ac82012c052604afe2d06128ac4c7e9c7dfea4c3a8ab75c81b990004de",
+      "role": "byte-identical pure dependency directed_confidence"
+    },
+    {
+      "path": "dependencies/remaining_risk_core.py",
+      "bytes": 11886,
+      "sha256": "fc77df35e9f4ea9f50b51b4c8a66cfa12306ac7941d0cd88766c46c9eb6d526d",
+      "role": "byte-identical pure dependency remaining_risk_core"
+    },
+    {
+      "path": "independent_audit/audit_material.py",
+      "bytes": 48415,
+      "sha256": "eb9775501d51e0504e67a9393a5ef97ddae93c6734e14abc79280f7e63c095b0",
+      "role": "independent saved-state/score audit source only"
+    },
+    {
+      "path": "independent_audit/audit_math.py",
+      "bytes": 11155,
+      "sha256": "9804d80dfb17e2da89879e37c2b1125c08b2d2f4f6df11509cf25dc0a8a58e95",
+      "role": "independent saved-state/score audit source only"
+    },
+    {
+      "path": "metadata/select_identity.py",
+      "bytes": 16916,
+      "sha256": "611e8b54eb372d4fa0893404a8e38e946b8c818e40184b41d8b266b364e35541",
+      "role": "identity-only whole-source graph allocator, no identity table"
+    },
+    {
+      "path": "uniform/principle_gate/finite_code_math.py",
+      "bytes": 6755,
+      "sha256": "6d3e819307dee6e67a3c9df477afd5d58c02cbef40e022d1253adb7b079f6601",
+      "role": "nonmaterial six-handcase source or declared synthetic input, not material learning implementation"
+    },
+    {
+      "path": "uniform/principle_gate/run_principle_gate.py",
+      "bytes": 14734,
+      "sha256": "e7e947b698a519c0d33d5c9f51a54910d2dd11d23ef56d18ec6658de2cc26a9d",
+      "role": "nonmaterial six-handcase source or declared synthetic input, not material learning implementation"
+    },
+    {
+      "path": "uniform/principle_gate/HANDCASES.json",
+      "bytes": 4053,
+      "sha256": "adbbecbbffecc97edc078f2660794bdfe7d0e78b6dc961f80628e58ce23dbae4",
+      "role": "nonmaterial six-handcase source or declared synthetic input, not material learning implementation"
+    },
+    {
+      "path": "uniform/PRINCIPLE_GATE_SUMMARY.json",
+      "bytes": 970,
+      "sha256": "e7a0309414413043d91ef8fad4e6462fcaed8735797779dbb87c373b38a70598",
+      "role": "actual six-handcase aggregate summary, no material data"
+    },
+    {
+      "path": "AGGREGATE_RESULTS.json",
+      "bytes": 7390,
+      "sha256": "be84fec8f0b094f572a955ee78ee3f4113b85298505c35a22d34448ab837006c",
+      "role": "all F/G/H aggregate diagnostics and alpha0 primary; all per-material records removed"
+    },
+    {
+      "path": "AUDIT_SUMMARY.json",
+      "bytes": 4098,
+      "sha256": "6f43a0184f4bb08d8cb36c5faeaf9ec684e082552e8d629137f716cd3196a3d0",
+      "role": "audit aggregate status/counts/pins, no granular logs or cases"
+    },
+    {
+      "path": "PROTOCOL_SUMMARY.json",
+      "bytes": 1487,
+      "sha256": "cb06a2ea99367fa8b95e86ccccef6fb7c66f322400befe4308d609b111e26200",
+      "role": "true registered fields/groups/timing/counts without values or identities"
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "bytes": 1663,
+      "sha256": "13f58a0a1f1fe0e4ccf1da417a0c6c6e2ef80d6c9641f592758970e6e3c80160",
+      "role": "exact source/output hashes and separately scoped complete local archive"
+    },
+    {
+      "path": "RESULTS_AND_RESEARCH_DECISION_ZH.txt",
+      "bytes": 5238,
+      "sha256": "efc80468d42ef58ed46aa6d711763d4b77ceb90151bd81670e4fe96734c3c4d6",
+      "role": "own scientific explanation/reading-depth record, no paper fulltext or material cases"
+    },
+    {
+      "path": "uniform/MATHEMATICAL_CANDIDATE_NOT_EXECUTED_ZH.txt",
+      "bytes": 5597,
+      "sha256": "a72676f472ad69e106f4efa0543eb700c29283c374f38a6f90a0285cdbd1a827",
+      "role": "own scientific explanation/reading-depth record, no paper fulltext or material cases"
+    },
+    {
+      "path": "uniform/VARIANCE_ADAPTIVE_UNEXECUTED_NOTE_ZH.txt",
+      "bytes": 2590,
+      "sha256": "1eaa35f634df94dd4004ceed77deef969a6a65e81fd7700f60c75be9b0d53464",
+      "role": "own scientific explanation/reading-depth record, no paper fulltext or material cases"
+    },
+    {
+      "path": "uniform/PREDRAW_PREDICTABILITY_ADDENDUM_ZH.txt",
+      "bytes": 1335,
+      "sha256": "1b62630887c8b5ece54d7e744170e1d1b0153c9607643a0d6cb9c1d03fa8c51d",
+      "role": "own scientific explanation/reading-depth record, no paper fulltext or material cases"
+    },
+    {
+      "path": "uniform/INDEPENDENT_FORMULA_REVIEW_ZH.txt",
+      "bytes": 6769,
+      "sha256": "747b2ab4d0f075114a92fb6af12be750176f9937209a8723e316074664b69e82",
+      "role": "own scientific explanation/reading-depth record, no paper fulltext or material cases"
+    },
+    {
+      "path": "uniform/VARIANCE_NOTE_INDEPENDENT_REVIEW_ZH.txt",
+      "bytes": 4619,
+      "sha256": "05472417f4b01f0fb8f2515fd5681799d464657115ae4a1ecf80b27c90e1ed6b",
+      "role": "own scientific explanation/reading-depth record, no paper fulltext or material cases"
+    },
+    {
+      "path": "uniform/PRINCIPLE_GATE_ACTUAL_EXECUTION_ADDENDUM_ZH.txt",
+      "bytes": 1733,
+      "sha256": "2b22a0774c86d7ab11d0ff4ff63012a52e06fc011e77d286ab65adb613f944fe",
+      "role": "own scientific explanation/reading-depth record, no paper fulltext or material cases"
+    },
+    {
+      "path": "literature/PRIMARY_READING_LEDGER.json",
+      "bytes": 3714,
+      "sha256": "9e3ae32b930f2948e944bf3df57ce82bff66d71c5c25f5c5ea3c67a52d1e1a9e",
+      "role": "own scientific explanation/reading-depth record, no paper fulltext or material cases"
+    },
+    {
+      "path": "SYNTHETIC_SCOPE_CORRECTION_ZH.txt",
+      "bytes": 2204,
+      "sha256": "ee8dad577f14c55ac37bd8061e977e832f835c8bc3fc161f392080b9163a23e6",
+      "role": "own scientific explanation/reading-depth record, no paper fulltext or material cases"
+    },
+    {
+      "path": "README_ZH.txt",
+      "bytes": 3025,
+      "sha256": "47bfef1149c6c0e4fbb67ccee87f3d773fc46eed4342fd33a987a72ae9bfb62c",
+      "role": "clear algorithm/evidence/resource guide; no new claims or cases"
+    },
+    {
+      "path": "index.html",
+      "bytes": 3046,
+      "sha256": "4e058d69cd525bce50ec5143b6f4ed96b4116273a6b0ba4a697ac2d1a3f1ef00",
+      "role": "alpha0 failed primary and separate rawG gain upfront, no cases"
+    }
+  ]
+}

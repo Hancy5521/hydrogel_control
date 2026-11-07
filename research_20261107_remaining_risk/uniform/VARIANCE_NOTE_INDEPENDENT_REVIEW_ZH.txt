@@ -1,0 +1,44 @@
+方差自适应未执行说明：独立一步证明与符号澄清
+
+范围：只复核VARIANCE_ADAPTIVE_UNEXECUTED_NOTE_ZH.txt的条件论证，不执行任何新CS代码、合成覆盖实验或旧512重放，不修改原note/科学source。统计来源的真实阅读范围沿用root已记录ledger；本文下面给自包含推导，不新增全文阅读或首次方法主张。
+
+结论：候选one-step empirical-Bernstein过程、变化条件均值下的归一化、psi合并4因子均可成立。原文U公式是正确的反射过程上界，但需要明确显示的正号过程本身给下界，而不是U。h和lambda的可预测性、W>0与不依赖候选D等条件需同时写清。
+
+1. 不需要固定条件均值的一步证明
+令X在[0,1]，h在[0,1]且当前观测前已知，mu=E[X|past]允许随时间和已知界变化。lambda也须当前观测前已知，且0<lambda<1。取xi=X-h∈[-1,1]，psi(lambda)=-log(1-lambda)-lambda。
+基本确定不等式为
+  log(1+lambda*xi) >= lambda*xi-psi(lambda)*xi^2。
+若xi=-u, u∈[0,1]，由log(1-lambda*u)+lambda*u=-sum_(k>=2)(lambda*u)^k/k >= -u^2 sum_(k>=2)lambda^k/k可得。
+若xi>=0，由log(1+s)>=s-s^2/2(s>=0)以及psi(lambda)>=lambda^2/2可得。
+于是exp(lambda*xi-psi*xi^2)<=1+lambda*xi，且右侧严格为正。条件期望后，设b=mu-h，
+  E[exp(lambda*(X-mu)-psi*(X-h)^2)|past]
+  <= exp(-lambda*b)*(1+lambda*b) <=1。
+这只用了当步条件均值，不要求mu跨时间固定。因此原文先说明固定mu文献模型不能直接原样套用，再用one-step推导适配，是正确做法。
+
+2. 归一化与变化范围
+冻结原始proper-score总量D，W_t>0时Z_t的可预测区间为[a_t,a_t+W_t]。X_t=(Z_t-a_t)/W_t∈[0,1]，mu_t(D)=(D-a_t)/W_t确为真实条件均值。这里D为固定全池总量，a_t/W_t由过去及当前剩余界可知；变化mu_t不破坏上一步。
+X_t-mu_t(D)=(Z_t-D)/W_t，所以
+  A_t=sum lambda_s/W_s，S_t=sum lambda_s*Z_s/W_s。
+A量纲是原loss单位的倒数，S无量纲。若W=0，不得继续除零；应使用已经由界确定的贡献/停止查询。Z_t的已知区间中心不是D；不能误写|Z_t-D|<=W_t/2。
+为了得到下面线性的S/A闭式，lambda_t、h_t既不能看当前X/Y，也不能作为候选D的函数；它们可以由过去的D估计及当前已知a/W构造。若使用h_t(D)或lambda_t(D)，对真实D的一步论证可能仍能逐参数建立，但不再自动得到同一个S/A闭式，需重新处理反演。没有在此引入这种复杂形式。
+旧Hoeffding核心的lambda有倒数loss量纲；此处lambda是维度less且严格小于1，两者不能直接复制相同数字/网格。未来实现须事前登记适用的新网格或可预测更新，不在旧512追参。
+
+3. 两侧过程与正确端点
+若两侧使用相同lambda_t/h_t，令V_t=sum psi(lambda_s)*(X_s-h_s)^2。
+正号过程
+  Mplus_t(D)=exp(S_t-A_t*D-V_t)
+是非负超鞅；Ville给它对应的LOWER
+  L_t=(S_t-V_t-log(1/eta_L))/A_t。
+反射变量X'=1-X，h'=1-h，mu'=1-mu，平方误差相同，产生
+  Mminus_t(D)=exp(A_t*D-S_t-V_t)
+并给UPPER
+  U_t=(S_t+V_t+log(1/eta_U))/A_t。
+因此原文U公式正确，但应说它来自反射过程；所显示的+lambda*(X-mu)直接对应L。若两侧使用不同predictor或lambda，A/S/V也应分侧保存，不能混合使用。
+eta_L+eta_U<=delta；若有d坐标、m个预定lambda过程，需为全部2dm条线分配总预算，或使用另外已经证明的混合/e-process。参数网格不能看到本次标签后挑最优而漏掉选择代价。
+
+4. psi与4因子
+原文常见记法psi_E(lambda)=[-log(1-lambda)-lambda]/4，v_s=4*(X_s-h_s)^2。它们的乘积恰为psi(lambda)*(X_s-h_s)^2。因此当前合并写法没有漏4，也不能再额外乘4。此处V是样本预测误差累积，不需要冒称条件方差的无偏估计；更好的predictable h可能改善功效，但名称本身不保证更紧。
+
+5. 回到真正剩余风险与低维主线
+所有端点仍先针对固定全池D，再减实际已查贡献，不能直接把变化剩余参数代入固定D超鞅。对向量c也须联合时间/坐标预算、有效box和已知range(Q_R)约束；theta学习仍基于统一置信事件，不能只给事后最好的theta单独套未付选择代价的区间。
+不把原512的alpha0改写成新控制成功；这份数学适配没有实际方差自适应核心、数值向外证明或材料结果。普通verified-query ERM、原始修正和参考强基线继续保留为不同层次的效力对照。统计层是附加可检验能力，不应变成唯一性能成功定义。

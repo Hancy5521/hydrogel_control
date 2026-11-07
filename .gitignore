@@ -109,3 +109,7 @@ new_weighting_summary.json
 # Reviewed physical-reference publicsource/aggregate checkpoint
 !research_20261107_physical_reference/
 !research_20261107_physical_reference/**
+
+# Reviewed remaining-risk source/aggregate checkpoint
+!research_20261107_remaining_risk/
+!research_20261107_remaining_risk/**

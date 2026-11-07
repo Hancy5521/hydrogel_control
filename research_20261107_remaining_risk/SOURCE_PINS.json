@@ -1,0 +1,36 @@
+{
+  "scientific_source_sha256": {
+    "freeze_forecasts.py": "47eb96b09fd9ecc56c5e16658b772f42fe198a8ae443261bbe26d74735e21b38",
+    "pilot_io.py": "a61f66cadf6eb8fbcc58982d8a5957d0aaf9b2b0114607ad44e3b1dfe6efef55",
+    "query_and_score.py": "1b958f28cebd1db1589965f6ec8daaefcd8952d5273dfbbcd87b024d5398384d"
+  },
+  "pure_dependencies": {
+    "empirical_native": {
+      "basename": "empirical_native.py",
+      "sha256": "6d76cdf584da6fdc917554942dd8a19abd8785928d2621af28ff049ec577239b"
+    },
+    "affine_reference": {
+      "basename": "affine_reference.py",
+      "sha256": "cd6aae1045ea6a64fab4af82046d053188da9c5ef828462d4059e51a84041bbf"
+    },
+    "directed_confidence": {
+      "basename": "directed_confidence.py",
+      "sha256": "dc2a06ac82012c052604afe2d06128ac4c7e9c7dfea4c3a8ab75c81b990004de"
+    },
+    "remaining_risk_core": {
+      "basename": "remaining_risk_core.py",
+      "sha256": "fc77df35e9f4ea9f50b51b4c8a66cfa12306ac7941d0cd88766c46c9eb6d526d"
+    }
+  },
+  "source_results_sha256": "ac314e7296c5cf2fe0e583267841c088c735db35a4d9549acd1e1c80a158281d",
+  "complete_local_resource": {
+    "filename": "Remaining_Risk_512_20261107.zip",
+    "status": "ACTUAL_BUILT_ARCHIVE_EXACT_BYTES_INDEPENDENT_DELIVERY_SEPARATE",
+    "bytes": 217498994,
+    "sha256": "114e6534a0dca1885c2dd6176dfb2d197ce29ea6fbd7d42302978b0361e1b0d4",
+    "archive_is_complete_local_resource_public_Git_is_subset": true
+  },
+  "public_subset_is_not_complete_reproduction": true,
+  "prior_complete_physical17_zip_sha256": "1d450a3550c052f92f260d6978291bc8c220a709e4a4c7506c8c8f8e6faed634",
+  "old_MLST_separate_main_commit": "05a40915be149857b2bb9cf65144d53fa9b24f37"
+}

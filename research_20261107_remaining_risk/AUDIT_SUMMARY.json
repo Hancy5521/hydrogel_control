@@ -1,0 +1,78 @@
+{
+  "forecast": {
+    "status": "PASS_INDEPENDENT_REMAINING512_FORECASTS",
+    "laws_audited": 512,
+    "trees_audited": 256,
+    "exact_tree_routes": 206848,
+    "exact_denominator_lcm_bit_length": 251,
+    "scientific_plan_sha256": "54a7a1fd656bc72b9d757184cb31643645211624e97d3161447ab9ace2192905",
+    "forecast_freeze_sha256": "5d9e6b16354aff9bf15ebaf483870e82fbdb525ad8d226cc57d0ee71ba510df2",
+    "SUT_imports": 0,
+    "new_fits": 0,
+    "new_target_queries": 0,
+    "no_raw_source_decode": true,
+    "independence_scope": "Saved forecast/controller audit by a different author; not an independent review of this agent's production core. Separate core QA is required.",
+    "limitations": [
+      "Historical RF bootstrap/training evidence is limited to the immutable saved source and prior review",
+      "One prospective epoch cannot empirically establish95% coverage",
+      "Seeded PRNG is a recorded implementation under an ideal random-ticket theorem",
+      "All queried and census report accesses count; no wet/DFT savings measured"
+    ],
+    "receipt_sha256": "5e2a6b8310a277161be6878b3d29171a49a0d309f081e6e166beffc92ac5fede"
+  },
+  "query": {
+    "status": "PASS_INDEPENDENT_REMAINING512_QUERY",
+    "all_prefixes_audited": 385,
+    "queried_groups": 384,
+    "remaining_groups": 128,
+    "alpha_exact_fraction": "0",
+    "strict_certificate": false,
+    "prelabel_LCM_guard_rejected": false,
+    "actual_total_report_targets": 512,
+    "first_full_predictive_scores_performed": 0,
+    "scientific_plan_sha256": "54a7a1fd656bc72b9d757184cb31643645211624e97d3161447ab9ace2192905",
+    "forecast_freeze_sha256": "5d9e6b16354aff9bf15ebaf483870e82fbdb525ad8d226cc57d0ee71ba510df2",
+    "pilot_close_sha256": "78e4bb60a8b526838d8036605eb2cfbf829fcc805275b1786032e0070ade9c09",
+    "SUT_imports": 0,
+    "new_fits": 0,
+    "new_target_queries": 0,
+    "no_raw_source_decode": true,
+    "independence_scope": "Saved forecast/controller audit by a different author; not an independent review of this agent's production core. Separate core QA is required.",
+    "limitations": [
+      "Historical RF bootstrap/training evidence is limited to the immutable saved source and prior review",
+      "One prospective epoch cannot empirically establish95% coverage",
+      "Seeded PRNG is a recorded implementation under an ideal random-ticket theorem",
+      "All queried and census report accesses count; no wet/DFT savings measured"
+    ],
+    "receipt_sha256": "3117247efc2a38af47b23a2dcb3746f958d9ebb0db11dcf2c5bae0403a3bc7a9"
+  },
+  "scores": {
+    "status": "PASS_INDEPENDENT_REMAINING512_SCORES",
+    "proper_scores_audited": 1536,
+    "coverage_events_audited": 4608,
+    "alpha_exact_fraction": "0",
+    "remaining_groups": 128,
+    "queried_groups": 384,
+    "strict_certificate": false,
+    "actual_bound_violation": false,
+    "pilot_effective_increment": false,
+    "scientific_plan_sha256": "54a7a1fd656bc72b9d757184cb31643645211624e97d3161447ab9ace2192905",
+    "forecast_freeze_sha256": "5d9e6b16354aff9bf15ebaf483870e82fbdb525ad8d226cc57d0ee71ba510df2",
+    "pilot_close_sha256": "78e4bb60a8b526838d8036605eb2cfbf829fcc805275b1786032e0070ade9c09",
+    "SUT_imports": 0,
+    "new_fits": 0,
+    "new_target_queries": 0,
+    "no_raw_source_decode": true,
+    "independence_scope": "Saved forecast/controller audit by a different author; not an independent review of this agent's production core. Separate core QA is required.",
+    "limitations": [
+      "Historical RF bootstrap/training evidence is limited to the immutable saved source and prior review",
+      "One prospective epoch cannot empirically establish95% coverage",
+      "Seeded PRNG is a recorded implementation under an ideal random-ticket theorem",
+      "All queried and census report accesses count; no wet/DFT savings measured"
+    ],
+    "receipt_sha256": "7e66744c89ee8d687fe25aff84e93924603df32644afb3ce452a7f4904ce19ea"
+  },
+  "no_scientific_reexecution": true,
+  "raw_trace_additional_unique_cohorts": 0,
+  "raw_trace_receipt_sha256": "2f38020a3ba6586678e1f9523a2030f112070ea1384d32ebc6d194cb0229e39a"
+}

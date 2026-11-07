@@ -1,11 +1,10 @@
 {
-  "checkpoint": "physical-reference-three-cycle-20261107",
-  "parent_commit": "dcfb8e0ede9405d391340b8758b8b3b90863ca6f",
-  "prepared_actual_utc": "2026-11-07T06:04:33.299306+00:00",
-  "previous_manifest_sha256": "f8e5fa157fdda2ba654b1786bd90814aa978e63b41d870f4c44e85be1a80c859",
+  "checkpoint": "remaining-risk512-and-uniform-code-principle-20261107",
+  "parent_commit": "26d7131d53bce78847d0e13f39fa7323f3017875",
+  "prepared_actual_utc": "2026-11-07T10:18:23.532377+00:00",
+  "previous_manifest_sha256": "179e75eaa502c20b8f5ab91f95fe7859d194d13c244a5fd8cfc6cc5be01ec4d4",
   "self_excluded": true,
   "all_old_nonadministrative_bytes_preserved": true,
-  "actual_apply_UTC_will_be_external_receipt_not_predeclared": true,
   "files": [
     {
       "path": ".gitattributes",
@@ -15,15 +14,15 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 4376,
-      "sha256": "539c74a2d375d5d6efb29c18774d4d47fca1dd6f6276ce7652a4f4e173059bd3",
-      "git_blob_sha1": "9e6e0d26777408310424bf04ba9afd12a84f5131"
+      "bytes": 4503,
+      "sha256": "0586b333e9369139401bd0ec1b40cc1f0afb5fdb9d77e254a45c2c63ef7f7848",
+      "git_blob_sha1": "ba73d28c1263f542cc33e8efc25c50a589cc1d37"
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 8742,
-      "sha256": "0cb712a4b6bb5eedf85dfecab4f08ca5e4a4811dc324c8d015818d66be5d838c",
-      "git_blob_sha1": "debcb64cf14b33e9e58b25c0d47143542217a3cc"
+      "bytes": 9085,
+      "sha256": "5b8c6d74876af446282f5d7a1187701b3c920f1b82bc56a22ad9124cd7b400a9",
+      "git_blob_sha1": "a5dfca8d067b7d33afb1219a478f23bd24d9bad3"
     },
     {
       "path": "CHECKPOINT.json",
@@ -45,9 +44,9 @@
     },
     {
       "path": "README.md",
-      "bytes": 19736,
-      "sha256": "fe1c0df7214133a151eb8dc40b3c6c7c265d6d5e531070c10a0bb991a4c7a6df",
-      "git_blob_sha1": "e2c98a4ce107a252ed6c1fda2a1be1eb2598a10a"
+      "bytes": 20176,
+      "sha256": "26441c2cb5daca185d689cfaa732bd0fbcff95372b81fbcfa4b18594fc9d0a65",
+      "git_blob_sha1": "aa66c8ae3c2ae196113ed78bf1ee304d75aa0aaa"
     },
     {
       "path": "RELATION_MOMENT_CHECKPOINT.json",
@@ -9708,6 +9707,186 @@
       "bytes": 183,
       "sha256": "4c515ad62262d1d3e26deb3d2b8aff261816de3373199d6965af9605ce7108c4",
       "git_blob_sha1": "d25359c4baa45602239c2165d71ee37657bc0c78"
+    },
+    {
+      "path": "research_20261107_remaining_risk/AGGREGATE_RESULTS.json",
+      "bytes": 7390,
+      "sha256": "be84fec8f0b094f572a955ee78ee3f4113b85298505c35a22d34448ab837006c",
+      "git_blob_sha1": "2622ddcc6532cd16de3fe8720582a12c8f2b193a"
+    },
+    {
+      "path": "research_20261107_remaining_risk/AUDIT_SUMMARY.json",
+      "bytes": 4098,
+      "sha256": "6f43a0184f4bb08d8cb36c5faeaf9ec684e082552e8d629137f716cd3196a3d0",
+      "git_blob_sha1": "ce892ce50a7450c3abb96f770902d3c45a88ee98"
+    },
+    {
+      "path": "research_20261107_remaining_risk/PROTOCOL_SUMMARY.json",
+      "bytes": 1487,
+      "sha256": "cb06a2ea99367fa8b95e86ccccef6fb7c66f322400befe4308d609b111e26200",
+      "git_blob_sha1": "bd1b7c6564925065af6910a0c52e92e1256628f5"
+    },
+    {
+      "path": "research_20261107_remaining_risk/PUBLIC_MANIFEST.json",
+      "bytes": 7598,
+      "sha256": "c9efa940784cd24f3ac0fd9bfcde5a14707ce9e5c735bb559f9a55dda490f4f8",
+      "git_blob_sha1": "43f5c7cbec8b84460b3f4afce718cb63a9436a64"
+    },
+    {
+      "path": "research_20261107_remaining_risk/README_ZH.txt",
+      "bytes": 3025,
+      "sha256": "47bfef1149c6c0e4fbb67ccee87f3d773fc46eed4342fd33a987a72ae9bfb62c",
+      "git_blob_sha1": "0aa8b0cf46db3dd1d0c87643f3dc09c06d565cb0"
+    },
+    {
+      "path": "research_20261107_remaining_risk/RESULTS_AND_RESEARCH_DECISION_ZH.txt",
+      "bytes": 5238,
+      "sha256": "efc80468d42ef58ed46aa6d711763d4b77ceb90151bd81670e4fe96734c3c4d6",
+      "git_blob_sha1": "7a166bce8b0ed92d8bf5991173b5bd7f32631d64"
+    },
+    {
+      "path": "research_20261107_remaining_risk/SOURCE_PINS.json",
+      "bytes": 1663,
+      "sha256": "13f58a0a1f1fe0e4ccf1da417a0c6c6e2ef80d6c9641f592758970e6e3c80160",
+      "git_blob_sha1": "e2ad83255db3d8d7cf8e196eeb1700b0818acedd"
+    },
+    {
+      "path": "research_20261107_remaining_risk/SYNTHETIC_SCOPE_CORRECTION_ZH.txt",
+      "bytes": 2204,
+      "sha256": "ee8dad577f14c55ac37bd8061e977e832f835c8bc3fc161f392080b9163a23e6",
+      "git_blob_sha1": "59ebff511005da10f58d7e6f959c0b97a098145e"
+    },
+    {
+      "path": "research_20261107_remaining_risk/code/freeze_forecasts.py",
+      "bytes": 7972,
+      "sha256": "47eb96b09fd9ecc56c5e16658b772f42fe198a8ae443261bbe26d74735e21b38",
+      "git_blob_sha1": "14ea1a34502ef5160a6c0b6d2ccc0f5d1bfe222f"
+    },
+    {
+      "path": "research_20261107_remaining_risk/code/pilot_io.py",
+      "bytes": 10237,
+      "sha256": "a61f66cadf6eb8fbcc58982d8a5957d0aaf9b2b0114607ad44e3b1dfe6efef55",
+      "git_blob_sha1": "260dcb827b968d75156cea6ee2615b8ca6d87688"
+    },
+    {
+      "path": "research_20261107_remaining_risk/code/query_and_score.py",
+      "bytes": 19733,
+      "sha256": "1b958f28cebd1db1589965f6ec8daaefcd8952d5273dfbbcd87b024d5398384d",
+      "git_blob_sha1": "ffe8ce72d885018ccab5d9d032af0614ace48859"
+    },
+    {
+      "path": "research_20261107_remaining_risk/dependencies/affine_reference.py",
+      "bytes": 4435,
+      "sha256": "cd6aae1045ea6a64fab4af82046d053188da9c5ef828462d4059e51a84041bbf",
+      "git_blob_sha1": "2b6a33afcfabc18cff622bb528c5e854f0e667cb"
+    },
+    {
+      "path": "research_20261107_remaining_risk/dependencies/directed_confidence.py",
+      "bytes": 5049,
+      "sha256": "dc2a06ac82012c052604afe2d06128ac4c7e9c7dfea4c3a8ab75c81b990004de",
+      "git_blob_sha1": "fa2cd1619e7968c98f03f966c0d90226bbb4214d"
+    },
+    {
+      "path": "research_20261107_remaining_risk/dependencies/empirical_native.py",
+      "bytes": 8607,
+      "sha256": "6d76cdf584da6fdc917554942dd8a19abd8785928d2621af28ff049ec577239b",
+      "git_blob_sha1": "3d10e16b58d20f372aa28adc187137da0687ce13"
+    },
+    {
+      "path": "research_20261107_remaining_risk/dependencies/remaining_risk_core.py",
+      "bytes": 11886,
+      "sha256": "fc77df35e9f4ea9f50b51b4c8a66cfa12306ac7941d0cd88766c46c9eb6d526d",
+      "git_blob_sha1": "201cbb5e2e3cb9bf27f5d7f42e683b68c6588646"
+    },
+    {
+      "path": "research_20261107_remaining_risk/independent_audit/audit_material.py",
+      "bytes": 48415,
+      "sha256": "eb9775501d51e0504e67a9393a5ef97ddae93c6734e14abc79280f7e63c095b0",
+      "git_blob_sha1": "37690db11f4656e73d6343db78c3cee6c2118853"
+    },
+    {
+      "path": "research_20261107_remaining_risk/independent_audit/audit_math.py",
+      "bytes": 11155,
+      "sha256": "9804d80dfb17e2da89879e37c2b1125c08b2d2f4f6df11509cf25dc0a8a58e95",
+      "git_blob_sha1": "17b40772c6e14dc73bdf4f63e920602ffc021e20"
+    },
+    {
+      "path": "research_20261107_remaining_risk/index.html",
+      "bytes": 3046,
+      "sha256": "4e058d69cd525bce50ec5143b6f4ed96b4116273a6b0ba4a697ac2d1a3f1ef00",
+      "git_blob_sha1": "5cb65bcec1d399ab0910d5bc58514d20a979b519"
+    },
+    {
+      "path": "research_20261107_remaining_risk/literature/PRIMARY_READING_LEDGER.json",
+      "bytes": 3714,
+      "sha256": "9e3ae32b930f2948e944bf3df57ce82bff66d71c5c25f5c5ea3c67a52d1e1a9e",
+      "git_blob_sha1": "5f5ef2aadf065f608040b11e75c95766c90e522c"
+    },
+    {
+      "path": "research_20261107_remaining_risk/metadata/select_identity.py",
+      "bytes": 16916,
+      "sha256": "611e8b54eb372d4fa0893404a8e38e946b8c818e40184b41d8b266b364e35541",
+      "git_blob_sha1": "5ce103c79168f044932048c8508297006688d174"
+    },
+    {
+      "path": "research_20261107_remaining_risk/uniform/INDEPENDENT_FORMULA_REVIEW_ZH.txt",
+      "bytes": 6769,
+      "sha256": "747b2ab4d0f075114a92fb6af12be750176f9937209a8723e316074664b69e82",
+      "git_blob_sha1": "40efc62153c7178551f9e20f8c926fb4bbb8d03e"
+    },
+    {
+      "path": "research_20261107_remaining_risk/uniform/MATHEMATICAL_CANDIDATE_NOT_EXECUTED_ZH.txt",
+      "bytes": 5597,
+      "sha256": "a72676f472ad69e106f4efa0543eb700c29283c374f38a6f90a0285cdbd1a827",
+      "git_blob_sha1": "22ee3c4d8b10d63df16b0b4a3e5464a105e7d2c0"
+    },
+    {
+      "path": "research_20261107_remaining_risk/uniform/PREDRAW_PREDICTABILITY_ADDENDUM_ZH.txt",
+      "bytes": 1335,
+      "sha256": "1b62630887c8b5ece54d7e744170e1d1b0153c9607643a0d6cb9c1d03fa8c51d",
+      "git_blob_sha1": "1d547970cd0d0778780cc05e71657720b8157dac"
+    },
+    {
+      "path": "research_20261107_remaining_risk/uniform/PRINCIPLE_GATE_ACTUAL_EXECUTION_ADDENDUM_ZH.txt",
+      "bytes": 1733,
+      "sha256": "2b22a0774c86d7ab11d0ff4ff63012a52e06fc011e77d286ab65adb613f944fe",
+      "git_blob_sha1": "7accb97decd8d8f8094e666e16d09d3672076ad7"
+    },
+    {
+      "path": "research_20261107_remaining_risk/uniform/PRINCIPLE_GATE_SUMMARY.json",
+      "bytes": 970,
+      "sha256": "e7a0309414413043d91ef8fad4e6462fcaed8735797779dbb87c373b38a70598",
+      "git_blob_sha1": "324647c4789e5819e753662be7b2cb49c872de11"
+    },
+    {
+      "path": "research_20261107_remaining_risk/uniform/VARIANCE_ADAPTIVE_UNEXECUTED_NOTE_ZH.txt",
+      "bytes": 2590,
+      "sha256": "1eaa35f634df94dd4004ceed77deef969a6a65e81fd7700f60c75be9b0d53464",
+      "git_blob_sha1": "ceada2d9a1f13f36bc8ebf19b178f354b09bc4e6"
+    },
+    {
+      "path": "research_20261107_remaining_risk/uniform/VARIANCE_NOTE_INDEPENDENT_REVIEW_ZH.txt",
+      "bytes": 4619,
+      "sha256": "05472417f4b01f0fb8f2515fd5681799d464657115ae4a1ecf80b27c90e1ed6b",
+      "git_blob_sha1": "59004e95f63e8cdd2397547497b833c36551e6f0"
+    },
+    {
+      "path": "research_20261107_remaining_risk/uniform/principle_gate/HANDCASES.json",
+      "bytes": 4053,
+      "sha256": "adbbecbbffecc97edc078f2660794bdfe7d0e78b6dc961f80628e58ce23dbae4",
+      "git_blob_sha1": "b91a580bea48b8945417466906e54229db1d1d69"
+    },
+    {
+      "path": "research_20261107_remaining_risk/uniform/principle_gate/finite_code_math.py",
+      "bytes": 6755,
+      "sha256": "6d3e819307dee6e67a3c9df477afd5d58c02cbef40e022d1253adb7b079f6601",
+      "git_blob_sha1": "6cc2a726568b95af10ca311dfaa689735d77a979"
+    },
+    {
+      "path": "research_20261107_remaining_risk/uniform/principle_gate/run_principle_gate.py",
+      "bytes": 14734,
+      "sha256": "e7e947b698a519c0d33d5c9f51a54910d2dd11d23ef56d18ec6658de2cc26a9d",
+      "git_blob_sha1": "5032a7f269801965a096955182f3afefb04b11cd"
     },
     {
       "path": "results/SUMMARY.json",
