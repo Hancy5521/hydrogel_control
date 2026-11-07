@@ -1,0 +1,32 @@
+{
+  "status": "ACTUAL_INDEPENDENT_SAVED_ARITHMETIC_PASS_SUMMARY",
+  "state": {
+    "status": "PASS_INDEPENDENT_PHYSICAL_SAVED_STATES",
+    "saved_laws": 3840,
+    "exact_primary_bounds": 384,
+    "model_training_calls_audited": 17,
+    "new_fits": 0,
+    "SUT_imports": 0,
+    "new_label_reads": 0,
+    "raw_reads": 0,
+    "full_outcome_score_calls": 0,
+    "CRPS_all_feature_optimality_certified": false,
+    "scope": "Saved arithmetic and legally disclosed history; no future calibration or physical-cost guarantee."
+  },
+  "scores": {
+    "status": "PASS_INDEPENDENT_PHYSICAL_ALL_SCORES",
+    "scores_audited": 3840,
+    "exact_empirical_scores": 3456,
+    "normal_CDF_integrals": 384,
+    "exact_primary_envelopes": 384,
+    "coverage_events": 11520,
+    "SUT_imports": 0,
+    "new_fits": 0,
+    "new_target_queries": 0,
+    "scope": "All saved score/adoption arithmetic only; adaptive rounds are not independent campaigns and retrospective report access is not physical savings."
+  },
+  "state_receipt_sha256": "5aa761820acc75159b57e3eae1dedfa824e61eb5c63bc63c2e7dac83a26055ab",
+  "score_receipt_sha256": "e6fbddd44baec6d161422991e7eb4620aa23011d2a884f494edc0794771d7db5",
+  "V1_normalquadrature_7cases_and_V2_amendment_preserved_in_complete_local_resource": true,
+  "independent_audit_is_notnewmaterialconfirmation_or_physical_savings": true
+}

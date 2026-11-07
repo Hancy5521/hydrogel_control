@@ -1,0 +1,55 @@
+{
+  "recorded_actual_utc": "2026-11-07T05:12:11.508428+00:00",
+  "scope": "boundedoverlapandinterpretationupdate;notexhaustiveglobalreview",
+  "actual_search_queries": [
+    "materials active testing CRPS",
+    "materials CDF recalibration residual",
+    "dielectric probabilistic ionic machine learning uncertainty",
+    "materials science hypercycle machine learning autonomous",
+    "exacttitleJacobs2024arxiv",
+    "045051Jacobs2024uncertainty"
+  ],
+  "read_sources": [
+    {
+      "url": "https://proceedings.mlr.press/v202/dheur23a.html",
+      "pdf": "https://proceedings.mlr.press/v202/dheur23a/dheur23a.pdf",
+      "authors": "DheurandBenTaieb",
+      "year": 2023,
+      "title": "A Large-Scale Study of Probabilistic Calibration in Neural Network Regression",
+      "reading_depth": "PMLRabstract+PDFselectedsection5.3-5.4/6.1andAppendixB.1;notfull24pages/proofs/code",
+      "paraphrase": "Calibration, sharpness and proper-score quality can move in different directions. The study compares multiple CDF recalibrators and regularizers in a common experimental setup. A CDF map alone is established; our proposed test must justify material-specific reference geometry and prospective adoption with matched baselines. Lower CRPS does not automatically establish better coverage.",
+      "license": "PMLRauthorcopyrightpage;noarticlebytesredistributed",
+      "full_papers_claimed_read": 0
+    },
+    {
+      "url": "https://arxiv.org/abs/2406.15650",
+      "DOI": "10.1088/2632-2153/ad95db",
+      "authors": "Jacobsetal",
+      "year": 2024,
+      "title": "Machine Learning Materials Properties with Accurate Predictions, Uncertainty Estimates, Domain Guidance, and Persistent Online Accessibility",
+      "reading_depth": "arXivindexedabstractonlyplusgovernmentPDFsearchsnippet;fullmethodsnotreadinthisupdate",
+      "paraphrase": "Materials random-forest uncertainty recalibration and applicability-domain guidance already have explicit precedents across many properties. Therefore materials applicability alone cannot support an unrestricted first-calibration claim. Our comparison and scope must stay specific.",
+      "version_verified_this_update": false,
+      "license": "notreverified,nofulltextredistributed",
+      "full_papers_claimed_read": 0
+    }
+  ],
+  "failed_endpoints_closed_thisrun": [
+    {
+      "url": "https://www.osti.gov/pages/servlets/purl/2583997",
+      "error": "502",
+      "retries": 0
+    },
+    {
+      "url": "https://arxiv.org/html/2406.15650v2",
+      "error": "404",
+      "version_guess_notverified": "do not citev2asread",
+      "retries": 0
+    }
+  ],
+  "secondary_results_not_relied_on": [
+    "corporateHyperCyclesoftware",
+    "reviews/ResearchGate/summaries"
+  ],
+  "decision": "Nochangeofprecommittedthree-roundrecipeorunconsumedgroups;retainclassicalpriorandmulti-metrictradeoffs;noguaranteeofnoidenticalpaper"
+}

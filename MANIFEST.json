@@ -1,9 +1,11 @@
 {
-  "checkpoint": "dielectric-transport-development-20261107",
-  "parent_commit": "0e83b1d9e04a14215fd5793db4482ce59e343ed9",
-  "prepared_actual_utc": "2026-11-07T05:12:20.717112+00:00",
-  "previous_manifest_sha256": "88ebb725b50414d6f1070795f049d3fdbdb9812b8c34f4f44899ab784c578ef0",
+  "checkpoint": "physical-reference-three-cycle-20261107",
+  "parent_commit": "dcfb8e0ede9405d391340b8758b8b3b90863ca6f",
+  "prepared_actual_utc": "2026-11-07T06:04:33.299306+00:00",
+  "previous_manifest_sha256": "f8e5fa157fdda2ba654b1786bd90814aa978e63b41d870f4c44e85be1a80c859",
   "self_excluded": true,
+  "all_old_nonadministrative_bytes_preserved": true,
+  "actual_apply_UTC_will_be_external_receipt_not_predeclared": true,
   "files": [
     {
       "path": ".gitattributes",
@@ -13,15 +15,15 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 4231,
-      "sha256": "df38dcc9ba416ec68c2a14e5f828c058c0e5073fe0c977532bbbb153a219bbd0",
-      "git_blob_sha1": "fe95a8f2c506438a1d3b41089b4d5306f92a9e6e"
+      "bytes": 4376,
+      "sha256": "539c74a2d375d5d6efb29c18774d4d47fca1dd6f6276ce7652a4f4e173059bd3",
+      "git_blob_sha1": "9e6e0d26777408310424bf04ba9afd12a84f5131"
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 8381,
-      "sha256": "22074eaff49bde9fa5a1519f7306af79757191c1dfe490e08c0eefec8ae0a7f8",
-      "git_blob_sha1": "c14c016890b071032960896efb14e12f74f49ac0"
+      "bytes": 8742,
+      "sha256": "0cb712a4b6bb5eedf85dfecab4f08ca5e4a4811dc324c8d015818d66be5d838c",
+      "git_blob_sha1": "debcb64cf14b33e9e58b25c0d47143542217a3cc"
     },
     {
       "path": "CHECKPOINT.json",
@@ -43,9 +45,9 @@
     },
     {
       "path": "README.md",
-      "bytes": 19334,
-      "sha256": "0eb2372fcf10d6ed5891c35aaed8c5612230a2c68e0d028148f41116cee8f4c8",
-      "git_blob_sha1": "8082a8eb1eabcb5d6f3d137f1505ac4c7a9453bf"
+      "bytes": 19736,
+      "sha256": "fe1c0df7214133a151eb8dc40b3c6c7c265d6d5e531070c10a0bb991a4c7a6df",
+      "git_blob_sha1": "e2c98a4ce107a252ed6c1fda2a1be1eb2598a10a"
     },
     {
       "path": "RELATION_MOMENT_CHECKPOINT.json",
@@ -9390,6 +9392,192 @@
       "git_blob_sha1": "ef20af9269b62dab5e054a4f0df37b2b8d3eefb0"
     },
     {
+      "path": "research_20261107_physical_reference/AGGREGATE_RESULTS.json",
+      "bytes": 55719,
+      "sha256": "b9443fde55a2df364fe45a92eb444ca0d18fc8da8ae5a52e293d5aab9e39ec0c",
+      "git_blob_sha1": "64428b50ff2fcdbfcf606490a1764ba69a3e3379"
+    },
+    {
+      "path": "research_20261107_physical_reference/AUDIT_SUMMARY.json",
+      "bytes": 1350,
+      "sha256": "bb1ac7eb32a2c1a1d938bc34efeda610f9db9d7120f69c6fbe6891601217479b",
+      "git_blob_sha1": "dc9256fc67def0b66c164e6cb41fa3aab3fc9f04"
+    },
+    {
+      "path": "research_20261107_physical_reference/NOVELTY_SCOPE.txt",
+      "bytes": 1238,
+      "sha256": "e9307fc838e7ab90632473ba51e610d15b11ae93a730b4d474b717bd5f5270c7",
+      "git_blob_sha1": "84bcbc85ffefb3ea17728a379e4a57adc37e0ef1"
+    },
+    {
+      "path": "research_20261107_physical_reference/PRIMARY_RESULT_INTERPRETATION_ZH.txt",
+      "bytes": 3967,
+      "sha256": "5d2cce5481879e70d6081ef04532171ec18d78907d06d448382797614c1d653a",
+      "git_blob_sha1": "ce8522d2b584498bf760d52b97ee7157dbd0e96b"
+    },
+    {
+      "path": "research_20261107_physical_reference/PROTOCOL_SUMMARY.json",
+      "bytes": 1993,
+      "sha256": "d21021718e642c98b4b3a08fdf8f6bf31a071485a66af2dce85ab180a08d6a59",
+      "git_blob_sha1": "34efdad446bd07dca4f0187584aa12e7fded4fb8"
+    },
+    {
+      "path": "research_20261107_physical_reference/PUBLIC_MANIFEST.json",
+      "bytes": 7765,
+      "sha256": "8c7dfe17689314be46b413802b02c9501f0c1b2c2bcf02332e68db469397cac5",
+      "git_blob_sha1": "aab5d7b55d9538d780fab82f4607309bac939e29"
+    },
+    {
+      "path": "research_20261107_physical_reference/README_ZH.txt",
+      "bytes": 2832,
+      "sha256": "99d604965ffadd5096ecf3f1431500ac8af0d0286ce4bf00e801150b7d491793",
+      "git_blob_sha1": "362e22f2a609cb3a2970fb553c79174c0cb9be8e"
+    },
+    {
+      "path": "research_20261107_physical_reference/SOURCE_PINS.json",
+      "bytes": 2298,
+      "sha256": "ca4d0fa279b86db04a2ae33cf94b1ae21fd317909004c1f4ca76d31a36ad858d",
+      "git_blob_sha1": "4607535d7d2147b23fc7038fd45cf8eff23765d0"
+    },
+    {
+      "path": "research_20261107_physical_reference/code/forecast_stage.py",
+      "bytes": 20220,
+      "sha256": "99329fb95e7173b094ac9caada762caffae8eded14f01c8790e5b185225d9a83",
+      "git_blob_sha1": "c61c29c50f4ea95255ee7b011d370fe45e29e32c"
+    },
+    {
+      "path": "research_20261107_physical_reference/code/numerical_adapter.py",
+      "bytes": 1993,
+      "sha256": "6f10ec1e39a17552ad8d985072611aa07bc5317d43aab832b5c351e54cd4256b",
+      "git_blob_sha1": "9844146676e5ad2e836cfbd39c6708d88b334078"
+    },
+    {
+      "path": "research_20261107_physical_reference/code/score_stage.py",
+      "bytes": 10600,
+      "sha256": "e6697cca2b567dd8c57674330f1fb184757a56d3b80ecb7f8101864f5fb9bdd1",
+      "git_blob_sha1": "66aba88aac8651a7ea0f2ebd9f365f80c733d200"
+    },
+    {
+      "path": "research_20261107_physical_reference/code/task_io.py",
+      "bytes": 13759,
+      "sha256": "dc732551d65ce19725da39deac5c5ccf026f42430156cae819d73affc269c9fa",
+      "git_blob_sha1": "6668ea3dd2a3ad357861ba123f1166e9d03976c7"
+    },
+    {
+      "path": "research_20261107_physical_reference/code/verification_stage.py",
+      "bytes": 10220,
+      "sha256": "c28741e9c091437251a3dcc5d176f110718614b7eda6f05dc02308b7bcffd956",
+      "git_blob_sha1": "951d74fde262b28892f0ba573cceab0b3f1c6088"
+    },
+    {
+      "path": "research_20261107_physical_reference/dependencies/affine_reference.py",
+      "bytes": 4435,
+      "sha256": "cd6aae1045ea6a64fab4af82046d053188da9c5ef828462d4059e51a84041bbf",
+      "git_blob_sha1": "2b6a33afcfabc18cff622bb528c5e854f0e667cb"
+    },
+    {
+      "path": "research_20261107_physical_reference/dependencies/baselines.py",
+      "bytes": 7621,
+      "sha256": "8a8e8aa94f313a22e3b56fca58a1ff7ddb93b51c94fe8f5e3ca752faf3cb3d27",
+      "git_blob_sha1": "d0f3bd988399a04dc2b0e10d03a4aba3a29fc96e"
+    },
+    {
+      "path": "research_20261107_physical_reference/dependencies/calibration_views.py",
+      "bytes": 11367,
+      "sha256": "b97b48b952a40680df48f6aa4f2ae26cde9d422c8cf6b10d2adcf61183ae68ae",
+      "git_blob_sha1": "03e20c822f924cae30765520cf5be7bb44088ed2"
+    },
+    {
+      "path": "research_20261107_physical_reference/dependencies/crps_forest.py",
+      "bytes": 3065,
+      "sha256": "0b33e35d8b2205c7c31cc48888d4e285ee75308ec783cee138acf36a183ece17",
+      "git_blob_sha1": "01cfa5d3bda919e5d5151149c14a9452cd63382e"
+    },
+    {
+      "path": "research_20261107_physical_reference/dependencies/crps_tree.py",
+      "bytes": 6017,
+      "sha256": "deb1f8eb5f38ca3d6649559bf47f00d62377309bb6b25c301242aa2e5ec7ab11",
+      "git_blob_sha1": "55f961a24bdc99c2ef2414880c76666de46cc7e2"
+    },
+    {
+      "path": "research_20261107_physical_reference/dependencies/empirical_native.py",
+      "bytes": 8607,
+      "sha256": "6d76cdf584da6fdc917554942dd8a19abd8785928d2621af28ff049ec577239b",
+      "git_blob_sha1": "3d10e16b58d20f372aa28adc187137da0687ce13"
+    },
+    {
+      "path": "research_20261107_physical_reference/dependencies/simplex_transport.py",
+      "bytes": 8578,
+      "sha256": "63b792c6c436dc33c9951395730419d52ee4ca596043c11a28896f08a8249710",
+      "git_blob_sha1": "13e861fafbccb86aa7c185afc292f32c19d2a278"
+    },
+    {
+      "path": "research_20261107_physical_reference/dependencies/stable_simplex.py",
+      "bytes": 5986,
+      "sha256": "5eeb7adad637cfdb5fbea7577591210d52e2db2c7bdc2269a3059d18d093df40",
+      "git_blob_sha1": "a5466fc0c24ea5fb50b9f947040321c9c2da903d"
+    },
+    {
+      "path": "research_20261107_physical_reference/figures/01_forward_CRPS.png",
+      "bytes": 84131,
+      "sha256": "a8dec0edd559d95822198c0692ed7a6872b2cd1a3a07dccd1d3cab477f56d638",
+      "git_blob_sha1": "d9d77a88e07cbfec9191a096c5ec6d0c5116cf59"
+    },
+    {
+      "path": "research_20261107_physical_reference/figures/01_forward_CRPS.svg",
+      "bytes": 55272,
+      "sha256": "bcd4e1feef90d71ce3facc3e1319bb4b23e269c69d379eccaec9449922b29bb4",
+      "git_blob_sha1": "109c9994a181dca163a648e0874773da6e3e7d4a"
+    },
+    {
+      "path": "research_20261107_physical_reference/figures/02_rounds_and_actual_cost.png",
+      "bytes": 139634,
+      "sha256": "6afc0ceb55ab21888ae20648ec4959ab93eeb835b853dadc652fce287acc8192",
+      "git_blob_sha1": "949c1951f21de3d4a896eb61a0a4b2cd5d65187f"
+    },
+    {
+      "path": "research_20261107_physical_reference/figures/02_rounds_and_actual_cost.svg",
+      "bytes": 52024,
+      "sha256": "006fd3e45850b89513c2dda3a33bcb9180a7daa74cebd05ab399851b620178f7",
+      "git_blob_sha1": "9d2ec4e4f25233994ec66fcc78840fcdeafe902b"
+    },
+    {
+      "path": "research_20261107_physical_reference/figures/03_coverage_and_width.png",
+      "bytes": 113986,
+      "sha256": "d0b38088aa4d326a6e8a4332a2f03b0b836faf7441877ea81952b944b2c1a8db",
+      "git_blob_sha1": "2e4476b90b1c7f181c9ac3acf0d4b8aa69bb5e0d"
+    },
+    {
+      "path": "research_20261107_physical_reference/figures/03_coverage_and_width.svg",
+      "bytes": 59668,
+      "sha256": "880890be36d2c82bb8fc9e66ba4430dd8c55d957221b98a1f14a9cc8691ad21c",
+      "git_blob_sha1": "823d3877610b83028880bc87d7a59d2dcee472c7"
+    },
+    {
+      "path": "research_20261107_physical_reference/index.html",
+      "bytes": 3351,
+      "sha256": "7df703422feba38814faba89cb865208b250d01316229d0b4f756a4aa19fd14b",
+      "git_blob_sha1": "46a002626e4bb942a47d883da3007159f3cd5d4e"
+    },
+    {
+      "path": "research_20261107_physical_reference/literature/PRIMARY_OVERLAP_UPDATE_20261107.json",
+      "bytes": 2925,
+      "sha256": "8ca4f7e5d7eef18f1925cefde8ce8e690854ac3a6b09e5acebf712d0d90bb302",
+      "git_blob_sha1": "db5369e0d337bf463945e9c5411d135a4a2a2f14"
+    },
+    {
+      "path": "research_20261107_physical_reference/requirements.txt",
+      "bytes": 85,
+      "sha256": "950c8827aa2c1f844a4848ee1070be80a4d2fa05622eaf946a44fedeb390d5e3",
+      "git_blob_sha1": "ae15a439b5dd04f684e65edd06831791bebc3467"
+    },
+    {
+      "path": "research_20261107_physical_reference/run_registered_rounds.py",
+      "bytes": 4080,
+      "sha256": "f866267b14f202fc0789217ddca53db80a0ee4a23fb5743412286b733409392e",
+      "git_blob_sha1": "2f2156271bacb5629f4e00eb061f471841533f17"
+    },
+    {
       "path": "research_20261107_reference_transport/AGGREGATE_RESULTS.json",
       "bytes": 13676,
       "sha256": "0b4ad0ca731c0f5786a6f490aa7e5ac8ae97c33e0c64f59c0cf7737b9a05e11b",
@@ -9827,7 +10015,5 @@
       "sha256": "85a5aacbacfbe2c018b35f6b3f0e8633dea2f8cb08de4819e6d5751cccadb451",
       "git_blob_sha1": "021842b2b4d743d1e7a4db1f5298dd1e49485b04"
     }
-  ],
-  "all_old_nonadministrative_bytes_preserved": true,
-  "actual_apply_UTC_will_be_external_receipt_not_predeclared": true
+  ]
 }

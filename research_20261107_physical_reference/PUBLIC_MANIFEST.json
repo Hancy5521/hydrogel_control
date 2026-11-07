@@ -1,0 +1,188 @@
+{
+  "namespace": "research_20261107_physical_reference",
+  "actual_prepared_utc": "2026-11-07T06:04:33.299306+00:00",
+  "files": [
+    {
+      "path": "code/task_io.py",
+      "bytes": 13759,
+      "sha256": "dc732551d65ce19725da39deac5c5ccf026f42430156cae819d73affc269c9fa",
+      "role": "byte-identical current scientific source; no material input/output values"
+    },
+    {
+      "path": "code/numerical_adapter.py",
+      "bytes": 1993,
+      "sha256": "6f10ec1e39a17552ad8d985072611aa07bc5317d43aab832b5c351e54cd4256b",
+      "role": "byte-identical current scientific source; no material input/output values"
+    },
+    {
+      "path": "code/forecast_stage.py",
+      "bytes": 20220,
+      "sha256": "99329fb95e7173b094ac9caada762caffae8eded14f01c8790e5b185225d9a83",
+      "role": "byte-identical current scientific source; no material input/output values"
+    },
+    {
+      "path": "code/verification_stage.py",
+      "bytes": 10220,
+      "sha256": "c28741e9c091437251a3dcc5d176f110718614b7eda6f05dc02308b7bcffd956",
+      "role": "byte-identical current scientific source; no material input/output values"
+    },
+    {
+      "path": "code/score_stage.py",
+      "bytes": 10600,
+      "sha256": "e6697cca2b567dd8c57674330f1fb184757a56d3b80ecb7f8101864f5fb9bdd1",
+      "role": "byte-identical current scientific source; no material input/output values"
+    },
+    {
+      "path": "run_registered_rounds.py",
+      "bytes": 4080,
+      "sha256": "f866267b14f202fc0789217ddca53db80a0ee4a23fb5743412286b733409392e",
+      "role": "byte-identical registered17-model driver"
+    },
+    {
+      "path": "dependencies/empirical_native.py",
+      "bytes": 8607,
+      "sha256": "6d76cdf584da6fdc917554942dd8a19abd8785928d2621af28ff049ec577239b",
+      "role": "byte-identical pure scientific dependency empirical_native; no third-party runtime binaries"
+    },
+    {
+      "path": "dependencies/simplex_transport.py",
+      "bytes": 8578,
+      "sha256": "63b792c6c436dc33c9951395730419d52ee4ca596043c11a28896f08a8249710",
+      "role": "byte-identical pure scientific dependency simplex_transport; no third-party runtime binaries"
+    },
+    {
+      "path": "dependencies/calibration_views.py",
+      "bytes": 11367,
+      "sha256": "b97b48b952a40680df48f6aa4f2ae26cde9d422c8cf6b10d2adcf61183ae68ae",
+      "role": "byte-identical pure scientific dependency calibration_views; no third-party runtime binaries"
+    },
+    {
+      "path": "dependencies/stable_simplex.py",
+      "bytes": 5986,
+      "sha256": "5eeb7adad637cfdb5fbea7577591210d52e2db2c7bdc2269a3059d18d093df40",
+      "role": "byte-identical pure scientific dependency stable_simplex; no third-party runtime binaries"
+    },
+    {
+      "path": "dependencies/affine_reference.py",
+      "bytes": 4435,
+      "sha256": "cd6aae1045ea6a64fab4af82046d053188da9c5ef828462d4059e51a84041bbf",
+      "role": "byte-identical pure scientific dependency affine_reference; no third-party runtime binaries"
+    },
+    {
+      "path": "dependencies/crps_tree.py",
+      "bytes": 6017,
+      "sha256": "deb1f8eb5f38ca3d6649559bf47f00d62377309bb6b25c301242aa2e5ec7ab11",
+      "role": "byte-identical pure scientific dependency crps_tree; no third-party runtime binaries"
+    },
+    {
+      "path": "dependencies/crps_forest.py",
+      "bytes": 3065,
+      "sha256": "0b33e35d8b2205c7c31cc48888d4e285ee75308ec783cee138acf36a183ece17",
+      "role": "byte-identical pure scientific dependency crps_forest; no third-party runtime binaries"
+    },
+    {
+      "path": "dependencies/baselines.py",
+      "bytes": 7621,
+      "sha256": "8a8e8aa94f313a22e3b56fca58a1ff7ddb93b51c94fe8f5e3ca752faf3cb3d27",
+      "role": "byte-identical pure scientific dependency reference_baselines; no third-party runtime binaries"
+    },
+    {
+      "path": "figures/01_forward_CRPS.png",
+      "bytes": 84131,
+      "sha256": "a8dec0edd559d95822198c0692ed7a6872b2cd1a3a07dccd1d3cab477f56d638",
+      "role": "aggregate-only G192 prediction/coverage and3round cost figure"
+    },
+    {
+      "path": "figures/01_forward_CRPS.svg",
+      "bytes": 55272,
+      "sha256": "bcd4e1feef90d71ce3facc3e1319bb4b23e269c69d379eccaec9449922b29bb4",
+      "role": "aggregate-only G192 prediction/coverage and3round cost figure"
+    },
+    {
+      "path": "figures/02_rounds_and_actual_cost.png",
+      "bytes": 139634,
+      "sha256": "6afc0ceb55ab21888ae20648ec4959ab93eeb835b853dadc652fce287acc8192",
+      "role": "aggregate-only G192 prediction/coverage and3round cost figure"
+    },
+    {
+      "path": "figures/02_rounds_and_actual_cost.svg",
+      "bytes": 52024,
+      "sha256": "006fd3e45850b89513c2dda3a33bcb9180a7daa74cebd05ab399851b620178f7",
+      "role": "aggregate-only G192 prediction/coverage and3round cost figure"
+    },
+    {
+      "path": "figures/03_coverage_and_width.png",
+      "bytes": 113986,
+      "sha256": "d0b38088aa4d326a6e8a4332a2f03b0b836faf7441877ea81952b944b2c1a8db",
+      "role": "aggregate-only G192 prediction/coverage and3round cost figure"
+    },
+    {
+      "path": "figures/03_coverage_and_width.svg",
+      "bytes": 59668,
+      "sha256": "880890be36d2c82bb8fc9e66ba4430dd8c55d957221b98a1f14a9cc8691ad21c",
+      "role": "aggregate-only G192 prediction/coverage and3round cost figure"
+    },
+    {
+      "path": "AGGREGATE_RESULTS.json",
+      "bytes": 55719,
+      "sha256": "b9443fde55a2df364fe45a92eb444ca0d18fc8da8ae5a52e293d5aab9e39ec0c",
+      "role": "120summaries/10pairedstatistics/3roundaggregatecosts; per-case vectors removed"
+    },
+    {
+      "path": "PROTOCOL_SUMMARY.json",
+      "bytes": 1993,
+      "sha256": "d21021718e642c98b4b3a08fdf8f6bf31a071485a66af2dce85ab180a08d6a59",
+      "role": "registered protocol counts/roles/fields without source material identities or numeric inputs"
+    },
+    {
+      "path": "AUDIT_SUMMARY.json",
+      "bytes": 1350,
+      "sha256": "bb1ac7eb32a2c1a1d938bc34efeda610f9db9d7120f69c6fbe6891601217479b",
+      "role": "independent audit aggregate counts/hashes only"
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "bytes": 2298,
+      "sha256": "ca4d0fa279b86db04a2ae33cf94b1ae21fd317909004c1f4ca76d31a36ad858d",
+      "role": "source hashes and separate exact local complete resource reference"
+    },
+    {
+      "path": "PRIMARY_RESULT_INTERPRETATION_ZH.txt",
+      "bytes": 3967,
+      "sha256": "5d2cce5481879e70d6081ef04532171ec18d78907d06d448382797614c1d653a",
+      "role": "byte-identical aggregate/analytic interpretation; no case data; negativeprimaryretained"
+    },
+    {
+      "path": "literature/PRIMARY_OVERLAP_UPDATE_20261107.json",
+      "bytes": 2925,
+      "sha256": "8ca4f7e5d7eef18f1925cefde8ce8e690854ac3a6b09e5acebf712d0d90bb302",
+      "role": "existing bounded primary-source reading ledger; not paper fulltext"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 85,
+      "sha256": "950c8827aa2c1f844a4848ee1070be80a4d2fa05622eaf946a44fedeb390d5e3",
+      "role": "runtime and independent MP audit versions only"
+    },
+    {
+      "path": "README_ZH.txt",
+      "bytes": 2832,
+      "sha256": "99d604965ffadd5096ecf3f1431500ac8af0d0286ce4bf00e801150b7d491793",
+      "role": "public scope/algorithm/counts/resource guide; no material data"
+    },
+    {
+      "path": "NOVELTY_SCOPE.txt",
+      "bytes": 1238,
+      "sha256": "e9307fc838e7ab90632473ba51e610d15b11ae93a730b4d474b717bd5f5270c7",
+      "role": "bounded mechanism/material originality and direct-neighbor attribution"
+    },
+    {
+      "path": "index.html",
+      "bytes": 3351,
+      "sha256": "7df703422feba38814faba89cb865208b250d01316229d0b4f756a4aa19fd14b",
+      "role": "aggregate-only public entry with failedprimary prominently first"
+    }
+  ],
+  "self_excluded": true,
+  "material_case_ID_Y_law_state_or_private_logs": false
+}

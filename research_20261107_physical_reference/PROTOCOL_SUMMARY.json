@@ -1,0 +1,62 @@
+{
+  "status": "PUBLIC_SUMMARY_OF_ACTUAL_REGISTERED_PROTOCOL",
+  "scientific_plan_sha256": "b84aae0ef67febec61f038340e537bf7660ee7443c078b71cb77c8ea7d26b59e",
+  "scope": "PHYSICAL_REFERENCE_VALIDATION_V1",
+  "fields": {
+    "known": [
+      "band_gap",
+      "poly_electronic",
+      "eightknowncompositiondescriptors"
+    ],
+    "target": "poly_total"
+  },
+  "known_prior_groups": 448,
+  "fresh_whole_source_groups": 384,
+  "certificate_selection_groups": 192,
+  "forward_confirmation_groups": 192,
+  "unused_groups": 19,
+  "rounds": 3,
+  "round_training_rows": [
+    448,
+    576,
+    704
+  ],
+  "eachround_laws_frozen_before_targets": 1280,
+  "methods": [
+    "directRF",
+    "directAuto",
+    "ionicRF",
+    "ionicBeta",
+    "ionicGlobal",
+    "ionicAnchor",
+    "ionicAuto",
+    "GP10total",
+    "CRPSRFionic",
+    "electronic_delta"
+  ],
+  "fixed_auto_g": 5,
+  "anchor_g": 0,
+  "initial_ionic_OOF": 448,
+  "model_training_counts": {
+    "model_learning_calls": 17,
+    "sklearn": 14,
+    "independentCRPSforest": 3,
+    "calibration_tasks": 15,
+    "Newton_calls": 12,
+    "Beta_LBFGS_fixedstart_calls": 15,
+    "total_calibration_optimizer_invocations": 27
+  },
+  "new_wet_or_DFT": 0,
+  "total_actual_target_disclosures": 384,
+  "query_accounting": "135primary+57researchcensus+192forward=384; K is verificationlookup notphysicalcostsaving",
+  "allthree_precommitted_before_outputs": true,
+  "Sgap_evaluations_usedoperationally_before_full3840score": true,
+  "primary": "adopted frozenchoice minusionicRF onG192",
+  "secondary": "rawionicAuto minusionicRF onG192",
+  "roles_values_originalIDs_and_modelstates_excluded": true,
+  "source_task": "existingpublicDFPT reports, notnewmeasurements",
+  "source_raw_gzip_sha256": "8eb24812148732786cd7c657eccfc6b5ee66533429c2cfbcc4f0059c0295e8b6",
+  "processed_source_DOI": "10.6084/m9.figshare.7108790.v2",
+  "processed_data_license": "MIT; not automatically the projectsource license",
+  "source_original_paper_DOI": "10.1038/sdata.2016.134"
+}

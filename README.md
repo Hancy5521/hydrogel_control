@@ -1,3 +1,7 @@
+# Latest separate physical-reference checkpoint — 7 November2026
+
+The registered adoption primary failed (+0.007537 CRPS); the fixed repair model remainscompetitive onG192. Read [research_20261107_physical_reference](research_20261107_physical_reference/index.html) for allcontrols/coverage/costs andboundedclaims. This separate publicsource/aggregate checkpoint doesnotmodifythe archivedMLSTpaper.
+
 研究检查点：固定参考分布修正在192组新介电任务上平均CRPS改善约0.7091%；七方法、RMSE/欠覆盖和第三批identity回退完整保留。公开源码与汇总见[research_20261107_dielectric_transport](research_20261107_dielectric_transport/index.html)，完整49MB本地包独立封存。
 
 研究检查点：保留强RF参考分布的低维概率修正，在192组计算报告开发任务上平均CRPS改善约1.422%。源码与限定汇总见[research_20261107_reference_transport](research_20261107_reference_transport/index.html)。本地完整包独立封存；不表示顶会投稿达标。

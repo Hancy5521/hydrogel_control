@@ -105,3 +105,7 @@ new_weighting_summary.json
 # Reviewed aggregate-only dielectric source checkpoint
 !research_20261107_dielectric_transport/
 !research_20261107_dielectric_transport/**
+
+# Reviewed physical-reference publicsource/aggregate checkpoint
+!research_20261107_physical_reference/
+!research_20261107_physical_reference/**

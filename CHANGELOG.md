@@ -1,3 +1,7 @@
+## 7 November2026 — Physical-reference three-cycle checkpoint
+
+Preserve failure ofthe registered adoption primary while retaining fixed-repair G192gain vsRF/independentCRPSforest. Addbyte-identicalsource,all120aggregates,10pairedstatisticsandaggregatefigures. No rawdata,materialIDs,states,individualvectorsorprivatelogs. Full localresource remainsseparate.
+
 2026-11-07：新增另一来源介电条件补全检查点。11fit/1344预测独立审计PASS，平均CRPS3.802945 vsRF3.830104；保留微小收益、RMSE/覆盖不足与数值回退。仅公开源码和限定汇总，原MLST/所有旧负结果不变。
 
 2026-11-07：封存参考分布保留式4段概率修正，192新组/1344预测独立审计PASS；平均CRPS27.339658 vsRF27.734154，保留RMSE及覆盖弱项，新增公开源码和汇总。

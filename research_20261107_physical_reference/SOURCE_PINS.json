@@ -1,0 +1,55 @@
+{
+  "scientific_source_sha256": {
+    "task_io.py": "dc732551d65ce19725da39deac5c5ccf026f42430156cae819d73affc269c9fa",
+    "numerical_adapter.py": "6f10ec1e39a17552ad8d985072611aa07bc5317d43aab832b5c351e54cd4256b",
+    "forecast_stage.py": "99329fb95e7173b094ac9caada762caffae8eded14f01c8790e5b185225d9a83",
+    "verification_stage.py": "c28741e9c091437251a3dcc5d176f110718614b7eda6f05dc02308b7bcffd956",
+    "score_stage.py": "e6697cca2b567dd8c57674330f1fb184757a56d3b80ecb7f8101864f5fb9bdd1"
+  },
+  "pure_dependencies": {
+    "empirical_native": {
+      "basename": "empirical_native.py",
+      "sha256": "6d76cdf584da6fdc917554942dd8a19abd8785928d2621af28ff049ec577239b"
+    },
+    "simplex_transport": {
+      "basename": "simplex_transport.py",
+      "sha256": "63b792c6c436dc33c9951395730419d52ee4ca596043c11a28896f08a8249710"
+    },
+    "calibration_views": {
+      "basename": "calibration_views.py",
+      "sha256": "b97b48b952a40680df48f6aa4f2ae26cde9d422c8cf6b10d2adcf61183ae68ae"
+    },
+    "stable_simplex": {
+      "basename": "stable_simplex.py",
+      "sha256": "5eeb7adad637cfdb5fbea7577591210d52e2db2c7bdc2269a3059d18d093df40"
+    },
+    "affine_reference": {
+      "basename": "affine_reference.py",
+      "sha256": "cd6aae1045ea6a64fab4af82046d053188da9c5ef828462d4059e51a84041bbf"
+    },
+    "crps_tree": {
+      "basename": "crps_tree.py",
+      "sha256": "deb1f8eb5f38ca3d6649559bf47f00d62377309bb6b25c301242aa2e5ec7ab11"
+    },
+    "crps_forest": {
+      "basename": "crps_forest.py",
+      "sha256": "0b33e35d8b2205c7c31cc48888d4e285ee75308ec783cee138acf36a183ece17"
+    },
+    "reference_baselines": {
+      "basename": "baselines.py",
+      "sha256": "8a8e8aa94f313a22e3b56fca58a1ff7ddb93b51c94fe8f5e3ca752faf3cb3d27"
+    },
+    "round_driver": {
+      "basename": "run_registered_rounds.py",
+      "sha256": "f866267b14f202fc0789217ddca53db80a0ee4a23fb5743412286b733409392e"
+    }
+  },
+  "complete_local_resource": {
+    "filename": "Physical_Reference_3cycles_20261107.zip",
+    "sha256": "1d450a3550c052f92f260d6978291bc8c220a709e4a4c7506c8c8f8e6faed634",
+    "bytes": 109723257,
+    "complete_resource_not_public_Git_subset": true,
+    "contains_prior_sealed49MB_resource": true
+  },
+  "prior_MLST_separate_main_commit": "05a40915be149857b2bb9cf65144d53fa9b24f37"
+}
