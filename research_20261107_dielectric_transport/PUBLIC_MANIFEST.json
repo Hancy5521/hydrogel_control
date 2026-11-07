@@ -1,0 +1,123 @@
+{
+  "status": "PUBLIC_SUBSET_INVENTORY_PREPARED",
+  "actual_utc": "2026-11-07T05:12:20.717112+00:00",
+  "complete_local_archive": {
+    "file_name": "Dielectric_Transport_20261106.zip",
+    "sha256": "726514e798d4f4315e26e2c15dbe415dded77af6ddf28aa532d3f402d79723f8",
+    "bytes": 49082050,
+    "public_subset_is_not_complete_resource_package": true
+  },
+  "self_excluded": true,
+  "files": [
+    {
+      "path": "code/calibration_views.py",
+      "bytes": 11367,
+      "sha256": "b97b48b952a40680df48f6aa4f2ae26cde9d422c8cf6b10d2adcf61183ae68ae"
+    },
+    {
+      "path": "code/empirical_native.py",
+      "bytes": 8607,
+      "sha256": "6d76cdf584da6fdc917554942dd8a19abd8785928d2621af28ff049ec577239b"
+    },
+    {
+      "path": "code/field_admission.py",
+      "bytes": 5179,
+      "sha256": "b5dfe4f2391c3e4592f3fa25f8c62409d38d964de902da6d72dc7a65421175fe"
+    },
+    {
+      "path": "code/run_dielectric.py",
+      "bytes": 14371,
+      "sha256": "4218465969b554b23a73caf4f4053ac72bc824ea9b5757509391f1d9e9e2d553"
+    },
+    {
+      "path": "code/score_dielectric.py",
+      "bytes": 11009,
+      "sha256": "9e713e7d6065fdfa0354d1110dae2582ce534ffae34d64f8acebb8f6ddc1f3f8"
+    },
+    {
+      "path": "code/simplex_transport.py",
+      "bytes": 8578,
+      "sha256": "63b792c6c436dc33c9951395730419d52ee4ca596043c11a28896f08a8249710"
+    },
+    {
+      "path": "code/task_io.py",
+      "bytes": 10470,
+      "sha256": "24fd7efc7ec262d73015e3c7d4eb1be662961927a8d6fd6ad004e29693d46ba2"
+    },
+    {
+      "path": "figures/01_CRPS.png",
+      "bytes": 60681,
+      "sha256": "53afde4a95ac4bf5372a3c2a0961b6c078fd2635b664c67c91c9f49eb208395a"
+    },
+    {
+      "path": "figures/01_CRPS.svg",
+      "bytes": 52262,
+      "sha256": "943f958d411573a6519d2fb38a610133f16c0886e7b49ea6b4c16e9652e1e713"
+    },
+    {
+      "path": "figures/02_batches.png",
+      "bytes": 83703,
+      "sha256": "b996a9b58a76ff4e5bde17947c0dcb52b0f2967e3f134e13647aabbde9ea5f9b"
+    },
+    {
+      "path": "figures/02_batches.svg",
+      "bytes": 45636,
+      "sha256": "91c5bcab995d057a155ccca41a98bf5ad2c746713bb7e6333df3f57a41d82972"
+    },
+    {
+      "path": "figures/03_coverage_width.png",
+      "bytes": 118009,
+      "sha256": "cf8e3f5af9ccc50975463dbfcf25c99b0d4552a388b2b784b404bf9def044f4d"
+    },
+    {
+      "path": "figures/03_coverage_width.svg",
+      "bytes": 59459,
+      "sha256": "ca0f3b04a07fd815e9ae8b98a286dfa3c743f19c06075f6e18db4b313fd0e655"
+    },
+    {
+      "path": "AGGREGATE_RESULTS.json",
+      "bytes": 13637,
+      "sha256": "678e010076d81e018fef52cf2a93112bf3ca9a9b381c7b02cfc71770815c2e48"
+    },
+    {
+      "path": "AUDIT_SUMMARY.json",
+      "bytes": 1937,
+      "sha256": "e639adc0c41d7acd82d0ec9c3648c9cf2fa5926b44021a6ae061798f3a2b214e"
+    },
+    {
+      "path": "PROTOCOL_SUMMARY.json",
+      "bytes": 5484,
+      "sha256": "8181fc2c075173767f430bfa7f49123275ab00d79e22e75faba7eb2faa1ade83"
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "bytes": 1224,
+      "sha256": "d6823442d96057c7b59e675027fa2b4d4946a95be8c7401e5ac4d36b5d761c4e"
+    },
+    {
+      "path": "literature/PRIMARY_READING_SCOPE.json",
+      "bytes": 5963,
+      "sha256": "77ef92f1d525c52a9d78d5898a872a90fca6f01a19eea49c0e39d8eea1a3d9dc"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 139,
+      "sha256": "24ff022deaa2458317ca3430e639faea422ceb456ccbfbd28b075dc7431d6d40"
+    },
+    {
+      "path": "README_ZH.txt",
+      "bytes": 3162,
+      "sha256": "737d46b372dcaaae1ce860cafa22b37ba08eaeec2086a3dbb1b11cab6d68d107"
+    },
+    {
+      "path": "NOVELTY_SCOPE.txt",
+      "bytes": 1468,
+      "sha256": "a13b66fb039aacef5e47c6b8d45946ec41b57d539a42fd37ae0b6068a5138873"
+    },
+    {
+      "path": "index.html",
+      "bytes": 2879,
+      "sha256": "f29dd873e2a9a3de031fc732f490e591b1cd841d20fa4fe22c638841fc4975f9"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "scope": "DIELECTRIC_TRANSPORT_V1",
+  "role_sizes": {
+    "fit": 256,
+    "validation1": 64,
+    "validation2": 64,
+    "validation3": 64
+  },
+  "methods": [
+    "RF_identity",
+    "RF_beta",
+    "RF_global4",
+    "RF_anchor4",
+    "RF_auto4",
+    "GP10",
+    "electronic_delta"
+  ],
+  "predicate": "finite real band_gap>0, poly_electronic>0, poly_total>0; representative only; no magnitude or decomposition filter",
+  "source_role": "DFPT-PBE calculated reports, not wet experiment",
+  "target": "poly_total",
+  "proxies": [
+    "band_gap",
+    "poly_electronic"
+  ],
+  "target_unit": "dimensionless relative static permittivity, tensor eigenvalue average",
+  "gap_unit": "eV",
+  "representative_frozen_before_field_eligibility": true,
+  "finite_positive_target_indicator_observed_before_split": true,
+  "target_numbers_or_statistics_emitted_during_admission": false,
+  "no_sibling_substitution": true,
+  "scientific_question": "Does the frozen reference-preserving low-dimensional transport recipe retain strong-baseline-level native CRPS on a new dielectric conditional completion source task with newwholecomponents?",
+  "registered_source_recipe": {
+    "fixed_reference_forest": {
+      "n_estimators": 256,
+      "min_samples_leaf": 3,
+      "max_features": 1.0,
+      "bootstrap": true,
+      "criterion": "squared_error",
+      "random_state": 20261106,
+      "n_jobs": 2,
+      "max_depth": null,
+      "CDF": "all original rows sharing prediction leaf, average over256trees; exact Fraction weights; no bootstrap multiplicity"
+    },
+    "fixed_GP": {
+      "kernel": "ConstantKernel(1,[.01,100])*RBF(ones10,[.01,100])+WhiteKernel(.01,[1e-6,10])",
+      "alpha": 1e-08,
+      "normalize_y": true,
+      "optimizer": "fmin_l_bfgs_b",
+      "n_restarts_optimizer": 0,
+      "random_state": 20261106
+    },
+    "feature_scaling": "mean/population sd of initial256 X only; zero sd->1; fixed across5OOF and3batches; OOF transform seesallinitialX but heldoutY excluded from RF fit",
+    "feature_ids": [
+      "band_gap_eV",
+      "poly_electronic_dimensionless",
+      "O_present",
+      "f_O",
+      "f_H",
+      "f_C_plus_f_N",
+      "f_F_Cl_Br_I",
+      "f_S_Se_Te",
+      "element_count",
+      "composition_entropy"
+    ],
+    "OOF": "hash dielectric_transport_oof_v1| +componentID sorted, rank%5; 52/51/51/51/51",
+    "calibration": "identity included; knot edges[0,.05,.5,.95,1]; full RF support retained; lambda10*mean(reference Bayes risk)/n; convex positive simplex with reverseKL; KKT1e-9 max200",
+    "auto_context": "selectonce by old256 OOF penalized native CRPS; no future reselection",
+    "anchor": "firstnondegenerate of samefixed8metadata descriptors atinitial256",
+    "Beta": "fixed5starts; logalpha/logbeta bounds+-log20; L-BFGS-B max200; identity included",
+    "fit_count": 11,
+    "same_information_methods": [
+      "RF_identity",
+      "RF_beta",
+      "RF_global4",
+      "RF_anchor4",
+      "RF_auto4",
+      "GP10"
+    ],
+    "sanity_control": "electronic_delta atknownpoly_electronic,0fit,ignoreionic,notprimarystrongbaseline",
+    "source_correct_metadata_adapter": "law.unit and state target/feature labels replaced innewcaller before artifact emission; numeric baseline recipe unchanged"
+  },
+  "scientific_endpoints": {
+    "primary": "mean native CRPS RF_auto4 minus RF_identity across192wholecomponents",
+    "secondary": [
+      "RF_auto4 minusRF_beta/global4/anchor4/GP10",
+      "all7methodsCRPS",
+      "medianRMSE",
+      "80/90/95coverage_width",
+      "perbatchandpergroupallresults",
+      "total<electronic anomalies afterreveal only"
+    ],
+    "inference": "paired SE descriptive only; not independentcampaign significance or formalnoninferiority",
+    "protocol_failure": "STOP; no samecohortmodelrepair, reselection, targetfilterrescue or resplit",
+    "no_claims": [
+      "calibrationguarantee",
+      "newwetmeasurement",
+      "newDFTcalculation",
+      "actualexperimentcostsaving",
+      "oldmodelzero-shot",
+      "completehypercycleeffect",
+      "arbitrarymaskjointgenerator"
+    ],
+    "score_timing": "scoreonlyafterall1344predictionsandthreebatchesclosed and independentstateauditPASS"
+  },
+  "actual_registered_utc": "2026-11-06T16:23:14.355825+00:00",
+  "actual_registered_Asia_Shanghai": "2026-11-07T00:23:14.355825+08:00",
+  "known_public_preview_information": "Prior public web search snippets included global dataset field ranges and1056row schema. No ranges used to rank/select components, alter positivity predicate or tune model. This is not a claim no human has seen any global target-range information.",
+  "no_same_cohort_repair_or_reselection": true,
+  "status": "PUBLIC_SUMMARY_OF_ACTUAL_REGISTERED_AND_COMPLETED_PROTOCOL",
+  "original_plan_sha256": "82e331e685d350a8ad0d79436e5360eb99f126bf2a590647735646d5ae6be03e",
+  "grouping": "1056rows/964wholecomponents;113oldsourceoverlaps excluded;851eligible;256training+3x64future;403untouchedatcheckpointclosure",
+  "source": "Matminer dielectric_constant processed Figshare DOI10.6084/m9.figshare.7108790.v2, file13213475; artifactMIT; DFPT/PBE reports",
+  "overlap_limit": "Wholecomposition/MPID/JID graph exclusion protects group overlap; common Materials Project/DFPT provenance still limits physical campaign independence",
+  "target_leakage_controls": "No refractiveindex n² duplication, totalresponse tensor, ionicresponse field, targetderivedfeature, posthocmagnitude/decompositionfilter",
+  "no_original_local_paths_or_material_roles": true
+}

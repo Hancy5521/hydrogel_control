@@ -1,0 +1,21 @@
+{
+  "status": "SEVEN_SCIENTIFIC_SOURCE_BYTE_PINS",
+  "source_sha256": {
+    "calibration_views.py": "b97b48b952a40680df48f6aa4f2ae26cde9d422c8cf6b10d2adcf61183ae68ae",
+    "empirical_native.py": "6d76cdf584da6fdc917554942dd8a19abd8785928d2621af28ff049ec577239b",
+    "field_admission.py": "b5dfe4f2391c3e4592f3fa25f8c62409d38d964de902da6d72dc7a65421175fe",
+    "run_dielectric.py": "4218465969b554b23a73caf4f4053ac72bc824ea9b5757509391f1d9e9e2d553",
+    "score_dielectric.py": "9e713e7d6065fdfa0354d1110dae2582ce534ffae34d64f8acebb8f6ddc1f3f8",
+    "simplex_transport.py": "63b792c6c436dc33c9951395730419d52ee4ca596043c11a28896f08a8249710",
+    "task_io.py": "24fd7efc7ec262d73015e3c7d4eb1be662961927a8d6fd6ad004e29693d46ba2"
+  },
+  "frozen_fit_plan_sha256": "82e331e685d350a8ad0d79436e5360eb99f126bf2a590647735646d5ae6be03e",
+  "local_complete_archive": {
+    "file_name": "Dielectric_Transport_20261106.zip",
+    "sha256": "726514e798d4f4315e26e2c15dbe415dded77af6ddf28aa532d3f402d79723f8",
+    "bytes": 49082050,
+    "public_subset_is_not_complete_resource_package": true
+  },
+  "three_math_modules_identical_to_previous_reference_transport": true,
+  "public_code_not_standalone_complete_controller_reproduction": true
+}

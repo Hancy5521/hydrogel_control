@@ -1,0 +1,47 @@
+{
+  "status": "PUBLIC_AGGREGATE_INDEPENDENT_PASS_SUMMARY",
+  "state_audit": {
+    "status": "PASS",
+    "saved_RF_fits_audited": 8,
+    "saved_GP_fits_audited": 3,
+    "saved_forecast_laws": 1344,
+    "pretarget_exact_envelopes": 768,
+    "OOF_reference_forecasts": 256,
+    "new_fits": 0,
+    "SUT_imports": 0,
+    "raw_reads": 0,
+    "future_validation_score_calls": 0,
+    "bootstrap_scope": "Frozen partitions and all-original-leaf CDF weights audited; per-tree bootstrap draws/seed and global optimal tree splits are not stored or certified.",
+    "Q_b_scope": "Independent Q/b/c reconstruct reported calibration objective andKKT; producer did not separately serialize Q/b.",
+    "limit": "Saved arithmetic and disclosed-history provenance only. No future calibration, campaign independence, new physical measurement or cost-saving certification."
+  },
+  "state_receipt_sha256": "8560f7b75f6cd63a3a3756fd2528da15e8cc15f92ea4c068eadbd2830743f3a8",
+  "score_audit": {
+    "status": "PASS",
+    "all_score_coordinates": 1344,
+    "atomic_coordinates": 1152,
+    "continuous_coordinates": 192,
+    "coverage_events": 4032,
+    "quantile_positions_checked": 9408,
+    "method_batch_summaries": 28,
+    "paired_score_differences": 1152,
+    "exact_observed_and_pretarget_gap_checks": 768,
+    "new_fits": 0,
+    "raw_reads": 0,
+    "new_target_disclosures": 0
+  },
+  "score_receipt_sha256": "84977eec15ff71640b0b960de52fad107539344b8c7e1b06a7e5947d94771705",
+  "sealed_resource_relocation": {
+    "sha256": "9b008a848dfefabb360903e81bb19784d3b7a7a81ef0e0c849fefdae0ea9065f",
+    "manifest_payloads": 184,
+    "ZIP_members": 185,
+    "dependency_bindings": 176,
+    "local_HTML_links": 17,
+    "prepare_guard_tests": 25,
+    "positive_prepares": 5,
+    "negative_guards": 20,
+    "new_scientific_runs_or_raw_decodes": 0
+  },
+  "QA_fixtures_are_not_actual_science_replays": true,
+  "no_numeric_model_parameters_or_individual_cases": true
+}

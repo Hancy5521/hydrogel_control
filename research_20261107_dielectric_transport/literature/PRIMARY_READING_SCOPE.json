@@ -1,0 +1,64 @@
+{
+  "status": "PUBLIC_EXISTING_SELECTED_READING_SCOPE",
+  "literature": [
+    {
+      "title": "High-throughput screening of inorganic compounds for the discovery of novel dielectric and optical materials",
+      "doi": "10.1038/sdata.2016.134",
+      "url": "https://doi.org/10.1038/sdata.2016.134",
+      "version": "Published Scientific Data4,160134(2017)",
+      "actual_reading": "既有选读：Methods Theory/definitions Eq2,4,5；DFPT流程及DataRecords；未读完整文章、全部技术验证和附属代码。本报告准备只检查已有收据与固定registry，不新增全文阅读。",
+      "license": "Processed artifact Figshare7108790v2 MIT separatelyverified; article/softwarelicenses notconflated.",
+      "overlap": "电子响应与未知离子贡献共同产生总静态介电量；平均张量特征值形成标量。band_gap和poly_electronic不代数决定poly_total。n是电子响应的派生量，禁止当额外独立信息。",
+      "no_new_paper_reading_in_report_preparation": true
+    },
+    {
+      "title": "Accurate Uncertainties for Deep Learning Using Calibrated Regression",
+      "doi": null,
+      "url": "https://proceedings.mlr.press/v80/kuleshov18a.html",
+      "version": "Published proceedings PDF,9 pages",
+      "actual_reading": "既有阅读记录：abstract/introduction excerpts；Section3.1 calibration versus sharpness；Section3.2 Algorithm1 and separate-calibration/Kfold paragraph,PDF pages4-5；Section3.3 misspecification paragraph and Section3.4 selected feature paragraphs。未读：all experiments；full article or proofs；implementation。",
+      "license": "PDF states Copyright2018 by authors. An explicit reuse license was not verified; no PDF/code copied into this stage.",
+      "overlap": "A monotone map composed with a predictive CDF is a direct precedent. The paper fits an isotonic recalibrator and recommends held-out calibration or Kfold training. Calibration alone does not establish sharpness or native-unit CRPS improvement. This work prevents presenting CDF composition as a new mechanism.",
+      "no_new_paper_reading_in_report_preparation": true
+    },
+    {
+      "title": "Combining Predictive Distributions",
+      "doi": "10.48550/arXiv.1106.1638",
+      "url": "https://arxiv.org/abs/1106.1638",
+      "version": "39-page versioned PDF. Header says arXivv1 8Jun2011 but title-page compiled date says26Nov2024; recorded literally, not treated as a new research version.",
+      "actual_reading": "既有阅读记录：landing abstract/version/license；Section3.4 beta-transformed linear pool Eq8,identity case and k=1 recalibration paragraphs,PDF pp20-22；selected estimation paragraphs on logarithmic score and constraints。未读：all39pages；all flexibility proofs；experiments and AppendixB in full；code。",
+      "license": "Landing license link inspected: arXiv non-exclusive distribution license1.0, https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html . This is not an unrestricted source-code or derivative-work license.",
+      "overlap": "The beta-transformed linear pool composes a beta CDF with a pooled predictive CDF. A single input forecast is explicitly allowed, and identity is nested. The inspected estimation uses logarithmic scores. Monotone CDF transport with an identity fallback therefore has direct prior art.",
+      "no_new_paper_reading_in_report_preparation": true
+    },
+    {
+      "title": "CRPS Learning",
+      "doi": "10.1016/j.jeconom.2021.11.008",
+      "url": "https://arxiv.org/abs/2102.00968",
+      "version": "arXivv3,submitted2021-11-19;51-page PDF opened",
+      "actual_reading": "既有阅读记录：landing version history/abstract/related DOI/license；PDF title/abstract opening excerpt only。未读：method derivations；theorems/proofs；experiments；all51pages；software。",
+      "license": "Landing license link inspected: arXiv non-exclusive distribution license1.0; no paper/code redistribution.",
+      "overlap": "The abstract describes distribution-position-dependent forecast combination, optimizing quantile aggregation by CRPS with batch and online estimation. This is direct evidence that CRPS-driven low-dimensional probability repair and online aggregation are established research topics.",
+      "no_new_paper_reading_in_report_preparation": true
+    },
+    {
+      "title": "CRPS-based online learning for nonlinear probabilistic forecast combination",
+      "doi": "10.1016/j.ijforecast.2023.12.005",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0169207023001371",
+      "version": "Publisher search-index preview gives bibliographic metadata,abstract,introduction,section snippets and conclusion; full PDF not accessed.",
+      "actual_reading": "既有阅读记录：publisher-indexed metadata and abstract；publisher-indexed introduction paragraphs on beta-transformed pools and CRPS；publisher-indexed online-convex-optimization and conclusion snippets。未读：complete article；derivations/proofs；full experiments；implementation。",
+      "license": "Publisher rights notice visible in search preview; explicit reuse license not verified. No copied paper/code.",
+      "overlap": "The publisher preview describes online beta-transformed pooling using CRPS gradients and an online Newton step. Thus the broad combination of nonlinear CDF transformation, CRPS and online Newton adaptation already exists.",
+      "no_new_paper_reading_in_report_preparation": true
+    }
+  ],
+  "boundaries": [
+    "Known directrecalibration/Beta/CRPS/onlineupdate precedents; no firsteverprincipleclaim",
+    "No fullarticle/code copied",
+    "Partialreading record notallpapersfullyread",
+    "DatasetMIT notinferredfrompaper/software",
+    "No rawproperties or inprogressforecasts or numericalresults accessed inreportpreparation"
+  ],
+  "new_papers_read_by_this_export_preparation": 0,
+  "no_full_article_PDF_or_thirdparty_code_redistributed": true
+}

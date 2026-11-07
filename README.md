@@ -1,3 +1,5 @@
+研究检查点：固定参考分布修正在192组新介电任务上平均CRPS改善约0.7091%；七方法、RMSE/欠覆盖和第三批identity回退完整保留。公开源码与汇总见[research_20261107_dielectric_transport](research_20261107_dielectric_transport/index.html)，完整49MB本地包独立封存。
+
 研究检查点：保留强RF参考分布的低维概率修正，在192组计算报告开发任务上平均CRPS改善约1.422%。源码与限定汇总见[research_20261107_reference_transport](research_20261107_reference_transport/index.html)。本地完整包独立封存；不表示顶会投稿达标。
 
 本地研究检查点：自动组成关联生长未改善，完整保留强随机森林基线与负结果。源码与汇总见 [research_20261106_relation_growth](research_20261106_relation_growth/README_ZH.txt)。此记录不表示远端已同步或顶会投稿达标。

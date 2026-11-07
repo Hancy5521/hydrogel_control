@@ -1,10 +1,9 @@
 {
-  "checkpoint": "reference-transport-development-20261107",
-  "parent_commit": "090afa57c935c204658d06730c5bb49200ff2e18",
-  "prepared_actual_utc": "2026-11-06T16:26:28.034698+00:00",
-  "actual_apply_utc_recorded_only_in_external_receipt": true,
+  "checkpoint": "dielectric-transport-development-20261107",
+  "parent_commit": "0e83b1d9e04a14215fd5793db4482ce59e343ed9",
+  "prepared_actual_utc": "2026-11-07T05:12:20.717112+00:00",
+  "previous_manifest_sha256": "88ebb725b50414d6f1070795f049d3fdbdb9812b8c34f4f44899ab784c578ef0",
   "self_excluded": true,
-  "previous_manifest_sha256": "6c1e67b7d8043ccffeebed834a7fb02fc02ccc6bd907b243a6ef9cd58a8de87c",
   "files": [
     {
       "path": ".gitattributes",
@@ -14,15 +13,15 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 4091,
-      "sha256": "27e0e278c16685bcfa4920594cb94718ef4bf7505d79afb6bb37d64cc442bf07",
-      "git_blob_sha1": "22a4837646101c44ba793fe294bf67acd26db0d5"
+      "bytes": 4231,
+      "sha256": "df38dcc9ba416ec68c2a14e5f828c058c0e5073fe0c977532bbbb153a219bbd0",
+      "git_blob_sha1": "fe95a8f2c506438a1d3b41089b4d5306f92a9e6e"
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 8125,
-      "sha256": "9096a6d54735e38faa3775ed192c4fcee9ed757046a481391992c25bf7d33256",
-      "git_blob_sha1": "22393b555ca5e93c09179a39532e99af3177ed00"
+      "bytes": 8381,
+      "sha256": "22074eaff49bde9fa5a1519f7306af79757191c1dfe490e08c0eefec8ae0a7f8",
+      "git_blob_sha1": "c14c016890b071032960896efb14e12f74f49ac0"
     },
     {
       "path": "CHECKPOINT.json",
@@ -44,9 +43,9 @@
     },
     {
       "path": "README.md",
-      "bytes": 19015,
-      "sha256": "566f05d392e497fd523e8eccfa2e98271360f095aff12f85befed073a4bcb541",
-      "git_blob_sha1": "ebc59d8c91b1b4f461df34dc43a3fa1588bd5176"
+      "bytes": 19334,
+      "sha256": "0eb2372fcf10d6ed5891c35aaed8c5612230a2c68e0d028148f41116cee8f4c8",
+      "git_blob_sha1": "8082a8eb1eabcb5d6f3d137f1505ac4c7a9453bf"
     },
     {
       "path": "RELATION_MOMENT_CHECKPOINT.json",
@@ -9253,6 +9252,144 @@
       "git_blob_sha1": "a5bb1cb5efd45a8fe8f96f7628b7a64793138a05"
     },
     {
+      "path": "research_20261107_dielectric_transport/AGGREGATE_RESULTS.json",
+      "bytes": 13637,
+      "sha256": "678e010076d81e018fef52cf2a93112bf3ca9a9b381c7b02cfc71770815c2e48",
+      "git_blob_sha1": "662545f8b45ceca83d96c2a4551eb2e1661e3bbc"
+    },
+    {
+      "path": "research_20261107_dielectric_transport/AUDIT_SUMMARY.json",
+      "bytes": 1937,
+      "sha256": "e639adc0c41d7acd82d0ec9c3648c9cf2fa5926b44021a6ae061798f3a2b214e",
+      "git_blob_sha1": "73cc091fc3fc313068d1a16abcf3629d612713a3"
+    },
+    {
+      "path": "research_20261107_dielectric_transport/NOVELTY_SCOPE.txt",
+      "bytes": 1468,
+      "sha256": "a13b66fb039aacef5e47c6b8d45946ec41b57d539a42fd37ae0b6068a5138873",
+      "git_blob_sha1": "e988c0950a948c6af151fd387272058b43e6d603"
+    },
+    {
+      "path": "research_20261107_dielectric_transport/PROTOCOL_SUMMARY.json",
+      "bytes": 5484,
+      "sha256": "8181fc2c075173767f430bfa7f49123275ab00d79e22e75faba7eb2faa1ade83",
+      "git_blob_sha1": "c9e25bb9962ece0cd6ca1e218ca4930e4e8e16e7"
+    },
+    {
+      "path": "research_20261107_dielectric_transport/PUBLIC_MANIFEST.json",
+      "bytes": 3847,
+      "sha256": "c02e0ffefcea3d9054bd8ba4dc4b0594708d6b648c4ee5f7e805994bf12dce28",
+      "git_blob_sha1": "9ed00aa390ac7e694c3373bd6bb1b34b6c1d5ca6"
+    },
+    {
+      "path": "research_20261107_dielectric_transport/README_ZH.txt",
+      "bytes": 3162,
+      "sha256": "737d46b372dcaaae1ce860cafa22b37ba08eaeec2086a3dbb1b11cab6d68d107",
+      "git_blob_sha1": "59995f4f7cd4b3403f8c6f72871605be34076502"
+    },
+    {
+      "path": "research_20261107_dielectric_transport/SOURCE_PINS.json",
+      "bytes": 1224,
+      "sha256": "d6823442d96057c7b59e675027fa2b4d4946a95be8c7401e5ac4d36b5d761c4e",
+      "git_blob_sha1": "22be507a79a7cb49b0c57f22b767661a2a6b10c7"
+    },
+    {
+      "path": "research_20261107_dielectric_transport/code/calibration_views.py",
+      "bytes": 11367,
+      "sha256": "b97b48b952a40680df48f6aa4f2ae26cde9d422c8cf6b10d2adcf61183ae68ae",
+      "git_blob_sha1": "03e20c822f924cae30765520cf5be7bb44088ed2"
+    },
+    {
+      "path": "research_20261107_dielectric_transport/code/empirical_native.py",
+      "bytes": 8607,
+      "sha256": "6d76cdf584da6fdc917554942dd8a19abd8785928d2621af28ff049ec577239b",
+      "git_blob_sha1": "3d10e16b58d20f372aa28adc187137da0687ce13"
+    },
+    {
+      "path": "research_20261107_dielectric_transport/code/field_admission.py",
+      "bytes": 5179,
+      "sha256": "b5dfe4f2391c3e4592f3fa25f8c62409d38d964de902da6d72dc7a65421175fe",
+      "git_blob_sha1": "215f8b01970d55550ac5b5e4cece5a71e3b02a7e"
+    },
+    {
+      "path": "research_20261107_dielectric_transport/code/run_dielectric.py",
+      "bytes": 14371,
+      "sha256": "4218465969b554b23a73caf4f4053ac72bc824ea9b5757509391f1d9e9e2d553",
+      "git_blob_sha1": "ce2af3faa7015466fe40b22ea05d8ea4cbf19661"
+    },
+    {
+      "path": "research_20261107_dielectric_transport/code/score_dielectric.py",
+      "bytes": 11009,
+      "sha256": "9e713e7d6065fdfa0354d1110dae2582ce534ffae34d64f8acebb8f6ddc1f3f8",
+      "git_blob_sha1": "330cf7b29270ad6c323a841dcd955c6f0df67cc9"
+    },
+    {
+      "path": "research_20261107_dielectric_transport/code/simplex_transport.py",
+      "bytes": 8578,
+      "sha256": "63b792c6c436dc33c9951395730419d52ee4ca596043c11a28896f08a8249710",
+      "git_blob_sha1": "13e861fafbccb86aa7c185afc292f32c19d2a278"
+    },
+    {
+      "path": "research_20261107_dielectric_transport/code/task_io.py",
+      "bytes": 10470,
+      "sha256": "24fd7efc7ec262d73015e3c7d4eb1be662961927a8d6fd6ad004e29693d46ba2",
+      "git_blob_sha1": "ebde14f6027e3d30ca6cbb735a70de725615f7c0"
+    },
+    {
+      "path": "research_20261107_dielectric_transport/figures/01_CRPS.png",
+      "bytes": 60681,
+      "sha256": "53afde4a95ac4bf5372a3c2a0961b6c078fd2635b664c67c91c9f49eb208395a",
+      "git_blob_sha1": "b702807e3108d9bf6ea4443b3d4138e9b49f302b"
+    },
+    {
+      "path": "research_20261107_dielectric_transport/figures/01_CRPS.svg",
+      "bytes": 52262,
+      "sha256": "943f958d411573a6519d2fb38a610133f16c0886e7b49ea6b4c16e9652e1e713",
+      "git_blob_sha1": "da9bf2476f62fce72e01aee0cb5e730fb3a2083c"
+    },
+    {
+      "path": "research_20261107_dielectric_transport/figures/02_batches.png",
+      "bytes": 83703,
+      "sha256": "b996a9b58a76ff4e5bde17947c0dcb52b0f2967e3f134e13647aabbde9ea5f9b",
+      "git_blob_sha1": "95ec391976c4a3ccc3fb43bd51aa24026f0bef9c"
+    },
+    {
+      "path": "research_20261107_dielectric_transport/figures/02_batches.svg",
+      "bytes": 45636,
+      "sha256": "91c5bcab995d057a155ccca41a98bf5ad2c746713bb7e6333df3f57a41d82972",
+      "git_blob_sha1": "539846c7e75e612f125ecfdeb7152d369983190d"
+    },
+    {
+      "path": "research_20261107_dielectric_transport/figures/03_coverage_width.png",
+      "bytes": 118009,
+      "sha256": "cf8e3f5af9ccc50975463dbfcf25c99b0d4552a388b2b784b404bf9def044f4d",
+      "git_blob_sha1": "cd4ed381f7de9843fcdd274bb5e7ba3c1ec10223"
+    },
+    {
+      "path": "research_20261107_dielectric_transport/figures/03_coverage_width.svg",
+      "bytes": 59459,
+      "sha256": "ca0f3b04a07fd815e9ae8b98a286dfa3c743f19c06075f6e18db4b313fd0e655",
+      "git_blob_sha1": "90921b09bda6f806cfedc4826791212eeaadbeca"
+    },
+    {
+      "path": "research_20261107_dielectric_transport/index.html",
+      "bytes": 2879,
+      "sha256": "f29dd873e2a9a3de031fc732f490e591b1cd841d20fa4fe22c638841fc4975f9",
+      "git_blob_sha1": "8bf6905c44895fea03b31e27bae0295d437b9b49"
+    },
+    {
+      "path": "research_20261107_dielectric_transport/literature/PRIMARY_READING_SCOPE.json",
+      "bytes": 5963,
+      "sha256": "77ef92f1d525c52a9d78d5898a872a90fca6f01a19eea49c0e39d8eea1a3d9dc",
+      "git_blob_sha1": "35a3307518d3123371a10da17e5b230d29a0433c"
+    },
+    {
+      "path": "research_20261107_dielectric_transport/requirements.txt",
+      "bytes": 139,
+      "sha256": "24ff022deaa2458317ca3430e639faea422ceb456ccbfbd28b075dc7431d6d40",
+      "git_blob_sha1": "ef20af9269b62dab5e054a4f0df37b2b8d3eefb0"
+    },
+    {
       "path": "research_20261107_reference_transport/AGGREGATE_RESULTS.json",
       "bytes": 13676,
       "sha256": "0b4ad0ca731c0f5786a6f490aa7e5ac8ae97c33e0c64f59c0cf7737b9a05e11b",
@@ -9691,5 +9828,6 @@
       "git_blob_sha1": "021842b2b4d743d1e7a4db1f5298dd1e49485b04"
     }
   ],
-  "all_old_nonadministrative_bytes_preserved": true
+  "all_old_nonadministrative_bytes_preserved": true,
+  "actual_apply_UTC_will_be_external_receipt_not_predeclared": true
 }
