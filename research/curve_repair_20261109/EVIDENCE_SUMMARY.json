@@ -1,0 +1,115 @@
+{
+  "schema": "curve-repair-checkpoint-A-evidence-v1",
+  "actual_utc": "2026-11-09T04:27:36.749612+00:00",
+  "raw_source": "10.5281/zenodo.19699588,CCBY4.0",
+  "scope": "3devrecipes15runs; six anchors and8same tail targets; not hydrogel confirmation",
+  "main_primary": {
+    "contrast": "curvature_frozen_theta__expected_crps6 minus curvature_frozen_theta__fixed_first6",
+    "recipe_macro_CRPS_delta": -0.6269984961665142,
+    "direction": "negative_improves",
+    "development_result": "improved",
+    "per_recipe": [
+      {
+        "recipe": "0_13gcc_40%",
+        "proposed_crps": 0.12930188535128642,
+        "fixed_first6_crps": 0.1371297812681465,
+        "delta": -0.00782789591686009
+      },
+      {
+        "recipe": "0_31gcc_10%",
+        "proposed_crps": 0.02167662672491309,
+        "fixed_first6_crps": 1.6580150545358887,
+        "delta": -1.6363384278109756
+      },
+      {
+        "recipe": "0_31gcc_40%",
+        "proposed_crps": 0.04446507963672114,
+        "fixed_first6_crps": 0.2812942444084278,
+        "delta": -0.23682916477170668
+      }
+    ]
+  },
+  "selected_tables": [
+    {
+      "label": "冻结曲率：固定前六点",
+      "method_id": "curvature_frozen_theta__fixed_first6",
+      "recipes": 3,
+      "crps": 0.692146360070821,
+      "joint_nll_per_dimension": -0.9097745784632753,
+      "log_rmse": 0.8274578064567147,
+      "coverage90": 0.5166666666666667,
+      "width90": 0.8397814000856642
+    },
+    {
+      "label": "冻结曲率：预期CRPS选点",
+      "method_id": "curvature_frozen_theta__expected_crps6",
+      "recipes": 3,
+      "crps": 0.06514786390430688,
+      "joint_nll_per_dimension": -2.6030079615465387,
+      "log_rmse": 0.10152674986259975,
+      "coverage90": 0.6083333333333333,
+      "width90": 0.17403277083700228
+    },
+    {
+      "label": "冻结GP：最近目标布局",
+      "method_id": "GP_nearest_target6",
+      "recipes": 3,
+      "crps": 0.07095484139996013,
+      "joint_nll_per_dimension": -2.6062621993075905,
+      "log_rmse": 0.11492795170923546,
+      "coverage90": 0.5333333333333333,
+      "width90": 0.19214253777681736
+    },
+    {
+      "label": "冻结曲率：最近目标布局",
+      "method_id": "curv_nearest_target6",
+      "recipes": 3,
+      "crps": 0.06296788248689694,
+      "joint_nll_per_dimension": -2.6234814357682468,
+      "log_rmse": 0.09911308544900725,
+      "coverage90": 0.6166666666666666,
+      "width90": 0.1741033977972971
+    },
+    {
+      "label": "物理幂律Student：最近目标布局",
+      "method_id": "power_law__GP_nearest_target6",
+      "recipes": 3,
+      "crps": 0.04448968626222477,
+      "joint_nll_per_dimension": -1.3668318113575462,
+      "log_rmse": 0.07111622997487778,
+      "coverage90": 0.9166666666666666,
+      "width90": 0.30223435579500063
+    },
+    {
+      "label": "趋势/尺度适配+完整曲率K Student",
+      "method_id": "curvature_frozen_theta__universal_student__GP_nearest_target6",
+      "recipes": 3,
+      "crps": 0.09799515922585579,
+      "joint_nll_per_dimension": -2.0313885170007704,
+      "log_rmse": 0.14394152057234363,
+      "coverage90": 0.9166666666666666,
+      "width90": 0.8234833608740878
+    }
+  ],
+  "first_pilot_predictions": {
+    "gaussian": 210,
+    "physical_student": 420,
+    "early_update": 45,
+    "all_frozen_before120targets": true
+  },
+  "post_reveal_development_universal_predictions": 420,
+  "unique_observed_anchor_cells": 226,
+  "unique_target_cells": 120,
+  "future_final_runs_numerically_protected": 35,
+  "new_physical_measurements": 0,
+  "fit_accounting": {
+    "new_shared_Gaussian_fits": 0,
+    "Student_OLS_calls": 420,
+    "universal_GLS_calls": 420,
+    "early_shared_projected_gradient_steps": 1
+  },
+  "universal_gate": "FAIL_NO_EXPANSION",
+  "H3_sentinel_tail_CRPS_delta": 0.00023634089976481976,
+  "old_MLST_artifacts_changed": false,
+  "copula_next_hypothesis": "source preparation outside checkpoint A, not an A result"
+}

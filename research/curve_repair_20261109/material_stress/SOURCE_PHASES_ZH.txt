@@ -1,0 +1,64 @@
+树脂流变开发压力试验：程序与阶段说明
+2026-11-09 源码准备；文件存在不代表任何试验已执行
+
+1. 为什么做这一步
+
+旧水凝胶MLST模型使用固定局部曲率编码、共享五参数Gaussian修正及完整高维残差。本次不重训原模型，而是把输入接口推广为任意六个锚点，检验“同样六次观测，不同选点方式是否帮助固定尾部八点恢复”。树脂/HGM与水凝胶不同，结果只能支持聚合物迁移压力测试；数据来自公开原始实验报告，不是本项目新测量。
+
+当前仅3个dev配方×5原始运行=15条曲线。其他3个future_expansion配方及4个final_confirm配方，共35运行的黏度，均不由本轮reader返回。role在任何黏度转换前按已固定配方字符串SHA256及已知升/降温顺序分配。
+
+2. 四个小模块，职责固定
+
+resin_io.py：只负责原ZIP/原文件哈希、metadata role分配、白名单行地址、cP转Pa.s再取ln、访问账本。每次anchor调用只返回该方法自己的六个值；target调用只有独审释放后返回共同八点。发现获准读取值无效时停止，不替换曲线或删点。原CSV完整字节会进入可信reader内存，因此这是软件角色隔离，不是加密沙箱。
+
+frozen_grid_reference.py：只接收25个ln(gamma)坐标和16个冻结源码/参数文件。先验单位、边界、GP和曲率方向均来自原MLST；不读取旧训练表、不读新黏度、不优化参数。输出m0,K0,B及两组theta。完整残差K0-BB^T保留，不强制所有曲线低秩。
+
+resin_experiment.py：只负责本试验四个显式阶段。prepare不读黏度；predict只读自己的六个锚点；reveal在独立预Y审计PASS和root精确SHA释放后读120共同目标；score只用已经冻结的预测与目标计算预定分数。没有fit、自动改参、自动调预算或失败回退。
+
+../core/arbitrary_mask.py及query_effect.py：已单独验证的数学接口。前者条件化完整Gaussian；后者计算候选额外测点对固定目标panel的预期CRPS作用。核心源码不在本次试验过程中修改。
+
+3. 每条曲线的角色与比较
+
+native剪切率升序25点，不插值、不对齐、不凭响应删点。目标始终为零基索引17..24，候选额外观测2..16，初始已知0、1。所有方法恰好六个观测，目标八点绝不成为候选，也不把已知点零误差混入分数。
+
+每个reference有五个policy：
+fixed_first6：0..5；
+spread6：0,1,2,7,11,16；
+random_uniform6：0、1及候选集中一次OS种子生成的四点，两reference共享该mask；
+max_variance6：每一步按条件方差最大选点；
+expected_crps6：每一步按对固定八点的等权预期CRPS下降选点。
+
+两reference为零修正GP和原冻结曲率Gaussian；另含交换expected_crps mask的两个控制，以及两个nearest_target6几何控制（0,1,13,14,15,16）。共14方法×15曲线=210个八维Gaussian预测，1680个逐点CRPS；实际目标只有120个独立访问单元。210×6个访问调用包含重复；实际anchor唯一单元并集另报。每法90个anchor单元不代表试验总共只读取90个单元，也不代表已节约真实测量。
+
+4. 公式与解释
+
+m=m0+B*a，K=K0+B*(S-I)*B^T，S=L*L^T，theta为原冻结五参数。令O为六个观测、T为共同八个目标，条件分布：
+m_T|O=m_T+K_TO*K_OO^{-1}*(y_O-m_O)
+K_T|O=K_TT-K_TO*K_OO^{-1}*K_OT。
+
+对候选q，当前条件协方差C不含新q的响应值。新增观测后V'_t=V_t-C_tq^2/C_qq，且正确模型下目标Bayes平均CRPS为sqrt(V_t/pi)。因此候选效用为mean_t[(sqrt(V_t)-sqrt(V'_t))/sqrt(pi)]。这属于经典Gaussian设计在材料曲线固定panel上的具体适配，固定协方差下与观测值无关，可以预先规划。它不能单独声称学习到自催化、值驱动闭环、可靠校准或真实实验节约。错误的协方差可以使预计改善为正而实际变差。
+
+CRPS在ln[eta/(1Pa.s)]空间计算，另报8维联合NLL/8、logRMSE、90%边际覆盖和宽度。先八目标/run汇总，再五run/recipe，再三recipe等权平均。logRMSE明确为各run八点RMSE的平均，不等于全部点一次根号。主对比固定为曲率expected_crps6减曲率fixed_first6的配方宏CRPS差，负值改善；其它控制全部报告，不能改挑一个结果重新定义成功。
+
+5. 实际执行前后文件
+
+root登记schema为mlst-resin-root-registration-v1：actual_utc、protocol_id、protocol_sha256、input_sha256、source_zip_sha256、source_pins绝对路径到SHA256映射、authorized_phases列表。登记所有material_stress和core下Python源码，防止执行途中更改。协议SOURCE_ONLY状态不会自行授权执行。
+
+命令骨架（路径仅占位，实际由root事前登记；当前文档不执行）：
+python -X utf8 -B resin_experiment.py --registration REG --output OUT prepare
+python -X utf8 -B resin_experiment.py --registration REG --output OUT predict
+python -X utf8 -B resin_experiment.py --registration REG --output OUT --audit AUDIT --release RELEASE reveal
+python -X utf8 -B resin_experiment.py --registration REG --output OUT score
+
+可选--checkpoint-root用于字节一致的16文件冻结checkpoint副本；--pins-path用于字节一致的FROZEN_DEPENDENCIES.json。两者不改变算法，只改变找文件的位置；原ZIP与input的路径由登记过SHA的协议指定，不自动搜索其它数据。
+
+prepare/PREPARED.json：native gamma和log坐标，完整m0/K0/B，两组m/K/theta，全部210mask，query每步所有候选效用，单次OS128bit种子，配方roles与来源哈希。
+predict/PREDICTIONS.json：210条forecast，每条仅自己六个anchor_values、索引、目标八维mean/covariance以及完整25维mean/covariance。ACCESS.json记录真正转换的anchor单元。
+reveal/TARGETS.json：15条×共同八点及绑定预测/独审/rootrelease SHA。ACCESS.json单独记录120目标访问。
+score/SCORES.json：210条curve_scores、1680条point_terms、42条recipe_scores、14条macro_by_method、预定primary与成本/限制。
+
+每phase有STARTED.json及最后的COMPLETE.json；失败则FAILED.json和已有部分文件保留。同目录再执行会拒绝覆盖，不能靠新seed重跑。若中断，先核已有收据和真实进程，再决定尚未完成步骤，不把不完整记录伪装成功。预Y独审至少检查原冻结投影、所有mask和分组、完整Schur及预测；后Y独审再从允许的原CSV字段对照结果，不import或直接重跑被审实现。
+
+6. 研究决策范围
+
+如果fixed Gaussian选点效用在新开发配方上失效，应记录迁移/条件分布假设不足，不能在相同dev标签上反复改theta、mask或种子后称独立确认。可以据失败提出新机制，在受保护的future expansion角色上另开事前协议。最终确认配方保持到方法真正冻结后。任何开发收益都不直接等于顶会录用或水凝胶新批次成功。

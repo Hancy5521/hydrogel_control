@@ -1,0 +1,24 @@
+{
+  "actual_utc": "2026-11-09T04:23:41.333338+00:00",
+  "gate": "transfer_reference/DECISION_GATE_BEFORE_DEV.json",
+  "status": "FAIL_NO_EXPANSION_LABEL_RELEASE",
+  "best_fixed_nearest_candidate": {
+    "method_id": "curvature_frozen_theta__universal_student__GP_nearest_target6",
+    "recipes": 3,
+    "crps": 0.09799515922585579,
+    "joint_nll_per_dimension": -2.0313885170007704,
+    "log_rmse": 0.14394152057234363,
+    "coverage90": 0.9166666666666666,
+    "width90": 0.8234833608740878
+  },
+  "physical_control": {
+    "method_id": "power_law__GP_nearest_target6",
+    "recipes": 3,
+    "crps": 0.04448968626222477,
+    "joint_nll_per_dimension": -1.3668318113575462,
+    "log_rmse": 0.07111622997487778,
+    "coverage90": 0.9166666666666666,
+    "width90": 0.30223435579500063
+  },
+  "decision": "No kernel/mask/scale-prior tuning; all35future/final eta still protected. New separately registered marginal/dependence diagnostic must earn its own data-release gate."
+}

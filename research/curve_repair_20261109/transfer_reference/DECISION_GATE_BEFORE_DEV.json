@@ -1,0 +1,27 @@
+{
+  "schema": "universal-student-development-decision-v1",
+  "actual_utc": "2026-11-09T04:03:56.300021+00:00",
+  "timing": "after main/student/early pilot results; before any universalStudent material calculation",
+  "existing_dev_targets_consumed": true,
+  "role": "new bounded development hypothesis, not a new blind confirmation",
+  "candidates": [
+    "gp_theta0_covariance",
+    "curvature_frozen_theta_covariance"
+  ],
+  "mean": "X beta with X=[1,ln gamma]; do not retain non-linear frozen curvature mean",
+  "scale": "integrate unknown own-curve residual scale; six-anchor GLS; df4",
+  "candidate_selection": "minimum equal-three-recipe mean marginal CRPS on predetermined nearest_target6 mask only; tie tolerance1e-12 choose gp_theta0",
+  "comparison": "six-anchor power-law Student on same nearest_target6; no policy selection over fourteen masks",
+  "expansion_permission_gate": "only if selected candidate development point-estimate CRPS <= strong power-law control; then separate source/input/UTC protocol before any future labels",
+  "not_claimed": [
+    "statistical noninferiority",
+    "calibration certification",
+    "new algorithm theory",
+    "held-out confirmation"
+  ],
+  "future_if_gate_passes": "3 existing metadata-assigned future_expansion recipes x5 runs at nominal35C, fixed nearest6 and same panel17..24; selected universalStudent, powerlawStudent, frozenGP, frozenCurvature same six labels; no training/refit of shared kernel",
+  "future_if_gate_fails": "do not spend the35 future/final curves on the same failed claim; preserve stronger physical control and diagnose missing structure or seek genuinely new source",
+  "permanent_final_recipes": 4,
+  "permanent_final_runs": 20,
+  "no_retuning_of_current_675_predictions": true
+}

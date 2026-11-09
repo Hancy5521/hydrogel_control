@@ -1,0 +1,7 @@
+2026-11-09 root有界来源补核（只读公开文字/索引，不读新响应）
+实际阅读范围：下列搜索结果的原始Zenodo元数据/Scientific Data摘要与Methods索引片段；未声称全文精读。检索1："Rheological data for syntactic foam" Beckwith Gupta Carreau Cross model；检索2："Bayesian Active Learning for Rheological Characterization"。保留primary DOI10.5281/zenodo.19699588和Scientific Data10.1038/s41597-026-07391-0；数据CCBY4与文章CCBYNCND分开沿昨天收据。未读取第三方拟合结果或采纳其split。
+限定结论：真实树脂/HGM流变适合当前零拟合迁移压力测试；既有论文使用这些数据不使数据失去本项目测试资格，但不能声称新独立来源或本项目未曾见过论文摘要。
+
+GelMA补证有界新查询：exact10.1080/17452759.2026.2740858；exact标题+temperature；publisher-domain exact标题和DOI+°C。原始publisher目录 https://www.tandfonline.com/toc/nvpp20/current 确认正式标题/作者/Article e2740858和2026-10-09发表。Zenodo https://zenodo.org/records/21759156 确认支持文件类型。聚合站摘要不作方法/单位证据。没有获得25点flow原单位、制备/交联状态/测试温度的原方法证明；准入HOLD不变，不因检索到题目就训练，不重复昨天失败的DOI下载端点。
+
+检索未构成新的材料效能证据。下一次重开GelMA需要原文Methods/SI或原作者文件中可定位的单位、温度、状态和rep身份；无需人工联系作者。

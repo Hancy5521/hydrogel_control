@@ -1,0 +1,21 @@
+树脂native25零拟合开发试验：独立核查边界与入口
+2026-11-09 源码准备；本文件不是执行授权或审计通过收据。
+
+一、静态检查
+原协议重复顶层status键已向root/pipeline报告，注册前必须改为protocol_status和status_token_policy，避免resin_io严格JSON读入失败。生产reader的约束是可信软件边界，并非加密/操作系统沙箱：会读取原ZIP成员全文字节，但仅转换获准dev单方法六anchor或root释放的共同八target。其单独target_release参数仅检查非空，完整hash门必须由resin_experiment.reveal执行；不能把直接reader调用当独立授权。
+
+native-grid helper固定了17Q的latent law（Q上无report nugget）、native25 report块（有旧统计discrepancy），保持原五参数Gaussian修正与完整高维残差。验证source/model哈希而非重拟合；原统计nugget并不是认证的仪器噪声。0新增独立观测方差不等于不存在测量噪声。真实仪器PP25/文稿50mm未厘清，Dy_auto语义未知且全保留，温度升/降顺序与recipe混杂，均不据响应值修删。
+
+二、独立核查的计算差别
+resin_independent_math.py不import任何生产/原runtime模块，不调用reader或优化器。独立从冻结参数重建Matern3/2、随机截距/斜率和native-report nugget，再用K_rq F^T(F K_qq F^T)^-1/2直接构建B；生产路径是Cholesky/support-directions。独审以dense solve计算完整Gaussian的Schur；联合NLL用slogdet/dense solve，生产用Cholesky。共同CRPS公式之外，post-Y另外选每curve字典序第一method的第一个固定target，以normal-energy直接数值积分核15项。
+
+三、pre-Y
+resin_independent_pre_y.py --prepare PREPARED.json --predictions PREDICTIONS.json --inputs NATIVE_RANK25_INPUT_MASKS.json --model SHARED_MODEL.json --output NEW_AUDIT.json
+核3/3/4角色哈希分配、15dev原run、native25和物理单位坐标、m/K/B及完整residual PSD、两ref law、一次OSseed/PCG64/member排序随机mask、固定/分散/near-target/两贪心/crossmask、14method×15=210完整预测及固定八target。只读已释放的anchor payload，不打开CSV或target文件，不读取剩35runs任何数值eta。PASS绑定prepare和prediction SHA；root核PASS之后另写root target release。
+
+四、post-Y（需要root显式新授权）
+resin_independent_post_y.py --prepare PREPARED.json --predictions PREDICTIONS.json --targets TARGETS.json --scores SCORES.json --inputs NATIVE_RANK25_INPUT_MASKS.json --source-zip ORIGINAL.zip --pre-audit PREY_PASS.json --release ROOT_RELEASE.json --output NEW_POST_AUDIT.json
+先检查pre-Y PASS和rootrelease精确SHA链，再从原ZIP的15个dev member只数值转换已经用过的anchor union和已释放的120target。核原行号/原gamma token/35°C窗口/Dy_auto/cP除1000转Pa.s后ln；未来/final35runs不打开数值eta。独立核210行、1680term、42recipe行、14macro行及primary与每recipe差，成本union单独核。错误停止/保留收据，不覆盖或悄然重跑。
+
+五、适用结论
+数值审计通过只证明这些保存对象之间一致，不认证新批次独立性、calibration或实际测量节约，也不把树脂stress称水凝胶确认。新增nearest-target几何控制在任何eta访问和root注册之前固定，原primary不变。不是210个独立材料，而是3recipe各5run的开发试验。

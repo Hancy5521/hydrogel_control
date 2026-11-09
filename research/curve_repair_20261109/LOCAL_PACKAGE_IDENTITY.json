@@ -1,0 +1,11 @@
+{
+  "actual_utc": "2026-11-09T04:27:39.949579+00:00",
+  "folder": "H:\\PolymerReview\\Curve_Repair_20261109_A",
+  "zip": "H:\\PolymerReview\\Curve_Repair_20261109_A.zip",
+  "bytes": 4231364,
+  "sha256": "901c2dc78b921059f614d37ca98b1f5b2255be984ebe7efa5297be44fd90c84a",
+  "payload_files": 184,
+  "zip_members": 185,
+  "CRC_and_all_member_sha": "PASS",
+  "independent_moved_replay": "PENDING_SEPARATE_RECEIPT"
+}
