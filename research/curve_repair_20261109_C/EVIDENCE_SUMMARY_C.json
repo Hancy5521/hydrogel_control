@@ -1,0 +1,76 @@
+{
+  "actual_utc": "2026-11-09T10:15:15.563734+00:00",
+  "scope": "ordinary C research checkpoint, not submission certification",
+  "current_candidate": "whole_curve_student4_density_mixture",
+  "role": "reused-development after original fixed-pilot reveal",
+  "primary_task": "paired dynamic-modulus internal gaps,one commercial polyurethane,six humidity/history states near30C",
+  "budget_observed_scalars": 12,
+  "target_scalars": 14,
+  "original_pilot_cases": 18,
+  "main_results": {
+    "GP_gaussian": {
+      "mask": "interior_holes",
+      "method": "full_anchor_gaussian",
+      "planned_state_conditions": 6,
+      "scored_state_conditions": 6,
+      "failed_or_unscored": 0,
+      "successful_case_diagnostic_only": false,
+      "joint_nll_per_dim": -2.7499851262712665,
+      "log_crps": 0.01681406927760757,
+      "log_rmse": 0.03318026988832829,
+      "coverage90": 1.0,
+      "log_width90": 0.140386062303083
+    },
+    "GP_student4": {
+      "mask": "interior_holes",
+      "method": "full_anchor_student4",
+      "planned_state_conditions": 6,
+      "scored_state_conditions": 6,
+      "failed_or_unscored": 0,
+      "successful_case_diagnostic_only": false,
+      "joint_nll_per_dim": -3.041431612904756,
+      "log_crps": 0.016321670039056543,
+      "log_rmse": 0.03318026988832829,
+      "coverage90": 1.0,
+      "log_width90": 0.12865827587374318
+    },
+    "student_mixture": {
+      "mask": "interior_holes",
+      "method": "whole_curve_student4_density_mixture",
+      "planned_state_conditions": 6,
+      "scored_state_conditions": 6,
+      "conditional_subset": false,
+      "joint_nll_per_dim": -3.1615949629887514,
+      "log_crps": 0.01327786661547937,
+      "log_rmse": 0.023606727424242427,
+      "coverage90": 0.9880952380952381,
+      "log_width90": 0.14056341843133263
+    },
+    "same_moment_student4": {
+      "mask": "interior_holes",
+      "method": "moment_matched_student4",
+      "planned_state_conditions": 6,
+      "scored_state_conditions": 6,
+      "conditional_subset": false,
+      "joint_nll_per_dim": -3.135207110803291,
+      "log_crps": 0.01317962057459586,
+      "log_rmse": 0.023606727424242427,
+      "coverage90": 1.0,
+      "log_width90": 0.14022527642372332
+    },
+    "Maxwell_point": {
+      "mask": "interior_holes",
+      "method": "channel_relative_Maxwell_NNLS_point",
+      "planned_state_conditions": 6,
+      "scored_state_conditions": 6,
+      "failed_or_unscored": 0,
+      "successful_case_diagnostic_only": false,
+      "log_rmse": 0.02417708527247374
+    }
+  },
+  "unreleased_resin_final_runs": 20,
+  "unreleased_DaRUS_other_conditions": 161,
+  "new_wet_experiments": 0,
+  "new_loop_material_execution_included": false,
+  "original_paper_registry_unchanged": true
+}

@@ -1,0 +1,6 @@
+# Current curve-repair computational core and saved-evidence audits
+# Tested with CPython 3.13.5 on Windows; CPU, no GPU required.
+numpy==2.1.3
+scipy==1.15.3
+scikit-learn==1.6.1
+mpmath==1.3.0

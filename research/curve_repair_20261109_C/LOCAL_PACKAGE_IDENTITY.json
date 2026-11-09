@@ -1,0 +1,12 @@
+{
+  "actual_utc": "2026-11-09T10:29:44.056847+00:00",
+  "status": "SEALED_ZIP_CRC_AND_MEMBER_SHA_PASS",
+  "directory": "H:\\PolymerReview\\Curve_Repair_20261109_C",
+  "zip": "H:\\PolymerReview\\Curve_Repair_20261109_C.zip",
+  "zip_bytes": 46503752,
+  "zip_sha256": "9f5992b7f9e80775c6472b9f89acaf38ad478b4d359a71cad5b241e3157f812a",
+  "payload_files": 2304,
+  "zip_members": 2305,
+  "maximum_relative_path_length": 123,
+  "Windows_NET_readback": "Pending external readback receipt, do not assume completed."
+}
