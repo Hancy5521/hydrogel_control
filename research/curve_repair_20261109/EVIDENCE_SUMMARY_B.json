@@ -1,0 +1,220 @@
+{
+  "schema": "curve-repair-checkpoint-B-evidence-v1",
+  "actual_utc": "2026-11-09T05:24:44.332199+00:00",
+  "task": "Same-six-real-anchors probabilistic completion of8native high-shear targets; fixedO conditional joint generation",
+  "source": "Zenodo19699588 v1 measured resin/HGM flow curves, CCBY4",
+  "development_recipes": 3,
+  "development_runs": 15,
+  "heldout_new_recipe_groups": 3,
+  "heldout_runs": 15,
+  "final_confirm_recipe_groups_unreleased": 4,
+  "final_confirm_runs_unreleased": 20,
+  "unique_target_cells": {
+    "development": 120,
+    "heldout": 120
+  },
+  "unique_raw_numeric_cells_read": {
+    "dev_anchors": 226,
+    "dev_targets": 120,
+    "holdout_anchors": 90,
+    "holdout_targets": 120
+  },
+  "new_physical_measurements": 0,
+  "new_global_kernel_fits": 0,
+  "fit_accounting": {
+    "physical_OLS_calls_dev": 420,
+    "universal_GLS_calls_dev": 420,
+    "single_shared_gradient_updates_dev": 1,
+    "physical_OLS_calls_holdout": 15
+  },
+  "predicted_laws": {
+    "main_frozen_Gaussian": 210,
+    "physical_Student": 420,
+    "early_update": 45,
+    "universal_dev_diagnostic": 420,
+    "copula_dev_diagnostic": 60,
+    "new_recipe_holdout": 105
+  },
+  "main_primary": {
+    "contrast": "curvature_frozen_theta__expected_crps6 minus curvature_frozen_theta__fixed_first6",
+    "recipe_macro_CRPS_delta": -0.6269984961665142,
+    "direction": "negative_improves",
+    "development_result": "improved",
+    "per_recipe": [
+      {
+        "recipe": "0_13gcc_40%",
+        "proposed_crps": 0.12930188535128642,
+        "fixed_first6_crps": 0.1371297812681465,
+        "delta": -0.00782789591686009
+      },
+      {
+        "recipe": "0_31gcc_10%",
+        "proposed_crps": 0.02167662672491309,
+        "fixed_first6_crps": 1.6580150545358887,
+        "delta": -1.6363384278109756
+      },
+      {
+        "recipe": "0_31gcc_40%",
+        "proposed_crps": 0.04446507963672114,
+        "fixed_first6_crps": 0.2812942444084278,
+        "delta": -0.23682916477170668
+      }
+    ]
+  },
+  "transport_dev_macro": [
+    {
+      "method_id": "independence",
+      "recipes": 3,
+      "crps": 0.04448968626222477,
+      "log_rmse": 0.07111622997487778,
+      "coverage90": 0.9166666666666666,
+      "width90": 0.30223435579500063,
+      "joint_nll_per_dimension": -1.0539519204806684,
+      "original_student_joint_nll_per_dimension": -1.3668318113575462,
+      "joint_nll_delta_vs_original_student": 0.31287989087687773
+    },
+    {
+      "method_id": "physical_student_shape",
+      "recipes": 3,
+      "crps": 0.04448968626222477,
+      "log_rmse": 0.07111622997487778,
+      "coverage90": 0.9166666666666666,
+      "width90": 0.30223435579500063,
+      "joint_nll_per_dimension": -1.2737282296716768,
+      "original_student_joint_nll_per_dimension": -1.3668318113575462,
+      "joint_nll_delta_vs_original_student": 0.09310358168586934
+    },
+    {
+      "method_id": "frozen_gp_posterior",
+      "recipes": 3,
+      "crps": 0.04448968626222477,
+      "log_rmse": 0.07111622997487778,
+      "coverage90": 0.9166666666666666,
+      "width90": 0.30223435579500063,
+      "joint_nll_per_dimension": -1.9584538467297554,
+      "original_student_joint_nll_per_dimension": -1.3668318113575462,
+      "joint_nll_delta_vs_original_student": -0.5916220353722094
+    },
+    {
+      "method_id": "frozen_curvature_posterior",
+      "recipes": 3,
+      "crps": 0.04448968626222477,
+      "log_rmse": 0.07111622997487778,
+      "coverage90": 0.9166666666666666,
+      "width90": 0.30223435579500063,
+      "joint_nll_per_dimension": -1.9746379658641129,
+      "original_student_joint_nll_per_dimension": -1.3668318113575462,
+      "joint_nll_delta_vs_original_student": -0.6078061545065666
+    }
+  ],
+  "new_recipe_primary": {
+    "contrast": "copula_frozen_curvature_posterior minus physical_full_student jointNLL/8",
+    "recipe_macro_joint_nll_delta": -0.7118236135669582,
+    "direction": "negative_improves",
+    "per_recipe": [
+      {
+        "recipe": "0_13gcc_20%",
+        "primary_delta": -0.7210758398654917,
+        "secondary_delta_curv_minus_gp": 0.02652738284375067
+      },
+      {
+        "recipe": "0_31gcc_20%",
+        "primary_delta": -0.7956951537710304,
+        "secondary_delta_curv_minus_gp": 0.03455335981285179
+      },
+      {
+        "recipe": "Neat",
+        "primary_delta": -0.6186998470643524,
+        "secondary_delta_curv_minus_gp": 0.04609157015379739
+      }
+    ]
+  },
+  "new_recipe_secondary": {
+    "contrast": "curvature copula minus GP copula jointNLL/8",
+    "recipe_macro_joint_nll_delta": 0.03572410427013306
+  },
+  "new_recipe_macro": [
+    {
+      "method_id": "physical_full_student",
+      "recipes": 3,
+      "crps": 0.0395949816398213,
+      "joint_nll_per_dimension": -1.7664931382439655,
+      "log_rmse": 0.03726632862119144,
+      "coverage90": 0.9916666666666667,
+      "width90": 0.40417120781831595,
+      "joint_nll_delta_vs_full_student": 0.0
+    },
+    {
+      "method_id": "copula_independence",
+      "recipes": 3,
+      "crps": 0.0395949816398213,
+      "joint_nll_per_dimension": -1.0975465776897366,
+      "log_rmse": 0.03726632862119144,
+      "coverage90": 0.9916666666666667,
+      "width90": 0.40417120781831595,
+      "joint_nll_delta_vs_full_student": 0.6689465605542287
+    },
+    {
+      "method_id": "copula_physical_student_shape",
+      "recipes": 3,
+      "crps": 0.0395949816398213,
+      "joint_nll_per_dimension": -1.5367335893837657,
+      "log_rmse": 0.03726632862119144,
+      "coverage90": 0.9916666666666667,
+      "width90": 0.40417120781831595,
+      "joint_nll_delta_vs_full_student": 0.22975954886019997
+    },
+    {
+      "method_id": "copula_frozen_gp_posterior",
+      "recipes": 3,
+      "crps": 0.0395949816398213,
+      "joint_nll_per_dimension": -2.5140408560810568,
+      "log_rmse": 0.03726632862119144,
+      "coverage90": 0.9916666666666667,
+      "width90": 0.40417120781831595,
+      "joint_nll_delta_vs_full_student": -0.7475477178370915
+    },
+    {
+      "method_id": "copula_frozen_curvature_posterior",
+      "recipes": 3,
+      "crps": 0.0395949816398213,
+      "joint_nll_per_dimension": -2.4783167518109237,
+      "log_rmse": 0.03726632862119144,
+      "coverage90": 0.9916666666666667,
+      "width90": 0.40417120781831595,
+      "joint_nll_delta_vs_full_student": -0.7118236135669583
+    },
+    {
+      "method_id": "gaussian_frozen_gp",
+      "recipes": 3,
+      "crps": 0.02815508399848893,
+      "joint_nll_per_dimension": -2.874990040685231,
+      "log_rmse": 0.04474548740166282,
+      "coverage90": 0.9666666666666667,
+      "width90": 0.19205363698261566,
+      "joint_nll_delta_vs_full_student": -1.108496902441266
+    },
+    {
+      "method_id": "gaussian_frozen_curvature",
+      "recipes": 3,
+      "crps": 0.03241228627392258,
+      "joint_nll_per_dimension": -2.860174243940023,
+      "log_rmse": 0.05500705985867008,
+      "coverage90": 0.8916666666666666,
+      "width90": 0.17402345676614786,
+      "joint_nll_delta_vs_full_student": -1.0936811056960574
+    }
+  ],
+  "marginal_CRPS": "All copula variants exactly preserve corresponding physical Student marginals; equality is structural, not an empirical gain",
+  "confirmed_limited_claim": "Selected dependence improves8D jointNLL vs original physical fullStudent in three newly heldout recipe groups",
+  "failed_claims": [
+    "Early low-shear gradient warning did not protect tail",
+    "UniversalStudent trend/scale adaptation failed development gate",
+    "Curvature copula did not beat GPcopula on new recipes",
+    "No all-metric superiority over frozenGaussianGP",
+    "No independent calibration, new batch/laboratory or experimental saving evidence",
+    "No learned Eigen hypercycle/agent or microgel simulation"
+  ],
+  "mathematics": "Gaussian copula, physical Student regression and componentwise transport have direct prior art; contribution is domain adaptation/controlled evaluation, not new theory",
+  "old_MLST_changed": false
+}

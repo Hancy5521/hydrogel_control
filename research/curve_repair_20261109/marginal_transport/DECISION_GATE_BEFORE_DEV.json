@@ -1,0 +1,29 @@
+{
+  "schema": "strong-marginal-fixed-copula-development-decision-v1",
+  "actual_utc": "2026-11-09T04:23:41.251201+00:00",
+  "timing": "after universalStudent dev gate failure, before copula model execution",
+  "scientific_question": "Retain demonstrated strong physical marginals exactly while separately testing existing full-rank dependence information",
+  "scope": "same3dev15curves post-reveal development, not independent confirmation",
+  "layout": "only fixed nearest_target6 indices0,1,13,14,15,16; common targets17..24",
+  "marginal_source": "saved six-anchor power-law Student df4 location and scale; marginal CRPS, coverage, width identical by construction",
+  "four_fixed_copulas": [
+    "independence",
+    "physical_student_correlation",
+    "frozen_gp_conditional_correlation",
+    "frozen_curvature_conditional_correlation"
+  ],
+  "main_new_metric": "joint8D negative log density per dimension; equal5runs/recipe then equal3recipes",
+  "candidate_selection": "lower development macro jointNLL of frozenGP/frozenCurvature copula, tie1e-12 selectGP; no correlation blending or fitting",
+  "expansion_permission_gate": "selected candidate jointNLL strictly lower than original physical multivariateStudent baseline AND independent/physical-correlation Gaussian-copula controls; otherwise do not consume future curves to confirm failed dependence claim",
+  "on_success": "separate actualUTC+sourcehash fresh3expansion15run protocol, nearest6, targets frozen before reveal, same controls; final4recipes20runs untouched",
+  "on_failure": "archive exact marginal guarantee and density diagnostics; do not tune correlation or invent agent rewards on these3recipes; seek new admitted source/meaningful task",
+  "compatibility": "fixed observed set and target subset consistency only; no automatic all-mask Bayes consistency",
+  "new_OLS_or_kernel_fits": 0,
+  "theory": "classical copula/rank transport, not claimed first mathematical identity",
+  "not_claimed": [
+    "marginal improvement over identical baseline",
+    "wet experiment savings",
+    "autocatalytic learning demonstrated",
+    "top-conference readiness"
+  ]
+}

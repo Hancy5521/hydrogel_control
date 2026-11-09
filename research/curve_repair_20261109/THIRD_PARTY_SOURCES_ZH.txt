@@ -1,0 +1,6 @@
+来源与许可记录
+1. Beckwith/Gupta，Rheological Data For Syntactic Foam，Zenodo19699588，DOI10.5281/zenodo.19699588，v1，原数据CCBY4.0。原作者/元数据/README/官方MD5/ZIP字节均保留。Scientific Data文章10.1038/s41597-026-07391-0许可与原数据不同，不混用，正文不转载。
+2. Choi/Lee GelMA Zenodo21759156候选：本包保留已合法公开取得的元数据/原件及只读补证收据；API数据许可与VOR文章CCBYNC4.0分别记录。notebook含作者版权声明，未执行，原输出未数值读取，不把插值特征当新测量。测量单位/温度/状态/上游处理链未闭合，仍HOLD。详sources/gelma_method_followup_20261109。
+3. EDDI/MWNet/GSMRL/CFMI等外部软件仅读来源，未纳入其源码；EDDI的Microsoft Research License不能误写MIT，GSMRL许可未知不推定可重用。
+4. CopulaProcesses、WarpedGP、GaussianCopula补全、ECC、Schaake、相同copula最优输运均原引，阅读版本与范围在literature。文献原件未整篇嵌入，不声称这些公式本项目首创。
+5. 自研及旧冻结程序不擅自改变原项目权利归属/许可。第三方运行库由requirements指明，不嵌套大型Python环境或wheel。公开Git仅归档自有新源码与配方级汇总，不上传原响应/保存模型状态/私有笔记。

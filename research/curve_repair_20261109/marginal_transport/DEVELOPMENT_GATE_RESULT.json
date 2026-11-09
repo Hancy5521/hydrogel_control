@@ -1,0 +1,70 @@
+{
+  "schema": "strong-marginal-copula-development-gate-result-v1",
+  "actual_utc": "2026-11-09T04:43:56.839194+00:00",
+  "decision_gate_sha256": "9a91170a8806783f9364f87f162e872d8b51b4a3ada41c44fc20f4bf481cf9f0",
+  "scores_sha256": "b5d26c38ab14f367555e9720e6ee781c304fd546859072ec67b380a27f1bae18",
+  "independent_scores_audit_sha256": "99ec10a992373c15d08d43230b0cc266c2d2ce8ab59f785e2a5656a2f002631c",
+  "status": "PASS_ALLOW_SEPARATE_NEW_RECIPE_STUDY",
+  "selected_control": "frozen_curvature_posterior",
+  "selected_jointNLL": -1.9746379658641129,
+  "fullStudent_jointNLL": -1.3668318113575462,
+  "I_jointNLL": -1.0539519204806684,
+  "physicalGaussianCopula_jointNLL": -1.2737282296716768,
+  "marginal_CRPS": 0.04448968626222477,
+  "marginal_score_gain_claimed": false,
+  "all_4_macro_results": [
+    {
+      "method_id": "independence",
+      "recipes": 3,
+      "crps": 0.04448968626222477,
+      "log_rmse": 0.07111622997487778,
+      "coverage90": 0.9166666666666666,
+      "width90": 0.30223435579500063,
+      "joint_nll_per_dimension": -1.0539519204806684,
+      "original_student_joint_nll_per_dimension": -1.3668318113575462,
+      "joint_nll_delta_vs_original_student": 0.31287989087687773
+    },
+    {
+      "method_id": "physical_student_shape",
+      "recipes": 3,
+      "crps": 0.04448968626222477,
+      "log_rmse": 0.07111622997487778,
+      "coverage90": 0.9166666666666666,
+      "width90": 0.30223435579500063,
+      "joint_nll_per_dimension": -1.2737282296716768,
+      "original_student_joint_nll_per_dimension": -1.3668318113575462,
+      "joint_nll_delta_vs_original_student": 0.09310358168586934
+    },
+    {
+      "method_id": "frozen_gp_posterior",
+      "recipes": 3,
+      "crps": 0.04448968626222477,
+      "log_rmse": 0.07111622997487778,
+      "coverage90": 0.9166666666666666,
+      "width90": 0.30223435579500063,
+      "joint_nll_per_dimension": -1.9584538467297554,
+      "original_student_joint_nll_per_dimension": -1.3668318113575462,
+      "joint_nll_delta_vs_original_student": -0.5916220353722094
+    },
+    {
+      "method_id": "frozen_curvature_posterior",
+      "recipes": 3,
+      "crps": 0.04448968626222477,
+      "log_rmse": 0.07111622997487778,
+      "coverage90": 0.9166666666666666,
+      "width90": 0.30223435579500063,
+      "joint_nll_per_dimension": -1.9746379658641129,
+      "original_student_joint_nll_per_dimension": -1.3668318113575462,
+      "joint_nll_delta_vs_original_student": -0.6078061545065666
+    }
+  ],
+  "permitted_next": "register source/input/selected control before reading ONLY future_expansion3recipe15run; freeze105laws before120T",
+  "final_confirm_recipes_protected": 4,
+  "final_confirm_runs_protected": 20,
+  "not_claimed": [
+    "independent source validation",
+    "beats all Gaussian joint scores",
+    "new mathematical copula theory",
+    "top-conference readiness"
+  ]
+}

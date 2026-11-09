@@ -1,0 +1,66 @@
+本轮程序和研究资源地图
+2026-11-09：按实际收据解释结果，以下新增接入示例仅SOURCE，未执行新材料预测/评分
+
+一、项目原点与目前主分支
+
+原MLST水凝胶工作：固定局部曲率表示＋共享五参数Gaussian修正＋完整高维残差。旧稿、旧模型与原证据封存，不与本轮树脂报告混写。FROZEN_DEPENDENCIES.json精确绑定16个原源码/参数文件；部署参考来自共享权重SHARED_MODEL.json。旧研究不是此次新实验的训练标签源，不为整理资源包重新拟合原25配方或已消费对照。
+
+目前值得保留的扩展分支是：已有强物理Student边际＋冻结模型提供的完整条件相关结构＋固定O/T的Gaussian copula联合生成。它保留强逐点预测，同时检验额外联合依赖价值。方法组合有经典先例；本领域任务适配、严谨同信息控制与保留配方证据才是实际研究增量，不宣称概率公式首创。
+
+尚未实现/未证明的愿景：自催化智能体、自动扩展可用材料空间、真实实验节约、所有掩码的全局Bayes一致性、跨实验室全面泛化或顶会达标。不要将所有目录都当成最终主模型拼到一起。
+
+二、模块边界
+
+core/frozen_loader.py：按字节哈希加载原Gaussian数学核心，不读取原材料训练表。
+core/arbitrary_mask.py：原完整Gaussian任意O/T条件化、额外已知独立观测方差、完整残差与角色约束。它是接口/数学扩展，不等于新材料增益。
+core/early_influence.py：条件损失梯度及小步影响诊断；开发证据显示某些训练/开发NLL下降并不保证目标CRPS下降，因此没有把该门接到主模型自动更新。
+core/query_effect.py：固定Gaussian对固定目标panel的预期CRPS效用，经典设计适配。固定K下与观测值无关，不是值驱动强化学习。
+
+material_stress/frozen_grid_reference.py：从16pin的旧源码/共享权重和新native坐标构造完整m0/K0/B及两reference m/K/theta，不读取η、不重训。material_stress/resin_io.py是原dev reader，仅允许原dev配方；没有为扩展改其角色。
+material_stress/resin_experiment.py：原3dev配方、14固定布局/reference组合；用于诊断布局收益及控制，不是当前7law扩展主程序。
+
+baselines/pure_student.py：六锚点常数/幂律OLS，参考先验产生完整Student预测；精确区分Student scale与SD、保留趋势/尺度不确定性、拒绝无法分辨的零残差。
+baselines/anchor_baseline_experiment.py：把物理强基线放到原14种mask上，发现同信息幂律比冻结Gaussian更强的区域；420对照都保留，不能删去强对照。
+
+transfer_reference/：经典通用克里金Student开发诊断。尝试保留冻结完整K、重新估计物理趋势/尺度；总体未达到强幂律对照，失败保留，没有据该失败调核或消耗future数据。K=I一致性和独立数值审计是软件正确性，不等于材料收益。
+influence_pilot/：早期影响机制的有限开发诊断；NLL门改善但CRPS未改善的结果保留，没有把它说成可靠自催化。
+
+marginal_transport/pure.py：固定Student4边际与Gaussian copula的纯数学核心，提供density、样本、分位数、子集边际和尾概率数值处理。保留完整SPD相关结构，不裁剪概率或修补奇异相关矩阵。
+marginal_transport/experiment.py：原3dev配方上的固定四copula诊断，只复用已有六锚点及已消费目标。DECISION_GATE_BEFORE_DEV.json在该机制运行前定义了开发选择与是否准许扩展的门；并非所有开发分数都是独立确认。
+
+expansion_study/source_reader.py：专门的新typed reader，显式authorized_role=future_expansion；仍使用原3dev/3future_expansion/4final_confirm配方哈希角色，不把扩展改名为dev。每条曲线每phase只读一次固定六anchor或八target，禁止final20数值；完整原文件字节会进入可信reader，因此它不是加密隐藏。
+expansion_study/experiment.py：目前保留配方检验主入口。prepare输入冻结→predict105分布冻结→独立预Y PASS后rootrelease120T→score。15曲线、每曲线同六值、15次物理OLS、0协方差更新，7law全部报告。
+
+examples/using_transport.py：新增SOURCE接入示例，仅从用户指定精确SHA的已保存expansion PREDICTIONS.json抽联合logη样本，不读取原CSV/targets，不重新拟合、重预测或评分。copula调用原pure.GaussianCopulaStudent.sample；也可选完整Student或Gaussian已保存law查看分布差异。新生成值一律标MODEL_GENERATED，不作新测量或确认。
+
+三、当前真实证据与不能抹掉的权衡
+
+原dev布局：curvature expectedCRPS约0.06515明显优于fixed-first6约0.69215，但靠近目标的几何布局及物理幂律是强控制，不能将布局收益全归因新学习机制。
+
+开发固定边际copula：保持物理边际CRPS约0.04449，联合NLL改善支持进入原先隔离的3future_expansion配方。候选曲率在开发标签上选定一次，扩展前冻结。
+
+已实际完成的扩展：105law预Y冻结、独立law审计、120T揭示、全评分和独立原字段/数值审计均有收据。主终点曲率copula减完整物理Student联合NLL/8的配方宏差约−0.711824，三配方均改善；这是有用的联合概率增量。
+
+必须同时保留：扩展中曲率copula减GPcopula约+0.035724，三个配方都更差；旧GP在CRPS约0.028155、jointNLL约−2.87499上优于曲率copula约0.039595、−2.478317。copula保留物理logRMSE约0.037266，优于GP约0.044745。因此目前有明确多指标权衡，没有一个新模型全面优于所有强基线。
+
+以上近似数字用于读图与定位；精确数值、预测/揭示时间、主副终点、原配方run聚合与独审以各*_once目录的不可变JSON及SHA链为准。三配方保留组是同公开来源新配方，不能改称新实验室或认证新批次。final_confirm四配方20run仍保护，不用于进一步追参。
+
+四、数据、权重与16pin如何配合
+
+原树脂实测ZIP在sources/admission_20261108/19699588/，有数据CC-BY4.0、MD5/SHA与来源报告。NATIVE_RANK25_INPUT_MASKS.json在resin_input_phase2_v2/保存全部50运行的原member、行地址、native剪切坐标/状态与分组，包含输入不包含η值。source reader只转换获准的原字段；派生/模拟/模型输出都不计新测量。
+
+旧模型依赖在原保存checkpoint，归档中的frozen_checkpoint副本只需FROZEN_DEPENDENCIES.json中16个精确文件；不需要旧训练表、服务器私有数据或伪造新的SHARED_MODEL。完整m/K/B与每次实验预测已在输入prepare与predict收据保存。接入示例直接使用保存的law，不依赖重新构造原训练过程；它可按CLI参数显式指定copula源码和预测文件，哈希必须一致。
+
+GelMA21759156公开表仍HOLD：sources/gelma_method_followup_20261109保存实际3route方法补证、官方notebook和原始哈希。代码轴标签支持wt%，但单位/温度/固化态/原测量链未补齐；notebook是下游插值特征/宽度ML，不能将06插值或04派生特征当新湿实验。没有为凑水凝胶验证读取这些响应。
+
+五、如何评估/复现
+
+先读本地图及对应README/协议，再核完整归档manifest与SHA。reproduce_offline.py只独立核已保存数值、角色、原获准字段与评分，不能自动触发prepare/predict/reveal或访问未执行的保留标签。对于部分/未执行phase须报告pending，不制造PASS。
+
+verification/各独立审计源码不import被审SUT：原投影/Schur、OLS/Student、通用克里金、copula尾概率/密度、实际原字段与分数分别核算；gate是固定合成数学检查，独审PASS不自动等于论文效果。qualification_once保留早期接口门，resin_dev_once、student_dev_once、universal_dev_once、transport_dev_once及扩展实际目录分别是不同角色/时序，不能把同3dev上的反复诊断累计成多次独立确认。
+
+完整归档应同时保留：源码、requirements/环境说明、原数据/元数据许可与哈希、16pin模型副本、实际UTC登记、所有phase收据/预测/访问账本/分数/独审、已失败分支、中文说明与该接入示例。文件搬家只允许改明确路径参数或使用字节一致副本；不修改科学参数、角色或在运行复现时重选模型。
+
+六、下一步边界
+
+目前先保留这一版本及其真实增量和权衡，不在扩展上继续调参、不读取final20。未来若要把“泛用平滑相关”归因为材料特有知识，需另有事前几何相关强控制或不同来源证据；现有联合增量不自动完成这个归因。若要实际节约实验、新实验室确认或可靠校准，还需相应独立实验/资料，不能由联合采样动画或重复抽样补齐。

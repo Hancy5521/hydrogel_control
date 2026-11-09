@@ -1,0 +1,64 @@
+本地完整增量包：打包与离线复核说明
+2026-11-09 SOURCE PREPARATION；本文件和reproduce_offline.py的存在不等于已打包或重放。
+
+一 这个包是什么
+
+包根保留mlst_to_conference_20261108当前研究目录的相对结构：全部新源码、协议、来源原件、已经执行的预测/评分、审计和失败记录（包括H3 v1 FAIL）。原MLST模型不覆盖：从FROZEN_DEPENDENCIES.json的scientific_bindings复制恰好16个已核依赖到frozen_checkpoint/，逐项保持relative_to_checkpoint路径与原字节。不要把此前完整checkpoint/training_Y或巨大历史ZIP一并拖进来。
+
+例如frozen_checkpoint/models/SHARED_MODEL.json，frozen_checkpoint/runtime/core/joint_code_gaussian.py。这些副本供理解、后续调用与冻结身份核对，不代表新的模型训练。旧主文/补充论文身份由原manifest保留，本增量不声称重新写论文，也不需要复制旧私有Obsidian、下载的人工review或所有历史压缩包。
+
+原公开CC-BY数据ZIP仍包含全部50runs。软件已读取/评分的是3dev recipe×5runs；120个共同目标及既有anchor union已经消费。未来3expansion+4final共35runs的黏度尚按研究角色保护（若之后某phase另有明确登记，应以该phase收据更新这个事实）。本包没有加密原公开ZIP；“未向算法释放黏度”是可信reader/协议约束，不是无法手工打开文件。不要把公开完整CSV或模拟生成值冒充新独立测量。
+
+二 打包最终必须做的事情（由root执行，本文尚未执行）
+
+1. 等正在执行的phase结束或保存真实中断点后，再做独立目录快照。不要打包时仍让生产流程写同名文件。
+2. 原stage所有有用文件按相对路径复制；原始失败、停止决定、来源计划与实际结果都保留。不复制__pycache__/pyc、临时锁/认证秘密、当前离线复核输出或历史大包。
+3. 逐项从scientific_bindings的absolute_path复制16个文件到快照frozen_checkpoint/<relative_to_checkpoint>；复制前/后分别核SHA256和bytes，不迁移、删除或修改原件。目录目标必须解析后位于快照根内。
+4. 补上该阶段详细方法/结果说明和READ_FIRST入口。任何仍pending的通用克里金或扩展实验准确写pending；不要因计划已列出就预填PASS。
+5. 最后生成delivery/PACKAGE_MANIFEST.json（下述schema），覆盖最终payload的每个文件、包括本重放源码与16副本。manifest本身和以后新offline_audits/输出除外。此后不再改payload；若需要修改，重建manifest和新独立压缩包，不覆盖旧交付。
+6. 在完全不同的绝对路径解压/复制快照，运行本入口；仅核对已保存数值，不重fit、不重跑SUT消费集。保留这次新UTC审计报告。核验ZIP成员CRC、全成员SHA和便于资源管理器解压的普通ZIP格式，最终给用户原ZIP SHA256与说明入口。
+
+PACKAGE_MANIFEST.json最低结构：
+{
+  "schema": "mlst-conference-portable-manifest-v1",
+  "actual_utc": "实际打包时间",
+  "files": [
+    {"path": "core/arbitrary_mask.py", "sha256": "真实SHA256", "bytes": 真实长度},
+    {"path": "frozen_checkpoint/models/SHARED_MODEL.json", "sha256": "真实SHA256", "bytes": 真实长度}
+  ]
+}
+路径使用相对POSIX斜线，不能含..、盘符或外部链接。不要把模板占位符复制成实际manifest。
+
+三 普通使用者怎样离线复核
+
+解压到任意目录。需要Python 3.10+和numpy、scipy、mpmath；原研究环境Python与具体版本以包内RUN收据为准。本入口不会联网、自动安装依赖、购买算力或执行生产训练。
+
+在包根运行：
+python -X utf8 -B delivery/reproduce_offline.py --verify-only
+python -X utf8 -B delivery/reproduce_offline.py
+
+也可使用脚本绝对路径；默认包根来自脚本自身位置，不依赖原H/D盘。每次生成新的offline_audits/<实际UTC_随机短ID>/，先写RUN.json，按动作追加EVENTS.jsonl，结束写SUMMARY.json和SUMMARY.md，不覆盖原始收据。只核文件哈希的VERIFIED_ONLY不是全部数值重放通过。
+
+预期重放内容：
+- MAIN_PRE：独立从native坐标/模型参数重建参考与210个已存Gaussian预测。
+- MAIN_POST：独立追溯原ZIP中已经获准的15dev runs/anchor union/120targets，核210组预测与1680个边缘CRPS及组宏平均；不转换未来35runs的黏度。
+- STUDENT_POST：独立QR核420个同六anchor的Student预测，核420联合NLL/3360区间和聚合，20个预定边缘CRPS用CDF定义积分。它重建的是审计算术，不是新增材料拟合。
+- H3_PRE_MP70：使用原v2高精度独立Schur/导数/差分核查一个已经冻结的候选更新与45个预测。旧v1双精度FAIL保留，不重新跑v1，不把新时间戳解释成第二次科学试验。
+- H3_POST：独核同120已揭示目标上的45个H3评分，保留“sentinel改善、tail恶化”的既有结果。
+- 若包内已具备真实完成并PASS的通用克里金独审和对应源码、授权、gate、420预测/评分，则追加UK_LAWS/UK_SCORES；否则摘要明确pending。脚本不自动补跑尚未完成的生产phase。
+
+可以用--only MAIN_PRE或其他ID只做部分核查。PASS_PARTIAL不是全套通过。默认PASS_AVAILABLE_SAVED_AUDITS仅指包内可用的既有审计通过，不代表投稿达标、独立确认完成、可靠校准或实际实验节约。
+
+四 为什么不替换原收据的路径或时间
+
+原source/auth/protocol/prediction/score/audit必须保留exact bytes和原SHA。那些JSON中的原H/D路径是历史事实，不是需要字符串替换的配置。离线命令通过相对包路径找到内容相同的文件；按file SHA接受换位置。
+
+尤其：post-Y的release和TARGETS绑定的是“当时的pre-Y收据SHA”，不是新复核的收据。新pre-Y审计有新的真实UTC、字节和SHA，不能拿它顶替原收据而破坏科学链。因此重放post-Y仍传入包内原pre-Y收据，同时另行保存新复核结果。Student/UK的授权自身按输入角色的SHA绑定，换CLI路径不会改变原授权字节。
+
+冻结SUT中的原路径/default与新研究registration还保留原样；本入口专门提供“搬家后复核保存证据”的能力，不偷偷修改科学源码使旧生产试验重新运行。如果要在新资料上做新实验，先按方法接口配置新来源/组/单位、另登记实际UTC和hash，再执行，不复用本包消费集当新确认。
+
+五 尚未包含的成功与资料
+
+没有原始湿实验的新批次、没有真实仪器节约测量、没有对所有材料的泛化保证。所有失败和同域/迁移范围应读scientific_review与实际结果。通用克里金是经典均值/尺度适配控制，不因归档、重放或名称变化成为新算法。包不包括认证token、私有笔记/人工review、旧巨大archives或旧训练标签；本阶段的离线数值核查不需要那些资料。
+
+本准备文件不会自行下载/打包/执行任何东西。实际压缩包路径、全成员计数、大小、SHA和移位复核收据，应由root在真正完成后另写交付记录。

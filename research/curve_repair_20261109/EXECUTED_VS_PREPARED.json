@@ -1,0 +1,14 @@
+{
+  "actual_utc": "2026-11-09T05:24:46.466998+00:00",
+  "main_210": "executed, targets frozen before release, pre/post PASS",
+  "physical_420": "executed before devtarget reveal, pre/post PASS",
+  "early_45": "single update before devtarget reveal, v1audit FAIL retained, mp70v2/post PASS, scientific tail benefit failed",
+  "universal_420": "post-reveal development, all audits PASS, benefit gate FAILED",
+  "transport_60": "post-reveal development, all audits PASS, limited joint gate PASS",
+  "expansion_105": "new recipe holdout pre-prediction freeze and120target release, pre/post PASS, primary PASS, secondary FAIL",
+  "flow_time_potential": "mathematical interpretation only; no new ODE/flow training",
+  "examples": "3saved-law CLI x32generated samples PASS, not measurements",
+  "GelMA_followup": "SOURCE_ONLY / methods identity HOLD, no responses read",
+  "final_confirm20": "not numerically released",
+  "top_conference_readiness": "NOT_ESTABLISHED; ordinary research checkpoint B"
+}
